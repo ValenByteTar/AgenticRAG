@@ -1,0 +1,88 @@
+chunking:
+  chunk_size: 1200
+  overlap: 300
+  token_chunking: true
+  token_chunk_size: 350
+  token_overlap: 50
+embeddings:
+  batch_size: 32
+  device: cuda
+  model_name: models/BAAI-bge-m3
+  provider: sentence-transformers
+paths:
+  extracted_dir: data/extracted_texts
+  models_dir: models
+  pdf_dir: protocolosPDF
+  vectordb_dir: chroma_bge_m3
+  vectordb_dir_bge: chroma_bge_m3
+retrieval:
+  score_threshold: 0.5
+  top_k: 10
+# Razonamiento automático (DESHABILITADO temporalmente por velocidad)
+enable_auto_reasoning: false  # Desactivado para optimizar velocidad - activar solo si es necesario
+# Auto-revisión: el LLM verifica y corrige su propia respuesta
+enable_self_review: false  # El LLM revisa su respuesta y la corrige si omitió información (añade ~5-10s por consulta)
+# Mapa conceptual: sistema de aprendizaje de atajos
+use_conceptual_map: true  # El sistema aprende de consultas previas y crea atajos
+# DocCards/Planner: roles de documento y planificador de recuperación
+use_doc_roles: true
+use_planner: true
+rag:
+  index_variant: bge
+  flags:
+    enable_postprocess: true
+    postprocess_number_synonyms: true
+    postprocess_unit_synonyms: true
+    postprocess_location: true
+    postprocess_comparison_summary: true
+    boost_source_by_entity: true
+    diversify_sources_for_comparison: true
+    ensure_entity_sources: true
+    prefer_evidence_chunks: true
+    skip_quality_filter_for_comparison: true
+    aggregation_ignore_when_specific_entities: true
+    suppress_followups: true
+    remove_sources_section: true
+    deduplicate_lines: true
+    max_answer_lines: 0  # 0 = sin límite (desactivado)
+  heuristics_mode: balanced
+vectordb:
+  # NOTA: Renombrado de dominio electrico (crom_protocols_bge_m3) a ciberseguridad.
+  # Requiere re-ejecutar build_rag_system.py / ingest_incremental.py para poblar la nueva coleccion.
+  collection_name: cybersec_docs_bge_m3
+  similarity_metric: cosine
+  search_ef: 64
+  rebuild_on_build: true
+  collection_name_bge: cybersec_docs_bge_m3
+
+reranker:
+  model_name: models/BAAI-bge-reranker-v2-m3
+  local_path: models/BAAI-bge-reranker-v2-m3
+  # FASE 3: Pool de candidatos para reranker (antes 10, ahora 20)
+  candidate_pool: 20
+  # FASE 4: Pesos de mezcla hybrid/reranker (antes 55/45, ahora 30/70 favoreciendo reranker)
+  mix:
+    hybrid_weight: 0.30
+    rerank_weight: 0.70
+    
+doccards:
+  llm_enabled: true
+  model_name: qwen3-4b-rag:latest
+  max_docs: 0
+  # Presupuesto LLM (uno u otro)
+  llm_ratio: 0.2         # Refina top 20% por centralidad
+  llm_max_calls: 0       # Si >0 tiene prioridad sobre ratio
+  llm_timeout: 8         # seg por documento refinado
+  sample_chars: 600      # texto de muestra hacia el LLM
+
+embeddings_legacy:
+  batch_size: 32
+  device: cuda
+  model_name: hiiamsid/sentence_similarity_spanish_es
+  provider: sentence-transformers
+
+embeddings_bge:
+  batch_size: 8
+  device: cuda
+  model_name: models/BAAI-bge-m3
+  provider: sentence-transformers

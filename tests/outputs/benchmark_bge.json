@@ -1,0 +1,9 @@
+{
+  "avg_latency_s": 4.554,
+  "avg_vram_mb": 5557.5,
+  "avg_ram_mb": 4324.2,
+  "topk_hit_rate": 1.0,
+  "top_k": 10,
+  "variant": "bge",
+  "queries": 4
+}

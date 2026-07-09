@@ -1,0 +1,9 @@
+{
+  "avg_latency_s": 0.629,
+  "avg_vram_mb": 5536.0,
+  "avg_ram_mb": 2480.8,
+  "topk_hit_rate": 1.0,
+  "top_k": 10,
+  "variant": "legacy",
+  "queries": 4
+}

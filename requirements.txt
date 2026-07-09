@@ -1,0 +1,41 @@
+# Sistema RAG Hibrido de Ciberseguridad
+# Python 3.12 compatible
+
+# Extraccion de PDFs
+pymupdf>=1.23.0
+
+# Embeddings locales (BGE-m3)
+sentence-transformers==2.5.1
+
+# Tokenizer (usado por chunker.py)
+transformers==4.38.0
+
+# Base de datos vectorial local
+chromadb>=0.4.22
+
+# Procesamiento de texto
+numpy>=1.26.0,<3.0.0
+
+# Interfaz CLI mejorada
+rich>=13.7.0
+tqdm>=4.66.0
+
+# Utilidades
+pyyaml>=6.0.1
+
+# Busqueda hibrida
+rank-bm25>=0.2.2
+
+# API requests
+requests>=2.31.0
+
+# Flask para web app
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# Ollama support
+ollama>=0.1.0
+
+# NER y fuzzy matching
+rapidfuzz>=3.6.1
+spacy>=3.7.2

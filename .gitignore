@@ -1,0 +1,38 @@
+﻿# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+.env
+.DS_Store
+.idea/
+.vscode/
+
+# Build artifacts
+build/
+dist/
+*.spec
+
+# Logs y baselines de sesiones
+*.log
+pipeline_baseline*.json
+
+# Bases de datos vectoriales y modelos (datos de runtime, no código)
+chroma_bge_m3/
+models/
+memory.db
+
+# Datos extraídos y PDFs (grande, se regeneran)
+data/extracted_texts/
+data/training_dataset/
+protocolosPDF/
+
+# Archivos binarios no esenciales en la raíz
+*.mp3
+
+# Cache de evaluaciones
+tests/eval/reports/
+tests/outputs/
