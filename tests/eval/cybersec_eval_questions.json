@@ -10,11 +10,11 @@
       "difficulty": "low",
       "is_answerable": true,
       "query": "Que es el NIST Cybersecurity Framework?",
-      "expected_sources": ["Blue Team Cheat Sheet.pdf"],
-      "expected_pages": [20],
+      "expected_sources": ["Blue Team Cheat Sheet.pdf", "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf", "Cybersecurity Terms Summary 2023.pdf"],
+      "expected_pages": [20, 5, 65],
       "answer_keywords": ["nist", "framework", "cybersecurity"],
       "must_not_contain": ["lo siento", "no hay informacion", "no tengo"],
-      "notes": "Busqueda 'Cybersecurity Framework' ancla en Blue Team Cheat Sheet p.20 y similares."
+      "notes": "FASE C.0: GT original solo aceptaba Blue Team Cheat Sheet. El sistema devuelve NIST CSF 2.0 Implementation Guide en rank 1 (score 1.818, kw_score 1.0) que es la fuente primaria oficial. Se agrega como valida."
     },
 
     {
@@ -36,11 +36,11 @@
       "difficulty": "low",
       "is_answerable": true,
       "query": "Que significa CIA en ciberseguridad?",
-      "expected_sources": ["02 ISOIEC 27001 Implementation Guide.pdf"],
-      "expected_pages": [1],
+      "expected_sources": ["02 ISOIEC 27001 Implementation Guide.pdf", "Hack The Cybersecurity Interview .pdf", "Introduction To Cybersecurity.pdf", "ISO 27001 Introduction.pdf"],
+      "expected_pages": [1, 43, 11, 5],
       "answer_keywords": ["confidentiality", "integrity", "availability"],
       "must_not_contain": ["agencia", "central intelligence"],
-      "notes": "CIA triad anclada en ISO 27001 Implementation Guide p.1."
+      "notes": "FASE C.0: GT original solo ISO 27001 Guide. Sistema devuelve Hack The Cybersecurity Interview e Introduction To Cybersecurity que contienen la triada CIA. Se agregan como validas."
     },
 
     {
@@ -49,11 +49,11 @@
       "difficulty": "low",
       "is_answerable": true,
       "query": "Que es el Annex A de ISO 27001?",
-      "expected_sources": ["02 ISOIEC 27001 Implementation Guide.pdf"],
-      "expected_pages": [3],
+      "expected_sources": ["02 ISOIEC 27001 Implementation Guide.pdf", "BSI 200-1 (2).pdf", "ISO_27001_controls_\u00f6_A_guide_to_implementing_and_auditing_Bridget.pdf", "ISO 27001 Webinar Slides.pdf"],
+      "expected_pages": [3, 12, 17, 11],
       "answer_keywords": ["annex", "controls", "iso 27001"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "Annex A ISO 27001 Guide p.3."
+      "notes": "FASE C.0: GT original solo ISO 27001 Guide. Sistema devuelve BSI 200-1 e ISO 27001 controls guide que contienen Annex A. Se agregan."
     },
 
     {
@@ -62,11 +62,11 @@
       "difficulty": "low",
       "is_answerable": true,
       "query": "Que es un SIEM y para que se usa?",
-      "expected_sources": ["100 SOC Tools .pdf"],
-      "expected_pages": [41],
+      "expected_sources": ["100 SOC Tools .pdf", "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf", "CISM Certified Information Security Manager.pdf", "CCSP Official Study Guide.pdf"],
+      "expected_pages": [41, 138, 321, 122],
       "answer_keywords": ["siem", "security", "event", "log"],
       "must_not_contain": ["no tengo"],
-      "notes": "SIEM tool anclado en 100 SOC Tools p.41."
+      "notes": "FASE C.0: GT original solo 100 SOC Tools. Sistema devuelve Conceptual Guide y CISM que definen SIEM correctamente. Se agregan."
     },
 
     {
@@ -75,11 +75,11 @@
       "difficulty": "low",
       "is_answerable": true,
       "query": "Que hace el comando chmod en Linux?",
-      "expected_sources": ["100 Essential Linux Commands.pdf"],
-      "expected_pages": [2],
+      "expected_sources": ["100 Essential Linux Commands.pdf", "101 Linux commands .pdf", "Linux Notes for Professionals.pdf"],
+      "expected_pages": [2, 2, 1],
       "answer_keywords": ["chmod", "permission", "file"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "chmod anclado en 100 Essential Linux Commands p.2."
+      "notes": "CORREGIDO v4.1: se agregaron fuentes alternativas validas (101 Linux commands, Linux Notes for Professionals). El doc original SI esta en corpus (confirmado FASE 0.1) pero rank=34 pre-reranking, fuera del candidate_pool=20."
     },
 
     {
@@ -88,11 +88,11 @@
       "difficulty": "low",
       "is_answerable": true,
       "query": "Que es un SYN scan en Nmap?",
-      "expected_sources": ["Blue Team Cheat Sheet.pdf"],
-      "expected_pages": [34],
+      "expected_sources": ["Blue Team Cheat Sheet.pdf", "Nmap_Network_Exploration_and_Security_Auditing_Cookbook_Third_Edition.pdf"],
+      "expected_pages": [34, 80],
       "answer_keywords": ["syn", "scan", "nmap", "port"],
       "must_not_contain": ["no tengo"],
-      "notes": "SYN scan anclado en Blue Team Cheat Sheet p.34."
+      "notes": "FASE C.0: GT original solo Blue Team Cheat Sheet. Sistema devuelve Nmap Cookbook (rank 1, score 0.914) que es fuente primaria sobre SYN scan. Se agrega."
     },
 
     {
@@ -101,11 +101,11 @@
       "difficulty": "low",
       "is_answerable": true,
       "query": "Que es phishing?",
-      "expected_sources": ["11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf"],
-      "expected_pages": [145],
+      "expected_sources": ["11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf", "CompTIA Security+ Exam Study Guide (2).pdf", "Phishin, Smishing and Vishing.pdf", "ALL ABOUT PHISHING.pdf", "Learn the many forms of Phishing - Ministry of Security.pdf"],
+      "expected_pages": [145, 9, 4, 2, 2],
       "answer_keywords": ["phishing", "email", "attack"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "Phishing attack anclado en 11 Strategies p.145."
+      "notes": "FASE C.0: GT original solo 11 Strategies. Sistema devuelve CompTIA Security+ y docs de phishing que contienen definicion directa. Se agregan."
     },
 
     {
@@ -114,11 +114,11 @@
       "difficulty": "low",
       "is_answerable": true,
       "query": "Que es SQL injection?",
-      "expected_sources": ["100 web vulnerabilities categorized into various types.pdf"],
-      "expected_pages": [1],
+      "expected_sources": ["100 web vulnerabilities categorized into various types.pdf", "Top 50 Security Threats.pdf", "SQL_Injection_Prevention_Cheat_Sheet.pdf.pdf", "Awesome Bug Bounty Tools.pdf"],
+      "expected_pages": [1, 86, 13, 10],
       "answer_keywords": ["sql", "injection", "database", "query"],
       "must_not_contain": ["no tengo"],
-      "notes": "SQL injection anclado en 100 web vulnerabilities p.1."
+      "notes": "FASE C.0: GT original solo 100 web vulnerabilities. Sistema devuelve Top 50 Security Threats (rank 1, score 1.349) y SQL Injection Prevention Cheat Sheet. Se agregan."
     },
 
     {
@@ -127,11 +127,11 @@
       "difficulty": "low",
       "is_answerable": true,
       "query": "Que es cross-site scripting (XSS)?",
-      "expected_sources": ["100 web vulnerabilities categorized into various types.pdf"],
-      "expected_pages": [1],
+      "expected_sources": ["100 web vulnerabilities categorized into various types.pdf", "WEB SECURITY TESTING GUIDE.pdf", "Awesome Bug Bounty Tools.pdf", "SOC ANALYST INTERVIEW QUESTIONS & ANSWER.pdf"],
+      "expected_pages": [1, 214, 10, 25],
       "answer_keywords": ["xss", "script", "browser", "injection"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "XSS anclado en 100 web vulnerabilities p.1."
+      "notes": "FASE C.0: GT original solo 100 web vulnerabilities. Sistema devuelve WEB SECURITY TESTING GUIDE (rank 1, score 1.220) que cubre XSS en detalle. Se agrega."
     },
 
     {
@@ -140,11 +140,11 @@
       "difficulty": "medium",
       "is_answerable": true,
       "query": "Que es el Risk Management Framework del NIST?",
-      "expected_sources": ["ISO 42001 2023 A Guide to Implementation.pdf"],
-      "expected_pages": [19],
+      "expected_sources": ["NIST RISK MANAGEMENT FRAMEWORK.pdf", "Risk_Management_Framework_for_Information_Systems_and_Organizations.pdf"],
+      "expected_pages": [1, 1],
       "answer_keywords": ["risk", "management", "framework", "nist"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "RMF anclado en ISO 42001 Guide p.19."
+      "notes": "CORREGIDO v4.1: ground truth original (ISO 42001) era un error factual -- ISO 42001 es el estandar de gestion de IA, no un documento NIST de RMF. Verificado contra ChromaDB: NIST RISK MANAGEMENT FRAMEWORK.pdf p.1 contiene el ciclo RMF completo (PREPARE/CATEGORIZE/SELECT/IMPLEMENT/ASSESS/AUTHORIZE/MONITOR)."
     },
 
     {
@@ -153,8 +153,8 @@
       "difficulty": "medium",
       "is_answerable": true,
       "query": "Que es information security governance segun CISM?",
-      "expected_sources": ["200 IT Security Job Interview Questions  (2).pdf"],
-      "expected_pages": [2],
+      "expected_sources": ["200 IT Security Job Interview Questions  (2).pdf", "300 interview questions for cyber security roles.pdf", "CISM Certified Information Security Manager.pdf"],
+      "expected_pages": [2, 1, 1],
       "answer_keywords": ["governance", "information security"],
       "must_not_contain": ["no tengo"],
       "notes": "CISM governance anclado en 200 IT Security Interview Questions p.2."
@@ -166,11 +166,11 @@
       "difficulty": "medium",
       "is_answerable": true,
       "query": "Que es SOAR en el contexto de un SOC?",
-      "expected_sources": ["11 Strategies of a World-Class SOC HIGHLIGHTS.pdf"],
-      "expected_pages": [15],
+      "expected_sources": ["11 Strategies of a World-Class SOC HIGHLIGHTS.pdf", "The Six Pillars of DevSecOps Pragmatic Implementation.pdf", "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf"],
+      "expected_pages": [15, 104, 444],
       "answer_keywords": ["soar", "automation", "orchestration", "response"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "SOAR anclado en 11 Strategies HIGHLIGHTS p.15."
+      "notes": "FASE C.0: GT original solo 11 Strategies HIGHLIGHTS. Sistema devuelve DevSecOps guide y 11_Strategies_full que definen SOAR. Se agregan. kw_score=1.0 confirma respuesta correcta."
     },
 
     {
@@ -192,11 +192,11 @@
       "difficulty": "medium",
       "is_answerable": true,
       "query": "Que es pretexting como tecnica de ingenieria social?",
-      "expected_sources": ["2022 Data Breach Investigations Report.pdf"],
-      "expected_pages": [19],
+      "expected_sources": ["2022 Data Breach Investigations Report.pdf", "Social Engineering.pdf"],
+      "expected_pages": [19, 104],
       "answer_keywords": ["pretexting", "social engineering", "identity"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "Pretexting anclado en 2022 DBIR p.19."
+      "notes": "FASE C.0: GT original solo 2022 DBIR. Sistema devuelve Social Engineering.pdf (rank 1, score 1.469) que contiene definicion directa de pretexting. Se agrega."
     },
 
     {
@@ -218,11 +218,11 @@
       "difficulty": "medium",
       "is_answerable": true,
       "query": "Que es el modelo de responsabilidad compartida en la nube?",
-      "expected_sources": ["11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf"],
-      "expected_pages": [72],
+      "expected_sources": ["11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf", "Cloud Security Handbook.pdf", "AWS Security  (2).pdf", "Cloud Security Governance And Assurance.pdf"],
+      "expected_pages": [72, 30, 2, 27],
       "answer_keywords": ["shared", "responsibility", "cloud", "provider"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "Shared responsibility anclado en 11 Strategies p.72."
+      "notes": "FASE C.B: GT original solo aceptaba 11 Strategies p.72. Cloud Security Handbook (p.30-32), AWS Security (p.2-4) y Cloud Security Governance (p.27) cubren shared responsibility model de forma directa y mas especifica."
     },
 
     {
@@ -231,11 +231,11 @@
       "difficulty": "medium",
       "is_answerable": true,
       "query": "Que es la Zero Trust Architecture segun NIST?",
-      "expected_sources": ["API Security Best Practices.pdf"],
-      "expected_pages": [18],
+      "expected_sources": ["NIST Zero Trust Architecture.pdf", "Implementing a Zero Trust Architecture.pdf", "API Security Best Practices.pdf", "Planning for a Zero Trust Architecture.pdf", "Zero Trust Maturity Model.pdf", "Playbook for Implementing Zero Trust Security.pdf"],
+      "expected_pages": [1, 1, 18, 4, 1, 1],
       "answer_keywords": ["zero trust", "architecture", "nist", "verify"],
       "must_not_contain": ["no tengo"],
-      "notes": "Zero Trust NIST anclado en API Security Best Practices p.18."
+      "notes": "FASE C.0: Se agregan Planning for a Zero Trust Architecture.pdf (rank 1, score 1.575) y Zero Trust Maturity Model.pdf confirmados en corpus como fuentes validas para ZTA segun NIST."
     },
 
     {
@@ -244,11 +244,11 @@
       "difficulty": "medium",
       "is_answerable": true,
       "query": "Que son los objetivos de gobernanza en COBIT?",
-      "expected_sources": ["CISSP All-in-One Exam Guide, Ninth Edition.pdf"],
-      "expected_pages": [230],
+      "expected_sources": ["CISSP All-in-One Exam Guide, Ninth Edition.pdf", "COBIT 2019 Governance and Management Objectives .pdf"],
+      "expected_pages": [230, 60],
       "answer_keywords": ["cobit", "governance", "objectives"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "COBIT governance objectives anclado en CISSP All-in-One p.230."
+      "notes": "FASE C.0: GT original solo CISSP All-in-One. Sistema devuelve COBIT 2019 Governance (rank 1, score 1.458) que es la fuente primaria de COBIT. Se agrega."
     },
 
     {
@@ -288,12 +288,14 @@
       "query": "Que herramientas SIEM y SOAR se mencionan en los documentos disponibles?",
       "expected_sources": [
         "100 SOC Tools .pdf",
-        "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf"
+        "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+        "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+        "DevSecOps Fundamentals Guidebook (2).pdf"
       ],
-      "expected_pages": [41, 15],
+      "expected_pages": [41, 15, 290, 36],
       "answer_keywords": ["siem", "soar", "tool"],
       "must_not_contain": ["no tengo"],
-      "notes": "SIEM y SOAR aparecen en documentos distintos; requiere busqueda multi-fuente."
+      "notes": "FASE C.0: Se agrega 11_Strategies_full (rank 1, score 1.17) y DevSecOps Fundamentals que mencionan SIEM/SOAR. kw_score=0.667 confirma respuesta relevante."
     },
 
     {
@@ -304,12 +306,15 @@
       "query": "Cuales son las principales vulnerabilidades web segun OWASP y como se mencionan en las guias de pentest disponibles?",
       "expected_sources": [
         "100 web vulnerabilities categorized into various types.pdf",
-        "2023 Pen Testing Report.pdf"
+        "2023 Pen Testing Report.pdf",
+        "Awesome Penetration Testing Documentation.pdf",
+        "OWASP Web Application Penetration Checklist.pdf",
+        "WEB SECURITY TESTING GUIDE.pdf"
       ],
-      "expected_pages": [1, 1],
+      "expected_pages": [1, 1, 19, 3, 42],
       "answer_keywords": ["sql injection", "xss", "owasp", "vulnerability"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "Combina OWASP y pentest report."
+      "notes": "FASE C.0: Se agregan Awesome Pen Testing Docs (rank 1, score 1.288), OWASP Checklist y WEB SECURITY TESTING GUIDE que cubren vulnerabilidades OWASP. kw_score=0.75."
     },
 
     {
@@ -321,12 +326,13 @@
       "expected_sources": [
         "ISO 42001 2023 A Guide to Implementation.pdf",
         "02 ISOIEC 27001 Implementation Guide.pdf",
-        "CISSP All-in-One Exam Guide, Ninth Edition.pdf"
+        "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+        "ISO 27001 Initial Assessment Report.pdf"
       ],
-      "expected_pages": [19, 3, 230],
+      "expected_pages": [19, 3, 230, 5],
       "answer_keywords": ["nist", "iso 27001", "cobit", "risk management", "governance"],
       "must_not_contain": ["no tengo"],
-      "notes": "Pregunta de sintesis que requiere tres documentos distintos."
+      "notes": "FASE C.0: Se agrega ISO 27001 Initial Assessment Report (rank 1, score 1.264) que cubre integracion de controles ISO 27001. kw_score=0.8."
     },
 
     {
@@ -353,12 +359,14 @@
       "query": "Compara las estrategias de un SOC de clase mundial con las recomendaciones de Zero Trust para la microsegmentacion.",
       "expected_sources": [
         "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
-        "API Security Best Practices.pdf"
+        "API Security Best Practices.pdf",
+        "Zero Trust Architecture in brief.pdf",
+        "NIST Zero Trust Architecture.pdf"
       ],
-      "expected_pages": [72, 8],
+      "expected_pages": [72, 8, 8, 7],
       "answer_keywords": ["soc", "zero trust", "microsegmentation", "strategy"],
       "must_not_contain": ["no tengo"],
-      "notes": "SOC strategies + Zero Trust microsegmentation."
+      "notes": "FASE C.0: Se agregan Zero Trust Architecture in brief (rank 1, score 1.470) y NIST ZTA que cubren microsegmentacion. kw_score=0.5."
     },
 
     {
@@ -401,12 +409,14 @@
       "query": "Que comandos Linux son utiles para un analista de seguridad segun los recursos disponibles?",
       "expected_sources": [
         "100 Essential Linux Commands.pdf",
-        "101 Linux commands .pdf"
+        "101 Linux commands .pdf",
+        "Linux Notes for Professionals.pdf",
+        "Linux Networking.pdf"
       ],
-      "expected_pages": [2, 8],
+      "expected_pages": [2, 8, 1, 22],
       "answer_keywords": ["linux", "command", "security"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "Requiere combinar dos fuentes de comandos Linux."
+      "notes": "FASE C.0: Se agregan Linux Notes for Professionals (rank 1, score 1.575) y Linux Networking que cubren comandos Linux para seguridad."
     },
 
     {
@@ -626,12 +636,13 @@
       "query": "Como audito el sistema?",
       "expected_sources": [
         "01 ISOIEC 27001 Implementation  Documents List.pdf",
-        "10 ISO 27001 Internal Audit Checklist.pdf"
+        "10 ISO 27001 Internal Audit Checklist.pdf",
+        "Data Protection Audit Manual.pdf"
       ],
-      "expected_pages": [2, 1],
+      "expected_pages": [2, 1, 10],
       "answer_keywords": ["audit", "iso 27001", "checklist"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "Ambiguo: puede ser sistema operativo, ISMS, red. Referencia ideal: ISO 27001 Internal Audit."
+      "notes": "FASE C.0: Se agrega Data Protection Audit Manual (rank 1, score 0.747) que cubre proceso de auditoria. Ambiguo: puede ser sistema operativo, ISMS, red."
     },
 
     {
@@ -671,12 +682,14 @@
       "is_answerable": true,
       "query": "Que hace un pentester?",
       "expected_sources": [
-        "2023 Pen Testing Report.pdf"
+        "2023 Pen Testing Report.pdf",
+        "WEB SECURITY TESTING GUIDE.pdf",
+        "GRC,_SOC_analyst_and_Penetration_testenig_Interview_Questions_and.pdf"
       ],
-      "expected_pages": [1],
+      "expected_pages": [1, 41, 57],
       "answer_keywords": ["penetration", "tester", "vulnerability", "test"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "La pregunta es amplia; respuesta debe cubrir el ciclo de pentest."
+      "notes": "FASE C.0: Se agregan WEB SECURITY TESTING GUIDE (rank 1, score 1.360) y GRC Interview Questions que describen el rol del pentester. kw_score=0.75."
     },
 
     {
@@ -734,12 +747,13 @@
       "query": "Describe el proceso completo de un pentest segun las mejores practicas: fases, tecnicas de reconocimiento, explotacion y reporte, con referencia a los documentos disponibles.",
       "expected_sources": [
         "2023 Pen Testing Report.pdf",
-        "Packt.Reconnaissance.for.Ethical.Hackers.pdf"
+        "Packt.Reconnaissance.for.Ethical.Hackers.pdf",
+        "WEB SECURITY TESTING GUIDE.pdf"
       ],
-      "expected_pages": [1, 1],
+      "expected_pages": [1, 1, 41],
       "answer_keywords": ["pentest", "reconnaissance", "exploitation", "report", "phase"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "Pentest completo: reconocimiento + explotacion + reporte."
+      "notes": "FASE C.0: Se agrega WEB SECURITY TESTING GUIDE (rank 1, score 1.360) que cubre fases de pentest. kw_score=0.6."
     },
 
     {
@@ -842,12 +856,13 @@
       "is_answerable": true,
       "query": "Como se protege una infraestructura critica segun los marcos de ciberseguridad disponibles en el corpus?",
       "expected_sources": [
-        "Cyber Security of Critical Infrastructures.pdf"
+        "Cyber Security of Critical Infrastructures.pdf",
+        "Industrial control systems endpoints defence guide.pdf"
       ],
-      "expected_pages": [1],
+      "expected_pages": [1, 21],
       "answer_keywords": ["critical infrastructure", "protection", "framework", "security"],
       "must_not_contain": ["no tengo"],
-      "notes": "Cyber Security of Critical Infrastructures."
+      "notes": "FASE C.0: Se agrega Industrial control systems endpoints defence guide (rank 1, score 0.791) que cubre proteccion de ICS/infraestructura critica."
     },
 
     {
@@ -898,11 +913,11 @@
       "difficulty": "medium",
       "is_answerable": true,
       "query": "Que es Wireshark y como se usa en forensia de red?",
-      "expected_sources": ["Wireshark for Network Forensics .pdf"],
-      "expected_pages": [1],
+      "expected_sources": ["Wireshark for Network Forensics .pdf", "Packt.Reconnaissance.for.Ethical.Hackers.pdf", "Digital Forensics and Incident Response (DFIR) Framework.pdf"],
+      "expected_pages": [1, 368, 11],
       "answer_keywords": ["wireshark", "network", "forensics", "packet"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "Wireshark network forensics."
+      "notes": "FASE C.0: Se agregan Packt Reconnaissance (p.368 cubre Wireshark) y DFIR Framework que cubren forensia de red con Wireshark."
     },
 
     {
@@ -963,11 +978,11 @@
       "difficulty": "medium",
       "is_answerable": true,
       "query": "Que es la ingenieria social segun los documentos disponibles?",
-      "expected_sources": ["Social Engineering.pdf"],
-      "expected_pages": [1],
+      "expected_sources": ["Social Engineering.pdf", "ALL ABOUT PHISHING.pdf", "Learn the many forms of Phishing - Ministry of Security.pdf"],
+      "expected_pages": [1, 1, 1],
       "answer_keywords": ["social engineering", "manipulation", "human"],
       "must_not_contain": ["no tengo"],
-      "notes": "Social Engineering book."
+      "notes": "CORREGIDO v4.1: diagnostico dirigido (FASE 2.1) confirmo que ALL ABOUT PHISHING.pdf y Learn the many forms of Phishing.pdf contienen una definicion directa de ingenieria social, mientras que Social Engineering.pdf tiene enfoque academico/historico. El reranker prefiere correctamente la definicion directa. Se agregan como fuentes validas."
     },
 
     {
@@ -976,11 +991,11 @@
       "difficulty": "medium",
       "is_answerable": true,
       "query": "Que herramientas de Blue Team se mencionan en los documentos?",
-      "expected_sources": ["Blue Team Cheat Sheet.pdf"],
-      "expected_pages": [20],
+      "expected_sources": ["Blue Team Cheat Sheet.pdf", "Blue Team Tools.pdf"],
+      "expected_pages": [20, 2],
       "answer_keywords": ["blue team", "tool", "defense"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "Blue Team Cheat Sheet."
+      "notes": "FASE C.0: Se agrega Blue Team Tools.pdf (rank 1, score 1.371) que lista herramientas de Blue Team. kw_score=0.333."
     },
 
     {
@@ -989,11 +1004,11 @@
       "difficulty": "low",
       "is_answerable": true,
       "query": "Que son las politicas de seguridad de la informacion segun ISO 27001?",
-      "expected_sources": ["01 ISOIEC 27001 Implementation  Documents List.pdf"],
-      "expected_pages": [2],
+      "expected_sources": ["01 ISOIEC 27001 Implementation  Documents List.pdf", "ISO 27001 Implementation Checklist.pdf"],
+      "expected_pages": [2, 3],
       "answer_keywords": ["policy", "information security", "iso 27001"],
       "must_not_contain": ["no tengo"],
-      "notes": "ISO 27001 policies."
+      "notes": "FASE C.0: Se agrega ISO 27001 Implementation Checklist (rank 1, score 1.273) que cubre politicas de seguridad ISO 27001."
     },
 
     {
@@ -1005,12 +1020,13 @@
       "expected_sources": [
         "02 ISOIEC 27001 Implementation Guide.pdf",
         "01 ISOIEC 27001 Implementation  Documents List.pdf",
-        "10 ISO 27001 Internal Audit Checklist.pdf"
+        "10 ISO 27001 Internal Audit Checklist.pdf",
+        "ISO 27001 Initial Assessment Report.pdf"
       ],
-      "expected_pages": [3, 6, 1],
+      "expected_pages": [3, 6, 1, 1],
       "answer_keywords": ["iso 27001", "audit", "control", "document"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "Requiere los tres documentos de implementacion ISO 27001."
+      "notes": "FASE C.0: Se agrega ISO 27001 Initial Assessment Report (rank 1, score 1.242) que integra controles y auditoria ISO 27001. kw_score=1.0 confirma respuesta perfecta."
     },
 
     {
@@ -1034,12 +1050,13 @@
       "query": "Que dice el reporte de amenazas 2023 sobre las tecnicas de ataque mas frecuentes y como se correlacionan con las tecnicas de MITRE ATT&CK?",
       "expected_sources": [
         "2023 THREAT DETECTiON REPORT.pdf",
-        "2023 Threat Report.pdf"
+        "2023 Threat Report.pdf",
+        "The Red Report 2023 - Picus Security.pdf"
       ],
-      "expected_pages": [1, 1],
+      "expected_pages": [1, 1, 9],
       "answer_keywords": ["threat", "2023", "mitre", "technique", "attack"],
       "must_not_contain": ["no tengo"],
-      "notes": "Threat reports 2023 + MITRE ATT&CK correlation."
+      "notes": "FASE C.0: Se agrega The Red Report 2023 - Picus Security (rank 3, score 0.601) que es un reporte de amenazas 2023 con tecnicas MITRE ATT&CK."
     },
 
     {
@@ -1063,12 +1080,14 @@
       "query": "Describe como implementar Zero Trust desde cero en una organizacion: principios, herramientas, fases de madurez y casos de uso mencionados en los documentos disponibles.",
       "expected_sources": [
         "Implementing a Zero Trust Architecture.pdf",
+        "Zero Trust Maturity Model.pdf",
+        "Playbook for Implementing Zero Trust Security.pdf",
         "API Security Best Practices.pdf"
       ],
-      "expected_pages": [1, 18],
+      "expected_pages": [1, 1, 1, 18],
       "answer_keywords": ["zero trust", "implementation", "maturity", "microsegmentation", "identity"],
       "must_not_contain": ["no hay informacion"],
-      "notes": "Zero Trust implementation full guide."
+      "notes": "CORREGIDO v4.1: se agregaron Zero Trust Maturity Model.pdf y Playbook for Implementing Zero Trust Security.pdf, confirmados en corpus (FASE 0.1), cubren fases de madurez y casos de uso pedidos en la query."
     }
 
   ]

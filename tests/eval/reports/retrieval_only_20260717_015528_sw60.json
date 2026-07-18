@@ -1,0 +1,2445 @@
+{
+  "timestamp": "20260717_015528",
+  "mode": "retrieval_only",
+  "semantic_weight": 0.6,
+  "top_k": 10,
+  "elapsed_s": 349.3,
+  "analysis": {
+    "total_questions": 14,
+    "answerable": 14,
+    "doc_hit_rate": 0.786,
+    "page_hit_rate": 0.357,
+    "doc_miss_count": 3,
+    "avg_recall": 0.543,
+    "avg_mrr": 0.38,
+    "avg_precision_at_k": 0.39,
+    "avg_first_rank": 2.7,
+    "median_first_rank": 2,
+    "avg_latency_ms": 18049.0,
+    "total_elapsed_s": 349.3,
+    "prerank_doc_hit_rate": 0.929,
+    "postrank_doc_hit_rate": 0.786,
+    "prerank_avg_recall": 0.668,
+    "postrank_avg_recall": 0.543,
+    "prerank_avg_mrr": 0.605,
+    "postrank_avg_mrr": 0.38,
+    "prerank_avg_precision_at_k": 0.376,
+    "postrank_avg_precision_at_k": 0.39,
+    "reranker_improvements": [
+      23,
+      54
+    ],
+    "reranker_regressions": [
+      14,
+      17,
+      18,
+      28,
+      60,
+      67
+    ]
+  },
+  "results": [
+    {
+      "id": 11,
+      "query": "Que es el Risk Management Framework del NIST?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "sources_returned": [
+        {
+          "name": "NIST SP 800-66 Rev. 2 .pdf",
+          "page": 96,
+          "score": 1.9369
+        },
+        {
+          "name": "Secure Software Development Framework .pdf",
+          "page": 32,
+          "score": 1.7855
+        },
+        {
+          "name": "Planning for a Zero Trust Architecture.pdf",
+          "page": 17,
+          "score": 1.7851
+        },
+        {
+          "name": "Developing Cyber Resilient Systems.pdf",
+          "page": 65,
+          "score": 1.7293
+        },
+        {
+          "name": "Artificial Intelligence Risk Management Framework.pdf",
+          "page": 3,
+          "score": 1.6581
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 95,
+          "score": 1.6207
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 5,
+          "score": 1.5975
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 26,
+          "score": 1.5898
+        },
+        {
+          "name": "Artificial Intelligence Risk Management Framework.pdf",
+          "page": 1,
+          "score": 1.5729
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 94,
+          "score": 1.5326
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Planning for a Zero Trust Architecture.pdf",
+          "page": 17,
+          "score": 1.7851
+        },
+        {
+          "name": "Artificial Intelligence Risk Management Framework.pdf",
+          "page": 3,
+          "score": 1.6581
+        },
+        {
+          "name": "Developing Cyber Resilient Systems.pdf",
+          "page": 65,
+          "score": 1.7293
+        },
+        {
+          "name": "NIST SP 800-66 Rev. 2 .pdf",
+          "page": 96,
+          "score": 1.9369
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 95,
+          "score": 1.6207
+        },
+        {
+          "name": "Secure Software Development Framework .pdf",
+          "page": 32,
+          "score": 1.7855
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 5,
+          "score": 1.5975
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 26,
+          "score": 1.5898
+        },
+        {
+          "name": "Cybersecurity Framework Profile NIST.pdf",
+          "page": 3,
+          "score": 1.529
+        },
+        {
+          "name": "Performance Measurement Guide for Information Security.pdf",
+          "page": 2,
+          "score": 1.4443
+        }
+      ],
+      "latency_ms": 28489
+    },
+    {
+      "id": 12,
+      "query": "Que es information security governance segun CISM?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 0.333,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.444,
+        "matched": [
+          {
+            "source": "CISM Certified Information Security Manager.pdf",
+            "page": 26,
+            "score": 1.7916,
+            "rank": 2
+          },
+          {
+            "source": "CISM Certified Information Security Manager.pdf",
+            "page": 47,
+            "score": 1.7896,
+            "rank": 3
+          },
+          {
+            "source": "CISM Certified Information Security Manager.pdf",
+            "page": 24,
+            "score": 1.5044,
+            "rank": 6
+          },
+          {
+            "source": "CISM Certified Information Security Manager.pdf",
+            "page": 25,
+            "score": 1.3872,
+            "rank": 7
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 0.333,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.7,
+        "matched": [
+          {
+            "source": "CISM Certified Information Security Manager.pdf",
+            "page": 26,
+            "score": 1.7916,
+            "rank": 2
+          },
+          {
+            "source": "CISM Certified Information Security Manager.pdf",
+            "page": 47,
+            "score": 1.7896,
+            "rank": 3
+          },
+          {
+            "source": "CISM Certified Information Security Manager.pdf",
+            "page": 81,
+            "score": 1.1867,
+            "rank": 4
+          },
+          {
+            "source": "CISM Certified Information Security Manager.pdf",
+            "page": 416,
+            "score": 1.1639,
+            "rank": 5
+          },
+          {
+            "source": "CISM Certified Information Security Manager.pdf",
+            "page": 24,
+            "score": 1.0561,
+            "rank": 8
+          },
+          {
+            "source": "CISM Certified Information Security Manager.pdf",
+            "page": 599,
+            "score": 1.1395,
+            "rank": 9
+          },
+          {
+            "source": "CISM Certified Information Security Manager.pdf",
+            "page": 48,
+            "score": 1.1579,
+            "rank": 10
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "CYBERSECURITY RESOURCE AND REFERENCE GUIDE.pdf",
+          "page": 39,
+          "score": 1.803
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 26,
+          "score": 1.7916
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 47,
+          "score": 1.7896
+        },
+        {
+          "name": "PRAGMATIC_Security_Metrics_Applying_Metametrics_to_Information_Security.pdf",
+          "page": 26,
+          "score": 1.7813
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 146,
+          "score": 1.77
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 24,
+          "score": 1.5044
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 25,
+          "score": 1.3872
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 142,
+          "score": 0.6994
+        },
+        {
+          "name": "CYBERSECURITY RESOURCE AND REFERENCE GUIDE.pdf",
+          "page": 35,
+          "score": 0.631
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "CYBERSECURITY RESOURCE AND REFERENCE GUIDE.pdf",
+          "page": 39,
+          "score": 1.803
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 26,
+          "score": 1.7916
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 47,
+          "score": 1.7896
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 81,
+          "score": 1.1867
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 416,
+          "score": 1.1639
+        },
+        {
+          "name": "PRAGMATIC_Security_Metrics_Applying_Metametrics_to_Information_Security.pdf",
+          "page": 26,
+          "score": 1.7813
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 146,
+          "score": 1.77
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 24,
+          "score": 1.0561
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 599,
+          "score": 1.1395
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 48,
+          "score": 1.1579
+        }
+      ],
+      "latency_ms": 18266
+    },
+    {
+      "id": 14,
+      "query": "Que son los modelos de despliegue de la nube segun NIST?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 1.0,
+        "first_relevant_rank": 4,
+        "mrr": 0.25,
+        "precision_at_k": 0.3,
+        "matched": [
+          {
+            "source": "Access Control Guidance for Cloud Systems.pdf",
+            "page": 29,
+            "score": 1.3827,
+            "rank": 4
+          },
+          {
+            "source": "Access Control Guidance for Cloud Systems.pdf",
+            "page": 28,
+            "score": 1.3389,
+            "rank": 6
+          },
+          {
+            "source": "Access Control Guidance for Cloud Systems.pdf",
+            "page": 27,
+            "score": 1.3061,
+            "rank": 7
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.2,
+        "matched": [
+          {
+            "source": "Access Control Guidance for Cloud Systems.pdf",
+            "page": 29,
+            "score": 1.3827,
+            "rank": 1
+          },
+          {
+            "source": "Access Control Guidance for Cloud Systems.pdf",
+            "page": 4,
+            "score": 1.0764,
+            "rank": 9
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "NIST Cloud Computing Forensic Science Challenges (2).pdf",
+          "page": 7,
+          "score": 1.4905
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 475,
+          "score": 1.4095
+        },
+        {
+          "name": "NIST Cloud Computing Forensic Science Challenges (2).pdf",
+          "page": 22,
+          "score": 1.3912
+        },
+        {
+          "name": "Access Control Guidance for Cloud Systems.pdf",
+          "page": 29,
+          "score": 1.3827
+        },
+        {
+          "name": "NIST General Access Control Guidance for Cloud Systems .pdf",
+          "page": 28,
+          "score": 1.3389
+        },
+        {
+          "name": "Access Control Guidance for Cloud Systems.pdf",
+          "page": 28,
+          "score": 1.3389
+        },
+        {
+          "name": "Access Control Guidance for Cloud Systems.pdf",
+          "page": 27,
+          "score": 1.3061
+        },
+        {
+          "name": "NIST General Access Control Guidance for Cloud Systems .pdf",
+          "page": 27,
+          "score": 1.3061
+        },
+        {
+          "name": "NIST Cloud Computing Forensic Science Challenges (2).pdf",
+          "page": 6,
+          "score": 1.2533
+        },
+        {
+          "name": "NIST Cloud Computing Forensic Science Challenges.pdf",
+          "page": 6,
+          "score": 1.2533
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Access Control Guidance for Cloud Systems.pdf",
+          "page": 29,
+          "score": 1.3827
+        },
+        {
+          "name": "NIST General Access Control Guidance for Cloud Systems .pdf",
+          "page": 29,
+          "score": 0.7827
+        },
+        {
+          "name": "NIST Cloud Computing Forensic Science Challenges (2).pdf",
+          "page": 22,
+          "score": 1.3912
+        },
+        {
+          "name": "NIST Cloud Computing Forensic Science Challenges.pdf",
+          "page": 22,
+          "score": 0.7912
+        },
+        {
+          "name": "NIST Cloud Computing Forensic Science Challenges (2).pdf",
+          "page": 7,
+          "score": 1.4905
+        },
+        {
+          "name": "NIST Cloud Computing Forensic Science Challenges.pdf",
+          "page": 7,
+          "score": 0.8905
+        },
+        {
+          "name": "NIST Cloud Computing Forensic Science Challenges (2).pdf",
+          "page": 4,
+          "score": 0.5148
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 475,
+          "score": 1.4095
+        },
+        {
+          "name": "Access Control Guidance for Cloud Systems.pdf",
+          "page": 4,
+          "score": 1.0764
+        },
+        {
+          "name": "NIST General Access Control Guidance for Cloud Systems .pdf",
+          "page": 4,
+          "score": 0.4764
+        }
+      ],
+      "latency_ms": 10745
+    },
+    {
+      "id": 17,
+      "query": "Que es el modelo de responsabilidad compartida en la nube?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.5,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.6,
+        "matched": [
+          {
+            "source": "Cloud Security Governance And Assurance.pdf",
+            "page": 25,
+            "score": 0.9471,
+            "rank": 2
+          },
+          {
+            "source": "Cloud Security Governance And Assurance.pdf",
+            "page": 28,
+            "score": 0.8986,
+            "rank": 3
+          },
+          {
+            "source": "Cloud Security Governance And Assurance.pdf",
+            "page": 23,
+            "score": 0.8104,
+            "rank": 4
+          },
+          {
+            "source": "AWS Security  (2).pdf",
+            "page": 4,
+            "score": 0.5917,
+            "rank": 5
+          },
+          {
+            "source": "Cloud Security Governance And Assurance.pdf",
+            "page": 27,
+            "score": 0.5788,
+            "rank": 7
+          },
+          {
+            "source": "AWS Security  (2).pdf",
+            "page": 2,
+            "score": 0.5646,
+            "rank": 8
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.75,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.4,
+        "matched": [
+          {
+            "source": "AWS Security  (2).pdf",
+            "page": 4,
+            "score": 0.5917,
+            "rank": 1
+          },
+          {
+            "source": "Cloud Security Governance And Assurance.pdf",
+            "page": 27,
+            "score": 0.5788,
+            "rank": 5
+          },
+          {
+            "source": "Cloud Security Handbook.pdf",
+            "page": 31,
+            "score": 0.4908,
+            "rank": 6
+          },
+          {
+            "source": "AWS Security  (2).pdf",
+            "page": 2,
+            "score": 0.5646,
+            "rank": 7
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "CLOUD SECURITY INTERVIEW QUESTIONS & ANSWERS.pdf",
+          "page": 1,
+          "score": 0.9721
+        },
+        {
+          "name": "Cloud Security Governance And Assurance.pdf",
+          "page": 25,
+          "score": 0.9471
+        },
+        {
+          "name": "Cloud Security Governance And Assurance.pdf",
+          "page": 28,
+          "score": 0.8986
+        },
+        {
+          "name": "Cloud Security Governance And Assurance.pdf",
+          "page": 23,
+          "score": 0.8104
+        },
+        {
+          "name": "AWS Security  (2).pdf",
+          "page": 4,
+          "score": 0.5917
+        },
+        {
+          "name": "CLOUD SECURITY INTERVIEW QUESTIONS & ANSWERS.pdf",
+          "page": 2,
+          "score": 0.5826
+        },
+        {
+          "name": "Cloud Security Governance And Assurance.pdf",
+          "page": 27,
+          "score": 0.5788
+        },
+        {
+          "name": "AWS Security  (2).pdf",
+          "page": 2,
+          "score": 0.5646
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 262,
+          "score": 0.56
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 125,
+          "score": 0.557
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "AWS Security  (2).pdf",
+          "page": 4,
+          "score": 0.5917
+        },
+        {
+          "name": "CLOUD SECURITY INTERVIEW QUESTIONS & ANSWERS.pdf",
+          "page": 2,
+          "score": 0.5826
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 125,
+          "score": 0.557
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 125,
+          "score": 0.557
+        },
+        {
+          "name": "Cloud Security Governance And Assurance.pdf",
+          "page": 27,
+          "score": 0.5788
+        },
+        {
+          "name": "Cloud Security Handbook.pdf",
+          "page": 31,
+          "score": 0.4908
+        },
+        {
+          "name": "AWS Security  (2).pdf",
+          "page": 2,
+          "score": 0.5646
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 262,
+          "score": 0.56
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 33,
+          "score": 0.5015
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 32,
+          "score": 0.5091
+        }
+      ],
+      "latency_ms": 13186
+    },
+    {
+      "id": 18,
+      "query": "Que es la Zero Trust Architecture segun NIST?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.667,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.7,
+        "matched": [
+          {
+            "source": "Planning for a Zero Trust Architecture.pdf",
+            "page": 17,
+            "score": 1.783,
+            "rank": 2
+          },
+          {
+            "source": "NIST Zero Trust Architecture.pdf",
+            "page": 4,
+            "score": 1.7727,
+            "rank": 3
+          },
+          {
+            "source": "Planning for a Zero Trust Architecture.pdf",
+            "page": 2,
+            "score": 1.7719,
+            "rank": 4
+          },
+          {
+            "source": "Zero Trust Maturity Model.pdf",
+            "page": 5,
+            "score": 1.7421,
+            "rank": 7
+          },
+          {
+            "source": "Implementing a Zero Trust Architecture.pdf",
+            "page": 104,
+            "score": 1.7267,
+            "rank": 8
+          },
+          {
+            "source": "Implementing a Zero Trust Architecture.pdf",
+            "page": 102,
+            "score": 1.5668,
+            "rank": 9
+          },
+          {
+            "source": "Implementing a Zero Trust Architecture.pdf",
+            "page": 105,
+            "score": 1.499,
+            "rank": 10
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.667,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.6,
+        "matched": [
+          {
+            "source": "Planning for a Zero Trust Architecture.pdf",
+            "page": 17,
+            "score": 1.783,
+            "rank": 1
+          },
+          {
+            "source": "NIST Zero Trust Architecture.pdf",
+            "page": 4,
+            "score": 1.7727,
+            "rank": 3
+          },
+          {
+            "source": "Planning for a Zero Trust Architecture.pdf",
+            "page": 2,
+            "score": 1.7719,
+            "rank": 5
+          },
+          {
+            "source": "Zero Trust Maturity Model.pdf",
+            "page": 5,
+            "score": 1.7421,
+            "rank": 7
+          },
+          {
+            "source": "Planning for a Zero Trust Architecture.pdf",
+            "page": 5,
+            "score": 1.1353,
+            "rank": 9
+          },
+          {
+            "source": "Implementing a Zero Trust Architecture.pdf",
+            "page": 104,
+            "score": 1.7267,
+            "rank": 10
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "Applying Zero Trust Principles to Enterprise Mobility.pdf",
+          "page": 6,
+          "score": 1.7922
+        },
+        {
+          "name": "Planning for a Zero Trust Architecture.pdf",
+          "page": 17,
+          "score": 1.783
+        },
+        {
+          "name": "NIST Zero Trust Architecture.pdf",
+          "page": 4,
+          "score": 1.7727
+        },
+        {
+          "name": "Planning for a Zero Trust Architecture.pdf",
+          "page": 2,
+          "score": 1.7719
+        },
+        {
+          "name": "Cloud Security Technical Reference Architecture.pdf",
+          "page": 38,
+          "score": 1.755
+        },
+        {
+          "name": "Applying Zero Trust Principles to Enterprise Mobility.pdf",
+          "page": 5,
+          "score": 1.7499
+        },
+        {
+          "name": "Zero Trust Maturity Model.pdf",
+          "page": 5,
+          "score": 1.7421
+        },
+        {
+          "name": "Implementing a Zero Trust Architecture.pdf",
+          "page": 104,
+          "score": 1.7267
+        },
+        {
+          "name": "Implementing a Zero Trust Architecture.pdf",
+          "page": 102,
+          "score": 1.5668
+        },
+        {
+          "name": "Implementing a Zero Trust Architecture.pdf",
+          "page": 105,
+          "score": 1.499
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Planning for a Zero Trust Architecture.pdf",
+          "page": 17,
+          "score": 1.783
+        },
+        {
+          "name": "Applying Zero Trust Principles to Enterprise Mobility.pdf",
+          "page": 6,
+          "score": 1.7922
+        },
+        {
+          "name": "NIST Zero Trust Architecture.pdf",
+          "page": 4,
+          "score": 1.7727
+        },
+        {
+          "name": "Zero Trust Architecture in brief.pdf",
+          "page": 4,
+          "score": 1.1727
+        },
+        {
+          "name": "Planning for a Zero Trust Architecture.pdf",
+          "page": 2,
+          "score": 1.7719
+        },
+        {
+          "name": "Cloud Security Technical Reference Architecture.pdf",
+          "page": 38,
+          "score": 1.755
+        },
+        {
+          "name": "Zero Trust Maturity Model.pdf",
+          "page": 5,
+          "score": 1.7421
+        },
+        {
+          "name": "Applying Zero Trust Principles to Enterprise Mobility.pdf",
+          "page": 5,
+          "score": 1.7499
+        },
+        {
+          "name": "Planning for a Zero Trust Architecture.pdf",
+          "page": 5,
+          "score": 1.1353
+        },
+        {
+          "name": "Implementing a Zero Trust Architecture.pdf",
+          "page": 104,
+          "score": 1.7267
+        }
+      ],
+      "latency_ms": 20454
+    },
+    {
+      "id": 21,
+      "query": "Compara los controles de acceso definidos por ISO 27001 y los requisitos de autenticacion de PCI DSS.",
+      "category": "multi_document",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.5,
+        "first_relevant_rank": 7,
+        "mrr": 0.143,
+        "precision_at_k": 0.111,
+        "matched": [
+          {
+            "source": "02 ISOIEC 27001 Implementation Guide.pdf",
+            "page": 1,
+            "score": 0.9677,
+            "rank": 7
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "sources_returned": [
+        {
+          "name": "Cloud Security Best Practices .pdf",
+          "page": 42,
+          "score": 1.449
+        },
+        {
+          "name": "ISO 27001 Introduction.pdf",
+          "page": 12,
+          "score": 1.3679
+        },
+        {
+          "name": "Cloud Security Best Practices.pdf",
+          "page": 42,
+          "score": 1.1708
+        },
+        {
+          "name": "ISO 27001 Webinar Slides.pdf",
+          "page": 11,
+          "score": 1.0918
+        },
+        {
+          "name": "ISO 27001 Implementation Checklist.pdf",
+          "page": 2,
+          "score": 1.0905
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 3,
+          "score": 1.0845
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 3,
+          "score": 1.0845
+        },
+        {
+          "name": "ISO 27001 Implementation Checklist.pdf",
+          "page": 2,
+          "score": 1.0905
+        },
+        {
+          "name": "ISO 27001 Webinar Slides.pdf",
+          "page": 11,
+          "score": 1.0918
+        },
+        {
+          "name": "01 ISOIEC 27001 Implementation  Documents List.pdf",
+          "page": 1,
+          "score": 0.8651
+        },
+        {
+          "name": "New ISO 27001_2022-1.pdf",
+          "page": 20,
+          "score": 0.7636
+        },
+        {
+          "name": "ISO 27001 Introduction.pdf",
+          "page": 12,
+          "score": 1.3679
+        },
+        {
+          "name": "02 ISOIEC 27001 Implementation Guide.pdf",
+          "page": 1,
+          "score": 0.9677
+        },
+        {
+          "name": "Cloud Security Best Practices .pdf",
+          "page": 42,
+          "score": 1.449
+        },
+        {
+          "name": "ISO27001 2022 Self-Assessment Checklist.pdf",
+          "page": 1,
+          "score": 0.749
+        }
+      ],
+      "latency_ms": 14747
+    },
+    {
+      "id": 23,
+      "query": "Cuales son las principales vulnerabilidades web segun OWASP y como se mencionan en las guias de pentest disponibles?",
+      "category": "multi_document",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.6,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.8,
+        "matched": [
+          {
+            "source": "OWASP Web Application Penetration Checklist.pdf",
+            "page": 2,
+            "score": 1.6958,
+            "rank": 2
+          },
+          {
+            "source": "Awesome Penetration Testing Documentation.pdf",
+            "page": 18,
+            "score": 1.6792,
+            "rank": 3
+          },
+          {
+            "source": "WEB SECURITY TESTING GUIDE.pdf",
+            "page": 41,
+            "score": 1.6692,
+            "rank": 4
+          },
+          {
+            "source": "WEB SECURITY TESTING GUIDE.pdf",
+            "page": 3,
+            "score": 1.6197,
+            "rank": 5
+          },
+          {
+            "source": "OWASP Web Application Penetration Checklist.pdf",
+            "page": 5,
+            "score": 1.593,
+            "rank": 7
+          },
+          {
+            "source": "Awesome Penetration Testing Documentation.pdf",
+            "page": 19,
+            "score": 1.2884,
+            "rank": 8
+          },
+          {
+            "source": "OWASP Web Application Penetration Checklist.pdf",
+            "page": 3,
+            "score": 1.2778,
+            "rank": 9
+          },
+          {
+            "source": "WEB SECURITY TESTING GUIDE.pdf",
+            "page": 42,
+            "score": 1.2231,
+            "rank": 10
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.6,
+        "first_relevant_rank": 3,
+        "mrr": 0.333,
+        "precision_at_k": 0.6,
+        "matched": [
+          {
+            "source": "OWASP Web Application Penetration Checklist.pdf",
+            "page": 5,
+            "score": 1.593,
+            "rank": 3
+          },
+          {
+            "source": "OWASP Web Application Penetration Checklist.pdf",
+            "page": 2,
+            "score": 1.6958,
+            "rank": 6
+          },
+          {
+            "source": "WEB SECURITY TESTING GUIDE.pdf",
+            "page": 45,
+            "score": 0.5077,
+            "rank": 7
+          },
+          {
+            "source": "WEB SECURITY TESTING GUIDE.pdf",
+            "page": 41,
+            "score": 1.6692,
+            "rank": 8
+          },
+          {
+            "source": "WEB SECURITY TESTING GUIDE.pdf",
+            "page": 3,
+            "score": 1.6197,
+            "rank": 9
+          },
+          {
+            "source": "Awesome Penetration Testing Documentation.pdf",
+            "page": 18,
+            "score": 1.6792,
+            "rank": 10
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "GRC,_SOC_analyst_and_Penetration_testenig_Interview_Questions_and.pdf",
+          "page": 63,
+          "score": 1.7081
+        },
+        {
+          "name": "OWASP Web Application Penetration Checklist.pdf",
+          "page": 2,
+          "score": 1.6958
+        },
+        {
+          "name": "Awesome Penetration Testing Documentation.pdf",
+          "page": 18,
+          "score": 1.6792
+        },
+        {
+          "name": "WEB SECURITY TESTING GUIDE.pdf",
+          "page": 41,
+          "score": 1.6692
+        },
+        {
+          "name": "WEB SECURITY TESTING GUIDE.pdf",
+          "page": 3,
+          "score": 1.6197
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 75,
+          "score": 1.6086
+        },
+        {
+          "name": "OWASP Web Application Penetration Checklist.pdf",
+          "page": 5,
+          "score": 1.593
+        },
+        {
+          "name": "Awesome Penetration Testing Documentation.pdf",
+          "page": 19,
+          "score": 1.2884
+        },
+        {
+          "name": "OWASP Web Application Penetration Checklist.pdf",
+          "page": 3,
+          "score": 1.2778
+        },
+        {
+          "name": "WEB SECURITY TESTING GUIDE.pdf",
+          "page": 42,
+          "score": 1.2231
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 63,
+          "score": 0.4545
+        },
+        {
+          "name": "APPLICATION PENETRATION TEST CHECKLIST.pdf",
+          "page": 2,
+          "score": 0.4929
+        },
+        {
+          "name": "OWASP Web Application Penetration Checklist.pdf",
+          "page": 5,
+          "score": 1.593
+        },
+        {
+          "name": "GRC,_SOC_analyst_and_Penetration_testenig_Interview_Questions_and.pdf",
+          "page": 63,
+          "score": 1.7081
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 75,
+          "score": 1.6086
+        },
+        {
+          "name": "OWASP Web Application Penetration Checklist.pdf",
+          "page": 2,
+          "score": 1.6958
+        },
+        {
+          "name": "WEB SECURITY TESTING GUIDE.pdf",
+          "page": 45,
+          "score": 0.5077
+        },
+        {
+          "name": "WEB SECURITY TESTING GUIDE.pdf",
+          "page": 41,
+          "score": 1.6692
+        },
+        {
+          "name": "WEB SECURITY TESTING GUIDE.pdf",
+          "page": 3,
+          "score": 1.6197
+        },
+        {
+          "name": "Awesome Penetration Testing Documentation.pdf",
+          "page": 18,
+          "score": 1.6792
+        }
+      ],
+      "latency_ms": 16043
+    },
+    {
+      "id": 28,
+      "query": "Como afecta la Conditional Access de Microsoft 365 al modelo de Zero Trust segun los documentos del corpus?",
+      "category": "multi_document",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.5,
+        "first_relevant_rank": 5,
+        "mrr": 0.2,
+        "precision_at_k": 0.333,
+        "matched": [
+          {
+            "source": "2022 MANDIANT SPECIAL REPORT.pdf",
+            "page": 88,
+            "score": 1.2791,
+            "rank": 5
+          },
+          {
+            "source": "2022 MANDIANT SPECIAL REPORT.pdf",
+            "page": 89,
+            "score": 1.0977,
+            "rank": 8
+          },
+          {
+            "source": "2022 MANDIANT SPECIAL REPORT.pdf",
+            "page": 87,
+            "score": 0.5031,
+            "rank": 9
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.5,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.1,
+        "matched": [
+          {
+            "source": "2022 MANDIANT SPECIAL REPORT.pdf",
+            "page": 88,
+            "score": 1.2791,
+            "rank": 1
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 1,
+          "score": 1.5394
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 3,
+          "score": 1.474
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 7,
+          "score": 1.3458
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 6,
+          "score": 1.2816
+        },
+        {
+          "name": "2022 MANDIANT SPECIAL REPORT.pdf",
+          "page": 88,
+          "score": 1.2791
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 8,
+          "score": 1.2692
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 2,
+          "score": 1.2308
+        },
+        {
+          "name": "2022 MANDIANT SPECIAL REPORT.pdf",
+          "page": 89,
+          "score": 1.0977
+        },
+        {
+          "name": "2022 MANDIANT SPECIAL REPORT.pdf",
+          "page": 87,
+          "score": 0.5031
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "2022 MANDIANT SPECIAL REPORT.pdf",
+          "page": 88,
+          "score": 1.2791
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 20,
+          "score": 0.616
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 2,
+          "score": 1.2308
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 7,
+          "score": 1.3458
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 22,
+          "score": 0.5983
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 24,
+          "score": 0.5889
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 32,
+          "score": 0.5544
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 36,
+          "score": 0.5467
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 3,
+          "score": 0.5454
+        },
+        {
+          "name": "2022 Microsoft Vulnerabilities Report.pdf",
+          "page": 25,
+          "score": 0.1429
+        }
+      ],
+      "latency_ms": 10742
+    },
+    {
+      "id": 30,
+      "query": "Explica el ciclo de vida de respuesta a incidentes integrando lo que describe el libro de estrategias del SOC y el analisis forense de memoria.",
+      "category": "multi_document",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.5,
+        "matched": [
+          {
+            "source": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+            "page": 146,
+            "score": 1.6987,
+            "rank": 1
+          },
+          {
+            "source": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+            "page": 147,
+            "score": 1.6776,
+            "rank": 3
+          },
+          {
+            "source": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+            "page": 5,
+            "score": 1.6344,
+            "rank": 4
+          },
+          {
+            "source": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+            "page": 6,
+            "score": 1.5597,
+            "rank": 5
+          },
+          {
+            "source": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+            "page": 4,
+            "score": 1.4118,
+            "rank": 8
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.5,
+        "matched": [
+          {
+            "source": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+            "page": 42,
+            "score": 0.7985,
+            "rank": 1
+          },
+          {
+            "source": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+            "page": 147,
+            "score": 1.6776,
+            "rank": 3
+          },
+          {
+            "source": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+            "page": 146,
+            "score": 1.6987,
+            "rank": 4
+          },
+          {
+            "source": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+            "page": 30,
+            "score": 1.0243,
+            "rank": 7
+          },
+          {
+            "source": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+            "page": 5,
+            "score": 1.6344,
+            "rank": 9
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 146,
+          "score": 1.6987
+        },
+        {
+          "name": "Cybersecurity Career Master Plan.pdf",
+          "page": 60,
+          "score": 1.6796
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 147,
+          "score": 1.6776
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+          "page": 5,
+          "score": 1.6344
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+          "page": 6,
+          "score": 1.5597
+        },
+        {
+          "name": "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+          "page": 980,
+          "score": 1.4764
+        },
+        {
+          "name": "Privacy by design and privacy by default.pdf",
+          "page": 27,
+          "score": 1.4265
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+          "page": 4,
+          "score": 1.4118
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC MINDMAP.pdf",
+          "page": 1,
+          "score": 1.3473
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 182,
+          "score": 1.3139
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 42,
+          "score": 0.7985
+        },
+        {
+          "name": "Cybersecurity Career Master Plan.pdf",
+          "page": 60,
+          "score": 1.6796
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 147,
+          "score": 1.6776
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 146,
+          "score": 1.6987
+        },
+        {
+          "name": "Privacy by design and privacy by default.pdf",
+          "page": 27,
+          "score": 1.4265
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC MINDMAP.pdf",
+          "page": 1,
+          "score": 1.3473
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 30,
+          "score": 1.0243
+        },
+        {
+          "name": "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+          "page": 980,
+          "score": 1.4764
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+          "page": 5,
+          "score": 1.6344
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 182,
+          "score": 1.3139
+        }
+      ],
+      "latency_ms": 26645
+    },
+    {
+      "id": 54,
+      "query": "Explica como NIST SP 800-53 define los controles de seguridad y privacidad, y como se categorizan por familia e impacto.",
+      "category": "complex",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 1.0,
+        "first_relevant_rank": 3,
+        "mrr": 0.333,
+        "precision_at_k": 0.4,
+        "matched": [
+          {
+            "source": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+            "page": 64,
+            "score": 1.1025,
+            "rank": 3
+          },
+          {
+            "source": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+            "page": 43,
+            "score": 1.0896,
+            "rank": 5
+          },
+          {
+            "source": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+            "page": 42,
+            "score": 0.8269,
+            "rank": 7
+          },
+          {
+            "source": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+            "page": 44,
+            "score": 0.8268,
+            "rank": 8
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 1.0,
+        "first_relevant_rank": 4,
+        "mrr": 0.25,
+        "precision_at_k": 0.5,
+        "matched": [
+          {
+            "source": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+            "page": 64,
+            "score": 1.1025,
+            "rank": 4
+          },
+          {
+            "source": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+            "page": 43,
+            "score": 1.0896,
+            "rank": 6
+          },
+          {
+            "source": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+            "page": 30,
+            "score": 1.0889,
+            "rank": 7
+          },
+          {
+            "source": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+            "page": 298,
+            "score": 1.0795,
+            "rank": 9
+          },
+          {
+            "source": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+            "page": 12,
+            "score": 1.0832,
+            "rank": 10
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "Cybersecurity related Policies and Procedures .pdf",
+          "page": 1,
+          "score": 1.2529
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 258,
+          "score": 1.1048
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 64,
+          "score": 1.1025
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 303,
+          "score": 1.102
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 43,
+          "score": 1.0896
+        },
+        {
+          "name": "Risk_Management_Framework_for_Information_Systems_and_Organizations (2).pdf",
+          "page": 106,
+          "score": 1.087
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 42,
+          "score": 0.8269
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 44,
+          "score": 0.8268
+        },
+        {
+          "name": "Risk_Management_Framework_for_Information_Systems_and_Organizations (2).pdf",
+          "page": 104,
+          "score": 0.8178
+        },
+        {
+          "name": "Risk_Management_Framework_for_Information_Systems_and_Organizations.pdf",
+          "page": 104,
+          "score": 0.8178
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Risk_Management_Framework_for_Information_Systems_and_Organizations (2).pdf",
+          "page": 106,
+          "score": 1.087
+        },
+        {
+          "name": "Risk_Management_Framework_for_Information_Systems_and_Organizations.pdf",
+          "page": 106,
+          "score": 1.087
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 303,
+          "score": 1.102
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 64,
+          "score": 1.1025
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 258,
+          "score": 1.1048
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 43,
+          "score": 1.0896
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 30,
+          "score": 1.0889
+        },
+        {
+          "name": "Cybersecurity related Policies and Procedures .pdf",
+          "page": 1,
+          "score": 1.2529
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 298,
+          "score": 1.0795
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 12,
+          "score": 1.0832
+        }
+      ],
+      "latency_ms": 21346
+    },
+    {
+      "id": 57,
+      "query": "Que tecnicas de credential dumping existen y como se detectan segun los recursos del corpus?",
+      "category": "complex",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 0.5,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.5,
+        "matched": [
+          {
+            "source": "Credential Dumping CheatSheet.pdf",
+            "page": 2,
+            "score": 0.9689,
+            "rank": 1
+          },
+          {
+            "source": "Credential Dumping CheatSheet.pdf",
+            "page": 5,
+            "score": 0.7657,
+            "rank": 4
+          },
+          {
+            "source": "Credential Dumping CheatSheet.pdf",
+            "page": 6,
+            "score": 0.7169,
+            "rank": 6
+          },
+          {
+            "source": "Credential Dumping CheatSheet.pdf",
+            "page": 3,
+            "score": 0.6387,
+            "rank": 8
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.5,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.556,
+        "matched": [
+          {
+            "source": "Credential Dumping CheatSheet.pdf",
+            "page": 2,
+            "score": 0.2918,
+            "rank": 1
+          },
+          {
+            "source": "Credential Dumping CheatSheet.pdf",
+            "page": 7,
+            "score": 0.5284,
+            "rank": 3
+          },
+          {
+            "source": "Credential Dumping CheatSheet.pdf",
+            "page": 12,
+            "score": 0.2909,
+            "rank": 4
+          },
+          {
+            "source": "Credential Dumping CheatSheet.pdf",
+            "page": 6,
+            "score": 0.2684,
+            "rank": 6
+          },
+          {
+            "source": "Credential Dumping CheatSheet.pdf",
+            "page": 5,
+            "score": 0.2583,
+            "rank": 9
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "Credential Dumping CheatSheet.pdf",
+          "page": 2,
+          "score": 0.9689
+        },
+        {
+          "name": "Best Practices for MITRE ATT&CK® Mapping.pdf",
+          "page": 9,
+          "score": 0.8094
+        },
+        {
+          "name": "Top 50 Security Threats.pdf",
+          "page": 20,
+          "score": 0.7969
+        },
+        {
+          "name": "Credential Dumping CheatSheet.pdf",
+          "page": 5,
+          "score": 0.7657
+        },
+        {
+          "name": "Best Practices for MITRE ATT&CK® Mapping.pdf",
+          "page": 7,
+          "score": 0.7534
+        },
+        {
+          "name": "Credential Dumping CheatSheet.pdf",
+          "page": 6,
+          "score": 0.7169
+        },
+        {
+          "name": "Best Practices for MITRE ATT&CK® Mapping (2).pdf",
+          "page": 7,
+          "score": 0.6893
+        },
+        {
+          "name": "Credential Dumping CheatSheet.pdf",
+          "page": 3,
+          "score": 0.6387
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Credential Dumping CheatSheet.pdf",
+          "page": 2,
+          "score": 0.2918
+        },
+        {
+          "name": "Top 50 Security Threats.pdf",
+          "page": 21,
+          "score": 0.3337
+        },
+        {
+          "name": "Credential Dumping CheatSheet.pdf",
+          "page": 7,
+          "score": 0.5284
+        },
+        {
+          "name": "Credential Dumping CheatSheet.pdf",
+          "page": 12,
+          "score": 0.2909
+        },
+        {
+          "name": "The Red Report 2023 - Picus Security.pdf",
+          "page": 8,
+          "score": 0.6099
+        },
+        {
+          "name": "Credential Dumping CheatSheet.pdf",
+          "page": 6,
+          "score": 0.2684
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 57,
+          "score": 0.4246
+        },
+        {
+          "name": "Best Practices for MITRE ATT&CK® Mapping.pdf",
+          "page": 8,
+          "score": 0.4985
+        },
+        {
+          "name": "Credential Dumping CheatSheet.pdf",
+          "page": 5,
+          "score": 0.2583
+        }
+      ],
+      "latency_ms": 14437
+    },
+    {
+      "id": 60,
+      "query": "Que dice el CCSP sobre los riesgos especificos de la computacion en la nube y como se mitigan?",
+      "category": "complex",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 0.5,
+        "first_relevant_rank": 3,
+        "mrr": 0.333,
+        "precision_at_k": 0.556,
+        "matched": [
+          {
+            "source": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+            "page": 75,
+            "score": 1.6843,
+            "rank": 3
+          },
+          {
+            "source": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+            "page": 23,
+            "score": 1.2911,
+            "rank": 4
+          },
+          {
+            "source": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+            "page": 21,
+            "score": 1.23,
+            "rank": 5
+          },
+          {
+            "source": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+            "page": 77,
+            "score": 0.9971,
+            "rank": 6
+          },
+          {
+            "source": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+            "page": 22,
+            "score": 1.1156,
+            "rank": 7
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.5,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.7,
+        "matched": [
+          {
+            "source": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+            "page": 22,
+            "score": 1.1156,
+            "rank": 2
+          },
+          {
+            "source": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+            "page": 11,
+            "score": 0.9952,
+            "rank": 3
+          },
+          {
+            "source": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+            "page": 2,
+            "score": 1.0035,
+            "rank": 6
+          },
+          {
+            "source": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+            "page": 99,
+            "score": 0.9658,
+            "rank": 7
+          },
+          {
+            "source": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+            "page": 75,
+            "score": 1.6843,
+            "rank": 8
+          },
+          {
+            "source": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+            "page": 471,
+            "score": 1.0417,
+            "rank": 9
+          },
+          {
+            "source": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+            "page": 467,
+            "score": 1.0746,
+            "rank": 10
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 23,
+          "score": 1.7492
+        },
+        {
+          "name": "CCSP Official Study Guide.pdf",
+          "page": 21,
+          "score": 1.6999
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 75,
+          "score": 1.6843
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 23,
+          "score": 1.2911
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 21,
+          "score": 1.23
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 77,
+          "score": 0.9971
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 22,
+          "score": 1.1156
+        },
+        {
+          "name": "CCSP Official Study Guide.pdf",
+          "page": 1,
+          "score": 1.0233
+        },
+        {
+          "name": "CCSP Official Study Guide.pdf",
+          "page": 3,
+          "score": 0.9587
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 23,
+          "score": 1.7492
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 22,
+          "score": 1.1156
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 11,
+          "score": 0.9952
+        },
+        {
+          "name": "CCSP Official Study Guide.pdf",
+          "page": 1,
+          "score": 1.0233
+        },
+        {
+          "name": "CCSP Official Study Guide.pdf",
+          "page": 21,
+          "score": 1.6999
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 2,
+          "score": 1.0035
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 99,
+          "score": 0.9658
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 75,
+          "score": 1.6843
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 471,
+          "score": 1.0417
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 467,
+          "score": 1.0746
+        }
+      ],
+      "latency_ms": 11089
+    },
+    {
+      "id": 66,
+      "query": "Que es la seguridad en OT/ICS?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.1,
+        "matched": [
+          {
+            "source": "Guide to Operational Technology Security .pdf",
+            "page": 168,
+            "score": 0.222,
+            "rank": 2
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "sources_returned": [
+        {
+          "name": "Ai Agent Dictionary.pdf",
+          "page": 2,
+          "score": 1.42
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 144,
+          "score": 0.5159
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Ai Agent Dictionary.pdf",
+          "page": 2,
+          "score": 1.42
+        },
+        {
+          "name": "Guide to Operational Technology Security .pdf",
+          "page": 168,
+          "score": 0.222
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 60,
+          "score": 0.1931
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 60,
+          "score": 0.1931
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 147,
+          "score": 0.1944
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 147,
+          "score": 0.1944
+        },
+        {
+          "name": "Industrial control systems endpoints defence guide.pdf",
+          "page": 3,
+          "score": 0.1818
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 144,
+          "score": 0.5159
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 144,
+          "score": 0.5159
+        },
+        {
+          "name": "ISO 27002 control mapping.pdf",
+          "page": 1,
+          "score": 0.5214
+        }
+      ],
+      "latency_ms": 17279
+    },
+    {
+      "id": 67,
+      "query": "Que es PCI DSS y a quienes aplica?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 1.0,
+        "first_relevant_rank": 5,
+        "mrr": 0.2,
+        "precision_at_k": 0.333,
+        "matched": [
+          {
+            "source": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+            "page": 2,
+            "score": 1.56,
+            "rank": 5
+          },
+          {
+            "source": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+            "page": 6,
+            "score": 1.5411,
+            "rank": 7
+          },
+          {
+            "source": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+            "page": 5,
+            "score": 1.5345,
+            "rank": 8
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 1.0,
+        "first_relevant_rank": 4,
+        "mrr": 0.25,
+        "precision_at_k": 0.2,
+        "matched": [
+          {
+            "source": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+            "page": 6,
+            "score": 1.5411,
+            "rank": 4
+          },
+          {
+            "source": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+            "page": 5,
+            "score": 1.5345,
+            "rank": 9
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "PCI DSS Security Metrics Guide to PCI DSS Compliance.pdf",
+          "page": 11,
+          "score": 1.7461
+        },
+        {
+          "name": "PCI DSS Security Metrics Guide to PCI DSS Compliance.pdf",
+          "page": 8,
+          "score": 1.7269
+        },
+        {
+          "name": "PCI-DSS v4.0 What is the PCI Data Security Standard.pdf",
+          "page": 1,
+          "score": 1.6911
+        },
+        {
+          "name": "PCI DSS v4.0 on AWS Compliance Guide.pdf",
+          "page": 6,
+          "score": 1.6841
+        },
+        {
+          "name": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+          "page": 2,
+          "score": 1.56
+        },
+        {
+          "name": "PCI DSS v4.0 on AWS Compliance Guide.pdf",
+          "page": 7,
+          "score": 1.5565
+        },
+        {
+          "name": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+          "page": 6,
+          "score": 1.5411
+        },
+        {
+          "name": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+          "page": 5,
+          "score": 1.5345
+        },
+        {
+          "name": "PCI DSS v4.0 on AWS Compliance Guide.pdf",
+          "page": 11,
+          "score": 1.4904
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "PCI-DSS v4.0 What is the PCI Data Security Standard.pdf",
+          "page": 1,
+          "score": 1.6911
+        },
+        {
+          "name": "PCI DSS Summary of Changes.pdf",
+          "page": 5,
+          "score": 1.4595
+        },
+        {
+          "name": "The Ultimate Guide to PCI DSS 4.0 Implementation.pdf",
+          "page": 11,
+          "score": 1.4824
+        },
+        {
+          "name": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+          "page": 6,
+          "score": 1.5411
+        },
+        {
+          "name": "The Ultimate Guide to PCI DSS 4.0 Implementation.pdf",
+          "page": 3,
+          "score": 1.4734
+        },
+        {
+          "name": "PCI DSS Security Metrics Guide to PCI DSS Compliance.pdf",
+          "page": 11,
+          "score": 1.7461
+        },
+        {
+          "name": "PCI DSS v4.0 on AWS Compliance Guide.pdf",
+          "page": 10,
+          "score": 1.4836
+        },
+        {
+          "name": "PCI DSS v4.0 on AWS Compliance Guide.pdf",
+          "page": 6,
+          "score": 1.6841
+        },
+        {
+          "name": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+          "page": 5,
+          "score": 1.5345
+        },
+        {
+          "name": "PCI DSS Security Metrics Guide to PCI DSS Compliance.pdf",
+          "page": 8,
+          "score": 1.7269
+        }
+      ],
+      "latency_ms": 29216
+    }
+  ]
+}

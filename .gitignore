@@ -34,5 +34,4 @@ protocolosPDF/
 *.mp3
 
 # Cache de evaluaciones
-tests/eval/reports/
 tests/outputs/

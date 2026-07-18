@@ -29,6 +29,14 @@ import urllib.request
 import urllib.error
 from datetime import datetime
 from pathlib import Path
+import yaml
+import traceback as _tb
+
+try:
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+except Exception:
+    pass
 
 # Agregar raiz del proyecto al path para importar HybridRAG
 ROOT_SRC = Path(__file__).parent.parent.parent
@@ -65,6 +73,28 @@ DECLINE_PHRASES = [
     "no hay datos",
     "no hay documentos",
     "no se documenta",
+    # FASE C.3: variantes adicionales
+    "no se proporciona",
+    "no se contiene",
+    "no existe",
+    "no hay referencia",
+    "no se encuentra informacion",
+    "no se encontro informacion",
+    # variantes en ingles (el LLM a veces responde en ingles)
+    "no information",
+    "not provided",
+    "does not contain",
+    "is not available",
+    "not found",
+    "i don't have",
+    "i do not have",
+    "i'm sorry",
+    "i am sorry",
+    "the text does not",
+    "the document does not",
+    "not mentioned",
+    "no data available",
+    "insufficient information",
 ]
 
 
@@ -116,6 +146,17 @@ def _get_rag():
     return _rag_instance
 
 
+def _get_semantic_weight() -> float:
+    """Lee semantic_weight de config.yaml; fallback a 0.6 si no existe."""
+    try:
+        cfg_path = ROOT_SRC / "config.yaml"
+        with open(cfg_path, "r", encoding="utf-8") as f:
+            cfg = yaml.safe_load(f)
+        return float(cfg.get("retrieval", {}).get("semantic_weight", 0.6))
+    except Exception:
+        return 0.6
+
+
 def query_direct(question: str) -> dict:
     """Llama a HybridRAG directamente sin pasar por HTTP."""
     rag = _get_rag()
@@ -123,7 +164,7 @@ def query_direct(question: str) -> dict:
     result = rag.query(
         question,
         top_k=10,
-        semantic_weight=0.5,
+        semantic_weight=_get_semantic_weight(),
         entity_filter=True,
         two_stage=True,
         stream=False,
@@ -864,14 +905,30 @@ def run_eval(questions: list, tolerance: int,
         label = f"[{idx:>3}/{total}] {cat:15s}{ans_tag}"
         print(f"{label}  {q['query'][:58]}...")
 
-        try:
-            if http_mode:
-                api_resp = query_api(base_url, q["query"])
-            else:
-                api_resp = query_direct(q["query"])
-            result = evaluate_case(q, api_resp, tolerance, kw_threshold)
-        except Exception as exc:
-            print(f"         EXCEPTION: {exc}")
+        query_ok = False
+        for _attempt in range(2):
+            try:
+                if http_mode:
+                    api_resp = query_api(base_url, q["query"])
+                else:
+                    api_resp = query_direct(q["query"])
+                result = evaluate_case(q, api_resp, tolerance, kw_threshold)
+                query_ok = True
+                break
+            except Exception as exc:
+                if _attempt == 0:
+                    print(f"         EXCEPTION (retry): {exc}")
+                    _tb.print_exc()
+                    time.sleep(5)
+                    try:
+                        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+                        sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+                    except Exception:
+                        pass
+                else:
+                    print(f"         EXCEPTION (final): {exc}")
+                    _tb.print_exc()
+        if not query_ok:
             result = {
                 "id": q["id"],
                 "category": q.get("category"),

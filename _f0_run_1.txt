@@ -1,0 +1,1654 @@
+Modo:     retrieval-only (sin LLM)
+Preguntas: 75
+Top-K:    10
+SemW:     0.6
+Tolerance: 2
+================================================================================
+[1/75] ID 1: Que es el NIST Cybersecurity Framework?... Inicializando HybridRAG (modo retrieval-only, sin LLM)...
+
+Sistema RAG Hibrido de Alta Calidad
+BÃºsqueda SemÃ¡ntica + Keyword + Llama3 + Memoria
+
+Equivalencias cargadas: 92 grupos
+Mapa conceptual cargado: 0 entidades, 0 atajos
+Verificando disponibilidad de Ollama...
+OK: Ollama activo con modelo mistral:7b
+1/4 Cargando bÃºsqueda semÃ¡ntica...
+
+Cargando modelo de embeddings: models/BAAI-bge-m3 (sentence-transformers)...
+C:\Users\Valen\Desktop\Proyectos\Asunto RAG\SistemaRAGHybrid\.venv\Lib\site-packages\torch\nn\modules\module.py:1160: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\builder\windows\pytorch\c10/cuda/CUDAAllocatorConfig.h:28.)
+  return t.to(
+max_seq_length acotado a 512 (control de VRAM)
+OK: Modelo cargado en cuda (modo offline)
+Caché de embeddings habilitado (LRU maxsize=1000)
+OK: ChromaDB inicializado con 100480 documentos
+2/4 Indexando bÃºsqueda por keywords (BM25)...
+OK: 100480 documentos indexados
+3/4 Cargando modelo de re-ranking...
+OK: Re-ranker cargado (local: models/BAAI-bge-reranker-v2-m3, device=cuda, 
+max_length=256)
+DocCards cargados: 861 documentos
+Extractor de entidades inicializado con gazetteer de dominio
+4/4 Precargando modelo LLM en GPU: mistral:7b
+Modelo cargado en 12.9s
+OK: Modelo mistral:7b cargado en GPU y listo
+
+OK: RAG listo (100480 documentos)
+
+
+Procesando consulta hibrida...
+Entidades detectadas: nist cybersecurity framework, nist cybersecurity
+Etapa 1: Buscando documentos especÃ­ficos para entidad: nist cybersecurity 
+framework
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (5819.7ms)
+Reranker stats: min=0.498, max=0.999, avg=0.919
+Top 10 scores: 1.00, 1.00, 0.91, 1.00, 1.00, 1.00, 0.88, 0.92, 1.00, 0.50
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 7 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=2 (27605ms)
+[2/75] ID 2: Cuales son los dominios del CISSP?... 
+Procesando consulta hibrida...
+Entidades detectadas: information systems, cissp
+Expandiendo 'cissp' -> cissp, certified information systems security 
+professional, (isc)2
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Filtrando por entidades relevantes...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3564.8ms)
+Reranker stats: min=0.012, max=0.888, avg=0.254
+Top 10 scores: 0.48, 0.89, 0.16, 0.13, 0.20, 0.15, 0.32, 0.02, 0.01, 0.18
+Consulta multi-entidad (4 entidades) - relajando filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 9 documentos
+Limitación por fuente: 9 → 8 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=6 (13209ms)
+[3/75] ID 3: Que significa CIA en ciberseguridad?... 
+Procesando consulta hibrida...
+Entidades detectadas: cia
+Etapa 1: Buscando documentos especÃ­ficos para entidad: cia
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3626.2ms)
+Reranker stats: min=0.034, max=0.966, avg=0.738
+Top 10 scores: 0.86, 0.97, 0.97, 0.81, 0.96, 0.94, 0.95, 0.85, 0.05, 0.03
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 9 → 8 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=1 (25304ms)
+[4/75] ID 4: Que es el Annex A de ISO 27001?... 
+Procesando consulta hibrida...
+Entidades detectadas: iso 27001, iec 27001
+Expandiendo 'iso 27001' -> iso 27001, iso27001, iso 27k, isms
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Filtrando por entidades relevantes...
+OK: 10 fragmentos recuperados
+Reranker pool: 12 candidatos
+Re-rankeando top-12 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 12 scores (5488.4ms)
+Reranker stats: min=0.002, max=0.955, avg=0.455
+Top 10 scores: 0.96, 0.57, 0.44, 0.75, 0.75, 0.18, 0.53, 0.53, 0.47, 0.14
+Consulta multi-entidad (5 entidades) - relajando filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 8 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=2 (15735ms)
+[5/75] ID 5: Que es un SIEM y para que se usa?... 
+Procesando consulta hibrida...
+Entidades detectadas: siem
+Etapa 1: Buscando documentos especÃ­ficos para entidad: siem
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3167.7ms)
+Reranker stats: min=0.110, max=0.982, avg=0.810
+Top 10 scores: 0.98, 0.89, 0.90, 0.97, 0.93, 0.94, 0.90, 0.76, 0.72, 0.11
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=4 (18345ms)
+[6/75] ID 6: Que hace el comando chmod en Linux?... 
+Procesando consulta hibrida...
+Entidades detectadas: linux
+Etapa 1: Buscando documentos especÃ­ficos para entidad: linux
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3540.9ms)
+Reranker stats: min=0.000, max=0.310, avg=0.081
+Top 10 scores: 0.31, 0.00, 0.00, 0.00, 0.00, 0.25, 0.02, 0.18, 0.03, 0.01
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=1 (21442ms)
+[7/75] ID 7: Que es un SYN scan en Nmap?... 
+Procesando consulta hibrida...
+Entidades detectadas: nmap, syn
+Etapa 1: Buscando documentos especÃ­ficos para entidad: syn
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3565.7ms)
+Reranker stats: min=0.182, max=0.805, avg=0.573
+Top 10 scores: 0.73, 0.80, 0.76, 0.70, 0.52, 0.31, 0.69, 0.66, 0.37, 0.18
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 8 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=1 (17058ms)
+[8/75] ID 8: Que es phishing?... 
+Procesando consulta hibrida...
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 20 fragmentos recuperados
+Reranker pool: 20 candidatos
+Re-rankeando top-20 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 20 scores (9124.1ms)
+Reranker stats: min=0.397, max=0.998, avg=0.842
+Top 10 scores: 0.99, 0.99, 1.00, 0.99, 0.99, 0.99, 1.00, 1.00, 0.99, 0.99
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 6 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=1 (17769ms)
+[9/75] ID 9: Que es SQL injection?... 
+Procesando consulta hibrida...
+Entidades detectadas: sql
+Etapa 1: Buscando documentos especÃ­ficos para entidad: sql
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3534.9ms)
+Reranker stats: min=0.219, max=0.994, avg=0.797
+Top 10 scores: 0.99, 0.99, 0.96, 0.62, 0.98, 0.98, 0.99, 0.95, 0.28, 0.22
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 9 documentos
+Limitación por fuente: 9 → 8 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=1 (20757ms)
+[10/75] ID 10: Que es cross-site scripting (XSS)?... 
+Procesando consulta hibrida...
+Entidades detectadas: cross-site, xss
+Etapa 1: Buscando documentos especÃ­ficos para entidad: cross-site
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3600.1ms)
+Reranker stats: min=0.348, max=1.000, avg=0.861
+Top 10 scores: 1.00, 1.00, 0.95, 0.41, 0.91, 1.00, 0.99, 1.00, 0.35, 1.00
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 9 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=1 (18112ms)
+[11/75] ID 11: Que es el Risk Management Framework del NIST?... 
+Procesando consulta hibrida...
+Entidades detectadas: risk management framework, nist
+Etapa 1: Buscando documentos especÃ­ficos para entidad: nist
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3534.9ms)
+Reranker stats: min=0.011, max=0.860, avg=0.316
+Top 10 scores: 0.82, 0.02, 0.15, 0.66, 0.86, 0.20, 0.17, 0.17, 0.10, 0.01
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (22017ms)
+[12/75] ID 12: Que es information security governance segun CISM?... 
+Procesando consulta hibrida...
+Entidades detectadas: information security manager, cism
+Etapa 1: Buscando documentos especÃ­ficos para entidad: cism
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3679.1ms)
+Reranker stats: min=0.332, max=0.978, avg=0.795
+Top 10 scores: 0.97, 0.90, 0.98, 0.94, 0.95, 0.97, 0.65, 0.81, 0.46, 0.33
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 7 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=2 (17083ms)
+[13/75] ID 13: Que es SOAR en el contexto de un SOC?... 
+Procesando consulta hibrida...
+Entidades detectadas: soar, soc
+Etapa 1: Buscando documentos especÃ­ficos para entidad: soar
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3542.9ms)
+Reranker stats: min=0.029, max=0.837, avg=0.351
+Top 10 scores: 0.61, 0.64, 0.84, 0.66, 0.09, 0.18, 0.17, 0.17, 0.13, 0.03
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 9 documentos
+Limitación por fuente: 9 → 6 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=1 (19496ms)
+[14/75] ID 14: Que son los modelos de despliegue de la nube segun NIST?... 
+Procesando consulta hibrida...
+Entidades detectadas: nist
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Filtrando por entidades relevantes...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3601.5ms)
+Reranker: max score bajo (0.060), posible consulta fuera de dominio
+Reranker stats: min=0.007, max=0.060, avg=0.039
+Top 10 scores: 0.06, 0.06, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.01, 0.01
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 5 documentos
+Limitación por fuente: 5 → 3 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=2 (9510ms)
+[15/75] ID 15: Que es pretexting como tecnica de ingenieria social?... 
+Procesando consulta hibrida...
+Entidades detectadas: soc
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3546.9ms)
+Reranker stats: min=0.283, max=0.907, avg=0.581
+Top 10 scores: 0.91, 0.78, 0.69, 0.80, 0.77, 0.57, 0.39, 0.34, 0.29, 0.28
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 4 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+HIT rank=1 (9899ms)
+[16/75] ID 16: Que son los playbooks en un SOC?... 
+Procesando consulta hibrida...
+Entidades detectadas: soc
+Etapa 1: Buscando documentos especÃ­ficos para entidad: soc
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3567.3ms)
+Reranker stats: min=0.001, max=0.441, avg=0.151
+Top 10 scores: 0.44, 0.34, 0.00, 0.27, 0.04, 0.07, 0.20, 0.11, 0.02, 0.00
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 6 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=2 (26556ms)
+[17/75] ID 17: Que es el modelo de responsabilidad compartida en la nube?... 
+Procesando consulta hibrida...
+Entidades detectadas: responsabilidad compartida en la nube
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Filtrando por entidades relevantes...
+ADVERTENCIA: No se encontro la entidad especifica: 'responsabilidad compartida 
+en la nube'
+Verifica el nombre exacto en los documentos
+Filtro de entidad no arrojó resultados. Usando resultados originales sin 
+filtro.
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3653.7ms)
+Reranker stats: min=0.376, max=0.932, avg=0.663
+Top 10 scores: 0.93, 0.89, 0.90, 0.60, 0.60, 0.75, 0.72, 0.45, 0.38, 0.42
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 9 documentos
+Limitación por fuente: 9 → 8 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=2 (17022ms)
+[18/75] ID 18: Que es la Zero Trust Architecture segun NIST?... 
+Procesando consulta hibrida...
+Entidades detectadas: zero trust architecture, nist
+Etapa 1: Buscando documentos especÃ­ficos para entidad: nist
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3510.8ms)
+Reranker stats: min=0.008, max=0.992, avg=0.685
+Top 10 scores: 0.60, 0.75, 0.99, 0.81, 0.89, 0.98, 0.99, 0.82, 0.02, 0.01
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 7 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=2 (17271ms)
+[19/75] ID 19: Que son los objetivos de gobernanza en COBIT?... 
+Procesando consulta hibrida...
+Entidades detectadas: cobit
+Etapa 1: Buscando documentos especÃ­ficos para entidad: cobit
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3530.0ms)
+Reranker stats: min=0.050, max=0.989, avg=0.691
+Top 10 scores: 0.98, 0.97, 0.99, 0.71, 0.93, 0.91, 0.85, 0.47, 0.05, 0.05
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 5 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=4 (26682ms)
+[20/75] ID 20: Como se configura iptables en Linux?... 
+Procesando consulta hibrida...
+Entidades detectadas: linux
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3562.7ms)
+Reranker stats: min=0.010, max=0.862, avg=0.551
+Top 10 scores: 0.86, 0.78, 0.79, 0.45, 0.55, 0.82, 0.65, 0.38, 0.22, 0.01
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 6 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+HIT rank=4 (13389ms)
+[21/75] ID 21: Compara los controles de acceso definidos por ISO 27001 y los requisit... 
+Procesando consulta hibrida...
+Entidades detectadas: iso 27001, iec 27001
+ComparaciÃ³n detectada: preservando sticky sources para contexto dual
+Expandiendo 'iso 27001' -> iso 27001, iso27001, iso 27k, isms
+Comparacion detectada - busqueda balanceada entre entidades
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3569.9ms)
+Reranker stats: min=0.005, max=0.700, avg=0.353
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 9 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=4 (19284ms)
+[22/75] ID 22: Que herramientas SIEM y SOAR se mencionan en los documentos disponible... 
+Procesando consulta hibrida...
+Entidades detectadas: siem, soar
+Etapa 1: Buscando documentos especÃ­ficos para entidad: soar
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3647.6ms)
+Reranker stats: min=0.044, max=0.952, avg=0.528
+Top 10 scores: 0.67, 0.04, 0.95, 0.95, 0.89, 0.79, 0.42, 0.22, 0.21, 0.13
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 9 documentos
+Limitación por fuente: 9 → 7 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=2 (22135ms)
+[23/75] ID 23: Cuales son las principales vulnerabilidades web segun OWASP y como se ... 
+Procesando consulta hibrida...
+Entidades detectadas: penetration testing
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3547.1ms)
+Reranker stats: min=0.375, max=0.951, avg=0.598
+Top 10 scores: 0.66, 0.95, 0.78, 0.38, 0.60, 0.68, 0.53, 0.39, 0.45, 0.57
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 9 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+HIT rank=3 (23183ms)
+[24/75] ID 24: Explica como el NIST RMF se relaciona con los controles de ISO 27001 y... 
+Procesando consulta hibrida...
+Modo detallado detectado - respuesta extensa
+Entidades detectadas: nist rmf se relaciona con los controles del iso 27001 y 
+el gobierno del ti en cobit, nist rmf se relaciona con los controles de iso 
+27001 y el gobierno de ti en cobit, iso 27001
+Expandiendo 'iso 27001' -> iso 27001, iso27001, iso 27k, isms
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Planner: 1 candidatos preseleccionados
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Scoping por roles: 20 -> 20
+OK: 10 fragmentos recuperados
+Reranker pool: 13 candidatos
+Re-rankeando top-13 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 13 scores (5723.5ms)
+Reranker stats: min=0.001, max=0.752, avg=0.091
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 5 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+MODO DETALLADO ACTIVADO
+Aplicando filtros por categorÃ­a y entidad para reducir ruido
+Modo multi-documento activado: planner sugiere mÃºltiples roles
+Documentos seleccionados: 4
+  1. ISO 27001 Initial Assessment Report
+  2. A Complete Guide to Cybersecurity Risk Management
+  3. 01 ISOIEC 27001 Implementation  Documents List
+Total de fragmentos recuperados: 163
+OK: Contexto construido con 24 fragmentos de 4 documentos
+Longitud del contexto: 19193 caracteres
+HIT rank=1 (27017ms)
+[25/75] ID 25: Que tecnicas de persistencia y movimiento lateral describe el informe ... 
+Procesando consulta hibrida...
+Entidades detectadas: mandiant, windows
+Sticky sources limpiadas: nist rmf se relaciona con los controles del iso 27001
+y el gobierno del ti en cobit -> mandiant
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Planner: 1 candidatos preseleccionados
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Scoping por roles: 20 -> 20
+OK: 10 fragmentos recuperados
+Reranker pool: 11 candidatos
+Re-rankeando top-11 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 11 scores (6267.9ms)
+Reranker: max score bajo (0.064), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.064, avg=0.024
+Top 10 scores: 0.06, 0.06, 0.04, 0.03, 0.02, 0.02, 0.01, 0.01, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 3 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+HIT rank=1 (13639ms)
+[26/75] ID 26: Compara las estrategias de un SOC de clase mundial con las recomendaci... 
+Procesando consulta hibrida...
+Entidades detectadas: zero trust, soc
+ComparaciÃ³n detectada: preservando sticky sources para contexto dual
+Comparacion detectada - busqueda balanceada entre entidades
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3879.0ms)
+Reranker stats: min=0.002, max=0.878, avg=0.313
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 8 documentos
+Limitación por fuente: 8 → 7 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=3 (18037ms)
+[27/75] ID 27: Que dice el reporte de brechas de datos 2022 sobre ingenieria social y... 
+Procesando consulta hibrida...
+Entidades detectadas: soc
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3573.1ms)
+Reranker stats: min=0.000, max=0.601, avg=0.066
+Top 10 scores: 0.60, 0.04, 0.00, 0.01, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+HIT rank=1 (19788ms)
+[28/75] ID 28: Como afecta la Conditional Access de Microsoft 365 al modelo de Zero T... 
+Procesando consulta hibrida...
+Entidades detectadas: conditional access, zero trust, microsoft
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Planner: 1 candidatos preseleccionados
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Scoping por roles: 20 -> 20
+OK: 10 fragmentos recuperados
+Reranker pool: 11 candidatos
+Re-rankeando top-11 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 11 scores (6216.4ms)
+Reranker: max score bajo (0.020), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.020, avg=0.003
+Top 10 scores: 0.00, 0.02, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+Consulta multi-entidad (3 entidades) - relajando filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 3 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+HIT rank=2 (21246ms)
+[29/75] ID 29: Que comandos Linux son utiles para un analista de seguridad segun los ... 
+Procesando consulta hibrida...
+Entidades detectadas: linux
+Etapa 1: Buscando documentos especÃ­ficos para entidad: linux
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+Two-stage: sin coincidencias de fuente, usando etapa 2 directamente
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3592.0ms)
+Reranker: max score bajo (0.003), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.003, avg=0.001
+Top 10 scores: 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estándar (threshold=0.25)
+Filtro adaptativo: preservando top 3 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (29024ms)
+[30/75] ID 30: Explica el ciclo de vida de respuesta a incidentes integrando lo que d... 
+Procesando consulta hibrida...
+Entidades detectadas: soc
+Etapa 1: Buscando documentos especÃ­ficos para entidad: soc
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3657.1ms)
+Reranker stats: min=0.003, max=0.560, avg=0.261
+Top 10 scores: 0.56, 0.47, 0.40, 0.00, 0.00, 0.09, 0.44, 0.52, 0.11, 0.02
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 7 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=1 (36009ms)
+[31/75] ID 31: Cual es el precio de la certificacion CISSP en Argentina en 2024?... 
+Procesando consulta hibrida...
+Entidades detectadas: information systems, argentina, cissp
+Expandiendo 'cissp' -> cissp, certified information systems security 
+professional, (isc)2
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Filtrando por entidades relevantes...
+OK: 10 fragmentos recuperados
+Reranker pool: 11 candidatos
+Re-rankeando top-11 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 11 scores (6192.2ms)
+Reranker stats: min=0.000, max=0.455, avg=0.163
+Top 10 scores: 0.45, 0.39, 0.12, 0.10, 0.21, 0.18, 0.19, 0.05, 0.02, 0.08
+Consulta multi-entidad (5 entidades) - relajando filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 9 documentos
+Limitación por fuente: 9 → 8 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (19462ms)
+[32/75] ID 32: Quien gano el mundial de futbol en 2022?... Consulta fuera de dominio bloqueada
+MISS rank=None (1ms)
+[33/75] ID 33: Cuantos empleados tiene ISC2 a nivel global?... 
+Procesando consulta hibrida...
+Entidades detectadas: isc2
+Etapa 1: Buscando documentos especÃ­ficos para entidad: isc2
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3528.5ms)
+Reranker stats: min=0.002, max=0.755, avg=0.084
+Top 10 scores: 0.76, 0.00, 0.02, 0.00, 0.00, 0.02, 0.02, 0.01, 0.01, 0.00
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.1)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (28917ms)
+[34/75] ID 34: Cual es la temperatura ideal de un datacenter segun ASHRAE?... 
+Procesando consulta hibrida...
+Entidades detectadas: ashrae
+Etapa 1: Buscando documentos especÃ­ficos para entidad: ashrae
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3564.4ms)
+Reranker stats: min=0.000, max=0.332, avg=0.036
+Top 10 scores: 0.33, 0.00, 0.00, 0.00, 0.00, 0.01, 0.00, 0.01, 0.00, 0.00
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 6 → 4 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (26643ms)
+[35/75] ID 35: Que CVE especifico fue usado en el ataque de SolarWinds SUNBURST repor... 
+Procesando consulta hibrida...
+Entidades detectadas: solarwinds sunburst, cve
+Etapa 1: Buscando documentos especÃ­ficos para entidad: cve
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 11 candidatos
+Re-rankeando top-11 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 11 scores (6268.1ms)
+Reranker stats: min=0.001, max=0.257, avg=0.034
+Top 10 scores: 0.05, 0.01, 0.01, 0.00, 0.00, 0.00, 0.01, 0.00, 0.00, 0.26
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 5 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (29519ms)
+[36/75] ID 36: Cual es el salario promedio de un CISO en Latinoamerica?... 
+Procesando consulta hibrida...
+Entidades detectadas: latinoamerica, ciso
+Etapa 1: Buscando documentos especÃ­ficos para entidad: ciso
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3594.4ms)
+Reranker stats: min=0.023, max=0.522, avg=0.101
+Top 10 scores: 0.52, 0.14, 0.05, 0.02, 0.05, 0.03, 0.07, 0.05, 0.03, 0.04
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 5 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (25039ms)
+[37/75] ID 37: Que dice el RFC 9293 sobre TCP?... 
+Procesando consulta hibrida...
+Entidades detectadas: rfc, tcp
+Etapa 1: Buscando documentos especÃ­ficos para entidad: tcp
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3560.9ms)
+Reranker: max score bajo (0.050), posible consulta fuera de dominio
+Reranker stats: min=0.003, max=0.050, avg=0.014
+Top 10 scores: 0.05, 0.04, 0.00, 0.00, 0.01, 0.01, 0.01, 0.01, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 7 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (22204ms)
+[38/75] ID 38: Cuantos requisitos tiene la version 4.0.1 de PCI DSS?... 
+Procesando consulta hibrida...
+Entidades detectadas: version 4
+Etapa 1: Buscando documentos especÃ­ficos para entidad: version 4
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+Two-stage: sin coincidencias de fuente, usando etapa 2 directamente
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3563.0ms)
+Reranker stats: min=0.107, max=0.854, avg=0.463
+Top 10 scores: 0.81, 0.49, 0.11, 0.29, 0.11, 0.85, 0.38, 0.66, 0.60, 0.33
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.1)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (33625ms)
+[39/75] ID 39: Como hago un asado argentino?... Consulta fuera de dominio bloqueada
+MISS rank=None (1ms)
+[40/75] ID 40: Cuales son los endpoints de la API de ChatGPT para vision?... 
+Procesando consulta hibrida...
+Entidades detectadas: chatgpt, api
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Filtrando por entidades relevantes...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3592.9ms)
+Reranker stats: min=0.013, max=0.282, avg=0.136
+Top 10 scores: 0.11, 0.28, 0.21, 0.13, 0.05, 0.18, 0.21, 0.13, 0.01, 0.05
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 5 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (12445ms)
+[41/75] ID 41: Que es un framework de seguridad?... 
+Procesando consulta hibrida...
+C.E: Entidades stopword filtradas: ['seguridad']
+C.E: Entidades stopword filtradas: ['seguridad']
+C.E: Entidades stopword filtradas: ['seguridad']
+C.E: Entidades stopword filtradas: ['seguridad']
+C.E: Entidades stopword filtradas: ['seguridad']
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 20 fragmentos recuperados
+Reranker pool: 20 candidatos
+Re-rankeando top-20 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 20 scores (9390.3ms)
+Reranker: max score bajo (0.033), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.033, avg=0.003
+Top 10 scores: 0.03, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.01, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estándar (threshold=0.25)
+Deduplicación: 10 → 7 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (23648ms)
+[42/75] ID 42: Como me preparo para la certificacion?... 
+Procesando consulta hibrida...
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Planner: 42 candidatos preseleccionados
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Scoping por roles: 20 -> 20
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3328.0ms)
+Reranker: max score bajo (0.008), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.008, avg=0.001
+Top 10 scores: 0.00, 0.01, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estándar (threshold=0.25)
+Limitación por fuente: 10 → 8 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+MISS rank=None (15252ms)
+[43/75] ID 43: Que logs debo revisar?... 
+Procesando consulta hibrida...
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 20 fragmentos recuperados
+Reranker pool: 20 candidatos
+Re-rankeando top-20 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 20 scores (8100.0ms)
+Reranker: max score bajo (0.067), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.067, avg=0.012
+Top 10 scores: 0.07, 0.06, 0.04, 0.02, 0.00, 0.00, 0.00, 0.02, 0.00, 0.01
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estándar (threshold=0.25)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (22704ms)
+[44/75] ID 44: Cual es la mejor herramienta?... 
+Procesando consulta hibrida...
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 20 fragmentos recuperados
+Reranker pool: 20 candidatos
+Re-rankeando top-20 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 20 scores (8397.8ms)
+Reranker: max score bajo (0.050), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.050, avg=0.006
+Top 10 scores: 0.05, 0.02, 0.02, 0.01, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estándar (threshold=0.25)
+Deduplicación: 3 → 2 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (15075ms)
+[45/75] ID 45: Como audito el sistema?... 
+Procesando consulta hibrida...
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Planner: 42 candidatos preseleccionados
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Scoping por roles: 20 -> 20
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (3535.2ms)
+Reranker: max score bajo (0.006), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.006, avg=0.001
+Top 10 scores: 0.01, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 5 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+HIT rank=1 (12937ms)
+[46/75] ID 46: Que es un agente?... 
+Procesando consulta hibrida...
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 20 fragmentos recuperados
+Reranker pool: 20 candidatos
+Re-rankeando top-20 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 20 scores (8245.8ms)
+Reranker stats: min=0.003, max=0.922, avg=0.138
+Top 10 scores: 0.92, 0.82, 0.10, 0.20, 0.16, 0.11, 0.11, 0.16, 0.01, 0.02
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 9 documentos
+Limitación por fuente: 9 → 7 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (18737ms)
+[47/75] ID 47: Que ciberseguridad es mejor, la preventiva o la reactiva?... 
+Procesando consulta hibrida...
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 20 fragmentos recuperados
+Reranker pool: 20 candidatos
+Re-rankeando top-20 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 20 scores (8017.1ms)
+Reranker: max score bajo (0.054), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.054, avg=0.007
+Top 10 scores: 0.03, 0.03, 0.05, 0.00, 0.00, 0.00, 0.01, 0.00, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estándar (threshold=0.25)
+Deduplicación: 10 → 8 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (21992ms)
+[48/75] ID 48: Que hace un pentester?... 
+Procesando consulta hibrida...
+Entidades detectadas: penetration testing
+Etapa 1: Buscando documentos especÃ­ficos para entidad: penetration testing
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (1546.7ms)
+Reranker: max score bajo (0.005), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.005, avg=0.001
+Top 10 scores: 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.01
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=1 (29953ms)
+[49/75] ID 49: Que es la nube?... 
+Procesando consulta hibrida...
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 20 fragmentos recuperados
+Reranker pool: 20 candidatos
+Re-rankeando top-20 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 20 scores (855.5ms)
+Reranker: max score bajo (0.000), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.000, avg=0.000
+Top 10 scores: 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estándar (threshold=0.25)
+Deduplicación: 10 → 8 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=5 (13611ms)
+[50/75] ID 50: Estoy preparando una auditoria, que necesito?... 
+Procesando consulta hibrida...
+C.E: Entidades stopword filtradas: ['estoy']
+C.E: Entidades stopword filtradas: ['estoy']
+C.E: Entidades stopword filtradas: ['estoy']
+C.E: Entidades stopword filtradas: ['estoy']
+C.E: Entidades stopword filtradas: ['estoy']
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 20 fragmentos recuperados
+Reranker pool: 20 candidatos
+Re-rankeando top-20 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 20 scores (940.0ms)
+Reranker: max score bajo (0.067), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.067, avg=0.014
+Top 10 scores: 0.07, 0.06, 0.04, 0.02, 0.01, 0.02, 0.01, 0.00, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estándar (threshold=0.25)
+Deduplicación: 10 → 9 documentos
+Limitación por fuente: 9 → 7 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (10136ms)
+[51/75] ID 51: Explica en detalle como implementar un programa de gobierno de segurid... 
+Procesando consulta hibrida...
+Modo detallado detectado - respuesta extensa
+Entidades detectadas: information security manager, cism
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (689.1ms)
+Reranker stats: min=0.129, max=0.894, avg=0.635
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 4 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+MODO DETALLADO ACTIVADO
+Aplicando filtros por categorÃ­a y entidad para reducir ruido
+Modo multi-documento activado: planner sugiere mÃºltiples roles
+Documentos seleccionados: 3
+  1. CISM Certified Information Security Manager
+  2. Cybersecurity Workforce Training Guide
+  3. Chief Information Security Officer
+Total de fragmentos recuperados: 1690
+OK: Contexto construido con 20 fragmentos de 3 documentos
+Longitud del contexto: 17178 caracteres
+HIT rank=1 (15982ms)
+[52/75] ID 52: Describe el proceso completo de un pentest segun las mejores practicas... 
+Procesando consulta hibrida...
+Modo detallado detectado - respuesta extensa
+Entidades detectadas: penetration testing
+Sticky sources limpiadas: information security manager -> penetration testing
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (1058.6ms)
+Reranker stats: min=0.014, max=0.878, avg=0.190
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+MODO DETALLADO ACTIVADO
+Aplicando filtros por categorÃ­a y entidad para reducir ruido
+Modo multi-documento activado: planner sugiere mÃºltiples roles
+Documentos seleccionados: 4
+  1. PCI DSS Requirements and Testing Procedures Versio
+  2. WEB SECURITY TESTING GUIDE
+  3. Hack The Cybersecurity Interview 
+Total de fragmentos recuperados: 1925
+OK: Contexto construido con 24 fragmentos de 4 documentos
+Longitud del contexto: 18498 caracteres
+HIT rank=6 (27809ms)
+[53/75] ID 53: Como se estructura un SOC de clase mundial segun el libro de 11 estrat... 
+Procesando consulta hibrida...
+Modo detallado detectado - respuesta extensa
+Entidades detectadas: soc
+Sticky sources limpiadas: penetration testing -> soc
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (1339.0ms)
+Reranker stats: min=0.039, max=0.953, avg=0.582
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 9 documentos
+Limitación por fuente: 9 → 6 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+MODO DETALLADO ACTIVADO
+Aplicando filtros por categorÃ­a y entidad para reducir ruido
+Modo multi-documento activado: planner sugiere mÃºltiples roles
+Documentos seleccionados: 4
+  1. 11 Strategies of a World-Class SOC HIGHLIGHTS
+  2. 11_Strategies_of_a_World_Class_Cybersecurity_Opera
+  3. Conceptual Guide to Enterprise Cyber Security 2023
+Total de fragmentos recuperados: 1509
+OK: Contexto construido con 24 fragmentos de 4 documentos
+Longitud del contexto: 17611 caracteres
+HIT rank=1 (29985ms)
+[54/75] ID 54: Explica como NIST SP 800-53 define los controles de seguridad y privac... 
+Procesando consulta hibrida...
+Modo detallado detectado - respuesta extensa
+Entidades detectadas: nist sp 800-53 define los controles del seguridad y 
+privacidad, nist sp 800-53 define los controles de seguridad y privacidad, sp 
+800
+Sticky sources limpiadas: soc -> nist sp 800-53 define los controles del 
+seguridad y privacidad
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (1333.4ms)
+Reranker stats: min=0.551, max=0.934, avg=0.800
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 9 documentos
+Limitación por fuente: 9 → 7 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+MODO DETALLADO ACTIVADO
+Aplicando filtros por categorÃ­a y entidad para reducir ruido
+Modo multi-documento activado: alta diversidad en top-5 con scores similares
+Documentos seleccionados: 4
+  1. CISM Certified Information Security Manager
+  2. Security_and_Privacy_Controls_for_Information_Syst
+  3. Integrating Cybersecurity & Enterprise Risk Manage
+Total de fragmentos recuperados: 3036
+OK: Contexto construido con 24 fragmentos de 4 documentos
+Longitud del contexto: 23273 caracteres
+HIT rank=2 (32602ms)
+[55/75] ID 55: Analiza las principales vulnerabilidades de Microsoft documentadas en ... 
+Procesando consulta hibrida...
+Entidades detectadas: microsoft
+Sticky sources limpiadas: nist sp 800-53 define los controles del seguridad y 
+privacidad -> microsoft
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Planner: 1 candidatos preseleccionados
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Scoping por roles: 20 -> 20
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (1349.2ms)
+Reranker stats: min=0.355, max=0.981, avg=0.796
+Top 10 scores: 0.70, 0.91, 0.81, 0.86, 0.78, 0.93, 0.98, 0.87, 0.76, 0.35
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 2 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+HIT rank=1 (18111ms)
+[56/75] ID 56: Como se aplica DevSecOps en un pipeline de CI/CD? Describe herramienta... 
+Procesando consulta hibrida...
+Modo detallado detectado - respuesta extensa
+Entidades detectadas: devsecops, cicd
+ComparaciÃ³n detectada: preservando sticky sources para contexto dual
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Comparacion detectada - busqueda balanceada entre entidades
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (317.0ms)
+Reranker stats: min=0.001, max=0.814, avg=0.334
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 8 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+MODO DETALLADO ACTIVADO
+Aplicando filtros por categorÃ­a y entidad para reducir ruido
+Modo multi-documento activado: planner sugiere mÃºltiples roles
+Documentos seleccionados: 4
+  1. The Six Pillars of DevSecOps Pragmatic Implementat
+  2. Cybersecurity in a Digital Era
+  3. Cloud Security Technical Reference Architecture
+Total de fragmentos recuperados: 1219
+OK: Contexto construido con 24 fragmentos de 4 documentos
+Longitud del contexto: 19822 caracteres
+HIT rank=5 (14909ms)
+[57/75] ID 57: Que tecnicas de credential dumping existen y como se detectan segun lo... 
+Procesando consulta hibrida...
+Entidades detectadas: credential dumping existen y como se detectan segun los 
+recursos del corpus, credential dumping existen y como se detectan segun los 
+recursos de corpus
+Sticky sources limpiadas: devsecops -> credential dumping existen y como se 
+detectan segun los recursos del corpus
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (1335.8ms)
+Reranker stats: min=0.064, max=0.614, avg=0.234
+Top 10 scores: 0.28, 0.61, 0.57, 0.33, 0.06, 0.14, 0.09, 0.10, 0.08, 0.08
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estándar (threshold=0.25)
+Limitación por fuente: 10 → 6 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+HIT rank=3 (22516ms)
+[58/75] ID 58: Describe los pasos del RMF de NIST y como cada paso contribuye a la ge... 
+Procesando consulta hibrida...
+Modo detallado detectado - respuesta extensa
+Entidades detectadas: nist, rmf
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Planner: 1 candidatos preseleccionados
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Scoping por roles: 20 -> 20
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (1042.2ms)
+Reranker stats: min=0.023, max=0.612, avg=0.292
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 2 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+MODO DETALLADO ACTIVADO
+Aplicando filtros por categorÃ­a y entidad para reducir ruido
+Modo multi-documento activado: planner sugiere mÃºltiples roles
+Documentos seleccionados: 1
+  1. NIST Internal Report Foundational PNT Profile
+Total de fragmentos recuperados: 280
+OK: Contexto construido con 12 fragmentos de 1 documentos
+Longitud del contexto: 9659 caracteres
+MISS rank=None (21390ms)
+[59/75] ID 59: Como se protege una infraestructura critica segun los marcos de cibers... 
+Procesando consulta hibrida...
+Entidades detectadas: ciberseguridad disponibles en el corpus
+Sticky sources limpiadas: nist -> ciberseguridad disponibles en el corpus
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (1341.4ms)
+Reranker stats: min=0.000, max=0.549, avg=0.066
+Top 10 scores: 0.55, 0.00, 0.00, 0.01, 0.04, 0.05, 0.00, 0.00, 0.00, 0.00
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estándar (threshold=0.25)
+Filtro adaptativo: preservando top 3 documentos
+Deduplicación: 3 → 2 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+ADVERTENCIA: Pocos resultados con 'ciberseguridad disponibles en el corpus' - 
+amplia la busqueda
+MISS rank=None (20816ms)
+[60/75] ID 60: Que dice el CCSP sobre los riesgos especificos de la computacion en la... 
+Procesando consulta hibrida...
+Entidades detectadas: cloud security professional, ccsp
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (679.4ms)
+Reranker stats: min=0.278, max=0.958, avg=0.533
+Top 10 scores: 0.96, 0.66, 0.61, 0.64, 0.33, 0.58, 0.53, 0.28, 0.31, 0.44
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 5 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+HIT rank=3 (10328ms)
+[61/75] ID 61: Que es OSPF y para que se usa?... 
+Procesando consulta hibrida...
+Entidades detectadas: ospf
+Etapa 1: Buscando documentos especÃ­ficos para entidad: ospf
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (1049.1ms)
+Reranker stats: min=0.582, max=0.992, avg=0.833
+Top 10 scores: 0.99, 0.98, 0.98, 0.98, 0.78, 0.89, 0.76, 0.66, 0.72, 0.58
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 8 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=3 (25618ms)
+[62/75] ID 62: Cuales son los tipos de escaneo que ofrece Nmap?... 
+Procesando consulta hibrida...
+Entidades detectadas: nmap
+Etapa 1: Buscando documentos especÃ­ficos para entidad: nmap
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (1067.8ms)
+Reranker stats: min=0.143, max=0.953, avg=0.609
+Top 10 scores: 0.87, 0.65, 0.95, 0.89, 0.64, 0.63, 0.49, 0.42, 0.41, 0.14
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 5 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=1 (22410ms)
+[63/75] ID 63: Que es Wireshark y como se usa en forensia de red?... 
+Procesando consulta hibrida...
+Entidades detectadas: wireshark
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (657.4ms)
+Reranker: max score bajo (0.066), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.066, avg=0.007
+Top 10 scores: 0.07, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estándar (threshold=0.25)
+Filtro adaptativo: preservando top 3 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+HIT rank=1 (8501ms)
+[64/75] ID 64: Que cubre el dominio de seguridad en la nube del CCSP?... 
+Procesando consulta hibrida...
+Entidades detectadas: cloud security professional, ccsp
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Filtrando por entidades relevantes...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (559.1ms)
+Reranker stats: min=0.062, max=0.982, avg=0.451
+Top 10 scores: 0.98, 0.58, 0.74, 0.88, 0.61, 0.29, 0.13, 0.12, 0.06, 0.10
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 4 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (12447ms)
+[65/75] ID 65: Como funciona Kerbrute para enumeracion de usuarios?... 
+Procesando consulta hibrida...
+Entidades detectadas: kerbrute
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (661.0ms)
+Reranker stats: min=0.000, max=0.983, avg=0.419
+Top 10 scores: 0.98, 0.41, 0.83, 0.78, 0.84, 0.27, 0.06, 0.01, 0.00, 0.00
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 8 → 3 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+HIT rank=1 (6885ms)
+[66/75] ID 66: Que es la seguridad en OT/ICS?... 
+Procesando consulta hibrida...
+Entidades detectadas: otics
+Etapa 1: Buscando documentos especÃ­ficos para entidad: otics
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+Two-stage: sin coincidencias de fuente, usando etapa 2 directamente
+OK: 10 fragmentos recuperados
+Reranker pool: 11 candidatos
+Re-rankeando top-11 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 11 scores (1348.4ms)
+Reranker stats: min=0.000, max=0.976, avg=0.183
+Top 10 scores: 0.00, 0.98, 0.98, 0.03, 0.00, 0.00, 0.00, 0.00, 0.00, 0.02
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estándar (threshold=0.25)
+Deduplicación: 4 → 3 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+ADVERTENCIA: Pocos resultados con 'otics' - amplia la busqueda
+HIT rank=3 (25458ms)
+[67/75] ID 67: Que es PCI DSS y a quienes aplica?... 
+Procesando consulta hibrida...
+Entidades detectadas: pci dss
+Etapa 1: Buscando documentos especÃ­ficos para entidad: pci dss
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (524.0ms)
+Reranker stats: min=0.023, max=0.577, avg=0.309
+Top 10 scores: 0.58, 0.51, 0.36, 0.37, 0.05, 0.02, 0.05, 0.06, 0.54, 0.55
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=9 (30441ms)
+[68/75] ID 68: Que es la ingenieria social segun los documentos disponibles?... 
+Procesando consulta hibrida...
+Entidades detectadas: soc
+Etapa 1: Buscando documentos especÃ­ficos para entidad: soc
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (556.9ms)
+Reranker: max score bajo (0.025), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.025, avg=0.003
+Top 10 scores: 0.03, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 9 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (29205ms)
+[69/75] ID 69: Que herramientas de Blue Team se mencionan en los documentos?... 
+Procesando consulta hibrida...
+Entidades detectadas: blue team
+Etapa 1: Buscando documentos especÃ­ficos para entidad: blue team
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (1050.1ms)
+Reranker stats: min=0.005, max=0.329, avg=0.088
+Top 10 scores: 0.33, 0.25, 0.09, 0.09, 0.05, 0.04, 0.01, 0.01, 0.01, 0.01
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 9 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=2 (25793ms)
+[70/75] ID 70: Que son las politicas de seguridad de la informacion segun ISO 27001?... 
+Procesando consulta hibrida...
+Entidades detectadas: iso 27001, iec 27001
+Expandiendo 'iso 27001' -> iso 27001, iso27001, iso 27k, isms
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Filtrando por entidades relevantes...
+OK: 10 fragmentos recuperados
+Reranker pool: 11 candidatos
+Re-rankeando top-11 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 11 scores (696.5ms)
+Reranker stats: min=0.004, max=0.920, avg=0.699
+Top 10 scores: 0.92, 0.78, 0.78, 0.89, 0.52, 0.76, 0.62, 0.79, 0.79, 0.84
+Consulta multi-entidad (5 entidades) - relajando filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 8 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+HIT rank=1 (18512ms)
+[71/75] ID 71: Como se integran los controles de ISO 27001 con los requisitos de audi... 
+Procesando consulta hibrida...
+Listado detectado - elevando top_k a 50
+Entidades detectadas: iso 27001, iec 27001
+Expandiendo 'iso 27001' -> iso 27001, iso27001, iso 27k, isms
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Planner: 1 candidatos preseleccionados
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Scoping por roles: 76 -> 76
+OK: 50 fragmentos recuperados
+Reranker pool: 50 candidatos
+Re-rankeando top-50 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 50 scores (1911.6ms)
+Reranker stats: min=0.001, max=0.761, avg=0.145
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 50 → 4 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+HIT rank=1 (23162ms)
+[72/75] ID 72: Cual fue el impacto financiero exacto del ransomware NotPetya en Maers... 
+Procesando consulta hibrida...
+Entidades detectadas: notpetya, maersk
+Etapa 1: Buscando documentos especÃ­ficos para entidad: notpetya
+No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...
+Etapa 2: Buscando respuesta especÃ­fica en contexto...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (1059.3ms)
+Reranker stats: min=0.000, max=0.915, avg=0.102
+Top 10 scores: 0.92, 0.00, 0.00, 0.07, 0.00, 0.01, 0.01, 0.01, 0.00, 0.00
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.1)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 8 → 7 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (23547ms)
+[73/75] ID 73: Que dice el reporte de amenazas 2023 sobre las tecnicas de ataque mas ... 
+Procesando consulta hibrida...
+Entidades detectadas: mitre att&ck
+Expandiendo 'mitre att&ck' -> mitre att&ck, mitre attack, mitre attck, attack 
+framework
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 12 candidatos
+Re-rankeando top-12 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 12 scores (623.7ms)
+Reranker stats: min=0.000, max=0.975, avg=0.734
+Top 10 scores: 0.95, 0.74, 0.97, 0.90, 0.90, 0.92, 0.89, 0.92, 0.64, 0.93
+Consulta multi-entidad (4 entidades) - relajando filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 9 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+HIT rank=1 (15498ms)
+[74/75] ID 74: Cual es la contrasena por defecto del router Cisco ASA 5505?... 
+Procesando consulta hibrida...
+Entidades detectadas: cisco asa
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+Filtrando por entidades relevantes...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (535.5ms)
+Reranker: max score bajo (0.002), posible consulta fuera de dominio
+Reranker stats: min=0.000, max=0.002, avg=0.001
+Top 10 scores: 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad
+OK: Filtro de calidad: 10 documentos (rerank_norm >= 0.15)
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Limitación por fuente: 10 → 2 (máx 2 por doc)
+Contexto categorizado por tipo de informaciÃ³n
+Contexto estructurado por categorÃ­as aplicado
+MISS rank=None (8187ms)
+[75/75] ID 75: Describe como implementar Zero Trust desde cero en una organizacion: p... 
+Procesando consulta hibrida...
+Modo detallado detectado - respuesta extensa
+Entidades detectadas: zero trust
+Planner: roles preferidos = procedure, manual_scada, analysis_report
+Pregunta procedural detectada - busqueda amplia
+BÃºsqueda semÃ¡ntica (60%) + keyword (40%)...
+OK: 10 fragmentos recuperados
+Reranker pool: 10 candidatos
+Re-rankeando top-10 resultados...
+Reranker batch_size=12 (ejecución directa)
+Re-ranking completado: 10 scores (691.0ms)
+Reranker stats: min=0.110, max=0.833, avg=0.505
+Filtro adaptativo: estricto (≥5 docs >0.50, threshold=0.4)
+Deduplicación: 10 → 9 documentos
+Contexto categorizado por tipo de informaciÃ³n
+Buscando páginas cercanas a la solicitada...
+MODO DETALLADO ACTIVADO
+Aplicando filtros por categorÃ­a y entidad para reducir ruido
+Modo multi-documento activado: planner sugiere mÃºltiples roles
+Documentos seleccionados: 4
+  1. Playbook for Implementing Zero Trust Security
+  2. Zero Trust Maturity Model
+  3. Evolving Zero Trust
+Total de fragmentos recuperados: 151
+OK: Contexto construido con 24 fragmentos de 4 documentos
+Longitud del contexto: 19664 caracteres
+HIT rank=1 (15122ms)
+
+================================================================================
+RESULTADOS RETRIEVAL-ONLY (semantic_weight=0.6, top_k=10)
+================================================================================
+  Preguntas:         75 (63 answerable)
+  Doc hit rate:      79.4% (50/63)
+  Page hit rate:     47.6%
+  Doc misses:        13
+  Avg recall:        0.510
+  Avg MRR:           0.529
+  Avg precision@k:   0.310
+  Avg first rank:    2.2
+  Median first rank: 2
+  Avg latency:       19877ms
+
+  --- Top-K pre/post reranker (FASE 6) ---
+  Doc hit rate pre:  81.0%
+  Doc hit rate post: 79.4%
+  Avg recall pre:    0.530
+  Avg recall post:   0.510
+  Avg MRR pre:       0.503
+  Avg MRR post:      0.529
+  Avg precision@k pre:  0.310
+  Avg precision@k post: 0.310
+  Mejorados por reranker: [1, 2, 4, 19, 21, 24, 25, 26, 27, 45, 48, 49, 52, 53, 61, 63, 69, 70, 73]
+  Empeorados por reranker: [14, 17, 18, 22, 23, 28, 54, 56, 57, 60, 66, 67]
+  Total elapsed:     1547.8s
+
+  Doc misses (13):
+    ID 11: Que es el Risk Management Framework del NIST?... -> top: NIST SP 800-66 Rev. 2 .pdf
+    ID 29: Que comandos Linux son utiles para un analista de seguridad ... -> top: Top Free Cybersecurity Services and Tools.pdf
+    ID 41: Que es un framework de seguridad?... -> top: Hack The Cybersecurity Interview .pdf
+    ID 42: Como me preparo para la certificacion?... -> top: Financial_Reporting_of_Environmental_Liabilities_a
+    ID 43: Que logs debo revisar?... -> top: IT Audit Checklist for Network & Infrastructure.pd
+    ID 44: Cual es la mejor herramienta?... -> top: The 116 Best Cybersecurity Tools & Tactics.pdf
+    ID 46: Que es un agente?... -> top: WireShark and traffic analysis PDF.pdf
+    ID 47: Que ciberseguridad es mejor, la preventiva o la reactiva?... -> top: CompTIA Security+ Exam Study Guide.pdf
+    ID 50: Estoy preparando una auditoria, que necesito?... -> top: CISM Certified Information Security Manager.pdf
+    ID 58: Describe los pasos del RMF de NIST y como cada paso contribu... -> top: NIST Internal Report Foundational PNT Profile.pdf
+    ID 59: Como se protege una infraestructura critica segun los marcos... -> top: CYBERSECURITY RESOURCE AND REFERENCE GUIDE.pdf
+    ID 64: Que cubre el dominio de seguridad en la nube del CCSP?... -> top: Certified Cloud Security Professional.pdf
+    ID 68: Que es la ingenieria social segun los documentos disponibles... -> top: 11 Strategies of a World-Class SOC HIGHLIGHTS.pdf
+
+  Reporte guardado: C:\Users\Valen\Desktop\Proyectos\Asunto RAG\SistemaRAGHybrid\tests\eval\reports\retrieval_only_20260714_223204_sw60.json

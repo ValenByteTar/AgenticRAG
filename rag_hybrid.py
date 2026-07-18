@@ -1,12 +1,22 @@
-"""
-Sistema RAG Híbrido de Alta Calidad
-Combina búsqueda semántica (embeddings) + keyword (BM25) + LLM (Ollama)
+﻿"""
+Sistema RAG HÃ­brido de Alta Calidad
+Combina bÃºsqueda semÃ¡ntica (embeddings) + keyword (BM25) + LLM (Ollama)
 """
 
 import sys
 import os
 import re
 import unicodedata
+
+# FASE C.CHARMAP: Forzar UTF-8 en stdout/stderr para evitar que caracteres
+# Unicode (>=, <=, flechas, etc.) crashen el pipeline en Windows (cp1252).
+# Esto tambien previene que los filtros adaptativos y la deduplicacion se
+# salteen silenciosamente por excepciones de encoding.
+try:
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+except Exception:
+    pass
 
 import yaml
 import json
@@ -144,17 +154,17 @@ API = Application Programming Interface = Interfaz de Programacion de Aplicacion
 
 
 class HybridRAG:
-    """RAG de alta calidad con búsqueda híbrida y LLM"""
+    """RAG de alta calidad con bÃºsqueda hÃ­brida y LLM"""
     
     def __init__(self, config_path: str = "config.yaml", use_llm: bool = True, variant: str = None, heuristics: str = None):
         console.print("\n[bold cyan]Sistema RAG Hibrido de Alta Calidad[/bold cyan]")
-        console.print("[dim]Búsqueda Semántica + Keyword + Llama3 + Memoria[/dim]\n")
+        console.print("[dim]BÃºsqueda SemÃ¡ntica + Keyword + Llama3 + Memoria[/dim]\n")
         
         with open(config_path, 'r', encoding='utf-8') as f:
             self.config = yaml.safe_load(f)
         # Flags de comportamiento
         self.flags = self.config.get('rag', {}).get('flags', {})
-        # Defaults para modo LLM-first y desactivar heurísticas determinísticas
+        # Defaults para modo LLM-first y desactivar heurÃ­sticas determinÃ­sticas
         try:
             self.flags.setdefault('mode_llm_first', False)
             self.flags.setdefault('enable_deterministic_count', False)
@@ -171,7 +181,7 @@ class HybridRAG:
             self.flags.setdefault('sticky_sources_ttl', 2)
             # Rechazo estricto fuera de dominio
             self.flags.setdefault('strict_ood', True)
-            # Glosario: requerir mención explícita del acrónimo en la consulta
+            # Glosario: requerir menciÃ³n explÃ­cita del acrÃ³nimo en la consulta
             self.flags.setdefault('glossary_require_explicit', True)
             # Glosario: listas de control (pueden venir desde config.yaml)
             self.flags.setdefault('glossary_allowlist', [])
@@ -179,19 +189,19 @@ class HybridRAG:
             self.flags.setdefault('glossary_denylist', ['ES'])
         except Exception:
             pass
-        # Modo de heurísticas y variante de índice
+        # Modo de heurÃ­sticas y variante de Ã­ndice
         try:
             self.heuristics_mode = (self.config.get('rag', {}) or {}).get('heuristics_mode', 'legacy')
         except Exception:
             self.heuristics_mode = 'legacy'
-        # Override de heurísticas por parámetro
+        # Override de heurÃ­sticas por parÃ¡metro
         if isinstance(heuristics, str) and heuristics:
             self.heuristics_mode = heuristics
         try:
             self.index_variant = (self.config.get('rag', {}) or {}).get('index_variant', 'bge')
         except Exception:
             self.index_variant = 'bge'
-        # Override de variante por parámetro
+        # Override de variante por parÃ¡metro
         if isinstance(variant, str) and variant:
             self.index_variant = variant
         # Equivalencias: colaborador independiente
@@ -214,12 +224,12 @@ class HybridRAG:
         self.conversation = ConversationHistory(max_history=10)
         # Recordar entidades del turno anterior para continuidad del tema
         self.last_entities = []
-        # Configuración de razonamiento automático (HABILITADO - sin restricciones de RAM)
+        # ConfiguraciÃ³n de razonamiento automÃ¡tico (HABILITADO - sin restricciones de RAM)
         self.enable_auto_reasoning = self.config.get('enable_auto_reasoning', True)
         self.centrales_map: dict = {}
         self.centrales_loaded: bool = False
         
-        # MEJORA: Gazetteer de alias de entidades para mejorar búsqueda (ciberseguridad)
+        # MEJORA: Gazetteer de alias de entidades para mejorar bÃºsqueda (ciberseguridad)
         self.entity_aliases = {
             'iso 27001': ['iso 27001', 'iso27001', 'iso 27k', 'isms'],
             'nist csf': ['nist csf', 'nist cybersecurity framework', 'cybersecurity framework', 'nist framework'],
@@ -231,7 +241,7 @@ class HybridRAG:
         }
         # Mapa conceptual: conocimiento aprendido de consultas previas
         self.conceptual_map = ConceptualMap()
-        # Cola de aprendizaje diferido con validación automática (DESHABILITADO por usuario)
+        # Cola de aprendizaje diferido con validaciÃ³n automÃ¡tica (DESHABILITADO por usuario)
         self.enable_auto_learning = False
         self.learning_queue = LearningQueue(
             ollama_url=f"http://localhost:{self.config.get('ollama_port', 11434)}",
@@ -256,10 +266,10 @@ class HybridRAG:
                 pass
         self.ollama_process = self._ollama_mgr.process
 
-        # Cargar sistema de búsqueda semántica
-        console.print("[yellow]1/4 Cargando búsqueda semántica...[/yellow]")
+        # Cargar sistema de bÃºsqueda semÃ¡ntica
+        console.print("[yellow]1/4 Cargando bÃºsqueda semÃ¡ntica...[/yellow]")
         
-        # Selección de embeddings y base vectorial por variante
+        # SelecciÃ³n de embeddings y base vectorial por variante
         try:
             variant = self.index_variant
         except Exception:
@@ -274,7 +284,7 @@ class HybridRAG:
             device=embeddings_cfg['device'],
             provider=embeddings_cfg.get('provider', 'sentence-transformers')
         )
-        # Paths/colección para Chroma según variante
+        # Paths/colecciÃ³n para Chroma segÃºn variante
         db_path = (
             self.config['paths'].get('vectordb_dir_bge', self.config['paths']['vectordb_dir'])
             if str(variant).lower() == 'bge' else
@@ -292,12 +302,12 @@ class HybridRAG:
         )
         
         # Cargar todos los documentos para BM25
-        console.print("[yellow]2/4 Indexando búsqueda por keywords (BM25)...[/yellow]")
+        console.print("[yellow]2/4 Indexando bÃºsqueda por keywords (BM25)...[/yellow]")
         self._load_bm25_index()
         
         console.print(f"[green]OK: {len(self.all_docs)} documentos indexados[/green]")
         
-        # Cargar modelo de re-ranking (multilingüe)
+        # Cargar modelo de re-ranking (multilingÃ¼e)
         console.print("[yellow]3/4 Cargando modelo de re-ranking...[/yellow]")
         os.environ['HF_HUB_OFFLINE'] = '1'
         os.environ['TRANSFORMERS_OFFLINE'] = '1'
@@ -319,14 +329,15 @@ class HybridRAG:
             elif isinstance(reranker_name, str) and (reranker_name.startswith('models/') or os.path.isdir(reranker_name)):
                 candidate_path = reranker_name
             if candidate_path:
-                # Usar CUDA si está disponible; fallback a CPU con todos los hilos
+                # Usar CUDA si estÃ¡ disponible; fallback a CPU con todos los hilos
                 try:
                     import torch as _torch
                     _rr_device = 'cuda' if _torch.cuda.is_available() else 'cpu'
                 except Exception:
                     _rr_device = 'cpu'
-                self.reranker = CrossEncoder(candidate_path, device=_rr_device, max_length=128)
-                console.print(f"[green]OK: Re-ranker cargado (local: {candidate_path}, device={_rr_device}, max_length=128)[/green]")
+                _rr_max_length = int(os.environ.get('RERANKER_MAX_LENGTH', 128))
+                self.reranker = CrossEncoder(candidate_path, device=_rr_device, max_length=_rr_max_length)
+                console.print(f"[green]OK: Re-ranker cargado (local: {candidate_path}, device={_rr_device}, max_length={_rr_max_length})[/green]")
             else:
                 # No hay ruta local: desactivar sin intentar remoto
                 console.print("[yellow]Re-ranking desactivado (sin ruta local configurada)\n[/yellow]")
@@ -335,7 +346,7 @@ class HybridRAG:
             self.reranker = None
             console.print("[yellow]Re-ranking desactivado (modo 100% offline)\n[/yellow]")
         
-        # Cargar DocCards/Roles (si no existen, construir por heurística o LLM)
+        # Cargar DocCards/Roles (si no existen, construir por heurÃ­stica o LLM)
         try:
             self.doc_roles = load_doc_roles()
             if self.config.get('use_doc_roles', True):
@@ -349,15 +360,15 @@ class HybridRAG:
                         try:
                             self.doc_roles = build_doc_cards_llm(self.vector_store, model_name=model_name, max_docs=max_docs)
                         except Exception as e:
-                            console.print(f"[yellow]ADVERTENCIA: Fallo DocCards LLM: {str(e)[:80]} - usando heurística[/yellow]")
+                            console.print(f"[yellow]ADVERTENCIA: Fallo DocCards LLM: {str(e)[:80]} - usando heurÃ­stica[/yellow]")
                             self.doc_roles = build_doc_cards(self.vector_store)
                     else:
-                        console.print("[yellow]Construyendo DocCards (heurística) ...[/yellow]")
+                        console.print("[yellow]Construyendo DocCards (heurÃ­stica) ...[/yellow]")
                         self.doc_roles = build_doc_cards(self.vector_store)
                     save_doc_roles(self.doc_roles)
                 console.print(f"[dim]DocCards cargados: {len(self.doc_roles.get('docs', {}))} documentos[/dim]")
-                # ELIMINADO: Ampliación de centrales eléctricas desde DocCards
-                # El sistema ahora usa domain_map genérico en entity_extractor
+                # ELIMINADO: AmpliaciÃ³n de centrales elÃ©ctricas desde DocCards
+                # El sistema ahora usa domain_map genÃ©rico en entity_extractor
                 pass
         except Exception as e:
             console.print(f"[yellow]ADVERTENCIA: No se pudieron cargar DocCards: {e}[/yellow]")
@@ -377,7 +388,7 @@ class HybridRAG:
         self._query_clf = QueryClassifier(flags=self.flags, extract_entities_fn=self._extract_entities)
         # Post-procesador de respuestas: colaborador con back-reference
         self._postproc = AnswerPostprocessor(rag=self)
-        # Motor de recuperación: colaborador con back-reference
+        # Motor de recuperaciÃ³n: colaborador con back-reference
         self._retrieval = RetrievalEngine(rag=self)
         # Constructor de contexto: colaborador con back-reference
         self._ctx_builder = ContextBuilder(rag=self)
@@ -413,7 +424,7 @@ class HybridRAG:
         self._ollama_mgr.cleanup()
         
     def _load_bm25_index(self):
-        """Carga índice BM25 desde ChromaDB"""
+        """Carga Ã­ndice BM25 desde ChromaDB"""
         collection = self.vector_store.collection
         all_data = collection.get(include=['documents', 'metadatas'])
         self.all_docs = all_data['documents']
@@ -443,7 +454,7 @@ class HybridRAG:
     def _tokenize_for_bm25(self, text: str) -> List[str]:
         try:
             s = (text or '').lower()
-            tokens = re.findall(r"[a-zñáéíóúü]+(?:[./-]?[a-z0-9]+)*|\d+(?:[.,]\d+)?", s)
+            tokens = re.findall(r"[a-zÃ±Ã¡Ã©Ã­Ã³ÃºÃ¼]+(?:[./-]?[a-z0-9]+)*|\d+(?:[.,]\d+)?", s)
             stop = {
                 'de','la','el','los','las','y','o','a','en','del','al','un','una','con','por','para','que','se','es','su','sus','lo','como','sobre','sin','entre','desde','hasta'
             }
@@ -476,15 +487,15 @@ class HybridRAG:
         return self._eq_mgr.build_glossary(query)
 
     def _filter_results_by_technology(self, question: str, results: list) -> list:
-        """Filtra o prioriza resultados según el tipo de documento de ciberseguridad mencionado.
+        """Filtra o prioriza resultados segÃºn el tipo de documento de ciberseguridad mencionado.
         Si se pide 'framework ISO', se priorizan documentos de frameworks y se penalizan otros tipos.
         """
         try:
             if not results:
                 return results
             q = (question or '').lower()
-            want_framework = any(w in q for w in ['framework', 'estandar', 'estándar', 'iso', 'nist', 'control'])
-            want_certification = any(w in q for w in ['certificacion', 'certificación', 'certified', 'cissp', 'ceh', 'oscp'])
+            want_framework = any(w in q for w in ['framework', 'estandar', 'estÃ¡ndar', 'iso', 'nist', 'control'])
+            want_certification = any(w in q for w in ['certificacion', 'certificaciÃ³n', 'certified', 'cissp', 'ceh', 'oscp'])
             want_threat = any(w in q for w in ['threat', 'amenaza', 'apt', 'malware', 'ransomware'])
             want_procedure = any(w in q for w in ['procedimiento', 'procedure', 'protocolo', 'playbook', 'runbook'])
             if not (want_framework or want_certification or want_threat or want_procedure):
@@ -492,7 +503,7 @@ class HybridRAG:
             def tech_score(src: str, txt: str) -> int:
                 s = (src or '').lower()
                 t = (txt or '').lower()
-                # Heurísticas de dominio por nombre de documento o texto (ciberseguridad)
+                # HeurÃ­sticas de dominio por nombre de documento o texto (ciberseguridad)
                 is_framework = any(k in s for k in ['framework', 'standard', 'iso', 'nist', 'pci']) or any(k in t for k in ['framework', 'standard', 'control', 'requisito'])
                 is_certification = any(k in s for k in ['certification', 'certified', 'cissp', 'ceh', 'oscp']) or any(k in t for k in ['certification', 'certified', 'credential', 'exam'])
                 is_threat_intel = any(k in s for k in ['threat', 'intel', 'apt', 'ioc', 'ttp']) or any(k in t for k in ['threat', 'amenaza', 'actor', 'campaign'])
@@ -507,9 +518,9 @@ class HybridRAG:
                 if want_procedure:
                     score += 2 if is_procedural else (-1 if (is_framework or is_certification) else 0)
                 return score
-            # Reordenar por tecnología preferida con estabilidad por rerank_score
+            # Reordenar por tecnologÃ­a preferida con estabilidad por rerank_score
             sorted_results = sorted(results, key=lambda r: (tech_score(r.get('metadata',{}).get('source',''), r.get('text','')), r.get('rerank_score', r.get('hybrid_score', 0))), reverse=True)
-            # También filtrar duros los casos opuestos si hay suficientes del tipo pedido
+            # TambiÃ©n filtrar duros los casos opuestos si hay suficientes del tipo pedido
             top = sorted_results[:10]
             pos = sum(1 for r in top if tech_score(r.get('metadata',{}).get('source',''), r.get('text','')) > 0)
             if pos >= 3:
@@ -522,8 +533,8 @@ class HybridRAG:
 
 
     def _augment_with_page_neighbors(self, results: list, per_source_limit: int = 4) -> list:
-        """Añade páginas vecinas (±1) para cada (source,page) presente en results, sin duplicar.
-        Limita la cantidad total añadida por documento para evitar contexto inflado.
+        """AÃ±ade pÃ¡ginas vecinas (Â±1) para cada (source,page) presente en results, sin duplicar.
+        Limita la cantidad total aÃ±adida por documento para evitar contexto inflado.
         """
         try:
             if not results:
@@ -694,13 +705,13 @@ class HybridRAG:
 
 
     def _format_listing_answer(self, items: list) -> str:
-        """Formatea la lista de frameworks/políticas enumerada con versión y categoría."""
+        """Formatea la lista de frameworks/polÃ­ticas enumerada con versiÃ³n y categorÃ­a."""
         lines = []
         for idx, it in enumerate(items, 1):
             name = it.get('name', '')
             version = (str(it.get('version', '')).strip())
             category = (it.get('category') or '').strip()
-            cat_part = f" — {category}" if category else ''
+            cat_part = f" â€” {category}" if category else ''
             ver_part = f" (v{version})" if version else ''
             lines.append(f"{idx}. {name}{ver_part}{cat_part}")
         return "\n".join(lines)
@@ -719,7 +730,7 @@ class HybridRAG:
 
     def _norm_name(self, s: str) -> str:
         t = ''.join(c for c in unicodedata.normalize('NFD', s or '') if unicodedata.category(c) != 'Mn').lower()
-        # ELIMINADO: Referencias a p.e./p.s. (Parque Eólico/Solar) - ahora es genérico
+        # ELIMINADO: Referencias a p.e./p.s. (Parque EÃ³lico/Solar) - ahora es genÃ©rico
         t = re.sub(r"[^a-z0-9]+", " ", t).strip()
         return t
 
@@ -769,7 +780,7 @@ class HybridRAG:
             # Boost por match exacto de entidad
             if ent in txt:
                 boost += 0.6
-            # Penalización por conflictos de sufijo
+            # PenalizaciÃ³n por conflictos de sufijo
             if suf and any((f"loma blanca{c}" in txt) for c in conflict_map.get(suf, [])):
                 boost -= 0.5
             r['priority_boost'] = boost
@@ -791,27 +802,27 @@ class HybridRAG:
 
 
     def _extract_doc_scope(self, query: str) -> str:
-        """Intenta extraer un nombre de documento para limitar la búsqueda (e.g., "buscar en 'Anexo D - Listado Centrales.pdf'").
-        Devuelve string del documento a buscar o cadena vacía si no hay scope.
+        """Intenta extraer un nombre de documento para limitar la bÃºsqueda (e.g., "buscar en 'Anexo D - Listado Centrales.pdf'").
+        Devuelve string del documento a buscar o cadena vacÃ­a si no hay scope.
         """
         q = query.strip()
         # 1) Documento entre comillas
         m = re.search(r'"([^"]+\.pdf)"', q, flags=re.IGNORECASE)
         if m:
             return m.group(1).strip()
-        # 2) Patrones comunes: buscar en / apunta tu búsqueda a / solo en / en ... .pdf
-        m2 = re.search(r'(?:buscar en|busca en|apunta(?: tu)?\s+b(?:ú|u)squeda a|solo en|solamente en|en\s+(?:el\s+documento|documento|el\s+anexo|anexo|archivo))\s+([^\n\r]+?\.pdf)\b', q, flags=re.IGNORECASE)
+        # 2) Patrones comunes: buscar en / apunta tu bÃºsqueda a / solo en / en ... .pdf
+        m2 = re.search(r'(?:buscar en|busca en|apunta(?: tu)?\s+b(?:Ãº|u)squeda a|solo en|solamente en|en\s+(?:el\s+documento|documento|el\s+anexo|anexo|archivo))\s+([^\n\r]+?\.pdf)\b', q, flags=re.IGNORECASE)
         if m2:
             return m2.group(2 if m2.lastindex and m2.lastindex >= 2 else 1).strip()
-        # 3) Detectar "Anexo X - <Nombre>" sin .pdf (ej: "Anexo A - Políticas")
+        # 3) Detectar "Anexo X - <Nombre>" sin .pdf (ej: "Anexo A - PolÃ­ticas")
         ql = q.lower()
-        m3 = re.search(r'anexo\s+[a-z]\s*-\s*([a-z0-9áéíóúñ\s]+)', ql, flags=re.IGNORECASE)
+        m3 = re.search(r'anexo\s+[a-z]\s*-\s*([a-z0-9Ã¡Ã©Ã­Ã³ÃºÃ±\s]+)', ql, flags=re.IGNORECASE)
         if m3:
             anexo_name = m3.group(1).strip()
             # Validar que no sea una frase larga (max 3 palabras)
             if len(anexo_name.split()) <= 3:
                 return f"Anexo - {anexo_name.title()}.pdf"
-        # 4) Buscar documento que contenga el número/código mencionado (ej: "ISO 27001", "NSE4")
+        # 4) Buscar documento que contenga el nÃºmero/cÃ³digo mencionado (ej: "ISO 27001", "NSE4")
         m4 = re.search(r'\b(?:ISO|NIST|NSE|SC|AZ|CCNA|CISSP|CEH|OSCP)\s*[-]?\s*([0-9]{1,4}[a-z]?)\b', ql, flags=re.IGNORECASE)
         if m4:
             try:
@@ -856,7 +867,7 @@ class HybridRAG:
         # Patrones para detectar referencias a documentos
         patterns = [
             r'\[Doc \d+ - ([^\]]+) p\.(\d+)\]',  # [Doc 3 - nombre p.11]
-            r'\[Doc \d+ - ([^\]]+) pág\.(\d+)\]',  # [Doc 3 - nombre pág.11]
+            r'\[Doc \d+ - ([^\]]+) pÃ¡g\.(\d+)\]',  # [Doc 3 - nombre pÃ¡g.11]
             r'documento \[Doc \d+ - ([^\]]+) p\.(\d+)\]',  # documento [Doc...]
             r'el \[Doc \d+ - ([^\]]+) p\.(\d+)\]',  # el [Doc...]
         ]
@@ -885,48 +896,48 @@ class HybridRAG:
     def _is_wtg_power_query(self, query: str) -> bool:
         """Detecta si piden detalle por unidad/control (antes potencia por WTG)."""
         q = (query or '').lower()
-        has_detail = any(k in q for k in ['versión', 'version', 'cvss', 'severidad', 'detalle', 'detalle de'])
+        has_detail = any(k in q for k in ['versiÃ³n', 'version', 'cvss', 'severidad', 'detalle', 'detalle de'])
         has_control = any(k in q for k in ['control', 'controles', 'requisito', 'requisitos'])
-        # Refuerzos semánticos
+        # Refuerzos semÃ¡nticos
         per_unit_hints = any(k in q for k in ['cada', 'c/u', 'por control', 'por requisito'])
         return (has_detail and has_control) or per_unit_hints
 
 
 
     def _is_centrales_list_request(self, query: str) -> bool:
-        """Intención explícita de listar frameworks/políticas/controles (adaptado de centrales/parques).
-        Requiere palabras de listado + término de frameworks; excluye consultas procedimentales.
+        """IntenciÃ³n explÃ­cita de listar frameworks/polÃ­ticas/controles (adaptado de centrales/parques).
+        Requiere palabras de listado + tÃ©rmino de frameworks; excluye consultas procedimentales.
         """
         q = (query or '').lower()
-        # Excluir consultas procedimentales específicas
+        # Excluir consultas procedimentales especÃ­ficas
         if any(k in q for k in ['procedimiento', 'paso', 'step', 'celda', 'incidente']):
             return False
         # Modo extremadamente estricto: solo estas palabras habilitan el listado/tablas
-        explicit_tokens = ['listado', 'lista', 'tabla', 'tablilla', 'catalogo', 'catálogo']
+        explicit_tokens = ['listado', 'lista', 'tabla', 'tablilla', 'catalogo', 'catÃ¡logo']
         return any(tok in q for tok in explicit_tokens)
 
     def _extract_doc_pages_hint(self, query: str):
-        """Extrae pista explícita de documento y páginas de la query.
+        """Extrae pista explÃ­cita de documento y pÃ¡ginas de la query.
         Ejemplos soportados:
         - "pagina 3 y 4 del documento 'ISO 27001.pdf'"
-        - "páginas 3-4 de NIST CSF.pdf"
+        - "pÃ¡ginas 3-4 de NIST CSF.pdf"
         - "p. 3 y 12 del Manual de Seguridad.pdf"
         Devuelve dict {'doc': str, 'pages': [int,...]} o None.
         """
         try:
             q = (query or '')
             # Buscar nombre de doc entre comillas o con .pdf
-            doc_match = re.search(r"['\"]([^'\"]+?\.pdf)['\"]|([A-Za-zÁÉÍÓÚÑáéíóúñ0-9 \-]+?\.pdf)", q)
+            doc_match = re.search(r"['\"]([^'\"]+?\.pdf)['\"]|([A-Za-zÃÃ‰ÃÃ“ÃšÃ‘Ã¡Ã©Ã­Ã³ÃºÃ±0-9 \-]+?\.pdf)", q)
             if not doc_match:
                 return None
             doc = (doc_match.group(1) or doc_match.group(2) or '').strip()
-            # Buscar páginas: "página(s) X y Y", "X-Y", "p. X, Y"
+            # Buscar pÃ¡ginas: "pÃ¡gina(s) X y Y", "X-Y", "p. X, Y"
             pages = []
             for pat in [
-                r"p[aá]g(?:ina|inas)?\s*(\d{1,3})\s*(?:y|e|,|-)\s*(\d{1,3})",
+                r"p[aÃ¡]g(?:ina|inas)?\s*(\d{1,3})\s*(?:y|e|,|-)\s*(\d{1,3})",
                 r"p\.?\s*(\d{1,3})\s*(?:y|e|,|-)\s*(\d{1,3})",
-                r"p[aá]g(?:ina|inas)?\s*(\d{1,3})",
-                r"\b(\d{1,3})\s*[-–]\s*(\d{1,3})\b",
+                r"p[aÃ¡]g(?:ina|inas)?\s*(\d{1,3})",
+                r"\b(\d{1,3})\s*[-â€“]\s*(\d{1,3})\b",
             ]:
                 m = re.search(pat, q, flags=re.IGNORECASE)
                 if m:
@@ -970,7 +981,7 @@ class HybridRAG:
                     a = max(0, s-40)
                     b = min(len(txt), e+40)
                     snip = txt[a:b].replace('\n',' ')
-                    # Requerir dígitos cercanos (para consultas de conteo o numéricas)
+                    # Requerir dÃ­gitos cercanos (para consultas de conteo o numÃ©ricas)
                     if not re.search(r"\d", snip):
                         continue
                     if snip and len(snip.strip())>0:
@@ -983,21 +994,21 @@ class HybridRAG:
                 return None
             prompt = (
                 "Responde de forma CORTA, PRECISA y COMPLETA usando SOLO estos fragmentos.\n"
-                "Incluye al menos una cita [Doc i - fuente p.X]. Sin preámbulos.\n"
-                "Si no puedes responder estrictamente con esta información, responde EXACTAMENTE: INSUFICIENTE.\n\n"
+                "Incluye al menos una cita [Doc i - fuente p.X]. Sin preÃ¡mbulos.\n"
+                "Si no puedes responder estrictamente con esta informaciÃ³n, responde EXACTAMENTE: INSUFICIENTE.\n\n"
                 f"Pregunta: {question}\n\n"
                 + "\n".join(snippets) + "\n\nRespuesta:"
             )
-            # Si está activado el modo de prompts simples, usa un formato mínimo sin plantillas
+            # Si estÃ¡ activado el modo de prompts simples, usa un formato mÃ­nimo sin plantillas
             try:
                 if self.flags.get('plain_prompts', False):
                     prompt = (
                         "Contexto (usa SOLO esta evidencia, no inventes ni asumas nada):\n" + "\n".join(snippets) +
                         f"\n\nInstrucciones estrictas:\n"
-                        f"- Responde únicamente con información explícitamente contenida en el contexto.\n"
-                        f"- Si la información clave no aparece en el contexto, responde exactamente: Insuficiente evidencia.\n"
-                        f"- Si usas cifras, nombres de tecnologías, ubicaciones o fabricantes, deben aparecer literalmente en el contexto.\n"
-                        f"- Responde SIEMPRE en español.\n"
+                        f"- Responde Ãºnicamente con informaciÃ³n explÃ­citamente contenida en el contexto.\n"
+                        f"- Si la informaciÃ³n clave no aparece en el contexto, responde exactamente: Insuficiente evidencia.\n"
+                        f"- Si usas cifras, nombres de tecnologÃ­as, ubicaciones o fabricantes, deben aparecer literalmente en el contexto.\n"
+                        f"- Responde SIEMPRE en espaÃ±ol.\n"
                         f"- Incluye, cuando corresponda, citas breves [doc:pag].\n\n"
                         f"Pregunta: {question}\n\nRespuesta:" 
                     )
@@ -1052,8 +1063,8 @@ class HybridRAG:
 
 
     def _try_deterministic_count_answer(self, question: str, results: list, entities: list, length_mode: str = 'short'):
-        """Extrae determinísticamente un conteo cercano a keywords con anclaje por entidad.
-        Devuelve una respuesta breve con cita si encuentra un único valor consistente.
+        """Extrae determinÃ­sticamente un conteo cercano a keywords con anclaje por entidad.
+        Devuelve una respuesta breve con cita si encuentra un Ãºnico valor consistente.
         """
         try:
             if not results or not isinstance(length_mode, str) or length_mode.strip().lower() != 'short':
@@ -1063,7 +1074,7 @@ class HybridRAG:
             # Palabras clave por dominio
             dom = [
                 ('WTG', [r'wtg', r'aerogenerador(?:es)?', r'turbina(?:s)?']),
-                ('paneles', [r'panel(?:es)?', r'm[óo]dulo(?:s)?']),
+                ('paneles', [r'panel(?:es)?', r'm[Ã³o]dulo(?:s)?']),
             ]
             candidates = []
             top = results[:8]
@@ -1079,7 +1090,7 @@ class HybridRAG:
                     if not any(e for e in entities if e and e.lower() in tlow):
                         continue
                 for unit_label, kws in dom:
-                    # número +/- 40 chars alrededor de keyword
+                    # nÃºmero +/- 40 chars alrededor de keyword
                     pat = r"(\d{1,3}(?:[\.,\s]\d{3})+|\d+(?:[\.,]\d+)?)"
                     for kw in kws:
                         regex = re.compile(rf"{pat}.{{0,40}}{kw}|{kw}.{{0,40}}{pat}", re.IGNORECASE)
@@ -1098,7 +1109,7 @@ class HybridRAG:
                 # usar la primera cita encontrada
                 v_raw, unit, lab = candidates[0]
                 ans = f"{v_raw} {unit} {lab}"
-                console.print(f"[dim]Conteo determinístico usado en {time.time()-t0:.1f}s: {ans}[/dim]")
+                console.print(f"[dim]Conteo determinÃ­stico usado en {time.time()-t0:.1f}s: {ans}[/dim]")
                 return ans
             # Si hay 2 valores pero uno domina
             from collections import Counter
@@ -1109,7 +1120,7 @@ class HybridRAG:
                 for v_raw, unit, lab in candidates:
                     if norm(v_raw) == most:
                         ans = f"{v_raw} {unit} {lab}"
-                        console.print(f"[dim]Conteo determinístico (mayoría) usado: {ans}[/dim]")
+                        console.print(f"[dim]Conteo determinÃ­stico (mayorÃ­a) usado: {ans}[/dim]")
                         return ans
             return None
         except Exception:
@@ -1122,24 +1133,24 @@ class HybridRAG:
     
     def _reason_and_retry_search(self, original_query: str, failed_results: list, attempt: int = 1) -> dict:
         """
-        Usa el LLM para RAZONAR sobre por qué la búsqueda falló y proponer nuevos términos.
-        OPTIMIZADO: Uso mínimo de RAM.
+        Usa el LLM para RAZONAR sobre por quÃ© la bÃºsqueda fallÃ³ y proponer nuevos tÃ©rminos.
+        OPTIMIZADO: Uso mÃ­nimo de RAM.
         
         Args:
             original_query: Query original del usuario
             failed_results: Resultados con baja relevancia
-            attempt: Número de intento (máximo 2)
+            attempt: NÃºmero de intento (mÃ¡ximo 2)
         
         Returns:
             Dict con 'retry': bool, 'new_terms': list, 'reasoning': str
         """
         if attempt > 2:
             console.print("[yellow]ADVERTENCIA: Limite de re-intentos alcanzado[/yellow]")
-            return {'retry': False, 'new_terms': [], 'reasoning': 'Máximo de intentos alcanzado'}
+            return {'retry': False, 'new_terms': [], 'reasoning': 'MÃ¡ximo de intentos alcanzado'}
         
         console.print(f"[bold yellow]Razonamiento automatico (intento {attempt}/2)...[/bold yellow]")
         
-        # OPTIMIZACIÓN: Solo tomar 2 resultados más relevantes, texto corto
+        # OPTIMIZACIÃ“N: Solo tomar 2 resultados mÃ¡s relevantes, texto corto
         sample_results = failed_results[:2]
         results_preview = '\n'.join([
             f"- {r.get('metadata', {}).get('source', 'Unknown')}: {r.get('text', '')[:80]}..."
@@ -1147,21 +1158,21 @@ class HybridRAG:
         ])
         
         # PROMPT COMPACTO para minimizar tokens
-        reasoning_prompt = f"""Búsqueda NO encontró resultados relevantes.
+        reasoning_prompt = f"""BÃºsqueda NO encontrÃ³ resultados relevantes.
 
 QUERY: {original_query}
 
 RESULTADOS (baja relevancia):
 {results_preview}
 
-TAREA: Propón 3-4 términos de búsqueda ALTERNATIVOS.
+TAREA: PropÃ³n 3-4 tÃ©rminos de bÃºsqueda ALTERNATIVOS.
 
 EJEMPLOS:
-- "nombre parque" -> "potencia MW", "inversores", "ubicación"
+- "nombre parque" -> "potencia MW", "inversores", "ubicaciÃ³n"
 - "Pampetrol" -> "Victorica", "7.2 MW"
 
 FORMATO:
-NUEVOS_TERMINOS: término1, término2, término3
+NUEVOS_TERMINOS: tÃ©rmino1, tÃ©rmino2, tÃ©rmino3
 
 Respuesta:"""
         
@@ -1175,7 +1186,7 @@ Respuesta:"""
                     'stream': False,
                     'options': {
                         'temperature': 0.6,
-                        'num_predict': 220,  # un poco más para permitir mejor propuesta
+                        'num_predict': 220,  # un poco mÃ¡s para permitir mejor propuesta
                         'top_k': 40,
                         'top_p': 0.9,
                         'num_ctx': 4096,     # mayor contexto para razonar mejor
@@ -1194,7 +1205,7 @@ Respuesta:"""
                 
                 console.print(f"[dim cyan]{reasoning_text}[/dim cyan]")
                 
-                # Extraer nuevos términos
+                # Extraer nuevos tÃ©rminos
                 match = re.search(r'NUEVOS_TERMINOS:\s*(.+)', reasoning_text, re.IGNORECASE)
                 if match:
                     terms_str = match.group(1).strip()
@@ -1202,7 +1213,7 @@ Respuesta:"""
                     
                     # Extraer razonamiento
                     reasoning_match = re.search(r'RAZONAMIENTO:\s*(.+?)(?:\n|NUEVOS_TERMINOS)', reasoning_text, re.IGNORECASE | re.DOTALL)
-                    reasoning = reasoning_match.group(1).strip() if reasoning_match else "Sin razonamiento explícito"
+                    reasoning = reasoning_match.group(1).strip() if reasoning_match else "Sin razonamiento explÃ­cito"
                     
                     if new_terms:
                         console.print(f"[green]OK: Nuevos terminos propuestos:[/green] {', '.join(new_terms)}")
@@ -1212,7 +1223,7 @@ Respuesta:"""
                             'reasoning': reasoning
                         }
             
-            return {'retry': False, 'new_terms': [], 'reasoning': 'No se pudieron generar términos alternativos'}
+            return {'retry': False, 'new_terms': [], 'reasoning': 'No se pudieron generar tÃ©rminos alternativos'}
             
         except Exception as e:
             console.print(f"[red]Error en razonamiento: {e}[/red]")
@@ -1232,15 +1243,15 @@ Respuesta:"""
         """
         query_lower = query.lower()
         
-        # Detectar patrones de referencia a información previa
+        # Detectar patrones de referencia a informaciÃ³n previa
         reference_patterns = [
             'explica el punto', 'explica ese punto', 'explica eso',
-            'qué significa', 'que significa', 'a qué se refiere', 'a que se refiere',
-            'detalla', 'amplia', 'más sobre', 'mas sobre',
-            'qué es', 'que es', 'cómo funciona', 'como funciona',
-            # Follow-ups típicos sin repetir entidad
-            'potencia total', 'de cuanta potencia', 'de cuánta potencia', 'cuanta potencia', 'cuánta potencia',
-            'y de cuanta potencia', 'y de cuánta potencia'
+            'quÃ© significa', 'que significa', 'a quÃ© se refiere', 'a que se refiere',
+            'detalla', 'amplia', 'mÃ¡s sobre', 'mas sobre',
+            'quÃ© es', 'que es', 'cÃ³mo funciona', 'como funciona',
+            # Follow-ups tÃ­picos sin repetir entidad
+            'potencia total', 'de cuanta potencia', 'de cuÃ¡nta potencia', 'cuanta potencia', 'cuÃ¡nta potencia',
+            'y de cuanta potencia', 'y de cuÃ¡nta potencia'
         ]
         
         has_reference = any(pattern in query_lower for pattern in reference_patterns)
@@ -1249,10 +1260,10 @@ Respuesta:"""
             prev_entity = self.last_entities[0] if self.last_entities else None
             
             if prev_entity:
-                words = re.findall(r"\b[\wáéíóúñÁÉÍÓÚÑ-]+\b", query_lower)
+                words = re.findall(r"\b[\wÃ¡Ã©Ã­Ã³ÃºÃ±ÃÃ‰ÃÃ“ÃšÃ‘-]+\b", query_lower)
                 stopwords = {
-                    'el','la','los','las','un','una','de','del','en','es','por','para','con','que','qué','como','cómo','sobre','tiene','dame',
-                    'dime','cuál','cuáles','cuántos','hay','son','está','información','detalles','datos','explicame','hablame','ahora'
+                    'el','la','los','las','un','una','de','del','en','es','por','para','con','que','quÃ©','como','cÃ³mo','sobre','tiene','dame',
+                    'dime','cuÃ¡l','cuÃ¡les','cuÃ¡ntos','hay','son','estÃ¡','informaciÃ³n','detalles','datos','explicame','hablame','ahora'
                 }
                 tokens = set(w for w in words if len(w) > 3 and w not in stopwords)
                 prev_tok = set(prev_entity.lower().split())
@@ -1269,11 +1280,11 @@ Respuesta:"""
     def _should_use_conversation_context(self, current_query: str, last_query: str = None) -> bool:
         """
         Determina INTELIGENTEMENTE si debe usar el contexto conversacional previo.
-        Evita contaminación cuando el tema cambia completamente.
+        Evita contaminaciÃ³n cuando el tema cambia completamente.
         
         Args:
             current_query: Pregunta actual
-            last_query: Última pregunta del historial
+            last_query: Ãšltima pregunta del historial
         
         Returns:
             True si debe mantener contexto, False si es tema nuevo
@@ -1284,40 +1295,40 @@ Respuesta:"""
         current_lower = current_query.lower()
         last_lower = last_query.lower()
         
-        # 1. Palabras que indican continuación explícita del tema
+        # 1. Palabras que indican continuaciÃ³n explÃ­cita del tema
         continuation_indicators = [
-            'y ', 'también', 'además', 'otro', 'otra',
+            'y ', 'tambiÃ©n', 'ademÃ¡s', 'otro', 'otra',
             'ese', 'esa', 'eso', 'este', 'esta', 'esto',
             'el mismo', 'la misma', 'lo mismo',
-            'ahí', 'allí', 'esa información',
-            'más sobre', 'más info', 'más detalles',
+            'ahÃ­', 'allÃ­', 'esa informaciÃ³n',
+            'mÃ¡s sobre', 'mÃ¡s info', 'mÃ¡s detalles',
             'explicame', 'detalla', 'amplia',
-            'qué más', 'qué otras', 'qué otro',
+            'quÃ© mÃ¡s', 'quÃ© otras', 'quÃ© otro',
             'ahora', 'de sus', 'del parque', 'de ese', 'de esa', 'sobre eso', 'sus ', ' sus', 'solo ',
-            # Deixis específicas de activos
+            # Deixis especÃ­ficas de activos
             'esta central', 'esta planta', 'este parque', 'este proyecto', 'esta et', 'esa central', 'la central', 'la planta', 'el parque',
-            # Referencias a información previa
-            'explica el punto', 'explica ese punto', 'qué significa', 'que significa',
+            # Referencias a informaciÃ³n previa
+            'explica el punto', 'explica ese punto', 'quÃ© significa', 'que significa',
             # Referencias temporales/causales (seguimiento de eventos)
-            'acabo de', 'acaba de', 'acaban de', 'si tengo', 'si tuve', 'si ocurre', 'si ocurrió', 'cuando ocurre', 'cuando tengo',
-            'en ese caso', 'en este caso', 'si pasa', 'si pasó', 'después de',
+            'acabo de', 'acaba de', 'acaban de', 'si tengo', 'si tuve', 'si ocurre', 'si ocurriÃ³', 'cuando ocurre', 'cuando tengo',
+            'en ese caso', 'en este caso', 'si pasa', 'si pasÃ³', 'despuÃ©s de',
             # Conectores causales y conclusivos (NUEVO)
-            'entonces', 'por lo tanto', 'por eso', 'así que', 'de modo que', 'en consecuencia',
+            'entonces', 'por lo tanto', 'por eso', 'asÃ­ que', 'de modo que', 'en consecuencia',
             # Preguntas de seguimiento sobre el mismo tema
-            'eso significa', 'eso quiere decir', 'a qué se refiere', 'qué implica', 'qué pasa si', 'qué sucede si',
-            # Continuación con condicionales
-            'si sale', 'si entra', 'si actúa', 'si se activa', 'cuando sale', 'cuando entra'
+            'eso significa', 'eso quiere decir', 'a quÃ© se refiere', 'quÃ© implica', 'quÃ© pasa si', 'quÃ© sucede si',
+            # ContinuaciÃ³n con condicionales
+            'si sale', 'si entra', 'si actÃºa', 'si se activa', 'cuando sale', 'cuando entra'
         ]
         
-        # Si la pregunta actual tiene indicadores de continuación
+        # Si la pregunta actual tiene indicadores de continuaciÃ³n
         has_continuation = any(ind in current_lower for ind in continuation_indicators)
         
         if has_continuation:
-            words_c = re.findall(r"\b[\wáéíóúñÁÉÍÓÚÑ-]+\b", current_lower)
-            words_l = re.findall(r"\b[\wáéíóúñÁÉÍÓÚÑ-]+\b", last_lower)
+            words_c = re.findall(r"\b[\wÃ¡Ã©Ã­Ã³ÃºÃ±ÃÃ‰ÃÃ“ÃšÃ‘-]+\b", current_lower)
+            words_l = re.findall(r"\b[\wÃ¡Ã©Ã­Ã³ÃºÃ±ÃÃ‰ÃÃ“ÃšÃ‘-]+\b", last_lower)
             stopwords = {
-                'el','la','los','las','un','una','de','del','en','es','por','para','con','que','qué','como','cómo','sobre','tiene','dame',
-                'dime','cuál','cuáles','cuántos','hay','son','está','información','detalles','datos','explicame','hablame','ahora'
+                'el','la','los','las','un','una','de','del','en','es','por','para','con','que','quÃ©','como','cÃ³mo','sobre','tiene','dame',
+                'dime','cuÃ¡l','cuÃ¡les','cuÃ¡ntos','hay','son','estÃ¡','informaciÃ³n','detalles','datos','explicame','hablame','ahora'
             }
             ents_c = set(w for w in words_c if len(w) > 3 and w not in stopwords)
             ents_l = set(w for w in words_l if len(w) > 3 and w not in stopwords)
@@ -1325,26 +1336,26 @@ Respuesta:"""
                 return False
             return True
         
-        # 2. Extraer entidades técnicas clave de ambas preguntas
+        # 2. Extraer entidades tÃ©cnicas clave de ambas preguntas
         def extract_technical_entities(text):
-            """Extrae entidades técnicas (nombres propios, códigos, modelos)"""
+            """Extrae entidades tÃ©cnicas (nombres propios, cÃ³digos, modelos)"""
             
             stopwords = {
                 'el', 'la', 'los', 'las', 'un', 'una', 'de', 'del', 'en', 'es', 'por', 
-                'para', 'con', 'que', 'qué', 'como', 'cómo', 'sobre', 'tiene', 'dame', 
-                'dime', 'cuál', 'cuáles', 'cuántos', 'hay', 'son', 'está', 'información',
+                'para', 'con', 'que', 'quÃ©', 'como', 'cÃ³mo', 'sobre', 'tiene', 'dame', 
+                'dime', 'cuÃ¡l', 'cuÃ¡les', 'cuÃ¡ntos', 'hay', 'son', 'estÃ¡', 'informaciÃ³n',
                 'detalles', 'datos', 'explicame', 'hablame'
             }
             
             # Extraer palabras significativas (>3 letras, no stopwords)
-            words = re.findall(r'\b[a-záéíóúñA-ZÁÉÍÓÚÑ][a-záéíóúñA-ZÁÉÍÓÚÑ0-9-]+\b', text)
+            words = re.findall(r'\b[a-zÃ¡Ã©Ã­Ã³ÃºÃ±A-ZÃÃ‰ÃÃ“ÃšÃ‘][a-zÃ¡Ã©Ã­Ã³ÃºÃ±A-ZÃÃ‰ÃÃ“ÃšÃ‘0-9-]+\b', text)
             entities = set()
             
             for word in words:
                 word_lower = word.lower()
                 # Incluir si:
-                # - Tiene mayúsculas (nombre propio)
-                # - Tiene números (modelo/código)
+                # - Tiene mayÃºsculas (nombre propio)
+                # - Tiene nÃºmeros (modelo/cÃ³digo)
                 # - Es palabra larga y no stopword
                 if (word[0].isupper() or 
                     any(c.isdigit() for c in word) or 
@@ -1363,18 +1374,18 @@ Respuesta:"""
         # 3. Calcular similitud entre entidades
         common_entities = current_entities & last_entities
         
-        # Similitud = entidades comunes / total de entidades únicas
+        # Similitud = entidades comunes / total de entidades Ãºnicas
         total_unique = len(current_entities | last_entities)
         similarity = len(common_entities) / total_unique if total_unique > 0 else 0
         
-        # 4. Decisión basada en similitud
-        # Si comparten >15% de entidades técnicas, probablemente es el mismo tema (umbral reducido para mejor continuidad)
+        # 4. DecisiÃ³n basada en similitud
+        # Si comparten >15% de entidades tÃ©cnicas, probablemente es el mismo tema (umbral reducido para mejor continuidad)
         if similarity > 0.15:
             return True
         
-        # 5. Verificar si hay entidades clave idénticas (nombres específicos o acrónimos críticos)
+        # 5. Verificar si hay entidades clave idÃ©nticas (nombres especÃ­ficos o acrÃ³nimos crÃ­ticos)
         # Ej: "Kosten", "SUN2000", "ANSI", "DAG", "ET", "WTG", etc.
-        # Acrónimos cortos (3+ letras) son críticos en contexto técnico
+        # AcrÃ³nimos cortos (3+ letras) son crÃ­ticos en contexto tÃ©cnico
         key_entities_match = len(common_entities) >= 1 and any(
             len(e) >= 3  # Cualquier entidad compartida de 3+ letras es suficiente
             for e in common_entities
@@ -1387,10 +1398,10 @@ Respuesta:"""
         return False
     
     def _extract_follow_up_anchor(self, user_query: str, last_answer: str) -> str:
-        """Extrae una 'ancla' de seguimiento desde la consulta actual y la última respuesta del asistente.
+        """Extrae una 'ancla' de seguimiento desde la consulta actual y la Ãºltima respuesta del asistente.
         Regla:
-        - Si el usuario incluye una frase entre comillas de ≥5 palabras, usarla como ancla.
-        - Si no hay comillas, buscar una secuencia contigua de ≥5 palabras del usuario que aparezca en la última respuesta.
+        - Si el usuario incluye una frase entre comillas de â‰¥5 palabras, usarla como ancla.
+        - Si no hay comillas, buscar una secuencia contigua de â‰¥5 palabras del usuario que aparezca en la Ãºltima respuesta.
         Devuelve la frase ancla o None.
         """
         try:
@@ -1401,20 +1412,20 @@ Respuesta:"""
             if not uq:
                 return None
             # 1) Frases entre comillas
-            quotes = re.findall(r'"([^"]{10,})"|“([^”]{10,})”', uq)
+            quotes = re.findall(r'"([^"]{10,})"|â€œ([^â€]{10,})â€', uq)
             candidates = []
             for q1, q2 in quotes:
                 q = q1 or q2
                 if q and len(q.split()) >= 5:
                     candidates.append(q.strip())
             if candidates:
-                # Elegir la más larga
+                # Elegir la mÃ¡s larga
                 return max(candidates, key=lambda s: len(s))
-            # 2) Coincidencia contigua de ≥5 palabras con la última respuesta
+            # 2) Coincidencia contigua de â‰¥5 palabras con la Ãºltima respuesta
             if la:
-                words = re.findall(r'\b\w[\wáéíóúñÁÉÍÓÚÑ-]*\b', uq)
+                words = re.findall(r'\b\w[\wÃ¡Ã©Ã­Ã³ÃºÃ±ÃÃ‰ÃÃ“ÃšÃ‘-]*\b', uq)
                 n = len(words)
-                # Ventanas de 7 a 5 palabras, priorizando más largas
+                # Ventanas de 7 a 5 palabras, priorizando mÃ¡s largas
                 for win in (12, 10, 8, 7, 6, 5):
                     if n < win:
                         continue
@@ -1429,24 +1440,26 @@ Respuesta:"""
     def generate_with_ollama(self, query: str, context: str, conv_context: str = "", detailed: bool = False, is_aggregation: bool = False, num_centrales: int = 0, is_conceptual: bool = False, is_procedural: bool = False, is_direct_comparison: bool = False, is_simple_numeric: bool = False, is_troubleshooting: bool = False, is_summary: bool = False, length_mode: str = None, stream: bool = False, token_callback=None, cancel_checker=None) -> str:
         """Genera respuesta con Ollama incluyendo contexto conversacional"""
         
-        # Construir prompt (REVERTIDO a versión completa)
+        # Construir prompt (REVERTIDO a versiÃ³n completa)
         context_section = ""
         
-        # RESTRICCIÓN GLOBAL: Solo documentos, no conocimiento previo
-        domain_restriction = """RESTRICCIÓN CRÍTICA: Eres un asistente técnico especializado en ciberseguridad.
-- SOLO puedes usar información de los documentos proporcionados.
+        # RESTRICCIÃ“N GLOBAL: Solo documentos, no conocimiento previo
+        domain_restriction = """RESTRICCIÃ“N CRÃTICA: Eres un asistente tÃ©cnico especializado en ciberseguridad.
+- SOLO puedes usar informaciÃ³n de los documentos proporcionados.
 - PROHIBIDO usar conocimiento previo o entrenamiento general.
-- REGLA DE ORO: Si los documentos contienen CUALQUIER información relevante (aunque sea parcial), SIEMPRE responde basándote en ellos. NUNCA digas "no hay información" si los documentos mencionan el tema.
+- REGLA DE ORO: Si los documentos contienen CUALQUIER informaciÃ³n relevante (aunque sea parcial), SIEMPRE responde basÃ¡ndote en ellos. NUNCA digas "no hay informaciÃ³n" si los documentos mencionan el tema.
 - IMPORTANTE: Los nombres de certificaciones/frameworks pueden aparecer con variantes (ej: "CISSP" = "C I S S P", "MITRE ATT&CK" = "ATTACK framework"). Busca variantes del nombre antes de rechazar.
-- Las preguntas pueden hacer referencia a información previa. Usa el contexto conversacional para identificar la entidad.
-- PROHIBIDO rechazar con "Lo siento, pero no hay información" si los documentos contienen datos relevantes. Extrae y presenta la información disponible.
-- Solo responde "Consulta fuera de mi alcance técnico" si la pregunta es claramente ajena a ciberseguridad/IT Y no hay documentos relevantes.
-- Si NO hay ningún documento relevante en el contexto, responde: "No se encontró información en los documentos para esa consulta."
+- Las preguntas pueden hacer referencia a informaciÃ³n previa. Usa el contexto conversacional para identificar la entidad.
+- PROHIBIDO rechazar con "Lo siento, pero no hay informaciÃ³n" si los documentos contienen datos relevantes. Extrae y presenta la informaciÃ³n disponible.
+- Solo responde "Consulta fuera de mi alcance tÃ©cnico" si la pregunta es claramente ajena a ciberseguridad/IT Y no hay documentos relevantes.
+- Si NO hay ningÃºn documento relevante en el contexto, responde: "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta."
 - PROHIBIDO cambiar el nombre de la entidad consultada por otra.
-- SOLO menciona entidades (certificaciones/frameworks/términos) que aparezcan en los DOCUMENTOS del contexto.
-- Si el nombre consultado no aparece en los documentos, responde: 'No se encontró información en los documentos para esa entidad.'
-- IDIOMA OBLIGATORIO: La pregunta del usuario está en español. Los documentos recuperados pueden estar en inglés. DEBES traducir y presentar la información al español en tu respuesta. NUNCA respondas en inglés.
-- SI los documentos contienen información parcial o indirectamente relacionada con la pregunta, USA esa información y aclara que es lo que encontraste. No rechaces la pregunta si hay contenido relevante.
+- SOLO menciona entidades (certificaciones/frameworks/tÃ©rminos) que aparezcan en los DOCUMENTOS del contexto.
+- Si el nombre consultado no aparece en los documentos, responde: 'No se encontrÃ³ informaciÃ³n en los documentos para esa entidad.'
+- IDIOMA OBLIGATORIO: La pregunta del usuario estÃ¡ en espaÃ±ol. Los documentos recuperados pueden estar en inglÃ©s. DEBES traducir y presentar la informaciÃ³n al espaÃ±ol en tu respuesta. NUNCA respondas en inglÃ©s.
+- SI los documentos contienen informaciÃ³n parcial o indirectamente relacionada con la pregunta, USA esa informaciÃ³n y aclara que es lo que encontraste. No rechaces la pregunta si hay contenido relevante.
+- EXCEPCIÃ“N: Si la pregunta pide un dato especÃ­fico (precio, fecha, contraseÃ±a, CVE, versiÃ³n, cantidad) y los documentos no lo contienen, responde: "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta."
+- PROHIBIDO responder en inglÃ©s cuando la pregunta estÃ¡ en espaÃ±ol. Si los documentos estÃ¡n en inglÃ©s, traduce la informaciÃ³n al espaÃ±ol.
 
 
 """
@@ -1454,7 +1467,7 @@ Respuesta:"""
         
         if conv_context:
             context_section = f"{context_section}\n{conv_context}\n\n---\n\n"
-        # Agregar glosario de acrónimos/definiciones desde equivalencias
+        # Agregar glosario de acrÃ³nimos/definiciones desde equivalencias
         try:
             glossary = self._build_glossary_for_query(query)
         except Exception:
@@ -1469,7 +1482,7 @@ Respuesta:"""
             is_summary, length_mode)
 
         try:
-            # Usar API de Ollama con parámetros optimizados
+            # Usar API de Ollama con parÃ¡metros optimizados
             
             options = self._build_ollama_options(detailed, length_mode, query, is_listing)
 
@@ -1528,16 +1541,16 @@ Respuesta:"""
                 )
                 
                 elapsed = time.time() - start_time
-                console.print(f"[green]Ollama respondió en {elapsed:.1f}s[/green]")
+                console.print(f"[green]Ollama respondiÃ³ en {elapsed:.1f}s[/green]")
                 
             except requests.exceptions.Timeout:
                 elapsed = time.time() - start_time
-                console.print(f"[red]ERROR: Timeout después de {elapsed:.1f}s[/red]")
-                console.print(f"[yellow]El modelo tardó más de {timeout}s en responder[/yellow]")
+                console.print(f"[red]ERROR: Timeout despuÃ©s de {elapsed:.1f}s[/red]")
+                console.print(f"[yellow]El modelo tardÃ³ mÃ¡s de {timeout}s en responder[/yellow]")
                 raise
             except requests.exceptions.ConnectionError as e:
                 console.print(f"[red]ERROR: No se pudo conectar a Ollama[/red]")
-                console.print(f"[yellow]¿Está Ollama corriendo? Error: {str(e)[:100]}[/yellow]")
+                console.print(f"[yellow]Â¿EstÃ¡ Ollama corriendo? Error: {str(e)[:100]}[/yellow]")
                 raise
             
             if response.status_code == 200:
@@ -1546,8 +1559,8 @@ Respuesta:"""
                 if not stream:
                     result_json = response.json()
                     try:
-                        ld = resultjson.get('load_duration')
-                        pd = resultjson.get('prompt_eval_duration')
+                        ld = result_json.get('load_duration')
+                        pd = result_json.get('prompt_eval_duration')
                         ttft = None
                         try:
                             if (ld is not None) and (pd is not None):
@@ -1559,17 +1572,17 @@ Respuesta:"""
                         log_event('llm_infer', {
                             'model': self.ollama_model,
                             'latency_s': round(elapsed, 3),
-                            'eval_count': resultjson.get('eval_count'),
-                            'prompt_eval_count': resultjson.get('prompt_eval_count'),
-                            'total_duration': resultjson.get('total_duration'),
-                            'load_duration': resultjson.get('load_duration'),
-                            'prompt_eval_duration': resultjson.get('prompt_eval_duration'),
-                            'eval_duration': resultjson.get('eval_duration'),
+                            'eval_count': result_json.get('eval_count'),
+                            'prompt_eval_count': result_json.get('prompt_eval_count'),
+                            'total_duration': result_json.get('total_duration'),
+                            'load_duration': result_json.get('load_duration'),
+                            'prompt_eval_duration': result_json.get('prompt_eval_duration'),
+                            'eval_duration': result_json.get('eval_duration'),
                             'ttft_est_s': ttft
                         })
                     except Exception:
                         pass
-                    answer = resultjson.get('response', '').strip()
+                    answer = result_json.get('response', '').strip()
                 else:
                     got_first = False
                     for line in response.iter_lines(decode_unicode=True):
@@ -1582,7 +1595,7 @@ Respuesta:"""
                                 break
                         except Exception:
                             pass
-                        # Cancelación cooperativa
+                        # CancelaciÃ³n cooperativa
                         try:
                             if callable(cancel_checker) and cancel_checker():
                                 try:
@@ -1605,7 +1618,7 @@ Respuesta:"""
                             except Exception:
                                 pass
                             got_first = True
-                        # Si se canceló antes de procesar chunk, salir
+                        # Si se cancelÃ³ antes de procesar chunk, salir
                         try:
                             if callable(cancel_checker) and cancel_checker():
                                 try:
@@ -1626,8 +1639,8 @@ Respuesta:"""
                         if ev.get('done'):
                             result_json = ev
                             try:
-                                ld = resultjson.get('load_duration')
-                                pd = resultjson.get('prompt_eval_duration')
+                                ld = result_json.get('load_duration')
+                                pd = result_json.get('prompt_eval_duration')
                                 ttft = None
                                 try:
                                     if (ld is not None) and (pd is not None):
@@ -1639,12 +1652,12 @@ Respuesta:"""
                                 log_event('llm_infer', {
                                     'model': self.ollama_model,
                                     'latency_s': round(time.time() - start_time, 3),
-                                    'eval_count': resultjson.get('eval_count'),
-                                    'prompt_eval_count': resultjson.get('prompt_eval_count'),
-                                    'total_duration': resultjson.get('total_duration'),
-                                    'load_duration': resultjson.get('load_duration'),
-                                    'prompt_eval_duration': resultjson.get('prompt_eval_duration'),
-                                    'eval_duration': resultjson.get('eval_duration'),
+                                    'eval_count': result_json.get('eval_count'),
+                                    'prompt_eval_count': result_json.get('prompt_eval_count'),
+                                    'total_duration': result_json.get('total_duration'),
+                                    'load_duration': result_json.get('load_duration'),
+                                    'prompt_eval_duration': result_json.get('prompt_eval_duration'),
+                                    'eval_duration': result_json.get('eval_duration'),
                                     'ttft_est_s': ttft
                                 })
                             except Exception:
@@ -1654,10 +1667,10 @@ Respuesta:"""
                 answer = self._clean_ollama_response(answer, query, context)
                 
                 if "no puedo proporcionar" in answer.lower() or "lo siento" in answer.lower()[:50]:
-                    console.print(f"[yellow]ADVERTENCIA: LLM generó respuesta de rechazo[/yellow]")
+                    console.print(f"[yellow]ADVERTENCIA: LLM generÃ³ respuesta de rechazo[/yellow]")
                     console.print(f"[dim]Primeros 200 chars del prompt: {prompt[:200]}...[/dim]")
                     console.print(f"[dim]Respuesta: {answer[:200]}...[/dim]")
-                    # Fallback seguro para consultas procedimentales: entregar guía general no operativa
+                    # Fallback seguro para consultas procedimentales: entregar guÃ­a general no operativa
                     try:
                         if is_procedural:
                             al = answer.lower()
@@ -1669,7 +1682,7 @@ Respuesta:"""
                                     "3. Revisar los controles involucrados (por ejemplo firewall, EDR/XDR, SIEM) y su cronologia.\n"
                                     "4. Validar informacion con el equipo de seguridad correspondiente y consignas vigentes.\n"
                                     "5. Consultar procedimientos internos aplicables (playbooks, politicas de respuesta a incidentes) y seguir el flujo de escalamiento.\n"
-                                    "6. Notificar al equipo de seguridad; registrar el incidente (hora, señales, evidencias) y abrir ticket.\n"
+                                    "6. Notificar al equipo de seguridad; registrar el incidente (hora, seÃ±ales, evidencias) y abrir ticket.\n"
                                     "7. Si se requiere intervencion, actuar solo segun procedimientos aprobados y con autorizacion correspondiente.\n"
                                     "Nota: Pasos orientativos basados en documentacion disponible. Adaptar segun procedimientos especificos de la organizacion."
                                 )
@@ -1677,8 +1690,8 @@ Respuesta:"""
                     except Exception:
                         pass
                 
-                # AUTO-REVISIÓN: desactivada por defecto para evitar contradicciones
-                # Solo activar si enable_self_review está EXPLÍCITAMENTE en True
+                # AUTO-REVISIÃ“N: desactivada por defecto para evitar contradicciones
+                # Solo activar si enable_self_review estÃ¡ EXPLÃCITAMENTE en True
                 if (not is_aggregation) and (not is_conceptual) and \
                    (((not detailed) or self.flags.get('enable_self_review_in_detailed', False))) and \
                    (not (isinstance(length_mode, str) and length_mode.strip().lower() == 'long')) and \
@@ -1686,7 +1699,7 @@ Respuesta:"""
                    self.config.get('enable_self_review', False):
                     answer = self._self_review_answer(query, answer, context)
 
-                # Enforce longitud según preferencia de UI (short con overflow hasta 20%)
+                # Enforce longitud segÃºn preferencia de UI (short con overflow hasta 20%)
                 try:
                     if isinstance(length_mode, str) and length_mode.strip().lower() == 'short':
                         limit = 1200  # 1000 con tolerancia del 20%
@@ -1710,7 +1723,7 @@ Respuesta:"""
         
         except requests.exceptions.Timeout:
             timeout_msg = "5 minutos" if detailed else "4 minutos"
-            return f"Error: Timeout (>{timeout_msg}). El modelo está tomando demasiado tiempo. Verifica que Ollama esté corriendo correctamente."
+            return f"Error: Timeout (>{timeout_msg}). El modelo estÃ¡ tomando demasiado tiempo. Verifica que Ollama estÃ© corriendo correctamente."
         except Exception as e:
             return f"Error: {str(e)}"
 
@@ -1719,11 +1732,11 @@ Respuesta:"""
                               is_direct_comparison, is_simple_numeric, is_troubleshooting,
                               is_summary, length_mode):
         is_listing = False
-        # Detección de pedido de longitud explícita (exhaustividad sin disclaimers)
-        has_length_req = re.search(r'\b(minimo|mínimo|al menos|como minimo|como mínimo)\s+\d+\s+(palabra|palabras|caracteres)\b', (query or '').lower()) or re.search(r'\b\d+\s+(palabra|palabras|caracteres)\b', (query or '').lower())
+        # DetecciÃ³n de pedido de longitud explÃ­cita (exhaustividad sin disclaimers)
+        has_length_req = re.search(r'\b(minimo|mÃ­nimo|al menos|como minimo|como mÃ­nimo)\s+\d+\s+(palabra|palabras|caracteres)\b', (query or '').lower()) or re.search(r'\b\d+\s+(palabra|palabras|caracteres)\b', (query or '').lower())
         
         if has_length_req:
-            prompt = f"""Eres un asistente técnico. Proporciona una respuesta EXHAUSTIVA usando SOLO los documentos.
+            prompt = f"""Eres un asistente tÃ©cnico. Proporciona una respuesta EXHAUSTIVA usando SOLO los documentos.
 
 {context_section}
 DOCUMENTOS:
@@ -1732,16 +1745,16 @@ DOCUMENTOS:
 PREGUNTA: {query}
 
 INSTRUCCIONES:
-1. Extrae TODA la información disponible de los documentos sobre el tema solicitado.
+1. Extrae TODA la informaciÃ³n disponible de los documentos sobre el tema solicitado.
 2. Organiza en secciones claras con encabezados.
 3. Incluye citas [Doc N - nombre p.X] para cada dato.
-4. Sé exhaustivo: cubre todos los aspectos mencionados en los documentos.
-5. NO uses disclaimers de longitud o falta de información si los documentos tienen contenido relevante.
+4. SÃ© exhaustivo: cubre todos los aspectos mencionados en los documentos.
+5. NO uses disclaimers de longitud o falta de informaciÃ³n si los documentos tienen contenido relevante.
 
 Respuesta:"""
         elif is_summary:
-            # Detección de modo resumen
-            prompt = f"""Eres un asistente técnico. Resume el contenido solicitado usando SOLO los documentos.
+            # DetecciÃ³n de modo resumen
+            prompt = f"""Eres un asistente tÃ©cnico. Resume el contenido solicitado usando SOLO los documentos.
 
 {context_section}
 DOCUMENTOS:
@@ -1752,12 +1765,12 @@ PREGUNTA: {query}
 INSTRUCCIONES:
 1. Entrega un resumen estructurado: Objetivo -> Alcance -> Responsables -> Requisitos -> Secciones/Pasos.
 2. Incluye citas como [Doc N - nombre p.X] cuando corresponda.
-3. Sé conciso, directo y no inventes información.
+3. SÃ© conciso, directo y no inventes informaciÃ³n.
 
 Respuesta:"""
         elif is_conceptual:
-            # MODO CONCEPTUAL: Explicación general con base documental
-            prompt = f"""Eres un asistente técnico experto. Explica el concepto solicitado usando SOLO los documentos proporcionados.
+            # MODO CONCEPTUAL: ExplicaciÃ³n general con base documental
+            prompt = f"""Eres un asistente tÃ©cnico experto. Explica el concepto solicitado usando SOLO los documentos proporcionados.
 
 {context_section}
 DOCUMENTOS:
@@ -1766,22 +1779,22 @@ DOCUMENTOS:
 PREGUNTA: {query}
 
 INSTRUCCIONES:
-1. Proporciona una explicación CLARA Y DIRECTA del concepto.
-2. Usa información SOLO de los documentos proporcionados.
-3. Estructura: definición breve -> componentes/funcionamiento -> ejemplos concretos de los docs.
-4. Cita las fuentes como [Doc N - nombre p.X] cuando uses información específica.
-5. Si la pregunta es general pero los docs solo tienen casos específicos, indícalo: "Según los documentos disponibles..." y explica con ejemplos.
+1. Proporciona una explicaciÃ³n CLARA Y DIRECTA del concepto.
+2. Usa informaciÃ³n SOLO de los documentos proporcionados.
+3. Estructura: definiciÃ³n breve -> componentes/funcionamiento -> ejemplos concretos de los docs.
+4. Cita las fuentes como [Doc N - nombre p.X] cuando uses informaciÃ³n especÃ­fica.
+5. Si la pregunta es general pero los docs solo tienen casos especÃ­ficos, indÃ­calo: "SegÃºn los documentos disponibles..." y explica con ejemplos.
 
 PROHIBIDO:
-- Inventar información no presente en los documentos.
-- Autocorregirte o añadir una sección de "errores" al final.
+- Inventar informaciÃ³n no presente en los documentos.
+- Autocorregirte o aÃ±adir una secciÃ³n de "errores" al final.
 - Usar tablas o formato tabular salvo que se soliciten.
 - Introducir temas no relacionados con ciberseguridad/IT.
 
 Respuesta:"""
         elif is_direct_comparison:
-            # MODO COMPARACIÓN DIRECTA: Comparar dos entidades específicas uno-a-uno
-            prompt = f"""Eres un asistente técnico. Compara las entidades solicitadas usando SOLO los documentos.
+            # MODO COMPARACIÃ“N DIRECTA: Comparar dos entidades especÃ­ficas uno-a-uno
+            prompt = f"""Eres un asistente tÃ©cnico. Compara las entidades solicitadas usando SOLO los documentos.
 
 {context_section}
 DOCUMENTOS:
@@ -1789,18 +1802,18 @@ DOCUMENTOS:
 
 PREGUNTA: {query}
 
-INSTRUCCIONES CRÍTICAS:
-1. Si los documentos contienen información sobre AMBAS entidades, extrae y compara.
+INSTRUCCIONES CRÃTICAS:
+1. Si los documentos contienen informaciÃ³n sobre AMBAS entidades, extrae y compara.
 2. NUNCA digas "no se menciona X" si X aparece en los documentos.
 3. **IMPORTANTE: Extrae TODOS los datos relevantes** (requisitos, estructura, aplicabilidad, etc.)
 4. Presenta en formato claro:
    **[Entidad A]**:
-   - Definición/propósito: X [Doc N - nombre p.X]
+   - DefiniciÃ³n/propÃ³sito: X [Doc N - nombre p.X]
    - Requisitos: Y [Doc N - nombre p.X]
    - Estructura/componentes: Z [Doc N - nombre p.X]
    
    **[Entidad B]**:
-   - Definición/propósito: X [Doc N - nombre p.X]
+   - DefiniciÃ³n/propÃ³sito: X [Doc N - nombre p.X]
    - Requisitos: Y [Doc N - nombre p.X]
    - Estructura/componentes: Z [Doc N - nombre p.X]
    
@@ -1809,7 +1822,7 @@ INSTRUCCIONES CRÍTICAS:
 PROHIBIDO:
 - Decir "no se menciona" si la entidad aparece en los documentos.
 - Inventar datos.
-- Omitir información clave disponible en los documentos.
+- Omitir informaciÃ³n clave disponible en los documentos.
 - Mencionar entidades no solicitadas.
 - Usar tablas salvo que el usuario las pida.
 - Introducir temas no solicitados.
@@ -1817,8 +1830,8 @@ PROHIBIDO:
 
 Respuesta:"""
         elif is_simple_numeric:
-            # MODO NUMÉRICO SIMPLE: Respuesta ultra-concisa con un dato numérico
-            prompt = f"""Responde con el dato numérico solicitado de forma DIRECTA y CONCISA.
+            # MODO NUMÃ‰RICO SIMPLE: Respuesta ultra-concisa con un dato numÃ©rico
+            prompt = f"""Responde con el dato numÃ©rico solicitado de forma DIRECTA y CONCISA.
 
 {context_section}
 DOCUMENTOS:
@@ -1827,20 +1840,20 @@ DOCUMENTOS:
 PREGUNTA: {query}
 
 INSTRUCCIONES:
-1. Busca el dato numérico exacto en los documentos.
-2. **IMPORTANTE: Menciona el nombre de la certificación/framework en tu respuesta.**
-3. Responde en UNA línea: "[Entidad]: [Valor] [unidad] [Doc N - nombre p.X]"
-4. Si no encuentras el dato: "No se encontró información"
+1. Busca el dato numÃ©rico exacto en los documentos.
+2. **IMPORTANTE: Menciona el nombre de la certificaciÃ³n/framework en tu respuesta.**
+3. Responde en UNA lÃ­nea: "[Entidad]: [Valor] [unidad] [Doc N - nombre p.X]"
+4. Si no encuentras el dato: "No se encontrÃ³ informaciÃ³n"
 
 PROHIBIDO:
-- Explicaciones adicionales salvo que sean críticas.
-- Aproximar o inventar números.
-- Omitir el nombre de la entidad/certificación.
+- Explicaciones adicionales salvo que sean crÃ­ticas.
+- Aproximar o inventar nÃºmeros.
+- Omitir el nombre de la entidad/certificaciÃ³n.
 
 Respuesta:"""
         elif is_troubleshooting:
-            # MODO TROUBLESHOOTING/DIAGNÓSTICO: Guía de diagnóstico basada en docs
-            prompt = f"""Eres un asistente técnico. Proporciona un diagnóstico basado en los documentos.
+            # MODO TROUBLESHOOTING/DIAGNÃ“STICO: GuÃ­a de diagnÃ³stico basada en docs
+            prompt = f"""Eres un asistente tÃ©cnico. Proporciona un diagnÃ³stico basado en los documentos.
 
 {context_section}
 DOCUMENTOS:
@@ -1849,9 +1862,9 @@ DOCUMENTOS:
 PREGUNTA: {query}
 
 INSTRUCCIONES:
-1. Identifica el problema o síntoma descrito.
+1. Identifica el problema o sÃ­ntoma descrito.
 2. Estructura tu respuesta:
-   **Posibles causas** (según documentos):
+   **Posibles causas** (segÃºn documentos):
    - Causa 1 [Doc N - nombre p.X]
    - Causa 2 [Doc N - nombre p.X]
    
@@ -1861,7 +1874,7 @@ INSTRUCCIONES:
    
    **Referencias documentales**: [Doc N - nombre p.X]
 
-3. Si no hay información suficiente, indícalo claramente.
+3. Si no hay informaciÃ³n suficiente, indÃ­calo claramente.
 
 PROHIBIDO:
 - Instrucciones operativas sin respaldo documental.
@@ -1870,13 +1883,13 @@ PROHIBIDO:
 
 Respuesta:"""
         elif is_aggregation:
-            # MODO AGREGACIÓN: Extraer tabla de centrales línea por línea
+            # MODO AGREGACIÃ“N: Extraer tabla de centrales lÃ­nea por lÃ­nea
             
             # Buscar TOTAL en el contexto
             total_match = re.search(r'TOTAL\s*\n\s*([\d,\.]+)', context, re.IGNORECASE)
             total_value = total_match.group(1) if total_match else "No encontrado"
             
-            # Extraer centrales línea por línea (mejorado para nombres multi-línea)
+            # Extraer centrales lÃ­nea por lÃ­nea (mejorado para nombres multi-lÃ­nea)
             lines = context.split('\n')
             centrales = []
             i = 0
@@ -1885,20 +1898,20 @@ Respuesta:"""
                 line2 = lines[i+1].strip()
                 line3 = lines[i+2].strip()
                 
-                # Verificar si line2 es un número y line3 es una tecnología
-                if re.match(r'^[\d,\.]+$', line2) and line3 in ['Eólica', 'Fotovoltaica', 'Biogás', 'Biomasa']:
+                # Verificar si line2 es un nÃºmero y line3 es una tecnologÃ­a
+                if re.match(r'^[\d,\.]+$', line2) and line3 in ['EÃ³lica', 'Fotovoltaica', 'BiogÃ¡s', 'Biomasa']:
                     # line1 es el nombre de la central
                     if line1 and not line1.startswith('CENTRAL') and not line1.startswith('POTENCIA'):
                         nombre = line1
                         
-                        # Verificar si el nombre continúa en la línea anterior (nombres multi-línea)
+                        # Verificar si el nombre continÃºa en la lÃ­nea anterior (nombres multi-lÃ­nea)
                         if i > 0:
                             line_prev = lines[i-1].strip()
-                            # Si la línea anterior no es un número ni tecnología, es parte del nombre
-                            if line_prev and not re.match(r'^[\d,\.]+$', line_prev) and line_prev not in ['Eólica', 'Fotovoltaica', 'Biogás', 'Biomasa', 'CENTRAL', 'POTENCIA', 'MW', 'TECNOLOGIA', 'BLC', 'Inv. Kehua', 'Inv. Huawei']:
-                                # Casos especiales: nombres que están en 2 líneas
-                                if 'Río Seco' in nombre and 'Villa María' in line_prev:
-                                    nombre = f"P.S. Villa María del Río Seco"
+                            # Si la lÃ­nea anterior no es un nÃºmero ni tecnologÃ­a, es parte del nombre
+                            if line_prev and not re.match(r'^[\d,\.]+$', line_prev) and line_prev not in ['EÃ³lica', 'Fotovoltaica', 'BiogÃ¡s', 'Biomasa', 'CENTRAL', 'POTENCIA', 'MW', 'TECNOLOGIA', 'BLC', 'Inv. Kehua', 'Inv. Huawei']:
+                                # Casos especiales: nombres que estÃ¡n en 2 lÃ­neas
+                                if 'RÃ­o Seco' in nombre and 'Villa MarÃ­a' in line_prev:
+                                    nombre = f"P.S. Villa MarÃ­a del RÃ­o Seco"
                                 elif 'CHACO' in nombre and 'PERLA' in line_prev:
                                     nombre = f"P.S. LA PERLA DE CHACO"
                                 elif 'Ventura' in nombre and 'Buena' in line_prev:
@@ -1913,18 +1926,18 @@ Respuesta:"""
             # Formatear tabla de centrales
             tabla_centrales = ""
             if centrales:
-                tabla_centrales = "\n**TABLA DE CENTRALES EXTRAÍDA:**\n"
+                tabla_centrales = "\n**TABLA DE CENTRALES EXTRAÃDA:**\n"
                 for i, (nombre, potencia, tecnologia) in enumerate(centrales, 1):
                     tabla_centrales += f"{i}. {nombre}: {potencia} MW ({tecnologia})\n"
                 tabla_centrales += f"\n**TOTAL OFICIAL: {total_value} MW**\n"
                 tabla_centrales += f"**Total de centrales: {len(centrales)}**\n"
             
-            # MODO AGREGACIÓN: Usar SOLO la tabla extraída
-            # Evitar este modo si el usuario pide TECNOLOGÍA o COBERTURA COMPLETA de Anexos D
-            tech_sig = any(k in (query.lower()) for k in ['tecnologia', 'tecnología', 'tecnologias', 'tecnologías'])
+            # MODO AGREGACIÃ“N: Usar SOLO la tabla extraÃ­da
+            # Evitar este modo si el usuario pide TECNOLOGÃA o COBERTURA COMPLETA de Anexos D
+            tech_sig = any(k in (query.lower()) for k in ['tecnologia', 'tecnologÃ­a', 'tecnologias', 'tecnologÃ­as'])
             if tabla_centrales and not (tech_sig or self._requires_full_anexos_coverage(query)):
-                # Si tenemos tabla extraída, NO enviar el contexto completo
-                prompt = f"""Eres un asistente técnico especializado en ciberseguridad. Tienes una tabla con TODOS los elementos extraídos de los documentos.
+                # Si tenemos tabla extraÃ­da, NO enviar el contexto completo
+                prompt = f"""Eres un asistente tÃ©cnico especializado en ciberseguridad. Tienes una tabla con TODOS los elementos extraÃ­dos de los documentos.
 
 {context_section}
 {tabla_centrales}
@@ -1938,8 +1951,8 @@ INSTRUCCIONES:
 4. Cita como [Doc N - nombre p.X] si es relevante.
 
 PROHIBIDO:
-- Preámbulos ("Entendido", "Análisis:").
-- Código o JSON.
+- PreÃ¡mbulos ("Entendido", "AnÃ¡lisis:").
+- CÃ³digo o JSON.
 - Encabezados Markdown (###) o emojis.
 - Introducir temas no solicitados.
 
@@ -1949,8 +1962,8 @@ Formato:
 
 Respuesta:"""
         elif is_procedural:
-            # MODO PROCEDIMENTAL: Guía general segura y no operativa basada en documentos
-            prompt = f"""Eres un asistente técnico. Proporciona una guía GENERAL, SEGURA y NO OPERATIVA basada EXCLUSIVAMENTE en los documentos.
+            # MODO PROCEDIMENTAL: GuÃ­a general segura y no operativa basada en documentos
+            prompt = f"""Eres un asistente tÃ©cnico. Proporciona una guÃ­a GENERAL, SEGURA y NO OPERATIVA basada EXCLUSIVAMENTE en los documentos.
 
 {context_section}
 DOCUMENTOS:
@@ -1959,27 +1972,27 @@ DOCUMENTOS:
 PREGUNTA: {query}
 
 INSTRUCCIONES:
-1. Entrega PASOS de verificación y comunicación (NO operativos).
+1. Entrega PASOS de verificaciÃ³n y comunicaciÃ³n (NO operativos).
 2. Usa los documentos solo como referencia informativa.
-3. Si describe un evento, incluye: verificación de estados, alertas, controles, registros de logs/eventos, comunicación con el responsable.
+3. Si describe un evento, incluye: verificaciÃ³n de estados, alertas, controles, registros de logs/eventos, comunicaciÃ³n con el responsable.
 4. Indica consultar procedimientos internos aplicables y notificar al equipo de seguridad correspondiente.
-5. Si no hay evidencia documental para un paso, decláralo explícitamente.
+5. Si no hay evidencia documental para un paso, declÃ¡ralo explÃ­citamente.
 6. Cita las fuentes como [Doc N - nombre p.X].
 
 FORMATO:
-- Título breve.
-- Lista numerada de pasos de verificación y comunicación.
-- Nota final de seguridad y referencia a documentación.
+- TÃ­tulo breve.
+- Lista numerada de pasos de verificaciÃ³n y comunicaciÃ³n.
+- Nota final de seguridad y referencia a documentaciÃ³n.
 
 PROHIBIDO:
 - Maniobras o cambios de estado.
-- Operaciones específicas sin respaldo documental claro.
-- Introducir temas no solicitados (ej: Entrada en Servicio, habilitación comercial).
+- Operaciones especÃ­ficas sin respaldo documental claro.
+- Introducir temas no solicitados (ej: Entrada en Servicio, habilitaciÃ³n comercial).
 
 Respuesta con pasos:"""
         elif detailed:
             # Respuesta DETALLADA
-            prompt = f"""Extrae TODA la información disponible del tema solicitado usando SOLO los documentos.
+            prompt = f"""Extrae TODA la informaciÃ³n disponible del tema solicitado usando SOLO los documentos.
 
 {context_section}
 DOCUMENTOS:
@@ -1987,42 +2000,42 @@ DOCUMENTOS:
 
 PREGUNTA: {query}
 
-INSTRUCCIONES CRÍTICAS:
-1. Proporciona una respuesta COMPLETA Y EXHAUSTIVA - NO te detengas en la primera línea o párrafo.
+INSTRUCCIONES CRÃTICAS:
+1. Proporciona una respuesta COMPLETA Y EXHAUSTIVA - NO te detengas en la primera lÃ­nea o pÃ¡rrafo.
 2. Incluye TODOS los datos relevantes encontrados en los documentos:
    - Definiciones y conceptos clave
-   - Nombres de certificaciones, frameworks, estándares
+   - Nombres de certificaciones, frameworks, estÃ¡ndares
    - Requisitos, prerequisitos, criterios de elegibilidad
-   - Estructura de exámenes (dominios, número de preguntas, duración)
+   - Estructura de exÃ¡menes (dominios, nÃºmero de preguntas, duraciÃ³n)
    - Roles y responsabilidades profesionales
-   - Procedimientos y mejores prácticas
-   - Cualquier dato numérico relevante (costos, duración, etc.)
-3. Si encuentras información parcial en un documento, CONTINÚA buscando en otros fragmentos.
-4. Organiza claramente: usa títulos, listas numeradas si aplica.
+   - Procedimientos y mejores prÃ¡cticas
+   - Cualquier dato numÃ©rico relevante (costos, duraciÃ³n, etc.)
+3. Si encuentras informaciÃ³n parcial en un documento, CONTINÃšA buscando en otros fragmentos.
+4. Organiza claramente: usa tÃ­tulos, listas numeradas si aplica.
 5. Cita las fuentes como [Doc N - nombre p.X] para cada dato importante.
-6. Si varios documentos aportan información, COMBINA toda la información disponible.
+6. Si varios documentos aportan informaciÃ³n, COMBINA toda la informaciÃ³n disponible.
 
 PROHIBIDO:
-- Detenerte después de extraer solo el primer dato.
+- Detenerte despuÃ©s de extraer solo el primer dato.
 - Inventar o extrapolar datos no presentes en los documentos.
-- Autocorregirte o añadir una sección de "errores" al final de tu respuesta.
-- Usar tablas salvo que el usuario las pida explícitamente.
+- Autocorregirte o aÃ±adir una secciÃ³n de "errores" al final de tu respuesta.
+- Usar tablas salvo que el usuario las pida explÃ­citamente.
 
 Respuesta detallada y completa:"""
         else:
             # Respuesta NORMAL
-            # Detectar si pide explicación de un documento específico
+            # Detectar si pide explicaciÃ³n de un documento especÃ­fico
             is_doc_explanation = self._is_doc_explanation_query(query)
             doc_ref = self._extract_doc_reference(query)
             
-            # Detectar si requiere información de múltiples documentos
+            # Detectar si requiere informaciÃ³n de mÃºltiples documentos
             is_multi_doc = self._is_multi_document_query(query)
-            # Detectar si es una petición de LISTADO (enumeración de centrales)
+            # Detectar si es una peticiÃ³n de LISTADO (enumeraciÃ³n de centrales)
             is_listing = self._is_listing_query(query)
             
             if is_doc_explanation and doc_ref:
-                # MODO EXPLICACIÓN DE DOCUMENTO: Explicar en profundidad un documento citado
-                prompt = f"""Eres un asistente técnico. Explica en profundidad el documento [{doc_ref['doc_name']} p.{doc_ref['page']}].
+                # MODO EXPLICACIÃ“N DE DOCUMENTO: Explicar en profundidad un documento citado
+                prompt = f"""Eres un asistente tÃ©cnico. Explica en profundidad el documento [{doc_ref['doc_name']} p.{doc_ref['page']}].
 
 {context_section}
 DOCUMENTO:
@@ -2031,27 +2044,27 @@ DOCUMENTO:
 PREGUNTA: {query}
 
 INSTRUCCIONES:
-- Proporciona una explicación COMPLETA y DETALLADA.
-- Incluye TODOS los procedimientos, pasos, códigos y valores técnicos.
-- Organiza claramente (títulos, listas numeradas si aplica).
+- Proporciona una explicaciÃ³n COMPLETA y DETALLADA.
+- Incluye TODOS los procedimientos, pasos, cÃ³digos y valores tÃ©cnicos.
+- Organiza claramente (tÃ­tulos, listas numeradas si aplica).
 - Cita la fuente como [Doc N - nombre p.X].
 
 PROHIBIDO:
-- Inventar información no presente.
-- Introducir temas no solicitados (ej: Entrada en Servicio, habilitación comercial).
+- Inventar informaciÃ³n no presente.
+- Introducir temas no solicitados (ej: Entrada en Servicio, habilitaciÃ³n comercial).
 - Usar tablas salvo que el usuario las pida.
 
-Explicación detallada:"""
+ExplicaciÃ³n detallada:"""
             elif is_listing:
-                # MODO LISTADO: Enumerar TODOS los frameworks/controles/políticas (solo nombres)
-                # Detectar filtro de categoría de ciberseguridad
+                # MODO LISTADO: Enumerar TODOS los frameworks/controles/polÃ­ticas (solo nombres)
+                # Detectar filtro de categorÃ­a de ciberseguridad
                 tech_filter = ""
                 if 'network' in query.lower() or 'red' in query.lower():
-                    tech_filter = "\n- **IMPORTANTE: Lista SOLO elementos de categoría NETWORK. NO incluyas otras categorías.**"
+                    tech_filter = "\n- **IMPORTANTE: Lista SOLO elementos de categorÃ­a NETWORK. NO incluyas otras categorÃ­as.**"
                 elif 'cloud' in query.lower() or 'nube' in query.lower():
-                    tech_filter = "\n- **IMPORTANTE: Lista SOLO elementos de categoría CLOUD. NO incluyas otras categorías.**"
+                    tech_filter = "\n- **IMPORTANTE: Lista SOLO elementos de categorÃ­a CLOUD. NO incluyas otras categorÃ­as.**"
 
-                prompt = f"""Eres un asistente técnico especializado en ciberseguridad. Enumera TODOS los elementos solicitados usando SOLO los documentos.
+                prompt = f"""Eres un asistente tÃ©cnico especializado en ciberseguridad. Enumera TODOS los elementos solicitados usando SOLO los documentos.
 
 {context_section}
 DOCUMENTOS:
@@ -2061,47 +2074,47 @@ PREGUNTA: {query}
 
 INSTRUCCIONES:
 - Lista SOLO los NOMBRES de los elementos solicitados (sin detalles adicionales, sin comentarios).{tech_filter}
-- Un ítem por línea, numerado.
-- No repitas nombres ni incluyas líneas vacías.
-- Si falta información para completar la lista total, indica claramente cuántos elementos encontraste.
- - Si no encuentras info: "No se encontró información" (exacto, sin explicaciones adicionales).
+- Un Ã­tem por lÃ­nea, numerado.
+- No repitas nombres ni incluyas lÃ­neas vacÃ­as.
+- Si falta informaciÃ³n para completar la lista total, indica claramente cuÃ¡ntos elementos encontraste.
+ - Si no encuentras info: "No se encontrÃ³ informaciÃ³n" (exacto, sin explicaciones adicionales).
  - No incluyas fuentes ni comentarios.
 
  PROHIBIDO:
- - Preambulos o metacomentarios ("Entendido", "Análisis:", "Respuesta final:").
- - Razonamiento visible o explicación del proceso.
- - Bloques de código o JSON.
+ - Preambulos o metacomentarios ("Entendido", "AnÃ¡lisis:", "Respuesta final:").
+ - Razonamiento visible o explicaciÃ³n del proceso.
+ - Bloques de cÃ³digo o JSON.
  - Encabezados Markdown (###) o emojis.
 
 Respuesta (solo la lista):"""
             elif is_multi_doc:
-                # MODO MULTI-DOCUMENTO: Agregar información de múltiples fuentes
-                prompt = f"""Eres un asistente técnico experto. Analiza TODOS los documentos y responde.
+                # MODO MULTI-DOCUMENTO: Agregar informaciÃ³n de mÃºltiples fuentes
+                prompt = f"""Eres un asistente tÃ©cnico experto. Analiza TODOS los documentos y responde.
 
 {context_section}
-DOCUMENTOS (sin acentos - corrígelos en tu respuesta):
+DOCUMENTOS (sin acentos - corrÃ­gelos en tu respuesta):
 {context}
 
 PREGUNTA: {query}
 
 INSTRUCCIONES:
-1. **LEE TODOS LOS DOCUMENTOS**: Revisa CADA fragmento [Doc 1], [Doc 2]... hasta el último.
-2. **COMBINA INFORMACIÓN**: Si varios documentos contienen datos relevantes, combínalos.
-3. **BUSCA PATRONES NUMÉRICOS**: Tablas, frases con números ("El framework tiene X controles"), números en texto ("diez y seis").
-4. **CORRIGE ORTOGRAFÍA**: Agrega acentos correctos ("Numero" -> "Número").
+1. **LEE TODOS LOS DOCUMENTOS**: Revisa CADA fragmento [Doc 1], [Doc 2]... hasta el Ãºltimo.
+2. **COMBINA INFORMACIÃ“N**: Si varios documentos contienen datos relevantes, combÃ­nalos.
+3. **BUSCA PATRONES NUMÃ‰RICOS**: Tablas, frases con nÃºmeros ("El framework tiene X controles"), nÃºmeros en texto ("diez y seis").
+4. **CORRIGE ORTOGRAFÃA**: Agrega acentos correctos ("Numero" -> "NÃºmero").
 5. **Cita fuentes**: Usa formato [Doc N - nombre p.X].
 
 PROHIBIDO:
-- Inventar o aproximar números.
+- Inventar o aproximar nÃºmeros.
 - Agregar secciones extra o preguntas de seguimiento.
-- Repetir información.
-- Introducir temas no solicitados (ej: Entrada en Servicio, habilitación comercial).
+- Repetir informaciÃ³n.
+- Introducir temas no solicitados (ej: Entrada en Servicio, habilitaciÃ³n comercial).
 - Usar tablas salvo que el usuario las pida.
 
 Respuesta:"""
             elif is_simple_numeric:
-                # MODO NUMÉRICO SIMPLE: Extraer un dato específico (potencia, cantidad, etc.)
-                prompt = f"""Eres un asistente técnico. Extrae el dato numérico solicitado usando SOLO los documentos.
+                # MODO NUMÃ‰RICO SIMPLE: Extraer un dato especÃ­fico (potencia, cantidad, etc.)
+                prompt = f"""Eres un asistente tÃ©cnico. Extrae el dato numÃ©rico solicitado usando SOLO los documentos.
 
 {context_section}
 DOCUMENTOS:
@@ -2109,71 +2122,71 @@ DOCUMENTOS:
 
 PREGUNTA: {query}
 
-INSTRUCCIONES CRÍTICAS:
-1. **BUSCA EL DATO ESPECÍFICO**: Versión, cantidad, número, puntaje CVSS, etc.
-2. **EXTRAE TODOS LOS VALORES RELEVANTES**: Si hay múltiples menciones del dato, inclúyelas todas.
-3. **FORMATO CLARO**: Responde directamente con el valor y la unidad (ej: "versión 4.2", "7 controles", "CVSS 9.8").
-4. **INCLUYE CONTEXTO MÍNIMO**: Menciona la entidad a la que pertenece el dato.
+INSTRUCCIONES CRÃTICAS:
+1. **BUSCA EL DATO ESPECÃFICO**: VersiÃ³n, cantidad, nÃºmero, puntaje CVSS, etc.
+2. **EXTRAE TODOS LOS VALORES RELEVANTES**: Si hay mÃºltiples menciones del dato, inclÃºyelas todas.
+3. **FORMATO CLARO**: Responde directamente con el valor y la unidad (ej: "versiÃ³n 4.2", "7 controles", "CVSS 9.8").
+4. **INCLUYE CONTEXTO MÃNIMO**: Menciona la entidad a la que pertenece el dato.
 5. **CITA LA FUENTE**: Usa formato [Doc N - nombre p.X].
 
 PROHIBIDO:
-- Detenerte en el primer dato parcial (ej: solo nombre cuando se pregunta versión).
+- Detenerte en el primer dato parcial (ej: solo nombre cuando se pregunta versiÃ³n).
 - Inventar valores no presentes en los documentos.
-- Agregar información no solicitada.
+- Agregar informaciÃ³n no solicitada.
 
 Respuesta directa:"""
             else:
                 # MODO GENERAL: Responder con datos precisos y concisos
-                prompt = f"""Eres un asistente técnico especializado en ciberseguridad. Debes responder de forma
-precisa y sustentada SOLO con la información de los documentos provistos. Si no hay
-suficiente evidencia, admite que no se encontró en los documentos.
-Primero, responde con el dato principal en una sola línea, claro y conciso. Luego (si aplica) agrega detalles breves. No incluyas fuentes en el texto, el sistema las mostrará aparte.
-No introduzcas temas no consultados a menos que el usuario lo pida explícitamente.
-No declares propietarios/empresas si no está explícitamente indicado en el CONTEXTO.
+                prompt = f"""Eres un asistente tÃ©cnico especializado en ciberseguridad. Debes responder de forma
+precisa y sustentada SOLO con la informaciÃ³n de los documentos provistos. Si no hay
+suficiente evidencia, admite que no se encontrÃ³ en los documentos.
+Primero, responde con el dato principal en una sola lÃ­nea, claro y conciso. Luego (si aplica) agrega detalles breves. No incluyas fuentes en el texto, el sistema las mostrarÃ¡ aparte.
+No introduzcas temas no consultados a menos que el usuario lo pida explÃ­citamente.
+No declares propietarios/empresas si no estÃ¡ explÃ­citamente indicado en el CONTEXTO.
 {context_section}
 CONTEXTO RELEVANTE:
 {context}
 
 PREGUNTA: {query}
 
-INSTRUCCIONES CRÍTICAS:
-1. **LEE TODOS LOS DOCUMENTOS**: Revisa CADA fragmento [Doc 1], [Doc 2], [Doc 3]... hasta el último. NO te detengas en los primeros.
-2. **USA EL CONTEXTO ESTRUCTURADO**: El contexto está organizado por categorías:
-   - === DEFINICIONES Y CONCEPTOS ===: Usa para explicar qué es algo
-   - === PROCEDIMIENTOS Y MEJORES PRÁCTICAS ===: Usa para responder cómo hacer algo
+INSTRUCCIONES CRÃTICAS:
+1. **LEE TODOS LOS DOCUMENTOS**: Revisa CADA fragmento [Doc 1], [Doc 2], [Doc 3]... hasta el Ãºltimo. NO te detengas en los primeros.
+2. **USA EL CONTEXTO ESTRUCTURADO**: El contexto estÃ¡ organizado por categorÃ­as:
+   - === DEFINICIONES Y CONCEPTOS ===: Usa para explicar quÃ© es algo
+   - === PROCEDIMIENTOS Y MEJORES PRÃCTICAS ===: Usa para responder cÃ³mo hacer algo
    - === EJEMPLOS Y CASOS ===: Usa para ilustrar con casos concretos
-   - === MENCIONES ADICIONALES ===: Información complementaria
-3. **EXTRAE TODA LA INFORMACIÓN RELEVANTE**: Si varios documentos contienen datos sobre la pregunta, COMBINA toda la información.
-4. **NO OMITAS DATOS**: Si encontraste información en [Doc 5] pero no la mencionaste, VUELVE y agrégala a la respuesta.
+   - === MENCIONES ADICIONALES ===: InformaciÃ³n complementaria
+3. **EXTRAE TODA LA INFORMACIÃ“N RELEVANTE**: Si varios documentos contienen datos sobre la pregunta, COMBINA toda la informaciÃ³n.
+4. **NO OMITAS DATOS**: Si encontraste informaciÃ³n en [Doc 5] pero no la mencionaste, VUELVE y agrÃ©gala a la respuesta.
 
 Restricciones:
 - No agregues secciones extra, ni preguntas de seguimiento.
-- No repitas la misma información.
-- Si la pregunta es sobre una entidad específica, responde SOLO sobre esa entidad; ignora otras.
-- Verifica consistencia numérica con los datos del contexto; no inventes totales ni dupliques sumas.
-- NO HAGAS CÁLCULOS ni operaciones matemáticas a menos que el usuario lo solicite explícitamente. Reporta los números tal como aparecen en los documentos.
-- No incluyas notas, correcciones, revisiones ni metacomentarios (ej.: "Nota:", "Corrección final", "Revisión final").
-- Si no encuentras info: "No se encontró información" (exacto, sin explicaciones adicionales).
+- No repitas la misma informaciÃ³n.
+- Si la pregunta es sobre una entidad especÃ­fica, responde SOLO sobre esa entidad; ignora otras.
+- Verifica consistencia numÃ©rica con los datos del contexto; no inventes totales ni dupliques sumas.
+- NO HAGAS CÃLCULOS ni operaciones matemÃ¡ticas a menos que el usuario lo solicite explÃ­citamente. Reporta los nÃºmeros tal como aparecen en los documentos.
+- No incluyas notas, correcciones, revisiones ni metacomentarios (ej.: "Nota:", "CorrecciÃ³n final", "RevisiÃ³n final").
+- Si no encuentras info: "No se encontrÃ³ informaciÃ³n" (exacto, sin explicaciones adicionales).
  
-REGLAS DE RAZONAMIENTO HÍBRIDO (FASE 5):
-- Prioridad 1: Usar información de los DOCUMENTOS proporcionados siempre que sea posible.
+REGLAS DE RAZONAMIENTO HÃBRIDO (FASE 5):
+- Prioridad 1: Usar informaciÃ³n de los DOCUMENTOS proporcionados siempre que sea posible.
 - Prioridad 2: Si los documentos son insuficientes o no contienen la respuesta completa, PUEDES complementar con conocimiento general del dominio de ciberseguridad/IT.
 - CUANDO uses conocimiento general, marca claramente con prefijo: "[Conocimiento general]" antes de esa parte de la respuesta.
-- NUNCA inventes información específica (nombres, fechas, versiones) que no estén en los documentos ni en tu conocimiento verificable.
-- Si una pregunta requiere datos exactos y estos no están en los documentos, indica: "[Conocimiento general] Según conocimiento del dominio, [tu respuesta basada en conocimiento general]."
+- NUNCA inventes informaciÃ³n especÃ­fica (nombres, fechas, versiones) que no estÃ©n en los documentos ni en tu conocimiento verificable.
+- Si una pregunta requiere datos exactos y estos no estÃ¡n en los documentos, indica: "[Conocimiento general] SegÃºn conocimiento del dominio, [tu respuesta basada en conocimiento general]."
 
 PROHIBIDO ABSOLUTO:
-- Responder preguntas fuera del dominio de ciberseguridad e IT. Si la pregunta no es sobre seguridad informática, frameworks de seguridad, tecnologías IT, o temas relacionados, responde: "Consulta fuera de mi alcance técnico."
-- Inventar información específica (números de versión, fechas exactas, nombres de personas) que no esté en los documentos ni sea de dominio público verificable.
-- Contradecirte: nunca digas "No se encontró información" y luego proporciones la información.
-- Preambulos o metacomentarios ("Entendido", "Análisis:", "Respuesta final:").
-- Razonamiento visible o explicación del proceso.
-- Bloques de código o JSON.
+- Responder preguntas fuera del dominio de ciberseguridad e IT. Si la pregunta no es sobre seguridad informÃ¡tica, frameworks de seguridad, tecnologÃ­as IT, o temas relacionados, responde: "Consulta fuera de mi alcance tÃ©cnico."
+- Inventar informaciÃ³n especÃ­fica (nÃºmeros de versiÃ³n, fechas exactas, nombres de personas) que no estÃ© en los documentos ni sea de dominio pÃºblico verificable.
+- Contradecirte: nunca digas "No se encontrÃ³ informaciÃ³n" y luego proporciones la informaciÃ³n.
+- Preambulos o metacomentarios ("Entendido", "AnÃ¡lisis:", "Respuesta final:").
+- Razonamiento visible o explicaciÃ³n del proceso.
+- Bloques de cÃ³digo o JSON.
 - Encabezados Markdown (###) o emojis.
 
 Respuesta:"""
 
-        # Si está activado el modo de prompts simples, sobreescribe el prompt con un formato mínimo
+        # Si estÃ¡ activado el modo de prompts simples, sobreescribe el prompt con un formato mÃ­nimo
         try:
             if self.flags.get('plain_prompts', False):
                 prompt = (
@@ -2183,10 +2196,10 @@ Respuesta:"""
         except Exception:
             pass
 
-        # Añadir pista de estilo para modo corto (respuestas concisas)
+        # AÃ±adir pista de estilo para modo corto (respuestas concisas)
         short_hint = ""
         if (not self.flags.get('plain_prompts', False)) and isinstance(length_mode, str) and length_mode.strip().lower() == 'short':
-            short_hint = "\n\nESTILO: Responde de forma lo más CORTA, PRECISA y COMPLETA posible. Sin preámbulos. Incluye al menos una cita [Doc i - fuente p.X]."
+            short_hint = "\n\nESTILO: Responde de forma lo mÃ¡s CORTA, PRECISA y COMPLETA posible. Sin preÃ¡mbulos. Incluye al menos una cita [Doc i - fuente p.X]."
         if short_hint:
             try:
                 prompt = prompt + short_hint
@@ -2202,11 +2215,11 @@ Respuesta:"""
         return prompt, is_listing
 
     def _build_ollama_options(self, detailed, length_mode, query, is_listing):
-        # Parámetros OPTIMIZADOS para RTX 4050 (6GB) + Ryzen 5 7535HS (12 threads)
+        # ParÃ¡metros OPTIMIZADOS para RTX 4050 (6GB) + Ryzen 5 7535HS (12 threads)
         # BALANCE entre velocidad y calidad
         full_cov = self._requires_full_anexos_coverage(query)
         if detailed:
-            # Parámetros para RESPUESTA DETALLADA (optimizados para consistencia)
+            # ParÃ¡metros para RESPUESTA DETALLADA (optimizados para consistencia)
             options = {
                 "num_predict": 900,
                 "temperature": 0.2,
@@ -2221,7 +2234,7 @@ Respuesta:"""
                 "stop": ["```"]
             }
         else:
-            # Parámetros para RESPUESTA NORMAL (optimizados para consistencia)
+            # ParÃ¡metros para RESPUESTA NORMAL (optimizados para consistencia)
             options = {
                 "num_predict": 500,
                 "temperature": 0.2,
@@ -2234,7 +2247,7 @@ Respuesta:"""
                 "seed": 42,
                 "stop": ["```"]
             }
-        # Ajuste por length_mode explícito
+        # Ajuste por length_mode explÃ­cito
         try:
             if isinstance(length_mode, str):
                 lm = length_mode.strip().lower()
@@ -2246,7 +2259,7 @@ Respuesta:"""
                     options["num_predict"] = min(options.get("num_predict", 350), 256)
         except Exception:
             pass
-        # Ajuste para LISTADO: permitir salida más larga si enumera muchos nombres
+        # Ajuste para LISTADO: permitir salida mÃ¡s larga si enumera muchos nombres
         if 'is_listing' in locals() and is_listing:
             try:
                 options["num_predict"] = max(options.get("num_predict", 350), 800)
@@ -2259,7 +2272,7 @@ Respuesta:"""
                 options["num_predict"] = max(options.get("num_predict", 500), 600)
             except Exception:
                 pass
-        # Si el usuario pide cobertura completa, ampliar ligeramente el límite de salida
+        # Si el usuario pide cobertura completa, ampliar ligeramente el lÃ­mite de salida
         if full_cov:
             try:
                 options["num_predict"] = min(options.get("num_predict", 450) + 200, 800)
@@ -2276,25 +2289,25 @@ Respuesta:"""
                 
         original_answer = answer  # Guardar original por si acaso
                 
-        # ESTRATEGIA 1: Si empieza con thinking en inglés, buscar la respuesta real después
+        # ESTRATEGIA 1: Si empieza con thinking en inglÃ©s, buscar la respuesta real despuÃ©s
         if answer.startswith(('Okay,', 'Let me', 'First,', 'The user', 'Looking at')):
             # Buscar patrones que indican el inicio de la respuesta real
             patterns = [
                 r'(?:Respuesta|Answer|Response):\s*(.+)',  # "Respuesta: ..."
                 r'(?:La respuesta es|The answer is):\s*(.+)',  # "La respuesta es: ..."
-                r'\n\n([A-Z][^\.]+\.)',  # Párrafo que empieza con mayúscula después de doble salto
+                r'\n\n([A-Z][^\.]+\.)',  # PÃ¡rrafo que empieza con mayÃºscula despuÃ©s de doble salto
             ]
                     
             for pattern in patterns:
                 match = re.search(pattern, answer, re.DOTALL | re.IGNORECASE)
                 if match:
                     answer = match.group(1).strip()
-                    console.print(f"[green]Respuesta extraída con patrón: {pattern[:30]}...[/green]")
+                    console.print(f"[green]Respuesta extraÃ­da con patrÃ³n: {pattern[:30]}...[/green]")
                     break
             else:
-                # Si no encuentra patrones, tomar todo después del primer párrafo de thinking
+                # Si no encuentra patrones, tomar todo despuÃ©s del primer pÃ¡rrafo de thinking
                 lines = answer.split('\n')
-                # Saltar las primeras líneas que parecen thinking
+                # Saltar las primeras lÃ­neas que parecen thinking
                 for i, line in enumerate(lines):
                     if line.strip() and not line.startswith(('Okay', 'Let', 'First', 'The', 'Looking')):
                         answer = '\n'.join(lines[i:])
@@ -2305,39 +2318,39 @@ Respuesta:"""
             answer = re.sub(r'<thinking>.*?</thinking>', '', answer, flags=re.DOTALL)
                 
         # Remover marcadores y artefactos
-        answer = re.sub(r'\[Escribe tu respuesta aquí\]', '', answer)
-        answer = re.sub(r'\(en español\)', '', answer)
+        answer = re.sub(r'\[Escribe tu respuesta aquÃ­\]', '', answer)
+        answer = re.sub(r'\(en espaÃ±ol\)', '', answer)
         # Quitar fences y separadores comunes
         answer = answer.replace('```', '')
         answer = re.sub(r'^---.*$', '', answer, flags=re.MULTILINE)
         # Eliminar encabezados Markdown
         answer = re.sub(r'^\s*#{1,6}\s+.*$', '', answer, flags=re.MULTILINE)
-        # Eliminar líneas de metacomentarios frecuentes
+        # Eliminar lÃ­neas de metacomentarios frecuentes
         meta_patterns = [
-            r'^\s*RESPUESTA FINAL.*$', r'^\s*Respuesta final.*$', r'^\s*An(á|a)lisis.*$',
+            r'^\s*RESPUESTA FINAL.*$', r'^\s*Respuesta final.*$', r'^\s*An(Ã¡|a)lisis.*$',
             r'^\s*Analizando.*$', r'^\s*Entendido.*$', r'^\s*Cumple todas las instrucciones.*$',
-            r'^\s*Nota t(é|e)cnica.*$', r'^\s*Nota:.*$'
+            r'^\s*Nota t(Ã©|e)cnica.*$', r'^\s*Nota:.*$'
         ]
         for pat in meta_patterns:
             answer = re.sub(pat, '', answer, flags=re.MULTILINE)
         answer = re.sub(r'\n\s*\n\s*\n+', '\n\n', answer)
         answer = answer.strip()
-        console.print(f"[dim]Longitud tras limpieza básica: {len(answer)} chars[/dim]")
+        console.print(f"[dim]Longitud tras limpieza bÃ¡sica: {len(answer)} chars[/dim]")
                 
         # Si es listado, evitar JSON/bloques
         try:
             if self._is_listing_query(query):
-                # Remover líneas que empiecen con llaves o corchetes
+                # Remover lÃ­neas que empiecen con llaves o corchetes
                 answer = re.sub(r'^[\[\{].*$', '', answer, flags=re.MULTILINE).strip()
                 console.print(f"[dim]Longitud tras limpieza de listado: {len(answer)} chars[/dim]")
         except Exception:
             pass
                 
-        # Guardia final: si la respuesta está vacía tras posprocesado, sintetizar desde contexto
+        # Guardia final: si la respuesta estÃ¡ vacÃ­a tras posprocesado, sintetizar desde contexto
         if not answer or len(answer.strip()) == 0 or not any(ch.isalnum() for ch in answer):
-            console.print(f"[yellow]ADVERTENCIA: Respuesta vacía tras posprocesado; usando síntesis del contexto[/yellow]")
+            console.print(f"[yellow]ADVERTENCIA: Respuesta vacÃ­a tras posprocesado; usando sÃ­ntesis del contexto[/yellow]")
             try:
-                # Tomar el primer párrafo no vacío del contexto como fallback breve
+                # Tomar el primer pÃ¡rrafo no vacÃ­o del contexto como fallback breve
                 paras = [p.strip() for p in (context or '').split('\n\n') if p and any(ch.isalnum() for ch in p)]
                 if paras:
                     answer = paras[0][:600].strip()
@@ -2345,8 +2358,8 @@ Respuesta:"""
             except Exception:
                 pass
             if not answer or len(answer.strip()) == 0:
-                answer = "No se encontró información en los documentos para esa consulta."
-                console.print(f"[yellow]Usando mensaje determinístico por falta de síntesis[/yellow]")
+                answer = "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta."
+                console.print(f"[yellow]Usando mensaje determinÃ­stico por falta de sÃ­ntesis[/yellow]")
         return answer
 
     def _handle_system_command(self, command: str) -> dict:
@@ -2365,7 +2378,7 @@ Respuesta:"""
         # /reset - Limpiar historial
         if cmd == '/reset':
             self.conversation.clear()
-            response = "OK: **Historial de conversación limpiado**\n\nPuedes empezar una nueva conversación desde cero."
+            response = "OK: **Historial de conversaciÃ³n limpiado**\n\nPuedes empezar una nueva conversaciÃ³n desde cero."
             console.print("[green]OK: Historial limpiado[/green]")
             
             return {
@@ -2389,9 +2402,9 @@ Respuesta:"""
                     response = (
                         "Uso: /mapa_borrar <entidad>[.<atributo>|.*]\n\n"
                         "Ejemplos:\n"
-                        "• /mapa_borrar 'eolico vientos del secano'.tecnologia\n"
-                        "• /mapa_borrar 'eolico vientos del secano'.*\n"
-                        "• /mapa_borrar 'eolico vientos del secano'"
+                        "â€¢ /mapa_borrar 'eolico vientos del secano'.tecnologia\n"
+                        "â€¢ /mapa_borrar 'eolico vientos del secano'.*\n"
+                        "â€¢ /mapa_borrar 'eolico vientos del secano'"
                     )
                     return {
                         'question': command,
@@ -2419,7 +2432,7 @@ Respuesta:"""
                 if removed:
                     response = f"OK: Eliminado del mapa conceptual: {entity}{'.'+attribute if attribute and attribute!='*' else ''}"
                 else:
-                    response = f"No se encontró entrada para eliminar: {entity}{'.'+attribute if attribute and attribute!='*' else ''}"
+                    response = f"No se encontrÃ³ entrada para eliminar: {entity}{'.'+attribute if attribute and attribute!='*' else ''}"
             except Exception as e:
                 response = f"Error al borrar del mapa: {e}"
             return {
@@ -2433,40 +2446,40 @@ Respuesta:"""
         
         # /ayuda - Mostrar ayuda
         elif cmd == '/ayuda' or cmd == '/help':
-            response = """# 📚 Guía de Uso - CROM RAG Assistant
+            response = """# ðŸ“š GuÃ­a de Uso - CROM RAG Assistant
 
-## 🔍 Comandos Disponibles
+## ðŸ” Comandos Disponibles
 
-- `/ayuda` - Muestra esta guía
-- `/reset` - Limpia el historial de conversación
+- `/ayuda` - Muestra esta guÃ­a
+- `/reset` - Limpia el historial de conversaciÃ³n
 - `/centrales` - Listar centrales
 - `/documentos` - Muestra documentos indexados
-- `/memoria` - Ver sinónimos guardados en memoria
+- `/memoria` - Ver sinÃ³nimos guardados en memoria
 - `/mapa` - Ver mapa conceptual aprendido (atajos y hechos)
 
-## 🧠 Memoria de Sinónimos
+## ðŸ§  Memoria de SinÃ³nimos
 
-Puedes enseñarme equivalencias de términos:
+Puedes enseÃ±arme equivalencias de tÃ©rminos:
 
 **Ejemplos:**
-- "Guarda que molino eólico = WTG = aerogenerador"
+- "Guarda que molino eÃ³lico = WTG = aerogenerador"
 - "Recuerda que inversor es lo mismo que convertidor"
 
-## 💡 Ejemplos de Consultas
+## ðŸ’¡ Ejemplos de Consultas
 
-**Información general:**
-- "¿Cuántas centrales opera el CROM?"
-- "Dame información sobre Kosten"
+**InformaciÃ³n general:**
+- "Â¿CuÃ¡ntas centrales opera el CROM?"
+- "Dame informaciÃ³n sobre Kosten"
 
 **Procedimientos:**
-- "¿Cómo se opera una central eólica?"
+- "Â¿CÃ³mo se opera una central eÃ³lica?"
 - "Procedimiento ante falla de sistema"
 
 **Comparaciones:**
 - "Compara Kosten y Algarrobo"
 
 **Agregaciones:**
-- "¿Cuál es la potencia total del CROM?"
+- "Â¿CuÃ¡l es la potencia total del CROM?"
 """
             
             return {
@@ -2483,24 +2496,24 @@ Puedes enseñarme equivalencias de términos:
             # Buscar en el documento de listado de centrales
             results = self._search_in_specific_doc("anexo d", top_k=30)
             
-            response = "# 🏭 Centrales del CROM\n\n"
+            response = "# ðŸ­ Centrales del CROM\n\n"
             if results:
                 # Extraer nombres de centrales de los resultados
                 centrales_found = set()
                 for r in results:
                     text = r['text']
                     # Buscar patrones de centrales
-                    matches = re.findall(r'(?:P\.?E\.?|P\.?S\.?|Parque|Central)\s+[A-Za-záéíóúñÁÉÍÓÚÑ\s]+', text)
+                    matches = re.findall(r'(?:P\.?E\.?|P\.?S\.?|Parque|Central)\s+[A-Za-zÃ¡Ã©Ã­Ã³ÃºÃ±ÃÃ‰ÃÃ“ÃšÃ‘\s]+', text)
                     centrales_found.update([m.strip() for m in matches])
                 
                 if centrales_found:
                     response += "**Centrales encontradas:**\n\n"
                     for central in sorted(centrales_found):
-                        response += f"• {central}\n"
+                        response += f"â€¢ {central}\n"
                 else:
-                    response += "Consulta el documento 'Anexo D - Listado de Centrales' para información completa."
+                    response += "Consulta el documento 'Anexo D - Listado de Centrales' para informaciÃ³n completa."
             else:
-                response += "No se encontró información del listado de centrales."
+                response += "No se encontrÃ³ informaciÃ³n del listado de centrales."
             
             return {
                 'question': command,
@@ -2513,10 +2526,10 @@ Puedes enseñarme equivalencias de términos:
         
         # /documentos - Listar documentos
         elif cmd == '/documentos' or cmd == '/docs':
-            # Obtener lista de documentos únicos
+            # Obtener lista de documentos Ãºnicos
             all_docs = set()
             
-            # Iterar sobre algunos chunks para ver qué documentos hay
+            # Iterar sobre algunos chunks para ver quÃ© documentos hay
             try:
                 sample_results = self.hybrid_search("central parque", top_k=100)
                 for r in sample_results:
@@ -2525,11 +2538,11 @@ Puedes enseñarme equivalencias de términos:
             except:
                 pass
             
-            response = "# 📄 Documentos Indexados\n\n"
+            response = "# ðŸ“„ Documentos Indexados\n\n"
             if all_docs:
                 response += f"**Total de documentos:** {len(all_docs)}\n\n"
                 for doc in sorted(all_docs):
-                    response += f"• {doc}\n"
+                    response += f"â€¢ {doc}\n"
             else:
                 response += "No se pudo obtener la lista de documentos."
             
@@ -2542,17 +2555,17 @@ Puedes enseñarme equivalencias de términos:
                 'memory_hits': 0
             }
         
-        # /memoria - Ver sinónimos guardados
+        # /memoria - Ver sinÃ³nimos guardados
         elif cmd == '/memoria' or cmd == '/sinonimos':
             all_synonyms = self.memory.get_all_synonyms()
             
-            response = "# 🧠 Memoria de Sinónimos\n\n"
+            response = "# ðŸ§  Memoria de SinÃ³nimos\n\n"
             if all_synonyms:
-                response += f"**Total de términos:** {len(all_synonyms)}\n\n"
+                response += f"**Total de tÃ©rminos:** {len(all_synonyms)}\n\n"
                 for canonical, syns in sorted(all_synonyms.items()):
-                    response += f"• **{canonical}** = {', '.join(syns)}\n"
+                    response += f"â€¢ **{canonical}** = {', '.join(syns)}\n"
             else:
-                response += "No hay sinónimos guardados.\n\n"
+                response += "No hay sinÃ³nimos guardados.\n\n"
                 response += "**Uso:** `Guarda que X es igual a Y y Z`"
             
             return {
@@ -2568,7 +2581,7 @@ Puedes enseñarme equivalencias de términos:
         elif cmd == '/mapa' or cmd == '/conceptual':
             stats = self.conceptual_map.stats()
             
-            response = "# 📚 Mapa Conceptual Aprendido\n\n"
+            response = "# ðŸ“š Mapa Conceptual Aprendido\n\n"
             response += f"**Entidades:** {stats['entities']}\n"
             response += f"**Hechos totales:** {stats['total_facts']}\n"
             response += f"**Atajos de consulta:** {stats['query_shortcuts']}\n"
@@ -2595,14 +2608,14 @@ Puedes enseñarme equivalencias de términos:
         
         # Comando desconocido
         else:
-            response = f"❌ Comando desconocido: `{command}`\n\n"
+            response = f"âŒ Comando desconocido: `{command}`\n\n"
             response += "**Comandos disponibles:**\n"
-            response += "• `/ayuda` - Mostrar ayuda\n"
-            response += "• `/reset` - Limpiar historial\n"
-            response += "• `/centrales` - Listar centrales\n"
-            response += "• `/documentos` - Listar documentos\n"
-            response += "• `/memoria` - Ver sinónimos guardados\n"
-            response += "• `/mapa` - Ver mapa conceptual aprendido\n"
+            response += "â€¢ `/ayuda` - Mostrar ayuda\n"
+            response += "â€¢ `/reset` - Limpiar historial\n"
+            response += "â€¢ `/centrales` - Listar centrales\n"
+            response += "â€¢ `/documentos` - Listar documentos\n"
+            response += "â€¢ `/memoria` - Ver sinÃ³nimos guardados\n"
+            response += "â€¢ `/mapa` - Ver mapa conceptual aprendido\n"
             
             return {
                 'question': command,
@@ -2614,7 +2627,7 @@ Puedes enseñarme equivalencias de términos:
             }
     
     def _extract_entities(self, question: str) -> list:
-        """Extrae nombres propios y términos técnicos de la pregunta (parques, empresas, tecnologías, etc)"""
+        """Extrae nombres propios y tÃ©rminos tÃ©cnicos de la pregunta (parques, empresas, tecnologÃ­as, etc)"""
         entities = []
         try:
             if hasattr(self, 'entity_extractor') and self.entity_extractor is not None:
@@ -2622,11 +2635,11 @@ Puedes enseñarme equivalencias de términos:
         except Exception:
             pass
         
-        # FALLBACK: Si no detectó entidades, buscar manualmente nombres conocidos en centrales_map
+        # FALLBACK: Si no detectÃ³ entidades, buscar manualmente nombres conocidos en centrales_map
         if not entities:
             try:
                 q_lower = question.lower()
-                # Buscar en centrales_map (acrónimos y variantes)
+                # Buscar en centrales_map (acrÃ³nimos y variantes)
                 if hasattr(self, 'centrales_map') and self.centrales_map:
                     for variant, (canonical, _) in self.centrales_map.items():
                         if variant.lower() in q_lower:
@@ -2636,19 +2649,19 @@ Puedes enseñarme equivalencias de términos:
                 if not entities:
                     # Patrones: "parque X", "central X", "P.S. X", "P.E. X", "la perla del chaco"
                     patterns = [
-                        # Nombres compuestos específicos (prioridad alta)
+                        # Nombres compuestos especÃ­ficos (prioridad alta)
                         r'(?:parque|central|planta|p\.?s\.?|p\.?e\.?)\s+(?:la\s+)?perla\s+de(?:l)?\s+chaco',
                         r'(?:la\s+)?perla\s+de(?:l)?\s+chaco',
-                        # Patrones genéricos
-                        r'(?:parque|central|planta)\s+(?:eolico|eólico|solar|fotovoltaico|fotovoltaica)?\s*(?:la\s+)?([a-záéíóúñ\s]+?)(?:\s+(?:tiene|maneja|opera|ubicado|ubicada|cuenta|posee|dispone)|\?|$)',
-                        r'(?:p\.?s\.?|p\.?e\.?)\s+([a-záéíóúñ\s]+?)(?:\s+(?:tiene|maneja|opera|ubicado|ubicada|cuenta|posee|dispone)|\?|$)',
-                        r'(?:sobre|de|del)\s+(?:parque|central|planta|p\.?s\.?|p\.?e\.?)?\s*(?:la\s+)?([a-záéíóúñ\s]+?)(?:\?|$)',
-                        r'(?:la|el)\s+([a-záéíóúñ\s]+?)\s+(?:tiene|maneja|opera|ubicado|ubicada|cuenta|posee|dispone)'
+                        # Patrones genÃ©ricos
+                        r'(?:parque|central|planta)\s+(?:eolico|eÃ³lico|solar|fotovoltaico|fotovoltaica)?\s*(?:la\s+)?([a-zÃ¡Ã©Ã­Ã³ÃºÃ±\s]+?)(?:\s+(?:tiene|maneja|opera|ubicado|ubicada|cuenta|posee|dispone)|\?|$)',
+                        r'(?:p\.?s\.?|p\.?e\.?)\s+([a-zÃ¡Ã©Ã­Ã³ÃºÃ±\s]+?)(?:\s+(?:tiene|maneja|opera|ubicado|ubicada|cuenta|posee|dispone)|\?|$)',
+                        r'(?:sobre|de|del)\s+(?:parque|central|planta|p\.?s\.?|p\.?e\.?)?\s*(?:la\s+)?([a-zÃ¡Ã©Ã­Ã³ÃºÃ±\s]+?)(?:\?|$)',
+                        r'(?:la|el)\s+([a-zÃ¡Ã©Ã­Ã³ÃºÃ±\s]+?)\s+(?:tiene|maneja|opera|ubicado|ubicada|cuenta|posee|dispone)'
                     ]
                     for pat in patterns:
                         m = re.search(pat, q_lower, re.IGNORECASE)
                         if m:
-                            # Si el patrón no tiene grupo, usar todo el match
+                            # Si el patrÃ³n no tiene grupo, usar todo el match
                             if m.lastindex is None or m.lastindex == 0:
                                 name = m.group(0).strip()
                                 # Limpiar prefijos
@@ -2684,16 +2697,33 @@ Puedes enseñarme equivalencias de términos:
                 entities = out
             except Exception:
                 pass
-        
+
+        # R.4: Filtro minimal de entidades stopword (C.E redisenado).
+        # Solo filtrar terminos claramente genericos que disparan two-stage innecesariamente.
+        # Lista curada a partir del diagnostico R.2 (IDs 41, 42, 43, 44, 46, 47, 50).
+        # F4: Toggleable via CE_MINIMAL_ENABLED env var (default: 0, neutro en ablacion).
+        _ce_enabled = os.environ.get('CE_MINIMAL_ENABLED', '0') not in ('0', 'false', 'False', '')
+        _entity_stopwords_minimal = {
+            'seguridad', 'estoy', 'framework', 'herramienta', 'mejor',
+            'necesito', 'debo', 'revisar', 'informacion', 'informaci\u00f3n',
+            'datos', 'sistema', 'sistemas', 'ciberseguridad',
+        }
+        if _ce_enabled and entities:
+            filtered = [e for e in entities if e.lower().strip() not in _entity_stopwords_minimal]
+            if len(filtered) < len(entities):
+                removed = [e for e in entities if e.lower().strip() in _entity_stopwords_minimal]
+                console.print(f"[dim yellow]C.E: Entidades stopword filtradas: {removed}[/dim yellow]")
+            entities = filtered
+
         return entities
-    
-    
-    
-    
+
+
+
+
     def _synthesize_fallback_answer(self, question: str, results: list, is_aggregation: bool, is_conceptual: bool, is_procedural: bool) -> str:
         try:
             if not results:
-                return "No se encontró información en los documentos para esa consulta."
+                return "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta."
             max_lines = int(self.flags.get('max_answer_lines', 4) or 4)
             max_lines = max(2, min(max_lines, 6))
             pieces = []
@@ -2717,17 +2747,17 @@ Puedes enseñarme equivalencias de términos:
                     pieces.append(txt.strip())
             ans = "\n".join([p for p in pieces if p])
             if not ans.strip():
-                return "No se encontró información en los documentos para esa consulta."
+                return "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta."
             ans = re.sub(r"\n\s*\n+", "\n", ans).strip()
             lines = [l.strip() for l in ans.splitlines() if l.strip()]
             if len(lines) > max_lines:
                 lines = lines[:max_lines]
             return "\n".join(lines)
         except Exception:
-            return "No se encontró información en los documentos para esa consulta."
+            return "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta."
 
     def _has_entity_evidence(self, entities: list, results: list, context: str) -> bool:
-        """Verifica si al menos una entidad aparece explícitamente en resultados o contexto.
+        """Verifica si al menos una entidad aparece explÃ­citamente en resultados o contexto.
         Normaliza tolerando 'de/del' y espacios. Incluye busqueda de formas canonicas y aliases.
         """
         try:
@@ -2736,7 +2766,7 @@ Puedes enseñarme equivalencias de términos:
             ctx = (context or '').lower()
             
             def normalize(s: str) -> str:
-                """Minúsculas sin acentos, espacios normalizados"""
+                """MinÃºsculas sin acentos, espacios normalizados"""
                 if not s:
                     return ''
                 s = s.strip().lower()
@@ -2754,7 +2784,7 @@ Puedes enseñarme equivalencias de términos:
                 # Variantes de/de l
                 outs.add(e.replace(" de ", " del "))
                 outs.add(e.replace(" del ", " de "))
-                # Si tiene 3+ tokens, construir patrón tolerante a de/del entre primero y último
+                # Si tiene 3+ tokens, construir patrÃ³n tolerante a de/del entre primero y Ãºltimo
                 toks = [t for t in e.split() if t]
                 if len(toks) >= 3:
                     first = toks[0]
@@ -2773,7 +2803,7 @@ Puedes enseñarme equivalencias de términos:
                             return True
                     except Exception:
                         continue
-                # 2) Proximidad: primer y último token presentes cercanos (< 50 chars)
+                # 2) Proximidad: primer y Ãºltimo token presentes cercanos (< 50 chars)
                 try:
                     toks = [t for t in ent.split() if t not in {"de","del"}]
                     if len(toks) >= 2:
@@ -2790,17 +2820,17 @@ Puedes enseñarme equivalencias de términos:
             for e in entities:
                 if isinstance(e, str) and len(e.strip()) >= 3:
                     ents_expanded.add(e.lower().strip())
-                    # Buscar forma canónica y todos sus aliases
+                    # Buscar forma canÃ³nica y todos sus aliases
                     if hasattr(self, 'entity_extractor') and self.entity_extractor:
                         norm = normalize(e)
                         # Buscar si esta entidad es un alias conocido
                         if norm in self.entity_extractor.domain_entities:
                             canonical = self.entity_extractor.domain_entities[norm][0]
                             ents_expanded.add(canonical)
-                            # Agregar también variaciones del canónico
+                            # Agregar tambiÃ©n variaciones del canÃ³nico
                             for v in variants(canonical):
                                 ents_expanded.add(v)
-                            # Agregar TODOS los aliases que mapean a esta forma canónica
+                            # Agregar TODOS los aliases que mapean a esta forma canÃ³nica
                             for alias_key, (canon_val, _) in self.entity_extractor.domain_entities.items():
                                 if canon_val == canonical:
                                     ents_expanded.add(alias_key)
@@ -2827,7 +2857,7 @@ Puedes enseñarme equivalencias de términos:
 
     def _ensure_results_for_entities(self, results: list, entities: list, per_entity: int = 1) -> list:
         """Asegura que exista al menos un resultado por entidad buscada.
-        Busca tanto en 'source' como en el texto dentro de toda la colección.
+        Busca tanto en 'source' como en el texto dentro de toda la colecciÃ³n.
         """
         if not results or not entities:
             return results
@@ -2888,7 +2918,7 @@ Puedes enseñarme equivalencias de términos:
     
     
     def _resolve_entity_to_anexo(self, entity: str) -> tuple:
-        """Resuelve una entidad a su nombre canónico y documento fuente.
+        """Resuelve una entidad a su nombre canÃ³nico y documento fuente.
         Returns: (nombre_canonico, archivo) o (None, None) si no encuentra.
         """
         entity_lower = entity.lower().strip()
@@ -2896,7 +2926,7 @@ Puedes enseñarme equivalencias de términos:
         # Buscar en doc_roles.entities_index
         try:
             if hasattr(self, 'doc_roles') and self.doc_roles:
-                # Normalizar entidad para búsqueda flexible
+                # Normalizar entidad para bÃºsqueda flexible
                 entity_tokens = set(entity_lower.split())
                 best_match = None
                 best_score = 0
@@ -2914,7 +2944,7 @@ Puedes enseñarme equivalencias de términos:
                             score = len(common) / max(len(entity_tokens), len(variant_tokens))
                             if score > best_score and score >= 0.4:  # Al menos 40% de overlap
                                 best_score = score
-                                # Extraer nombre canónico limpio
+                                # Extraer nombre canÃ³nico limpio
                                 canonical = ent_variant.strip()
                                 best_match = (canonical, doc_name)
                 
@@ -2935,7 +2965,7 @@ Puedes enseñarme equivalencias de términos:
         return self._query_clf.is_out_of_domain(query)
     
     def _calculate_semantic_similarity(self, text1: str, text2: str) -> float:
-        """Calcula similitud semántica entre dos textos usando embeddings si están disponibles."""
+        """Calcula similitud semÃ¡ntica entre dos textos usando embeddings si estÃ¡n disponibles."""
         try:
             # Si hay embeddings disponibles, usar similitud coseno
             if hasattr(self, 'embedding_model') and self.embedding_model:
@@ -2972,34 +3002,35 @@ Puedes enseñarme equivalencias de términos:
               semantic_weight: float = 0.6, use_llm: bool = None,
               entity_filter: bool = True, two_stage: bool = True,
               length_mode: str = None, no_context: bool = False,
-              stream: bool = False, token_callback=None, docs_callback=None, cancel_checker=None) -> dict:
+              stream: bool = False, token_callback=None, docs_callback=None, cancel_checker=None,
+              return_prerank: bool = False) -> dict:
         """
-        Consulta completa con búsqueda híbrida
+        Consulta completa con bÃºsqueda hÃ­brida
         
         Args:
             question: Pregunta
             top_k: Resultados a recuperar
-            semantic_weight: Balance semántica/keyword (0.5 = 50/50)
+            semantic_weight: Balance semÃ¡ntica/keyword (0.5 = 50/50)
             use_llm: Usar LLM para generar respuesta
             entity_filter: Filtrar por entidades encontradas en pregunta
-            two_stage: Usar búsqueda en dos etapas para entidades específicas
+            two_stage: Usar bÃºsqueda en dos etapas para entidades especÃ­ficas
             length_mode: 'short' para respuestas breves (<1000 chars), 'long' para respuestas extensas (>3000 chars)
         """
         
         if use_llm is None:
             use_llm = self.use_llm
         
-        # BLOQUEO TEMPRANO (estricto) fuera de dominio antes de cualquier impresión o búsqueda
+        # BLOQUEO TEMPRANO (estricto) fuera de dominio antes de cualquier impresiÃ³n o bÃºsqueda
         try:
             if self.flags.get('strict_ood', True) and self._is_out_of_domain(question):
                 brief = (
-                    "Lo siento, esta consulta está fuera del alcance de mi especialidad.\n\n"
-                    "Puedo responder consultas relacionadas con ciberseguridad, tecnologías de la información y frameworks de seguridad:\n\n"
-                    "• Certificaciones (CISSP, CEH, CISM, OSCP, etc.)\n"
-                    "• Frameworks (NIST CSF, ISO 27001, PCI DSS, MITRE ATT&CK)\n"
-                    "• Tecnologías (firewalls, SIEM, EDR, cloud security)\n"
-                    "• Metodologías (pentesting, red team, blue team, DevSecOps)\n"
-                    "• Cumplimiento y gobernanza (GDPR, SOC 2, gobierno de riesgos)\n\n"
+                    "Lo siento, esta consulta estÃ¡ fuera del alcance de mi especialidad.\n\n"
+                    "Puedo responder consultas relacionadas con ciberseguridad, tecnologÃ­as de la informaciÃ³n y frameworks de seguridad:\n\n"
+                    "â€¢ Certificaciones (CISSP, CEH, CISM, OSCP, etc.)\n"
+                    "â€¢ Frameworks (NIST CSF, ISO 27001, PCI DSS, MITRE ATT&CK)\n"
+                    "â€¢ TecnologÃ­as (firewalls, SIEM, EDR, cloud security)\n"
+                    "â€¢ MetodologÃ­as (pentesting, red team, blue team, DevSecOps)\n"
+                    "â€¢ Cumplimiento y gobernanza (GDPR, SOC 2, gobierno de riesgos)\n\n"
                     "Por favor, reformula tu consulta dentro de estos temas."
                 )
                 console.print(f"[yellow]Consulta fuera de dominio bloqueada[/yellow]")
@@ -3023,7 +3054,7 @@ Puedes enseñarme equivalencias de términos:
         console.print(f"\n[bold cyan]Procesando consulta hibrida...[/bold cyan]")
         _t0 = time.time()
         
-        # Limpiar flag de warning de páginas para esta nueva consulta
+        # Limpiar flag de warning de pÃ¡ginas para esta nueva consulta
         if hasattr(self, '_page_warning_shown'):
             delattr(self, '_page_warning_shown')
         
@@ -3038,19 +3069,19 @@ Puedes enseñarme equivalencias de términos:
             canonical = memory_cmd['canonical']
             synonyms = memory_cmd['synonyms']
             
-            # Guardar sinónimos
+            # Guardar sinÃ³nimos
             added = self.memory.add_synonyms(canonical, synonyms, category='user_defined')
             
             synonyms_formatted = ', '.join([f"[cyan]'{s}'[/cyan]" for s in synonyms])
             console.print(f"[green]OK: Guardado:[/green] [cyan]'{canonical}'[/cyan] = {synonyms_formatted}")
-            console.print(f"[dim]Total: {added} nuevo(s) sinónimo(s) agregado(s)[/dim]")
+            console.print(f"[dim]Total: {added} nuevo(s) sinÃ³nimo(s) agregado(s)[/dim]")
             
-            # Devolver confirmación
+            # Devolver confirmaciÃ³n
             response = f"OK: Entendido y guardado en mi memoria:\n\n"
             response += f"**{canonical}** es equivalente a:\n"
             for syn in synonyms:
-                response += f"• {syn}\n"
-            response += f"\nAhora cuando busques cualquiera de estos términos, expandiré la búsqueda a todos sus sinónimos automáticamente."
+                response += f"â€¢ {syn}\n"
+            response += f"\nAhora cuando busques cualquiera de estos tÃ©rminos, expandirÃ© la bÃºsqueda a todos sus sinÃ³nimos automÃ¡ticamente."
             
             return {
                 'question': question,
@@ -3063,14 +3094,14 @@ Puedes enseñarme equivalencias de términos:
                 'time': time.time() - _t0
             }
         
-        # ENRIQUECER QUERY CON CONTEXTO si detecta referencias a información previa
+        # ENRIQUECER QUERY CON CONTEXTO si detecta referencias a informaciÃ³n previa
         if not no_context:
             enriched_question, contextual_entities = self._enrich_query_with_context(question)
             if enriched_question != question:
                 question = enriched_question  # Usar query enriquecida
         else:
             contextual_entities = []
-        # Expandir con equivalencias (sinónimos/acrónimos) para mejorar recuperación
+        # Expandir con equivalencias (sinÃ³nimos/acrÃ³nimos) para mejorar recuperaciÃ³n
         try:
             q2 = self._expand_with_equivalences(question)
             if q2 and q2 != question:
@@ -3078,7 +3109,7 @@ Puedes enseñarme equivalencias de términos:
         except Exception:
             pass
         
-        # DETECTAR SI PIDE EXPLICACIÓN DE UN DOCUMENTO CITADO
+        # DETECTAR SI PIDE EXPLICACIÃ“N DE UN DOCUMENTO CITADO
         is_doc_explanation = self._is_doc_explanation_query(question)
         doc_ref = self._extract_doc_reference(question) if is_doc_explanation else None
         
@@ -3086,7 +3117,7 @@ Puedes enseñarme equivalencias de términos:
         is_conceptual = False
         
         if is_doc_explanation and doc_ref:
-            console.print(f"[dim]📄 Explicación de documento detectada: {doc_ref['doc_name']} (página {doc_ref['page']})[/dim]")
+            console.print(f"[dim]ðŸ“„ ExplicaciÃ³n de documento detectada: {doc_ref['doc_name']} (pÃ¡gina {doc_ref['page']})[/dim]")
             results = self._search_in_specific_doc(
                 doc_ref['doc_name'], 
                 page=doc_ref['page'], 
@@ -3118,14 +3149,14 @@ Puedes enseñarme equivalencias de términos:
             # Detectar continuidad conversacional ANTES de buscar, para poder arrastrar entidad previa
             last_query = self.conversation.get_last_user_message()
             use_prev_topic = False if no_context else self._should_use_conversation_context(question, last_query)
-            # Extraer ancla desde la última respuesta del asistente
+            # Extraer ancla desde la Ãºltima respuesta del asistente
             followup_anchor_active = False
             anchor_phrase = None
             try:
                 last_answer = self.conversation.get_last_assistant_message()
             except Exception:
                 pass
-            # Detectar si hay ancla conversacional (frase citada de la última respuesta)
+            # Detectar si hay ancla conversacional (frase citada de la Ãºltima respuesta)
             follow_up_anchor = None
             try:
                 last_answer = self.conversation.get_last_assistant_message()
@@ -3145,7 +3176,7 @@ Puedes enseñarme equivalencias de términos:
             except Exception:
                 pass
             if entities:
-                # Normalizar entidades (remover términos genéricos: parque, eolico, central, planta)
+                # Normalizar entidades (remover tÃ©rminos genÃ©ricos: parque, eolico, central, planta)
                 try:
                     entities = self._normalize_entities(entities, question)
                 except Exception:
@@ -3156,10 +3187,10 @@ Puedes enseñarme equivalencias de términos:
                     setattr(self, 'last_entities', list(entities))
                     if len(entities) >= 1:
                         try:
-                            # EXCEPCIÓN 1: Si es comparación, NO limpiar sticky sources (necesitamos ambas entidades)
+                            # EXCEPCIÃ“N 1: Si es comparaciÃ³n, NO limpiar sticky sources (necesitamos ambas entidades)
                             is_comparison_query = self._is_comparison_query(question) or self._is_direct_comparison_query(question)
                             
-                            # EXCEPCIÓN 2: Si es follow-up, NO limpiar sticky sources (necesitamos contexto previo)
+                            # EXCEPCIÃ“N 2: Si es follow-up, NO limpiar sticky sources (necesitamos contexto previo)
                             is_follow_up = self._is_follow_up_query(question)
                             
                             # Detectar cambio de entidad comparando con la anterior
@@ -3173,7 +3204,7 @@ Puedes enseñarme equivalencias de términos:
                                 if current_entity not in prev_entity and prev_entity not in current_entity:
                                     entity_changed = True
                             
-                            # Limpiar sticky sources SOLO si cambió la entidad Y NO es comparación NI follow-up
+                            # Limpiar sticky sources SOLO si cambiÃ³ la entidad Y NO es comparaciÃ³n NI follow-up
                             if entity_changed and not is_comparison_query and not is_follow_up:
                                 if hasattr(self, '_sticky_entity'):
                                     delattr(self, '_sticky_entity')
@@ -3181,7 +3212,7 @@ Puedes enseñarme equivalencias de términos:
                                     delattr(self, '_sticky_sources')
                                     console.print(f"[cyan]Sticky sources limpiadas: {prev_entity} -> {current_entity}[/cyan]")
                             elif is_comparison_query:
-                                console.print(f"[dim]Comparación detectada: preservando sticky sources para contexto dual[/dim]")
+                                console.print(f"[dim]ComparaciÃ³n detectada: preservando sticky sources para contexto dual[/dim]")
                             elif is_follow_up:
                                 console.print(f"[dim]Follow-up detectado: preservando sticky sources para contexto previo[/dim]")
                         except Exception:
@@ -3192,14 +3223,14 @@ Puedes enseñarme equivalencias de términos:
             else:
                 # Si no hay entidades, intentar usar entidad persistente (TTL)
                 try:
-                    # MEJORA: Detectar follow-up incluso sin entidades explícitas
+                    # MEJORA: Detectar follow-up incluso sin entidades explÃ­citas
                     is_follow_up_detected = self._is_follow_up_query(question)
                     
                     if (not no_context) and (use_prev_topic or is_follow_up_detected):
                         sticky = getattr(self, '_sticky_entity', None)
                         if (not is_conceptual) and sticky and sticky.get('name') and int(sticky.get('ttl', 0)) > 0:
                             entities = [sticky['name']]
-                            # Aumentar TTL si es follow-up explícito
+                            # Aumentar TTL si es follow-up explÃ­cito
                             if is_follow_up_detected:
                                 sticky['ttl'] = 3  # Resetear TTL para follow-ups
                             else:
@@ -3211,16 +3242,16 @@ Puedes enseñarme equivalencias de términos:
                             delattr(self, '_sticky_entity')
                 except Exception:
                     pass
-                # Si no hay entidades explícitas y hay señales de anáfora o continuidad, reusar entidad previa
+                # Si no hay entidades explÃ­citas y hay seÃ±ales de anÃ¡fora o continuidad, reusar entidad previa
                 if entity_filter and (not no_context):
                     ql_local = question.lower()
                     pronoun_hints = [' sus', 'su ', 'ahora', 'del parque', 'de ese', 'de esa', 'de ello', 'de eso']
-                    # Detectar preguntas de follow-up que implican continuidad (sin mencionar entidad explícita)
+                    # Detectar preguntas de follow-up que implican continuidad (sin mencionar entidad explÃ­cita)
                     followup_patterns = [
-                        'que centrales', 'qué centrales', 'cuales centrales', 'cuáles centrales',
-                        'que parques', 'qué parques', 'cuales parques', 'cuáles parques',
-                        'donde esta', 'dónde está', 'donde están', 'dónde están',
-                        'cuantos', 'cuántos', 'cuanta', 'cuánta'
+                        'que centrales', 'quÃ© centrales', 'cuales centrales', 'cuÃ¡les centrales',
+                        'que parques', 'quÃ© parques', 'cuales parques', 'cuÃ¡les parques',
+                        'donde esta', 'dÃ³nde estÃ¡', 'donde estÃ¡n', 'dÃ³nde estÃ¡n',
+                        'cuantos', 'cuÃ¡ntos', 'cuanta', 'cuÃ¡nta'
                     ]
                     is_followup = any(pattern in ql_local for pattern in followup_patterns)
                     
@@ -3229,15 +3260,15 @@ Puedes enseñarme equivalencias de términos:
                         if prev_ents and len(prev_ents) <= 2:
                             entities = list(prev_ents)
                             console.print(f"[dim]Usando entidad del turno anterior: {', '.join(entities)}[/dim]")
-                    # Además: si la pregunta es sobre ET/subestación, asumir continuidad si hay entidad previa
-                    et_words = [' et ', 'estación transformadora', 'estacion transformadora', 'pampa del castillo', '132 kv', '33 kv', '4tr08', '33/132']
+                    # AdemÃ¡s: si la pregunta es sobre ET/subestaciÃ³n, asumir continuidad si hay entidad previa
+                    et_words = [' et ', 'estaciÃ³n transformadora', 'estacion transformadora', 'pampa del castillo', '132 kv', '33 kv', '4tr08', '33/132']
                     if (not entities) and any(w in ql_local for w in et_words):
                         prev_ents = getattr(self, 'last_entities', [])
                         if prev_ents and len(prev_ents) <= 2:
                             entities = list(prev_ents)
                             console.print(f"[dim]Follow-up de ET detectado - usando entidad previa: {', '.join(entities)}[/dim]")
             
-            # CONSULTAR MAPA CONCEPTUAL antes de búsqueda completa
+            # CONSULTAR MAPA CONCEPTUAL antes de bÃºsqueda completa
             conceptual_answer = None
             full_cov_flag = self._requires_full_anexos_coverage(question)
             listing_flag = False
@@ -3270,13 +3301,13 @@ Puedes enseñarme equivalencias de términos:
                         'elapsed_ms': int((time.time() - _t0) * 1000)
                     }
             
-            # EXPANSIÓN DE ACRÓNIMOS usando mapa pre-cargado
-            # NO expandir entidades que ya son específicas (contienen números romanos)
+            # EXPANSIÃ“N DE ACRÃ“NIMOS usando mapa pre-cargado
+            # NO expandir entidades que ya son especÃ­ficas (contienen nÃºmeros romanos)
             acr_expansions = {}
             for ent in list(entities):
-                # Evitar expandir "loma blanca i" -> "loma blanca" (pérdida de especificidad)
+                # Evitar expandir "loma blanca i" -> "loma blanca" (pÃ©rdida de especificidad)
                 if re.search(r'\b(i|ii|iii|iv|v|vi|vii|viii|ix|x)\b', ent.lower()):
-                    continue  # Ya es específico, no expandir
+                    continue  # Ya es especÃ­fico, no expandir
                 
                 canonical, anexo = self._resolve_entity_to_anexo(ent)
                 if canonical and canonical.lower() != ent.lower():
@@ -3294,12 +3325,12 @@ Puedes enseñarme equivalencias de términos:
                 try:
                     for acr, full in acr_expansions.items():
                         self.memory.add_synonyms(full, [acr], category='auto_acronym')
-                        console.print(f"[dim]Acrónimo expandido: {acr} -> {full}[/dim]")
+                        console.print(f"[dim]AcrÃ³nimo expandido: {acr} -> {full}[/dim]")
                 except Exception:
                     pass
 
-            # EXPANDIR ENTIDADES CON SINÓNIMOS (memoria del usuario)
-            # NO expandir si hay múltiples entidades específicas (>= 3) para evitar ruido
+            # EXPANDIR ENTIDADES CON SINÃ“NIMOS (memoria del usuario)
+            # NO expandir si hay mÃºltiples entidades especÃ­ficas (>= 3) para evitar ruido
             num_specific_entities = sum(1 for e in entities if re.search(r'\b(i|ii|iii|iv|v|vi|vii|viii|ix|x)\b', e.lower()))
             should_expand_synonyms = num_specific_entities < 3
             
@@ -3313,18 +3344,18 @@ Puedes enseñarme equivalencias de términos:
                         expanded_entities.update(aliases)
                         console.print(f"[dim green]Expandiendo '{entity}' -> {', '.join(aliases)}[/dim green]")
                     else:
-                        # Fallback: usar sinónimos de memoria
+                        # Fallback: usar sinÃ³nimos de memoria
                         synonyms = self.memory.get_synonyms(entity)
-                        if len(synonyms) > 1:  # Si tiene sinónimos (además del término original)
+                        if len(synonyms) > 1:  # Si tiene sinÃ³nimos (ademÃ¡s del tÃ©rmino original)
                             expanded_entities.update(synonyms)
                             console.print(f"[dim green]Expandiendo '{entity}' -> {', '.join(synonyms)}[/dim green]")
                 
-                # Convertir a lista para usar en búsquedas
+                # Convertir a lista para usar en bÃºsquedas
                 entities = list(expanded_entities)
             else:
-                console.print(f"[yellow]Consulta multi-entidad específica ({num_specific_entities} entidades) - omitiendo expansión de sinónimos[/yellow]")
+                console.print(f"[yellow]Consulta multi-entidad especÃ­fica ({num_specific_entities} entidades) - omitiendo expansiÃ³n de sinÃ³nimos[/yellow]")
 
-            # Heurística: si NO se detectaron entidades y la consulta parece nombre propio en minúsculas (2+ palabras),
+            # HeurÃ­stica: si NO se detectaron entidades y la consulta parece nombre propio en minÃºsculas (2+ palabras),
             # intentar inferir entidad buscando en Anexos D que contengan la frase literal (case-insensitive)
             if not entities and not is_conceptual:
                 tokens = [t for t in question.strip().split() if len(t) > 2]
@@ -3345,38 +3376,38 @@ Puedes enseñarme equivalencias de términos:
                     except Exception:
                         pass
             
-            # EXPANSION LIGERA DE QUERY para términos técnicos comunes
+            # EXPANSION LIGERA DE QUERY para tÃ©rminos tÃ©cnicos comunes
             ql = question.lower()
             extra_terms = []
-            if 'cuant' in ql or 'número' in ql or 'numero' in ql or 'cuantos' in ql or 'cuántos' in ql:
-                extra_terms += ['cantidad', 'número', 'numero', 'total']
-            if 'version' in ql or 'versión' in ql:
-                extra_terms += ['versión', 'version', 'actualización', 'release']
-            # Incidente de seguridad / respuesta a incidentes: ampliar términos de búsqueda relevantes
-            ir_triggers = ['incidente', 'respuesta', 'contencion', 'contención', 'eradicacion', 'erradicación', 'forense', 'ir']
+            if 'cuant' in ql or 'nÃºmero' in ql or 'numero' in ql or 'cuantos' in ql or 'cuÃ¡ntos' in ql:
+                extra_terms += ['cantidad', 'nÃºmero', 'numero', 'total']
+            if 'version' in ql or 'versiÃ³n' in ql:
+                extra_terms += ['versiÃ³n', 'version', 'actualizaciÃ³n', 'release']
+            # Incidente de seguridad / respuesta a incidentes: ampliar tÃ©rminos de bÃºsqueda relevantes
+            ir_triggers = ['incidente', 'respuesta', 'contencion', 'contenciÃ³n', 'eradicacion', 'erradicaciÃ³n', 'forense', 'ir']
             if any(t in ql for t in ir_triggers):
                 extra_terms += [
-                    'incidente', 'respuesta a incidentes', 'contención', 'erradicación', 'forense',
+                    'incidente', 'respuesta a incidentes', 'contenciÃ³n', 'erradicaciÃ³n', 'forense',
                     'playbook', 'procedimiento', 'instructivo', 'manual', 'estado', 'alerta', 'alertas'
                 ]
-            # Controles específicos de ciberseguridad
-            control_triggers = ['control', 'controles', 'seguridad', 'proteccion', 'protección']
+            # Controles especÃ­ficos de ciberseguridad
+            control_triggers = ['control', 'controles', 'seguridad', 'proteccion', 'protecciÃ³n']
             if any(t in ql for t in control_triggers):
                 extra_terms += [
-                    'control', 'controles', 'seguridad', 'política', 'politica', 'protección',
+                    'control', 'controles', 'seguridad', 'polÃ­tica', 'politica', 'protecciÃ³n',
                     'firewall', 'siem', 'edr', 'xdr', 'ids', 'ips', 'mfa', 'acceso'
                 ]
-            # Troubleshooting/diagnóstico: ampliar términos de búsqueda relevantes a eventos/fallas
+            # Troubleshooting/diagnÃ³stico: ampliar tÃ©rminos de bÃºsqueda relevantes a eventos/fallas
             if 'is_troubleshooting' in locals() and is_troubleshooting:
                 extra_terms += [
                     'alerta', 'alertas', 'evento', 'eventos', 'incidente', 'fallo', 'fault',
-                    'registro', 'log', 'auditoría', 'control', 'estado', 'bloqueo'
+                    'registro', 'log', 'auditorÃ­a', 'control', 'estado', 'bloqueo'
                 ]
-            # Construir consulta de búsqueda ampliada
+            # Construir consulta de bÃºsqueda ampliada
             search_query = question if not extra_terms else (question + ' ' + ' '.join(sorted(set(extra_terms))))
 
-            # Ajuste dinámico de pesos para consultas numéricas (contar, versión, CVSS)
-            numeric_q = any(k in ql for k in ['cuant', 'número', 'numero', 'versión', 'version', 'cvss', 'severidad'])
+            # Ajuste dinÃ¡mico de pesos para consultas numÃ©ricas (contar, versiÃ³n, CVSS)
+            numeric_q = any(k in ql for k in ['cuant', 'nÃºmero', 'numero', 'versiÃ³n', 'version', 'cvss', 'severidad'])
             semantic_weight_run = (0.4 if numeric_q else semantic_weight)
             
             # PLANNER: definir roles preferidos y candidatos de documentos
@@ -3399,17 +3430,17 @@ Puedes enseñarme equivalencias de términos:
             except Exception:
                 pass
             
-            # DOC SCOPE: si el usuario indica un documento específico, limitar la búsqueda a ese documento
-            # EXCEPCIÓN: si hay ancla conversacional, priorizar sticky sources (documentos del turno anterior)
+            # DOC SCOPE: si el usuario indica un documento especÃ­fico, limitar la bÃºsqueda a ese documento
+            # EXCEPCIÃ“N: si hay ancla conversacional, priorizar sticky sources (documentos del turno anterior)
             results = None
             try:
                 doc_scope = self._extract_doc_scope(question)
             except Exception:
                 doc_scope = ''
             
-            # Si hay ancla conversacional y sticky sources, forzar búsqueda en esos documentos
+            # Si hay ancla conversacional y sticky sources, forzar bÃºsqueda en esos documentos
             if follow_up_anchor and hasattr(self, '_sticky_sources') and self._sticky_sources:
-                console.print(f"[dim]Ancla conversacional: forzando búsqueda en documentos del turno anterior[/dim]")
+                console.print(f"[dim]Ancla conversacional: forzando bÃºsqueda en documentos del turno anterior[/dim]")
                 try:
                     # Buscar en los documentos sticky
                     sticky_dict = self._sticky_sources if isinstance(self._sticky_sources, dict) else {'sources': list(self._sticky_sources), 'ttl': 1}
@@ -3441,38 +3472,38 @@ Puedes enseñarme equivalencias de términos:
                     results = None
             
             
-            # BÚSQUEDA ESPECIALIZADA PARA COMPARACIONES
+            # BÃšSQUEDA ESPECIALIZADA PARA COMPARACIONES
             elif (results is None) and is_comparison and entities:
-                # Si es comparación y solo hay 1 entidad, agregar la entidad previa (sticky)
+                # Si es comparaciÃ³n y solo hay 1 entidad, agregar la entidad previa (sticky)
                 if len(entities) == 1:
                     try:
                         prev_ents = getattr(self, 'last_entities', [])
                         if prev_ents and prev_ents[0].lower() != entities[0].lower():
                             entities.insert(0, prev_ents[0])
-                            console.print(f"[dim]Comparación con contexto previo: agregando entidad {prev_ents[0]}[/dim]")
+                            console.print(f"[dim]ComparaciÃ³n con contexto previo: agregando entidad {prev_ents[0]}[/dim]")
                     except Exception:
                         pass
                 if len(entities) >= 2:
                     console.print(f"[dim]Comparacion detectada - busqueda balanceada entre entidades[/dim]")
                     results = self._search_for_comparison(entities, top_k=top_k)
                 else:
-                    console.print(f"[yellow]Comparación detectada pero falta segunda entidad - búsqueda normal[/yellow]")
+                    console.print(f"[yellow]ComparaciÃ³n detectada pero falta segunda entidad - bÃºsqueda normal[/yellow]")
             
             # Para preguntas procedimentales, NO filtrar agresivamente por entidades
             # porque los procedimientos pueden no mencionar la entidad en cada chunk
             elif (results is None) and is_procedural:
                 console.print(f"[dim]Pregunta procedural detectada - busqueda amplia[/dim]")
                 entity_filter_strict = False
-                results = None  # Se buscará en el flujo normal
+                results = None  # Se buscarÃ¡ en el flujo normal
             else:
                 hard_trigger = (
                     is_count_query or (entities and len(entities) == 1)
                 )
                 entity_filter_strict = True if (entity_filter and hard_trigger) else entity_filter
-                results = None  # Se buscará en el flujo normal
+                results = None  # Se buscarÃ¡ en el flujo normal
         
         
-        # BÚSQUEDA EN DOS ETAPAS (solo si no es comparación o explicación de doc)
+        # BÃšSQUEDA EN DOS ETAPAS (solo si no es comparaciÃ³n o explicaciÃ³n de doc)
         # Evitar forzar Anexo D cuando la consulta es de tipo PT (p.ej., "PT 11", "PT_11", "Protocolo tecnico")
         try:
             _q = (question or '')
@@ -3481,15 +3512,15 @@ Puedes enseñarme equivalencias de términos:
         except Exception:
             pt_like = False
         if results is None and two_stage and entities and len(entities) <= 2 and not is_procedural and not locals().get('is_listing_ctx', False) and not self._is_sum_query(question) and not self._extract_tech_filter(question) and not self._extract_vendor_filter(question) and not pt_like:
-            # Etapa 1: Buscar primero en Anexo D específico si existe
+            # Etapa 1: Buscar primero en Anexo D especÃ­fico si existe
             entity_name = entities[0]
-            console.print(f"[dim]Etapa 1: Buscando documentos específicos para entidad: {entity_name}[/dim]")
+            console.print(f"[dim]Etapa 1: Buscando documentos especÃ­ficos para entidad: {entity_name}[/dim]")
             
             # RAZONAMIENTO: Resolver entidad a archivo Anexo D correcto
             canonical_name, target_anexo = self._resolve_entity_to_anexo(entity_name)
             
             if target_anexo:
-                console.print(f"[dim cyan]Razonamiento: '{entity_name}' -> '{canonical_name}' en documento específico[/dim cyan]")
+                console.print(f"[dim cyan]Razonamiento: '{entity_name}' -> '{canonical_name}' en documento especÃ­fico[/dim cyan]")
                 # Guardar target_anexo para priorizar en modo detallado
                 setattr(self, '_target_anexo_etapa1', target_anexo)
                 # Buscar directamente en el archivo correcto
@@ -3499,18 +3530,18 @@ Puedes enseñarme equivalencias de términos:
                 anexo_results = [r for r in entity_results if target_anexo.lower() in r.get('metadata', {}).get('source', '').lower()]
                 
                 if anexo_results:
-                    console.print(f"[green]OK: Encontrado documento específico con {len(anexo_results)} fragmentos[/green]")
+                    console.print(f"[green]OK: Encontrado documento especÃ­fico con {len(anexo_results)} fragmentos[/green]")
                     entity_results = anexo_results
                 else:
                     # Fallback: buscar en ese archivo sin filtro estricto
-                    console.print(f"[yellow]Buscando en documento específico sin filtro estricto...[/yellow]")
+                    console.print(f"[yellow]Buscando en documento especÃ­fico sin filtro estricto...[/yellow]")
                     entity_results = [r for r in entity_results if 'anexo d' in r.get('metadata', {}).get('source', '').lower()]
             else:
-                # Sin mapeo: usar heurística original
+                # Sin mapeo: usar heurÃ­stica original
                 doc_query = f"documento {entity_name}"
                 entity_results = self.hybrid_search(doc_query, top_k=30, semantic_weight=0.3)
                 
-                # Mejor heurística: tomar cualquier 'Anexo D' cuyo TEXTO mencione la entidad
+                # Mejor heurÃ­stica: tomar cualquier 'Anexo D' cuyo TEXTO mencione la entidad
                 anexo_results = []
                 try:
                     all_docs = self.vector_store.collection.get()
@@ -3529,29 +3560,29 @@ Puedes enseñarme equivalencias de términos:
                     pass
                 
                 if anexo_results:
-                    console.print(f"[green]OK: Encontrado documento específico con {len(anexo_results)} fragmentos[/green]")
+                    console.print(f"[green]OK: Encontrado documento especÃ­fico con {len(anexo_results)} fragmentos[/green]")
                     entity_results = anexo_results
                 else:
-                    # Fallback: búsqueda general por entidad
-                    console.print(f"[yellow]No se encontró documento específico, buscando en todos los documentos...[/yellow]")
-                    entity_query = f"información completa {entity_name}"
+                    # Fallback: bÃºsqueda general por entidad
+                    console.print(f"[yellow]No se encontrÃ³ documento especÃ­fico, buscando en todos los documentos...[/yellow]")
+                    entity_query = f"informaciÃ³n completa {entity_name}"
                     entity_results = self.hybrid_search(entity_query, top_k=30, semantic_weight=0.3)
                     entity_results = self._filter_by_entity(entity_results, entities)
             
-            # Etapa 2: Buscar respuesta específica dentro de ese contexto
-            console.print(f"[dim]Etapa 2: Buscando respuesta específica en contexto...[/dim]")
+            # Etapa 2: Buscar respuesta especÃ­fica dentro de ese contexto
+            console.print(f"[dim]Etapa 2: Buscando respuesta especÃ­fica en contexto...[/dim]")
             results = self.hybrid_search(
                 search_query,
                 top_k=top_k*2,
                 semantic_weight=semantic_weight_run,
                 allowed_sources=(plan.get('candidate_docs') if plan.get('candidate_docs') and not locals().get('doc_scope', '') else None)
             )
-            # Scoping por roles si hay candidatos (pero NO si es doc-scope explícito)
+            # Scoping por roles si hay candidatos (pero NO si es doc-scope explÃ­cito)
             try:
                 if plan.get('candidate_docs') and not locals().get('doc_scope', ''):
                     before = len(results)
                     results = self._filter_to_candidates(results, plan['candidate_docs'])
-                    # Solo aplicar si no filtra demasiado (mantener al menos 50% o mínimo 5)
+                    # Solo aplicar si no filtra demasiado (mantener al menos 50% o mÃ­nimo 5)
                     if len(results) >= max(5, before // 2):
                         console.print(f"[dim]Scoping por roles (Etapa 2): {before} -> {len(results)}[/dim]")
                     else:
@@ -3560,7 +3591,11 @@ Puedes enseñarme equivalencias de términos:
             except Exception:
                 pass
             
-            # Combinar: priorizar resultados de la entidad por COINCIDENCIA DE FUENTE (más robusto que texto)
+            # R.3: Combinar con gate de no-regresion.
+            # Logica original: filtrar results a solo fuentes de entity_results + stage_boost.
+            # Gate nuevo: solo aplicar stage_boost si el max hybrid_score de entity_results es
+            # competitivo (>= 50% del max hybrid_score de results). Si la entidad encontro
+            # docs con scores muy bajos, el boost solo empeoraria el ranking.
             allowed_sources = set()
             for er in entity_results:
                 try:
@@ -3569,6 +3604,15 @@ Puedes enseñarme equivalencias de términos:
                         allowed_sources.add(src_er.lower())
                 except Exception:
                     pass
+
+            # Gate: comparar max scores de etapa 1 (entity) vs etapa 2 (results)
+            try:
+                max_entity_score = max((r.get('hybrid_score', 0) for r in entity_results), default=0)
+                max_results_score = max((r.get('hybrid_score', 0) for r in results), default=0)
+                entity_competitive = max_entity_score >= (max_results_score * 0.5)
+            except Exception:
+                entity_competitive = True  # fallback seguro
+
             strict = []
             present_keys = set()
             for r in results:
@@ -3579,11 +3623,20 @@ Puedes enseñarme equivalencias de términos:
                     src_r = ''
                     key = ''
                 if src_r in allowed_sources and key not in present_keys:
-                    r['stage_boost'] = 1.25
-                    r['hybrid_score'] *= r['stage_boost']
+                    if entity_competitive:
+                        r['stage_boost'] = 1.25
+                        r['hybrid_score'] *= r['stage_boost']
                     strict.append(r)
                     present_keys.add(key)
-            # Si faltan, completar con entity_results directamente (evitar duplicados por fuente/página)
+
+            # FASE C.C: Si strict queda vacio, usar results de etapa 2 directamente
+            if not strict:
+                console.print(f"[yellow]Two-stage: sin coincidencias de fuente, usando etapa 2 directamente[/yellow]")
+                strict = results[:top_k]
+            elif not entity_competitive:
+                console.print(f"[dim]Two-stage: entidad no competitiva (score {max_entity_score:.3f} < {max_results_score:.3f}), boost omitido[/dim]")
+
+            # Si faltan, completar con entity_results directamente (evitar duplicados por fuente/pagina)
             if len(strict) < top_k:
                 for er in entity_results:
                     try:
@@ -3599,8 +3652,8 @@ Puedes enseñarme equivalencias de términos:
                             break
             results = strict[:top_k]
         elif results is None:
-            # Búsqueda normal (una etapa) - solo si no se hizo búsqueda especializada
-            console.print(f"[dim]Búsqueda semántica ({semantic_weight*100:.0f}%) + keyword ({(1-semantic_weight)*100:.0f}%)...[/dim]")
+            # BÃºsqueda normal (una etapa) - solo si no se hizo bÃºsqueda especializada
+            console.print(f"[dim]BÃºsqueda semÃ¡ntica ({semantic_weight*100:.0f}%) + keyword ({(1-semantic_weight)*100:.0f}%)...[/dim]")
             # Usar consulta expandida si fue construida
             # Priorizar ancla conversacional si existe
             try:
@@ -3617,12 +3670,12 @@ Puedes enseñarme equivalencias de términos:
                 semantic_weight=semantic_weight_run,
                 allowed_sources=(plan.get('candidate_docs') if plan.get('candidate_docs') and not locals().get('doc_scope', '') else None)
             )
-            # Scoping por roles si hay candidatos (pero NO si es doc-scope explícito)
+            # Scoping por roles si hay candidatos (pero NO si es doc-scope explÃ­cito)
             try:
                 if 'plan' in locals() and plan.get('candidate_docs') and not locals().get('doc_scope', ''):
                     before = len(results)
                     results = self._filter_to_candidates(results, plan['candidate_docs'])
-                    # Solo aplicar si no filtra demasiado (mantener al menos 50% o mínimo 5)
+                    # Solo aplicar si no filtra demasiado (mantener al menos 50% o mÃ­nimo 5)
                     if len(results) >= max(5, before // 2):
                         console.print(f"[dim]Scoping por roles: {before} -> {len(results)}[/dim]")
                     else:
@@ -3647,6 +3700,7 @@ Puedes enseñarme equivalencias de términos:
             results = self._ensure_results_for_entities(results, entities, per_entity=1)
         
         # RE-RANKING: Mejorar orden de relevancia con modelo especializado
+        _prerank_results = list(results)
         results = self._rerank_results(question, results, top_k=top_k)
         
         # AJUSTE por rol de documento (role-based weighting) usando DocCards
@@ -3691,7 +3745,7 @@ Puedes enseñarme equivalencias de términos:
         except Exception:
             pass
         
-        # BOOSTING/penalización por fuente para queries específicas (no agregación)
+        # BOOSTING/penalizaciÃ³n por fuente para queries especÃ­ficas (no agregaciÃ³n)
         if results and not is_aggregation and self.flags.get('boost_source_by_entity', True):
             ents = entities if 'entities' in locals() else []
             ql2 = question.lower()
@@ -3700,24 +3754,24 @@ Puedes enseñarme equivalencias de términos:
                 src = r.get('metadata', {}).get('source', '').lower()
                 txt = r.get('text', '').lower()
                 fs = r.get('final_score', 0.0)
-                # Evaluar mención explícita de entidad
+                # Evaluar menciÃ³n explÃ­cita de entidad
                 has_ent_mention = bool(ents) and any(e.lower() in (txt + ' ' + src) for e in ents)
-                # Boost: Anexo D solo si hay mención explícita de la entidad
+                # Boost: Anexo D solo si hay menciÃ³n explÃ­cita de la entidad
                 if 'anexo d' in src and ents:
                     if has_ent_mention:
                         fs += 0.5
                     else:
                         fs -= 0.4
-                # Penalizar: documentos procedimentales/genéricos cuando hay entidad
+                # Penalizar: documentos procedimentales/genÃ©ricos cuando hay entidad
                 if ents and (any(p in src for p in ['pt_',' pt','pt ', 'manual', 'procedim', 'instructivo'])):
                     fs -= 0.4
-                # Bonus si hay mención literal de la entidad
+                # Bonus si hay menciÃ³n literal de la entidad
                 if has_ent_mention:
                     fs += 0.2
-                # Penalización si NO hay ninguna mención de la entidad en el chunk
+                # PenalizaciÃ³n si NO hay ninguna menciÃ³n de la entidad en el chunk
                 if ents and not has_ent_mention:
                     fs -= 0.35
-                # Boost específico: si pregunta contiene 'servicio crom', priorizar documento BLC-ServicioCROM
+                # Boost especÃ­fico: si pregunta contiene 'servicio crom', priorizar documento BLC-ServicioCROM
                 if ('servicio crom' in ql2 or 'serviciocrom' in ql2) and (
                     'serviciocrom' in src or 'blc-serviciocrom' in src or ('servicio' in src and 'crom' in src)
                 ):
@@ -3726,10 +3780,10 @@ Puedes enseñarme equivalencias de términos:
                 boosted.append(r)
             results = sorted(boosted, key=lambda x: x.get('final_score', 0.0), reverse=True)
         
-        # Diversificar por fuente para consultas de comparación (cobertura de entidades)
+        # Diversificar por fuente para consultas de comparaciÃ³n (cobertura de entidades)
         if results and is_comparison and self.flags.get('diversify_sources_for_comparison', True):
             results = self._diversify_by_source(results, per_source_limit=2, max_results=top_k)
-            # Heurística de promoción de fuentes esperadas para comparación específica (Kosten vs Loma Blanca)
+            # HeurÃ­stica de promociÃ³n de fuentes esperadas para comparaciÃ³n especÃ­fica (Kosten vs Loma Blanca)
             ql = question.lower()
             if ("kosten" in ql) and ("loma blanca" in ql) and self.flags.get('ensure_entity_sources', True):
                 grenergy_idx = None
@@ -3754,18 +3808,18 @@ Puedes enseñarme equivalencias de términos:
                 if promoted:
                     rest = [r for i, r in enumerate(results) if i not in indices]
                     results = promoted + rest
-                # Asegurar presencia explícita de fuentes claves
+                # Asegurar presencia explÃ­cita de fuentes claves
                 if self.flags.get('ensure_entity_sources', True):
                     results = self._ensure_source_for_entity(results, 'grenergy', 'kosten', limit=1)
                     results = self._ensure_source_for_entity(results, 'goldwind', 'loma blanca', limit=1)
-            # Generalización: asegurar al menos un resultado por entidad
+            # GeneralizaciÃ³n: asegurar al menos un resultado por entidad
             if 'entities' in locals() and entities and self.flags.get('ensure_entity_sources', True):
                 results = self._ensure_results_for_entities(results, entities, per_entity=1)
         
         # FILTRO DE CALIDAD: Eliminar documentos con scores muy bajos (irrelevantes)
-        # EXCEPTO para queries de agregación, detalladas, comparación (opcional), LISTADO o DOC-SCOPE
+        # EXCEPTO para queries de agregaciÃ³n, detalladas, comparaciÃ³n (opcional), LISTADO o DOC-SCOPE
         if results and not is_aggregation and not is_detailed and not (is_comparison and self.flags.get('skip_quality_filter_for_comparison', True)) and not locals().get('is_listing_ctx', False) and not locals().get('doc_scope', ''):
-            # Mostrar distribución de scores para debug
+            # Mostrar distribuciÃ³n de scores para debug
             if results:
                 raw_scores = [r.get('rerank_score', 0) for r in results[:10]]
                 console.print(f"[dim]Top 10 scores: {', '.join([f'{s:.2f}' for s in raw_scores])}[/dim]")
@@ -3776,7 +3830,7 @@ Puedes enseñarme equivalencias de términos:
                 console.print(f"[yellow]Scores bajos globalmente (max < 0.10) - omitiendo filtro de calidad[/yellow]")
                 apply_quality_filter = False
             
-            # Si hay múltiples entidades (>= 3), relajar el filtro de calidad
+            # Si hay mÃºltiples entidades (>= 3), relajar el filtro de calidad
             num_entities = len(entities) if 'entities' in locals() else 0
             if num_entities >= 3:
                 console.print(f"[yellow]Consulta multi-entidad ({num_entities} entidades) - relajando filtro de calidad[/yellow]")
@@ -3785,7 +3839,7 @@ Puedes enseñarme equivalencias de términos:
             # Filtrar por score normalizado si existe; fallback a score crudo
             try:
                 ql_local = question.lower()
-                is_numeric_ctx = any(k in ql_local for k in ['cuant', 'número', 'numero', 'mw', 'potencia', 'aerogeneradores', 'wtg'])
+                is_numeric_ctx = any(k in ql_local for k in ['cuant', 'nÃºmero', 'numero', 'mw', 'potencia', 'aerogeneradores', 'wtg'])
             except Exception:
                 is_numeric_ctx = False
             min_norm = 0.10 if is_numeric_ctx else 0.15
@@ -3801,7 +3855,7 @@ Puedes enseñarme equivalencias de términos:
 
             if quality_results:
                 results = quality_results
-                # Mensaje según criterio aplicado
+                # Mensaje segÃºn criterio aplicado
                 try:
                     if any('rerank_norm' in r for r in results[:3]):
                         console.print(f"[dim]OK: Filtro de calidad: {len(results)} documentos (rerank_norm >= {min_norm})[/dim]")
@@ -3810,12 +3864,12 @@ Puedes enseñarme equivalencias de términos:
                 except Exception:
                     console.print(f"[dim]OK: Filtro de calidad: {len(results)} documentos[/dim]")
                 
-                # LÍMITE: Si hay muchos documentos, tomar solo los top 10 para evitar timeout
-                # EXCEPTO cuando el usuario pidió revisar TODOS los Anexos D / CADA central
+                # LÃMITE: Si hay muchos documentos, tomar solo los top 10 para evitar timeout
+                # EXCEPTO cuando el usuario pidiÃ³ revisar TODOS los Anexos D / CADA central
                 if len(results) > 10 and not self._requires_full_anexos_coverage(question) and not locals().get('is_listing_ctx', False):
                     console.print(f"[yellow]Limitando a top 10 documentos para evitar timeout[/yellow]")
                     results = results[:10]
-                # Asegurar cobertura mínima para preguntas numéricas (al menos 2 docs si hay disponibles)
+                # Asegurar cobertura mÃ­nima para preguntas numÃ©ricas (al menos 2 docs si hay disponibles)
                 if is_numeric_ctx and len(results) < 2 and len(before_quality) >= 2:
                     extra = []
                     for r in before_quality:
@@ -3826,44 +3880,68 @@ Puedes enseñarme equivalencias de términos:
                     if extra:
                         results = results + extra
         
-        # OPTIMIZACIÓN: Aplicar filtro de calidad adaptativo
+        # OPTIMIZACIÃ“N: Aplicar filtro de calidad adaptativo
         try:
             results = self._adaptive_quality_filter(results, question)
         except Exception as e:
             console.print(f"[dim]Filtro adaptativo no aplicado: {e}[/dim]")
         
-        # OPTIMIZACIÓN: Deduplicación semántica de resultados
+        # OPTIMIZACIÃ“N: DeduplicaciÃ³n semÃ¡ntica de resultados
         try:
             results = self._deduplicate_results(results, similarity_threshold=0.85)
         except Exception as e:
-            console.print(f"[dim]Deduplicación no aplicada: {e}[/dim]")
+            console.print(f"[dim]DeduplicaciÃ³n no aplicada: {e}[/dim]")
         
-        # OPTIMIZACIÓN: Limitar resultados por fuente (máx 2 por documento)
+        # OPTIMIZACIÃ“N: Limitar resultados por fuente (mÃ¡x 2 por documento)
         try:
             results = self._limit_results_per_source(results, max_per_source=2)
         except Exception as e:
-            console.print(f"[dim]Limitación por fuente no aplicada: {e}[/dim]")
+            console.print(f"[dim]LimitaciÃ³n por fuente no aplicada: {e}[/dim]")
         
-        # OPTIMIZACIÓN FASE 3: Categorizar resultados para contexto estructurado
+        # OPTIMIZACIÃ“N FASE 3: Categorizar resultados para contexto estructurado
         try:
             results = self._categorize_results(results)
-            console.print(f"[dim]Contexto categorizado por tipo de información[/dim]")
+            console.print(f"[dim]Contexto categorizado por tipo de informaciÃ³n[/dim]")
         except Exception as e:
-            console.print(f"[dim]Categorización no aplicada: {e}[/dim]")
+            console.print(f"[dim]CategorizaciÃ³n no aplicada: {e}[/dim]")
         
         if results and is_aggregation:
-            console.print(f"[dim]OK: Modo agregación: usando TODOS los documentos sin filtro de calidad[/dim]")
+            console.print(f"[dim]OK: Modo agregaciÃ³n: usando TODOS los documentos sin filtro de calidad[/dim]")
         
-        # Antes de construir contexto, ajustar resultados según tecnología y añadir vecinos de página
+        # Antes de construir contexto, ajustar resultados segÃºn tecnologÃ­a y aÃ±adir vecinos de pÃ¡gina
         try:
             if results:
                 results = self._filter_results_by_technology(question, results)
                 results = self._augment_with_page_neighbors(results)
         except Exception:
             pass
+        if self.config.get('reranker', {}).get('preserve_prerank_top_k', True) and _prerank_results:
+            prerank_keys = {
+                ((doc.get('metadata', {}) or {}).get('source', '').lower(),
+                 (doc.get('metadata', {}) or {}).get('page', 0))
+                for doc in _prerank_results[:top_k]
+            }
+            preserved = [
+                result for result in results
+                if ((result.get('metadata', {}) or {}).get('source', '').lower(),
+                    (result.get('metadata', {}) or {}).get('page', 0)) in prerank_keys
+            ]
+            preserved_keys = {
+                ((doc.get('metadata', {}) or {}).get('source', '').lower(),
+                 (doc.get('metadata', {}) or {}).get('page', 0))
+                for doc in preserved
+            }
+            for original in _prerank_results[:top_k]:
+                metadata = original.get('metadata', {}) or {}
+                key = (metadata.get('source', '').lower(), metadata.get('page', 0))
+                if key not in preserved_keys:
+                    preserved.append(original)
+                    preserved_keys.add(key)
+            results = preserved[:top_k]
+
         # Si tras el filtrado no hay resultados suficientes, devolver respuesta conservadora
         if not results or len(results) == 0:
-            brief = "No se encontró información en los documentos para esa consulta."
+            brief = "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta."
             return {
                 'question': question,
                 'results': [],
@@ -3877,16 +3955,16 @@ Puedes enseñarme equivalencias de términos:
 
         # Construir contexto (OPTIMIZADO para chunks completos)
         if is_aggregation:
-            # MODO AGREGACIÓN: Manejar dos casos
+            # MODO AGREGACIÃ“N: Manejar dos casos
             # 1. Si tenemos "Listado Centrales" -> usar TODOS sus chunks
             # 2. Si tenemos Anexos D individuales -> un chunk por central
             
             # Verificar si estamos usando "Listado Centrales"
             ql_local = question.lower()
-            tech_query = any(w in ql_local for w in ['tecnologia', 'tecnología', 'tecnologias', 'tecnologías'])
+            tech_query = any(w in ql_local for w in ['tecnologia', 'tecnologÃ­a', 'tecnologias', 'tecnologÃ­as'])
             full_cov_here = self._requires_full_anexos_coverage(question)
             has_listado = any('listado' in r['metadata']['source'].lower() and 'central' in r['metadata']['source'].lower() for r in results)
-            # Si se pide tecnología o cobertura completa, FORZAR uso de Anexos D individuales
+            # Si se pide tecnologÃ­a o cobertura completa, FORZAR uso de Anexos D individuales
             force_annex = tech_query or full_cov_here
             if force_annex:
                 only_annex = [r for r in results if ('anexo d' in r['metadata']['source'].lower()) and not ('listado' in r['metadata']['source'].lower() and 'central' in r['metadata']['source'].lower())]
@@ -3897,23 +3975,23 @@ Puedes enseñarme equivalencias de términos:
             if has_listado:
                 console.print(f"[dim]Usando listado general - Incluyendo multiples fragmentos del mismo documento...[/dim]")
                 
-                # Para Listado Centrales, PRIORIZAR páginas 1-2 (donde está la tabla)
-                # Ordenar por página (ascendente) para tomar primero las páginas con la tabla
+                # Para Listado Centrales, PRIORIZAR pÃ¡ginas 1-2 (donde estÃ¡ la tabla)
+                # Ordenar por pÃ¡gina (ascendente) para tomar primero las pÃ¡ginas con la tabla
                 listado_sorted = sorted(results, key=lambda x: x['metadata']['page'])
                 
-                # Tomar chunks de páginas 1-2 primero, luego el resto
+                # Tomar chunks de pÃ¡ginas 1-2 primero, luego el resto
                 context_parts = []
                 for i, r in enumerate(listado_sorted[:20], 1):  # Top 20 chunks del listado
                     source_name = r['metadata']['source'].split('.pdf')[0][:60]
                     page = r['metadata']['page']
-                    text = r['text'][:1200]  # Más texto para capturar varias centrales (1000->1200)
+                    text = r['text'][:1200]  # MÃ¡s texto para capturar varias centrales (1000->1200)
                     context_parts.append(f"[Doc {i} - {source_name} p.{page}]\n{text}")
                 
                 context = "\n\n".join(context_parts)
-                console.print(f"[dim]OK: Contexto construido con {len(context_parts)} fragmentos del listado (priorizando páginas 1-2)[/dim]")
+                console.print(f"[dim]OK: Contexto construido con {len(context_parts)} fragmentos del listado (priorizando pÃ¡ginas 1-2)[/dim]")
             else:
                 console.print(f"[dim]Usando documentos individuales - Agrupando por fuente unica...[/dim]")
-                # Para Anexos D, agrupar por documento único (1 chunk por central)
+                # Para Anexos D, agrupar por documento Ãºnico (1 chunk por central)
                 docs_by_source = {}
                 for r in results:
                     source = r['metadata']['source']
@@ -3921,7 +3999,7 @@ Puedes enseñarme equivalencias de términos:
                         docs_by_source[source] = []
                     docs_by_source[source].append(r)
                 
-                console.print(f"[dim]OK: Encontradas {len(docs_by_source)} fuentes únicas[/dim]")
+                console.print(f"[dim]OK: Encontradas {len(docs_by_source)} fuentes Ãºnicas[/dim]")
                 
                 # Tomar el mejor chunk de cada documento
                 context_parts = []
@@ -3935,9 +4013,9 @@ Puedes enseñarme equivalencias de términos:
                     context_parts.append(f"[Doc {i} - {source_name} p.{page}]\n{text}")
                 
                 context = "\n\n".join(context_parts)
-                console.print(f"[dim]OK: Contexto construido con {len(context_parts)} fuentes únicas[/dim]")
+                console.print(f"[dim]OK: Contexto construido con {len(context_parts)} fuentes Ãºnicas[/dim]")
             
-            # Antes de construir contexto largo/detallado, aplicar pista de doc+páginas si existe
+            # Antes de construir contexto largo/detallado, aplicar pista de doc+pÃ¡ginas si existe
             try:
                 doc_hint = self._extract_doc_pages_hint(question)
                 if doc_hint and results:
@@ -3958,22 +4036,22 @@ Puedes enseñarme equivalencias de términos:
                             seen.add(key)
                             merged.append(r)
                         results = merged
-                        console.print(f"[dim]Hint aplicado (contexto): {doc_hint['doc']} páginas {pages}[/dim]")
+                        console.print(f"[dim]Hint aplicado (contexto): {doc_hint['doc']} pÃ¡ginas {pages}[/dim]")
             except Exception:
                 pass
             
         elif is_detailed:
-            # MODO DETALLADO: Obtener fragmentos de los documentos más relevantes
+            # MODO DETALLADO: Obtener fragmentos de los documentos mÃ¡s relevantes
             console.print(f"[bold cyan]MODO DETALLADO ACTIVADO[/bold cyan]")
-            console.print(f"[dim]Aplicando filtros por categoría y entidad para reducir ruido[/dim]")
+            console.print(f"[dim]Aplicando filtros por categorÃ­a y entidad para reducir ruido[/dim]")
             
             if not results:
                 console.print(f"[yellow]ADVERTENCIA: No hay resultados para modo detallado[/yellow]")
                 context = ""
                 docs_by_source = {}
             else:
-                # Identificar los documentos más relevantes basándose SOLO en re-rank scores
-                # El re-ranker ya determinó cuáles son relevantes
+                # Identificar los documentos mÃ¡s relevantes basÃ¡ndose SOLO en re-rank scores
+                # El re-ranker ya determinÃ³ cuÃ¡les son relevantes
                 source_best_score = {}
                 source_chunk_count = {}
                 
@@ -3990,7 +4068,7 @@ Puedes enseñarme equivalencias de términos:
                         
                         source_chunk_count[source] += 1
                         
-                        # Mantener el MEJOR score (más cercano a 0)
+                        # Mantener el MEJOR score (mÃ¡s cercano a 0)
                         if score > source_best_score[source]:
                             source_best_score[source] = score
                 
@@ -4006,8 +4084,8 @@ Puedes enseñarme equivalencias de términos:
                         context_parts.append(f"[Doc {i} - {source} p.{page}]\n{text}")
                     context = "\n\n".join(context_parts)
                 else:
-                    # Tomar SOLO el documento con MEJOR rerank_score (el chunk #1 después de re-ranking)
-                    # EXCEPCIÓN: Si hay un Anexo D específico de la entidad, priorizarlo sobre "Listado Centrales"
+                    # Tomar SOLO el documento con MEJOR rerank_score (el chunk #1 despuÃ©s de re-ranking)
+                    # EXCEPCIÃ“N: Si hay un Anexo D especÃ­fico de la entidad, priorizarlo sobre "Listado Centrales"
                     best_doc = results[0]['metadata']['source']
                     # Si hay sticky sources y ancla activa, priorizar documento pegajoso si aparece en resultados
                     try:
@@ -4021,7 +4099,7 @@ Puedes enseñarme equivalencias de términos:
                     except Exception:
                         pass
                     
-                    # PRIORIDAD 1: Si Etapa 1 encontró un Anexo D específico, usarlo
+                    # PRIORIDAD 1: Si Etapa 1 encontrÃ³ un Anexo D especÃ­fico, usarlo
                     try:
                         target_anexo_etapa1 = getattr(self, '_target_anexo_etapa1', None)
                         if target_anexo_etapa1:
@@ -4037,22 +4115,22 @@ Puedes enseñarme equivalencias de términos:
                     except Exception:
                         pass
                     
-                    # PRIORIDAD 2: Buscar si hay un Anexo D específico en los top-5 resultados
+                    # PRIORIDAD 2: Buscar si hay un Anexo D especÃ­fico en los top-5 resultados
                     if 'listado' in best_doc.lower() and 'central' in best_doc.lower():
-                        # El mejor resultado es "Listado Centrales", buscar Anexo D específico
+                        # El mejor resultado es "Listado Centrales", buscar Anexo D especÃ­fico
                         for r in results[:5]:
                             source = r['metadata']['source']
                             # Si encontramos un Anexo D que NO es Listado, priorizarlo
                             if 'anexo d' in source.lower() and 'listado' not in source.lower():
-                                console.print(f"[yellow]Priorizando documento específico sobre listado general[/yellow]")
+                                console.print(f"[yellow]Priorizando documento especÃ­fico sobre listado general[/yellow]")
                                 best_doc = source
                                 break
                     
-                    # DECISIÓN INTELIGENTE: ¿Necesita múltiples documentos?
+                    # DECISIÃ“N INTELIGENTE: Â¿Necesita mÃºltiples documentos?
                     needs_multi_doc = False
                     multi_doc_reason = ""
                     
-                    # EXCEPCIÓN: Si Etapa 1 encontró un Anexo D específico, NO usar multi-doc (usar solo ese)
+                    # EXCEPCIÃ“N: Si Etapa 1 encontrÃ³ un Anexo D especÃ­fico, NO usar multi-doc (usar solo ese)
                     has_etapa1_anexo = False
                     try:
                         if getattr(self, '_target_anexo_etapa1', None):
@@ -4060,17 +4138,17 @@ Puedes enseñarme equivalencias de términos:
                     except Exception:
                         pass
                     
-                    # 1. Consultas procedurales/troubleshooting requieren múltiples fuentes
+                    # 1. Consultas procedurales/troubleshooting requieren mÃºltiples fuentes
                     if (is_procedural or is_troubleshooting) and not has_etapa1_anexo:
                         needs_multi_doc = True
                         multi_doc_reason = "procedural/troubleshooting"
                     
-                    # 2. Planner sugiere múltiples roles (procedure + manual + analysis)
+                    # 2. Planner sugiere mÃºltiples roles (procedure + manual + analysis)
                     if not has_etapa1_anexo:
                         try:
                             if plan and isinstance(plan.get('doc_roles_preferred'), list) and len(plan.get('doc_roles_preferred', [])) >= 2:
                                 needs_multi_doc = True
-                                multi_doc_reason = "planner sugiere múltiples roles"
+                                multi_doc_reason = "planner sugiere mÃºltiples roles"
                         except Exception:
                             pass
                     
@@ -4090,7 +4168,7 @@ Puedes enseñarme equivalencias de términos:
                         except Exception:
                             pass
                     
-                    # 4. Consulta menciona múltiples aspectos/temas (maniobras + protecciones + notificación)
+                    # 4. Consulta menciona mÃºltiples aspectos/temas (maniobras + protecciones + notificaciÃ³n)
                     if not has_etapa1_anexo:
                         try:
                             ql_check = question.lower()
@@ -4104,7 +4182,7 @@ Puedes enseñarme equivalencias de términos:
                             aspects_found = sum(1 for group in aspect_keywords if any(kw in ql_check for kw in group))
                             if aspects_found >= 2:
                                 needs_multi_doc = True
-                                multi_doc_reason = f"múltiples aspectos detectados ({aspects_found})"
+                                multi_doc_reason = f"mÃºltiples aspectos detectados ({aspects_found})"
                         except Exception:
                             pass
                     
@@ -4121,7 +4199,7 @@ Puedes enseñarme equivalencias de términos:
                             if src not in seen_sources:
                                 selected_sources.append(src)
                                 seen_sources.add(src)
-                                if len(selected_sources) >= 4:  # Máximo 4 documentos
+                                if len(selected_sources) >= 4:  # MÃ¡ximo 4 documentos
                                     break
                         
                         # Si hay roles del planner, priorizar documentos que coincidan
@@ -4149,7 +4227,7 @@ Puedes enseñarme equivalencias de términos:
                         console.print(f"[dim]Documento principal: {best_doc.split('.pdf')[0][:40]}[/dim]")
                         console.print(f"[dim]Score: {results[0].get('rerank_score', 0):.2f}, Chunks en top-20: {source_chunk_count.get(best_doc, 1)}[/dim]")
 
-                    # Política de fuentes: excluir 'Listado Centrales' salvo queries de listado
+                    # PolÃ­tica de fuentes: excluir 'Listado Centrales' salvo queries de listado
                     try:
                         is_listing_query = self._is_listing_query(question)
                     except Exception:
@@ -4157,10 +4235,10 @@ Puedes enseñarme equivalencias de términos:
                     if not is_listing_query and selected_sources:
                         selected_sources = [s for s in selected_sources if not (('listado' in s.lower()) and ('central' in s.lower()))]
                         if not selected_sources:
-                            # Fallback si filtró todo
+                            # Fallback si filtrÃ³ todo
                             selected_sources = [best_doc]
 
-                    # Si hay entidad y no es listado, priorizar Anexos D específicos
+                    # Si hay entidad y no es listado, priorizar Anexos D especÃ­ficos
                     if entities and len(entities) > 0 and not is_listing_query:
                         annex = [s for s in selected_sources if ('anexo d' in s.lower() and 'listado' not in s.lower())]
                         if annex:
@@ -4188,9 +4266,9 @@ Puedes enseñarme equivalencias de términos:
                             pt_like_ctx = bool(re.search(r"\bpt\s*_?\d+\b", ql)) or any(('pt' in e and any(ch.isdigit() for ch in e)) for e in ents_low) or ('protocolo tecnico' in ql) or ('protocolo de cammesa' in ql)
                         except Exception:
                             pt_like_ctx = False
-                        # Construir términos FUERTES: frases completas + tokens no genéricos
+                        # Construir tÃ©rminos FUERTES: frases completas + tokens no genÃ©ricos
                         strong_terms = []
-                        ban_tokens = {'de','del','la','el','los','las','parque','central','planta','solar','fotovoltaico','fotovoltaica','eolico','eólico','eolica','eólica','ps','pe','p.s.','p.e.','oeste','este','norte','sur'}
+                        ban_tokens = {'de','del','la','el','los','las','parque','central','planta','solar','fotovoltaico','fotovoltaica','eolico','eÃ³lico','eolica','eÃ³lica','ps','pe','p.s.','p.e.','oeste','este','norte','sur'}
                         for ent in entities:
                             ent_l = ent.lower().strip()
                             if ent_l and ent_l not in strong_terms:
@@ -4226,11 +4304,11 @@ Puedes enseñarme equivalencias de términos:
                                 # Priorizar entidad completa (nombre compuesto)
                                 import re as _re_es
                                 primary_entity = entities[0].lower()
-                                # Coincidencia exacta por frase con límites de palabra
+                                # Coincidencia exacta por frase con lÃ­mites de palabra
                                 exact_in_chunk = bool(_re_es.search(r"\b" + _re_es.escape(primary_entity) + r"\b", chunk_lower))
                                 exact_in_source = bool(_re_es.search(r"\b" + _re_es.escape(primary_entity) + r"\b", source_lower))
                                 if exact_in_chunk:
-                                    entity_score += 6.0  # Más alto si la frase completa aparece en el texto
+                                    entity_score += 6.0  # MÃ¡s alto si la frase completa aparece en el texto
                                 elif exact_in_source:
                                     entity_score += 4.0  # Alto si aparece en el nombre del archivo
                                 
@@ -4268,8 +4346,8 @@ Puedes enseñarme equivalencias de términos:
                     else:
                         console.print(f"[dim]Total de fragmentos recuperados: {total_chunks}[/dim]")
                     
-                    # Reordenar fuentes por relevancia: priorizar fuentes con evidencia numérica ligada a la entidad
-                    # NUNCA priorizar "Listado Centrales" salvo que sea una query de listado explícito
+                    # Reordenar fuentes por relevancia: priorizar fuentes con evidencia numÃ©rica ligada a la entidad
+                    # NUNCA priorizar "Listado Centrales" salvo que sea una query de listado explÃ­cito
                     def _source_score(src_name: str, chunks: list) -> float:
                         s = 0.0
                         name_l = (src_name or '').lower()
@@ -4279,8 +4357,8 @@ Puedes enseñarme equivalencias de términos:
                         except Exception:
                             is_listing_query = False
                         if ('listado' in name_l and 'central' in name_l) and not is_listing_query:
-                            s -= 3.0  # Penalización fuerte para evitar priorizar listado en queries de detalle
-                        # Bonus si hay números MW junto a la entidad
+                            s -= 3.0  # PenalizaciÃ³n fuerte para evitar priorizar listado en queries de detalle
+                        # Bonus si hay nÃºmeros MW junto a la entidad
                         try:
                             import re as _re_s
                             pe = (entities[0] if entities else '').lower()
@@ -4300,20 +4378,20 @@ Puedes enseñarme equivalencias de términos:
 
                     ordered_sources = sorted(docs_by_source.keys(), key=lambda k: _source_score(k, docs_by_source[k]), reverse=True)
 
-                    # Heurísticas por categoría de la pregunta
+                    # HeurÃ­sticas por categorÃ­a de la pregunta
                     ql = (question or '').lower()
                     try:
                         import re as _re_cat
                     except Exception:
                         _re_cat = None
                     def _is_numeric_q():
-                        return any(k in ql for k in ['potencia',' mw','cuantos','cuántos','cantidad','wtg']) and not any(k in ql for k in ['lista','listado'])
+                        return any(k in ql for k in ['potencia',' mw','cuantos','cuÃ¡ntos','cantidad','wtg']) and not any(k in ql for k in ['lista','listado'])
                     def _is_location_q():
-                        return any(k in ql for k in ['donde','dónde','ubicación','ubicacion','coordenada','latitud','longitud'])
+                        return any(k in ql for k in ['donde','dÃ³nde','ubicaciÃ³n','ubicacion','coordenada','latitud','longitud'])
                     is_numeric = _is_numeric_q()
                     is_location = _is_location_q()
 
-                    # Construir contexto con límites para reducir ruido
+                    # Construir contexto con lÃ­mites para reducir ruido
                     context_parts = []
                     doc_idx = 1
                     max_total_chunks = (40 if needs_multi_doc else 25)
@@ -4322,14 +4400,14 @@ Puedes enseñarme equivalencias de términos:
                     per_doc_count = {}
                     for source in ordered_sources:
                         chunks = docs_by_source[source]
-                        # Ordenar chunks priorizando entity_score y luego por página
+                        # Ordenar chunks priorizando entity_score y luego por pÃ¡gina
                         chunks_sorted = sorted(chunks, key=lambda x: (-float(x.get('entity_score', 0.0)), x['metadata']['page']))
                         
                         # FILTRAR chunks con score muy bajo (< 1.0) si hay filtrado activo
                         if entity_filter_active:
                             chunks_sorted = [c for c in chunks_sorted if c.get('entity_score', 0.0) >= 1.0]
                         
-                        # Limitar por documento y aplicar filtros por categoría
+                        # Limitar por documento y aplicar filtros por categorÃ­a
                         per_doc_count[source] = 0
                         for chunk in chunks_sorted:
                             if total_count >= max_total_chunks or per_doc_count[source] >= max_per_doc:
@@ -4339,8 +4417,8 @@ Puedes enseñarme equivalencias de términos:
                             text = chunk['text'][:1200]
                             chunk_lower = (chunk.get('text') or '').lower()
 
-                            # Reglas por categoría: DESACTIVADAS (confiar en re-ranker y LLM)
-                            # Los filtros estrictos causan contextos vacíos
+                            # Reglas por categorÃ­a: DESACTIVADAS (confiar en re-ranker y LLM)
+                            # Los filtros estrictos causan contextos vacÃ­os
                             skip_chunk = False
                             # if skip_chunk:  # Nunca se ejecuta
                             #     continue
@@ -4369,9 +4447,9 @@ Puedes enseñarme equivalencias de términos:
                     console.print(f"[dim]OK: Contexto construido con {len(context_parts)} fragmentos de {len(docs_by_source)} documentos[/dim]")
                     context = "\n\n".join(context_parts)
                     
-                    # DEBUG: Verificar que el contexto no esté vacío
+                    # DEBUG: Verificar que el contexto no estÃ© vacÃ­o
                     if not context or len(context) < 100:
-                        console.print(f"[red]ERROR: Contexto muy corto o vacío ({len(context)} chars)[/red]")
+                        console.print(f"[red]ERROR: Contexto muy corto o vacÃ­o ({len(context)} chars)[/red]")
                         console.print(f"[yellow]docs_by_source keys: {list(docs_by_source.keys())}[/yellow]")
                     else:
                         console.print(f"[dim]Longitud del contexto: {len(context)} caracteres[/dim]")
@@ -4383,23 +4461,23 @@ Puedes enseñarme equivalencias de términos:
                         pass
         else:
             full_cov = self._requires_full_anexos_coverage(question)
-            # Aumentar cobertura para listados o scope explícito
+            # Aumentar cobertura para listados o scope explÃ­cito
             scoped = True if locals().get('doc_scope') else False
             if full_cov:
                 num_docs = 10
             elif locals().get('is_listing_ctx', False) or scoped:
                 num_docs = 30
             else:
-                num_docs = (4 if (self.flags.get('postprocess_location', True) and any(k in question.lower() for k in ["donde", "dónde", "ubicaci", "coordenada", "latitud", "longitud"])) else 3)
+                num_docs = (4 if (self.flags.get('postprocess_location', True) and any(k in question.lower() for k in ["donde", "dÃ³nde", "ubicaci", "coordenada", "latitud", "longitud"])) else 3)
             approx_token_budget = (3400 if (full_cov or locals().get('is_listing_ctx', False)) else 2800)
             approx_chars_budget = approx_token_budget * 4
             context_parts = []
             used_chars = 0
             # Cobertura por entidad en comparaciones
             ql = question.lower()
-            is_comparison_ctx = any(k in ql for k in ["compara", "comparar", "comparación", "diferencia", " vs ", "versus"])
-            is_location_ctx = any(k in ql for k in ["donde", "dónde", "ubicaci", "coordenada", "latitud", "longitud"]) if self.flags.get('postprocess_location', True) else False
-            # Reordenar resultados priorizando ubicación si aplica
+            is_comparison_ctx = any(k in ql for k in ["compara", "comparar", "comparaciÃ³n", "diferencia", " vs ", "versus"])
+            is_location_ctx = any(k in ql for k in ["donde", "dÃ³nde", "ubicaci", "coordenada", "latitud", "longitud"]) if self.flags.get('postprocess_location', True) else False
+            # Reordenar resultados priorizando ubicaciÃ³n si aplica
             if is_location_ctx and results:
                 loc_words = ["latitud", "longitud", "ubicaci", "pampa del castillo"]
                 location_hits = [r for r in results if any(w in r['text'].lower() for w in loc_words)]
@@ -4408,7 +4486,7 @@ Puedes enseñarme equivalencias de términos:
             else:
                 results_ordered = results
             
-            # Reordenar por página si es LISTADO y hay Listado Centrales en resultados o scope explícito
+            # Reordenar por pÃ¡gina si es LISTADO y hay Listado Centrales en resultados o scope explÃ­cito
             try:
                 if locals().get('is_listing_ctx', False) and results:
                     listado_results = [r for r in results if ('listado' in r['metadata']['source'].lower() and 'central' in r['metadata']['source'].lower())]
@@ -4418,7 +4496,7 @@ Puedes enseñarme equivalencias de términos:
                             results_ordered = sorted(listado_results, key=lambda x: x['metadata']['page'])
                     elif listado_results:
                         results_ordered = sorted(listado_results, key=lambda x: x['metadata']['page'])
-                    # Asegurar más documentos para cubrir toda la tabla
+                    # Asegurar mÃ¡s documentos para cubrir toda la tabla
                     num_docs = max(num_docs, 30)
             except Exception:
                 pass
@@ -4427,9 +4505,9 @@ Puedes enseñarme equivalencias de términos:
                 taken = 0
                 added_sources = set()
                 for ent in entities:
-                    # Elegir chunk con evidencia numérica/modelos si es posible
+                    # Elegir chunk con evidencia numÃ©rica/modelos si es posible
                     chosen = None
-                    evidence_words = ["aerogenerador", "aerogeneradores", " mw", "senvion", "3.6m114", "3.4m114", " 16", "dieciseis", "dieciséis"]
+                    evidence_words = ["aerogenerador", "aerogeneradores", " mw", "senvion", "3.6m114", "3.4m114", " 16", "dieciseis", "diecisÃ©is"]
                     for r in results_ordered:
                         txt = r['text'].lower()
                         src_full = r['metadata']['source']
@@ -4473,7 +4551,7 @@ Puedes enseñarme equivalencias de términos:
                     context_parts.append(f"[Doc {i+1} - {source} p.{page}]\n{piece}")
                     i += 1
             else:
-                # Preferir chunks que mencionen explícitamente la ENTIDAD cuando aplica (estricto)
+                # Preferir chunks que mencionen explÃ­citamente la ENTIDAD cuando aplica (estricto)
                 if 'entities' in locals() and entities and not is_comparison:
                     ents_l = [e.lower() for e in entities]
                     hits = []
@@ -4481,10 +4559,10 @@ Puedes enseñarme equivalencias de términos:
                         blob = (r['text'] + ' ' + r['metadata']['source']).lower()
                         if any(e in blob for e in ents_l):
                             hits.append(r)
-                    # Si la query es sobre ET/subestación, priorizar aún más por palabras clave de ET
-                    et_q = any(k in ql for k in [" et ", "estación transformadora", "estacion transformadora", "pampa del castillo", "132 kv", "33 kv", "4tr08"]) 
+                    # Si la query es sobre ET/subestaciÃ³n, priorizar aÃºn mÃ¡s por palabras clave de ET
+                    et_q = any(k in ql for k in [" et ", "estaciÃ³n transformadora", "estacion transformadora", "pampa del castillo", "132 kv", "33 kv", "4tr08"]) 
                     if et_q and hits:
-                        et_words = [" et ", "estación transformadora", "estacion transformadora", "pampa del castillo", "132 kv", "barra", "33 kv", "4tr08", "33/132"]
+                        et_words = [" et ", "estaciÃ³n transformadora", "estacion transformadora", "pampa del castillo", "132 kv", "barra", "33 kv", "4tr08", "33/132"]
                         hits_et = [r for r in hits if any(w in (r['text']+" "+r['metadata']['source']).lower() for w in et_words)]
                         if hits_et:
                             results_ordered = hits_et
@@ -4504,7 +4582,7 @@ Puedes enseñarme equivalencias de términos:
                     context_parts.append(f"[Doc {i} - {source} p.{page}]\n{piece}")
             context = "\n\n".join(context_parts)
         
-        # OPTIMIZACIÓN FASE 3: Usar contexto estructurado por categorías para consultas normales
+        # OPTIMIZACIÃ“N FASE 3: Usar contexto estructurado por categorÃ­as para consultas normales
         # (No aplicar para agregaciones, procedimientos o modos especiales)
         # Detectar si es listado
         try:
@@ -4517,7 +4595,7 @@ Puedes enseñarme equivalencias de términos:
                 structured_context = self._build_structured_context(results, max_chars=6000)
                 if structured_context and len(structured_context) > 200:
                     context = structured_context
-                    console.print(f"[dim]Contexto estructurado por categorías aplicado[/dim]")
+                    console.print(f"[dim]Contexto estructurado por categorÃ­as aplicado[/dim]")
             except Exception as e:
                 console.print(f"[dim]Contexto estructurado no aplicado: {e}[/dim]")
         
@@ -4538,7 +4616,7 @@ Puedes enseñarme equivalencias de términos:
             context = memory_context + "\n---\n" + context
         
         # Obtener contexto conversacional de forma INTELIGENTE
-        # Solo usar contexto si la pregunta actual es continuación del tema anterior
+        # Solo usar contexto si la pregunta actual es continuaciÃ³n del tema anterior
         last_query = self.conversation.get_last_user_message()
         
         should_use_context = False if no_context else self._should_use_conversation_context(question, last_query)
@@ -4566,7 +4644,7 @@ Puedes enseñarme equivalencias de términos:
                 key_sources = []
                 if key_sources:
                     results = self._ensure_sources(results or [], key_sources, per_source_limit=1)
-                # Reordenar por boost si se agregó material clave
+                # Reordenar por boost si se agregÃ³ material clave
                 try:
                     results.sort(key=lambda x: x.get('final_score', x.get('hybrid_score', 0.0)) + x.get('priority_boost', 0.0), reverse=True)
                 except Exception:
@@ -4608,26 +4686,26 @@ Puedes enseñarme equivalencias de términos:
         except Exception:
             pass
         if use_llm:
-            # Determinar modo de generación
+            # Determinar modo de generaciÃ³n
             if is_aggregation:
-                mode_text = "agregación (suma total)"
-                search_mode = "agregación"
+                mode_text = "agregaciÃ³n (suma total)"
+                search_mode = "agregaciÃ³n"
             elif is_detailed:
                 mode_text = "detallada"
                 search_mode = "detallada"
             else:
                 is_multi_doc = self._is_multi_document_query(question)
-                mode_text = "rápida"
-                search_mode = "múltiples fuentes" if is_multi_doc else "búsqueda específica"
+                mode_text = "rÃ¡pida"
+                search_mode = "mÃºltiples fuentes" if is_multi_doc else "bÃºsqueda especÃ­fica"
             
             console.print(f"[dim]Generando respuesta {mode_text} con {self.ollama_model} (modo: {search_mode})...[/dim]")
             
-            # Contar documentos únicos si es agregación
+            # Contar documentos Ãºnicos si es agregaciÃ³n
             num_unique_docs = 0
             if is_aggregation:
                 num_unique_docs = len(set(r['metadata']['source'] for r in results))
             
-            # Priorizar resultados por pista explícita de documento+páginas si está presente
+            # Priorizar resultados por pista explÃ­cita de documento+pÃ¡ginas si estÃ¡ presente
             hinted_results = None
             try:
                 doc_hint = self._extract_doc_pages_hint(question)
@@ -4649,12 +4727,12 @@ Puedes enseñarme equivalencias de términos:
                             seen.add(key)
                             merged.append(r)
                         hinted_results = merged
-                        console.print(f"[dim]Hint aplicado: {doc_hint['doc']} páginas {pages} (priorizando resultados de esas páginas)[/dim]")
+                        console.print(f"[dim]Hint aplicado: {doc_hint['doc']} pÃ¡ginas {pages} (priorizando resultados de esas pÃ¡ginas)[/dim]")
             except Exception:
                 pass
             
             answer = None
-            # LLM-FIRST: Scoring de snippets por LLM + extracción JSON con FOCUS (solo no-detallado/no-agrupación/no-conceptual)
+            # LLM-FIRST: Scoring de snippets por LLM + extracciÃ³n JSON con FOCUS (solo no-detallado/no-agrupaciÃ³n/no-conceptual)
             # El FOCUS general se mantiene activo incluso en plain_prompts (no impone secciones fijas)
             if (
                 self.flags.get('mode_llm_first', False)
@@ -4694,32 +4772,32 @@ Puedes enseñarme equivalencias de términos:
                         console.print(f"[dim cyan]FOCUS aplicado: {attribute or 'default'}[/dim cyan]")
                     except Exception:
                         pass
-                    # Extracción JSON final
+                    # ExtracciÃ³n JSON final
                     try:
                         _t0_ex = _t.time()
                         extr = self._llm_extract_json(context or '', question, focus if 'focus' in locals() else '')
                         _t_ex = _t.time() - _t0_ex
                         if isinstance(extr, dict) and extr.get('attribute_aligned') and extr.get('citations'):
                             answer = self._format_from_json(extr)
-                            console.print(f"[dim]LLM-first extracción JSON completada ({_t_ex:.1f}s)\n[/dim]")
-                            # Auto-revisión desactivada por defecto (causa contradicciones en Qwen3)
+                            console.print(f"[dim]LLM-first extracciÃ³n JSON completada ({_t_ex:.1f}s)\n[/dim]")
+                            # Auto-revisiÃ³n desactivada por defecto (causa contradicciones en Qwen3)
                             try:
                                 if self.config.get('enable_self_review', False) and isinstance(length_mode, str) and length_mode.strip().lower() == 'short' and (not is_procedural):
                                     answer = self._self_review_answer(question, answer, context or '')
                             except Exception:
                                 pass
                     except Exception as e:
-                        console.print(f"[dim yellow]Extracción JSON falló: {e}[/dim yellow]")
+                        console.print(f"[dim yellow]ExtracciÃ³n JSON fallÃ³: {e}[/dim yellow]")
                 except Exception:
                     pass
             if (not answer) and isinstance(length_mode, str) and length_mode.strip().lower() == 'short' and (not is_procedural):
                 try:
-                    # Ruta determinística para conteos específicos
+                    # Ruta determinÃ­stica para conteos especÃ­ficos
                     if self.flags.get('enable_deterministic_count', False) and self._is_specific_count_query(question):
                         det = self._try_deterministic_count_answer(question, hinted_results or results, entities or [], length_mode)
                         if det:
                             answer = det
-                    # Fast snippet path si aún no respondió
+                    # Fast snippet path si aÃºn no respondiÃ³
                     if not answer and self.config.get('enable_fast_snippet', True):
                         fast = self._try_fast_snippet_answer(question, hinted_results or results, entities or [], length_mode)
                         if fast:
@@ -4727,7 +4805,7 @@ Puedes enseñarme equivalencias de términos:
                 except Exception:
                     pass
             if not answer:
-                # Inyección de FOCUS detallado deshabilitada por defecto (evita secciones tipo "Cantidad de WTG")
+                # InyecciÃ³n de FOCUS detallado deshabilitada por defecto (evita secciones tipo "Cantidad de WTG")
                 try:
                     if is_detailed and (not self.flags.get('disable_structured_sections', True)):
                         try:
@@ -4764,20 +4842,32 @@ Puedes enseñarme equivalencias de términos:
                 # Gate de evidencia y llamada al LLM (OPTIMIZADO FASE 2 + C)
                 if not answer:
                     try:
+                        # FASE C.3: Reranker confidence gate
+                        # Si todos los reranker raw scores son ~0, el corpus no contiene
+                        # informacion relevante para la query. Declinar antes del LLM.
+                        reranker_scores = [r.get('rerank_score', 0) for r in (results or []) if r.get('rerank_score') is not None]
+                        if reranker_scores and max(reranker_scores) < 0.1:
+                            console.print(f"[yellow]Gate reranker: max score {max(reranker_scores):.3f} < 0.1 - declinando[/yellow]")
+                            answer = "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta."
+
+                    except Exception:
+                        pass
+                if not answer:
+                    try:
                         # Contar resultados de calidad usando CUALQUIER score disponible
                         def get_quality_score(r):
                             return r.get('final_score', 0) or r.get('rerank_score', 0) or r.get('hybrid_score', 0) * 0.5
-                        
+
                         quality_results = len([r for r in (results or []) if get_quality_score(r) > 0.15])
                         has_substantial_context = len(context or '') > 2000
                         
                         # Detectar si es consulta de razonamiento (requiere conocimiento del LLM)
                         reasoning_keywords = [
-                            'imagina', 'diseña', 'analiza por qué', 'razona', 'explica por qué',
-                            'comparativa entre', 'diferencias entre', 'coincide', 'evolucionará',
-                            'implicaciones tendría', 'determinarías', 'resolución de ambigüedad',
+                            'imagina', 'diseÃ±a', 'analiza por quÃ©', 'razona', 'explica por quÃ©',
+                            'comparativa entre', 'diferencias entre', 'coincide', 'evolucionarÃ¡',
+                            'implicaciones tendrÃ­a', 'determinarÃ­as', 'resoluciÃ³n de ambigÃ¼edad',
                             'si todos los', 'si una empresa', 'si una persona',
-                            'qué es', 'que es', 'certificacion', 'certificación', 'framework',
+                            'quÃ© es', 'que es', 'certificacion', 'certificaciÃ³n', 'framework',
                             'nse', 'cissp', 'ceh', 'oscp', 'comptia', 'giac', 'ccna', 'ccnp'
                         ]
                         is_reasoning_query = any(kw in question.lower() for kw in reasoning_keywords)
@@ -4789,7 +4879,7 @@ Puedes enseñarme equivalencias de términos:
                                 console.print(f"[dim]Gate relajado: entidad no exacta pero {quality_results} docs relevantes[/dim]")
                             elif quality_results >= 3:
                                 # Caso borde -> dejar que el LLM decida
-                                console.print(f"[dim]Gate: {quality_results} docs relevantes, dejando que LLM evalúe[/dim]")
+                                console.print(f"[dim]Gate: {quality_results} docs relevantes, dejando que LLM evalÃºe[/dim]")
                             else:
                                 # FASE C: Consulta de razonamiento con pocos docs -> habilitar conocimiento general
                                 if is_reasoning_query and has_substantial_context:
@@ -4806,7 +4896,7 @@ Puedes enseñarme equivalencias de términos:
                                     if has_substantial_context:
                                         console.print("[dim]Gate: contexto sustancial presente, permitiendo respuesta[/dim]")
                                     else:
-                                        answer = "No se encontró información suficiente en los documentos para esa consulta."
+                                        answer = "No se encontrÃ³ informaciÃ³n suficiente en los documentos para esa consulta."
                     except Exception as e:
                         console.print(f"[dim]Gate no aplicado: {e}[/dim]")
                 if not answer:
@@ -4832,11 +4922,11 @@ Puedes enseñarme equivalencias de términos:
                         console.print(f"[dim]Respuesta recibida del LLM: {len(answer or '')} chars[/dim]")
                     except Exception as e:
                         console.print(f"[yellow]Fallo al invocar LLM: {e}[/yellow]")
-        # Fallback cuando no hay LLM o la respuesta es vacía
+        # Fallback cuando no hay LLM o la respuesta es vacÃ­a
         if not answer or not str(answer).strip():
             answer = self._synthesize_fallback_answer(question, results, is_aggregation, is_conceptual, is_procedural)
             used_fallback = True
-            # Aplicar postproceso también al fallback para limpiar artefactos
+            # Aplicar postproceso tambiÃ©n al fallback para limpiar artefactos
             try:
                 if self.flags.get('enable_postprocess', True):
                     answer = self._postprocess_answer(question, answer, context)
@@ -4861,7 +4951,7 @@ Puedes enseñarme equivalencias de términos:
         except Exception:
             pass
         
-        # Actualizar entidades del último turno para continuidad conversacional
+        # Actualizar entidades del Ãºltimo turno para continuidad conversacional
         try:
             if 'entities' in locals() and entities:
                 self.last_entities = list(entities)
@@ -4885,7 +4975,7 @@ Puedes enseñarme equivalencias de términos:
         sources, _timing_breakdown = self._post_query_learning(
             question, answer, results, entities, use_llm, context, _t0, memory_results)
 
-        return {
+        _ret = {
             'question': question,
             'results': results,
             'context': context,
@@ -4896,6 +4986,9 @@ Puedes enseñarme equivalencias de términos:
             'time': time.time() - _t0,
             'timing_breakdown': _timing_breakdown,
         }
+        if return_prerank and _prerank_results is not None:
+            _ret['prerank_results'] = _prerank_results
+        return _ret
 
 
     def _classify_query(self, question, length_mode, top_k):
@@ -4998,7 +5091,7 @@ Puedes enseñarme equivalencias de términos:
                 prev_ents = getattr(self, 'last_entities', [])
                 if prev_ents:
                     entities = list(prev_ents)
-                    console.print(f"[cyan]Referencia anafórica detectada - usando entidad previa: {', '.join(entities)}[/cyan]")
+                    console.print(f"[cyan]Referencia anafÃ³rica detectada - usando entidad previa: {', '.join(entities)}[/cyan]")
         except Exception:
             pass
             
@@ -5021,22 +5114,22 @@ Puedes enseñarme equivalencias de términos:
         except Exception:
             pass
             
-        # Si se enriqueció la query con contexto, usar las entidades contextuales
+        # Si se enriqueciÃ³ la query con contexto, usar las entidades contextuales
         if contextual_entities and not entities:
             entities = contextual_entities
             console.print(f"[dim]Usando entidades del contexto: {', '.join(entities)}[/dim]")
         return entities
 
     def _post_query_learning(self, question, answer, results, entities, use_llm, context, _t0, memory_results):
-        # APRENDIZAJE AUTOMÁTICO: Detectar fallo-recuperación
-        # Si la consulta anterior falló ("no se encontró") pero esta tuvo éxito, aprender
+        # APRENDIZAJE AUTOMÃTICO: Detectar fallo-recuperaciÃ³n
+        # Si la consulta anterior fallÃ³ ("no se encontrÃ³") pero esta tuvo Ã©xito, aprender
         try:
             if use_llm and answer and entities and self.config.get('use_conceptual_map', True):
                 # Verificar si esta respuesta es exitosa
                 is_success = 'no se encontr' not in answer.lower() and 'lo siento' not in answer.lower()
                 
                 if is_success and results:
-                    # Obtener las últimas 2 consultas del historial
+                    # Obtener las Ãºltimas 2 consultas del historial
                     history = self.conversation.get_recent_messages(n=4)  # user, assistant, user, assistant
                     
                     if len(history) >= 3:
@@ -5046,7 +5139,7 @@ Puedes enseñarme equivalencias de términos:
                         prev_query = history[-3].get('content', '') if len(history) >= 3 else ''
                         prev_answer = history[-2].get('content', '') if len(history) >= 2 else ''
                         
-                        # Detectar si la consulta anterior falló
+                        # Detectar si la consulta anterior fallÃ³
                         prev_failed = ('no se encontr' in prev_answer.lower() or 
                                       'lo siento' in prev_answer.lower()[:100])
                         
@@ -5054,7 +5147,7 @@ Puedes enseñarme equivalencias de términos:
                             # Extraer entidades de la consulta fallida
                             prev_entities = self._extract_entities(prev_query)
                             
-                            # Aprender de la recuperación
+                            # Aprender de la recuperaciÃ³n
                             top_source = results[0] if results else {}
                             src = top_source.get('metadata', {}).get('source', 'Unknown')
                             pg = top_source.get('metadata', {}).get('page', 0)
@@ -5069,7 +5162,7 @@ Puedes enseñarme equivalencias de términos:
                                 page=pg
                             )
         except Exception as e:
-            console.print(f"[dim yellow]No se pudo aprender de fallo-recuperación: {e}[/dim yellow]")
+            console.print(f"[dim yellow]No se pudo aprender de fallo-recuperaciÃ³n: {e}[/dim yellow]")
         
         # APRENDER del resultado si hay alta confianza
         try:
@@ -5088,7 +5181,7 @@ Puedes enseñarme equivalencias de términos:
                         # Confianza basada en score y longitud de respuesta
                         confidence = min(0.95, max(0.5, score * 0.8 + (1 - len(answer)/300) * 0.2))
                         
-                        # Encolar para validación/aprendizaje diferido SOLO si hay evidencia numérica ligada a la entidad
+                        # Encolar para validaciÃ³n/aprendizaje diferido SOLO si hay evidencia numÃ©rica ligada a la entidad
                         entity_canonical = entities[0]
                         try:
                             evidence = None
@@ -5097,7 +5190,7 @@ Puedes enseñarme equivalencias de términos:
                                 src_r = (r.get('metadata', {}) or {}).get('source', '')
                                 blob = (txt + ' ' + src_r).lower()
                                 if entity_canonical.lower() in blob and any(ch.isdigit() for ch in txt):
-                                    if any(k in txt.lower() for k in ['aerogenerador', 'aerogeneradores', 'wtg', 'turbina', 'turbinas', 'unidades', 'panel', 'paneles', 'módulo', 'modulo']):
+                                    if any(k in txt.lower() for k in ['aerogenerador', 'aerogeneradores', 'wtg', 'turbina', 'turbinas', 'unidades', 'panel', 'paneles', 'mÃ³dulo', 'modulo']):
                                         evidence = txt[:1200]
                                         break
                             if evidence and self._has_numeric_evidence(entity_canonical, results):
@@ -5117,13 +5210,13 @@ Puedes enseñarme equivalencias de términos:
                                         evidence_text=evidence
                                     )
                             else:
-                                console.print("[dim yellow]ADVERTENCIA No se encola aprendizaje: sin evidencia numérica vinculada a la entidad[/dim yellow]")
+                                console.print("[dim yellow]ADVERTENCIA No se encola aprendizaje: sin evidencia numÃ©rica vinculada a la entidad[/dim yellow]")
                         except Exception as _e:
                             console.print(f"[dim yellow]No se pudo encolar candidato: {_e}")
         except Exception as e:
             console.print(f"[dim yellow]No se pudo aprender: {e}[/dim yellow]")
         
-        # Extraer fuentes únicas de los resultados
+        # Extraer fuentes Ãºnicas de los resultados
         sources = []
         try:
             seen_sources = set()
@@ -5207,11 +5300,11 @@ Puedes enseñarme equivalencias de términos:
         ))
         
         if result['answer']:
-            console.print(f"\n[bold green]🤖 Respuesta:[/bold green]\n")
+            console.print(f"\n[bold green]ðŸ¤– Respuesta:[/bold green]\n")
             console.print(result['answer'])
         
         if show_details:
-            console.print(f"\n[bold yellow]📊 Top-5 Fragmentos (scores híbridos):[/bold yellow]")
+            console.print(f"\n[bold yellow]ðŸ“Š Top-5 Fragmentos (scores hÃ­bridos):[/bold yellow]")
             
             for i, r in enumerate(result['results'][:5], 1):
                 source = r['metadata']['source'][:50]
@@ -5220,20 +5313,20 @@ Puedes enseñarme equivalencias de términos:
                 s_score = r['semantic_score']
                 k_score = r['keyword_score']
                 
-                console.print(f"\n[bold]{i}. {source} (pág. {page})[/bold]")
-                console.print(f"   Híbrido: {h_score:.3f} | Semántico: {s_score:.3f} | Keyword: {k_score:.3f}")
+                console.print(f"\n[bold]{i}. {source} (pÃ¡g. {page})[/bold]")
+                console.print(f"   HÃ­brido: {h_score:.3f} | SemÃ¡ntico: {s_score:.3f} | Keyword: {k_score:.3f}")
                 
                 # Preview
                 preview = r['text'][:200].replace('\n', ' ')
                 console.print(f"   [dim]{preview}...[/dim]")
         
-        console.print("\n" + "─" * 80)
+        console.print("\n" + "â”€" * 80)
     
     def interactive_mode(self):
         """Modo interactivo"""
         console.print(Panel.fit(
-            "[bold green]SISTEMA RAG HÍBRIDO[/bold green]\n"
-            "Búsqueda Semántica + Keyword + Llama3\n\n"
+            "[bold green]SISTEMA RAG HÃBRIDO[/bold green]\n"
+            "BÃºsqueda SemÃ¡ntica + Keyword + Llama3\n\n"
             "Comandos:\n"
             "  - Escribe tu pregunta\n"
             "  - 'detalles': Toggle mostrar detalles\n"
@@ -5245,10 +5338,10 @@ Puedes enseñarme equivalencias de términos:
         
         while True:
             try:
-                question = input("\n💬 Tu pregunta: ").strip()
+                question = input("\nðŸ’¬ Tu pregunta: ").strip()
                 
                 if question.lower() in ['salir', 'exit', 'quit']:
-                    console.print("\n[bold cyan]👋 Hasta luego![/bold cyan]")
+                    console.print("\n[bold cyan]ðŸ‘‹ Hasta luego![/bold cyan]")
                     break
                 
                 if question.lower() == 'detalles':
@@ -5263,7 +5356,7 @@ Puedes enseñarme equivalencias de términos:
                 self.display_result(result, show_details=show_details)
                 
             except KeyboardInterrupt:
-                console.print("\n\n[bold cyan]👋 Hasta luego![/bold cyan]")
+                console.print("\n\n[bold cyan]ðŸ‘‹ Hasta luego![/bold cyan]")
                 break
             except Exception as e:
                 console.print(f"\n[bold red]ERROR: Error: {e}[/bold red]")
@@ -5274,23 +5367,23 @@ Puedes enseñarme equivalencias de términos:
 def test_hybrid_rag():
     """Test con pregunta de Loma Blanca 3"""
     console.print(Panel.fit(
-        "[bold cyan]🧪 TEST: RAG Híbrido[/bold cyan]\n"
-        "Pregunta: ¿Cuántos aerogeneradores tiene Loma Blanca 3?",
+        "[bold cyan]ðŸ§ª TEST: RAG HÃ­brido[/bold cyan]\n"
+        "Pregunta: Â¿CuÃ¡ntos aerogeneradores tiene Loma Blanca 3?",
         border_style="cyan"
     ))
     
     rag = HybridRAG()
     
     # Test question
-    question = "¿Cuántos aerogeneradores tiene Loma Blanca 3?"
+    question = "Â¿CuÃ¡ntos aerogeneradores tiene Loma Blanca 3?"
     
     # Probar diferentes balances
     for semantic_weight in [0.3, 0.5, 0.7]:
-        console.print(f"\n[bold yellow]═══ Balance: Semántica {semantic_weight*100:.0f}% / Keyword {(1-semantic_weight)*100:.0f}% ═══[/bold yellow]")
+        console.print(f"\n[bold yellow]â•â•â• Balance: SemÃ¡ntica {semantic_weight*100:.0f}% / Keyword {(1-semantic_weight)*100:.0f}% â•â•â•[/bold yellow]")
         
         result = rag.query(question, top_k=25, semantic_weight=semantic_weight, use_llm=False)
         
-        # Verificar si encontró el chunk correcto
+        # Verificar si encontrÃ³ el chunk correcto
         found_correct = False
         position = None
         
@@ -5300,9 +5393,9 @@ def test_hybrid_rag():
                 if "16" in r['text'] or "diez y seis" in text_lower:
                     found_correct = True
                     position = i
-                    console.print(f"[bold green]OK: Chunk correcto encontrado en posición #{position}[/bold green]")
-                    console.print(f"   Score híbrido: {r['hybrid_score']:.3f}")
-                    console.print(f"   Score semántico: {r['semantic_score']:.3f}")
+                    console.print(f"[bold green]OK: Chunk correcto encontrado en posiciÃ³n #{position}[/bold green]")
+                    console.print(f"   Score hÃ­brido: {r['hybrid_score']:.3f}")
+                    console.print(f"   Score semÃ¡ntico: {r['semantic_score']:.3f}")
                     console.print(f"   Score keyword: {r['keyword_score']:.3f}")
                     break
         
@@ -5310,16 +5403,16 @@ def test_hybrid_rag():
             console.print(f"[red]ERROR: Chunk correcto NO en top-25[/red]")
     
     # Generar respuesta con el mejor balance
-    console.print(f"\n[bold cyan]═══ Generando Respuesta Final ═══[/bold cyan]")
+    console.print(f"\n[bold cyan]â•â•â• Generando Respuesta Final â•â•â•[/bold cyan]")
     result = rag.query(question, top_k=30, semantic_weight=0.5)
     rag.display_result(result, show_details=True)
     
     # Validar
-    console.print(f"\n[bold cyan]📊 Validación:[/bold cyan]")
+    console.print(f"\n[bold cyan]ðŸ“Š ValidaciÃ³n:[/bold cyan]")
     if result['answer']:
         answer_lower = result['answer'].lower()
-        if '16' in result['answer'] or 'dieciséis' in answer_lower or 'diez y seis' in answer_lower:
-            console.print("[bold green]✅ CORRECTO: Respuesta contiene 16 aerogeneradores[/bold green]")
+        if '16' in result['answer'] or 'diecisÃ©is' in answer_lower or 'diez y seis' in answer_lower:
+            console.print("[bold green]âœ… CORRECTO: Respuesta contiene 16 aerogeneradores[/bold green]")
         else:
             console.print("[bold yellow]PARCIAL: Respuesta generada pero sin el numero exacto[/bold yellow]")
             console.print(f"[dim]Respuesta: {result['answer'][:200]}...[/dim]")

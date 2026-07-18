@@ -39,7 +39,7 @@ class EntityExtractor:
         )
         self._re_models = re.compile(r"\b[A-Z]{2,}[0-9-]+[A-Z0-9-]*\b", re.IGNORECASE)
         # Regex para prefijos de entidades de seguridad
-        self._re_prefix_lower = re.compile(r"\b(?:certified|professional|associate)\s+([a-z][\w\s-]{3,})", re.IGNORECASE)
+        self._re_prefix_lower = re.compile(r"\b(?:certified|professional|associate|certificado|profesional|asociado)\s+([a-z][\w\s-]{3,})", re.IGNORECASE)
         # Flags de capacidades opcionales
         self._have_spacy = False
         self._spacy_nlp = None
@@ -123,7 +123,89 @@ class EntityExtractor:
             ("manejo de vulnerabilidades", "vulnerability management"),
             ("escaneo de vulnerabilidades", "vulnerability scanning"),
         ]
-        for alias, canonical in mitre_aliases + pentest_aliases + nse_aliases + mfa_aliases + vuln_aliases:
+        # Mapeo cross-lingual ES -> EN (terminos de ciberseguridad)
+        crosslingual_aliases = [
+            ("ingenieria social", "social engineering"),
+            ("marco de gestion de riesgos", "risk management framework"),
+            ("gestion de riesgos", "risk management"),
+            ("evaluacion de riesgos", "risk assessment"),
+            ("amenaza persistente avanzada", "advanced persistent threat"),
+            ("amenazas internas", "insider threat"),
+            ("amenaza interna", "insider threat"),
+            ("respuesta a incidentes", "incident response"),
+            ("politica de seguridad", "security policy"),
+            ("conciencia de seguridad", "security awareness"),
+            ("gobernanza de seguridad", "security governance"),
+            ("arquitectura de confianza cero", "zero trust architecture"),
+            ("confianza cero", "zero trust"),
+            ("modelo de responsabilidad compartida", "shared responsibility model"),
+            ("seguridad en la nube", "cloud security"),
+            ("seguridad de aplicaciones", "application security"),
+            ("seguridad de red", "network security"),
+            ("seguridad de la informacion", "information security"),
+            ("seguridad operacional", "operational security"),
+            ("centro de operaciones de seguridad", "security operations center"),
+            ("operaciones de seguridad", "security operations"),
+            ("analisis de forense", "digital forensics"),
+            ("forense digital", "digital forensics"),
+            ("extraccion de credenciales", "credential dumping"),
+            ("volcado de credenciales", "credential dumping"),
+            ("ingenieria inversa", "reverse engineering"),
+            ("codigo malicioso", "malware"),
+            ("programa malicioso", "malware"),
+            ("puerta trasera", "backdoor"),
+            ("negacion de servicio", "denial of service"),
+            ("distribucion negada de servicio", "distributed denial of service"),
+            ("phishing", "phishing"),
+            ("suplantacion de identidad", "phishing"),
+            ("inyeccion sql", "sql injection"),
+            ("cross site scripting", "cross-site scripting"),
+            ("secuestro de sesion", "session hijacking"),
+            ("escalada de privilegios", "privilege escalation"),
+            ("movimiento lateral", "lateral movement"),
+            ("persistencia", "persistence"),
+            ("exfiltracion de datos", "data exfiltration"),
+            ("cifrado de datos", "data encryption"),
+            ("cifrado en reposo", "encryption at rest"),
+            ("cifrado en transito", "encryption in transit"),
+            ("gestion de identidades", "identity management"),
+            ("gestion de acceso", "access management"),
+            ("control de acceso", "access control"),
+            ("segmentacion de red", "network segmentation"),
+            ("segmentacion de la red", "network segmentation"),
+            ("monitoreo de seguridad", "security monitoring"),
+            ("vigilancia de seguridad", "security monitoring"),
+            ("dureza del sistema", "system hardening"),
+            ("endurecimiento del sistema", "system hardening"),
+            ("prueba de penetracion", "penetration testing"),
+            ("auditoria de seguridad", "security audit"),
+            ("auditoria de sistemas", "systems audit"),
+            ("cumplimiento normativo", "compliance"),
+            ("marco de control", "control framework"),
+            ("controles de seguridad", "security controls"),
+            ("gobernanza de ti", "it governance"),
+            ("gobierno de ti", "it governance"),
+            ("gestion de eventos", "event management"),
+            ("correlacion de eventos", "event correlation"),
+            ("automatizacion de seguridad", "security automation"),
+            ("orquestacion de seguridad", "security orchestration"),
+            ("inteligencia de amenazas", "threat intelligence"),
+            ("informacion sobre amenazas", "threat intelligence"),
+            ("caza de amenazas", "threat hunting"),
+            ("busqueda de amenazas", "threat hunting"),
+            ("puntuacion de riesgo", "risk scoring"),
+            ("tratamiento del riesgo", "risk treatment"),
+            ("mitigacion de riesgos", "risk mitigation"),
+            ("transferencia de riesgo", "risk transfer"),
+            ("aceptacion del riesgo", "risk acceptance"),
+            ("identificacion de riesgos", "risk identification"),
+            ("analisis de riesgo", "risk analysis"),
+            ("plan de respuesta", "response plan"),
+            ("plan de contingencia", "contingency plan"),
+            ("continuidad del negocio", "business continuity"),
+            ("recuperacion ante desastres", "disaster recovery"),
+        ]
+        for alias, canonical in mitre_aliases + pentest_aliases + nse_aliases + mfa_aliases + vuln_aliases + crosslingual_aliases:
             self._add_domain_alias(alias, canonical, "cybersecurity_alias")
 
     def _initialize_stopwords(self) -> Set[str]:
@@ -242,16 +324,16 @@ class EntityExtractor:
             if self.domain_entities:
                 # Exactas rápidas (con registro en exact_hits)
                 for alias, (canon, _extra) in self.domain_entities.items():
-                    if alias and alias in q_norm:
+                    if alias and re.search(r'\b' + re.escape(alias) + r'\b', q_norm):
                         if canon not in entities:
                             entities.append(canon)
                         exact_hits.add(canon)
-                # Fuzzy opcional: solo si NO hubo exactas y manteniendo umbral alto
-                if self._have_rapidfuzz and not exact_hits and len(entities) < 2:
+                # Fuzzy opcional: solo si NO hubo exactas, query corta, y manteniendo umbral alto
+                if self._have_rapidfuzz and not exact_hits and len(entities) < 2 and len(q_norm) < 60:
                     from rapidfuzz import process, fuzz
                     choices = list(self.domain_entities.keys())
                     added = 0
-                    for cand, score, _ in process.extract(q_norm, choices, scorer=fuzz.WRatio, limit=5):
+                    for cand, score, _ in process.extract(q_norm, choices, scorer=fuzz.token_set_ratio, limit=5):
                         if score >= 92 and len(cand) >= 5:
                             canon = self.domain_entities[cand][0]
                             if canon not in entities:
@@ -340,11 +422,12 @@ class EntityExtractor:
         # Solo agregar entidades concretas del dominio, no frases genericas.
         pass
         
-        # 3. Buscar términos específicos de ciberseguridad
-        specific_entities = [
+        # 3. Buscar acronimos especificos de ciberseguridad (word-boundary match)
+        # Solo acronimos: terminos genericos como 'cloud', 'security' disparan two-stage innecesariamente
+        specific_acronyms = [
             'cissp', 'ceh', 'oscp', 'oswe', 'osep', 'cism', 'cisa', 'crisc',
-            'aws', 'azure', 'gcp', 'cloud', 'security', 'pentest',
-            'firewall', 'siem', 'soc', 'ids', 'ips', 'vpn', '零信任',
+            'aws', 'azure', 'gcp', 'pentest',
+            'siem', 'soc', 'ids', 'ips', 'vpn',
             'nse1', 'nse2', 'nse3', 'nse4', 'nse5', 'nse6', 'nse7', 'nse8',
             'gsec', 'gcih', 'gpen', 'gcfa', 'gcfe',
             'ccna', 'ccnp', 'ccie', 'casp', 'ccsp',
@@ -353,8 +436,8 @@ class EntityExtractor:
         ]
         
         question_lower = q_norm
-        for term in specific_entities:
-            if term in question_lower and term not in entities:
+        for term in specific_acronyms:
+            if re.search(r'\b' + re.escape(term) + r'\b', question_lower) and term not in entities:
                 entities.append(term)
         
         # 4. Extraer números de modelos

@@ -1,0 +1,227 @@
+{
+  "timestamp": "20260712_184849",
+  "mode": "retrieval_only",
+  "semantic_weight": 0.6,
+  "top_k": 5,
+  "elapsed_s": 83.7,
+  "analysis": {
+    "total_questions": 2,
+    "answerable": 2,
+    "doc_hit_rate": 1.0,
+    "page_hit_rate": 0.5,
+    "doc_miss_count": 0,
+    "avg_recall": 0.666,
+    "avg_mrr": 0.375,
+    "avg_precision_at_k": 0.425,
+    "avg_first_rank": 3.0,
+    "median_first_rank": 4,
+    "avg_latency_ms": 18276.0,
+    "total_elapsed_s": 83.7,
+    "prerank_doc_hit_rate": 0.5,
+    "postrank_doc_hit_rate": 1.0,
+    "prerank_avg_recall": 0.167,
+    "postrank_avg_recall": 0.666,
+    "prerank_avg_mrr": 0.125,
+    "postrank_avg_mrr": 0.375,
+    "prerank_avg_precision_at_k": 0.1,
+    "postrank_avg_precision_at_k": 0.425,
+    "reranker_improvements": [
+      1
+    ],
+    "reranker_regressions": []
+  },
+  "results": [
+    {
+      "id": 1,
+      "query": "Que es el NIST Cybersecurity Framework?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.333,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.6,
+        "matched": [
+          {
+            "source": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+            "page": 5,
+            "score": 1.6799,
+            "rank": 2
+          },
+          {
+            "source": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+            "page": 6,
+            "score": 1.3841,
+            "rank": 4
+          },
+          {
+            "source": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+            "page": 1,
+            "score": 1.2046,
+            "rank": 5
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.333,
+        "first_relevant_rank": 4,
+        "mrr": 0.25,
+        "precision_at_k": 0.2,
+        "matched": [
+          {
+            "source": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+            "page": 5,
+            "score": 1.6799,
+            "rank": 4
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 18,
+          "score": 1.6915
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 5,
+          "score": 1.6799
+        },
+        {
+          "name": "Cyber Security Basics for SMALL BUSINESS.pdf",
+          "page": 3,
+          "score": 1.663
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 6,
+          "score": 1.3841
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 1,
+          "score": 1.2046
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 18,
+          "score": 1.6915
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 18,
+          "score": 1.0915
+        },
+        {
+          "name": "IoT Security Guide .pdf",
+          "page": 107,
+          "score": 0.5383
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 5,
+          "score": 1.6799
+        },
+        {
+          "name": "Cyber Security Basics for SMALL BUSINESS.pdf",
+          "page": 3,
+          "score": 1.663
+        }
+      ],
+      "latency_ms": 22042
+    },
+    {
+      "id": 2,
+      "query": "Cuales son los dominios del CISSP?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 1.0,
+        "first_relevant_rank": 4,
+        "mrr": 0.25,
+        "precision_at_k": 0.25,
+        "matched": [
+          {
+            "source": "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+            "page": 36,
+            "score": 1.1308,
+            "rank": 4
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "Cybersecurity Career Master Plan.pdf",
+          "page": 108,
+          "score": 1.646
+        },
+        {
+          "name": "CISSP Passport.pdf",
+          "page": 35,
+          "score": 1.5843
+        },
+        {
+          "name": "CYBERSECURITY RESOURCE AND REFERENCE GUIDE.pdf",
+          "page": 39,
+          "score": 1.4991
+        },
+        {
+          "name": "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+          "page": 36,
+          "score": 1.1308
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "CYBERSECURITY RESOURCE AND REFERENCE GUIDE.pdf",
+          "page": 39,
+          "score": 1.4991
+        },
+        {
+          "name": "Cybersecurity Career Master Plan.pdf",
+          "page": 108,
+          "score": 1.646
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 424,
+          "score": 0.6277
+        },
+        {
+          "name": "Information Security Office.pdf",
+          "page": 2,
+          "score": 0.6185
+        },
+        {
+          "name": "Chief Information Security Officer.pdf",
+          "page": 2,
+          "score": 0.618
+        }
+      ],
+      "latency_ms": 14511
+    }
+  ]
+}

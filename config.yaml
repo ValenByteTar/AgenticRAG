@@ -18,6 +18,10 @@ paths:
 retrieval:
   score_threshold: 0.5
   top_k: 10
+  # FASE 2.BIS (v4.1): semantic_weight configurable para sweeps controlados.
+  # El codigo aun sobreescribe este valor a 0.4 para queries numericas
+  # (ver rag_hybrid.py numeric_q); ese comportamiento se mantiene aparte.
+  semantic_weight: 0.6
 # Razonamiento automático (DESHABILITADO temporalmente por velocidad)
 enable_auto_reasoning: false  # Desactivado para optimizar velocidad - activar solo si es necesario
 # Auto-revisión: el LLM verifica y corrige su propia respuesta
@@ -58,12 +62,15 @@ vectordb:
 reranker:
   model_name: models/BAAI-bge-reranker-v2-m3
   local_path: models/BAAI-bge-reranker-v2-m3
-  # FASE 3: Pool de candidatos para reranker (antes 10, ahora 20)
-  candidate_pool: 20
+  # FASE 2.1 (v4.1): subido de 20 a 35. Diagnostico confirmo que IDs 6 y 9
+  # (retrieval misses) tenian el doc esperado en rank 25-34 pre-reranking,
+  # fuera del pool de 20. Requirio tambien corregir el cap oculto en
+  # retrieval_engine.py:rerank_results (ver comentario ahi).
+  candidate_pool: 35
   # FASE 4: Pesos de mezcla hybrid/reranker (antes 55/45, ahora 30/70 favoreciendo reranker)
   mix:
-    hybrid_weight: 0.30
-    rerank_weight: 0.70
+    hybrid_weight: 0.50
+    rerank_weight: 0.50
     
 doccards:
   llm_enabled: true

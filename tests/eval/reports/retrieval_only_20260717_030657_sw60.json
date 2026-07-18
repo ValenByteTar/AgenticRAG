@@ -1,0 +1,881 @@
+{
+  "timestamp": "20260717_030657",
+  "mode": "retrieval_only",
+  "semantic_weight": 0.6,
+  "top_k": 10,
+  "elapsed_s": 180.0,
+  "analysis": {
+    "total_questions": 6,
+    "answerable": 6,
+    "doc_hit_rate": 0.5,
+    "page_hit_rate": 0.333,
+    "doc_miss_count": 3,
+    "avg_recall": 0.375,
+    "avg_mrr": 0.278,
+    "avg_precision_at_k": 0.102,
+    "avg_first_rank": 3.0,
+    "median_first_rank": 2,
+    "avg_latency_ms": 18029.0,
+    "total_elapsed_s": 180.0,
+    "prerank_doc_hit_rate": 0.5,
+    "postrank_doc_hit_rate": 0.5,
+    "prerank_avg_recall": 0.375,
+    "postrank_avg_recall": 0.375,
+    "prerank_avg_mrr": 0.274,
+    "postrank_avg_mrr": 0.278,
+    "prerank_avg_precision_at_k": 0.102,
+    "postrank_avg_precision_at_k": 0.102,
+    "reranker_improvements": [
+      21
+    ],
+    "reranker_regressions": []
+  },
+  "results": [
+    {
+      "id": 11,
+      "query": "Que es el Risk Management Framework del NIST?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "sources_returned": [
+        {
+          "name": "Planning for a Zero Trust Architecture.pdf",
+          "page": 17,
+          "score": 0.8328
+        },
+        {
+          "name": "NIST SP 800-66 Rev. 2 .pdf",
+          "page": 96,
+          "score": 0.8318
+        },
+        {
+          "name": "Secure Software Development Framework .pdf",
+          "page": 32,
+          "score": 0.831
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 95,
+          "score": 0.831
+        },
+        {
+          "name": "Developing Cyber Resilient Systems.pdf",
+          "page": 65,
+          "score": 0.8308
+        },
+        {
+          "name": "Artificial Intelligence Risk Management Framework.pdf",
+          "page": 3,
+          "score": 0.8306
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 5,
+          "score": 0.8303
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 26,
+          "score": 0.8299
+        },
+        {
+          "name": "Cybersecurity Framework Profile NIST.pdf",
+          "page": 3,
+          "score": 0.8292
+        },
+        {
+          "name": "Performance Measurement Guide for Information Security.pdf",
+          "page": 2,
+          "score": 0.8286
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Planning for a Zero Trust Architecture.pdf",
+          "page": 17,
+          "score": 0.8328
+        },
+        {
+          "name": "Artificial Intelligence Risk Management Framework.pdf",
+          "page": 3,
+          "score": 0.8306
+        },
+        {
+          "name": "Developing Cyber Resilient Systems.pdf",
+          "page": 65,
+          "score": 0.8308
+        },
+        {
+          "name": "NIST SP 800-66 Rev. 2 .pdf",
+          "page": 96,
+          "score": 0.8318
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 95,
+          "score": 0.831
+        },
+        {
+          "name": "Secure Software Development Framework .pdf",
+          "page": 32,
+          "score": 0.831
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 5,
+          "score": 0.8303
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 26,
+          "score": 0.8299
+        },
+        {
+          "name": "Cybersecurity Framework Profile NIST.pdf",
+          "page": 3,
+          "score": 0.8292
+        },
+        {
+          "name": "Performance Measurement Guide for Information Security.pdf",
+          "page": 2,
+          "score": 0.8286
+        }
+      ],
+      "latency_ms": 32993
+    },
+    {
+      "id": 17,
+      "query": "Que es el modelo de responsabilidad compartida en la nube?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.75,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.4,
+        "matched": [
+          {
+            "source": "AWS Security  (2).pdf",
+            "page": 4,
+            "score": -0.3172,
+            "rank": 1
+          },
+          {
+            "source": "Cloud Security Governance And Assurance.pdf",
+            "page": 27,
+            "score": -0.3185,
+            "rank": 3
+          },
+          {
+            "source": "AWS Security  (2).pdf",
+            "page": 2,
+            "score": -0.3194,
+            "rank": 6
+          },
+          {
+            "source": "Cloud Security Handbook.pdf",
+            "page": 31,
+            "score": -0.3206,
+            "rank": 8
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.75,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.4,
+        "matched": [
+          {
+            "source": "AWS Security  (2).pdf",
+            "page": 4,
+            "score": -0.3172,
+            "rank": 1
+          },
+          {
+            "source": "Cloud Security Governance And Assurance.pdf",
+            "page": 27,
+            "score": -0.3185,
+            "rank": 5
+          },
+          {
+            "source": "Cloud Security Handbook.pdf",
+            "page": 31,
+            "score": -0.3206,
+            "rank": 6
+          },
+          {
+            "source": "AWS Security  (2).pdf",
+            "page": 2,
+            "score": -0.3194,
+            "rank": 7
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "AWS Security  (2).pdf",
+          "page": 4,
+          "score": -0.3172
+        },
+        {
+          "name": "CLOUD SECURITY INTERVIEW QUESTIONS & ANSWERS.pdf",
+          "page": 2,
+          "score": -0.318
+        },
+        {
+          "name": "Cloud Security Governance And Assurance.pdf",
+          "page": 27,
+          "score": -0.3185
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 125,
+          "score": -0.319
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 125,
+          "score": -0.3194
+        },
+        {
+          "name": "AWS Security  (2).pdf",
+          "page": 2,
+          "score": -0.3194
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 262,
+          "score": -0.3199
+        },
+        {
+          "name": "Cloud Security Handbook.pdf",
+          "page": 31,
+          "score": -0.3206
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 32,
+          "score": -0.321
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 33,
+          "score": -0.321
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "AWS Security  (2).pdf",
+          "page": 4,
+          "score": -0.3172
+        },
+        {
+          "name": "CLOUD SECURITY INTERVIEW QUESTIONS & ANSWERS.pdf",
+          "page": 2,
+          "score": -0.318
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 125,
+          "score": -0.319
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 125,
+          "score": -0.3194
+        },
+        {
+          "name": "Cloud Security Governance And Assurance.pdf",
+          "page": 27,
+          "score": -0.3185
+        },
+        {
+          "name": "Cloud Security Handbook.pdf",
+          "page": 31,
+          "score": -0.3206
+        },
+        {
+          "name": "AWS Security  (2).pdf",
+          "page": 2,
+          "score": -0.3194
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 262,
+          "score": -0.3199
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 33,
+          "score": -0.321
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 32,
+          "score": -0.321
+        }
+      ],
+      "latency_ms": 9988
+    },
+    {
+      "id": 21,
+      "query": "Compara los controles de acceso definidos por ISO 27001 y los requisitos de autenticacion de PCI DSS.",
+      "category": "multi_document",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.5,
+        "first_relevant_rank": 6,
+        "mrr": 0.167,
+        "precision_at_k": 0.111,
+        "matched": [
+          {
+            "source": "02 ISOIEC 27001 Implementation Guide.pdf",
+            "page": 1,
+            "score": 0.2301,
+            "rank": 6
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.5,
+        "first_relevant_rank": 7,
+        "mrr": 0.143,
+        "precision_at_k": 0.111,
+        "matched": [
+          {
+            "source": "02 ISOIEC 27001 Implementation Guide.pdf",
+            "page": 1,
+            "score": 0.2301,
+            "rank": 7
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "01 ISOIEC 27001 Implementation  Documents List.pdf",
+          "page": 1,
+          "score": 0.8308
+        },
+        {
+          "name": "ISO27001 2022 Self-Assessment Checklist.pdf",
+          "page": 1,
+          "score": 0.8288
+        },
+        {
+          "name": "ISO 27001 Implementation Checklist.pdf",
+          "page": 2,
+          "score": 0.2323
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 3,
+          "score": 0.232
+        },
+        {
+          "name": "ISO 27001 Webinar Slides.pdf",
+          "page": 11,
+          "score": 0.2315
+        },
+        {
+          "name": "02 ISOIEC 27001 Implementation Guide.pdf",
+          "page": 1,
+          "score": 0.2301
+        },
+        {
+          "name": "New ISO 27001_2022-1.pdf",
+          "page": 20,
+          "score": 0.2297
+        },
+        {
+          "name": "ISO 27001 Introduction.pdf",
+          "page": 12,
+          "score": 0.2296
+        },
+        {
+          "name": "Cloud Security Best Practices .pdf",
+          "page": 42,
+          "score": 0.2294
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 3,
+          "score": 0.232
+        },
+        {
+          "name": "ISO 27001 Implementation Checklist.pdf",
+          "page": 2,
+          "score": 0.2323
+        },
+        {
+          "name": "01 ISOIEC 27001 Implementation  Documents List.pdf",
+          "page": 1,
+          "score": 0.8308
+        },
+        {
+          "name": "New ISO 27001_2022-1.pdf",
+          "page": 20,
+          "score": 0.2297
+        },
+        {
+          "name": "ISO 27001 Webinar Slides.pdf",
+          "page": 11,
+          "score": 0.2315
+        },
+        {
+          "name": "ISO 27001 Introduction.pdf",
+          "page": 12,
+          "score": 0.2296
+        },
+        {
+          "name": "02 ISOIEC 27001 Implementation Guide.pdf",
+          "page": 1,
+          "score": 0.2301
+        },
+        {
+          "name": "Cloud Security Best Practices .pdf",
+          "page": 42,
+          "score": 0.2294
+        },
+        {
+          "name": "ISO27001 2022 Self-Assessment Checklist.pdf",
+          "page": 1,
+          "score": 0.8288
+        }
+      ],
+      "latency_ms": 15275
+    },
+    {
+      "id": 29,
+      "query": "Que comandos Linux son utiles para un analista de seguridad segun los recursos disponibles?",
+      "category": "multi_document",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "sources_returned": [
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 4,
+          "score": 0.8328
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 77,
+          "score": 0.8313
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 137,
+          "score": -0.3182
+        },
+        {
+          "name": "Firewall Checklist.pdf",
+          "page": 4,
+          "score": -0.3185
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 137,
+          "score": -0.3187
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 100,
+          "score": -0.3197
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 56,
+          "score": -0.3206
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 65,
+          "score": -0.3206
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 72,
+          "score": -0.3208
+        },
+        {
+          "name": "CISSP Cheatsheet .pdf",
+          "page": 5,
+          "score": -0.321
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 4,
+          "score": 0.8328
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 137,
+          "score": -0.3182
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 137,
+          "score": -0.3187
+        },
+        {
+          "name": "Firewall Checklist.pdf",
+          "page": 4,
+          "score": -0.3185
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 100,
+          "score": -0.3197
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 77,
+          "score": 0.8313
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 65,
+          "score": -0.3206
+        },
+        {
+          "name": "CISSP Cheatsheet .pdf",
+          "page": 5,
+          "score": -0.321
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 72,
+          "score": -0.3208
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 56,
+          "score": -0.3206
+        }
+      ],
+      "latency_ms": 19327
+    },
+    {
+      "id": 64,
+      "query": "Que cubre el dominio de seguridad en la nube del CCSP?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "sources_returned": [
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 23,
+          "score": 0.8328
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 31,
+          "score": 0.831
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 28,
+          "score": 0.8303
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 451,
+          "score": 0.8301
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 24,
+          "score": 0.5175
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 22,
+          "score": 0.2315
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 23,
+          "score": 0.8328
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 22,
+          "score": 0.2315
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 270,
+          "score": 0.2302
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 24,
+          "score": 0.2318
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 28,
+          "score": 0.8303
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 31,
+          "score": 0.831
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 451,
+          "score": 0.8301
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 88,
+          "score": 0.2292
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 26,
+          "score": 0.2301
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 214,
+          "score": 0.229
+        }
+      ],
+      "latency_ms": 12974
+    },
+    {
+      "id": 66,
+      "query": "Que es la seguridad en OT/ICS?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.1,
+        "matched": [
+          {
+            "source": "Guide to Operational Technology Security .pdf",
+            "page": 168,
+            "score": -0.318,
+            "rank": 2
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.1,
+        "matched": [
+          {
+            "source": "Guide to Operational Technology Security .pdf",
+            "page": 168,
+            "score": -0.318,
+            "rank": 2
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "Ai Agent Dictionary.pdf",
+          "page": 2,
+          "score": 0.8305
+        },
+        {
+          "name": "Guide to Operational Technology Security .pdf",
+          "page": 168,
+          "score": -0.318
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 144,
+          "score": -0.3189
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 147,
+          "score": -0.3192
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 144,
+          "score": -0.3194
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 60,
+          "score": -0.3196
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 147,
+          "score": -0.3197
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 60,
+          "score": -0.3201
+        },
+        {
+          "name": "Industrial control systems endpoints defence guide.pdf",
+          "page": 3,
+          "score": -0.3201
+        },
+        {
+          "name": "ISO 27002 control mapping.pdf",
+          "page": 1,
+          "score": -0.321
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Ai Agent Dictionary.pdf",
+          "page": 2,
+          "score": 0.8305
+        },
+        {
+          "name": "Guide to Operational Technology Security .pdf",
+          "page": 168,
+          "score": -0.318
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 60,
+          "score": -0.3196
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 60,
+          "score": -0.3201
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 147,
+          "score": -0.3192
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 147,
+          "score": -0.3197
+        },
+        {
+          "name": "Industrial control systems endpoints defence guide.pdf",
+          "page": 3,
+          "score": -0.3201
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 144,
+          "score": -0.3189
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 144,
+          "score": -0.3194
+        },
+        {
+          "name": "ISO 27002 control mapping.pdf",
+          "page": 1,
+          "score": -0.321
+        }
+      ],
+      "latency_ms": 17616
+    }
+  ]
+}

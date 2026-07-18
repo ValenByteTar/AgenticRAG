@@ -1,0 +1,297 @@
+{
+  "timestamp": "20260712_102612",
+  "mode": "retrieval_only",
+  "semantic_weight": 0.6,
+  "top_k": 10,
+  "elapsed_s": 137.9,
+  "analysis": {
+    "total_questions": 3,
+    "answerable": 3,
+    "doc_hit_rate": 0.667,
+    "page_hit_rate": 0.667,
+    "doc_miss_count": 1,
+    "avg_recall": 0.422,
+    "avg_mrr": 0.5,
+    "avg_precision_at_k": 0.333,
+    "avg_first_rank": 1.5,
+    "median_first_rank": 2,
+    "avg_latency_ms": 23158.0,
+    "total_elapsed_s": 137.9
+  },
+  "results": [
+    {
+      "id": 1,
+      "query": "Que es el NIST Cybersecurity Framework?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.667,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.4,
+        "matched": [
+          {
+            "source": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+            "page": 5,
+            "score": 1.818,
+            "rank": 2
+          },
+          {
+            "source": "Cybersecurity Terms Summary 2023.pdf",
+            "page": 65,
+            "score": 1.7905,
+            "rank": 4
+          },
+          {
+            "source": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+            "page": 6,
+            "score": 1.384,
+            "rank": 6
+          },
+          {
+            "source": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+            "page": 1,
+            "score": 1.2046,
+            "rank": 7
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 18,
+          "score": 1.8332
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 5,
+          "score": 1.818
+        },
+        {
+          "name": "Cyber Security Basics for SMALL BUSINESS.pdf",
+          "page": 3,
+          "score": 1.8042
+        },
+        {
+          "name": "Cybersecurity Terms Summary 2023.pdf",
+          "page": 65,
+          "score": 1.7905
+        },
+        {
+          "name": "NIST SP 1800-28.pdf",
+          "page": 9,
+          "score": 1.7669
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 6,
+          "score": 1.384
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 1,
+          "score": 1.2046
+        },
+        {
+          "name": "CYBERSECURITY BASICS.pdf",
+          "page": 4,
+          "score": 1.0946
+        },
+        {
+          "name": "Cyber Security Basics for SMALL BUSINESS.pdf",
+          "page": 4,
+          "score": 1.0946
+        },
+        {
+          "name": "NIST SP 1800-28.pdf",
+          "page": 59,
+          "score": 0.9
+        }
+      ],
+      "latency_ms": 28598
+    },
+    {
+      "id": 8,
+      "query": "Que es phishing?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.6,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.6,
+        "matched": [
+          {
+            "source": "CompTIA Security+ Exam Study Guide (2).pdf",
+            "page": 9,
+            "score": 0.9077,
+            "rank": 1
+          },
+          {
+            "source": "Phishin, Smishing and Vishing.pdf",
+            "page": 4,
+            "score": 0.8994,
+            "rank": 2
+          },
+          {
+            "source": "Learn the many forms of Phishing - Ministry of Security.pdf",
+            "page": 2,
+            "score": 0.8928,
+            "rank": 3
+          },
+          {
+            "source": "CompTIA Security+ Exam Study Guide (2).pdf",
+            "page": 5,
+            "score": 0.6175,
+            "rank": 7
+          },
+          {
+            "source": "Phishin, Smishing and Vishing.pdf",
+            "page": 3,
+            "score": 0.8578,
+            "rank": 9
+          },
+          {
+            "source": "Phishin, Smishing and Vishing.pdf",
+            "page": 5,
+            "score": 0.2681,
+            "rank": 10
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "CompTIA Security+ Exam Study Guide (2).pdf",
+          "page": 9,
+          "score": 0.9077
+        },
+        {
+          "name": "Phishin, Smishing and Vishing.pdf",
+          "page": 4,
+          "score": 0.8994
+        },
+        {
+          "name": "Learn the many forms of Phishing - Ministry of Security.pdf",
+          "page": 2,
+          "score": 0.8928
+        },
+        {
+          "name": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+          "page": 127,
+          "score": 0.88
+        },
+        {
+          "name": "CISA Phishing Infographic .pdf",
+          "page": 1,
+          "score": 0.877
+        },
+        {
+          "name": "CISA Phishing Infographic .pdf",
+          "page": 2,
+          "score": 0.8724
+        },
+        {
+          "name": "CompTIA Security+ Exam Study Guide (2).pdf",
+          "page": 5,
+          "score": 0.6175
+        },
+        {
+          "name": "CompTIA Security+ Exam Study Guide.pdf",
+          "page": 5,
+          "score": 0.6175
+        },
+        {
+          "name": "Phishin, Smishing and Vishing.pdf",
+          "page": 3,
+          "score": 0.8578
+        },
+        {
+          "name": "Phishin, Smishing and Vishing.pdf",
+          "page": 5,
+          "score": 0.2681
+        }
+      ],
+      "latency_ms": 16175
+    },
+    {
+      "id": 68,
+      "query": "Que es la ingenieria social segun los documentos disponibles?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "sources_returned": [
+        {
+          "name": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+          "page": 6,
+          "score": 1.5597
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+          "page": 4,
+          "score": 1.4117
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 14,
+          "score": 1.4017
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+          "page": 2,
+          "score": 1.3527
+        },
+        {
+          "name": "Privacy by design and privacy by default.pdf",
+          "page": 27,
+          "score": 1.3461
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 12,
+          "score": 1.3419
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC MINDMAP.pdf",
+          "page": 1,
+          "score": 1.2458
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+          "page": 5,
+          "score": 1.2334
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+          "page": 3,
+          "score": 1.2231
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 16,
+          "score": 1.2121
+        }
+      ],
+      "latency_ms": 24701
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "timestamp": "20260712_185001",
+  "mode": "retrieval_only",
+  "semantic_weight": 0.6,
+  "top_k": 3,
+  "elapsed_s": 64.5,
+  "analysis": {
+    "total_questions": 1,
+    "answerable": 1,
+    "doc_hit_rate": 1.0,
+    "page_hit_rate": 1.0,
+    "doc_miss_count": 0,
+    "avg_recall": 0.333,
+    "avg_mrr": 0.5,
+    "avg_precision_at_k": 0.667,
+    "avg_first_rank": 2.0,
+    "median_first_rank": 2,
+    "avg_latency_ms": 17659.0,
+    "total_elapsed_s": 64.5,
+    "prerank_doc_hit_rate": 1.0,
+    "postrank_doc_hit_rate": 1.0,
+    "prerank_avg_recall": 0.333,
+    "postrank_avg_recall": 0.333,
+    "prerank_avg_mrr": 0.333,
+    "postrank_avg_mrr": 0.5,
+    "prerank_avg_precision_at_k": 0.333,
+    "postrank_avg_precision_at_k": 0.667,
+    "reranker_improvements": [
+      1
+    ],
+    "reranker_regressions": []
+  },
+  "results": [
+    {
+      "id": 1,
+      "query": "Que es el NIST Cybersecurity Framework?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.333,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.667,
+        "matched": [
+          {
+            "source": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+            "page": 5,
+            "score": 1.6937,
+            "rank": 2
+          },
+          {
+            "source": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+            "page": 6,
+            "score": 1.3841,
+            "rank": 3
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.333,
+        "first_relevant_rank": 3,
+        "mrr": 0.333,
+        "precision_at_k": 0.333,
+        "matched": [
+          {
+            "source": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+            "page": 5,
+            "score": 1.6937,
+            "rank": 3
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 18,
+          "score": 1.7057
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 5,
+          "score": 1.6937
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 6,
+          "score": 1.3841
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 18,
+          "score": 1.7057
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 18,
+          "score": 1.1057
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 5,
+          "score": 1.6937
+        }
+      ],
+      "latency_ms": 17659
+    }
+  ]
+}

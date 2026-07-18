@@ -1,0 +1,90 @@
+Inicializando HybridRAG (use_llm=False)...
+======================================================================
+PRE-RERANKING (hybrid_search top_k=20, = candidate_pool)
+======================================================================
+  rank= 1 hybrid_score=0.603802210024724 src='Social Engineering.pdf' text='Social Engineering...'
+  rank= 2 hybrid_score=0.6024673713709214 src='Social Engineering.pdf' text='The Emergence of Masspersonal Social Engineering    19 the two meanings are sepa...'
+  rank= 3 hybrid_score=0.5967301544212447 src='CEH Exam Guide .pdf' text='15          3.1.2 Social Engineering Overview Facts    3.1.2  Social Engineering...'
+  rank= 4 hybrid_score=0.5950330360836733 src='Social Engineering.pdf' text='32    Chapter 1 Statistical Association put it in 1937, the application of socia...'
+  rank= 5 hybrid_score=0.5828463994655221 src='Social Engineering.pdf' text='The Emergence of Masspersonal Social Engineering    11 Russian operation that st...'
+  rank= 6 hybrid_score=0.5812425840869553 src='ALL ABOUT PHISHING.pdf' text='Social engineering is the tactic of manipulating, influencing, or deceiving a vi...'
+  rank= 7 hybrid_score=0.5812425840869553 src='Learn the many forms of Phishing - Ministry of Security.pdf' text='Social engineering is the tactic of manipulating, influencing, or deceiving a vi...'
+  rank= 8 hybrid_score=0.5797901603676558 src='GRC,_SOC_analyst_and_Penetration_testenig_Interview_Questions_and.pdf' text='Question 8: What is Social Engineering and How is it Used in  Penetration Testin...'
+  rank= 9 hybrid_score=0.5760129820321084 src='Social Engineering.pdf' text='the phone,  or through printed writing, social engineering can now occur on  soc...'
+  rank=10 hybrid_score=0.5758615035095423 src='Social Engineering.pdf' text='Crowdmasters    33 kindergartens, arts, crafts, and music classes, and discussio...'
+  rank=11 hybrid_score=0.5737403797764702 src='Social Engineering.pdf' text='Penetrating    161 hire someone to hack, pwn, own, and penetrate those same empl...'
+  rank=12 hybrid_score=0.5733667259755357 src='Social Engineering.pdf' text='166    Chapter 7 that social engineering has two distinct meanings in American  ...'
+  rank=13 hybrid_score=0.5731881132090771 src='Social Engineering.pdf' text='Phreaks and Hackers    63 engineering would also eventually draw on social scien...'
+  rank=14 hybrid_score=0.5690524110132994 src='Social Engineering.pdf' text='including the foundational  work of Paul Ekman.47 It also has analyses on buildi...'
+  rank=15 hybrid_score=0.5670857643216565 src='Social Engineering.pdf' text='Penetrating    149 mindlessness), microexpressions, and framing. With these con­...'
+  rank=16 hybrid_score=0.5638762749184645 src='Social Engineering.pdf' text='I Engineering the Social...'
+  rank=17 hybrid_score=0.5602593379185892 src='Social Engineering.pdf' text='8 Conclusion: Ameliorating  Masspersonal Social Engineering In this book, we too...'
+  rank=18 hybrid_score=0.5593754051037186 src='Social Engineering.pdf' text='Crowdmasters    43 mass social engineering was quickly exposed as a deceptive, m...'
+  rank=19 hybrid_score=0.5592287298855537 src='Blue Teaming Free Training .pdf' text='Now let's explore some techniques: T1279 Conduct social engineering Social engin...'
+  rank=20 hybrid_score=0.5572426327191409 src='Social Engineering.pdf' text='208    Chapter 8 Moreover, if the stated purpose of these efforts was to sow dis...'
+
+======================================================================
+POST-RERANKING (rerank_results top_k=10)
+======================================================================
+  rank= 1 rerank_score=0.09660622477531433 rerank_norm=0.9660622477531433 final_score=0.7351704495534305 hybrid_score=0.5812425840869553 src='ALL ABOUT PHISHING.pdf' text='Social engineering is the tactic of manipulating, influencing, or deceiving a vi...'
+  rank= 2 rerank_score=0.09660622477531433 rerank_norm=0.9660622477531433 final_score=0.7351704495534305 hybrid_score=0.5812425840869553 src='Learn the many forms of Phishing - Ministry of Security.pdf' text='Social engineering is the tactic of manipulating, influencing, or deceiving a vi...'
+  rank= 3 rerank_score=0.05789821222424507 rerank_norm=0.5789821222424507 final_score=0.5672180919592115 hybrid_score=0.5593754051037186 src='Social Engineering.pdf' text='Crowdmasters    43 mass social engineering was quickly exposed as a deceptive, m...'
+  rank= 4 rerank_score=0.03639428690075874 rerank_norm=0.36394286900758743 final_score=0.5036152402557817 hybrid_score=0.5967301544212447 src='CEH Exam Guide .pdf' text='15          3.1.2 Social Engineering Overview Facts    3.1.2  Social Engineering...'
+  rank= 5 rerank_score=0.02935267612338066 rerank_norm=0.2935267612338066 final_score=0.46528480071411615 hybrid_score=0.5797901603676558 src='GRC,_SOC_analyst_and_Penetration_testenig_Interview_Questions_and.pdf' text='Question 8: What is Social Engineering and How is it Used in  Penetration Testin...'
+  rank= 6 rerank_score=0.023456081748008728 rerank_norm=0.23456081748008728 final_score=0.42936156492336713 hybrid_score=0.5592287298855537 src='Blue Teaming Free Training .pdf' text='Now let's explore some techniques: T1279 Conduct social engineering Social engin...'
+  rank= 7 rerank_score=0.017095355316996574 rerank_norm=0.17095355316996574 final_score=0.41808926094729953 hybrid_score=0.5828463994655221 src='Social Engineering.pdf' text='The Emergence of Masspersonal Social Engineering    11 Russian operation that st...'
+  rank= 8 rerank_score=0.01793852634727955 rerank_norm=0.1793852634727955 final_score=0.4100798703401969 hybrid_score=0.5638762749184645 src='Social Engineering.pdf' text='I Engineering the Social...'
+  rank= 9 rerank_score=0.012563375756144524 rerank_norm=0.12563375756144524 final_score=0.40727332467478206 hybrid_score=0.5950330360836733 src='Social Engineering.pdf' text='32    Chapter 1 Statistical Association put it in 1937, the application of socia...'
+  rank=10 rerank_score=0.007811511866748333 rerank_norm=0.07811511866748333 final_score=0.3935273734818277 hybrid_score=0.603802210024724 src='Social Engineering.pdf' text='Social Engineering...'
+
+======================================================================
+BUSQUEDA ESPECIFICA: chunks de Social Engineering.pdf en el pool pre-rerank
+======================================================================
+Total chunks de Social Engineering.pdf en pool: 15
+  [1] hybrid_score=0.603802210024724 len_text=18 preview='Social Engineering'
+  [2] hybrid_score=0.6024673713709214 len_text=1691 preview='The Emergence of Masspersonal Social Engineering    19
+the two meanings are separated in time and have distinct histories, 
+the “consent engineering” '
+  [3] hybrid_score=0.5950330360836733 len_text=1810 preview='32    Chapter 1
+Statistical Association put it in 1937, the application of social sci­
+ence to social ills would be social engineering, just as the ap'
+  [4] hybrid_score=0.5828463994655221 len_text=1624 preview='The Emergence of Masspersonal Social Engineering    11
+Russian operation that started in 2016 and continues to this day 
+is “political engineering, so'
+  [5] hybrid_score=0.5760129820321084 len_text=868 preview='the phone, 
+or through printed writing, social engineering can now occur on 
+societal scales through social media and other internet platforms.”35
+Whi'
+  [6] hybrid_score=0.5758615035095423 len_text=1795 preview='Crowdmasters    33
+kindergartens, arts, crafts, and music classes, and discussion salons, 
+all with the intention of “Americanizing” the immigrants.
+I'
+  [7] hybrid_score=0.5737403797764702 len_text=996 preview='Penetrating    161
+hire someone to hack, pwn, own, and penetrate those same employ­
+ees. If malicious mass social engineers are hitting the hapless ma'
+  [8] hybrid_score=0.5733667259755357 len_text=1715 preview='166    Chapter 7
+that social engineering has two distinct meanings in American 
+thought. One is the form we have been calling “mass social engi­
+neeri'
+  [9] hybrid_score=0.5731881132090771 len_text=1686 preview='Phreaks and Hackers    63
+engineering would also eventually draw on social science, just as 
+the previous mass form did. While the phreaks and hackers'
+  [10] hybrid_score=0.5690524110132994 len_text=821 preview='including the foundational 
+work of Paul Ekman.47 It also has analyses on building rapport 
+(Robin Dreeke’s It’s Not All About “Me”), thinking (Daniel'
+  [11] hybrid_score=0.5670857643216565 len_text=1632 preview='Penetrating    149
+mindlessness), microexpressions, and framing. With these con­
+cepts, social engineers can describe their work in social scientific '
+  [12] hybrid_score=0.5638762749184645 len_text=24 preview='I
+Engineering the Social'
+  [13] hybrid_score=0.5602593379185892 len_text=1378 preview='8
+Conclusion: Ameliorating 
+Masspersonal Social Engineering
+In this book, we took up the call from several people to consider 
+emerging forms of manip'
+  [14] hybrid_score=0.5593754051037186 len_text=1657 preview='Crowdmasters    43
+mass social engineering was quickly exposed as a deceptive, manip­
+ulative practice in service of self-­interested elites. Even the'
+  [15] hybrid_score=0.5572426327191409 len_text=1672 preview='208    Chapter 8
+Moreover, if the stated purpose of these efforts was to sow distrust 
+in institutions, the response to the COVID-­19 pandemic and the'

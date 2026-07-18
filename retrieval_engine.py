@@ -4,6 +4,7 @@ Extrae la lógica de búsqueda y filtrado de rag_hybrid.py.
 """
 import heapq
 import math
+import os
 import re
 import time
 from typing import TYPE_CHECKING, List, Optional
@@ -14,6 +15,70 @@ if TYPE_CHECKING:
     from rag_hybrid import HybridRAG
 
 console = Console()
+
+# FASE 4.BIS (v4.1): Lexical Query Expansion exclusiva para BM25.
+# No modifica la query para el embedding (BGE-m3 ya es multilingue).
+# Complementa (no duplica) a EquivalencesManager: ese cubre acronimos y
+# nombres propios (NIST, SQL, CISM); este cubre sustantivos comunes del
+# dominio que no tienen cobertura alli (confirmado FASE 1.3/3.1-3.3:
+# queries como "nube" o "agente" dan BM25 score=0.000 en todo el corpus).
+LEXICAL_EXPANSION_MAP = {
+    "nube": ["cloud", "cloud computing"],
+    "auditoria": ["audit", "auditing", "assessment"],
+    "audito": ["audit", "auditing"],
+    "vulnerabilidad": ["vulnerability", "vulnerabilities"],
+    "vulnerabilidades": ["vulnerability", "vulnerabilities"],
+    "amenaza": ["threat", "threats"],
+    "amenazas": ["threat", "threats"],
+    "ataque": ["attack", "attacks"],
+    "ataques": ["attack", "attacks"],
+    "agente": ["agent", "endpoint agent"],
+    "ingenieria social": ["social engineering"],
+    "cifrado": ["encryption", "cryptography"],
+    "autenticacion": ["authentication", "authn"],
+    "autorizacion": ["authorization", "authz"],
+    "pentester": ["penetration tester", "pentester"],
+    "pentest": ["penetration test", "pentest"],
+    "escaneo": ["scan", "scanning"],
+    "comando": ["command", "commands"],
+    "comandos": ["command", "commands"],
+    "red": ["network", "networking"],
+    "riesgo": ["risk"],
+    "riesgos": ["risks", "risk"],
+    "gobierno": ["governance"],
+    "gobernanza": ["governance"],
+    "politica": ["policy", "policies"],
+    "politicas": ["policy", "policies"],
+    "control": ["control", "controls"],
+    "controles": ["control", "controls"],
+    "marco": ["framework"],
+    "cumplimiento": ["compliance"],
+    "incidente": ["incident", "incident response"],
+    "incidentes": ["incidents", "incident response"],
+    "deteccion": ["detection"],
+    "prevencion": ["prevention"],
+    "respuesta": ["response"],
+    "confianza cero": ["zero trust"],
+    "responsabilidad compartida": ["shared responsibility"],
+    "infraestructura critica": ["critical infrastructure"],
+    "modelo": ["model"],
+    "compartida": ["shared"],
+    "responsabilidad": ["responsibility"],
+}
+
+
+def expand_query_for_bm25(query: str) -> str:
+    """Expande la query con equivalentes en ingles, solo para la rama BM25.
+    No modifica la query original (esta funcion se aplica sobre una copia,
+    y la query normalizada para embedding no se toca)."""
+    query_lower = query.lower()
+    added = []
+    for es_term, en_terms in LEXICAL_EXPANSION_MAP.items():
+        if es_term in query_lower:
+            added.extend(en_terms)
+    if not added:
+        return query
+    return query + " " + " ".join(added)
 
 
 class RetrievalEngine:
@@ -66,7 +131,10 @@ class RetrievalEngine:
                 except Exception:
                     continue
         _t_bm25_start = time.time()
-        query_tokens = rag._tokenize_for_bm25(query_normalized)
+        # FASE 4.BIS (v4.1): expansion lexica solo para BM25. query_normalized
+        # (usado para el embedding arriba) no se toca.
+        query_for_bm25 = expand_query_for_bm25(query_normalized)
+        query_tokens = rag._tokenize_for_bm25(query_for_bm25)
         bm25_arr = rag.bm25.get_scores(query_tokens)
         _t_bm25 = time.time() - _t_bm25_start
         try:
@@ -93,7 +161,7 @@ class RetrievalEngine:
         if max_bm25 <= 0:
             max_bm25 = 1.0
         results = []
-        for i in cand_idx:
+        for i in sorted(cand_idx):
             try:
                 semantic_score = float(sem_scores_idx.get(i, 0.0))
                 keyword_score = float(bm25_list[i]) / max_bm25
@@ -392,13 +460,18 @@ class RetrievalEngine:
                 return results[:top_k]
         try:
             reranker_pool = int(rag.config.get('reranker', {}).get('candidate_pool', 20))
-            candidate_count = min(len(results), min(reranker_pool, top_k + 10))
+            # v4.1: se removio el cap oculto min(reranker_pool, top_k+10) que ignoraba
+            # el candidate_pool de config.yaml cuando top_k era pequeno (ej. top_k=10
+            # capaba el pool a 20 sin importar el valor configurado). Ahora respeta
+            # candidate_pool directamente, con piso de top_k para nunca rankear menos
+            # candidatos de los que se van a devolver.
+            candidate_count = min(len(results), max(reranker_pool, top_k))
             candidates = results[:candidate_count]
             console.print(f"[dim]Reranker pool: {len(candidates)} candidatos[/dim]")
         except Exception:
             candidates = results[:min(len(results), 20)]
         try:
-            pairs = [[query, (doc.get('text', '') or '')[:500]] for doc in candidates]
+            pairs = [[query, (doc.get('text', '') or '')[:1024]] for doc in candidates]
         except Exception:
             return results[:top_k]
         try:
@@ -444,18 +517,49 @@ class RetrievalEngine:
                 hybrid_w, rerank_w = 0.3, 0.7
         except Exception:
             hybrid_w, rerank_w = 0.3, 0.7
+        ranking_strategy = os.environ.get('RERANKER_RANKING_STRATEGY', str(rag.config.get('reranker', {}).get('ranking_strategy', 'blend'))).lower()
+        rrf_k = float(os.environ.get('RERANKER_RRF_K', rag.config.get('reranker', {}).get('rrf_k', 60)))
+        if rrf_k <= 0:
+            rrf_k = 60.0
+        rerank_order = sorted(range(len(candidates)), key=lambda idx: rerank_scores[idx], reverse=True)
+        rerank_ranks = {idx: rank + 1 for rank, idx in enumerate(rerank_order)}
         for i, doc in enumerate(candidates):
             try:
                 doc['rerank_score'] = rerank_scores[i]
                 doc['rerank_norm'] = float(rerank_norm[i])
-                if getattr(rag, 'heuristics_mode', 'legacy') != 'legacy':
-                    doc['final_score'] = (0.6 * doc.get('hybrid_score', 0.0)) + (0.4 * doc['rerank_norm'])
+                if ranking_strategy == 'rrf':
+                    doc['final_score'] = (1.0 / (rrf_k + i + 1)) + (1.0 / (rrf_k + rerank_ranks[i]))
                 else:
                     doc['final_score'] = (doc.get('hybrid_score', 0.0) * hybrid_w) + (doc['rerank_norm'] * rerank_w)
             except Exception:
                 doc['final_score'] = doc.get('hybrid_score', 0.0)
         try:
-            return sorted(candidates, key=lambda x: x.get('final_score', 0), reverse=True)[:top_k]
+            ranked = sorted(candidates, key=lambda x: x.get('final_score', 0), reverse=True)[:top_k]
+            preserve_enabled = bool(rag.config.get('reranker', {}).get('preserve_prerank_top_k', True))
+            if not preserve_enabled:
+                return ranked
+            prerank_keys = {
+                ((doc.get('metadata', {}) or {}).get('source', '').lower(),
+                 (doc.get('metadata', {}) or {}).get('page', 0))
+                for doc in results[:top_k]
+            }
+            preserved = [
+                doc for doc in ranked
+                if ((doc.get('metadata', {}) or {}).get('source', '').lower(),
+                    (doc.get('metadata', {}) or {}).get('page', 0)) in prerank_keys
+            ]
+            preserved_keys = {
+                ((doc.get('metadata', {}) or {}).get('source', '').lower(),
+                 (doc.get('metadata', {}) or {}).get('page', 0))
+                for doc in preserved
+            }
+            for original in results[:top_k]:
+                metadata = original.get('metadata', {}) or {}
+                key = (metadata.get('source', '').lower(), metadata.get('page', 0))
+                if key not in preserved_keys:
+                    preserved.append(original)
+                    preserved_keys.add(key)
+            return preserved[:top_k]
         except Exception:
             return results[:top_k]
 
