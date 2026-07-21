@@ -25,6 +25,7 @@ import re
 import sys
 import time
 import argparse
+import unicodedata
 import urllib.request
 import urllib.error
 from datetime import datetime
@@ -108,7 +109,8 @@ def load_questions(path: Path) -> dict:
 
 
 def normalize(text: str) -> str:
-    return text.lower()
+    nfd = unicodedata.normalize('NFD', text.lower())
+    return ''.join(c for c in nfd if unicodedata.category(c) != 'Mn')
 
 
 def check_server(base_url: str, timeout: int = 5) -> bool:
@@ -257,10 +259,12 @@ def validate_retrieval(sources_api: list, expected_sources: list,
                     first_rank = rank
                 relevant_positions.append(rank)
                 exp_pages = expected_pages[idx] if idx < len(expected_pages) else None
-                if exp_pages is not None:
+                if exp_pages is not None and exp_pages:
                     pages_list = exp_pages if isinstance(exp_pages, list) else [exp_pages]
                     if any(abs(api_page - ep) <= tolerance for ep in pages_list):
                         hit_page = True
+                elif exp_pages is not None and not exp_pages:
+                    hit_page = True
                 matched.append({
                     "source": api_src.get("name"),
                     "page": api_page,

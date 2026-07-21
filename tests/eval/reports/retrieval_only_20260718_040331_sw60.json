@@ -1,0 +1,800 @@
+{
+  "timestamp": "20260718_040331",
+  "mode": "retrieval_only",
+  "semantic_weight": 0.6,
+  "top_k": 10,
+  "elapsed_s": 156.4,
+  "analysis": {
+    "total_questions": 6,
+    "answerable": 6,
+    "doc_hit_rate": 0.167,
+    "page_hit_rate": 0.0,
+    "doc_miss_count": 5,
+    "avg_recall": 0.167,
+    "avg_mrr": 0.083,
+    "avg_precision_at_k": 0.017,
+    "avg_first_rank": 2.0,
+    "median_first_rank": 2,
+    "avg_latency_ms": 17674.0,
+    "total_elapsed_s": 156.4,
+    "core_answerable": 6,
+    "core_doc_hit_rate": 0.167,
+    "core_page_hit_rate": 0.0,
+    "core_avg_mrr": 0.083,
+    "prerank_doc_hit_rate": 0.167,
+    "postrank_doc_hit_rate": 0.167,
+    "prerank_avg_recall": 0.167,
+    "postrank_avg_recall": 0.167,
+    "prerank_avg_mrr": 0.017,
+    "postrank_avg_mrr": 0.083,
+    "prerank_avg_precision_at_k": 0.017,
+    "postrank_avg_precision_at_k": 0.017,
+    "reranker_improvements": [
+      16
+    ],
+    "reranker_regressions": []
+  },
+  "results": [
+    {
+      "id": 11,
+      "query": "Que es el Risk Management Framework del NIST?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "sources_returned": [
+        {
+          "name": "Developing Cyber Resilient Systems.pdf",
+          "page": 65,
+          "score": 1.8887
+        },
+        {
+          "name": "Artificial Intelligence Risk Management Framework.pdf",
+          "page": 3,
+          "score": 1.8809
+        },
+        {
+          "name": "NIST SP 800-66 Rev. 2 .pdf",
+          "page": 96,
+          "score": 1.8731
+        },
+        {
+          "name": "Planning for a Zero Trust Architecture.pdf",
+          "page": 17,
+          "score": 1.7863
+        },
+        {
+          "name": "Secure Software Development Framework .pdf",
+          "page": 32,
+          "score": 1.7365
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 95,
+          "score": 1.7021
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 5,
+          "score": 1.6765
+        },
+        {
+          "name": "Cybersecurity Framework Profile NIST.pdf",
+          "page": 3,
+          "score": 1.6004
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 26,
+          "score": 1.552
+        },
+        {
+          "name": "Performance Measurement Guide for Information Security.pdf",
+          "page": 2,
+          "score": 1.5288
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Planning for a Zero Trust Architecture.pdf",
+          "page": 17,
+          "score": 1.7863
+        },
+        {
+          "name": "Artificial Intelligence Risk Management Framework.pdf",
+          "page": 3,
+          "score": 1.8809
+        },
+        {
+          "name": "Developing Cyber Resilient Systems.pdf",
+          "page": 65,
+          "score": 1.8887
+        },
+        {
+          "name": "NIST SP 800-66 Rev. 2 .pdf",
+          "page": 96,
+          "score": 1.8731
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 95,
+          "score": 1.7021
+        },
+        {
+          "name": "Secure Software Development Framework .pdf",
+          "page": 32,
+          "score": 1.7365
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 5,
+          "score": 1.6765
+        },
+        {
+          "name": "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf",
+          "page": 26,
+          "score": 1.552
+        },
+        {
+          "name": "Cybersecurity Framework Profile NIST.pdf",
+          "page": 3,
+          "score": 1.6004
+        },
+        {
+          "name": "Performance Measurement Guide for Information Security.pdf",
+          "page": 2,
+          "score": 1.5288
+        }
+      ],
+      "latency_ms": 27225
+    },
+    {
+      "id": 16,
+      "query": "Que son los playbooks en un SOC?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 1.0,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.1,
+        "matched": [
+          {
+            "source": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+            "page": 5,
+            "score": 1.5105,
+            "rank": 2
+          }
+        ],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 1.0,
+        "first_relevant_rank": 10,
+        "mrr": 0.1,
+        "precision_at_k": 0.1,
+        "matched": [
+          {
+            "source": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+            "page": 5,
+            "score": 1.5105,
+            "rank": 10
+          }
+        ],
+        "skipped": false
+      },
+      "failure_reasons": [],
+      "sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 151,
+          "score": 1.5983
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+          "page": 5,
+          "score": 1.5105
+        },
+        {
+          "name": "Privacy by design and privacy by default.pdf",
+          "page": 27,
+          "score": 1.5053
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 444,
+          "score": 1.4527
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 32,
+          "score": 1.4451
+        },
+        {
+          "name": "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+          "page": 980,
+          "score": 1.4017
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 18,
+          "score": 1.385
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 30,
+          "score": 1.3645
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 150,
+          "score": 1.3587
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC MINDMAP.pdf",
+          "page": 1,
+          "score": 1.3544
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 444,
+          "score": 1.4527
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 32,
+          "score": 1.4451
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 151,
+          "score": 1.5983
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 18,
+          "score": 1.385
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 150,
+          "score": 1.3587
+        },
+        {
+          "name": "Privacy by design and privacy by default.pdf",
+          "page": 27,
+          "score": 1.5053
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC MINDMAP.pdf",
+          "page": 1,
+          "score": 1.3544
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 30,
+          "score": 1.3645
+        },
+        {
+          "name": "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+          "page": 980,
+          "score": 1.4017
+        },
+        {
+          "name": "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+          "page": 5,
+          "score": 1.5105
+        }
+      ],
+      "latency_ms": 22692
+    },
+    {
+      "id": 29,
+      "query": "Que comandos Linux son utiles para un analista de seguridad segun los recursos disponibles?",
+      "category": "multi_document",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "sources_returned": [
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 4,
+          "score": 1.1412
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 77,
+          "score": 1.0918
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 137,
+          "score": -0.0134
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 137,
+          "score": -0.0134
+        },
+        {
+          "name": "Firewall Checklist.pdf",
+          "page": 4,
+          "score": -0.0474
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 100,
+          "score": -0.0511
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 65,
+          "score": -0.0647
+        },
+        {
+          "name": "CISSP Cheatsheet .pdf",
+          "page": 5,
+          "score": -0.0655
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 72,
+          "score": -0.066
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 56,
+          "score": -0.069
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 4,
+          "score": 1.1412
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 137,
+          "score": -0.0134
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 137,
+          "score": -0.0134
+        },
+        {
+          "name": "Firewall Checklist.pdf",
+          "page": 4,
+          "score": -0.0474
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 100,
+          "score": -0.0511
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 77,
+          "score": 1.0918
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 65,
+          "score": -0.0647
+        },
+        {
+          "name": "CISSP Cheatsheet .pdf",
+          "page": 5,
+          "score": -0.0655
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 72,
+          "score": -0.066
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 56,
+          "score": -0.069
+        }
+      ],
+      "latency_ms": 19249
+    },
+    {
+      "id": 48,
+      "query": "Que hace un pentester?",
+      "category": "ambiguous",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "sources_returned": [
+        {
+          "name": "Cybersecurity Career Master Plan.pdf",
+          "page": 53,
+          "score": 0.8369
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 63,
+          "score": 0.7805
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 62,
+          "score": 0.7719
+        },
+        {
+          "name": "PCI DSS Security Metrics Guide to PCI DSS Compliance.pdf",
+          "page": 79,
+          "score": 0.5471
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 75,
+          "score": 0.6294
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 64,
+          "score": 0.5865
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 76,
+          "score": 0.5996
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 65,
+          "score": 0.5827
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 62,
+          "score": 0.7719
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 63,
+          "score": 0.7805
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 75,
+          "score": 0.6294
+        },
+        {
+          "name": "Cybersecurity Career Master Plan.pdf",
+          "page": 53,
+          "score": 0.8369
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 64,
+          "score": 0.5865
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 76,
+          "score": 0.5996
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 65,
+          "score": 0.5827
+        },
+        {
+          "name": "PCI DSS Security Metrics Guide to PCI DSS Compliance.pdf",
+          "page": 79,
+          "score": 0.5471
+        }
+      ],
+      "latency_ms": 11856
+    },
+    {
+      "id": 58,
+      "query": "Describe los pasos del RMF de NIST y como cada paso contribuye a la gestion de riesgos de un sistema de informacion.",
+      "category": "complex",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "sources_returned": [
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 114,
+          "score": 1.808
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 95,
+          "score": 1.2626
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 4,
+          "score": 1.1535
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 101,
+          "score": 1.1056
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 15,
+          "score": 1.0386
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 14,
+          "score": 0.9843
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 94,
+          "score": 0.9326
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 94,
+          "score": 1.146
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 95,
+          "score": 1.2626
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 4,
+          "score": 1.1535
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 101,
+          "score": 1.1056
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 14,
+          "score": 0.9843
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 114,
+          "score": 1.808
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 15,
+          "score": 1.0386
+        }
+      ],
+      "latency_ms": 12089
+    },
+    {
+      "id": 64,
+      "query": "Que cubre el dominio de seguridad en la nube del CCSP?",
+      "category": "simple",
+      "is_answerable": true,
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "prerank_retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "sources_returned": [
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 23,
+          "score": 1.9975
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 24,
+          "score": 1.9568
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 31,
+          "score": 1.9469
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 26,
+          "score": 1.9329
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 451,
+          "score": 1.8771
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 270,
+          "score": 1.7827
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 88,
+          "score": 1.7443
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 28,
+          "score": 1.7146
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 22,
+          "score": 1.5125
+        }
+      ],
+      "prerank_sources_returned": [
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 23,
+          "score": 1.9975
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 22,
+          "score": 1.2919
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 270,
+          "score": 1.7827
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 24,
+          "score": 1.9568
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 28,
+          "score": 1.7146
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 31,
+          "score": 1.9469
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 451,
+          "score": 1.8771
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 88,
+          "score": 1.7443
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 26,
+          "score": 1.9329
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 214,
+          "score": 1.1529
+        }
+      ],
+      "latency_ms": 12933
+    }
+  ]
+}

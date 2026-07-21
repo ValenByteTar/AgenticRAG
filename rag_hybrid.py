@@ -47,6 +47,7 @@ from conceptual_map import ConceptualMap
 from doc_cards import load_doc_roles, save_doc_roles, build_doc_cards, build_doc_cards_llm, select_docs_by_roles
 from learning_queue import LearningQueue
 from rag.entity_extractor import EntityExtractor
+from rag.factual_gate import check_factual_gate
 from ollama_manager import OllamaManager
 from query_classifier import QueryClassifier
 from equivalences_manager import EquivalencesManager
@@ -4847,8 +4848,15 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                         # informacion relevante para la query. Declinar antes del LLM.
                         reranker_scores = [r.get('rerank_score', 0) for r in (results or []) if r.get('rerank_score') is not None]
                         if reranker_scores and max(reranker_scores) < 0.1:
-                            console.print(f"[yellow]Gate reranker: max score {max(reranker_scores):.3f} < 0.1 - declinando[/yellow]")
-                            answer = "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta."
+                            hybrid_scores = [r.get('hybrid_score', 0) for r in (results or []) if r.get('hybrid_score') is not None]
+                            final_scores = [r.get('final_score', 0) for r in (results or []) if r.get('final_score') is not None]
+                            best_hybrid = max(hybrid_scores) if hybrid_scores else 0
+                            best_final = max(final_scores) if final_scores else 0
+                            if best_hybrid > 0.5 or best_final > 0.5:
+                                console.print(f"[dim]Gate reranker: max rerank low ({max(reranker_scores):.3f}) but hybrid/final high ({best_hybrid:.3f}/{best_final:.3f}) - allowing[/dim]")
+                            else:
+                                console.print(f"[yellow]Gate reranker: max score {max(reranker_scores):.3f} < 0.1 - declinando[/yellow]")
+                                answer = "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta."
 
                     except Exception:
                         pass
@@ -4899,6 +4907,14 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                                         answer = "No se encontrÃ³ informaciÃ³n suficiente en los documentos para esa consulta."
                     except Exception as e:
                         console.print(f"[dim]Gate no aplicado: {e}[/dim]")
+                if not answer:
+                    try:
+                        allow, gate_reason = check_factual_gate(question, context or '')
+                        if not allow:
+                            console.print(f"[yellow]Factual gate: {gate_reason}[/yellow]")
+                            answer = "No se encontro informacion en los documentos para esa consulta."
+                    except Exception as e:
+                        console.print(f"[dim]Factual gate no aplicado: {e}[/dim]")
                 if not answer:
                     try:
                         answer = self.generate_with_ollama(

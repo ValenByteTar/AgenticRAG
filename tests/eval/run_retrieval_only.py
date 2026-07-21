@@ -167,6 +167,15 @@ def analyze_results(results: list) -> dict:
                   if r["retrieval"].get("precision_at_k") is not None]
     latencies = [r.get("latency_ms", 0) for r in results]
 
+    # P-TS.2.b: Metricas sobre subconjunto no-ambiguo (excluye categoria 'ambiguous')
+    ambiguous_ids = {41, 42, 43, 44, 46, 47, 50}
+    core = [r for r in answerable if r.get("id") not in ambiguous_ids]
+    n_core = len(core)
+    core_doc_hits = sum(1 for r in core if r["retrieval"].get("hit_doc"))
+    core_mrrs = [r["retrieval"]["mrr"] for r in core
+                 if r["retrieval"].get("mrr") is not None]
+    core_page_hits = sum(1 for r in core if r["retrieval"].get("hit_page"))
+
     first_ranks = [r["retrieval"]["first_relevant_rank"] for r in answerable
                    if r["retrieval"].get("first_relevant_rank") is not None]
 
@@ -204,6 +213,11 @@ def analyze_results(results: list) -> dict:
         "median_first_rank": sorted(first_ranks)[len(first_ranks)//2] if first_ranks else None,
         "avg_latency_ms": round(sum(latencies) / len(latencies), 0) if latencies else 0,
         "total_elapsed_s": round(sum(latencies) / 1000, 1),
+        # P-TS.2.b: metricas core (no-ambiguo)
+        "core_answerable": n_core,
+        "core_doc_hit_rate": round(core_doc_hits / n_core, 3) if n_core else 0,
+        "core_page_hit_rate": round(core_page_hits / n_core, 3) if n_core else 0,
+        "core_avg_mrr": round(sum(core_mrrs) / len(core_mrrs), 3) if core_mrrs else 0,
         # FASE 6
         "prerank_doc_hit_rate": prerank_doc_hit,
         "postrank_doc_hit_rate": postrank_doc_hit,
@@ -319,6 +333,10 @@ def main():
     if analysis.get("median_first_rank"):
         print(f"  Median first rank: {analysis['median_first_rank']}")
     print(f"  Avg latency:       {analysis['avg_latency_ms']:.0f}ms")
+    print(f"\n  --- Core metrics (no-ambiguo, {analysis.get('core_answerable', 0)} preguntas) ---")
+    print(f"  Core doc hit rate: {analysis.get('core_doc_hit_rate', 0):.1%}")
+    print(f"  Core page hit rate:{analysis.get('core_page_hit_rate', 0):.1%}")
+    print(f"  Core avg MRR:      {analysis.get('core_avg_mrr', 0):.3f}")
     print("\n  --- Top-K pre/post reranker (FASE 6) ---")
     print(f"  Doc hit rate pre:  {analysis['prerank_doc_hit_rate']:.1%}")
     print(f"  Doc hit rate post: {analysis['postrank_doc_hit_rate']:.1%}")

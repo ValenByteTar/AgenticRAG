@@ -1,0 +1,802 @@
+{
+  "timestamp": "20260718_044636",
+  "elapsed_s": 148.5,
+  "analysis": {
+    "summary": {
+      "total": 6,
+      "passed": 0,
+      "failed": 6,
+      "pass_rate": 0.0,
+      "answerable_pass_rate": 0.0,
+      "no_answer_pass_rate": 0.0,
+      "pass_retrieval_rate": 0.0,
+      "pass_groundedness_rate": 1.0,
+      "pass_generation_rate": 0.0,
+      "pass_hallucination_rate": 0.0,
+      "retrieval_doc_hit_rate": 0.0,
+      "retrieval_page_hit_rate": 0.0,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "avg_recall": 0.0,
+      "avg_mrr": 0.0,
+      "avg_precision_at_k": 0.0,
+      "avg_keyword_score": 0.0,
+      "avg_citation_fidelity": null,
+      "retrieval_doc_miss_count": 6,
+      "retrieval_page_miss_count": 0,
+      "llm_kw_miss_count": 6,
+      "hallucination_count": 0,
+      "latency_avg_ms": 15614,
+      "latency_p50_ms": 17352,
+      "latency_p95_ms": 23289,
+      "latency_max_ms": 23289,
+      "timing_embed_avg_ms": 201.1,
+      "timing_semantic_avg_ms": 5.1,
+      "timing_bm25_avg_ms": 1687.2,
+      "timing_fusion_avg_ms": 47.0,
+      "timing_rerank_avg_ms": 5549.2,
+      "timing_llm_avg_ms": 12112.4
+    },
+    "layer_pass_counts": {
+      "pass_retrieval": 0,
+      "pass_groundedness": 6,
+      "pass_generation": 0,
+      "pass_hallucination": 0
+    },
+    "top_problems": {
+      "retrieval_miss": 6,
+      "low_kw_score": 6,
+      "page_miss": 0,
+      "hallucination": 0,
+      "forbidden": 0
+    },
+    "rank_distribution": {},
+    "by_category": {
+      "ambiguous": {
+        "total": 6,
+        "passed": 0,
+        "retrieval_doc": 0,
+        "retrieval_page": 0,
+        "avg_recall": 0.0,
+        "avg_mrr": 0.0,
+        "avg_citation": null,
+        "avg_kw_score": 0.0
+      }
+    },
+    "failed_cases": [
+      {
+        "id": 41,
+        "query": "Que es un framework de seguridad?",
+        "reasons": [
+          "retrieval_doc_miss",
+          "kw_score=0 missing=['framework', 'marco', 'security', 'seguridad', 'control', 'control']"
+        ],
+        "warnings": [],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": false,
+        "pass_hallucination": true
+      },
+      {
+        "id": 42,
+        "query": "Como me preparo para la certificacion?",
+        "reasons": [
+          "retrieval_doc_miss",
+          "kw_score=0 missing=['certification', 'certificacion', 'exam', 'examen', 'study', 'estudio', 'estudiar']"
+        ],
+        "warnings": [],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": false,
+        "pass_hallucination": true
+      },
+      {
+        "id": 43,
+        "query": "Que logs debo revisar?",
+        "reasons": [
+          "retrieval_doc_miss",
+          "kw_score=0 missing=['log', 'registro', 'event', 'evento', 'windows', 'review', 'revision', 'revisar']"
+        ],
+        "warnings": [],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": false,
+        "pass_hallucination": true
+      },
+      {
+        "id": 44,
+        "query": "Cual es la mejor herramienta?",
+        "reasons": [
+          "retrieval_doc_miss",
+          "kw_score=0 missing=['tool', 'herramienta', 'security', 'seguridad']"
+        ],
+        "warnings": [],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": false,
+        "pass_hallucination": true
+      },
+      {
+        "id": 47,
+        "query": "Que ciberseguridad es mejor, la preventiva o la reactiva?",
+        "reasons": [
+          "retrieval_doc_miss",
+          "kw_score=0 missing=['prevention', 'prevencion', 'detection', 'deteccion', 'response', 'respuesta']"
+        ],
+        "warnings": [],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": false,
+        "pass_hallucination": true
+      },
+      {
+        "id": 50,
+        "query": "Estoy preparando una auditoria, que necesito?",
+        "reasons": [
+          "retrieval_doc_miss",
+          "kw_score=0 missing=['audit', 'auditoria', 'checklist', 'lista de verificacion', 'iso 27001']"
+        ],
+        "warnings": [],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": false,
+        "pass_hallucination": true
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": 41,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Que es un framework de seguridad?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss",
+        "kw_score=0 missing=['framework', 'marco', 'security', 'seguridad', 'control', 'control']"
+      ],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.0,
+        "present": [],
+        "missing": [
+          "framework",
+          "marco",
+          "security",
+          "seguridad",
+          "control",
+          "control"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta.",
+      "sources_returned": [
+        {
+          "name": "CYBER-RISK OVERSIGHT HANDBOOK FOR CORPORATE BOARDS.pdf",
+          "page": 7,
+          "score": 1.2501
+        },
+        {
+          "name": "CompTIA Security+ Exam Study Guide (2).pdf",
+          "page": 113,
+          "score": 0.0175
+        },
+        {
+          "name": "CompTIA Security+ Exam Study Guide.pdf",
+          "page": 113,
+          "score": 0.0175
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 100,
+          "score": -0.001
+        },
+        {
+          "name": "PCI DSS Security Metrics Guide to PCI DSS Compliance.pdf",
+          "page": 108,
+          "score": -0.0032
+        },
+        {
+          "name": "Cybersecurity Incident Response Plan.pdf",
+          "page": 5,
+          "score": -0.0065
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 137,
+          "score": -0.0076
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 137,
+          "score": -0.0076
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 60,
+          "score": -0.0149
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 60,
+          "score": -0.0149
+        }
+      ],
+      "latency_ms": 23289,
+      "timing_breakdown": {
+        "t_rerank_ms": 5714.5,
+        "t_total_ms": 23208.5,
+        "t_llm_estimated_ms": 17494.0
+      }
+    },
+    {
+      "id": 42,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Como me preparo para la certificacion?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss",
+        "kw_score=0 missing=['certification', 'certificacion', 'exam', 'examen', 'study', 'estudio', 'estudiar']"
+      ],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.0,
+        "present": [],
+        "missing": [
+          "certification",
+          "certificacion",
+          "exam",
+          "examen",
+          "study",
+          "estudio",
+          "estudiar"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta.",
+      "sources_returned": [
+        {
+          "name": "Data Protection Audit Manual.pdf",
+          "page": 15,
+          "score": 0.7286
+        },
+        {
+          "name": "Data Protection Audit Manual.pdf",
+          "page": 85,
+          "score": 0.4001
+        },
+        {
+          "name": "Bulletproof State of Cyber Security Report 2023.pdf",
+          "page": 22,
+          "score": 0.3991
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 10,
+          "score": 0.3908
+        },
+        {
+          "name": "Financial_Reporting_of_Environmental_Liabilities_and_Risks_after.pdf",
+          "page": 25,
+          "score": 0.3758
+        },
+        {
+          "name": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+          "page": 282,
+          "score": 0.3735
+        },
+        {
+          "name": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+          "page": 132,
+          "score": 0.3734
+        },
+        {
+          "name": "2022 MANDIANT SPECIAL REPORT.pdf",
+          "page": 87,
+          "score": 0.373
+        },
+        {
+          "name": "PCI DSS Requirements and Testing Procedures Version 4.0.pdf",
+          "page": 110,
+          "score": 0.3712
+        }
+      ],
+      "latency_ms": 12361,
+      "timing_breakdown": {
+        "t_total_ms": 12304.5,
+        "t_llm_estimated_ms": 12304.5
+      }
+    },
+    {
+      "id": 43,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Que logs debo revisar?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss",
+        "kw_score=0 missing=['log', 'registro', 'event', 'evento', 'windows', 'review', 'revision', 'revisar']"
+      ],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.0,
+        "present": [],
+        "missing": [
+          "log",
+          "registro",
+          "event",
+          "evento",
+          "windows",
+          "review",
+          "revision",
+          "revisar"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta.",
+      "sources_returned": [
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 96,
+          "score": 0.587
+        },
+        {
+          "name": "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+          "page": 970,
+          "score": 0.4159
+        },
+        {
+          "name": "ISMS Audit.pdf",
+          "page": 65,
+          "score": 0.3878
+        },
+        {
+          "name": "ISO_27001_controls_–_A_guide_to_implementing_and_auditing_Bridget.pdf",
+          "page": 172,
+          "score": 0.3813
+        },
+        {
+          "name": "PCI DSS Security Metrics Guide to PCI DSS Compliance.pdf",
+          "page": 73,
+          "score": 0.38
+        },
+        {
+          "name": "ISO_27001_controls_–_A_guide_to_implementing_and_auditing_Bridget.pdf",
+          "page": 169,
+          "score": 0.3742
+        },
+        {
+          "name": "CIS Controls v8 Privacy Companion Guide.pdf",
+          "page": 42,
+          "score": 0.3729
+        },
+        {
+          "name": "ISMS Audit.pdf",
+          "page": 66,
+          "score": 0.3621
+        },
+        {
+          "name": "PCI DSS Security Metrics Guide to PCI DSS Compliance.pdf",
+          "page": 74,
+          "score": 0.3573
+        }
+      ],
+      "latency_ms": 17352,
+      "timing_breakdown": {
+        "t_embed_ms": 197.7,
+        "t_semantic_ms": 4.3,
+        "t_bm25_ms": 108.8,
+        "t_fusion_ms": 45.0,
+        "t_hybrid_total_ms": 355.8,
+        "t_rerank_ms": 5344.6,
+        "t_total_ms": 17278.1,
+        "t_llm_estimated_ms": 11577.7
+      }
+    },
+    {
+      "id": 44,
+      "category": "ambiguous",
+      "difficulty": "high",
+      "is_answerable": true,
+      "query": "Cual es la mejor herramienta?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss",
+        "kw_score=0 missing=['tool', 'herramienta', 'security', 'seguridad']"
+      ],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.0,
+        "present": [],
+        "missing": [
+          "tool",
+          "herramienta",
+          "security",
+          "seguridad"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta.",
+      "sources_returned": [
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 92,
+          "score": 0.2162
+        },
+        {
+          "name": "The 116 Best Cybersecurity Tools & Tactics.pdf",
+          "page": 2,
+          "score": 0.4238
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 44,
+          "score": 0.208
+        },
+        {
+          "name": "DFIR Guide .pdf",
+          "page": 13,
+          "score": 0.19
+        },
+        {
+          "name": "43 AI Powered Tools to Boost Productivity.pdf",
+          "page": 1,
+          "score": 0.1774
+        },
+        {
+          "name": "ChatGPT Advanced Tutorial.pdf",
+          "page": 57,
+          "score": 0.196
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 7,
+          "score": 0.1824
+        },
+        {
+          "name": "Malware Analysis Series (MAS) 1.pdf",
+          "page": 2,
+          "score": 0.1838
+        },
+        {
+          "name": "ChatGPT Advanced Tutorial.pdf",
+          "page": 1,
+          "score": 0.1722
+        },
+        {
+          "name": "Blue Teaming Free Training .pdf",
+          "page": 8,
+          "score": 0.1758
+        }
+      ],
+      "latency_ms": 10366,
+      "timing_breakdown": {
+        "t_total_ms": 10282.9,
+        "t_llm_estimated_ms": 10282.9
+      }
+    },
+    {
+      "id": 47,
+      "category": "ambiguous",
+      "difficulty": "high",
+      "is_answerable": true,
+      "query": "Que ciberseguridad es mejor, la preventiva o la reactiva?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss",
+        "kw_score=0 missing=['prevention', 'prevencion', 'detection', 'deteccion', 'response', 'respuesta']"
+      ],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.0,
+        "present": [],
+        "missing": [
+          "prevention",
+          "prevencion",
+          "detection",
+          "deteccion",
+          "response",
+          "respuesta"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta.",
+      "sources_returned": [
+        {
+          "name": "CompTIA Security+ Exam Study Guide.pdf",
+          "page": 113,
+          "score": 0.4331
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 60,
+          "score": 0.3169
+        },
+        {
+          "name": "Guide to SSL VPN_NIST_SP800-113.pdf",
+          "page": 5,
+          "score": 0.3169
+        },
+        {
+          "name": "Top Free Cybersecurity Services and Tools.pdf",
+          "page": 44,
+          "score": 0.2809
+        },
+        {
+          "name": "Comptia Security + Study Material .pdf",
+          "page": 122,
+          "score": 0.2784
+        },
+        {
+          "name": "IoT Security Guide .pdf",
+          "page": 41,
+          "score": 0.2701
+        },
+        {
+          "name": "CYBER SECURITY PRODUCT CATEGORIES WITH VENDOR'S LINKS.pdf",
+          "page": 3,
+          "score": 0.2671
+        },
+        {
+          "name": "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+          "page": 124,
+          "score": 0.267
+        },
+        {
+          "name": "CompTIA Security+ Exam Study Guide (2).pdf",
+          "page": 113,
+          "score": 0.4331
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 60,
+          "score": 0.3169
+        }
+      ],
+      "latency_ms": 17811,
+      "timing_breakdown": {
+        "t_embed_ms": 204.6,
+        "t_semantic_ms": 5.9,
+        "t_bm25_ms": 3265.6,
+        "t_fusion_ms": 48.9,
+        "t_hybrid_total_ms": 3525.0,
+        "t_rerank_ms": 5588.6,
+        "t_total_ms": 17729.3,
+        "t_llm_estimated_ms": 8615.7
+      }
+    },
+    {
+      "id": 50,
+      "category": "ambiguous",
+      "difficulty": "high",
+      "is_answerable": true,
+      "query": "Estoy preparando una auditoria, que necesito?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss",
+        "kw_score=0 missing=['audit', 'auditoria', 'checklist', 'lista de verificacion', 'iso 27001']"
+      ],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.0,
+        "present": [],
+        "missing": [
+          "audit",
+          "auditoria",
+          "checklist",
+          "lista de verificacion",
+          "iso 27001"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "No se encontrÃ³ informaciÃ³n en los documentos para esa consulta.",
+      "sources_returned": [
+        {
+          "name": "02 ISOIEC 27001 Implementation Guide.pdf",
+          "page": 37,
+          "score": 0.2527
+        },
+        {
+          "name": "CDPSE_Certified_Data_Privacy_Solutions_Engineer_All_in_One_Exam.pdf",
+          "page": 179,
+          "score": 0.1212
+        },
+        {
+          "name": "Windows 11 Security Book (2).pdf",
+          "page": 22,
+          "score": -0.0053
+        },
+        {
+          "name": "Windows 11 security book.pdf",
+          "page": 22,
+          "score": -0.0053
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 316,
+          "score": -0.0461
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 372,
+          "score": -0.047
+        },
+        {
+          "name": "Data Protection Audit Manual.pdf",
+          "page": 62,
+          "score": -0.5421
+        },
+        {
+          "name": "Data Protection Audit Manual.pdf",
+          "page": 18,
+          "score": -0.5793
+        },
+        {
+          "name": "Data Protection Audit Manual.pdf",
+          "page": 58,
+          "score": -0.6286
+        }
+      ],
+      "latency_ms": 12504,
+      "timing_breakdown": {
+        "t_total_ms": 12399.6,
+        "t_llm_estimated_ms": 12399.6
+      }
+    }
+  ]
+}
