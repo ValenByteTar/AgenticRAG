@@ -1,0 +1,285 @@
+{
+  "id": "baseline_pre_agentic_phase0",
+  "label": "InfraPolus Fase 0 — baseline pre-agentic (ADR-0006 suite v1)",
+  "created_utc": "2026-07-22T03:05:23.558227+00:00",
+  "phase": "0",
+  "kernel_enabled": false,
+  "purpose": "Congelar metricas del HybridRAG lineal ANTES de migrar query() al Controller (Fase 1). Toda version agentica se compara contra este baseline: no-regresion en doc_hit, page_hit, groundedness y anti-alucinacion.",
+  "source": {
+    "report_json": "tests/eval/reports/report_20260712_191655.json",
+    "report_md": "tests/eval/reports/report_20260712_191655.md",
+    "sha256_report_json": "db9b7a141391850f4ddb29f5a4cad62c24995fc07707df25a798c8ba937373a3"
+  },
+  "config_snapshot": {
+    "llm.model_name": "mistral:7b",
+    "kernel.enabled": false,
+    "vectordb.rebuild_on_build": false,
+    "vectordb.collection_name": "cybersec_docs_bge_m3",
+    "retrieval.semantic_weight": 0.6
+  },
+  "metrics_from_md": {
+    "n_questions": 25,
+    "pass_rate_overall": 0.64,
+    "pass_rate_answerable": 0.696,
+    "retrieval_success": 0.8,
+    "groundedness": 0.96,
+    "generation_kw": 0.8,
+    "anti_hallucination": 0.0,
+    "doc_hit_at_k": 0.783,
+    "page_hit_at_k": 0.435,
+    "recall_avg_multidoc": 0.551,
+    "mrr_avg": 0.528,
+    "precision_at_k_avg": 0.3,
+    "keyword_score_avg": 0.488,
+    "latency_avg_ms": 61341,
+    "latency_p50_ms": 54714,
+    "latency_p95_ms": 122248,
+    "note": "Subset de 25 preguntas del dataset (no suite completa 75). Usar como referencia relativa; re-correr full suite al cerrar Fase 1."
+  },
+  "acceptance_gates_for_phase1": {
+    "no_regression_doc_hit": true,
+    "no_regression_page_hit": true,
+    "no_regression_groundedness": true,
+    "no_regression_anti_hallucination": true,
+    "query_facade_unchanged": true,
+    "kernel_enabled_default_false": true
+  },
+  "summary_extracted": {
+    "source_timestamp": "20260712_191655",
+    "elapsed_s": 1592.5,
+    "n_results": 25,
+    "results_pass_true": 16,
+    "results_pass_false": 9,
+    "analysis_keys": [
+      "by_category",
+      "failed_cases",
+      "layer_pass_counts",
+      "rank_distribution",
+      "summary",
+      "top_problems"
+    ],
+    "analysis": {
+      "summary": {
+        "total": 25,
+        "passed": 16,
+        "failed": 9,
+        "pass_rate": 0.64,
+        "answerable_pass_rate": 0.696,
+        "no_answer_pass_rate": 0.0,
+        "pass_retrieval_rate": 0.8,
+        "pass_groundedness_rate": 0.96,
+        "pass_generation_rate": 0.8,
+        "pass_hallucination_rate": 0.0,
+        "retrieval_doc_hit_rate": 0.783,
+        "retrieval_page_hit_rate": 0.435,
+        "recall_at_1": 0.391,
+        "recall_at_3": 0.696,
+        "recall_at_5": 0.696,
+        "avg_recall": 0.551,
+        "avg_mrr": 0.528,
+        "avg_precision_at_k": 0.3,
+        "avg_keyword_score": 0.488,
+        "avg_citation_fidelity": null,
+        "retrieval_doc_miss_count": 5,
+        "retrieval_page_miss_count": 8,
+        "llm_kw_miss_count": 5,
+        "hallucination_count": 2,
+        "latency_avg_ms": 61341,
+        "latency_p50_ms": 54714,
+        "latency_p95_ms": 122248,
+        "latency_max_ms": 124341,
+        "timing_embed_avg_ms": 754.5,
+        "timing_semantic_avg_ms": 49.4,
+        "timing_bm25_avg_ms": 1947.4,
+        "timing_fusion_avg_ms": 38.2,
+        "timing_rerank_avg_ms": 5293.2,
+        "timing_llm_avg_ms": 57506.2
+      },
+      "layer_pass_counts": {
+        "pass_retrieval": 20,
+        "pass_groundedness": 24,
+        "pass_generation": 20,
+        "pass_hallucination": 0
+      },
+      "top_problems": {
+        "page_miss": 8,
+        "retrieval_miss": 5,
+        "low_kw_score": 5,
+        "hallucination": 2,
+        "forbidden": 1
+      },
+      "rank_distribution": {
+        "1": 9,
+        "6": 1,
+        "2": 3,
+        "3": 4,
+        "7": 1
+      },
+      "by_category": {
+        "complex": {
+          "total": 12,
+          "passed": 8,
+          "retrieval_doc": 8,
+          "retrieval_page": 4,
+          "avg_recall": 0.389,
+          "avg_mrr": 0.403,
+          "avg_citation": null,
+          "avg_kw_score": 0.399
+        },
+        "simple": {
+          "total": 10,
+          "passed": 7,
+          "retrieval_doc": 9,
+          "retrieval_page": 5,
+          "avg_recall": 0.75,
+          "avg_mrr": 0.631,
+          "avg_citation": null,
+          "avg_kw_score": 0.442
+        },
+        "multi_document": {
+          "total": 1,
+          "passed": 1,
+          "retrieval_doc": 1,
+          "retrieval_page": 1,
+          "avg_recall": 0.5,
+          "avg_mrr": 1.0,
+          "avg_citation": null,
+          "avg_kw_score": 1.0
+        },
+        "no_answer": {
+          "total": 2,
+          "passed": 0,
+          "retrieval_doc": 0,
+          "retrieval_page": 0,
+          "avg_recall": null,
+          "avg_mrr": null,
+          "avg_citation": null,
+          "avg_kw_score": 1.0
+        }
+      },
+      "failed_cases": [
+        {
+          "id": 53,
+          "query": "Como se estructura un SOC de clase mundial segun el libro de 11 estrategias? Des",
+          "reasons": [
+            "retrieval_doc_miss",
+            "kw_score=0 missing=['soc', 'tier', 'metrics', 'detection', 'strategy']"
+          ],
+          "warnings": [],
+          "pass_retrieval": false,
+          "pass_groundedness": true,
+          "pass_generation": false,
+          "pass_hallucination": true
+        },
+        {
+          "id": 56,
+          "query": "Como se aplica DevSecOps en un pipeline de CI/CD? Describe herramientas, puntos ",
+          "reasons": [
+            "retrieval_doc_miss",
+            "kw_score=0 missing=['devsecops', 'ci/cd', 'pipeline', 'security', 'tool']"
+          ],
+          "warnings": [],
+          "pass_retrieval": false,
+          "pass_groundedness": true,
+          "pass_generation": false,
+          "pass_hallucination": true
+        },
+        {
+          "id": 58,
+          "query": "Describe los pasos del RMF de NIST y como cada paso contribuye a la gestion de r",
+          "reasons": [
+            "retrieval_doc_miss"
+          ],
+          "warnings": [
+            "kw_partial=0.38 missing=['categorize', 'select', 'implement', 'assess', 'authorize']"
+          ],
+          "pass_retrieval": false,
+          "pass_groundedness": true,
+          "pass_generation": true,
+          "pass_hallucination": true
+        },
+        {
+          "id": 59,
+          "query": "Como se protege una infraestructura critica segun los marcos de ciberseguridad d",
+          "reasons": [
+            "retrieval_doc_miss",
+            "kw_score=0 missing=['critical infrastructure', 'protection', 'framework', 'security']"
+          ],
+          "warnings": [],
+          "pass_retrieval": false,
+          "pass_groundedness": true,
+          "pass_generation": false,
+          "pass_hallucination": true
+        },
+        {
+          "id": 63,
+          "query": "Que es Wireshark y como se usa en forensia de red?",
+          "reasons": [
+            "kw_score=0 missing=['wireshark', 'network', 'forensics', 'packet']"
+          ],
+          "warnings": [
+            "recall=0.33 (multi-doc incompleto)"
+          ],
+          "pass_retrieval": true,
+          "pass_groundedness": true,
+          "pass_generation": false,
+          "pass_hallucination": true
+        },
+        {
+          "id": 64,
+          "query": "Que cubre el dominio de seguridad en la nube del CCSP?",
+          "reasons": [
+            "retrieval_doc_miss"
+          ],
+          "warnings": [
+            "kw_partial=0.33 missing=['cloud security', 'domain']"
+          ],
+          "pass_retrieval": false,
+          "pass_groundedness": true,
+          "pass_generation": true,
+          "pass_hallucination": true
+        },
+        {
+          "id": 68,
+          "query": "Que es la ingenieria social segun los documentos disponibles?",
+          "reasons": [
+            "kw_score=0 missing=['social engineering', 'manipulation', 'human']"
+          ],
+          "warnings": [
+            "retrieval_page_miss",
+            "recall=0.67 (multi-doc incompleto)"
+          ],
+          "pass_retrieval": true,
+          "pass_groundedness": true,
+          "pass_generation": false,
+          "pass_hallucination": true
+        },
+        {
+          "id": 72,
+          "query": "Cual fue el impacto financiero exacto del ransomware NotPetya en Maersk en 2017?",
+          "reasons": [
+            "found_forbidden: ['300 millones', 'maersk']",
+            "hallucination_forbidden_content"
+          ],
+          "warnings": [],
+          "pass_retrieval": true,
+          "pass_groundedness": false,
+          "pass_generation": true,
+          "pass_hallucination": false
+        },
+        {
+          "id": 74,
+          "query": "Cual es la contrasena por defecto del router Cisco ASA 5505?",
+          "reasons": [
+            "hallucination_no_decline"
+          ],
+          "warnings": [],
+          "pass_retrieval": true,
+          "pass_groundedness": true,
+          "pass_generation": true,
+          "pass_hallucination": false
+        }
+      ]
+    }
+  }
+}

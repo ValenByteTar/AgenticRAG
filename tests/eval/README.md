@@ -93,3 +93,18 @@ Para verificar en que pagina esta un fragmento de texto especifico:
 .venv\Scripts\python.exe tests/eval/build_ground_truth.py --search "never trust always verify"
 .venv\Scripts\python.exe tests/eval/build_ground_truth.py --list-sources --limit 30
 ```
+
+## Baselines (ADR-0006)
+
+Los baselines congelan metricas del sistema en un punto del roadmap.
+
+| Baseline | Path | Uso |
+|----------|------|-----|
+| `baseline_pre_agentic_phase0` | `baselines/baseline_pre_agentic_phase0/` | Comparar Fase 1+ (no-regresion) |
+
+Ver `baselines/baseline_pre_agentic_phase0/README.md` y `MANIFEST.json`.
+
+Regenerar helper:
+```
+python tests/eval/baselines/_freeze_baseline_phase0.py
+```

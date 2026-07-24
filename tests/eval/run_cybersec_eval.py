@@ -138,12 +138,20 @@ def query_api(base_url: str, question: str, timeout: int = 180) -> dict:
 
 _rag_instance = None
 
+_kernel_mode = False
+
+
 def _get_rag():
     global _rag_instance
     if _rag_instance is None:
         from rag_hybrid import HybridRAG
         print("Inicializando HybridRAG (modo directo)...")
         _rag_instance = HybridRAG(variant="bge", heuristics="balanced")
+        if _kernel_mode:
+            _rag_instance.kernel_enabled = True
+            print("OK: kernel.enabled FORZADO true (camino Controller / Fase 1)")
+        else:
+            print(f"OK: kernel.enabled={getattr(_rag_instance, 'kernel_enabled', False)}")
         print(f"OK: RAG listo ({len(_rag_instance.all_docs)} documentos)\n")
     return _rag_instance
 
@@ -999,7 +1007,15 @@ def main():
                         help="Tolerancia de pagina (default: la del dataset)")
     parser.add_argument("--kw-threshold", type=float, default=0.3,
                         help="Keyword score minimo para no fallar (default 0.3, auxiliar)")
+    parser.add_argument(
+        "--kernel",
+        action="store_true",
+        help="Forzar camino Kernel (query via Controller). Default: config/kernel.enabled",
+    )
     args = parser.parse_args()
+
+    global _kernel_mode
+    _kernel_mode = bool(args.kernel)
 
     if not QUESTIONS_FILE.exists():
         print(f"ERROR: No se encontro el dataset en {QUESTIONS_FILE}", file=sys.stderr)

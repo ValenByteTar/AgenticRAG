@@ -213,13 +213,38 @@ class HybridRAG:
         self.definitions_map = self._eq_mgr.definitions_map
         console.print(f"[dim]Equivalencias cargadas: {len(self.equivalences)} grupos[/dim]")
 
-        # LLM: Ollama con modelo optimizado para GPU 6GB
+        # LLM via config + ModelProvider (ADR-0007). Fallback: mistral:7b
         self.use_llm = use_llm
-        self.ollama_model = "mistral:7b"
-        self._ollama_mgr = OllamaManager(model=self.ollama_model)
+        _llm_cfg = (self.config.get("llm") or {}) if isinstance(self.config, dict) else {}
+        self.ollama_model = (
+            _llm_cfg.get("model_name")
+            or (self.config.get("ollama_model") if isinstance(self.config, dict) else None)
+            or "mistral:7b"
+        )
+        self._ollama_mgr = OllamaManager(
+            model=self.ollama_model,
+            ollama_url=str(_llm_cfg.get("base_url") or "http://localhost:11434"),
+        )
         self.ollama_process = None  # compatibilidad: apunta al proceso del manager
-        self.num_gpu_tuned = 99  # valor por defecto (auto)
-        
+        self.num_gpu_tuned = int(_llm_cfg.get("num_gpu", 99) or 99)
+        try:
+            from src.providers.ollama_provider import OllamaModelProvider
+            self.model_provider = OllamaModelProvider(
+                model=self.ollama_model,
+                base_url=str(_llm_cfg.get("base_url") or "http://localhost:11434"),
+                num_gpu=self.num_gpu_tuned,
+            )
+        except Exception:
+            self.model_provider = None
+        # Kernel bundle (Fase 0): fronteras instaladas; orquestacion agentica en Fases 1+
+        # kernel.enabled=false => query() sigue el camino lineal (ADR-0010 fachada estable).
+        self._kernel_bundle = None
+        try:
+            _kcfg = (self.config.get("kernel") or {}) if isinstance(self.config, dict) else {}
+            self.kernel_enabled = bool(_kcfg.get("enabled", False))
+        except Exception:
+            self.kernel_enabled = False
+
         # Inicializar sistema de memoria
         self.memory = MemorySystem()
         self.conversation = ConversationHistory(max_history=10)
@@ -227,8 +252,8 @@ class HybridRAG:
         self.last_entities = []
         # ConfiguraciÃ³n de razonamiento automÃ¡tico (HABILITADO - sin restricciones de RAM)
         self.enable_auto_reasoning = self.config.get('enable_auto_reasoning', True)
-        self.centrales_map: dict = {}
-        self.centrales_loaded: bool = False
+        # domain_map: gazetteer generico de entidades de dominio
+        self.domain_map: dict = getattr(self, 'domain_map', {})
         
         # MEJORA: Gazetteer de alias de entidades para mejorar bÃºsqueda (ciberseguridad)
         self.entity_aliases = {
@@ -368,19 +393,19 @@ class HybridRAG:
                         self.doc_roles = build_doc_cards(self.vector_store)
                     save_doc_roles(self.doc_roles)
                 console.print(f"[dim]DocCards cargados: {len(self.doc_roles.get('docs', {}))} documentos[/dim]")
-                # ELIMINADO: AmpliaciÃ³n de centrales elÃ©ctricas desde DocCards
+                # ELIMINADO: Ampliacion de entidades desde DocCards
                 # El sistema ahora usa domain_map genÃ©rico en entity_extractor
                 pass
         except Exception as e:
             console.print(f"[yellow]ADVERTENCIA: No se pudieron cargar DocCards: {e}[/yellow]")
         # Instanciar extractor unificado y construir gazetteer de dominio
         try:
-            self.entity_extractor = EntityExtractor(domain_map=self.centrales_map)
+            self.entity_extractor = EntityExtractor(domain_map=self.domain_map)
             try:
                 col_data = self.vector_store.collection.get(include=["metadatas","documents","ids"])  # puede ser pesado; necesario una vez
             except Exception:
                 col_data = self.vector_store.collection.get()
-            self.entity_extractor.update_domain_from_collection(col_data, doc_roles=self.doc_roles, domain_map=self.centrales_map)
+            self.entity_extractor.update_domain_from_collection(col_data, doc_roles=self.doc_roles, domain_map=self.domain_map)
             console.print("[dim]Extractor de entidades inicializado con gazetteer de dominio[/dim]")
         except Exception as _e:
             console.print(f"[yellow]ADVERTENCIA: No se pudo inicializar EntityExtractor: {str(_e)[:80]}[/yellow]")
@@ -423,6 +448,85 @@ class HybridRAG:
     def cleanup(self):
         """Delegado a OllamaManager.cleanup()."""
         self._ollama_mgr.cleanup()
+
+    def _get_kernel_bundle(self):
+        """
+        Lazy Composition Root (ADR-0014). Solo se construye si se solicita.
+        Con kernel.enabled=true, query() delega aqui (Fase 1, ADR-0010).
+        """
+        if self._kernel_bundle is None:
+            from src.bootstrap import build_kernel_bundle_from_rag
+            self._kernel_bundle = build_kernel_bundle_from_rag(self)
+        return self._kernel_bundle
+
+    def query_via_kernel(
+        self,
+        question: str,
+        top_k: int = 50,
+        semantic_weight: float = 0.6,
+        use_llm: bool = None,
+        length_mode: str = None,
+        token_callback=None,
+        cancel_checker=None,
+    ) -> dict:
+        """
+        Camino Kernel (Fase 1): Controller + LinearRagPolicy + capabilities.
+
+        Contrato de retorno alineado a query() (ADR-0010). No incluye aun
+        gates/heuristicas del monolito (Fases 2+).
+
+        Fase 3: soporta streaming via token_callback y cancel_checker.
+        """
+        if use_llm is None:
+            use_llm = self.use_llm
+        from src.bootstrap import new_execution_state
+        bundle = self._get_kernel_bundle()
+        extras = getattr(bundle, "extras", {}) or {}
+        state = new_execution_state(
+            question,
+            top_k=top_k,
+            semantic_weight=semantic_weight,
+            use_llm=use_llm,
+            length_mode=length_mode,
+            max_iterations=int(extras.get("max_iterations", 8) or 8),
+            max_llm_calls=int(extras.get("max_llm_calls", 6) or 6),
+        )
+        if token_callback is not None:
+            state.token_callback = token_callback
+        if cancel_checker is not None:
+            state.cancel_checker = cancel_checker
+        out = bundle.controller.run(state)
+        if not out.sources and out.results:
+            srcs = []
+            for r in out.results:
+                md = r.get("metadata") or {}
+                score = (
+                    r.get("final_score")
+                    if r.get("final_score") is not None
+                    else r.get("rerank_score")
+                    if r.get("rerank_score") is not None
+                    else r.get("hybrid_score")
+                    if r.get("hybrid_score") is not None
+                    else r.get("score")
+                )
+                srcs.append({
+                    "source": md.get("source") or r.get("source") or "",
+                    "page": md.get("page") or r.get("page"),
+                    "score": score,
+                })
+            out.sources = srcs
+        result = out.to_query_result()
+        result["method"] = "kernel_linear"
+        # Campos de contrato fachada (ADR-0010) siempre presentes
+        result.setdefault("memory_hits", 0)
+        result.setdefault("timing_breakdown", dict(out.timing_ms or {}))
+        if "time" not in result or result.get("time") in (None, 0, 0.0):
+            result["time"] = float((out.timing_ms or {}).get("t_total_s", 0.0) or 0.0)
+        return result
+
+    def _query_linear(self, *args, **kwargs) -> dict:
+        """Alias interno del camino monolito (pre-kernel). Usado cuando kernel.enabled=false."""
+        return self._query_linear_impl(*args, **kwargs)
         
     def _load_bm25_index(self):
         """Carga Ã­ndice BM25 desde ChromaDB"""
@@ -731,7 +835,7 @@ class HybridRAG:
 
     def _norm_name(self, s: str) -> str:
         t = ''.join(c for c in unicodedata.normalize('NFD', s or '') if unicodedata.category(c) != 'Mn').lower()
-        # ELIMINADO: Referencias a p.e./p.s. (Parque EÃ³lico/Solar) - ahora es genÃ©rico
+        # Nombres de entidades normalizados
         t = re.sub(r"[^a-z0-9]+", " ", t).strip()
         return t
 
@@ -803,7 +907,7 @@ class HybridRAG:
 
 
     def _extract_doc_scope(self, query: str) -> str:
-        """Intenta extraer un nombre de documento para limitar la bÃºsqueda (e.g., "buscar en 'Anexo D - Listado Centrales.pdf'").
+        """Intenta extraer un nombre de documento para limitar la bÃºsqueda (e.g., "buscar en 'ISO 27001 Guide.pdf'").
         Devuelve string del documento a buscar o cadena vacÃ­a si no hay scope.
         """
         q = query.strip()
@@ -894,8 +998,8 @@ class HybridRAG:
         """Delegado a QueryClassifier.is_specific_count()."""
         return self._query_clf.is_specific_count(query)
 
-    def _is_wtg_power_query(self, query: str) -> bool:
-        """Detecta si piden detalle por unidad/control (antes potencia por WTG)."""
+    def _is_per_unit_detail_query(self, query: str) -> bool:
+        """Detecta si piden detalle por unidad/control."""
         q = (query or '').lower()
         has_detail = any(k in q for k in ['versiÃ³n', 'version', 'cvss', 'severidad', 'detalle', 'detalle de'])
         has_control = any(k in q for k in ['control', 'controles', 'requisito', 'requisitos'])
@@ -905,8 +1009,8 @@ class HybridRAG:
 
 
 
-    def _is_centrales_list_request(self, query: str) -> bool:
-        """IntenciÃ³n explÃ­cita de listar frameworks/polÃ­ticas/controles (adaptado de centrales/parques).
+    def _is_listing_request(self, query: str) -> bool:
+        """Intencion explicita de listar frameworks/politicas/controles.
         Requiere palabras de listado + tÃ©rmino de frameworks; excluye consultas procedimentales.
         """
         q = (query or '').lower()
@@ -962,8 +1066,8 @@ class HybridRAG:
             if not results or not isinstance(length_mode, str) or length_mode.strip().lower() != 'short':
                 return None
             q = (question or '').lower()
-            kw = ['wtg','aerogenerador','aerogeneradores','turbina','turbinas','panel','paneles','mw','megawatt']
-            kw = [k for k in kw if k in q] or ['wtg','aerogeneradores','paneles','mw']
+            kw = ['control','controles','framework','frameworks','politica','politicas','requisito','requisitos']
+            kw = [k for k in kw if k in q] or ['control','framework','requisito']
             snippets = []
             top = results[:5]
             for i, r in enumerate(top, 1):
@@ -1074,8 +1178,8 @@ class HybridRAG:
             q = (question or '').lower()
             # Palabras clave por dominio
             dom = [
-                ('WTG', [r'wtg', r'aerogenerador(?:es)?', r'turbina(?:s)?']),
-                ('paneles', [r'panel(?:es)?', r'm[Ã³o]dulo(?:s)?']),
+                ('devices', [r'endpoint', r'server', r'router']),
+                ('modules', [r'module', r'component']),
             ]
             candidates = []
             top = results[:8]
@@ -1169,8 +1273,8 @@ RESULTADOS (baja relevancia):
 TAREA: PropÃ³n 3-4 tÃ©rminos de bÃºsqueda ALTERNATIVOS.
 
 EJEMPLOS:
-- "nombre parque" -> "potencia MW", "inversores", "ubicaciÃ³n"
-- "Pampetrol" -> "Victorica", "7.2 MW"
+- "framework seguridad" -> "controles", "requisitos", "implementacion"
+- "NIST CSF" -> "controles", "funciones"
 
 FORMATO:
 NUEVOS_TERMINOS: tÃ©rmino1, tÃ©rmino2, tÃ©rmino3
@@ -1305,9 +1409,9 @@ Respuesta:"""
             'mÃ¡s sobre', 'mÃ¡s info', 'mÃ¡s detalles',
             'explicame', 'detalla', 'amplia',
             'quÃ© mÃ¡s', 'quÃ© otras', 'quÃ© otro',
-            'ahora', 'de sus', 'del parque', 'de ese', 'de esa', 'sobre eso', 'sus ', ' sus', 'solo ',
+            'ahora', 'de sus', '', 'de ese', 'de esa', 'sobre eso', 'sus ', ' sus', 'solo ',
             # Deixis especÃ­ficas de activos
-            'esta central', 'esta planta', 'este parque', 'este proyecto', 'esta et', 'esa central', 'la central', 'la planta', 'el parque',
+            'este framework', 'este control', 'esta politica', 'este documento', 'este estandar',
             # Referencias a informaciÃ³n previa
             'explica el punto', 'explica ese punto', 'quÃ© significa', 'que significa',
             # Referencias temporales/causales (seguimiento de eventos)
@@ -1385,7 +1489,7 @@ Respuesta:"""
             return True
         
         # 5. Verificar si hay entidades clave idÃ©nticas (nombres especÃ­ficos o acrÃ³nimos crÃ­ticos)
-        # Ej: "Kosten", "SUN2000", "ANSI", "DAG", "ET", "WTG", etc.
+        # Ej: "NIST", "ISO27001", "CISSP", "CEH", "SIEM", etc.
         # AcrÃ³nimos cortos (3+ letras) son crÃ­ticos en contexto tÃ©cnico
         key_entities_match = len(common_entities) >= 1 and any(
             len(e) >= 3  # Cualquier entidad compartida de 3+ letras es suficiente
@@ -1438,7 +1542,7 @@ Respuesta:"""
         except Exception:
             return None
     
-    def generate_with_ollama(self, query: str, context: str, conv_context: str = "", detailed: bool = False, is_aggregation: bool = False, num_centrales: int = 0, is_conceptual: bool = False, is_procedural: bool = False, is_direct_comparison: bool = False, is_simple_numeric: bool = False, is_troubleshooting: bool = False, is_summary: bool = False, length_mode: str = None, stream: bool = False, token_callback=None, cancel_checker=None) -> str:
+    def generate_with_ollama(self, query: str, context: str, conv_context: str = "", detailed: bool = False, is_aggregation: bool = False, num_items: int = 0, is_conceptual: bool = False, is_procedural: bool = False, is_direct_comparison: bool = False, is_simple_numeric: bool = False, is_troubleshooting: bool = False, is_summary: bool = False, length_mode: str = None, stream: bool = False, token_callback=None, cancel_checker=None) -> str:
         """Genera respuesta con Ollama incluyendo contexto conversacional"""
         
         # Construir prompt (REVERTIDO a versiÃ³n completa)
@@ -1880,19 +1984,19 @@ INSTRUCCIONES:
 PROHIBIDO:
 - Instrucciones operativas sin respaldo documental.
 - Inventar causas o soluciones.
-- Introducir temas no solicitados (ej: Entrada en Servicio).
+- Introducir temas no solicitados.
 
 Respuesta:"""
         elif is_aggregation:
-            # MODO AGREGACIÃ“N: Extraer tabla de centrales lÃ­nea por lÃ­nea
+            # MODO AGREGACION: Extraer tabla de elementos linea por linea
             
             # Buscar TOTAL en el contexto
             total_match = re.search(r'TOTAL\s*\n\s*([\d,\.]+)', context, re.IGNORECASE)
             total_value = total_match.group(1) if total_match else "No encontrado"
             
-            # Extraer centrales lÃ­nea por lÃ­nea (mejorado para nombres multi-lÃ­nea)
+            # Extraer elementos linea por linea (mejorado para nombres multi-linea)
             lines = context.split('\n')
-            centrales = []
+            items = []
             i = 0
             while i < len(lines) - 2:
                 line1 = lines[i].strip()
@@ -1900,48 +2004,42 @@ Respuesta:"""
                 line3 = lines[i+2].strip()
                 
                 # Verificar si line2 es un nÃºmero y line3 es una tecnologÃ­a
-                if re.match(r'^[\d,\.]+$', line2) and line3 in ['EÃ³lica', 'Fotovoltaica', 'BiogÃ¡s', 'Biomasa']:
-                    # line1 es el nombre de la central
-                    if line1 and not line1.startswith('CENTRAL') and not line1.startswith('POTENCIA'):
+                if re.match(r'^[\d,\.]+$', line2) and line3 in ['Network', 'Cloud', 'Endpoint', 'IAM']:
+                    # line1 es el nombre del elemento
+                    if line1 and not line1.startswith('NOMBRE') and not line1.startswith('VALOR'):
                         nombre = line1
                         
                         # Verificar si el nombre continÃºa en la lÃ­nea anterior (nombres multi-lÃ­nea)
                         if i > 0:
                             line_prev = lines[i-1].strip()
                             # Si la lÃ­nea anterior no es un nÃºmero ni tecnologÃ­a, es parte del nombre
-                            if line_prev and not re.match(r'^[\d,\.]+$', line_prev) and line_prev not in ['EÃ³lica', 'Fotovoltaica', 'BiogÃ¡s', 'Biomasa', 'CENTRAL', 'POTENCIA', 'MW', 'TECNOLOGIA', 'BLC', 'Inv. Kehua', 'Inv. Huawei']:
+                            if line_prev and not re.match(r'^[\d,\.]+$', line_prev) and line_prev not in ['Network', 'Cloud', 'Endpoint', 'IAM', 'NOMBRE', 'VALOR', 'CATEGORIA']:
                                 # Casos especiales: nombres que estÃ¡n en 2 lÃ­neas
-                                if 'RÃ­o Seco' in nombre and 'Villa MarÃ­a' in line_prev:
-                                    nombre = f"P.S. Villa MarÃ­a del RÃ­o Seco"
-                                elif 'CHACO' in nombre and 'PERLA' in line_prev:
-                                    nombre = f"P.S. LA PERLA DE CHACO"
-                                elif 'Ventura' in nombre and 'Buena' in line_prev:
-                                    nombre = f"P.E. de la Buena Ventura"
-                                elif not any(x in line_prev for x in ['Supervisor', 'Responsable', 'Instructivo', 'Anexo']):
+                                if not any(x in line_prev for x in ['Supervisor', 'Responsable', 'Instructivo', 'Anexo']):
                                     # Otros casos: concatenar si no es encabezado
                                     nombre = f"{line_prev} {nombre}"
                         
-                        centrales.append((nombre, line2, line3))
+                        items.append((nombre, line2, line3))
                 i += 1
             
-            # Formatear tabla de centrales
-            tabla_centrales = ""
-            if centrales:
-                tabla_centrales = "\n**TABLA DE CENTRALES EXTRAÃDA:**\n"
-                for i, (nombre, potencia, tecnologia) in enumerate(centrales, 1):
-                    tabla_centrales += f"{i}. {nombre}: {potencia} MW ({tecnologia})\n"
-                tabla_centrales += f"\n**TOTAL OFICIAL: {total_value} MW**\n"
-                tabla_centrales += f"**Total de centrales: {len(centrales)}**\n"
+            # Formatear tabla de elementos
+            tabla_items = ""
+            if items:
+                tabla_items = "\n**TABLA DE ELEMENTOS EXTRAÃDA:**\n"
+                for i, (nombre, valor, categoria) in enumerate(items, 1):
+                    tabla_items += f"{i}. {nombre}: {valor} ({categoria})\n"
+                tabla_items += f"\n**TOTAL: {total_value}**\n"
+                tabla_items += f"**Total de elementos: {len(items)}**\n"
             
             # MODO AGREGACIÃ“N: Usar SOLO la tabla extraÃ­da
-            # Evitar este modo si el usuario pide TECNOLOGÃA o COBERTURA COMPLETA de Anexos D
+            # Evitar este modo si el usuario pide TECNOLOGÃA o COBERTURA COMPLETA de documentos
             tech_sig = any(k in (query.lower()) for k in ['tecnologia', 'tecnologÃ­a', 'tecnologias', 'tecnologÃ­as'])
-            if tabla_centrales and not (tech_sig or self._requires_full_anexos_coverage(query)):
+            if tabla_items and not (tech_sig or self._requires_full_anexos_coverage(query)):
                 # Si tenemos tabla extraÃ­da, NO enviar el contexto completo
                 prompt = f"""Eres un asistente tÃ©cnico especializado en ciberseguridad. Tienes una tabla con TODOS los elementos extraÃ­dos de los documentos.
 
 {context_section}
-{tabla_centrales}
+{tabla_items}
 
 PREGUNTA: {query}
 
@@ -1988,7 +2086,7 @@ FORMATO:
 PROHIBIDO:
 - Maniobras o cambios de estado.
 - Operaciones especÃ­ficas sin respaldo documental claro.
-- Introducir temas no solicitados (ej: Entrada en Servicio, habilitaciÃ³n comercial).
+- Introducir temas no solicitados.
 
 Respuesta con pasos:"""
         elif detailed:
@@ -2031,7 +2129,7 @@ Respuesta detallada y completa:"""
             
             # Detectar si requiere informaciÃ³n de mÃºltiples documentos
             is_multi_doc = self._is_multi_document_query(query)
-            # Detectar si es una peticiÃ³n de LISTADO (enumeraciÃ³n de centrales)
+            # Detectar si es una peticion de LISTADO (enumeracion de frameworks/controles)
             is_listing = self._is_listing_query(query)
             
             if is_doc_explanation and doc_ref:
@@ -2052,7 +2150,7 @@ INSTRUCCIONES:
 
 PROHIBIDO:
 - Inventar informaciÃ³n no presente.
-- Introducir temas no solicitados (ej: Entrada en Servicio, habilitaciÃ³n comercial).
+- Introducir temas no solicitados.
 - Usar tablas salvo que el usuario las pida.
 
 ExplicaciÃ³n detallada:"""
@@ -2109,7 +2207,7 @@ PROHIBIDO:
 - Inventar o aproximar nÃºmeros.
 - Agregar secciones extra o preguntas de seguimiento.
 - Repetir informaciÃ³n.
-- Introducir temas no solicitados (ej: Entrada en Servicio, habilitaciÃ³n comercial).
+- Introducir temas no solicitados.
 - Usar tablas salvo que el usuario las pida.
 
 Respuesta:"""
@@ -2208,7 +2306,7 @@ Respuesta:"""
                 pass
 
         try:
-            if not self._is_centrales_list_request(query):
+            if not self._is_listing_request(query):
                 if not self.flags.get('plain_prompts', False):
                     prompt = prompt + "\n\nRESTRICCION: No uses tablas ni formato tabular (|, columnas) salvo que el usuario pida 'lista', 'listado', 'tabla' o 'tablilla'."
         except Exception:
@@ -2403,9 +2501,9 @@ Respuesta:"""
                     response = (
                         "Uso: /mapa_borrar <entidad>[.<atributo>|.*]\n\n"
                         "Ejemplos:\n"
-                        "â€¢ /mapa_borrar 'eolico vientos del secano'.tecnologia\n"
-                        "â€¢ /mapa_borrar 'eolico vientos del secano'.*\n"
-                        "â€¢ /mapa_borrar 'eolico vientos del secano'"
+                        "â€¢ /mapa_borrar 'nist csf'.tecnologia\n"
+                        "â€¢ /mapa_borrar 'nist csf'.*\n"
+                        "â€¢ /mapa_borrar 'nist csf'"
                     )
                     return {
                         'question': command,
@@ -2447,13 +2545,12 @@ Respuesta:"""
         
         # /ayuda - Mostrar ayuda
         elif cmd == '/ayuda' or cmd == '/help':
-            response = """# ðŸ“š GuÃ­a de Uso - CROM RAG Assistant
+            response = """# ðŸ“š Guia de Uso - RAG Assistant
 
 ## ðŸ” Comandos Disponibles
 
 - `/ayuda` - Muestra esta guÃ­a
 - `/reset` - Limpia el historial de conversaciÃ³n
-- `/centrales` - Listar centrales
 - `/documentos` - Muestra documentos indexados
 - `/memoria` - Ver sinÃ³nimos guardados en memoria
 - `/mapa` - Ver mapa conceptual aprendido (atajos y hechos)
@@ -2463,62 +2560,29 @@ Respuesta:"""
 Puedes enseÃ±arme equivalencias de tÃ©rminos:
 
 **Ejemplos:**
-- "Guarda que molino eÃ³lico = WTG = aerogenerador"
-- "Recuerda que inversor es lo mismo que convertidor"
+- "Guarda que SIEM = Security Information and Event Management"
+- "Recuerda que SOC es lo mismo que Security Operations Center"
 
 ## ðŸ’¡ Ejemplos de Consultas
 
 **InformaciÃ³n general:**
-- "Â¿CuÃ¡ntas centrales opera el CROM?"
-- "Dame informaciÃ³n sobre Kosten"
+- "ÂQue frameworks de ciberseguridad hay?"
+- "Dame informacion sobre NIST CSF"
 
 **Procedimientos:**
-- "Â¿CÃ³mo se opera una central eÃ³lica?"
+Como se implementa un framework de seguridad?"
 - "Procedimiento ante falla de sistema"
 
 **Comparaciones:**
-- "Compara Kosten y Algarrobo"
+- "Compara NIST CSF e ISO 27001"
 
 **Agregaciones:**
-- "Â¿CuÃ¡l es la potencia total del CROM?"
+Cuales son los controles del NIST CSF?"
 """
             
             return {
                 'question': command,
                 'results': [],
-                'context': '',
-                'answer': response,
-                'method': 'system_command',
-                'memory_hits': 0
-            }
-        
-        # /centrales - Listar centrales
-        elif cmd == '/centrales':
-            # Buscar en el documento de listado de centrales
-            results = self._search_in_specific_doc("anexo d", top_k=30)
-            
-            response = "# ðŸ­ Centrales del CROM\n\n"
-            if results:
-                # Extraer nombres de centrales de los resultados
-                centrales_found = set()
-                for r in results:
-                    text = r['text']
-                    # Buscar patrones de centrales
-                    matches = re.findall(r'(?:P\.?E\.?|P\.?S\.?|Parque|Central)\s+[A-Za-zÃ¡Ã©Ã­Ã³ÃºÃ±ÃÃ‰ÃÃ“ÃšÃ‘\s]+', text)
-                    centrales_found.update([m.strip() for m in matches])
-                
-                if centrales_found:
-                    response += "**Centrales encontradas:**\n\n"
-                    for central in sorted(centrales_found):
-                        response += f"â€¢ {central}\n"
-                else:
-                    response += "Consulta el documento 'Anexo D - Listado de Centrales' para informaciÃ³n completa."
-            else:
-                response += "No se encontrÃ³ informaciÃ³n del listado de centrales."
-            
-            return {
-                'question': command,
-                'results': results[:5] if results else [],
                 'context': '',
                 'answer': response,
                 'method': 'system_command',
@@ -2532,7 +2596,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
             
             # Iterar sobre algunos chunks para ver quÃ© documentos hay
             try:
-                sample_results = self.hybrid_search("central parque", top_k=100)
+                sample_results = self.hybrid_search("framework seguridad", top_k=100)
                 for r in sample_results:
                     doc_name = r['metadata'].get('source', 'Unknown')
                     all_docs.add(doc_name)
@@ -2628,7 +2692,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
             }
     
     def _extract_entities(self, question: str) -> list:
-        """Extrae nombres propios y tÃ©rminos tÃ©cnicos de la pregunta (parques, empresas, tecnologÃ­as, etc)"""
+        """Extrae nombres propios y terminos tecnicos de la pregunta (frameworks, certificaciones, etc)"""
         entities = []
         try:
             if hasattr(self, 'entity_extractor') and self.entity_extractor is not None:
@@ -2636,47 +2700,16 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
         except Exception:
             pass
         
-        # FALLBACK: Si no detectÃ³ entidades, buscar manualmente nombres conocidos en centrales_map
+        # FALLBACK: Si no detecto entidades, buscar en domain_map (gazetteer generico)
         if not entities:
             try:
                 q_lower = question.lower()
-                # Buscar en centrales_map (acrÃ³nimos y variantes)
-                if hasattr(self, 'centrales_map') and self.centrales_map:
-                    for variant, (canonical, _) in self.centrales_map.items():
+                _dmap = getattr(self, 'domain_map', None)
+                if _dmap:
+                    for variant, (canonical, _) in _dmap.items():
                         if variant.lower() in q_lower:
                             entities.append(canonical.lower())
                             break
-                # Buscar patrones comunes de nombres de centrales
-                if not entities:
-                    # Patrones: "parque X", "central X", "P.S. X", "P.E. X", "la perla del chaco"
-                    patterns = [
-                        # Nombres compuestos especÃ­ficos (prioridad alta)
-                        r'(?:parque|central|planta|p\.?s\.?|p\.?e\.?)\s+(?:la\s+)?perla\s+de(?:l)?\s+chaco',
-                        r'(?:la\s+)?perla\s+de(?:l)?\s+chaco',
-                        # Patrones genÃ©ricos
-                        r'(?:parque|central|planta)\s+(?:eolico|eÃ³lico|solar|fotovoltaico|fotovoltaica)?\s*(?:la\s+)?([a-zÃ¡Ã©Ã­Ã³ÃºÃ±\s]+?)(?:\s+(?:tiene|maneja|opera|ubicado|ubicada|cuenta|posee|dispone)|\?|$)',
-                        r'(?:p\.?s\.?|p\.?e\.?)\s+([a-zÃ¡Ã©Ã­Ã³ÃºÃ±\s]+?)(?:\s+(?:tiene|maneja|opera|ubicado|ubicada|cuenta|posee|dispone)|\?|$)',
-                        r'(?:sobre|de|del)\s+(?:parque|central|planta|p\.?s\.?|p\.?e\.?)?\s*(?:la\s+)?([a-zÃ¡Ã©Ã­Ã³ÃºÃ±\s]+?)(?:\?|$)',
-                        r'(?:la|el)\s+([a-zÃ¡Ã©Ã­Ã³ÃºÃ±\s]+?)\s+(?:tiene|maneja|opera|ubicado|ubicada|cuenta|posee|dispone)'
-                    ]
-                    for pat in patterns:
-                        m = re.search(pat, q_lower, re.IGNORECASE)
-                        if m:
-                            # Si el patrÃ³n no tiene grupo, usar todo el match
-                            if m.lastindex is None or m.lastindex == 0:
-                                name = m.group(0).strip()
-                                # Limpiar prefijos
-                                name = re.sub(r'^(?:parque|central|planta|p\.?s\.?|p\.?e\.?|sobre|de|del|la|el)\s+', '', name, flags=re.IGNORECASE).strip()
-                            else:
-                                name = m.group(1).strip()
-                            # Limpiar stopwords finales pero preservar "del chaco" y "de chaco"
-                            if 'del chaco' not in name and 'de chaco' not in name:
-                                name = re.sub(r'\s+(de|del|la|el|los|las|y|o|en|a|con)$', '', name).strip()
-                            # Normalizar "del chaco" -> "de chaco" para consistencia
-                            name = name.replace('del chaco', 'de chaco')
-                            if len(name) > 3:  # Evitar nombres muy cortos
-                                entities.append(name)
-                                break
             except Exception:
                 pass
         
@@ -2999,25 +3032,59 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
     
     
     
-    def query(self, question: str, top_k: int = 50, 
+    def query(self, question: str, top_k: int = 50,
               semantic_weight: float = 0.6, use_llm: bool = None,
               entity_filter: bool = True, two_stage: bool = True,
               length_mode: str = None, no_context: bool = False,
               stream: bool = False, token_callback=None, docs_callback=None, cancel_checker=None,
               return_prerank: bool = False) -> dict:
         """
-        Consulta completa con bÃºsqueda hÃ­brida
-        
-        Args:
-            question: Pregunta
-            top_k: Resultados a recuperar
-            semantic_weight: Balance semÃ¡ntica/keyword (0.5 = 50/50)
-            use_llm: Usar LLM para generar respuesta
-            entity_filter: Filtrar por entidades encontradas en pregunta
-            two_stage: Usar bÃºsqueda en dos etapas para entidades especÃ­ficas
-            length_mode: 'short' para respuestas breves (<1000 chars), 'long' para respuestas extensas (>3000 chars)
+        Fachada estable de consulta (ADR-0010).
+
+        - kernel.enabled=false (default): camino lineal monolito (_query_linear_impl).
+        - kernel.enabled=true: Controller + LinearRagPolicy (query_via_kernel).
+        Firma y claves de retorno se preservan para benchmark/web/CLI.
         """
-        
+        if use_llm is None:
+            use_llm = self.use_llm
+
+        if getattr(self, "kernel_enabled", False):
+            # Fase 3: streaming params ahora soportados en camino kernel.
+            return self.query_via_kernel(
+                question,
+                top_k=top_k,
+                semantic_weight=semantic_weight,
+                use_llm=use_llm,
+                length_mode=length_mode,
+                token_callback=token_callback,
+                cancel_checker=cancel_checker,
+            )
+
+        return self._query_linear_impl(
+            question,
+            top_k=top_k,
+            semantic_weight=semantic_weight,
+            use_llm=use_llm,
+            entity_filter=entity_filter,
+            two_stage=two_stage,
+            length_mode=length_mode,
+            no_context=no_context,
+            stream=stream,
+            token_callback=token_callback,
+            docs_callback=docs_callback,
+            cancel_checker=cancel_checker,
+            return_prerank=return_prerank,
+        )
+
+    def _query_linear_impl(self, question: str, top_k: int = 50,
+              semantic_weight: float = 0.6, use_llm: bool = None,
+              entity_filter: bool = True, two_stage: bool = True,
+              length_mode: str = None, no_context: bool = False,
+              stream: bool = False, token_callback=None, docs_callback=None, cancel_checker=None,
+              return_prerank: bool = False) -> dict:
+        """
+        Camino lineal pre-agentico (monolito). Comportamiento historico 1:1.
+        """
         if use_llm is None:
             use_llm = self.use_llm
         
@@ -3177,7 +3244,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
             except Exception:
                 pass
             if entities:
-                # Normalizar entidades (remover tÃ©rminos genÃ©ricos: parque, eolico, central, planta)
+                # Normalizar entidades (remover terminos genericos)
                 try:
                     entities = self._normalize_entities(entities, question)
                 except Exception:
@@ -3246,11 +3313,11 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                 # Si no hay entidades explÃ­citas y hay seÃ±ales de anÃ¡fora o continuidad, reusar entidad previa
                 if entity_filter and (not no_context):
                     ql_local = question.lower()
-                    pronoun_hints = [' sus', 'su ', 'ahora', 'del parque', 'de ese', 'de esa', 'de ello', 'de eso']
+                    pronoun_hints = [' sus', 'su ', 'ahora', '', 'de ese', 'de esa', 'de ello', 'de eso']
                     # Detectar preguntas de follow-up que implican continuidad (sin mencionar entidad explÃ­cita)
                     followup_patterns = [
-                        'que centrales', 'quÃ© centrales', 'cuales centrales', 'cuÃ¡les centrales',
-                        'que parques', 'quÃ© parques', 'cuales parques', 'cuÃ¡les parques',
+                        'que frameworks', 'que controles', 'cuales frameworks', 'cuales controles',
+                        'que politicas', 'cuales politicas', 'que estandares', 'cuales estandares',
                         'donde esta', 'dÃ³nde estÃ¡', 'donde estÃ¡n', 'dÃ³nde estÃ¡n',
                         'cuantos', 'cuÃ¡ntos', 'cuanta', 'cuÃ¡nta'
                     ]
@@ -3505,19 +3572,19 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
         
         
         # BÃšSQUEDA EN DOS ETAPAS (solo si no es comparaciÃ³n o explicaciÃ³n de doc)
-        # Evitar forzar Anexo D cuando la consulta es de tipo PT (p.ej., "PT 11", "PT_11", "Protocolo tecnico")
+        # Evitar forzar documento especifico cuando la consulta es de tipo PT (p.ej., "PT 11", "PT_11", "Protocolo tecnico")
         try:
             _q = (question or '')
             _ents = [e.lower() for e in (entities or []) if e]
-            pt_like = bool(re.search(r"\bpt\s*_?\d+\b", _q.lower())) or any(('pt' in e and any(ch.isdigit() for ch in e)) for e in _ents) or ('protocolo tecnico' in _q.lower()) or ('protocolo de cammesa' in _q.lower())
+            pt_like = bool(re.search(r"\bpt\s*_?\d+\b", _q.lower())) or any(('pt' in e and any(ch.isdigit() for ch in e)) for e in _ents) or ('protocolo tecnico' in _q.lower())
         except Exception:
             pt_like = False
         if results is None and two_stage and entities and len(entities) <= 2 and not is_procedural and not locals().get('is_listing_ctx', False) and not self._is_sum_query(question) and not self._extract_tech_filter(question) and not self._extract_vendor_filter(question) and not pt_like:
-            # Etapa 1: Buscar primero en Anexo D especÃ­fico si existe
+            # Etapa 1: Buscar primero en documento especifico especÃ­fico si existe
             entity_name = entities[0]
             console.print(f"[dim]Etapa 1: Buscando documentos especÃ­ficos para entidad: {entity_name}[/dim]")
             
-            # RAZONAMIENTO: Resolver entidad a archivo Anexo D correcto
+            # RAZONAMIENTO: Resolver entidad a archivo documento especifico correcto
             canonical_name, target_anexo = self._resolve_entity_to_anexo(entity_name)
             
             if target_anexo:
@@ -3542,7 +3609,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                 doc_query = f"documento {entity_name}"
                 entity_results = self.hybrid_search(doc_query, top_k=30, semantic_weight=0.3)
                 
-                # Mejor heurÃ­stica: tomar cualquier 'Anexo D' cuyo TEXTO mencione la entidad
+                # Mejor heurÃ­stica: tomar cualquier 'documento especifico' cuyo TEXTO mencione la entidad
                 anexo_results = []
                 try:
                     all_docs = self.vector_store.collection.get()
@@ -3757,7 +3824,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                 fs = r.get('final_score', 0.0)
                 # Evaluar menciÃ³n explÃ­cita de entidad
                 has_ent_mention = bool(ents) and any(e.lower() in (txt + ' ' + src) for e in ents)
-                # Boost: Anexo D solo si hay menciÃ³n explÃ­cita de la entidad
+                # Boost: documento especifico solo si hay menciÃ³n explÃ­cita de la entidad
                 if 'anexo d' in src and ents:
                     if has_ent_mention:
                         fs += 0.5
@@ -3772,11 +3839,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                 # PenalizaciÃ³n si NO hay ninguna menciÃ³n de la entidad en el chunk
                 if ents and not has_ent_mention:
                     fs -= 0.35
-                # Boost especÃ­fico: si pregunta contiene 'servicio crom', priorizar documento BLC-ServicioCROM
-                if ('servicio crom' in ql2 or 'serviciocrom' in ql2) and (
-                    'serviciocrom' in src or 'blc-serviciocrom' in src or ('servicio' in src and 'crom' in src)
-                ):
-                    fs += 0.7
+                # Boost generico movido a logica de roles
                 r['final_score'] = fs
                 boosted.append(r)
             results = sorted(boosted, key=lambda x: x.get('final_score', 0.0), reverse=True)
@@ -3784,17 +3847,17 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
         # Diversificar por fuente para consultas de comparaciÃ³n (cobertura de entidades)
         if results and is_comparison and self.flags.get('diversify_sources_for_comparison', True):
             results = self._diversify_by_source(results, per_source_limit=2, max_results=top_k)
-            # HeurÃ­stica de promociÃ³n de fuentes esperadas para comparaciÃ³n especÃ­fica (Kosten vs Loma Blanca)
+            # Heuristica: asegurar al menos un resultado por entidad en comparaciones
             ql = question.lower()
-            if ("kosten" in ql) and ("loma blanca" in ql) and self.flags.get('ensure_entity_sources', True):
+            if ("entidad1" in ql) and ("entidad2" in ql) and self.flags.get('ensure_entity_sources', True):
                 grenergy_idx = None
                 goldwind_idx = None
                 for idx, r in enumerate(results[:min(len(results), 15)]):
                     src = r.get('metadata', {}).get('source', '').lower()
                     txt = r.get('text', '').lower()
-                    if grenergy_idx is None and 'grenergy' in src and 'kosten' in txt:
+                    if grenergy_idx is None and 'entidad1' in txt:
                         grenergy_idx = idx
-                    if goldwind_idx is None and 'goldwind' in src and ('loma blanca' in txt or 'loma' in txt):
+                    if goldwind_idx is None and 'entidad2' in txt:
                         goldwind_idx = idx
                     if grenergy_idx is not None and goldwind_idx is not None:
                         break
@@ -3811,8 +3874,8 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                     results = promoted + rest
                 # Asegurar presencia explÃ­cita de fuentes claves
                 if self.flags.get('ensure_entity_sources', True):
-                    results = self._ensure_source_for_entity(results, 'grenergy', 'kosten', limit=1)
-                    results = self._ensure_source_for_entity(results, 'goldwind', 'loma blanca', limit=1)
+                    results = self._ensure_source_for_entity(results, 'entidad1', 'entidad1', limit=1)
+                    results = self._ensure_source_for_entity(results, 'entidad2', 'entidad2', limit=1)
             # GeneralizaciÃ³n: asegurar al menos un resultado por entidad
             if 'entities' in locals() and entities and self.flags.get('ensure_entity_sources', True):
                 results = self._ensure_results_for_entities(results, entities, per_entity=1)
@@ -3840,7 +3903,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
             # Filtrar por score normalizado si existe; fallback a score crudo
             try:
                 ql_local = question.lower()
-                is_numeric_ctx = any(k in ql_local for k in ['cuant', 'nÃºmero', 'numero', 'mw', 'potencia', 'aerogeneradores', 'wtg'])
+                is_numeric_ctx = any(k in ql_local for k in ['cuant', 'numero', 'cantidad', 'total', 'controles'])
             except Exception:
                 is_numeric_ctx = False
             min_norm = 0.10 if is_numeric_ctx else 0.15
@@ -3866,7 +3929,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                     console.print(f"[dim]OK: Filtro de calidad: {len(results)} documentos[/dim]")
                 
                 # LÃMITE: Si hay muchos documentos, tomar solo los top 10 para evitar timeout
-                # EXCEPTO cuando el usuario pidiÃ³ revisar TODOS los Anexos D / CADA central
+                # EXCEPTO cuando el usuario pidiÃ³ revisar TODOS los documentos / cobertura completa
                 if len(results) > 10 and not self._requires_full_anexos_coverage(question) and not locals().get('is_listing_ctx', False):
                     console.print(f"[yellow]Limitando a top 10 documentos para evitar timeout[/yellow]")
                     results = results[:10]
@@ -3957,26 +4020,26 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
         # Construir contexto (OPTIMIZADO para chunks completos)
         if is_aggregation:
             # MODO AGREGACIÃ“N: Manejar dos casos
-            # 1. Si tenemos "Listado Centrales" -> usar TODOS sus chunks
-            # 2. Si tenemos Anexos D individuales -> un chunk por central
+            # 1. Si tenemos documento de listado -> usar TODOS sus chunks
+            # 2. Si tenemos documentos individuales -> un chunk por entidad
             
-            # Verificar si estamos usando "Listado Centrales"
+            # Verificar si hay documento de listado
             ql_local = question.lower()
             tech_query = any(w in ql_local for w in ['tecnologia', 'tecnologÃ­a', 'tecnologias', 'tecnologÃ­as'])
             full_cov_here = self._requires_full_anexos_coverage(question)
-            has_listado = any('listado' in r['metadata']['source'].lower() and 'central' in r['metadata']['source'].lower() for r in results)
-            # Si se pide tecnologÃ­a o cobertura completa, FORZAR uso de Anexos D individuales
-            force_annex = tech_query or full_cov_here
+            has_listado = any('listado' in r['metadata']['source'].lower() for r in results)
+            # Si se pide tecnologÃ­a o cobertura completa, FORZAR uso de documentos individuales
+            force_annex = full_cov_here
             if force_annex:
-                only_annex = [r for r in results if ('anexo d' in r['metadata']['source'].lower()) and not ('listado' in r['metadata']['source'].lower() and 'central' in r['metadata']['source'].lower())]
+                only_annex = [r for r in results if ('anexo d' in r['metadata']['source'].lower()) and not ('listado' in r['metadata']['source'].lower())]
                 if only_annex:
                     results = only_annex
                     has_listado = False
             
             if has_listado:
-                console.print(f"[dim]Usando listado general - Incluyendo multiples fragmentos del mismo documento...[/dim]")
+                console.print(f"[dim]Usando documento de listado - Incluyendo multiples fragmentos del mismo documento...[/dim]")
                 
-                # Para Listado Centrales, PRIORIZAR pÃ¡ginas 1-2 (donde estÃ¡ la tabla)
+                # Para documento de listado, priorizar paginas 1-2
                 # Ordenar por pÃ¡gina (ascendente) para tomar primero las pÃ¡ginas con la tabla
                 listado_sorted = sorted(results, key=lambda x: x['metadata']['page'])
                 
@@ -3985,14 +4048,14 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                 for i, r in enumerate(listado_sorted[:20], 1):  # Top 20 chunks del listado
                     source_name = r['metadata']['source'].split('.pdf')[0][:60]
                     page = r['metadata']['page']
-                    text = r['text'][:1200]  # MÃ¡s texto para capturar varias centrales (1000->1200)
+                    text = r['text'][:1200]  # Mas texto para capturar varios elementos (1000->1200)
                     context_parts.append(f"[Doc {i} - {source_name} p.{page}]\n{text}")
                 
                 context = "\n\n".join(context_parts)
-                console.print(f"[dim]OK: Contexto construido con {len(context_parts)} fragmentos del listado (priorizando pÃ¡ginas 1-2)[/dim]")
+                console.print(f"[dim]OK: Contexto construido con {len(context_parts)} fragmentos del listado (priorizando paginas 1-2)[/dim]")
             else:
                 console.print(f"[dim]Usando documentos individuales - Agrupando por fuente unica...[/dim]")
-                # Para Anexos D, agrupar por documento Ãºnico (1 chunk por central)
+                # Para documentos individuales, agrupar por documento unico (1 chunk por entidad)
                 docs_by_source = {}
                 for r in results:
                     source = r['metadata']['source']
@@ -4086,7 +4149,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                     context = "\n\n".join(context_parts)
                 else:
                     # Tomar SOLO el documento con MEJOR rerank_score (el chunk #1 despuÃ©s de re-ranking)
-                    # EXCEPCIÃ“N: Si hay un Anexo D especÃ­fico de la entidad, priorizarlo sobre "Listado Centrales"
+                    # EXCEPCION: Si hay un documento especifico de la entidad, priorizarlo sobre documento de listado
                     best_doc = results[0]['metadata']['source']
                     # Si hay sticky sources y ancla activa, priorizar documento pegajoso si aparece en resultados
                     try:
@@ -4100,7 +4163,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                     except Exception:
                         pass
                     
-                    # PRIORIDAD 1: Si Etapa 1 encontrÃ³ un Anexo D especÃ­fico, usarlo
+                    # PRIORIDAD 1: Si Etapa 1 encontrÃ³ un documento especifico especÃ­fico, usarlo
                     try:
                         target_anexo_etapa1 = getattr(self, '_target_anexo_etapa1', None)
                         if target_anexo_etapa1:
@@ -4109,19 +4172,19 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                                 source = r['metadata']['source']
                                 if target_anexo_etapa1.lower() in source.lower():
                                     best_doc = source
-                                    console.print(f"[cyan]Priorizando Anexo D de Etapa 1: {best_doc.split('.pdf')[0][:40]}[/cyan]")
+                                    console.print(f"[cyan]Priorizando documento especifico de Etapa 1: {best_doc.split('.pdf')[0][:40]}[/cyan]")
                                     break
                             # Limpiar flag
                             delattr(self, '_target_anexo_etapa1')
                     except Exception:
                         pass
                     
-                    # PRIORIDAD 2: Buscar si hay un Anexo D especÃ­fico en los top-5 resultados
-                    if 'listado' in best_doc.lower() and 'central' in best_doc.lower():
-                        # El mejor resultado es "Listado Centrales", buscar Anexo D especÃ­fico
+                    # PRIORIDAD 2: Buscar si hay un documento especifico especÃ­fico en los top-5 resultados
+                    if 'listado' in best_doc.lower():
+                        # El mejor resultado es documento de listado, buscar documento especifico
                         for r in results[:5]:
                             source = r['metadata']['source']
-                            # Si encontramos un Anexo D que NO es Listado, priorizarlo
+                            # Si encontramos un documento que NO es de listado, priorizarlo
                             if 'anexo d' in source.lower() and 'listado' not in source.lower():
                                 console.print(f"[yellow]Priorizando documento especÃ­fico sobre listado general[/yellow]")
                                 best_doc = source
@@ -4131,7 +4194,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                     needs_multi_doc = False
                     multi_doc_reason = ""
                     
-                    # EXCEPCIÃ“N: Si Etapa 1 encontrÃ³ un Anexo D especÃ­fico, NO usar multi-doc (usar solo ese)
+                    # EXCEPCIÃ“N: Si Etapa 1 encontrÃ³ un documento especifico especÃ­fico, NO usar multi-doc (usar solo ese)
                     has_etapa1_anexo = False
                     try:
                         if getattr(self, '_target_anexo_etapa1', None):
@@ -4228,13 +4291,13 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                         console.print(f"[dim]Documento principal: {best_doc.split('.pdf')[0][:40]}[/dim]")
                         console.print(f"[dim]Score: {results[0].get('rerank_score', 0):.2f}, Chunks en top-20: {source_chunk_count.get(best_doc, 1)}[/dim]")
 
-                    # PolÃ­tica de fuentes: excluir 'Listado Centrales' salvo queries de listado
+                    # Politica de fuentes: excluir documento de listado salvo queries de listado
                     try:
                         is_listing_query = self._is_listing_query(question)
                     except Exception:
                         is_listing_query = False
                     if not is_listing_query and selected_sources:
-                        selected_sources = [s for s in selected_sources if not (('listado' in s.lower()) and ('central' in s.lower()))]
+                        selected_sources = [s for s in selected_sources if 'listado' not in s.lower()]
                         if not selected_sources:
                             # Fallback si filtrÃ³ todo
                             selected_sources = [best_doc]
@@ -4264,12 +4327,12 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                         try:
                             ql = (question or '').lower()
                             ents_low = [e.lower() for e in entities]
-                            pt_like_ctx = bool(re.search(r"\bpt\s*_?\d+\b", ql)) or any(('pt' in e and any(ch.isdigit() for ch in e)) for e in ents_low) or ('protocolo tecnico' in ql) or ('protocolo de cammesa' in ql)
+                            pt_like_ctx = bool(re.search(r"\bpt\s*_?\d+\b", ql)) or any(('pt' in e and any(ch.isdigit() for ch in e)) for e in ents_low) or ('protocolo tecnico' in ql) 
                         except Exception:
                             pt_like_ctx = False
                         # Construir tÃ©rminos FUERTES: frases completas + tokens no genÃ©ricos
                         strong_terms = []
-                        ban_tokens = {'de','del','la','el','los','las','parque','central','planta','solar','fotovoltaico','fotovoltaica','eolico','eÃ³lico','eolica','eÃ³lica','ps','pe','p.s.','p.e.','oeste','este','norte','sur'}
+                        ban_tokens = {'de','del','la','el','los','las','solar','oeste','este','norte','sur'}
                         for ent in entities:
                             ent_l = ent.lower().strip()
                             if ent_l and ent_l not in strong_terms:
@@ -4348,16 +4411,16 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                         console.print(f"[dim]Total de fragmentos recuperados: {total_chunks}[/dim]")
                     
                     # Reordenar fuentes por relevancia: priorizar fuentes con evidencia numÃ©rica ligada a la entidad
-                    # NUNCA priorizar "Listado Centrales" salvo que sea una query de listado explÃ­cito
+                    # NUNCA priorizar documento de listado salvo que sea una query de listado explÃ­cito
                     def _source_score(src_name: str, chunks: list) -> float:
                         s = 0.0
                         name_l = (src_name or '').lower()
-                        # PENALIZAR Listado Centrales si NO es una query de listado
+                        # PENALIZAR documento de listado si NO es una query de listado
                         try:
                             is_listing_query = self._is_listing_query(question)
                         except Exception:
                             is_listing_query = False
-                        if ('listado' in name_l and 'central' in name_l) and not is_listing_query:
+                        if 'listado' in name_l and not is_listing_query:
                             s -= 3.0  # PenalizaciÃ³n fuerte para evitar priorizar listado en queries de detalle
                         # Bonus si hay nÃºmeros MW junto a la entidad
                         try:
@@ -4386,7 +4449,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                     except Exception:
                         _re_cat = None
                     def _is_numeric_q():
-                        return any(k in ql for k in ['potencia',' mw','cuantos','cuÃ¡ntos','cantidad','wtg']) and not any(k in ql for k in ['lista','listado'])
+                        return any(k in ql for k in ['cantidad','cuantos','total','numero']) and not any(k in ql for k in ['lista','listado'])
                     def _is_location_q():
                         return any(k in ql for k in ['donde','dÃ³nde','ubicaciÃ³n','ubicacion','coordenada','latitud','longitud'])
                     is_numeric = _is_numeric_q()
@@ -4490,7 +4553,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
             # Reordenar por pÃ¡gina si es LISTADO y hay Listado Centrales en resultados o scope explÃ­cito
             try:
                 if locals().get('is_listing_ctx', False) and results:
-                    listado_results = [r for r in results if ('listado' in r['metadata']['source'].lower() and 'central' in r['metadata']['source'].lower())]
+                    listado_results = [r for r in results if ('listado' in r['metadata']['source'].lower())]
                     # Si hay scope al Listado, usarlo
                     if scoped and locals().get('doc_scope', '').lower().replace(' ', '').endswith('listadocentrales.pdf'):
                         if listado_results:
@@ -4508,7 +4571,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                 for ent in entities:
                     # Elegir chunk con evidencia numÃ©rica/modelos si es posible
                     chosen = None
-                    evidence_words = ["aerogenerador", "aerogeneradores", " mw", "senvion", "3.6m114", "3.4m114", " 16", "dieciseis", "diecisÃ©is"]
+                    evidence_words = ["control", "controles", "framework", "requisito", "requisitos", "version", "estandar"]
                     for r in results_ordered:
                         txt = r['text'].lower()
                         src_full = r['metadata']['source']
@@ -4806,7 +4869,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                 except Exception:
                     pass
             if not answer:
-                # InyecciÃ³n de FOCUS detallado deshabilitada por defecto (evita secciones tipo "Cantidad de WTG")
+                # InyecciÃ³n de FOCUS detallado deshabilitada por defecto (evita secciones tipo "Cantidad de elementos")
                 try:
                     if is_detailed and (not self.flags.get('disable_structured_sections', True)):
                         try:
@@ -4923,7 +4986,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                             conv_context=conv_context or '',
                             detailed=is_detailed,
                             is_aggregation=is_aggregation,
-                            num_centrales=0,
+                            num_items=0,
                             is_conceptual=is_conceptual,
                             is_procedural=is_procedural,
                             is_direct_comparison=locals().get('is_direct_comparison', False),
@@ -5091,14 +5154,14 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                     entities = entities[:3]
         except Exception:
             pass
-        # DETECCI\u00d3N DE AN\u00c1FORAS: "este parque", "esa central", "el mismo", etc.
+        # DETECCION DE ANAFORAS: referencias sin nombre especifico
         # Si la consulta tiene referencias anaf\u00f3ricas sin nombre espec\u00edfico, reusar entidad del turno anterior
         try:
             ql_check = question.lower()
             anaphora_patterns = [
-                'este parque', 'ese parque', 'el parque', 'la central', 'esta central', 'esa central',
-                'este proyecto', 'ese proyecto', 'esta planta', 'esa planta', 'el mismo', 'la misma',
-                'lo mismo', 'dicho parque', 'dicha central', 'mencionado', 'anterior'
+                'este framework', 'ese framework', 'el framework', 'este control', 'esa politica', 'este documento',
+                'este estandar', 'ese estandar', 'el mismo', 'la misma',
+                'lo mismo', 'dicho documento', 'mencionado', 'anterior'
             ]
             has_anaphora = any(pat in ql_check for pat in anaphora_patterns)
                 
@@ -5111,10 +5174,10 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
         except Exception:
             pass
             
-        # Podar entidades d\u00e9biles/gen\u00e9ricas (ej.: 'en total', 'parque', 'solar', 'potencia', 'oeste')
+        # Podar entidades debiles/genericas
         try:
             weak_tokens = {
-                'en','total','parque','solar','fotovoltaico','fotovoltaica','potencia','mw','kw','de','del','la','el','los','las','oeste','este','norte','sur','central'
+                'en','total','solar','de','del','la','el','los','las','oeste','este','norte','sur'
             }
             def _is_weak_entity(ent: str) -> bool:
                 toks = [t for t in ent.lower().split() if t]
@@ -5206,7 +5269,7 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
                                 src_r = (r.get('metadata', {}) or {}).get('source', '')
                                 blob = (txt + ' ' + src_r).lower()
                                 if entity_canonical.lower() in blob and any(ch.isdigit() for ch in txt):
-                                    if any(k in txt.lower() for k in ['aerogenerador', 'aerogeneradores', 'wtg', 'turbina', 'turbinas', 'unidades', 'panel', 'paneles', 'mÃ³dulo', 'modulo']):
+                                    if any(k in txt.lower() for k in ['control', 'controles', 'framework', 'requisito', 'requisitos', 'version', 'estandar']):
                                         evidence = txt[:1200]
                                         break
                             if evidence and self._has_numeric_evidence(entity_canonical, results):
@@ -5381,57 +5444,51 @@ Puedes enseÃ±arme equivalencias de tÃ©rminos:
 
 
 def test_hybrid_rag():
-    """Test con pregunta de Loma Blanca 3"""
+    """Test con pregunta de ciberseguridad"""
     console.print(Panel.fit(
-        "[bold cyan]ðŸ§ª TEST: RAG HÃ­brido[/bold cyan]\n"
-        "Pregunta: Â¿CuÃ¡ntos aerogeneradores tiene Loma Blanca 3?",
+        "[bold cyan] TEST: RAG Hibrido[/bold cyan]\n"
+        "Pregunta: Cuantos controles tiene NIST CSF?",
         border_style="cyan"
     ))
     
     rag = HybridRAG()
     
     # Test question
-    question = "Â¿CuÃ¡ntos aerogeneradores tiene Loma Blanca 3?"
+    question = "Cuantos controles tiene NIST CSF?"
     
     # Probar diferentes balances
     for semantic_weight in [0.3, 0.5, 0.7]:
-        console.print(f"\n[bold yellow]â•â•â• Balance: SemÃ¡ntica {semantic_weight*100:.0f}% / Keyword {(1-semantic_weight)*100:.0f}% â•â•â•[/bold yellow]")
+        console.print(f"\n[bold yellow] Balance: Semantica {semantic_weight*100:.0f}% / Keyword {(1-semantic_weight)*100:.0f}% [/bold yellow]")
         
         result = rag.query(question, top_k=25, semantic_weight=semantic_weight, use_llm=False)
         
-        # Verificar si encontrÃ³ el chunk correcto
+        # Verificar si encontro el chunk correcto
         found_correct = False
         position = None
         
         for i, r in enumerate(result['results'], 1):
             text_lower = r['text'].lower()
-            if "loma blanca" in text_lower and ("iii" in text_lower or " 3" in text_lower):
-                if "16" in r['text'] or "diez y seis" in text_lower:
-                    found_correct = True
-                    position = i
-                    console.print(f"[bold green]OK: Chunk correcto encontrado en posiciÃ³n #{position}[/bold green]")
-                    console.print(f"   Score hÃ­brido: {r['hybrid_score']:.3f}")
-                    console.print(f"   Score semÃ¡ntico: {r['semantic_score']:.3f}")
-                    console.print(f"   Score keyword: {r['keyword_score']:.3f}")
-                    break
+            if "nist" in text_lower and "csf" in text_lower:
+                found_correct = True
+                position = i
+                console.print(f"[bold green]OK: Chunk correcto encontrado en posicion #{position}[/bold green]")
+                console.print(f"   Score hibrido: {r['hybrid_score']:.3f}")
+                console.print(f"   Score semantico: {r['semantic_score']:.3f}")
+                console.print(f"   Score keyword: {r['keyword_score']:.3f}")
+                break
         
         if not found_correct:
             console.print(f"[red]ERROR: Chunk correcto NO en top-25[/red]")
     
     # Generar respuesta con el mejor balance
-    console.print(f"\n[bold cyan]â•â•â• Generando Respuesta Final â•â•â•[/bold cyan]")
+    console.print(f"\n[bold cyan] Generando Respuesta Final [/bold cyan]")
     result = rag.query(question, top_k=30, semantic_weight=0.5)
     rag.display_result(result, show_details=True)
     
     # Validar
-    console.print(f"\n[bold cyan]ðŸ“Š ValidaciÃ³n:[/bold cyan]")
+    console.print(f"\n[bold cyan] Validacion:[/bold cyan]")
     if result['answer']:
-        answer_lower = result['answer'].lower()
-        if '16' in result['answer'] or 'diecisÃ©is' in answer_lower or 'diez y seis' in answer_lower:
-            console.print("[bold green]âœ… CORRECTO: Respuesta contiene 16 aerogeneradores[/bold green]")
-        else:
-            console.print("[bold yellow]PARCIAL: Respuesta generada pero sin el numero exacto[/bold yellow]")
-            console.print(f"[dim]Respuesta: {result['answer'][:200]}...[/dim]")
+        console.print(f"[dim]Respuesta: {result['answer'][:200]}...[/dim]")
     else:
         console.print("[yellow]Sin LLM activo[/yellow]")
 
@@ -5446,6 +5503,10 @@ if __name__ == "__main__":
             rag = HybridRAG()
             rag.interactive_mode()
         except Exception as e:
+            console.print(f"\n[bold red]ERROR: ERROR: {e}[/bold red]")
+            import traceback
+            traceback.print_exc()
+            sys.exit(1)
             console.print(f"\n[bold red]ERROR: ERROR: {e}[/bold red]")
             import traceback
             traceback.print_exc()

@@ -50,13 +50,28 @@ rag:
     deduplicate_lines: true
     max_answer_lines: 0  # 0 = sin límite (desactivado)
   heuristics_mode: balanced
+# LLM local (ADR-0007): modelo leido por HybridRAG / ModelProvider; no hardcodear en codigo.
+llm:
+  provider: ollama
+  model_name: mistral:7b
+  base_url: http://localhost:11434
+  num_gpu: 99
+
+# Kernel InfraPolus (Fase 1). enabled=false = monolito; true = Controller lineal.
+# No activar default=true hasta A/B vs BM-001 (EXP-001).
+kernel:
+  enabled: false
+  max_iterations: 12
+  max_llm_calls: 6
+
 vectordb:
   # NOTA: Renombrado de dominio electrico (crom_protocols_bge_m3) a ciberseguridad.
   # Requiere re-ejecutar build_rag_system.py / ingest_incremental.py para poblar la nueva coleccion.
   collection_name: cybersec_docs_bge_m3
   similarity_metric: cosine
   search_ef: 64
-  rebuild_on_build: true
+  # ADR Fase 0: no destruir el indice en cada build por defecto.
+  rebuild_on_build: false
   collection_name_bge: cybersec_docs_bge_m3
 
 reranker:

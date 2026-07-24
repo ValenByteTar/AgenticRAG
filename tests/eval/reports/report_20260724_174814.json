@@ -1,0 +1,1511 @@
+{
+  "timestamp": "20260724_174814",
+  "elapsed_s": 692.8,
+  "analysis": {
+    "summary": {
+      "total": 11,
+      "passed": 2,
+      "failed": 9,
+      "pass_rate": 0.182,
+      "answerable_pass_rate": 0.111,
+      "no_answer_pass_rate": 0.5,
+      "pass_retrieval_rate": 0.273,
+      "pass_groundedness_rate": 1.0,
+      "pass_generation_rate": 0.909,
+      "pass_hallucination_rate": 0.5,
+      "retrieval_doc_hit_rate": 0.111,
+      "retrieval_page_hit_rate": 0.111,
+      "recall_at_1": 0.111,
+      "recall_at_3": 0.111,
+      "recall_at_5": 0.111,
+      "avg_recall": 0.028,
+      "avg_mrr": 0.111,
+      "avg_precision_at_k": 0.062,
+      "avg_keyword_score": 0.695,
+      "avg_citation_fidelity": null,
+      "retrieval_doc_miss_count": 8,
+      "retrieval_page_miss_count": 0,
+      "llm_kw_miss_count": 1,
+      "hallucination_count": 1,
+      "latency_avg_ms": 54413,
+      "latency_p50_ms": 43912,
+      "latency_p95_ms": 106002,
+      "latency_max_ms": 106002,
+      "timing_embed_avg_ms": null,
+      "timing_semantic_avg_ms": null,
+      "timing_bm25_avg_ms": null,
+      "timing_fusion_avg_ms": null,
+      "timing_rerank_avg_ms": null,
+      "timing_llm_avg_ms": null
+    },
+    "layer_pass_counts": {
+      "pass_retrieval": 3,
+      "pass_groundedness": 11,
+      "pass_generation": 10,
+      "pass_hallucination": 1
+    },
+    "top_problems": {
+      "retrieval_miss": 8,
+      "hallucination": 1,
+      "low_kw_score": 1,
+      "page_miss": 0,
+      "forbidden": 0
+    },
+    "rank_distribution": {
+      "1": 1
+    },
+    "by_category": {
+      "simple": {
+        "total": 3,
+        "passed": 0,
+        "retrieval_doc": 0,
+        "retrieval_page": 0,
+        "avg_recall": 0.0,
+        "avg_mrr": 0.0,
+        "avg_citation": null,
+        "avg_kw_score": 0.917
+      },
+      "multi_document": {
+        "total": 2,
+        "passed": 1,
+        "retrieval_doc": 1,
+        "retrieval_page": 1,
+        "avg_recall": 0.125,
+        "avg_mrr": 0.5,
+        "avg_citation": null,
+        "avg_kw_score": 0.607
+      },
+      "no_answer": {
+        "total": 2,
+        "passed": 1,
+        "retrieval_doc": 0,
+        "retrieval_page": 0,
+        "avg_recall": null,
+        "avg_mrr": null,
+        "avg_citation": null,
+        "avg_kw_score": 1.0
+      },
+      "ambiguous": {
+        "total": 2,
+        "passed": 0,
+        "retrieval_doc": 0,
+        "retrieval_page": 0,
+        "avg_recall": 0.0,
+        "avg_mrr": 0.0,
+        "avg_citation": null,
+        "avg_kw_score": 0.267
+      },
+      "complex": {
+        "total": 2,
+        "passed": 0,
+        "retrieval_doc": 0,
+        "retrieval_page": 0,
+        "avg_recall": 0.0,
+        "avg_mrr": 0.0,
+        "avg_citation": null,
+        "avg_kw_score": 0.575
+      }
+    },
+    "failed_cases": [
+      {
+        "id": 1,
+        "query": "Que es el NIST Cybersecurity Framework?",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      },
+      {
+        "id": 3,
+        "query": "Que significa CIA en ciberseguridad?",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      },
+      {
+        "id": 7,
+        "query": "Que es un SYN scan en Nmap?",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [
+          "kw_partial=0.75 missing=['port']"
+        ],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      },
+      {
+        "id": 21,
+        "query": "Compara los controles de acceso definidos por ISO 27001 y los requisitos de aute",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [
+          "kw_partial=0.50 missing=['access control', 'authentication']"
+        ],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      },
+      {
+        "id": 35,
+        "query": "Que CVE especifico fue usado en el ataque de SolarWinds SUNBURST reportado en 20",
+        "reasons": [
+          "hallucination_no_decline"
+        ],
+        "warnings": [],
+        "pass_retrieval": true,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": false
+      },
+      {
+        "id": 41,
+        "query": "Que es un framework de seguridad?",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [
+          "kw_partial=0.33 missing=['marco', 'security', 'control', 'control']"
+        ],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      },
+      {
+        "id": 45,
+        "query": "Como audito el sistema?",
+        "reasons": [
+          "retrieval_doc_miss",
+          "kw_score=0.20<0.3 missing=['auditoria', 'iso 27001', 'checklist', 'lista de verificacion']"
+        ],
+        "warnings": [],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": false,
+        "pass_hallucination": true
+      },
+      {
+        "id": 51,
+        "query": "Explica en detalle como implementar un programa de gobierno de seguridad de la i",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [
+          "kw_partial=0.40 missing=['governance', 'risk', 'kpi']"
+        ],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      },
+      {
+        "id": 55,
+        "query": "Analiza las principales vulnerabilidades de Microsoft documentadas en el reporte",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [
+          "kw_partial=0.75 missing=['vulnerability']"
+        ],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": 1,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Que es el NIST Cybersecurity Framework?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [
+          "nist",
+          "framework",
+          "cybersecurity"
+        ],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "El NIST Cybersecurity Framework (NIST-CSF) es un marco de seguridad creado a través de una colaboración entre la industria y el gobierno, que proporciona orientaciones prioritarias, flexibles, basadas en riesgos y voluntarias para ayudar a las organizaciones a mejor entender, administrar y comunicar",
+      "sources_returned": [
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 15,
+          "score": 0.8396
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 2,
+          "score": 0.815
+        },
+        {
+          "name": "Reporting Cyber Risk to Boards.pdf",
+          "page": 8,
+          "score": 0.7832
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 19,
+          "score": 0.7383
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 1,
+          "score": 0.7372
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 16,
+          "score": 0.6891
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 14,
+          "score": 0.6159
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 3,
+          "score": 0.5523
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 12,
+          "score": 0.5462
+        }
+      ],
+      "latency_ms": 51904,
+      "timing_breakdown": {
+        "cap_classify_ms": 12.1,
+        "cap_memory_read_ms": 23.5,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 10450.9,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 4.2,
+        "cap_generation_ms": 17835.4,
+        "cap_verify_ms": 1.0,
+        "t_total_s": 51.868
+      }
+    },
+    {
+      "id": 3,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Que significa CIA en ciberseguridad?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "En el contexto de la seguridad cibernética, CIA se refiere a Confidentiality, Integrity y Availability. Estos son los tres pilares principales de la seguridad informática que garantizan que la información es protegida contra accesos no autorizados (Confidentiality), que su integridad está intacta (I",
+      "sources_returned": [
+        {
+          "name": "2022 Data Breach Investigations Report.pdf",
+          "page": 18,
+          "score": 0.3719
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 93,
+          "score": 0.1945
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 39,
+          "score": 0.192
+        },
+        {
+          "name": "Reporting Cyber Risk to Boards.pdf",
+          "page": 8,
+          "score": 0.1902
+        },
+        {
+          "name": "ENISA Data Sharing Report.pdf",
+          "page": 34,
+          "score": 0.19
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 125,
+          "score": 0.1886
+        },
+        {
+          "name": "Info_Tech_2025_Security_Trend_Report_Storyboard_Future_Proof_the.pdf",
+          "page": 15,
+          "score": 0.1862
+        },
+        {
+          "name": "Davos report on Global Cybersecurity for 2023.pdf",
+          "page": 26,
+          "score": 0.1852
+        },
+        {
+          "name": "Global Cybersecurity Outlook 2023 INSIGHT REPORT.pdf",
+          "page": 26,
+          "score": 0.1852
+        },
+        {
+          "name": "ENISA Data Sharing Report.pdf",
+          "page": 2,
+          "score": 0.1848
+        }
+      ],
+      "latency_ms": 27381,
+      "timing_breakdown": {
+        "cap_classify_ms": 8.4,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 4930.4,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.6,
+        "cap_generation_ms": 9482.7,
+        "cap_verify_ms": 1.1,
+        "t_total_s": 27.374
+      }
+    },
+    {
+      "id": 7,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Que es un SYN scan en Nmap?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [
+        "kw_partial=0.75 missing=['port']"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.75,
+        "present": [
+          "syn",
+          "scan",
+          "nmap"
+        ],
+        "missing": [
+          "port"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Un SYN scan en Nmap es un tipo de escaneo de red que se utiliza para determinar si un puerto TCP en una determinada máquina está abierto o cerrado. En este tipo de escaneo, el programa envía paquetes TCP SYN sin completar a los puertos especificados y espera la respuesta del servidor. Si el servidor",
+      "sources_returned": [
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 35,
+          "score": 0.3071
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 35,
+          "score": 0.2384
+        },
+        {
+          "name": "2023 THREAT DETECTiON REPORT.pdf",
+          "page": 37,
+          "score": 0.2182
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 67,
+          "score": 0.1721
+        },
+        {
+          "name": "2023 Pen Testing Report.pdf",
+          "page": 29,
+          "score": 0.1604
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 103,
+          "score": 0.159
+        },
+        {
+          "name": "2022 MANDIANT SPECIAL REPORT.pdf",
+          "page": 28,
+          "score": 0.156
+        },
+        {
+          "name": "2022 MANDIANT SPECIAL REPORT.pdf",
+          "page": 52,
+          "score": 0.1551
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 82,
+          "score": 0.1547
+        }
+      ],
+      "latency_ms": 36757,
+      "timing_breakdown": {
+        "cap_classify_ms": 5.6,
+        "cap_memory_read_ms": 1.4,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 3888.6,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 2.0,
+        "cap_generation_ms": 15741.1,
+        "cap_verify_ms": 1.1,
+        "t_total_s": 36.752
+      }
+    },
+    {
+      "id": 21,
+      "category": "multi_document",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Compara los controles de acceso definidos por ISO 27001 y los requisitos de autenticacion de PCI DSS.",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [
+        "kw_partial=0.50 missing=['access control', 'authentication']"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.5,
+        "present": [
+          "iso 27001",
+          "pci"
+        ],
+        "missing": [
+          "access control",
+          "authentication"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Los controles de acceso definidos por la norma ISO 27001 se enfocan en garantizar que solo las personas autorizadas tienen acceso a los recursos informáticos y datos confidenciales, mediante el uso de medidas como contraseñas, tarjetas de acceso, biometría, etc. Esto incluye la verificación de ident",
+      "sources_returned": [
+        {
+          "name": "Bulletproof State of Cyber Security Report 2023.pdf",
+          "page": 23,
+          "score": 0.6913
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 3,
+          "score": 0.6835
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 24,
+          "score": 0.6001
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 38,
+          "score": 0.596
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 50,
+          "score": 0.5812
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 10,
+          "score": 0.5743
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 4,
+          "score": 0.573
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 28,
+          "score": 0.5726
+        },
+        {
+          "name": "PCI_DSS_v4_x_Report_on_Compliance_Template_Frequently_Asked_Questions.pdf",
+          "page": 5,
+          "score": 0.5648
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 5,
+          "score": 0.5621
+        }
+      ],
+      "latency_ms": 71849,
+      "timing_breakdown": {
+        "cap_classify_ms": 6.3,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 0.5,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 7432.3,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.6,
+        "cap_generation_ms": 27545.8,
+        "cap_verify_ms": 1.1,
+        "t_total_s": 71.842
+      }
+    },
+    {
+      "id": 24,
+      "category": "multi_document",
+      "difficulty": "high",
+      "is_answerable": true,
+      "query": "Explica como el NIST RMF se relaciona con los controles de ISO 27001 y el gobierno de TI en COBIT.",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [
+        "recall=0.25 (multi-doc incompleto)",
+        "kw_partial=0.71 missing=['governance', 'gobernanza']"
+      ],
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.25,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.556,
+        "matched": [
+          {
+            "source": "ISO 27001 Initial Assessment Report.pdf",
+            "page": 3,
+            "score": 0.6417,
+            "rank": 1
+          },
+          {
+            "source": "ISO 27001 Initial Assessment Report.pdf",
+            "page": 45,
+            "score": 0.5704,
+            "rank": 3
+          },
+          {
+            "source": "ISO 27001 Initial Assessment Report.pdf",
+            "page": 18,
+            "score": 0.5536,
+            "rank": 4
+          },
+          {
+            "source": "ISO 27001 Initial Assessment Report.pdf",
+            "page": 47,
+            "score": 0.5509,
+            "rank": 5
+          },
+          {
+            "source": "ISO 27001 Initial Assessment Report.pdf",
+            "page": 34,
+            "score": 0.5455,
+            "rank": 8
+          }
+        ],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.714,
+        "present": [
+          "nist",
+          "iso 27001",
+          "cobit",
+          "risk management",
+          "gestion de riesgos"
+        ],
+        "missing": [
+          "governance",
+          "gobernanza"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "El NIST Risk Management Framework (RMF) se relaciona con los controles de ISO 27001 y el gobierno de TI en COBIT (Control Objectives for Information and Related Technologies) a través del manejo de riesgos en información y tecnologías de la información. El NIST RMF es un marco para gestionar los rie",
+      "sources_returned": [
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 3,
+          "score": 0.6417
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 95,
+          "score": 0.5842
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 45,
+          "score": 0.5704
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 18,
+          "score": 0.5536
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 47,
+          "score": 0.5509
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 4,
+          "score": 0.5503
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 37,
+          "score": 0.5484
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 34,
+          "score": 0.5455
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 92,
+          "score": 0.5379
+        }
+      ],
+      "latency_ms": 92509,
+      "timing_breakdown": {
+        "cap_classify_ms": 8.5,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 8236.7,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.1,
+        "cap_generation_ms": 41040.3,
+        "cap_verify_ms": 1.1,
+        "t_total_s": 92.503
+      }
+    },
+    {
+      "id": 31,
+      "category": "no_answer",
+      "difficulty": "low",
+      "is_answerable": false,
+      "query": "Cual es el precio de la certificacion CISSP en Argentina en 2024?",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": null,
+        "hit_page": null,
+        "recall": null,
+        "first_relevant_rank": null,
+        "mrr": null,
+        "precision_at_k": null,
+        "matched": [],
+        "skipped": true
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": true,
+        "declined": true,
+        "hallucinated": false,
+        "pass": true
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "No se encontro informacion en los documentos para esa consulta.",
+      "sources_returned": [
+        {
+          "name": "Bulletproof State of Cyber Security Report 2023.pdf",
+          "page": 23,
+          "score": 0.277
+        },
+        {
+          "name": "WEF_Global_Risks_Report_2023.pdf",
+          "page": 40,
+          "score": 0.2006
+        },
+        {
+          "name": "WEF_Global_Risks_Report_2023.pdf",
+          "page": 64,
+          "score": 0.1749
+        },
+        {
+          "name": "The_Myths_of_Training_Cybersecurity_Professionals_Omdia_Report.pdf",
+          "page": 6,
+          "score": 0.1725
+        },
+        {
+          "name": "Info_Tech_2025_Security_Trend_Report_Storyboard_Future_Proof_the.pdf",
+          "page": 30,
+          "score": 0.1701
+        },
+        {
+          "name": "The_Myths_of_Training_Cybersecurity_Professionals_Omdia_Report.pdf",
+          "page": 7,
+          "score": 0.1649
+        },
+        {
+          "name": "ISO 27001 Initial Assessment Report.pdf",
+          "page": 22,
+          "score": 0.1649
+        },
+        {
+          "name": "WEF_Global_Risks_Report_2023.pdf",
+          "page": 24,
+          "score": 0.1624
+        },
+        {
+          "name": "The_Myths_of_Training_Cybersecurity_Professionals_Omdia_Report.pdf",
+          "page": 12,
+          "score": 0.1601
+        },
+        {
+          "name": "The_Myths_of_Training_Cybersecurity_Professionals_Omdia_Report.pdf",
+          "page": 3,
+          "score": 0.1565
+        }
+      ],
+      "latency_ms": 5918,
+      "timing_breakdown": {
+        "cap_classify_ms": 6.1,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 5903.0,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.0,
+        "t_total_s": 5.913
+      }
+    },
+    {
+      "id": 35,
+      "category": "no_answer",
+      "difficulty": "high",
+      "is_answerable": false,
+      "query": "Que CVE especifico fue usado en el ataque de SolarWinds SUNBURST reportado en 2021?",
+      "passed": false,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": false,
+      "failure_reasons": [
+        "hallucination_no_decline"
+      ],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": null,
+        "hit_page": null,
+        "recall": null,
+        "first_relevant_rank": null,
+        "mrr": null,
+        "precision_at_k": null,
+        "matched": [],
+        "skipped": true
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": true,
+        "declined": false,
+        "hallucinated": false,
+        "pass": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "El CVE específico que se utilizó en el ataque de SolarWinds SUNBURST reportado en 2021 fue CVE-2020-10169. Este es un vulnerabilidad de inyección de código remoto (RCE) en la aplicación Orion Network Management Platform de SolarWinds, que fue explotada por los actores chinos para introducir malware ",
+      "sources_returned": [
+        {
+          "name": "2022 MANDIANT SPECIAL REPORT.pdf",
+          "page": 19,
+          "score": 0.8518
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 10,
+          "score": 0.523
+        },
+        {
+          "name": "2022 Data Breach Investigations Report.pdf",
+          "page": 89,
+          "score": 0.5184
+        },
+        {
+          "name": "Global Threat Report 2022 Report .pdf",
+          "page": 20,
+          "score": 0.4905
+        },
+        {
+          "name": "Global Threat Report 2022 Report .pdf",
+          "page": 17,
+          "score": 0.4879
+        },
+        {
+          "name": "Global Threat Report 2022 Report .pdf",
+          "page": 16,
+          "score": 0.4778
+        },
+        {
+          "name": "Global Threat Report 2022 Report .pdf",
+          "page": 23,
+          "score": 0.4731
+        },
+        {
+          "name": "CROWDSTRIKE 2023 GLOBAL THREAT REPORT.pdf",
+          "page": 28,
+          "score": 0.4705
+        }
+      ],
+      "latency_ms": 17167,
+      "timing_breakdown": {
+        "cap_classify_ms": 6.4,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 4444.8,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 3.5,
+        "cap_generation_ms": 12701.7,
+        "cap_verify_ms": 1.6,
+        "cap_finalize_turn_ms": 0.0,
+        "t_total_s": 17.161
+      }
+    },
+    {
+      "id": 41,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Que es un framework de seguridad?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [
+        "kw_partial=0.33 missing=['marco', 'security', 'control', 'control']"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.333,
+        "present": [
+          "framework",
+          "seguridad"
+        ],
+        "missing": [
+          "marco",
+          "security",
+          "control",
+          "control"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Un framework de seguridad es una estructura organizada que proporciona guías y herramientas para ayudar a las organizaciones a protegerse, detectar y responder a amenazas cibernéticas. Los frameworks de seguridad son diseñados para ser flexibles y adaptables a diferentes tipos de organizaciones y se",
+      "sources_returned": [
+        {
+          "name": "Global Threat Report 2022 Report .pdf",
+          "page": 2,
+          "score": 0.8746
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 2,
+          "score": 0.8253
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 4,
+          "score": 0.7914
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 3,
+          "score": 0.7717
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 9,
+          "score": 0.7581
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 10,
+          "score": 0.7573
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 1,
+          "score": 0.7399
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 5,
+          "score": 0.6816
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 6,
+          "score": 0.6496
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 8,
+          "score": 0.6646
+        }
+      ],
+      "latency_ms": 40132,
+      "timing_breakdown": {
+        "cap_classify_ms": 7.8,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 11003.4,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.0,
+        "cap_generation_ms": 12113.1,
+        "cap_verify_ms": 1.6,
+        "t_total_s": 40.125
+      }
+    },
+    {
+      "id": 45,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Como audito el sistema?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss",
+        "kw_score=0.20<0.3 missing=['auditoria', 'iso 27001', 'checklist', 'lista de verificacion']"
+      ],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.2,
+        "present": [
+          "audit"
+        ],
+        "missing": [
+          "auditoria",
+          "iso 27001",
+          "checklist",
+          "lista de verificacion"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "To audit the system, you should follow these steps: 1. Identify all the assets in your network, including hardware, software, and data. 2. Assess the current security posture of each asset by checking for any known vulnerabilities or misconfigurations that could be exploited by attackers. This can b",
+      "sources_returned": [
+        {
+          "name": "Global Threat Report 2022 Report .pdf",
+          "page": 2,
+          "score": 0.6247
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 2,
+          "score": 0.5753
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 4,
+          "score": 0.5414
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 3,
+          "score": 0.5218
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 9,
+          "score": 0.5082
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 10,
+          "score": 0.5073
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 1,
+          "score": 0.4899
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 5,
+          "score": 0.4316
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 6,
+          "score": 0.3997
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 8,
+          "score": 0.4147
+        }
+      ],
+      "latency_ms": 43912,
+      "timing_breakdown": {
+        "cap_classify_ms": 6.0,
+        "cap_memory_read_ms": 0.0,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 11265.5,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.1,
+        "cap_generation_ms": 32632.7,
+        "cap_verify_ms": 1.1,
+        "cap_finalize_turn_ms": 0.0,
+        "t_total_s": 43.906
+      }
+    },
+    {
+      "id": 51,
+      "category": "complex",
+      "difficulty": "high",
+      "is_answerable": true,
+      "query": "Explica en detalle como implementar un programa de gobierno de seguridad de la informacion segun CISM, incluyendo los dominios clave, los indicadores de rendimiento y la relacion con el riesgo corporativo.",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [
+        "kw_partial=0.40 missing=['governance', 'risk', 'kpi']"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.4,
+        "present": [
+          "cism",
+          "information security"
+        ],
+        "missing": [
+          "governance",
+          "risk",
+          "kpi"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Implementando un programa de gobierno de seguridad de la información (GSIC) según el CISM (Certified Information Security Manager), se enfoca en establecer una estructura organizativa, procesos y políticas para proteger los activos de información de una organización. A continuación, se detallan los ",
+      "sources_returned": [
+        {
+          "name": "Global Threat Report 2022 Report .pdf",
+          "page": 2,
+          "score": 0.6251
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 2,
+          "score": 0.5755
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 4,
+          "score": 0.5414
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 3,
+          "score": 0.5218
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 9,
+          "score": 0.5082
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 10,
+          "score": 0.5074
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 1,
+          "score": 0.49
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 5,
+          "score": 0.4317
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 6,
+          "score": 0.3997
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 8,
+          "score": 0.4148
+        }
+      ],
+      "latency_ms": 105017,
+      "timing_breakdown": {
+        "cap_classify_ms": 9.7,
+        "cap_memory_read_ms": 0.5,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 12090.1,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.6,
+        "cap_generation_ms": 44393.2,
+        "cap_verify_ms": 1.0,
+        "t_total_s": 105.011
+      }
+    },
+    {
+      "id": 55,
+      "category": "complex",
+      "difficulty": "high",
+      "is_answerable": true,
+      "query": "Analiza las principales vulnerabilidades de Microsoft documentadas en el reporte de 2022 y como afectan la postura de seguridad de una organizacion.",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [
+        "kw_partial=0.75 missing=['vulnerability']"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.75,
+        "present": [
+          "microsoft",
+          "2022",
+          "cve"
+        ],
+        "missing": [
+          "vulnerability"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Microsoft documentadas en el reporte de 2022: En el informe de 2022 sobre amenazas de ransomware, se mencionan varias vulnerabilidades en Microsoft que pueden afectar la posición de seguridad de una organización. Algunas de estas vulnerabilidades incluyen: 1. CVE-2017-11882: Una vulnerabilidad en Mi",
+      "sources_returned": [
+        {
+          "name": "Global Threat Report 2022 Report .pdf",
+          "page": 2,
+          "score": 0.8919
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 1,
+          "score": 0.7465
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 2,
+          "score": 0.827
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 3,
+          "score": 0.7733
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 4,
+          "score": 0.7919
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 5,
+          "score": 0.6941
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 6,
+          "score": 0.6513
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 8,
+          "score": 0.6661
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 9,
+          "score": 0.76
+        },
+        {
+          "name": "RANSOMWARE THREAT REPORT 2022.pdf",
+          "page": 10,
+          "score": 0.7608
+        }
+      ],
+      "latency_ms": 106002,
+      "timing_breakdown": {
+        "cap_classify_ms": 7.5,
+        "cap_memory_read_ms": 0.0,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 12380.0,
+        "cap_build_context_ms": 0.6,
+        "cap_assess_ms": 1.6,
+        "cap_generation_ms": 44600.6,
+        "cap_verify_ms": 1.5,
+        "t_total_s": 105.997
+      }
+    }
+  ]
+}

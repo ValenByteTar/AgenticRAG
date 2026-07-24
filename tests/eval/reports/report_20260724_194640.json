@@ -1,0 +1,1515 @@
+{
+  "timestamp": "20260724_194640",
+  "elapsed_s": 604.9,
+  "analysis": {
+    "summary": {
+      "total": 11,
+      "passed": 6,
+      "failed": 5,
+      "pass_rate": 0.545,
+      "answerable_pass_rate": 0.444,
+      "no_answer_pass_rate": 1.0,
+      "pass_retrieval_rate": 0.545,
+      "pass_groundedness_rate": 1.0,
+      "pass_generation_rate": 1.0,
+      "pass_hallucination_rate": 1.0,
+      "retrieval_doc_hit_rate": 0.444,
+      "retrieval_page_hit_rate": 0.333,
+      "recall_at_1": 0.222,
+      "recall_at_3": 0.222,
+      "recall_at_5": 0.222,
+      "avg_recall": 0.259,
+      "avg_mrr": 0.246,
+      "avg_precision_at_k": 0.136,
+      "avg_keyword_score": 0.706,
+      "avg_citation_fidelity": null,
+      "retrieval_doc_miss_count": 5,
+      "retrieval_page_miss_count": 1,
+      "llm_kw_miss_count": 0,
+      "hallucination_count": 0,
+      "latency_avg_ms": 46194,
+      "latency_p50_ms": 42765,
+      "latency_p95_ms": 109525,
+      "latency_max_ms": 109525,
+      "timing_embed_avg_ms": null,
+      "timing_semantic_avg_ms": null,
+      "timing_bm25_avg_ms": null,
+      "timing_fusion_avg_ms": null,
+      "timing_rerank_avg_ms": null,
+      "timing_llm_avg_ms": null
+    },
+    "layer_pass_counts": {
+      "pass_retrieval": 6,
+      "pass_groundedness": 11,
+      "pass_generation": 11,
+      "pass_hallucination": 2
+    },
+    "top_problems": {
+      "retrieval_miss": 5,
+      "page_miss": 1,
+      "hallucination": 0,
+      "low_kw_score": 0,
+      "forbidden": 0
+    },
+    "rank_distribution": {
+      "10": 1,
+      "9": 1,
+      "1": 2
+    },
+    "by_category": {
+      "simple": {
+        "total": 3,
+        "passed": 3,
+        "retrieval_doc": 3,
+        "retrieval_page": 3,
+        "avg_recall": 0.611,
+        "avg_mrr": 0.404,
+        "avg_citation": null,
+        "avg_kw_score": 0.917
+      },
+      "multi_document": {
+        "total": 2,
+        "passed": 0,
+        "retrieval_doc": 0,
+        "retrieval_page": 0,
+        "avg_recall": 0.0,
+        "avg_mrr": 0.0,
+        "avg_citation": null,
+        "avg_kw_score": 0.607
+      },
+      "no_answer": {
+        "total": 2,
+        "passed": 2,
+        "retrieval_doc": 0,
+        "retrieval_page": 0,
+        "avg_recall": null,
+        "avg_mrr": null,
+        "avg_citation": null,
+        "avg_kw_score": 1.0
+      },
+      "ambiguous": {
+        "total": 2,
+        "passed": 1,
+        "retrieval_doc": 1,
+        "retrieval_page": 0,
+        "avg_recall": 0.25,
+        "avg_mrr": 0.5,
+        "avg_citation": null,
+        "avg_kw_score": 0.45
+      },
+      "complex": {
+        "total": 2,
+        "passed": 0,
+        "retrieval_doc": 0,
+        "retrieval_page": 0,
+        "avg_recall": 0.0,
+        "avg_mrr": 0.0,
+        "avg_citation": null,
+        "avg_kw_score": 0.45
+      }
+    },
+    "failed_cases": [
+      {
+        "id": 21,
+        "query": "Compara los controles de acceso definidos por ISO 27001 y los requisitos de aute",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [
+          "kw_partial=0.50 missing=['access control', 'authentication']"
+        ],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      },
+      {
+        "id": 24,
+        "query": "Explica como el NIST RMF se relaciona con los controles de ISO 27001 y el gobier",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [
+          "kw_partial=0.71 missing=['gestion de riesgos', 'gobernanza']"
+        ],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      },
+      {
+        "id": 45,
+        "query": "Como audito el sistema?",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [
+          "kw_partial=0.40 missing=['iso 27001', 'checklist', 'lista de verificacion']"
+        ],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      },
+      {
+        "id": 51,
+        "query": "Explica en detalle como implementar un programa de gobierno de seguridad de la i",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [
+          "kw_partial=0.40 missing=['governance', 'risk', 'kpi']"
+        ],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      },
+      {
+        "id": 55,
+        "query": "Analiza las principales vulnerabilidades de Microsoft documentadas en el reporte",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [
+          "kw_partial=0.50 missing=['vulnerability', 'cve']"
+        ],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": 1,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Que es el NIST Cybersecurity Framework?",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [
+        "recall=0.33 (multi-doc incompleto)"
+      ],
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.333,
+        "first_relevant_rank": 10,
+        "mrr": 0.1,
+        "precision_at_k": 0.1,
+        "matched": [
+          {
+            "source": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+            "page": 6,
+            "score": 0.6077,
+            "rank": 10
+          }
+        ],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [
+          "nist",
+          "framework",
+          "cybersecurity"
+        ],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "El NIST Cybersecurity Framework (CSF) es una guía voluntaria para organizaciones de infraestructura crítica, tanto públicas como privadas, que fue creada por la Agencia Nacional de Tecnología e Innovación (NIST) en los Estados Unidos. Su principal objetivo es proporcionar \"una taxonomía común y un m",
+      "sources_returned": [
+        {
+          "name": "Cyber Security Basics for SMALL BUSINESS.pdf",
+          "page": 3,
+          "score": 0.8862
+        },
+        {
+          "name": "CYBERSECURITY BASICS.pdf",
+          "page": 3,
+          "score": 0.8862
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 15,
+          "score": 0.8804
+        },
+        {
+          "name": "IoT Security Guide .pdf",
+          "page": 107,
+          "score": 0.8801
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 18,
+          "score": 0.8522
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 18,
+          "score": 0.8522
+        },
+        {
+          "name": "Getting_Started_with_Cybersecurity_Risk_Management_Ransomware.pdf",
+          "page": 1,
+          "score": 0.8396
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 59,
+          "score": 0.8378
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 14,
+          "score": 0.8306
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 6,
+          "score": 0.6077
+        }
+      ],
+      "latency_ms": 63639,
+      "timing_breakdown": {
+        "cap_classify_ms": 10.6,
+        "cap_memory_read_ms": 23.1,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 9519.5,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 4.8,
+        "cap_generation_ms": 20222.2,
+        "cap_verify_ms": 1.1,
+        "t_total_s": 63.602
+      }
+    },
+    {
+      "id": 3,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Que significa CIA en ciberseguridad?",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [
+        "recall=0.50 (multi-doc incompleto)"
+      ],
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.5,
+        "first_relevant_rank": 9,
+        "mrr": 0.111,
+        "precision_at_k": 0.2,
+        "matched": [
+          {
+            "source": "Introduction To Cybersecurity.pdf",
+            "page": 11,
+            "score": 0.6113,
+            "rank": 9
+          },
+          {
+            "source": "Hack The Cybersecurity Interview .pdf",
+            "page": 43,
+            "score": 0.6102,
+            "rank": 10
+          }
+        ],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "CIA en ciberseguridad significa Confidentiality, Integrity y Availability. Es un modelo de seguridad de información que proporciona una guía para proteger la privacidad, la exactitud y la disponibilidad de los datos de una organización. * Confidentiality (confidencialidad) se refiere a la privacidad",
+      "sources_returned": [
+        {
+          "name": "Cybersecurity Career Master Plan.pdf",
+          "page": 264,
+          "score": 0.8308
+        },
+        {
+          "name": "AWS Security .pdf",
+          "page": 52,
+          "score": 0.7947
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 14,
+          "score": 0.7688
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 14,
+          "score": 0.7688
+        },
+        {
+          "name": "CYBERSECURITY TERMS TO KNOW IN 2024.pdf",
+          "page": 14,
+          "score": 0.6877
+        },
+        {
+          "name": "Cybersecurity Career Master Plan.pdf",
+          "page": 27,
+          "score": 0.6571
+        },
+        {
+          "name": "CISSP Exam Study Guide.pdf",
+          "page": 8,
+          "score": 0.6279
+        },
+        {
+          "name": "Introduction To Cyber Security.pdf",
+          "page": 11,
+          "score": 0.6113
+        },
+        {
+          "name": "Introduction To Cybersecurity.pdf",
+          "page": 11,
+          "score": 0.6113
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 43,
+          "score": 0.6102
+        }
+      ],
+      "latency_ms": 35925,
+      "timing_breakdown": {
+        "cap_classify_ms": 6.0,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 4714.0,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.1,
+        "cap_generation_ms": 14900.4,
+        "cap_verify_ms": 1.1,
+        "t_total_s": 35.92
+      }
+    },
+    {
+      "id": 7,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Que es un SYN scan en Nmap?",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [
+        "kw_partial=0.75 missing=['port']"
+      ],
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 1.0,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.625,
+        "matched": [
+          {
+            "source": "Nmap_Network_Exploration_and_Security_Auditing_Cookbook_Third_Edition.pdf",
+            "page": 83,
+            "score": 0.8609,
+            "rank": 1
+          },
+          {
+            "source": "Nmap_Network_Exploration_and_Security_Auditing_Cookbook_Third_Edition.pdf",
+            "page": 82,
+            "score": 0.8553,
+            "rank": 2
+          },
+          {
+            "source": "Blue Team Cheat Sheet.pdf",
+            "page": 35,
+            "score": 0.8312,
+            "rank": 4
+          },
+          {
+            "source": "Nmap_Network_Exploration_and_Security_Auditing_Cookbook_Third_Edition.pdf",
+            "page": 35,
+            "score": 0.8187,
+            "rank": 5
+          },
+          {
+            "source": "Nmap_Network_Exploration_and_Security_Auditing_Cookbook_Third_Edition.pdf",
+            "page": 39,
+            "score": 0.6089,
+            "rank": 7
+          }
+        ],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.75,
+        "present": [
+          "syn",
+          "scan",
+          "nmap"
+        ],
+        "missing": [
+          "port"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Un SYN scan en Nmap es una técnica de escaneo de puertos que se utiliza para determinar el estado de los puertos abiertos en un host. En lugar de completar la conexión TCP, como sucede en un TCP connect scan, un SYN scan envía paquetes TCP SYN sin completar la conexión, lo que permite a Nmap detecta",
+      "sources_returned": [
+        {
+          "name": "Nmap_Network_Exploration_and_Security_Auditing_Cookbook_Third_Edition.pdf",
+          "page": 83,
+          "score": 0.8609
+        },
+        {
+          "name": "Nmap_Network_Exploration_and_Security_Auditing_Cookbook_Third_Edition.pdf",
+          "page": 82,
+          "score": 0.8553
+        },
+        {
+          "name": "NMAP For Pentesters.pdf",
+          "page": 10,
+          "score": 0.8535
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 35,
+          "score": 0.8312
+        },
+        {
+          "name": "Nmap_Network_Exploration_and_Security_Auditing_Cookbook_Third_Edition.pdf",
+          "page": 35,
+          "score": 0.8187
+        },
+        {
+          "name": "Understanding Nmap Scan with Wireshark .pdf",
+          "page": 6,
+          "score": 0.8155
+        },
+        {
+          "name": "Nmap_Network_Exploration_and_Security_Auditing_Cookbook_Third_Edition.pdf",
+          "page": 39,
+          "score": 0.6089
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 568,
+          "score": 0.602
+        }
+      ],
+      "latency_ms": 19182,
+      "timing_breakdown": {
+        "cap_classify_ms": 6.0,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 3972.2,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.0,
+        "cap_generation_ms": 15194.9,
+        "cap_verify_ms": 1.1,
+        "cap_finalize_turn_ms": 0.0,
+        "t_total_s": 19.178
+      }
+    },
+    {
+      "id": 21,
+      "category": "multi_document",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Compara los controles de acceso definidos por ISO 27001 y los requisitos de autenticacion de PCI DSS.",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [
+        "kw_partial=0.50 missing=['access control', 'authentication']"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.5,
+        "present": [
+          "iso 27001",
+          "pci"
+        ],
+        "missing": [
+          "access control",
+          "authentication"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Acceso definidos por ISO 27001: Los controles de acceso definidos por el estándar ISO 27001 se enfocan en establecer políticas de seguridad para proteger la información confidencial, integral y disponible de una organización. Estos controles incluyen medidas para controlar el acceso a sistemas, rede",
+      "sources_returned": [
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 2,
+          "score": 0.8822
+        },
+        {
+          "name": "NMAP For Pentesters.pdf",
+          "page": 3,
+          "score": 0.6768
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 2,
+          "score": 0.6707
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 14,
+          "score": 0.6163
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 22,
+          "score": 0.588
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 3,
+          "score": 0.5664
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 3,
+          "score": 0.5583
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 8,
+          "score": 0.5136
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 23,
+          "score": 0.5047
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 4,
+          "score": 0.4888
+        }
+      ],
+      "latency_ms": 69414,
+      "timing_breakdown": {
+        "cap_classify_ms": 4.6,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 12935.7,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.1,
+        "cap_generation_ms": 29186.1,
+        "cap_verify_ms": 1.6,
+        "t_total_s": 69.409
+      }
+    },
+    {
+      "id": 24,
+      "category": "multi_document",
+      "difficulty": "high",
+      "is_answerable": true,
+      "query": "Explica como el NIST RMF se relaciona con los controles de ISO 27001 y el gobierno de TI en COBIT.",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [
+        "kw_partial=0.71 missing=['gestion de riesgos', 'gobernanza']"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.714,
+        "present": [
+          "nist",
+          "iso 27001",
+          "cobit",
+          "risk management",
+          "governance"
+        ],
+        "missing": [
+          "gestion de riesgos",
+          "gobernanza"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "The NIST Risk Management Framework (RMF) is a process that helps organizations manage cybersecurity risks by providing a structured approach to selecting, implementing, and assessing security controls. It is widely used in the United States government and private sector for managing information tech",
+      "sources_returned": [
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 2,
+          "score": 0.8822
+        },
+        {
+          "name": "NMAP For Pentesters.pdf",
+          "page": 3,
+          "score": 0.6768
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 2,
+          "score": 0.6707
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 14,
+          "score": 0.6159
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 22,
+          "score": 0.5879
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 3,
+          "score": 0.5664
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 3,
+          "score": 0.5583
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 8,
+          "score": 0.5135
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 23,
+          "score": 0.5045
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 4,
+          "score": 0.4888
+        }
+      ],
+      "latency_ms": 46654,
+      "timing_breakdown": {
+        "cap_classify_ms": 12.4,
+        "cap_memory_read_ms": 0.5,
+        "cap_planner_ms": 0.5,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 13992.7,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.6,
+        "cap_generation_ms": 32636.5,
+        "cap_verify_ms": 1.6,
+        "cap_finalize_turn_ms": 0.5,
+        "t_total_s": 46.647
+      }
+    },
+    {
+      "id": 31,
+      "category": "no_answer",
+      "difficulty": "low",
+      "is_answerable": false,
+      "query": "Cual es el precio de la certificacion CISSP en Argentina en 2024?",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": null,
+        "hit_page": null,
+        "recall": null,
+        "first_relevant_rank": null,
+        "mrr": null,
+        "precision_at_k": null,
+        "matched": [],
+        "skipped": true
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": true,
+        "declined": true,
+        "hallucinated": false,
+        "pass": true
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "No se encontro informacion en los documentos para esa consulta.",
+      "sources_returned": [
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 4,
+          "score": 0.6326
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 2,
+          "score": 0.6323
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 2,
+          "score": 0.4208
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 14,
+          "score": 0.366
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 22,
+          "score": 0.338
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 3,
+          "score": 0.3168
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 3,
+          "score": 0.3084
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 8,
+          "score": 0.2636
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 23,
+          "score": 0.2545
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 4,
+          "score": 0.2392
+        }
+      ],
+      "latency_ms": 13818,
+      "timing_breakdown": {
+        "cap_classify_ms": 11.5,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 13789.8,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 3.5,
+        "t_total_s": 13.807
+      }
+    },
+    {
+      "id": 35,
+      "category": "no_answer",
+      "difficulty": "high",
+      "is_answerable": false,
+      "query": "Que CVE especifico fue usado en el ataque de SolarWinds SUNBURST reportado en 2021?",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": null,
+        "hit_page": null,
+        "recall": null,
+        "first_relevant_rank": null,
+        "mrr": null,
+        "precision_at_k": null,
+        "matched": [],
+        "skipped": true
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": true,
+        "declined": true,
+        "hallucinated": false,
+        "pass": true
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "No se encontro informacion en los documentos para esa consulta.",
+      "sources_returned": [
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 4,
+          "score": 0.6325
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 2,
+          "score": 0.6324
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 2,
+          "score": 0.4208
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 14,
+          "score": 0.366
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 22,
+          "score": 0.338
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 3,
+          "score": 0.3165
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 3,
+          "score": 0.3094
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 8,
+          "score": 0.2637
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 23,
+          "score": 0.2545
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 4,
+          "score": 0.2389
+        }
+      ],
+      "latency_ms": 11737,
+      "timing_breakdown": {
+        "cap_classify_ms": 18.0,
+        "cap_memory_read_ms": 1.5,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 11704.1,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 0.5,
+        "t_total_s": 11.725
+      }
+    },
+    {
+      "id": 41,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Que es un framework de seguridad?",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [
+        "retrieval_page_miss",
+        "recall=0.50 (multi-doc incompleto)",
+        "kw_partial=0.50 missing=['marco', 'control', 'control']"
+      ],
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 0.5,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.3,
+        "matched": [
+          {
+            "source": "Blue Team Cheat Sheet.pdf",
+            "page": 4,
+            "score": 0.8824,
+            "rank": 1
+          },
+          {
+            "source": "Blue Team Cheat Sheet.pdf",
+            "page": 2,
+            "score": 0.6707,
+            "rank": 3
+          },
+          {
+            "source": "Blue Team Cheat Sheet.pdf",
+            "page": 3,
+            "score": 0.5583,
+            "rank": 7
+          }
+        ],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.5,
+        "present": [
+          "framework",
+          "security",
+          "seguridad"
+        ],
+        "missing": [
+          "marco",
+          "control",
+          "control"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Un framework de seguridad es una estructura organizada y modular que proporciona herramientas y guías para la implementación de medidas de seguridad en sistemas informáticos. Los frameworks de seguridad pueden ser utilizados para evaluar, diseñar, implementar y mantener medidas de seguridad en difer",
+      "sources_returned": [
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 4,
+          "score": 0.8824
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 2,
+          "score": 0.8822
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 2,
+          "score": 0.6707
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 14,
+          "score": 0.6159
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 22,
+          "score": 0.5879
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 3,
+          "score": 0.5665
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 3,
+          "score": 0.5583
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 8,
+          "score": 0.5135
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 23,
+          "score": 0.5044
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 4,
+          "score": 0.4888
+        }
+      ],
+      "latency_ms": 42765,
+      "timing_breakdown": {
+        "cap_classify_ms": 16.5,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 2.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 9056.3,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 2.6,
+        "cap_generation_ms": 13531.8,
+        "cap_verify_ms": 0.5,
+        "t_total_s": 42.746
+      }
+    },
+    {
+      "id": 45,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Como audito el sistema?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [
+        "kw_partial=0.40 missing=['iso 27001', 'checklist', 'lista de verificacion']"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.4,
+        "present": [
+          "audit",
+          "auditoria"
+        ],
+        "missing": [
+          "iso 27001",
+          "checklist",
+          "lista de verificacion"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Para auditar un sistema Linux, puedes utilizar herramientas como auditd (Audit Subsystem for Linux). Auditd es una herramienta de auditoría del sistema operativo Linux que permite registrar eventos de seguridad en archivos de registro. Esto puede ayudarte a detectar posibles intrusiones o actividad ",
+      "sources_returned": [
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 4,
+          "score": 0.8824
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 2,
+          "score": 0.8822
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 2,
+          "score": 0.6707
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 14,
+          "score": 0.6159
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 22,
+          "score": 0.5879
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 3,
+          "score": 0.5664
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 3,
+          "score": 0.5583
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 8,
+          "score": 0.5136
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 23,
+          "score": 0.5045
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 4,
+          "score": 0.4888
+        }
+      ],
+      "latency_ms": 59534,
+      "timing_breakdown": {
+        "cap_classify_ms": 6.1,
+        "cap_memory_read_ms": 1.5,
+        "cap_planner_ms": 0.6,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 9871.4,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.0,
+        "cap_generation_ms": 30661.9,
+        "cap_verify_ms": 0.5,
+        "t_total_s": 59.528
+      }
+    },
+    {
+      "id": 51,
+      "category": "complex",
+      "difficulty": "high",
+      "is_answerable": true,
+      "query": "Explica en detalle como implementar un programa de gobierno de seguridad de la informacion segun CISM, incluyendo los dominios clave, los indicadores de rendimiento y la relacion con el riesgo corporativo.",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [
+        "kw_partial=0.40 missing=['governance', 'risk', 'kpi']"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.4,
+        "present": [
+          "cism",
+          "information security"
+        ],
+        "missing": [
+          "governance",
+          "risk",
+          "kpi"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Implementando un programa de gobernanza de seguridad de la información (GSIC) según CISM (Certified Information Security Manager), implica establecer una estructura organizativa, procesos y políticas para proteger los activos informáticos de una organización. Los dominios clave en el GSIC incluyen: ",
+      "sources_returned": [
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 4,
+          "score": 0.8825
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 2,
+          "score": 0.8822
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 2,
+          "score": 0.6707
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 14,
+          "score": 0.6159
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 22,
+          "score": 0.5879
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 3,
+          "score": 0.5668
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 3,
+          "score": 0.5583
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 8,
+          "score": 0.5136
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 23,
+          "score": 0.5044
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 4,
+          "score": 0.4888
+        }
+      ],
+      "latency_ms": 109525,
+      "timing_breakdown": {
+        "cap_classify_ms": 12.8,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 0.5,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 14397.0,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.0,
+        "cap_generation_ms": 45461.9,
+        "cap_verify_ms": 1.2,
+        "t_total_s": 109.52
+      }
+    },
+    {
+      "id": 55,
+      "category": "complex",
+      "difficulty": "high",
+      "is_answerable": true,
+      "query": "Analiza las principales vulnerabilidades de Microsoft documentadas en el reporte de 2022 y como afectan la postura de seguridad de una organizacion.",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [
+        "kw_partial=0.50 missing=['vulnerability', 'cve']"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.5,
+        "present": [
+          "microsoft",
+          "2022"
+        ],
+        "missing": [
+          "vulnerability",
+          "cve"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "El libro \"Mastering Linux Security Hardening\" no menciona explícitamente vulnerabilidades de Microsoft documentadas en un reporte de 2022 ni cómo afectan la postura de seguridad de una organización. En cambio, el libro se enfoca en mejorar la seguridad de sistemas Linux mediante técnicas como Access",
+      "sources_returned": [
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 4,
+          "score": 0.8828
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 2,
+          "score": 0.8822
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 2,
+          "score": 0.6707
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 14,
+          "score": 0.6159
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 22,
+          "score": 0.5881
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 3,
+          "score": 0.5665
+        },
+        {
+          "name": "Blue Team Cheat Sheet.pdf",
+          "page": 3,
+          "score": 0.5586
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 8,
+          "score": 0.5136
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 23,
+          "score": 0.5044
+        },
+        {
+          "name": "Mastering Linux Security Hardening.pdf",
+          "page": 4,
+          "score": 0.4888
+        }
+      ],
+      "latency_ms": 35939,
+      "timing_breakdown": {
+        "cap_classify_ms": 8.9,
+        "cap_memory_read_ms": 2.5,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 14916.9,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.1,
+        "cap_generation_ms": 21000.5,
+        "cap_verify_ms": 0.5,
+        "cap_finalize_turn_ms": 0.0,
+        "t_total_s": 35.931
+      }
+    }
+  ]
+}
