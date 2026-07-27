@@ -60,16 +60,15 @@ def query_retrieval_only(question: str, top_k: int, semantic_weight: float) -> d
     rag = query_retrieval_only._rag
 
     t0 = time.time()
-    result = rag.query(
+    exec_res = rag.execute(
         question,
         top_k=top_k,
         semantic_weight=semantic_weight,
         use_llm=False,
-        entity_filter=True,
-        two_stage=True,
         stream=False,
         return_prerank=True,
     )
+    result = exec_res.to_query_result()
     latency_ms = round((time.time() - t0) * 1000)
 
     raw_results = result.get("results") or []

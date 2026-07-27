@@ -28,11 +28,12 @@ Estados: `Propuesto` | `Aceptado` | `Superseded-by-XXXX`
 | [0015](ADR-0015-knowledge-system.md) | Knowledge System (subsistema, no store) | Propuesto |
 | [0016](ADR-0016-definicion-kernel.md) | Definicion del Kernel | Propuesto |
 | [0017](ADR-0017-engineering-knowledge-system.md) | Engineering Knowledge System (EKS) dev-time | Aceptado |
+| [0018](ADR-0018-knowledge-builder-consumer-split.md) | Knowledge Builder / Consumer split con Artifact Registry | Aceptado |
 
 ## Decisiones diferidas (a proposito)
 
 - Planner (refactor cuando haya 2+ estrategias)
-- Esquema interno del Knowledge System
+- Esquema interno del Knowledge System (parcialmente concretado por ADR-0018: Knowledge Model, Layers, Warm Artifacts)
 - Taxonomia de memoria y politica de aprendizaje
 - Segunda implementacion del Controller (grafo/hibrido)
 - Multi-agente

@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-24",
-  "count": 17,
+  "generated": "2026-07-27",
+  "count": 23,
   "entries": [
     {
       "id": "BM-001",
@@ -109,6 +109,44 @@
       ],
       "related": [
         "ADR-0017"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-002",
+      "category": "decision",
+      "status": "accepted",
+      "title": "DEC-002 - Cierre Fase 1: camino kernel lineal detras de flag",
+      "path": "decisions/DEC-002-phase1-kernel-path-flag.md",
+      "created": "2026-07-23",
+      "updated": "2026-07-23",
+      "author": "cascade",
+      "components": [
+        "kernel",
+        "control",
+        "capabilities",
+        "policies",
+        "facade",
+        "evaluation"
+      ],
+      "tags": [
+        "phase1",
+        "close",
+        "kernel-enabled",
+        "parity",
+        "facade"
+      ],
+      "related": [
+        "ADR-0002",
+        "ADR-0003",
+        "ADR-0006",
+        "ADR-0009",
+        "ADR-0010",
+        "ADR-0013",
+        "ADR-0017",
+        "BM-001",
+        "EXP-001"
       ],
       "supersedes": null,
       "superseded_by": null
@@ -271,10 +309,16 @@
       "status": "accepted",
       "title": "DEC-008 — Fase 6: Planner determinista + Entity Expansion + Tunings",
       "path": "decisions/DEC-008-planner-expansion-tunings.md",
-      "created": "",
-      "updated": "",
-      "author": "",
-      "components": [],
+      "created": "2026-07-24",
+      "updated": "2026-07-24",
+      "author": "cascade",
+      "components": [
+        "planner",
+        "entity-expansion",
+        "retrieval",
+        "tuning",
+        "fase-6"
+      ],
       "tags": [
         "planner",
         "entity-expansion",
@@ -289,6 +333,112 @@
         "DEC-006",
         "DEC-007",
         "BM-002"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-009",
+      "category": "decision",
+      "status": "accepted",
+      "title": "DEC-009 - Taxonomia de metricas en dos niveles: producto vs ingenieria",
+      "path": "decisions/DEC-009-metricas-dos-niveles.md",
+      "created": "2026-07-27",
+      "updated": "2026-07-27",
+      "author": "human",
+      "components": [
+        "evaluation",
+        "metrics",
+        "product-gates",
+        "engineering-metrics"
+      ],
+      "tags": [
+        "metrics",
+        "evaluation",
+        "product-gates",
+        "engineering-metrics",
+        "retrieval-doc-miss",
+        "adr-0020"
+      ],
+      "related": [
+        "ADR-0006",
+        "ADR-0019",
+        "ADR-0020",
+        "BM-001",
+        "BM-002",
+        "BM-003"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-010",
+      "category": "decision",
+      "status": "accepted",
+      "title": "DEC-010 - Modo de entidades en retrieval: de filtro duro a boost acotado",
+      "path": "decisions/DEC-010-modo-entidades-retrieval.md",
+      "created": "2026-07-27",
+      "updated": "2026-07-27",
+      "author": "human",
+      "components": [
+        "retrieval",
+        "entity_filter",
+        "entity_mode",
+        "boost"
+      ],
+      "tags": [
+        "retrieval",
+        "entity_filter",
+        "entity_mode",
+        "boost",
+        "filter",
+        "adr-0020",
+        "bm-004"
+      ],
+      "related": [
+        "ADR-0020",
+        "DEC-009",
+        "BM-004"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "EXP-001",
+      "category": "experiment",
+      "status": "accepted",
+      "title": "EXP-001 - Paridad Kernel lineal vs HybridRAG.query",
+      "path": "experiments/EXP-001-kernel-linear-parity-scaffold.md",
+      "created": "2026-07-22",
+      "updated": "2026-07-23",
+      "author": "cascade",
+      "components": [
+        "kernel",
+        "control",
+        "capabilities",
+        "policies",
+        "facade",
+        "evaluation"
+      ],
+      "tags": [
+        "kernel",
+        "phase1",
+        "parity",
+        "query_via_kernel",
+        "linear-rag",
+        "assess",
+        "close"
+      ],
+      "related": [
+        "ADR-0002",
+        "ADR-0003",
+        "ADR-0006",
+        "ADR-0009",
+        "ADR-0010",
+        "ADR-0013",
+        "ADR-0017",
+        "BM-001",
+        "DEC-002"
       ],
       "supersedes": null,
       "superseded_by": null
@@ -471,41 +621,141 @@
     {
       "id": "RES-001",
       "category": "research",
-      "status": "draft",
-      "title": "RES-001 - Knowledge Builder / Knowledge Consumer split",
+      "status": "accepted",
+      "title": "RES-001 - El contrato Warm como centro arquitectonico",
       "path": "research/RES-001-knowledge-builder-consumer-split.md",
       "created": "2026-07-24",
-      "updated": "2026-07-24",
+      "updated": "2026-07-27",
       "author": "human",
       "components": [
-        "rag_hybrid",
-        "entity_extractor",
-        "doc_cards",
-        "equivalences_manager",
-        "conceptual_map",
-        "kernel",
-        "capabilities"
+        "contract",
+        "artifact-registry",
+        "warm-artifacts",
+        "cold-artifacts",
+        "hot-artifacts"
       ],
       "tags": [
         "architecture",
-        "index-time",
-        "query-time",
-        "agentic",
-        "llm",
-        "knowledge-builder",
-        "knowledge-consumer",
-        "heuristicas"
+        "contract",
+        "warm-artifacts",
+        "artifact-registry",
+        "publication-protocol",
+        "resolution-protocol",
+        "cold-warm-hot",
+        "confidence",
+        "predicate-catalog",
+        "builder-consumer-boundary"
       ],
       "related": [
+        "RES-002",
+        "RES-003",
         "ADR-0009",
         "ADR-0012",
         "ADR-0013",
         "ADR-0015",
         "ADR-0017",
+        "ADR-0018",
         "DEC-008",
         "BM-002",
         "BM-003",
         "EXP-006b"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-002",
+      "category": "research",
+      "status": "draft",
+      "title": "RES-002 - Knowledge Builder (Knowledge Compiler)",
+      "path": "research/RES-002-knowledge-builder-compiler.md",
+      "created": "2026-07-27",
+      "updated": "2026-07-27",
+      "author": "human",
+      "components": [
+        "knowledge_builder",
+        "kir",
+        "entity_extractor",
+        "doc_cards",
+        "equivalences_manager",
+        "conceptual_map"
+      ],
+      "tags": [
+        "architecture",
+        "index-time",
+        "knowledge-compiler",
+        "knowledge-ir",
+        "knowledge-pass",
+        "validation",
+        "knowledge-model",
+        "layers",
+        "codegen",
+        "confidence-policy",
+        "incremental-compilation"
+      ],
+      "related": [
+        "RES-001",
+        "RES-003",
+        "ADR-0015",
+        "ADR-0017",
+        "ADR-0018",
+        "DEC-008",
+        "BM-002",
+        "BM-003",
+        "BM-004"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-003",
+      "category": "research",
+      "status": "draft",
+      "title": "RES-003 - Knowledge Consumer / evolucion del Agentic RAG runtime",
+      "path": "research/RES-003-knowledge-consumer-llm-support.md",
+      "created": "2026-07-27",
+      "updated": "2026-07-27",
+      "author": "human",
+      "components": [
+        "kernel",
+        "capabilities",
+        "rag_hybrid",
+        "planner",
+        "retrieval",
+        "generation",
+        "verify",
+        "assess",
+        "llm_support"
+      ],
+      "tags": [
+        "architecture",
+        "query-time",
+        "knowledge-consumer",
+        "runtime-evolution",
+        "llm-support",
+        "observer",
+        "hypotheses",
+        "reactive",
+        "incremental",
+        "migration",
+        "warm-artifacts-consumption"
+      ],
+      "related": [
+        "RES-001",
+        "RES-002",
+        "ADR-0005",
+        "ADR-0006",
+        "ADR-0009",
+        "ADR-0012",
+        "ADR-0013",
+        "ADR-0015",
+        "ADR-0016",
+        "ADR-0019",
+        "ADR-0020",
+        "DEC-008",
+        "BM-002",
+        "BM-003",
+        "BM-004"
       ],
       "supersedes": null,
       "superseded_by": null

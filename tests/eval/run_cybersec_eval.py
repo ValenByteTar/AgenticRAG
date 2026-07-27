@@ -168,18 +168,17 @@ def _get_semantic_weight() -> float:
 
 
 def query_direct(question: str) -> dict:
-    """Llama a HybridRAG directamente sin pasar por HTTP."""
+    """Llama a HybridRAG.execute() directamente sin pasar por HTTP (ADR-0020)."""
     rag = _get_rag()
     t0 = time.time()
-    result = rag.query(
+    exec_res = rag.execute(
         question,
         top_k=10,
         semantic_weight=_get_semantic_weight(),
-        entity_filter=True,
-        two_stage=True,
         stream=False,
     )
     latency_ms = round((time.time() - t0) * 1000)
+    result = exec_res.to_query_result()
 
     # Mapear al formato que consume evaluate_case
     raw_results = result.get("results") or []
@@ -211,7 +210,75 @@ def query_direct(question: str) -> dict:
         "sources": sources,
         "latency_ms": latency_ms,
         "timing_breakdown": timing,
+        "execution_state": exec_res.execution_state,
     }
+
+
+def _print_retrieval_diag(question: str, expected_sources: list, sources_returned: list):
+    """Diagnostico de retrieval: imprime TOP-20 BM25, Vector y Fusion con doc/pagina/chunk."""
+    rag = _get_rag()
+    sw = _get_semantic_weight()
+    print(f"\n  === RETRIEVAL DIAG ===")
+    print(f"  Query: {question}")
+    print(f"  Expected: {expected_sources}")
+    print(f"  Returned: {[s['name'] for s in sources_returned]}")
+
+    try:
+        raw = rag.hybrid_search(question, top_k=20, semantic_weight=sw)
+    except Exception as e:
+        print(f"  ERROR hybrid_search: {e}")
+        return
+
+    if not raw:
+        print("  hybrid_search devolvio 0 resultados!")
+        return
+
+    print(f"\n  --- TOP-20 FUSION (hybrid_score) ---")
+    print(f"  {'Rk':>3}  {'Hybrid':>7}  {'Sem':>7}  {'BM25':>7}  {'Doc':<55} {'Pg':>4}  {'Chunk(80c)'}")
+    for rank, r in enumerate(raw[:20], 1):
+        meta = r.get("metadata", {}) or {}
+        doc = (meta.get("source", "?") or "?")[:55]
+        page = meta.get("page", 0)
+        hs = r.get("hybrid_score", 0)
+        ss = r.get("semantic_score", 0)
+        ks = r.get("keyword_score", 0)
+        chunk = (r.get("text", "") or "")[:80].replace("\n", " ")
+        print(f"  {rank:>3}  {hs:>7.4f}  {ss:>7.4f}  {ks:>7.4f}  {doc:<55} {page:>4}  {chunk}")
+
+    # TOP-20 por semantic_score
+    by_sem = sorted(raw, key=lambda x: x.get("semantic_score", 0), reverse=True)
+    print(f"\n  --- TOP-20 VECTOR (semantic_score) ---")
+    print(f"  {'Rk':>3}  {'Sem':>7}  {'Doc':<55} {'Pg':>4}")
+    for rank, r in enumerate(by_sem[:20], 1):
+        meta = r.get("metadata", {}) or {}
+        doc = (meta.get("source", "?") or "?")[:55]
+        page = meta.get("page", 0)
+        ss = r.get("semantic_score", 0)
+        print(f"  {rank:>3}  {ss:>7.4f}  {doc:<55} {page:>4}")
+
+    # TOP-20 por keyword_score
+    by_kw = sorted(raw, key=lambda x: x.get("keyword_score", 0), reverse=True)
+    print(f"\n  --- TOP-20 BM25 (keyword_score) ---")
+    print(f"  {'Rk':>3}  {'BM25':>7}  {'Doc':<55} {'Pg':>4}")
+    for rank, r in enumerate(by_kw[:20], 1):
+        meta = r.get("metadata", {}) or {}
+        doc = (meta.get("source", "?") or "?")[:55]
+        page = meta.get("page", 0)
+        ks = r.get("keyword_score", 0)
+        print(f"  {rank:>3}  {ks:>7.4f}  {doc:<55} {page:>4}")
+
+    # Check si expected sources aparecen en algun resultado
+    all_docs = set()
+    for r in raw:
+        src = (r.get("metadata", {}) or {}).get("source", "")
+        if src:
+            all_docs.add(src.lower())
+    for exp in expected_sources:
+        exp_low = exp.lower()
+        found = any(exp_low in d or d in exp_low for d in all_docs)
+        print(f"  Expected '{exp}' -> {'FOUND in pool' if found else 'NOT IN POOL'}")
+
+    print(f"  === END DIAG ===\n")
 
 
 def extract_citation_sources(answer: str) -> list:
@@ -372,8 +439,9 @@ def evaluate_case(question: dict, api_response: dict, tolerance: int,
                   kw_threshold: float = 0.3) -> dict:
     """
     kw_threshold: keyword_score minimo para no marcar fallo por keywords.
-    Por defecto 0.3 (umbral suave). Las keywords son metrica auxiliar;
-    el fallo duro solo ocurre si score < umbral O hay forbidden.
+    Metricas en dos niveles (DEC-009 / ADR-0020):
+      - Gates de producto: pass_groundedness, pass_generation, pass_hallucination.
+      - Metricas de ingenieria (diagnostico): pass_retrieval / retrieval_doc_miss son warnings.
     """
     answer = api_response.get("response", "")
     sources = api_response.get("sources", [])
@@ -399,27 +467,51 @@ def evaluate_case(question: dict, api_response: dict, tolerance: int,
     citation = validate_citation_fidelity(answer, sources)
 
     # -----------------------------------------------------------------------
-    # Veredictos independientes por capa
+    # Veredictos independientes por capa (DEC-009)
     # -----------------------------------------------------------------------
     failure_reasons = []
     warnings = []
 
-    # --- Retrieval ---
+    # --- Retrieval (Metrica de ingenieria / diagnostico, no gate duro) ---
     pass_retrieval = True
     if not retrieval.get("skipped") and question.get("is_answerable", True):
         if not retrieval["hit_doc"]:
-            pass_retrieval = False
-            failure_reasons.append("retrieval_doc_miss")
-        else:
-            if not retrieval["hit_page"]:
-                warnings.append("retrieval_page_miss")
-            if retrieval["recall"] < 1.0:
-                warnings.append(f"recall={retrieval['recall']:.2f} (multi-doc incompleto)")
+            warnings.append("retrieval_doc_miss")
+        if not retrieval["hit_page"]:
+            warnings.append("retrieval_page_miss")
+        if retrieval["recall"] < 1.0:
+            warnings.append(f"recall={retrieval['recall']:.2f} (multi-doc incompleto)")
 
-    # --- Groundedness (forbidden phrases) ---
+    # --- Groundedness & Claim Support (Gate de producto) ---
     pass_groundedness = resp_val["forbidden_pass"]
     if not pass_groundedness:
         failure_reasons.append(f"found_forbidden: {resp_val['found_forbidden']}")
+
+    from src.evaluation.verify_groundedness import VerifyGroundednessEvaluator
+    from src.kernel.state import LinearStateAdapter, ExecutionState
+
+    st = api_response.get("execution_state")
+    if not isinstance(st, ExecutionState):
+        st = LinearStateAdapter.build_state(question.get("query", ""), {
+            "answer": answer,
+            "sources": sources,
+            "timing_breakdown": timing_breakdown,
+        })
+
+    fidelity = st.metadata.get("state_fidelity", "partial")
+    verify_sig = None
+    if fidelity == "full":
+        verify_sig = st.latest_signal("verify")
+
+    if verify_sig is None:
+        evaluator = VerifyGroundednessEvaluator()
+        verify_sig = evaluator.evaluate(st)
+        if fidelity == "partial":
+            warnings.append("eval_mode: transitorio_partial_fidelity")
+
+    if verify_sig is not None and not verify_sig.passed:
+        pass_groundedness = False
+        failure_reasons.append(f"verify_failed: {verify_sig.reason}")
 
     # --- Generation (keyword score como metrica auxiliar) ---
     pass_generation = True
@@ -445,8 +537,8 @@ def evaluate_case(question: dict, api_response: dict, tolerance: int,
             if halluc["hallucinated"]:
                 failure_reasons.append("hallucination_forbidden_content")
 
-    # --- Overall: falla si cualquier capa falla ---
-    passed = pass_retrieval and pass_groundedness and pass_generation and pass_hallucination
+    # --- Overall: falla solo si falla algun gate de producto (DEC-009) ---
+    passed = pass_groundedness and pass_generation and pass_hallucination
 
     return {
         "id": question["id"],
@@ -472,6 +564,7 @@ def evaluate_case(question: dict, api_response: dict, tolerance: int,
         ],
         "latency_ms": latency,
         "timing_breakdown": timing_breakdown,
+        "state_fidelity": fidelity,
     }
 
 
@@ -978,6 +1071,17 @@ def run_eval(questions: list, tolerance: int,
                 print(f"           FAIL: {fr}")
         for w in result.get("warnings", [])[:1]:
             print(f"           WARN: {w}")
+
+        # Diagnostico de retrieval en FAIL por doc_miss (deshabilitado para run completo)
+        # if "retrieval_doc_miss" in result.get("failure_reasons", []) and not http_mode:
+        #     try:
+        #         _print_retrieval_diag(
+        #             q["query"],
+        #             q.get("expected_sources", []),
+        #             result.get("sources_returned", []),
+        #         )
+        #     except Exception as _diag_e:
+        #         print(f"           [diag error: {_diag_e}]")
 
         time.sleep(delay)
 

@@ -1,0 +1,321 @@
+{
+  "timestamp": "20260727_030205",
+  "elapsed_s": 253.8,
+  "analysis": {
+    "summary": {
+      "total": 2,
+      "passed": 1,
+      "failed": 1,
+      "pass_rate": 0.5,
+      "answerable_pass_rate": 0.5,
+      "no_answer_pass_rate": 0.0,
+      "pass_retrieval_rate": 0.5,
+      "pass_groundedness_rate": 1.0,
+      "pass_generation_rate": 1.0,
+      "pass_hallucination_rate": 0.0,
+      "retrieval_doc_hit_rate": 0.5,
+      "retrieval_page_hit_rate": 0.5,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "avg_recall": 0.167,
+      "avg_mrr": 0.071,
+      "avg_precision_at_k": 0.05,
+      "avg_keyword_score": 1.0,
+      "avg_citation_fidelity": null,
+      "retrieval_doc_miss_count": 1,
+      "retrieval_page_miss_count": 0,
+      "llm_kw_miss_count": 0,
+      "hallucination_count": 0,
+      "latency_avg_ms": 77964,
+      "latency_p50_ms": 91760,
+      "latency_p95_ms": 91760,
+      "latency_max_ms": 91760,
+      "timing_embed_avg_ms": null,
+      "timing_semantic_avg_ms": null,
+      "timing_bm25_avg_ms": null,
+      "timing_fusion_avg_ms": null,
+      "timing_rerank_avg_ms": null,
+      "timing_llm_avg_ms": null
+    },
+    "layer_pass_counts": {
+      "pass_retrieval": 1,
+      "pass_groundedness": 2,
+      "pass_generation": 2,
+      "pass_hallucination": 0
+    },
+    "top_problems": {
+      "retrieval_miss": 1,
+      "page_miss": 0,
+      "hallucination": 0,
+      "low_kw_score": 0,
+      "forbidden": 0
+    },
+    "rank_distribution": {
+      "7": 1
+    },
+    "by_category": {
+      "simple": {
+        "total": 2,
+        "passed": 1,
+        "retrieval_doc": 1,
+        "retrieval_page": 1,
+        "avg_recall": 0.167,
+        "avg_mrr": 0.071,
+        "avg_citation": null,
+        "avg_kw_score": 1.0
+      }
+    },
+    "failed_cases": [
+      {
+        "id": 13,
+        "query": "Que es SOAR en el contexto de un SOC?",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": 1,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Que es el NIST Cybersecurity Framework?",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [
+        "recall=0.33 (multi-doc incompleto)"
+      ],
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.333,
+        "first_relevant_rank": 7,
+        "mrr": 0.143,
+        "precision_at_k": 0.1,
+        "matched": [
+          {
+            "source": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+            "page": 6,
+            "score": 0.7877,
+            "rank": 7
+          }
+        ],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [
+          "nist",
+          "framework",
+          "cybersecurity"
+        ],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "El NIST Cybersecurity Framework (CSF) es un conjunto de guías y estándares publicados por la National Institute of Standards and Technology (NIST), una agencia no regulatoria del Departamento de Comercio de los Estados Unidos. Su objetivo es ayudar a las organizaciones a mejorar su postura cibersegu",
+      "sources_returned": [
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 18,
+          "score": 0.8439
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 18,
+          "score": 0.8439
+        },
+        {
+          "name": "Cyber Security Basics for SMALL BUSINESS.pdf",
+          "page": 3,
+          "score": 0.8435
+        },
+        {
+          "name": "CYBERSECURITY BASICS.pdf",
+          "page": 3,
+          "score": 0.8435
+        },
+        {
+          "name": "IoT Security Guide .pdf",
+          "page": 107,
+          "score": 0.8358
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 15,
+          "score": 0.8153
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 6,
+          "score": 0.7877
+        },
+        {
+          "name": "Getting_Started_with_Cybersecurity_Risk_Management_Ransomware.pdf",
+          "page": 1,
+          "score": 0.7783
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 59,
+          "score": 0.7759
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 14,
+          "score": 0.7675
+        }
+      ],
+      "latency_ms": 64167,
+      "timing_breakdown": {
+        "cap_classify_ms": 11.0,
+        "cap_memory_read_ms": 1.1,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 9915.1,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 5.8,
+        "cap_generation_ms": 54182.2,
+        "cap_verify_ms": 5.8,
+        "cap_finalize_turn_ms": 0.0,
+        "t_total_s": 64.122
+      }
+    },
+    {
+      "id": 13,
+      "category": "simple",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Que es SOAR en el contexto de un SOC?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [
+          "soar",
+          "automation",
+          "orchestration",
+          "response"
+        ],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "En el contexto de un centro de operaciones de seguridad (SOC), SOAR significa Security Operations Automation and Response. Sin embargo, no se menciona explícitamente que SOAR sea una abreviatura de Security Orchestration, Automation and Response en los documentos proporcionados. La información sobre",
+      "sources_returned": [
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 2,
+          "score": 0.9496
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 16,
+          "score": 0.9454
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 8,
+          "score": 0.8574
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 3,
+          "score": 0.8503
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 5,
+          "score": 0.8149
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 4,
+          "score": 0.8107
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 7,
+          "score": 0.7776
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 14,
+          "score": 0.7744
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 1,
+          "score": 0.6481
+        },
+        {
+          "name": "IoT Security Guide .pdf",
+          "page": 1,
+          "score": 0.6306
+        }
+      ],
+      "latency_ms": 91760,
+      "timing_breakdown": {
+        "cap_classify_ms": 8.9,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 17830.3,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 2.2,
+        "cap_generation_ms": 52054.9,
+        "cap_verify_ms": 1.1,
+        "t_total_s": 91.753
+      }
+    }
+  ]
+}

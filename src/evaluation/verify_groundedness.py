@@ -1,17 +1,24 @@
 """
-VERIFY determinista de groundedness y fidelidad de citas (ADR-0006).
+VERIFY determinista de groundedness y fidelidad de citas (ADR-0006, ADR-0019).
 
 Fase 4: evaluacion online post-generacion.
 Produce senal; no decide (Policy decide).
 
 Chequeos:
-  1. Groundedness: overlap de tokens de contenido entre answer y context.
-     Overlap bajo = posible alucinacion.
+  1. Claim-level support: segmenta la respuesta en claims y clasifica cada uno
+     como supported / weakly_supported / unsupported / contradicted.
+     Los claims conceptuales de fondo (parafrazis, expansion de acronimos)
+     pueden estar weakly_supported sin fallo. Los claims con tokens factuales
+     especificos (numeros, versiones, acronimos) deben tener soporte lexico
+     alto; si no, se marcan unsupported.
   2. Hedge detection: si el answer contiene frases de rechazo pero el
      contexto tenia evidencia suficiente (assess paso), es una respuesta
-     evasiva injustificada.
+     evasiva injustificada (contradicted).
   3. Citation fidelity: marcadores [Doc N - ...] o [N] en el answer deben
      corresponder a resultados reales en state.results.
+
+El overlap lexico global sigue computandose como diagnostico, pero ya no es
+un gate duro por si solo.
 """
 
 from __future__ import annotations
@@ -58,6 +65,21 @@ _CITATION_RE = re.compile(
     r"\[(?:Doc\s+)?(\d+)[^\]]*\]",
     re.IGNORECASE,
 )
+
+# Segmentacion de claims por oraciones.
+_CLAIM_SPLIT_RE = re.compile(r"(?<=[.!?])\s+|\n+")
+
+# Tokens de riesgo factual: numeros y versiones. Los acronimos no se tratan
+# como riesgo factual por si solos; el control de citas cubre referencias inventadas.
+_RISK_TOKEN_PATTERNS = [
+    re.compile(r"v?\d+\.\d+(?:\.\d+)*"),  # versiones
+    re.compile(r"\b\d+\b"),  # numeros generales (ignorados si son citas)
+]
+
+
+def _clean_claim_for_risk_tokens(claim: str) -> str:
+    """Elimina marcadores de cita para que los numeros de referencia no sean riesgo."""
+    return _CITATION_RE.sub(" ", claim)
 
 
 def _tokenize(text: str) -> List[str]:
@@ -110,11 +132,156 @@ def _check_citations(answer: str, results: List[Dict[str, Any]]) -> Tuple[int, i
     return valid, total, invalid
 
 
+def _extract_claims(answer: str) -> List[str]:
+    """Segmenta la respuesta en claims/oraciones."""
+    parts = [p.strip() for p in _CLAIM_SPLIT_RE.split(answer) if p.strip()]
+    if not parts:
+        parts = [answer.strip()]
+    return parts
+
+
+def _claim_has_risk_tokens(claim: str) -> bool:
+    """Indica si el claim contiene tokens que requieren soporte documental alto."""
+    for pat in _RISK_TOKEN_PATTERNS:
+        if pat.search(claim):
+            return True
+    return False
+
+
+def _extract_risk_token_matches(claim: str) -> List[str]:
+    """Extrae los strings que coinciden con patrones de riesgo factual."""
+    claim = _clean_claim_for_risk_tokens(claim)
+    matches: Set[str] = set()
+    for pat in _RISK_TOKEN_PATTERNS:
+        for m in pat.finditer(claim):
+            matches.add(m.group(0).strip())
+    return [m for m in matches if m]
+
+
+def _risk_tokens_supported(claim: str, context: str) -> Tuple[bool, List[str], List[str]]:
+    """
+    Verifica si los tokens de riesgo del claim aparecen en el contexto.
+    Retorna (soporte_total, tokens_soportados, tokens_faltantes).
+    """
+    risk_tokens = _extract_risk_token_matches(claim)
+    if not risk_tokens:
+        return True, [], []
+    context_lower = context.lower()
+    supported = []
+    missing = []
+    for tok in risk_tokens:
+        if tok.lower() in context_lower:
+            supported.append(tok)
+        else:
+            missing.append(tok)
+    return not missing, supported, missing
+
+
+def _assess_claim_support(
+    answer: str, context: str, results: List[Dict[str, Any]], assess_passed: bool
+) -> Tuple[str, List[Dict[str, Any]], Optional[str], List[str]]:
+    """
+    Clasifica cada claim de la respuesta.
+
+    Retorna:
+        status: 'supported' | 'weakly_supported' | 'unsupported' | 'contradicted'
+        claim_details: lista de dicts con texto y estado de cada claim
+        reason: razon de fallo (si aplica)
+        problematic_claims: textos de claims que motivan repair
+    """
+    claims = _extract_claims(answer)
+    details: List[Dict[str, Any]] = []
+    problematic_claims: List[str] = []
+
+    for i, claim in enumerate(claims):
+        claim_lower = claim.lower()
+        detail: Dict[str, Any] = {"claim_index": i, "claim_text": claim[:160]}
+
+        # 1. Hedge injustificado = contradicted
+        hedge = _detect_hedge(claim)
+        if hedge and assess_passed:
+            detail["status"] = "contradicted"
+            detail["reason"] = f"hedge injustificado: '{hedge}'"
+            problematic_claims.append(claim)
+            details.append(detail)
+            continue
+
+        # 2. Citas invalidas en el claim = contradicted
+        valid_cites, total_cites, invalid_indices = _check_citations(claim, results)
+        detail["citation_valid"] = valid_cites
+        detail["citation_total"] = total_cites
+        if total_cites > 0 and valid_cites == 0:
+            detail["status"] = "contradicted"
+            detail["reason"] = f"citas invalidas: {invalid_indices}"
+            problematic_claims.append(claim)
+            details.append(detail)
+            continue
+
+        # 3. Soporte lexico del claim
+        ratio, matched, total = _groundedness_ratio(claim, context)
+        detail["groundedness_ratio"] = round(ratio, 3)
+        detail["groundedness_matched"] = matched
+        detail["groundedness_total"] = total
+
+        # 4. Verificar tokens factuales especificos presentes en el contexto
+        risk_supported, risk_found, risk_missing = _risk_tokens_supported(claim, context)
+        detail["risk_tokens"] = _extract_risk_token_matches(claim)
+        detail["risk_tokens_supported"] = risk_found
+        detail["risk_tokens_missing"] = risk_missing
+
+        # 5. Clasificacion del claim
+        if not risk_supported:
+            # Introduce tokens factuales (numeros, versiones) no presentes en contexto
+            detail["status"] = "unsupported"
+            detail["reason"] = (
+                f"claim factual no soportado: tokens ausentes {risk_missing} "
+                f"(groundedness={ratio:.3f})"
+            )
+            problematic_claims.append(claim)
+        elif risk_found:
+            # Claim con tokens factuales que SI estan en contexto: puede ser parafrazis
+            if ratio >= 0.5:
+                detail["status"] = "supported"
+            elif ratio > 0.0:
+                detail["status"] = "weakly_supported"
+            else:
+                # risk_found implica que al menos el token de riesgo aparece -> weakly supported
+                detail["status"] = "weakly_supported"
+        else:
+            # Claim conceptual sin tokens factuales de riesgo
+            if ratio >= 0.15:
+                detail["status"] = "supported"
+            else:
+                # Conocimiento de fondo consistente con el dominio (sin riesgo factual)
+                detail["status"] = "weakly_supported"
+                if ratio == 0.0:
+                    detail["reason"] = "conocimiento de fondo sin soporte lexico directo"
+
+        details.append(detail)
+
+    # Determinar estado agregado
+    statuses = [d.get("status", "weakly_supported") for d in details]
+    if any(s == "contradicted" for s in statuses):
+        return "contradicted", details, "verify: claim(s) contradicted", problematic_claims
+    if any(s == "unsupported" for s in statuses):
+        return (
+            "unsupported",
+            details,
+            "verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+            problematic_claims,
+        )
+    if all(s == "supported" for s in statuses):
+        return "supported", details, None, []
+    if any(s == "weakly_supported" for s in statuses):
+        return "weakly_supported", details, None, []
+    return "supported", details, None, []
+
+
 class VerifyGroundednessEvaluator:
     """
     Evaluation online: verifica que el answer este soportado por el context.
 
-    Fase 4: groundedness + citation fidelity post-generacion.
+    Fase 4: claim-level groundedness + citation fidelity post-generacion.
     Produce EvaluationSignal(name="verify"); no decide.
     """
 
@@ -126,10 +293,14 @@ class VerifyGroundednessEvaluator:
         groundedness_floor: float = 0.25,
         min_answer_chars: int = 20,
         max_answer_chars: int = 8000,
+        factual_risk_floor: float = 0.5,
+        conceptual_floor: float = 0.15,
     ) -> None:
         self._groundedness_floor = float(groundedness_floor)
         self._min_answer_chars = int(min_answer_chars)
         self._max_answer_chars = int(max_answer_chars)
+        self._factual_risk_floor = float(factual_risk_floor)
+        self._conceptual_floor = float(conceptual_floor)
 
     def evaluate(self, state: ExecutionState) -> EvaluationSignal:
         answer = (state.answer or "").strip()
@@ -192,18 +363,57 @@ class VerifyGroundednessEvaluator:
                 source="online",
             )
 
-        # --- Groundedness floor ---
-        if ratio < self._groundedness_floor:
+        # --- Claim-level support (Fase B: local-first claim check) ---
+        assess_sig = state.latest_signal("assess")
+        assess_passed = assess_sig is not None and assess_sig.passed
+        claim_status, claim_details, claim_fail_reason, problematic_claims = _assess_claim_support(
+            answer, context, results, assess_passed
+        )
+        meta["claim_support_status"] = claim_status
+        meta["claim_support_details"] = claim_details
+        meta["claim_support_problematic"] = [
+            c[:200] for c in problematic_claims
+        ]
+        meta["factual_risk_floor"] = self._factual_risk_floor
+        meta["conceptual_floor"] = self._conceptual_floor
+
+        # Preservar metadata de citas a nivel top-level (backward-compat tests)
+        all_invalid: List[int] = []
+        total_cites_sum = 0
+        valid_cites_sum = 0
+        for d in claim_details:
+            total_cites_sum += int(d.get("citation_total", 0) or 0)
+            valid_cites_sum += int(d.get("citation_valid", 0) or 0)
+            if d.get("citation_total", 0) and d.get("citation_valid", 0) < d["citation_total"]:
+                # Re-computar indices invalidos del claim para metadata top-level
+                claim_text = d.get("claim_text", "")
+                _, _, invalid = _check_citations(claim_text, results)
+                all_invalid.extend(invalid)
+        if total_cites_sum > 0:
+            meta["citation_total"] = total_cites_sum
+            meta["citation_valid"] = valid_cites_sum
+            if all_invalid:
+                meta["citation_invalid_indices"] = all_invalid
+                meta["citation_fidelity"] = round(
+                    valid_cites_sum / total_cites_sum, 3
+                ) if total_cites_sum else 0.0
+
+        # --- Gate duro: contradicho o factual no soportado ---
+        if claim_status in ("contradicted", "unsupported"):
             return EvaluationSignal(
                 name=self.name,
                 score=ratio,
                 passed=False,
-                reason=(
-                    f"verify: groundedness {ratio:.3f} < {self._groundedness_floor} "
-                    f"({matched}/{total} tokens en contexto)"
-                ),
+                reason=claim_fail_reason or f"verify: {claim_status}",
                 metadata=meta,
                 source="online",
+            )
+
+        # --- Groundedness floor legacy: diagnostico, no gate duro ---
+        if ratio < self._groundedness_floor:
+            meta["low_groundedness_warning"] = (
+                f"groundedness {ratio:.3f} < {self._groundedness_floor} "
+                f"({matched}/{total} tokens en contexto)"
             )
 
         # --- Citation fidelity ---

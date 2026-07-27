@@ -7,7 +7,7 @@ Capability Registry, Policy Engine, Observability hooks, Composition Root.
 El Kernel conoce contratos, jamas implementaciones (ADR-0016).
 """
 
-from src.kernel.state import ExecutionState, EvaluationSignal, ActionDecision, TraceEvent
+from src.kernel.state import ExecutionState, ExecutionResult, LinearStateAdapter, EvaluationSignal, ActionDecision, TraceEvent
 from src.kernel.contracts import (
     Capability,
     Step,
@@ -27,6 +27,8 @@ from src.kernel.composition import CompositionRoot
 
 __all__ = [
     "ExecutionState",
+    "ExecutionResult",
+    "LinearStateAdapter",
     "EvaluationSignal",
     "ActionDecision",
     "TraceEvent",

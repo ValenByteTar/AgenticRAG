@@ -1,0 +1,710 @@
+{
+  "timestamp": "20260725_220812",
+  "elapsed_s": 597.5,
+  "analysis": {
+    "summary": {
+      "total": 5,
+      "passed": 3,
+      "failed": 2,
+      "pass_rate": 0.6,
+      "answerable_pass_rate": 0.6,
+      "no_answer_pass_rate": 0.0,
+      "pass_retrieval_rate": 0.6,
+      "pass_groundedness_rate": 1.0,
+      "pass_generation_rate": 1.0,
+      "pass_hallucination_rate": 0.0,
+      "retrieval_doc_hit_rate": 0.6,
+      "retrieval_page_hit_rate": 0.6,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.2,
+      "recall_at_5": 0.2,
+      "avg_recall": 0.367,
+      "avg_mrr": 0.12,
+      "avg_precision_at_k": 0.1,
+      "avg_keyword_score": 0.717,
+      "avg_citation_fidelity": null,
+      "retrieval_doc_miss_count": 2,
+      "retrieval_page_miss_count": 0,
+      "llm_kw_miss_count": 0,
+      "hallucination_count": 0,
+      "latency_avg_ms": 102486,
+      "latency_p50_ms": 105026,
+      "latency_p95_ms": 173375,
+      "latency_max_ms": 173375,
+      "timing_embed_avg_ms": null,
+      "timing_semantic_avg_ms": null,
+      "timing_bm25_avg_ms": null,
+      "timing_fusion_avg_ms": null,
+      "timing_rerank_avg_ms": null,
+      "timing_llm_avg_ms": null
+    },
+    "layer_pass_counts": {
+      "pass_retrieval": 3,
+      "pass_groundedness": 5,
+      "pass_generation": 5,
+      "pass_hallucination": 0
+    },
+    "top_problems": {
+      "retrieval_miss": 2,
+      "page_miss": 0,
+      "hallucination": 0,
+      "low_kw_score": 0,
+      "forbidden": 0
+    },
+    "rank_distribution": {
+      "7": 1,
+      "3": 1,
+      "8": 1
+    },
+    "by_category": {
+      "simple": {
+        "total": 5,
+        "passed": 3,
+        "retrieval_doc": 3,
+        "retrieval_page": 3,
+        "avg_recall": 0.367,
+        "avg_mrr": 0.12,
+        "avg_citation": null,
+        "avg_kw_score": 0.717
+      }
+    },
+    "failed_cases": [
+      {
+        "id": 4,
+        "query": "Que es el Annex A de ISO 27001?",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [
+          "kw_partial=0.33 missing=['annex', 'controls']"
+        ],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      },
+      {
+        "id": 5,
+        "query": "Que es un SIEM y para que se usa?",
+        "reasons": [
+          "retrieval_doc_miss"
+        ],
+        "warnings": [
+          "kw_partial=0.75 missing=['log']"
+        ],
+        "pass_retrieval": false,
+        "pass_groundedness": true,
+        "pass_generation": true,
+        "pass_hallucination": true
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": 1,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Que es el NIST Cybersecurity Framework?",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [
+        "recall=0.33 (multi-doc incompleto)"
+      ],
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.333,
+        "first_relevant_rank": 7,
+        "mrr": 0.143,
+        "precision_at_k": 0.1,
+        "matched": [
+          {
+            "source": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+            "page": 6,
+            "score": 0.7875,
+            "rank": 7
+          }
+        ],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [
+          "nist",
+          "framework",
+          "cybersecurity"
+        ],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "El NIST Cybersecurity Framework es un conjunto de guías y estándares publicados por la National Institute of Standards and Technology (NIST) para ayudar a las organizaciones a mejorar su posición cibersegura. Este marco proporciona un lenguaje común y una estructura para entender y gestionar los rie",
+      "sources_returned": [
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 18,
+          "score": 0.8439
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 18,
+          "score": 0.8439
+        },
+        {
+          "name": "Cyber Security Basics for SMALL BUSINESS.pdf",
+          "page": 3,
+          "score": 0.8436
+        },
+        {
+          "name": "CYBERSECURITY BASICS.pdf",
+          "page": 3,
+          "score": 0.8436
+        },
+        {
+          "name": "IoT Security Guide .pdf",
+          "page": 107,
+          "score": 0.8358
+        },
+        {
+          "name": "NIST Internal Report Foundational PNT Profile.pdf",
+          "page": 15,
+          "score": 0.8154
+        },
+        {
+          "name": "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "page": 6,
+          "score": 0.7875
+        },
+        {
+          "name": "Getting_Started_with_Cybersecurity_Risk_Management_Ransomware.pdf",
+          "page": 1,
+          "score": 0.7783
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 59,
+          "score": 0.7758
+        },
+        {
+          "name": "The HITRUST Approach to NIST CSF 2.0.pdf",
+          "page": 14,
+          "score": 0.7675
+        }
+      ],
+      "latency_ms": 173375,
+      "timing_breakdown": {
+        "cap_classify_ms": 13.1,
+        "cap_memory_read_ms": 8.0,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 13426.7,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 4.0,
+        "cap_generation_ms": 57183.5,
+        "cap_verify_ms": 1.1,
+        "t_total_s": 173.329
+      }
+    },
+    {
+      "id": 2,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Cuales son los dominios del CISSP?",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [
+        "kw_partial=0.50 missing=['domain']"
+      ],
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 1.0,
+        "first_relevant_rank": 3,
+        "mrr": 0.333,
+        "precision_at_k": 0.2,
+        "matched": [
+          {
+            "source": "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+            "page": 38,
+            "score": 0.6594,
+            "rank": 3
+          },
+          {
+            "source": "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+            "page": 1257,
+            "score": 0.5807,
+            "rank": 8
+          }
+        ],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.5,
+        "present": [
+          "cissp"
+        ],
+        "missing": [
+          "domain"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Los dominios del CISSP son los siguientes ocho: 1. Security y gestión de riesgos (15%)\n2. Protección de activos (15%)\n3. Identificación y clasificación de información y activos (10%)\n4. Control de acceso físico y lógico a los recursos (15%)\n5. Gestión de identidad y acceso (17%)\n6. Criptografía (12%",
+      "sources_returned": [
+        {
+          "name": "CISSP Passport.pdf",
+          "page": 35,
+          "score": 0.6834
+        },
+        {
+          "name": "CYBERSECURITY RESOURCE AND REFERENCE GUIDE.pdf",
+          "page": 39,
+          "score": 0.6642
+        },
+        {
+          "name": "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+          "page": 38,
+          "score": 0.6594
+        },
+        {
+          "name": "CISSP Passport.pdf",
+          "page": 30,
+          "score": 0.6096
+        },
+        {
+          "name": "CISSP Study giude PDF.pdf",
+          "page": 10,
+          "score": 0.5992
+        },
+        {
+          "name": "CISSP Study Guide.pdf",
+          "page": 10,
+          "score": 0.5992
+        },
+        {
+          "name": "CCSP Official Study Guide.pdf",
+          "page": 22,
+          "score": 0.5903
+        },
+        {
+          "name": "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+          "page": 1257,
+          "score": 0.5807
+        },
+        {
+          "name": "CISSP Study giude PDF.pdf",
+          "page": 57,
+          "score": 0.5754
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 23,
+          "score": 0.5047
+        }
+      ],
+      "latency_ms": 105026,
+      "timing_breakdown": {
+        "cap_classify_ms": 7.0,
+        "cap_memory_read_ms": 1.6,
+        "cap_planner_ms": 0.5,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 13861.2,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.0,
+        "cap_generation_ms": 49644.0,
+        "cap_verify_ms": 1.6,
+        "t_total_s": 105.02
+      }
+    },
+    {
+      "id": 3,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Que significa CIA en ciberseguridad?",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [
+        "recall=0.50 (multi-doc incompleto)"
+      ],
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.5,
+        "first_relevant_rank": 8,
+        "mrr": 0.125,
+        "precision_at_k": 0.2,
+        "matched": [
+          {
+            "source": "Hack The Cybersecurity Interview .pdf",
+            "page": 43,
+            "score": 0.6519,
+            "rank": 8
+          },
+          {
+            "source": "Introduction To Cybersecurity.pdf",
+            "page": 11,
+            "score": 0.6416,
+            "rank": 10
+          }
+        ],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "La sigla CIA en ciberseguridad significa Confidentiality, Integrity y Availability. Estos son los pilares fundamentales de la seguridad de la información (InfoSec), un subconjunto de la ciberseguridad.",
+      "sources_returned": [
+        {
+          "name": "Cybersecurity Career Master Plan.pdf",
+          "page": 27,
+          "score": 0.8032
+        },
+        {
+          "name": "AWS Security .pdf",
+          "page": 52,
+          "score": 0.7668
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 14,
+          "score": 0.7667
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 14,
+          "score": 0.7667
+        },
+        {
+          "name": "Cybersecurity Career Master Plan.pdf",
+          "page": 264,
+          "score": 0.7657
+        },
+        {
+          "name": "CYBERSECURITY TERMS TO KNOW IN 2024.pdf",
+          "page": 14,
+          "score": 0.7391
+        },
+        {
+          "name": "CISSP Exam Study Guide.pdf",
+          "page": 8,
+          "score": 0.6585
+        },
+        {
+          "name": "Hack The Cybersecurity Interview .pdf",
+          "page": 43,
+          "score": 0.6519
+        },
+        {
+          "name": "Introduction To Cyber Security.pdf",
+          "page": 11,
+          "score": 0.6416
+        },
+        {
+          "name": "Introduction To Cybersecurity.pdf",
+          "page": 11,
+          "score": 0.6416
+        }
+      ],
+      "latency_ms": 46229,
+      "timing_breakdown": {
+        "cap_classify_ms": 6.0,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 13053.5,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.2,
+        "cap_generation_ms": 33158.5,
+        "cap_verify_ms": 1.4,
+        "cap_finalize_turn_ms": 2.1,
+        "t_total_s": 46.224
+      }
+    },
+    {
+      "id": 4,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Que es el Annex A de ISO 27001?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [
+        "kw_partial=0.33 missing=['annex', 'controls']"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.333,
+        "present": [
+          "iso 27001"
+        ],
+        "missing": [
+          "annex",
+          "controls"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "ISO 27001: para esa entidad.",
+      "sources_returned": [
+        {
+          "name": "AWS Security by Design Introduction.pdf",
+          "page": 13,
+          "score": 0.9066
+        },
+        {
+          "name": "AWS Security Incident Response Guide.pdf",
+          "page": 2,
+          "score": 0.9013
+        },
+        {
+          "name": "AWS Security by Design Introduction.pdf",
+          "page": 2,
+          "score": 0.8876
+        },
+        {
+          "name": "AWS Security Incident Response Guide.pdf",
+          "page": 14,
+          "score": 0.8494
+        },
+        {
+          "name": "AWS Security by Design Introduction.pdf",
+          "page": 3,
+          "score": 0.8405
+        },
+        {
+          "name": "AWS Security Incident Response Guide.pdf",
+          "page": 12,
+          "score": 0.7678
+        },
+        {
+          "name": "AWS Security Incident Response Guide.pdf",
+          "page": 8,
+          "score": 0.7672
+        },
+        {
+          "name": "AWS Security Incident Response Guide.pdf",
+          "page": 11,
+          "score": 0.7604
+        },
+        {
+          "name": "AWS Security by Design Introduction.pdf",
+          "page": 12,
+          "score": 0.7511
+        },
+        {
+          "name": "AWS Security by Design Introduction.pdf",
+          "page": 11,
+          "score": 0.7451
+        }
+      ],
+      "latency_ms": 63477,
+      "timing_breakdown": {
+        "cap_classify_ms": 5.1,
+        "cap_memory_read_ms": 1.5,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 19371.6,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.0,
+        "cap_generation_ms": 21212.0,
+        "cap_verify_ms": 1.0,
+        "t_total_s": 63.472
+      }
+    },
+    {
+      "id": 5,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Que es un SIEM y para que se usa?",
+      "passed": false,
+      "pass_retrieval": false,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "retrieval_doc_miss"
+      ],
+      "warnings": [
+        "kw_partial=0.75 missing=['log']"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.75,
+        "present": [
+          "siem",
+          "security",
+          "event"
+        ],
+        "missing": [
+          "log"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Un SIEM (Security Information and Event Management) es una herramienta de gestión de seguridad que recopila, analiza y presenta información de seguridad en tiempo real de varias fuentes. Se utiliza para detectar, responder y mitigar amenazas a la seguridad de las redes y sistemas informáticos. [5] A",
+      "sources_returned": [
+        {
+          "name": "AWS Security by Design Introduction.pdf",
+          "page": 13,
+          "score": 0.9069
+        },
+        {
+          "name": "AWS Security Incident Response Guide.pdf",
+          "page": 2,
+          "score": 0.9014
+        },
+        {
+          "name": "AWS Security by Design Introduction.pdf",
+          "page": 2,
+          "score": 0.8876
+        },
+        {
+          "name": "AWS Security Incident Response Guide.pdf",
+          "page": 14,
+          "score": 0.8494
+        },
+        {
+          "name": "AWS Security by Design Introduction.pdf",
+          "page": 3,
+          "score": 0.8406
+        },
+        {
+          "name": "AWS Security Incident Response Guide.pdf",
+          "page": 12,
+          "score": 0.7685
+        },
+        {
+          "name": "AWS Security Incident Response Guide.pdf",
+          "page": 8,
+          "score": 0.7673
+        },
+        {
+          "name": "AWS Security Incident Response Guide.pdf",
+          "page": 11,
+          "score": 0.7604
+        },
+        {
+          "name": "AWS Security by Design Introduction.pdf",
+          "page": 12,
+          "score": 0.7512
+        },
+        {
+          "name": "AWS Security by Design Introduction.pdf",
+          "page": 11,
+          "score": 0.7452
+        }
+      ],
+      "latency_ms": 124321,
+      "timing_breakdown": {
+        "cap_classify_ms": 5.8,
+        "cap_memory_read_ms": 0.5,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 19855.3,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.7,
+        "cap_generation_ms": 68843.5,
+        "cap_verify_ms": 2.1,
+        "t_total_s": 124.316
+      }
+    }
+  ]
+}

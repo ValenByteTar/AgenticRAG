@@ -511,8 +511,8 @@ def new_execution_state(
     max_iterations: int = 10,
     max_llm_calls: int = 6,
 ) -> ExecutionState:
-    """Factory de ExecutionState con defaults de consulta (ADR-0004 / ADR-0010)."""
-    return ExecutionState(
+    """Factory de ExecutionState con defaults de consulta (ADR-0004 / ADR-0010 / ADR-0020)."""
+    st = ExecutionState(
         question=question,
         top_k=top_k,
         semantic_weight=semantic_weight,
@@ -521,3 +521,5 @@ def new_execution_state(
         max_iterations=max_iterations,
         max_llm_calls=max_llm_calls,
     )
+    st.metadata["state_fidelity"] = "full"
+    return st

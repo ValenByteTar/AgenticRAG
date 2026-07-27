@@ -36,14 +36,14 @@ class TestVerifyGroundednessEvaluator:
         assert sig.passed is True
         assert sig.metadata["groundedness_ratio"] >= 0.3
 
-    def test_fail_on_low_groundedness(self):
+    def test_fail_on_unsupported_factual_tokens(self):
         ev = VerifyGroundednessEvaluator(groundedness_floor=0.3)
         st = ExecutionState(question="q")
         st.context = "completely different unrelated content about cooking recipes"
-        st.answer = "NIST CSF framework controls evidence cybersecurity requirements"
+        st.answer = "NIST CSF version 2.0 contains exactly 108 controls and was released in 2024."
         sig = ev.evaluate(st)
         assert sig.passed is False
-        assert "groundedness" in sig.reason
+        assert "groundedness" in sig.reason.lower()
 
     def test_fail_on_empty_answer(self):
         ev = VerifyGroundednessEvaluator()
@@ -172,20 +172,44 @@ class TestVerifyRepairPolicy:
         p = VerifyRepairPolicy(max_repairs=1)
         st = ExecutionState(question="q")
         st.metadata["verified"] = True
-        st.add_signal(EvaluationSignal(name="verify", score=0.1, passed=False, reason="low groundedness"))
+        st.add_signal(
+            EvaluationSignal(
+                name="verify",
+                score=0.1,
+                passed=False,
+                reason="factual claim unsupported",
+                metadata={
+                    "claim_support_status": "unsupported",
+                    "claim_support_problematic": ["the claim is unsupported"],
+                },
+            )
+        )
         d = p.decide(st)
         assert d is not None
         assert d.action == "retry"
         assert d.capability_ref == "generation"
         assert d.params.get("repair_count") == 1
         assert "repair_hint" in d.params
+        # ADR-0019: directed repair hint should mention problematic claims
+        assert "Claims problematicos" in d.params.get("repair_hint", "")
 
     def test_decline_when_budget_exhausted(self):
         p = VerifyRepairPolicy(max_repairs=1)
         st = ExecutionState(question="q")
         st.metadata["verified"] = True
         st.metadata["repair_count"] = 1
-        st.add_signal(EvaluationSignal(name="verify", score=0.1, passed=False, reason="low"))
+        st.add_signal(
+            EvaluationSignal(
+                name="verify",
+                score=0.1,
+                passed=False,
+                reason="factual claim unsupported",
+                metadata={
+                    "claim_support_status": "unsupported",
+                    "claim_support_problematic": ["the claim is unsupported"],
+                },
+            )
+        )
         d = p.decide(st)
         assert d is not None
         assert d.action == "decline"
@@ -196,10 +220,41 @@ class TestVerifyRepairPolicy:
         st = ExecutionState(question="q", max_iterations=2)
         st.metadata["verified"] = True
         st.iteration = 2
-        st.add_signal(EvaluationSignal(name="verify", score=0.1, passed=False, reason="low"))
+        st.add_signal(
+            EvaluationSignal(
+                name="verify",
+                score=0.1,
+                passed=False,
+                reason="factual claim unsupported",
+                metadata={
+                    "claim_support_status": "unsupported",
+                    "claim_support_problematic": ["the claim is unsupported"],
+                },
+            )
+        )
         d = p.decide(st)
         assert d is not None
         assert d.action == "decline"
+
+    def test_no_repair_on_weakly_supported_conceptual(self):
+        # ADR-0019: bajo overlap lexico por parafrazis conceptual no dispara repair
+        p = VerifyRepairPolicy(max_repairs=1)
+        st = ExecutionState(question="q")
+        st.metadata["verified"] = True
+        st.add_signal(
+            EvaluationSignal(
+                name="verify",
+                score=0.2,
+                passed=False,
+                reason="low groundedness",
+                metadata={
+                    "claim_support_status": "weakly_supported",
+                    "claim_support_problematic": [],
+                },
+            )
+        )
+        d = p.decide(st)
+        assert d is None
 
     def test_no_action_when_not_verified(self):
         p = VerifyRepairPolicy(max_repairs=1)
@@ -287,8 +342,8 @@ class TestE2EVerifyRepair:
         def generate(q, c, lm, **kw):
             call_count["generate"] += 1
             if call_count["generate"] == 1:
-                # First attempt: hallucinated answer (no overlap)
-                return "completely unrelated cooking recipe pasta ingredients"
+                # First attempt: hallucinated answer with invented specific facts
+                return "NIST CSF version 2.0 contains exactly 108 controls and was released in 2024."
             # Second attempt (repair): grounded answer
             return "NIST CSF framework controls evidence cybersecurity"
 
@@ -345,8 +400,8 @@ class TestE2EVerifyRepair:
 
         def generate(q, c, lm, **kw):
             call_count["generate"] += 1
-            # Always hallucinate
-            return "completely unrelated cooking recipe pasta ingredients"
+            # Always hallucinate with invented specific facts
+            return "NIST CSF version 2.0 contains exactly 108 controls and was released in 2024."
 
         def classify(q, lm, top_k):
             return {"out_of_domain": False, "length_mode": lm, "top_k": top_k, "entities": ["NIST"]}

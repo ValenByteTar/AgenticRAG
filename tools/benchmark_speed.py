@@ -41,7 +41,7 @@ llm_time = 0  # Se medirá en el total
 # Query completa
 print("\n[6] Query completa end-to-end...")
 start = time.time()
-result = rag.query(query, top_k=20)
+result = rag.execute(query, top_k=20).to_query_result()
 total_time = time.time() - start
 print(f"Tiempo total: {total_time:.2f}s")
 

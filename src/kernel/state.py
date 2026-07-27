@@ -162,6 +162,12 @@ class ExecutionState:
 
     def to_query_result(self) -> Dict[str, Any]:
         """Fachada estable de retorno (ADR-0010) compatible con HybridRAG.query()."""
+        raw = self.metadata.get("_raw_linear_dict")
+        if raw is not None and isinstance(raw, dict):
+            out = dict(raw)
+            out["answer"] = self.answer
+            out["sources"] = self.sources
+            return out
         mh = self.metadata.get("memory_hits_count")
         if mh is None:
             hits = self.metadata.get("memory_hits")
@@ -179,3 +185,49 @@ class ExecutionState:
             "run_id": self.run_id,
             "traces": [t.to_dict() for t in self.traces],
         }
+
+
+@dataclass
+class ExecutionResult:
+    """
+    Resultado de ejecucion tipado (ADR-0020).
+    Contrato unico de ejecucion del sistema.
+    """
+
+    answer: str
+    sources: List[Dict[str, Any]]
+    execution_state: ExecutionState
+
+    def to_query_result(self) -> Dict[str, Any]:
+        """Shim de compatibilidad con la fachada dict historica query() (ADR-0010 / ADR-0020)."""
+        res = self.execution_state.to_query_result()
+        res["answer"] = self.answer
+        res["sources"] = self.sources
+        return res
+
+
+class LinearStateAdapter:
+    """
+    Adaptador transitorio (ADR-0020) para construir ExecutionState parcial desde
+    el retorno dict del camino lineal monolito (_query_linear_impl).
+
+    Condicion de cierre: borrado en el mismo commit que BM-005 cuando kernel.enabled=true sea default.
+    """
+
+    @staticmethod
+    def build_state(question: str, result_dict: Dict[str, Any]) -> ExecutionState:
+        state = ExecutionState(
+            question=question,
+            answer=result_dict.get("answer", "") or "",
+            sources=result_dict.get("sources", []) or [],
+            results=result_dict.get("results", []) or [],
+            context=result_dict.get("context", "") or "",
+            timing_ms=dict(result_dict.get("timing_breakdown", {}) or {}),
+            run_id=result_dict.get("run_id", "") or "",
+            done=True,
+        )
+        state.metadata["state_fidelity"] = "partial"
+        state.metadata["_raw_linear_dict"] = result_dict
+        state.signals = []
+        return state
+

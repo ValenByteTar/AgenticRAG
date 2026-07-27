@@ -190,20 +190,20 @@ def chat():
         if not query:
             return jsonify({'error': 'Query vacío'}), 400
         
-        # Procesar consulta con RAG (optimizado para BGE)
+        # Procesar consulta con RAG (ADR-0020)
         t0 = time.time()
         # Forzar long si no_context está activo, para tu experimento
         if no_context:
             length_mode = 'long'
-        result = rag.query(
+        sw = float(rag.config.get('retrieval', {}).get('semantic_weight', 0.6))
+        exec_res = rag.execute(
             query,
             top_k=10,
-            semantic_weight=0.5,   # 50% semántica / 50% keyword
-            entity_filter=True,
-            two_stage=True,
+            semantic_weight=sw,
             length_mode=length_mode,
             no_context=no_context
         )
+        result = exec_res.to_query_result()
         elapsed_s = max(0.0, time.time() - t0)
         response = result.get('answer', 'No se pudo generar respuesta')
         # Sanear respuesta: remover duplicación de citas "(según [Doc ...])" y variantes en línea,
@@ -368,12 +368,11 @@ def chat_stream():
 
         def worker():
             try:
-                res = rag.query(
+                sw = float(rag.config.get('retrieval', {}).get('semantic_weight', 0.6))
+                exec_res = rag.execute(
                     query,
                     top_k=10,
-                    semantic_weight=0.5,
-                    entity_filter=True,
-                    two_stage=True,
+                    semantic_weight=sw,
                     length_mode=length_mode,
                     no_context=no_context,
                     stream=True,
@@ -381,6 +380,7 @@ def chat_stream():
                     docs_callback=docs_cb,
                     cancel_checker=lambda: cancel_event.is_set()
                 )
+                res = exec_res.to_query_result()
                 result_holder['result'] = res
 
                 # Formatear fuentes como en /api/chat

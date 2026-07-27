@@ -1,444 +1,851 @@
 ---
 id: RES-001
 category: research
-status: draft
+status: accepted
 created: 2026-07-24
-updated: 2026-07-24
+updated: 2026-07-27
 author: human
-components: [rag_hybrid, entity_extractor, doc_cards, equivalences_manager, conceptual_map, kernel, capabilities]
-tags: [architecture, index-time, query-time, agentic, llm, knowledge-builder, knowledge-consumer, heuristicas]
-related: [ADR-0009, ADR-0012, ADR-0013, ADR-0015, ADR-0017, DEC-008, BM-002, BM-003, BM-004, EXP-006b]
+components: [contract, artifact-registry, warm-artifacts, cold-artifacts, hot-artifacts]
+tags: [architecture, contract, warm-artifacts, artifact-registry, publication-protocol, resolution-protocol, cold-warm-hot, confidence, predicate-catalog, builder-consumer-boundary]
+related: [RES-002, RES-003, ADR-0009, ADR-0012, ADR-0013, ADR-0015, ADR-0017, ADR-0018, DEC-008, BM-002, BM-003, BM-004, EXP-006b]
 supersedes: null
 superseded_by: null
 ---
 
-# RES-001 - Knowledge Builder / Knowledge Consumer split
+# RES-001 - El contrato Warm como centro arquitectonico
+
+> **Nota de revision (2026-07-27):** Este research fue seccionado en tres documentos:
+> - **RES-001** (este documento) — El contrato Warm como centro arquitectonico
+> - **RES-002** — Knowledge Builder / Knowledge Compiler (index-time)
+> - **RES-003** — Knowledge Consumer / evolucion del Agentic RAG runtime (query-time)
+>
+> El contenido original fue redistribuido respetando las tres preocupaciones arquitectonicas
+> que tenian lifecycles y stakeholders distintos: el contrato, el Builder, y el Consumer.
 
 ## Topic
 
-Separacion arquitectonica entre la construccion de conocimiento sobre documentos (index-time, agentic, LLM-driven) y el consumo de ese conocimiento en retrieval (query-time, kernel, sin heuristicas de dominio).
+El contrato Warm Artifacts como centro del sistema: la frontera inviolable entre Knowledge Builder (index-time) y Knowledge Consumer (query-time), mediada por el Artifact Registry.
 
 ## Sources
 
 - BM-002: A/B Kernel+VERIFY vs Monolito — brecha de 36.3pp causada enteramente por retrieval
 - BM-003: A/B Kernel Fase 6 vs Monolito — sin regresion pero brecha persistente
-- BM-004: A/B Kernel Fase 6 + bug fixes (wiring + two-stage en policy) — brecha reducida a 27.3pp
+- BM-004: A/B Kernel Fase 6 + bug fixes — brecha reducida a 27.3pp
 - DEC-008: Planner + EntityExpansion tunings — wiring completado, impacto medido en BM-004
 - ADR-0009: Memory Port (read-only en kernel)
 - ADR-0015: Knowledge System (retrieval + get_entity)
 - ADR-0017: EKS (Engineering Knowledge System dev-time)
+- ADR-0018: Knowledge Builder / Consumer split
 - Monolito: `rag_hybrid.py`, `doc_cards.py`, `equivalences_manager.py`, `conceptual_map.py`, `src/rag/entity_extractor.py`, `retrieval_engine.py`
+- RES-002: Knowledge Builder / Knowledge Compiler (implementacion del Builder)
+- RES-003: Knowledge Consumer / evolucion del Agentic RAG runtime (implementacion del Consumer)
 
-## Motivacion
+---
 
-### El problema de fondo
+## 1. Motivacion
 
-El monolito (`rag_hybrid.py`) mezcla responsabilidades de index-time y query-time en un solo flujo. Cada query ejecuta trabajo que deberia haberse hecho una vez durante la indexacion:
+### 1.1 El problema de fondo es arquitectonico
 
-| Trabajo | Donde se hace hoy | Cuando se ejecuta | Deberia ser |
-|---|---|---|---|
-| Extraer entidades de documentos | `entity_extractor.update_domain_from_collection()` | Init + cada query | Index-time |
-| Clasificar roles de documentos | `doc_cards.build_doc_cards()` / `build_doc_cards_llm()` | Init (con fallback en query) | Index-time |
-| Descubrir sinonimos/aliases | `entity_aliases` dict hardcoded + `memory.get_synonyms()` | Cada query | Index-time + cache |
-| Expandir equivalencias | `equivalences_manager.expand()` (92 grupos hardcoded) | Cada query | Index-time |
-| Inferir atributos de documentos | `doc_cards._infer_attributes_presence()` | Init | Index-time |
-| Estimar centralidad | `doc_cards._estimate_centrality()` | Init | Index-time |
-| Construir gazetteer de dominio | `entity_extractor` + `doc_roles` + `domain_map` | Init + cada query | Index-time |
-| Expansion ligera de query | `extra_terms` (control, incidente, troubleshooting) | Cada query | Query-time (pero con data del Builder) |
-| Mapa conceptual (hechos aprendidos) | `conceptual_map.py` | Cada query (read) + aprendizaje diferido | Index-time + runtime learning |
-| Filtrado por tecnologia | `_filter_results_by_technology()` | Cada query | Query-time (usa roles del Builder) |
+El monolito (`rag_hybrid.py`) mezcla responsabilidades de index-time y query-time en un solo flujo. Cada query reconstruye o reinterpreta conocimiento que deberia haberse compilado una vez durante la indexacion.
 
-### Sintomas observados en A/B
+El sintoma visible son las heuristicas. La causa raiz es la ausencia de una frontera clara entre:
 
-**BM-002** (Fase 4): 45.5% pass rate vs 81.8% monolito. Brecha de 36.3pp.
-**BM-003** (Fase 6): 45.5% pass rate (sin regresion). Las capabilities de planner y entity expansion no mejoraron pass rate porque los datos no llegaban a la query de busqueda.
-**BM-004** (Fase 6 + bug fixes): 54.5% pass rate. Brecha reducida a 27.3pp. Los bug fixes cerraron dos gaps de data flow:
+- **compilar conocimiento** (index-time — ver RES-002)
+- **consumir conocimiento** (query-time — ver RES-003)
 
-1. ~~`EntityExpansionCapability` computa entidades expandidas pero `RetrievalCapability` no las inyecta en la query de busqueda~~ — **FIXED en BM-004**: `RetrievalCapability` y `TwoStageRetrievalCapability` ahora inyectan `expanded_entities` en la query.
-2. `PlannerCapability` produce `candidate_docs` pero el soft boost (+0.05) es insignificante frente a scores de reranker (0.0-0.99).
-3. ~~Las queries que fallan necesitan two-stage retrieval con entity matching, que el kernel tiene registrado pero no activa automaticamente~~ — **FIXED en BM-004**: `LinearRagPolicy` ahora activa `two_stage_retrieval` en el primer pass cuando hay entidades detectadas.
-4. El monolito resuelve las queries restantes (21, 24, 45, 51, 55) con heuristicas que no queremos replicar en el kernel.
+Y la ausencia de un **contrato** que medie esa frontera.
 
-**Mejora observada en BM-004**: +1 pregunta PASS (Q41 ambiguous), +11.1pp doc hit@K, +0.111 MRR. Las 5 queries que siguen fallando necesitan mecanismos que residen en el monolito (comparison detection, equivalences, domain gazetteer completo, technology filtering).
+### 1.2 Por que no alcanza con parches en el Consumer
 
-### Por que pegar parches no funciona
+Cuando el conocimiento de dominio se embebe en el runtime:
 
-Cada heuristica del monolito que intentamos replicar en el kernel:
-- **Entity aliases hardcoded**: `entity_aliases` dict con 7 entidades de ciberseguridad. No escala, no generaliza, es conocimiento de dominio embebido en codigo.
-- **Equivalences manuales**: 92 grupos de equivalencias en texto embebido (`EQUIVALENCES_EMBEDDED_TEXT`). Mismo problema.
-- **Extra terms**: Expansion ligera con triggers como `'cuant'`, `'incidente'`, `'control'`. Heuristica ad-hoc.
-- **Role guessing**: `_guess_role_by_name()` en `doc_cards.py` usa keywords hardcoded (`"listado"`, `"catalog"`, `"inventory"` -> `entity_list`).
-- **Technology filtering**: `_filter_results_by_technology()` con keywords hardcoded (`"framework"`, `"certification"`, `"threat"`).
-
-Cada parche que agregamos al kernel:
-1. Acopla el kernel a un dominio especifico (ciberseguridad)
-2. Duplica logica que ya existe en el monolito
+1. El kernel se acopla a un dominio especifico
+2. Se duplica logica entre monolito y kernel
 3. No escala a otros dominios
-4. Violacion de clean boundaries (user rule: "Never introduce hidden coupling")
-5. Violacion de architecture-first (user rule: "Never bypass architectural layers")
+4. Viola clean boundaries
+5. Viola architecture-first
 
-## Propuesta: Knowledge Builder / Knowledge Consumer
+El problema no es "tener heuristicas". El problema es **reconstruir o hardcodear conocimiento de dominio en query-time**.
 
-### Vision
+Aunque una heuristica sea correcta, si pertenece al dominio y es estable, debe vivir como conocimiento compilado y serializado en Warm Artifacts, no como codigo del Consumer.
+
+---
+
+## 2. El centro es el contrato, no el Builder
+
+Builder y Consumer son implementaciones reemplazables.
+
+Lo estable es el contrato de Warm Artifacts.
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                     KNOWLEDGE BUILDER                         │
-│                   (index-time, agentic)                       │
-│                                                              │
-│  Por cada documento (o batch):                               │
-│  1. LLM extrae entidades (nombres propios, terminos tecnicos)│
-│  2. LLM descubre sinonimos y aliases dinamicamente            │
-│  3. LLM clasifica rol del documento (entity_profile,          │
-│     analysis_report, procedure, manual, etc.)                 │
-│  4. LLM infiere atributos presentes (controles, metricas,     │
-│     procedimientos, etc.)                                     │
-│  5. LLM estima centralidad/topicalidad                        │
-│  6. LLM construye resumen/abstract                            │
-│  7. LLM identifica relaciones entre entidades                 │
-│  8. Persiste todo a metadata store (JSON/SQLite/Chroma)       │
-│                                                              │
-│  Output: indice enriquecido con conocimiento estructurado     │
-│  - entity_index: {entity: [doc_ids]}                         │
-│  - alias_index: {alias: canonical_entity}                    │
-│  - doc_roles: {doc_id: {role, attributes, centrality, ...}}  │
-│  - entity_relations: {entity: {related: [], attributes: {}}} │
-│  - doc_summaries: {doc_id: summary}                          │
-│                                                              │
-│  Caracteristicas:                                             │
-│  - Agnostic al dominio (el LLM descubre, no se hardcodea)     │
-│  - Incremental (nuevos docs se procesan solos)                │
-│  - Cacheable (re-ejecutar solo si cambia el documento)        │
-│  - Versionable (cada build tiene version y modelo)            │
-│  - Validable (human-in-the-loop opcional)                     │
-└───────────────────────┬─────────────────────────────────────┘
-                        │ (indice enriquecido persistido)
-                        │
-┌───────────────────────▼─────────────────────────────────────┐
-│                    KNOWLEDGE CONSUMER                          │
-│               (query-time, Agentic RAG kernel)                │
-│                                                              │
-│  Query → PlannerCapability                                   │
-│          lee doc_roles (pre-computado) → candidate_docs       │
-│        → EntityExpansionCapability                           │
-│          lee alias_index (pre-computado) → expanded_entities  │
-│        → RetrievalCapability                                 │
-│          usa entity_index para two-stage (pre-computado)      │
-│          inyecta expanded_entities en query de busqueda       │
-│          aplica soft boost para candidate_docs                │
-│        → Rerank → Generate → Verify → Repair                  │
-│                                                              │
-│  Cero heuristicas de dominio hardcoded.                      │
-│  Solo lee metadata persistida por el Builder.                 │
-│  Agnostic al dominio.                                         │
-└─────────────────────────────────────────────────────────────┘
+                 +----------------------+
+                 |   WARM ARTIFACTS     |
+                 |   (shared contract)  |
+                 +----------+-----------+
+                            ^
+            publish         |         resolve
+                            |
+     +----------------+     |     +------------------+
+     | Knowledge      |-----+-----| Knowledge        |
+     | Builder        |           | Consumer         |
+     | (replaceable)  |           | (replaceable)    |
+     | (ver RES-002)  |           | (ver RES-003)    |
+     +----------------+           +------------------+
 ```
 
-### Contrato entre Builder y Consumer
+Repetir esta idea:
 
-El Builder produce un **Knowledge Artifact** (KA) versionado con:
+- el Builder puede reescribirse por completo
+- el Consumer puede reescribirse por completo
+- el storage puede cambiar
+- el modelo LLM puede cambiar
+- **solo el contrato debe permanecer estable**
+
+### 2.1 Tres protocolos, dos responsabilidades
+
+Entre Builder y Consumer no hay un unico protocolo. Hay dos responsabilidades distintas mediadas por un componente con identidad propia: el **Artifact Registry**.
+
+```
+  Builder (RES-002)
+    |
+    |  Publication Protocol
+    |  ("aca hay un build nuevo")
+    v
+  Artifact Registry
+    |  (single publication authority)
+    |
+    |  Resolution Protocol
+    |  ("dame el build activo")
+    v
+  Consumer (RES-003)
+```
+
+**Publication Protocol**: el Builder entrega un build (artifacts + manifest) al Registry. El Registry lo pone en staging, valida integrity y compatibility, y espera un `promote` explicito. El Builder no publica directamente archivos. Publica a traves del Registry.
+
+**Resolution Protocol**: el Consumer le pide al Registry el build activo. El Registry devuelve el manifest + artifacts. El Consumer nunca sabe ni necesita saber donde estan los archivos fisicamente.
+
+Dos responsabilidades distintas. **Publicar no es Resolver.** El Builder nunca resuelve. El Consumer nunca publica.
+
+---
+
+## 3. Frontera Builder / Consumer
+
+### 3.1 Builder
+
+El Builder es un **Knowledge Compiler**.
+
+Responsabilidades (ver RES-002 para detalle):
+
+- adquirir conocimiento de documentos (front-end)
+- producir KIR lossless
+- ejecutar IR passes (middle-end)
+- validar KIR
+- construir el Knowledge Model
+- serializar Warm Artifacts (back-end)
+- publicar en el Artifact Registry via Publication Protocol
+
+El Builder puede usar parsers, regex, NER, metadata extractors, LLMs u otros mecanismos. Esos mecanismos son implementacion interna.
+
+El Builder no es el centro del sistema. Es un productor del contrato.
+
+### 3.2 Consumer
+
+El Consumer es el Agentic RAG kernel en query-time.
+
+Responsabilidades (ver RES-003 para detalle):
+
+- planificar la consulta
+- resolver Warm Artifacts via Resolution Protocol
+- ejecutar retrieval / generation / verification
+- producir Hot Artifacts temporales
+- responder
+
+El Consumer:
+
+- nunca interpreta documentos crudos para descubrir dominio
+- nunca genera conocimiento estable de dominio
+- nunca ejecuta extraccion semantica de corpus
+- nunca reconstruye entidades, aliases o roles desde cero
+- nunca publica artifacts
+- unicamente consume contratos
+
+### 3.3 Frontera inviolable
+
+| Puede | Builder | Consumer |
+|---|---|---|
+| Leer documentos del corpus | Si | No (salvo via retrieval ya indexado) |
+| Construir Knowledge Model | Si | No |
+| Descubrir entidades/aliases/roles | Si | No |
+| Validar y compilar conocimiento | Si | No |
+| Generar Warm Artifacts | Si | No |
+| Publicar al Artifact Registry | Si (via Publication Protocol) | **Nunca** |
+| Resolver Warm Artifacts | Si (durante publish/verify) | Si (via Resolution Protocol) |
+| Crear Hot Artifacts de query | No | Si |
+| Acceder a Cold Artifacts | Si | **Nunca** |
+| Mutar el contrato unilateralmente | No | No |
+
+---
+
+## 4. Artifacts
+
+Los artifacts no son el modelo interno.
+
+Son representaciones persistentes, versionadas y publicables del Knowledge Model.
+
+### 4.1 Cold Artifacts
+
+Caracteristicas:
+
+- existen solo durante index-time / build
+- el Consumer **nunca** puede usarlos
+- desaparecen o se archivan fuera del contrato al finalizar el build
+- son internos al Builder
+
+Ejemplos:
+
+- salidas crudas de extractores
+- prompts y reasoning temporal
+- caches internas de build
+- estadisticas intermedias
+- reportes temporales de validacion
+- cuarentena de claims no publicados
+- snapshots intermedios del KIR no publicados
+
+Frontera: Cold Artifacts no forman parte del contrato.
+
+### 4.2 Warm Artifacts
+
+Caracteristicas:
+
+- persisten luego del build
+- se resuelven via Resolution Protocol en bootstrap
+- son read-only para el Consumer
+- representan proyecciones estables del Knowledge Model
+- **constituyen el unico contrato compartido**
+
+Ejemplos:
+
+- Entity Index
+- Alias Index
+- Canonical Entities
+- Doc Roles
+- Taxonomy
+- Entity Relations (tipadas)
+- Retrieval Metadata
+- Doc Summaries (si se publican)
+- Build Manifest
+
+El Consumer puede leerlos. No puede modificarlos.
+
+### 4.3 Hot Artifacts
+
+Caracteristicas:
+
+- se generan solo durante una consulta
+- representan estado temporal de runtime
+- se destruyen al finalizar la query
+- no se persisten como conocimiento de dominio
+
+Ejemplos:
+
+- Planner State
+- Expanded Entities (de la query actual)
+- Candidate Docs
+- Retrieval Graph
+- Evidence Graph de la respuesta
+- Verification State
+- Repair State
+
+Hot Artifacts pertenecen al Consumer. No son output del Builder.
+
+### 4.4 Mapa de ownership
+
+| Artifact class | Owner | Lifetime | Consumer access |
+|---|---|---|---|
+| Cold | Builder | build | none |
+| Warm | Contract / Registry | durable / versioned | read-only (via Resolution Protocol) |
+| Hot | Consumer | per-query | read/write local |
+
+Nota: Warm Artifacts no "pertenecen" conceptualmente al Builder como secreto interno.
+El Builder los publica.
+El contrato los posee.
+El Registry los administra.
+
+---
+
+## 5. Artifact Registry
+
+El Artifact Registry no es un directorio. Es un **componente con identidad propia**.
+
+Analogico a:
+
+- Docker Registry
+- Maven Repository
+- PyPI
+- OCI Registry
+
+> **The Artifact Registry is the single publication authority for Warm Artifacts.**
+
+El Builder no publica directamente. Publica a traves del Registry.
+El Consumer no lee archivos. Resuelve a traves del Registry.
+
+### 5.1 Identidad
+
+El Registry es un componente con interfaz definida:
+
+| Operacion | Quien llama | Descripcion |
+|---|---|---|
+| `publish` | Builder | Entrega un build (artifacts + manifest) al Registry |
+| `promote` | Builder / CI | Activa un build en staging como build activo (swap atomico) |
+| `resolve` | Consumer | Devuelve el manifest + artifacts del build activo |
+| `rollback` | Operator / CI | Apunta el manifest a un build previo |
+| `verify_integrity` | Registry / Consumer | Valida checksums de artifacts |
+| `list_builds` | Operator / CI | Lista builds disponibles (staging, active, deprecated) |
+| `get_manifest` | Consumer / CI | Devuelve el manifest de un build especifico o del activo |
+
+### 5.2 Publication Protocol
+
+Como el Builder publica:
+
+1. El Builder entrega un build (artifacts + manifest) al Registry
+2. El Registry lo pone en **staging**
+3. El Registry valida **integrity** (checksums) y **compatibility** (`contract_version`)
+4. Si validacion pasa, el build queda en staging esperando `promote`
+5. `promote` = swap atomico del manifest pointer al nuevo build
+6. Un build puede existir en staging sin ser activo
+
+El Builder no escribe archivos por su cuenta. Todo pasa por el Registry.
+
+### 5.3 Resolution Protocol
+
+Como el Consumer resuelve:
+
+1. El Consumer le pide al Registry el build activo
+2. El Registry devuelve el manifest + artifacts
+3. El Consumer valida integrity al cargar (checksums)
+4. El Consumer nunca sabe ni necesita saber donde estan los archivos fisicamente
+
+El Consumer nunca habla con el Builder. Habla con el Registry.
+
+### 5.4 Compatibility Contracts
+
+Cada build declara `contract_version` (ej. `warm-v1`).
+
+El Registry valida que un build sea compatible con el Consumer antes de promoverlo.
+
+Si el Consumer espera `warm-v2` y el build es `warm-v1`, se rechaza la promocion.
+
+Esto permite evolucionar el contrato sin romper consumers antiguos.
+
+### 5.5 Rollback
+
+El Registry mantiene N builds anteriores.
+
+Rollback = apuntar el manifest a un build previo. Operacion instantanea, sin recompilar.
+
+Casos de uso:
+
+- build defectuoso
+- regresion detectada en A/B
+- modelo degradado
+- corrupcion de artifacts
+
+### 5.6 Integrity
+
+Checksums (SHA-256) por artifact.
+
+El Consumer valida integridad al cargar.
+
+Si un Warm Artifact fue corrompido en disco:
+
+- el Registry puede servirlo desde un build alternativo
+- o rechazar la carga con error explicito
+
+No hay silencio ante corrupcion.
+
+### 5.7 Migrations
+
+Cuando el contrato evoluciona (`warm-v1` -> `warm-v2`), el Registry puede albergar migraciones que transformen builds antiguos al nuevo schema sin recompilar desde documentos.
+
+Ejemplo: anadir un campo `confidence` con default `1.0` a todos los claims existentes.
+
+Las migraciones son:
+
+- declarativas (definen la transformacion de schema)
+- validadas (el resultado debe pasar integrity checks)
+- versionadas (cada migracion tiene su propia version)
+- opcionales (un build puede recompilarse desde documentos en lugar de migrarse)
+
+### 5.8 Build Lifecycle dentro del Registry
+
+```
+staging -> promoted (active) -> deprecated -> archived -> purged
+```
+
+| Estado | Significado |
+|---|---|
+| `staging` | Build entregado, validado, pero no activo |
+| `promoted` | Build activo, el Consumer lo resuelve |
+| `deprecated` | Build reemplazado por uno mas nuevo, retenido para rollback |
+| `archived` | Build viejo, retenido solo para auditoria |
+| `purged` | Build eliminado del Registry |
+
+Solo un build activo por manifest.
+
+---
+
+## 6. Artifact Lifecycle
+
+Cold / Warm / Hot no son solo categorias estaticas.
+Tienen un ciclo de vida.
+
+```
+Documento
+   |
+   v
+Front-End (Knowledge Acquisition)
+   |
+   v
+KIR (lossless)
+   |
+   v
+IR Passes (middle-end)
+   |
+   v
+Cold
+   |
+   v
+IR Validation
+   |
+   v
+Knowledge Model (publishable subset)
+   |
+   v
+Back-End (Artifact Generation)
+   |
+   v
+Warm
+   |
+   v
+Artifact Registry (publish)
+   |
+   v
+Registry (staging -> promote)
+   |
+   v
+Bootstrap (Consumer resolve)
+   |
+   v
+RAM (Consumer)
+   |
+   v
+Hot (por query)
+   |
+   v
+Destroy
+```
+
+### 6.1 Por que Cold jamas cruza la frontera
+
+Cold existe antes y durante la validacion.
+
+Puede contener:
+
+- ruido
+- alucinaciones de extractores
+- reasoning no confiable
+- claims sin evidencia
+
+Solo el subconjunto que sobrevive Validation entra al Knowledge Model publicable y luego se serializa como Warm.
+
+Por eso Cold jamas es legible por el Consumer.
+
+### 6.2 Momentos de nacimiento y muerte
+
+| Estado | Nace en | Muere / se archiva en |
+|---|---|---|
+| Cold | Front-End / IR Passes | fin de build o archive interno |
+| Warm | Back-End (codegen) + publish | deprecacion de build / nuevo manifest |
+| Hot | query runtime | fin de query |
+
+### 6.3 Implicacion para el Consumer
+
+El Consumer solo ve Warm ya validado y publicado.
+
+Nunca participa de Compilation.
+Nunca ve Cold.
+Nunca convierte Hot en Warm por su cuenta.
+
+---
+
+## 7. Contrato Builder -> Consumer
+
+### 7.1 Principio central
+
+El verdadero centro del sistema es el contrato.
+
+El Consumer solo puede acceder a **Warm Artifacts** publicados por el manifest activo en el Artifact Registry.
+
+El Builder puede cambiar internamente (ver RES-002):
+
+- extractores
+- modelos
+- prompts
+- caches
+- estrategias de validacion
+- representacion interna del KIR
+- passes del middle-end
+- formato del back-end
+- storage interno
+
+...siempre que preserve el contrato de Warm Artifacts.
+
+El Consumer tambien puede cambiar internamente (ver RES-003):
+
+- policies
+- capabilities
+- planner
+- retry logic
+- generation stack
+
+...siempre que consuma el mismo contrato.
+
+Ese desacoplamiento es la propiedad arquitectonica central.
+
+### 7.2 El Consumer no puede acceder a
+
+- prompts
+- reasoning
+- caches de build
+- extractores
+- validaciones internas
+- KIR del Builder
+- Knowledge Model in-memory del Builder
+- Cold Artifacts
+- archivos del Registry directamente (solo via Resolution Protocol)
+
+### 7.3 Provenance y Confidence en todo claim publicable
+
+Todo claim serializado en Warm Artifacts debe cargar metadata de confianza.
+
+No por auditoria cosmética.
+Sino porque el Consumer puede decidir en runtime:
+
+> "No confio lo suficiente en esta relacion / alias / rol."
+
+Campos minimos:
 
 ```json
 {
-  "version": "1.0.0",
-  "builder_model": "mistral:7b",
-  "built_at": "2026-07-24T18:00:00Z",
-  "domain": "ciberseguridad",
-  "stats": {
-    "total_docs": 861,
-    "total_entities": 1240,
-    "total_aliases": 3100
-  },
-  "entity_index": {
-    "iso 27001": ["iso27001.pdf", "isms_guide.pdf"],
-    "nist csf": ["nist-csf.pdf", "framework_overview.pdf"]
-  },
-  "alias_index": {
-    "iso27001": "iso 27001",
-    "iso 27k": "iso 27001",
-    "isms": "iso 27001",
-    "nist cybersecurity framework": "nist csf"
-  },
-  "doc_roles": {
-    "iso27001.pdf": {
-      "role": "entity_profile",
-      "name": "ISO 27001 Standard",
-      "centrality": 0.92,
-      "entities": ["iso 27001", "isms", "access control"],
-      "attributes": ["controls", "risk assessment", "annex a"],
-      "summary": "International standard for information security management systems..."
-    }
-  },
-  "entity_relations": {
-    "iso 27001": {
-      "related": ["nist csf", "cobit", "pci dss"],
-      "attributes": {"controls": "Annex A", "certification": "ISMS"}
-    }
+  "confidence": 0.94,
+  "validated": true,
+  "builder_version": "2.1.0",
+  "generated_by": {
+    "extractor_id": "llm:granite-4.1-8b",
+    "pipeline_stage": "canonicalize+validate"
   }
 }
 ```
 
-El Consumer lee este artifact en init y lo expone via capabilities. **No computa nada de dominio**.
+Usos posibles en el Consumer (ver RES-003):
 
-### Que reemplaza el Builder
+- Planner ignora relations bajo umbral
+- Entity expansion solo usa aliases high-confidence
+- Two-stage prioriza entidades con mejor soporte evidencial
+- Comparison balancing descarta aristas debiles
+- Verify/repair puede preferir evidencia de claims fuertes
 
-| Componente del monolito | Que hace | Reemplazo del Builder |
-|---|---|---|
-| `entity_aliases` dict (7 entidades hardcoded) | Gazetteer de aliases | `alias_index` generado por LLM |
-| `EQUIVALENCES_EMBEDDED_TEXT` (92 grupos) | Equivalencias manuales | `alias_index` + `entity_relations` |
-| `entity_extractor.update_domain_from_collection()` | Construye gazetteer desde docs | `entity_index` + `alias_index` |
-| `doc_cards._guess_role_by_name()` | Heuristica de rol por nombre | LLM clasifica rol |
-| `doc_cards._extract_basic_entities()` | Heuristica de entidades | LLM extrae entidades |
-| `doc_cards._infer_attributes_presence()` | Heuristica de atributos | LLM infiere atributos |
-| `doc_cards._estimate_centrality()` | Heuristica de centralidad | LLM estima topicalidad |
-| `doc_cards.build_doc_cards()` | Build heuristico | Builder con LLM |
-| `doc_cards.build_doc_cards_llm()` | Build con LLM (granite) | Builder unificado |
-| `conceptual_map.entity_aliases` | Aliases aprendidos | `alias_index` del Builder |
-| `conceptual_map.entity_facts` | Hechos verificados | `entity_relations` del Builder |
-| `_filter_results_by_technology()` | Filtrado por tipo | Usa `doc_roles` del Builder |
-| `extra_terms` expansion ligera | Expansion ad-hoc | `alias_index` + `entity_relations` |
-| `_plan_retrieval()` roles preferred | Heuristica de roles | LLM en Builder asigna roles |
+### 7.4 Warm Artifacts minimos del contrato inicial
 
-### Que queda en el Consumer (kernel)
+#### Canonical Entities
 
-| Capability | Que hace ahora | Que hace con Builder |
-|---|---|---|
-| `PlannerCapability` | Detecta tipo de query (determinista) | Igual — lee `doc_roles` pre-computados |
-| `EntityExpansionCapability` | Lee `_DEFAULT_ALIASES` hardcoded | Lee `alias_index` del Builder |
-| `RetrievalCapability` | Busca sin entidades | Inyecta `expanded_entities` en query + usa `entity_index` para two-stage |
-| `TwoStageRetrievalCapability` | Busca por entidad (F3) | Usa `entity_index` pre-computado |
-| `MemoryReadCapability` | Lee memoria | Igual — memoria es runtime, no index |
-| `VerifyCapability` | Evalua groundedness | Igual |
-
-### Modelo de ejecucion del Builder
-
-#### Opcion A: Batch standalone (recomendado inicial)
-
-```bash
-python build_knowledge.py --docs /path/to/docs --model mistral:7b --output knowledge_artifact.json
+```json
+{
+  "entity_id": "ent:iso-27001",
+  "canonical_name": "ISO 27001",
+  "types": ["framework", "standard"],
+  "confidence": 0.93,
+  "validated": true,
+  "builder_version": "1.0.0",
+  "generated_by": {
+    "extractor_id": "llm:granite-4.1-8b"
+  }
+}
 ```
 
-- Corre fuera del kernel, como un script independiente
-- Procesa todos los documentos (o incrementales)
-- Persiste el artifact a disco
-- El Consumer carga el artifact en init
+#### Alias Index
 
-**Ventajas**: Simple, reutilizable, no acoplado al kernel.
-**Desventajas**: Re-ejecucion completa para updates.
-
-#### Opcion B: Incremental con watch
-
-```bash
-python build_knowledge.py --watch /path/to/docs --model mistral:7b
+```json
+{
+  "iso27001": {
+    "entity_id": "ent:iso-27001",
+    "confidence": 0.98,
+    "validated": true,
+    "builder_version": "1.0.0"
+  },
+  "iso 27k": {
+    "entity_id": "ent:iso-27001",
+    "confidence": 0.91,
+    "validated": true,
+    "builder_version": "1.0.0"
+  }
+}
 ```
 
-- Monitorea cambios en el directorio de documentos
-- Procesa solo documentos nuevos/modificados
-- Merge con artifact existente
+#### Entity Index
 
-**Ventajas**: Auto-mantenimiento.
-**Desventajas**: Complejidad de watch + merge.
-
-#### Opcion C: Agentic pipeline (Fase 8+)
-
-El Builder es un agente con tools:
-- `read_document(doc_id)` — lee un documento
-- `extract_entities(text)` — LLM call
-- `classify_role(text, entities)` — LLM call
-- `discover_aliases(entity, context)` — LLM call
-- `persist_artifact(data)` — guarda a store
-- `validate_quality(artifact)` — LLM auto-valida
-
-El agente decide el orden, maneja errores, re-intenta, valida.
-
-**Ventajas**: Maxima flexibilidad, auto-mejora.
-**Desventajas**: Complejidad alta, no necesario inicialmente.
-
-### Prompt design para el Builder
-
-#### Extraccion de entidades
-
-```
-You are a knowledge engineer analyzing a cybersecurity document.
-
-Document: {doc_name}
-Text (first 2000 chars): {text}
-
-Extract:
-1. Named entities (frameworks, standards, certifications, organizations, tools)
-2. Technical terms specific to this domain
-3. For each entity, provide:
-   - Canonical name
-   - All aliases/abbreviations found in the text
-   - Entity type (framework, certification, organization, tool, concept)
-
-Respond in JSON:
-{"entities": [{"canonical": "ISO 27001", "aliases": ["iso27001", "iso 27k", "isms"], "type": "framework"}]}
+```json
+{
+  "ent:iso-27001": {
+    "doc_ids": ["doc:iso27001", "doc:isms-guide"],
+    "chunk_ids": ["doc:iso27001#c12", "doc:isms-guide#c3"],
+    "confidence": 0.95,
+    "validated": true,
+    "builder_version": "1.0.0"
+  }
+}
 ```
 
-#### Clasificacion de roles
+#### Doc Roles
 
-```
-You are a knowledge engineer classifying a document.
-
-Document: {doc_name}
-Text (first 2000 chars): {text}
-Entities found: {entities}
-
-Classify this document into one of these roles:
-- entity_profile: Document that profiles/describes a specific entity (standard, framework, certification)
-- analysis_report: Document that analyzes, compares, or evaluates entities
-- procedure: Document with step-by-step procedures, playbooks, or protocols
-- manual: Technical manual or reference guide
-- entity_list: Catalog, inventory, or directory listing
-- other: Does not fit above categories
-
-Also identify:
-- Key attributes present (controls, metrics, procedures, requirements, etc.)
-- A one-sentence summary
-- Centrality score (0-1): how central is this document to the domain
-
-Respond in JSON:
-{"role": "entity_profile", "attributes": ["controls", "risk assessment"], "summary": "...", "centrality": 0.92}
+```json
+{
+  "doc:iso27001": {
+    "role": "entity_profile",
+    "name": "ISO 27001 Standard",
+    "centrality": 0.92,
+    "entity_ids": ["ent:iso-27001"],
+    "attributes": ["controls", "risk assessment", "annex a"],
+    "summary": "International standard for information security management systems.",
+    "confidence": 0.9,
+    "validated": true,
+    "builder_version": "1.0.0"
+  }
+}
 ```
 
-#### Descubrimiento de sinonimos
+#### Entity Relations (tipadas, catalogo controlado, graph-ready)
+
+No usar un campo generico `related`.
+
+Usar triples inspirados en RDF:
 
 ```
-You are a knowledge engineer building a synonym map for a cybersecurity corpus.
-
-Entities found across corpus: {entities}
-
-For each entity, list all known synonyms, abbreviations, and alternative spellings.
-Include domain-specific abbreviations and common misspellings.
-
-Respond in JSON:
-{"aliases": {"iso 27001": ["iso27001", "iso 27k", "isms", "iso/iec 27001"], ...}}
+Subject -> Predicate -> Object
 ```
 
-### Comparativa: monolito vs kernel+Fase6 vs Builder/Consumer
+No hace falta implementar RDF.
+Si hace falta un vocabulario controlado.
 
-| Aspecto | Monolito | Kernel Fase 6 | Builder/Consumer |
-|---|---|---|---|
-| **Conocimiento de dominio** | Hardcoded en codigo | Hardcoded en `_DEFAULT_ALIASES` | LLM en Builder, zero en Consumer |
-| **Entity expansion** | Dict + memory + heuristica | `_DEFAULT_ALIASES` + memory (inyectado en query desde BM-004) | `alias_index` pre-computado, inyectado en query |
-| **Doc roles** | Heuristica + LLM opcional | `select_docs_by_roles` con soft boost | LLM en Builder, Consumer solo lee |
-| **Equivalences** | 92 grupos manuales | No integrado | `alias_index` + `entity_relations` |
-| **Two-stage** | Automatico con entity matching | Activado en primer pass desde BM-004 | `entity_index` pre-computado |
-| **Comparaciones** | `_search_for_comparison()` | No implementado | `entity_relations` guia balanceo |
-| **Latencia query** | ~55s (mucho trabajo en query) | ~54s (sin trabajo extra) | ~40s estimado (sin LLM pre-retrieval) |
-| **Escalabilidad dominio** | No (hardcoded ciberseguridad) | No (hardcoded ciberseguridad) | Si (LLM agnostic) |
-| **Mantenibilidad** | Baja (heuristicas dispersas) | Media (capabilities pero con hardcoded) | Alta (separacion limpia) |
-| **Acoplamiento** | Alto (todo en `rag_hybrid.py`) | Medio (kernel + monolito wiring) | Bajo (contrato entre Builder y Consumer) |
-
-### Donde vive el Builder
-
-#### Opcion A: Mismo repo, paquete separado
-
-```
-AgenticRAG/
-  src/                    # Kernel (Consumer)
-  knowledge_builder/      # Builder
-    __init__.py
-    builder.py            # Orquestador
-    extractors.py         # LLM extractors (entities, roles, aliases)
-    artifact.py           # KnowledgeArtifact schema + persist
-    pipeline.py           # Batch/incremental pipeline
-  knowledge_artifacts/    # Output del Builder (versionado)
-    ka_v1.0.0.json
-  tests/
-    test_knowledge_builder.py
+```json
+{
+  "relation_id": "rel:iso27001-defines-isms",
+  "subject": "ent:iso-27001",
+  "predicate": "defines",
+  "object": "ent:isms",
+  "confidence": 0.91,
+  "validated": true,
+  "evidence": [
+    {
+      "source_doc_id": "doc:iso27001",
+      "source_chunk_ids": ["doc:iso27001#c4"],
+      "quote": "ISO 27001 defines requirements for an ISMS..."
+    }
+  ],
+  "builder_version": "1.0.0",
+  "generated_by": {
+    "extractor_id": "llm:granite-4.1-8b"
+  }
+}
 ```
 
-**Ventajas**: Simple, mismo venv, mismo config.
-**Desventajas**: Acoplamiento de repo.
+### 7.5 Catalogo controlado de predicados
 
-#### Opcion B: Repo separado, shared contract
+El conjunto de relaciones permitidas es cerrado y versionado.
 
+Objetivo: evitar que un extractor (incluido Granite) invente predicados libres.
+
+Catalogo inicial propuesto:
+
+| Predicate | Significado |
+|---|---|
+| `defines` | A define B |
+| `implements` | A implementa B |
+| `belongs_to` | A pertenece a B |
+| `extends` | A extiende B |
+| `references` | A referencia B |
+| `depends_on` | A depende de B |
+| `supersedes` | A reemplaza/supera a B |
+| `equivalent_to` | A es equivalente a B |
+| `part_of` | A es parte de B |
+| `located_in` | A se ubica en B |
+| `governs` | A gobierna/regula B |
+| `certifies` | A certifica B |
+| `compares_with` | A se compara con B |
+
+Reglas:
+
+1. Todo `predicate` publicado **debe** existir en el catalogo activo
+2. Structural Validation rechaza predicados fuera de catalogo
+3. El catalogo es versionado junto al build
+4. Ampliar el catalogo es decision de arquitectura, no de un extractor
+5. `related_to` se evita como default; solo se agrega si se demuestra necesario
+
+Esta forma habilita evolucion futura hacia GraphRAG sin reventar el contrato.
+
+#### Manifest
+
+```json
+{
+  "active_build": "ka_v1.0.0",
+  "contract_version": "warm-v1",
+  "builder_version": "1.0.0",
+  "default_model": "granite-4.1-8b",
+  "predicate_catalog_version": "1.0.0",
+  "created_at": "2026-07-24T18:00:00Z",
+  "artifacts": {
+    "canonical_entities": "warm/canonical_entities.json",
+    "alias_index": "warm/alias_index.json",
+    "entity_index": "warm/entity_index.json",
+    "doc_roles": "warm/doc_roles.json",
+    "entity_relations": "warm/entity_relations.json",
+    "retrieval_metadata": "warm/retrieval_metadata.json",
+    "predicate_catalog": "warm/predicate_catalog.json"
+  },
+  "checksums": {
+    "canonical_entities": "sha256:abc123...",
+    "alias_index": "sha256:def456...",
+    "entity_index": "sha256:ghi789...",
+    "doc_roles": "sha256:jkl012...",
+    "entity_relations": "sha256:mno345...",
+    "retrieval_metadata": "sha256:pqr678...",
+    "predicate_catalog": "sha256:stu901..."
+  }
+}
 ```
-AgenticRAG/               # Consumer (kernel)
-  src/
-  knowledge_artifacts/    # Artifacts descargados del Builder
 
-KnowledgeBuilder/         # Builder (repo separado)
-  src/
-  contract.py             # KnowledgeArtifact schema (shared)
-```
+### 7.6 Ejemplo de paquete publicado (no monolitico)
 
-**Ventajas**: Separacion total, deploy independiente.
-**Desventajas**: Contrato compartido requiere coordinacion.
-
-#### Recomendacion: Opcion A inicial, migrar a B si crece
-
-### Esquema de versionado del Knowledge Artifact
-
-```
+```text
 knowledge_artifacts/
-  ka_v1.0.0.json          # Full build, mistral:7b
-  ka_v1.0.1.json          # Incremental: 3 docs nuevos
-  ka_v1.1.0.json          # Re-build con modelo mejorado
-  ka_manifest.json        # Pointer al artifact activo
+  ka_v1.0.0/
+    manifest.json
+    warm/
+      canonical_entities.json
+      alias_index.json
+      entity_index.json
+      doc_roles.json
+      entity_relations.json
+      retrieval_metadata.json
+      predicate_catalog.json
+    cold/                     # opcional, nunca leido por Consumer
+      extractor_dumps/
+      validation_reports/
+      kir_snapshots/
+  ka_v0.9.0/                  # deprecated, retenido para rollback
+    manifest.json
+    warm/
+      ...
+  ka_manifest.json            # pointer al build activo
 ```
 
-El Consumer carga el artifact indicado por `ka_manifest.json`. Permite A/B testing de artifacts.
+El Consumer resuelve solo `manifest` + Warm Artifacts referenciados via Resolution Protocol.
 
-### Migracion incremental
+---
 
-No es big-bang. Fases propuestas:
+## 8. Confidence
 
-**Fase 7a**: Builder standalone con LLM
-- `knowledge_builder/` con extraccion de entidades + aliases + roles
-- Output: `ka_v1.0.0.json`
-- Consumer carga artifact en `bootstrap.py`
-- `EntityExpansionCapability` lee `alias_index` en lugar de `_DEFAULT_ALIASES`
-- `PlannerCapability` lee `doc_roles` del artifact en lugar de `rag.doc_roles`
-- **No se eliminan heuristicas del monolito** (compatibilidad)
+### 8.1 Por que existe
 
-**Fase 7b**: Two-stage con entity_index
-- ~~`RetrievalCapability` inyecta `expanded_entities` en query de busqueda~~ — **Hecho en BM-004**
-- ~~`LinearRagPolicy` activa two-stage cuando planner detecta entidades~~ — **Hecho en BM-004**
-- `TwoStageRetrievalCapability` usa `entity_index` pre-computado del Builder para busqueda dirigida (actualmente usa fallback que delega a `retrieve_fn`)
-- **No se eliminan heuristicas del monolito** (compatibilidad)
+Confidence no es metadata decorativa.
 
-**Fase 7c**: A/B Builder/Consumer vs monolito
-- Correr eval con `--kernel` usando artifact del Builder
-- Medir pass rate, doc hit, recall, MRR
-- Objetivo: paridad o mejora vs monolito (81.8%)
+Es una senal de decision para el Consumer.
 
-**Fase 8**: Deprecar heuristicas del monolito
-- Si A/B es positivo, eliminar `_DEFAULT_ALIASES`, `entity_aliases` dict, `EQUIVALENCES_EMBEDDED_TEXT`
-- El monolito queda como facade que delega al kernel
-- `kernel.enabled=true` por defecto
+Sin confidence, el runtime trata todo claim como verdad equivalente.
+Con confidence, el runtime puede modular comportamiento.
 
-### Riesgos y mitigaciones
+### 8.2 Campos minimos por claim
+
+| Campo | Tipo | Rol |
+|---|---|---|
+| `confidence` | float 0..1 | fortaleza estimada del claim |
+| `validated` | bool | paso validation formal |
+| `builder_version` | string | provenance de compilacion |
+| `generated_by` | object | extractor/pipeline responsables |
+| `evidence` | list | soporte en corpus |
+
+### 8.3 Confidence no autoriza saltarse Validation
+
+Un claim puede tener confidence alta y aun asi fallar Structural/Semantic/Evidence validation.
+
+Solo claims `validated=true` pueden publicarse como Warm.
+
+---
+
+## 9. Riesgos
 
 | Riesgo | Probabilidad | Impacto | Mitigacion |
 |---|---|---|---|
-| LLM alucina entidades/aliases | Media | Medio | Validacion post-extraccion + human-in-the-loop opcional |
-| Costo de re-indexar 100k docs | Alta | Alto | Builder incremental + cache por documento |
-| Artifact demasiado grande para memoria | Baja | Medio | Lazy load + SQLite en lugar de JSON |
-| LLM del Builder vs LLM del Consumer | Media | Bajo | Builder puede usar modelo distinto (mas capaz) |
-| Contrato Builder/Consumer se rompe | Media | Alto | Schema versionado + validacion en carga |
-| Calidad del Builder peor que heuristicas | Baja | Alto | A/B antes de deprecar monolito |
+| Structural drift del contrato | Media | Alto | Schemas versionados + contract_version + validacion en carga |
+| Contract drift entre builds activos | Baja | Alto | Registry valida compatibility antes de promote |
+| Confundir Knowledge Model con Artifacts | Media | Alto | Separar KIR / Model / Artifact Generation / Registry (RES-002) |
+| Confundir KIR con contrato | Baja | Medio | KIR es interno; contrato es Warm Artifacts |
+| Warm Artifacts demasiado grandes | Baja | Medio | Particionado por layer + lazy load |
+| Acoplar arquitectura a Granite | Media | Alto | Modelo detras de interfaz; contrato independiente del modelo |
+| Centrar el sistema en el Builder | Media | Alto | Repetir: el centro es el contrato |
+| Consumer accede directo a archivos | Media | Alto | Resolution Protocol obligatorio; Registry como unico punto de acceso |
+| Calidad inferior al monolito al inicio | Media | Alto | A/B obligatorio antes de deprecar + rollback en Registry (RES-003) |
 
-### Open questions
+---
 
-1. **Modelo del Builder**: ¿mistral:7b (mismo del Consumer) o un modelo mas capaz (granite, llama3:70b)?
-2. **Granularidad**: ¿Por documento o por chunk? (El monolito indexa por chunk en ChromaDB)
-3. **Persistencia**: ¿JSON file, SQLite, o metadata en ChromaDB?
-4. **Trigger**: ¿Manual, watch, o on-demand desde el Consumer?
-5. **Validacion**: ¿Human-in-the-loop, LLM self-validation, o ambos?
-6. **Relaciones entre entidades**: ¿Graph, flat dict, o embeddings?
-7. **Multi-idioma**: ¿El Builder detecta idioma y adapta prompts?
-8. **Update de artifact**: ¿Como manejar documentos que cambian de contenido?
-9. **A/B de artifacts**: ¿Como comparar calidad entre versiones del artifact?
-10. **Dependencia circular**: ¿Builder necesita el vector store? ¿O solo texto crudo?
+## 10. Open questions
 
-### Takeaways
+1. **Storage del Artifact Registry**: archivos versionados, SQLite, o metadata store
+2. **Evolucion del catalogo de predicados**: proceso de extension y versionado
+3. **Politica de cuarentena**: automatica vs human-in-the-loop
+4. **Aprendizaje runtime**: puede la memoria proponer claims al Builder, o solo el Builder publica Warm?
+5. **Multi-idioma**: normalizacion y canonicalizacion cross-lingual
+6. **A/B de builds**: metricas de calidad del Knowledge Model ademas del pass rate end-to-end
+7. **Compatibilidad GraphRAG**: export nativo desde Relation Layer
+8. **Bootstrap del Consumer**: carga total vs lazy por layer/artifact (ver RES-003)
+9. **Thresholds de confidence por capability**: globales vs especificos (ver RES-003)
+10. **Separacion de repos**: cuando justificar Opcion B? (ver RES-002)
+11. **Registry migrations**: cuando migrar vs recompilar desde documentos?
 
-1. **El problema no es de heuristicas, es de arquitectura.** El monolito mezcla index-time con query-time. El kernel hereda esta confusion.
-2. **Builder/Consumer split es la decision arquitectonica que desbloquea el cierre de la brecha.** No es un parche, es una separacion de responsabilidades.
-3. **El Builder reemplaza 14+ heuristicas hardcoded con LLM agentic.** El Consumer queda agnostic al dominio.
-4. **Migracion incremental posible.** No requiere big-bang. Fase 7a-7c antes de deprecar el monolito.
-5. **El Knowledge Artifact es el contrato.** Versionado, validable, A/B-testeable.
-6. **No se implementa ahora.** Se documenta como research para tener entre ceja y ceja. Cuando se decida, se promueve a ADR.
+---
+
+## 11. Takeaways
+
+1. **El problema no son las heuristicas; es recompilar conocimiento en query-time.**
+2. **El centro del sistema es el contrato Warm, no el Builder.**
+3. **Builder y Consumer son implementaciones reemplazables; el contrato es lo estable.**
+4. **Los Artifacts son serializaciones**, no el modelo interno.
+5. **El Artifact Registry es la autoridad unica de publicacion** — un componente con identidad propia, no un directorio.
+6. **Tres protocolos**: Publication Protocol (Builder -> Registry), Resolution Protocol (Consumer -> Registry), y el contrato Warm (Registry -> Consumer).
+7. **Artifact Lifecycle explica por que Cold nunca cruza la frontera.**
+8. **Confidence es una senal de decision del Consumer**, no solo provenance.
+9. **Entity Relations usan catalogo controlado** inspirado en RDF, no predicados libres.
+10. **El contrato es lo unico que Builder y Consumer comparten.** Todo lo demas es reemplazable.
+11. **No se implementa ahora.** Este research prepara la promocion futura a ADR.
+
+---
+
+## 12. Criterio de promocion a ADR
+
+Este research puede promoverse a ADR cuando se acuerde al menos:
+
+- el contrato como centro del sistema
+- frontera Builder/Consumer mediada por Artifact Registry
+- tres protocolos: Publication, Resolution, contrato Warm
+- Artifact Registry como componente de primera clase (publication, compatibility, rollback, integrity, migrations)
+- taxonomy Cold/Warm/Hot y su lifecycle
+- confidence minima por claim
+- catalogo controlado de predicados
+- Warm Artifacts minimos del contrato inicial
+- manifest schema y checksums
+
+Hasta entonces permanece como research de arquitectura de largo plazo.
+
+Ver tambien:
+- **RES-002** para el detalle del Knowledge Builder (compiler, KIR, passes, validation, layers, codegen)
+- **RES-003** para el detalle del Knowledge Consumer (consumo de Warm Artifacts, LLMSupport, migracion incremental)

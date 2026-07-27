@@ -21,6 +21,8 @@ La jerarquia de la [filosofia](philosophy.md) resuelve empates entre principios.
 - **P13. Inversion de dependencias.** Ningun componente crea directamente sus dependencias. Se reciben por inyeccion; solo el Composition Root cablea implementaciones. (No implica un framework DI; ver ADR-0014.)
 - **P14. Una responsabilidad por eslabon.** Evaluation senaliza, Policy decide, Controller ejecuta, Registry resuelve, Capability trabaja. Ningun eslabon invade al siguiente.
 - **P15. Registrar, no cablear.** Agregar una capacidad es registrarla en el Registry, nunca modificar el Controller ni el Kernel.
+- **P16. Ownership de decisiones.** Cada decision tiene un unico dueno; ningun otro componente la toma, sobrescribe ni replica. (ADR-0020)
+- **P17. La observabilidad no cambia el comportamiento.** Instrumentacion, benchmarking, tracing y evaluacion pueden ampliar la informacion disponible, pero nunca modificar las decisiones del pipeline. (ADR-0020)
 
 ## Criterio operativo de P11
 

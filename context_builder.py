@@ -221,7 +221,7 @@ class ContextBuilder:
                 'stream': False,
                 'options': {
                     'num_predict': 220, 'temperature': 0.2, 'top_k': 30,
-                    'top_p': 0.85, 'num_ctx': 2048,
+                    'top_p': 0.85, 'num_ctx': getattr(rag, 'num_ctx_tuned', 2048),
                     'num_gpu': getattr(rag, 'num_gpu_tuned', 99),
                 },
                 'keep_alive': '10m',

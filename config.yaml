@@ -18,6 +18,8 @@ paths:
 retrieval:
   score_threshold: 0.5
   top_k: 10
+  # Modo de filtrado/boost por entidad (ADR-0020): filter | boost | off
+  entity_mode: boost
   # FASE 2.BIS (v4.1): semantic_weight configurable para sweeps controlados.
   # El codigo aun sobreescribe este valor a 0.4 para queries numericas
   # (ver rag_hybrid.py numeric_q); ese comportamiento se mantiene aparte.
@@ -56,6 +58,7 @@ llm:
   model_name: mistral:7b
   base_url: http://localhost:11434
   num_gpu: 99
+  num_ctx: 8192
 
 # Kernel InfraPolus (Fase 1). enabled=false = monolito; true = Controller lineal.
 # No activar default=true hasta A/B vs BM-001 (EXP-001).
@@ -75,17 +78,13 @@ vectordb:
   collection_name_bge: cybersec_docs_bge_m3
 
 reranker:
+  enabled: true
   model_name: models/BAAI-bge-reranker-v2-m3
   local_path: models/BAAI-bge-reranker-v2-m3
-  # FASE 2.1 (v4.1): subido de 20 a 35. Diagnostico confirmo que IDs 6 y 9
-  # (retrieval misses) tenian el doc esperado en rank 25-34 pre-reranking,
-  # fuera del pool de 20. Requirio tambien corregir el cap oculto en
-  # retrieval_engine.py:rerank_results (ver comentario ahi).
-  candidate_pool: 35
-  # FASE 4: Pesos de mezcla hybrid/reranker (antes 55/45, ahora 30/70 favoreciendo reranker)
+  candidate_pool: 20
   mix:
-    hybrid_weight: 0.50
-    rerank_weight: 0.50
+    hybrid_weight: 0.70
+    rerank_weight: 0.30
     
 doccards:
   llm_enabled: true

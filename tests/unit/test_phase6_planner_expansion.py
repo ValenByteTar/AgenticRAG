@@ -283,13 +283,14 @@ class TestAdaptiveRerankerPool:
 
 class TestRepairHintImproved:
 
-    def test_repair_hint_contains_strict_instructions(self):
+    def test_repair_hint_contains_directed_instructions(self):
         policy = VerifyRepairPolicy()
         hint = policy._repair_hint
         assert "REPARACION REQUERIDA" in hint
-        assert "Instrucciones estrictas" in hint
+        assert "Instrucciones dirigidas" in hint
         assert "no hay informacion suficiente" in hint
-        assert "Cita la fuente" in hint
+        assert "Cita fuentes" in hint
+        assert "[Conocimiento general]" in hint
 
 
 # ---------------------------------------------------------------------------

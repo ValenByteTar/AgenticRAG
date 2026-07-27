@@ -940,7 +940,7 @@ Revisión:"""
                     "temperature": 0.1,
                     "top_k": 30,
                     "top_p": 0.85,
-                    "num_ctx": 2048,
+                    "num_ctx": getattr(rag, 'num_ctx_tuned', 2048),
                     "num_gpu": getattr(rag, 'num_gpu_tuned', 99),
                     "stop": ["```", "JSON", "Análisis", "Analizando"],
                 },
