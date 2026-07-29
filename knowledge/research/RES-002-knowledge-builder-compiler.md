@@ -1,13 +1,13 @@
 ---
 id: RES-002
 category: research
-status: draft
+status: accepted
 created: 2026-07-27
-updated: 2026-07-27
+updated: 2026-07-28
 author: human
 components: [knowledge_builder, kir, entity_extractor, doc_cards, equivalences_manager, conceptual_map]
 tags: [architecture, index-time, knowledge-compiler, knowledge-ir, knowledge-pass, validation, knowledge-model, layers, codegen, confidence-policy, incremental-compilation]
-related: [RES-001, RES-003, ADR-0015, ADR-0017, ADR-0018, DEC-008, BM-002, BM-003, BM-004]
+related: [RES-001, RES-003, RES-004, ADR-0015, ADR-0017, ADR-0018, DEC-008, BM-002, BM-003, BM-004]
 supersedes: null
 superseded_by: null
 ---
@@ -18,6 +18,9 @@ superseded_by: null
 > - **RES-001** — El contrato Warm como centro arquitectonico
 > - **RES-002** — Knowledge Builder / Knowledge Compiler (este documento)
 > - **RES-003** — Knowledge Consumer / evolucion del Agentic RAG runtime
+>
+> **Nota de seccionamiento (2026-07-28):** RES-003 fue a su vez seccionado; el observador
+> paralelo LLMSupport quedo en **RES-004**.
 
 ## Topic
 

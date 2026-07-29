@@ -48,8 +48,9 @@ _NUMERIC_KEYWORDS = {
 class PlannerCapability:
     name = "planner"
 
-    def __init__(self, planner_fn: Optional[PlannerFn] = None) -> None:
+    def __init__(self, planner_fn: Optional[PlannerFn] = None, *, resolver: Any = None) -> None:
         self._planner_fn = planner_fn
+        self._resolver = resolver
 
     def execute(
         self, state: ExecutionState, params: Optional[Dict[str, Any]] = None
@@ -62,6 +63,24 @@ class PlannerCapability:
                 plan = self._default_plan(state.question, state.entities)
         else:
             plan = self._default_plan(state.question, state.entities)
+
+        # E4: if resolver is available and no custom planner_fn provided candidate_docs,
+        # use compiled doc_roles from WarmArtifactResolver
+        if (
+            self._resolver is not None
+            and not plan.get("candidate_docs")
+            and plan.get("doc_roles_preferred")
+        ):
+            try:
+                candidates = self._resolver.get_candidate_docs(
+                    preferred_roles=plan["doc_roles_preferred"],
+                    entities=list(state.entities or []),
+                    limit=60,
+                )
+                if candidates:
+                    plan["candidate_docs"] = candidates
+            except Exception:
+                pass
 
         state.metadata["planned"] = True
         state.metadata["plan"] = plan

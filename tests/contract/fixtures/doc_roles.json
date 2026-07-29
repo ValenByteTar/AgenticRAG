@@ -1,0 +1,31 @@
+{
+  "docs": {
+    "doc:iso27001": {
+      "role": "entity_profile",
+      "name": "ISO 27001 Standard",
+      "centrality": 0.92,
+      "entity_ids": ["ent:iso-27001"],
+      "attributes": ["controls", "risk assessment", "annex a"],
+      "summary": "International standard for information security management systems.",
+      "confidence": 0.9,
+      "validated": true,
+      "builder_version": "1.0.0",
+      "generated_by": {
+        "extractor_id": "llm:granite-4.1-8b"
+      }
+    },
+    "doc:isms-guide": {
+      "role": "procedure",
+      "name": "ISMS Implementation Guide",
+      "centrality": 0.6,
+      "entity_ids": ["ent:iso-27001", "ent:isms"],
+      "attributes": ["implementation", "isms"],
+      "confidence": 0.85,
+      "validated": true,
+      "builder_version": "1.0.0",
+      "generated_by": {
+        "extractor_id": "llm:granite-4.1-8b"
+      }
+    }
+  }
+}

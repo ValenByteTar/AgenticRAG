@@ -2,7 +2,7 @@
 
 - **Estado:** Aceptado
 - **Fecha:** 2026-07-24
-- **Related:** RES-001, RES-002, RES-003, ADR-0015, ADR-0009, BM-002, BM-003, BM-004
+- **Related:** RES-001, RES-002, RES-003, RES-004, ADR-0015, ADR-0009, BM-002, BM-003, BM-004
 
 ## Contexto
 

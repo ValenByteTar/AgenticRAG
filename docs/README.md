@@ -11,6 +11,7 @@ Fuente de verdad arquitectonica del proyecto.
 | [principles.md](principles.md) | Principios inviolables (P1-P15) | Muy alta |
 | [adr/](adr/) | Decisiones atomicas e inmutables | Inmutable (se supersede) |
 | [roadmap.md](roadmap.md) | Fases de implementacion | Baja (cambia por ciclo) |
+| [plan-orquestacion-knowledge.md](plan-orquestacion-knowledge.md) | Ejecucion de Fase 7-8 (Builder/Consumer) | Baja (cambia por etapa) |
 | [phase0-exit.md](phase0-exit.md) | Exit criteria Fase 0 | Historico |
 
 ## Engineering Knowledge System (dev-time)

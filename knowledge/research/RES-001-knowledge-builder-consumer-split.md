@@ -3,11 +3,11 @@ id: RES-001
 category: research
 status: accepted
 created: 2026-07-24
-updated: 2026-07-27
+updated: 2026-07-28
 author: human
 components: [contract, artifact-registry, warm-artifacts, cold-artifacts, hot-artifacts]
 tags: [architecture, contract, warm-artifacts, artifact-registry, publication-protocol, resolution-protocol, cold-warm-hot, confidence, predicate-catalog, builder-consumer-boundary]
-related: [RES-002, RES-003, ADR-0009, ADR-0012, ADR-0013, ADR-0015, ADR-0017, ADR-0018, DEC-008, BM-002, BM-003, BM-004, EXP-006b]
+related: [RES-002, RES-003, RES-004, ADR-0009, ADR-0012, ADR-0013, ADR-0015, ADR-0017, ADR-0018, DEC-008, BM-002, BM-003, BM-004, EXP-006b]
 supersedes: null
 superseded_by: null
 ---
@@ -21,6 +21,9 @@ superseded_by: null
 >
 > El contenido original fue redistribuido respetando las tres preocupaciones arquitectonicas
 > que tenian lifecycles y stakeholders distintos: el contrato, el Builder, y el Consumer.
+>
+> **Nota de seccionamiento (2026-07-28):** RES-003 fue a su vez seccionado; el observador
+> paralelo LLMSupport quedo en **RES-004**.
 
 ## Topic
 

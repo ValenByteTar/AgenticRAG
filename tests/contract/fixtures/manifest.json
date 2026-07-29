@@ -1,0 +1,43 @@
+{
+  "build_id": "ka_v0.1.0-fixture",
+  "contract_version": "warm-v1",
+  "builder_version": "1.0.0",
+  "created_at": "2026-07-28T00:00:00Z",
+  "artifacts": {
+    "canonical_entities": {
+      "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "path": "artifacts/canonical_entities.json",
+      "size_bytes": 512
+    },
+    "alias_index": {
+      "sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "path": "artifacts/alias_index.json",
+      "size_bytes": 384
+    },
+    "entity_index": {
+      "sha256": "3333333333333333333333333333333333333333333333333333333333333333",
+      "path": "artifacts/entity_index.json",
+      "size_bytes": 256
+    },
+    "doc_roles": {
+      "sha256": "4444444444444444444444444444444444444444444444444444444444444444",
+      "path": "artifacts/doc_roles.json",
+      "size_bytes": 640
+    },
+    "entity_relations": {
+      "sha256": "5555555555555555555555555555555555555555555555555555555555555555",
+      "path": "artifacts/entity_relations.json",
+      "size_bytes": 448
+    },
+    "retrieval_metadata": {
+      "sha256": "6666666666666666666666666666666666666666666666666666666666666666",
+      "path": "artifacts/retrieval_metadata.json",
+      "size_bytes": 320
+    },
+    "predicate_catalog": {
+      "sha256": "7777777777777777777777777777777777777777777777777777777777777777",
+      "path": "artifacts/predicate_catalog.json",
+      "size_bytes": 1024
+    }
+  }
+}

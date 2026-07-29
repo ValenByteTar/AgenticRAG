@@ -16,11 +16,14 @@ class KnowledgeSystemAdapter:
     Adapter que satisface KnowledgeSystem (ADR-0015) sobre una instancia RAG.
 
     retrieve() delega a hybrid_search + rerank.
-    get_entity() es un stub que retorna None (esquema interno diferido).
+    get_entity() resuelve contra canonical_entities + entity_index del
+    WarmArtifactResolver cuando esta disponible (E4). Si no hay resolver,
+    retorna None (fallback al comportamiento anterior).
     """
 
-    def __init__(self, rag: Any) -> None:
+    def __init__(self, rag: Any, resolver: Any = None) -> None:
         self._rag = rag
+        self._resolver = resolver
 
     def retrieve(self, query: str, **kwargs: Any) -> List[Dict[str, Any]]:
         top_k = int(kwargs.get("top_k", 50) or 50)
@@ -45,4 +48,29 @@ class KnowledgeSystemAdapter:
         return list(results)
 
     def get_entity(self, entity_id: str) -> Optional[Dict[str, Any]]:
-        return None
+        """Resolve an entity by name or alias via WarmArtifactResolver (E4).
+
+        Tries alias resolution first, then canonical name lookup.
+        Returns the canonical entity dict with associated doc_ids from
+        entity_index, or ``None`` if no resolver or entity not found.
+        """
+        if self._resolver is None:
+            return None
+        try:
+            eid = self._resolver.resolve_alias(entity_id)
+            entity = None
+            if eid:
+                entity = self._resolver.get_entity_by_id(eid)
+            if entity is None:
+                entity = self._resolver.get_entity_by_name(entity_id)
+            if entity is None:
+                return None
+            result = dict(entity)
+            eid = result.get("entity_id", "")
+            if eid:
+                doc_ids = self._resolver.get_docs_for_entity(eid)
+                if doc_ids:
+                    result["doc_ids"] = doc_ids
+            return result
+        except Exception:
+            return None

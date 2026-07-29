@@ -1,0 +1,132 @@
+"""CanonicalizePass — canonicalizacion de KIR (RES-002 §5).
+
+Asigna:
+    - entity_id estables: ``ent:{slug(canonical_name)}``
+    - doc_id estables: ``doc:{slug(name)}``
+    - Predicados de relacion al catalogo controlado
+    - Taxonomia de roles normalizada
+    - Alias -> entidad canonica resuelta
+
+Este pass NO elimina claims (eso es DeduplicationPass).
+Solo asigna formas estables y resuelve referencias.
+"""
+
+from __future__ import annotations
+
+from typing import Dict, List, Set
+
+from ..kir import (
+    AliasClaim,
+    DocumentClaim,
+    EntityClaim,
+    EvidenceItem,
+    KIR,
+    RelationClaim,
+    normalize_text,
+    slugify,
+)
+from .base import KnowledgePass
+
+
+_ROLE_TAXONOMY: Dict[str, str] = {
+    "framework_list": "framework_list",
+    "cert_list": "cert_list",
+    "standard_profile": "standard_profile",
+    "entity_profile": "entity_profile",
+    "procedure": "procedure",
+    "manual_reference": "manual_reference",
+    "security_ops": "security_ops",
+    "analysis_report": "analysis_report",
+    "threat_intel": "threat_intel",
+    "policy_compliance": "policy_compliance",
+    "other": "other",
+}
+
+
+class CanonicalizePass(KnowledgePass):
+    """Asigna ids estables, resuelve aliases, mapea predicados al catalogo."""
+
+    def __init__(self, predicate_catalog: List[str] | None = None):
+        self.predicates = set(predicate_catalog or [])
+
+    def run(self, kir: KIR) -> KIR:
+        out = KIR(metadata=dict(kir.metadata))
+
+        canonical_map: Dict[str, str] = {}
+        for c in kir.entity_claims:
+            key = normalize_text(c.canonical_name)
+            if key and key not in canonical_map:
+                canonical_map[key] = f"ent:{slugify(c.canonical_name)}"
+
+        out.entity_claims = [
+            self._canon_entity(c, canonical_map) for c in kir.entity_claims
+        ]
+        out.alias_claims = [
+            self._canon_alias(c, canonical_map) for c in kir.alias_claims
+        ]
+        out.document_claims = [self._canon_document(c) for c in kir.document_claims]
+        out.relation_claims = [
+            self._canon_relation(c, canonical_map) for c in kir.relation_claims
+        ]
+
+        out.metadata["canonical_map"] = dict(canonical_map)
+        return out
+
+    @staticmethod
+    def _canon_entity(c: EntityClaim, cmap: Dict[str, str]) -> EntityClaim:
+        key = normalize_text(c.canonical_name)
+        eid = cmap.get(key, f"ent:{slugify(c.canonical_name)}")
+        return EntityClaim(
+            surface_form=c.surface_form,
+            canonical_name=c.canonical_name,
+            entity_types=list(c.entity_types),
+            extractor_id=c.extractor_id,
+            confidence=c.confidence,
+            evidence=list(c.evidence),
+            raw={**dict(c.raw), "entity_id": eid},
+        )
+
+    @staticmethod
+    def _canon_alias(c: AliasClaim, cmap: Dict[str, str]) -> AliasClaim:
+        key = normalize_text(c.canonical_name)
+        eid = cmap.get(key, f"ent:{slugify(c.canonical_name)}")
+        return AliasClaim(
+            alias=c.alias,
+            canonical_name=c.canonical_name,
+            extractor_id=c.extractor_id,
+            confidence=c.confidence,
+            evidence=list(c.evidence),
+            raw={**dict(c.raw), "entity_id": eid},
+        )
+
+    @staticmethod
+    def _canon_document(c: DocumentClaim) -> DocumentClaim:
+        doc_id = f"doc:{slugify(c.name)}"
+        role = _ROLE_TAXONOMY.get(c.role, "other")
+        return DocumentClaim(
+            source_path=c.source_path,
+            name=c.name,
+            role=role,
+            attributes=list(c.attributes),
+            centrality=c.centrality,
+            entity_mentions=list(c.entity_mentions),
+            summary=c.summary,
+            extractor_id=c.extractor_id,
+            confidence=c.confidence,
+            evidence=list(c.evidence),
+            raw={**dict(c.raw), "doc_id": doc_id},
+        )
+
+    def _canon_relation(self, c: RelationClaim, cmap: Dict[str, str]) -> RelationClaim:
+        pred = normalize_text(c.predicate)
+        if self.predicates and pred not in self.predicates:
+            pred = "equivalent_to" if "equivalent" in pred else pred
+        return RelationClaim(
+            subject_name=c.subject_name,
+            predicate=pred,
+            object_name=c.object_name,
+            extractor_id=c.extractor_id,
+            confidence=c.confidence,
+            evidence=list(c.evidence),
+            raw={**dict(c.raw), "subject_id": cmap.get(c.subject_name, ""), "object_id": cmap.get(c.object_name, "")},
+        )

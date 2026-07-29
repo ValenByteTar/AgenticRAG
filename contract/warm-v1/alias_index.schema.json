@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://infrapolus.dev/contract/warm-v1/alias_index.schema.json",
+  "title": "Warm Artifact: alias_index",
+  "type": "object",
+  "required": ["aliases"],
+  "additionalProperties": false,
+  "properties": {
+    "aliases": {
+      "type": "object",
+      "additionalProperties": {
+        "allOf": [
+          {"$ref": "common.schema.json#/definitions/confidence_block"},
+          {
+            "type": "object",
+            "required": ["entity_id"],
+            "properties": {
+              "entity_id": {"$ref": "common.schema.json#/definitions/entity_id"}
+            }
+          }
+        ]
+      }
+    }
+  }
+}

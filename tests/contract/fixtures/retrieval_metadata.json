@@ -1,0 +1,16 @@
+{
+  "docs": {
+    "doc:iso27001": {
+      "preferred_roles": ["entity_profile"],
+      "two_stage_eligible": true,
+      "scoping_preference": "candidate_docs",
+      "boost_weight": 0.05,
+      "confidence": 0.8,
+      "validated": true,
+      "builder_version": "1.0.0",
+      "generated_by": {
+        "extractor_id": "pipeline:doc-cards"
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://infrapolus.dev/contract/warm-v1/common.schema.json",
+  "title": "Warm Contract v1 - bloques comunes",
+  "definitions": {
+    "entity_id": {
+      "type": "string",
+      "pattern": "^ent:[a-z0-9][a-z0-9\\-]*$"
+    },
+    "doc_id": {
+      "type": "string",
+      "pattern": "^doc:[a-z0-9][a-z0-9\\-]*$"
+    },
+    "chunk_id": {
+      "type": "string",
+      "pattern": "^doc:[a-z0-9][a-z0-9\\-]*#c[0-9]+$"
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "semver": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "evidence_item": {
+      "type": "object",
+      "required": ["source_doc_id"],
+      "additionalProperties": false,
+      "properties": {
+        "source_doc_id": {"$ref": "#/definitions/doc_id"},
+        "source_chunk_ids": {
+          "type": "array",
+          "items": {"$ref": "#/definitions/chunk_id"}
+        },
+        "quote": {"type": "string"}
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/evidence_item"},
+      "minItems": 1
+    },
+    "confidence_block": {
+      "type": "object",
+      "required": ["confidence", "validated", "builder_version", "generated_by"],
+      "properties": {
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1},
+        "validated": {"const": true},
+        "builder_version": {"$ref": "#/definitions/semver"},
+        "generated_by": {
+          "type": "object",
+          "required": ["extractor_id"],
+          "properties": {
+            "extractor_id": {"type": "string", "minLength": 1},
+            "pipeline_stage": {"type": "string"}
+          }
+        },
+        "evidence": {"$ref": "#/definitions/evidence"}
+      }
+    }
+  }
+}

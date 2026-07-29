@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-27",
-  "count": 23,
+  "generated": "2026-07-29",
+  "count": 24,
   "entries": [
     {
       "id": "BM-001",
@@ -89,6 +89,45 @@
       "superseded_by": null
     },
     {
+      "id": "BM-004",
+      "category": "benchmark",
+      "status": "completed",
+      "title": "BM-004 - A/B Kernel Fase 6 + bug fixes de data flow vs Monolito",
+      "path": "benchmarks/BM-004-kernel-fase6-bugfixes.md",
+      "created": "2026-07-24",
+      "updated": "2026-07-28",
+      "author": "human",
+      "components": [
+        "kernel",
+        "retrieval",
+        "two-stage-retrieval",
+        "entity-expansion",
+        "planner"
+      ],
+      "tags": [
+        "ab",
+        "kernel",
+        "fase-6",
+        "bug-fixes",
+        "data-flow",
+        "monolito",
+        "retrieval"
+      ],
+      "related": [
+        "BM-003",
+        "DEC-008",
+        "DEC-010",
+        "EXP-006b",
+        "ADR-0006",
+        "ADR-0018",
+        "RES-001",
+        "RES-002",
+        "RES-003"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
       "id": "DEC-001",
       "category": "decision",
       "status": "accepted",
@@ -109,44 +148,6 @@
       ],
       "related": [
         "ADR-0017"
-      ],
-      "supersedes": null,
-      "superseded_by": null
-    },
-    {
-      "id": "DEC-002",
-      "category": "decision",
-      "status": "accepted",
-      "title": "DEC-002 - Cierre Fase 1: camino kernel lineal detras de flag",
-      "path": "decisions/DEC-002-phase1-kernel-path-flag.md",
-      "created": "2026-07-23",
-      "updated": "2026-07-23",
-      "author": "cascade",
-      "components": [
-        "kernel",
-        "control",
-        "capabilities",
-        "policies",
-        "facade",
-        "evaluation"
-      ],
-      "tags": [
-        "phase1",
-        "close",
-        "kernel-enabled",
-        "parity",
-        "facade"
-      ],
-      "related": [
-        "ADR-0002",
-        "ADR-0003",
-        "ADR-0006",
-        "ADR-0009",
-        "ADR-0010",
-        "ADR-0013",
-        "ADR-0017",
-        "BM-001",
-        "EXP-001"
       ],
       "supersedes": null,
       "superseded_by": null
@@ -309,16 +310,10 @@
       "status": "accepted",
       "title": "DEC-008 — Fase 6: Planner determinista + Entity Expansion + Tunings",
       "path": "decisions/DEC-008-planner-expansion-tunings.md",
-      "created": "2026-07-24",
-      "updated": "2026-07-24",
-      "author": "cascade",
-      "components": [
-        "planner",
-        "entity-expansion",
-        "retrieval",
-        "tuning",
-        "fase-6"
-      ],
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
       "tags": [
         "planner",
         "entity-expansion",
@@ -338,54 +333,15 @@
       "superseded_by": null
     },
     {
-      "id": "DEC-009",
-      "category": "decision",
-      "status": "accepted",
-      "title": "DEC-009 - Taxonomia de metricas en dos niveles: producto vs ingenieria",
-      "path": "decisions/DEC-009-metricas-dos-niveles.md",
-      "created": "2026-07-27",
-      "updated": "2026-07-27",
-      "author": "human",
-      "components": [
-        "evaluation",
-        "metrics",
-        "product-gates",
-        "engineering-metrics"
-      ],
-      "tags": [
-        "metrics",
-        "evaluation",
-        "product-gates",
-        "engineering-metrics",
-        "retrieval-doc-miss",
-        "adr-0020"
-      ],
-      "related": [
-        "ADR-0006",
-        "ADR-0019",
-        "ADR-0020",
-        "BM-001",
-        "BM-002",
-        "BM-003"
-      ],
-      "supersedes": null,
-      "superseded_by": null
-    },
-    {
       "id": "DEC-010",
-      "category": "decision",
+      "category": "decisions",
       "status": "accepted",
-      "title": "DEC-010 - Modo de entidades en retrieval: de filtro duro a boost acotado",
+      "title": "DEC-010 — Modo de entidades en retrieval: de filtro duro a boost acotado",
       "path": "decisions/DEC-010-modo-entidades-retrieval.md",
-      "created": "2026-07-27",
-      "updated": "2026-07-27",
-      "author": "human",
-      "components": [
-        "retrieval",
-        "entity_filter",
-        "entity_mode",
-        "boost"
-      ],
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
       "tags": [
         "retrieval",
         "entity_filter",
@@ -404,41 +360,54 @@
       "superseded_by": null
     },
     {
-      "id": "EXP-001",
-      "category": "experiment",
+      "id": "DEC-011",
+      "category": "decisions",
       "status": "accepted",
-      "title": "EXP-001 - Paridad Kernel lineal vs HybridRAG.query",
-      "path": "experiments/EXP-001-kernel-linear-parity-scaffold.md",
-      "created": "2026-07-22",
-      "updated": "2026-07-23",
-      "author": "cascade",
-      "components": [
-        "kernel",
-        "control",
-        "capabilities",
-        "policies",
-        "facade",
-        "evaluation"
-      ],
+      "title": "DEC-011 — Fasing de poblado de Warm Artifacts en warm-v1",
+      "path": "decisions/DEC-011-fasing-poblado-artifacts-warm-v1.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
       "tags": [
-        "kernel",
-        "phase1",
-        "parity",
-        "query_via_kernel",
-        "linear-rag",
-        "assess",
-        "close"
+        "contract",
+        "warm-v1",
+        "artifacts",
+        "fasing",
+        "evidence",
+        "taxonomy"
       ],
       "related": [
-        "ADR-0002",
-        "ADR-0003",
-        "ADR-0006",
-        "ADR-0009",
-        "ADR-0010",
-        "ADR-0013",
-        "ADR-0017",
-        "BM-001",
-        "DEC-002"
+        "ADR-0018",
+        "RES-001",
+        "RES-002",
+        "RES-003"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-012",
+      "category": "decisions",
+      "status": "accepted",
+      "title": "DEC-012 — Storage backend del Artifact Registry",
+      "path": "decisions/DEC-012-storage-backend-artifact-registry.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "artifact-registry",
+        "storage",
+        "filesystem",
+        "atomic-swap",
+        "integrity",
+        "retention"
+      ],
+      "related": [
+        "ADR-0018",
+        "RES-001",
+        "DEC-011"
       ],
       "supersedes": null,
       "superseded_by": null
@@ -625,7 +594,7 @@
       "title": "RES-001 - El contrato Warm como centro arquitectonico",
       "path": "research/RES-001-knowledge-builder-consumer-split.md",
       "created": "2026-07-24",
-      "updated": "2026-07-27",
+      "updated": "2026-07-28",
       "author": "human",
       "components": [
         "contract",
@@ -649,6 +618,7 @@
       "related": [
         "RES-002",
         "RES-003",
+        "RES-004",
         "ADR-0009",
         "ADR-0012",
         "ADR-0013",
@@ -658,6 +628,7 @@
         "DEC-008",
         "BM-002",
         "BM-003",
+        "BM-004",
         "EXP-006b"
       ],
       "supersedes": null,
@@ -666,11 +637,11 @@
     {
       "id": "RES-002",
       "category": "research",
-      "status": "draft",
+      "status": "accepted",
       "title": "RES-002 - Knowledge Builder (Knowledge Compiler)",
       "path": "research/RES-002-knowledge-builder-compiler.md",
       "created": "2026-07-27",
-      "updated": "2026-07-27",
+      "updated": "2026-07-29",
       "author": "human",
       "components": [
         "knowledge_builder",
@@ -696,6 +667,7 @@
       "related": [
         "RES-001",
         "RES-003",
+        "RES-004",
         "ADR-0015",
         "ADR-0017",
         "ADR-0018",
@@ -710,11 +682,11 @@
     {
       "id": "RES-003",
       "category": "research",
-      "status": "draft",
+      "status": "accepted",
       "title": "RES-003 - Knowledge Consumer / evolucion del Agentic RAG runtime",
       "path": "research/RES-003-knowledge-consumer-llm-support.md",
       "created": "2026-07-27",
-      "updated": "2026-07-27",
+      "updated": "2026-07-28",
       "author": "human",
       "components": [
         "kernel",
@@ -722,27 +694,22 @@
         "rag_hybrid",
         "planner",
         "retrieval",
-        "generation",
         "verify",
-        "assess",
-        "llm_support"
+        "assess"
       ],
       "tags": [
         "architecture",
         "query-time",
         "knowledge-consumer",
         "runtime-evolution",
-        "llm-support",
-        "observer",
-        "hypotheses",
-        "reactive",
-        "incremental",
         "migration",
-        "warm-artifacts-consumption"
+        "warm-artifacts-consumption",
+        "confidence-thresholds"
       ],
       "related": [
         "RES-001",
         "RES-002",
+        "RES-004",
         "ADR-0005",
         "ADR-0006",
         "ADR-0009",
@@ -755,6 +722,49 @@
         "DEC-008",
         "BM-002",
         "BM-003",
+        "BM-004"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-004",
+      "category": "research",
+      "status": "accepted",
+      "title": "RES-004 - LLMSupport: observador paralelo de hipotesis",
+      "path": "research/RES-004-llmsupport-observador-paralelo.md",
+      "created": "2026-07-28",
+      "updated": "2026-07-28",
+      "author": "human",
+      "components": [
+        "llm_support",
+        "trace_sink",
+        "model_provider",
+        "policy_engine",
+        "execution_state"
+      ],
+      "tags": [
+        "architecture",
+        "query-time",
+        "llm-support",
+        "observer",
+        "hypotheses",
+        "reactive",
+        "incremental",
+        "passive-advisory",
+        "small-model",
+        "cpu-parallel"
+      ],
+      "related": [
+        "RES-001",
+        "RES-002",
+        "RES-003",
+        "ADR-0005",
+        "ADR-0006",
+        "ADR-0007",
+        "ADR-0013",
+        "ADR-0014",
+        "ADR-0020",
         "BM-004"
       ],
       "supersedes": null,

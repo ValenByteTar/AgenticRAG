@@ -1,0 +1,1621 @@
+{
+  "timestamp": "20260729_174357",
+  "elapsed_s": 211.6,
+  "analysis": {
+    "summary": {
+      "total": 11,
+      "passed": 2,
+      "failed": 9,
+      "pass_rate": 0.182,
+      "answerable_pass_rate": 0.0,
+      "no_answer_pass_rate": 1.0,
+      "pass_retrieval_rate": 1.0,
+      "pass_groundedness_rate": 0.273,
+      "pass_generation_rate": 0.273,
+      "pass_hallucination_rate": 1.0,
+      "retrieval_doc_hit_rate": 0.222,
+      "retrieval_page_hit_rate": 0.111,
+      "recall_at_1": 0.111,
+      "recall_at_3": 0.222,
+      "recall_at_5": 0.222,
+      "avg_recall": 0.083,
+      "avg_mrr": 0.167,
+      "avg_precision_at_k": 0.078,
+      "avg_keyword_score": 0.252,
+      "avg_citation_fidelity": null,
+      "retrieval_doc_miss_count": 0,
+      "retrieval_page_miss_count": 8,
+      "llm_kw_miss_count": 8,
+      "hallucination_count": 0,
+      "latency_avg_ms": 11033,
+      "latency_p50_ms": 3630,
+      "latency_p95_ms": 84819,
+      "latency_max_ms": 84819,
+      "timing_embed_avg_ms": null,
+      "timing_semantic_avg_ms": null,
+      "timing_bm25_avg_ms": null,
+      "timing_fusion_avg_ms": null,
+      "timing_rerank_avg_ms": null,
+      "timing_llm_avg_ms": null
+    },
+    "layer_pass_counts": {
+      "pass_retrieval": 11,
+      "pass_groundedness": 3,
+      "pass_generation": 3,
+      "pass_hallucination": 2
+    },
+    "top_problems": {
+      "page_miss": 8,
+      "low_kw_score": 8,
+      "forbidden": 8,
+      "retrieval_miss": 0,
+      "hallucination": 0
+    },
+    "rank_distribution": {
+      "2": 1,
+      "1": 1
+    },
+    "by_category": {
+      "simple": {
+        "total": 3,
+        "passed": 0,
+        "retrieval_doc": 1,
+        "retrieval_page": 1,
+        "avg_recall": 0.167,
+        "avg_mrr": 0.167,
+        "avg_citation": null,
+        "avg_kw_score": 0.0
+      },
+      "multi_document": {
+        "total": 2,
+        "passed": 0,
+        "retrieval_doc": 1,
+        "retrieval_page": 0,
+        "avg_recall": 0.125,
+        "avg_mrr": 0.5,
+        "avg_citation": null,
+        "avg_kw_score": 0.214
+      },
+      "no_answer": {
+        "total": 2,
+        "passed": 2,
+        "retrieval_doc": 0,
+        "retrieval_page": 0,
+        "avg_recall": null,
+        "avg_mrr": null,
+        "avg_citation": null,
+        "avg_kw_score": 1.0
+      },
+      "ambiguous": {
+        "total": 2,
+        "passed": 0,
+        "retrieval_doc": 0,
+        "retrieval_page": 0,
+        "avg_recall": 0.0,
+        "avg_mrr": 0.0,
+        "avg_citation": null,
+        "avg_kw_score": 0.0
+      },
+      "complex": {
+        "total": 2,
+        "passed": 0,
+        "retrieval_doc": 0,
+        "retrieval_page": 0,
+        "avg_recall": 0.0,
+        "avg_mrr": 0.0,
+        "avg_citation": null,
+        "avg_kw_score": 0.171
+      }
+    },
+    "failed_cases": [
+      {
+        "id": 5,
+        "query": "Que es un SIEM y para que se usa?",
+        "reasons": [
+          "kw_score=0 missing=['siem', 'security', 'event', 'log']"
+        ],
+        "warnings": [
+          "recall=0.50 (multi-doc incompleto)"
+        ],
+        "pass_retrieval": true,
+        "pass_groundedness": true,
+        "pass_generation": false,
+        "pass_hallucination": true
+      },
+      {
+        "id": 10,
+        "query": "Que es cross-site scripting (XSS)?",
+        "reasons": [
+          "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+          "kw_score=0 missing=['xss', 'script', 'browser', 'injection']"
+        ],
+        "warnings": [
+          "retrieval_doc_miss",
+          "retrieval_page_miss",
+          "recall=0.00 (multi-doc incompleto)"
+        ],
+        "pass_retrieval": true,
+        "pass_groundedness": false,
+        "pass_generation": false,
+        "pass_hallucination": true
+      },
+      {
+        "id": 15,
+        "query": "Que es pretexting como tecnica de ingenieria social?",
+        "reasons": [
+          "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+          "kw_score=0 missing=['pretexting', 'social engineering', 'identity']"
+        ],
+        "warnings": [
+          "retrieval_doc_miss",
+          "retrieval_page_miss",
+          "recall=0.00 (multi-doc incompleto)"
+        ],
+        "pass_retrieval": true,
+        "pass_groundedness": false,
+        "pass_generation": false,
+        "pass_hallucination": true
+      },
+      {
+        "id": 22,
+        "query": "Que herramientas SIEM y SOAR se mencionan en los documentos disponibles?",
+        "reasons": [
+          "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+          "kw_score=0 missing=['siem', 'soar', 'tool']"
+        ],
+        "warnings": [
+          "retrieval_page_miss",
+          "recall=0.25 (multi-doc incompleto)"
+        ],
+        "pass_retrieval": true,
+        "pass_groundedness": false,
+        "pass_generation": false,
+        "pass_hallucination": true
+      },
+      {
+        "id": 27,
+        "query": "Que dice el reporte de brechas de datos 2022 sobre ingenieria social y como se r",
+        "reasons": [
+          "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)"
+        ],
+        "warnings": [
+          "retrieval_doc_miss",
+          "retrieval_page_miss",
+          "recall=0.00 (multi-doc incompleto)",
+          "kw_partial=0.43 missing=['social engineering', 'phishing', 'breach', 'data']"
+        ],
+        "pass_retrieval": true,
+        "pass_groundedness": false,
+        "pass_generation": true,
+        "pass_hallucination": true
+      },
+      {
+        "id": 42,
+        "query": "Como me preparo para la certificacion?",
+        "reasons": [
+          "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+          "kw_score=0 missing=['certification', 'certificacion', 'exam', 'examen', 'study', 'estudio', 'estudiar']"
+        ],
+        "warnings": [
+          "retrieval_doc_miss",
+          "retrieval_page_miss",
+          "recall=0.00 (multi-doc incompleto)"
+        ],
+        "pass_retrieval": true,
+        "pass_groundedness": false,
+        "pass_generation": false,
+        "pass_hallucination": true
+      },
+      {
+        "id": 48,
+        "query": "Que hace un pentester?",
+        "reasons": [
+          "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+          "kw_score=0 missing=['penetration', 'tester', 'vulnerability', 'test']"
+        ],
+        "warnings": [
+          "retrieval_doc_miss",
+          "retrieval_page_miss",
+          "recall=0.00 (multi-doc incompleto)"
+        ],
+        "pass_retrieval": true,
+        "pass_groundedness": false,
+        "pass_generation": false,
+        "pass_hallucination": true
+      },
+      {
+        "id": 52,
+        "query": "Describe el proceso completo de un pentest segun las mejores practicas: fases, t",
+        "reasons": [
+          "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+          "kw_score=0.20<0.3 missing=['reconnaissance', 'exploitation', 'report', 'phase']"
+        ],
+        "warnings": [
+          "retrieval_doc_miss",
+          "retrieval_page_miss",
+          "recall=0.00 (multi-doc incompleto)"
+        ],
+        "pass_retrieval": true,
+        "pass_groundedness": false,
+        "pass_generation": false,
+        "pass_hallucination": true
+      },
+      {
+        "id": 58,
+        "query": "Describe los pasos del RMF de NIST y como cada paso contribuye a la gestion de r",
+        "reasons": [
+          "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+          "kw_score=0.14<0.3 missing=['categorize', 'categorizar', 'select', 'seleccionar', 'implement', 'implementar', 'assess', 'evaluar', 'authorize', 'autorizar', 'monitor', 'monitorear']"
+        ],
+        "warnings": [
+          "retrieval_doc_miss",
+          "retrieval_page_miss",
+          "recall=0.00 (multi-doc incompleto)"
+        ],
+        "pass_retrieval": true,
+        "pass_groundedness": false,
+        "pass_generation": false,
+        "pass_hallucination": true
+      }
+    ]
+  },
+  "results": [
+    {
+      "id": 5,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Que es un SIEM y para que se usa?",
+      "passed": false,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "kw_score=0 missing=['siem', 'security', 'event', 'log']"
+      ],
+      "warnings": [
+        "recall=0.50 (multi-doc incompleto)"
+      ],
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": true,
+        "recall": 0.5,
+        "first_relevant_rank": 2,
+        "mrr": 0.5,
+        "precision_at_k": 0.2,
+        "matched": [
+          {
+            "source": "CISM Certified Information Security Manager.pdf",
+            "page": 321,
+            "score": 0.7577,
+            "rank": 2
+          },
+          {
+            "source": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+            "page": 138,
+            "score": 0.749,
+            "rank": 4
+          }
+        ],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.0,
+        "present": [],
+        "missing": [
+          "siem",
+          "security",
+          "event",
+          "log"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Error: [Errno 22] Invalid argument",
+      "sources_returned": [
+        {
+          "name": "CYBERSECURITY TERMS TO KNOW IN 2024.pdf",
+          "page": 9,
+          "score": 0.7849
+        },
+        {
+          "name": "CISM Certified Information Security Manager.pdf",
+          "page": 321,
+          "score": 0.7577
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 102,
+          "score": 0.7521
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "page": 138,
+          "score": 0.749
+        },
+        {
+          "name": "Conceptual Guide to Enterprise Cyber Security 2023.pdf",
+          "page": 138,
+          "score": 0.749
+        },
+        {
+          "name": "Certified Cloud Security Professional.pdf",
+          "page": 271,
+          "score": 0.6974
+        },
+        {
+          "name": "CDPSE_Certified_Data_Privacy_Solutions_Engineer_All_in_One_Exam.pdf",
+          "page": 444,
+          "score": 0.688
+        },
+        {
+          "name": "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "page": 280,
+          "score": 0.68
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 263,
+          "score": 0.6624
+        },
+        {
+          "name": "CISSP Passport.pdf",
+          "page": 330,
+          "score": 0.6106
+        }
+      ],
+      "latency_ms": 84819,
+      "timing_breakdown": {
+        "cap_classify_ms": 17.1,
+        "cap_memory_read_ms": 3.3,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 8841.6,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 4.7,
+        "cap_generation_ms": 75871.0,
+        "cap_verify_ms": 2.8,
+        "cap_finalize_turn_ms": 0.0,
+        "t_total_s": 84.74
+      },
+      "state_fidelity": "full"
+    },
+    {
+      "id": 10,
+      "category": "simple",
+      "difficulty": "low",
+      "is_answerable": true,
+      "query": "Que es cross-site scripting (XSS)?",
+      "passed": false,
+      "pass_retrieval": true,
+      "pass_groundedness": false,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+        "kw_score=0 missing=['xss', 'script', 'browser', 'injection']"
+      ],
+      "warnings": [
+        "retrieval_doc_miss",
+        "retrieval_page_miss",
+        "recall=0.00 (multi-doc incompleto)"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.0,
+        "present": [],
+        "missing": [
+          "xss",
+          "script",
+          "browser",
+          "injection"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Error: [Errno 22] Invalid argument",
+      "sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 5,
+          "score": 1.2461
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 3,
+          "score": 1.1391
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 16,
+          "score": 1.1052
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 25,
+          "score": 1.0778
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 73,
+          "score": 1.0774
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 16,
+          "score": 1.0707
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 72,
+          "score": 1.0503
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 14,
+          "score": 1.0422
+        },
+        {
+          "name": "CYBERSECURITY TERMS TO KNOW IN 2024.pdf",
+          "page": 1,
+          "score": 0.9802
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 12,
+          "score": 0.9644
+        }
+      ],
+      "latency_ms": 5810,
+      "timing_breakdown": {
+        "cap_classify_ms": 9.2,
+        "cap_memory_read_ms": 1.1,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 5777.8,
+        "cap_build_context_ms": 0.5,
+        "cap_assess_ms": 1.1,
+        "cap_generation_ms": 0.5,
+        "cap_verify_ms": 2.5,
+        "t_total_s": 5.801
+      },
+      "state_fidelity": "full"
+    },
+    {
+      "id": 15,
+      "category": "simple",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Que es pretexting como tecnica de ingenieria social?",
+      "passed": false,
+      "pass_retrieval": true,
+      "pass_groundedness": false,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+        "kw_score=0 missing=['pretexting', 'social engineering', 'identity']"
+      ],
+      "warnings": [
+        "retrieval_doc_miss",
+        "retrieval_page_miss",
+        "recall=0.00 (multi-doc incompleto)"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.0,
+        "present": [],
+        "missing": [
+          "pretexting",
+          "social engineering",
+          "identity"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Ingenieria social: Error: [Errno 22] Invalid argument",
+      "sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 5,
+          "score": 1.2461
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 3,
+          "score": 1.1391
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 16,
+          "score": 1.1052
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 25,
+          "score": 1.0778
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 73,
+          "score": 1.0774
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 16,
+          "score": 1.0707
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 72,
+          "score": 1.0503
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 14,
+          "score": 1.0422
+        },
+        {
+          "name": "CYBERSECURITY TERMS TO KNOW IN 2024.pdf",
+          "page": 1,
+          "score": 0.9802
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 12,
+          "score": 0.9644
+        }
+      ],
+      "latency_ms": 1970,
+      "timing_breakdown": {
+        "cap_classify_ms": 9.5,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 1938.0,
+        "cap_build_context_ms": 0.6,
+        "cap_assess_ms": 1.0,
+        "cap_generation_ms": 1.0,
+        "cap_verify_ms": 2.5,
+        "t_total_s": 1.962
+      },
+      "state_fidelity": "full"
+    },
+    {
+      "id": 22,
+      "category": "multi_document",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Que herramientas SIEM y SOAR se mencionan en los documentos disponibles?",
+      "passed": false,
+      "pass_retrieval": true,
+      "pass_groundedness": false,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+        "kw_score=0 missing=['siem', 'soar', 'tool']"
+      ],
+      "warnings": [
+        "retrieval_page_miss",
+        "recall=0.25 (multi-doc incompleto)"
+      ],
+      "retrieval": {
+        "hit_doc": true,
+        "hit_page": false,
+        "recall": 0.25,
+        "first_relevant_rank": 1,
+        "mrr": 1.0,
+        "precision_at_k": 0.5,
+        "matched": [
+          {
+            "source": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+            "page": 5,
+            "score": 1.2461,
+            "rank": 1
+          },
+          {
+            "source": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+            "page": 3,
+            "score": 1.1391,
+            "rank": 2
+          },
+          {
+            "source": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+            "page": 16,
+            "score": 1.0707,
+            "rank": 6
+          },
+          {
+            "source": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+            "page": 14,
+            "score": 1.0422,
+            "rank": 8
+          },
+          {
+            "source": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+            "page": 12,
+            "score": 0.9644,
+            "rank": 10
+          }
+        ],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.0,
+        "present": [],
+        "missing": [
+          "siem",
+          "soar",
+          "tool"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Error: [Errno 22] Invalid argument",
+      "sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 5,
+          "score": 1.2461
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 3,
+          "score": 1.1391
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 16,
+          "score": 1.1052
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 25,
+          "score": 1.0778
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 73,
+          "score": 1.0774
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 16,
+          "score": 1.0707
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 72,
+          "score": 1.0503
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 14,
+          "score": 1.0422
+        },
+        {
+          "name": "CYBERSECURITY TERMS TO KNOW IN 2024.pdf",
+          "page": 1,
+          "score": 0.9802
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 12,
+          "score": 0.9644
+        }
+      ],
+      "latency_ms": 3894,
+      "timing_breakdown": {
+        "cap_classify_ms": 7.5,
+        "cap_memory_read_ms": 1.8,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 3865.2,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.0,
+        "cap_generation_ms": 1.5,
+        "cap_verify_ms": 1.2,
+        "t_total_s": 3.887
+      },
+      "state_fidelity": "full"
+    },
+    {
+      "id": 27,
+      "category": "multi_document",
+      "difficulty": "high",
+      "is_answerable": true,
+      "query": "Que dice el reporte de brechas de datos 2022 sobre ingenieria social y como se relaciona con las preguntas de entrevista de seguridad disponibles?",
+      "passed": false,
+      "pass_retrieval": true,
+      "pass_groundedness": false,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)"
+      ],
+      "warnings": [
+        "retrieval_doc_miss",
+        "retrieval_page_miss",
+        "recall=0.00 (multi-doc incompleto)",
+        "kw_partial=0.43 missing=['social engineering', 'phishing', 'breach', 'data']"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.429,
+        "present": [
+          "ingenieria social",
+          "brecha",
+          "datos"
+        ],
+        "missing": [
+          "social engineering",
+          "phishing",
+          "breach",
+          "data"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Brechas de datos 2022 sobre ingenieria social: Error: [Errno 22] Invalid argument",
+      "sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 5,
+          "score": 1.2461
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 3,
+          "score": 1.1391
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 16,
+          "score": 1.1052
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 25,
+          "score": 1.0778
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 73,
+          "score": 1.0774
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 16,
+          "score": 1.0707
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 72,
+          "score": 1.0503
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 14,
+          "score": 1.0422
+        },
+        {
+          "name": "CYBERSECURITY TERMS TO KNOW IN 2024.pdf",
+          "page": 1,
+          "score": 0.9802
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 12,
+          "score": 0.9644
+        }
+      ],
+      "latency_ms": 3576,
+      "timing_breakdown": {
+        "cap_classify_ms": 10.5,
+        "cap_memory_read_ms": 1.5,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 3539.0,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 2.0,
+        "cap_generation_ms": 2.5,
+        "cap_verify_ms": 1.3,
+        "t_total_s": 3.568
+      },
+      "state_fidelity": "full"
+    },
+    {
+      "id": 33,
+      "category": "no_answer",
+      "difficulty": "medium",
+      "is_answerable": false,
+      "query": "Cuantos empleados tiene ISC2 a nivel global?",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": null,
+        "hit_page": null,
+        "recall": null,
+        "first_relevant_rank": null,
+        "mrr": null,
+        "precision_at_k": null,
+        "matched": [],
+        "skipped": true
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": true,
+        "declined": true,
+        "hallucinated": false,
+        "pass": true
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "No se encontro informacion en los documentos para esa consulta.",
+      "sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 5,
+          "score": 1.2461
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 3,
+          "score": 1.1391
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 16,
+          "score": 1.1052
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 25,
+          "score": 1.0778
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 73,
+          "score": 1.0774
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 16,
+          "score": 1.0707
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 72,
+          "score": 1.0503
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 14,
+          "score": 1.0422
+        },
+        {
+          "name": "CYBERSECURITY TERMS TO KNOW IN 2024.pdf",
+          "page": 1,
+          "score": 0.9802
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 12,
+          "score": 0.9644
+        }
+      ],
+      "latency_ms": 3563,
+      "timing_breakdown": {
+        "cap_classify_ms": 9.1,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 3543.2,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.0,
+        "t_total_s": 3.555
+      },
+      "state_fidelity": "full"
+    },
+    {
+      "id": 38,
+      "category": "no_answer",
+      "difficulty": "high",
+      "is_answerable": false,
+      "query": "Cuantos requisitos tiene la version 4.0.1 de PCI DSS?",
+      "passed": true,
+      "pass_retrieval": true,
+      "pass_groundedness": true,
+      "pass_generation": true,
+      "pass_hallucination": true,
+      "failure_reasons": [],
+      "warnings": [],
+      "retrieval": {
+        "hit_doc": null,
+        "hit_page": null,
+        "recall": null,
+        "first_relevant_rank": null,
+        "mrr": null,
+        "precision_at_k": null,
+        "matched": [],
+        "skipped": true
+      },
+      "response_validation": {
+        "keyword_score": 1.0,
+        "present": [],
+        "missing": [],
+        "found_forbidden": [],
+        "keywords_pass": true,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": true,
+        "declined": true,
+        "hallucinated": false,
+        "pass": true
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "No se encontro informacion en los documentos para esa consulta.",
+      "sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 5,
+          "score": 1.2461
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 3,
+          "score": 1.1391
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 16,
+          "score": 1.1052
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 25,
+          "score": 1.0778
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 73,
+          "score": 1.0774
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 16,
+          "score": 1.0707
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 72,
+          "score": 1.0503
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 14,
+          "score": 1.0422
+        },
+        {
+          "name": "CYBERSECURITY TERMS TO KNOW IN 2024.pdf",
+          "page": 1,
+          "score": 0.9802
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 12,
+          "score": 0.9644
+        }
+      ],
+      "latency_ms": 3630,
+      "timing_breakdown": {
+        "cap_classify_ms": 9.0,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 0.5,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 3609.4,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 2.0,
+        "t_total_s": 3.623
+      },
+      "state_fidelity": "full"
+    },
+    {
+      "id": 42,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Como me preparo para la certificacion?",
+      "passed": false,
+      "pass_retrieval": true,
+      "pass_groundedness": false,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+        "kw_score=0 missing=['certification', 'certificacion', 'exam', 'examen', 'study', 'estudio', 'estudiar']"
+      ],
+      "warnings": [
+        "retrieval_doc_miss",
+        "retrieval_page_miss",
+        "recall=0.00 (multi-doc incompleto)"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.0,
+        "present": [],
+        "missing": [
+          "certification",
+          "certificacion",
+          "exam",
+          "examen",
+          "study",
+          "estudio",
+          "estudiar"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Error: [Errno 22] Invalid argument",
+      "sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 5,
+          "score": 1.2461
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 3,
+          "score": 1.1391
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 16,
+          "score": 1.1052
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 25,
+          "score": 1.0778
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 73,
+          "score": 1.0774
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 16,
+          "score": 1.0707
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 72,
+          "score": 1.0503
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 14,
+          "score": 1.0422
+        },
+        {
+          "name": "CYBERSECURITY TERMS TO KNOW IN 2024.pdf",
+          "page": 1,
+          "score": 0.9802
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 12,
+          "score": 0.9644
+        }
+      ],
+      "latency_ms": 2062,
+      "timing_breakdown": {
+        "cap_classify_ms": 10.7,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 0.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 2024.6,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 2.7,
+        "cap_generation_ms": 1.5,
+        "cap_verify_ms": 3.0,
+        "t_total_s": 2.053
+      },
+      "state_fidelity": "full"
+    },
+    {
+      "id": 48,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "is_answerable": true,
+      "query": "Que hace un pentester?",
+      "passed": false,
+      "pass_retrieval": true,
+      "pass_groundedness": false,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+        "kw_score=0 missing=['penetration', 'tester', 'vulnerability', 'test']"
+      ],
+      "warnings": [
+        "retrieval_doc_miss",
+        "retrieval_page_miss",
+        "recall=0.00 (multi-doc incompleto)"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.0,
+        "present": [],
+        "missing": [
+          "penetration",
+          "tester",
+          "vulnerability",
+          "test"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Error: [Errno 22] Invalid argument",
+      "sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 5,
+          "score": 1.2461
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 3,
+          "score": 1.1391
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 16,
+          "score": 1.1052
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 25,
+          "score": 1.0778
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 73,
+          "score": 1.0774
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 16,
+          "score": 1.0707
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 72,
+          "score": 1.0503
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 14,
+          "score": 1.0422
+        },
+        {
+          "name": "CYBERSECURITY TERMS TO KNOW IN 2024.pdf",
+          "page": 1,
+          "score": 0.9802
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 12,
+          "score": 0.9644
+        }
+      ],
+      "latency_ms": 3952,
+      "timing_breakdown": {
+        "cap_classify_ms": 8.5,
+        "cap_memory_read_ms": 2.2,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 3918.1,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.0,
+        "cap_generation_ms": 2.0,
+        "cap_verify_ms": 1.5,
+        "t_total_s": 3.943
+      },
+      "state_fidelity": "full"
+    },
+    {
+      "id": 52,
+      "category": "complex",
+      "difficulty": "high",
+      "is_answerable": true,
+      "query": "Describe el proceso completo de un pentest segun las mejores practicas: fases, tecnicas de reconocimiento, explotacion y reporte, con referencia a los documentos disponibles.",
+      "passed": false,
+      "pass_retrieval": true,
+      "pass_groundedness": false,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+        "kw_score=0.20<0.3 missing=['reconnaissance', 'exploitation', 'report', 'phase']"
+      ],
+      "warnings": [
+        "retrieval_doc_miss",
+        "retrieval_page_miss",
+        "recall=0.00 (multi-doc incompleto)"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.2,
+        "present": [
+          "pentest"
+        ],
+        "missing": [
+          "reconnaissance",
+          "exploitation",
+          "report",
+          "phase"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "Un pentest segun las mejores practicas: fases, tecnicas de reconocimiento, explotacion: Error: [Errno 22] Invalid argument",
+      "sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 5,
+          "score": 1.2461
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 3,
+          "score": 1.1391
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 16,
+          "score": 1.1052
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 25,
+          "score": 1.0778
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 73,
+          "score": 1.0774
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 16,
+          "score": 1.0707
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 72,
+          "score": 1.0503
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 14,
+          "score": 1.0422
+        },
+        {
+          "name": "CYBERSECURITY TERMS TO KNOW IN 2024.pdf",
+          "page": 1,
+          "score": 0.9802
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 12,
+          "score": 0.9644
+        }
+      ],
+      "latency_ms": 4468,
+      "timing_breakdown": {
+        "cap_classify_ms": 12.8,
+        "cap_memory_read_ms": 1.0,
+        "cap_planner_ms": 0.5,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 4426.3,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.0,
+        "cap_generation_ms": 2.8,
+        "cap_verify_ms": 3.2,
+        "t_total_s": 4.461
+      },
+      "state_fidelity": "full"
+    },
+    {
+      "id": 58,
+      "category": "complex",
+      "difficulty": "high",
+      "is_answerable": true,
+      "query": "Describe los pasos del RMF de NIST y como cada paso contribuye a la gestion de riesgos de un sistema de informacion.",
+      "passed": false,
+      "pass_retrieval": true,
+      "pass_groundedness": false,
+      "pass_generation": false,
+      "pass_hallucination": true,
+      "failure_reasons": [
+        "verify_failed: verify: claim(s) factual no soportado(s) por el contexto (groundedness insuficiente)",
+        "kw_score=0.14<0.3 missing=['categorize', 'categorizar', 'select', 'seleccionar', 'implement', 'implementar', 'assess', 'evaluar', 'authorize', 'autorizar', 'monitor', 'monitorear']"
+      ],
+      "warnings": [
+        "retrieval_doc_miss",
+        "retrieval_page_miss",
+        "recall=0.00 (multi-doc incompleto)"
+      ],
+      "retrieval": {
+        "hit_doc": false,
+        "hit_page": false,
+        "recall": 0.0,
+        "first_relevant_rank": null,
+        "mrr": 0.0,
+        "precision_at_k": 0.0,
+        "matched": [],
+        "skipped": false
+      },
+      "response_validation": {
+        "keyword_score": 0.143,
+        "present": [
+          "rmf",
+          "nist"
+        ],
+        "missing": [
+          "categorize",
+          "categorizar",
+          "select",
+          "seleccionar",
+          "implement",
+          "implementar",
+          "assess",
+          "evaluar",
+          "authorize",
+          "autorizar",
+          "monitor",
+          "monitorear"
+        ],
+        "found_forbidden": [],
+        "keywords_pass": false,
+        "forbidden_pass": true
+      },
+      "hallucination": {
+        "applicable": false
+      },
+      "citation_fidelity": {
+        "cited": [],
+        "verified": [],
+        "unverified": [],
+        "score": null
+      },
+      "answer_snippet": "RMF de NIST: Error: [Errno 22] Invalid argument",
+      "sources_returned": [
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 5,
+          "score": 1.2461
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 3,
+          "score": 1.1391
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 16,
+          "score": 1.1052
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 25,
+          "score": 1.0778
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 73,
+          "score": 1.0774
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 16,
+          "score": 1.0707
+        },
+        {
+          "name": "Incident Response for Windows.pdf",
+          "page": 72,
+          "score": 1.0503
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 14,
+          "score": 1.0422
+        },
+        {
+          "name": "CYBERSECURITY TERMS TO KNOW IN 2024.pdf",
+          "page": 1,
+          "score": 0.9802
+        },
+        {
+          "name": "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "page": 12,
+          "score": 0.9644
+        }
+      ],
+      "latency_ms": 3623,
+      "timing_breakdown": {
+        "cap_classify_ms": 17.4,
+        "cap_memory_read_ms": 1.5,
+        "cap_planner_ms": 1.0,
+        "cap_entity_expansion_ms": 0.0,
+        "cap_retrieval_ms": 3580.4,
+        "cap_build_context_ms": 0.0,
+        "cap_assess_ms": 1.5,
+        "cap_generation_ms": 1.0,
+        "cap_verify_ms": 1.0,
+        "t_total_s": 3.614
+      },
+      "state_fidelity": "full"
+    }
+  ]
+}

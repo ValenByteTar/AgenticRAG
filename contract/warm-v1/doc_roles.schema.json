@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://infrapolus.dev/contract/warm-v1/doc_roles.schema.json",
+  "title": "Warm Artifact: doc_roles",
+  "type": "object",
+  "required": ["docs"],
+  "additionalProperties": false,
+  "properties": {
+    "docs": {
+      "type": "object",
+      "additionalProperties": {
+        "allOf": [
+          {"$ref": "common.schema.json#/definitions/confidence_block"},
+          {
+            "type": "object",
+            "required": ["role", "name"],
+            "properties": {
+              "role": {"type": "string", "minLength": 1},
+              "name": {"type": "string", "minLength": 1},
+              "centrality": {"type": "number", "minimum": 0, "maximum": 1},
+              "entity_ids": {
+                "type": "array",
+                "items": {"$ref": "common.schema.json#/definitions/entity_id"}
+              },
+              "attributes": {
+                "type": "array",
+                "items": {"type": "string"}
+              },
+              "summary": {"type": "string"}
+            }
+          }
+        ]
+      }
+    }
+  }
+}

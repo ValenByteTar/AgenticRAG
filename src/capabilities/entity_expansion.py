@@ -39,9 +39,17 @@ class EntityExpansionCapability:
         expand_fn: Optional[EntityExpandFn] = None,
         *,
         aliases: Optional[Dict[str, List[str]]] = None,
+        resolver: Any = None,
     ) -> None:
         self._expand_fn = expand_fn
-        self._aliases = aliases or _DEFAULT_ALIASES
+        self._resolver = resolver
+        if resolver is not None:
+            try:
+                self._aliases = resolver.get_all_aliases() or _DEFAULT_ALIASES
+            except Exception:
+                self._aliases = aliases or _DEFAULT_ALIASES
+        else:
+            self._aliases = aliases or _DEFAULT_ALIASES
 
     def execute(
         self, state: ExecutionState, params: Optional[Dict[str, Any]] = None

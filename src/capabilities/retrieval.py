@@ -19,10 +19,11 @@ RetrieveFn = Callable[..., List[Dict[str, Any]]]
 class RetrievalCapability:
     name = "retrieval"
 
-    def __init__(self, retrieve_fn: RetrieveFn) -> None:
+    def __init__(self, retrieve_fn: RetrieveFn, *, resolver: Any = None) -> None:
         if retrieve_fn is None:
             raise ValueError("retrieve_fn es obligatorio")
         self._retrieve = retrieve_fn
+        self._resolver = resolver
 
     def execute(
         self, state: ExecutionState, params: Optional[Dict[str, Any]] = None
@@ -63,6 +64,37 @@ class RetrievalCapability:
                     r["final_score"] = base_score + 0.05  # small boost
             results.sort(key=lambda r: r.get("final_score", 0), reverse=True)
 
+        # E4: entity_index boost — boost results from docs associated with entities
+        entity_doc_boost = False
+        if self._resolver is not None and results:
+            entity_doc_ids = set()
+            for e in (state.entities or []):
+                eid = self._resolver.resolve_alias(e)
+                if eid:
+                    entity_doc_ids.update(self._resolver.get_docs_for_entity(eid))
+                else:
+                    entity = self._resolver.get_entity_by_name(e)
+                    if entity:
+                        entity_doc_ids.update(
+                            self._resolver.get_docs_for_entity(entity.get("entity_id", ""))
+                        )
+            if entity_doc_ids:
+                entity_doc_lower = {d.lower() for d in entity_doc_ids}
+                for r in results:
+                    md = r.get("metadata") or {}
+                    src = str(md.get("source") or "").lower()
+                    if src in entity_doc_lower:
+                        base_score = (
+                            r.get("final_score")
+                            or r.get("rerank_score")
+                            or r.get("hybrid_score")
+                            or 0.0
+                        )
+                        r["final_score"] = base_score + 0.03
+                        entity_doc_boost = True
+                if entity_doc_boost:
+                    results.sort(key=lambda r: r.get("final_score", 0), reverse=True)
+
         state.results = list(results)
         state.metadata["retrieval_executed"] = True
 
@@ -84,6 +116,7 @@ class RetrievalCapability:
                 "boost_diversity": bool(params.get("boost_diversity")),
                 "doc_boosted": bool(candidate_docs),
                 "query_expanded": bool(expanded),
+                "entity_doc_boost": entity_doc_boost,
             },
         )
         return state

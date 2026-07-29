@@ -1,0 +1,14 @@
+{
+  "entities": {
+    "ent:iso-27001": {
+      "doc_ids": ["doc:iso27001", "doc:isms-guide"],
+      "chunk_ids": ["doc:iso27001#c12", "doc:isms-guide#c3"],
+      "confidence": 0.95,
+      "validated": true,
+      "builder_version": "1.0.0",
+      "generated_by": {
+        "extractor_id": "llm:granite-4.1-8b"
+      }
+    }
+  }
+}

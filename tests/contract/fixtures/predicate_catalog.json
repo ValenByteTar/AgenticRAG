@@ -1,0 +1,18 @@
+{
+  "catalog_version": "1.0.0",
+  "predicates": [
+    {"id": "defines", "description": "A define B"},
+    {"id": "implements", "description": "A implementa B"},
+    {"id": "belongs_to", "description": "A pertenece a B"},
+    {"id": "extends", "description": "A extiende B"},
+    {"id": "references", "description": "A referencia B"},
+    {"id": "depends_on", "description": "A depende de B"},
+    {"id": "supersedes", "description": "A reemplaza/supera a B"},
+    {"id": "equivalent_to", "description": "A es equivalente a B"},
+    {"id": "part_of", "description": "A es parte de B"},
+    {"id": "located_in", "description": "A se ubica en B"},
+    {"id": "governs", "description": "A gobierna/regula B"},
+    {"id": "certifies", "description": "A certifica B"},
+    {"id": "compares_with", "description": "A se compara con B"}
+  ]
+}

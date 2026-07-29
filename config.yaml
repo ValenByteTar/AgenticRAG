@@ -67,6 +67,15 @@ kernel:
   max_iterations: 12
   max_llm_calls: 6
 
+# Knowledge Builder (E3/E4) — Warm Artifacts del Registry
+# warm_artifacts_enabled: true  = Consumer resuelve Warm Artifacts via Resolution Protocol (default post-BM-005)
+# warm_artifacts_enabled: false = Consumer usa conocimiento hardcodeado (fallback)
+# Gate BM-005 superado: Set 1 +9.1pp, Set 2 +54.5pp, sin regresiones
+knowledge:
+  warm_artifacts_enabled: true
+  registry_root: knowledge_artifacts
+  confidence_threshold: 0.0
+
 vectordb:
   # NOTA: Renombrado de dominio electrico (crom_protocols_bge_m3) a ciberseguridad.
   # Requiere re-ejecutar build_rag_system.py / ingest_incremental.py para poblar la nueva coleccion.

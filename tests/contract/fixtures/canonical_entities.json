@@ -1,0 +1,26 @@
+{
+  "entities": [
+    {
+      "entity_id": "ent:iso-27001",
+      "canonical_name": "ISO 27001",
+      "types": ["framework", "standard"],
+      "confidence": 0.93,
+      "validated": true,
+      "builder_version": "1.0.0",
+      "generated_by": {
+        "extractor_id": "llm:granite-4.1-8b"
+      }
+    },
+    {
+      "entity_id": "ent:isms",
+      "canonical_name": "ISMS",
+      "types": ["concept"],
+      "confidence": 0.9,
+      "validated": true,
+      "builder_version": "1.0.0",
+      "generated_by": {
+        "extractor_id": "llm:granite-4.1-8b"
+      }
+    }
+  ]
+}

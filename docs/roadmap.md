@@ -142,7 +142,17 @@ Uso: antes de implementar → skill Context Builder; tras experimentos → Exper
 - [x] Documentacion: DEC-008, EXP-006b, BM-003
 - **Validacion:** 150 passed sin regresion; A/B BM-003: 45.5% pass (sin regresion vs BM-002), brecha con monolito persistente (retrieval: two-stage, equivalences)
 
-## Fase 7 - Compuestas
+## Fase 7 - Knowledge Builder / Consumer split
+
+**P1 D alta I alto R alto**
+
+Detalle de ejecucion en [plan-orquestacion-knowledge.md](plan-orquestacion-knowledge.md) (etapas E0-E8 + track B).
+
+- Contrato Warm, Artifact Registry, Knowledge Compiler, Consumer que resuelve — ADR-0018, RES-001/002/003
+- LLMSupport como observador paralelo (track independiente) — RES-004
+- **Validacion:** A/B por etapa; objetivo cerrar la brecha de 27.3pp vs monolito
+
+## Fase 9 - Compuestas
 
 **P3 D alta I incierto R alto**
 
@@ -153,7 +163,7 @@ Uso: antes de implementar → skill Context Builder; tras experimentos → Exper
 
 ```
 F0 -> F1 -> F2 -> F3 -> F4 -+-> F5 -> F6 -+
-                            +-------------+-> F7
+                            +-------------+-> F7 -> F8 -> F9
 ```
 
 ## Criterio de aceptacion global

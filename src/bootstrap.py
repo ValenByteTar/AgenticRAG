@@ -67,6 +67,7 @@ def build_kernel_bundle(
     entity_expand_fn: Any = None,
     model_provider: Optional[ModelProvider] = None,
     trace_sink: Optional[TraceSink] = None,
+    resolver: Any = None,
     extras: Optional[Dict[str, Any]] = None,
 ) -> KernelBundle:
     """
@@ -84,9 +85,9 @@ def build_kernel_bundle(
     root.register_capability(ClassifyCapability(classify_fn or _default_classify))
     mem_read_source = memory_port or memory_read_fn
     root.register_capability(MemoryReadCapability(mem_read_source))
-    root.register_capability(PlannerCapability(planner_fn))
-    root.register_capability(EntityExpansionCapability(entity_expand_fn))
-    root.register_capability(RetrievalCapability(retrieve_fn))
+    root.register_capability(PlannerCapability(planner_fn, resolver=resolver))
+    root.register_capability(EntityExpansionCapability(entity_expand_fn, resolver=resolver))
+    root.register_capability(RetrievalCapability(retrieve_fn, resolver=resolver))
     # F6: always register two_stage_retrieval; fallback delegates to retrieve_fn
     if two_stage_retrieve_fn is not None:
         root.register_capability(TwoStageRetrievalCapability(two_stage_retrieve_fn))
@@ -415,9 +416,39 @@ def build_kernel_bundle_from_rag(rag: Any, trace_sink: Optional[TraceSink] = Non
     except Exception:
         kcfg = {}
 
+    # E4: Warm Artifact resolution — feature flag gated (default: false)
+    warm_enabled = bool(
+        (getattr(rag, "config", None) or {}).get("knowledge", {}).get(
+            "warm_artifacts_enabled", False
+        )
+    )
+    resolver = None
+    if warm_enabled:
+        try:
+            from src.adapters import WarmArtifactResolver
+
+            registry_root = (
+                (getattr(rag, "config", None) or {})
+                .get("knowledge", {})
+                .get("registry_root", "knowledge_artifacts")
+            )
+            from src.artifact_registry.registry import ArtifactRegistry
+
+            registry = ArtifactRegistry(registry_root)
+            resolver = WarmArtifactResolver.from_registry(
+                registry,
+                confidence_threshold=float(
+                    (getattr(rag, "config", None) or {})
+                    .get("knowledge", {})
+                    .get("confidence_threshold", 0.0)
+                ),
+            )
+        except Exception:
+            resolver = None
+
     mem = getattr(rag, "memory", None)
     memory_port = MemoryPortAdapter(mem) if mem is not None else None
-    knowledge_system = KnowledgeSystemAdapter(rag)
+    knowledge_system = KnowledgeSystemAdapter(rag, resolver=resolver)
 
     # F6: wire entity_extractor + memory.get_synonyms as expand_fn
     entity_extractor = getattr(rag, "entity_extractor", None)
@@ -494,6 +525,7 @@ def build_kernel_bundle_from_rag(rag: Any, trace_sink: Optional[TraceSink] = Non
         entity_expand_fn=_expand_entities,
         model_provider=getattr(rag, "model_provider", None),
         trace_sink=trace_sink,
+        resolver=resolver,
         extras={
             "max_iterations": int(kcfg.get("max_iterations", 12) or 12),
             "max_llm_calls": int(kcfg.get("max_llm_calls", 6) or 6),
