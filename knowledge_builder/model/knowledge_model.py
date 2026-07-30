@@ -242,6 +242,21 @@ class KnowledgeModel:
                 )
         self.aliases = list(alias_seen.values())
 
+        # Stub canonical entities for aliases whose entity_id has no corresponding entity claim.
+        # An alias implicitly declares the existence of its canonical entity.
+        for alias_entry in self.aliases:
+            eid = alias_entry.entity_id
+            if eid and eid not in seen_ids:
+                seen_ids[eid] = CanonicalEntity(
+                    entity_id=eid,
+                    canonical_name=alias_entry.alias,
+                    types=["concept"],
+                    confidence=alias_entry.confidence * 0.5,
+                    extractor_ids=list(alias_entry.extractor_ids),
+                    evidence=list(alias_entry.evidence),
+                )
+        self.canonical_entities = list(seen_ids.values())
+
         # Entity index (entity -> docs)
         entity_docs: Dict[str, set] = {}
         entity_conf: Dict[str, float] = {}

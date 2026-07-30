@@ -24,19 +24,15 @@ from ..model.knowledge_model import KnowledgeModel
 
 
 _PREDICATE_CATALOG = [
-    {"id": "defines", "description": "A define B"},
-    {"id": "implements", "description": "A implementa B"},
-    {"id": "belongs_to", "description": "A pertenece a B"},
-    {"id": "extends", "description": "A extiende B"},
-    {"id": "references", "description": "A referencia B"},
-    {"id": "depends_on", "description": "A depende de B"},
-    {"id": "supersedes", "description": "A reemplaza/supera a B"},
-    {"id": "equivalent_to", "description": "A es equivalente a B"},
-    {"id": "part_of", "description": "A es parte de B"},
-    {"id": "located_in", "description": "A se ubica en B"},
-    {"id": "governs", "description": "A gobierna/regula B"},
-    {"id": "certifies", "description": "A certifica B"},
-    {"id": "compares_with", "description": "A se compara con B"},
+    {"id": "equivalent_to", "description": "A is equivalent to B"},
+    {"id": "depends_on", "description": "A depends on B"},
+    {"id": "implements", "description": "A implements B"},
+    {"id": "extends", "description": "A extends B"},
+    {"id": "references", "description": "A references B"},
+    {"id": "governs", "description": "A governs/regulates B"},
+    {"id": "contains", "description": "A contains B"},
+    {"id": "uses", "description": "A uses B"},
+    {"id": "creates", "description": "A creates/defines B"},
 ]
 
 _PREDICATE_IDS = [p["id"] for p in _PREDICATE_CATALOG]
@@ -101,12 +97,12 @@ class WarmCodegen:
     def _gen_retrieval_metadata(self, model: KnowledgeModel) -> Dict[str, Any]:
         docs: Dict[str, Any] = {}
         for doc in model.document_roles:
-            if doc.role in ("entity_profile", "standard_profile", "framework_list"):
+            if doc.role in ("entity_profile", "list"):
                 preferred = [doc.role]
                 two_stage = True
                 scoping = "candidate_docs"
                 boost = 0.05
-            elif doc.role in ("procedure", "manual_reference"):
+            elif doc.role in ("guide", "reference"):
                 preferred = [doc.role]
                 two_stage = False
                 scoping = "soft_boost"
@@ -132,7 +128,7 @@ class WarmCodegen:
 
     def _gen_predicate_catalog(self) -> Dict[str, Any]:
         return {
-            "catalog_version": "1.0.0",
+            "catalog_version": "2.0.0",
             "predicates": list(_PREDICATE_CATALOG),
         }
 

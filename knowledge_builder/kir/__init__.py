@@ -222,6 +222,65 @@ class KIR:
             ],
         }
 
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "KIR":
+        """Deserialize KIR from dict (for cache loading)."""
+        def _ev(ev_list: List[Dict[str, Any]]) -> List[EvidenceItem]:
+            return [
+                EvidenceItem(
+                    source_doc_id=e.get("source_doc_id", ""),
+                    source_chunk_ids=list(e.get("source_chunk_ids", [])),
+                    quote=e.get("quote", ""),
+                )
+                for e in ev_list
+            ]
+
+        kir = cls(metadata=dict(data.get("metadata", {})))
+        for c in data.get("entity_claims", []):
+            kir.entity_claims.append(EntityClaim(
+                surface_form=c.get("surface_form", ""),
+                canonical_name=c.get("canonical_name", ""),
+                entity_types=list(c.get("entity_types", [])),
+                extractor_id=c.get("extractor_id", ""),
+                confidence=float(c.get("confidence", 0.0)),
+                evidence=_ev(c.get("evidence", [])),
+                raw=dict(c.get("raw", {})),
+            ))
+        for c in data.get("alias_claims", []):
+            kir.alias_claims.append(AliasClaim(
+                alias=c.get("alias", ""),
+                canonical_name=c.get("canonical_name", ""),
+                extractor_id=c.get("extractor_id", ""),
+                confidence=float(c.get("confidence", 0.0)),
+                evidence=_ev(c.get("evidence", [])),
+                raw=dict(c.get("raw", {})),
+            ))
+        for c in data.get("document_claims", []):
+            kir.document_claims.append(DocumentClaim(
+                source_path=c.get("source_path", ""),
+                name=c.get("name", ""),
+                role=c.get("role", "other"),
+                attributes=list(c.get("attributes", [])),
+                centrality=float(c.get("centrality", 0.0)),
+                entity_mentions=list(c.get("entity_mentions", [])),
+                summary=c.get("summary", ""),
+                extractor_id=c.get("extractor_id", ""),
+                confidence=float(c.get("confidence", 0.0)),
+                evidence=_ev(c.get("evidence", [])),
+                raw=dict(c.get("raw", {})),
+            ))
+        for c in data.get("relation_claims", []):
+            kir.relation_claims.append(RelationClaim(
+                subject_name=c.get("subject_name", ""),
+                predicate=c.get("predicate", ""),
+                object_name=c.get("object_name", ""),
+                extractor_id=c.get("extractor_id", ""),
+                confidence=float(c.get("confidence", 0.0)),
+                evidence=_ev(c.get("evidence", [])),
+                raw=dict(c.get("raw", {})),
+            ))
+        return kir
+
 
 # --------------------------------------------------------------------------- #
 # Normalization helpers (used by passes)

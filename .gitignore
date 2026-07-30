@@ -33,5 +33,20 @@ protocolosPDF/
 # Archivos binarios no esenciales en la raíz
 *.mp3
 
+# Knowledge Builder — cache KIR y artifacts (se regeneran)
+cache/
+knowledge_artifacts/
+
+# Estado de ingesta y roles (se regeneran)
+data/ingest_registry.json
+data/doc_roles.json
+
+# Documentacion y conocimiento (no se versiona)
+knowledge/
+docs/
+*.pdf
+*.PDF
+
 # Cache de evaluaciones
 tests/outputs/
+tests/eval/reports/

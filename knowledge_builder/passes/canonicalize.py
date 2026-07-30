@@ -29,17 +29,77 @@ from .base import KnowledgePass
 
 
 _ROLE_TAXONOMY: Dict[str, str] = {
-    "framework_list": "framework_list",
-    "cert_list": "cert_list",
-    "standard_profile": "standard_profile",
+    "framework_list": "list",
+    "cert_list": "list",
+    "standard_profile": "entity_profile",
     "entity_profile": "entity_profile",
-    "procedure": "procedure",
-    "manual_reference": "manual_reference",
-    "security_ops": "security_ops",
-    "analysis_report": "analysis_report",
-    "threat_intel": "threat_intel",
-    "policy_compliance": "policy_compliance",
+    "procedure": "guide",
+    "manual_reference": "reference",
+    "security_ops": "guide",
+    "analysis_report": "analysis",
+    "threat_intel": "analysis",
+    "policy_compliance": "reference",
+    "list": "list",
+    "guide": "guide",
+    "reference": "reference",
+    "analysis": "analysis",
     "other": "other",
+}
+
+
+_PREDICATE_FALLBACK: Dict[str, str] = {
+    "related_to": "references",
+    "requires": "depends_on",
+    "contradicts": "references",
+    "provides": "creates",
+    "includes": "contains",
+    "contains": "contains",
+    "describes": "references",
+    "covers": "references",
+    "applies_to": "references",
+    "supports": "implements",
+    "aligned_with": "equivalent_to",
+    "complies_with": "governs",
+    "defines": "creates",
+    "belongs_to": "contains",
+    "part_of": "contains",
+    "supersedes": "extends",
+    "located_in": "references",
+    "certifies": "governs",
+    "compares_with": "references",
+    "is_certification_for": "governs",
+    "is_used_by": "uses",
+    "is_part_of": "contains",
+    "is_located_in": "references",
+    "is_composed_of": "contains",
+    "is_based_on": "depends_on",
+    "is_alternative_to": "equivalent_to",
+    "is_derived_from": "depends_on",
+    "is_type_of": "extends",
+    "is_instance_of": "implements",
+    "produces": "creates",
+    "interacts_with": "references",
+    "derived_from": "depends_on",
+    "alternative_to": "equivalent_to",
+    "created_by": "creates",
+    "is part of": "contains",
+    "is used by": "uses",
+    "is based on": "depends_on",
+    "is composed of": "contains",
+    "is located in": "references",
+    "is alternative to": "equivalent_to",
+    "is derived from": "depends_on",
+    "is type of": "extends",
+    "is instance of": "implements",
+    "is certification for": "governs",
+    "is equivalent to": "equivalent_to",
+    "depends on": "depends_on",
+    "is governed by": "governs",
+    "is contained in": "contains",
+    "is created by": "creates",
+    "is implemented by": "implements",
+    "is extended by": "extends",
+    "is referenced by": "references",
 }
 
 
@@ -120,7 +180,9 @@ class CanonicalizePass(KnowledgePass):
     def _canon_relation(self, c: RelationClaim, cmap: Dict[str, str]) -> RelationClaim:
         pred = normalize_text(c.predicate)
         if self.predicates and pred not in self.predicates:
-            pred = "equivalent_to" if "equivalent" in pred else pred
+            pred = _PREDICATE_FALLBACK.get(pred, pred)
+            if pred not in self.predicates:
+                pred = "references" if "references" in self.predicates else "equivalent_to"
         return RelationClaim(
             subject_name=c.subject_name,
             predicate=pred,

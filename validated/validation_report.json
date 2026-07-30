@@ -1,0 +1,22 @@
+{
+  "is_valid": true,
+  "errors": [],
+  "warnings": [
+    "alias_claim duplicado: iso/iec 27001:ent:international-organization-for-standardization-international-electrotechnical-commission-27001",
+    "semantic: alias contradiction: 'iso 27001' apunta a 2 canonicos: {'iso/iec 27001', 'information security management system'}",
+    "semantic: alias contradiction: 'iso/iec 27001' apunta a 4 canonicos: {'international organization for standardization/international electrotechnical commission 27001', 'information security management systems - requirements', 'international organization for standardization / international electrotechnical commission 27001', 'information security management system'}",
+    "semantic: alias contradiction: 'isms' apunta a 2 canonicos: {'information security management system', 'iso 27001'}",
+    "semantic: alias contradiction: 'iso27001' apunta a 2 canonicos: {'iso/iec 27001', 'iso 27001'}",
+    "semantic: alias contradiction: 'toolkit' apunta a 3 canonicos: {'implementation toolkit', 'iso/iec 27001 implementation guide', 'iso/iec 27001 implementation toolkit'}"
+  ],
+  "quarantined": [],
+  "passed": 1856,
+  "rejected": 0,
+  "model_stats": {
+    "canonical_entities": 414,
+    "aliases": 236,
+    "entity_index": 260,
+    "document_roles": 855,
+    "relations": 76
+  }
+}

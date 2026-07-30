@@ -492,13 +492,17 @@ class TestWarmCodegen:
         assert "created_at" in manifest
         assert len(manifest["artifacts"]) == 7
 
-    def test_predicate_catalog_has_13_predicates(self):
+    def test_predicate_catalog_has_9_predicates_v2(self):
         kir = KIR()
         model = KnowledgeModel.from_kir(kir)
         codegen = WarmCodegen()
         output = codegen.generate(model)
         catalog = output["artifacts"]["predicate_catalog"]
-        assert len(catalog["predicates"]) == 13
+        assert len(catalog["predicates"]) == 9
+        assert catalog["catalog_version"] == "2.0.0"
+        expected_ids = {"equivalent_to", "depends_on", "implements", "extends", "references", "governs", "contains", "uses", "creates"}
+        actual_ids = {p["id"] for p in catalog["predicates"]}
+        assert actual_ids == expected_ids
 
 
 # --------------------------------------------------------------------------- #

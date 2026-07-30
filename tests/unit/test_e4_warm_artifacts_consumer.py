@@ -92,10 +92,10 @@ _SAMPLE_ARTIFACTS: Dict[str, Any] = {
         }
     },
     "predicate_catalog": {
-        "catalog_version": "1.0.0",
+        "catalog_version": "2.0.0",
         "predicates": [
             {"id": "equivalent_to", "description": "Semantic equivalence"},
-            {"id": "part_of", "description": "Containment"},
+            {"id": "contains", "description": "Containment"},
         ],
     },
 }
