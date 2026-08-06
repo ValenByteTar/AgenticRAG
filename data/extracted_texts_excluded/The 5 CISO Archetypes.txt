@@ -1,0 +1,536 @@
+=== The 5 CISO Archetypes.pdf ===
+
+--- Página 1 ---
+Clarify Your Role | Align to Business 
+Objectives | Be Happy Doing It
+CISO Archeotypes
+Five
+Christian Hyatt
+WRITTEN BY
+AN E-BOOK PRODUCED BY
+The
+
+--- Página 2 ---
+Contents
+Goal of this Book ................................................3
+Background.............................................................................4
+Background Continued........................................................5
+3 Business Objectives.........................................6
+Overview.................................................................................7
+Objective 1: Risk Management...........................................8
+Case Study: Risk Management............................................9
+Objective 2: Cost Reduction............................................. 10
+Case Study: Cost Reduction............................................. 11
+Objective 3: Revenue Generation................................... 12
+Case Study: Revenue Generation.................................... 13
+The Five CISO Archeotypes..........................14
+The Five CISO Archetypes............................................... 15
+The Executive....................................................................... 16
+The Engineer.......................................................................... 17
+The GRC Guru...........................................................................18
+The Technician..........................................................................19
+The Builder............................................................................... 20
+Toolkit.................................................................. 21
+Assess Your Archeotype.................................................... 21
+Building Your Team.......................................................... 22
+About the Author..........................................................23
+Let’s Get Started....................................................... 24
+2
+
+--- Página 3 ---
+By reading this book you will discover your strengths, 
+weaknesses, areas where you need support from your 
+team, and types of organizations you best fit.  We call these 
+attributes Security Leader Archetypes.
+We will also provide the tools to analyze organizations to 
+better understand their security priorities. You will be able 
+to use these tools to identify organizations that would most 
+benefit from your natural strengths as a security leader. 
+Organizations that you will love to work with and that would 
+love to have you as part of their team.
+Ultimately, we believe following the steps outlined in this 
+book will make you a more effective security leader and 
+more satisfied with your career.
+This Book is for Current  
+or Aspiring Security Leaders
+Goal of this Book 
+	
+✓Do you know your unique ability?
+	
+✓Is your current role a source of 
+positive energy? 
+	
+✓Are you making an impact on your 
+organization? 
+	
+✓Are you making an impact on 
+team members?
+3
+
+--- Página 4 ---
+Before we begin, it may be helpful to understand how we 
+arrived at the conclusions in this book.
+Over five years, risk3sixty has performed over 1000 security 
+assessments. During that same period, we have had the 
+opportunity to interview dozens of security executives on 
+our company podcast Tuesday Morning Grind.
+These intimate interactions with security leaders and the 
+organizations they serve afforded us the unique opportunity 
+identify a clear pattern: 5 CISO Archetypes.
+We realized that virtually all of the security leaders that we 
+work with share common attributes. Further, we realized 
+that the highest performing (and most satisfied) security 
+leaders work at organizations that uniquely aligned with 
+their CISO Archetype.
+Background
+	
+✓1000 Security Assessments
+	
+✓100s of Interviews with 
+Security Leaders
+4
+
+--- Página 5 ---
+That’s when we realized there could be an opportunity 
+to consciously align the right security leader to the 
+right organization. By understanding these archetypes, 
+security leaders can seek alignment as part of their own 
+career planning. Similarly, organizations could design job 
+descriptions and build teams around them.
+Today, CISO-to-Organization alignment rarely happened 
+intentionally. Usually, a CISO just happens to land in a 
+job that is a great fit, but “archetype” alignment is rarely a 
+decision criterion.
+Similarly, organizations are equally haphazard. They typically 
+interview for security leaders with the right experience, but 
+fail to identify unique personality attributes that will make 
+both parties were successful.
+That is the inspiration for this book. We think that this 
+book can serve as a CISO-to-Organization matchmaking 
+guide. And if security leaders and organizations are 
+well matched, it sets both parties up for long-term 
+success.
+Background 
+	
+✓Security leader career 
+planning 
+	
+✓Organizations can build 
+teams around these ideas
+Continued
+5
+
+--- Página 6 ---
+3 Business 
+Objectives
+Everything security does will align to 
+one of these three business objectives.  
+There are no exceptions.
+
+--- Página 7 ---
+Business Objectives
+7
+Overview
+Every business leader must understand that there are three business objectives that 
+security leaders support.
+Only three.
+These business objectives exist in every organization, in every industry, of every 
+size. They are the key to your organization’s sustainability and growth. And 
+every business leader has these three objectives top of mind. Understanding 
+these business objectives will help you understand the critical drives of your 
+organization’s success, get inside the mind of the executive team, and align your 
+security program to the essential activities of the business.
+When security leaders have this knowledge, it opens doors. You become 
+a peer to the executive team. You get brought in on business strategy. 
+Those conversations - in turn - inform your security strategy. That creates an 
+environment where you can get things done.
+	
+✓Improved Risk  Management
+	
+✓Free Up Resources
+	
+✓Cost Reduction
+
+--- Página 8 ---
+Business Objectives
+8
+Objective 1: Risk Management
+	
+✓Goal is to reduce risk
+	
+✓Common for companies protecting 
+critical data or infrastructure
+	
+✓May prioritize implementation 
+of new toolsets or monitoring of 
+security program health
+The first business objective many organizations have is risk management. For most 
+security leaders, this is the most intuitive business objective supported by security. It 
+is easy to understand how good security reduces risk. 
+Risk management is a common objective for organizations that a security 
+breach would significantly impact. For example, companies that support critical 
+infrastructure, banking, and finance or store large amounts of customer data 
+would likely consider risk management a primary objective.
+Organizations concerned with risk management may prioritize projects such 
+as implementing new toolsets or enhanced processes to monitor for security 
+program health.
+
+--- Página 9 ---
+Business Objectives
+9
+Case Study: Risk Management
+	
+ɪ What do you think are the executive 
+team’s biggest concerns? 
+	
+ɪ What business objective best aligns 
+with the goals of CriticalCorp?
+	
+ɪ What type of team members should 
+the security leader consider? What 
+skills will they need?
+CritcalCorp is a big data company that stores the identity of over 500M people 
+globally. They share this information with federal state governments. The 
+information includes SS#, employment history, and top-secret military clearance 
+status.
+The company is aware that it could be a target of nation-states, criminal 
+organizations, and hacktivists. They are also aware that their business would 
+lose a significant competitive advantage and harm their reputation beyond 
+repair if the data is compromised.
+Thinking Excercise
+
+--- Página 10 ---
+Business Objectives
+10
+Objective 2: Cost Reduction
+	
+✓Goal is to reduce cost and 
+complexity
+	
+✓Common goal of companies 
+burdened with audit and compliance 
+requirements
+	
+✓Harmonizing audits or automation 
+may be common project types
+The second objective of security is cost reduction. This is the organization’s 
+desire to reduce the monetary cost, complexity,  human efforts associated with 
+achieving security and compliance goals.
+Cost and complexity reduction objectives are common for organizations that are 
+over-burdened by audit and compliance requirements. For example, in some 
+organization’s product engineers are significantly hindered by spending their 
+days collecting audit evidence instead of building products.
+For these organizations, harmonizing audit efforts and automation might be key 
+project types.
+
+--- Página 11 ---
+Business Objectives
+11
+Case Study: Cost Reduction
+	
+ɪ What do you think are the executive 
+team’s biggest concerns? 
+	
+ɪ What business objective best aligns 
+with the goals of MegaSaaS?
+	
+ɪ What type of team members should 
+the security leader consider? What 
+skills will they need?
+MegaSaaS has the largest project management tool on the internet. The tool is 
+used by millions of end-users across thousands of companies daily.
+Due to the software’s wide variety of potential use cases, the company has 
+a significant compliance burden. They must comply with SOC 2, ISO 27001, 
+HITRUST, PCI DSS, GDPR, among other contractual requirements, with some of 
+their largest customers.
+The audit burden and associated evidence gathering are starting to impact 
+morale. The engineering team has even missed deadlines due to attending audit 
+walkthroughs and collecting evidence.
+Thinking Excercise
+
+--- Página 12 ---
+Business Objectives
+12
+Objective 3: Revenue Generation
+	
+✓Goal is to support sales and 
+customer trust
+	
+✓Common goal of high growth 
+technology companies
+	
+✓Obtaining certifications, answering 
+security questionnaires, customer 
+interface are common tasks
+The third objective of security is to assist with revenue-generating activities. This 
+is the organization’s desire to win the trust of new clients and prospects by 
+demonstrating an effective and compliance posture.
+Revenue generation is often a top business objectives start-up and high growth 
+technology revenue-focused organizations.
+Common security initiatives such as obtaining security certifications, answering 
+diligence questionnaires, or supporting sales calls may fall into this category.
+
+--- Página 13 ---
+Business Objectives
+13
+Case Study: Revenue Generation
+	
+ɪ What do you think are the executive 
+team’s biggest concerns? 
+	
+ɪ What business objective best aligns 
+with the goals of CashSoft?
+	
+ɪ What type of team members should 
+the security leader consider? What 
+skills will they need?
+CashSoft is a startup that recently received $35M in venture capital funding. They 
+are a SaaS application that helps facilitate payments for retail locations. They are 
+doubling in revenue every year and acquiring new customers weekly.
+Because customers are deeply concerned with the security of payment 
+transactions, the security leader sits in on sales calls and answers security 
+questionnaires almost daily. The organization has also committed to PCI DSS 
+and SOC 2 compliance.
+Next year, CashSoft expects to partner with two large banks, and security is top 
+of mind for the partnership to finalize.
+Thinking Excercise
+
+--- Página 14 ---
+The Five 
+ CISO Archeotypes
+Who you are | Where you thrive | Where others can help
+
+--- Página 15 ---
+15
+The Five CISO Archetypes
+	
+ɪ Do you understand your unique 
+abilities?
+	
+ɪ Is your current role a source of 
+positive energy? 
+	
+ɪ Are you making an impact on your 
+organization? 
+	
+ɪ Are you making an impact on team 
+members?
+One of the most important things any leader can do is know themselves.
+Great leaders must examine themselves to understand their strengths, 
+weaknesses, and passions. Self-awareness arms leaders with the knowledge 
+to align themselves with the right organization and build the right team to 
+accomplish important work.
+Understanding the five CISO archetypes provides a model to understand 
+yourself for security leaders. You should use this information as a guide to 
+understanding your career and the team you want to build.
+Thinking Excercise
+
+--- Página 16 ---
+16
+The Executive
+	
+✓Great leader 
+	
+✓Alignment with business 
+objectives
+	
+✓Must be supported by 
+doers
+Strengths: Often great cross-functional leaders that can get things done. They are naturally 
+attached to the business’s priorities and run security accordingly. They often have 
+experience building teams and budgeting. They often empathize with those outside the 
+security organization and, as a result, can collaborate effectively.
+Weaknesses: May lack technical skills or compliance experience. As a result, they are 
+not effective individual contributors.
+Support Needed: Often need to be supported by a strong team of non-executive 
+subject matter experts at the management level. There should be an enhanced focus 
+on reporting key performance indicators that clearly communicate the program’s 
+health to the Executive CISO.
+Best Fit: Typically, a better fit for more complex organizations that require a strong 
+administrator and manager of people at the helm. Organizations with multiple business 
+units and multi-layered organizational structures would benefit from an executive CISO.
+The Five CISO Archeotypes
+An executive (often a former CIO, COO, or CTO) that has been tasked 
+with the responsibility of running the security organization.
+
+--- Página 17 ---
+17
+The Engineer
+	
+✓Natural Engineer
+	
+✓Empathizes with SMEs
+	
+✓Dislikes Compliance and 
+Bureaucracies
+Strengths: Thrives in engineering-minded organizations with technically minded staff charged 
+with building secure systems. They are especially effective when communicating with software 
+developers or system architects.
+Weaknesses: They typically understand security at a deeper technical level but often 
+struggle with the bureaucracy that accompanies compliance. 
+Support Needed: They will help the organization thrive when paired with GRC managers 
+who can help run the compliance side of the program.
+Best Fit: Can be sub-divided into enterprise security technicians and product security 
+leaders. Enterprise security practitioners will be great for organizations with a network they 
+wish to protect from outsiders. If you have a large security operations center or network 
+security concerns, they are the right fit for you. If your organization’s most significant 
+concerns are product security, you may prefer someone with a “DevSecOps” or engineering 
+background.
+The Five CISO Archeotypes
+Often has prior experience in information technology, engineering, or 
+product. They were often “doers” or “builders” with a hands-on background.
+
+--- Página 18 ---
+18
+The GRC Guru
+	
+✓Great nose for 
+business risk
+	
+✓Master at Compliance
+	
+✓Lacks experience with 
+tools and technology
+Strengths: Thrive in highly regulated environments with the ability to follow a framework, 
+achieve certification, and collaborate with auditors and regulators. They typically understand 
+how to interpret and navigate audit, certification, and regulatory frameworks. GRC CISOs are 
+often well equipped to navigate executive and board-level reporting.
+Weaknesses: Often lack deep technical acumen or engineering experience. As a result, 
+they may not have hands-on experience using security tools or building software. Because 
+of this, they may not have the expertise to manage or implement technical solutions.
+Support Needed: Well paired with technical subject matter experts that are comfortable 
+executing technical “hands-on” job requirements.
+Best Fit: Great for organizations with complex regulatory or compliance requirements. For 
+organizations focused on achieving security certifications, meeting regulatory or compliance 
+requirements, or facing significant customer due diligence (e.g., security questionnaires) in 
+the sales cycle, a GRC CISO may be the right choice. If your organization’s biggest concerns are 
+product security, you may prefer someone with a “DevSecOps” or engineering background.
+The Five CISO Archeotypes
+Likely has prior public accounting, auditing, and governance experience. 
+They will be focused on governance, assurance, and compliance.
+
+--- Página 19 ---
+19
+The Technician
+	
+✓Understands the link 
+between traditional I.T.  
+and Cybersecurity
+	
+✓Took on Security as an 
+Additional Duty
+	
+✓Multiple hats (CIO, VP of I.T.)
+Strengths: Have the best understanding of the technical components of various systems that 
+support the organization.
+Weaknesses: Since I.T. builds and supports the systems in question they may have blind 
+spots when it comes to assessing their security posture. Further, there is a natural conflict 
+of interest as the I.T. leader may be apprehensive to point out security weaknesses in the 
+systems they own. Finally, there is simply too much to do – the I.T. leader will not have the 
+time to oversee all of I.T. and security effectively.
+Support Needed: While the Technician may be required to support security as a matter 
+of necessity (due to resource or budget constraints), it is not a long-term solution for most 
+organizations at scale. Therefore, the I.T. leader will require a security manager or analyst 
+as soon as is feasible.
+While this position is common, it is not a CISO role, and it is not effective/fair to hold this 
+individual accountable to security activities without appropriate support, resources,  
+and budget.
+The Five CISO Archeotypes
+Has informally or formally adopted security responsibilities as an additional 
+duty. Often a CIO, VP of I.T., or Director of IT is their primary role.
+
+--- Página 20 ---
+20
+The Builder
+	
+✓Great program builders
+	
+✓Moves quickly 
+	
+✓May require support 
+sustaining the program
+Strengths: Builders are great at making progress quickly. They thrive in organizations that have 
+prioritized security and are willing to dedicate time and resources to accomplish the objective. 
+Builders understand prioritizing initiatives, sequence events, and achieve clear objectives.
+Weaknesses: Builders may get bored quickly if they are not challenged with a clear 
+objective. They may lack the patience to navigate the complex organizational bureaucracy 
+to make decisions. Because builders are most fulfilled by getting programs off the ground, 
+they often change jobs more frequently than average. They may not be satisfied with 
+routine or operationalized security programs. 
+Support Needed: Builders do well when paired with a high-energy and flexible team ready 
+to take responsibility for various tasks.
+Best Fit: Builders are the best fit for any organization with the goal of getting a security 
+program off the ground. Builders are especially valuable for organizations with a clear goal, 
+such as rapidly implementing a security roadmap or achieving certification.
+The Five CISO Archeotypes
+Master of getting security programs off the ground. They often have 
+backgrounds with start-up or rapidly growing organizations.
+
+--- Página 21 ---
+21
+Assess Your Archeotype
+Now let’s perform a self-assessment to determine which security leader archetype 
+you most closely align.
+We have created a simple tool that will help you assess yourself to better 
+understand which security leader archetype you most closely align with.
+Use the link on this page and take the assessment. The assessment will 
+take about 5 minutes. After taking the assessment you will have a better 
+understanding of what kind of leader you most closely align with.
+You can use the results of this assessment along with the business objective 
+assessment in chapter 2 to determine if you are aligned with your organization’s 
+needs.
+If you are not aligned, don’t worry. That probably means you just need to build a 
+team that fills in some of your gaps. The next tool will help with that.
+Toolkit
+
+--- Página 22 ---
+22
+Building Your Team
+Every leader must surround themselves with a team of individuals to  
+accomplish the mission.
+Now that you understand your organization’s business objectives and 
+your natural strengths, you can assemble a team to help your company 
+accomplish big things.
+You can use the link on this page to download our security team roles and 
+responsibilities tool. This tool provides a list of all of the common activities 
+that need to be managed as part of a security program and will help you 
+document areas in which you need support.
+Toolkit
+Download Forms
+
+--- Página 23 ---
+23
+About the Author
+Christian is a serial entrepreneur with 15 years of experience in security, privacy, 
+and compliance. Based on his experience as an entrepreneur and from working 
+with dozens of unicorn start-ups (start-ups with $1B+ valuation), Christian brings 
+a unique and philosophical perspective to cybersecurity, privacy, and what it 
+takes to build a successful business.
+Christian received his M.B.A. with honors from the Georgia Institute of 
+Technology and his B.B.A. with honors from the University of Georgia.
+Also check out Christian’s webinar presentation on this book ›
+
+--- Página 24 ---
+24
+Let’s Get Started
+risk3sixty is a nationally recognized security, privacy, and compliance 
+advisory firm serving firms across the United States and Globally.  
+We strive to be “craftsmen” in our space, and as a result, we 
+offer our clients an uncommon level of service demonstrably 
+unchallenged in our industry. 
+By the Numbers: 
++ Security, Privacy, and Compliance Experts
++ 100% Three-Year Client Retention 
++ Clients across the United States and 17 countries 
+Our Promise of Quality: 
+We pride ourselves on our ability to provide outstanding service, 
+meet our client’s deadlines, and exceed expectations. This is why 
+we are proud of our 100% three-year client retention and that 
+100% of our clients are references. The bottom line is that if you 
+aren’t satisfied with the quality of our services, we’ll make it right. 
+Period.
+Ross McCurdy
+ross.mccurdy@risk3sixty.com
+Ryan McGowan
+ryan.mcgowan@risk3sixty.com
+

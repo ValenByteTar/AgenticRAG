@@ -1,0 +1,436 @@
+=== Cybersecurity Frameworks.pdf ===
+
+--- Página 1 ---
+Cybersecurity “Goldilocks” Framework – Not Too Hard. Not Too SoO. Just Right! 
+ 
+When you graphically depict the various, leading cybersecurity frameworks from "easier to 
+harder" it primarily focuses on the sheer number of unique cybersecurity and privacy controls. 
+We refer to it as the "cybersecurity Goldilocks dilemma" since organizaƟons struggle with ﬁnding 
+a cybersecurity framework that is "not too hard, not too soO, but just right!" for their speciﬁc 
+needs. To solve this, it comes down to ﬁrst deﬁning your "must have" and then "nice to have" 
+requirements, since that helps point you to the most appropriate framework for your speciﬁc 
+needs. This guide will help explain those concepts in greater detail. 
+ 
+ 
+What Is The Best Cybersecurity Framework? 
+ 
+The concept of a "best" cybersecurity framework is misguided, since the most appropriate 
+framework to align with is enƟrely dependent upon your business model. The applicable laws, 
+regulaƟons and contractual obligaƟons that your organizaƟon must comply with will most oOen 
+point you to one of ﬁve (5) starƟng points to kick oﬀ the discussion about "Which framework is 
+most appropriate for our needs?” 
+ 
+ 
+NIST Cybersecurity Framework (NIST CSF) 
+ 
+ISO 27001/27002 
+ 
+NIST SP 800-171 
+ 
+NIST SP 800-53 (moderate or high baselines) 
+ 
+Secure Controls Framework (SCF) (or a diﬀerent metaframework) 
+ 
+The number of included controls (e.g., requirements) directly impacts the number of domains 
+covered by a speciﬁc cybersecurity framework. The lesser number of controls in a cybersecurity 
+framework might make it appear easier to implement, but it also might not provide the necessary 
+coverage that your organizaƟon needs from the perspecƟve of administraƟve, technical and 
+physical cybersecurity and privacy pracƟces.  
+ 
+Deﬁning "just right" for your cybersecurity and privacy controls is primarily a business decision, 
+based on your organizaƟon's risk proﬁle, which needs to consider applicable laws, regulaƟons 
+and contractual obligaƟons that are required to support exisƟng or planned business processes.  
+ 
+ 
+ 
+Cybersecurity Frameworks Comparison 
+NIST CSF vs ISO 27001/2 vs NIST 800-171 vs NIST 800-53 vs SCF 
++1-855-205-8437 
+htps://www.complianceforge.com 
+support@complianceforge.com  
+CYBERSECURITY 
+FRAMEWORK 
+ISO 27001 / 27002 
+SP 800-53 R5 
+MODERATE BASELINE 
+SP 800-53 R5 
+HIGH BASELINE 
+© 2023 
+All Rights Reserved
+
+--- Página 2 ---
+For educational purposes only. Seek out a competent professional to deﬁne your speciﬁc needs. 
+ 
+2 
+Deﬁning Minimum Security Requirements (MSR) For Your OrganizaƟon 
+ 
+Minimum Security Requirements (MSR) are made up on a combinaƟon of both mandatory and discreƟonary requirements. 
+This can be considered a combinaƟon of you “must have” and “nice to have” requirements: 
+ 
+Minimum Compliance Criteria (MCC) are “must have requirements” that are deﬁned by applicable laws, regulaƟons 
+and contractual obligaƟons that your organizaƟon must comply with. 
+ 
+DiscreƟonary Security Requirements (DSR) are “nice to have requirements” that are not legally-required but you feel 
+you require to be secure, such as FIM, DLP, MFA, etc. 
+ 
+Those two consideraƟons come together to address the "Compliant vs Secure" balancing act that determines if an 
+organizaƟon's cybersecurity and/or privacy program will be both secure and compliant, or just compliant (e.g., focus on the 
+bare minimums): 
+ 
+Lesser mature organizaƟons tend to focus on compliance over security.  
+ 
+More mature organizaƟons tend to focus on making compliance a natural byproduct of being secure. 
+ 
+ 
+ 
+This concept is further explained in the Integrated Controls Management (ICM) framework: 
+ 
+MCC are primarily externally-inﬂuenced, based on industry, government, state and local regulaƟons. MCC should 
+never imply adequacy for secure pracƟces and data protecƟon, since they are merely compliance-related. 
+ 
+DSR are primarily internally-inﬂuenced, based on the organizaƟon’s respecƟve industry and risk tolerance. While 
+MCC establish the foundaƟonal ﬂoor that must be adhered to, DSR are where organizaƟons oOen achieve improved 
+eﬃciency, automaƟon and enhanced security. 
+ 
+ 
+How To IdenƟfy The Most Appropriate Cybersecurity Framework  
+ 
+There are a few quesƟons that can help quickly narrow down appropriate and inappropriate frameworks for your needs: 
+1. Do you store, process or transmit Controlled Unclassiﬁed InformaƟon (CUI)? 
+a. If yes, look at NIST SP 800-171, NIST SP 800-53 or Secure Controls Framework (SCF). 
+b. If no, proceed to quesƟon 2. 
+2. Do you need to “speak NIST 800-53” for a contract? (e.g., FedRAMP or RMF) 
+a. If yes, look at NIST SP 800-53 (moderate or high baseline) 
+b. If no, proceed to quesƟon 3. 
+3. Do you have complex compliance requirements? (e.g., mulƟple cybersecurity / privacy requirements) 
+a. If yes, look at Secure Controls Framework (SCF). 
+b. If no, look at NIST Cybersecurity Framework (CSF) or ISO 27001 / 27002. 
+ 
+See the graphic on the next page to visualize this decision process.
+
+--- Página 3 ---
+For educational purposes only. Seek out a competent professional to deﬁne your speciﬁc needs. 
+ 
+3
+
+--- Página 4 ---
+For educational purposes only. Seek out a competent professional to deﬁne your speciﬁc needs. 
+ 
+4 
+If You Are Unsure Where or How To Start, Follow These Steps: 
+ 
+ 
+Have a discussion with your legal and procurement departments to ﬁnd out what laws, regulaƟons and 
+contractual obligaƟons your organizaƟon needs to comply with. If they don't know, then you need to perform that 
+discovery with their involvement to ensure you have the facts. Do not try to work oﬀ assumpƟons! 
+ 
+Talk with peers in your industry to idenƟfy what framework(s) their organizaƟon chose to align with and what 
+those decisions were that led them to adopƟng one framework over another. You sƟll have to do your own 
+analysis to determine what is right, but talking with peers can help avoid "re-invenƟng the wheel" on certain 
+aspects of the analysis process. 
+ 
+Determine what resources you have available to adopt and implement a framework. If it is a ﬂip of the coin 
+decision between two frameworks where you feel both meet your needs, you need to be sure to take into account 
+which framework will be the most eﬃcient to implement and maintain.  
+ 
+Evaluate your organizaƟon's business and IT strategies to idenƟfy components that may require the adopƟon of a 
+speciﬁc framework. For example:. 
+o Your CEO puts out a roadmap to grow business and next year the company will start going aOer US 
+Government and Department of Defense (DoD) contracts. This means your organizaƟon will have to address 
+DFARS, FAR and CMMC compliance, which is based on NIST SP 800-171. This means alignment with NIST SP 
+800-53 or SCF might be the best path forward. 
+o A business unit is expanding into the European market and will focus on B2C sales. This means your 
+organizaƟon will have to address EU GDPR for robust privacy pracƟces, on top of cybersecurity. This means 
+you could select any framework to address underlying cybersecurity pracƟces, but you need a privacy 
+program. The SCF might be the best path forward. 
+ 
+Speak with a reputable consultant. Not all "cybersecurity professionals" have the same backgrounds, experiences 
+and competencies. Speak with a Governance, Risk and Compliance (GRC) professional about compliance-related 
+frameworks and scoping decisions. 
+ 
+ 
+NIST CSF   <   ISO 27001/2   <   NIST SP 800-53   <   Secure Controls Framework (SCF) 
+ 
+To help provide further context to the image: 
+ 
+ISO 27001/2 is essenƟally a subset of the content found in NIST 800-53 (ISO 27002 went from fourteen (14) secƟons 
+in 2013 to three (3) secƟons in 2022) where ISO 27002's cybersecurity controls ﬁt within the twenty (20) families of 
+NIST 800-53 rev5 security controls. 
+ 
+NIST CSF is a subset of NIST 800-53 and also shares controls found in ISO 27001/2.  
+ 
+NIST CSF incorporates parts of ISO 27001/2 and parts of NIST 800-53, but is not inclusive of both - this is what makes 
+NIST CSF is a common choice for smaller companies that need a set of "industry-recognized secure pracƟces" to align 
+with, where ISO 27001/2 and NIST 800-53 are beter for larger companies or those that have unique compliance 
+requirements.
+
+--- Página 5 ---
+For educational purposes only. Seek out a competent professional to deﬁne your speciﬁc needs. 
+ 
+5 
+Frameworks May Share Similarities, But Not All Frameworks Are Right For Your Needs 
+ 
+If you look at this from the perspecƟve of a debate over which soO drink tastes best (e.g., Coke vs Pepsi), it generally comes 
+down to personal preferences, since both products are essenƟally sugary, carbonated drinks and only diﬀer slightly in ﬂavor 
+and packaging. The same arguments can be made for cybersecurity’s two heavy hiters – NIST 800-53 and ISO 27002. Gaining 
+popularity is the NIST Cybersecurity Framework (NIST CSF), but it lacks appropriate coverage out of the box to be considered 
+a comprehensive cybersecurity framework. For more complex compliance requirements, the SCF is a "metaframework" that 
+encompasses over 100 laws, regulaƟons and frameworks in a hybrid framework that can span mulƟple compliance 
+requirements. 
+ 
+It is not uncommon for experienced cybersecurity practitioners to have fundamental misunderstandings of the differences 
+between laws, regulations and frameworks. However, in this context, what is depicted on the heatmap is referred to as a 
+"framework" since by the NIST Glossary definition, a framework is "a layered structure indicating what kind of programs can 
+or should be built and how they would interrelate." Even a law or regulation can serve as a framework for building a 
+cybersecurity program. 
+ 
+ 
+We understand that it can be a little confusing when you look at it from a "heat map" perspective, since each cybersecurity 
+framework has its own unique scope of applicability (e.g., specialization) and depth of coverage. However, understanding 
+this can help you make an informed decision on where to start for the most appropriate framework(s) for your needs (often, 
+organizations utilize more than one framework). You may even find you need to leverage a metaframework (e.g., framework 
+of frameworks) to address more complex compliance requirements.
+
+--- Página 6 ---
+For educational purposes only. Seek out a competent professional to deﬁne your speciﬁc needs. 
+ 
+6 
+Secure Controls Framework (SCF) Overview 
+If you are not familiar with the Secure Controls Framework (SCF), it was developed with the ambiƟous goal of providing a 
+comprehensive catalog of cybersecurity and privacy control guidance to cover the strategic, operaƟonal and tacƟcal needs of 
+organizaƟons, regardless of its size, industry or country of origin. By using the SCF, your IT, cybersecurity, legal and project 
+teams can speak the same language about controls and requirement expectaƟons! The SCF is a "metaframework" which is a 
+framework of frameworks. The SCF is a superset that covers the controls found in NIST CSF, ISO 27002, NIST 800-53 and over 
+100 other laws, regulaƟons and frameworks. These leading cybersecurity frameworks tend to cover the same fundamental 
+building blocks of a cybersecurity program, but diﬀer in some content and layout. Before picking a framework, it is important 
+to understand that each one has its beneﬁts and drawbacks. Therefore, your choice should be driven by the type of industry 
+your business is in and what laws, regulaƟons and contractual obligaƟons your organizaƟon needs to comply with.  
+ 
+The SCF is an open source project that provides free cybersecurity and privacy controls for businesses. The SCF focuses on 
+internal controls, which are the cybersecurity and privacy-related policies, standards, procedures and other processes that 
+are designed to provide reasonable assurance that business objecƟves will be achieved and undesired events will be 
+prevented, detected and corrected. 
+ 
+The Secure Controls Framework (SCF) is a "best in class" approach that covers over 100 cybersecurity and privacy laws, 
+regulaƟons and frameworks, including NIST 800-53, ISO 27001/2 and NIST CSF. Being a hybrid, it allows you to address mulƟple 
+cybersecurity and privacy frameworks simultaneously. The SCF is a free resource for businesses to use. ComplianceForge's 
+Digital Security Program (DSP) has 1-1 mapping with the SCF, so the DSP provides the most comprehensive coverage of any 
+ComplianceForge product.   
+ 
+The Secure Controls Framework (SCF) is commonly use by medium to large businesses, but can be used by any business with 
+complex cybersecurity and privacy requirements.  
+ 
+The SCF can be used for: 
+ 
+Any sized business 
+ 
+Any industry 
+ 
+The SCF should not be used for: 
+ 
+Simple compliance needs 
+ 
+ 
+NIST SP 800-53 Overview 
+The NaƟonal InsƟtute of Standards and Technology (NIST) is on the ﬁOh revision (rev5) of Special PublicaƟon (SP) 800-53, 
+Security and Privacy Controls for InformaƟon Systems and OrganizaƟons. From rev4 to rev5, NIST dropped the "US 
+Government" focus for NIST SP 800-53 and now has it generalized enough for private industry to use. There are sƟll "NISTisms" 
+for wording that are enƟrely US Government-focused, but it is a signiﬁcant improvement for private industry adopƟon. NIST 
+800-53 "best pracƟces" are the de facto standard for private businesses that do business with the US federal government. 
+ 
+One thing to keep in mind is that NIST 800-53 is a super-set of ISO 27002 - that means you will ﬁnd all the components of ISO 
+27002 covered by NIST 800-53. However, ISO 27002 does not cover all of the areas of NIST 800-53.  
+ 
+The Federal InformaƟon Security Management Act (FISMA) and the Department of Defense InformaƟon Assurance Risk 
+Management Framework (RMF) rely on the NIST 800-53 framework, so vendors to the US federal government must meet 
+those same requirements in order to pass these rigorous cerƟﬁcaƟon programs. AddiƟonally, for NIST 800-171, ProtecƟng 
+Controlled Unclassiﬁed InformaƟon in Nonfederal InformaƟon Systems and OrganizaƟons, NIST 800-53 is called out as the 
+best pracƟces for government contractors to secure their systems.  That further helps strengthen NIST 800-53 as a best 
+pracƟce within the US, especially for any government contractors. We have a secƟon that describes NIST 800-171 and 
+Cybersecurity Maturity Model CerƟﬁcaƟon (CMMC) if you are interested in that subject.
+
+--- Página 7 ---
+For educational purposes only. Seek out a competent professional to deﬁne your speciﬁc needs. 
+ 
+7 
+ 
+ 
+NIST 800-53 includes what both ISO 27002 and NIST CSF addresses, as well as a whole host of other requirements. NIST 800-
+53 is the basis for the controls found in NIST 800-171 / CMMC. NIST 800-53 is commonly found in the ﬁnancial, medical and 
+government contracƟng industries. One great thing about NIST 800-53, and it applies almost universally to all NIST 800-series 
+publicaƟons. As with other NIST publicaƟons, it is freely available, at no cost to the public: 
+htp://csrc.nist.gov/publicaƟons/PubsSPs.html. 
+ 
+NIST 800-53 Moderate is commonly use by medium to large businesses and is primarily US-focused.  
+ 
+NIST 800-53 Moderate can be used for: 
+ 
+Defense Contractors (CMMC, RMF, etc.) 
+ 
+Government Contractors (FedRAMP, RMF, etc.)  
+ 
+Technology Businesses (e.g., MSPs, CSPs, etc.) 
+ 
+General Business (large) 
+ 
+Retail (large) 
+ 
+Healthcare (large) 
+ 
+Insurance (large) 
+ 
+NIST 800-53 Moderate should not be used for: 
+ 
+Smaller Businesses 
+ 
+NIST 800-53 High is commonly use by medium to large businesses with an explicit requirement for the high baseline and is 
+primarily US-focused.  
+ 
+NIST 800-53 High can be used for: 
+ 
+Defense Contractors (large) 
+ 
+Government Contractors (large) 
+ 
+Technology Businesses (large) 
+ 
+NIST 800-53 High should not be used for: 
+ 
+Smaller Businesses 
+ 
+ 
+NIST SP 800-171 Overview 
+The NaƟonal InsƟtute of Standards and Technology (NIST) is on the second revision (rev2) of Special PublicaƟon (SP) 800-171, 
+ProtecƟng Controlled Unclassiﬁed InformaƟon in Nonfederal Systems and OrganizaƟons. The US NaƟonal Archives (NARA) 
+runs the Controlled Unclassiﬁed InformaƟon (CUI) Program for the US Government and NARA speciﬁes NIST SP 800-171 and 
+800-171A as the minimum requirements to protect CUI. NIST SP 800-171 is the basis for the controls used by the US 
+Department of Defense's Cybersecurity Maturity Model CerƟﬁcaƟon (CMMC). As with other NIST publicaƟons, it is freely 
+available, at no cost to the public - htp://csrc.nist.gov/publicaƟons/PubsSPs.html. 
+ 
+NIST 800-171 can be used by any sized organizaƟon, since it is the required set of controls necessary to protect CUI where it 
+is stored, processed and/or transmited.   
+ 
+NIST 800-171 can be used for: 
+ 
+Defense Contractors  
+ 
+Government Contractors  
+ 
+Technology Businesses (MSPs, MSSPs, etc.) 
+ 
+NIST 800-171 should not be used for: 
+ 
+FedRAMP or RMF compliance
+
+--- Página 8 ---
+For educational purposes only. Seek out a competent professional to deﬁne your speciﬁc needs. 
+ 
+8 
+ 
+ISO 27001 / 27002 Overview 
+The InternaƟonal OrganizaƟon for StandardizaƟon (ISO) is a non-governmental organizaƟon that is headquartered in 
+Switzerland. ISO can be a litle more confusing for newcomers to IT security or compliance, since a rebranding occurred in 
+2007 to keep ISO’s IT security documents in the 27000 series of their documentaƟon catalog - ISO 17799 was renamed and 
+became ISO 27002. To add to any possible confusion, ISO 27002 is a supporƟng document that aides in the implementaƟon 
+of ISO 27001. Adding a litle more confusion to the mix, it is important to note that companies cannot cerƟfy against ISO 
+27002, just ISO 27001. 
+ 
+ISO 27001 Appendix A contains the basic overview of the security controls needed to build an InformaƟon Security 
+Management System (ISMS), but ISO 27002 provides those speciﬁc controls that are necessary to actually implement ISO 
+27001. EssenƟally, you can't meet ISO 27001 without implemenƟng ISO 27002: 
+ 
+ISO/IEC 27001:2022 - InformaƟon security, cybersecurity and privacy protecƟon — InformaƟon security management 
+systems — Requirements 
+ 
+ISO/IEC 27002:2022 - InformaƟon security, cybersecurity and privacy protecƟon — InformaƟon security controls 
+ 
+To keep things simple, just remember that ISO 27001 lays out the framework to create an “InformaƟon Security Management 
+System (ISMS)” (e.g., a comprehensive IT security program), whereas ISO 27002 contains the actual “best pracƟces” details 
+of what goes into building a comprehensive IT security program. Since ISO’s informaƟon security framework has been around 
+since the mid-1990s, it was in “right Ɵme at the right place” to evolve into the de facto IT security framework outside of the 
+United States. You will ﬁnd ISO 27002 extensively used by mulƟnaƟonal corporaƟons and for companies that do not have to 
+speciﬁcally comply with US federal regulaƟons. ISO 27002 is also “less paranoid” than NIST 800-53, which has an advantage 
+of being less complex and therefore easier implement. 
+ 
+One unfortunate thing about ISO 27001/2, and it applies to all ISO publicaƟons, is that ISO charges for its publicaƟons - 
+htps://www.iso.org/isoiec-27001-informaƟon-security.html 
+ 
+ISO 27001 / 27002 is commonly use by medium to large businesses and is internaƟonally-recognized (e.g., ISO 27001 
+cerƟﬁcaƟon).  
+ 
+ISO 27001 / 27002 can be used for: 
+ 
+General Business 
+ 
+Retail 
+ 
+Healthcare 
+ 
+Insurance 
+ 
+ISO 27001 / 27002 should not be used for: 
+ 
+Defense Contractors 
+ 
+Government Contractors 
+ 
+ 
+NIST Cybersecurity Framework (NIST CSF) Overview 
+NIST Cybersecurity Framework (NIST CSF) has the least coverage of the major cybersecurity frameworks. NIST CSF works great 
+for smaller and unregulated businesses that just want to align with a recognized cybersecurity framework. The downside to 
+the NIST CSF is that its brevity makes it incompaƟble with common compliance requirements, such as NIST 800-171, GDPR, 
+CPRA/CCPA and PCI DSS (depending on SAQ level). For those, more comprehensive frameworks, such as NIST 800-53 or ISO 
+27002 are recommended.   
+ 
+In reality, NIST CSF is a "dumbed down" and civilianized version of NIST 800-53. It came out nearly a decade ago when NIST 
+800-53 was enƟrely focused on the US Government, so there was a need for a subset of the controls that NIST 800-53 provided 
+but for the non-enterprise space in private industry (e.g., tailored for small to medium businesses). Over the past decade, 
+diﬀerent US Federal agencies have published documents describing how NIST CSF v1.1 controls can be leveraged to comply 
+with HIPAA, FINRA, etc.
+
+--- Página 9 ---
+For educational purposes only. Seek out a competent professional to deﬁne your speciﬁc needs. 
+ 
+9 
+ 
+ 
+Overall, NIST CSF does not introduce new standards or concepts, but leverages and integrates industry-leading cybersecurity 
+pracƟces that have been developed by organizaƟons like NIST and ISO. NIST CSF if organized into ﬁve categories of controls: 
+ 
+1. IdenƟfy 
+2. Protect 
+3. Detect 
+4. Respond 
+5. Recover 
+ 
+The NIST CSF comprises a risk-based compilaƟon of guidelines that can help organizaƟons idenƟfy, implement, and improve 
+cybersecurity pracƟces, and creates a common language for internal and external communicaƟon of cybersecurity issues. The 
+NIST CSF is designed to evolve with changes in cybersecurity threats, processes, and technologies. EssenƟally, the NIST CSF 
+envisions eﬀecƟve cybersecurity as a dynamic, conƟnuous loop of response to both threats and soluƟons. However, the 
+"framework implementaƟon Ɵers" should be avoided, since it is bad guidance. For example, you have to get to Tier 3 before 
+you document policies, standards or procedures. That means a business at Tier 1 and Tier 2 would be considered negligent 
+for failing to meet "reasonable expectaƟons" for a security program. This is an example of "the path to hell is paved with good 
+intenƟons" so that component of NIST CSF should be avoided. 
+ 
+NIST CSF is commonly use by smaller businesses and unregulated industries.  
+ 
+NIST CSF can be used for: 
+ 
+General Business 
+ 
+Retail 
+ 
+Healthcare (small) 
+ 
+Insurance 
+ 
+EducaƟon 
+ 
+NIST CSF should not be used for: 
+ 
+Defense Contractors 
+ 
+ 
+Let ComplianceForge Help You With Your DocumentaƟon Needs! 
+support@complianceforge.com
+

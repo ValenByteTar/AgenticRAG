@@ -1,0 +1,968 @@
+=== 100 Excel Functions you should know in one handy PDF.pdf ===
+
+--- Página 1 ---
+PDF GUIDE
+
+--- Página 2 ---
+1
+101 EXCEL FUNCTIONS
+1
+101 EXCEL FUNCTIONS
+Quick Navigation
+ABS   AGGREGATE   AND   
+AVERAGE   AVERAGEIF   
+AVERAGEIFS   CEILING   
+CHAR   CHOOSE   CLEAN   
+CODE   COLUMN   COLUMNS  
+CONCAT   CONCATENATE   
+CONVERT   COUNT   COUNTA 
+COUNTBLANK   COUNTIF   
+COUNTIFS   DATE   DATEDIF   
+DAY   EDATE   EOMONTH   
+EXACT   FILTER   FIND   
+FLOOR   GETPIVOTDATA   
+HLOOKUP   HOUR   
+HYPERLINK   IF   IFERROR   
+IFNA   IFS   INDEX   INDIRECT  
+INT   ISBLANK   ISERROR   
+ISEVEN   ISFORMULA   
+ISLOGICAL   ISNUMBER   
+ISODD   ISTEXT   LARGE   
+LEFT   LEN   LOOKUP LOWER   
+MATCH   MAX   MAXIFS   
+MID   MIN   MINIFS   MINUTE 
+MOD   MODE   MONTH   
+MROUND   NETWORKDAYS   
+NOT   NOW   OFFSET   OR   
+PROPER   RAND  RANDARRAY 
+RANDBETWEEN   RANK   
+REPLACE   RIGHT   ROUND   
+ROUNDDOWN   ROUNDUP   
+ROW   ROWS   SEARCH   
+SECOND   SEQUENCE   
+SMALL   SORT   SORTBY   
+SUBSTITUTE   SUBTOTAL   
+SUM   SUMIF   SUMIFS   
+SUMPRODUCT   TEXT   
+TEXTJOIN   TIME   TODAY   
+TRANSPOSE   TRIM   
+UNIQUE   UPPER   VLOOKUP   
+WEEKDAY   WEEKNUM   
+WORKDAY   XLOOKUP   
+XMATCH   YEAR   YEARFRAC 
+Table of Contents
+TABLE of Contents 
+101 Excel Functions ���������������������������������������������������������������������������������2
+Date and Time Functions �������������������������������������������������������������������������3
+Engineering ���������������������������������������������������������������������������������������������9
+Information Functions ���������������������������������������������������������������������������10
+Logical Functions �����������������������������������������������������������������������������������11
+Lookup and Reference Functions �����������������������������������������������������������13
+STATISTICAL Functions ���������������������������������������������������������������������������19
+MATH Functions�������������������������������������������������������������������������������������24
+TEXT Functions���������������������������������������������������������������������������������������28
+Dynamic Array Functions �����������������������������������������������������������������������33
+More Resources �������������������������������������������������������������������������������������34
+Copyright
+No part of this publication shall be reproduced, or sold in whole or in part 
+in any form, without the prior written consent of the author. All trade-
+marks and registered trademarks appearing in this guide are the property 
+of their respective owners.
+© 2021 Exceljet. All rights reserved.
+https://exceljet.net/
+Published: 2021-04-14 09:59:45
+
+--- Página 3 ---
+2
+101 EXCEL FUNCTIONS
+2
+101 EXCEL FUNCTIONS
+Quick Navigation
+ABS   AGGREGATE   AND   
+AVERAGE   AVERAGEIF   
+AVERAGEIFS   CEILING   
+CHAR   CHOOSE   CLEAN   
+CODE   COLUMN   COLUMNS  
+CONCAT   CONCATENATE   
+CONVERT   COUNT   COUNTA 
+COUNTBLANK   COUNTIF   
+COUNTIFS   DATE   DATEDIF   
+DAY   EDATE   EOMONTH   
+EXACT   FILTER   FIND   
+FLOOR   GETPIVOTDATA   
+HLOOKUP   HOUR   
+HYPERLINK   IF   IFERROR   
+IFNA   IFS   INDEX   INDIRECT  
+INT   ISBLANK   ISERROR   
+ISEVEN   ISFORMULA   
+ISLOGICAL   ISNUMBER   
+ISODD   ISTEXT   LARGE   
+LEFT   LEN   LOOKUP LOWER   
+MATCH   MAX   MAXIFS   
+MID   MIN   MINIFS   MINUTE 
+MOD   MODE   MONTH   
+MROUND   NETWORKDAYS   
+NOT   NOW   OFFSET   OR   
+PROPER   RAND  RANDARRAY 
+RANDBETWEEN   RANK   
+REPLACE   RIGHT   ROUND   
+ROUNDDOWN   ROUNDUP   
+ROW   ROWS   SEARCH   
+SECOND   SEQUENCE   
+SMALL   SORT   SORTBY   
+SUBSTITUTE   SUBTOTAL   
+SUM   SUMIF   SUMIFS   
+SUMPRODUCT   TEXT   
+TEXTJOIN   TIME   TODAY   
+TRANSPOSE   TRIM   
+UNIQUE   UPPER   VLOOKUP   
+WEEKDAY   WEEKNUM   
+WORKDAY   XLOOKUP   
+XMATCH   YEAR   YEARFRAC 
+Table of Contents
+101 Excel Functions
+Excel has over 480 built-in functions, and more are still being added. That 
+is a huge number of functions to think about, even for advanced users. 
+Thankfully, you don’t need to learn all of these functions to be productive 
+in Excel. If you have a basic understanding of about a hundred key func-
+tions, you’ll be far ahead of the average user.
+This document contains a brief overview of about 100 important Excel 
+functions you should know, with links to detailed examples. It is based on a 
+more complete list of Excel functions here.
+Excel Function List
+We also have a large list of example formulas and video training. If you are 
+new to Excel formulas and how functions are used, see this introduction.
+
+--- Página 4 ---
+3
+101 EXCEL FUNCTIONS
+3
+101 EXCEL FUNCTIONS
+Date and Time Functions
+Excel provides many functions to work with dates and times. 
+NOW and TODAY   
+You can get the current date with the TODAY function and the current date 
+and time with the NOW Function. Technically, the NOW function returns 
+the current date and time, but you can format as time only, as seen below:
+Note: these are volatile functions and will recalculate with every work-
+sheet change. If you want a static value, use date and time shortcuts.
+DATE SHORTCUT: This shortcut will insert the current date as a fixed 
+value; it will not change.
+TIME SHORCUT: This shortcut will insert the current time as a fixed value; 
+it will not change. [Note: In Mac 2016, Control Shift : stopped working to 
+insert a time. Command ; now seems to work.]
+More excel shortcuts.
+Easily add Date  
+and Time to your  
+Excel files using  
+these functions
+
+--- Página 5 ---
+4
+101 EXCEL FUNCTIONS
+DAY, MONTH, YEAR, and DATE  
+You can use the DAY, MONTH, and YEAR functions to disassemble any 
+date into its raw components, and the DATE function to put things back 
+together again.
+HOUR, MINUTE, SECOND, and TIME
+Excel provides a set of parallel functions for times. You can use the HOUR, 
+MINUTE, and SECOND functions to extract pieces of a time, and you can 
+assemble a TIME from individual components with the TIME function.
+Did you know?
+Excel dates are serial 
+numbers that start in 
+the year 1900.
+Excel times are fractions 
+of the number 1.
+Both dates and times 
+are numbers that can be 
+used in math operations.
+
+--- Página 6 ---
+5
+101 EXCEL FUNCTIONS
+5
+101 EXCEL FUNCTIONS
+Quick Navigation
+ABS   AGGREGATE   AND   
+AVERAGE   AVERAGEIF   
+AVERAGEIFS   CEILING   
+CHAR   CHOOSE   CLEAN   
+CODE   COLUMN   COLUMNS  
+CONCAT   CONCATENATE   
+CONVERT   COUNT   COUNTA 
+COUNTBLANK   COUNTIF   
+COUNTIFS   DATE   DATEDIF   
+DAY   EDATE   EOMONTH   
+EXACT   FILTER   FIND   
+FLOOR   GETPIVOTDATA   
+HLOOKUP   HOUR   
+HYPERLINK   IF   IFERROR   
+IFNA   IFS   INDEX   INDIRECT  
+INT   ISBLANK   ISERROR   
+ISEVEN   ISFORMULA   
+ISLOGICAL   ISNUMBER   
+ISODD   ISTEXT   LARGE   
+LEFT   LEN   LOOKUP LOWER   
+MATCH   MAX   MAXIFS   
+MID   MIN   MINIFS   MINUTE 
+MOD   MODE   MONTH   
+MROUND   NETWORKDAYS   
+NOT   NOW   OFFSET   OR   
+PROPER   RAND  RANDARRAY 
+RANDBETWEEN   RANK   
+REPLACE   RIGHT   ROUND   
+ROUNDDOWN   ROUNDUP   
+ROW   ROWS   SEARCH   
+SECOND   SEQUENCE   
+SMALL   SORT   SORTBY   
+SUBSTITUTE   SUBTOTAL   
+SUM   SUMIF   SUMIFS   
+SUMPRODUCT   TEXT   
+TEXTJOIN   TIME   TODAY   
+TRANSPOSE   TRIM   
+UNIQUE   UPPER   VLOOKUP   
+WEEKDAY   WEEKNUM   
+WORKDAY   XLOOKUP   
+XMATCH   YEAR   YEARFRAC 
+Table of Contents
+DATEDIF and YEARFRAC
+You can use the DATEDIF function to get time between dates in years, 
+months, or days. DATEDIF can also be configured to get total time in “nor-
+malized” denominations, i.e. “2 years and 5 months and 27 days”.
+The DATEDIF function is a good way to calculate age from a birthday. See 
+this example formula.
+Use YEARFRAC to get fractional years:
+
+--- Página 7 ---
+6
+101 EXCEL FUNCTIONS
+EDATE and EOMONTH
+A common task with dates is to shift a date forward (or backward) by a 
+given number of months. You can use the EDATE and EOMONTH functions 
+for this. EDATE moves by month and retains the day. EOMONTH works the 
+same way, but always returns the last day of the month.
+Shift dates Forward 
+(or Backward) 
+using EDATE
+VIDEO
+How to highlight 
+expiration dates
+
+--- Página 8 ---
+7
+101 EXCEL FUNCTIONS
+WORKDAY and NETWORKDAYS
+To figure out a date n working days in the future, you can use the  
+WORKDAY function. To calculate the number of workdays between two 
+dates, you can use NETWORKDAYS.
+Note: Both functions automatically skip weekends (Saturday and Sunday) 
+and will also skip holidays, if provided. If you need more flexibility on what 
+days are considered weekends, see the WORKDAY.INTL function and  
+NETWORKDAYS.INTL function.
+VIDEO
+How to calculate  
+due dates with 
+WORKDAY
+Practice 
+worksheets 
+included with 
+online Video 
+Training
+
+--- Página 9 ---
+8
+101 EXCEL FUNCTIONS
+WEEKDAY and WEEKNUM
+To figure out the day of week from a date, Excel provides the WEEKDAY 
+function. WEEKDAY returns a number between 1-7 that indicates Sunday, 
+Monday, Tuesday, etc. Use the WEEKNUM function to get the week number 
+in a given year.
+See this formula to calculate sales per weekday.
+FORMULA
+Get the monday of 
+the week
+
+--- Página 10 ---
+9
+101 EXCEL FUNCTIONS
+Engineering 
+CONVERT
+Most Engineering functions are pretty technical... you’ll find a lot of func-
+tions for complex numbers in this section. However, the CONVERT func-
+tion is quite useful for everyday unit conversions. You can use CONVERT 
+to change units for distance, weight, temperature, and much more.
+See this formula to calculate the BMI of an individual where the CONVERT 
+function is used to convert between the metric and imperial unit systems.
+1 in =  2.54 cm
+1 Gallon =  3.8 Litres
+Using the  
+Versatile Convert 
+Function
+cm
+in
+
+--- Página 11 ---
+10
+101 EXCEL FUNCTIONS
+10
+101 EXCEL FUNCTIONS
+True or False 
+results using 
+Information 
+Functions
+Information Functions 
+ISBLANK, ISERROR, ISNUMBER, and ISFORMULA
+Excel provides many functions for checking the value in a cell, including 
+ISNUMBER, ISTEXT, ISLOGICAL, ISBLANK, ISERROR, and ISFORMU-
+LA  These functions are sometimes called the “IS” functions, and they all 
+return TRUE or FALSE based on a cell’s contents.
+Excel also has ISODD and ISEVEN functions will test a number to see if it’s 
+even or odd.
+By the way, the green fill in the screenshot above is applied automatically 
+with a conditional formatting formula.
+
+--- Página 12 ---
+11
+101 EXCEL FUNCTIONS
+Logical Functions
+Excel’s logical functions are a key building block of many advanced formulas. 
+Logical functions return the boolean values TRUE or FALSE. If you need a 
+primer on logical formulas, this video goes through many examples.
+AND, OR and NOT
+The core of Excel’s logical functions are the AND function, the OR func-
+tion, and the NOT function. In the screen below, each of these function is 
+used to run a simple test on the values in column B:
+IF and IFS functions
+The IF function is one of the most used functions in Excel. In the screen 
+below, IF checks test scores and assigns “pass” or “fail”:
+The logical functions above can be combined with the IF function to create 
+more complex logical tests.  Alternatively, multiple IF functions can be 
+nested together to return more than two values as a result.
+GUIDE  
+50 examples of 
+formula criteria
+Is it Green?
+VIDEO
+How to build 
+logical formulas
+
+--- Página 13 ---
+12
+101 EXCEL FUNCTIONS
+12
+101 EXCEL FUNCTIONS
+Quick Navigation
+ABS   AGGREGATE   AND   
+AVERAGE   AVERAGEIF   
+AVERAGEIFS   CEILING   
+CHAR   CHOOSE   CLEAN   
+CODE   COLUMN   COLUMNS  
+CONCAT   CONCATENATE   
+CONVERT   COUNT   COUNTA 
+COUNTBLANK   COUNTIF   
+COUNTIFS   DATE   DATEDIF   
+DAY   EDATE   EOMONTH   
+EXACT   FILTER   FIND   
+FLOOR   GETPIVOTDATA   
+HLOOKUP   HOUR   
+HYPERLINK   IF   IFERROR   
+IFNA   IFS   INDEX   INDIRECT  
+INT   ISBLANK   ISERROR   
+ISEVEN   ISFORMULA   
+ISLOGICAL   ISNUMBER   
+ISODD   ISTEXT   LARGE   
+LEFT   LEN   LOOKUP LOWER   
+MATCH   MAX   MAXIFS   
+MID   MIN   MINIFS   MINUTE 
+MOD   MODE   MONTH   
+MROUND   NETWORKDAYS   
+NOT   NOW   OFFSET   OR   
+PROPER   RAND  RANDARRAY 
+RANDBETWEEN   RANK   
+REPLACE   RIGHT   ROUND   
+ROUNDDOWN   ROUNDUP   
+ROW   ROWS   SEARCH   
+SECOND   SEQUENCE   
+SMALL   SORT   SORTBY   
+SUBSTITUTE   SUBTOTAL   
+SUM   SUMIF   SUMIFS   
+SUMPRODUCT   TEXT   
+TEXTJOIN   TIME   TODAY   
+TRANSPOSE   TRIM   
+UNIQUE   UPPER   VLOOKUP   
+WEEKDAY   WEEKNUM   
+WORKDAY   XLOOKUP   
+XMATCH   YEAR   YEARFRAC 
+Table of Contents
+New in Excel 2019 and Office 365, the IFS function can run  
+multiple logical tests without nesting IFs.
+IFERROR and IFNA
+The IFERROR function and IFNA function can be used as a simple way to 
+trap and handle errors. In the screen below, VLOOKUP is used to retrieve 
+cost from a menu item. Column F contains just a VLOOKUP function, with 
+no error handling. Column G shows how to use IFNA with VLOOKUP to  
+display a custom message when an unrecognized item is entered.
+Whereas IFNA only catches an #N/A error, the IFERROR function will catch 
+any formula error.
+
+--- Página 14 ---
+13
+101 EXCEL FUNCTIONS
+Lookup and Reference Functions 
+VLOOKUP and HLOOKUP
+Excel offers a number of functions to lookup and retrieve data. Most 
+famous of all is VLOOKUP:
+More: 23 things to know about VLOOKUP. 
+HLOOKUP works like VLOOKUP, but expects data arranged horizontally:
+VLOOKUP is for  
+vertical data
+VLOOKUP only 
+looks to the Right
+HLOOKUP is for  
+horizontal data
+
+--- Página 15 ---
+14
+101 EXCEL FUNCTIONS
+INDEX and MATCH 
+For more complicated lookups, INDEX and MATCH offers more flexibility 
+and power:
+Both the INDEX function and the MATCH function are powerhouse func-
+tions that turn up in all kinds of formulas.
+LOOKUP
+The LOOKUP function has default behaviors that make it useful when 
+solving certain problems. LOOKUP assumes values are sorted in ascending 
+order and always performs an approximate match. When LOOKUP can’t 
+find a match, it will match the next smallest value. In the example below 
+we are using LOOKUP to find the last entry in a column:
+This page explains this LOOKUP example in more depth.
+ARTICLE
+How to use  
+INDEX and MATCH
+The MATCH  
+function is  
+designed to find 
+the position of an 
+item in a range.
+
+--- Página 16 ---
+15
+101 EXCEL FUNCTIONS
+15
+101 EXCEL FUNCTIONS
+Quick Navigation
+ABS   AGGREGATE   AND   
+AVERAGE   AVERAGEIF   
+AVERAGEIFS   CEILING   
+CHAR   CHOOSE   CLEAN   
+CODE   COLUMN   COLUMNS  
+CONCAT   CONCATENATE   
+CONVERT   COUNT   COUNTA 
+COUNTBLANK   COUNTIF   
+COUNTIFS   DATE   DATEDIF   
+DAY   EDATE   EOMONTH   
+EXACT   FILTER   FIND   
+FLOOR   GETPIVOTDATA   
+HLOOKUP   HOUR   
+HYPERLINK   IF   IFERROR   
+IFNA   IFS   INDEX   INDIRECT  
+INT   ISBLANK   ISERROR   
+ISEVEN   ISFORMULA   
+ISLOGICAL   ISNUMBER   
+ISODD   ISTEXT   LARGE   
+LEFT   LEN   LOOKUP LOWER   
+MATCH   MAX   MAXIFS   
+MID   MIN   MINIFS   MINUTE 
+MOD   MODE   MONTH   
+MROUND   NETWORKDAYS   
+NOT   NOW   OFFSET   OR   
+PROPER   RAND  RANDARRAY 
+RANDBETWEEN   RANK   
+REPLACE   RIGHT   ROUND   
+ROUNDDOWN   ROUNDUP   
+ROW   ROWS   SEARCH   
+SECOND   SEQUENCE   
+SMALL   SORT   SORTBY   
+SUBSTITUTE   SUBTOTAL   
+SUM   SUMIF   SUMIFS   
+SUMPRODUCT   TEXT   
+TEXTJOIN   TIME   TODAY   
+TRANSPOSE   TRIM   
+UNIQUE   UPPER   VLOOKUP   
+WEEKDAY   WEEKNUM   
+WORKDAY   XLOOKUP   
+XMATCH   YEAR   YEARFRAC 
+Table of Contents
+ROW and COLUMN
+You can use the ROW function and COLUMN function to find row and  
+column numbers on a worksheet. Notice both ROW and COLUMN return 
+values for the current cell if no reference is supplied:
+The row function also shows up often in advanced formulas that process 
+data with relative row numbers.
+ROWS and COLUMNS
+The ROWS function and COLUMNS function provide a count of rows in a 
+reference. In the screen below, we are counting rows and columns in an 
+Excel Table named “Table1”.
+Note ROWS returns a count of data rows in a table, excluding the header 
+row. By the way, here are 23 things to know about Excel Tables.
+
+--- Página 17 ---
+16
+101 EXCEL FUNCTIONS
+HYPERLINK
+You can use the HYPERLINK function to construct a link with a formula. 
+Note HYPERLINK lets you build both external links and internal links:
+GETPIVOTDATA 
+The GETPIVOTDATA function is useful for retrieving information from  
+existing pivot tables.
+Build External and 
+Internal Hyperlinks
+
+--- Página 18 ---
+17
+101 EXCEL FUNCTIONS
+CHOOSE
+The CHOOSE function is handy any time you need to make a choice based 
+on a number:
+TRANSPOSE
+The TRANSPOSE function gives you an easy way to transpose vertical data 
+to horizontal, and vice versa.
+Note: TRANSPOSE is a formula and is therefore dynamic. If you just need 
+to do a one-time transpose operation, use Paste Special instead.
+Transpose Vertical 
+Data to Horizontal
+VIDEO
+How to use the 
+CHOOSE function
+
+--- Página 19 ---
+18
+101 EXCEL FUNCTIONS
+OFFSET
+The OFFSET function is useful for all kinds of dynamic ranges. From a 
+starting location, it lets you specify row and column offsets, and also the 
+final row and column size. The result is a range that can be respond dy-
+namically to changing conditions and inputs. You can feed this range to 
+other functions, as in the screen below, where OFFSET builds a range that 
+is fed to the SUM function:
+INDIRECT 
+The INDIRECT function allows you to build references as text. This con-
+cept is a bit tricky to understand at first, but it can be useful in many 
+situations. Below, we are using INDIRECT to get values from cell A1 in 5 
+different worksheets. Each reference is dynamic. If a sheet name changes, 
+the reference will update.
+The INDIRECT function is also used to “lock” references so they won’t 
+change, when rows or columns are added or deleted. For more details, see 
+linked examples at the bottom of the INDIRECT function page.
+The main purpose 
+of OFFSET is to 
+allow formulas to 
+dynamically adjust 
+to available data or 
+to user input.
+Caution: Both  
+OFFSET and  
+INDIRECT are  
+volatile functions 
+and can slow  
+down large or  
+complicated 
+spreadsheets.
+
+--- Página 20 ---
+19
+101 EXCEL FUNCTIONS
+STATISTICAL Functions
+COUNT and COUNTA
+You can count numbers with the COUNT function and non-empty cells with 
+COUNTA. You can count blank cells with COUNTBLANK, but in the screen 
+below we are counting blank cells with COUNTIF, which is more generally 
+useful.
+COUNTIF and COUNTIFS
+For conditional counts, the COUNTIF function can apply one criteria. The 
+COUNTIFS function can apply multiple criteria at the same time:
+How Many? 
+VIDEO
+How to use the 
+COUNTIF Function
+
+--- Página 21 ---
+20
+101 EXCEL FUNCTIONS
+SUM, SUMIF, SUMIFS
+To sum everything, use the SUM function. To sum conditionally, use SUMIF 
+or SUMIFS. Following the same pattern as the counting functions, the  
+SUMIF function can apply only one criteria while the SUMIFS function can 
+apply multiple criteria.
+AVERAGE, AVERAGEIF, and AVERAGEIFS
+Following the same pattern, you can calculate an average with AVERAGE, 
+AVERAGEIF, and AVERAGEIFS.
+	
+5
+	
+9
+	
+7
+  __
+  23
+VIDEO
+How to use the 
+SUMIF function
+
+--- Página 22 ---
+21
+101 EXCEL FUNCTIONS
+MIN, MAX, LARGE, SMALL
+You can find largest and smallest values with MAX and MIN, and nth 
+largest and smallest values with LARGE and SMALL. In the screen below, 
+“data” is the named range C5:C13, used in all formulas.
+Find LARGEST and 
+SMALLEST values
+VIDEO
+How to find the 
+nth smallest or 
+largest value
+
+--- Página 23 ---
+22
+101 EXCEL FUNCTIONS
+MINIFS, MAXIFS
+The MINIFS and MAXIFS. These functions let you find minimum and  
+maximum values with conditions:
+Note: MINIFS and MAXIFS are new in Excel via Office 365 and Excel 2019.
+MODE
+The MODE function returns the most commonly occurring number in a 
+range:
+Most commonly 
+occuring dog color
+Find the smallest 
+blue fish
+
+--- Página 24 ---
+23
+101 EXCEL FUNCTIONS
+RANK
+To rank values largest to smallest, or smallest to largest, use the RANK 
+function:
+See this formula which demonstrates how to use the RANK function to 
+calculate race results.
+Rank Largest  
+to Smallest
+Video
+How to rank values 
+with the RANK 
+function
+
+--- Página 25 ---
+24
+101 EXCEL FUNCTIONS
+MATH Functions
+ABS
+To change negative values to positive use the ABS function.
+RAND and RANDBETWEEN
+Both the RAND function and RANDBETWEEN function can generate 
+random numbers on the fly. RAND creates long decimal numbers between 
+zero and 1. RANDBETWEEN generates random integers between two given 
+numbers.
+ABS — Negative to 
+Positive
+To generate a 
+random dice roll
+RANDBETWEEN(1,6)
+
+--- Página 26 ---
+25
+101 EXCEL FUNCTIONS
+25
+101 EXCEL FUNCTIONS
+Quick Navigation
+ABS   AGGREGATE   AND   
+AVERAGE   AVERAGEIF   
+AVERAGEIFS   CEILING   
+CHAR   CHOOSE   CLEAN   
+CODE   COLUMN   COLUMNS  
+CONCAT   CONCATENATE   
+CONVERT   COUNT   COUNTA 
+COUNTBLANK   COUNTIF   
+COUNTIFS   DATE   DATEDIF   
+DAY   EDATE   EOMONTH   
+EXACT   FILTER   FIND   
+FLOOR   GETPIVOTDATA   
+HLOOKUP   HOUR   
+HYPERLINK   IF   IFERROR   
+IFNA   IFS   INDEX   INDIRECT  
+INT   ISBLANK   ISERROR   
+ISEVEN   ISFORMULA   
+ISLOGICAL   ISNUMBER   
+ISODD   ISTEXT   LARGE   
+LEFT   LEN   LOOKUP LOWER   
+MATCH   MAX   MAXIFS   
+MID   MIN   MINIFS   MINUTE 
+MOD   MODE   MONTH   
+MROUND   NETWORKDAYS   
+NOT   NOW   OFFSET   OR   
+PROPER   RAND  RANDARRAY 
+RANDBETWEEN   RANK   
+REPLACE   RIGHT   ROUND   
+ROUNDDOWN   ROUNDUP   
+ROW   ROWS   SEARCH   
+SECOND   SEQUENCE   
+SMALL   SORT   SORTBY   
+SUBSTITUTE   SUBTOTAL   
+SUM   SUMIF   SUMIFS   
+SUMPRODUCT   TEXT   
+TEXTJOIN   TIME   TODAY   
+TRANSPOSE   TRIM   
+UNIQUE   UPPER   VLOOKUP   
+WEEKDAY   WEEKNUM   
+WORKDAY   XLOOKUP   
+XMATCH   YEAR   YEARFRAC 
+Table of Contents
+ROUND, ROUNDUP, ROUNDDOWN, INT
+To round values up or down, use the ROUND function. To force rounding 
+up to a given number of digits, use ROUNDUP. To force rounding down, use 
+ROUNDDOWN. To discard the decimal part of a number altogether, use the 
+INT function.
+MROUND, CEILING, FLOOR
+To round values to a the nearest multiple use the MROUND function. The 
+FLOOR function and CEILING function also round to a given multiple. 
+FLOOR forces rounding down, and CEILING forces rounding up.
+
+--- Página 27 ---
+26
+101 EXCEL FUNCTIONS
+MOD
+The MOD function returns the remainder after division. This sounds 
+boring and geeky, but MOD turns up in all kinds of formulas, especially for-
+mulas that need to do something “every nth time”. In the screen below, you 
+can see how MOD returns zero every third number when the divisor is 3:
+SUMPRODUCT
+The SUMPRODUCT function is powerful and versatile tool when dealing 
+with all kinds data. You can use SUMPRODUCT to easily count and sum 
+based on criteria, and you can use it in elegant ways that just don’t work 
+with COUNTIFS and SUMIFS. In the screen below, we are using  
+SUMPRODUCT to count and sum orders in March. See the SUMPRODUCT 
+page for details and links to many examples.
+ 
+The MOD function  
+returns the  
+remainder
+Sunglasses  
+sold in July
+Sumproduct is a 
+powerful and  
+versatile tool that 
+is easy to use.
+
+--- Página 28 ---
+27
+101 EXCEL FUNCTIONS
+27
+101 EXCEL FUNCTIONS
+SUBTOTAL
+The SUBTOTAL function is an “aggregate function” that can perform a 
+number of operations on a set of data. The key feature of SUBTOTAL is that 
+it will ignore rows that have been “filtered out” of an Excel Table, and,  
+optionally, rows that have been manually hidden. In the screen below,  
+SUBTOTAL is used to count and sum only the 7 visible rows in the table:
+AGGREGATE 
+Like SUBTOTAL, the AGGREGATE function can run a number of  
+aggregate operations on a set of data and can optionally ignore hidden 
+rows. The key differences are that AGGREGATE can run more operations  
+and can also ignore errors. 
+Above, AGGREGATE is used to perform MIN, MAX, LARGE and SMALL op-
+erations while ignoring errors. Normally, the error in cell B9 would prevent 
+these functions from returning a result.
+SUBTOTAL can  
+perform 11  
+operations,  
+including SUM, 
+AVERAGE, COUNT, 
+MAX, MIN, etc.  
+(see This Page for 
+the full list)
+AGGREGATE can  
+perform 19  
+operations and can 
+also ignore errors. 
+See this page 
+for a full list of 
+operations.
+
+--- Página 29 ---
+28
+101 EXCEL FUNCTIONS
+28
+101 EXCEL FUNCTIONS
+TEXT Functions
+LEFT, RIGHT, MID 
+To extract characters from the left, right, or middle of text, use LEFT, 
+RIGHT, and MID functions:
+LEN
+The LEN function will return the length of a text string. LEN shows up in a 
+lot of formulas that count words or characters.
+Separate text into 
+columns
+FORMULA
+Get first name 
+from full name
+
+--- Página 30 ---
+29
+101 EXCEL FUNCTIONS
+FIND, SEARCH
+To look for specific text in a cell, use the FIND function or SEARCH func-
+tion. These functions return the numeric position of matching text, but 
+SEARCH allows wildcards and FIND is case-sensitive. Both functions will 
+throw an error when text is not found, so wrap in the ISNUMBER function 
+to return TRUE or FALSE (example here).
+REPLACE, SUBSTITUTE
+To replace text by position, use the REPLACE function. To replace text by 
+matching, use the SUBSTITUTE function. In the first example, REPLACE 
+removes the two asterisks (**) by replacing the first two characters with an 
+empty string (“”). In the second example, SUBSTITUTE removes all hash 
+characters (#) by replacing “#” with “”.
+Text Functions —
+Find, Replace and 
+Sustitute
+FORMULA
+Cell contains one 
+of many things
+
+--- Página 31 ---
+30
+101 EXCEL FUNCTIONS
+CODE, CHAR
+To figure out the numeric code for a character, use the CODE function. To 
+translate the numeric code back to a character, use the CHAR function. In 
+the example below, CODE translates each character in column B to its cor-
+responding code. In column F, CHAR translates the code back to a character.
+TRIM, CLEAN
+To get rid of extra space in text, use the TRIM function. To remove line 
+breaks and other non-printing characters, use CLEAN.
+VIDEO
+How to use the 
+CODE and CHAR 
+functions
+VIDEO
+How to clean  
+text with TRIM  
+and CLEAN
+
+--- Página 32 ---
+31
+101 EXCEL FUNCTIONS
+CONCAT, TEXTJOIN, CONCATENATE
+New in Excel via Office 365 are CONCAT and TEXTJOIN. The CONCAT  
+function lets you concatenate (join) multiple values, including a range of 
+values without a delimiter. The TEXTJOIN function does the same thing, 
+but allows you to specify a delimiter and can also ignore empty values.
+Excel also provides the CONCATENATE function, but it doesn’t offer spe-
+cial features. I would’t bother with it and would instead concatenate di-
+rectly with the ampersand (&) character in a formula.
+EXACT
+The EXACT function allows you to compare two text strings in a case- 
+sensitive manner.
+Join cells together
+
+--- Página 33 ---
+32
+101 EXCEL FUNCTIONS
+UPPER, LOWER, PROPER
+To change the case of text, use the UPPER, LOWER, and PROPER function
+TEXT
+Last but definitely not least is the TEXT function. The text function lets 
+you apply number formatting to numbers (including dates, times, etc.) as 
+text. This is especially useful when you need to embed a formatted number 
+in a message, like “Sale ends on [date]”.
+More: Detailed examples of custom number formatting.
+Standardize a  
+List of Names
+VIDEO
+How to change 
+case with formulas
+
+--- Página 34 ---
+33
+101 EXCEL FUNCTIONS
+Dynamic Array Functions
+Dynamic arrays are new in Excel 365, and are a major upgrade to  
+Excel’s formula engine. As part of the dynamic array update, Excel includes 
+new functions which directly leverage dynamic arrays to solve problems 
+that are traditionally hard to solve with conventional formulas. If you are 
+using Excel 365, make sure you are aware of these new functions:
+FUNCTION	
+PURPOSE
+FILTER . .  .  .  . . . . Filter data and return matching records
+RANDARRAY. .  . Generate array of random numbers
+SEQUENCE. .  .  . . Generate array of sequential numbers
+SORT. .  .  .  .  . . . . . Sort range by column
+SORTBY . .  .  .  . . . Sort range by another range or array
+UNIQUE . .  .  .  . . . Extract unique values from a list or range
+XLOOKUP. .  .  . . . Modern replacement for VLOOKUP
+XMATCH. .  .  .  . . . Modern replacement for the MATCH function
+VIDEO
+New dynamic array functions in Excel
+(about 3 minutes).
+FILTER and SORT 
+can be used in 
+many ways
+
+--- Página 35 ---
+34
+101 EXCEL FUNCTIONS
+34
+101 EXCEL FUNCTIONS
+Quick Navigation
+ABS   AGGREGATE   AND   
+AVERAGE   AVERAGEIF   
+AVERAGEIFS   CEILING   
+CHAR   CHOOSE   CLEAN   
+CODE   COLUMN   COLUMNS  
+CONCAT   CONCATENATE   
+CONVERT   COUNT   COUNTA 
+COUNTBLANK   COUNTIF   
+COUNTIFS   DATE   DATEDIF   
+DAY   EDATE   EOMONTH   
+EXACT   FILTER   FIND   
+FLOOR   GETPIVOTDATA   
+HLOOKUP   HOUR   
+HYPERLINK   IF   IFERROR   
+IFNA   IFS   INDEX   INDIRECT  
+INT   ISBLANK   ISERROR   
+ISEVEN   ISFORMULA   
+ISLOGICAL   ISNUMBER   
+ISODD   ISTEXT   LARGE   
+LEFT   LEN   LOOKUP LOWER   
+MATCH   MAX   MAXIFS   
+MID   MIN   MINIFS   MINUTE 
+MOD   MODE   MONTH   
+MROUND   NETWORKDAYS   
+NOT   NOW   OFFSET   OR   
+PROPER   RAND  RANDARRAY 
+RANDBETWEEN   RANK   
+REPLACE   RIGHT   ROUND   
+ROUNDDOWN   ROUNDUP   
+ROW   ROWS   SEARCH   
+SECOND   SEQUENCE   
+SMALL   SORT   SORTBY   
+SUBSTITUTE   SUBTOTAL   
+SUM   SUMIF   SUMIFS   
+SUMPRODUCT   TEXT   
+TEXTJOIN   TIME   TODAY   
+TRANSPOSE   TRIM   
+UNIQUE   UPPER   VLOOKUP   
+WEEKDAY   WEEKNUM   
+WORKDAY   XLOOKUP   
+XMATCH   YEAR   YEARFRAC 
+Table of Contents
+More Resources
+See also the full list of Excel functions and collection of Excel Formulas on 
+our website for reference.
+Excel Training
+In addition to the free resources on the site, we also provide high quality video 
+training. Our videos are quick, clean, and to the point, so you can learn Excel in 
+less time, and easily review key topics when needed. Each video comes with its 
+own practice worksheet. Read more...
+

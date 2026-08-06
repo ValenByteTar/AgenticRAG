@@ -1,0 +1,1146 @@
+=== Anexo D - GOLDWIND.pdf ===
+
+--- Página 1 ---
+ANEXO D  (GOLDWIND)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES GOLDWIND OPERADAS POR EL CROM 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+Loma Blanca I 
+51,2 
+Eolica 
+22/01/2021 
+Goldwind 
+Goldwind 
+BLC 
+Loma Blanca II 
+51,2 
+Eolica 
+08/02/2020 
+Goldwind 
+Goldwind 
+BLC 
+Loma Blanca III 
+51,2 
+Eolica 
+22/01/2021 
+Goldwind 
+Goldwind 
+BLC 
+Loma Blanca VI 
+102,4 
+Eolica 
+01/04/2021 
+Goldwind 
+Goldwind 
+BLC 
+Miramar 
+98,6 
+Eolica 
+26/11/2020 
+Goldwind 
+Goldwind 
+BLC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL 
+354.6
+
+--- Página 2 ---
+ANEXO D  (GOLDWIND)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Descripcion de Loma Blanca I : 
+El proyecto presente, identificado como Parque Eolico Loma Blanca I de 51,2 MW (Agente: PELOMA1G; 
+Central: LOM1EO; Grupo: LOM1EO01), producira energia electrica a partir de la captacion y transformacion 
+de la energia proveniente del viento, por medio de diez y seis molinos eolicos. Luego, dicha energia sera 
+inyectada en el Sistema Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con 
+la administradora del Mercado Electrico Mayorista (CAMMESA). 
+ 
+Mas de 21000 turbinas Goldwind 3,2 MW PMDD (Permanent Magnet Direct Drive) instaladas durante un 
+periodo mayor a 20 anos dan cuenta de la experiencia operacional con este equipamiento. Con un diseno de 
+alta eficiencia, derivado de un Generador Sincronico de rotor con imanes permanentes (PMSG) que elimina 
+perdidas por excitacion, asi como la ausencia de caja multiplicadora elimina perdidas por lubricacion y 
+refrigeracion. 
+ 
+Sensores estrategicamente colocados en componentes clave permiten diagnosticos predictivos y controles 
+precisos. Estos datos alimentan algoritmos desarrollados por Goldwind durante mas de 20 anos. La ausencia 
+de trenes de engranajes elimina la posibilidad de falla de reductoras durante la vida operacional de la 
+turbina. Diseno libre de mantenimiento por su transmision por correa dentada simplifica los requerimientos 
+de mantenimiento, asi como el uso de tecnologia PMSG tampoco requiere grandes mantenimientos en 
+escobillas colectoras. 
+ 
+ 
+ 
+ 
+ET Loma Blanca Este de 
+TRANSPA, en las que se 
+encuentran las 
+instalaciones de Loma 
+Blanca 1 y 3.
+
+--- Página 3 ---
+ANEXO D  (GOLDWIND)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Loma Blanca I se encuentra junto a Loma Blanca III en la provincia argentina de Chubut, aproximadamente a 
+35 km de Puerto Madryn, 28 Km de Rawson y 25 de Trelew. El acceso al parque eolico se situa sobre la Ruta 
+Nacional n° 3. 
+Esta 4 Km al norte de Loma Blanca II 
+ 
+Parque Eolico Loma Blanca I 51,2 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Goldwind  GW140  
+Potencia Nominal del aerogenerador 
+3,2 MW 
+Numero de aerogeneradores 
+16 
+Potencia Nominal del proyecto 
+51,2 MW 
+Diametro nominal de rotor 
+140 m 
+Velocidad media del viento 
+10,5 – 11 m/s 
+ 
+El parque esta constituido por 16 Aero generadores de 3,2 Mw, lo quen representa una Potencia total 
+Instalada del Parque 51,2 MW. 
+ 
+Se encuentran interconectados por 3 circuitos de 33 kV, los que acometen a una  unica barra en ese nivel de 
+tension: 
+• 
+Circuito 1 llega por la celda 09 interruptor 25209,   
+• 
+Circuito 2 llega por la celda 10 interruptor 25210,  
+• 
+Circuito 3 llega por la celda 11 interruptor 25211,  
+• 
+Capacitores de 2 MVAR se conectan con la celda 07 interruptor 25207. 
+ 
+El interruptor de Salida de la Barra de 33 KV donde se concentra toda la potencia del parque tiene salida por 
+un interruptor ubicado en la celda 12 interruptor 25212 (telecomando sobre los interruptores de Celdas 12, 
+09, 10, 11 y 07). 
+ 
+La salida del parque llega a Celda 02  (perteneciente al transportista), donde acomete una barra de 33 KV de 
+TRANSPA dentro de la ET Loma Blanca Este de TRANSPA (por lo que el limite entre Loma Blanca 1 y 
+TRANSPA se da en 33 KV entre interruptor de salida de barra 33 Kv de Loma Blanca 1, celda 12, e Interruptor 
+de entrada a barra de 33 Kv de TRANSPA celda 01), Luego la Celda 02 a traves del interruptor 25202 conecta 
+la barra de TRANSPA a bornes del transformador 4TR01 
+ 
+Luego en la ET de TRANSPA se eleva la tension a 132 Kv  en el 4TR01 y por una linea se llega luego a Puerto 
+Madryn. 
+Los servicios Auxiliares de la Sala de Loma Blanca 1 son provistos por la ET de TRANSPA desde el 
+transformador  2RN03.
+
+--- Página 4 ---
+ANEXO D  (GOLDWIND)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+En la Celda 03  de 33 kv de TRANSPA esta el interruptor 25203 que si se cierra pone en paralelo la barra de 
+33 KV de Loma Blanca I con la barra de 33 KV de Loma Blanca III. 
+ 
+ 
+Pagina oficial:  https://lomablanca1.com.ar/
+
+--- Página 5 ---
+ANEXO D  (GOLDWIND)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Tiene su acceso a 250 metros de la Ruta 
+3, a unos 35 km de Puerto Madryn y 28 
+km de Rawson y 25 de Trelew, Provincia 
+de Chubut. 
+ 
+Localizacion 
+• 
+Latitud : -43.031717 
+• 
+Longitud : -65.183055
+
+--- Página 6 ---
+ANEXO D  (GOLDWIND)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar General en 132 kV y 33 KV TRANSPA:
+
+--- Página 7 ---
+ANEXO D  (GOLDWIND)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+Unifilar de Celdas de MT de P. E. Loma Blanca 1
+
+--- Página 8 ---
+ANEXO D  (GOLDWIND)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar General 33 kV / 0,69 kV
+
+--- Página 9 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Descripcion de Loma Blanca II : 
+El proyecto presente, identificado como Parque Eolico Loma Blanca II de 51,2 MW (Agente: PELOMA2G; 
+Central: LOM2EO; Grupo: LOM2EO01), producira energia electrica a partir de la captacion y transformacion 
+de la energia proveniente del viento, por medio de diez y seis molinos eolicos. Luego, dicha energia sera 
+inyectada en el Sistema Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con 
+la administradora del Mercado Electrico Mayorista (CAMMESA). 
+ 
+Mas de 21000 turbinas Goldwind 3,2 MW PMDD (Permanent Magnet Direct Drive) instaladas durante un 
+periodo mayor a 20 anos dan cuenta de la experiencia operacional con este equipamiento. Con un diseno de 
+alta eficiencia, derivado de un Generador Sincronico de rotor con imanes permanentes (PMSG) que elimina 
+perdidas por excitacion, asi como la ausencia de caja multiplicadora elimina perdidas por lubricacion y 
+refrigeracion. 
+ 
+Sensores estrategicamente colocados en componentes clave permiten diagnosticos predictivos y controles 
+precisos. Estos datos alimentan algoritmos desarrollados por Goldwind durante mas de 20 anos. La ausencia 
+de trenes de engranajes elimina la posibilidad de falla de reductoras durante la vida operacional de la 
+turbina. Diseno libre de mantenimiento por su transmision por correa dentada simplifica los requerimientos 
+de mantenimiento, asi como el uso de tecnologia PMSG tampoco requiere grandes mantenimientos en 
+escobillas colectoras. 
+ 
+ 
+ 
+ 
+ET Loma Blanca. Delimitado rojo 
+sector equipos de Loma Blanca 
+2. Resto ET,  TRANSPA y Loma 
+Blanca 4 (de GENNEIA).
+
+--- Página 10 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ET Loma Blanca 
+ 
+A la misma   
+tambien acomete 
+Loma Blanca II 
+ 
+Loma Blanca II se encuentra en la provincia argentina de Chubut, aproximadamente a 35 km de Puerto 
+Madryn, 28 Km de Rawson y 25 de Trelew. El acceso al parque eolico se situa sobre la Ruta Nacional n° 3. 
+ 
+Parque Eolico Loma Blanca II 51,2 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Goldwind  GW140  
+Potencia Nominal del aerogenerador 
+3,2 MW 
+Numero de aerogeneradores 
+16 
+Potencia Nominal del proyecto 
+51,2 MW 
+Diametro nominal de rotor 
+140 m 
+Velocidad media del viento 
+10,5 – 11 m/s 
+ 
+El parque esta constituido por 16 Aero generadores de 3,2 Mw, lo quen representa una Potencia total 
+Instalada del Parque 51,2 MW. 
+ 
+Se encuentran interconectados por 3 circuitos de 33 kV, los que acometen a una  unica barra en ese nivel de 
+tension: 
+• 
+Circuito 1 llega por la celda 43 interruptor 25243,   
+• 
+Circuito 2 llega por la celda 44 interruptor 25244,  
+• 
+Circuito 3 llega por la celda 45 interruptor 25245,  
+• 
+Capacitores de 2 MVAR se conectan con la celda 46 interruptor 25246. 
+ 
+El interruptor de Salida de la Barra de 33 KV donde se concentra toda la potencia del parque tiene salida por 
+un interruptor ubicado en la celda 42 interruptor 25242 (telecomando sobre los interruptores de Celdas 42, 
+43, 44, 45 y 46).
+
+--- Página 11 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+La salida del parque llega a Celda 32  (perteneciente al transportista), donde acomete una barra de 33 KV de 
+TRANSPA dentro de la ET Loma Blanca de TRANSPA (por lo que el limite entre Loma Blanca 2 y TRANSPA se 
+da en 33 KV entre interruptor de salida de barra 33 Kv de Loma Blanca 2, celda 42, e Interruptor de entrada a 
+barra de 33 Kv de TRANSPA celda 32),  
+ 
+Luego en la ET de TRANSPA se eleva la tension a 132 Kv y por una linea se llega luego a Puerto Madryn. 
+Los servicios Auxiliares de la Sala de Loma Blanca 2 son provistos por la ET de TRANSPA, o un Generador de 
+Emergencia, que esta en la instalaciones de Loma Blanca 4 propiedad de GENNEIA. 
+ 
+ 
+Pagina oficial:  https://lomablanca2.com.ar/
+
+--- Página 12 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Tiene su acceso a 250 metros de la Ruta 
+3, a unos 35 km de Puerto Madryn y 28 
+km de Rawson y 25 de Trelew, Provincia 
+de Chubut. 
+ 
+Localizacion 
+• 
+Latitud : -43.063183 
+• 
+Longitud : -65.214758
+
+--- Página 13 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar General en 132 kV 
+ 
+ 
+ 
+Unifilar de Celdas de MT de TRANSPA
+
+--- Página 14 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+A                   
+Sala de Celdas 33 kV   
+PE LB 2
+
+--- Página 15 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar de Celdas de MT de P. E. Loma Blanca 2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+De                  
+Sala de Celdas 33 kV   
+TRANSPA
+
+--- Página 16 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar General 33 kV / 0,69 kV
+
+--- Página 17 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Descripcion de Loma Blanca III : 
+El proyecto presente, identificado como Parque Eolico Loma Blanca III de 51,2 MW (Agente: PELOMA3G; 
+Central: LOM3EO; Grupo: LOM3EO01), producira energia electrica a partir de la captacion y transformacion 
+de la energia proveniente del viento, por medio de diez y seis molinos eolicos. Luego, dicha energia sera 
+inyectada en el Sistema Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con 
+la administradora del Mercado Electrico Mayorista (CAMMESA). 
+ 
+Mas de 21000 turbinas Goldwind 3,2 MW PMDD (Permanent Magnet Direct Drive) instaladas durante un 
+periodo mayor a 20 anos dan cuenta de la experiencia operacional con este equipamiento. Con un diseno de 
+alta eficiencia, derivado de un Generador Sincronico de rotor con imanes permanentes (PMSG) que elimina 
+perdidas por excitacion, asi como la ausencia de caja multiplicadora elimina perdidas por lubricacion y 
+refrigeracion. 
+ 
+Sensores estrategicamente colocados en componentes clave permiten diagnosticos predictivos y controles 
+precisos. Estos datos alimentan algoritmos desarrollados por Goldwind durante mas de 20 anos. La ausencia 
+de trenes de engranajes elimina la posibilidad de falla de reductoras durante la vida operacional de la 
+turbina. Diseno libre de mantenimiento por su transmision por correa dentada simplifica los requerimientos 
+de mantenimiento, asi como el uso de tecnologia PMSG tampoco requiere grandes mantenimientos en 
+escobillas colectoras. 
+ 
+ 
+ 
+ 
+ET Loma Blanca Este de 
+TRANSPA, en las que se 
+encuentran las 
+instalaciones de Loma 
+Blanca 1 y 3.
+
+--- Página 18 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Loma Blanca III se encuentra junto a Loma Blanca I en la provincia argentina de Chubut, aproximadamente a 
+35 km de Puerto Madryn, 28 Km de Rawson y 25 de Trelew. El acceso al parque eolico se situa sobre la Ruta 
+Nacional n° 3. 
+Esta 4 Km al norte de Loma Blanca II 
+ 
+Parque Eolico Loma Blanca III 51,2 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Goldwind  GW140  
+Potencia Nominal del aerogenerador 
+3,2 MW 
+Numero de aerogeneradores 
+16 
+Potencia Nominal del proyecto 
+51,2 MW 
+Diametro nominal de rotor 
+140 m 
+Velocidad media del viento 
+10,5 – 11 m/s 
+ 
+El parque esta constituido por 16 Aero generadores de 3,2 Mw, lo quen representa una Potencia total 
+Instalada del Parque 51,2 MW. 
+ 
+Se encuentran interconectados por 3 circuitos de 33 kV, los que acometen a una  unica barra en ese nivel de 
+tension: 
+• 
+Circuito 1 llega por la celda 15 interruptor 25215,   
+• 
+Circuito 2 llega por la celda 16 interruptor 25216,  
+• 
+Circuito 3 llega por la celda 17 interruptor 25217,  
+• 
+Capacitores de 2 MVAR se conectan con la celda 13 interruptor 25213. 
+ 
+El interruptor de Salida de la Barra de 33 KV donde se concentra toda la potencia del parque tiene salida por 
+un interruptor ubicado en la celda 18 interruptor 25218 (telecomando sobre los interruptores de Celdas 15, 
+16, 17, 13 y 18). 
+ 
+La salida del parque llega a Celda 05  (perteneciente al transportista), donde acomete una barra de 33 KV de 
+TRANSPA dentro de la ET Loma Blanca Este de TRANSPA (por lo que el limite entre Loma Blanca 3 y 
+TRANSPA se da en 33 KV entre interruptor de salida de barra 33 Kv de Loma Blanca 3, celda 18, e Interruptor 
+de entrada a barra de 33 Kv de TRANSPA celda 05), Luego la Celda 06 a traves del interruptor 25206 conecta 
+la barra de TRANSPA a bornes del transformador 4TR03 
+ 
+Luego en la ET de TRANSPA se eleva la tension a 132 Kv  en el 4TR03 y por una linea se llega luego a Puerto 
+Madryn. 
+Los servicios Auxiliares de la Sala de Loma Blanca 3 son provistos por la ET de TRANSPA desde el 
+transformador 2RN03.
+
+--- Página 19 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+En la Celda 03  de 33 kv de TRANSPA esta el interruptor 25203 que si se cierra pone en paralelo la barra de 
+33 KV de Loma Blanca I con la barra de 33 KV de Loma Blanca III. 
+ 
+ 
+Pagina oficial:  https://lomablanca3.com.ar/
+
+--- Página 20 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Tiene su acceso a 250 metros de la Ruta 
+3, a unos 35 km de Puerto Madryn y 28 
+km de Rawson y 25 de Trelew, Provincia 
+de Chubut. 
+ 
+Localizacion 
+• 
+Latitud : -43.031717 
+• 
+Longitud : -65.183055
+
+--- Página 21 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar General en 132 kV y 33 KV TRANSPA:
+
+--- Página 22 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+Unifilar de Celdas de MT de P. E. Loma Blanca 3
+
+--- Página 23 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar General 33 kV / 0,69 kV
+
+--- Página 24 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Descripcion de Loma Blanca VI : 
+El proyecto presente, identificado como Parque Eolico Loma Blanca VI, de 102,4 MW (Agente: PELOMA6G; 
+Central: LOM6EO; Grupo: LOM6EO01), producira energia electrica a partir de la captacion y transformacion 
+de la energia proveniente del viento, por medio de treinta y dos molinos eolicos. Luego, dicha energia sera 
+inyectada en el Sistema Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con 
+la administradora del Mercado Electrico Mayorista (CAMMESA). 
+ 
+Mas de 21000 turbinas Goldwind 3,2 MW PMDD (Permanent Magnet Direct Drive) instaladas durante un 
+periodo mayor a 20 anos dan cuenta de la experiencia operacional con este equipamiento. Con un diseno de 
+alta eficiencia, derivado de un Generador Sincronico de rotor con imanes permanentes (PMSG) que elimina 
+perdidas por excitacion, asi como la ausencia de caja multiplicadora elimina perdidas por lubricacion y 
+refrigeracion. 
+ 
+Sensores estrategicamente colocados en componentes clave permiten diagnosticos predictivos y controles 
+precisos. Estos datos alimentan algoritmos desarrollados por Goldwind durante mas de 20 anos. La ausencia 
+de trenes de engranajes elimina la posibilidad de falla de reductoras durante la vida operacional de la 
+turbina. Diseno libre de mantenimiento por su transmision por correa dentada simplifica los requerimientos 
+de mantenimiento, asi como el uso de tecnologia PMSG tampoco requiere grandes mantenimientos en 
+escobillas colectoras. 
+ 
+ 
+ 
+ 
+ET Loma Blanca Oeste de 
+TRANSPA, en las que se 
+encuentran las instalaciones 
+de Loma Blanca 6. PARQUE 
+EOLICO LOMA BLANCA VI 
+Ruta Nacional 4 - Km 07  
+(luego 20 Km al sur) 
+PROVINCIA DE CHUBUT 
+Coordenadas: -42.907551, -
+65.348122 
+ 
+ 
+ 
+Loma Blanca VI se encuentra al oeste Loma Blanca II en la provincia argentina de Chubut, aproximadamente 
+a 35 km de Puerto Madryn, 28 Km de Rawson y 25 de Trelew. El acceso al parque eolico se situa, tomando en 
+el Km 7 de la Ruta Provincial n° 4 un desvio hacia el sur 20 Km.
+
+--- Página 25 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Parque Eolico Loma Blanca VI 102,4 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+ 
+ 
+ 
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Goldwind  GW140  
+Potencia Nominal del aerogenerador 
+3,2 MW 
+Numero de aerogeneradores 
+32 
+Potencia Nominal del proyecto 
+102,4 MW 
+Diametro nominal de rotor 
+140 m 
+Velocidad media del viento 
+10,5 – 11 m/s 
+ 
+El parque esta constituido por 32 Aero generadores de 3,2 Mw, lo quen representa una Potencia total 
+Instalada del Parque 102,4 MW. 
+ 
+Se encuentran interconectados por 6 circuitos de 33 kV,  3 circuitos (1 - 2 – 3) a una barra denominada A y 
+otros 3 circuitos (4 - 5 – 6) a una barra denominada B, las barras de 33 Kv del lado parque no tienen 
+posibilidad de inteconexion: 
+Barra A: 
+• 
+Circuito 1 llega por la celda 09 interruptor 25209,   
+• 
+Circuito 2 llega por la celda 10 interruptor 25210,  
+• 
+Circuito 3 llega por la celda 11 interruptor 25211,  
+• 
+Capacitores de 2 MVAR se conectan con la celda 07 interruptor 25207. 
+• 
+Celda 08 de transformador de medicion 33 KV de barra A. 
+• 
+Celda 12 interruptor 25212 Salida de circuitos de barra A hacia barras de 33 KV TRANSPA. 
+ 
+ 
+La salida de Barra A del parque llega a Celda 01  (perteneciente al transportista), donde acomete una barra 
+de 33 KV de TRANSPA dentro de la ET Loma Blanca Oste de TRANSPA (por lo que el limite entre Loma Blanca 
+6 y TRANSPA se da en 33 KV entre interruptor de salida de barra A 33 Kv de Loma Blanca 6, celda 12, e 
+Interruptor de entrada a barra de 33 Kv de TRANSPA celda 01), Luego la Celda 02 a traves del interruptor 
+25202 conecta la barra de TRANSPA a bornes del transformador 4TR01 
+ 
+Luego en la ET de TRANSPA se eleva la tension a 132 Kv  en el 4TR01 y por una linea se llega luego a ET 
+Puerto Madryn. 
+Los servicios Auxiliares de la Sala de Loma Blanca 6 son provistos por la ET de TRANSPA desde el 
+transformador y reactor de neutro 2RN01. 
+En la Celda 03  de 33 kv de TRANSPA esta el interruptor 25203 que si se cierra pone en paralelo la barra A de 
+33 KV de Loma Blanca VI con la barra B de 33 KV de Loma Blanca VI.
+
+--- Página 26 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Barra B: 
+• 
+Circuito 4 llega por la celda 15 interruptor 25215,   
+• 
+Circuito 5 llega por la celda 16 interruptor 25216,  
+• 
+Circuito 6 llega por la celda 17 interruptor 25217,  
+• 
+Capacitores de 2 MVAR se conectan con la celda 13 interruptor 25213. 
+• 
+Celda 14 de transformador de medicion 33 KV de barra B. 
+• 
+Celda 18 interruptor 25218 Salida de circuitos de barra B hacia barras de 33 KV TRANSPA. 
+ 
+ 
+La salida de Barra B del parque llega a Celda 05  (perteneciente al transportista), donde acomete una barra 
+de 33 KV de TRANSPA dentro de la ET Loma Blanca Oste de TRANSPA (por lo que el limite entre Loma Blanca 
+6 y TRANSPA se da en 33 KV entre interruptor de salida de barra A 33 Kv de Loma Blanca 6, celda 18, e 
+Interruptor de entrada a barra de 33 Kv de TRANSPA celda 05, Luego la Celda 06 a traves del interruptor 
+25206 conecta la barra de TRANSPA a bornes del transformador 4TR03 
+ 
+Luego en la ET de TRANSPA se eleva la tension a 132 Kv  en el 4TR03 y por una linea se llega luego a ET 
+Puerto Madryn. 
+Los servicios Auxiliares de la Sala de Loma Blanca 6 son provistos por la ET de TRANSPA desde el 
+transformador y reactor de neutro 2RN03. 
+En la Celda 03  de 33 kv de TRANSPA esta el interruptor 25203 que si se cierra pone en paralelo la barra A de 
+33 KV de Loma Blanca VI con la barra B de 33 KV de Loma Blanca VI. 
+ 
+Pagina oficial:  https://lomablanca6.com.ar/
+
+--- Página 27 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Tiene su acceso a 250 metros de la Ruta 
+3, a unos 35 km de Puerto Madryn y 28 
+km de Rawson y 25 de Trelew, Provincia 
+de Chubut. 
+ 
+Localizacion 
+• 
+Latitud : -43.031717 
+• 
+Longitud : -65.183055
+
+--- Página 28 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar General en 132 kV y 33 KV TRANSPA:
+
+--- Página 29 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+Unifilar de Celdas de MT de P. E. Loma Blanca VI
+
+--- Página 30 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Descripcion de Parque Eolico Miramar: 
+El proyecto presente, identificado como Parque Eolico Miramar, de 98,6 MW (Agente: PEMIRAMG; Central: 
+MIRAEO; Grupo: MIRAEO01), producira energia electrica a partir de la captacion y transformacion de la 
+energia proveniente del viento, por medio de veintinueve molinos eolicos. Luego, dicha energia sera 
+inyectada en el Sistema Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con 
+la administradora del Mercado Electrico Mayorista (CAMMESA). 
+ 
+Mas de 21000 turbinas Goldwind 3,4 MW PMDD (Permanent Magnet Direct Drive) instaladas durante un 
+periodo mayor a 20 anos dan cuenta de la experiencia operacional con este equipamiento. Con un diseno de 
+alta eficiencia, derivado de un Generador Sincronico de rotor con imanes permanentes (PMSG) que elimina 
+perdidas por excitacion, asi como la ausencia de caja multiplicadora elimina perdidas por lubricacion y 
+refrigeracion. 
+ 
+Sensores estrategicamente colocados en componentes clave permiten diagnosticos predictivos y controles 
+precisos. Estos datos alimentan algoritmos desarrollados por Goldwind durante mas de 20 anos. La ausencia 
+de trenes de engranajes elimina la posibilidad de falla de reductoras durante la vida operacional de la 
+turbina. Diseno libre de mantenimiento por su transmision por correa dentada simplifica los requerimientos 
+de mantenimiento, asi como el uso de tecnologia PMSG tampoco requiere grandes mantenimientos en 
+escobillas colectoras. 
+ 
+ 
+ 
+ 
+Parque Miramar se encuentra en 
+la provincia argentina de Buenos 
+Aires, aproximadamente a 50 km 
+de Miramar. El acceso al parque 
+eolico se situa sobre la Ruta 
+Provincial n° 88.
+
+--- Página 31 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Parque Eolico Miramar 98,6 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Goldwind  GW140  
+Potencia Nominal del aerogenerador 
+3,4 MW 
+Numero de aerogeneradores 
+29 
+Potencia Nominal del proyecto 
+98,6 MW 
+Diametro nominal de rotor 
+140 m 
+Velocidad media del viento 
+10,5 – 11 m/s 
+ 
+El parque esta constituido por 29 Aero generadores de 3,4 Mw, lo quen representa una Potencia total 
+Instalada del Parque 98,6 MW. 
+ 
+Se encuentran interconectados por 6 circuitos de 33 kV,  3 circuitos (1 - 2 – 3) a una barra denominada A y 
+otros 3 circuitos (4 - 5 – 6) a una barra denominada B, las barras de 33 Kv se pueden interconectar con un 
+interruptor de acople de barras ubicado en celda 08: 
+Barra A: 
+• 
+Circuito 1 llega por la celda 04 interruptor 3G045,   
+• 
+Circuito 2 llega por la celda 05 interruptor 3G055,  
+• 
+Circuito 3 llega por la celda 06 interruptor 3G065,  
+• 
+Capacitores de 4 MVAR se conectan con la celda 01 interruptor 3C015. 
+• 
+Celda 02 de transformador de medicion 33 KV de barra A. 
+• 
+Celda 03 salida a transformacdor 1 de servicios auxiliares seccionador 3T033. 
+• 
+Celda 07 interruptor 3T075 Salida de circuitos de barra A hacia transformador T1MIR 33 KV/132KV  
+TRANSBA. 
+• 
+Celda 08 interruptor paralelo de barras 33 KV 3A085 
+• 
+Celda 09 conexion de interruptor paralelo de barras a barra B. 
+ 
+Barra B: 
+• 
+Circuito 4 llega por la celda 13 interruptor 3G135,   
+• 
+Circuito 5 llega por la celda 12 interruptor 3G125,  
+• 
+Circuito 6 llega por la celda 11 interruptor 3G115,  
+• 
+Capacitores de 4 MVAR se conectan con la celda 16 interruptor 3C165. 
+• 
+Celda 15 de transformador de medicion 33 KV de barra B. 
+• 
+Celda 14 salida a transformacdor 2 de servicios auxiliares seccionador 3T143. 
+• 
+Celda 10 interruptor 3T105 Salida de circuitos de barra B hacia transformador T2MIR 33 KV/132KV  
+TRANSBA. 
+ 
+ 
+ 
+Pagina oficial:  https://parquemiramar.com.ar/
+
+--- Página 32 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Parque Miramar se encuentra en la 
+provincia argentina de Buenos Aires, 
+aproximadamente a 50 km de Miramar. El 
+acceso al parque eolico se situa sobre la 
+Ruta Provincial n° 88. 
+ 
+Localizacion 
+• 
+Latitud : -38.227701 
+• 
+Longitud : -58.048096
+
+--- Página 33 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar General en 132 kV y 33 KV MIRAMAR
+
+--- Página 34 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+Unifilar de Celdas de MT de P. E. Miramar
+
+--- Página 35 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+Unifilar General 33 kV / 132 kV
+
+--- Página 36 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+FIN:
+

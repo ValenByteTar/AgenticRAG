@@ -1,0 +1,202 @@
+=== Anexo D - Algarrobo.pdf ===
+
+--- Página 1 ---
+ANEXO D   (SOLARGEN ENERGY S.A.S.)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES SOLARGEN ENERGY S.A.S. OPERADAS POR EL CROM 
+ 
+ 
+ 
+Descripcion de 
+Parque 
+Solar 
+Algarrobo: 
+ 
+El proyecto 
+presente, 
+identificado como 
+Parque Fotovoltaico 
+Algarrobo, de 5.6 
+MW, (Agente: 
+PSALGARG; Central: 
+ALGR; Grupo: 
+ALGRFV, medidor 
+de energia 
+ALGAM71P), 
+habilitado a partir 
+del 27/02/2024 
+producen energia 
+electrica a partir de 
+la captacion y 
+transformacion de la 
+energia proveniente 
+del Sol, la planta 
+consta de 10044 
+paneles, 5022 
+paneles CANADIAN 
+SOLAR CS7L-585 
+MB-AG de 585 Wp y 
+5022 paneles 
+CANADIAN SOLAR 
+CS7L-590 MB-AG de 
+590 Wp, esta 
+dividido en dos 
+partes iguales, de 14 
+inversores. A su vez 
+esos 14 inversores 
+se dividen en dos 
+semi-barras de 
+1,1kV, cada una 
+cuenta con el aporte 
+de 7 inversores. 
+Cada semi barra 
+acomete a un 
+interruptor tripolar 
+motorizado de 1200 
+A, el cual se conecta 
+a un transformador 
+de 3.5MVA para elevar la tension  
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+P.S. Algarrobo 
+5.6 
+Fotovoltaica 
+27/02/2024 Inv. Huawei 
+BLC 
+BLC
+
+--- Página 2 ---
+ANEXO D   (SOLARGEN ENERGY S.A.S.)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+desde 0,8 a 13,2kV. La potencia de cada inversor es de 215 KW. celdas se unen aguas arriba en una barra aerea para de ese modo llegar a la frontera electrica 
+con el agente DECSA en la ET CAUCETE. La superficie ocupada por la totalidad de la planta es de 13 Ha. La energia sera inyectada en el Sistema Argentino de 
+Interconexion (SADI) en el marco de su ingreso al Mercado Electrico Mayorista como generador. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Datos Generales de algarrobo Potencia de C.A instalada 5.6 MW
+
+--- Página 3 ---
+ANEXO D   (SOLARGEN ENERGY S.A.S.)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Datos Equipos de Algarrobo
+
+--- Página 4 ---
+ANEXO D   (SOLARGEN ENERGY S.A.S.)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+Pagina oficial:    kioshi.com.ar/index.php 
+ 
+Ubicacion fisica
+
+--- Página 5 ---
+ANEXO D   (SOLARGEN ENERGY S.A.S.)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Parque Solar 
+Algarrobo se 
+encuentra, Al 
+sureste de la ciudad 
+de Caucete, San 
+Juan, Argentina.  
+ 
+Localizacion 
+ Latitud:  
+-31.695 
+ Longitud: 
+-68.181388888889 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Unifilar 13.2 kV de Planta de 5.6 MW dividido en dos partes:
+
+--- Página 6 ---
+ANEXO D   (SOLARGEN ENERGY S.A.S.)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion
+
+--- Página 7 ---
+ANEXO D   (SOLARGEN ENERGY S.A.S.)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion
+
+--- Página 8 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+FIN
+

@@ -1,0 +1,548 @@
+=== Protecciones-4.pdf ===
+
+--- Página 1 ---
+Ingenieria 18 (1,2): 77-88, ISSN: 1409-2441; 2008. San Jose, Costa Rica
+ESTABILIDAD Y COLAPSO DE TENSION
+EN SISTEMAS ELECTRICOS CON TOPOLOGIA 
+LONGITUDINAL
+1.	 INTRODUCCION
+En los ultimos anos, la presencia de problemas 
+asociados al control de tension, ha aumentado en 
+forma notable debido a una diversidad de factores, 
+como por ejemplo, el crecimiento en el consumo 
+de energia, en las politicas de diseno y operacion 
+actuales de los sistemas de potencia, las cuales 
+dificultan la adquisicion de servidumbres para 
+nuevos enlaces de transmision y propician una 
+mayor utilizacion de la red electrica; o el efecto 
+combinado de tales factores, reduciendo asi, los 
+margenes de estabilidad de tension.
+El problema de estabilidad de tension se 
+relaciona, de manera amplia, con la capacidad 
+del sistema para mantener niveles aceptables 
+de tension en todos los nodos del sistema, bajo 
+condiciones normales de operacion o despues de 
+una perturbacion (Taylor, 1994). Sin embargo, 
+un incremento considerable en la demanda 
+Eddie A. Araya Padilla
+Resumen
+Esta publicacion analiza el fenomeno de la estabilidad y colapso de tension en sistemas de potencia con topologia 
+longitudinal, similares al mexicano, italiano, taiwanes o centroamericano.
+Se propone un modelo del sistema de potencia que permite incluir el efecto de dispositivos de compensacion en 
+derivacion. Con base en este modelo, se determina el punto critico de operacion correspondiente a la condicion de 
+maxima cargabilidad del sistema. Dichos resultados son verificados a traves del analisis de valores singulares de las 
+ecuaciones de flujo de potencia.
+La metodologia desarrollada permite evaluar condiciones criticas de operacion, antes de la manifestacion de un 
+colapso de tension. Los resultados obtenidos, son utiles para determinar los estados de operacion vulnerables de un 
+sistema longitudinal, cuyos centros de consumo se encuentran lejos de las fuentes de energia electrica.
+Palabras clave: estabilidad de tension, cargabilidad, punto critico de operacion.
+Abstract
+This paper analyzed the phenomenon of the stability and collapse of voltage in longitudinal power systems, similar 
+to the Mexican, Italian, Taiwan or Central American.
+The model proposed allows including the effect of devices of compensation. With this model, the critical point 
+determined the loadability of the system. The resulted are verified through the analysis of singular values of the 
+equations of power flow.
+The developed methodology allows evaluating critical conditions of operation, before the manifestation of a 
+collapse of voltage in longitudinal power system
+Keywords: voltage stability, loadability, critical point operation.
+Recibido: 07 de noviembre del 2008 • Aprobado: 03 de diciembre del 2008
+
+--- Página 2 ---
+Ingenieria 18 (1,2): 77-88, ISSN: 1409-2441; 2008. San Jose, Costa Rica
+78
+o un cambio en las condiciones operativas y 
+topologicas del sistema post-falla, podrian 
+causar una caida progresiva e incontrolable de la 
+tension y el sistema entraria a una condicion de 
+inestabilidad o colapso (Stubbe et al., 1993).
+El analisis de varios eventos en distintas 
+redes electricas, muestra que el fenomeno de la 
+inestabilidad de tension, puede manifestarse en 
+forma rapida que incluye aspectos dinamicos, 
+o de manera mas lenta en regimen permanente 
+(Obadina & Berg, 1990). En algunos casos, la 
+perdida de la estabilidad de tension se presenta 
+despues de alguna contingencia en el sistema, 
+principalmente la salida de operacion de una 
+linea de transmision altamente cargada. En otros 
+casos, sin embargo, la perdida de cantidades 
+significativas de potencia reactiva, por ejemplo 
+asociados a la compensacion estatica de potencia 
+reactiva, tambien puede conducir a la perdida de 
+estabilidad de tension (Stubbe et al., 1993).
+Este fenomeno puede tomar distintas formas y 
+periodos de tiempo. Frecuentemente, los angulos 
+de fase y la frecuencia del sistema permanecen 
+constantes y el fenomeno de inestabilidad de 
+tension se manifiesta fundamentalmente por 
+la disminucion incontrolable de la tension del 
+sistema, a menudo en un periodo largo de tiempo 
+causando la operacion del equipo de proteccion. 
+En la etapa inicial, la magnitud de tension en nodos 
+criticos del sistema decae lentamente. La accion 
+de los sistemas automaticos de control, puede en 
+algunos casos mejorar de manera momentanea 
+los perfiles de tension, para posteriormente 
+decrecer en forma incontrolable causando la 
+operacion del equipo de proteccion. Esta forma 
+de inestabilidad se asocia con frecuencia a la 
+accion o respuesta lenta del equipo de control 
+secundario de tension, esencialmente la accion 
+de transformadores con cambio automatico de 
+carga, la conexion de bancos de capacitores y la 
+naturaleza de la carga (Obadina & Berg, 1990). 
+Este fenomeno es frecuentemente descrito en la 
+literatura como estabilidad de tension en regimen 
+permanente, para distinguirlo de otros fenomenos 
+de inestabilidad (Obadina & Berg, 1990).
+El problema de la inestabilidad de tension, 
+tambien se ha manifestado en sistemas energeticos 
+de paises en via de desarrollo. Estos sistemas 
+de potencia caracterizados por la configuracion 
+radial de cargas, frecuentes desbalances de 
+potencia activa y reactiva entre la generacion 
+y la demanda, un limitado numero de lineas de 
+transmision, baja capacidad de cortocircuito del 
+sistema y una densidad no uniforme de carga, 
+son llamados sistemas de potencia longitudinales 
+(SPL) (Aboytes & Arroyo, 1986) o sistemas de 
+potencia debiles (Abdel, 1987).
+En el caso nacional, Costa Rica no esta 
+inmune de este fenomeno, prueba de ello, el 
+pasado 6 de marzo del 2001 a las 18:42 h, el pais 
+sufrio un colapso de tension que afecto al 100 % 
+del Sistema Electrico Nacional. En esa ocasion, 
+la energia no servida fue de 2 500 MW-h (ICE, 
+2001).
+En el pasado, el problema de la inestabilidad 
+de tension fue analizado en el extremo receptor 
+de la linea, cuando la tension nodal comienza a 
+decaer por debajo de su valor nominal, sin retornar 
+a las condiciones normales de operacion, a pesar 
+de la inyeccion de potencia reactiva (Indulkar & 
+Viswanathan, 1983). Denotando que los SPL son 
+mucho mas sensibles a variaciones de potencia 
+activa y reactiva, y pueden estar cerca de una 
+inestabilidad de tension.
+Para analizar el efecto de otros parametros 
+sobre la estabilidad de tension, en esta publicacion 
+seran investigadas la capacidad de cortocircuito 
+del sistema, la reactancia critica del enlace, el 
+efecto del f.p. de la carga y el angulo de carga 
+critico. Finalmente, se evaluara el aporte de la 
+compensacion de capacitores en derivacion en 
+diferentes puntos de la linea de transmision.
+2.	 ANALISIS DEL SPL SIN  COMPENSAR
+Para analizar el fenomeno del colapso 
+de tension, se utiliza un SPL, cuyo modelo 
+simplificado se muestra en la Figura 1. Para este 
+modelo, se asume que la carga conectada tiene un 
+f.p. constante.
+En este sistema, la linea de transmision no se 
+encuentra compensada, y la idea es determinar la 
+tension critica y el angulo de potencia critico que 
+se establecen, cuando el sistema de transmision
+alcanza su punto de maxima cargabilidad.
+
+--- Página 3 ---
+araya: Estabilidad y colapso de tension en sistemas...
+79
+2.1 Relaciones de potencia
+Para establecer las relaciones de potencia, se 
+considera el modelo de la Figura 1, a partir del 
+cual, se obtienen las siguientes expresiones de 
+potencia que abastecen la carga.
+(1)
+Al dividir la ecuacion (1) entre a la potencia de 
+cortocircuito de la linea, Pcc = E2/X, se obtienen 
+las ecuaciones adimensionales de las potencias 
+activas y reactivas mostradas en la ecuacion (2).
+(2)
+donde:
+Figura 2. Curva p - v para un f.p. unitario.
+Fuente: (el autor).
+Figura 1. Sistema longitudinal.
+Fuente: (el autor).
+
+--- Página 4 ---
+Ingenieria 18 (1,2): 77-88, ISSN: 1409-2441; 2008. San Jose, Costa Rica
+80
+En estas ecuaciones, si se elimina la 
+dependencia de δ, se obtiene un polinomio de 
+cuarto orden en v, cuya solucion con sentido 
+practico es:
+(3)
+En el caso de una carga con f.p. constante, 
+q = ptanφ, las curvas normalizadas p - v pueden 
+determinarse para diferentes factores de potencia. 
+En el caso de que el f.p. sea unitario, la curva 
+normalizada p - v se muestra en la Figura 2.
+A partir de la Figura 2, se verifica el sentido 
+fisico de los signos ± de la ecuacion (3). Es 
+decir, hay dos soluciones factibles, en donde 
+el signo positivo corresponde al punto A y el 
+signo negativo corresponde al punto B. Si el 
+sistema se encuentra en el punto de operacion 
+A, esto corresponde a una estabilidad de tension 
+en regimen permanente. Por el contrario, si el 
+sistema se encuentra en el punto de operacion B, 
+esto corresponde a una inestabilidad de tension 
+en regimen permanente.
+2.2	  Tension, potencia y angulo critico
+A medida que la demanda de potencia activa 
+se incrementa, el perfil de tension en la barra de 
+consumo, disminuye, hasta que se alcanza un 
+valor critico de tension vcrit, el cual corresponde 
+a la potencia maxima pmax que puede ser 
+transportada por la linea de transmision, e indica 
+la condicion de maxima cargabilidad del sistema. 
+Este punto de operacion vulnerable se reconoce 
+como la nariz de la curva p - v de la Figura 2.
+Para determinar el valor de la tension critica 
+vcrit, se reconoce que en este punto de operacion, 
+la ecuacion (3) solo tiene una unica solucion, la 
+cual es satisfecha cuando,
+(4)
+Al sustituir las expresiones de la ecuacion (2) 
+en (4) y al simplificar los terminos, se obtiene una 
+relacion entre la tension critica vcrit y el angulo 
+critico δcrit, dada por la ecuacion (5).
+(5)
+El mismo resultado anterior puede obtenerse, 
+cuando el flujo de potencia no converge. 
+Analiticamente, esto significa que el determinante 
+de la matriz Jacobiana, ecuacion (6), es igual a 
+cero.
+(6)
+Ahora bien, como la tension critica vcrit es 
+una variable independiente en el nodo de carga, 
+el angulo critico δcrit cambia segun se muestra en 
+la Figura 3.
+Por otro lado, a partir del sistema de la Figura 
+1, se puede deducir una expresion que representa 
+la dependencia entre la potencia reactiva y la 
+tension, con respecto a la potencia activa, es decir 
+p=f(v,q). Para esto, se elimina la dependencia de 
+δ mediante (2), dando como resultado:
+(7)
+De esta forma, para una carga con un f.p. 
+unitario, la tension critica vcrit en ese punto de 
+operacion, sera un 70,7 % de su valor nominal, 
+y la maxima potencia activa transmitida sera un 
+50 % de su valor nominal. En este caso, el angulo 
+critico δcrit es igual a 45°.
+Por el contrario, si se quiere conocer la 
+dependencia entre la potencia activa y la tension, 
+con respecto a la potencia reactiva, es decir 
+q = f(v,p), nuevamente, a partir de (2) se obtiene 
+que:
+
+--- Página 5 ---
+araya: Estabilidad y colapso de tension en sistemas...
+81
+(8)
+En este caso, cuando la carga tiene un f.p. 
+igual a cero, la tension critica vcrit en ese punto 
+de operacion, sera un 50,0 % de su valor nominal, 
+y la maxima potencia reactiva transmitida sera un 
+25% de su valor nominal. En este caso, el angulo 
+critico δcrit es igual a 0°.
+En general, como el f.p. se encuentra entre 
+cero y uno, puede obtenerse una expresion 
+para el angulo critico δcrit, sustituyendo q 
+= ptanφ y (5) en (2), y despues de efectuar 
+el algebra correspondiente, se obtiene la 
+ecuacion (9).
+(9)
+A partir de (9) puede evaluarse los siguientes 
+casos extremos:
+a.	 Si el f.p. es unitario, el angulo critico es 45° y la 
+tension critica alcanza un valor de 0,707 p.u. 
+b.	
+Si el f.p. es cero, el angulo critico es 0° y 
+la tension critica alcanza un valor de 0,5 p.u.
+Para este caso general, la Figura 4 muestra 
+como se comporta el angulo critico y el angulo 
+del f.p., al variar la tension critica en el punto de 
+maxima cargabilidad de la linea.
+De forma similar, para derivar una expresion 
+generica de la potencia maxima a transmitir, para 
+cualquier f.p., se sustituyen las ecuaciones (5) y 
+(9) en (2), obteniendose que,
+(10)
+donde el correspondiente valor de potencia 
+reactiva esta dado por, 
+(11)
+Figura 3. Curva vcrit – δcrit.
+Fuente: (el autor).
+
+--- Página 6 ---
+Ingenieria 18 (1,2): 77-88, ISSN: 1409-2441; 2008. San Jose, Costa Rica
+82
+Figura 4. Curvas vcrit – δcrit y vcrit - φ.
+Fuente: (el autor).
+ Figura 5. Curva X –  δcrit.
+Fuente: (el autor).
+
+--- Página 7 ---
+araya: Estabilidad y colapso de tension en sistemas...
+83
+2.3	  Efecto de la reactancia inductiva de la 
+linea
+Para considerar el efecto de la reactancia 
+inductiva de la linea sobre el angulo critico, 
+δcrit, y el limite de estabilidad de tension, 
+Vcrit, se sustituye nuevamente q = ptanφ y 
+(5) en (2), y despues de efectuar el algebra 
+correspondiente, se obtiene la ecuacion (12)
+(12)
+Al graficar la ecuacion (12), con respecto a 
+la reactancia de la linea y asumiendo que E = 
+1 p.u. y Q = 0,1 p.u., se obtiene la Figura 5.
+De forma similar, cuando se sustituye la 
+ecuacion (12) en la ecuacion (5) y el resultado 
+se expresa en unidades naturales, se obtiene la 
+ecuacion (13) de la tension critica, en funcion 
+de la reactancia de la linea.
+(13)
+Nuevamente, al graficar la ecuacion (13), 
+con respecto a la reactancia de la linea y 
+asumiendo que E=1 p.u. y Q = 0,1 p.u., se 
+obtiene la Figura 6.
+3. ANALISIS DEL SPL COMPENSADO
+Para considerar el efecto de la compensacion 
+en derivacion sobre la tension, potencia y 
+angulo critico en el limite de estabilidad de 
+tension, se usa el sistema longitudinal de la 
+Figura 7. En este sistema se asume que no hay 
+perdidas activas y que la carga es de potencia 
+constante.
+Figura 6. Curva X – Vcrit.
+Fuente: (el autor).
+
+--- Página 8 ---
+Ingenieria 18 (1,2): 77-88, ISSN: 1409-2441; 2008. San Jose, Costa Rica
+84
+3.1 Relaciones de potencia
+Las ecuaciones normalizadas del flujo 
+de potencia con respecto a la potencia de 
+cortocircuito, Pcc=E
+2/X, se indican en la ecuacion 
+(14)
+(14)
+De nuevo, similar al caso no compensado, 
+al eliminar la dependencia de δ en (14), se 
+obtiene un polinomio de cuarto orden en v, 
+cuya solucion con sentido practico es:
+Para visualizar como la compensacion en 
+derivacion modifica las condiciones de las curvas 
+normalizadas p - v, se asume una carga de f.p. 
+unitario. En este caso, las curvas normalizadas 
+p - v para diferentes grados de compensacion, se 
+muestran en la Figura 8.
+De la Figura 8, se observa como la 
+compensacion incrementa la potencia maxima 
+transmitida, asi como aumenta el valor de la 
+tension critica, desplazando la nariz de la 
+curva p - v a la derecha y hacia arriba. Con este 
+suministro de potencia reactiva en el extremo 
+receptor de la linea, se incrementa el margen 
+de potencia reactiva de la barra, y se evita un 
+colapso de tension ante alguna contingencia en 
+el sistema.
+Figura 7. Sistema longitudinal compensado.
+Fuente: (el autor).
+Figura 8. Curvas normalizadas p - v para una 
+linea compensada.
+Fuente: (el autor).
+
+--- Página 9 ---
+araya: Estabilidad y colapso de tension en sistemas...
+85
+3.2	  Tension, potencia y angulo critico
+Para determinar el valor de la tension critica 
+vcrit, se reconoce que en este punto de operacion, 
+la ecuacion (15) solo tiene una unica solucion, la 
+cual es satisfecha cuando,
+(16)
+Al sustituir las expresiones de la ecuacion (14) 
+en (16) y al simplificar los terminos, se obtiene 
+una relacion entre la tension critica vcrit, y el 
+angulo critico δcrit, dada por la ecuacion (17).
+(17)
+La potencia maxima transmitida cuando el 
+sistema alcanza el valor de la tension critica, 
+se evalua cuando el determinante de la matriz 
+Jacobiana de las ecuaciones de flujo de potencia, 
+es igual a cero. En otras palabras, cuando el flujo 
+de potencia no converge, la condicion de maxima 
+cargabilidad, correspondiente a una carga con f.p. 
+unitario, esta dada por la ecuacion (18).
+(18)
+Por otro lado, la ecuacion (17) permite obtener 
+la familia de curvas de la Figura 9, segun sea el 
+grado de compensacion.
+Para el caso de la linea compensada, el angulo 
+critico δcrit, es independiente del grado de 
+compensacion y es igual al esquema de la linea 
+no compensada, ecuacion (9).
+De forma similar, para derivar una expresion 
+generica de la potencia maxima a transmitir, para 
+cualquier f.p., se sustituyen las ecuaciones (17) y 
+(9) en (14), obteniendose que,
+(15)
+Figura 9. Curvas vcrit – δcrit para la linea compensada.
+Fuente: (el autor).
+
+--- Página 10 ---
+Ingenieria 18 (1,2): 77-88, ISSN: 1409-2441; 2008. San Jose, Costa Rica
+86
+(19)
+donde el correspondiente valor de potencia 
+reactiva esta dado por, 
+(20)
+3.3	 Efecto de la reactancia inductiva 
+de la linea
+Para considerar el efecto de la reactancia 
+inductiva de la linea sobre el angulo critico, 
+δcrit, y el limite de estabilidad de tension, Vcrit, 
+se sustituye nuevamente q = ptanφ y (17) en (14), 
+y despues de efectuar el algebra correspondiente, 
+se obtiene la ecuacion (21):
+(21)
+De forma similar, cuando se sustituye la 
+ecuacion (21) en la ecuacion (17) y el resultado 
+se expresa en unidades naturales, se obtiene la 
+ecuacion (22) de la tension critica, en funcion de 
+la reactancia de la linea.
+(22)
+4.	 Analisis 
+de 
+la 
+estabilidad 
+de 
+tension 
+en 
+una 
+linea 
+compensada en cualquier sitio
+Si la compensacion de potencia reactiva se 
+efectua en cualquier sitio de la linea de enlace, el 
+modelo a obtener se muestra en la Figura 10.
+4.1	 Relaciones de potencia
+Las ecuaciones normalizadas del flujo 
+de potencia con respecto a la potencia de 
+cortocircuito, Pcc=E2/X, se indican en la 
+ecuacion (23).
+(23)
+Figura 10. Sistema longitudinal compensado.
+Fuente: (el autor).
+
+--- Página 11 ---
+araya: Estabilidad y colapso de tension en sistemas...
+87
+4.2	 Tension, potencia y angulo critico
+Para determinar el valor de la tension critica 
+vcrit, se evalua el punto de operacion, en el cual 
+el determinante de la matriz Jacobiana, ecuacion 
+(24), es igual a cero.
+(24)
+En este punto de operacion se obtiene que,
+(25)
+De forma similar, para derivar una expresion 
+generica de la potencia maxima a transmitir, para 
+cualquier δcrit, se sustituyen las ecuaciones (25) 
+en (23), obteniendose que,
+(26)
+donde el correspondiente valor de potencia 
+reactiva esta dado por, 
+(27)
+4.3	 Efecto de la reactancia inductiva de la 
+linea
+Para considerar el efecto de la reactancia 
+inductiva de la linea sobre el angulo critico, 
+δcrit, y el limite de estabilidad de tension, Vcrit, 
+se sustituye nuevamente q = ptanφ y (25) en (23), 
+obteniendose la ecuacion (28)
+De forma similar, cuando se sustituye la 
+ecuacion (28) en la ecuacion (25) y el resultado 
+se expresa en unidades naturales, se obtiene la 
+ecuacion (29) de la tension critica, en funcion de 
+la reactancia de la linea.
+donde 
+CONCLUSIONES
+De los resultados obtenidos, se desprenden 
+las siguientes conclusiones:
+1.	 La maxima transferencia de potencia activa 
+se encuentra limitada por el f.p. de la carga, 
+la reactancia de la linea y el desfase entre 
+las tensiones nodales de los extremos de la 
+linea.
+2.	 El desfase critico entre las tensiones nodales 
+de los extremos de la linea, es independiente 
+del grado de compensacion, si esta se efectua 
+en el extremo receptor de la linea.
+3.	 La localizacion de la compensacion estatica 
+de potencia reactiva, afecta el margen de 
+estabilidad de tension.
+(28)
+(29)
+
+--- Página 12 ---
+Ingenieria 18 (1,2): 77-88, ISSN: 1409-2441; 2008. San Jose, Costa Rica
+88
+REFERENCIAS BIBLIOGRAFICAS
+Obadina, O. O. & Berg, G. J. (1990, May.). 
+Identifying Electrically Weak and Strong 
+Segments of a Power System from a Voltage 
+Stability Viewpoint. IEE Proceedings, 137(3), 
+205-212.
+Abdel, A. (1987, August). Controllable VAR 
+Compensation: a Potential Solution to 
+Loadability Problems of Low Capacity Power 
+Systems. IEEE Trans. Power Systems, 2(3), 
+561-567.
+Aboytes, F. & Arroyo, G. (1986, May.). Security 
+Assessment in the Operation of Longitudinal 
+Power Systems. IEEE Trans. Power Systems, 
+1(2), 225-231.
+Instituto Costarricense de Electricidad (ICE), 
+Centro Nacional de Control de Energia. (2001, 
+Marzo.). Informe del Apagon Nacional del 6 
+de marzo del Ano 2001. San Jose, Costa Rica.
+Indulkar, C. S. & Viswanathan, B. (1983, 
+July.). Deterministic and Probabilistic 
+Approach to Voltage Stability of Series 
+Compensators EHV Transmission Lines. 
+IEEE Trans. PowerApparatus and Systems, 
+102(7), 2317-2323.
+Stubbe, M., Bihain, A. & Deuse, J. (1993, 
+May). Simulation of Voltage Collapse. 
+Electrical Power & Energy Systems, 
+15(4), 239-243.
+Taylor, C. W. (1994). Power Systems Voltage 
+Stability. New York: McGraw-Hill, 66-
+81.
+SIMBOLOGIA
+E:	
+Tension en el extremo emisor de la linea
+V:	
+Tension en el extremo receptor de la linea
+X:	
+Reactancia inductiva de la linea
+P:	
+Potencia activa demandada por la carga
+Q:	
+Potencia reactiva demandada por la carga.
+δ:	
+Angulo de potencia del sistema
+cos φ:	
+Factor de potencia de la carga.
+ SOBRE EL AUTOR
+Eddie A. Araya Padilla
+Catedratico de la Escuela de Ingenieria Electrica, 
+Universidad de Costa Rica.
+Sus areas de interes son la dinamica no lineal, los 
+dispositivos FACTS y la generacion eolica. 
+Correo electronico: earaya@eie.ucr.ac.cr
+

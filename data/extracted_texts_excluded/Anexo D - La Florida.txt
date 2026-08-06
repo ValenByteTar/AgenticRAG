@@ -1,0 +1,345 @@
+=== Anexo D - La Florida.pdf ===
+
+--- Página 1 ---
+ANEXO D  (C.E. LA FLORIDA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES DE COMPANIA ELECTRICA LA FLORIDA S.A. OPERADAS POR EL CROM 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+CTB La Florida TG1 
+9.52 
+Biomasa 
+21/11/2024 
+TGM 
+TM25000A 
+ 
+BLC 
+CTB La Florida TG2 
+4.95 
+Biomasa 
+21/11/2024 
+NG DME 
+560F 
+ 
+BLC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL 
+14.47
+
+--- Página 2 ---
+ANEXO D  (C.E. LA FLORIDA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Descripcion de Generadores CT Biomasa La Florida: 
+CT Biomasa La Florida es un proyecto en el que el CROM monitorea la operacion de un agente con dos 
+generadores en el mercado electrico, son 2 turbinas de vapor alimentadas por una caldera que quema 
+bagazo de cana de azucar, y cada turbina tiene acoplado un generador sincronico. 
+ 
+Descripcion del Proyecto: 
+C.T. Biomasa La Florida es una planta de cogeneracion que surge del programa RenovAr Ronda 2 (Invitacion 
+resolucion 473/2017) identificacion de la oferta BM-412, se le adjudica una potencia de 19 MW (que luego 
+por acuerdo con CAMMESA se baja a 13,8 MW), y se montaron dos Turbo Vapor (TV) de contrapresion, una 
+maquina TG1 de 30 MW  (Agente: FLORIDAA; Central: LFLO; Grupo: LFLOTV01) Disenada para 65 Kg/cm2 y 
+490°C que sera operada con 24 Kg/cm2 y 310°C esperando de la misma una potencia efectiva de 12 MW, la 
+segunda una TV TG2 de 12 MW (Agente: FLORIDAA; Central: LFLO; Grupo: LFLOTV01) Fecha habilitacion 
+comercial 21/11/2024 Ambas TV se habilitaron con el mismo nemotecnico de Grupo LFLOTV01, pero a la 
+TG1 se la habilito hasta 9,52 MW y la TG2 hasta 4,95 MW. Oferente de la oferta COMPANIA ELECTRICA LA 
+FLORIDA S.A.  
+ 
+El proyecto C.T. Biomasa La Florida obtiene su energia del bagazo de cana de azucar, el cual se quema en 
+una caldera que puede producir 225 Tn/hr de vapor a 24 Kg/cm2 y 310°C,  el vapor se inyecta a las TV TG1 y 
+TG2 obteniendo energia electrica que se inyecta en el Sistema Argentino de Interconexion (SADI) en el marco 
+del Contrato de Abastecimiento con la administradora del Mercado Electrico Mayorista (CAMMESA) a traves 
+de una conexion en 13,2 KV que se conecta a la ET La Florida de TRASNOA, Tucuman, donde se eleva la 
+tension de 13,2 KV a 132 KV. CAMMESA habilito comercialmente por un total de 14,47 MW, a TV01 lo 
+habilito por 9,52 MW y a TV02 por 4,95 MW. 
+ 
+Ambas TV son de contrapresion, por lo que entregan vapor a la planta vecina Compania Bioenergetica La 
+Florida que produce deshidratado de alcohol y bioetanol. 
+ 
+De la energia generada, una parte se entregara al SADI segun el contrato realizado con CAMMESA segun lo 
+pactado en contrato RenovAr Ronda 2 resolucion 473/2017 ,y sus correspondientes modificaciones 
+posteriores, en la que se acordo poner a disposicion 13,8 MW. Y el resto de la energia electrica se utilizara 
+para las instalaciones de produccion de deshidratado de alcohol y bioetanol y auxiliares del Ingenio. 
+ 
+La planta dispondra de una sola computadora SOTR, sin respaldo, que informara ambas maquinas TG1 y 
+TG2. 
+ 
+Ambas empresas Compania Electrica La Florida S.A. y Compania Bioenergetica La Florida son propiedad del 
+Grupo Los Balcanes.
+
+--- Página 3 ---
+ANEXO D  (C.E. LA FLORIDA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+C.T. Biomasa La Florida se 
+encuentra en el 
+departamento de Cruz Alta, 
+en la provincia argentina de 
+Tucuman,  
+-26.814655 
+-65.086200. 
+ 
+ 
+CT BIOMASA LA FLORIDA 13.8 MW 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Son dos TURBO GRUPOS de vapor (TG1 y TG2) de 12 MW cada uno, estan conectados del siguiente modo, a 
+la salida del TG1 tiene un interruptor de paralelo en 13.2 KV (Celda K03), el interruptor de paralelo se conecta 
+a la Barra de EXPORTACION que tiene un interruptor de salida en celda K02 que conecta a la barra de 
+EXPORTACION con la ET La Florida de TRANSNOA donde hay un transformador de 13.2/132 KV de 30 MVA, 
+Esta estacion permite la entrega de los 13,8 MW contratados por CAMMESA a CT BIOMASA LA FLORIDA. 
+ 
+El TG2 tiene un interruptor de paralelo en 13.2 KV (Celda K06), el interruptor de paralelo se conecta a la Barra 
+de Servicios Internos, que alimenta Servicios Esenciales por celda K07 – Caldera 11 con celda K08 – Celda K09 
+alimenta a transformador de 13,2/6,6 KV  (TR1X) que se conecta a una de las barras de 6,6 KV de Usina Vieja, 
+la cual cuenta con 4 turbinas de vapor - Celda K10 alimenta a transformador de 13,2/6,6 KV  (TR2X) que se 
+conecta a otra de las barras de 6,6 KV de Usina Vieja, a esta barra de 6,6 Kv acomete una alimentacion del 
+distribuidor de energia de Tucuman EDET. 
+Las dos barras de la Usina Vieja se pueden unir mediante un interruptor de acople. 
+ 
+La Barra de 13,2 KV a la que acomete TG2 (Barra de servicios internos) puede conectarse con un interruptor de 
+Acople (montado en celda K04) a la Barra a la barra de Exportacion. 
+ 
+La central cuenta con un grupo de motogenerador de emergencia de 250KvA para servicios esenciales.
+
+--- Página 4 ---
+ANEXO D  (C.E. LA FLORIDA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+El CROM solo realiza monitoreo a traves del SOTR y no opera ningun equipo de la central a distancia, si realiza 
+coordinacion operativa, comunicandose con los centros de control de CAMMESA, TRANSNOA y operadores 
+en sitio. 
+ 
+Limites a tener en cuenta:  
+ 
+Corriente: 650A – Por lo tanto no se debe subir el reactivo o el activo de la maquina por 
+arriba de esta corriente de exportacion. Indicando a CAMMESA o a TRANSNOA que hemos 
+quedado limitados por limite de exportacion.  
+ 
+Tension: 13,8kV Max – 12,5kV Min – No se puede superar el 5% de tension en el generador 
+de modo de no danar las bobinas del estator del mismo. Indicnado a CAMMESA oa 
+TRANSNOA que hemos quedado limitados por limite de tension en el generador.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DIAGRAMA UNIFILAR DE MEDIA TENSION:
+
+--- Página 5 ---
+ANEXO D  (C.E. LA FLORIDA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+COMPANIA ELECTRICA LA FLORIDA S.A. 
+ 
+Pagina oficial:    https://balcanes.com.ar/company#ingflorida 
+ 
+ 
+ 
+DIAGRAMA UNIFILAR DE 132 KV:
+
+--- Página 6 ---
+ANEXO D  (C.E. LA FLORIDA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+FIN:
+

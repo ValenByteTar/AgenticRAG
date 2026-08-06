@@ -1,0 +1,893 @@
+=== Cybersecurity Checklist.pdf ===
+
+--- Página 1 ---
+1
+1.1  Detection of Unsuccessful (Automated) 
+         Login Attempts                                                                        PR.AC-7
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+Brute Force - Password Guessing (T1110.001) 
+Brute Force - Password Cracking (T1110.002) 
+Brute Force - Password Spraying (T1110.003) 
+RECOMMENDED ACTION: All unsuccessful logins are logged and sent to 
+an organization’s security team or relevant logging system. Security teams are 
+alert is logged and stored in the relevant security or ticketing system for 
+retroactive analysis. 
+out accounts for 10 minutes after 10 incorrect logins over a 10 minute period. 
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+1.2  Changing Default Passwords                                      PR.AC-1
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+Valid Accounts - Default Accounts (T1078.001)
+RECOMMENDED ACTION: An enforced organization-wide policy and/or 
+process that requires changing default manufacturer passwords for any/all 
+attempts on those devices.
+OT: 
+default credentials for all new or future devices. This is not only easier to 
+FREE SERVICES AND REFERENCES: CISA Bad Practices
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+ACCOUNT SECURITY (1.0)
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+HIGH
+HIGH
+LOW
+MEDIUM
+1.3  Multi-Factor Authentication (MFA)                              PR.AC-7
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+Brute Force (T1110)
+Remote Services - Remote Desktop Protocol (T1021.001)
+External Remote Services (ICS T0822)
+RECOMMENDED ACTION: 
+IT: IT accounts leverage multi-factor authentication to access organizational resources. 
+OT:
+FREE SERVICES AND REFERENCES: CISA Bad Practices
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+DATE: 
+DATE: 
+HIGH
+MEDIUM
+
+--- Página 2 ---
+2
+1.5  Separating User and Privileged Accounts                  PR.AC-4
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: No user accounts always have administrator 
+or super-user privileges. Administrators maintain separate user accounts for 
+all actions and activities not associated with the administrator role (e.g. for 
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+DATE: 
+DATE: 
+HIGH
+LOW
+1.4  Minimum Password Strength                                     PR.AC-1
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+Brute Force - Password Guessing (T1110.001) 
+Brute Force - Password Cracking (T1110.002) 
+Brute Force - Password Spraying (T1110.003) 
+RECOMMENDED ACTION: Organizations have a system-enforced policy 
+Organizations should consider leveraging passphrases and password managers 
+prioritized for upgrade or replacement. 
+This goal is particularly important for organizations that lack widespread 
+a more impactful and important factor in password strength than complexity 
+Directory) are most important to address. Examples of low-risk OT assets that 
+FREE SERVICES AND REFERENCES: CISA Bad Practices
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+DATE: 
+DATE: 
+HIGH
+LOW
+1.6  Unique Credentials                                                       PR.AC-1
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+Brute Force - Password Guessing (T1110.001) 
+RECOMMENDED ACTION: Organizations provision unique and separate 
+credentials for similar services and asset access on IT and OT networks. Users 
+user accounts.
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+DATE: 
+DATE: 
+MEDIUM
+MEDIUM
+
+--- Página 3 ---
+3
+1.7  Revoking Credentials for Departing Employees        PR.AC-1
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+all user accounts and access to organizational resources.
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+DATE: 
+DATE: 
+LOW
+MEDIUM
+
+--- Página 4 ---
+4
+2.2  Disable Macros by Default
+PR.IP-1, PR.IP-3
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+2.3  Asset Inventory
+ID.AM-1
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+Hardware Additions (T1200)
+RECOMMENDED ACTION: 
+FREE SERVICES AND REFERENCES: 
+Stuff Off Search” Guide
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+2.4  Prohibit Connection of Unauthorized Devices            PR.PT-2
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+Hardware Additions (T1200)
+RECOMMENDED ACTION: Organizations maintain policies and processes to 
+ensure that unauthorized media and hardware are not connected to IT and OT 
+AutoRun. 
+OT: 
+procedures for granting access through approved exceptions.  
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+LOW
+DEVICE SECURITY (2.0)
+MEDIUM
+MEDIUM
+MEDIUM
+2.1  Hardware and Software Approval Process
+PR.IP-3
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+Hardware Additions (T1200)
+RECOMMENDED ACTION: Implement an administrative policy or automated 
+software version is installed or deployed. Organizations maintain a risk-informed 
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+HIGH
+HIGH
+HIGH
+HIGH
+
+--- Página 5 ---
+5
+2.5  
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+critical devices and service operations.  
+RECOMMENDED ACTION: Organizations maintain policies and processes to 
+ensure that unauthorized media and hardware are not connected to IT and OT 
+AutoRun. 
+OT:
+procedures for granting access through approved exceptions.  
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+DATE: 
+DATE: 
+MEDIUM
+HIGH
+
+--- Página 6 ---
+6
+3.1  Log Collection
+PR.PT-1
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+OT:
+and communications to and from log-less assets is collected. 
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+DATA SECURITY (3.0)
+MEDIUM
+3.2  Secure Log Storage
+PR.PT-1
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+3.3  
+PR.DS-1, PR.DS-2
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+Organizations should also plan for identifying any use of outdated or weak 
+managing the implications of post-quantum cryptography. 
+OT:
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+MEDIUM
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+HIGH
+COST:  $$$$     IMPACT
+HIGH
+:                      COMPLEXITY:
+LOW
+TTP OR RISK ADDRESSED: 
+Indicator Removal on Host (ICS T0872)
+RECOMMENDED ACTION: 
+HIGH
+
+--- Página 7 ---
+7
+3.4  Secure Sensitive Data                 PR.DS-1, PR.DS-2, PR.DS-5
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+OS Credential Dumping (T1003)
+Data from Information Repositories (ICS T0811)
+Theft of Operational Information (T0882)
+RECOMMENDED ACTION: 
+account management solution.   
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+DATE: 
+DATE: 
+MEDIUM
+HIGH
+
+--- Página 8 ---
+8
+4.4  OT Cybersecurity Training              PR.AT-2, PR.AT-3, PR.AT-5
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+personnel who maintain or secure OT as part of their regular duties receive     
+FREE SERVICES AND REFERENCES: CISA ICS Training
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+4.1  Organizational Cybersecurity Leadership     ID.GV-1, ID.GV-2
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+GOVERNANCE AND TRAINING (4.0)
+4.2  OT Cybersecurity Leadership
+ID.GV1, ID.GV-2
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+4.3  Basic Cybersecurity Training
+PR.AT-1
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: At least annual trainings for all organizational 
+FREE SERVICES AND REFERENCES: 
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+LOW
+LOW
+LOW
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+HIGH
+COST:  $$$$     IMPACT
+HIGH
+:                      COMPLEXITY:
+LOW
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+HIGH
+HIGH
+
+--- Página 9 ---
+9
+4.5  Improving IT and OT Cybersecurity Relationships       ID.GV-2
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: Organizations sponsor at least one ‘pizza party’ 
+or equivalent social gathering per year that is focused on strengthening working 
+(such as providing meals during an incident response). 
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+DATE: 
+DATE: 
+LOW
+MEDIUM
+
+--- Página 10 ---
+10
+5.2  Vulnerability Disclosure/Reporting
+RS.AN-5
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+FREE SERVICES AND REFERENCES: 
+Template
+cisa.dhs.gov
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+LOW
+VULNERABILITY MANAGEMENT (5.0)
+5.1  Mitigating  Known Vulnerabilities
+PR.IP-12, ID.RA-1, 
+DE.CM-8, RS.MI-3
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+) 
+in internet-facing systems are patched or otherwise mitigated within a risk-
+OT:
+FREE SERVICES AND REFERENCES: 
+Catalog
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+5.3  Deploy Security.txt Files
+RS.AN-5
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+FREE SERVICES AND REFERENCES: https://securitytxt.org
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+HIGH
+HIGH
+HIGH
+MEDIUM
+LOW
+
+--- Página 11 ---
+11
+5.6  Third-Party Validation of 
+Cybersecurity Control Effectiveness
+ID.RA-1, ID.RA-3
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+Infrastructure Exercises
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+5.4  No Exploitable Services on the Internet
+PR.PT-4
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+Remote Services - Remote Desktop Protocol (T1021.001)
+RECOMMENDED ACTION: 
+on internet-facing assets.
+FREE SERVICES AND REFERENCES: 
+Stuff Off Search” Guide Remote Penetrating 
+Testing (RPT)
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+5.5  Limit OT Connections to Public Internet
+PR.PT-4
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+and excepted assets must have additional protections in place to prevent and 
+FREE SERVICES AND REFERENCES: 
+Remote Penetrating 
+Testing (RPT)
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+LOW
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+HIGH
+COST:  $$$$     IMPACT
+HIGH
+:                      COMPLEXITY:
+HIGH
+TTP OR RISK ADDRESSED: 
+protections.
+RECOMMENDED ACTION: Third-parties with demonstrated expertise in (IT 
+potential impact on critical (including OT/ICS) systems.
+FREE SERVICES AND REFERENCES: Remote Penetrating Testing (RPT)
+Critical 
+MEDIUM
+MEDIUM
+
+--- Página 12 ---
+12
+6.1  Vendor/Supplier Cybersecurity Requirements
+ID.SC-3
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: Organizations’ procurement documents include 
+more secure offering and/or supplier is preferred. 
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+6.2  Supply Chain Incident Reporting
+ID.SC-1, ID.SC-3
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+providers notify the procuring customer of security incidents within a risk-
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+6.3  Supply Chain Vulnerability Disclosure
+ID.SC-1, ID.SC-3
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+SUPPLY CHAIN / THIRD PARTY (6.0)
+LOW
+LOW
+LOW
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+HIGH
+HIGH
+HIGH
+
+--- Página 13 ---
+13
+7.2  Incident Response (IR) Plans
+PR.IP-9, PR.IP-10
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+MEDIUM
+RESPONSE AND RECOVERY (7.0)
+7.1  Incident Reporting
+RS.CO-2, RS.CO-4
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+2022 (CIRCIA). 
+FREE SERVICES AND REFERENCES: Incident Reporting and/or contact 
+ or (888) 282-0870
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+7.3  System Back Ups
+PR.IP-4
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+Denial of Control (ICS T0813)
+RECOMMENDED ACTION: All systems that are necessary for operations are 
+Backups are stored separately from the source systems and tested on a 
+and tools.
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+LOW
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+HIGH
+HIGH
+COST:  $$$$     IMPACT
+HIGH
+:                      COMPLEXITY:
+LOW
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+frame following the lessons learned portion of any exercise or drill. 
+FREE SERVICES AND REFERENCES: 
+Critical 
+Infrastructure Exercises
+
+--- Página 14 ---
+14
+7.4  Document Network Topology
+PR.IP-1
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+COST:  $$$$     IMPACT MEDIUM
+:                      COMPLEXITY: MEDIUM
+TTP OR RISK ADDRESSED: 
+incident response and recovery.
+RECOMMENDED ACTION: Organizations maintain accurate documentation 
+DATE: 
+DATE:
+
+--- Página 15 ---
+15
+8.1  Network Segmentation
+PR.AC-5, PR.PT-4, DE.CM-1
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+RECOMMENDED ACTION: 
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+8.2  Detecting Relevant Threats and TTPs                ID.RA-3, DE.CM-1
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+organizations risk adversaries existing in their networks undetected for long 
+periods.
+RECOMMENDED ACTION: Organizations have documented a list of threats 
+prevention and detection systems) to detect instances of those key threats.
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+8.3  Email Security
+PR.DS-1, PR.DS-2, PR.DS-5
+CURRENT ASSESSMENT
+YEAR 1 ASSESSMENT
+NOTES
+COST:  $$$$     IMPACT:                      COMPLEXITY:
+TTP OR RISK ADDRESSED: 
+Business Email Compromise
+RECOMMENDED ACTION: 
+Federal Agencies at https://www.cisa.gov/binding-operational-directive-18-01.
+FREE SERVICES AND REFERENCES: CISA Binding Operational Directive
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+IMPLEMENTED 
+IN PROGRESS
+SCOPED
+NOT STARTED
+MEDIUM
+OTHER (8.0)
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+DATE: 
+HIGH
+HIGH
+HIGH
+LOW
+MEDIUM
+

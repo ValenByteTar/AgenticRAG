@@ -1,0 +1,1440 @@
+{
+  "generated": "2026-08-06",
+  "count": 42,
+  "entries": [
+    {
+      "id": "BM-001",
+      "category": "benchmark",
+      "status": "accepted",
+      "title": "BM-001 - Baseline pre-agentic Fase 0",
+      "path": "benchmarks/BM-001-baseline-pre-agentic-phase0.md",
+      "created": "2026-07-22",
+      "updated": "2026-07-22",
+      "author": "cascade",
+      "components": [
+        "evaluation",
+        "facade",
+        "retrieval",
+        "generation"
+      ],
+      "tags": [
+        "baseline",
+        "phase0",
+        "cybersec",
+        "no-regression",
+        "pre-agentic"
+      ],
+      "related": [
+        "ADR-0006",
+        "ADR-0017"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "BM-002",
+      "category": "benchmarks",
+      "status": "completed",
+      "title": "BM-002 — A/B Kernel+VERIFY vs Monolito — muestra estratificada 11q",
+      "path": "benchmarks/BM-002-kernel-verify-vs-monolito.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "ab",
+        "kernel",
+        "verify",
+        "repair",
+        "monolito",
+        "fase-4"
+      ],
+      "related": [
+        "DEC-006",
+        "EXP-005",
+        "BM-001",
+        "ADR-0006",
+        "ADR-0013"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "BM-003",
+      "category": "benchmarks",
+      "status": "completed",
+      "title": "BM-003 — A/B Kernel Fase 6 vs Monolito — muestra estratificada 11q",
+      "path": "benchmarks/BM-003-kernel-fase6-vs-monolito.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "ab",
+        "kernel",
+        "fase-6",
+        "planner",
+        "entity-expansion",
+        "doc-roles",
+        "monolito"
+      ],
+      "related": [
+        "DEC-008",
+        "EXP-006b",
+        "BM-002",
+        "ADR-0006",
+        "ADR-0013"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "BM-004",
+      "category": "benchmark",
+      "status": "completed",
+      "title": "BM-004 - A/B Kernel Fase 6 + bug fixes de data flow vs Monolito",
+      "path": "benchmarks/BM-004-kernel-fase6-bugfixes.md",
+      "created": "2026-07-24",
+      "updated": "2026-07-28",
+      "author": "human",
+      "components": [
+        "kernel",
+        "retrieval",
+        "two-stage-retrieval",
+        "entity-expansion",
+        "planner"
+      ],
+      "tags": [
+        "ab",
+        "kernel",
+        "fase-6",
+        "bug-fixes",
+        "data-flow",
+        "monolito",
+        "retrieval"
+      ],
+      "related": [
+        "BM-003",
+        "DEC-008",
+        "DEC-010",
+        "EXP-006b",
+        "ADR-0006",
+        "ADR-0018",
+        "RES-001",
+        "RES-002",
+        "RES-003"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "BM-005",
+      "category": "benchmark",
+      "status": "completed",
+      "title": "BM-005 - A/B Consumer con Warm Artifacts (E4) vs Baseline Kernel (BM-004)",
+      "path": "benchmarks/BM-005-consumer-warm-artifacts.md",
+      "created": "2026-07-29",
+      "updated": "2026-07-29",
+      "author": "cascade",
+      "components": [
+        "kernel",
+        "retrieval",
+        "entity-expansion",
+        "planner",
+        "knowledge-system",
+        "warm-artifacts",
+        "artifact-registry"
+      ],
+      "tags": [
+        "ab",
+        "kernel",
+        "e4",
+        "warm-artifacts",
+        "resolution-protocol",
+        "parity",
+        "consumer"
+      ],
+      "related": [
+        "BM-004",
+        "RES-001",
+        "RES-002",
+        "RES-003",
+        "ADR-0018"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "BM-006",
+      "category": "benchmark",
+      "status": "pending",
+      "title": "BM-006 - Baseline post-migracion contrato canonico",
+      "path": "benchmarks/BM-006-baseline-post-canonical-migration.md",
+      "created": "2026-08-03",
+      "updated": "2026-08-03",
+      "author": "human",
+      "components": [
+        "retrieval",
+        "planner",
+        "doc-cards",
+        "canonical-id",
+        "warm-artifacts",
+        "knowledge-builder"
+      ],
+      "tags": [
+        "baseline",
+        "post-migration",
+        "canonical-contract",
+        "retrieval-boost"
+      ],
+      "related": [
+        "ADR-0022",
+        "RES-010",
+        "BM-005",
+        "DEC-013",
+        "DEC-014"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-001",
+      "category": "decision",
+      "status": "accepted",
+      "title": "DEC-001 - Renombrar centrales_map a domain_map",
+      "path": "decisions/DEC-001-rename-centrales-map-to-domain-map.md",
+      "created": "2026-07-22",
+      "updated": "2026-07-22",
+      "author": "cascade",
+      "components": [
+        "facade",
+        "capabilities"
+      ],
+      "tags": [
+        "domain",
+        "rename",
+        "cleanup",
+        "phase0"
+      ],
+      "related": [
+        "ADR-0017"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-003",
+      "category": "decision",
+      "status": "accepted",
+      "title": "DEC-003 - Fase 2: ASSESS enriquecido con senales blandas",
+      "path": "decisions/DEC-003-phase2-assess-enriched.md",
+      "created": "2026-07-23",
+      "updated": "2026-07-23",
+      "author": "cascade",
+      "components": [
+        "evaluation",
+        "assess",
+        "policies",
+        "kernel"
+      ],
+      "tags": [
+        "phase2",
+        "assess",
+        "enriched",
+        "entity-coverage",
+        "retry",
+        "signals"
+      ],
+      "related": [
+        "ADR-0006",
+        "ADR-0013",
+        "ADR-0017",
+        "EXP-001",
+        "EXP-002",
+        "DEC-002"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-004",
+      "category": "decision",
+      "status": "accepted",
+      "title": "DEC-004 - Fase 3: Multi-retry con two-stage entity retrieval",
+      "path": "decisions/DEC-004-phase3-multi-retry-two-stage.md",
+      "created": "2026-07-23",
+      "updated": "2026-07-23",
+      "author": "cascade",
+      "components": [
+        "policies",
+        "retrieval",
+        "kernel",
+        "two-stage"
+      ],
+      "tags": [
+        "phase3",
+        "retry",
+        "two-stage",
+        "multi-retry",
+        "budget",
+        "entity-search"
+      ],
+      "related": [
+        "ADR-0006",
+        "ADR-0013",
+        "ADR-0017",
+        "EXP-001",
+        "EXP-002",
+        "EXP-003",
+        "DEC-003"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-005",
+      "category": "decision",
+      "status": "accepted",
+      "title": "DEC-005 - Limpieza dominio electrico, streaming kernel y EKS index",
+      "path": "decisions/DEC-005-cleanup-streaming-eks-index.md",
+      "created": "2026-07-23",
+      "updated": "2026-07-23",
+      "author": "cascade",
+      "components": [
+        "facade",
+        "generation",
+        "kernel",
+        "knowledge"
+      ],
+      "tags": [
+        "cleanup",
+        "electric-domain",
+        "streaming",
+        "eks-index",
+        "phase3"
+      ],
+      "related": [
+        "ADR-0017",
+        "DEC-001",
+        "DEC-004",
+        "EXP-003"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-006",
+      "category": "decisions",
+      "status": "accepted",
+      "title": "DEC-006 — VERIFY + REPAIR: groundedness post-generacion con presupuesto de reparacion",
+      "path": "decisions/DEC-006-verify-repair-groundedness.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "verify",
+        "repair",
+        "groundedness",
+        "fase-4",
+        "evaluation"
+      ],
+      "related": [
+        "ADR-0006",
+        "ADR-0013",
+        "DEC-005"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-007",
+      "category": "decisions",
+      "status": "accepted",
+      "title": "DEC-007 — MemoryPortAdapter + KnowledgeSystemAdapter: contratos concretos Fase 5",
+      "path": "decisions/DEC-007-memory-knowledge-adapters.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "memory",
+        "knowledge",
+        "adapters",
+        "fase-5",
+        "adr-0009",
+        "adr-0015"
+      ],
+      "related": [
+        "ADR-0009",
+        "ADR-0015",
+        "ADR-0014",
+        "DEC-006"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-008",
+      "category": "decisions",
+      "status": "accepted",
+      "title": "DEC-008 — Fase 6: Planner determinista + Entity Expansion + Tunings",
+      "path": "decisions/DEC-008-planner-expansion-tunings.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "planner",
+        "entity-expansion",
+        "retrieval",
+        "tuning",
+        "fase-6",
+        "adr-0012"
+      ],
+      "related": [
+        "ADR-0012",
+        "ADR-0013",
+        "DEC-006",
+        "DEC-007",
+        "BM-002"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-010",
+      "category": "decisions",
+      "status": "accepted",
+      "title": "DEC-010 — Modo de entidades en retrieval: de filtro duro a boost acotado",
+      "path": "decisions/DEC-010-modo-entidades-retrieval.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "retrieval",
+        "entity_filter",
+        "entity_mode",
+        "boost",
+        "filter",
+        "adr-0020",
+        "bm-004"
+      ],
+      "related": [
+        "ADR-0020",
+        "DEC-009",
+        "BM-004"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-011",
+      "category": "decisions",
+      "status": "accepted",
+      "title": "DEC-011 — Fasing de poblado de Warm Artifacts en warm-v1",
+      "path": "decisions/DEC-011-fasing-poblado-artifacts-warm-v1.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "contract",
+        "warm-v1",
+        "artifacts",
+        "fasing",
+        "evidence",
+        "taxonomy"
+      ],
+      "related": [
+        "ADR-0018",
+        "RES-001",
+        "RES-002",
+        "RES-003"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-012",
+      "category": "decisions",
+      "status": "accepted",
+      "title": "DEC-012 — Storage backend del Artifact Registry",
+      "path": "decisions/DEC-012-storage-backend-artifact-registry.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "artifact-registry",
+        "storage",
+        "filesystem",
+        "atomic-swap",
+        "integrity",
+        "retention"
+      ],
+      "related": [
+        "ADR-0018",
+        "RES-001",
+        "DEC-011"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-013",
+      "category": "decision",
+      "status": "accepted",
+      "title": "DEC-013 - Migracion a canonical_doc_id como key unica de documento",
+      "path": "decisions/DEC-013-canonical-doc-id-migration.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "canonical-doc-id",
+        "identity",
+        "migration",
+        "chunker",
+        "retrieval",
+        "doccards"
+      ],
+      "related": [
+        "ADR-0022",
+        "RES-010",
+        "DEC-014"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "DEC-014",
+      "category": "decision",
+      "status": "accepted",
+      "title": "DEC-014 - Desacoplamiento de DocCards del Vector Store",
+      "path": "decisions/DEC-014-doccards-decouple-vector-store.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "doccards",
+        "vector-store",
+        "decoupling",
+        "materialized-view",
+        "corpus"
+      ],
+      "related": [
+        "ADR-0022",
+        "RES-010",
+        "DEC-013"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "EXP-002",
+      "category": "experiment",
+      "status": "accepted",
+      "title": "EXP-002 - ASSESS enriquecido: senales blandas + retry signal",
+      "path": "experiments/EXP-002-assess-enriched.md",
+      "created": "2026-07-23",
+      "updated": "2026-07-23",
+      "author": "cascade",
+      "components": [
+        "evaluation",
+        "assess",
+        "policies",
+        "kernel"
+      ],
+      "tags": [
+        "phase2",
+        "assess",
+        "enriched",
+        "entity-coverage",
+        "retry",
+        "signals"
+      ],
+      "related": [
+        "ADR-0006",
+        "ADR-0013",
+        "ADR-0017",
+        "EXP-001",
+        "DEC-002",
+        "DEC-003"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "EXP-003",
+      "category": "experiment",
+      "status": "accepted",
+      "title": "EXP-003 - Multi-retry con two-stage entity retrieval",
+      "path": "experiments/EXP-003-multi-retry-two-stage.md",
+      "created": "2026-07-23",
+      "updated": "2026-07-23",
+      "author": "cascade",
+      "components": [
+        "policies",
+        "retrieval",
+        "kernel",
+        "two-stage"
+      ],
+      "tags": [
+        "phase3",
+        "retry",
+        "two-stage",
+        "multi-retry",
+        "budget",
+        "entity-search"
+      ],
+      "related": [
+        "ADR-0006",
+        "ADR-0013",
+        "ADR-0017",
+        "EXP-001",
+        "EXP-002",
+        "DEC-003",
+        "DEC-004"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "EXP-004",
+      "category": "experiment",
+      "status": "accepted",
+      "title": "EXP-004 - Limpieza dominio electrico, streaming kernel y EKS index",
+      "path": "experiments/EXP-004-cleanup-streaming-eks-index.md",
+      "created": "2026-07-23",
+      "updated": "2026-07-23",
+      "author": "cascade",
+      "components": [
+        "facade",
+        "generation",
+        "kernel",
+        "knowledge"
+      ],
+      "tags": [
+        "cleanup",
+        "streaming",
+        "eks-index",
+        "phase3",
+        "no-regression"
+      ],
+      "related": [
+        "ADR-0017",
+        "DEC-005",
+        "DEC-001",
+        "DEC-004",
+        "EXP-003"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "EXP-005",
+      "category": "experiments",
+      "status": "completed",
+      "title": "EXP-005 — VERIFY + REPAIR: experimento de groundedness post-generacion",
+      "path": "experiments/EXP-005-verify-repair-groundedness.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "verify",
+        "repair",
+        "groundedness",
+        "fase-4",
+        "evaluation"
+      ],
+      "related": [
+        "DEC-006",
+        "ADR-0006",
+        "ADR-0013"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "EXP-006",
+      "category": "experiments",
+      "status": "completed",
+      "title": "EXP-006 — Fase 5: MemoryPortAdapter + KnowledgeSystemAdapter",
+      "path": "experiments/EXP-006-memory-knowledge-adapters.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "memory",
+        "knowledge",
+        "adapters",
+        "fase-5",
+        "provenance"
+      ],
+      "related": [
+        "DEC-007",
+        "ADR-0009",
+        "ADR-0015"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "EXP-006b",
+      "category": "experiments",
+      "status": "completed",
+      "title": "EXP-006b — Fase 6: Planner + Entity Expansion + Tunings",
+      "path": "experiments/EXP-006b-planner-expansion-tunings.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "planner",
+        "entity-expansion",
+        "retrieval",
+        "tuning",
+        "fase-6"
+      ],
+      "related": [
+        "DEC-008",
+        "BM-002"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "EXP-007",
+      "category": "experiments",
+      "status": "in_progress",
+      "title": "EXP-007 — Calidad de extraccion LLM Granite-4.1-8b en corpus cybersecurity",
+      "path": "experiments/EXP-007-llm-extraction-quality-analysis.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "knowledge-builder",
+        "llm-extraction",
+        "kir",
+        "granite",
+        "quality",
+        "coverage",
+        "evidence"
+      ],
+      "related": [
+        "RES-002",
+        "ADR-0018",
+        "DEC-011",
+        "BM-004"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "EXP-008",
+      "category": "experiment",
+      "status": "completed",
+      "title": "EXP-008 - Auditoria de cobertura de fallback de predicados",
+      "path": "experiments/EXP-008-predicate-fallback-audit.md",
+      "created": "2026-08-03",
+      "updated": "2026-08-03",
+      "author": "human",
+      "components": [
+        "knowledge-builder",
+        "canonicalize",
+        "predicate-catalog",
+        "entity-relations"
+      ],
+      "tags": [
+        "predicates",
+        "fallback",
+        "audit",
+        "edge-attributes"
+      ],
+      "related": [
+        "ADR-0022",
+        "RES-010",
+        "DEC-011"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "PAT-001",
+      "category": "pattern",
+      "status": "accepted",
+      "title": "PAT-001 - Materialized View Pattern",
+      "path": "patterns/PAT-001-materialized-view-pattern.md",
+      "created": "2026-08-03",
+      "updated": "2026-08-03",
+      "author": "human",
+      "components": [
+        "knowledge-builder",
+        "warm-artifacts",
+        "doc-cards",
+        "entity-index",
+        "retrieval",
+        "planner"
+      ],
+      "tags": [
+        "materialized-view",
+        "single-producer",
+        "downward-flow",
+        "regeneration"
+      ],
+      "related": [
+        "ADR-0022",
+        "RES-010",
+        "PAT-002"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "PAT-002",
+      "category": "pattern",
+      "status": "accepted",
+      "title": "PAT-002 - Canonical Identity Propagation",
+      "path": "patterns/PAT-002-canonical-identity-propagation.md",
+      "created": "2026-08-03",
+      "updated": "2026-08-03",
+      "author": "human",
+      "components": [
+        "chunker",
+        "vector-store",
+        "doc-cards",
+        "retrieval",
+        "knowledge-builder",
+        "canonical-id"
+      ],
+      "tags": [
+        "canonical-identity",
+        "propagation",
+        "key-alignment",
+        "slug"
+      ],
+      "related": [
+        "ADR-0022",
+        "RES-010",
+        "PAT-001",
+        "DEC-013"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "PM-001",
+      "category": "postmortem",
+      "status": "resolved",
+      "title": "PM-001 - Key mismatch entre Chroma y DocCards: retrieval boost silenciosamente no-op",
+      "path": "postmortems/PM-001-key-mismatch-chroma-doccards.md",
+      "created": "2026-08-03",
+      "updated": "2026-08-03",
+      "author": "human",
+      "components": [
+        "retrieval",
+        "doc-cards",
+        "vector-store",
+        "planner",
+        "canonical-id"
+      ],
+      "tags": [
+        "key-mismatch",
+        "retrieval-boost",
+        "silent-failure",
+        "canonical-doc-id"
+      ],
+      "related": [
+        "ADR-0022",
+        "RES-010",
+        "DEC-013",
+        "BM-006"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-001",
+      "category": "research",
+      "status": "accepted",
+      "title": "RES-001 - El contrato Warm como centro arquitectonico",
+      "path": "research/RES-001-knowledge-builder-consumer-split.md",
+      "created": "2026-07-24",
+      "updated": "2026-07-28",
+      "author": "human",
+      "components": [
+        "contract",
+        "artifact-registry",
+        "warm-artifacts",
+        "cold-artifacts",
+        "hot-artifacts"
+      ],
+      "tags": [
+        "architecture",
+        "contract",
+        "warm-artifacts",
+        "artifact-registry",
+        "publication-protocol",
+        "resolution-protocol",
+        "cold-warm-hot",
+        "confidence",
+        "predicate-catalog",
+        "builder-consumer-boundary"
+      ],
+      "related": [
+        "RES-002",
+        "RES-003",
+        "RES-004",
+        "ADR-0009",
+        "ADR-0012",
+        "ADR-0013",
+        "ADR-0015",
+        "ADR-0017",
+        "ADR-0018",
+        "DEC-008",
+        "BM-002",
+        "BM-003",
+        "BM-004",
+        "EXP-006b"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-002",
+      "category": "research",
+      "status": "accepted",
+      "title": "RES-002 - Knowledge Builder (Knowledge Compiler)",
+      "path": "research/RES-002-knowledge-builder-compiler.md",
+      "created": "2026-07-27",
+      "updated": "2026-07-28",
+      "author": "human",
+      "components": [
+        "knowledge_builder",
+        "kir",
+        "entity_extractor",
+        "doc_cards",
+        "equivalences_manager",
+        "conceptual_map"
+      ],
+      "tags": [
+        "architecture",
+        "index-time",
+        "knowledge-compiler",
+        "knowledge-ir",
+        "knowledge-pass",
+        "validation",
+        "knowledge-model",
+        "layers",
+        "codegen",
+        "confidence-policy",
+        "incremental-compilation"
+      ],
+      "related": [
+        "RES-001",
+        "RES-003",
+        "RES-004",
+        "ADR-0015",
+        "ADR-0017",
+        "ADR-0018",
+        "DEC-008",
+        "BM-002",
+        "BM-003",
+        "BM-004"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-003",
+      "category": "research",
+      "status": "accepted",
+      "title": "RES-003 - Knowledge Consumer / evolucion del Agentic RAG runtime",
+      "path": "research/RES-003-knowledge-consumer-llm-support.md",
+      "created": "2026-07-27",
+      "updated": "2026-07-28",
+      "author": "human",
+      "components": [
+        "kernel",
+        "capabilities",
+        "rag_hybrid",
+        "planner",
+        "retrieval",
+        "verify",
+        "assess"
+      ],
+      "tags": [
+        "architecture",
+        "query-time",
+        "knowledge-consumer",
+        "runtime-evolution",
+        "migration",
+        "warm-artifacts-consumption",
+        "confidence-thresholds"
+      ],
+      "related": [
+        "RES-001",
+        "RES-002",
+        "RES-004",
+        "ADR-0005",
+        "ADR-0006",
+        "ADR-0009",
+        "ADR-0012",
+        "ADR-0013",
+        "ADR-0015",
+        "ADR-0016",
+        "ADR-0019",
+        "ADR-0020",
+        "DEC-008",
+        "BM-002",
+        "BM-003",
+        "BM-004"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-004",
+      "category": "research",
+      "status": "accepted",
+      "title": "RES-004 - LLMSupport: observador paralelo de hipotesis",
+      "path": "research/RES-004-llmsupport-observador-paralelo.md",
+      "created": "2026-07-28",
+      "updated": "2026-07-28",
+      "author": "human",
+      "components": [
+        "llm_support",
+        "trace_sink",
+        "model_provider",
+        "policy_engine",
+        "execution_state"
+      ],
+      "tags": [
+        "architecture",
+        "query-time",
+        "llm-support",
+        "observer",
+        "hypotheses",
+        "reactive",
+        "incremental",
+        "passive-advisory",
+        "small-model",
+        "cpu-parallel"
+      ],
+      "related": [
+        "RES-001",
+        "RES-002",
+        "RES-003",
+        "ADR-0005",
+        "ADR-0006",
+        "ADR-0007",
+        "ADR-0013",
+        "ADR-0014",
+        "ADR-0020",
+        "BM-004"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-005",
+      "category": "research",
+      "status": "proposed",
+      "title": "RES-005 - Unified Ingestion Pipeline",
+      "path": "research/RES-005-unified-ingestion-pipeline.md",
+      "created": "2026-07-29",
+      "updated": "2026-07-29",
+      "author": "human",
+      "components": [
+        "ingest_incremental",
+        "knowledge_builder",
+        "vector_store",
+        "artifact_registry",
+        "hash_registry",
+        "kir_cache"
+      ],
+      "tags": [
+        "architecture",
+        "ingestion",
+        "incremental",
+        "unified-pipeline",
+        "vector-db",
+        "knowledge-builder",
+        "idempotent"
+      ],
+      "related": [
+        "RES-002",
+        "RES-006",
+        "ADR-0021",
+        "ADR-0018",
+        "BM-005",
+        "BM-006"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-006",
+      "category": "research",
+      "status": "proposed",
+      "title": "RES-006 - Multimodal Ingestion: Knowledge Sources, Normalizers & Acquisition Connectors",
+      "path": "research/RES-006-multimodal-ingestion.md",
+      "created": "2026-07-29",
+      "updated": "2026-07-29",
+      "author": "human",
+      "components": [
+        "knowledge_builder",
+        "pdf_extractor",
+        "llm_entity_extractor",
+        "vector_store",
+        "kir_cache",
+        "acquisition_connectors",
+        "normalizers",
+        "canonical_document",
+        "cir"
+      ],
+      "tags": [
+        "architecture",
+        "ingestion",
+        "multimodal",
+        "vision-llm",
+        "ocr",
+        "connectors",
+        "knowledge-sources",
+        "extensible",
+        "canonical-document",
+        "normalizer",
+        "cir",
+        "versioning",
+        "fingerprint"
+      ],
+      "related": [
+        "RES-005",
+        "RES-002",
+        "ADR-0021",
+        "ADR-0018"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-007",
+      "category": "research",
+      "status": "accepted",
+      "title": "RES-007 — Estrategia de modelos LLM locales: Granite 3B vs 8B segun hardware disponible",
+      "path": "research/RES-007-llm-model-strategy-3b-vs-8b.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "llm",
+        "granite",
+        "hardware",
+        "gpu",
+        "vram",
+        "knowledge-builder",
+        "doccards",
+        "vector-db",
+        "throughput",
+        "quantization",
+        "q6"
+      ],
+      "related": [
+        "RES-002",
+        "RES-004",
+        "EXP-007",
+        "ADR-0007",
+        "ADR-0018",
+        "DEC-011"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-008",
+      "category": "research",
+      "status": "draft",
+      "title": "RES-008 - Capability-Oriented Execution Model (Exploratory)",
+      "path": "research/RES-008-capability-oriented-execution-model.md",
+      "created": "2026-07-31",
+      "updated": "2026-07-31",
+      "author": "human",
+      "components": [
+        "policy-engine",
+        "capability-registry",
+        "execution-state",
+        "kernel",
+        "builder",
+        "consumer",
+        "artifact-registry"
+      ],
+      "tags": [
+        "architecture",
+        "capabilities",
+        "authority",
+        "execution-context",
+        "delegation",
+        "pola",
+        "capability-based-security",
+        "exploratory"
+      ],
+      "related": [
+        "ADR-0004",
+        "ADR-0009",
+        "ADR-0012",
+        "ADR-0013",
+        "ADR-0018",
+        "ADR-0019",
+        "ADR-0020",
+        "RES-001",
+        "RES-003",
+        "RES-004"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-009",
+      "category": "research",
+      "status": "proposed",
+      "title": "RES-009 - Erradicacion de modulos legacy de memoria y aprendizaje",
+      "path": "research/RES-009-eradication-legacy-memory-modules.md",
+      "created": "2026-08-03",
+      "updated": "2026-08-03",
+      "author": "human",
+      "components": [
+        "rag_hybrid",
+        "memory_system",
+        "learning_queue",
+        "conceptual_map",
+        "warm-artifacts",
+        "artifact-registry",
+        "knowledge-builder"
+      ],
+      "tags": [
+        "deprecation",
+        "eradication",
+        "legacy",
+        "memory",
+        "learning-queue",
+        "conceptual-map",
+        "warm-artifacts",
+        "architectural-debt",
+        "cleanup"
+      ],
+      "related": [
+        "ADR-0018",
+        "ADR-0019",
+        "ADR-0020",
+        "RES-001",
+        "RES-002",
+        "RES-003",
+        "RES-008"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-010",
+      "category": "research",
+      "status": "proposed",
+      "title": "RES-010 — Contrato canonico de documento",
+      "path": "research/RES-010-canonical-document-contract.md",
+      "created": "",
+      "updated": "",
+      "author": "",
+      "components": [],
+      "tags": [
+        "architecture",
+        "canonical-document-contract",
+        "single-producer-principle",
+        "downward-only-flow",
+        "materialized-views",
+        "doccards",
+        "chroma",
+        "knowledge-builder",
+        "warm-artifacts",
+        "ownership",
+        "invariants",
+        "corpus-cleanup",
+        "extraction-overhaul"
+      ],
+      "related": [
+        "RES-001",
+        "RES-002",
+        "RES-003",
+        "RES-007",
+        "ADR-0018",
+        "ADR-0021",
+        "DEC-011"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-011",
+      "category": "research",
+      "status": "proposed",
+      "title": "RES-011 — Auditoría y evolución de la arquitectura Consumer basada en evidencia",
+      "path": "research/RES-011-consumer-evidence-architecture.md",
+      "created": "2026-08-06",
+      "updated": "2026-08-06",
+      "author": "human",
+      "components": [
+        "consumer",
+        "kernel",
+        "capabilities",
+        "retrieval",
+        "evidence",
+        "evidence-evaluation",
+        "evidence-selection",
+        "context-package",
+        "planner",
+        "reasoning",
+        "verify",
+        "warm-artifacts"
+      ],
+      "tags": [
+        "architecture",
+        "consumer",
+        "agentic-rag",
+        "evidence-contract",
+        "evidence-quality",
+        "claim-scope",
+        "context-package",
+        "query-ir",
+        "retrieval",
+        "verification",
+        "non-goals"
+      ],
+      "related": [
+        "RES-001",
+        "RES-003",
+        "RES-008",
+        "RES-010",
+        "ADR-0015",
+        "ADR-0018",
+        "ADR-0019",
+        "ADR-0020",
+        "ADR-0022",
+        "DEC-008",
+        "DEC-009",
+        "DEC-010",
+        "BM-005"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-012",
+      "category": "research",
+      "status": "accepted",
+      "title": "RES-012 — Migración del benchmark histórico hacia evaluación canónica por evidencia",
+      "path": "research/RES-012-benchmark-migration-canonical-evaluation.md",
+      "created": "2026-08-06",
+      "updated": "2026-08-06",
+      "author": "human",
+      "components": [
+        "evaluation",
+        "benchmark",
+        "legacy-rag",
+        "knowledge-builder",
+        "knowledge-consumer",
+        "retrieval",
+        "evidence",
+        "verify",
+        "corpus",
+        "warm-artifacts"
+      ],
+      "tags": [
+        "benchmark",
+        "evaluation",
+        "migration",
+        "historical-baseline",
+        "canonical-benchmark",
+        "evidence",
+        "claim-coverage",
+        "corpus-versioning",
+        "builder",
+        "consumer",
+        "regression"
+      ],
+      "related": [
+        "RES-001",
+        "RES-002",
+        "RES-003",
+        "RES-010",
+        "RES-011",
+        "RES-013",
+        "ADR-0006",
+        "ADR-0018",
+        "ADR-0019",
+        "ADR-0020",
+        "ADR-0022",
+        "DEC-009",
+        "BM-001",
+        "BM-005",
+        "BM-006"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    },
+    {
+      "id": "RES-013",
+      "category": "research",
+      "status": "proposed",
+      "title": "RES-013 — Benchmark v3 como contrato autoritativo de evaluación para Agentic RAG",
+      "path": "research/RES-013-benchmark-v3-authoritative-evaluation-contract.md",
+      "created": "2026-08-06",
+      "updated": "2026-08-06",
+      "author": "human",
+      "components": [
+        "evaluation",
+        "benchmark",
+        "knowledge-builder",
+        "knowledge-consumer",
+        "retrieval",
+        "generation",
+        "policies",
+        "observability",
+        "facade"
+      ],
+      "tags": [
+        "benchmark-v3",
+        "evaluation-contract",
+        "agentic-rag",
+        "deterministic-evaluation",
+        "compliance",
+        "evidence-policy",
+        "decision-policy",
+        "runtime-observation",
+        "claim-coverage",
+        "provenance",
+        "negative-capability"
+      ],
+      "related": [
+        "RES-001",
+        "RES-002",
+        "RES-003",
+        "RES-011",
+        "RES-012",
+        "ADR-0006",
+        "ADR-0018",
+        "ADR-0019",
+        "ADR-0020",
+        "ADR-0022",
+        "DEC-009",
+        "BM-005"
+      ],
+      "supersedes": null,
+      "superseded_by": null
+    }
+  ]
+}

@@ -46,6 +46,7 @@ class DocCardsExtractor:
             centrality = float(info.get("centrality", 0.0))
             entity_mentions = info.get("entities_index", info.get("entity_mentions", []))
             summary = info.get("summary", "")
+            cid = info.get("canonical_doc_id") or f"doc:{slugify(name)}"
 
             doc_claim = DocumentClaim(
                 source_path=source_path,
@@ -57,7 +58,7 @@ class DocCardsExtractor:
                 summary=summary,
                 extractor_id=_EXTRACTOR_ID,
                 confidence=0.7,
-                evidence=[EvidenceItem(source_doc_id=f"doc:{slugify(name)}", quote=summary[:200])],
+                evidence=[EvidenceItem(source_doc_id=cid, quote=summary[:200])],
                 raw=dict(info),
             )
             kir.document_claims.append(doc_claim)
@@ -71,7 +72,7 @@ class DocCardsExtractor:
                         entity_types=[],
                         extractor_id=_EXTRACTOR_ID,
                         confidence=0.6,
-                        evidence=[EvidenceItem(source_doc_id=f"doc:{slugify(name)}", quote=f"Entity mentioned in {name}")],
-                        raw={"source": "doc_cards", "doc": source_path},
+                        evidence=[EvidenceItem(source_doc_id=cid, quote=f"Entity mentioned in {name}")],
+                        raw={"source": "doc_cards", "doc": source_path, "canonical_doc_id": cid},
                     ))
         return kir

@@ -19,6 +19,20 @@ from hash_registry import HashRegistry
 from utils import get_config, get_available_device, get_console
 from doc_cards import load_doc_roles, save_doc_roles, build_doc_cards_llm_incremental
 
+
+def _load_exclusions() -> set:
+    """Load corpus_exclusions.json and return set of excluded filenames."""
+    try:
+        import json
+        from pathlib import Path
+        p = Path("data/corpus_exclusions.json")
+        if p.exists():
+            data = json.loads(p.read_text(encoding="utf-8"))
+            return {item["file"] for item in data.get("excluded", [])}
+    except Exception:
+        pass
+    return set()
+
 console = get_console()
 
 
@@ -73,6 +87,15 @@ def ingest_incremental(retry_incomplete: bool = False, update_doccards: bool = F
     # 2) Extraer PDFs
     results = extractor.extract_all_pdfs()
     successes = [r for r in results if r.get('success')]
+
+    # Filtrar archivos excluidos via corpus_exclusions.json (Fase 0B)
+    excluded = _load_exclusions()
+    if excluded:
+        before = len(successes)
+        successes = [r for r in successes if r.get('filename') not in excluded]
+        filtered = before - len(successes)
+        if filtered:
+            console.print(f"[dim]Corpus exclusions: {filtered} archivos filtrados[/dim]")
 
     if not successes:
         console.print("[red]✗ No hay PDFs exitosos para procesar[/red]")
@@ -153,7 +176,6 @@ def ingest_incremental(retry_incomplete: bool = False, update_doccards: bool = F
             sample_chars = dcfg.get('sample_chars', 600)
 
             out = build_doc_cards_llm_incremental(
-                vectordb,
                 existing=existing_roles,
                 model_name=model,
                 max_docs=0,

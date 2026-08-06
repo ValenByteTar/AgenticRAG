@@ -1,7 +1,7 @@
 # Script para configurar Ollama con máximos recursos
 # Ejecutar como Administrador
 
-Write-Host "⚙️ CONFIGURANDO OLLAMA PARA MÁXIMO RENDIMIENTO" -ForegroundColor Cyan
+Write-Host "CONFIGURANDO OLLAMA PARA MÁXIMO RENDIMIENTO" -ForegroundColor Cyan
 Write-Host ""
 
 # Detener Ollama si está corriendo

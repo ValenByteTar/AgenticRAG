@@ -86,13 +86,9 @@ from embedder import EmbeddingGenerator
 
 from vector_store import VectorStore
 
-from memory_system import MemorySystem, ConversationHistory, parse_memory_command
-
-from conceptual_map import ConceptualMap
+from conversation_history import ConversationHistory
 
 from doc_cards import load_doc_roles, save_doc_roles, build_doc_cards, build_doc_cards_llm, select_docs_by_roles
-
-from learning_queue import LearningQueue
 
 from rag.entity_extractor import EntityExtractor
 
@@ -494,10 +490,6 @@ class HybridRAG:
 
 
 
-        # Inicializar sistema de memoria
-
-        self.memory = MemorySystem()
-
         self.conversation = ConversationHistory(max_history=10)
 
         # Recordar entidades del turno anterior para continuidad del tema
@@ -512,7 +504,7 @@ class HybridRAG:
 
         self.domain_map: dict = getattr(self, 'domain_map', {})
 
-        
+
 
         # MEJORA: Gazetteer de alias de entidades para mejorar búsqueda (ciberseguridad)
 
@@ -533,24 +525,6 @@ class HybridRAG:
             'splunk': ['splunk', 'splunk siem', 'splunk enterprise security'],
 
         }
-
-        # Mapa conceptual: conocimiento aprendido de consultas previas
-
-        self.conceptual_map = ConceptualMap()
-
-        # Cola de aprendizaje diferido con validación automática (DESHABILITADO por usuario)
-
-        self.enable_auto_learning = False
-
-        self.learning_queue = LearningQueue(
-
-            ollama_url=f"http://localhost:{self.config.get('ollama_port', 11434)}",
-
-            ollama_model=self.ollama_model,
-
-            conceptual_map=self.conceptual_map
-
-        ) if self.enable_auto_learning else None
 
         # Doc roles/cards: metadata enriquecida por documento (hubs, perfiles, etc.)
 
@@ -4956,114 +4930,6 @@ Respuesta:"""
 
         
 
-        # /mapa_borrar - Borrar hecho o entidad del mapa conceptual
-
-        elif cmd.startswith('/mapa_borrar') or cmd.startswith('/mapa_eliminar'):
-
-            # Formatos soportados:
-
-            #   /mapa_borrar <entidad>.<atributo>
-
-            #   /mapa_borrar <entidad>.*
-
-            #   /mapa_borrar <entidad>
-
-            try:
-
-                parts = command.split(maxsplit=1)
-
-                if len(parts) < 2:
-
-                    response = (
-
-                        "Uso: /mapa_borrar <entidad>[.<atributo>|.*]\n\n"
-
-                        "Ejemplos:\n"
-
-                        "â€¢ /mapa_borrar 'nist csf'.tecnologia\n"
-
-                        "â€¢ /mapa_borrar 'nist csf'.*\n"
-
-                        "â€¢ /mapa_borrar 'nist csf'"
-
-                    )
-
-                    return {
-
-                        'question': command,
-
-                        'results': [],
-
-                        'context': '',
-
-                        'answer': response,
-
-                        'method': 'system_command',
-
-                        'memory_hits': 0
-
-                    }
-
-                target = parts[1].strip()
-
-                # Remover comillas si vienen
-
-                if (target.startswith("'") and target.endswith("'")) or (target.startswith('"') and target.endswith('"')):
-
-                    target = target[1:-1]
-
-                entity = target
-
-                attribute = None
-
-                if '.' in target:
-
-                    entity, attribute = target.split('.', 1)
-
-                    entity = entity.strip()
-
-                    attribute = attribute.strip()
-
-                removed = False
-
-                if attribute and attribute != '*':
-
-                    removed = self.conceptual_map.remove_fact(entity, attribute)
-
-                else:
-
-                    removed = self.conceptual_map.remove_entity(entity)
-
-                if removed:
-
-                    response = f"OK: Eliminado del mapa conceptual: {entity}{'.'+attribute if attribute and attribute!='*' else ''}"
-
-                else:
-
-                    response = f"No se encontró entrada para eliminar: {entity}{'.'+attribute if attribute and attribute!='*' else ''}"
-
-            except Exception as e:
-
-                response = f"Error al borrar del mapa: {e}"
-
-            return {
-
-                'question': command,
-
-                'results': [],
-
-                'context': '',
-
-                'answer': response,
-
-                'method': 'system_command',
-
-                'memory_hits': 0
-
-            }
-
-        
-
         # /ayuda - Mostrar ayuda
 
         elif cmd == '/ayuda' or cmd == '/help':
@@ -5197,108 +5063,6 @@ Cuales son los controles del NIST CSF?"
             else:
 
                 response += "No se pudo obtener la lista de documentos."
-
-            
-
-            return {
-
-                'question': command,
-
-                'results': [],
-
-                'context': '',
-
-                'answer': response,
-
-                'method': 'system_command',
-
-                'memory_hits': 0
-
-            }
-
-        
-
-        # /memoria - Ver sinónimos guardados
-
-        elif cmd == '/memoria' or cmd == '/sinonimos':
-
-            all_synonyms = self.memory.get_all_synonyms()
-
-            
-
-            response = "# ðŸ§  Memoria de Sinónimos\n\n"
-
-            if all_synonyms:
-
-                response += f"**Total de términos:** {len(all_synonyms)}\n\n"
-
-                for canonical, syns in sorted(all_synonyms.items()):
-
-                    response += f"â€¢ **{canonical}** = {', '.join(syns)}\n"
-
-            else:
-
-                response += "No hay sinónimos guardados.\n\n"
-
-                response += "**Uso:** `Guarda que X es igual a Y y Z`"
-
-            
-
-            return {
-
-                'question': command,
-
-                'results': [],
-
-                'context': '',
-
-                'answer': response,
-
-                'method': 'system_command',
-
-                'memory_hits': 0
-
-            }
-
-        
-
-        # /mapa - Ver mapa conceptual aprendido
-
-        elif cmd == '/mapa' or cmd == '/conceptual':
-
-            stats = self.conceptual_map.stats()
-
-            
-
-            response = "# ðŸ“š Mapa Conceptual Aprendido\n\n"
-
-            response += f"**Entidades:** {stats['entities']}\n"
-
-            response += f"**Hechos totales:** {stats['total_facts']}\n"
-
-            response += f"**Atajos de consulta:** {stats['query_shortcuts']}\n"
-
-            response += f"**Aliases:** {stats['aliases']}\n\n"
-
-            
-
-            if stats['total_facts'] > 0:
-
-                response += "**Conocimiento por entidad:**\n\n"
-
-                for entity, facts in sorted(self.conceptual_map.entity_facts.items())[:10]:
-
-                    response += f"### {entity.title()}\n"
-
-                    for attr, data in facts.items():
-
-                        conf = data.get('confidence', 1.0)
-
-                        ans = data.get('answer', '')[:80]
-
-                        response += f"- **{attr}**: {ans}... (confianza: {conf:.0%})\n"
-
-                    response += "\n"
 
             
 
@@ -6326,70 +6090,6 @@ Cuales son los controles del NIST CSF?"
 
         
 
-        # DETECTAR COMANDOS DE MEMORIA (guarda que X = Y = Z)
-
-        memory_cmd = parse_memory_command(question)
-
-        if memory_cmd:
-
-            console.print(f"[bold green]Comando de memoria detectado[/bold green]")
-
-            canonical = memory_cmd['canonical']
-
-            synonyms = memory_cmd['synonyms']
-
-            
-
-            # Guardar sinónimos
-
-            added = self.memory.add_synonyms(canonical, synonyms, category='user_defined')
-
-            
-
-            synonyms_formatted = ', '.join([f"[cyan]'{s}'[/cyan]" for s in synonyms])
-
-            console.print(f"[green]OK: Guardado:[/green] [cyan]'{canonical}'[/cyan] = {synonyms_formatted}")
-
-            console.print(f"[dim]Total: {added} nuevo(s) sinónimo(s) agregado(s)[/dim]")
-
-            
-
-            # Devolver confirmación
-
-            response = f"OK: Entendido y guardado en mi memoria:\n\n"
-
-            response += f"**{canonical}** es equivalente a:\n"
-
-            for syn in synonyms:
-
-                response += f"â€¢ {syn}\n"
-
-            response += f"\nAhora cuando busques cualquiera de estos términos, expandiré la búsqueda a todos sus sinónimos automáticamente."
-
-            
-
-            return {
-
-                'question': question,
-
-                'results': [],
-
-                'context': '',
-
-                'answer': response,
-
-                'sources': [],
-
-                'method': 'memory_command',
-
-                'memory_hits': 0,
-
-                'time': time.time() - _t0
-
-            }
-
-        
-
         # ENRIQUECER QUERY CON CONTEXTO si detecta referencias a información previa
 
         if not no_context:
@@ -6754,56 +6454,6 @@ Cuales son los controles del NIST CSF?"
 
                 listing_flag = False
 
-            if self.use_llm and entities and self.config.get('use_conceptual_map', True) and not (is_aggregation or full_cov_flag or listing_flag):
-
-                conceptual_answer = self.conceptual_map.query_shortcut(question, entities)
-
-                if conceptual_answer and conceptual_answer.get('confidence', 0) >= 0.8:
-
-                    # Responder directo desde el mapa conceptual
-
-                    ans = conceptual_answer['answer']
-
-                    src = conceptual_answer.get('source', 'Conocimiento previo')
-
-                    pg = conceptual_answer.get('page', 0)
-
-                    console.print(f"[bold green]Respuesta desde mapa conceptual (confianza: {conceptual_answer.get('confidence', 1.0):.0%})[/bold green]")
-
-                    # Crear resultado mock para devolver
-
-                    mock_result = {
-
-                        'text': ans,
-
-                        'metadata': {'source': src, 'page': pg},
-
-                        'hybrid_score': 1.0,
-
-                        'final_score': 1.0
-
-                    }
-
-                    return {
-
-                        'question': question,
-
-                        'answer': ans,
-
-                        'results': [mock_result],
-
-                        'context': f"[Conocimiento previo verificado]\n{ans}",
-
-                        'method': 'conceptual_map',
-
-                        'source': src,
-
-                        'elapsed_ms': int((time.time() - _t0) * 1000)
-
-                    }
-
-            
-
             # EXPANSIÃ“N DE ACRÃ“NIMOS usando mapa pre-cargado
 
             # NO expandir entidades que ya son específicas (contienen números romanos)
@@ -6850,8 +6500,6 @@ Cuales son los controles del NIST CSF?"
 
                     for acr, full in acr_expansions.items():
 
-                        self.memory.add_synonyms(full, [acr], category='auto_acronym')
-
                         console.print(f"[dim]Acrónimo expandido: {acr} -> {full}[/dim]")
 
                 except Exception:
@@ -6887,18 +6535,6 @@ Cuales son los controles del NIST CSF?"
                         expanded_entities.update(aliases)
 
                         console.print(f"[dim green]Expandiendo '{entity}' -> {', '.join(aliases)}[/dim green]")
-
-                    else:
-
-                        # Fallback: usar sinónimos de memoria
-
-                        synonyms = self.memory.get_synonyms(entity)
-
-                        if len(synonyms) > 1:  # Si tiene sinónimos (además del término original)
-
-                            expanded_entities.update(synonyms)
-
-                            console.print(f"[dim green]Expandiendo '{entity}' -> {', '.join(synonyms)}[/dim green]")
 
                 
 
@@ -9397,30 +9033,6 @@ Cuales son los controles del NIST CSF?"
 
         
 
-        # Buscar en memoria del usuario primero
-
-        memory_results = self.memory.search_memory(question, limit=3)
-
-        
-
-        # Agregar memoria al contexto si hay resultados (COMPACTO)
-
-        if memory_results:
-
-            console.print(f"[dim]OK: Encontrados {len(memory_results)} registros en memoria del usuario[/dim]")
-
-            memory_context = "\n".join([
-
-                f"[MEM{i+1}] Q:{m['question'][:50]} A:{m['answer'][:150]}"
-
-                for i, m in enumerate(memory_results)
-
-            ])
-
-            context = memory_context + "\n---\n" + context
-
-        
-
         # Obtener contexto conversacional de forma INTELIGENTE
 
         # Solo usar contexto si la pregunta actual es continuación del tema anterior
@@ -9677,7 +9289,7 @@ Cuales son los controles del NIST CSF?"
 
                     try:
 
-                        attribute = self.conceptual_map._extract_attribute(question)
+                        attribute = None
 
                     except Exception:
 
@@ -10165,11 +9777,7 @@ Cuales son los controles del NIST CSF?"
 
         
 
-        sources, _timing_breakdown = self._post_query_learning(
-
-            question, answer, results, entities, use_llm, context, _t0, memory_results)
-
-
+        sources, _timing_breakdown = self._extract_sources_and_timing(results, _t0)
 
         _ret = {
 
@@ -10183,9 +9791,7 @@ Cuales son los controles del NIST CSF?"
 
             'sources': sources,
 
-            'method': 'hybrid_with_memory',
-
-            'memory_hits': len(memory_results),
+            'method': 'hybrid',
 
             'time': time.time() - _t0,
 
@@ -10461,197 +10067,7 @@ Cuales son los controles del NIST CSF?"
 
 
 
-    def _post_query_learning(self, question, answer, results, entities, use_llm, context, _t0, memory_results):
-
-        # APRENDIZAJE AUTOMÁTICO: Detectar fallo-recuperación
-
-        # Si la consulta anterior falló ("no se encontró") pero esta tuvo éxito, aprender
-
-        try:
-
-            if use_llm and answer and entities and self.config.get('use_conceptual_map', True):
-
-                # Verificar si esta respuesta es exitosa
-
-                is_success = 'no se encontr' not in answer.lower() and 'lo siento' not in answer.lower()
-
-                
-
-                if is_success and results:
-
-                    # Obtener las últimas 2 consultas del historial
-
-                    history = self.conversation.get_recent_messages(n=4)  # user, assistant, user, assistant
-
-                    
-
-                    if len(history) >= 3:
-
-                        # history[-3] = consulta anterior del usuario
-
-                        # history[-2] = respuesta anterior del asistente
-
-                        # history[-1] = consulta actual (ya agregada)
-
-                        prev_query = history[-3].get('content', '') if len(history) >= 3 else ''
-
-                        prev_answer = history[-2].get('content', '') if len(history) >= 2 else ''
-
-                        
-
-                        # Detectar si la consulta anterior falló
-
-                        prev_failed = ('no se encontr' in prev_answer.lower() or 
-
-                                      'lo siento' in prev_answer.lower()[:100])
-
-                        
-
-                        if prev_failed and prev_query:
-
-                            # Extraer entidades de la consulta fallida
-
-                            prev_entities = self._extract_entities(prev_query)
-
-                            
-
-                            # Aprender de la recuperación
-
-                            top_source = results[0] if results else {}
-
-                            src = top_source.get('metadata', {}).get('source', 'Unknown')
-
-                            pg = top_source.get('metadata', {}).get('page', 0)
-
-                            
-
-                            self.conceptual_map.learn_from_failure_recovery(
-
-                                failed_query=prev_query,
-
-                                failed_entities=prev_entities,
-
-                                success_query=question,
-
-                                success_entities=entities,
-
-                                answer=answer,
-
-                                source=src,
-
-                                page=pg
-
-                            )
-
-        except Exception as e:
-
-            console.print(f"[dim yellow]No se pudo aprender de fallo-recuperación: {e}[/dim yellow]")
-
-        
-
-        # APRENDER del resultado si hay alta confianza
-
-        try:
-
-            if use_llm and answer and entities and self.config.get('use_conceptual_map', True):
-
-                # Solo aprender si la respuesta es corta, concreta y tiene fuente clara
-
-                if len(answer) < 300 and results and 'no se encontr' not in answer.lower():
-
-                    # Extraer atributo de la pregunta
-
-                    attribute = self.conceptual_map._extract_attribute(question)
-
-                    if attribute:
-
-                        # Tomar la mejor fuente
-
-                        top_source = results[0] if results else {}
-
-                        src = top_source.get('metadata', {}).get('source', 'Unknown')
-
-                        pg = top_source.get('metadata', {}).get('page', 0)
-
-                        score = top_source.get('final_score', 0)
-
-                        
-
-                        # Confianza basada en score y longitud de respuesta
-
-                        confidence = min(0.95, max(0.5, score * 0.8 + (1 - len(answer)/300) * 0.2))
-
-                        
-
-                        # Encolar para validación/aprendizaje diferido SOLO si hay evidencia numérica ligada a la entidad
-
-                        entity_canonical = entities[0]
-
-                        try:
-
-                            evidence = None
-
-                            for r in results:
-
-                                txt = (r.get('text', '') or '')
-
-                                src_r = (r.get('metadata', {}) or {}).get('source', '')
-
-                                blob = (txt + ' ' + src_r).lower()
-
-                                if entity_canonical.lower() in blob and any(ch.isdigit() for ch in txt):
-
-                                    if any(k in txt.lower() for k in ['control', 'controles', 'framework', 'requisito', 'requisitos', 'version', 'estandar']):
-
-                                        evidence = txt[:1200]
-
-                                        break
-
-                            if evidence and self._has_numeric_evidence(entity_canonical, results):
-
-                                # Guardar solo si la respuesta no es un error/timeout del sistema
-
-                                _ans_low = (answer or '').lower()
-
-                                if any(tok in _ans_low for tok in ['error:', 'error', 'timeout', 'sin evidencia', 'no hay evidencia', 'no se pudo']):
-
-                                    console.print("[dim yellow]ADVERTENCIA No se encola aprendizaje: respuesta contiene error/timeout del sistema[/dim yellow]")
-
-                                elif self.enable_auto_learning and self.learning_queue:
-
-                                    self.learning_queue.add_candidate(
-
-                                        entity=entity_canonical,
-
-                                        attribute=attribute,
-
-                                        answer=answer,
-
-                                        question=question,
-
-                                        source=src,
-
-                                        page=pg,
-
-                                        confidence=confidence,
-
-                                        evidence_text=evidence
-
-                                    )
-
-                            else:
-
-                                console.print("[dim yellow]ADVERTENCIA No se encola aprendizaje: sin evidencia numérica vinculada a la entidad[/dim yellow]")
-
-                        except Exception as _e:
-
-                            console.print(f"[dim yellow]No se pudo encolar candidato: {_e}")
-
-        except Exception as e:
-
-            console.print(f"[dim yellow]No se pudo aprender: {e}[/dim yellow]")
-
-        
+    def _extract_sources_and_timing(self, results, _t0):
 
         # Extraer fuentes únicas de los resultados
 
@@ -10675,7 +10091,7 @@ Cuales son los controles del NIST CSF?"
 
             pass
 
-        
+
 
         # Recolectar breakdown de timers propagados por hybrid_search y _rerank_results
 
@@ -10705,8 +10121,6 @@ Cuales son los controles del NIST CSF?"
 
             if _llm_ms is None:
 
-                # Estimar: total - retrieval conocido
-
                 _retrieval_known = sum(
 
                     _timing_breakdown.get(k, 0)
@@ -10720,6 +10134,8 @@ Cuales son los controles del NIST CSF?"
         except Exception:
 
             pass
+
+
 
         return sources, _timing_breakdown
 

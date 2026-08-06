@@ -338,12 +338,12 @@ class TestKIRCache:
             "chunks": {"0": {"hash": chunk_hash, "processed_at": 0}},
         }), encoding="utf-8")
 
-        cached_kir = KIR(metadata={"extractor": "llm:granite-4.1-8b"})
+        cached_kir = KIR(metadata={"extractor": "llm:granite-4.1-3b"})
         cached_kir.entity_claims.append(EntityClaim(
             surface_form="Test Entity",
             canonical_name="test entity",
             entity_types=["concept"],
-            extractor_id="llm:granite-4.1-8b",
+            extractor_id="llm:granite-4.1-3b",
             confidence=0.9,
             evidence=[EvidenceItem(source_doc_id="doc:test-doc", quote="test")],
         ))
@@ -424,7 +424,8 @@ class TestKIRCache:
             extractor.extract()
             assert mock_llm.called
 
-    def test_cache_invalidation_by_model(self, tmp_path):
+    def test_cache_cross_model_reuse(self, tmp_path):
+        """Cache validates by hash only, not by model — cross-model reuse (RES-007)."""
         from knowledge_builder.frontend.llm_entity_extractor import LLMEntityExtractor
 
         cache_dir = tmp_path / "cache"
@@ -452,7 +453,7 @@ class TestKIRCache:
 
         with patch.object(extractor2, "_call_llm", return_value=mock_response) as mock_llm:
             extractor2.extract()
-            assert mock_llm.called
+            assert not mock_llm.called  # cache hit — same hash, different model
 
     def test_no_cache_always_calls_llm(self, tmp_path):
         from knowledge_builder.frontend.llm_entity_extractor import LLMEntityExtractor

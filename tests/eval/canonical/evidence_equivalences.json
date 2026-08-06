@@ -1,0 +1,17 @@
+{
+  "benchmark_id": "cybersec",
+  "version": "2.0",
+  "status": "migration-in-progress",
+  "ground_truth_source": "human_reviewed",
+  "review_status": "pending",
+  "equivalences": [],
+  "allowed_statuses": [
+    "stable_exact",
+    "stable_duplicate",
+    "stable_alternative",
+    "uncertain_requires_review",
+    "knowledge_gap_introduced",
+    "invalidated"
+  ],
+  "identity_rule": "canonical_doc_id is primary; legacy filenames are aliases only"
+}

@@ -1,0 +1,357 @@
+=== Anexo D - GRENERGY.pdf ===
+
+--- Página 1 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES GRENERGY OPERADAS POR EL CROM 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+Kosten 
+24 
+Eolica 
+29/05/2021 
+Senvion 
+BLC 
+BLC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL 
+24
+
+--- Página 2 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Descripcion de Parque Eolico Kosten: 
+El proyecto presente, identificado como Parque Eolico Kosten, de 24 MW (Agente: PEKOSTEG 
+; Central: KOSTEO; Grupo: KOSTEO01), producira energia electrica a partir de la captacion y transformacion 
+de la energia proveniente del viento, por medio de Siete molinos eolicos. Luego, dicha energia sera inyectada 
+en el Sistema Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con la 
+administradora del Mercado Electrico Mayorista (CAMMESA). 
+ 
+El proyecto denominado “Parque Eolico Kosten” se emplazara en Pampa de Castillo y contara con una 
+superficie de 25,3 hectareas. El objetivo es generar energia eolica a traves de una fuente de energia 
+renovable (vientos predominantes) e instalaciones necesarias (aerogeneradores, lineas electricas, entre otros). 
+La energia generada sera inyectarla al sistema interconectado Nacional a traves de la Estacion Trasformadora 
+de Pampa del Castillo en el nivel de 132 kV. 
+El proyecto consta de 6 aerogeneradores de 3,4 MW y 1 aerogenerador 3,6 MW con una potencia de 24 MW, 
+cuya energia generada se inyectara al Sistema Interconectado Nacional mediante el montaje de 
+trasformadores individuales instalados para cada aerogenerador y una linea de transmision en el nivel de 33 
+kV que acometera en dos trasformadores de potencia de 15/15/10 kVA de 132/33/13,2 KV en la Estacion 
+Transformadora denominada Pampa del Castillo bajo el control operativo de Transacue S.A. 
+ 
+Kosten es un parque eolico de 24 MW ubicado en la provincia de Chubut, en el sur de Argentina. El parque 
+eolico esta equipado con 7 turbinas eolicas, una 3.6M114NES de 3.6 MW y seis 3.4M114 de 3.4 MW cada una 
+de la empresa alemana Senvion. 
+ 
+ 
+ 
+Parque Kosten se encuentra 
+en la provincia argentina de 
+Chubut,  
+-45.810171 
+-68.055377.
+
+--- Página 3 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Parque Eolico Malaspina 50.4 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Senvion 3.6M114 NES  
+Potencia Nominal del aerogenerador 
+3,6 MW 
+Numero de aerogeneradores 
+1 
+Potencia Nominal del proyecto 
+3.6 MW 
+Diametro nominal de rotor 
+114 m 
+Velocidad media del viento 
+10,5 – 11 m/s 
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Senvion  3.4M114 
+Potencia Nominal del aerogenerador 
+3,4 MW 
+Numero de aerogeneradores 
+6 
+Potencia Nominal del proyecto 
+20.4 MW 
+Diametro nominal de rotor 
+114 m 
+Velocidad media del viento 
+10,5 – 11 m/s 
+ 
+ 
+Se encuentran interconectados por 2 circuitos de 33 kV,  circuito 1 y 2 a una barra de 33 KV: 
+• 
+Circuito 1 llega por la celda 01 interruptor 25201.   
+• 
+Circuito 2 llega por la celda 02 interruptor 25202. 
+• 
+Celda 03 de transformador de medicion 33 KV de barra. 
+• 
+Celda 04 salida a transformador de potencia 4TR08 33/132 KV  Interruptor 25204. 
+ 
+ TRANSPA: 
+• 
+Seccionador CA28908 en 33 KV antes de 4TR08. 
+• 
+Reactor de Neutro y transformador para servicios auxiliares CA2RN08 
+ 
+ 
+ 
+Pagina oficial:    https://grenergy.eu/projects/kosten/
+
+--- Página 4 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Parque Kosten se encuentra en la 
+provincia argentina de Chubut, Sobre ruta 
+nacional N°26 aproximadamente a 20 km 
+del empalme con ruta nacional N°3 en 
+Comodoro Rivadavia.  
+ 
+Localizacion 
+• 
+Latitud : -45.810171 
+• 
+Longitud : -68.055377
+
+--- Página 5 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar General en 33 KV Kosten
+
+--- Página 6 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Unifilar de Transformador de potencia y de servicios auxiliares 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+}
+
+--- Página 7 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+FIN:
+

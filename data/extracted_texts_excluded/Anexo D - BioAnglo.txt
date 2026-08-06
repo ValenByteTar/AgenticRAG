@@ -1,0 +1,278 @@
+=== Anexo D - BioAnglo.pdf ===
+
+--- Página 1 ---
+ANEXO D  (BIOANGLO)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES BIOANGLO OPERADAS POR EL CROM 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+BANG 
+1 
+Biogas 
+27/01/2024 
+SECCO 
+ 
+BLC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL 
+1
+
+--- Página 2 ---
+ANEXO D  (BIOANGLO)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+Descripcion de Generadores BioAnglo: 
+BioAnglo es un proyecto en el cual el CROM monitorea la operacion de un agente con un generador en el 
+mercado electrico, es un motor de combustion interna que quema bio gas, y tiene acoplado un generador 
+sincronico. 
+ 
+Descripcion del Proyecto: 
+C.T. BioAnglo surge del programa RenovAr MiniRenRonda 3 identificacion de la oferta BG-3500, se le 
+adjudica una potencia de 1 MW, y se monto una maquina de 1.067 MW (Agente: CTBIOANG; Central: BANG; 
+Grupo: BANGDI01) Fecha habilitacion comercial 27/01/2024. Oferente de la oferta COMPANIA ANGLO DE 
+TIERRAS CORDOBA S.A. 
+ 
+La plantade “Generacion de Biogas” BIOANGLO, estara ubicada al norte de la provincia de Cordoba, 
+Argentina, en el Departamento Rio Seco, a 30 km de la capital departamental Villa de Maria, a unos 10 km 
+del limite con a provincia de Santiago del Estero y a unos 14 km de la Ruta Provincial 32; en un area de uso 
+predominantemente agropecuario. 
+ 
+El proyecto BioAnglo obtiene bio gas de bio digestores que se alimentan con elementos y residuos organicos 
+de la zona, y se produce energia electrica quemando este bio gas. Luego, dicha energia sera inyectada en el 
+Sistema Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con la 
+administradora del Mercado Electrico Mayorista (CAMMESA) a traves de una conexion en 13,2 KV que se 
+conecta a la de Cooperativa Provision de OyS de Villa de Maria de Rio Seco (Distribuidor) Cordoba, y 
+despues se conecta al sistema de EPEC en la ET Villa de Maria de Rio Seco donde se eleva la tension de 13,2 
+KV a 66 KV. 
+ 
+CTBIOANG se encuentra en 
+Norte de Cordoba, cerca 
+del Limite con Santiago del 
+Estero, Cerca de Candelaria 
+sobre ruta provincial 32 
+-29.946981 
+-63.464250.
+
+--- Página 3 ---
+ANEXO D  (BIOANGLO)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+COMPANIA ANGLO DE TIERRAS CORDOBA S.A. 1 MW 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Es una maquina de 1.067 MW, esta conectada del siguiente modo, a la salida del generador tiene un 
+interruptor de paralelo en 400 V, despues del interruptor de paralelo un transformador TR1 de 1250 KVA de 
+relacion 0.4/13.2 KV, el transformador se conecta a celdas de 13.2 KV  a traves de seccionador bajo carga con 
+fusible a una barra comun que tiene conectado el transformador de servicios auxiliares TR2 de 63 KVA, esta 
+barra luego pasa por el nodo de medicion comercial SMEC, y la energia es conducida a celda de salida en la 
+que existe un interruptor QBC con sus protecciones por la que sale toda la energia generada por la central. 
+La energia de la maquina sale de las celdas y es conducida por un cable subterraneo hasta un punto donde 
+se encuentra un seccionador que vincula la salida de la CT BioAnglo con la red de distribucion en 13.2 KV de 
+la Cooperativa Provision de OyS de Villa de Maria de Rio Seco y esta Cooperativa se conecta con el sistema 
+nacional a traves de EPEC en la ET Villa de Maria de Rio Seco donde se eleva la tension de 13,2 KV a 66 KV. 
+ 
+El CROM solo realiza monitoreo a traves del SOTR y no opera ningun equipo de la central a distancia, si 
+realiza coordinacion operativa, comunicandose con los centros de control de CAMMESA, EPEC y operadores 
+en sitio. 
+ 
+Pagina oficial:    https://anglocordoba.com.ar/bioenergia/
+
+--- Página 4 ---
+ANEXO D  (BIOANGLO)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+DIAGRAMA UNIFILAR:
+
+--- Página 5 ---
+ANEXO D  (BIOANGLO)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+FIN:
+

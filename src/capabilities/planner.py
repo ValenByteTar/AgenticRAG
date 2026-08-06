@@ -122,19 +122,19 @@ class PlannerCapability:
         is_complex = any(k in ql for k in _COMPLEX_KEYWORDS)
         is_multi_doc = is_comparison or (is_complex and n_entities >= 2)
 
-        # Roles preferidos
+        # Roles preferidos (v2 taxonomy: list, entity_profile, guide, reference, analysis, other)
         if is_comparison:
-            preferred = ["entity_profile", "analysis_report"]
+            preferred = ["entity_profile", "analysis"]
         elif is_conceptual:
-            preferred = ["analysis_report", "entity_profile"]
+            preferred = ["analysis", "entity_profile"]
         elif is_procedural:
-            preferred = ["procedure", "analysis_report"]
+            preferred = ["guide", "analysis"]
         elif is_simple_numeric:
-            preferred = ["analysis_report", "entity_profile"]
+            preferred = ["analysis", "entity_profile"]
         elif n_entities > 0:
-            preferred = ["entity_profile", "entity_list"]
+            preferred = ["entity_profile", "list"]
         else:
-            preferred = ["entity_list", "analysis_report"]
+            preferred = ["list", "analysis"]
 
         # Ajustes de retrieval: solo semantic_weight (top_k lo maneja el retrieval adapter)
         semantic_weight = 0.6

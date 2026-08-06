@@ -1,0 +1,406 @@
+=== Anexo D - Bioelectrica.pdf ===
+
+--- Página 1 ---
+ANEXO D  (BIOELECTRICA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES BIOELECTRICA OPERADAS POR EL CROM 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+BG01 o BRC1DI 
+3.6 
+Biogas 
+22/07/2017 
+ 
+ 
+BLC 
+BG02 o BRC2DI 
+2.4 
+Biogas 
+21/09/2018 
+ 
+ 
+BLC 
+CGY o VROSDI 
+1.067 
+Biogas 
+08/05/2020 
+ 
+ 
+BLC 
+BSC o SCABDI 
+2.134 
+Biogas 
+08/01/2021 
+ 
+ 
+BLC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL 
+9.201
+
+--- Página 2 ---
+ANEXO D  (BIOELECTRICA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Descripcion de Generadores Bioelectrica: 
+Bioelectrica es un proyecto en el que se monitorean varios agentes del mercado electrico, en total son 8 
+motores de combustion interna que queman bio gas, y cada motor tiene acoplado un generador Sincronico. 
+ 
+Podemos dividir en 4 Proyectos BG01, BG02, BGY y BSC. 
+ 
+Primer Proyecto: 
+El proyecto BG01 esta dividido en dos, el primero CT Rio Cuarto 1, de 2.4 MW, dos maquinas de 1.2 MW 
+cada una (Agente: CBIORC1G; Central: BRC1DI; Grupo: BRC1DI01) Fecha habilitacion comercial 22/07/2017, 
+el segundo es la ampliacion del primero y se llama Ampliacion Bioelectrica dos de 1.2 MW, una maquina de 
+1.2 MW (Agente: CBIO1R2G; Central: BRC1DI; Grupo: BRC1DI02) Fecha habilitacion comercial 10/08/2019. 
+ 
+Segundo Proyecto: 
+El proyecto BG02 esta dividido en dos, el primero CT Rio Cuarto 2, de 1.2 MW, una maquina de 1.2 MW 
+(Agente: CBIO2R1G; Central: BRC2DI; Grupo: BRC2DI01) Fecha habilitacion comercial 21/09/2018, el segundo 
+es la ampliacion del primero y se llama Ampliacion 2 Central Bioelectrica de 1.2 MW, una maquina de 1.2 
+MW (Agente: CBIO2R2G; Central: BRC2DI; Grupo: BRC2DI02) Fecha habilitacion comercial 22/11/2019. 
+ 
+Tercer Proyecto: 
+El Proyecto CGY Central termica Villa del Rosario de 1 MW, es una maquina de 1.067 MW (Agente: 
+CTVILLAG; Central: VROSDI; Grupo: VROSDI01) Fecha habilitacion comercial 08/05/2020. 
+ 
+Cuarto Proyecto:  
+El Proyecto BSC Central termica Santa Catalina de 2 MW, son dos maquinas de 1.067 MW cada una (Agente: 
+CTSCATAG; Central: SCABDI; Grupo: SCABDI01) Fecha habilitacion comercial 08/01/2021. 
+ 
+Los primeros tres proyectos obtienen bio gas para su funcionamiento de bio digestores que se alimentan 
+con un producto desecho de BIO4 y producen energia electrica quemando este bio gas. Luego, dicha energia 
+sera inyectada en el Sistema Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento 
+con la administradora del Mercado Electrico Mayorista (CAMMESA) a traves de una conexion en 13,2 KV que 
+se conecta a la ET Las Ferias de EPEC en Rio Cuarto, Cordoba. 
+ 
+El cuarto proyecto BSC obtiene bio gas de bio digestores que se alimentan con productos de la zona (Pueblo 
+de Santa Catalina a unos 8 Km de los primeros proyectos) y produce energia electrica quemando este bio 
+gas. Luego, dicha energia sera inyectada en el Sistema Argentino de Interconexion (SADI) en el marco del 
+Contrato de Abastecimiento con la administradora del Mercado Electrico Mayorista (CAMMESA) a traves de 
+una conexion en 13,2 KV que se conecta a la ET Santa Catalina de Cooperativa electrica de Santa Catalina, 
+Cordoba.
+
+--- Página 3 ---
+ANEXO D  (BIOELECTRICA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+BG01 – BG02 y BGY se 
+encuentran en Rio Cuarto, 
+en la provincia argentina de 
+Cordoba,  
+-45.810171 
+-68.055377. 
+ 
+ 
+Bioelectrica 9 MW 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+BG01: 
+La primer etapa de dos maquinas (1 y 2) de 1.2 MW cada una, estan conectadas del siguiente modo, a la 
+salida del generador tienen un interruptor de paralelo en 400 V, despues del interruptor de paralelo un 
+transformador de 0.4/13.8 KV, los transformadores se conectan a celdas de 13.8 KV (Celdas E y F) a traves de 
+seccionadores bajo carga a una barra comun que tiene conectado en Celda G el transformador de servicios 
+auxiliares de 250 KVA, esta barra luego pasa por el nodo de medicion comercial Celda D, y la energia es 
+conducida a celda IMB en la que se suma la ampliacion de la maquina 3. 
+La energia de las 3 maquinas sale por Celda A y es conducida a un juego de Celdas de maniobras 
+acometiendo por Celda IM, de la segunda celda IM se puede conducir a barras de BIO4 desde donde se 
+puede salir por celdas de EPEC A1 a ET las Ferias a traves de 2 conductores subterraneos independientes.
+
+--- Página 4 ---
+ANEXO D  (BIOELECTRICA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+BG02: 
+La primer etapa de una maquinas de 1.2 MW, esta conectada del siguiente modo, a la salida del generador 
+tienen un interruptor de paralelo en 400 V, despues del interruptor de paralelo un transformador de 0.4/13.8 
+KV, el transformador se conectan a celda de 13.8 KV (Celdas A8) a traves de seccionador bajo carga a una 
+barra comun que tiene conectado en Celda A7 el transformador de servicios auxiliares de 250 KVA, esta barra 
+luego pasa por el nodo de medicion comercial Celda A6, y la energia es conducida a celda A5 en la que se 
+suma la ampliacion de la maquina 2 en la Celda A4. 
+La energia de las 2 maquinas sale por Celda A1 y es conducida a barras de BIO4  por Celda A2 desde donde 
+se puede salir por celdas de EPEC A1 a ET las Ferias a traves de 2 conductores subterraneos independientes.
+
+--- Página 5 ---
+ANEXO D  (BIOELECTRICA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+CGY: 
+Es una sola maquina de 1.067 MW, esta conectada del siguiente modo, a la salida del generador tienen un 
+interruptor de paralelo en 400 V, despues del interruptor de paralelo un transformador de 0.4/13.8 KV, el 
+transformador se conectan a celda de 13.8 KV (Celdas QM), esta barra luego pasa por el nodo de medicion 
+comercial Celda GBC A. y la energia es conducida a celda A5 en la que se suma la ampliacion de la maquina 2 
+en la Celda A4. 
+La energia de la maquina sale por Celda GAM2 y es conducida a barras de maniobras de BG01  por Celda 
+QM donde se suma a la energia de BG01 y de la segunda celda IM se puede conducir a barras de BIO4 desde 
+donde se puede salir por celdas de EPEC A1 a ET las Ferias a traves de 2 conductores subterraneos 
+independientes.
+
+--- Página 6 ---
+ANEXO D  (BIOELECTRICA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+BSC: 
+Son dos maquinas (1 y 2) de 1.067 MW cada una, estan conectadas del siguiente modo, a la salida del 
+generador tienen un interruptor de paralelo en 400 V, despues del interruptor de paralelo un transformador 
+de 0.4/13.8 KV, los transformadores se conectan a celdas de 13.8 KV  a traves de seccionadores bajo carga a 
+una barra comun que tiene conectado en una Celda el transformador de servicios auxiliares de 500 KVA, esta 
+barra luego pasa por el nodo de medicion comercial, y la energia es conducida a celda de Salida que tiene un 
+seccionador bajo carga. 
+De la celda de salida a traves de un cable subterraneo se acomete en celdas de media tension de 
+Cooperativa Electrica Santa Catalina. 
+En barras de servicios auxiliares de 380 V tienen un Generador de emergencia. 
+ 
+ 
+ 
+ 
+Pagina oficial:    http://www.bioelectrica.com/
+
+--- Página 7 ---
+ANEXO D  (BIOELECTRICA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica BSC 
+ 
+ 
+CT Santa Catalina se encuentra en la 
+provincia argentina de Cordoba, Sobre 
+ruta nacional N°8 aproximadamente a 8 
+km de Rio Cuarto.  
+ 
+Localizacion 
+• 
+Latitud : -33.219855 
+• 
+Longitud : -64.447512
+
+--- Página 8 ---
+ANEXO D  (BIOELECTRICA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar General BG01 – BG02 y CGY
+
+--- Página 9 ---
+ANEXO D  (BIOELECTRICA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar  BG01 – BG02 y CGY ampliados
+
+--- Página 10 ---
+ANEXO D  (BIOELECTRICA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Unifilar Sala de celdas BIO4
+
+--- Página 11 ---
+ANEXO D  (BIOELECTRICA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Unifilar Sala de BSC
+
+--- Página 12 ---
+ANEXO D  (BIOELECTRICA)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+FIN:
+

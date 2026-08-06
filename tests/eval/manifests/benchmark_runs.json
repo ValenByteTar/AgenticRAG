@@ -1,0 +1,13 @@
+{
+  "benchmark_id": "cybersec",
+  "benchmark_version": "canonical-v2",
+  "benchmark_status": "migration-in-progress",
+  "evaluation_contract": "canonical-evidence-v1",
+  "corpus_version": "pending-manifest",
+  "builder_version": "pending",
+  "consumer_version": "pending",
+  "artifact_build_id": "pending",
+  "comparability_notes": "Do not compare canonical-v2 pass_rate directly with legacy-v1 pass_rate.",
+  "runs": [],
+  "required_runs": ["A", "B", "C", "D", "E"]
+}

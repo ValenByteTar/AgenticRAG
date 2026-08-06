@@ -1,0 +1,12 @@
+{
+  "corpus_id": "reduced-pending",
+  "status": "pending",
+  "source_root": "data/extracted_texts",
+  "excluded_root": "data/extracted_texts_excluded",
+  "document_count": null,
+  "excluded_count": null,
+  "exclusion_registry": "data/corpus_exclusions.json",
+  "content_fingerprint": null,
+  "canonical_id_version": null,
+  "notes": "Resolve the documented 203 vs 208 exclusion discrepancy before benchmark comparison."
+}

@@ -1,0 +1,941 @@
+=== Novedades y Estados Operativos SOTR.pdf ===
+
+--- Página 1 ---
+CROM-NEO  
+Novedades y Estados Operativos PPO 
+ 
+ 
+Elaborado por: 
+Revisado por: 
+Aprobado por: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Firma y aclaracion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Firma y aclaracion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Firma y aclaracion 
+ 
+Fecha: 
+ 
+Fecha: 
+ 
+Fecha: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Novedades y Estados Operativos PPO 
+CROM-NEO Rev. 00
+
+--- Página 2 ---
+CROM-NEO  
+Novedades y Estados Operativos PPO 
+ 
+ 
+1 
+CROM-NEO 
+2 
+Rev. 00 
+3 
+Documento Uso Interno 
+2 
+ 
+INDICE 
+1 
+OBJETIVO ........................................................................................................................................................ 3 
+2 
+ALCANCE ......................................................................................................................................................... 3 
+3 
+DEFINICIONES ................................................................................................................................................. 3 
+4 
+RESPONSABILIDADES ..................................................................................................................................... 3 
+5 
+DESARROLLO .................................................................................................................................................. 4 
+5.1 
+INTRODUCCION .......................................................................................................................................... 4 
+5.2 
+PERSONAL RESPONSABLE DEL ENVIO DE NOVEDADES OPERATIVAS ...................................................... 5 
+5.3 
+NOVEDADES OPERATIVAS: ¿COMO, CUANDO Y CUALES ENVIAR? .......................................................... 5 
+5.4 
+NOVEDADES OPERATIVAS: LISTA DE LAS NOVEDADES QUE SE PUEDEN UTILIZAR ................................. 8 
+5.5 
+NOVEDADES OPERATIVAS: IMPACTO DE CADA NOVEDAD EN EL PPO CAMMESA ................................. 9 
+5.6 
+EJEMPLOS DE APLICACION ...................................................................................................................... 10 
+5.7 
+CONSIDERACIONES FINALES .................................................................................................................... 12 
+6 
+REGISTROS .................................................................................................................................................... 12 
+7 
+REFERENCIAS / DOCUMENTOS RELACIONADOS ......................................................................................... 12 
+8 
+CONTROL DE CAMBIOS ................................................................................................................................ 12
+
+--- Página 3 ---
+CROM-NEO  
+Novedades y Estados Operativos PPO 
+ 
+ 
+1 
+CROM-NEO 
+2 
+Rev. 00 
+3 
+Documento Uso Interno 
+3 
+ 
+1 OBJETIVO 
+La finalidad del presente documento de trabajo es establecer una metodologia adecuada, para que 
+desde el COG se informe correctamente a CAMMESA, la operacion de los PARQUES SOLARES 
+(PPSS), a traves del modulo “Nuevas Novedades Ordenes y Textos” del Sistema Operativo en Tiempo 
+Real (SOTR) segun la normativa vigente. 
+2 ALCANCE 
+Este documento sera aplicable a todos los PPSS de 360 Energy y a la Sede Pilar. 
+3 DEFINICIONES 
+CAMMESA: Compania Administradora del Mercado Mayorista Electrico S.A. 
+CCA: Centro de Control de Area (Centro Operativo del Transportista) 
+COC: Centro Operativo de CAMMESA 
+COD: Centro Operativo del Distribuidor 
+COG: Control Operativo de Generacion, Sede Pilar de 360 Energy 
+DTE Documento de Transacciones Economicas 
+E/S por Despacho: Entrada en servicio por requerimiento de CAMMESA 
+E/S por Despacho Local: Entrada en servicio por requerimiento del CCA 
+Hora Operativa: Lapso de tiempo de toda una hora reloj, nombrada como hora siguiente.  
+Ej: La hora operativa 14 abarca desde las 13:00:00 hasta las 13:59:59 
+MEM: Mercado Electrico Mayorista 
+OED: Orden operativa del Organismo Encargado del Despacho (CAMMESA) 
+PPO Parte(s) Post Operativo(s) Diario / Mensual 
+PS / PPSS: Parque(s) Solar(es) 
+SMEC: Sistema de Medicion Comercial 
+SOTR: Sistema de Operacion en Tiempo Real 
+4 RESPONSABILIDADES 
+• 
+Coordinador de Despacho  
+o Garantizar globalmente el cumplimiento de lo redactado en el presente documento 
+o Monitorear globalmente la calidad de los datos enviados via SOTR 
+o Monitorear todos los enlaces SOTR entre los PPSS y CAMMESA / 360 Sede Pilar 
+• 
+Jefe del Parque Solar 
+o Garantizar localmente el cumplimiento de lo redactado en el presente documento 
+o Monitorear localmente el cumplimiento del Procedimiento Tecnico N° 8 de CAMMESA 
+o Monitorear localmente la calidad de los datos enviados via SOTR 
+• 
+Operador del Parque Solar 
+o Efectuar puntualmente lo redactado en el presente documento en cuanto a las 
+comunicaciones operativas, sean estas por telefono o via SOTR 
+o Utilizar la terminologia y fraseologia detallada en el Procedimiento Tecnico N°8 de 
+CAMMESA
+
+--- Página 4 ---
+CROM-NEO  
+Novedades y Estados Operativos PPO 
+ 
+ 
+1 
+CROM-NEO 
+2 
+Rev. 00 
+3 
+Documento Uso Interno 
+4 
+ 
+5 DESARROLLO 
+5.1 INTRODUCCION 
+Para que todos los responsables tengan una mejor comprension de su rol en el cumplimiento de 
+este procedimiento, se elaboraran algunas definiciones adicionales. 
+DTE: En el Documento de Transacciones Economicas, se detallan todos los movimientos economicos 
+del MEM administrados por CAMMESA. Una de las principales fuentes de informacion para el DTE es 
+el PPO Mensual. 
+PPO Mensual: El Parte Post Operativo Mensual es la sumatoria de todos los PPO Diarios del mes en 
+cuestion. 
+PPO diario: Los Partes Post Operativos Diarios son confeccionados por CAMMESA y contienen el 
+resultado hora por hora de la operacion diaria, como ser: Produccion/consumo de Energia segun 
+SMEC, Potencia Disponible, Novedades Operativas, Estados Operativos, Consignas Operativas y 
+Penalidades.  Se publican diariamente a las 18hs en el portal MEMNET dentro de su pagina web, con 
+la informacion del dia anterior. Los Agentes MEM tienen 48hs habiles para realizar reclamos sobre el 
+mismo en caso de existir errores. 
+ESTADO OPERATIVO: Es un parametro discreto calculado horariamento (hora operativa) por un 
+sistema informatico de CAMMESA, basandose en las mediciones transmitidas por el SOTR y las 
+NOVEDADES OPERATIVAS. Estos valores miden dos aspectos de los PPSS simultaneamente:  1) 
+POTENCIA (IN)DISPONIBLE y 2) ESTADO ACTUAL segun el ultimo acontecimiento en el PS. 
+SOTR: interconecta a los distintos Centros Operativos del SADI (COC, CCA, COG o PPSS) para 
+(re)transmitir datos operativos en tiempo real, y facilitar la toma de decisiones al evitar que los agentes 
+MEM tengan que consultarse permanentemente por telefono su ESTADO OPERATIVO. 
+NOVEDADES OPERATIVAS: Son textos cortos con un formato predeterminado, que se envian a 
+traves del SOTR bajo el protocolo de comunicaciones ELCOM-90. Contienen informacion como: 
+fechas, codigos de maniobras, valores de potencia, etc. 
+CONSIGNA OPERATIVA: Es un parametro discreto calculado horariamente (hora operativa) por un 
+sistema informatico de CAMMESA, basandose en las ORDENES OPERATIVAS informadas por los 
+CCA o generadas por el propio COC de CAMMESA. 
+ORDENES OPERATIVAS: Son las ordenes que pueden impartir tanto el COC como los CCA sobre 
+los PPSS. Estas pueden ser ordenes de entrar en servicio, inyectar potencia reactiva, salir de servicio, 
+reducir potencia de salida, etc. 
+COORDINACION OPERATIVA: Teniendo en mente que los Parques Solares son lo que se denomina 
+GENERADORES dentro del MEM, y que los GENERADORES no estan autorizados a realizar ninguna 
+maniobra hasta que el COC y el CCA lo autoricen, la COORDINACION OPERATIVA son las llamadas 
+telefonicas al COC y al CCA mediante las cuales se solicita autorizacion para las maniobras. 
+De este conjunto de definiciones, se puede concluir entonces que las NOVEDADES OPERATIVAS 
+y las MEDICIONES SMEC son los cimientos de lo que mas tarde se convertiran en las liquidaciones 
+mensuales, detalladas en el DTE.
+
+--- Página 5 ---
+CROM-NEO  
+Novedades y Estados Operativos PPO 
+ 
+ 
+1 
+CROM-NEO 
+2 
+Rev. 00 
+3 
+Documento Uso Interno 
+5 
+ 
+5.2 PERSONAL RESPONSABLE DEL ENVIO DE NOVEDADES OPERATIVAS 
+En primera instancia debe quedar claro que los responsables de enviar las NOVEDADES 
+OPERATIVAS son los OPERADORES de los PS, haciendo uso del modulo “Nuevas Novedades 
+Ordenes y Textos” del SOTR con el que cuentan localmente.  
+5.3 NOVEDADES OPERATIVAS: ¿COMO, CUANDO Y CUALES ENVIAR? 
+COMO ENVIAR 
+1) Para enviar una novedad operativa, hay que dirigirse al SOTR y hacer click en el boton que figura 
+arriba a la derecha “NUEVAS NOVEDADES, ORDENES Y TEXTOS”. 
+2) Presionar el boton “Redactar” que figura abajo a la derecha. 
+3) Seleccionar el codigo que se desea enviar, del listado que figura a la izquierda. 
+4) Completar los campos:  
+a. Fecha de Usuario: con formato dd/mm/yyyy hh:mm. Es el dia, mes, ano, hora y minuto en 
+el que sucedio el evento que se desea informar 
+b. Equipo: seleccionando del menu desplegable 
+c. Info 1: Potencia disponible del parque en MW. Utilizar el punto “.” como separador de 
+decimales. Es decir, en vez de escribir 22,5 deberia escribirse 22.5 
+d. Comentario (Opcional): Se puede colocar el apellido y la empresa del operador que imparte 
+la orden, o bien un breve resumen de lo sucedido. 
+5) Enviar
+
+--- Página 6 ---
+CROM-NEO  
+Novedades y Estados Operativos PPO 
+ 
+ 
+1 
+CROM-NEO 
+2 
+Rev. 00 
+3 
+Documento Uso Interno 
+6 
+ 
+CUANDO ENVIAR 
+Todas las NOVEDADES OPERATIVAS deben ser enviadas dentro de la hora operativa en la 
+cual se haya dado el acontecimiento a informar. Es decir, la fecha y hora de los eventos a reportar 
+deben ser respecto de la fecha y hora en la que haya variado la potencia de salida del PS o bien la 
+potencia disponible. En el caso puntual de los eventos que ocurran 10 minutos antes de finalizar la 
+hora operativa, CAMMESA contempla 10 minutos de gracia para el envio de la NOVEDAD 
+OPERATIVA correspondiente. Para ilustrar esto, se presentan los siguientes ejemplos: 
+Eventos sucedidos entre las: 
+Pertenecen a la hora operativa: 
+y deben informarse antes de las: 
+00:00 – 00:49 
+01 
+01:00 
+00:50 – 00:59 
+01 
+01:10 
+13:00 – 13:49 
+14 
+14:00 
+13:00 – 13:59 
+14 
+14:10 
+23:00 – 23:49 
+24 
+00:00 
+23:50 – 23:59 
+24 
+00:10 
+ 
+Ejemplo: En este caso hipotetico, el operador del PS enviaria 5 (cinco) NOVEDADES OPERATIVAS.  
+ 
+Las novedades a enviar serian: 
+Fecha 
+Hora 
+Codigo 
+Novedad 
+Hora Op 
+Enviar antes de: 
+01/01/2019 
+06:53 
+E/S07 Entrada en Servicio por Despacho 
+07 
+07:10 
+01/01/2019 
+07:55 
+F/S12 Fuera de Servicio por Transporte 
+08 
+08:10 
+01/01/2019 
+08:01 
+IND03 Indisponible por transmision 
+09 
+09:00 
+01/01/2019 
+11:48 
+DIS01 Disponible 
+12 
+12:00 
+01/01/2019 
+12:52 
+E/S07 Entrada en Servicio por Despacho 
+12 
+13:10 
+ 
+No se preocupe aun por los codigos y los tipos de novedades. A lo largo de este procedimiento 
+se ira revelando que novedades existen y en que situaciones se utilizan. Lo destacable de este ejemplo 
+es que los horarios a informar son aquellos en los que el PS haya registrado actividad, y no en los que 
+se hayan recibido llamados telefonicos/ordenes de otros Centros Operativos. 
+ 
+ 
+01/01/2019 06:53hs: La potencia de salida del parque deja de valer 0MWh (Cero Mega Watt hora) y aumenta. 
+01/01/2019 07:55hs: Transnoa solicita F/S de NONOGASTA para tareas de mantenimiento en la ET 
+01:01/2019 07:58hs: La potencia de salida del parque comienza a disminuir. 
+01/01/2019 08:01hs: La potencia de salida del parque es igual a 0,0MWh (cero Mega Watt hora) 
+01/01/2019 11:41hs: Transnoa informa al parque que en breve restablecera la red 
+01/01/2019 11:48hs El PS vuelve a estar vinculado a la red, verificable con la tension de linea. 
+01/01/2019 11:49hs Transnoa autoriza al PS a ingresar, ya que finalizo el mantenimiento. 
+01/01/2019 12:52hs La potencia de salida del parque deja de valer 0MWh (Cero Mega Watt hora) y aumenta.
+
+--- Página 7 ---
+CROM-NEO  
+Novedades y Estados Operativos PPO 
+ 
+ 
+1 
+CROM-NEO 
+2 
+Rev. 00 
+3 
+Documento Uso Interno 
+7 
+ 
+DESPACHO: SOLICITUDES DEL COC (CAMMESA) 
+Los PPSS deberan enviar como minimo 2 (dos) NOVEDADES OPERATIVAS por dia, 
+relacionadas al recurso solar (E/S07 y F/S01 respectivamente). La logica detras de esto, es que la 
+generacion de los parques solares esta permanentemente requerida por el contrato con CAMMESA, 
+teniendo prioridad de despacho por sobre el resto de los generadores del MEM. 
+CAMMESA tiene un centro de operaciones propio denominado COC (Centro Operativo de 
+CAMMESA). Este puede contactarse telefonicamente con el PS o bien enviar una OED via SOTR. Una 
+OED es una Orden Operativa Digital que llega a traves del SOTR, por parte del ORGANISMO 
+ENCARGADO DEL DESPACHO. Los pedidos mas habituales seran: 
+Codigo 
+Novedad 
+E/S07 Entrar en servicio por despacho (O al inicio de cada dia, segun recurso solar) 
+F/S01 Salir de servicio por despacho (O al finalizar cada dia, segun recurso solar) 
+BAJ02 Bajar carga a una fraccion de la que este inyectandose al momento de recibir la OED 
+SUB01 Subir carga en una fraccion de la que este inyectandose al momento de recibir la OED 
+ 
+DECLARACION DE POTENCIA DISPONIBLE 
+Como bien se detallo en el punto 5.1, no todas las NOVEDADES OPERATIVAS se utilizan para 
+indicar si el PS entro, salio, quedo o mantuvo el servicio, sino que tambien hay novedades cuya funcion 
+es permitirle al GENERADOR informarle al COC o CCA, las siguientes variables operativas: 
+• 
+POTENCIA DISPONIBLE DEL PARQUE 
+• 
+LIMITACIONES INTERNAS o EXTERNAS 
+Esas novedades son: 
+Codigo 
+Novedad 
+DIS01 Declarar potencia disponible, siempre y cuando el parque este fuera de servicio. 
+IND01 PS 100% indisponible, por mantenimiento. 
+IND03 PS 100% indisponible, por motivos relacionados al Transportista / Distribuidor 
+LIM01 Indicar una disponibilidad parcial, por mantenimientos  
+LIM02 Indicar una disponibilidad parcial, por motivos relacionados al Transportista / Distribuidor 
+LIM03 Indicar una variacion en la potencia disponible, luego de haber enviado un LIM01 o LIM02. 
+ 
+OTRAS ENTRADAS Y SALIDAS DE SERVICIO 
+Salvo el F/S02, al utilizar cualquiera de las otras dos NOVEDADES OPERATIVAS listadas a 
+continuacion, el PS quedara indisponible en el PPO hasta tanto el PS se declare disponible 
+nuevamente.  
+Codigo 
+Novedad 
+E/S15 E/s forzada por ensayos, solicitados por el PS 
+F/S02 F/s por no requerirse, una vez finalizados los ensayos 
+F/S05 F/S Intempestiva. Puede ser por perturbacion electrica interna o externa.
+
+--- Página 8 ---
+PR-OPE-04 
+Novedades y Estados Operativos PPO 
+ 
+ 
+4 
+PR-OPE-04 
+5 
+Rev. 00 
+6 
+Documento Uso Interno 
+8 
+ 
+5.4 NOVEDADES OPERATIVAS: LISTA DE LAS NOVEDADES A UTILIZAR 
+Origen 
+CODIGO NOVEDAD/ORDEN 
+Resumen 
+Info 1 [MW] 
+Parque 
+BAJ02 
+BAJA CARGA 
+Variar potencia (bajar) por requerimiento local 
+P. Disp 
+Parque 
+SUB01 
+SUBE CARGA 
+Variar potencia (Subir) por requerimiento local 
+P. Disp 
+Parque 
+CAR01 
+COMPLETO CARGA 
+Informar que se esta generando a la maxima potencia disponible 
+P. Disp 
+Parque 
+DIS01 
+DISPONIBLE 
+Informar disponibiliad del parque (No esta generando) 
+P. Disp 
+Parque 
+E/S02 
+E/S REQ. POR GENERADOR 
+E/S para pruebas/ensayos NO programados 
+P. Disp 
+CAMMESA 
+E/S07 
+E/S POR DESPACHO 
+E/S por pedido de CAMMESA 
+P. Disp 
+Parque 
+E/S15 
+E/S FORZADA POR ENSAYO 
+E/S para pruebas/ensayos programados 
+P. Disp 
+CAMMESA 
+F/S01 
+F/S POR DESPACHO 
+F/S por pedido de CAMMESA 
+P. Disp 
+CAMMESA 
+F/S02 
+F/S POR NO REQUERIRSE 
+F/S por no estar solicitado por ningun Agente MEM 
+P. Disp 
+Parque 
+F/S03 
+F/S PARA MANTENIMIENTO 
+F/S para mantenimiento, quedando indisponible 
+0 
+Parque 
+F/S05 
+F/S INTEMPESTIVA 
+F/S en forma intempestiva, quedando indisponible 
+0 
+Parque 
+F/S08 
+F/S CONTROLADA INDISP. 
+F/S en forma no intempestiva, quedando indisponible 
+0 
+CCA 
+F/S10 
+F/S IND. POR EL DISTRIB 
+F/S por una limitacion del sistema de distribucion 
+0 
+CCA 
+F/S12 
+F/S POR TRANSMISION 
+F/S por una limitacion del sistema de transporte 
+0 
+CCA 
+F/S13 
+F/S POR ACTUACION DAG 
+F/S por actuacion de DAG, quedando disponibles 
+P. Disp 
+Parque 
+IND01 
+INDISPONIBLE 
+Informar indisponibilidad total del parque, por culpa del generador 
+0 
+CCA 
+IND03 
+INDISP. POR TRANSMISION 
+Informar indisponibilidad total del parque, por culpa del transportista/distribuidor 
+0 
+Parque 
+LIM01 
+LIMIT. INTERNA (CAMBIO) 
+Parque parcialmente indisponible, por culpa del generador 
+P. Disp 
+CCA 
+LIM02 
+LIMIT. POR TRANSMISION 
+Parque parcialmente indisponible, por culpa del transportista/distribuidor 
+P. Disp 
+Parque 
+LIM03 
+LIMITACION LIBERADA A: 
+Parque parcialmente indisponible, informar una variacion en la potencia disponible 
+P. Disp
+
+--- Página 9 ---
+PR-OPE-04 
+Novedades y Estados Operativos PPO 
+ 
+ 
+4 
+PR-OPE-04 
+5 
+Rev. 00 
+6 
+Documento Uso Interno 
+9 
+ 
+5.5 NOVEDADES OPERATIVAS: IMPACTO DE CADA NOVEDAD EN EL PPO CAMMESA 
+CODIGO 
+NOVEDAD/ORDEN 
+ESTADO OPERATIVO 
+DESCRIPCION 
+POTENCIA 
+DISPONIBLE 
+ESTADO 
+OPERATIVO 
+BAJ02 
+BAJA CARGA 
+Pot Declarada 
+Repite Anterior 
+Variar potencia (bajar) por requerimiento local 
+SUB01 
+SUBE CARGA 
+Pot Declarada 
+Repite Anterior 
+Variar potencia (Subir) por requerimiento local 
+CAR01 
+COMPLETO CARGA 
+Pot Declarada 
+Repite Anterior 
+Informar que se esta generando a la maxima potencia disponible 
+DIS01 
+DISPONIBLE 
+Pot Declarada 
+Lib 
+Informar disponibiliad del parque (No esta generando) 
+E/S07 
+E/S POR DESPACHO 
+Pot Declarada 
+=== 
+E/S por pedido de CAMMESA 
+E/S02 
+E/S REQ. POR GENERADOR 
+Pot Declarada 
+GEN 
+E/S para pruebas/ensayos NO programados 
+E/S15 
+E/S FORZADA POR ENSAYO 
+Pot Declarada 
+GEN 
+E/S para pruebas/ensayos programados 
+F/S01 
+F/S POR DESPACHO 
+Pot Declarada 
+Lib 
+F/S por pedido de CAMMESA 
+F/S02 
+F/S POR NO REQUERIRSE 
+Pot Declarada 
+Lib 
+F/S por no estar solicitado por ningun Agente MEM 
+F/S03 
+F/S PARA MANTENIMIENTO 
+0 (cero) 
+IND 
+F/S para mantenimiento, quedando indisponible 
+F/S05 
+F/S INTEMPESTIVA 
+0 (cero) 
+IND 
+F/S en forma intempestiva, quedando indisponible 
+F/S08 
+F/S CONTROLADA INDISP. 
+0 (cero) 
+IND 
+F/S en forma no intempestiva, quedando indisponible 
+F/S10 
+F/S IND. POR EL DISTRIB 
+0 (cero) 
+IND 
+F/S por una limitacion del sistema de distribucion 
+F/S12 
+F/S POR TRANSMISION 
+0 (cero) 
+IND 
+F/S por una limitacion del sistema de transporte 
+F/S13 
+F/S POR ACTUACION DAG 
+Pot Declarada 
+Lib 
+F/S por actuacion de DAG, quedando disponibles 
+IND01 
+INDISPONIBLE 
+0 (cero) 
+IND 
+Informar indisponibilidad total del parque, por culpa del generador 
+IND03 
+INDISP. POR TRANSMISION 
+0 (cero) 
+IND 
+Informar indisponibilidad total del parque, por culpa del transportista/distribuidor 
+LIM01 
+LIMIT. INTERNA (CAMBIO) 
+Pot Declarada 
+Repite Anterior 
+Parque parcialmente indisponible, por culpa del generador 
+LIM02 
+LIMIT. POR TRANSMISION 
+Pot Declarada 
+Repite Anterior 
+Parque parcialmente indisponible, por culpa del transportista/distribuidor 
+LIM03 
+LIMITACION LIBERADA A: 
+Pot Declarada 
+Repite Anterior 
+Parque parcialmente indisponible, informar una variacion en la potencia disponible
+
+--- Página 10 ---
+PR-OPE-04 
+Novedades y Estados Operativos PPO 
+ 
+7 
+PR-OPE-04 
+8 
+Rev. 00 
+9 
+Documento Uso Interno 
+10 
+ 
+5.6 EJEMPLOS DE APLICACION 
+DIA SOLEADO - GENERACION ININTERRUMPIDA POR DESPACHO 
+En un dia permanentemente soleado, sin pedidos adicionales por parte del CCA o del COC, sin 
+mantenimientos ni limitaciones internas o externas y sin perturbaciones de ningun tipo, el PS deberia 
+enviar unicamente dos novedades. Suponiendo el siguiente ejemplo: 
+ 
+Fecha 
+Hora 
+Codigo 
+Novedad 
+Hora Op 
+Enviar antes de: 
+01/01/2019 
+06:53 
+E/S07 Entrada en Servicio por Despacho 
+07 
+07:10 
+01/01/2019 
+19:51 
+F/S01 Salida de Servicio por Despacho 
+20 
+20:10 
+ 
+DIA NUBLADO – GENERACION ININTERRUMPIDA POR DESPACHO 
+Partiendo del mismo caso anterior, se agrega una fuerte variacion de la nubosidad. Notar que 
+las unicas entradas y salidas de servicio del parque por disponibilidad de recurso solar, son la primera 
+y la ultima del dia. Las intermitencias durante un mismo dia no deben ser informadas.  
+ 
+Fecha 
+Hora 
+Codigo 
+Novedad 
+Hora Op 
+Enviar antes de: 
+01/01/2019 
+06:53 
+E/S07 Entrada en Servicio por Despacho 
+07 
+07:10 
+01/01/2019 
+19:51 
+F/S01 Salida de Servicio por Despacho 
+20 
+20:10 
+ 
+MANTENIMIENTOS, LIMITACIONES E INDISPONIBILIDADES 
+Los mantenimientos pueden ser internos o externos, programados o forzados y a su vez pueden 
+dejar el parque parcial o completamente indisponible: 
+Disponibilidad 
+Origen 
+Novedad 
+Tipo 
+Limitada 
+Externo 
+LIM02 
+Programado 
+Limitada 
+Externo 
+LIM02 
+Forzado 
+Limitada 
+Interno 
+LIM01 
+Programado 
+Limitada 
+Interno 
+LIM01 
+Forzado 
+100% Indisponible 
+Interno 
+IND01 
+Programado 
+100% Indisponible 
+Interno 
+IND01 
+Forzado 
+100% Indisponible 
+Externo 
+IND03 
+Programado 
+100% Indisponible 
+Externo 
+IND03 
+Forzado 
+ 
+Observar el siguiente ejemplo, en el cual se explicitan las diferencias entre las limitaciones 
+internas/externas y programadas/forzadas: 
+01/01/2019 06:53hs: La potencia de salida del parque deja de valer 0MWh (Cero Mega Watt hora) y aumenta. 
+01/01/2019 19:51hs: La potencia de salida del parque es igual o menor que 0,0MWh (cero Mega Watt hora). 
+01/01/2019 06:53hs: La potencia de salida del parque deja de valer 0MWh (Cero Mega Watt hora) y aumenta. 
+01/01/2019 07:25hs: La potencia de salida del parque es igual o menor que 0,0MWh (cero Mega Watt hora). 
+01/01/2019 08:13hs: La potencia de salida del parque deja de valer 0MWh (Cero Mega Watt hora) y aumenta 
+01/01/2019 17:24hs: La potencia de salida del parque baja drasticamente hasta un 10% de la pot maxima 
+01/01/2019 19:51hs: La potencia de salida del parque es igual o menor que 0,0MWh (cero Mega Watt hora).
+
+--- Página 11 ---
+PR-OPE-04 
+Novedades y Estados Operativos PPO 
+ 
+7 
+PR-OPE-04 
+8 
+Rev. 00 
+9 
+Documento Uso Interno 
+11 
+ 
+ 
+Fecha 
+Hora 
+Codigo 
+Novedad 
+Hora Op 
+Enviar antes de: 
+01/01/2019 
+06:00 
+LIM01 
+Limitacion Interna 
+07 
+07:00 
+01/01/2019 
+06:53 
+E/S07 
+Entrada en Servicio por Despacho 
+07 
+07:10 
+01/01/2019 
+07:40 
+LIM03* 
+Parque Generando y 100% disp 
+08 
+08:00 
+01/01/2019 
+08:10 
+LIM01 
+Limitacion Interna 
+09 
+09:00 
+01/01/2019 
+08:25 
+LIM03* 
+Parque Generando y 100% disp 
+09 
+09:00 
+01/01/2019 
+08:59 
+LIM02 
+Limitacion externa 
+09 
+09:10 
+01/01/2019 
+09:50 
+LIM03* 
+Parque Generando y 100% disp 
+10 
+10:10 
+01/01/2019 
+11:03 
+LIM02 
+Limitacion externa 
+12 
+12:00 
+01/01/2019 
+11:18 
+LIM03* 
+Parque Generando y 100% disp 
+12 
+12:00 
+01/01/2019 
+19:51 
+F/S01 
+Salida de Servicio por Despacho 
+20 
+20:10 
+* En el campo “Comentario”, incluir “LIMITACION LIBERADA” 
+Nota: Recordar que en el campo INFO1 siempre habra que colocar la POTENCIA DISPONIBLE. 
+La diferencia entre las LIMITACIONES y las INDISPONIBILIDADES es que en el ultimo caso el 
+parque esta completamente fuera de servicio e imposibilitado de aportar energia a la red. En ese caso, 
+primero se debe enviar el F/S correspondiente, luego un IND01 o IND03 segun corresponda con un 
+minuto de diferencia, luego un DIS01 cuando se restablece la posibilidad de generar y por ultimo una 
+entrada en servicio (E/S) en el momento que el parque comienza a generar. Ejemplo: 
+ 
+Fecha 
+Hora 
+Codigo 
+Novedad 
+Hora Op 
+Enviar antes de: 
+01/01/2019 
+06:53 
+E/S07 
+Entrada en Servicio por Despacho 
+07 
+07:10 
+01/01/2019 
+08:10 
+F/S05 
+Salida de servicio intempestiva 
+09 
+09:00 
+01/01/2019 
+08:11* IND01 
+Indisponibilidad Interna 
+09 
+08:00 
+01/01/2019 
+09:25 
+DIS01 
+Parque 100% Disponible 
+10 
+10:00 
+01/01/2019 
+09:45 
+E/S07 
+Entrada en Servicio por Despacho 
+10 
+10:00 
+01/01/2019 
+14:00 
+F/S05 
+Salida de servicio intempestiva 
+15 
+15:00 
+01/01/2019 
+14:01* IND03 
+Indisponibilidad Externa 
+15 
+15:00 
+01/01/2019 
+14:38 
+DIS01 
+Parque 100% Disponible 
+15 
+15:00 
+01/01/2019 
+15:03 
+E/S07 
+Entrada en Servicio por Despacho 
+16 
+16:00 
+ 
+ 
+ 
+ 
+ 
+ 
+* Luego de una salida de servicio por intempestiva (F/S05) siempre hay que mandar luego un IND01 o IND03 (segun 
+corresponda), indicando por culpa de quien se genero la salida intempestiva. 
+01/01/2019 06:00hs: Mantenimiento de algunos inversores, programado previamente con CAMMESA 
+01/01/2019 06:53hs: La potencia de salida del parque deja de valer 0MWh (Cero Mega Watt hora) y aumenta. 
+01/01/2019 07:40hs: Mantenimiento finalizado, parque generando OK. 
+01/01/2019 08:10hs: Los inversores recientemente reparados, salen de servicio. 
+01/01/2019 08:25hs: Se recuperan los inversores en falla, el parque sigue generando OK 
+01/01/2019 08:59hs: El CCA informa que se debe disminuir la potencia, por mantenimientos programados. 
+01/01/2019 09:50hs: CCA libera limitacion y el parque genera al 100% de potencia, sin problemas. 
+01/01/2019 11:03hs: El CCA informa que un transformador salio de servicio, y el parque debe bajar carga. 
+01/01/2019 11:18hs: CCA libera limitacion y el parque genera al 100% de potencia, sin problemas. 
+01/01/2019 19:51hs: La potencia de salida del parque es igual o menor que 0,0MWh (cero Mega Watt hora). 
+01/01/2019 06:53hs: La potencia de salida del parque deja de valer 0MWh (Cero Mega Watt hora) y aumenta. 
+01/01/2019 08:10hs: Problema con la PPC del parque. El mismo sale de servicio. 
+01/01/2019 09:25hs: El parque se recupera y sigue generando OK. 
+01/01/2019 09:45hs: La potencia de salida del parque deja de valer 0MWh (Cero Mega Watt hora) y aumenta. 
+01/01/2019 14:00hs: La linea del CCA sale de servicio, desenganchando el parque. 
+01/01/2019 14:38hs: El transportista restablece la linea, se energiza el parque nuevamente. 
+01/01/2019 15:03hs: La potencia de salida del parque deja de valer 0MWh (Cero Mega Watt hora) y aumenta.
+
+--- Página 12 ---
+PR-OPE-04 
+Novedades y Estados Operativos PPO 
+ 
+7 
+PR-OPE-04 
+8 
+Rev. 00 
+9 
+Documento Uso Interno 
+12 
+ 
+5.7 CONSIDERACIONES FINALES 
+Es importante recordar en todo momento, que las novedades operativas se eligen en funcion de 
+QUIEN IMPARTE UNA ORDEN o bien QUIEN REALIZA UNA SOLICITUD. 
+Por ejemplo: si un PS le avisa al CCA que el parque se desenganchara para realizar tareas de 
+mantenimiento en forma segura, no tendria sentido enviar una novedad operativa IND03 (Indisponible 
+por causas externas). Si bien el parque no tiene conexion en la red, la indisponibilidad fue generada 
+por el personal del parque y no por el CCA, entonces corresponderia una novedad IND01. 
+6 REGISTROS 
+⎯  
+ 
+7 REFERENCIAS / DOCUMENTOS RELACIONADOS 
+⎯ Solapa “Nuevas Novedades Ordenes y Textos” de los SOTR de cada PS y del COG 
+⎯ Anexo 8 de LOS PROCEDIMIENTOS de CAMMESA 
+⎯ Listado general de novedades operativas provisto por sotr@cammesa.com.ar 
+ 
+8 CONTROL DE CAMBIOS 
+Fecha 
+Seccion/Pagina 
+Descripcion de la modificacion 
+22/01/2019 
+ 
+Version inicial
+

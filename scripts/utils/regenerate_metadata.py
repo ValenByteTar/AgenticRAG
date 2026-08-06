@@ -13,49 +13,19 @@ SCRIPT_DIR = Path(__file__).parent
 os.chdir(str(SCRIPT_DIR))
 sys.path.insert(0, str(SCRIPT_DIR / 'src'))
 
-from vector_store import VectorStore
 from utils import get_config, get_console
-from doc_cards import _guess_role_by_name, _extract_basic_entities, _infer_attributes_presence, _estimate_centrality, save_doc_roles
+from doc_cards import build_doc_cards, save_doc_roles
 
 console = get_console()
 
 
-def build_doccards_fast(vs, sample_chars=800):
-    """DocCards heuristicas rapidas: solo carga metadatas, no documentos completos."""
-    console.print("[bold cyan]Construyendo DocCards (heuristicas rapidas)...[/bold cyan]")
-
-    data = vs.collection.get(include=['metadatas'])
-    metadatas = data.get('metadatas', [])
-
-    sources_seen = {}
-    for i, md in enumerate(metadatas):
-        src = (md or {}).get('source', 'Unknown')
-        if src in sources_seen:
-            continue
-        if (i + 1) % 500 == 0:
-            console.print(f"  Procesados {i+1}/{len(metadatas)} chunks, {len(sources_seen)} docs unicos...")
-
-        name = Path(src).name
-        role = _guess_role_by_name(name)
-        summary = name  # sin acceso al texto completo, usamos nombre
-        entities_idx = []
-        attributes_idx = []
-        centrality = _estimate_centrality(src, name)
-        quality = 0.75
-
-        sources_seen[src] = {
-            'name': name,
-            'path': src,
-            'role': role,
-            'summary': summary,
-            'entities_index': entities_idx,
-            'attributes_index': attributes_idx,
-            'centrality': float(centrality),
-            'quality': float(quality),
-        }
-
-    console.print(f"[green]OK: {len(sources_seen)} DocCards generadas heuristicamente[/green]")
-    return {'docs': sources_seen}
+def build_doccards_fast():
+    """DocCards heuristicas rapidas desde el corpus (sin Chroma)."""
+    console.print("[bold cyan]Construyendo DocCards (heuristicas desde corpus)...[/bold cyan]")
+    doc_roles = build_doc_cards()
+    n = len(doc_roles.get("docs", {}))
+    console.print(f"[green]OK: {n} DocCards generadas heuristicamente[/green]")
+    return doc_roles
 
 
 def build_conceptual_map_fresh(vs):
@@ -97,20 +67,22 @@ def main():
     console.print("[bold cyan]  REGENERACION DE DOCCARDS Y MAPA CONCEPTUAL [/bold cyan]")
     console.print("[bold cyan]============================================[/bold cyan]\n")
 
-    cfg = get_config(use_cache=False)
-    db_path = cfg['paths'].get('vectordb_dir_bge', 'chroma_bge_m3')
-    collection_name = cfg['vectordb'].get('collection_name_bge', 'crom_protocols_bge_m3')
-
-    vs = VectorStore(db_path=db_path, collection_name=collection_name)
-    console.print(f"[dim]ChromaDB: {db_path} / {collection_name} ({vs.collection.count()} chunks)[/dim]\n")
-
-    # 1) DocCards
-    doc_roles = build_doccards_fast(vs)
+    # 1) DocCards (from corpus, no Chroma needed)
+    doc_roles = build_doccards_fast()
     save_doc_roles(doc_roles)
     console.print(f"[green]DocCards guardadas en data/doc_roles.json[/green]\n")
 
-    # 2) Mapa Conceptual
-    build_conceptual_map_fresh(vs)
+    # 2) Mapa Conceptual (still uses Chroma for document list)
+    try:
+        from vector_store import VectorStore
+        cfg = get_config(use_cache=False)
+        db_path = cfg['paths'].get('vectordb_dir_bge', 'chroma_bge_m3')
+        collection_name = cfg['vectordb'].get('collection_name_bge', 'crom_protocols_bge_m3')
+        vs = VectorStore(db_path=db_path, collection_name=collection_name)
+        console.print(f"[dim]ChromaDB: {db_path} / {collection_name} ({vs.collection.count()} chunks)[/dim]\n")
+        build_conceptual_map_fresh(vs)
+    except Exception as e:
+        console.print(f"[yellow]Mapa conceptual omitido (Chroma no disponible): {e}[/yellow]")
 
     console.print(f"\n[bold green]REGENERACION COMPLETA.[/bold green]")
 

@@ -1,0 +1,2146 @@
+=== Excel Formulas in Single Document.pdf ===
+
+--- Página 1 ---
+EXCEL Formulas Bible
+Excel 2013 / 2016
+
+--- Página 2 ---
+Table of 
+Table of 
+Table of 
+Table of Contents
+Contents
+Contents
+Contents 
+ 
+1. SUM of Digits when cell Contains all Numbers ...................................................................................... 1 
+2. SUM of Digits when cell Contains Numbers and non Numbers both .......................................... 1 
+3. A List is Unique or Not (Whether it has duplicates) ........................................................................... 1 
+4. Count No. of Unique Values ............................................................................................................................. 1 
+5. Count No. of Unique Values Conditionally ............................................................................................... 1 
+6. Add Month to or Subtract Month from a Given Date .......................................................................... 2 
+7. Add Year to or Subtract Year from a Given Date ................................................................................... 2 
+8. Convert a Number to a Month Name .......................................................................................................... 3 
+9. Converting Date to a Calendar Quarter ..................................................................................................... 3 
+10. 
+Converting Date to a Indian Financial Year Quarter ...................................................................... 3 
+11. 
+Calculate Age from Given Birthday ......................................................................................................... 4 
+12. 
+Number to Date Format Conversion ...................................................................................................... 4 
+13. 
+Number to Time Format Conversion ..................................................................................................... 4 
+14. 
+Count Cells Starting (or Ending) with a particular String ............................................................ 4 
+15. 
+Count No. of Cells Having Numbers Only ............................................................................................. 5 
+16. 
+Count No. of Cells which are containing only Characters ............................................................ 5 
+17. 
+Number of Characters in a String without considering blanks ................................................. 5 
+18. 
+Number of times a character appears in a string ............................................................................. 5 
+19. 
+Count Non Numbers in a String ................................................................................................................ 5 
+20. 
+Count Numbers in a String .......................................................................................................................... 6 
+21. 
+Count only Alphabets in a String .............................................................................................................. 6 
+22. 
+Most Frequently Occurring Value in a Range .................................................................................... 6 
+23. 
+COUNTIF on Filtered List ............................................................................................................................. 6 
+24. 
+SUMIF on Filtered List ................................................................................................................................... 7 
+25. 
+Extract First Name from Full Name ........................................................................................................ 7 
+26. 
+Extract Last Name from Full Name ......................................................................................................... 7 
+27. 
+Extract the Initial of Middle Name .......................................................................................................... 7 
+28. 
+Extract Middle Name from Full Name ................................................................................................... 7 
+29. 
+Remove Middle Name in Full Name ....................................................................................................... 7 
+30. 
+Extract Integer and Decimal Portion of a Number .......................................................................... 8 
+31. 
+First Day of the Month for a Given Date ............................................................................................... 8 
+32. 
+How Many Mondays or any other Day of the Week between 2 Dates ................................... 8 
+33. 
+Maximum Times a Particular Entry Appears Consecutively ...................................................... 9 
+34. 
+Find the Next Week of the Day .................................................................................................................. 9 
+35. 
+Find the Previous Week of the Day ...................................................................................................... 10
+
+--- Página 3 ---
+36. 
+Get File Name through Formula ............................................................................................................ 10 
+37. 
+Get Workbook Name through Formula ............................................................................................. 11 
+38. 
+Get Sheet Name through Formula ........................................................................................................ 11 
+39. 
+Get Workbook's Directory from Formula ......................................................................................... 11 
+40. 
+Last Day of the Month for a Given Date ............................................................................................. 11 
+41. 
+Perform Multi Column VLOOKUP ......................................................................................................... 12 
+42. 
+VLOOKUP from Right to Left ................................................................................................................... 13 
+43. 
+Case Sensitive VLOOKUP .......................................................................................................................... 13 
+44. 
+Rank within the Groups ............................................................................................................................. 14 
+45. 
+Remove Alphabets from a String .......................................................................................................... 14 
+46. 
+Remove numbers from string................................................................................................................. 15 
+47. 
+Roman Representation of Numbers .................................................................................................... 15 
+48. 
+Sum Bottom N Values in a Range .......................................................................................................... 15 
+49. 
+Sum Every Nth Row ..................................................................................................................................... 16 
+50. 
+We have AVERAGEIF. What about MEDIANIF and MODEIF? ................................................. 16 
+51. 
+Number of Days in a Month ..................................................................................................................... 17 
+52. 
+How to Know if a Year is a Leap Year ................................................................................................. 17 
+53. 
+Last Working Day of the Month If a Date is Given ........................................................................ 17 
+54. 
+First Working Day of the Month if a Date is Given ....................................................................... 18 
+55. 
+Date for Nth Day of the Year ................................................................................................................... 18 
+56. 
+Calculate Geometric Mean by Ignoring 0 and Negative Values .............................................. 19 
+57. 
+Financial Function - Calculate EMI ....................................................................................................... 19 
+58. 
+Financial Function - Calculate Interest Part of an EMI ............................................................... 20 
+59. 
+Financial Function - Calculate Principal Part of an EMI ............................................................ 22 
+60. 
+Financial Function - Calculate Number of EMIs to Pay Up a Loan ........................................ 23 
+61. 
+Financial Function - Calculate Interest Rate ................................................................................... 24 
+62. 
+Financial Function – Calculate Compounded Interest ................................................................ 25 
+63. 
+Financial Function – Calculate Effective Interest .......................................................................... 26 
+64. 
+Abbreviate Given Names ........................................................................................................................... 27 
+65. 
+Get Column Name for a Column Number .......................................................................................... 28 
+66. 
+Get Column Range for a Column Number ......................................................................................... 29 
+67. 
+Find the nth Largest Number when there are duplicates ......................................................... 29 
+68. 
+Extract Date and Time from Date Timestamp ................................................................................ 30 
+69. 
+Convert a Number into Years and Months ....................................................................................... 30 
+70. 
+COUNTIF for non-contiguous range .................................................................................................... 31 
+71. 
+Count the Number of Words in a Cell / Range ............................................................................... 31 
+72. 
+Numerology Sum of the Digits aka Sum the Digits till the result is a single digit .......... 32 
+73. 
+Generate Sequential Numbers and Repeat them .......................................................................... 32
+
+--- Página 4 ---
+74. 
+Repeat a Number and Increment and Repeat.... ............................................................................ 32 
+75. 
+Generate Non Repeating Random Numbers through Formula .............................................. 33 
+76. 
+Financial Year Formula (e.g. 2015-16 or FY16) ............................................................................ 34 
+77. 
+First Working Day of the Year ................................................................................................................ 34 
+78. 
+Last Working Day of the Year ................................................................................................................. 34 
+79. 
+Convert from Excel Date (Gregorian Date) to Julian Date ........................................................ 35 
+80. 
+Convert from Julian Dates to Excel (Gregorian) Dates ............................................................... 35 
+81. 
+Extract User Name from an E Mail ID ................................................................................................. 36 
+82. 
+Extract Domain Name from an E Mail ID .......................................................................................... 36 
+83. 
+Location of First Number in a String ................................................................................................... 36 
+84. 
+Location of Last Number in a String .................................................................................................... 36 
+85. 
+Find the Value of First Non Blank Cell in a Range......................................................................... 36 
+86. 
+Find First Numeric Value in a Range ................................................................................................... 36 
+87. 
+Find Last Numeric Value in a Range .................................................................................................... 36 
+88. 
+Find First non Numeric Value in a Range ......................................................................................... 37 
+89. 
+Find Last non Numeric Value in a Range .......................................................................................... 37 
+90. 
+Find Last Used Value in a Range ........................................................................................................... 37 
+91. 
+MAXIF ................................................................................................................................................................. 37 
+92. 
+MINIF .................................................................................................................................................................. 37 
+93. 
+Generate a Unique List out of Duplicate Entries ........................................................................... 38
+
+--- Página 5 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 1 of 38
+ 
+ 
+1. SUM of Digits when cell Contains all Numbers 
+ 
+If you cell contains only numbers like A1:= 7654045, then following formula can be used to 
+find sum of digits 
+ 
+=SUMPRODUCT(--MID(A1,ROW(INDIRECT("1:"&LEN(A1))),1)) 
+ 
+2. SUM of Digits when cell Contains Numbers and non 
+Numbers both 
+ 
+If you cell contains non numbers apart from numbers like A1:= 76$5a4b045%d, then 
+following formula can be used to find sum of digits 
+ 
+=SUMPRODUCT((LEN(A1)-LEN(SUBSTITUTE(A1,ROW(1:9),"")))*ROW(1:9)) 
+ 
+The above formula can be used even if contains all numbers as well. 
+ 
+3. A List is Unique or Not (Whether it has duplicates) 
+ 
+Assuming, your list is in A1 to A1000. Use following formula to know if list is unique. 
+ 
+=MAX(FREQUENCY(A1:A1000,A1:A1000)) 
+ 
+=MAX(INDEX(COUNTIF(A1:A1000,A1:A1000),,)) 
+ 
+If answer is 1, then it is Unique. If answer is more than 1, it is not unique. 
+ 
+4. Count No. of Unique Values 
+ 
+Use following formula to count no. of unique values - 
+ 
+=SUMPRODUCT((A1:A100<>"")/COUNTIF(A1:A100,A1:A100&"")) 
+ 
+5. Count No. of Unique Values Conditionally 
+ 
+If you have data like below and you want to find the unique count for Region = “A”, then you 
+can use below Array formula – 
+ 
+=SUM(IF(FREQUENCY(IF(A2:A20<>"",IF(A2:A20="A",MATCH(B2:B20,B2:B20,0))),ROW(A
+2:A20)-ROW(A2)+1),1)) 
+ 
+If you have more number of conditions, the same can be built after A2:A20 = “A”. 
+ 
+Note - Array Formula is not entered by pressing ENTER after entering your formula but by 
+pressing CTRL+SHIFT+ENTER. If you are copying and pasting this formula, take F2 after 
+pasting and CTRL+SHIFT+ENTER. This will put { } brackets around the formula which you 
+can see in Formula Bar. If you edit again, you will have to do CTRL+SHIFT+ENTER again. 
+Don't put { } manually.
+
+--- Página 6 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 2 of 38
+ 
+ 
+ 
+ 
+ 
+6. Add Month to or Subtract Month from a Given Date 
+ 
+Very often, you will have business problems where you have to add or subtract month 
+from a given date. One scenario is calculation for EMI Date. 
+ 
+Say, you have a date of 10/22/14 (MM/DD/YY) in A1 and you want to add number of 
+months which is contained in Cell B1. 
+ 
+The formula in this case would be 
+ 
+=EDATE(A1,B1) 
+ 
+[Secondary formula =DATE(YEAR(A1),MONTH(A1)+B1,DAY(A1)) ] 
+ 
+Now, you want to subtract month which is contained in Cell B1. 
+ 
+=EDATE(A1,-B1) 
+ 
+[Secondary formula =DATE(YEAR(A1),MONTH(A1)-B1,DAY(A1)) ] 
+ 
+7. Add Year to or Subtract Year from a Given Date 
+ 
+In many business problems, you might encounter situations where you will need to add or 
+subtract years from a given date. 
+ 
+Let's say A1 contains Date and B1 contains numbers of years. 
+ 
+If you want to add Years to a given date, formulas would be - 
+ 
+=EDATE(A1,12*B1) 
+ 
+=DATE(YEAR(A1)+B1,MONTH(A1),DAY(A1))
+
+--- Página 7 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 3 of 38
+ 
+ 
+ 
+If you want to subtract Years from a given date, formulas would be - 
+ 
+=EDATE(A1,-12*B1) 
+ 
+=DATE(YEAR(A1)-B1,MONTH(A1),DAY(A1)) 
+ 
+8. Convert a Number to a Month Name 
+ 
+Use below formula to generate named 3 lettered month like Jan, Feb....Dec 
+ 
+=TEXT(A1*30,"mmm") 
+ 
+Replace "mmm" with "mmmm" to generate full name of the month like January, 
+February....December in any of the formulas in this post. 
+ 
+9. Converting Date to a Calendar Quarter 
+ 
+Assuming date is in Cell A1. You want to convert it into a quarter (1, 2, 3 & 4). Jan to Mar is 
+1, Apr to Jun is 2, Jul to Sep is 3 and Oct to Dec is 4. 
+ 
+=CEILING(MONTH(A1)/3,1) 
+ 
+OR 
+ 
+= ROUNDUP(MONTH(A1)/3,0) 
+ 
+OR 
+ 
+=CHOOSE(MONTH(A1),1,1,1,2,2,2,3,3,3, 4,4,4) 
+ 
+10. Converting Date to a Indian Financial Year Quarter 
+ 
+Assuming date is in Cell A1. You want to convert it into a Indian Financial Year Quarter. Jan 
+to Mar is 4, Apr to Jun is 1, Jul to Sep is 2 and Oct to Dec is 3. 
+ 
+=CEILING(MONTH(A1)/3,1)+IF(MONTH(A1)<=3,3,-1) 
+ 
+OR 
+ 
+=ROUNDUP(MONTH(A1)/3,0)+IF(MONTH(A1)<=3,3,-1) 
+ 
+OR 
+ 
+=CHOOSE(MONTH(A1),4,4,4,1,1,1,2,2,2,3,3,3)
+
+--- Página 8 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 4 of 38
+ 
+ 
+11. Calculate Age from Given Birthday 
+ 
+=DATEDIF(A1,TODAY(),"y")&" Years "&DATEDIF(A1,TODAY(),"ym")&" Months 
+"&DATEDIF(A1,TODAY(),"md")&" Days" 
+ 
+12. Number to Date Format Conversion 
+ 
+If you have numbers like 010216 and you want to convert this to date format, then the 
+following formula can be used 
+ 
+=--TEXT(A1,"00\/00\/00") for 2 digits year 
+ 
+Note – Minimum 5 digits are needed for above formula to work 
+ 
+If you have numbers like 01022016 and you want to convert this to date format, then the 
+following formula can be used 
+ 
+=--TEXT(A1,"00\/00\/0000") for 4 digits year  
+ 
+Note – Minimum 7 digits are needed for above formula to work 
+ 
+13. Number to Time Format Conversion 
+ 
+If you have numbers like 1215 and you want to convert this to hh:mm format, then the 
+following formula can be used 
+ 
+=--TEXT(A1,"00\:00") 
+ 
+Note – Minimum 3 digits are needed for above formula to work 
+ 
+To convert to hh:mm:ss format 
+ 
+=--TEXT(A1,"00\:00\:00") 
+ 
+Note – Minimum 5 digits are needed for above formula to work 
+ 
+14. Count Cells Starting (or Ending) with a particular 
+String 
+ 
+1. Say you want to count all cells starting with C 
+ 
+=COUNTIF(A1:A10,"c*") 
+ 
+c* is case insensitive. Hence, it will count cells starting with both c or C. 
+ 
+Suppose you want to find all cells starting with Excel. 
+ 
+=COUNTIF(A1:A10,"excel*")
+
+--- Página 9 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 5 of 38
+ 
+ 
+2. For ending 
+ 
+=COUNTIF(A1:A10,"*c") 
+ 
+c* is case insensitive. Hence, it will count cells starting with both c or C. 
+ 
+Suppose you want to find all cells starting with Excel. 
+ 
+=COUNTIF(A1:A10,"*excel") 
+ 
+15. Count No. of Cells Having Numbers Only 
+ 
+COUNT function counts only those cells which are having numbers. 
+ 
+Assuming your range is A1:A10, use following formula 
+ 
+=COUNT(A1:A10) 
+ 
+16. Count No. of Cells which are containing only 
+Characters 
+ 
+Hence, if your cell is having a number 2.23, it will not be counted as it is a number. 
+ 
+Use below formula considering your range is A1:A10 
+ 
+=COUNTIF(A1:A10,"*") 
+ 
+17. Number of Characters in a String without considering 
+blanks 
+ 
+Say, you have a string like Vijay A. Verma and I need to know how many characters it has. 
+In this case, it has 12 including decimal and leaving blanks aside. 
+ 
+Use below formula for the same - 
+ 
+=LEN(SUBSTITUTE(A1," ","")) 
+ 
+18. Number of times a character appears in a string 
+ 
+Suppose you want to count the number of times, character “a” appears in a string 
+ 
+=LEN(A1)-LEN(SUBSTITUTE(LOWER(A1),"a","")) 
+ 
+19. Count Non Numbers in a String 
+ 
+Suppose you have a string "abc123def45cd" and you want to count non numbers in this. 
+ 
+If your string is in A1, use following formula in A1
+
+--- Página 10 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 6 of 38
+ 
+ 
+=IF(LEN(TRIM(A1))=0,0,SUMPRODUCT(--NOT(ISNUMBER((--
+MID(A1,ROW(INDIRECT("1:"&LEN(A1))),1)))))) 
+ 
+20. Count Numbers in a String 
+ 
+Suppose you have a string "abc123def43cd" and you want to count numbers in this. 
+ 
+If your string is in A1, use following formula - 
+ 
+=SUMPRODUCT(LEN(A1)-LEN(SUBSTITUTE(A1,ROW(1:10)-1,""))) 
+ 
+OR 
+ 
+=SUMPRODUCT(--ISNUMBER((--MID(A1,ROW(INDIRECT("1:"&LEN(A1))),1)))) 
+ 
+21. Count only Alphabets in a String 
+ 
+Suppose you have a string "Ab?gh123def%h*" and you want to count only Aphabets. 
+ 
+Suppose your string is in A1, put following formula for this. 
+ 
+=SUMPRODUCT(LEN(A1)- 
+LEN(SUBSTITUTE(UPPER(A1),CHAR(ROW(INDIRECT("65:90"))),""))) 
+ 
+OR 
+ 
+=SUMPRODUCT(--(ABS(77.5-
+CODE(MID(UPPER(A1),ROW(INDIRECT("A1:A"&LEN(A1))),1)))<13)) 
+ 
+22. Most Frequently Occurring Value in a Range 
+ 
+Assuming, your range is A1:A10, enter the below formula as Array Formula i.e. not by 
+pressing ENTER after entering your formula but by pressing CTRL+SHIFT+ENTER. This will 
+put { } brackets around the formula which you can see in Formula Bar. If you edit again, you 
+will have to do CTRL+SHIFT+ENTER again. Don't put { } manually. 
+ 
+=INDEX(A1:A10,MATCH(MAX(COUNTIF(A1:A10,A1:A10)),COUNTIF(A1:A10,A1:A10),0)) 
+ 
+The non-Array version of above formula 
+ 
+=INDEX(A1:A10,MATCH(MAX(INDEX(COUNTIF(A1:A10,A1:A10),,)),INDEX(COUNTIF(A1:
+A10,A1:A10),,),0)) 
+ 
+23. COUNTIF on Filtered List 
+ 
+You can use SUBTOTAL to perform COUNT on a filtered list but COUNTIF can not be done 
+on a filtered list. Below formula can be used to perform COUNTIF on a filtered list 
+ 
+=SUMPRODUCT(SUBTOTAL(3,OFFSET(B2,ROW(B2:B20)-ROW(B2),))*(B2:B20>14))
+
+--- Página 11 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 7 of 38
+ 
+ 
+ 
+Here B2:B20>14 is like a criterion in COUNTIF (=COUNTIF(B2:B20,">14")) 
+ 
+24. SUMIF on Filtered List 
+ 
+You can use SUBTOTAL to perform SUM on a filtered list but SUMIF can not be done on a 
+filtered list. Below formula can be used to perform SUMIF on a filtered list 
+ 
+=SUMPRODUCT(SUBTOTAL(9,OFFSET(B2,ROW(B2:B20)-ROW(B2),))*(B2:B20>14)) 
+ 
+Here B2:B20>14 is like a criterion in SUMIF. 
+ 
+25. Extract First Name from Full Name 
+ 
+=LEFT(A1,FIND(" ",A1&" ")-1) 
+ 
+26. Extract Last Name from Full Name 
+ 
+=TRIM(RIGHT(SUBSTITUTE(A1," ",REPT(" ",LEN(A1))),LEN(A1))) 
+ 
+27. Extract the Initial of Middle Name 
+ 
+Suppose, you have a name John Doe Smith and you want to show D as middle initial. 
+Assuming, your data is in A1, you may use following formula 
+ 
+=IF(COUNTIF(A1,"* * *"),MID(A1,FIND(" ",A1)+1,1),"") 
+ 
+If name is of 2 or 1 words, the result will be blank. This works on 3 words name only as 
+middle can be decided only for 3 words name. 
+ 
+28. Extract Middle Name from Full Name 
+ 
+=IF(COUNTIF(A1,"* * *"),MID(A1,FIND(" ",A1)+1,FIND(" ",A1,FIND(" ",A1)+1)-(FIND(" 
+",A1)+1)),"") 
+ 
+=IF(COUNTIF(A1,"* * *"),TRIM(MID(SUBSTITUTE(A1," ",REPT(" ",LEN(A1)),2),FIND(" 
+",A1)+1,LEN(A1))),"") 
+ 
+=IF(COUNTIF(A1,"* * *"),LEFT(REPLACE(A1,1,FIND(" ",A1),""),FIND(" 
+",REPLACE(A1,1,FIND(" ",A1),""))-1)) 
+ 
+29. Remove Middle Name in Full Name 
+ 
+=IF(COUNTIF(A1,"* * *"),LEFT(A1,FIND(" ",A1&" "))&TRIM(RIGHT(SUBSTITUTE(A1," 
+",REPT(" ",LEN(A1))),LEN(A1))),"") 
+ 
+=IF(COUNTIF(A1,"* * *"),REPLACE(A1,FIND(" ",A1)+1,FIND(" ",A1,FIND(" ",A1)+1)-FIND(" 
+",A1),""),"")
+
+--- Página 12 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 8 of 38
+ 
+ 
+ 
+30. Extract Integer and Decimal Portion of a Number 
+ 
+To extract Integer portion, one of the below can be used - 
+ 
+=INT(A1) 
+ 
+=TRUNC(A1) 
+ 
+Positive value in A1 - If A1 contains 84.65, then answer would be 84. 
+Negative value in A1 - If A1 contains -24.39, then answer would be -24. 
+If you want only +ve value whether value in A1 is -ve or +ve, the formula can have many 
+variants. 
+ 
+=INT(A1)*SIGN(A1)  OR =TRUNC(A1)*SIGN(A1) 
+ 
+=INT(ABS(A1)) OR =TRUNC(ABS(A1)) 
+ 
+=ABS(INT(A1)) OR = ABS(TRUNC(A1)) 
+ 
+To extract Decimal portion - 
+ 
+=MOD(ABS(A1),1) 
+ 
+=ABS(A1)-INT(ABS(A1)) 
+ 
+Positive value in A1 - If A1 contains 84.65, then answer would be 0.65. 
+Negative value in A1 - If A1 contains -24.39, then answer would be 0.39. 
+ 
+31. First Day of the Month for a Given Date 
+ 
+Suppose you have been given a date say 10/22/14 (MM/DD/YY) and you want to calculate 
+the first day of the Current Month. Hence, you want to achieve a result of 10/1/2014 
+(MM/DD/YY). 
+ 
+The formulas to be used - 
+ 
+=DATE(YEAR(A1),MONTH(A1),1) 
+ 
+=A1-DAY(A1)+1 
+ 
+=EOMONTH(A1,-1)+1 
+ 
+32. How Many Mondays or any other Day of the Week 
+between 2 Dates 
+ 
+Suppose A1 = 23-Jan-16 and A2 = 10-Nov-16. To find number of Mondays between these 
+two dates
+
+--- Página 13 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 9 of 38
+ 
+ 
+=SUMPRODUCT(--(TEXT(ROW(INDIRECT(A1&":"&A2)),"ddd")="Mon")) 
+ 
+“Mon” can be replaced with any other day of the week as per need. 
+ 
+33. Maximum 
+Times 
+a 
+Particular 
+Entry 
+Appears 
+Consecutively 
+ 
+Suppose, we want to count maximum times “A” appears consecutively, you may use 
+following Array formula - 
+ 
+=MAX(FREQUENCY(IF(A2:A20="A",ROW(A2:A20)),IF(A2:A20<>"A",ROW(A2:A20)))) 
+ 
+Note - Array Formula is not entered by pressing ENTER after entering your formula but by 
+pressing CTRL+SHIFT+ENTER. If you are copying and pasting this formula, take F2 after 
+pasting and CTRL+SHIFT+ENTER. This will put { } brackets around the formula which you 
+can see in Formula Bar. If you edit again, you will have to do CTRL+SHIFT+ENTER again. 
+Don't put { } manually. 
+ 
+ 
+ 
+34. Find the Next Week of the Day 
+ 
+There are 2 scenarios in this case. For example, if today’s date is 2-Jan-17 (Monday) and I 
+try to find the next Monday, I can get either 2-Jan-17 or 9-Jan-17 as per need. For Tuesday 
+to Sunday, it is not a problem as they come after 2-Jan-17 only. 
+ 
+Case 1 - If the Day falls on the same date, then that very date (Hence, in case of 2-Jan-
+17, next Monday would be 2-Jan-17 only) 
+ 
+Next Mon 
+=CEILING($A$1-2,7)+2 
+Next Tue 
+=CEILING($A$1-3,7)+3 
+Next Wed 
+=CEILING($A$1-4,7)+4
+
+--- Página 14 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 10 of 38
+ 
+ 
+Next Thu 
+=CEILING($A$1-5,7)+5 
+Next Fri 
+=CEILING($A$1-6,7)+6 
+Next Sat 
+=CEILING($A$1-7,7)+7 
+Next Sun 
+=CEILING($A$1-8,7)+8 
+ 
+Case 2 - If the Day falls on the same date, then next date (Hence, in case of 2-Jan-17, next 
+Monday would be 9-Jan-17 only) 
+ 
+Next Mon 
+=CEILING($A$1-1,7)+2 
+Next Tue 
+=CEILING($A$1-2,7)+3 
+Next Wed 
+=CEILING($A$1-3,7)+4 
+Next Thu 
+=CEILING($A$1-4,7)+5 
+Next Fri 
+=CEILING($A$1-5,7)+6 
+Next Sat 
+=CEILING($A$1-6,7)+7 
+Next Sun 
+=CEILING($A$1-7,7)+8 
+ 
+35. Find the Previous Week of the Day 
+ 
+There are 2 scenarios in this case. For example, if today’s date is 2-Jan-17 (Monday) and I 
+try to find the previous Monday, I can get either 2-Jan-17 or 26-Dec-16 as per need. For 
+Tuesday to Sunday, it is not a problem as they come prior to 2-Jan-17 only. 
+ 
+Case 1 - If the Day falls on the same date, then that very date (Hence, in case of 2-Jan-
+17, previous Monday would be 2-Jan-17 only) 
+ 
+Previous Mon 
+=CEILING($A$1-8,7)+2 
+Previous Tue 
+=CEILING($A$1-9,7)+3 
+Previous Wed 
+=CEILING($A$1-10,7)+4 
+Previous Thu 
+=CEILING($A$1-11,7)+5 
+Previous Fri 
+=CEILING($A$1-12,7)+6 
+Previous Sat 
+=CEILING($A$1-13,7)+7 
+Previous Sun 
+=CEILING($A$1-14,7)+8 
+ 
+Case 2 - If the Day falls on the same date, then previous date (Hence, in case of 2-Jan-
+17, previous Monday would be 26-Dec-16 only) 
+ 
+Previous Mon 
+=CEILING($A$1-9,7)+2 
+Previous Tue 
+=CEILING($A$1-10,7)+3 
+Previous Wed 
+=CEILING($A$1-11,7)+4 
+Previous Thu 
+=CEILING($A$1-12,7)+5 
+Previous Fri 
+=CEILING($A$1-13,7)+6 
+Previous Sat 
+=CEILING($A$1-14,7)+7 
+Previous Sun 
+=CEILING($A$1-15,7)+8 
+ 
+36. Get File Name through Formula 
+ 
+Before getting this, make sure that you file has been saved at least once as this formula is 
+dependent upon the file path name which can be pulled out by CELL function only if file has 
+been saved at least once.
+
+--- Página 15 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 11 of 38
+ 
+ 
+ 
+=CELL("filename",$A$1) 
+ 
+37. Get Workbook Name through Formula 
+ 
+Before getting this, make sure that you file has been saved at least once as this formula is 
+dependent upon the file path name which can be pulled out by CELL function only if file has 
+been saved at least once. 
+ 
+=REPLACE(LEFT(CELL("filename",$A$1),FIND("]",CELL("filename",$A$1))-
+1),1,FIND("[",CELL("filename",$A$1)),"") 
+ 
+38. Get Sheet Name through Formula 
+ 
+Before getting this, make sure that you file has been saved at least once as this formula is 
+dependent upon the file path name which can be pulled out by CELL function only if file has 
+been saved at least once. 
+ 
+Use following formula - 
+ 
+=REPLACE(CELL("filename",A1),1,FIND("]",CELL("filename",A1)),"") 
+ 
+Make sure that A1 is used in the formula. If it is not used, it will extract sheet name for the 
+last active sheet which may not be one which we want. 
+ 
+If you want the sheet name for last active sheet only, then formula would become 
+=REPLACE(CELL("filename"),1,FIND("]",CELL("filename")),"") 
+ 
+39.  Get Workbook's Directory from Formula 
+ 
+Before getting this, make sure that you file has been saved at least once as this formula is 
+dependent upon the file path name which can be pulled out by CELL function only if file has 
+been saved at least once. 
+ 
+If your workbook is located in say C:\Excel\MyDocs, the formula to retrieve the directory 
+for this would be 
+ 
+=LEFT(CELL("filename",A1),FIND("[",CELL("filename",A1))-2) 
+ 
+40. Last Day of the Month for a Given Date 
+ 
+Suppose, you are given a date say 10/22/14 (MM/DD/YY) and we want to have the last 
+date of the month for the given date. Hence, you needs an answer of 10/31/14. The formulas 
+to be used in this case - 
+ 
+=EOMONTH(A1,0) 
+ 
+=DATE(YEAR(A1),MONTH(A1)+1,0)
+
+--- Página 16 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 12 of 38
+ 
+ 
+=DATE(YEAR(A1),MONTH(A1)+1,1)-1 
+ 
+41. Perform Multi Column VLOOKUP 
+ 
+You know VLOOKUP, one of the most loved function of Excel. The syntax is 
+VLOOKUP(lookup_value,table_array,col_index_num,range_lookup) 
+ 
+Here look_value can be a single value not multiple values. 
+ 
+Now, you are having a situation where you want to do vlookup with more than 1 values. For 
+the purpose of illustrating the concept, let's say we have 2 values to be looked up. 
+ 
+Below is your lookup table and you want to look up for Emp - H and Gender - F for Age. 
+ 
+ 
+ 
+=INDEX(C2:C12,MATCH(1,INDEX(--((A2:A12=F2)*(B2:B12=G2)*(ROW(A2:A12)-
+ROW(A2)+1)<>0),,),0)) 
+ 
+Concatenation Approach 
+ 
+=INDEX(C2:C10,MATCH(F2&"@@@"&G2,INDEX(A2:A10&"@@@"&B2:B10,,),0)) 
+@@@ can be replaced by any characters which should not be part of those columns. 
+ 
+By concatenation, you can have as many columns as possible. 
+ 
+CAUTION - Result of entire concatenation should not be having length more than 255. 
+Hence, F2&"@@@"&G2 should not have more than 255 characters. 
+ 
+Another alternative is to use below Array formula - 
+ 
+=INDEX(C2:C12,MATCH(1,--NOT(ISLOGICAL(IF(A2:A12=F2,IF(B2:B12=G2,C2:C12)))),0)) 
+ 
+Note - Array Formula is not entered by pressing ENTER after entering your formula but by 
+pressing CTRL+SHIFT+ENTER. If you are copying and pasting this formula, take F2 after 
+pasting and CTRL+SHIFT+ENTER. This will put { } brackets around the formula which you 
+can see in Formula Bar. If you edit again, you will have to do CTRL+SHIFT+ENTER again. 
+Don't put { } manually.
+
+--- Página 17 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 13 of 38
+ 
+ 
+42. VLOOKUP from Right to Left 
+ 
+VLOOKUP always looks up from Left to Right. Hence, in the below table, I can find Date of 
+Birth of Naomi by giving following formula – 
+ 
+=VLOOKUP("Naomi",B:D,3,0) 
+ 
+ 
+ 
+But, If I have to find Emp ID corresponding to Naomi, I can not do it through VLOOKUP 
+formula. To perform VLOOKUP from Right to Left, you will have to use INDEX / MATCH 
+combination. Hence, you will have to use following formula – 
+ 
+=INDEX(A:A,MATCH("Naomi",B:B,0)) 
+ 
+43. Case Sensitive VLOOKUP 
+ 
+Suppose your have data like below table and you want to do a case sensitive VLOOKUP 
+ 
+ 
+ 
+If perform a regular VLOOKUP on SARA, I would get the answer 4300. But in a case sensitive 
+VLOOKUP, answer should be 3200. You may use below formula for Case Sensitive VLOOKUP 
+-
+
+--- Página 18 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 14 of 38
+ 
+ 
+=INDEX(B2:B10,MATCH(TRUE,INDEX(EXACT("SARA",A2:A10),,),FALSE)) 
+ 
+44. Rank within the Groups 
+ 
+Suppose your have data like below table and you want to know rank of students. 
+ 
+ 
+ 
+You will simple put following formula in D2 
+ 
+=RANK(C2,C2:C100) 
+ 
+But what if you are asked to produce rank of students within each school. Hence, every 
+school's rank will start with 1.. 
+ 
+Put following formula in D2 for that case for Descending order ranking. (For ascending 
+order, replace ">" with "<" without quote marks) 
+ 
+=SUMPRODUCT((B$2:B$100=B2)*(C$2:C$100>C2))+1 
+ 
+OR 
+ 
+=COUNTIFS(B$2:B$100,B2,C$2:C$100,">"&C2)+1 
+ 
+ 
+45. Remove Alphabets from a String 
+ 
+If your string is in cell A1, use following formula to remove all alphabets from a string
+
+--- Página 19 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 15 of 38
+ 
+ 
+=SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( 
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( 
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( 
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( 
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( 
+SUBSTITUTE(LOWER(A1),"a",""),"b",""),"c",""),"d",""),"e",""),"f",""), 
+"g",""),"h",""),"i",""),"j",""),"k",""),"l",""),"m",""),"n",""),"o",""), 
+"p",""),"q",""),"r",""),"s",""),"t",""),"u",""),"v",""),"w",""),"x",""),"y",""),"z","") 
+ 
+46. Remove numbers from string 
+ 
+To remove numbers from a string (for example Vij1aY A. V4er7ma8 contains numbers 
+which are not required), we can use nested SUBSTITUTE function to remove numbers. Use 
+below formula assuming string is in A1 cell - 
+ 
+=SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( 
+SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE( 
+A1,1,""),2,""),3,""),4,""),5,""),6,""),7,""),8,""),9,""),0,"") 
+ 
+Note - Since this formula is in multiple lines, hence you will have to copy this in Formula 
+Bar. If you copy this formula in a cell, it will copy this in three rows. 
+ 
+47. Roman Representation of Numbers 
+ 
+Use ROMAN function. 
+ 
+Hence ROMAN(56) will give LVI. 
+ 
+ROMAN works only for numbers 1 to 3999. 
+ 
+48. Sum Bottom N Values in a Range 
+ 
+Suppose you have numbers in range A1:A100 and you want to sum up bottom N values 
+ 
+=SUMPRODUCT(SMALL($A$1:$A$100,ROW(1:10))) 
+ 
+In case, you want to ignore 0 values (and blanks) 
+ 
+=SUMPRODUCT(SMALL(IF($A$1:$A$100<>0,$A$1:$A$100),ROW(1:10))) 
+ 
+Both the above formulas will function only if there are at least N values as per ROW(1:N). 
+Hence, for above formulas, it would work only if there are at least 10 numbers in A1 to 
+A100. 
+ 
+To overcome this limitation - 
+ 
+Enter the below formulas as Array Formula 
+ 
+=SUM(IFERROR(SMALL($A$1:$A$100,ROW(1:10)),0))
+
+--- Página 20 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 16 of 38
+ 
+ 
+=SUM(IFERROR(SMALL(IF($A$1:$A$100<>0,$A$1:$A$100),ROW(1:10)),0)) 
+ 
+Non Array Versions of above formulas (For Excel 2010 and above) 
+ 
+=SUMPRODUCT(AGGREGATE(15,6,$A$1:$A$100,ROW(1:10))) 
+ 
+=SUMPRODUCT(AGGREGATE(15,6,$A$1:$A$100/($A$1:$A$100<>0),ROW(1:10))) 
+ 
+49. Sum Every Nth Row 
+ 
+If your numbers are in range A1:A100, use below formula 
+ 
+=SUMPRODUCT((A1:A100)*(MOD(ROW(A1:A100)-ROW(A1)+1,2)=0)) 
+ 
+Above formula is for every 2nd row. Replace 2 with N. Hence, for every 5th row - 
+ 
+=SUMPRODUCT((A1:A100)*(MOD(ROW(A1:A100)-ROW(A1)+1,5)=0)) 
+ 
+This is a generic formula and will work for any range. If you range is B7:B50, your formula 
+would become 
+ 
+=SUMPRODUCT((B7:B50)*(MOD(ROW(B7:B50)-ROW(B7)+1,2)=0)) 
+ 
+50. We have AVERAGEIF. What about MEDIANIF and 
+MODEIF? 
+ 
+Excel doesn't provide MEDIANIF and MODEIF. You will have to use Array formulas to 
+achieve these functionality. Let's assume that our data is like below – 
+ 
+ 
+ 
+To calculate MEDIANIF and MODEIF, enter below formulas i.e. not by pressing ENTER after 
+entering your formula but by pressing CTRL+SHIFT+ENTER. This will put { } brackets 
+around the formula which you can see in Formula Bar. If you edit again, you will have to do 
+CTRL+SHIFT+ENTER again. Don't put { } manually.
+
+--- Página 21 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 17 of 38
+ 
+ 
+=MEDIAN(IF(A2:A13="M",B2:B13)) 
+ 
+=MODE(IF(A2:A13="M",B2:B13)) 
+ 
+Non-Array alternatives 
+ 
+For MEDIANIF 
+ 
+=AGGREGATE(16,6,(B1:B13)/(A1:A13="m"),50%) 
+ 
+For MODEIF 
+ 
+=INDEX(B1:B20,MATCH(MAX(INDEX((COUNTIF(B1:B20,B1:B20)*(A1:A20="m")),,)),IND
+EX((COUNTIF(B1:B20,B1:B20)*(A1:A20="m")),,),0)) 
+ 
+51. Number of Days in a Month 
+ 
+Suppose, you have been given a date say 15-Nov-14 and you have to determine how many 
+days this particular month contains. 
+ 
+The formula which you need to use in the above case would be 
+ 
+=DAY(EOMONTH(A1,0)) 
+ 
+Explanation - EOMONTH(A1,0) gives the last date of the month and DAY function extract 
+that particular Day from the last date of the month. 
+ 
+52. How to Know if a Year is a Leap Year 
+ 
+Let's say that A1 contains the year. To know whether it is a Leap Year or not, use following 
+formula - 
+ 
+=MONTH(DATE(A1,2,29))=2 
+ 
+TRUE means that it is Leap Year and FALSE means that this is not a Leap Year. 
+ 
+53. Last Working Day of the Month If a Date is Given 
+ 
+If A1 holds a date, the formula for calculating last Working Day of the month would be 
+ 
+=WORKDAY(EOMONTH(A1,0)+1,-1) 
+ 
+The above formula assumes that your weekends are Saturday and Sunday. 
+ 
+But, if your weekends are different (e.g. in gulf countries), you can use following formula - 
+ 
+=WORKDAY.INTL(EOMONTH(A1,0)+1,-1,"0000110")
+
+--- Página 22 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 18 of 38
+ 
+ 
+Where 0000110 is a 7 character string, 1 represents a weekend and 0 is a working day. First 
+digit is Monday and last digit is Sunday. The above example is for Gulf countries where 
+Friday and Saturday are weekends. 
+ 
+You also have option to give a range which has holidays. In that case, your formula would 
+become 
+ 
+=WORKDAY(EOMONTH(A1,0)+1,-1,D1:D10) 
+ 
+=WORKDAY.INTL(EOMONTH(A1,0)+1,-1,"0000110",D1:D10) 
+ 
+Where range D1:D10 contains the list of holidays. 
+ 
+54. First Working Day of the Month if a Date is Given 
+ 
+If A1 contains a date, then formula for First Working Day of the month would be 
+ 
+=WORKDAY(EOMONTH(A1,-1),1) 
+ 
+The above formula assumes that your weekends are Saturday and Sunday. 
+ 
+But, if your weekends are different (e.g. in gulf countries), you can use following formula - 
+ 
+=WORKDAY.INTL(EOMONTH(A1,-1),1,"0000110") 
+ 
+Where 0000110 is a 7 character string, 1 represents a weekend and 0 is a working day. First 
+digit is Monday and last digit is Sunday. The above example is for Gulf countries where 
+Friday and Saturday are weekends. 
+ 
+You also have option to give a range which has holidays. In that case, your formula would 
+become 
+ 
+=WORKDAY(EOMONTH(A1,-1),1,D1:D10) 
+ 
+=WORKDAY.INTL(EOMONTH(A1,-1),1,"0000110",D1:D10) 
+ 
+Where range D1:D10 contains the list of holidays. 
+ 
+55. Date for Nth Day of the Year 
+ 
+Suppose A1 contains the Year and you are asked to find 69th day of the year which is 
+contained in A2. Then formula for finding Nth day of the year would be 
+ 
+=DATE(A1,1,1)+A2-1
+
+--- Página 23 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 19 of 38
+ 
+ 
+56. Calculate Geometric Mean by Ignoring 0 and Negative 
+Values 
+ 
+Geometric Mean is a useful mean and is applied only for +ve values. Hence, you will need to 
+ignore <=0 values while calculating Geometric Mean. It is generally used where %ages are 
+involved. For example, population growth for first year is 30%, for second year is 25% and 
+for third year, it is 15%. Then Geometric Mean is used to calculate not Arithmetic Mean. 
+ 
+Generally, Geometric Mean is calculated by the formula =GEOMEAN(A1:A10) 
+ 
+It would give error if the range contains <=0 values. There are various ways to deal with it 
+and most commonly used way is to ignore <=0 values while calculating Geometric Mean. 
+To ignore <=0 values, you must use an Array formula i.e. which must be entered by pressing 
+CTRL+SHIFT+ENTER. 
+ 
+=GEOMEAN(IF(A1:A10>0,A1:A10)) 
+ 
+The above formula takes into account only those values which are positive. 
+ 
+Bonus Tip - When %age growth are involved, you will need to use following ARRAY 
+formula to calculate Geometric Mean - 
+ 
+=GEOMEAN(IF(A1:A10>0,(1+A1:A10)))-1 
+ 
+Don't forget to format your result as %age. 
+ 
+57. Financial Function - Calculate EMI 
+ 
+You want to take a loan and you want to calculate EMI OR you want to build an EMI 
+calculator in Excel. It is a fairly easy job to do - 
+ 
+You will need to use PMT function for this. It has following structure - 
+ 
+PMT(rate, nper, pv, [fv], [type]) 
+ 
+rate: You rate of interest 
+ 
+nper: No. of payments. Your nper and rate should be on the same scale. i.e if you are 
+planning to pay up monthly, the rate in your formula should be monthly only. Generally, 
+interest rate is specified yearly i.e. 10.5% per year. This you should divide by 12 to arrive 
+at monthly rate. Hence, if you wanted 3 years loan, it means nper would 3x12=36 months. 
+If it is quarterly, rate = 10.5%/4 = 2.625% and nper would be 3x4 = 12 
+If it is annual, rate = 10.5% and nper = 3 
+ 
+pv: Your loan amount. You will need to put negative value of this in your formula. If you 
+don't put negative value, your EMI would be in negative but answer would be same though 
+with negative sign. 
+ 
++ve / -ve PMT requires some explanation though you may choose to ignore. It depends upon 
+your cashflow. If you are taking a loan, hence cash in, hence pv is +ve. But every month, you
+
+--- Página 24 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 20 of 38
+ 
+ 
+will have to pay up something, hence cash out. Hence, PMT is -ve. If you are investing, hence 
+cash out. Hence pv is -ve. But every month, you will be receiving something, hence cash in. 
+Hence, PMT is +ve. 
+ 
+Now what is +ve or -ve is simply your preference. I recommend you should not worry about 
+this. 
+ 
+fv: Your remaining value after you finish your installment. Generally, it is 0 as any lender 
+will like to recover its money fill. (Default is 0) 
+type: 0 - At the end of the period, 1 - At the beginning of the period (Default is 0) 
+Also note, fv and type are optional and may not be required in your formula. 
+ 
+The formula used in the below picture is =PMT(B1/12,B2,-B3,B4,B5) 
+ 
+Bonus Tip = If you use ABS function, then there would be no need to put negative value of 
+PV. Hence, formula in this case would be =ABS(PMT(B1/12,B2,B3,B4,B5)) 
+ 
+The below EMI Calculator can be download from here http://eforexcel.com/wp/wp-
+content/uploads/2014/12/EMI-Calculator1.xlsx 
+ 
+ 
+ 
+58. Financial Function - Calculate Interest Part of an EMI 
+ 
+Now the EMI for a month = Interest for that month and Principal for that month. IPMT is 
+used to calculate the interest portion of your EMI. 
+ 
+Excel defines IPMT as "Returns the interest payment for a given period for an investment 
+based on periodic, constant payments and a constant interest rate" 
+ 
+The syntax of IPMT is IPMT(rate, per, nper, pv, [fv], [type]). 
+‘ 
+rate: You rate of interest 
+ 
+per: Period for which you want to calculate Interest 
+ 
+nper: No. of payments. Your nper and rate should be on the same scale. i.e if you are 
+planning to pay up monthly, the rate in your formula should be monthly only. Generally, 
+interest rate is specified yearly i.e. 10.5% per year. This you should divide by 12 to arrive 
+at monthly rate. Hence, if you wanted 3 years loan, it means nper would 3x12=36 months. 
+If it is quarterly, rate = 10.5%/4 = 2.625% and nper would be 3x4 = 12 
+If it is annual, rate = 10.5% and nper = 3
+
+--- Página 25 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 21 of 38
+ 
+ 
+pv: Your loan amount. You will need to put negative value of this in your formula. If you 
+don't put negative value, your EMI would be in negative but answer would be same though 
+with negative sign. 
+ 
++ve / -ve IPMT requires some explanation though you may choose to ignore. It depends 
+upon your cashflow. If you are taking a loan, hence cash in, hence pv is +ve. But every month, 
+you will have to pay up something, hence cash out. Hence, IPMT is -ve. If you are investing, 
+hence cash out. Hence pv is -ve. But every month, you will be receiving something, hence 
+cash in. Hence, IPMT is +ve. 
+ 
+Now what is +ve or -ve is simply your preference. I recommend you should not worry about 
+this. 
+ 
+fv: Your remaining value after you finish your installment. Generally, it is 0 as any lender 
+will like to recover its money fill. (Default is 0) 
+ 
+type: 0 - At the end of the period, 1 - At the beginning of the period (Default is 0) 
+ 
+Also note, fv and type are optional and may not be required in your formula. 
+ 
+The formula used in the below picture is =IPMT(B1/12,B2,B3,-B4,B5,B6) 
+ 
+Also, since Interest will vary every month, hence it makes sense to calculate it for each 
+month. Columns H & I carry interest for each month. 
+ 
+Bonus Tip = If you use ABS function, then there would be no need to put negative value of 
+PV. Hence, formula in this case would be =ABS(IPMT(B1/12,B2,B3,B4,B5,B6)) 
+ 
+The below EMI Calculator can be download from here http://eforexcel.com/wp/wp-
+content/uploads/2014/12/Interest-Payment-Calculator.xlsx
+
+--- Página 26 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 22 of 38
+ 
+ 
+59. Financial Function - Calculate Principal Part of an EMI 
+ 
+Now the EMI for a month = Interest for that month and Principal for that month. IPMT is 
+used to calculate the interest portion of your EMI. To calculate the principal part of an EMI, 
+you will need to use PPMT. 
+ 
+Excel defines PPMT as "Returns the payment on the principal for a given period for an 
+investment based on periodic, constant payments and a constant interest rate." 
+ 
+The syntax of PPMT is PPMT(rate, per, nper, pv, [fv], [type]) 
+ 
+rate: You rate of interest 
+ 
+per: Period for which you want to calculate Principal 
+ 
+nper: No. of payments. Your nper and rate should be on the same scale. i.e if you are 
+planning to pay up monthly, the rate in your formula should be monthly only. Generally, 
+interest rate is specified yearly i.e. 10.5% per year. This you should divide by 12 to arrive 
+at monthly rate. Hence, if you wanted 3 years loan, it means nper would 3x12=36 months. 
+If it is quarterly, rate = 10.5%/4 = 2.625% and nper would be 3x4 = 12 
+If it is annual, rate = 10.5% and nper = 3 
+ 
+pv: Your loan amount. You will need to put negative value of this in your formula. If you 
+don't put negative value, your EMI would be in negative but answer would be same though 
+with negative sign. 
+ 
++ve / -ve PPMT requires some explanation though you may choose to ignore. It depends 
+upon your cashflow. If you are taking a loan, hence cash in, hence pv is +ve. But every month, 
+you will have to pay up something, hence cash out. Hence, PPMT is -ve. If you are investing, 
+hence cash out. Hence pv is -ve. But every month, you will be receiving something, hence 
+cash in. Hence, PPMT is +ve. 
+ 
+Now what is +ve or -ve is simply your preference. I recommend you should not worry about 
+this. 
+ 
+fv: Your remaining value after you finish your installment. Generally, it is 0 as any lender 
+will like to recover its money fill. (Default is 0) 
+ 
+type: 0 - At the end of the period, 1 - At the beginning of the period (Default is 0) 
+ 
+Also note, fv and type are optional and may not be required in your formula. 
+ 
+The formula used in the below picture is =PPMT(B1/12,B2,B3,-B4,B5,B6) 
+ 
+Also, since Principal will vary every month, hence it makes sense to calculate it for each 
+month. Columns H & I carry Principal for each month. 
+ 
+Bonus Tip = If you use ABS function, then there would be no need to put negative value of 
+PV. Hence, formula in this case would be =ABS(PPMT(B1/12,B2,B3,B4,B5,B6))
+
+--- Página 27 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 23 of 38
+ 
+ 
+The below EMI Calculator can be download from here http://eforexcel.com/wp/wp-
+content/uploads/2014/12/Principal-Payment-Calculator.xlsx 
+ 
+ 
+ 
+60. Financial Function - Calculate Number of EMIs to Pay 
+Up a Loan 
+ 
+You have taken a loan and you know your EMI capability. So, you want to know how many 
+months will be taken to pay off a loan completely. 
+ 
+It is fairly easy job to do it in Excel. You will need to use NPER function for this. 
+ 
+Excel defines NPER as "Returns the number of periods for an investment based on periodic, 
+constant payments and a constant interest rate." 
+ 
+Syntax of NPER is NPER(rate,pmt,pv,[fv],[type]). 
+ 
+rate: You rate of interest 
+ 
+pmt: EMI (Payment per period). You will need to put -ve value of this in your formula. 
+Your pmt and rate should be on the same scale. i.e if you are planning to pay up monthly, 
+the rate in your formula should be monthly only. Generally, interest rate is specified yearly 
+i.e. 10.5% per year. This you should divide by 12 to arrive at monthly rate. Hence, if you 
+wanted 
+3 
+years 
+loan, 
+it 
+means 
+nper 
+would 
+3x12=36 
+months. 
+If it is quarterly, rate = 10.5%/4 = 2.625% and nper would be 3x4 = 12 
+If it is annual, rate = 10.5% and nper = 3 
+ 
+pv: Your loan amount. You will need to put +ve value of this in your formula. 
+Note - Either PMT or PV should be -ve. Both can't be +ve and -ve at the same time. 
+ 
++ve / -ve requires some explanation and this can not be ignored. It depends upon your 
+cashflow. If you are taking a loan, hence cash in, hence pv is +ve. But every month, you will
+
+--- Página 28 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 24 of 38
+ 
+ 
+have to pay up something, hence cash out. Hence, PMT is -ve. If you are investing, hence 
+cash out. Hence pv is -ve. But every month, you will be receiving something, hence cash in. 
+Hence, PMT is +ve. 
+ 
+fv: Your remaining value after you finish your installment. Generally, it is 0 as any lender 
+will like to recover its money fill. (Default is 0) 
+ 
+type: 0 - At the end of the period, 1 - At the beginning of the period (Default is 0) 
+ 
+Also note, fv and type are optional and may not be required in your formula. 
+ 
+The formula used in the below picture is =NPER(B1/12,-B2,B3) 
+ 
+The below EMI Calculator can be download from here http://eforexcel.com/wp/wp-
+content/uploads/2014/12/NPER-Calculator.xlsx 
+ 
+ 
+ 
+61. Financial Function - Calculate Interest Rate 
+ 
+You want to take a loan. You know how much loan to take (pmt), you know how many 
+months you want to pay up (nper) and you want to know effective rate of interest. 
+Excel makes it easy to do. RATE function is the answer for this. 
+ 
+Excel defines RATE as "Returns the interest rate per period of an annuity. RATE is calculated 
+by iteration and can have zero or more solutions. If the successive results of RATE do not 
+converge to within 0.0000001 after 20 iterations, RATE returns the #NUM! error value." 
+Syntax of RATE is RATE(nper, pmt, pv, [fv], [type], [guess]). 
+ 
+nper: Payment periods. Typically in months. 
+ 
+pmt: EMI (Payment per period). You will need to put -ve value of this in your formula. 
+Your pmt and rate should be on the same scale. i.e if you are planning to pay up monthly, 
+the pmt in your formula should be monthly only. 
+ 
+pv: Your loan amount. You will need to put +ve value of this in your formula. 
+Note - Either PMT or PV should be -ve. Both can't be +ve and -ve at the same time. 
+ 
++ve / -ve requires some explanation and this can not be ignored. It depends upon your 
+cashflow. If you are taking a loan, hence cash in, hence pv is +ve. But every month, you will 
+have to pay up something, hence cash out. Hence, PMT is -ve. If you are investing, hence
+
+--- Página 29 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 25 of 38
+ 
+ 
+cash out. Hence pv is -ve. But every month, you will be receiving something, hence cash in. 
+Hence, PMT is +ve. 
+ 
+fv: Your remaining value after you finish your installment. Generally, it is 0 as any lender 
+will like to recover its money fill. (Default is 0) 
+ 
+type: 0 - At the end of the period, 1 - At the beginning of the period (Default is 0) 
+ 
+guess: If you omit guess, it is assumed to be 10 percent. If RATE does not converge, try 
+different values for guess. RATE usually converges if guess is between 0 and 1. Once again, 
+note that if PMT is monthly, then Guess should also be monthly. Hence, if you are giving 
+annual interest rate of 12%, guess should be given as 12%/12 = 1%. 
+ 
+Also note, fv, type and guess are optional and may not be required in your formula. 
+ 
+The formula used in the below picture is =RATE(B1,-B2,B3,B4,B5,B6/12) 
+ 
+The below EMI Calculator can be download from here http://eforexcel.com/wp/wp-
+content/uploads/2014/12/RATE-Calculator.xlsx 
+ 
+ 
+ 
+ 
+62. Financial Function – Calculate Compounded Interest 
+ 
+As part of our Mathematics courses in our childhood, we had learned about Compounded 
+Interest. The famous formula which we remember is 
+Compounded Balance = Principal x (1+rate)^N 
+ 
+This is a fairly easy job to do in Excel. The formula to be used is FV. 
+ 
+Excel help describes FV as "Returns the future value of an investment based on periodic, 
+constant payments and a constant interest rate". 
+ 
+The syntax of FV is FV(rate,nper,pmt,[pv],[type]) 
+ 
+You require only 3 pieces of information for Compounded Balance. 
+ 
+rate: Interest rate on which compounding needs to be done
+
+--- Página 30 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 26 of 38
+ 
+ 
+nper: Total number of periods for which compounding needs to be done. Now rate and nper 
+should be on the same scale. If interest rate is monthly, then nper should be in months. If 
+interest rate is quarterly, then nper should be in quarter. If interest rate is annual, then nper 
+should be in years. 
+ 
+pv: This is the initial principal and it has to be specified in -ve. (Note, I have already 
+discussed significance of +ve and -ve in many previous tips on Financial Functions.) 
+ 
+The formula used in below picture for Monthly 
+ 
+=FV(B1/12,B3*12,0,-B2) 
+ 
+The formula used in below picture for Quarterly 
+ 
+=FV(F1/4,F3*4,0,-F2) 
+ 
+The formula used in below picture for Yearly 
+ 
+=FV(J1,J3,0,-J2) 
+ 
+The 
+Compounded 
+Balance 
+Calculator 
+can 
+be 
+downloaded 
+from 
+http://eforexcel.com/wp/wp-content/uploads/2014/12/Compounded-Interest-
+Calculator.xlsx  
+ 
+ 
+ 
+ 
+63. Financial Function – Calculate Effective Interest 
+ 
+You are applying for a loan and an interest rate has been quoted. The interest rate which is 
+quoted is called "Nominal Interest Rate". They will quote Nominal Interest Rate in yearly 
+terms. Hence, if they quote 12% interest for a loan, this is yearly figure. Now, you generally 
+pay EMIs every month. They simply say that you need to pay 1% monthly interest which 
+has been derived by annual interest rate / 12 which 12%/12=1% in this case. 
+ 
+But actually interest rate of 1% (nominal monthly interest rate) is compounded every 
+month, hence your effective interest rate per year becomes higher. But lending financial 
+institutions doesn't quote this higher rate as it will make your loan cost look higher. 
+ 
+To calculate Effective Interest Rate, Excel has provided a function called EFFECT.
+
+--- Página 31 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 27 of 38
+ 
+ 
+Excel describes EFFECT - Returns the effective annual interest rate, given the nominal 
+annual interest rate and the number of compounding periods per year. 
+ 
+The syntax of EFFECT is EFFECT(nominal_rate, npery). 
+ 
+Nominal Rate - Annual Interest Rate 
+ 
+npery - Compounding periods in a Year. For monthly payments, it is 12. For quarterly 
+payments, it is 4. 
+ 
+In the below picture, the effective interest rate is 12.68% for a monthly payment. This may 
+be a small difference for a year or two, but if you take mortgage on housing which is say for 
+20 years, this makes hell of a difference. 
+ 
+The formula used is =EFFECT(B1,B2) 
+ 
+Now, if you are making an investment and making monthly payments, you will be getting 
+annual return of 12.68% against 12% if you make yearly payment. 
+ 
+The 
+effective 
+interest 
+rate 
+calculator 
+can 
+be 
+downloaded 
+from 
+http://eforexcel.com/wp/wp-content/uploads/2014/12/Effective-Interest-
+Calculator.xlsx  
+ 
+ 
+ 
+64. Abbreviate Given Names 
+ 
+If you have names given like - 
+Smith Johnson 
+Liz lotte 
+Christy tiara Lewisk 
+John 
+ 
+And you need to produce abbreviations or acronyms for them like below in all capitals 
+ 
+Smith Johnson - SJ 
+Liz lotte - LT 
+Christy tiara Lewisk - CTL 
+john - J 
+ 
+Then you can use following formula for the same for upto 3 words in the name -
+
+--- Página 32 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 28 of 38
+ 
+ 
+ 
+=UPPER(TRIM(LEFT(A1,1)&MID(A1,FIND(" ",A1&" 
+")+1,1)&MID(A1,FIND("*",SUBSTITUTE(A1&"  "," ","*",2))+1,1))) 
+ 
+Explanation for the formula  
+ 
+1. LEFT(A1,1) - Extracts the first letter from the first name 
+2. MID(A1,FIND(" ",A1&" ")+1,1) - 
+FIND(" ",A1&" ") - Find finds the first space in the given name to locate the start of the 
+middle name. " " has been concatenated at the end of A1 so that if there is only first name, 
+FIND will not give error as it will always find the blanks. +1 has been added to start the MID 
+position from where the middle name starts. 
+3. MID(A1,FIND("*",SUBSTITUTE(A1&"  "," ","*",2))+1,1)) 
+SUBSTITUTE(A1&"  "," ","*",2) will replace the second blank with a *, hence we can find the 
+position of * to locate the start of last name. As in 2 above, a double space "  " has been added 
+in A1 so that FIND always finds the second space. +1 has been added to start the MID 
+position from where the last name starts. 
+4. TRIM will remove all blanks inserted because of 2 or 3. 
+5. UPPER will convert the string to all capitals. 
+Note - If you don't to use the concatenation of single space and double space as in 2 and 3, 
+then IFERROR block can be used. In this case, the formula would become - 
+ 
+=UPPER(TRIM(LEFT(A1,1)&IFERROR(MID(A1,FIND(" 
+",A1)+1,1),"")&IFERROR(MID(A1,FIND("*",SUBSTITUTE(A1," ","*",2))+1,1),""))) 
+ 
+Note - This technique can be used to extend up to many words. Only change will be in last 
+block 
+where 
+you 
+can 
+replace 
+2 
+with 
+3, 
+4,5 
+and 
+so 
+on 
+in 
+IFERROR(MID(A1,FIND("*",SUBSTITUTE(A1," ","*",2))+1,1),"") for 4th, 5th, 6th words and 
+concatenate them....Hence for upto 6 words, the formula would become 
+ 
+=UPPER(TRIM(LEFT(A1,1)&IFERROR(MID(A1,FIND(" 
+",A1)+1,1),"")&IFERROR(MID(A1,FIND("*",SUBSTITUTE(A1," ","*",2))+1,1),"") 
+&IFERROR(MID(A1,FIND("*",SUBSTITUTE(A1," 
+","*",3))+1,1),"")&IFERROR(MID(A1,FIND("*",SUBSTITUTE(A1," ","*",4))+1,1),"") 
+&IFERROR(MID(A1,FIND("*",SUBSTITUTE(A1," ","*",5))+1,1),""))) 
+ 
+65. Get Column Name for a Column Number 
+ 
+Let's suppose, you have a number in A1 and you want to get the column Name for that. 
+ 
+Hence, if A1=1, you want "A" 
+Hence, if A1 =26, you want "Z" 
+Hence, if A1=27, you want "AA" and so on. 
+ 
+The formula to derive the column name would be be - 
+ 
+=SUBSTITUTE(ADDRESS(1,A1,4),1,"")
+
+--- Página 33 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 29 of 38
+ 
+ 
+66. Get Column Range for a Column Number 
+ 
+Let's suppose, you have a number in A1 and you want to get the column range  for that. 
+ 
+Hence, if A1=1, you want "A:A" 
+Hence, if A1 =26, you want "Z:Z" 
+Hence, if A1=27, you want "AA:AA" and so on. 
+ 
+The formula to derive the column range would be be - 
+ 
+=SUBSTITUTE(ADDRESS(1,A1,4)&":"&ADDRESS(1,A1,4),1,"") 
+ 
+67. Find the nth Largest Number when there are 
+duplicates 
+ 
+You know the LARGE function which can find the nth largest value. Hence, if you have a 
+series like below - 
+ 
+ 
+ 
+And you give =LARGE(A1:A10,3), you get the answer as 18 
+ 
+Now, if we have a series like below 
+ 
+ 
+ 
+Now, you give =LARGE(A1:A10,3) and now the result is 24. The reason is that large function 
+gives the nth largest value in a sorted array. Hence, LARGE function will sort the above array 
+as {24,24,24,22,22,18,18,9} and 3rd largest is 24. 
+ 
+But actually you want the unique 3rd largest which is 18 as the answer. 
+ 
+The formula for such case would be
+
+--- Página 34 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 30 of 38
+ 
+ 
+=LARGE(IF(FREQUENCY($A$2:$A$10,$A$2:$A$10)<>0,$A$2:$A$10),3) 
+ 
+68. Extract Date and Time from Date Timestamp 
+ 
+Suppose you have a date timestamp value in cell A1 
+A1 = 06/14/15 10:15 PM 
+ 
+And you want to extract date and time out of this. 
+ 
+To extract date, use following formula and format the result cell as date 
+ 
+= INT(A1) 
+ 
+To extract time, use following formula and format the result cell as time 
+ 
+= MOD(A1,1) 
+ 
+69. Convert a Number into Years and Months 
+ 
+Suppose, you have been given a number into cell A1 say 26 and you want to display it as 2 
+Years and 4 Months, you can use following formula - 
+ 
+=INT(A1/12)&" Years and "&MOD(A1,12)&" Months" 
+ 
+Now, an user can become more demanding and he can say that if month is less than 12, then 
+Years should not be displayed. For example, he might say that 8 should be converted to 8 
+Months and it should not be shown as 0 Years and 8 Months. 
+ 
+In this case, the formula would be - 
+ 
+=IF(INT(A1/12)>0,INT(A1/12)&" Years and ","")&MOD(A1,12)&" Months" 
+ 
+Now 8 will be displayed as 8 Months only not as 0 Years and 8 Months. 
+ 
+Now, user can ask more. He can say when I give 12, it displays as 1 Years and 0 Months and 
+he simply wants to see 1 Years only. And for 36, he wants to see only 3 Years not 3 Years 0 
+Months. In this case, formula will have to be tweaked more. Now, the formula becomes - 
+ 
+=IF(INT(A1/12)>0,INT(A1/12)&" Years ","")&IF(MOD(A1,12)=0,"",MOD(A1,12)&" 
+Months") 
+ 
+Now an user can come and can ask for one last thing. He can say that if this is 1 Year or 1 
+Month, it should not be displayed as Years or Months as 1 is not plural. Hence, 25 should be 
+displayed as 2 Years and 1 Month not as 2 Years and 1 Months. Hence, 18 should not be 
+displayed as 1 Years and 6 Months but as 1 Year and 6 Months. Similarly 13 should be 
+displayed as 1 Year and 1 Month not as 1 Years and 1 Months. 
+ 
+=IF(INT(A1/12)>0,INT(A1/12)&" Year"&IF(INT(A1/12)>1,"s","")&" and 
+","")&MOD(A1,12)&" Month"&IF(MOD(A1,12)>1,"s","")
+
+--- Página 35 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 31 of 38
+ 
+ 
+70. COUNTIF for non-contiguous range 
+ 
+All of us love COUNTIF. And it is very easy to do - just say =COUNTIF("A1:A100",">5") and 
+it finds all the values within the range A1 to A100 which are greater than 5. But what if I 
+wanted the result for only A3, A8 and it should omit other cells. Try putting in following 
+formula - 
+ 
+=COUNTIF((A3, A8),">5") and it will give you #VALUE error. 
+ 
+A possible solution is 
+ 
+=(A3>5)+(A8>5) 
+ 
+What happens if you need to do for A3, A4, A5, A8, A24, A40, A45, A89. Now, you will have 
+to use a formula like - 
+ 
+=(A3>5)+(A4>5)+(A5>5)+(A8>5)+(A24>5)+(A40>5)+(A45>5)+(A89>5) 
+ 
+The formula becomes cumbersome as the number of cells increase. In this case, you can use 
+below formula. This single formula can take care of contiguous (like A3:A5) and non-
+contiguous ranges both - 
+ 
+=SUM(COUNTIF(INDIRECT({"A3:A5","A8","A24","A40","A45","A89"}),">5")) 
+ 
+71. Count the Number of Words in a Cell / Range 
+ 
+Suppose you have been given the following and you need to count the number of words in 
+a cell or in a range. 
+ 
+Formula for calculating number of words in a cell - 
+ 
+=LEN(TRIM(A1))-LEN(SUBSTITUTE(TRIM(A1)," ",""))+(TRIM(A1)<>"") 
+ 
+Formula for calculating number of words in a range - 
+ 
+=SUMPRODUCT(LEN(TRIM(A1:A100))-LEN(SUBSTITUTE(TRIM(A1:A100)," 
+",""))+(TRIM(A1:A100)<>""))
+
+--- Página 36 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 32 of 38
+ 
+ 
+72. Numerology Sum of the Digits aka Sum the Digits till 
+the result is a single digit 
+ 
+In Numerology, it is often a task to add the digits till the result is a single digit. For example,  
+ 
+74 = 7 + 4 = 11 = 1 + 1 = 2 
+23 = 2 + 3 = 5 
+78 = 7 + 8 = 15 = 1 + 5 = 6 
+1234567 = 1 + 2 + 3 + 4 + 5 + 6 + 7 = 28 = 2+ 8 = 10 = 1+ 0 = 1 
+ 
+The formula to achieve the same is 
+ 
+=MOD(A1-1,9)+1 
+ 
+73. Generate Sequential Numbers and Repeat them 
+ 
+Suppose, you have been given the task to generate a sequence of numbers and repeat them.  
+ 
+For example - 
+1,2,3,4,1,2,3,4,1,2,3,4 
+ 
+You can use the below formula and drag down - 
+ 
+=MOD(ROWS($1:1)-1,4)+1 
+ 
+Replace 4 with with any other number to generate any other sequence. Hence, if you want 
+to 
+generate 
+1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10,1,2,3,4,5,6,7,8,9,10 
+then 
+formula 
+becomes - 
+ 
+=MOD(ROWS($1:1)-1,10)+1 
+ 
+The structure of the formula is 
+ 
+=MOD(ROWS($1:1)-1,X)+Y 
+ 
+X - Number of numbers 
+Y - Starting Number 
+ 
+Utilizing 
+above 
+formula, 
+you 
+want 
+to 
+generate 
+the 
+sequence 
+5,6,7,8,9,10,5,6,7,8,9,10,5,6,7,8,9,10, then use below formula (You need 6 numbers and 
+stating number is 5) 
+ 
+=MOD(ROWS($1:1)-1,6)+5 
+ 
+74. Repeat a Number and Increment and Repeat.... 
+ 
+Suppose, you have been given the task of repeating a number and increment that number 
+and repeat it. For example -
+
+--- Página 37 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 33 of 38
+ 
+ 
+1,1,1,1,2,2,2,2,3,3,3,3.....(Here, we are repeating it 4 times and incrementing and repeating 
+4 times again and so on) 
+ 
+Then you can use following formula 
+ 
+=ROUNDUP(ROWS($1:1)/4,0) 
+ 
+Suppose, you want to start the number with 5 not 1, then you can use below formula - 
+ 
+=ROUNDUP(ROWS($1:1)/4,0)+4 
+ 
+Hence, general structure of the formula is 
+ 
+=ROUNDUP(ROWS($1:1)/X,0)+Y-1 
+ 
+X - Number of times a particular number is repeated 
+Y - Starting Numbers 
+ 
+Hence, if you want to start with number 7 and you want to repeat it 5 times, then following 
+formula should be used 
+ 
+=ROUNDUP(ROWS($1:1)/5,0)+6 
+ 
+75. Generate Non Repeating Random Numbers through 
+Formula 
+Suppose, you want to generate non-repeating random numbers between 1 to 30, you can 
+use following formula in A2 and drag down 
+ 
+=IFERROR(AGGREGATE(14,6,ROW($1:$30)*NOT(COUNTIF($A$1:$A1, ROW($1:$30))), 
+RANDBETWEEN(1,30-ROWS($1:1)+1)),"") 
+ 
+Note: $A$1:$A1 is with reference to A2 as you put formula in A2 and dragged down. 
+Suppose, you had put the formula in G4, this should be replaced with $G$3:$G3. 
+ 
+If your starting and ending numbers are in B1 and C1, use below formula 
+ 
+=IFERROR(AGGREGATE(14,6,ROW(INDIRECT($B$1&":"&$C$1))* 
+NOT(COUNTIF($A$1:$A1,ROW(INDIRECT($B$1&":"&$C$1)))), 
+RANDBETWEEN($B$1,$C$1-ROWS($1:1)+1)),"") 
+ 
+For versions, prior to 2010 following basic construct can be used (Build error handling 
+depending upon the version. For example, Excel 2007 will support IFERROR whereas 2003 
+supports ISERROR) - 
+ 
+=LARGE(INDEX(ROW($1:$30)*NOT(COUNTIF($A$1:$A1, ROW($1:$30))),,), 
+RANDBETWEEN(1,30-ROW(A1)+1))
+
+--- Página 38 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 34 of 38
+ 
+ 
+76. Financial Year Formula (e.g. 2015-16 or FY16) 
+ 
+A good number of countries don't follow calendar year as the financial year. For example, 
+India's financial year start is 1-Apr and finishes on 31-Mar. Hence, currently (20-Feb-16), 
+the financial year is 2015-16 (It is also written as FY16). On 1-Apr-16, it will become 2016-
+17 (It is also written as FY17). 
+ 
+Now if a date is given, then following formula can be used to derive 2015-16 kind of result. 
+ 
+=YEAR(A1)-(MONTH(A1)<=3)&"-"&YEAR(A1)+(MONTH(A1)>3) 
+ 
+To generate FY16 kind of result, following formula can be used 
+ 
+="FY"&RIGHT(YEAR(A1)+(MONTH(A1)>3),2) 
+ 
+77. First Working Day of the Year 
+ 
+If a year is given in A1 say 2016, below formula can be used to know the first working day 
+of the year (format the result as date) 
+ 
+=WORKDAY(EOMONTH("1JAN"&A1,-1),1) 
+ 
+The above formula assumes that your weekends are Saturday and Sunday. 
+But, if your weekends are different (e.g. in gulf countries), you can use following formula - 
+ 
+=WORKDAY.INTL(EOMONTH("1JAN"&A1,-1),1,"0000110") 
+ 
+Where 0000110 is a 7 character string, 1 represents a weekend and 0 is a working day. First 
+digit is Monday and last digit is Sunday. The above example is for Gulf countries where 
+Friday and Saturday are weekends. 
+ 
+You also have option to give a range which has holidays. In that case, your formula would 
+become 
+ 
+=WORKDAY(EOMONTH("1JAN"&A1,-1),1,D1:D10) 
+ 
+=WORKDAY.INTL(EOMONTH("1JAN"&A1,-1),1,"0000110",D1:D10) 
+ 
+Where range D1:D10 contains the list of holidays. 
+ 
+78. Last Working Day of the Year 
+ 
+If a year is given in A1 say 2016, below formula can be used to know the last working day 
+of the year (format the result as date) 
+ 
+=WORKDAY("1JAN"&A1+1,-1) 
+ 
+The above formula assumes that your weekends are Saturday and Sunday. 
+But, if your weekends are different (e.g. in gulf countries), you can use following formula -
+
+--- Página 39 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 35 of 38
+ 
+ 
+=WORKDAY.INTL("1JAN"&A1+1,-1,"0000110") 
+ 
+Where 0000110 is a 7 character string, 1 represents a weekend and 0 is a working day. First 
+digit is Monday and last digit is Sunday. The above example is for Gulf countries where 
+Friday and Saturday are weekends. 
+ 
+You also have option to give a range which has holidays. In that case, your formula would 
+become 
+ 
+=WORKDAY("1JAN"&A1+1,-1,D1:D10) 
+ 
+=WORKDAY.INTL("1JAN"&A1+1,-1,"0000110",D1:D10) 
+Where range D1:D10 contains the list of holidays. 
+ 
+79. Convert from Excel Date (Gregorian Date) to Julian 
+Date 
+ 
+Q. First what is a Julian Date? 
+A. A Julian date has either 7 digits or 5 digits date and these are generally used in old IT 
+legacy systems. 
+7 Digits - YYYYDDD - 2016092 (This is 1-Apr-2016. 92 means that this is 92nd day from 1-
+Jan in that year) 
+5 Digits - YYDDD - 16092 
+ 
+Q. What formulas to use to convert Excel Dates to Julian Dates? 
+A. For 7 Digits, use following formula 
+ 
+=TEXT(A1,"yyyy")&TEXT(A1-("1JAN"&YEAR(A1))+1,"000") 
+ 
+For 5 Digits, use following formula 
+ 
+=TEXT(A1,"yy")&TEXT(A1-("1JAN"&YEAR(A1))+1,"000") 
+ 
+80. Convert from Julian Dates to Excel (Gregorian) Dates 
+ 
+For 7 Digits Julian Dates, following formula should be used 
+ 
+=DATE(LEFT(A1,4),1,RIGHT(A1,3)) 
+ 
+For 5 Digits Julian Dates, following formula should be used depending upon which century 
+(Note - Julian dates are most likely to fall into 20th Century) 
+ 
+21st Century 
+ 
+=DATE(20&LEFT(A1,2),1,RIGHT(A1,3)) 
+ 
+20th Century 
+ 
+=DATE(19&LEFT(A1,2),1,RIGHT(A1,3))
+
+--- Página 40 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 36 of 38
+ 
+ 
+Note - 19 or 20 can be replaced with some IF condition to put in right 19 or 20 depending 
+upon the year. For example, year 82 is more likely to be in 20th century where year 15 is 
+more likely to be in 21st century. 
+ 
+81. Extract User Name from an E Mail ID 
+ 
+Assuming A1 has a mail ID say A1:=v.a.verma@gmail.com and you need to retrieve 
+v.a.verma which is user name in the mail ID. Use following formula – 
+ 
+=IFERROR(LEFT(A1,SEARCH("@",A1)-1),"") 
+ 
+82. Extract Domain Name from an E Mail ID 
+ 
+If you want to retrieve domain name which in above example is gmail.com, use following 
+formula – 
+ 
+=REPLACE(A1,1,SEARCH("@",A1)+1,"") 
+ 
+83. Location of First Number in a String 
+ 
+Suppose you have A1: = “abfg8ty#%473hj” and you want to find what is the position of first 
+number in this. In this string, first number is 8 and its position is 5. You can use following 
+formula - 
+ 
+=IFERROR(AGGREGATE(15,6,FIND({1,2,3,4,5,6,7,8,9,0},A1,ROW(INDIRECT("1:"&LEN(A1)
+))),1),"") 
+ 
+84. Location of Last Number in a String 
+ 
+In the above example, last number is 3 and its position is 12. You can use following formula 
+to find this – 
+ 
+=IFERROR(AGGREGATE(14,6,FIND({1,2,3,4,5,6,7,8,9,0},A1,ROW(INDIRECT("1:"&LEN(A1)
+))),1),"") 
+ 
+85. Find the Value of First Non Blank Cell in a Range 
+ 
+=IFERROR(INDEX(A1:A10,MATCH(TRUE,INDEX(NOT(ISBLANK(A1:A10)),,),0)),""). 
+ 
+86. Find First Numeric Value in a Range 
+ 
+=IFERROR(INDEX(A1:A100,MATCH(1,INDEX(--ISNUMBER(A1:A100),,),0)),””) 
+ 
+87. Find Last Numeric Value in a Range 
+ 
+=IFERROR(1/LOOKUP(2,1/A1:A100),””)
+
+--- Página 41 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 37 of 38
+ 
+ 
+88. Find First non Numeric Value in a Range 
+ 
+=IFERROR(INDEX(A1:A100,MATCH(1,INDEX(--ISTEXT(A1:A100),,),0)),””) 
+ 
+89. Find Last non Numeric Value in a Range 
+ 
+=IFERROR(LOOKUP(REPT("z",255),A1:A100),””) 
+ 
+90. Find Last Used Value in a Range 
+ 
+= IFERROR(LOOKUP(2,1/(A1:A100<>""),A1:A100),””) 
+ 
+91. MAXIF 
+ 
+Note – Excel 2016 has introduced MAXIFS function 
+ 
+Suppose you want to find the Maximum Sales for East Region i.e. MAXIF 
+ 
+ 
+ 
+=SUMPRODUCT(MAX((A2:A100="East")*(B2:B100))) 
+ 
+=AGGREGATE(14,6,($A$2:$A$100="East")*($B$2:$B$100),1) 
+ 
+SUMPRODUCT formula is faster than the second formula. 
+ 
+92. MINIF 
+ 
+Note – Excel 2016 has introduced MINIFS function 
+ 
+Suppose you want to find the Minimum Sales for West Region i.e. MINIF 
+ 
+=AGGREGATE(15,6,1/($A$2:$A$10="West")*($B$2:$B$10),1) 
+ 
+But the above formula will not ignore blanks or 0 values in your range. If you want to ignore 
+0 values /blanks, in your range, then use following formula
+
+--- Página 42 ---
+Excel Formulas Bible
+ 
+© eforexcel.com                                                                                                                                                                           Page 38 of 38
+ 
+ 
+ 
+=AGGREGATE(15,6,1/(($A$2:$A$10="West")*($B$2:$B$10<>0))*($B$2:$B$10),1) 
+ 
+93. Generate a Unique List out of Duplicate Entries 
+ 
+Suppose, you have entries in A2:A100 and you want to generate a list containing only 
+unique entries in column C starting C2. You can use following formula in C2 and drag down 
+the formula – 
+ 
+Case 1 – A2:A100 doesn’t contain any blanks 
+ 
+=IFERROR(INDEX($A$2:$A$100,MATCH(0,INDEX(COUNTIF($C$1:$C1,$A$2:$A$100),0,0),
+)),"") 
+ 
+ 
+Case 2 – A2:A100 contains blanks. In this case, you will have to use Array formula. 
+ 
+=IFERROR(INDEX($A$2:$A$100, 
+MATCH(0, 
+IF($A$2:$A$100<>"",COUNTIF(C1:$C$1, 
+$A$2:$A$100)), 0)),"") 
+ 
+OR 
+ 
+=IFERROR(INDEX($A$2:$A$100,MATCH(0,COUNTIF($C$1:$C1,$A$2:$A$100&""),0)),"") 
+ 
+Note - Array Formula is not entered by pressing ENTER after entering your formula but by 
+pressing CTRL+SHIFT+ENTER. If you are copying and pasting this formula, take F2 after 
+pasting and CTRL+SHIFT+ENTER. This will put { } brackets around the formula which you 
+can see in Formula Bar. If you edit again, you will have to do CTRL+SHIFT+ENTER again. 
+Don't put { } manually. 
+ 
+ 
+---- End of Document ----
+

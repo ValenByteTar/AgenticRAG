@@ -1,0 +1,444 @@
+=== Anexo D - Listado Centrales.pdf ===
+
+--- Página 1 ---
+Anexo D Listado de Centrales Operadas 
+por el CROM  
+Instructivo 
+0309_I_PR02_IS01_20 
+Revision: 
+20 
+Fecha: 
+10/09/2025 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+CENTRAL 
+POTENCIA
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion 
+MAQUINA 
+SCADA 
+SOTR 
+Garcia del Rio 
+10 
+Eolica 
+14/11/2019 
+Envision 
+Envision 
+BLC 
+Vientos del Secano 
+50 
+Eolica 
+30/10/2020 
+Envision 
+Envision 
+BLC 
+Loma Blanca I 
+51,2 
+Eolica 
+22/01/2021 
+Goldwind 
+Goldwind 
+BLC 
+Loma Blanca II 
+51,2 
+Eolica 
+08/02/2020 
+Goldwind 
+Goldwind 
+BLC 
+Loma Blanca III 
+51,2 
+Eolica 
+22/01/2021 
+Goldwind 
+Goldwind 
+BLC 
+Loma Blanca VI 
+102,4 
+Eolica 
+01/04/2021 
+Goldwind 
+Goldwind 
+BLC 
+Miramar 
+98,6 
+Eolica 
+26/11/2020 
+Goldwind 
+Goldwind 
+BLC 
+Malaspina 
+50,4 
+Eolica 
+26/11/2020 
+Senvion 
+BLC 
+BLC 
+Viento Los Hercules 
+97,2 
+Eolica 
+08/02/2021 
+Senvion 
+BLC 
+BLC 
+Caldenes del Oeste 
+27,5 
+Fotovoltaica 
+08/08/2018 
+Inv. ABB 
+Inaccess 
+BLC 
+Mario Cebreiro 
+100,05 
+Eolica 
+08/03/2018 
+Vestas 
+BLC 
+BLC 
+Kosten 
+24 
+Eolica 
+29/05/2021 
+Senvion 
+BLC 
+BLC 
+BIOELECTRICA 
+9 
+Biogas 
+08/01/2021 
+ 
+ 
+BLC 
+Tinogasta TOZZI 
+10 
+Fotovoltaica 
+07/05/2022 Inv. Huawei 
+BLC 
+BLC 
+Pollos San Mateo 
+2,4 
+Biogas 
+02/07/2022 
+AGGREKO 
+ 
+BLC 
+P.E. de la Buena 
+Ventura 
+100,8 
+Eolica 
+27/10/2023 
+Vestas 
+Vestas 
+Autotr
+ol 
+P.E. La Rinconada 
+92,4 
+Eolica 
+06/09/2025 
+Vestas 
+Vestas 
+BLC 
+P.S. Cura Brochero 
+8 
+Fotovoltaica 
+01/04/2023 
+Inv. Kehua 
+BLC 
+BLC 
+P.S. Cura Brochero 
+Ampliacion 
+17 
+Fotovoltaica 
+01/04/2023 
+Inv. Kehua 
+BLC 
+BLC
+
+--- Página 2 ---
+Anexo D Listado de Centrales Operadas 
+por el CROM  
+Instructivo 
+0309_I_PR02_IS01_20 
+Revision: 
+20 
+Fecha: 
+10/09/2025 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+P.S. Villa Maria del 
+Rio Seco 
+10 
+Fotovoltaica 
+ 
+Inv. Kehua 
+BLC 
+BLC 
+P.S. Villa Maria del 
+Rio Seco 
+Ampliacion 
+20 
+Fotovoltaica 
+ 
+Inv. Kehua 
+BLC 
+BLC 
+CT Adecoagro 
+2 
+Biogas 
+30/12/2023 
+ 
+ 
+BLC 
+P.S Algarrobo 
+5,6 
+Fotovoltaica 
+27/02/2024 Inv. Huawei 
+BLC 
+BLC 
+P.S Victorica 
+7,2 
+Fotovoltaica 
+12/04/2024 Inv. Huawei 
+BLC 
+BLC 
+CT Bioanglo 
+1 
+Biogas 
+27/01/2024 
+SECCO 
+ 
+BLC 
+CT Pergamino  
+2,4 
+Biogas 
+19/12/2019 
+ 
+ 
+BLC 
+CT Venado Tuerto 
+2 
+Biogas 
+05/09/2020 
+ 
+ 
+BLC 
+CT Bell Ville 
+1,6 
+Biogas 
+27/06/2024 
+ 
+ 
+BLC 
+CT La Florida 
+14,47 
+Biomasa 
+21/11/2024 
+ 
+ 
+BLC 
+P.S. LA PERLA DE 
+CHACO 
+25 
+Fotovoltaica 
+00/09/2025 Inv. Huawei 
+BLC 
+BLC 
+P.S. Amanecer IV 
+12 
+Fotovoltaica 
+7/12/2024 
+Inv. Huawei 
+BLC 
+BLC 
+TOTAL 
+1056,62 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Documentos relacionados y registros 
+REGISTRO 
+RESPONSABLE 
+CONFECCION 
+ARCHIVO 
+TIEMPO DE 
+RETENCION 
+DISPOSICION 
+RESPONSABLE 
+LUGAR 
+MP 4911 
+Area 
+PRODUCCION 
+SOPORTE y 
+CROM 
+Carpeta 
+de 
+Calidad 
+n/a 
+Sistema de 
+Calidad 
+0309_P_MP01_03 
+PROCESO CROM 
+Area CROM 
+CROM 
+Carpeta 
+de 
+Calidad 
+n/a 
+Sistema de 
+Calidad
+
+--- Página 3 ---
+Anexo D Listado de Centrales Operadas 
+por el CROM  
+Instructivo 
+0309_I_PR02_IS01_20 
+Revision: 
+20 
+Fecha: 
+10/09/2025 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LOS 
+PROCEDIMIENTOS 
+CAMMESA 
+CAMMESA 
+Web, 
+publico 
+n/a 
+Archivo 
+General 
+ 
+ 
+Historial de revisiones 
+REV. 
+FECHA 
+REFERENCIA 
+DESCRIPCION 
+0 
+20/03/2020 
+--- 
+Emision original 
+1 
+08/02/2020 
+Loma II 
+Se agrega Central Eolica Loma Blanca II 
+2 
+30/10/2020 Vientos del Secano Se agrega Central Eolica Vientos del Secano 
+3 
+26/11/2020 
+Malaspina y 
+Miramar 
+Se agregan Centrales Eolicas Malaspina y Miramar 
+4 
+08/01/2021 
+Bioelectricas 
+Se agregan centrales de Biogas Bioelectrica 
+5 
+22/01/2021 
+Loma I y Loma III 
+Se agregan Centrales Eolicas Loma Blanca I y Loma 
+Blanca III 
+6 
+08/02/2021 
+Caldenes y 
+Hercules 
+Se agrega central Fotovoltaica Caldenes del Oeste 
+y Eolica Viento los Hercules 
+7 
+01/04/2021 
+Loma VI 
+Se agrega Central Eolica Loma Blanca VI 
+8 
+29/09/2021 
+Kosten 
+Se agrega Central Eolica Kosten 
+9 
+07/05/2022 
+Tinogasta 
+Se agrega central Fotovoltaica Tinogasta Tozi 
+10 
+02/07/2022 Pollos San Mateo Se agrega central de Biogas Pollos San Mateo 
+11 
+01/04/2023 
+Cura Brochero 
+Se agrega central Fotovoltaica Cura Brochero 
+12 
+23/05/2023 Cambio de Codigo Se cambio la codificacion del documento 
+13 
+23/08/2023 
+Buena Ventura y 
+Villa Maria 
+Se agrega Central Eolica Buena Ventura y central 
+Fotovoltaica Villa Maria del Rio Seco  
+14 
+03/10/2023 
+Mario Cebreiro 
+Se agrega Central Eolica Mario Cebreiro 
+15 
+29/12/2023 
+CT Adecoagro 
+Se agrega CT Biogas Adecoagro 
+16 
+11/06/2024 
+Se agregaron 
+varios parques 
+Se agregan PS Victorica – PS Algarrobo – CT 
+Bioanglo – CT Pergamino y CT Venado Tuerto – CT 
+Bell Ville.
+
+--- Página 4 ---
+Anexo D Listado de Centrales Operadas 
+por el CROM  
+Instructivo 
+0309_I_PR02_IS01_20 
+Revision: 
+20 
+Fecha: 
+10/09/2025 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+17 
+28/11/2024 
+Se agrega CTBM 
+Se agrega la Central Termica de Bio Masa La Florida 
+18 
+21/12/2024 
+Se agrega 
+Amanecer IV 
+Se agrega P.S. Amanecer IV 
+19 
+31/07/2025 
+Se agrega La 
+Rinconada 
+Se agrega P.E. La Rinconada 
+20 
+10/09/2025 Se agrega La Perla 
+de chaco 
+Se agrega P.S. La Perla de Chaco 
+  
+  
+FIN
+

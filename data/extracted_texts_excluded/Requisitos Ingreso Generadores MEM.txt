@@ -1,0 +1,112 @@
+=== Requisitos Ingreso Generadores MEM.pdf ===
+
+--- Página 1 ---
+INGRESO AL MEM DE NUEVOS AGENTES 
+GENERADORES 
+Resolucion Autorizacion como Agente 
+Resolucion Acceso a la Capacidad  
+de Transporte 
+AUTORIZACIONES 
+REQUERIDAS 
+GENERADOR 
+1
+
+--- Página 2 ---
+AUTORIZACION DE INGRESO COMO AGENTE DEL MEM 
+ANEXO 17 de Los Procedimientos 
+•
+Constancia inicio del tramite en S.S.E.E. 
+•
+Datos Comerciales (Incluir constancia inscripcion 
+en Afip) 
+•
+Descripcion tecnica del parque. 
+•
+Punto de conexion. 
+•
+Certificacion de firma por escribano. 
+ 
+•
+Copia certificada del Estatuto de la sociedad. 
+•
+Acuerdo economico/tecnico con el PAFTT  
+     (de corresponder). 
+•
+Cumplimiento de los Reglamentos Ambientales. 
+•
+Contrato de concesion (hidroelectricas). 
+•
+Presentar al ENRE la documentacion que avale el 
+cumplimiento de los Reglamentos Ambientales. 
+ 
+ 
+2
+
+--- Página 3 ---
+ACCESO A LA CAPACIDAD Y AMPLIACION DEL 
+TRANSPORTE 
+ANEXO 16 de Los Procedimientos 
+DISTRIBUIDOR/TRANSPORTISTA 
+Opinion tecnica 
+Resolucion 
+Estudios Electricos 
+Opinion tecnica 
+3
+
+--- Página 4 ---
+Procedimientos Tecnicos y ensayos a presentar 
+• Realizado comunmente por consultores especializados. 
+• Estudios Electricos de Etapa I: 
+• Funcionamiento estatico del sistema: estudio de flujos de cargas. 
+• Los limites de transporte de los sistemas de transmision: Cortocircuito y requerimientos del 
+transporte. 
+• Funcionamiento ante transitorios electromecanicos y electromagneticos ante diferentes 
+perturbaciones y maniobras. 
+• Estudios Electricos de Etapa II: 
+• Se realizan posterior a la aprobacion del ENRE. 
+• Se realizan con las caracteristicas del equipamiento. 
+• Se definen los requerimientos de equipamiento de control y recursos estabilizantes. 
+• Estudios Electricos de Etapa III (Ensayos): 
+• De pequenas perturbaciones (evaluacion del amortiguamiento). 
+• Ajuste de los equipos limitadores de perturbaciones introducidas en la tension (Flicker, Armonicos, 
+variaciones bruscas de carga, etc). 
+• Estabilidad transitoria. 
+• Ajuste de los reguladores de tension y velocidad. 
+• Ajuste de instalaciones para el arranque en negro y formacion de islas. (de ser requerido) 
+ 
+4
+
+--- Página 5 ---
+SOLICITUD DE HABILITACION COMERCIAL 
+CONEXION AL SADI (Solicitud de conexion enviada CAMMESA) 
+1.
+Contar con la autorizacion de ingreso al MEM como Agente Generador (S.S.E.E.)-Anexo 17 L.P. 
+2.
+Contar con la autorizacion de Acceso a la Capacidad y Ampliacion de Transporte (ENRE) – Anexo 16 L.P. 
+3.
+Tener la aprobacion de los EEE II de parte del PFTT y CAMMESA. 
+4.
+Acta de conformidad de las instalaciones del PFTT y ajuste de protecciones. 
+5.
+Habilitacion comercial SMEC. 
+6.
+Enlace SOTR establecido. 
+7.
+De corresponder, envio de cronograma de ensayos. 
+ 
+HABILITACION COMERCIAL (Solicitud de habilitacion a CAMMESA) 
+1.
+Realizacion de ensayos y/o pruebas cumplimentando los requisitos minimos del PT N° 4, a satisfaccion de 
+CAMMESA, los cuales deberan ser presentados ante CAMMESA con 48 horas de anticipacion a la 
+fecha solicitada de habilitacion comercial. 
+2.
+Haber cumplimentado con los requerimientos de ampliaciones y/o automatismos requeridos por el PFTT, ENRE 
+y CAMMESA. 
+3.
+El generador debera requerir la habilitacion comercial de forma explicita. 
+4.
+Informar la Potencia Maxima certificada por consultor/auditor independiente, en el punto de entrega al MEM 
+(Punto de medicion SMEC de la central). 
+ 
+5
+

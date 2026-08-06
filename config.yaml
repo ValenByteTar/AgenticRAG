@@ -28,8 +28,6 @@ retrieval:
 enable_auto_reasoning: false  # Desactivado para optimizar velocidad - activar solo si es necesario
 # Auto-revisión: el LLM verifica y corrige su propia respuesta
 enable_self_review: false  # El LLM revisa su respuesta y la corrige si omitió información (añade ~5-10s por consulta)
-# Mapa conceptual: sistema de aprendizaje de atajos
-use_conceptual_map: true  # El sistema aprende de consultas previas y crea atajos
 # DocCards/Planner: roles de documento y planificador de recuperación
 use_doc_roles: true
 use_planner: true
@@ -97,7 +95,7 @@ reranker:
     
 doccards:
   llm_enabled: true
-  model_name: qwen3-4b-rag:latest
+  model_name: ibm/granite4.1:3b-q6_K
   max_docs: 0
   # Presupuesto LLM (uno u otro)
   llm_ratio: 0.2         # Refina top 20% por centralidad

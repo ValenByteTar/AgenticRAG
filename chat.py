@@ -54,8 +54,6 @@ Ejemplos de consultas:
 
 COMANDOS:
    /ayuda       - Mostrar ayuda
-   /agregar     - Agregar información a la memoria
-   /memoria     - Ver memoria del sistema
    /detalles    - Toggle detalles de búsqueda
    /fuentes     - Toggle mostrar fuentes
    /config      - Configurar búsqueda
@@ -99,8 +97,6 @@ Ejemplos:
 
 [bold yellow]Comandos Disponibles:[/bold yellow]
   /ayuda       - Mostrar esta ayuda
-  /agregar     - Agregar información a la memoria del sistema
-  /memoria     - Ver información guardada en memoria
   /detalles    - Activar/desactivar detalles de búsqueda (incluye re-rank scores)
   /fuentes     - Activar/desactivar lista de fuentes
   /config      - Ajustar parámetros de búsqueda
@@ -187,77 +183,8 @@ def configure_search():
     }
 
 
-def add_to_memory(rag):
-    """Agregar información a la memoria"""
-    console.print("\n[bold cyan]Agregar a Memoria[/bold cyan]")
-    console.print("[dim]Ayuda al sistema a aprender información que no tiene[/dim]\n")
-    
-    question = Prompt.ask("Pregunta o tema")
-    if not question:
-        return
-    
-    answer = Prompt.ask("Respuesta o información")
-    if not answer:
-        return
-    
-    category = Prompt.ask("Categoría (opcional)", default="")
-    
-    # Extraer keywords
-    from memory_system import extract_keywords
-    keywords = extract_keywords(question + " " + answer)
-    
-    # Guardar
-    record_id = rag.memory.add_knowledge(
-        question=question,
-        answer=answer,
-        category=category if category else None,
-        keywords=keywords
-    )
-    
-    console.print(f"\n[green]✓ Información guardada (ID: {record_id})[/green]")
-    console.print(f"[dim]Keywords: {', '.join(keywords[:5])}[/dim]")
-
-
-def view_memory(rag):
-    """Ver memoria del sistema"""
-    stats = rag.memory.get_stats()
-    
-    console.print(f"\n[bold cyan]Memoria del Sistema[/bold cyan]")
-    console.print(f"[dim]Total registros: {stats['total_records']}[/dim]\n")
-    
-    if stats['total_records'] == 0:
-        console.print("[yellow]No hay información en memoria aún[/yellow]")
-        console.print("[dim]Usa /agregar para agregar información[/dim]")
-        return
-    
-    records = rag.memory.get_all_knowledge(limit=10)
-    
-    table = Table(show_header=True, header_style="bold cyan")
-    table.add_column("ID", width=5)
-    table.add_column("Pregunta", width=40)
-    table.add_column("Respuesta", width=40)
-    table.add_column("Fecha", width=19)
-    
-    for r in records:
-        table.add_row(
-            str(r['id']),
-            r['question'][:37] + "..." if len(r['question']) > 40 else r['question'],
-            r['answer'][:37] + "..." if len(r['answer']) > 40 else r['answer'],
-            r['timestamp'][:19]
-        )
-    
-    console.print(table)
-    
-    if stats['total_records'] > 10:
-        console.print(f"\n[dim]Mostrando 10 de {stats['total_records']} registros[/dim]")
-
-
 def display_result_chat(result, settings, already_streamed=False):
     """Mostrar resultado en formato chat"""
-    
-    # Indicador de memoria usada
-    if result.get('memory_hits', 0) > 0:
-        console.print(f"\n[bold blue]MEMORIA: Usando {result['memory_hits']} registro(s) de memoria[/bold blue]")
     
     # Respuesta del asistente
     if result['answer']:
@@ -330,7 +257,7 @@ def chat_interface():
     
     console.clear()
     console.print(Panel.fit(
-        f"[bold green]SISTEMA RAG HÍBRIDO CON MEMORIA[/bold green]\n"
+        f"[bold green]SISTEMA RAG HÍBRIDO[/bold green]\n"
         f"Búsqueda Semántica + Keyword + Re-ranking + Qwen3\n\n"
         f"Base de Conocimiento:\n"
         f"  • {num_docs:,} documentos indexados\n\n"
@@ -340,8 +267,6 @@ def chat_interface():
         f"  • Temperatura optimizada (respuestas determinísticas)\n\n"
         f"Comandos principales:\n"
         f"  • Escribe tu pregunta para consultar\n"
-        f"  • /agregar - Agregar información que el sistema no tiene\n"
-        f"  • /memoria - Ver información guardada\n"
         f"  • /ayuda - Ver todos los comandos\n"
         f"  • /salir - Terminar",
         
@@ -391,12 +316,6 @@ def chat_interface():
                         console_interface_line = "-" * 80
                         console.print(console_interface_line)
                         console.print("[green]OK: Pantalla limpiada[/green]")
-                    
-                    elif command == '/agregar' or command == '/add':
-                        add_to_memory(rag)
-                    
-                    elif command == '/memoria' or command == '/memory':
-                        view_memory(rag)
                     
                     elif command == '/contexto':
                         rag.conversation.clear()

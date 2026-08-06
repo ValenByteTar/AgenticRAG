@@ -1,0 +1,167 @@
+=== GOLDWIND - Reportes Semanales de SCADA.pdf ===
+
+--- Página 1 ---
+RAW-DATA para Reportes semanales de SCADA Goldwind (Rev. 04) 
+ 
+El turno noche del Jueves debe sacar 5 Excels pasadas las 00hs. El turno noche del Martes debe sacar solo Fault 
+Statistics desde el Viernes pasado hasta el martes completo. 
+Deben guardarlos en Sharepoint de produccion con el nombre de la semana con el que arrancaron el turno, 
+dentro de la carpeta del parque correspondiente. 
+ 
+Son 3 Semanales (*) - Production Statistics, Fault Statistics e Integrated Report (Semanal de Comprehesive) 
+- 
+Viernes despues de las 0hs: debe incluir Desde el Viernes anterior hasta ese Jueves (completo) 
+ 
+Y 2 Acumulados mensuales - Integrated Report (Comprehensive) y Power Curve 
+- 
+Debe tener del 1ro de mes en curso, hasta el ultimo dia del informe semanal (*). Si en los intervalos 
+de los reportes semanales anteriores hay dias de 2 meses distintos, hay que sacar 2 acumulados. 
+Uno para el mes cerrado, y el otro del dia 1 hasta el ultimo dia completo posible. 
+ 
+ 
+Ejemplo: 
+ 
+ 
+ 
+ 
+Tomamos el turno Noche del Jueves 03/02, sacamos los informes luego de las 00hs (ya comenzado el viernes).  
+- Los Semanales van desde 28/01 al 03/02 (completo). 
+- Acumulados: un informe que va desde 01/01 al 31/01 y otro del 01/02 al 03/02 (completo). 
+- Se guarda como Semana 5. 
+ 
+ 
+El Martes 31/05 debe sacar “solo” el Fault Detail desde el 27/5 hasta 31/05 (completo) y guardarlo en Semana 21 (si es 
+que hubo eventos, sino no se creara el archivo por falta de datos).
+
+--- Página 2 ---
+Desde Data Center 
+1. Production Statistics (semanal) 
+ 
+Device: Selected 16/ Total 16 
+ 
+Summary Option: Device / Day 
+Start Time: 2021-fecha de inicio de reporte 
+End Time: 2021-fecha del comienzo de turno noche 
+ 
+Darle a Query y Luego a Export 
+ 
+Nombre del Archivo Excel: Production Statics 
+ 
+ 
+2. Quality Statistics -> Fault Statistics (semanal) 
+ 
+Search Type: QUERY -→ SEARCH 
+Device: Selected 16/ Total 16 
+Summary Options: Fault/Time (grisado) 
+Start Time: 2021- fecha de inicio de reporte a las 00hs 
+End Time: 2021 - noche actual - 00:00hs 
+Darle a Query y Luego a Export 
+ 
+Nombre del Archivo Excel: Fault Detail Search 
+ 
+ 
+3. Report Form -> Integrated Report (ACUMULADO) 
+(al exportar a Excel, se descarga como Comprehensive Report) 
+Primero luego de poner Measuring Point Selection, si hay datos a la derecha, hay que seleccionar todos y pulsar 
+en Remove. Luego seleccionar los campos que se extraen. Los mismos estan agrupados. 
+       
+ 
+Program: Elegir ACUMULADO, tiene guardado la plantilla con las opciones, solo poner Start y End Time. 
+Sino figura el programa, seguir la seleccion manual siguiente: 
+ 
+Measuring Point: WindTurbine (se abre el menu de las imagenes de arriba) 
+(Tildar los item de Campos seleccionados (*), luego Add y OK)
+
+--- Página 3 ---
+Device: Measuring Point Selection 
+Summary Option: Device / Month 
+ 
+Start y End Time: del 01 al ultimo dia del informe completo, si en el periodo del informe hay cambio de 
+mes, generar 2 archivos, uno con el mes completo pasado y otro que cubra los dias posibles del actual 
+mes. 
+ 
+Darle a Query y Luego a Export 
+ 
+Nombre del Archivo Excel: Comprehensive Report 
+Campos seleccionados 
+Wind Speed  
+• 
+Avg AverageWind Speed in 3 seconds 
+ 
+Active Power 
+• 
+Avg Grid active power(kW) 
+ 
+• 
+Avg Theoretical Active Power(kW) 
+Reactive Power 
+• 
+Avg Grid reactive power(kVar) 
+ 
+Temperature 
+• 
+Avg Ambient o Environment temperature 
+ 
+Total Active Power (seleccionar todos) 
+• 
+first Energy yield(kWh) 
+ 
+• 
+Wind Turbine Power Yield(kWh) 
+ 
+• 
+last Energy yield(kWh) 
+Wind Direction (seleccionar todos) 
+• 
+Avg ABS Wind Direction(deg) 
+ 
+• 
+AVG Wind direction (deg)  
+Customized Measuring Point 
+• 
+Time Availability  
+ 
+4. Report Form -> Integrated Report (SEMANAL DETALLADO) 
+ 
+Program: Elegir SEMANAL DETALLADO, tiene guardado la plantilla con las opciones, solo poner Start y End Time. 
+Si no figura el programa, seguir la seleccion manual siguiente:
+
+--- Página 4 ---
+Measuring Point: WindTurbine (se abre el menu de las imagenes de arriba) 
+ 
+Seleccionar Todos los aeros (segunda columna) 
+ 
+En “Main information” seleccionar 
+➢ Wind Speed 
+✓ Avg average wind speed in 3 seconds 
+➢ Active power 
+✓ Avg Grid-side Active Power 
+✓ Max theoretical Active power 
+✓ Min theoretical Active power 
+✓ Avg theoretical Active power 
+Add > 
+Summary option: Device, Hour 
+Template type: Private type 
+Save 
+ 
+Start Time: 2021- fecha de inicio de reporte a las 00hs 
+End Time: 2021 - noche actual - 00:00hs 
+ 
+Darle a Query y Luego a Export 
+ 
+Nombre del Archivo Excel: Comprehensive Report 
+ 
+Desde Analysis Center 
+ 
+5. Power Curve Analyze (acumulado mensual) 
+ 
+Function Type: Wind Power Curve 
+Type: Curve Analysis 
+Wind Turbine: Selected 16/ Total 16 
+Start y End Time: del 01 al ultimo dia del informe completo, si en el periodo del informe hay cambio de mes, 
+generar 2 archivos, uno con el mes completo pasado y otro que cubra los dias posibles del actual mes. 
+ 
+Darle a Query y Luego a Export y Data 
+ 
+Nombre del Archivo Excel: Power+Curve
+

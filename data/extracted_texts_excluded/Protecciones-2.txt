@@ -1,0 +1,1396 @@
+=== Protecciones-2.pdf ===
+
+--- Página 1 ---
+Sistemas de proteccion 
+Pagina 1 de 31 
+CURSO DE ESTABILIDAD DE SISTEMAS ELECTRICOS DE POTENCIA, FING 2007. 
+SISTEMAS DE PROTECCION 
+INDICE 
+Definicion....................................................................................................................................... 2 
+Caracteristicas de un sistema de proteccion ................................................................................ 2 
+Protecciones Principales y Protecciones de Respaldo................................................................. 3 
+Proteccion de las lineas de trasmision.......................................................................................... 3 
+Rele de sobrecorriente:............................................................................................................................4 
+Rele de distancia......................................................................................................................................5 
+Medida de la impedancia de falta.............................................................................................................7 
+Zonas de proteccion.................................................................................................................................7 
+Reles de distancia con comunicacion ......................................................................................................8 
+Ejemplo: Esquema de transferencia de disparo: Esquema de sobrealcance ..........................................9 
+Ejemplo: Esquema de bloqueo: ...............................................................................................................9 
+Oscilacion de potencia ................................................................................................................ 10 
+PSB: Bloqueo por oscilacion de potencia: .............................................................................................13 
+OST: Disparo por oscilacion de potencia: ..............................................................................................13 
+Comportamiento del rele de distancia durante una oscilacion de potencia............................................13 
+Rele de sobrecorriente...........................................................................................................................13 
+Rele de distancia....................................................................................................................................13 
+Impedancia medida durante una oscilacion de potencia........................................................................14 
+Metodos para la deteccion de la oscilacion de potencia ........................................................................17 
+Metodos convencionales........................................................................................................................17 
+Caracteristicas concentricas. .................................................................................................................17 
+Caracteristica con  blinder (anteojeras) .................................................................................................18 
+Caracteristicas blinder (1 recta): ............................................................................................................19 
+En general:.............................................................................................................................................19 
+Otros metodos........................................................................................................................................21 
+Calculo continuo de la impedancia.........................................................................................................21 
+Sincrofasores .........................................................................................................................................22 
+Centro de oscilacion SCV (swing center voltage): .................................................................................22 
+Formas de onda (oscilografias) de oscilaciones de potencia.................................................................23 
+Resumen: Filosofia de proteccion ante osc. de potencia.......................................................................24 
+Metodos para mejorar la estabilidad transitoria, que hacen a los Sistemas de Proteccion....................25 
+Estabilidad en  frecuencia ........................................................................................................... 27 
+Protecciones de frecuencia y acciones clasicas de disparo de carga por subfrecuencia. .....................29 
+Proteccion de generadores. ...................................................................................................................29 
+Proteccion del sistema. ..........................................................................................................................29 
+Bibliografia mas relevante........................................................................................................... 31
+
+--- Página 2 ---
+Sistemas de proteccion 
+Pagina 2 de 31 
+SISTEMAS DE PROTECCION 
+ 
+En este trabajo se encara la tematica de los sistemas de proteccion, desde el 
+punto de vista de su aporte a la estabilidad transitoria y estabilidad de 
+frecuencia de los sistemas electricos de potencia. 
+DEFINICION 
+El objetivo de los sistemas de proteccion es remover del servicio lo mas rapido 
+posible cualquier equipo del sistema de potencia que comienza a operar en una 
+forma anormal. El proposito, es tambien, limitar el dano causado a los equipos 
+de potencia, y sacar de servicio el equipo en falta lo mas rapido posible para 
+mantener la integridad y estabilidad del sistema de potencia. 
+Dado que la estabilidad transitoria esta relacionada con la habilidad que tiene el 
+sistema de potencia para mantener el sincronismo cuando esta sometido a 
+grandes perturbaciones, el comportamiento satisfactorio de los sistemas de 
+proteccion es importante para asegurar la estabilidad del mismo. 
+CARACTERISTICAS DE UN SISTEMA DE PROTECCION 
+Para que un sistema de proteccion pueda realizar sus funciones en forma 
+satisfactoria debe cumplir con las siguientes caracteristicas: 
+- 
+Sensibilidad  
+Detectar pequenas variaciones en el entorno del punto de equilibrio, de 
+ajuste, o de referencia, con minima zona muerta o de indefinicion. 
+- 
+Selectividad  
+Detectar un determinado tipo de anomalia en un determinado componente 
+o equipo del sistema de potencia y no operar ante otro tipo de anomalia o 
+ante anomalias en otros equipos. 
+- 
+Rapidez  
+Limitar la duracion de las anomalias, minimizando los retardos no 
+deseados. 
+- 
+Confiabilidad (Reliability)  
+Probabilidad de cumplir la funcion encargada sin fallar, durante un periodo 
+de tiempo. 
+- 
+Dependability  
+Probabilidad de que la proteccion opere correctamente, o sea que 
+opere cuando corresponde que lo haga. 
+- 
+Security  
+Probabilidad de que la proteccion no opere incorrectamente, 
+habiendo o no falta o condicion anormal en el sistema electrico de 
+potencia, o sea que no opere cuando no corresponde que lo haga.
+
+--- Página 3 ---
+Sistemas de proteccion 
+Pagina 3 de 31 
+Las protecciones aportan a las siguientes caracteristicas deseables en un 
+sistema de potencia: 
+- 
+su disponibilidad (porcentaje del tiempo estipulado, en que el equipo o parte 
+del sistema de potencia esta disponible para ser operado o utilizado) 
+- 
+la confiabilidad (probabilidad de que un equipo o sistema pueda operar sin 
+fallas durante un tiempo estipulado) 
+- 
+la estabilidad (capacidad de recuperar un estado estable de operacion, 
+caracterizado por la operacion sincronica de los generadores, luego de una 
+perturbacion) 
+ 
+PROTECCIONES PRINCIPALES Y PROTECCIONES DE RESPALDO 
+Hay dos razones por la cual se deben instalar protecciones de respaldo en un 
+sistema de potencia. La primera es para asegurar que en caso que la 
+proteccion principal falle en despejar una falta, la proteccion de respaldo lo 
+haga. La segunda es para proteger aquellas partes del sistema de potencia que 
+la proteccion principal no protege, debido a la ubicacion de sus 
+transformadores de medida. 
+La necesidad de respaldo remoto, respaldo local o falla interruptor dependen 
+de la consecuencia de esa falta para el sistema de potencia. 
+- 
+Respaldo remoto: Las protecciones de respaldo remoto se ubican en las 
+estaciones adyacentes o remotas. 
+- 
+Respaldo local y falla interruptor: El respaldo local esta ubicado en la misma 
+estacion. 
+El objetivo de las protecciones de respaldo es abrir todas las fuentes de 
+alimentacion a una falta no despejada en el sistema. Para realizar esto en 
+forma eficiente las protecciones de respaldo deben: 
+- 
+Reconocer la existencia de todas las faltas que ocurren dentro de su zona 
+de proteccion. 
+- 
+Detectar cualquier elemento en falla en la cadena de protecciones, 
+incluyendo los interruptores. 
+- 
+Iniciar el disparo de la minima de cantidad de interruptores necesarios para 
+eliminar la falta. 
+- 
+Operar lo suficientemente rapido para mantener la estabilidad del sistema, 
+prevenir que los equipos se danen y mantener la continuidad del servicio. 
+ 
+PROTECCION DE LAS LINEAS DE TRASMISION 
+Uno de los aspectos importante del estudio de la estabilidad transitoria es la 
+evaluacion del comportamiento de los sistemas de proteccion durante el 
+periodo transitorio, particularmente los reles de proteccion utilizados en las 
+lineas de transmision.
+
+--- Página 4 ---
+Sistemas de proteccion 
+Pagina 4 de 31 
+Muchos factores se deben tener en cuenta en el momento de elegir el sistema 
+de proteccion para una linea de trasmision: 
+- 
+Tipo de circuito: cable, linea aerea, una linea, lineas en paralelo, etc. 
+- 
+Funcion e importancia de la linea: Que efecto tiene la linea en la 
+continuidad del servicio, tiempo que se requieren para despejar una falta, 
+nivel de tension. 
+- 
+Otros requerimientos: compatibilidad con el equipamiento existente en las 
+lineas y sistemas adyacentes. 
+Las protecciones usadas para proteger las lineas o cables de trasmision son: 
+- 
+Rele de sobrecorriente  
+- 
+Rele diferencial de linea 
+- 
+Rele de distancia 
+- 
+Rele de distancia con comunicacion 
+ 
+RELE DE SOBRECORRIENTE:  
+Los reles de sobrecorriente son la forma mas barata y simple de proteger una 
+linea de trasmision pero ademas es una proteccion que necesita ser reajustada 
+cuando cambian las condiciones del sistema de potencia. Son utilizados de las 
+siguientes formas: 
+- 
+instantaneo 
+- 
+temporizado 
+- 
+direccional (instantaneo y/o temporizado) 
+No pueden discriminar entre corriente de carga y corriente de falta; por lo cual 
+solo se emplean cuando la corriente de falta es mayor a la corriente de carga. 
+Las corrientes de cortocircuito en la linea dependen fuertemente de la 
+impedancia de la fuente en el punto de medida, por lo tanto la zona de la linea 
+protegida por un rele de sobrecorriente depende fuertemente de la 
+configuracion del sistema electrico. 
+Generalmente son utilizados en lineas radiales, como se muestra en la Fig.1,  y 
+como faltas en estos circuitos no afectan la estabilidad del sistema, no son 
+requeridos tiempos instantaneos de despeje de la misma. 
+ 
+Fuente 
+ZS 
+Carga 
+Carga 
+Carga 
+Fig. 1: Circuito radial
+
+--- Página 5 ---
+Sistemas de proteccion 
+Pagina 5 de 31 
+En lineas de trasmision donde hay alimentacion desde ambos extremos, se 
+utilizan reles de sobrecorriente direccional con o sin esquemas de 
+teleproteccion. 
+ 
+RELE DE DISTANCIA 
+En los circuitos de trasmision de alta tension, los niveles de corriente de falta 
+son altos, por lo cual si una falta no es despejada rapidamente, puede causar 
+inestabilidad al sistema de potencia asi como danos al personal o al 
+equipamiento. Por esta razon, los reles de distancia son empleados en vez de 
+los reles de sobrecorriente.  
+Las ventajas de aplicacion de reles de distancia, en comparacion con los reles 
+de sobrecorriente son: 
+- 
+mayor zona de operacion instantanea 
+- 
+mayor sensibilidad 
+- 
+mas faciles de ajustar y coordinar 
+- 
+no son afectados por los cambios en la configuracion del sistema de 
+potencia 
+Un rele de distancia calcula impedancia como el cociente entre la tension y 
+corriente, en su ubicacion en el sistema de potencia, para determinar si existe 
+una falta dentro o fuera de su zona de operacion. 
+Dado que en las lineas de trasmision la impedancia de la linea es proporcional 
+a su longitud; es apropiado utilizar reles de distancia para medir la impedancia 
+de la misma desde la ubicacion del rele hasta un punto determinado (lugar de 
+la falta).  
+De alli que a los reles de impedancia se los llame reles de distancia. 
+El rele de distancia esta conectado a la linea a traves de los transformadores 
+de medida. Suponemos que ocurre una falta a una distancia 
+Ω
+L
+nZ
+ desde el 
+rele. Dado que la tension en el lugar de la falta es: 
+V
+VF
+0
+=
+, la tension en el 
+rele es: 
+L
+R
+R
+nZ
+I
+V =
+. 
+Es decir 
+ 
+L
+R
+L
+R
+R
+R
+v
+nZ
+I
+nZ
+I
+I
+V
+Z
+=
+=
+=
+ 
+ 
+ 
+ 
+ 
+Conexion de un rele de distancia
+
+--- Página 6 ---
+Sistemas de proteccion 
+Pagina 6 de 31 
+La figura siguiente muestra la representacion de la linea protegida por un rele 
+de distancia, a instalar en G. El sistema tambien puede ser representado por 
+una grafica R-X (plano de impedancia).   
+ 
+Los reles de distancia se pueden clasificar segun la forma de sus zonas de 
+operacion. 
+En general se reconocen cuatro formas de la caracteristica de operacion, las 
+cuales se muestran en la Fig.2: 
+- 
+a. caracteristica de impedancia 
+- 
+b. caracteristica de admitancia o mho  
+- 
+c. caracteristica de reactancia  
+- 
+d. caracteristica poligonal o cuadrilateral 
+Un rele de distancia opera si la impedancia medida por el rele esta dentro de su 
+caracteristica de operacion. 
+ 
+(b)
+(a)
+(c)
+(d)
+ 
+Fig. 2: Caracteristica de operacion de los reles de distancia
+
+--- Página 7 ---
+Sistemas de proteccion 
+Pagina 7 de 31 
+MEDIDA DE LA IMPEDANCIA DE FALTA 
+En un sistema de potencia trifasico, hay 10 tipos diferentes de faltas:  
+- 
+trifasica: abc 
+- 
+bifasicas: ab – bc – ac 
+- 
+bifasicas a tierra: abg – bcg – acg 
+- 
+una fase a tierra: ag – bg – cg 
+Las ecuaciones que representan las relaciones entre tensiones y corriente, en 
+la ubicacion del rele, son diferentes para cada tipo de falta. Es fundamental en 
+los reles de distancia, independientemente del tipo de falta, que siempre se 
+mida la impedancia de secuencia positiva. Por lo tanto, los ajustes de las zonas 
+de operacion se realizan en base al valor de impedancia de secuencia positiva. 
+ 
+ZONAS DE PROTECCION 
+El esquema basico de los reles de distancia comprende una zona 1 instantanea 
+y al menos dos zonas con disparo temporizado. Los ajustes tipicos para un rele 
+de distancia de 3 zonas se muestran en la Fig.3. Los reles digitales pueden 
+tener hasta 5 zonas y algunas de ellas se las puede ajustar para operar hacia 
+atras. Los ajustes tipicos de cada zona son: 
+- 
+Zona 1: Alcance = 80% impedancia de la linea; Tiempo: instantaneo 
+- 
+Zona 2: Alcance = 120% impedancia de la linea: Tiempo: 0.3 a 0.6 s 
+- 
+Zona 3: Alcance = respaldo de lineas adyacentes: Tiempo: >1 s 
+ 
+Fig. 3: Caracteristica tiempo-distancia
+
+--- Página 8 ---
+Sistemas de proteccion 
+Pagina 8 de 31 
+Este tipo de sistema de proteccion no es adecuado cuando se requiere un 
+disparo instantaneo en ambos extremos, como se muestra en la Fig.4, el cual 
+es critico para mantener la estabilidad del sistema de potencia. En estos casos 
+se utilizan reles de distancia con comunicacion. 
+ 
+ 
+RELES DE DISTANCIA CON COMUNICACION  
+Para lograr disparos instantaneos en ambos extremos de la linea se utilizan 
+reles de distancia donde se habilitan esquemas de teleproteccion. Los 
+esquemas de teleproteccion interconectan los reles de distancia de en ambos 
+extremos de la linea mediante canales de comunicacion, para poder identificar 
+si la falta es dentro del equipo protegido y operar en forma instantanea para 
+faltas en toda la longitud de la linea. 
+El objetivo del canal de comunicacion es trasmitir informacion sobre las 
+condiciones del sistema desde un extremo hacia el otro, incluyendo 
+transferencia de disparo o bloqueo del interruptor remoto. 
+Los medios de comunicacion que generalmente se utilizan son: 
+- 
+onda portadora (carrier) 
+- 
+microonda 
+- 
+fibra optica 
+Los esquemas de comunicacion se clasifican en: 
+- 
+esquemas de transferencia de disparo: son los esquemas en que la 
+recepcion de una senal inicia un disparo al interruptor 
+- 
+esquemas de bloqueo: son esquemas en que la recepcion de una senal 
+bloquea el disparo al interruptor. 
+Fig. 4: Rele de distancia: esquema escalonado
+
+--- Página 9 ---
+Sistemas de proteccion 
+Pagina 9 de 31 
+EJEMPLO: ESQUEMA DE TRANSFERENCIA DE DISPARO: ESQUEMA DE SOBREALCANCE 
+Es este esquema se requiere recibir una senal del extremo remoto para 
+disparar en forma instantanea. Este esquema es mostrado en la Fig.5. 
+Se requiere que el detector de falta sobrealcance la linea protegida, para todas  
+las condiciones de funcionamiento. 
+ 
+FD (Forward Direction): Deteccion de un defecto hacia adelante (hacia el lado de la linea 
+protegida, sobrealcanzandola) 
+T: Trasmision de teleproteccion 
+R: Recepcion de teleproteccion 
+f: Senal emitida de teleproteccion 
+EJEMPLO: ESQUEMA DE BLOQUEO: 
+Este esquema se basa en discernir localmente si la direccion vista de la falta en 
+cada extremo de la linea, es hacia adelante o hacia atras. Transmitiendo esta 
+informacion al extremo remoto, ambos extremos pueden decidir si la falta esta 
+dentro de la zona protegida o no. El disparo esta permitido si no se recibe senal 
+del extremo remoto. Este esquema es mostrado en la Fig.6. 
+Fig. 5: Rele de distancia: Esquema sobrealcance
+
+--- Página 10 ---
+Sistemas de proteccion 
+Pagina 10 de 31 
+ 
+Fig. 6: Rele de distancia: Esquema de bloqueo 
+ 
+S: Deteccion de un defecto hacia atras (no en la linea protegida) 
+OSCILACION DE POTENCIA 
+El sistema de potencia, en regimen estacionario, opera muy cerca de su 
+frecuencia nominal y las magnitudes de las tensiones en las diferentes barras 
+no varian mas de un 5%. Por lo tanto, existe un balance entre la potencia activa 
+y reactiva generada y la consumida. 
+Cualquier cambio en la potencia generada, potencia demanda o en el sistema 
+de potencia causa cambios en la transferencia de  potencia del sistema, que 
+oscila hasta alcanzar otro punto de equilibrio entre la generacion y la carga. 
+Estos cambios ocurren permanentemente y son compensados por los sistemas 
+de control. 
+Perturbaciones que causan oscilaciones de potencia: 
+- 
+las faltas en el sistema de potencia,  
+- 
+las conexiones de lineas de trasmision,  
+- 
+las desconexiones de generadores o  
+- 
+la perdida o aplicacion de grandes bloques de carga  
+Estas perturbaciones resultan en cambios repentinos en la potencia electrica, 
+mientras que la potencia mecanica se mantiene constante. Dependiendo de la 
+perturbacion y de la accion de los controladores las oscilaciones pueden ser 
+estables o inestables.
+
+--- Página 11 ---
+Sistemas de proteccion 
+Pagina 11 de 31 
+En el curso se ha estudiado la estabilidad transitoria y las oscilaciones estables 
+e inestables.
+
+--- Página 12 ---
+Sistemas de proteccion 
+Pagina 12 de 31 
+ 
+ 
+ 
+La oscilacion de potencia puede hacer que la impedancia vista por un rele entre 
+en su caracteristica de operacion; y la operacion de estos reles puede hacer 
+que salgan de servicio lineas de trasmision u otros componentes, haciendo 
+mas debil el sistema, aumentando la gravedad de la perturbacion. 
+Los reles, funciones y zonas de distancia que pueden operar durante una 
+oscilacion de potencia deben ser bloqueados temporalmente. En los reles de 
+distancia modernos se tienen disponibles las funciones: 
+- 
+PSB: Bloqueo por oscilacion de potencia (power swing blocking). 
+- 
+OST: Disparo por oscilacion de potencia (out-of-step tripping).
+
+--- Página 13 ---
+Sistemas de proteccion 
+Pagina 13 de 31 
+PSB: BLOQUEO POR OSCILACION DE POTENCIA: 
+Esta funcion diferencia entre una falta y una oscilacion de potencia y bloquea el 
+rele de distancia durante una oscilacion de potencia y previniendo el disparo. 
+Ademas, debe permitir detectar y despejar las faltas que ocurren durante una 
+oscilacion de potencia.  
+El disparo indebido de interruptores durante una oscilacion de potencia puede 
+causar dano al equipamiento y contribuir al apagon en varias areas del sistema. 
+Por lo tanto, es necesario, el disparo controlado de ciertos elementos en 
+determinados puntos del sistema para evitar dano al equipamiento y minimizar 
+los efectos de la perturbacion.  
+OST: DISPARO POR OSCILACION DE POTENCIA: 
+Esta funcion diferencia entre una oscilacion estable de una inestable y permite 
+disparar algunos elementos del sistema para evitar el dano de los equipos y 
+que la perturbacion se extienda en el sistema. 
+Cuando dos areas de un sistema de potencia o dos sistemas de potencia 
+interconectados pierden sincronismo, tanto las areas como los sistemas deben 
+separarse en forma rapida y automatica para evitar danos en los equipamientos 
+o apagones. Idealmente, un sistema debe separarse en determinados lugares 
+formando “islas”, subsistemas o areas independientes en que se mantenga el 
+balance entre generacion y carga en cada area.  
+Cuando el sistema se separa en areas no siempre se alcanza el balance 
+generacion-carga, en cada una de ellas. En estos casos, se implementa un 
+sistema de rechazo de carga o disparo de generacion, para lograr el equilibrio y 
+evitar el apagon en esas areas. 
+COMPORTAMIENTO DEL RELE DE DISTANCIA DURANTE UNA OSCILACION DE 
+POTENCIA 
+La perdida de sincronismo entre sistemas de potencia o entre un generador y el 
+sistema de potencia afectan los sistemas de proteccion de las lineas de 
+trasmision. En particular, algunos reles utilizados en las lineas de trasmision 
+pueden operar para oscilaciones de potencia estables. 
+RELE DE SOBRECORRIENTE 
+Los reles de sobrecorriente de fase instantaneos pueden operar durante una 
+oscilacion de potencia si la corriente que circula por la linea durante la 
+oscilacion supera el valor de ajuste del rele.  
+Los reles de sobrecorriente de fase temporizados probablemente no operen 
+durante una oscilacion de potencia; pero esto depende la magnitud de la 
+corriente y del tiempo ajustado. 
+RELE DE DISTANCIA 
+Los reles de distancia responden a los valores de secuencia positiva. La 
+impedancia medida por el rele durante una oscilacion de potencia varia en 
+funcion del angulo δ, entre las tensiones equivalentes del sistema. 
+Durante una oscilacion de potencia pueden operar tanto la zona 1, que 
+generalmente es instantanea, como las zonas utilizadas en los esquemas de
+
+--- Página 14 ---
+Sistemas de proteccion 
+Pagina 14 de 31 
+teleproteccion. Las zonas de respaldo temporizadas, generalmente no operan 
+durante una oscilacion de potencia, pero eso depende de sus ajustes. 
+La Fig.7 (a) muestra como el lugar geometrico de la impedancia cruza la zona 1 
+y la Fig.7 (b) muestra un esquema de teleproteccion y como se ve afectado por 
+la impedancia medida. 
+ 
+Fig. 7: Rele de distancia: Caracteristicas de operacion 
+ 
+IMPEDANCIA MEDIDA DURANTE UNA OSCILACION DE POTENCIA 
+Durante una oscilacion de potencia el rele de distancia detecta la oscilacion 
+como un defecto entre fase si la impedancia medida entra en su caracteristica 
+de operacion.  
+ 
+Consideremos un sistema de dos generadores interconectados por una linea 
+(un sistema complejo puede reducirse a esto), como muestra la Fig.8, con las 
+siguientes hipotesis: 
+- 
+Las amplitudes de 
+S
+E y 
+R
+E son constantes durante el transitorio (se pueden 
+proporcionar las potencias reactivas necesarias para mantener las 
+tensiones). 
+- 
+Los angulos (fases) de 
+S
+E y 
+R
+E coinciden con los angulos relativos de los 
+ejes q  de los rotores correspondientes, respecto a la referencia que gira a 
+cte
+=
+0
+ω
+. Su diferencia es δ .  
+- 
+Se realiza un estudio cuasiestatico paraδ variable (parametro), 
+Fig. 8: Sistema de dos maquinas
+
+--- Página 15 ---
+Sistemas de proteccion 
+Pagina 15 de 31 
+Se calcula la impedancia medida por un rele de distancia ubicado en el extremo 
+A de la linea A-B. 
+(
+)
+S
+R
+S
+R
+L
+S
+S
+L
+A
+Z
+E
+E
+Z
+Z
+Z
+E
+I
+V
+Z
+−
+−
++
++
+=
+=
+ 
+Sea 
+R
+S
+E
+E
+k =
+.            
+El lugar geometrico de la trayectoria de la impedancia es un circulo, ver Fig.9, 
+que corta al segmento de recta S-R en el Centro Electrico. 
+(
+)
+(
+)
+[
+]
+(
+)
+S
+R
+L
+S
+L
+A
+Z
+k
+j
+k
+k
+Z
+Z
+Z
+I
+V
+Z
+−
++
+−
+−
+−
++
++
+=
+=
+δ
+δ
+δ
+δ
+2
+2
+sin
+cos
+sin
+cos
+ 
+ 
+Fig. 9: Trayectoria de la impedancia durante una oscilacion de potencia 
+ 
+Para cualquier valor de k , se cumple:
+δ
+=
+∠SPR
+, siendo P  cualquier punto del 
+lugar geometrico de la impedancia vista 
+L
+A
+I
+V
+Z =
+. 
+Para el caso particular en que las tensiones son iguales en amplitud. 
+1
+=
+=
+R
+S
+E
+E
+k
+.           
+Por lo tanto la impedancia medida por el rele de distancia ubicado en la barra 
+A, se reduce a: 
+(
+)
+S
+R
+L
+S
+L
+A
+Z
+j
+Z
+Z
+Z
+I
+V
+Z
+−
+
+
+
+
+
+−
++
++
+=
+=
+2
+cot
+1
+2
+δ
+
+--- Página 16 ---
+Sistemas de proteccion 
+Pagina 16 de 31 
+La trayectoria de la impedancia medida por el rele es una recta perpendicular al 
+segmento de recta S-R en el Centro Electrico, ver Fig.10. 
+ 
+Fig. 10: Trayectoria de la impedancia durante una oscilacion de potencia 
+ 
+Interpretacion de las graficas (¡cuidado! cambio de notacion en las tensiones de 
+las fuentes): 
+ 
+ 
+Lugares geometricos para 
+cte
+k =
+ y 
+parametro
+=
+δ
+ 
+ 
+Lugares geometricos para 
+cte
+=
+δ
+ y 
+parametro
+k =
+
+--- Página 17 ---
+Sistemas de proteccion 
+Pagina 17 de 31 
+ 
+ 
+METODOS PARA LA DETECCION DE LA OSCILACION DE POTENCIA 
+Hay diversos metodos para la deteccion de oscilaciones de potencia, ya sea 
+para usar en funciones de bloqueo por oscilacion de potencia (PSB) o de 
+disparo por oscilacion de potencia (OST). 
+METODOS CONVENCIONALES 
+Los metodos para la deteccion de la oscilacion de potencia se basan en la 
+medida de la impedancia de secuencia positiva. Durante el regimen 
+estacionario, la impedancia medida por el rele de distancia es la impedancia de 
+carga. 
+Durante una falta, la impedancia medida por el rele se mueve rapido desde su 
+valor de carga hasta el valor de falta. Durante una oscilacion de potencia, la 
+impedancia medida se mueve lento. 
+Los esquemas convencionales utilizan la diferencia en la velocidad de la 
+impedancia para diferenciar entre una falta y una oscilacion de potencia. 
+CARACTERISTICAS CONCENTRICAS. 
+Para medir la velocidad de la variacion de la impedancia, se mide el tiempo 
+que requiere la impedancia para atravesar dos caracteristicas concentricas de 
+impedancia, ver Fig.11. 
+La deteccion de la oscilacion de potencia se realiza antes que la impedancia 
+entre en la caracteristica de operacion.
+
+--- Página 18 ---
+Sistemas de proteccion 
+Pagina 18 de 31 
+ 
+Fig. 11: Caracteristicas concentricas 
+ 
+CARACTERISTICA CON  BLINDER (ANTEOJERAS) 
+Para medir la velocidad de la variacion de la impedancia, se mide el tiempo 
+que requiere la impedancia para atravesar dos rectas. 
+Se optimiza el esquema si las rectas son paralelas a la impedancia de la linea, 
+pues las oscilaciones de potencia normalmente ingresan a las zonas de 
+proteccion en forma aproximadamente perpendicular al angulo de la linea, ver 
+Fig.12.
+
+--- Página 19 ---
+Sistemas de proteccion 
+Pagina 19 de 31 
+ 
+Fig. 12: Caracteristica blinder (2 rectas) 
+ 
+CARACTERISTICAS BLINDER (1 RECTA): 
+Este tipo de esquema se utiliza como OST (disparo). 
+Este esquema retrasa el disparo hasta que la oscilacion ya paso los 180° y 
+estan volviendo a ponerse en fase las tensiones. 
+EN GENERAL: 
+Para ambas caracteristicas (concentricas y blinders), ajustar precisamente las 
+funciones de oscilacion de potencia no es sencillo y se requieren profundos 
+estudios de la estabilidad transitoria del sistema de potencia concreto en sus 
+posibles escenarios, configuraciones, causas y tipos de transitorios. 
+Las impedancias de fuente dependen de las posibles configuraciones del 
+sistema, y ademas varian fuertemente durante grandes perturbaciones en que 
+las funciones de oscilacion de potencia deben cumplir su rol correctamente 
+(bloqueo y disparo).
+
+--- Página 20 ---
+Sistemas de proteccion 
+Pagina 20 de 31 
+ 
+Fig. 13: Efecto de la impedancia de la linea 
+ 
+Como ejemplo, se muestran los efectos de la impedancia de linea en el ajuste 
+de una funcion PSB, ver Fig.13.  
+Pero es posible simplificar el calculo del ajuste de estas funciones, asumiendo 
+que la frecuencia maxima de deslizamiento de las oscilaciones de potencia de 
+un sistema electrico esta por ej. entre 4 y 7 Hz. Esto permite ajustar 
+razonablemente estas funciones de manera mas sencilla. 
+Las zonas de operacion del rele de distancia deben estar contenidas en la zona 
+interna de oscilacion de potencia (inner zone). 
+La zona de carga debe estar por fuera de la zona externa de oscilacion de 
+potencia (outer zone), ver Fig.14. 
+ 
+Fig. 14: Caracteristica de operacion
+
+--- Página 21 ---
+Sistemas de proteccion 
+Pagina 21 de 31 
+La zona de disparo de una funcion OST debe ajustarse para que el angulo 
+δ sea soportable por el interruptor a disparar (por ej 
+°
+<120
+δ
+y decreciendo). 
+El problema de las caracteristicas concentricas y blinders, es que la magnitud 
+usada para la deteccion de las oscilaciones de potencia (impedancia vista), 
+depende de la impedancia total del sistema (
+)
+R
+L
+S
+Z
+Z
+Z
++
++
+, que a priori no es 
+conocida y es cambiante. 
+ 
+OTROS METODOS 
+CALCULO CONTINUO DE LA IMPEDANCIA 
+Este metodo determina la condicion de oscilacion de potencia calculando la 
+impedancia en forma continua, ver Fig.15. 
+Calcula la impedancia cada 5ms y se compara con la calculada 5ms antes.  
+ 
+Fig. 15: Calculo continuo de la impedancia 
+ 
+Calculo continuo de la impedancia       ∆t = 5 ms 
+- 
+N-1:  
+Calculo de Zv_N-1 
+- 
+N:   
+Calculo de Zv_N 
+Prediccion de Zv_N+1_esperada, segun Zv_N, Zv_N-1 y ∆t 
+- 
+N+1: 
+Calculo de Zv_N+1 
+ 
+ 
+Comparacion de Zv_N+1 con Zv_N+1_esperada
+
+--- Página 22 ---
+Sistemas de proteccion 
+Pagina 22 de 31 
+ 
+ 
+Determinacion de si hay oscilacion de potencia 
+ 
+ 
+Prediccion de Zv_N+2_esperada, segun Zv_N+1, Zv_N y ∆t  
+SINCROFASORES 
+En una oscilacion de potencia el angulo de las tensiones de las barras reflejan 
+cambios en la velocidad de rotacion. 
+Actualmente se puede medir en forma sincronizada los angulos de diferentes 
+barras del sistema y reportarlas a un centro de procesamiento para procesarlas 
+en tiempo real. 
+Cuando se detecta oscilacion de potencia, se realiza una separacion del 
+sistema o un rechazo de carga. 
+Considerando un sistema con dos maquinas, medir ∆δ y calcular en tiempo real 
+el criterio de igual area, para determinar estabilidad o no. 
+Usar algoritmos predictivos de la variacion de δ(t) y comparar con la medida de 
+los sincrofasores en barras estrategicas. 
+CENTRO DE OSCILACION SCV (SWING CENTER VOLTAGE): 
+SCV: se define como el punto del sistema (equivalente de 2 fuentes), donde la 
+tension es cero y el angulo entre los sistemas es δ = 180°. 
+Este punto se puede aproximar por:  
+ϕ
+cos
+S
+V
+SCV ≈
+ 
+donde VS tension local, ϕ  angulo entre la tension y corriente. 
+ 
+Fig. 16: Proyeccion de Vcosϕ
+
+--- Página 23 ---
+Sistemas de proteccion 
+Pagina 23 de 31 
+Centro de oscilacion SCV:   
+ϕ
+cos
+S
+V
+SCV ≈
+ => 
+
+
+
+
+
+
+=
+2
+cos
+1
+1
+δ
+E
+SCV
+ 
+La derivada de SCV1 es: (
+)
+dt
+d
+sen
+E
+dt
+SCV
+d
+δ
+δ 
+
+
+
+
+
+−
+=
+2
+2
+1
+1
+ 
+Casos: 
+(
+)
+1
+2
+1
+0
+1
+180
+=
+
+
+
+
+
+
+=
+=
+⇒
+°
+=
+δ
+δ
+sen
+maximo
+dt
+SCV
+d
+SCV
+Si
+   
+(
+)
+0
+2
+1
+1
+1
+0
+=
+
+
+
+
+
+
+=
+=
+⇒
+°
+=
+δ
+δ
+sen
+minimo
+dt
+SCV
+d
+SCV
+Si
+ 
+2
+1
+1
+120
+=
+⇒
+°
+=
+SCV
+Si
+δ
+ 
+Conclusiones: 
+pu
+SCV
+1
+1
+0
+≤
+≤
+ 
+SCV1 esta acotado entre 0 y 1 pu              
+δ
+↔
+1
+SVC
+ 
+ 
+SCV1 es independiente de 
+R
+L
+S
+Z
+Z
+Z
+,
+,
+. 
+Estas son la gran ventaja del metodo. 
+ 
+FORMAS DE ONDA (OSCILOGRAFIAS) DE OSCILACIONES DE POTENCIA
+
+--- Página 24 ---
+Sistemas de proteccion 
+Pagina 24 de 31 
+ 
+ 
+ 
+RESUMEN: FILOSOFIA DE PROTECCION ANTE OSC. DE POTENCIA 
+La filosofia para la aplicacion de los esquemas PSB y OST es: 
+- 
+Evitar dispara cualquier elemento del sistema durante una oscilacion de 
+potencia estable. 
+- 
+Proteger el sistema de potencia durante oscilaciones inestables. 
+Se debe disenar un sistema de disparo para separar en areas el sistema, en 
+condiciones de oscilacion de potencia inestables.
+
+--- Página 25 ---
+Sistemas de proteccion 
+Pagina 25 de 31 
+Los esquemas de disparo por oscilacion de potencia estan disenados para 
+proteger el sistema durante oscilaciones inestables, separando en areas, de 
+manera de mantener la estabilidad dentro de cada area. 
+Los esquemas de disparos deben estar instalados cerca del centro electrico 
+del sistema, para mantener el balance entre generacion y carga. 
+Los esquemas de disparo deben evitar disparar cuando el angulo entre los 
+sistemas es cercano a 180°. 
+Los esquemas de disparo OST estan acompanados con esquemas de 
+bloqueo PSB para evitar disparos indeseados. 
+Los esquemas de bloqueo son instalados en otros puntos del sistema, para 
+evitar la separacion del mismo de manera no controlada. 
+Estos esquemas estan acompanados con sistemas de rechazo de carga y 
+disparo de generacion. 
+ 
+METODOS PARA MEJORAR LA ESTABILIDAD TRANSITORIA, QUE HACEN A LOS 
+SISTEMAS DE PROTECCION. 
+Las empresas electricas deben tomar medidas en el momento del diseno del 
+sistema electrico de potencia para evitar salidas de equipamiento en cascada y 
+apagones.  
+Las acciones son tendientes a lograr los siguientes efectos: 
+- 
+Minimizar la severidad de las faltas y su duracion 
+- 
+Aumentar las fuerzas sincronizantes 
+- 
+Reducir los pares acelerantes (control de la potencia mecanica y aplicacion 
+de cargas artificiales) 
+Algunos de los metodos utilizados para mejorar la estabilidad transitoria del 
+sistema son: 
+- 
+Despejar los defectos rapidamente  
+- 
+Funciones de proteccion instantaneas y de alta velocidad, (recordar 
+el tiempo critico de despeje de las faltas y los tiempos inherentes a 
+los reles numericos). 
+- 
+Disminuyendo el tiempo que los cortocircuitos permanecen en el 
+sistema, disminuye la energia cinetica que gana los rotores de los 
+generadores. 
+- 
+Usar protecciones de falla interruptor (breaker failure). 
+- 
+Minimiza el tiempo que permanece una falta en el sistema, si un 
+interruptor disparado no abre. Para el caso de falla de un interruptor, 
+esta funcion es preferible a tener solo respaldos locales o remotos 
+ya que sus tiempos de respaldo son mayores.
+
+--- Página 26 ---
+Sistemas de proteccion 
+Pagina 26 de 31 
+- 
+Disparo monopolar de interruptores (recierre monopolar). 
+- 
+Durante el tiempo muerto de un recierre con apertura monopolar 
+(para defectos fase-tierra), buena parte de la potencia de prefalta se 
+sigue transfiriendo por las fases “sanas” de la linea, lo que reduce el 
+embalaje de los generadores. 
+- 
+Cierre dinamico (insertar cargas cerca de los generadores) 
+- 
+El forzar un consumo de potencia activa durante el transitorio, 
+reduce o evita la aceleracion de los generadores durante 
+perturbaciones. 
+- 
+Fast Valving  
+- 
+Es para el caso de turbinas a vapor, y consiste en reducir la 
+potencia mecanica de los generadores ante ciertas perturbaciones, 
+como mejor alternativa que sacarlos de servicio. 
+- 
+Disparo de generadores. 
+- 
+Puede llegar a ser util disparar generadores cuando hay problemas 
+de estabilidad transitoria, como oscilaciones inestables de potencia. 
+- 
+Esto protege al generador pero no necesariamente al sistema, ya 
+que puede estarse aumentando el desbalance de potencias en el 
+sistema. 
+- 
+Disparo controlado. 
+- 
+Disparo ante Oscilacion de Potencia (OST), de manera de preservar 
+el sistema convirtiendolo en islas con balance entre generacion y 
+carga. 
+- 
+Para ello, ademas del OST tambien puede ser necesario disparar 
+carga (load shedding) 
+- 
+Uso de Sistemas Especiales de Proteccion (SPS) o Wide Area 
+Protection (WAP) o Protecciones Sistemicas. 
+- 
+Reduccion de la reactancia del sistema. 
+- 
+Insercion 
+momentanea 
+de 
+capacitares 
+serie 
+en 
+lineas 
+o 
+subestaciones aumentan el margen de estabilidad al aumentar la 
+potencia maxima transferible 
+T
+S
+R
+e
+X
+E
+E
+P =
+ 
+- 
+Recierre rapido. 
+- 
+No es bueno que los recierres sean lentos 
+- 
+Pero no necesariamente cuanto mas rapido es el recierre, mejor es 
+para la estabilidad del sistema.
+
+--- Página 27 ---
+Sistemas de proteccion 
+Pagina 27 de 31 
+ESTABILIDAD EN  FRECUENCIA  
+ 
+La estabilidad en frecuencia es la habilidad de un sistema electrico de potencia, 
+de restablecer la frecuencia luego de una perturbacion severa de desbalance 
+entre generacion y carga. 
+Depende de la habilidad de mantener o restablecer el balance entre generacion 
+y carga, con minima perdida de carga. La perdida de carga es un hecho 
+indeseado pero en muchos casos necesario e inevitable a la hora de preservar 
+el resto del sistema electrico. 
+Este tipo de situaciones puede llevar a la separacion del sistema en islas 
+(subsistemas independientes) que deben lograr cada una un estado de 
+equilibrio estable con minima perdida de carga, equilibrio que queda 
+evidenciado por el comportamiento de la frecuencia promedio de cada isla. 
+Generalmente los problemas de estabilidad en frecuencia estan asociados a 
+insuficiente respuesta de los equipos, coordinacion insuficiente entre controles 
+y protecciones o insuficiente reserva de generacion. 
+Los problemas de estabilidad en frecuencia pueden involucrar tiempos de 
+segundos o fracciones de segundos (fenomenos de corto plazo) como el 
+disparo por subfrecuencia y los controles de los generadores y protecciones. 
+O pueden involucrar tiempos del orden de minutos (fenomenos de largo plazo) 
+como los relacionados a las plantas motrices de los generadores (las turbinas, 
+calderas, etc.) y los reguladores de tension. 
+La inestabilidad en frecuencia de corto plazo, pude llevar a apagones en 
+cuestion de segundos en el sistema, en una o varias islas.  
+Cuando sale de servicio en forma intempestiva una unidad generadora, se 
+pierde el balance entre potencias, y el andamiento inicial de la frecuencia de un 
+area A es 
+0
+2
+1
+f
+t
+H
+P
+P
+f
+A
+eA
+mA
+A
+
+
+
+
+
+
+−
++
+≈
+ 
+La frecuencia del sistema comienza a disminuir, y la variacion de la frecuencia 
+tiene pendiente negativa 
+A
+eA
+mA
+H
+P
+P
+2
+−
+ (parametrica en la inercia 
+A
+H  y en la 
+sobrecarga
+mA
+eA
+P
+P
+−
+).
+
+--- Página 28 ---
+Sistemas de proteccion 
+Pagina 28 de 31 
+ 
+Fig. 17: Andamiento de la frecuencia en el periodo inicial del transitorio de perdida de carga 
+(parametrico en H y Pe-Pm) 
+ 
+Esto corresponde a una simplificacion en el modelo de la dinamica del sistema. 
+La ecuacion de Swing 
+eA
+mA
+A
+D
+A
+A
+P
+P
+K
+dt
+d
+H
+−
+=
++
+ω
+ω
+ω
+ω
+0
+0
+2
+ es una simplificacion de la 
+realidad y a ella se le agregan simplificaciones como despreciar el coeficiente 
+D
+K  (o lo que es similar en la ecuacion, considerar solo el inicio de la 
+perturbacion, en que 
+A
+ω es mucho menor que 
+0
+ω ). 
+Por ello la ecuacion y grafica anterior describen satisfactoriamente el 
+andamiento de la frecuencia solo en el periodo inicial del transitorio. 
+En realidad, un sistema con un desbalance entre generacion y carga, llega a 
+una frecuencia minima y posteriormente recupera una frecuencia estable, como 
+se indica en la siguiente figura. 
+ 
+Fig. 18: Comportamiento de la frecuencia hasta estabilizarse
+
+--- Página 29 ---
+Sistemas de proteccion 
+Pagina 29 de 31 
+PROTECCIONES DE FRECUENCIA Y ACCIONES CLASICAS DE DISPARO DE 
+CARGA POR SUBFRECUENCIA.  
+PROTECCION DE GENERADORES. 
+Los generadores electricos y sus turbinas (plantas motrices) pueden resultar 
+danados si, estando cargados, funcionan fuera de su frecuencia nominal. Es 
+por ello que los generadores cuentan con protecciones propias de sobre y 
+subfrecuencia (que operan por nivel o frecuencia absoluta (f<>)), que los 
+desconectan del sistema electrico si la frecuencia es inadmisible para ellos.  
+Los conjuntos generador - turbina a vapor tienen rangos admisibles de 
+frecuencia mucho mas estrictos que los con turbinas hidroelectricas.  
+Cuando sale de servicio en forma intempestiva una unidad generadora, se 
+pierde el balance entre potencias y como se vio, la frecuencia del area 
+comienza a disminuir. 
+Cuando hay una rapida caida de la frecuencia, la respuesta de los controles de 
+los generadores del sistema es insuficiente y lenta a la hora de frenar la caida 
+de frecuencia.  
+Y es posible que se llegue a los umbrales de disparo de las protecciones de 
+subfrecuencia de algunos generadores. Si esos generadores son retirados del 
+sistema por sus protecciones de frecuencia, la situacion del sistema 
+empeoraria (se incrementaria el desbalance de potencias) y la velocidad de la 
+caida de frecuencia aumentaria, llevando a mas salidas de generadores por 
+subfrecuencia y al sistema al apagon. 
+PROTECCION DEL SISTEMA. 
+Por ello son necesarias acciones complementarias de emergencia para que la 
+frecuencia no llegue a los umbrales antes mencionados. 
+La principal proteccion sistemica automatica para prevenir apagones luego de 
+salidas intempestivas de unidades generadoras son los esquemas de disparo 
+de carga por subfrecuencia (underfrequency load shedding).  
+La dinamica del sistema ante una perdida de generacion depende fuertemente 
+de las condiciones iniciales de operacion, la importancia de la contingencia 
+intempestiva, la respuesta de los sistemas de control, etc., por lo que por 
+metodos clasicos es trabajosa la determinacion de la cantidad minima de carga 
+a disparar. 
+El diseno clasico del disparo de carga por subfrecuencia utiliza reles de 
+proteccion ubicados en distintas subestaciones, cuyo principio de operacion es 
+la deteccion de subfrecuencia por: 
+- 
+nivel o frecuencia absoluta (f<), o  
+- 
+derivada o pendiente de la frecuencia (df/dt<), o  
+- 
+o combina ambos principios en el mismo rele. 
+La idea es disparar carga en la cantidad minima necesaria y no mas, para 
+mantener el sistema de potencia estable.
+
+--- Página 30 ---
+Sistemas de proteccion 
+Pagina 30 de 31 
+El disparo insuficiente de carga, no evitara que la caida de la frecuencia 
+continue. 
+El disparo excesivo de carga, producira cortes innecesarios a ciertas cargas.  
+La proteccion por subfrecuencia (f<) puede ser temporizada o instantanea y 
+para operar la frecuencia debe haber descendido hasta el umbral ajustado f=faj 
+(la subfrecuencia se detecta ya avanzado el fenomeno). 
+Sin embargo la proteccion por derivada de la frecuencia (df/dt<), que tambien 
+puede ser temporizada o instantanea, detecta en etapas tempranas del 
+fenomeno (la mayor pendiente es al principio del fenomeno de perdida de 
+generacion).
+
+--- Página 31 ---
+Sistemas de proteccion 
+Pagina 31 de 31 
+BIBLIOGRAFIA MAS RELEVANTE. 
+- 
+Apuntes de los cursos de Estabilidad de Sistemas Electricos de Potencia de 
+FING 
+de 
+los 
+anos 
+2003, 
+2005, 
+2007. 
+Ver: 
+http://iie.fing.edu.uy/ense/asign/esep/, 
+en 
+particular los 
+capitulos 
+de 
+estabilidad transitoria y protecciones (este ultimo preparado en 2005 por  
+Ing. Veronica Azevedo). 
+- 
+Power System Stability and Control; P. Kundur 
+- 
+Power Swing and Out-of-Step Considerations on Transmission Lines; IEEE 
+PSRC WG D6; Mike McDonald, Demetrios Tziouvaras y otros. 
+- 
+Out-of-Step Protection Fundamentals and Advancements; Demetrios 
+Tziouvaras y Daqing Hou. 
+- 
+Apuntes del curso sobre Protecciones de FING, Ing. Jorge Alonso. 
+- 
+Guia de operacion verano 2003 de PEE, UTE. 
+- 
+Definition and Classification of Power System Stability. 
+IEEE/CIGRE Joint Task Force on Stability Terms and Definition. Prabha 
+Kundur, John Paserba y otros, May 2004. 
+- 
+Protective Relays Theory and Applications, Walter A. Elmore 
+- 
+Protective Relaying, Principles and Applications, J. Lewis Blackburn,  
+- 
+The Art and Science of Protective Relaying, C.R. Mason, John Wiley 1956
+

@@ -1,0 +1,181 @@
+=== Anexo D - Pampetrol.pdf ===
+
+--- Página 1 ---
+ANEXO D  (PAMPetrol Sapem)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES PAMPetrol sapem. OPERADAS POR EL CROM 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+P.S. Victorica 
+7.2 
+Fotovoltaica 
+12/04/2024 Inv. Huawei 
+BLC 
+BLC
+
+--- Página 2 ---
+ANEXO D  (PAMPetrol Sapem)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Descripcion de Parque Solar Victorica: 
+ 
+El proyecto presente, identificado como Parque solar VICTORICA de 7.2 MW (Agente: PSVICTOG ; Central: 
+VICT ; Grupo: VICTFV), es un proyecto en el que el CROM monitorea la operacion de un agente con un 
+generador en el mercado electrico, producira energia electrica a partir de la captacion y transformacion de la 
+energia proveniente del sol, la planta consta de una potencia instalada de 7.2 MW a partir de 14280 paneles 
+fotovoltaicos bifaciales de silicio monocristalino, modelo “JAM72D30-550/GB”, de 550Wp cada uno, 
+fabricados por JA Solar, La inversion estimada es de cerca de 8.1 millones de dolares, 27 Inversores de 297kW 
+de potencia nominal cada uno. La energia sera inyectada en el Sistema Argentino de Interconexion (SADI) en 
+el marco del Contrato de Abastecimiento con la administradora del Mercado Electrico Mayorista 
+(CAMMESA). 
+ 
+Victorica, es la primera planta solar que PAMPetrol Sapem puso en servicio en Argentina, se encuentra en la 
+provincia de La Pampa. Dispone de una capacidad instalada de 7.2 MWp, suficiente para abastecer al 
+equivalente de 4300 hogares.
+
+--- Página 3 ---
+ANEXO D  (PAMPetrol Sapem)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+Parque Fotovoltaico Victorica se encuentra en la provincia argentina de La Pampa, 
+-36.229755837985365, -65.43216911345928
+
+--- Página 4 ---
+ANEXO D  (PAMPetrol Sapem)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Parque Solar Victorica de 7.2 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+Se encuentran interconectado por 1 colector de 33 kV. 
+• 
+Equipo 1 salida del parque a E.T Victorica. 
+• 
+Equipo 2 transformador de medicion 33 KV de barra. 
+• 
+Equipo 3 Proteccion general. 
+• 
+Equipo 4 Colector 1. 
+• 
+Equipo 5 Reserva. 
+• 
+Equipo 6 transformador de Servicios auxiliares de 100 KVA
+
+--- Página 5 ---
+ANEXO D  (PAMPetrol Sapem)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+Pagina oficial:    Parque Solar Victorica – PAMPetrol
+
+--- Página 6 ---
+ANEXO D  (PAMPetrol Sapem)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+se construyo una sala electrica en 33kv con 6 celdas, una es la salida de la central hacia linea (equipo D1),1 
+celda de medicion que sera donde 
+estara implementada la medicion comercial SMEC (equipo D2), una celda de proteccion 
+(equipo D3), dos celdas colectoras (equipos D4 y D5, en D4 se conecta la acometida del 
+CT y D5 queda como reserva equipada) y una celda de salida a transformador de 
+servicios auxiliares (D6). 
+Los 27 inversores colectores de 330kva*0.9= 297kW de potencia nominal cada uno, se 
+conectan en el Centro de Transformacion a dos semibarras de 0.8kV, y de ahi a traves de 
+sendos interruptores a un transformador elevador a 33kV. Desde ahi se acomete a la 
+celda colectora D4 en la sala de despacho. Desde la celda de salida D1 en la misma sala, 
+se acomete a la ET VICTORICA. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Pagina oficial : Parque Solar Victorica - Pampetrol
+
+--- Página 7 ---
+ANEXO D  (PAMPetrol Sapem)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+FIN
+

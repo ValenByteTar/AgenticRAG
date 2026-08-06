@@ -1,0 +1,3195 @@
+=== SimbologiaElectrica.pdf ===
+
+--- Página 1 ---
+LICEO IND. "ING. RICARDO FENNER RUEDI" 
+ 
+ 
+ 
+ 
+Depto. Electricidad - Proyecto Enlaces
+ 
+ 
+SIMBOLOGIA ELECTRICA 
+ 
+ 
+ 
+ 
+Representacion 1
+Representacion 2
+ 
+ 
+ 
+ 
+Representacion 1
+Representacion 2
+
+--- Página 2 ---
+LICEO IND. "ING. RICARDO FENNER RUEDI"  
+ 
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 1 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ Indice 
+Revision n°  
+0 
+ 
+INDICE. 
+ 
+1. INTRODUCCION........................................................................................................... 3 
+2. NORMAS INTERNACIONALES.................................................................................... 4 
+3. SIMBOLOS DE APARATOS Y ARTEFACTOS............................................................. 5 
+4. SIMBOLOS DE FUERZA Y CONTROL......................................................................... 7 
+5. SIMBOLOS DE CANALIZACION. ............................................................................... 10 
+6. SIMBOLOS DE MEDIDA Y PROTECCION................................................................. 11 
+7. SIMBOLOS DE PUESTA A TIERRA........................................................................... 14 
+8. COMBINACION DE SIMBOLOS. ................................................................................ 15 
+9. SIMBOLOS DE CONDUCTORES Y CONEXIONES................................................... 29 
+9.1 Resistores, Capacitores, Baterias .......................................................................... 30 
+9.2 Conmutador, Distribuidor........................................................................................ 32 
+9.3 Indicadores de Posicion.......................................................................................... 37 
+9.4 Transformadores de Medida................................................................................... 39 
+9.5 Transformadores de Instrumentacion..................................................................... 40 
+9.6 Transductores......................................................................................................... 41 
+9.7 Maquinas................................................................................................................ 42 
+9.8 Partidores. .............................................................................................................. 43 
+9.9 Instrumentos de Medicion, Dispositivos de Prueba, Medidores. ............................ 44 
+9.10 Dispositivos de Indicacion y Advertencia.............................................................. 45 
+9.12 Electrostatica........................................................................................................ 45 
+9.13 Selectores, Interruptores de Dial, Interruptores.................................................... 46 
+9.15 Antenas (Aerials).................................................................................................. 46 
+9.16 Cabezales Magneticos. ........................................................................................ 47 
+9.17 Componentes Semiconductores........................................................................... 47 
+9.18 Equipo de Transmision Electroacustica................................................................ 48 
+9.19 Circuito para Diagramas en Bloque...................................................................... 49 
+9. 20 Procesamiento de Datos Digitales, Elementos de Enlace Digital........................ 52 
+10. RECOMENDACIONES GENERALES....................................................................... 54 
+11. BIBLIOGRAFIA.......................................................................................................... 55
+
+--- Página 3 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 1 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ Presentacion 
+Revision n°  
+0 
+ 
+PRESENTACION. 
+ 
+El modulo “Simbologia Electrica” es uno de los recursos de 
+capacitacion 
+preparado 
+con 
+el 
+proposito 
+de 
+desarrollar 
+los 
+conocimientos necesarios del personal del area de Mantenimiento 
+Electrico de la Subgerencia de Mantencion de Celulosa Arauco y 
+Constitucion S.A. 
+Este modulo puede ser estudiado o consultado tanto en forma 
+electronica como impresa y cubre una multiplicidad de areas sobre las 
+que se entrega una descripcion detallada de la simbologia electrica 
+utilizada en el proyecto Valdivia.  
+El personal que complete exitosamente el estudio de este modulo, 
+quedara capacitado para interpretar planos electricos y conocer el 
+desarrollo de estos incluidos en el programa de capacitacion,  
+quedando habilitado para realizar exitosamente las tareas inherentes 
+a mantencion electrica. 
+Una evidencia del aprendizaje del modulo incluye la aprobacion de un test 
+del contenido teorico del modulo con un minimo de 75 %.
+
+--- Página 4 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 3 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 1. Introduccion 
+Revision n°  
+0 
+ 
+1. INTRODUCCION. 
+ 
+Todo proceso productivo industrial requiere de conocimiento tecnico especializado, y 
+debido a la gran automatizacion, es necesario conocer como trabajan estos equipos, y 
+esto pasa por poder interpretar que nos quieren decir, los distintos fabricantes a traves de 
+los planos de montajes, fuerza y control de los equipos. Para lograr un producto de alta 
+calidad y que sea competitivo en el mercado internacional, es deseable mantener un alto 
+nivel de produccion y buen rendimiento, con bajos costos por efecto de mantencion. 
+Es por ello que es necesario conocer los distintos tipos de simbologia empleada en la 
+confeccion de planos electricos de los equipos involucrados en el proceso por complejo 
+que estos sean, para poder entender su funcionamiento, y tambien solucionar las 
+distintas tipos de fallas que se presenten mientras se encuentran en funcionamiento.
+
+--- Página 5 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 4 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 2. Normas Intercionales 
+Revision n°  
+0 
+ 
+2. NORMAS INTERNACIONALES. 
+ 
+Los principales estandar internacionales, utilizados en la elaboracion de la documentacion 
+y planos de equipos, son las siguientes: 
+ 
+DIN. (DEUSTCHE INDUSTRIE NORM) GERMAN INDUSTRIAL STANDARDS  
+ 
+ANSI. AMERICAN NATIONAL STANDARDS INSTITUTE 
+ 
+IEC. INTERNATIONAL ELECTROTECHNICAL COMMISSION 
+ 
+BS. BRITISH STANDARDS 
+ 
+ASM. AMERICAN STANDARD MANUAL 
+ 
+Tabla de simbolos normalizados, segun las normas DIN, IEC, ANSI y BS, de magnitudes 
+electricas, conductores, contactos, elementos y aparatos electricos.
+
+--- Página 6 ---
+AREA  
+ Electro-Control 
+Pagina 
+Pagina 5 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 3. Aparatos y Artefactos 
+Revision n°  
+0 
+ 
+3. SIMBOLOS DE APARATOS Y ARTEFACTOS. 
+ 
+Se denomina aparato a todo elemento de la instalacion destinado a controlar el paso de 
+la energia electrica. En tanto que se denomina artefacto a todo elemento fijo o portatil de 
+una instalacion, que consume energia electrica. 
+ 
+Simbolos segun NCH Electrica 4-84: 
+SIMBOLO 
+DESCRIPCION 
+ 
+Tablero de alumbrado. 
+ 
+Tablero de fuerza. 
+ 
+Tablero de calefaccion. 
+ 
+Tablero uso especial. 
+ 
+Ventilador o extractor. 
+ 
+Tierra de servicio. 
+ 
+Tierra de proteccion 
+(conexion a masa). 
+ 
+Enchufe hembra simple para alumbrado 2P+T (2 polos + tierra). 
+ 
+Enchufe hembra doble para alumbrado 2P+T. 
+ 
+Enchufe hembra para calefaccion 2P+T. 
+ 
+Enchufe hembra para fuerza trifasico 3P+T. 
+ 
+Enchufe hembra para usos especiales (computacion). 
+ 
+Interruptor de un efecto (9 / 12).
+
+--- Página 7 ---
+AREA  
+ Electro-Control 
+Pagina 
+Pagina 6 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 3. Aparatos y Artefactos 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Interruptor de dos efectos (9 / 15), para comandar dos elementos. 
+ 
+Interruptor de tres efectos (9 /32), para comandar tres elementos. 
+ 
+Interruptor de combinacion (9 / 24), para escala o pasillo. 
+ 
+Interruptor rotatorio ON /OFF 3 contactos. 
+FX – N – W 
+ 
+FX = Tipo de fluorescente.        (ver estandar luminarias) 
+N = Cantidad lamparas. 
+W = Potencia lampara. 
+EX – N – W 
+EX = Fluorescente emergencia.        (ver estandar luminarias) 
+N = Cantidad lamparas. 
+W = Potencia lampara. 
+ 
+Celda fotoelectrica. 
+ 
+ 
+Portalampara simple (plafonier). 
+ 
+Luminaria sodio alta presion, montada en gancho curvo. 
+ 
+Indicacion de luminaria con lampara. 
+AA = Tipo de lampara (haluro metalico, sodio alta presion). 
+W = potencia en Watts. 
+(ver estandar de luminarias). 
+ 
+ 
+Foco embutido con lampara incandescente. 
+ 
+CF
+AA
+W
+
+--- Página 8 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 7 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 4. Fuerza y Control 
+Revision n°  
+0 
+ 
+4. SIMBOLOS DE FUERZA Y CONTROL. 
+ 
+Se consideran elementos de fuerza a todos aquellos dispositivos en que la energia 
+electrica se use preferentemente para obtener energia mecanica y/o para intervenir en 
+algun proceso productivo industrial. Disenados de acuerdo a la potencia electrica 
+requerida para su uso. Los elementos de control, son dispositivos de proteccion, 
+maniobra y medicion de instalaciones de fuerza, que permitan en la operacion de equipos 
+en forma individual o en grupos, de forma programada o manual. 
+ 
+Simbolos segun NCH Electrica 4-84: 
+SIMBOLO 
+DESCRIPCION 
+ 
+Desconectador. 
+ 
+Desconectador – fusible bajo carga. 
+ 
+Fusible. 
+ 
+ 
+ nyyA 
+ ZZA 
+ 
+Interruptor automatico de “n” polos activos. 
+yy = capacidad de corriente (frame). 
+zz = ajuste de corriente (trip). 
+ 
+Interruptor de poder, al vacio o SF6, alta y media tension, 
+extraible. 
+ 
+ 
+xx AMP 
+yy OHMS 
+zz SEG.  
+ 
+Resistencia fija puesta a tierra. 
+ 
+Transformador de poder. 
+Enrollado primario en delta. 
+Enrollado secundario en estrella con neutro a tierra. 
+ 
+Transductor de corriente con transformador de corriente. 
+ 
+Transformador de corriente.
+
+--- Página 9 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 8 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 4. Fuerza y Control 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Transformador de corriente. 
+Secuencia cero o residual. 
+ 
+Elemento extraible o desenchufable. 
+ 
+ 
+ 
+ 
+(xx-yy)A 
+ 
+Rele termico de sobrecarga. 
+(xx-yy) = rango regulacion de corriente. 
+ 
+Contactor NEMA n. 
+ 
+Partidor compacto, no reversible de plena tension, 
+fijo NEMA n. 
+ 
+Partidor FVNR, extraible IEC n (n =amperes) de plena tension, 
+extraible, NEMA n. 
+ 
+Partidor FVR, extraible. 
+ 
+Partidor de combinacion reversible de plena tension,  
+extraible, NEMA n. 
+ 
+Motor corriente alterna. 
+ 
+Motor corriente continua. 
+ 
+Generador. 
+ 
+ 
+ 
+SV = selector de voltaje. 
+ 
+SA = selector de corriente. 
+ 
+M = enclavamiento mecanico. 
+ 
+E = enclavamiento electrico. 
+ 
+Luz indicadora 110/6V con transformador. 
+ 
+ 
+SV 
+SA
+
+--- Página 10 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 9 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 4. Fuerza y Control 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Condensador estatico. 
+ 
+Mufa de cable de media tension. 
+ 
+Transformador de corriente tipo bushing. 
+ 
+ 
+ 
+   
+VDF = variador de frecuencia. 
+P. S. = partidor suave. 
+ 
+ 
+ 
+Resistencia calefactora. 
+ 
+Pararrayos (arrester).
+
+--- Página 11 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 10 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 5. Simbolos de Canalizacion 
+Revision n°  
+0 
+ 
+5. SIMBOLOS DE CANALIZACION. 
+ 
+Se denominan elementos de canalizacion al conjunto formado por conductores electricos 
+y los accesorios que aseguran su fijacion y proteccion mecanica. 
+ 
+Simbolos segun NCH Electrica 4-84: 
+SIMBOLO 
+DESCRIPCION 
+         A EL.  XXX 
+ 
+Alimentacion desde el piso inferior. 
+DE EL.  XXX
+ 
+ 
+Alimentacion desde el piso superior. 
+ 
+Arranque o derivacion. 
+ 
+Caja de derivacion. 
+ 
+Cruce sin conexion. 
+ 
+Linea de n conductores. 
+ 
+ 
+Canalizacion embutida o a la vista. 
+ 
+Canalizacion subterranea. 
+ 
+Camara de instrumentacion. 
+ 
+Camara de alta tension. 
+ 
+Ducto de barras. 
+ 
+Cable flexible.
+
+--- Página 12 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 11 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 6. Simbolos de Medida y Proteccion 
+Revision n°  
+0 
+ 
+6. SIMBOLOS DE MEDIDA Y PROTECCION. 
+ 
+Los elementos de medida son aquellos que permiten cuantificar las variables electricas  
+de un circuito electrico. 
+Los elementos de proteccion, son dispositivos destinados a desenergizar un sistema, 
+circuito, equipo electrico, cuando se producen condiciones anormales de funcionamiento 
+y las variables electricas alcanzan valores prefijados de estos elementos. 
+ 
+Simbolos segun norma ASM (American Standar Manual): 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Proteccion diferencial. 
+ 
+ 
+Amperimetro. 
+ 
+ 
+Voltimetro. 
+ 
+ 
+Wattmetro. 
+ 
+ 
+Varmetro. 
+ 
+ 
+Indicacion - trip nivel de aceite. 
+ 
+ 
+Indicacion temperatura imagen termica. 
+ 
+ 
+Indicacion- trip temperatura aceite. 
+ 
+ 
+Rele presion de aceite, la G indica rele de trip. Sin letra es solo 
+rele de indiccion. 
+ 
+ 
+Rele de sobrecorriente de fase con ajuste de tiempo. 
+ 
+ 
+Rele de sobrecorriente del neutro. 
+ 
+A 
+V 
+71Q 
+kW 
+26T 
+51 
+63Q 
+26Q 
+51N 
+PD 
+kVAR
+63
+
+--- Página 13 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 12 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 6. Simbolos de Medida y Proteccion 
+Revision n°  
+0 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Rele auxiliar. 
+ 
+ 
+Rele de sobrecorriente instantanea del neutro. 
+ 
+ 
+Rele de sobrecorriente de fases con ajuste de tiempo e 
+instantaneo. 
+ 
+ 
+Rele de sobrecorriente con ajuste de tiempo e instantaneo del 
+neutro. 
+ 
+ 
+Rele de proteccion diferencial transformador principal. 
+ 
+ 
+Rele auxiliar presion de aceite. 
+ 
+ 
+Rele auxiliar anunciador presion de aceite. 
+ 
+ 
+Rele de distancia, funciona cuando la admitancia, impedancia o 
+reactancia del circuito aumenta o disminuye mas alla de los 
+limites predeterminados. 
+ 
+ 
+Mecanismo sincronizador o de revision de sincronizacion, opera 
+cuando dos circuitos de corriente alterna se encuentran dentro 
+de los limites deseados de frecuencia, angulo de fase, o voltaje, 
+con el fin de permitir o provocar el paralelo entre estos dos 
+circuitos. 
+ 
+ 
+Rele de bajo voltaje, funciona para un valor de bajo voltaje dado. 
+ 
+ 
+Rele de campo, funciona ante un valor dado o anormalmente 
+bajo o ante una falla de la corriente de campo de la maquina, o 
+ante un valor excesivo del componente reactivo de la corriente 
+de inducido en una maquina de corriente alterna que indique 
+una anormalmente baja excitacion de campo. 
+ 
+ 
+Interruptor (automatico) de circuito de campo, opera con el 
+obeto de aplicar o extraer la excitacion de la maquina. 
+86 
+50N 
+87T 
+50 
+51
+  50   
+  51  N
+63X 
+  30   
+63 X
+21 
+25 
+27 
+40 
+41
+
+--- Página 14 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 13 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 6. Simbolos de Medida y Proteccion 
+Revision n°  
+0 
+ 
+ 
+ 
+ 
+Interruptor (automatico) de circuito de funcionamiento, es un 
+dispositivo cuya funcion es conectar la maquina a su fuente de 
+funcionamiento o voltaje de operacion. Esta funcion puede 
+tambien ser utilizada por un mecanismo, por ejemplo un 
+contactor, que sea utilizado en serie con un interruptor 
+automatico de circuito u otro medio protector para caso de 
+fallas, de preferencia para aberturas y cierres frecuentes del 
+circuito. 
+ 
+ 
+Rele para corriente de fase en reversa o balance de fase, opera 
+cuando las corriente polifasicas presentan una secuencia de 
+fase en reversa, o cuando las corrientes polifasicas no estan 
+balanceadas o contienen componentes de secuenia de fase 
+negativa por sobre una cantidad dada. 
+ 
+ 
+Rele de sobrevoltaje, opera ante un determinado valor de 
+sobrevoltaje. 
+ 
+ 
+Rele de voltaje o de balance de corriente, funciona ante una 
+determinada diferencia de voltaje, o de corriente de entrada o 
+salida, de dos circuitos. 
+ 
+ 
+Rele para sobre corriente direccional alterna, funciona ante un 
+valor de sobrecorriente alterna deseado que fluye en una 
+direccion predeterminada. 
+ 
+42 
+46 
+59 
+60 
+67
+
+--- Página 15 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 14 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 7. Simbolos de Puesta a Tierra 
+Revision n°  
+0 
+ 
+7. SIMBOLOS DE PUESTA A TIERRA. 
+ 
+Los elementos de puesta a tierra son un conjunto de conductores de union y 
+conductores desnudos enterrados, utilizados para poner a tierra un sistema o equipo.  
+ 
+Simbolos Segun NCH 4-84: 
+SIMBOLO 
+DESCRIPCION 
+ 
+Cable de cobre desnudo, enterrado. 
+ 
+Cable de cobre desnudo, a la vista. 
+ 
+Cable de tierra aereo. 
+ Cable de cobre aislado para puesta a tierra. 
+ 
+Electrodo tipo Copperweld  “ (20mm) 3m. 
+ 
+Electrodo y soldadura tipo “GT”, Cadweld. 
+ 
+Camara de interconexion. 
+ 
+Camara de interconexion con electrodo. 
+ 
+Chicote para conexion a equipo (futuro). 
+ 
+Conexion a barra de tierra. 
+ 
+Soldadura tipo “T” (derivacion) sistema Cadweld. 
+ 
+Soldadura tipo  cruz sistema Cadweld. 
+ 
+ 
+Conexion de cable de tierra a equipo. 
+ 
+Conexion de cable de tierra a estructura. 
+ 
+Indica detalle de montaje. 
+X = Nº detalle y hoja. 
+yyy = Nº plano.
+
+--- Página 16 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 15 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+8. COMBINACION DE SIMBOLOS. 
+ 
+Combinacion de simbolos de uso frecuente. 
+ 
+Simbolos segun norma DIN: 
+SIMBOLO 
+DESCRIPCION 
+ 
+Contactor de potencia con rele de sobrecarga y contactos 
+auxiliares. 
+ 
+Interruptor tripolar con cerrojo y disparo libre: 
+ 
+- 
+Con disparadores (electrotermicos)por sobrecarga. 
+- 
+Con disparadores (electromagneticos) por 
+cortocircuito. 
+ 
+ 
+ 
+Seccionador bajo carga tripular. 
+ 
+ 
+Seccionador tripolar con fusibles. 
+ 
+Interruptor con cerrojo y disparo libre, para proteccion de 
+motores, representado como tripolar, con : 
+ 
+- 
+Bobina de minima tension con contactos auxiliares. 
+- 
+Tres disparadores (electrotermicos) por sobrecarga. 
+- 
+Tres disparadores (electromagneticos) por 
+cortocircuito. 
+ 
+ 
+Sensor, detector de proximidad: 
+ 
+- 
+Principio de trabajo: 
+Inductivo. 
+ 
+- 
+Principio de trabajo: 
+Capacitivo 
+ 
+- 
+Principio de trabajo: 
+      Ultrasonido    
+1
+2
+2
+
+--- Página 17 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 16 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Rectificador /Ondulador (conmutable). 
+ 
+Estabilizador de tension. 
+ 
+Celda primaria, elemento primario, acumulador electrico. 
+Nota: la linea mas larga representa al polo positivo, la mas corta,  
+al negativo. Para que el simbolo quede mas claro podra trazarse la 
+linea corta con mayor espesor. 
+ 
+Representacion 1     
+ 
+Representacion 2 
+ 
+Bateria de elementos primarios, bateria de acumuladores electricos. 
+ 
+ 
+Transmision, flujo de energia, flujo de senales en una direccion 
+(“simplex”). 
+ 
+Flujo de energia saliente de las barras colectoras. 
+ 
+Botella terminal de cable, se representa un cable tripular. 
+ 
+Botella de derivacion, representada con tres conductores, botella 
+derivacion en T, representacion de todos los polos. 
+ 
+Bocina . 
+Representacion 1 
+ 
+Representacion 2 
+ 
+ 
+Campanilla de alarma, timbre. 
+ 
+ 
+Sirena. 
+ 
+ 
+ 
+Silbato, accionado por energia electrica.
+
+--- Página 18 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 17 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Lampara, representacion general. 
+Lampara de senalizacion, representacion general. 
+Nota 1: ademas del simbolo podra indicarse el color de acuerdo con la norma 
+DIN IEC 757: 
+RD: Rojo.  
+BU:
+Azul. 
+YE: amarillo. 
+WH: Blanco. 
+GN: Verde. 
+ 
+ 
+Nota 2: ademas del simbolo podra indicarse la clase de lampara: 
+Ne:   
+Xe: 
+Na: 
+Hg: 
+I: 
+IN: 
+EL: 
+ARC: 
+FL: 
+IR: 
+UV: 
+LED: 
+Neon. 
+Xenon. 
+Vapor de sodio. 
+Vapor de mercurio. 
+Yodo. 
+Incandescente. 
+Luminiscente. 
+Arco. 
+Fluorescente. 
+Infrarroja. 
+Ultravioleta. 
+Diodo luminoso. 
+ 
+ 
+Lampara de senalizacion, intermitente. 
+ 
+ 
+Maquina, representacion general. 
+En lugar del asterisco (*) tiene que insertarse una de las indicaciones 
+siguientes: 
+C: 
+Convertidor. 
+G: 
+Generador. 
+GS: Generador sincronizado. 
+M: 
+Motor. 
+MG: Maquina utilizable como motor o como  
+ 
+Generador.      
+MS: Motor sincronico.
+
+--- Página 19 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 18 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Motor asincronico trifasico con rotor jaula. 
+ 
+Motor asincronico trifasico con rotor de anillos rozantes. 
+ 
+Motor trifasico con excitacion serie. 
+ 
+Motor asincronico trifasico con conexion estrella, con bobinado de arranque en 
+el rotor. 
+ 
+ 
+Diodo semiconductor, representacion general. 
+ 
+Diodo de ruptura. 
+Diodo Zener, diodo Esaki. 
+ 
+Diodo de avalancha (“Breakdown diode”). 
+Diodos Zener conectados en oposicion. 
+ 
+Rectificador. 
+ 
+ 
+ 
+ 
+Rectificador, conexion puente. 
+ 
+ 
+ 
+ 
+Ondulador.
+
+--- Página 20 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 19 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+Transformador con dos bobinados. 
+Nota: cuando se usa la forma de representacion 2 podran senalarse 
+las posiciones de fases. 
+Transformador monofasico con dos bobinados y pantalla. 
+Autotransformador, monofasico. 
+Autotransformador monofasico con regulador de tension. 
+Impedancia (reactancia). 
+Transformador de intensidad.
+
+--- Página 21 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 20 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Impulso positivo. 
+ 
+Impulso negativo. 
+ 
+Impulso de corriente alterna. 
+ 
+Diente de sierra. 
+ 
+Descargador. 
+ 
+Descargador de sobretension en tubo de descarga gaseosa. 
+ 
+Arrancador, representacion general. 
+ 
+Arrancador estrella-triangulo. 
+ 
+Arrancador automatico. 
+ 
+ 
+Arrancador con disparadores termicos y magneticos. 
+1
+M
+3 -
+ 
+Dispositivo de arranque, representado con: 
+- 
+Arrancador con contactor para estator, dos sentidos de rotacion. 
+- 
+Motor trifasico con anillos rozantes. 
+- 
+Arrancador automatico con resistencias para el rotor. 
+ 
+Rele Buchholz. 
+ 
+Rele paso a paso. 
+Rele de impulsos. 
+ 
+Rele de mando a distancia por audiofrecuencia.
+
+--- Página 22 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 21 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Rele intermitente, representado con una frecuencia de intermitencia de 
+5/min. 
+ 
+Rele de minima tension: 
+- 
+rango de reaccion 50 a 80 V. 
+- 
+conexion a 130 %. 
+ 
+Rele de medicion para detectar cortocircuitos entre espiras de bobinados. 
+ 
+Rele de sobreintensidad con dos salidas, una que actua con cinco veces 
+el valor de ajuste, la otra con retardo inversamente proporcional a la 
+corriente 
+ 
+Tension de defecto contra el cuerpo. 
+ 
+Corriente de defecto contra tierra. 
+ 
+Corriente entre dos neutros. 
+ 
+Descargador de sobretension. 
+ 
+Sensor de proximidad. 
+ 
+Sensor de contacto. 
+ 
+Interruptor de accionamiento manual, representacion general. 
+ 
+Pulsador (sin retencion). 
+Tecla. 
+ 
+Interruptor de mando. 
+Pulsador de mando. 
+Interruptor de maniobra con acuse de recibo, representado como tripolar, 
+operacion manual por giro del accionamiento. 
+ 
+1
+5/min
+
+--- Página 23 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 22 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Accionamiento electromecanico. 
+Bobina de rele, representacion general. 
+ 
+Accionamiento (rele) con dos bobinados separados, 
+- 
+Representacion en bloque. 
+ 
+ 
+Representacion 1 Representacion 2 
+Accionamiento (rele) con dos bobinados separados, 
+- 
+Representacion  individual. 
+ 
+ 
+Accionamiento electromecanico con retardo en la desconexion. 
+  
+Accionamiento electromecanico con retardo en la conexion. 
+ 
+ 
+Accionamiento electromecanico con retardo en la  conexion y en la 
+desconexion. 
+Nota: los simbolos de retardo en la conexion y en la desconexion 
+tambien pueden representarse sin separacion. 
+ 
+ 
+Accionamiento electromecanico de un rele polarizado. 
+Nota: se podra representar con puntos la relacion entre la 
+direccion de la corriente en la bobina de accionamiento y el 
+movimiento del brazo de contacto. 
+ 
+Representacion 1 Representacion 2 
+Accionamiento electromecanico de un rele de remanencia.
+
+--- Página 24 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 23 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+ 
+    Representacion 1      
+Representacion 2 
+Conector macho y hembra. 
+Conexion enchufable. 
+ 
+Accionamiento manual, representacion general. 
+ 
+Accionamiento por pedal. 
+ 
+Accionamiento por aproximacion. 
+ 
+Interruptor de emergencia. 
+ 
+Accionamiento por bobina electromagnetica. 
+ 
+Accionamiento 
+por 
+proteccion 
+electromagnetica 
+contra 
+sobreintensidad. 
+ 
+Accionamiento por sistemas termicos, por ejemplo, rele bimetalico, 
+proteccion termica contra sobrecargas. 
+ 
+Accionamiento por levas. 
+Nota: pueden representarse los detalles del perfil de las levas y de 
+los discos de levas. 
+ 
+Accionamiento por mandos neumaticos o hidraulicos en la direccion 
+de la flecha. 
+ 
+ 
+Actuador, representacion general. 
+Accionamiento por energia mecanica almacenada. 
+Nota: en el cuadrado podra indicarse (por ejemplo, con simbolos 
+segun la norma DIN 1304) la naturaleza de la energia almacenada. 
+ 
+ 
+Accionamiento por motor. 
+ 
+Bloqueo, sin enclavamiento. 
+ 
+Bloqueo, 
+Se represento un bloqueo del movimiento en ambas direcciones. 
+ 
+Enclavamiento, encastrado.
+
+--- Página 25 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 24 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+      Representacion 1     
+Representacion 2 
+Efecto retardado. 
+Nota: efecto retardado en la direccion del arco hacia su punto central 
+(efecto tipo paracaidas). 
+ 
+Acople o embrague, desacoplado. 
+ 
+Acople o embrague, acoplado. 
+Ejemplo: 
+Acople o embrague para arrastre en un sentido de giro, mecanismo 
+de giro libre. 
+ 
+ 
+       Representacion 1   
+Representacion 2 
+Contacto normal abierto, al  accionar cierra con retardo. 
+ 
+ 
+      Representacion 1   
+Representacion 2 
+Contacto normal cerrado, cierre retardado en la liberacion. 
+ 
+Juego de contactos con un contacto NA sin retardo, otro NA con 
+retardo a la posicion de reposo y un contacto NC con apertura 
+retardada. 
+ 
+Interruptor automatico. 
+ 
+Guarda motor tripolar con disparador termico por sobrecargas y 
+disparadores electromagneticos por cortocircuito, representacion 
+unificar. 
+ 
+Seccionador bajo carga, 
+Interruptor en vacio.
+
+--- Página 26 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 25 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Fusible:  
+- 
+En general. 
+ 
+ 
+Fusible. 
+lado marcado = conexion a la red. 
+ 
+Fusible, base y tapa a rosca 
+representado: 
+10 A, tipo DII, tripular. 
+ 
+         
+ 
+   Representacion 1   Representacion 2 
+Punto de seccionamiento, barra de conexion, cerrado. 
+ 
+Representacion 
+preferida 
+ 
+ 
+ 
+Otra 
+Representacion
+ 
+Resistencia, en general. 
+ 
+ 
+ 
+Resistencia variable, en general. 
+ 
+Resistencia con derivaciones fijas (se representaron dos 
+derivaciones). 
+ 
+Calefactor. 
+ 
+Representacion 
+preferida 
+ 
+ 
+ 
+Otra 
+Representacion 
+ 
+Inductividad.  
+( Bobinado, reactancia, bobina). 
+ 
+Inductancia. 
+- 
+Con derivaciones fijas (se representaron dos 
+derivaciones). 
+ 
+ 
+Inductancia. 
+- 
+Con nucleo magnetico. 
+ 
+ 
+Capacidad (condensador). 
+- 
+En general 
+ 
+ 
+Capacidad (condensador). 
+- 
+Variable. 
+ 
+ 
+ 
+ 
+1)
+ DII
+10A
+
+--- Página 27 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 26 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Capacidad (condensador). 
+- 
+Ajustable. 
+ 
+ 
+Cristal piezoelectrico con dos electrodos. 
+ 
+Tierra, representacion general. 
+Nota: se podran agregar indicaciones complementarias para 
+senalar la clase o finalidad de la puesta a tierra. 
+ 
+Masa, carcasa. 
+Nota: el rayado se podra omitir cuando no pueda producir 
+confusiones. La linea que representa la carcasa tiene que 
+tener un trazo de mayor espesor. 
+ 
+Variabilidad. 
+- 
+No inherente.  
+ 
+ 
+Variabilidad. 
+- 
+No inherente ni lineal. 
+ 
+ 
+Variabilidad. 
+- 
+Inherente. 
+ 
+Variabilidad. 
+- 
+Inherente, no lineal. 
+ 
+ 
+Regulabilidad. 
+Nota: al simbolo podran agregarse indicaciones relacionadas 
+con las condiciones para las cuales es admisible la 
+regulacion. 
+ 
+ Representacion 1  
+  Representacion 
+ 
+Contacto normal abierto. 
+Funcion conexion en general. 
+Interruptor. 
+ 
+ 
+Contacto normal abierto adelantado (de un juego de 
+contactos), que en relacion con los demas contactos del juego 
+cierra antes. 
+ 
+ 
+ 
+o
+
+--- Página 28 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 27 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Contacto normal cerrado. 
+ 
+Contacto normal cerrado adelantado (de un  juego de 
+contactos), que en relacion con los demas contactos del juego 
+abre antes. 
+ 
+Contacto inversor con interrupcion. 
+ 
+ 
+ 
+Representacion 1 
+ 
+Representacion 2 
+ 
+Contacto inversor sin interrupcion. 
+Contacto inversor seguidor. 
+ 
+ 
+Contacto normal abierto, no abre en forma automatica al finalizar 
+la fuerza de accionamiento. 
+ 
+Contacto normal cerrado, no cierra en forma automatica al 
+finalizar la fuerza de accionamiento. 
+ 
+ 
+Contacto normal cerrado con retorno automatico a la posicion de 
+reposo, se representa en la posicion “accionado” 
+Nota: La flecha doble senala un estado de servicio diferente del 
+de la representacion normal del contacto, por ejemplo, un rele de 
+corriente de reposo, rele de enclavamiento, contactos fin de 
+carrera. 
+ 
+________ 
+Representacion 1 
+ 
+o 
+ 
+ 
+Representacion 2 
+ 
+ 
+Corriente continua. 
+ 
+Corriente alterna. 
+ 
+Corriente universal. 
+Corriente continua o alterna. 
+Tension continua o alterna. 
+ 
+Corriente rectificada con componentes de corriente alterna 
+(cuando se requiera una diferenciacion de la corriente continua 
+filtrada).
+
+--- Página 29 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 28 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 8. Combinacion de Simbolos 
+Revision n°  
+0 
+ 
+2µs 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Impulso rectangular alterno. 
+ 
+ 
+ 
+Impulso rectangular, positivo, representado con una duracion de 2 
+microsegundos y una frecuencia del pulso de 10 kHz. 
+ 
+Impulso triangular. 
+ 
+1 ~ 16 ⅔ Hz 
+Corriente alterna monofasica, por ejemplo, 16 2/3 Hz. 
+3 ~ 50 Hz 400 V 
+3/N ~ 50 Hz 400/230 
+V 
+3/N/PE ~ 50 Hz 
+400/230 V 
+Corriente trifasica, sistema trifasico trifilar. 
+Idem, con neutro, sistema tetrafilar. 
+Idem, con neutro y conductor de proteccion. 
+2 – 24 V 
+2/M – 24 V 
+2/PE – 220 V 
+ 
+Corriente continua, sistema de dos conductores. 
+Corriente continua, sistema de dos conductores con conductor central o 
+neutro. 
+Corriente continua, sistema trifilar con conductor de proteccion. 
+ 
+ 
+1 0 k H z
+
+--- Página 30 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 29 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+9. SIMBOLOS DE CONDUCTORES Y 
+CONEXIONES. 
+ 
+Segun Normas DIN, IEC, ANSI y BS: 
+ 
+SIMBOLO 
+DESCRIPCION 
+ _____ 
+Conductor, linea. 
+ 
+Conductor de proteccion (PE). 
+ 
+Conductor neutro (N). 
+Conductor central (M). 
+ 
+Conductor neutro con funcion de proteccion (PEN). 
+ 
+ 
+ 
+Representacion 1 
+o 
+ 
+ 
+Representacion 2 
+ 
+ 
+Linea con indicacion del numero de conductores (3). 
+ 
+Derivacion doble de linea monofasica o trifasica. 
+ 
+Conexion de conductores. 
+ 
+Punto de conexion, por ejemplo, borne. 
+Nota: La circunferencia puede rellenarse. 
+ 
+11 12 13 14 15 16 
+ 
+Bornera, representada con la dominacion de cada borne. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1)
+1 2 3 4 5 6 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bornera, con representacion de bornes de paso y de separacion.
+
+--- Página 31 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 30 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+9.1 Resistores, Capacitores, Baterias  
+ 
+Variabilidad, ajustabilidad, resistores, bobinados, capacitores, imanes permanentes, 
+baterias, aterrizado, apantallamiento. 
+SIMBOLO 
+DESCRIPCION 
+ 
+Simbolo de variabilidad continua por posicionamiento mecanico, simbolo 
+generico. 
+ 
+Simbolo de variabilidad continua por posicionamiento mecanico, lineal, no 
+lineal. 
+ 
+Simbolo de variabilidad gradual por posicionamiento mecanico. 
+ 
+Simbolo generico para ajustabilidad por posicionamiento mecanico. 
+ 
+Simbolo de ajustabilidad continua. 
+ 
+Simbolo de ajustabilidad gradual. 
+ 
+Resistencia, simbolo generico. 
+ 
+Resistencia, simbolo alternativo. 
+ 
+Resistor con derivaciones. 
+ 
+Resistencia puramente ohmica. 
+ 
+Resistencia aparente (angulo de fase opcional). 
+ 
+Bobinado, inductividad, simbolo generico. 
+ 
+Bobinado, simbolo alternativo. 
+ 
+Bobinado con derivaciones. 
+ 
+ 
+Bobinado con nucleo, por lo general de material magnetico. 
+ 
+R
+Z
+
+--- Página 32 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 31 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Bobinado con nucleo de material magnetico y claro de aire. 
+ 
+Bobinado apantallado. 
+ 
+Capacitor, capacitancia, simbolo generico. 
+ 
+Capacitor con derivacion. 
+ 
+ 
+Capacitor electrolitico no polarizado. 
+ 
+Iman permanente, simbolo generico. 
+ 
+Simbolo alternativo. 
+ 
+Simbolos de circuito: 
+ 
+ 
+Elemento 
+primario, 
+Acumulador 
+(celda) 
+Bateria. 
+ 
+Conexion a tierra, simbolo generico. 
+ 
+Conexion para tierra de proteccion. 
+ 
+ 
+Estructura o cuerpo utilizado como sustituto para la conexion a tierra, 
+simbolo generico. 
+ 
+ 
+Linea limite. 
+ 
+ 
+ 
+Apantallamiento. 
+ 
+ 
+Ejemplos 
+ 
+Resistencia variable. 
+ 
+Resistencia ajustable. 
+ 
+Inductividad variable gradual. 
+ 
+ 
+Capacitor, capacitancia ajustable (elemento de ajuste fino).
+
+--- Página 33 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 32 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+9.2 Conmutador, Distribuidor.  
+ 
+ 
+Conmutador distribuidor, elementos operativos, liberaciones: 
+ 
+SIMBOLO 
+DESCRIPCION 
+VERSION 
+1 
+VERSION 
+2 
+ 
+ 
+ 
+ 
+ 
+Elemento para cerrar un circuito normalmente abierto, hacer 
+contacto. 
+ 
+ 
+ 
+Elemento para abrir un circuito normalmente cerrado, abrir 
+contacto. 
+ 
+ 
+ 
+Elemento de conmutacion, contacto bidireccional. 
+ 
+ 
+ 
+ 
+Elemento de cierre, contacto de cierre de dos direcciones con 
+tres posiciones de conmutacion. 
+ 
+ 
+ 
+Punto de desconexion. 
+ 
+ 
+ 
+Colector de corriente, contacto deslizante. 
+ 
+ 
+Elementos operacionales electromecanicos y electromagneticos: 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Simbolo general para elemento operacional, p. ej. rele, contactor. 
+ 
+ 
+Elemento operacional con propiedades especiales, simbolo generico. 
+ 
+ 
+Enganche de interruptor con liberacion electromecanica. 
+ 
+Unidades electromagneticas: 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Iman elevador, placa de fijacion, separador magnetico. 
+ 
+ 
+Freno de corriente de Foucault.
+
+--- Página 34 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 33 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+Conectores machos: 
+SIMBOLO 
+DESCRIPCION 
+ 
+Pin macho. 
+ 
+Conector hembra. 
+ 
+ 
+Conector macho con pasador macho y conector hembra. 
+ 
+ 
+Conector macho con indicacion de conexion a tierra de proteccion. 
+ 
+ 
+Camisa con trinquete. 
+ 
+ 
+ 
+Resorte con trinquete. 
+ 
+ 
+Fusibles: 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Fusible, simbolo generico. 
+ 
+ 
+Fusible con indicacion de conexion en el lado de red electrica. 
+ 
+Derivador de sobretension. 
+ 
+Distancia de chispa. 
+ 
+ 
+Distancia de doble chispa.
+
+--- Página 35 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 34 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+Elementos de conmutacion con indicacion de cierre de contacto prolongado (secuencias 
+de contacto). 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Contacto 
+de 
+cierre 
+normalmente 
+abierto 
+1 cierra antes que 2. 
+ 
+ 
+Contacto 
+de 
+apertura 
+normalmente 
+cerrado 
+que 1 abre antes que 2. 
+ 
+ 
+Contacto bidireccional sin interrupcion.  Elemento de conmutacion secuencial. 
+ 
+ 
+Elemento de cierre momentaneo.  contacto frotante:  cierre de contacto con 
+movimiento en ambas direcciones. 
+ 
+ 
+Elemento de cierre momentaneo.  contacto frotante:  cierre de contacto con 
+movimiento en direccion de la flecha solamente. 
+ 
+Elemento de conmutacion con puente sobre varias posiciones de conmutacion: 
+SIMBOLO DESCRIPCION 
+ 
+Interruptor de multiples posiciones, p. ej. con seis posiciones, en posicion 1: 
+contactos 1 y 3 en puente, contacto 5 abierto. 
+ 
+Elementos de conmutacion con indicacion de cierre retardado de contacto o interrupcion de 
+contacto: 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Contacto de apertura normalmente cerrado con apertura retardada. 
+ 
+ 
+Contacto de apertura normalmente cerrado con cierre retardado. 
+ 
+ 
+Disyuntor con fusible. 
+ 
+ 
+ 
+Conmutador de toma. 
+ 
+ 
+ 
+Desacoplador de carga. 
+ 
+ 
+1 2 3 4 5 6
+
+--- Página 36 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 35 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Interruptor de circuito. 
+ 
+ 
+ 
+Interruptor aislador de circuito. 
+ 
+ 
+ 
+Interruptor de circuito con reconexion automatica separada de los diversos 
+polos, p. ej. tres polos. 
+ 
+Elementos operacionales electromecanicos y electromagneticos: 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Elemento operacional electromecanico con indicacion de un bobinado 
+operativo, simbolo alternativo. 
+ 
+ 
+Elemento operacional electromecanico con dos bobinados operativos en el 
+mismo sentido. 
+ 
+ 
+Elemento operacional electromecanico con dos bobinados operativos en 
+sentido opuesto, simbolo alternativo. 
+500  
+ 
+Elemento operacional electromecanico con indicacion de la resistencia de CC, 
+p. ej 500 . 
+ 
+ 
+Elemento operacional electromecanico con indicacion de la cantidad de 
+influencia electrica, p. ej. que excede un cierto amperaje, liberacion de 
+sobrecorriente electromagnetica tambien. 
+ 
+ 
+Rele termico.
+
+--- Página 37 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 36 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+ 
+Elementos operacionales electromecanicos para reles y contactores: 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Elemento operacional electromecanico con retardo de accionamiento. 
+ 
+ 
+Elemento operacional electromecanico con retardo de desaccionamiento. 
+ 
+ 
+Rele de corriente alterna. 
+ 
+ 
+Elementos operacionales electromecanicos con indicacion de retorno no automatico: 
+ 
+SIMBOLO 
+DESCRIPCION 
+VERSION 1 
+VERSION 2 
+ 
+ 
+ 
+ 
+ 
+Liberacion de sobrecorriente con trip retardado. 
+ 
+ 
+Escape de inversion de corriente. 
+ 
+ 
+Liberacion de corriente de falla. 
+ 
+ 
+Liberacion de sobrecorriente electrotermica. 
+ 
+ 
+Liberacion de sobrevoltaje.
+
+--- Página 38 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 37 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+9.3 Indicadores de Posicion. 
+ 
+Simbolos de circuito complementario Indicacion de posiciones: 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Direccion de movimiento en linea recta, p. ej. hacia la derecha. 
+ 
+Direccion de movimiento girando en ambas direcciones. 
+ 
+ 
+Indicacion de posicion, simbolo generico. 
+ 
+ 
+Indicacion de posicion, simbolo alternativo. La linea solida indica una posicion 
+de operacion seleccionada o la posicion basica. 
+ 
+Enlaces de accionamiento mecanico: 
+SIMBOLO 
+DESCRIPCION 
+ Enlace de accionamiento, simbolo generico. 
+ 
+Enlace de accionamiento, simbolo alternativo. Se debe usar cuando la 
+separacion es demasiado estrecha. 
+ 
+Retardos 
+SIMBOLO 
+DESCRIPCION 
+ 
+Retardo al mover hacia la derecha. 
+ 
+Retardo al mover hacia la derecha y hacia la izquierda. 
+ 
+Elementos operacionales: 
+SIMBOLO 
+DESCRIPCION 
+ 
+Operacion manual, simbolo generico. 
+ Otros metodos de operacion, p. ej. por pedal. 
+ 
+ 
+Sensor con representacion del desenrollamiento de una leva, tres posiciones. 
+ 
+ 
+Operacion por energia, simbolo generico. 
+ 
+ 
+Operacion por energia, p. ej. con devanado manual. 
+ 
+ 
+ 
+Operacion por energia, p. ej. con accionamiento de piston. 
+ 
+ 
+Enganche de interruptor con liberacion mecanica.
+
+--- Página 39 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 38 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+Elementos de bloqueo: 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Reten, tope. 
+ 
+Bloqueo de movimiento en una direccion. 
+ 
+Acoplamientos: 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Acoplamiento o embrague, desacoplado. 
+ 
+Acoplamiento o embrague, acoplado.
+
+--- Página 40 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 39 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+9.4 Transformadores de Medida. 
+ 
+Transformadores de energia y bobinas inductoras: 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+Version 1 
+Version 2 
+ 
+ 
+ 
+Bobina inductora. 
+ 
+ 
+ 
+ 
+Transformador con dos bobinados separados. 
+ 
+ 
+Transformador con tres  bobinados separados. 
+ 
+ 
+Autotransformador. 
+ 
+ 
+ 
+ 
+Transformador, variable (no durante operacion), con 
+indicacion del bobinado variable. 
+ 
+ 
+ 
+Autotransformador, continuamente variable. 
+ 
+ 
+ 
+Bobina inductora trifasica, abierta, variable en intervalos. 
+ 
+ 
+Transformador monofasico 6000/400 V, 1000 kVA, 162/3 Hz. 
+ 
+ 
+ 
+ 
+Transformador trifasico, grupo vector Yz5, 15000 4% 
+400/231 V. 
+100 kVA, 50 Hz. 
+ 
+ 
+Dos transformadores trifasicos con devanados secundarios 
+mutuamente desplazados en 30 grados.  Grupo vector Yy6 
+o Dy5. 
+ 
+ 
+Autotransformador 
+monofasico 
+6000/5000 
+V, 
+2000 kVA de capacidad nominal de rendimiento total, 50 Hz. 
+ 
+V
+W
+V
+V
+W
+M
+N
+V
+V
+R
+S
+T
+
+--- Página 41 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 40 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+9.5 Transformadores de Instrumentacion. 
+ 
+ 
+SIMBOLO 
+Version1 
+Version2 
+DESCRIPCION 
+ 
+ 
+ 
+ 
+Transformador de corriente, indicando devanado primario. 
+ 
+ 
+ 
+ 
+Transformador de corriente con dos nucleos. 
+ 
+ 
+ 
+ 
+Transformador de corriente continua. 
+ 
+ 
+ 
+ 
+Transformador de voltaje, simbolo generico. 
+ 
+Transformador de voltaje 
+con derivacion. 
+ 
+SIMBOLO 
+Version1 Version2 
+DESCRIPCION 
+ 
+ 
+ 
+ 
+Transformador de voltaje capacitivo. 
+ 
+ 
+ 
+ 
+ 
+Dos transformadores de voltaje en conexion en V.
+
+--- Página 42 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 41 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+9.6 Transductores.  
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Transductor, simbolo  
+generico. 
+ 
+ 
+ 
+Amplificador magnetico,  
+simbolo generico. 
+Alimentacion desde izquierda Voltaje 
+de suministro. 
+Saliendo hacia la derecha: 
+Voltaje de salida Alimentacion desde 
+abajo Voltaje de control.
+
+--- Página 43 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 42 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+9.7 Maquinas.  
+ 
+ 
+SIMBOLO 
+Version1 Version2 
+DESCRIPCION 
+ 
+ 
+Motor y generador acoplados entre si, simbolo generico. 
+ 
+ 
+Conversor rotatorio, simbolo generico. 
+ 
+ 
+ 
+Motor con rotor de anillo deslizante bifasico. 
+ 
+ 
+Motor jaula de ardilla con variacion de polos de acuerdo a Dahlander (p. 
+Ej. de 8 a 4 polos). 
+ 
+ 
+ 
+Motor jaula de ardilla trifasico, estator conectado en delta, conecto a 
+fuente monofasica, con capacitor. 
+ 
+ 
+ 
+Motor de polo saliente (maquina de campo rotatorio) con devanado de 
+arranque, devanado de estator en estrella. 
+ 
+ 
+ 
+Maquina sincronica monofasica, generador con excitacion de magneto 
+permanente (p. Ej.  tacogenerador). 
+ 
+ 
+ 
+Alternador con bobina de excitacion anular en el estator. 
+ 
+ 
+ 
+Generador, devanado compensador conectado a un lado de la armadura. 
+ 
+ 
+Motor, devanado dividido simetricamente alrededor de la armadura. 
+ 
+M
+3
+Y
+2
+M
+1
++
+-
+M
+G
+1
+G
++
+-
+3
+G
+M
+M
+M
+G
+
+--- Página 44 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 43 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+Maquinas (Cont.). 
+ 
+SIMBOLO 
+Version1 Version2 
+DESCRIPCION 
+ 
+ 
+Generador, excitado separadamente. 
+ 
+ 
+Maquina de campo transversal simple, excitada separadamente 
+(maquina de Rosenberg). 
+ 
+ 
+Motor en derivacion alimentado por rotor, con control de velocidad 
+mediante corrimiento de escobillas. 
+ 
+ 
+Motor de repulsion con un solo conjunto de escobillas para control de 
+velocidad mediante corrimiento de escobillas. 
+ 
+ 
+Conversor rotatorio trifasico sincronico, con autoarranque. 
+ 
+9.8 Partidores.  
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Partidor, simbolo generico. 
+ 
+ 
+G
+G
+G
+M
+1
+G
+M
+
+--- Página 45 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 44 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+9.9 Instrumentos de Medicion, Dispositivos de Prueba, Medidores.  
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Instrumento de indicacion, simbolo generico. 
+ 
+  
+ 
+Instrumento de registro,simbolo generico. 
+ 
+ 
+Instrumento integrador, medidor de electricidad. 
+ 
+Movimiento de instrumento con una ruta de voltaje (V). 
+ 
+Movimiento de instrumento con una ruta de corriente (I). 
+ 
+ 
+Movimiento de instrumento para suma o resta. 
+ 
+ 
+Movimiento de instrumento para la formacion de un producto. 
+ 
+ 
+Movimiento de instrumento para la formacion de un cociente. 
+ 
+ 
+Instrumento de medicion, simbolo generico sin indicacion del valor medido. 
+ 
+ 
+Instrumento de medicion, simbolo generico sin indicacion de la cantidad 
+medida, la aguja deflecta en ambas direcciones (A, V, P, etc). 
+ 
+ 
+Amperimetro con indicacion de amperes de la unidad.
+
+--- Página 46 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 45 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+9.10 Dispositivos de Indicacion y Advertencia.  
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Luz senalizadora, simbolo generico. 
+ 
+ 
+Dispositivo indicador con reset automatico, aguja indicadora, anunciador. 
+ 
+ 
+Interruptor de discrepancia de control. 
+ 
+Campana, simbolo generico. 
+ 
+Sirena o bocina. 
+ 
+9.12 Electrostatica 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Electrodo con corona. 
+ 
+Electrodo sin corona. 
+ 
+Electrodo colector. 
+ 
+Precipitador (purificacion de gas)  Equipo de rocio de una instalacion de 
+aspersion, con dos zonas. 
+ 
+Selector con carga y precipitacion separadas.
+
+--- Página 47 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 46 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+9.13 Selectores, Interruptores de Dial, Interruptores. 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Selector, simbolo generico, en particular con una disposicion para ajuste, p. 
+Ej. un uniselector. 
+ 
+ 
+Selector con indicacion de posicion de cero. 
+ 
+ 
+Selector con dos procesos de setting diferentes.  Simbolo para conexion 
+multiple de varias lineas mediante varios selectores. 
+ 
+ 
+Interruptor de dial. 
+ 
+ 
+Interruptor ciclico. 
+ 
+ 
+9.15 Antenas (Aerials) 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Antena, simbolo generico. 
+ 
+ 
+Antena transmisora. 
+ 
+ 
+Antena receptora. 
+ 
+ 
+ 
+Antena estructural. 
+ 
+ 
+ 
+Antena bipolar. 
+ 
+ 
+ 
+ 
+Antena parabolica reflector parabolico. 
+ 
+ 
+ 
+Antena localizadora de direccion (DF).
+
+--- Página 48 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 47 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+9.16 Cabezales Magneticos. 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Cabezal magnetico, simbolo abreviado. 
+ 
+ 
+Cabezal de sonido (cabezal registrador). 
+ 
+ 
+Cabezal receptor (cabezal de playback). 
+ 
+ 
+ 
+ 
+Cabezal de borrador. 
+ 
+ 
+Cabezal de borrador receptor de sonido (cabezal de borrador, registrador, de 
+playback). 
+ 
+9.17 Componentes Semiconductores. 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+ 
+Estructura. 
+ 
+Celda fotoconductora. 
+ 
+Rectificador de diodo semiconductor. 
+ 
+Diodo Zener, apropiado para operacion en el rango de breakdown. 
+ 
+ 
+Diodos Zener conectados en oposicion,  
+limitador. 
+ 
+ 
+Fotodiodo.
+
+--- Página 49 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 48 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Elemento fotoelectrico. 
+ 
+ 
+ 
+Diodo bidireccional (diac). 
+ 
+ 
+Unidad rectificadora. 
+ 
+ 
+ 
+Tiristor, simbolo generico. 
+ 
+ 
+ 
+Transistor PNP. 
+ 
+ 
+ 
+Transistor NPN.  El colector va adherido a la carcasa. 
+ 
+9.18 Equipo de Transmision Electroacustica.  
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Microfono, simbolo generico. 
+ 
+Audifono, simbolo generico. 
+ 
+Parlante, simbolo generico. 
+ 
+Toma o conexion, simbolo generico. 
+ 
+Registrador de sonido, simbolo generico.
+
+--- Página 50 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 49 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Simbolo para operacion capacitiva. 
+ 
+Simbolo para operacion piezoelectrica. 
+ 
+ 
+Microfono capacitor con indicacion de caracteristica, p. Ej. en forma de 
+rinon. 
+ 
+Toma piezoelectrica, toma de cristal. 
+ 
+9.19 Circuito para Diagramas en Bloque  
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Elemento de circuito, simbolo generico, 
+cuadrado o rectangular. 
+ 
+ 
+Conversor, transmision, simbolo generico. 
+ 
+ 
+Almacenador, simbolo generico. 
+ 
+ 
+Punto de control central, equipo central,  
+simbolo generico. 
+ 
+ 
+ 
+Punto de operacion, punto central, 
+simbolo generico.
+
+--- Página 51 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 50 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+Ejemplos de amplificadores: 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+  
+ 
+Amplificador simbolo generico. 
+ 
+  
+ 
+Amplificador de empuje – tiro. 
+ 
+  
+ 
+Amplificador transistorizado. 
+ 
+Ejemplos de conversores: 
+ 
+SIMBOLO 
+DESCRIPCION 
+f1
+f2 
+Conversor de frecuencia, simbolo generico. 
+ 
+ 
+Conversor de pulso, p. ej. conversion de pulsos rectangulares 
+modulados 
+por 
+fase 
+en 
+pulsos 
+rectangulares 
+modulados 
+continuamente. 
+5
+7  
+Conversor de codigo, p. ej. conversion de codigo de cinco digitos en 
+uno de siete digitos. 
+ 
+Ejemplos de unidades fuente de energia: 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+ 
+Transformador de corriente directa. 
+ 
+ 
+Unidad fuente de energia, p. ej. para conversion de C.A. en D.C. y C.A. 
+ 
+ 
+Rectificador, unidad rectificadora, simbolo generico. 
+ 
+ 
+Amplificador magnetico, transductor, simbolo generico.
+
+--- Página 52 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 51 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+Ejemplos de generadores: 
+ 
+SIMBOLO 
+DESCRIPCION 
+4kHz
+G  
+Generador, generador de senal, oscilador, simbolo generico con indicacion 
+de frecuencia. 
+ 
+ 
+Generador de barrido. 
+ 
+ 
+ 
+Ejemplos de unidades almacenadotas: 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Almacenador magnetico, simbolo generico. 
+ 
+  
+Almacenador de matriz, p. ej. almacenador de nucleo anular. 
+ 
+ 
+Almacenador con portador de datos rotatorio, p. ej. almacenador de cilindro. 
+ 
+ 
+Almacenador con portador de datos de movimiento lineal. 
+ 
+ 
+ 
+p. ej. almacenador de cinta perforada. 
+ 
+ 
+Almacenador de cinta magnetica. 
+ 
+ 
+ 
+Almacenador de tarjeta perforada. 
+ 
+ 
+ 
+Almacenador de capacitor. 
+ 
+ 
+ 
+ 
+Almacenador de carga electronica.
+
+--- Página 53 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 52 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+Ejemplos de dispositivos indicadores o senalizadotes: 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+ 
+Indicador iluminado, deflexion hacia un lado. 
+ 
+ 
+Indicador tipo dial. 
+ 
+ 
+ 
+Indicador tipo dial, alternadamente como transmisor y receptor. 
+ 
+ 
+Indicador rotatorio para voltaje directo y alternado, simbolo generico. 
+ 
+ 
+9. 20 Procesamiento de Datos Digitales, Elementos de Enlace Digital. 
+ 
+Simbolos de la Norma DIN 40700, parte 14/11.63: 
+ 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Forma basica, dependiendo del numero de entradas. 
+ 
+ 
+ 
+ 
+Elemento AND (elemento de conjuncion con dos entradas). 
+ 
+ 
+ 
+Elemento OR (elemento de disyuncion con tres entradas).
+
+--- Página 54 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 53 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 9. Conductores y Conexiones 
+Revision n°  
+0 
+ 
+Simbolos genericos. 
+ 
+SIMBOLO 
+DESCRIPCION 
+ 
+Simbolo de negacion. 
+ 
+ 
+ 
+Para una entrada. 
+ 
+ 
+ 
+ 
+Para una salida. 
+Simbolo para entradas dinamicas. 
+ 
+ 
+ 
+Efecto en la transicion de 0 a 1. 
+ 
+ 
+ 
+Efecto en la transicion de 1 a 0. 
+ 
+ 
+ 
+ 
+Circuito de entrada con preparacion. 
+E1: 
+entrada preparatoria. 
+E2: 
+entrada de disparo.
+
+--- Página 55 ---
+AREA  
+ Mantencion Electro-Control 
+Pagina 
+Pagina 54 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 10. Recomendaciones Generales 
+Revision n°  
+0 
+ 
+10. RECOMENDACIONES GENERALES. 
+ 
+10.1 Objetivos de las normas. 
+ 
+Todas las normas o estandares, que existen en la actualidad, referente a simbologia 
+electrica  tienen por objetivo establecer las disposiciones tecnicas que deben cumplirse 
+en la elaboracion de planos y/o documentos relacionados con instalaciones o equipos 
+electricos. 
+ 
+ 
+1. Cuando se encuentre en un plano de una instalacion o equipo electrico, un simbolo 
+desconocido, es necesario averiguar que norma se empleo para la descripcion del 
+aparato o artefacto electrico, ya que puede ser un error de imprenta o un simbolo mal 
+empleado. 
+ 
+2. Solicitar toda la informacion necesaria (planos, documentos), para la ejecucion de una 
+instalacion electrica y/o solucion de un problema de algun equipo.  
+ 
+3. Es necesario observar en todo plano y/o documento el numero de revision, para 
+trabajar con la version mas actualizada, asi como tambien, cualquier modificacion que 
+se ejecute en terreno debe quedar inmediatamente actualizada, con la aprobacion 
+correspondiente.
+
+--- Página 56 ---
+AREA  
+ Electrica                                 
+Pagina 
+Pagina 55 de 62 
+TEMA  
+ Simbologia Electrica 
+Fecha 
+3/2/03 
+MATERIA  
+ 11. Bibliografia 
+Revision n°  
+0 
+ 
+11. BIBLIOGRAFIA. 
+ 
+ 
+ 
+1. NORMAS TECNICAS ELECTRICAS DE LA REPUBLICA DE CHILE 3ra EDICION. 
+ 
+2.  MANUAL DE BAJA TENSION “SIEMENS” 2da edicion 2000. 
+ 
+5. FORMULAS, SIMBOLOS Y  UNIDADES USADAS EN LA LITERATURA ALEMANA 
+MANUAL “AEG”.
+

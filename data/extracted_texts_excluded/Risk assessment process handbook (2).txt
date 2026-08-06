@@ -1,0 +1,3683 @@
+=== Risk assessment process handbook (2).pdf ===
+
+--- Página 1 ---
+QUEENSLAND EMERGENCY
+RISK MANAGEMENT FRAMEWORK (QERMF)
+Prepared by Community Resilience and Risk Mitigation Unit, Emergency Management and  
+Community Capability, Queensland Fire and Emergency Services
+RISK ASSESSMENT  
+PROCESS HANDBOOK
+
+--- Página 2 ---
+2
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Contents
+Overview	
+4
+	
+Aim of the handbook	
+4
+ 
+Benefits of this risk assessment process 
+4
+	
+The Queensland Emergency Risk Management Framework’s approach to managing risk	
+5
+	
+	
+Step one: Establishing the context	
+6
+	
+	
+Step two: Analysing hazards	
+6
+	
+	
+Step three: Assessing risk	
+6
+	
+	
+Step four: Risk based planning	
+7
+	
+Hazards	
+8
+Risk assessment process: snapshot	
+10
+	
+Why assess hazards using this methodology?	
+11
+Risk assessment process: in detail	
+12
+	
+Process 1: Identifying risk	
+12
+	
+	
+Step 1 HAZARD: assessing the hazard against the probability of occurrence	
+13
+	
+	
+Step 2 EXPOSED ELEMENTS: identifying the elements at risk	
+15
+	
+	
+Step 3 VULNERABILITY: assessing the vulnerability of exposed elements	
+18
+	
+Process 2: Determining level of risk	
+20
+	
+	
+Step 1 LIKELIHOOD: assessing the likelihood of occurrence	
+21
+ 
+ 
+Step 2 VULNERABILITY: finalisation of vulnerability assessment 
+23
+	
+	
+Step 3 CONSEQUENCE: assessment of the likely impact	
+25
+	
+	
+Risk Statement development	
+27
+	
+	
+Assigning the level of risk	
+28
+	
+	
+Risk treatment	
+29
+	
+Risk documentation	
+31
+	
+	
+Risk Assessment Table	
+31
+	
+	
+Risk Register	
+32
+	
+	
+Decision Log	
+32
+	
+	
+Action plan: risk assessment process	
+34
+Appendices	
+35
+	
+Appendix 1 Calculating Annual Exceedance Probabilities (AEP)	
+35
+	
+Appendix 2 Vulnerability Table	
+37
+	
+Appendix 3 Consequence Table	
+38
+	
+Appendix 4 Risk matrix	
+40
+	
+Appendix 5 Sample Risk Assessment Table	
+41
+	
+Appendix 6 Sample Risk Register (Infrastructure)	
+43
+	
+Appendix 7 Decision Log	
+46
+	
+Appendix 8 Risk assessment process on a page	
+47
+Glossary	
+48
+Bibliography	
+52
+
+--- Página 3 ---
+3
+Queensland Emergency Risk Management
+List of Figures
+	
+Figure 1 - Queensland Emergency Management Risk Framework	
+5
+	
+Figure 2 - QERMF Hazards Table	
+9
+	
+Figure 3 - Methodology for identifying risk	
+12
+	
+Figure 4 - Geospatial overlay of Gold Coast Disaster District	
+17
+	
+Figure 5 - Methodology for assigning Level of Risk	
+20
+	
+Figure 6 - Consequence Wheel	
+26
+	
+Figure 7 - Risk Based Planning Equation	
+30
+	
+Figure 8 - Tropical cyclone data overlayed onto Mackay Disaster District (ArcGIS)	
+35
+List of Tables
+	
+Table 1 - Probability Table	
+13
+	
+Table 2 - Likelihood Table	
+21
+	
+Table 3 - Risk Matrix	
+28
+	
+Table 4 - Action plan	
+34
+
+--- Página 4 ---
+4
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Overview
+Aim of the handbook
+This handbook provides a valuable risk assessment methodology that can be used within disaster 
+management planning at all levels of Queensland’s Disaster Management Arrangements (QDMA) – Local, 
+District and State. The process applies a proven, standardised and internationally recognised approach 
+to the prioritisation, mitigation and management of risk. This includes identification of capacity gaps and 
+residual risk between stakeholders and the QDMA. This assists to directly inform planning and resource 
+allocation, and to promote active communication, cooperation and coordination.
+This handbook outlines both the framework and approach for this risk assessment process in a step-by-
+step manner and provides examples, resources and templates to assist in its implementation.
+Benefits of this risk assessment process
+In short, this process ensures four key outcomes:
+ 
+• shifts risk assessment and management from a ‘one size fits all’ approach to a tailored methodology  
+	
+	
+that accounts for the prioritisation of local characteristics
+ 
+• embeds risk identification, assessment and management in proven, consistent, science-based   
+	
+	
+methodologies that can be applied consistently across all levels of QDMA (Local, District and State) 
+	
+•	 allows clarity and transparency in communication and decision-making at all levels of QDMA 
+ 
+• improves the identification of an area’s capability and capacity to manage the risks within that area,  
+	
+	
+thereby informing resource planning for QDMA.
+This in turn will create multiple benefits, including:
+	
+•	 risk governance will be improved through the strengthening of transparency and accountability in the 	
+	
+	
+acceptance, mitigation and/or transfer of residual risk between and across the three levels of QDMA  
+ 
+• specific areas can prioritise their resources, based on localised assessed risks 
+ 
+• robust, scientifically-based risk assessments can be used for applications for resources and funding  
+	
+	
+towards mitigation strategies and betterment projects
+ 
+• all levels of government and community will have greater assurance through and confidence in    
+ 
+ 
+scientifically underpinned risk based planning
+ 
+• stakeholders will have improved confidence in State level coordination and support across all levels of  
+	
+	
+QDMA, supported by State Government guidance and prioritisation of hazard risk
+	
+•	 disaster management networks will be strengthened and better aligned.
+The QERMF is underpinned by a multidisciplinary approach, uniting international and Australian best 
+practice, the strategic direction of world risk management leaders and using operational geospatial 
+intelligence to undertake exposure and vulnerability analysis which can directly inform the State’s 
+multitiered disaster management arrangements and planning.
+The QERMF derives risk methodology from:  
+	
+•	 ISO 31000:2009 Risk management – Principles and guidelines
+	
+•	 SA/SNZ HB 436: 2013 Risk management guidelines – companion to AS/NZS ISO 31000:2009
+	
+•	 SA/SNZ HB 89:2013 Risk management – Guidelines on risk assessment techniques
+	
+•	 AS/NZS 5050: 2010 Business continuity – Managing disruption related risk
+	
+•	 National Emergency Risk Assessment Guidelines (NERAG) (Australian Emergency Management	
+	
+	
+     Institute, 2015).
+
+--- Página 5 ---
+5
+Queensland Emergency Risk Management
+The Queensland Emergency Risk Management Framework’s approach to managing risk
+The concept of risk combines an understanding of the probability of a hazardous event occurring with an 
+assessment of its impact represented by interactions between hazards, elements at risk and vulnerability.  
+ (Geoscience Australia)
+The successful foundation for disaster risk management lies in clearly identifying and understanding the 
+level of exposure and vulnerability to a community and its assets against particular hazards.
+Effective risk assessments produce information that is targeted, authoritative, understandable and usable. 
+The model above depicts the overarching risk based planning methodology within the QERMF.  
+This model shows the four clear steps to ensuring the identification, analysis and management of risk, 
+summarised overleaf.
+Figure 1 - Queensland Emergency Risk Management Framework
+1 	 Global Facility for Disaster Reduction and Recovery (2014) – Emerging Best Practices in Natural Disaster  
+	 Risk Assessment. World Bank
+In addition to the above international and national standards, the QERMF also upholds international best 
+practice as championed by the United Nations Office for Disaster Risk Reduction (UNISDR) and the Global 
+Facility for Disaster Reduction and Recovery (GFDRR) and seeks to literally enact the Sendai Framework for 
+Disaster Risk Reduction’s (Sendai Framework) “Priorities for Action”.
+
+--- Página 6 ---
+6
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Step one: Establishing the context 
+The processes shown within the first step of the QERMF establish the context of the area under 
+assessment. This includes understanding the natural landscape through the study of the environment 
+and/or by accessing basic geomorphology information. Much of this information is available through local 
+governments as well as the Queensland Government.
+Typically, this assessment begins with an appreciation of the ‘lay of the land’ via geospatial data/layers, 
+which highlight the specific characteristics of the natural environment.
+Next, this information is integrated with the specific characteristics of the area’s community (its 
+demography) and built environment (its infrastructure, road networks, buildings), as well as any socially 
+or culturally valued areas or sites (such as sacred sites, environmentally sensitive areas, tourist spots, 
+churches and community centres or key landmarks). 
+It is particularly important to identify critical and significant infrastructure (such as power, water, 
+communications) as well as the associated networks and dependencies/interdependencies they need 
+to effectively operate (and be accessible) as damage or disruption to these elements requires immediate 
+response and can launch a cascade of associated vulnerabilities. 
+The majority of this information can be displayed in geospatial layers and is a precursor to commencing the 
+actual risk assessment process. Geospatial layers can create an accurate visualisation of how the hazard 
+will manifest on the local natural and built environment, which in turn informs our assessment of the 
+vulnerabilities we have and our capability and capacity to manage those vulnerabilities.
+Step two: Analysing hazards
+The second step focuses on hazards and how they will behave when they actually occur. Identifying 
+relevant hazards and collecting hazard-related data is essential when quantifying risk. Relevant hazards are 
+identified through probabilistic analysis of historical data for a specific area or region.
+Once the hazards are defined, the next step involves acquiring a variety of hazard related data. Hazard 
+specific data, layers, mapping and modelling is available through Geoscience Australia, the Bureau of 
+Meteorology and the Department of Science, Information Technology and Innovation, as well as other 
+agencies and local governments. 
+The most fundamental data define historical events including their date, geographical location and extent, 
+and maximum intensity. However, this information is only the beginning, as we will discuss further in this 
+handbook.  
+Step three: Assessing risk
+The third step formalises the risk analysis process and leads directly to the clear identification of risk that 
+may arise when a potential hazard becomes reality. This process also includes reviewing existing controls to 
+manage or mitigate risks and identifying any capability or capacity gaps in meeting the required response. 
+This in turn highlights what is known as the residual risk – the risk that remains in unmanaged form even 
+when effective disaster risk reduction measures are in place. This approach also provides the means to 
+consistently record the identification and management of risk, using essential documents such as working 
+tables, registers and a decision log.
+The literal nature of the entire process enables the geospatial information and the tables and registers to be 
+used jointly in situational briefings when required.
+
+--- Página 7 ---
+7
+Queensland Emergency Risk Management
+Step four: Risk based planning
+Lastly, the fourth step involves risk based planning. This comprises the treatment of identified risk and the 
+management of residual risk, and allows for effective planning at and between all levels of QDMA – Local, 
+District and State. Mitigation strategies and risk treatment options may be short or long term focussed. In 
+some instances, an interim strategy may be required if a mitigation treatment is complex and will take some 
+time to implement. Indeed, if a mitigation strategy entails a project not expected to be completed in the 
+short term then contingency/response plans are expected to be identified to cover the gap. 
+QERMF’s approach to risk based planning, and the philosophy underpinning the risk assessment process in 
+this handbook, can best be summarised by the following statement:
+The Global Facility for Disaster Reduction and Recovery (2014) note: “Risk information must be scientifically 
+and technically rigorous, open for review, and honest regarding its limitations and uncertainties, which may 
+arise from uncertainties in the exposure data, in knowledge of the hazard, and in knowledge of community 
+vulnerability. The best way to demonstrate credibility is to have transparent data, models, and results open 
+for review by independent, technically competent individuals.”
+
+--- Página 8 ---
+8
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Hazards 
+Hazards may be natural, anthropogenic or socionatural in origin. Natural hazards are predominantly 
+associated with natural processes and phenomena. Anthropogenic hazards, or human-induced hazards, 
+are induced entirely or predominantly by human activities and choices. This term does not include the 
+occurrence or risk of armed conflicts and other situations of social instability or tension which are  
+subject to international humanitarian law and national legislation. Socionatural hazards are associated 
+with a combination of natural and anthropogenic factors, including environmental degradation and  
+climate change.
+Hazards may be single, sequential or combined in their origin and effects. Each hazard is characterised by 
+its location, intensity or magnitude, frequency and probability.2
+The QERMF can accommodate all hazards as per the Disaster Management Act 2003.3 However, not all natural 
+and anthropogenic hazards are applicable to all areas of Queensland. The selection of applicable hazards is 
+based on what is pertinent (i.e. historically, geographically and so on) to the area under assessment. 
+When analysing the potential impacts of the manifestation of a hazard – and understanding their 
+characteristics in detail – it is evident that secondary hazards may occur from a primary event. For example, 
+a tropical cyclone can lead to flash flooding and storm surges; riverine flooding can bring erosion and 
+landslides. Therefore the interaction of the primary and secondary hazards and their cascading effects 
+need to be considered. Primary and secondary hazard characteristics listed in Figure 2 are by no means 
+exhaustive and professional judgement, consultation and historical analysis should be applied at all times. 
+Assessing the hazard interaction and the impact of the characteristics of those hazards upon exposed 
+elements provides a clear understanding of the vulnerabilities of the area under assessment. 
+Hazard – a source of potential harm or a situation with a potential to cause loss. 
+(Australian Institute for Disaster Resilience)
+2 Derived from UNISDR definition of hazards.
+3 Disaster Management Act 2003 – Section 16: Meaning of Event.
+Note: The next iteration of this handbook will discuss Anthropogenic and Socionatural hazards in 
+greater detail. This will include how to determine probability of occurrence, understanding the hazard 
+characteristics in greater detail and how they may interact with the environment under assessment.
+
+--- Página 9 ---
+9
+Queensland Emergency Risk Management
+Natural Hazard – A dangerous natural event that may cause loss of life, injury or other health  
+impacts, as well as damage and loss to property, infrastructure, livelihoods and services, social  
+and economic disruption and, or environmental damage is known as a natural hazard.
+(United Nations Office for Disaster Risk Reduction)
+4 Terms derived from Australian Institute for Disaster Resilience, Geoscience Australia, BoM & Queensland Health.
+NATURAL
+SOCIONATURAL
+ANTHROPOGENIC
+GEOPHYSICAL
+CIMATE CHANGE
+ENVIRONMENTAL
+DEGREDATION
+SOCIETAL
+ENVIRONMENTAL
+LAND
+SUBSIDENCE
+PANDEMIC
+HAZARDOUS
+MATERIALS
+EXTREME
+CLIMATE EVENTS
+FLOODING
+TECHNOLOGICAL
+ECONOMIC
+DROUGHT
+CLIMATOLOGICAL
+HEATWAVE
+BUSHFIRE
+EARTHQUAKE
+SEVERE 
+THUNDERSTORM 
+EVENT
+TROPICAL 
+CYCLONE & 
+COASTAL LOWS
+UNDERSEA
+LANDSLIDE
+GRASS & WILD 
+FIRE
+LANDSLIDE
+DAMAGING WIND
+DAMAGING &/OR
+DESTRUCTIVE
+WINDS
+TSUNAMI
+FOREST FIRE
+TSUNAMI
+HEAVY RAIN &
+FLASH FLOODING
+HEAVY RAIN &
+FLASH FLOODING
+RURAL/URBAN
+INTERFACE
+LIQUEFACTION
+LIGHTNING &/OR
+LARGE HAIL
+STORM SURGE
+SUBSIDENCE OR
+SINK HOLES
+ABNORMAL
+SWELLS
+STORM TIDE
+RIVERINE
+FLOODING
+COASTAL 
+INUNDATION
+RIVERINE
+FLOODING
+DROUGHT
+METEOROLOGICAL
+& HYDROLOGICAL
+GEOPHYSIC
+CIMATE CHA
+ENVIRONM
+DEGREDATIO
+SOCIETA
+ENVIRONMEN
+LAND
+SUBSIDENCE
+PANDEMI
+HAZARD
+MATERIALS
+EXTRE
+CLIMATE EVEN
+FLOODIN
+TECHNOLOG
+ECONOMI
+DROUGH
+CLIMATOLOG
+HEATWAV
+BUSHFIR
+EARTHQUA
+SEVE
+THUNDERST
+EVENT
+TROP
+CYCLONE
+COASTAL LOWS
+UNDER
+LANDSLIDE
+GRASS &
+FIRE
+LANDSLID
+DAMAGING W
+DAMAGIN
+DESTRUCT
+WINDS
+TSUNAM
+FOREST FI
+TSUNAM
+HEAVY R
+FLASH FLOODI
+HEAVY R
+FLASH FLOODI
+RURAL/U
+INTERFACE
+LIQUEFACT
+LIGHTNING
+LARGE HAIL
+STORM SUR
+SUBSIDEN
+SINK HOLES
+ABNOR
+SWELLS
+STORM TID
+RIVERI
+FLOODING
+COAST
+INUNDATION
+RIVERI
+FLOODING
+DROUGH
+METEOROL
+& HYDROLOGIC
+HAZARDS
+NOT LIMITED BY TIME OR SPACE
+NOT A HIERARCHICAL INDICATION OF HAZARD OCCURRENCE
+CONSEQUENT EFFECTS
+(HOURS TO DAYS)
+PRIMARY CHARACTERISTICS 
+IMMEDIATE EFFECTS (MINUTES TO HOURS)
+Figure 2 – QERMF Hazards Table4
+
+--- Página 10 ---
+10
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Risk assessment process: snapshot
+This risk assessment approach includes two key processes to identify the risk and then to assign the level 
+of risk. The outcomes of these two processes are used to populate multiple risk management documents 
+including the Risk Assessment Table, Risk Register and Decision Log. The process is outlined in the diagram 
+below:
+Process 1: Identifying risk
+•	 Assess the hazard
+•	 Detail the exposed elements (elements at risk) 
+•	 Assess the vulnerability of these exposed 	
+	
+elements.
+Process 2: Assigning level of risk  
+•	 Assess the likelihood (using scenario modelling 	
+	
+based on the past 50 years of historical data)
+•	 Identify vulnerability (drawn from Process 1) 
+•	 Assess the consequence
+• Develop Risk Statements (for identified risks)
+•	 Assign level of risk, and response:
+ 
+− Risk matrix and risk treatment options
+ 
+− Risk Assessment Table and Risk Register
+ 
+− Decision Log.
+
+--- Página 11 ---
+11
+Queensland Emergency Risk Management
+Why assess hazards using this methodology?
+Risk assessment – an approach to determine the nature and extent of risk by analysing potential  
+hazards and evaluating existing conditions of vulnerability that together could potentially harm  
+exposed people, property, services, livelihoods and the environment on which they depend. 
+ (United Nations Office for Disaster Risk Reduction)
+This assessment method provides a comprehensive and systematic approach to ensure that all potential 
+risks are identified and recorded for the purpose of risk based planning. 
+Assessing risk using this methodology will assist in:
+	
+•	 gauging the probability that a hazard may manifest
+	
+•	 using geospatial analysis to determine where the hazard may manifest and what key local elements 	
+	
+	
+could be exposed to that hazard 
+	
+•	 evaluating the effect of a hazard manifesting, based on the assessment of the severity of exposure 	
+	
+	
+and the level of vulnerability
+	
+•	 informing risk prioritisation, treatment, resource allocation and planning, and measuring this against 	
+ 
+ 
+the capability and capacity to manage the identified vulnerabilities.
+The QERMF is derived from underpinnings of AS/NZS ISO 31000 International Standards and the National 
+Emergency Risk Assessment Guidelines (NERAG) (Australian Emergency Management Institute, 2015), and 
+embraces the Sendai Framework for Disaster Risk Reduction’s (Sendai Framework) “Priorities for Action”.
+The QERMF also reflects international best practice as championed by the United Nations Office for Disaster 
+Risk Reduction (UNISDR) and the Global Facility for Disaster Reduction and Recovery (GFDRR).
+Finally, QERMF recognises the relevant elements within the Emergency Management Assurance Framework 
+(EMAF) as published by the Office of the Inspector General Emergency Management, Queensland.
+1
+Sendai Framework
+for Disaster Risk Reduction
+2015 - 2030
+HANDBOOK 10
+National Emergency Risk Assessment 
+Guidelines
+
+--- Página 12 ---
+12
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Process 1: Identifying risk
+Risk assessment process: in detail
+Process 1 allows for the initial identification of risk in relation to the probability of a hazard occurring versus 
+its impact upon the natural and built environment within the area of assessment. This identified risk is 
+further analysed throughout Process 2.
+Figure 3 - Methodology for identifying risk
+
+--- Página 13 ---
+13
+Queensland Emergency Risk Management
+Step 1 HAZARD: assessing the hazard against the probability of occurrence
+Step 1 HAZARD considers the overall probability for a hazard to occur using the Annual Exceedance 
+Probability (AEP).5 This is the chance of the event occurring once in a year, expressed as a percentage (to 
+determine likelihood).
+The AEP is most commonly referred to in terms of flooding or rainfall events. However, it can be applied to 
+all hazards, albeit with some caveats (discussed later in this document). 
+The AEP is used in this process instead of the Average Recurrence Interval (ARI). Use of ARI tended to cause 
+confusion within risk based planning as it implied the associated magnitude or intensity of a hazard could 
+only be exceeded at regular intervals (i.e. once in 100 years).6 Assigning a probability factor or AEP to a 
+hazard reduces the potential for confusion. Put another way, the AEP allows us to identify the probability of 
+a hazard occurring in one year, whereas the ARI tended to infer that a certain hazard would only occur once 
+every one, 10 or 100 years.
+Table 1 below illustrates how AEP relates to previous occurrence indicators for natural hazards.
+Why use probability when assessing risk?
+While historical events are instructive in understanding the past, they do not necessarily provide a good 
+guide to predicting the future. This is particularly pertinent in Australia, where our historical climatic 
+catalogue is notably short and the world continues to deal with the increasing frequency and consequences 
+of climate driven events. The use of probability in risk assessment – a ‘probabilistic risk assessment’ 
+– helps to simulate the likelihood of future disasters based on increasing scientific evidence and 
+understanding. (UNISDR 7, 2015)
+Disaster Risk – the likelihood (or probability) of loss of life, injury or destruction  
+and damage from a disaster in a given period of time.
+(United Nations Office for Disaster Risk Reduction)
+5 NERAG (2015): P70 
+6 Bureau of Meteorology (2017). Why use AEP instead of ARI?
+7 United Nations International Strategy for Disaster Reduction.
+Table 1 - Probability table comparing AEP and ARI indicators (data sourced from NERAG, table created by QFES) 
+Likelihood
+Annual exceedence 
+probability (AEP)
+Average recurrence 
+interval (ARI) 
+(indicative)
+Almost certain
+63% per year or more
+Less than 1 year
+Likely
+10% to <63% per year
+1 to <10 years 
+Unlikely
+1% to <10% per year
+10 to <100 years 
+Rare
+0.1% to <1% per year
+100 to <1000 years 
+Very rare
+0.01% to <0.1% per year
+1000 to <10,000 years 
+Extremely rare
+Less than 0.01% per year
+10,000 years or more
+
+--- Página 14 ---
+14
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Probabilistic risk modelling considers a ‘full event set’ spanning many thousands of years. This event 
+set is built from the knowledge of historical events which can be reproduced based on the physics of the 
+phenomena and its known impacts. Because this modelling is built on past occurrences, these events 
+are not wholly representative of all possible events. This is why a full spectrum of events (with a range of 
+associated likelihoods) must be considered in a risk assessment. In particular, where available, climate 
+change projections should be included to reinforce modelling.
+The use of probabilistic modelling in risk assessment does not exclude the benefits of scenario-based 
+modelling. Indeed, probabilistic modelling can help to develop more robust and realistic scenarios by 
+creating an amalgam of long term historic data with shorter term (50 years) localised activity. In this 
+process, we use probabilistic modelling (running scenarios at different probabilities of occurrence) to 
+generate assessments which comprise:
+	
+•	 Most likely – the losses that have most frequently and are most likely to occur
+	
+•	 Credible worst-case – the maximum possible loss as a result of a hazard that has occurred  
+	
+	
+previously and may do so again.
+Modelling scenarios based on the Most likely to Credible worst-case is the best practical basis for this 
+process and the resulting assessment as this allows planners to focus resources and develop management 
+and mitigation strategies for those scenarios most likely to occur and most likely to create the most loss. 
+This approach is discussed further in Process 2, Step 1 LIKELIHOOD.
+This is not an opportunity or endorsement for creating unrealistic scenarios that model the consequences 
+of hazards that have no scientific basis for consideration. Rather, the process should only reflect the 
+consequence of hazards that have a realistic chance of occurrence8 based on scientific modelling and 
+projection, in conjunction with the mathematical and methodical approach championed within this 
+document.9 
+Indeed, Process 2, Step 1 LIKELIHOOD seeks to focus and fine-tune probability assessments by introducing 
+a second assessment based on the meteorological and geological observations of the last 50 years (1967 - 
+2017) to factor in the greater uncertainty caused by climate change. 
+8 Occurrence in this context refers to the period from point of assessment out to 2030 (as per advice from Geoscience Australia & in line with current Federal Government policy).
+9 Assessment of probability of occurrence in relation to geological processes i.e. earthquakes should be derived from consultation with Geoscience Australia.
+*	 Resource for use: A guide on how to calculate AEPs for hazards on a District by District  
+	
+basis is included at Appendix 1.
+
+--- Página 15 ---
+15
+Queensland Emergency Risk Management
+10 Classifications derived from Queensland’s Department of Transport and Main Roads
+Step 2 EXPOSED ELEMENTS: identifying the elements at risk
+Step 2 EXPOSED ELEMENTS considers those elements at risk (people, systems, networks and assets) which 
+are vital to the area of interest that may be exposed to the hazard in the event of its occurrence. 
+It is not an analysis of the vulnerability or consequence of a hazard impacting these elements at risk but is 
+simply the detailed identification of those that may be exposed if and when a hazard manifests. 
+Elements to consider may include:
+•	 Essential infrastructure:
+ − power (e.g. HV and LV transmission lines, circuit towers, sub-stations, generators) 
+ 
+ − communications (e.g. mobile towers, NBN infrastructure, phone lines)
+ − water (e.g. reservoirs, water mains pipes, pump stations, sewerage treatment plants)
+ − transport infrastructure (hubs such as airports, heliports, ports and ferry terminals)
+ − fuel infrastructure (e.g. oil & gas pipelines, bulk fuel storage, oil & gas terminals).
+•	 Access/resupply: 
+ − roads (e.g. National Highways, State Strategic Roads, Regional Roads, District Roads)10
+ − rail (e.g. freight, light and heavy rail)
+ − air (e.g. domestic and international, aerodromes, heliports, defence)
+ − maritime (e.g. ports, ferry terminals, river crossings).
+•	 Community and social: 
+  − population centres (e.g. villages, towns, cities)
+ − demographics (vulnerable persons, medically dependent people, young or elderly people, people  
+		
+from non-English speaking backgrounds)
+ − social infrastructure (e.g. schools, youth centres, community centres)
+ − centres of governance (e.g. town halls, council offices)
+ − building stock (e.g. precode-1980 buildings, post-1980 building stock)
+ − emergency shelters
+ − cultural elements (areas or objects of cultural or religious significance).
+•	 Medical: 
+ − hospitals
+ − clinics 
+ − aged care facilities. 
+Exposure – elements within a given area that have been or could be, subject to the  
+impact of a particular hazard. Sometimes referred to as the ‘elements at risk’.
+(Australian Emergency Management Institute)
+
+--- Página 16 ---
+16
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+• Significant industries: 
+ − heavy industry and manufacturing
+ − transport and logistics
+ − agriculture
+ − tourism
+ − local or other significant industries.
+•	 Environmental: 
+ − local species and ecosystems
+ − Areas of Ecological Significance (AES).
+This list is not exhaustive and will not apply to all areas. Professional judgement coupled with extensive 
+stakeholder engagement should be used when analysing the elements that may be exposed if a particular 
+hazard manifests. 
+Once all exposed elements have been identified, it is important to use geospatial referencing to map the 
+locations and the interdependencies of these elements. This is an essential step in assessing the impact 
+of hazards upon the elements – and in particular the networks and systems relevant to their effective and 
+efficient functioning – across broad areas. An example is provided in Figure 4. 
+Most of the relevant information pertaining to essential infrastructure will be held by system, network and 
+asset owners or operators such as local governments and government-owned corporations or agencies.
+
+--- Página 17 ---
+17
+Queensland Emergency Risk Management
+Figure 4 - Geospatial overlay (ArcGIS) of Gold Coast Disaster District highlighting essential power and water infrastructure 
+against river catchments and basins (layers sourced from Bureau of Meteorology and QSpatial, map created by QFES)
+
+--- Página 18 ---
+18
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Step 3 VULNERABILITY: assessing the vulnerability of exposed elements
+Step 3 VULNERABILITY assesses the level of vulnerability of exposed elements. The identification of 
+vulnerability is a direct precursor to identifying risk. Including vulnerability in the methodology allows for 
+the analysis of individual characteristics of a community and ensures all risk management planning is ‘fit for 
+purpose’ for that particular area. Conversely, risks to a particular community can be reduced by addressing 
+these identified vulnerabilities. 
+In this process, vulnerability is categorised using a precise and factual assessment of the level of 
+susceptibility, the ability to sustain a community during and post an event, and the effectiveness of current 
+control and mitigation measures. 
+The assessment includes consideration of:
+•	 loss of essential infrastructure and recovery timeframes
+•	 repair/rebuild timeframes of essential infrastructure
+•	 access/resupply to/or evacuation from the area/community/site
+•	 topographic features of the area/community/site that exacerbate the impact of a hazard
+•	 demographic features of the area/community/site that typify the population as vulnerable
+•	 health support services available in the area/community/site
+•	 effectiveness of current control or mitigation measures.
+The identified vulnerabilities must be documented in a table, provided at Appendix 5. This table helps to 
+define the key elements to consider in terms of how susceptible an element and ultimately the community 
+is to a hazard manifesting in the area. 
+Geospatial (GIS) analysis of vulnerability based on topographic features (i.e. the geography of the 
+landscape) and geomorphology is a useful first tool when assessing the impact of natural hazards, such 
+as a severe weather event (tropical cyclone or severe thunderstorm) on exposed elements. For example, 
+low-lying areas near a river are vulnerable to flooding while valleys with steep slopes may be vulnerable to 
+landslides during heavy rain. 
+Generally, vulnerability based on topographic features and geomorphology will vary from hazard to hazard 
+but considering these can be useful when it is difficult to access reliable data for assessing the probability 
+of a hazard occurring. That is, if it is difficult to make an assessment of probability of occurrence, the effects 
+of “known events” (i.e. those that have occurred within living memory) can still be simulated or modelled to 
+better inform those assessments.
+Within this phase of the risk assessment process, essential infrastructure can also be identified through 
+geospatial analysis of your area – layers within GIS mapping (open source or derived through consultation 
+with infrastructure owners and operators) can provide detailed information on essential infrastructure. 
+Given that Queensland’s Disaster Districts tend to be intersected with systems and networks (e.g. power, 
+water, communications) and Local areas tend to be the terminus of such networks, the potential impact of a 
+hazard on these interlinked networks needs to be considered in detail as part of the planning process. 
+Vulnerability – the characteristics and circumstances of a community, system or  
+asset that make it susceptible to the damaging effects of a hazard. 
+(United Nations Office for Disaster Risk Reduction)
+
+--- Página 19 ---
+19
+Queensland Emergency Risk Management
+As an example, identifying the vulnerability of vital transport and supply networks (i.e. road, rail and air) 
+helps to determine the anticipated impact to the community in the event of a hazard occurring. This is 
+commonly known as Disruption-Related Risk.11
+Example: A case to consider about the disruption a hazard can have on a network is the South Australia 
+power outage which occurred on 28 September 2016. 
+The outage, which affected 850,000 customer connections (state-wide) at its peak, was as a result of a 
+sequence of events which occurred within one 88 second period. 
+However, one significant reason for the outage was damage to 23 pieces of critical power infrastructure 
+caused by a severe thunderstorm which included high winds (including tornados), rain and lightning.12/13
+*	 Resource for use: Standardised definitions of vulnerability are provided in the Vulnerability Table at 
+Appendix 2.
+11 AS/NZS 5050:2010 Business continuity – Managing disruption-related risk.
+12 Climate Council of Australia (December 2016). Super-charged Storms in Australia: The Influence of Climate Change.
+13 Australian Energy Market Operator (October 2016). Update Report – Black System Event in  
+	 South Australia on 28 September 2016.
+
+--- Página 20 ---
+20
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Process 2: Determining level of risk
+Process 2 allows for greater analysis of the identified risk which will ultimately lead to assigning a detailed 
+level of risk. Assigning such a level allows for the prioritisation of limited resources and helps to inform 
+decision making regarding certain courses of action or treatments of risk.
+Figure 5 - Methodology for assigning level of risk
+
+--- Página 21 ---
+21
+Queensland Emergency Risk Management
+Step 1 LIKELIHOOD: assessing the likelihood of occurrence
+The key imperative of Step 1 LIKELIHOOD is to help disaster management practitioners identify the most 
+credible likelihood of an event occurring, based on historical data.
+This step relies on using the Likelihood Table (Table 2) which was developed specifically for this handbook 
+using multiple sources including the Australian Institute for Disaster Resilience and Geoscience Australia. 
+This table provides rankings based on the frequency and severity of hazards using the past 50 years of 
+meteorological and geological observations. The same system can be applied to anthropogenic hazards.
+The information specific to your area of interest can be derived from local area observations and relevant 
+agencies such as the Bureau of Meteorology and Geoscience Australia. 
+With regards to natural hazards, this approach allows planners to focus on more recent patterns, 
+recognising the changing environment and frequency of occurrence of severe weather events.14
+Further, it allows the assessment of multiple possibilities without relying solely on using the Annual 
+Exceedance Probability (AEP) discussed in Process 1, Step 1 HAZARD.
+Likelihood – the chance of something happening whether defined, measured or determined objectively or 
+subjectively, qualitatively or quantitatively and described using general terms or mathematically.
+(Standards Australia/Standards New Zealand Standard Committee)
+Likelihood Table
+Historical Likelihood
+Likelihood Level
+Definition
+Has occurred 3 or more times in the 
+last year or at least each year over the 
+last 5 years
+Almost Certain
+Almost certain to occur in most cases
+Has occurred twice in the last 5 years
+Likely
+Likely chance of occurring in most 
+cases
+Has occurred twice in the last 10 years
+Possible
+Might occur in most cases
+May occur, and has occurred once in 
+the last 20 years
+Unlikely
+Not expected to occur in most cases
+May only occur in exceptional circum-
+stances or has occurred only once in 
+the last 50 years or more
+Rare
+Will only occur in exceptional  
+circumstances and has not occurred in 
+most cases
+14 50 year timeframe has been assigned based on the availability and quality of data across the hazards most prevalent throughout Queensland.  
+	 This has been done in consultation with the Australian Institute for Disaster Resilience, Geoscience Australia and the Queensland Reconstruction Authority.
+Table 2 - Likelihood Table
+
+--- Página 22 ---
+22
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Using the Likelihood Table and geospatial analysis of data sourced from relevant agencies (such as the 
+Bureau of Meteorology and Geoscience Australia), the assessment of the likelihood of occurrence is 
+achieved by following four stages (an example of which follows):
+	
+1.	 Analyse the number of manifestations of a particular hazard and the levels of severity15 which have 	
+	
+	
+occurred over the last 50 years within the area of assessment.
+	
+2.	Identify the most frequent level of severity of occurrence within the area of assessment over the past 	
+	
+	
+50 	years to derive the Most likely scenario. 
+	
+3.	Establish the most severe level of occurrence within the 50 year period to derive the Credible  
+	
+	
+worst-case scenario. 
+	
+4.	Assign the level of likelihood to both scenarios using the first column of the Likelihood Table. This will  
+ 
+ 
+assign a level of risk of likelihood to the identified risk of between Rare to Almost Certain.
+Example: A District under assessment finds that it has been impacted by 30 cyclones of varying intensity 
+and duration during the past 50 years. Following the stages outlined above, the assessment shows: 
+	
+•	 Twenty-one (or 70%) of those cyclones were rated as Category 2. Therefore, this is the Most likely level 	
+	
+	
+of severity of occurrence.
+	
+•	 The most severe cyclone to impact the District was a Category 4. Therefore, this is the Credible worst-	
+	
+	
+case scenario.
+	
+•	 In looking at the Likelihood Table (above) the assessment shows that the Most likely scenario has 	
+ 
+ 
+occurred twice in the past five years and therefore is rated as Likely.
+	
+•	 Assessment of the Credible worst-case scenario shows that it has occurred once in the last 20 years 	
+	
+	
+and therefore is rated as Unlikely.
+By narrowing the likelihood aspect to the 50 year timeframe, disaster management planners can factor 
+in climate change adaptation, an increasingly complex and problematic phenomena. Modelling the Most 
+likely and Credible worst-case likelihood scenarios allows planners to evaluate and review their capability 
+and capacity, which will inform responses to identified risk.
+Once again, the need to apply professional judgement during this assessment remains critical. If climate 
+science data and projections are available, are relevant to the assessment and endorsed for use, then they 
+should also be taken into consideration.
+Note: Unlike other hazards, geological hazards such as earthquakes cannot be forecast with a degree of 
+accuracy. Historic records provide an indication of recent seismicity (frequency, intensity and distribution 
+of earthquakes) which may not be an indicator of future seismic activity. A measure of probability of 
+occurrence can be derived from a detailed understanding of the relevant geological and geophysical 
+processes that effect Australia in consultation with relevant agencies.16
+During the risk assessment, if a Local or District planner identifies the need for further evaluation of the 
+potential geological hazards within their area, they should consult with the relevant agency for further 
+specialist advice.
+15 As per Bureau of Meteorology or Geoscience Australia definitions. 
+16 Geoscience Australia (2017). Where do Earthquakes Occur?
+
+--- Página 23 ---
+23
+Queensland Emergency Risk Management
+Step 2 VULNERABILITY: finalisation of vulnerability assessment 
+Step 2 VULNERABILITY involves the review and finalisation of the exposure vulnerability assessment made 
+as a result of Process 1 as a precursor to the assessment of the level of consequence of an event.
+No alteration to the initial level of vulnerability based on likelihood should be made as the vulnerability of 
+an element remains constant whether the hazard occurs regularly or not. 
+The level of vulnerability should only be reassessed if:
+ 
+1. existing controls are in place to mitigate identified vulnerabilities of exposed elements and/or
+	
+2.	a risk mitigation strategy becomes apparent during consultation with an owner or operator of an asset 	
+	
+	
+or network during the planning cycle.
+Vulnerability to natural hazards is an integral factor in understanding the true extent of risk.
+ (Geoscience Australia)
+Effectiveness of current controls and mitigation measures
+The final component of assessing vulnerability comprises stakeholder engagement with owners and 
+operators of the identified system, network or asset at risk to undertake an informed review of current 
+control or mitigation arrangements including:
+	
+•	 preparedness for an event (plans, processes, resources and capabilities)
+	
+•	 the level of redundancy and the impact of rebuilding should the hazard manifest
+	
+•	 supporting plans and arrangements.
+The effectiveness of these controls – including the length of time required for such controls to be 
+implemented or the anticipated timeframes involved for restoring or resuming of any disrupted service – 
+must be identified. Discussions with stakeholders will play an essential role in determining the impact the 
+outage of a particular infrastructure asset will have on the community. 
+For example, if communications infrastructure or an electricity distribution network is exposed to a hazard 
+and is inoperable for an extended period, what would the duration of the outage be? It is necessary to 
+consider redundancy: how long it would take to repair or rebuild and what percentage of the population 
+relies on that piece of infrastructure or network? 
+Example: Revisiting the South Australia power outage example, full restoration of power to affected 
+communities took more than 48 hours and much of the infrastructure was replaced by temporary measures 
+which will be used for six to 12 months. 
+A secondary state-wide blackout affecting 155,000 connections occurred on 27 December 2016 when a 
+severe thunderstorm caused damage to over 350 powerlines, many of which had been repaired or replaced 
+after the September event.
+This example highlights how easy it can be for an essential service to be compromised and the challenges 
+in getting it restored in a timely manner, and in line with community expectations. It also highlights the 
+vulnerability of the temporary infrastructure and the need to ensure interim measures provide an optimal 
+solution.
+
+--- Página 24 ---
+24
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+The vulnerability of critical infrastructure and significant industries are often considered through discrete 
+processes such as Business Continuity Management (BCM) or disruption related risk assessments due 
+to the fact that disruptions to these infrastructure and industries can have serious short and long term 
+implications for business, governments and communities. 
+Current Standards such as AS/NZS 5050: 2010 describe the application of the principles, framework and 
+process for risk management, as set out in AS/NZS ISO 31000: 2009, to disruption related risk. Owners 
+and operators of critical infrastructure and significant industries currently undertake analysis of disruption 
+related risk through a thorough risk assessment prior to the completion of a Business Impact Assessment 
+(BIA). 
+The risk assessment process within this handbook can assist in defining and prioritising a number of 
+disruption scenarios, which in turn will assist in analysing:
+	
+•	 vulnerabilities of the systems, structures and locations in which business activity occurs
+	
+•	 organisations’ capability and capacity to manage any vulnerabilities
+	
+•	 dependencies and interdependencies
+	
+•	 knock on effects of “consequences” including cascade and cumulative effects. 
+Overall, the Business Impact Assessment for critical infrastructure and significant industries should reveal:
+	
+•	 processes, capabilities, infrastructure and other resources which if disrupted would prevent 	
+	
+	
+	
+achievement of critical business objectives
+	
+•	 the level of vulnerability of processes and capabilities
+	
+•	 priorities for action.
+Risk treatment for critical infrastructure and significant industries
+Treatment options fall into two broad categories for both risk assessments and disruption related risks:
+	
+1.	 Proactive approaches involving prevention and protection (preparedness) measures which may 	 	
+ 
+ 
+influence the potential and/or scale of disruptive events.
+	
+2.	Contingency plans and contingent capability (response) to minimise the impact on critical objectives 	
+	
+	
+by a potentially disruptive event. 
+Critical infrastructure – those physical facilities, supply chains, information technologies and 
+communication networks which, if destroyed, degraded or rendered unavailable for an extended period, 
+would significantly impact the social or economic wellbeing of the nation or affect Australia’s  
+ability to conduct national defence and ensure national security.
+ (Government of the Commonwealth of Australia)
+Treatment options for the identified vulnerability will be discussed after the assessment has been 
+completed and will be detailed and recorded within the Risk Register and Decision Log (discussed later in 
+this handbook). 
+When a highly vulnerable piece of infrastructure is identified, it is essential to consult with the owner and 
+operator of the infrastructure to identify and assess their mitigation or control measures. If no measures 
+are in place, this would lead to a high vulnerability rating and act as a red flag for the purposes of planning. 
+It would also be an impetus to encourage and assist the infrastructure owner and operator to develop and 
+implement an appropriate mitigation measure. 
+Critical infrastructure, significant industries and business continuity management
+
+--- Página 25 ---
+25
+Queensland Emergency Risk Management
+Development of contingency plans and contingent capability can assist to eliminate, reduce and stabilise 
+the impacts of events, restore or continue critical business functions (objectives), and expedite restoration 
+of normalcy (recovery). 
+Communication and cooperation between the owners and operators of critical infrastructure and significant 
+industries with their respective level of the QDMA is key to the development of realistic, responsive and 
+effective plans.
+Step 3 CONSEQUENCE: assessment of the likely impact
+Step 3 CONSEQUENCE determines the level of consequence of an event – the impact based on the 
+assessment of severity of exposure and the level of vulnerability. 
+The level of consequence is an assessment of what the projected or anticipated impact would be, either 
+directly or indirectly, of the hazard manifesting on Local, District and State assets. These may be short term 
+and longer term impacts in duration (i.e. weeks, months, years) depending on the severity of the impact.
+In assessing exposure and vulnerability we can determine the level of impact of a hazard manifesting by 
+identifying key features of a community that include:  
+	
+•	 people (casualties) – the number of casualties and fatalities  
+ 
+• financial and economic – impacts to the Queensland economy, which may include a decline of   
+	
+	
+economic activity (over months or years) or a decrease in government revenues from critical and 	 	
+ 
+ 
+essential infrastructure and significant industries
+	
+•	 community and social – destruction or damage to objects or places of cultural and religious 	
+	
+ 
+ 
+significance and community cohesion (e.g. churches, community centres)
+	
+•	 public administration – governing bodies’ ability to cope within response and recovery phases and 	
+ 
+ 
+the resulting level of public confidence and media criticism
+	
+•	 environmental – damage or destruction to natural resources, ecosystems or species  
+	
+	
+(e.g. Great Barrier Reef).
+Note: In assessing the level of impact or consequence, consideration should be given to the fact that an 
+impact on one area may have a direct or indirect impact on another. This is known as the Consequence 
+Wheel, shown in Figure 6.
+To assess and classify the consequence, a Consequence Table has been developed for this handbook and 
+is located at Appendix 3. The levels of assessment range from Insignificant to Catastrophic for each of the 
+five features listed prior (people, financial and economic, community and social, public administration and 
+environmental).
+While the criteria and levels provided are derived from NERAG 2015, some aspects of the criteria such 
+as ‘People (casualties)’ and ‘Financial and economic’ assessments have been developed based on the 
+Australasian Triage Scale16 and advice from Queensland Treasury.17 These criteria and levels apply across all 
+levels of the QDMA. 
+Consequences – the outcome or impact of an event that can be expressed qualitatively or quantitatively. 
+There can be more than one consequence from an event. 
+ (Geoscience Australia)
+17 Descriptors based on the Australian College For Emergency Medicine (ACEM) – Guidelines on the implementation of the Australasian Triage Scale in  
+	 Emergency Departments, November 2013.
+
+--- Página 26 ---
+26
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+IMPACT
+HAZARD
+FINANCIAL 
+& ECONOMIC
+PUBLIC 
+ADMINISTRATION
+COMMUNITY & 
+SOCIAL
+ENVIRONMENTAL
+PEOPLE 
+(CASUALTIES)
+Figure 6 - Consequence Wheel
+Note: An important caveat to assigning an overall level of consequence is that a hazard may manifest and 
+impact across several of the categories detailed above but some impacts may be more severe than others. 
+As such, the overall level of consequence should be assigned based on the highest rated impact in order 
+to plan and mitigate against all possible outcomes. Once again, professional judgement should be applied 
+and/or key stakeholder engagement undertaken.
+*	 Resource for use: To assess and classify the consequence, a Consequence Table is located  
+	
+at Appendix 3.
+
+--- Página 27 ---
+27
+Queensland Emergency Risk Management
+Risk Statement development
+After assessing the vulnerability, evaluating the effectiveness of controls and identifying consequences 
+to the elements at risk, a Risk Statement should be completed to aid the future composition of the 
+Risk Assessment Table and Risk Register. The Risk Statement seeks to focus the disaster management 
+practitioner on the “what if?” aspects of the assessment. It also helps to rationalise the future assessment 
+of consequence within Process 2: Determining the level of risk. Risk statements provide further context for 
+developing risk treatments by concisely detailing the cause of the risk and its anticipated effects.
+The following information should be identified when developing risk statements:
+	
+•	 the hazard and its characteristics
+	
+•	 what, who and where may be impacted (exposed elements)
+	
+•	 a description of the impacts from the hazard manifesting (vulnerability) 
+	
+•	 any control or mitigation measures in place (short and medium to long term)
+	
+•	 the anticipated duration of impact (short and medium to long term).
+Example: This is an example of a Risk Statement – 
+“Essential infrastructure sites (especially power & water) are highly vulnerable to the manifestation of a 
+Tropical Cyclone, especially Severe Tropical Cyclones (Category 3-5). 
+District electricity distribution network is highly vulnerable to high winds and flash flooding with limited 
+redundancy to maintain the service. 
+Critical civic infrastructure such as hospitals and water treatment plants highly susceptible to power 
+outages and can only rely on back up generation for 24 hours before resupply is needed. 
+Short to medium term disruptions to power, communications and safe drinking water to communities 
+across the District. Secondary hazards such as storm surge and associated torrential rain may occur and 
+further disrupt essential infrastructure located within the coastal areas of the District.”
+*	 Resource for use: Further example risk statements can be found within the fictionalised case study 	
+	
+provided at Appendix 5.
+
+--- Página 28 ---
+28
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Assigning the level of risk
+After completing each step of Process 2 (Likelihood, Vulnerability and Consequence) an overall level of risk 
+can be calculated and assigned. 
+The Risk Matrix used in this process (Table 3 and expanded at Appendix 4) inputs the likelihood (X), 
+vulnerability (Y) and consequence (Z) levels (ranked 1-5 respectively) to output an overall severity rating  
+(1-13). The severity rating is then broken down across five levels of risk which range from Very Low  
+to Extreme. 
+Awarding an overall level of risk seeks to aid planners in determining the prioritisation of future responses 
+and resources.
+Example: An assessment has been completed of a possible tropical cyclone event in the fictional Disaster 
+District of Kangerooville in which the likelihood of a tropical cyclone was rated Possible (3); but the 
+vulnerability of exposed elements was classified as High (4) with the resultant consequences categorised 
+as Major (4). Using Risk Matrix, this would equate to an overall High 9 (H9) risk level for a tropical cyclone in 
+Kangerooville (as highlighted in the red quadrants in Table 3 Risk Matrix).
+The initial level of risk – known as the inherent risk – is derived from the Risk Matrix and it is highlighted in 
+the Risk Assessment Table and Risk Register as part of the finalisation of the risk assessment process.
+Risk levels are used to assess the best strategies for mitigating or controlling risk and seek to identify 
+response options and allocation of resources. 
+The level of risk will only change once control measures have been applied to the elements at risk (as 
+discussed within the vulnerability assessment in Process 2, Step 2 VULNERABILITY).
+*	 Resource for use: A risk matrix for assigning risk levels is located at Appendix 4.
+Risk level – magnitude of risk or a combination of risks, expressed in terms of the  
+combination of vulnerability, consequence and their likelihood.
+(Australian Institute of Disaster Resilience)
+Likelihood (X)
+Rare (1)
+Unlikely (2)
+Possible (3)
+Likely (4)
+Almost Certain (5)
+Vulnerability (Y)
+V.Low 
+(1) 
+Low  
+(2) 
+Mod  
+(3) 
+High 
+(4) 
+Extr  
+(5)
+V.Low 
+(1) 
+Low  
+(2) 
+Mod  
+(3) 
+High 
+(4) 
+Extr  
+(5)
+V.Low 
+(1) 
+Low  
+(2) 
+Mod  
+(3) 
+High 
+(4) 
+Extr  
+(5)
+V.Low 
+(1) 
+Low  
+(2) 
+Mod  
+(3) 
+High 
+(4) 
+Extr  
+(5)
+V.Low 
+(1) 
+Low  
+(2) 
+Mod  
+(3) 
+High 
+(4) 
+Extr  
+(5)
+Consequence (Z)
+INSIGNIFICANT (1)
+VL1
+VL2
+VL3
+L4
+L5
+VL2
+VL3
+L4
+L5
+L6
+VL3
+L4
+L5
+L6
+M7
+L4
+L5
+L6
+M7
+M8
+L5
+L6
+M7
+M8
+H9
+MINOR (2)
+VL2
+VL3
+L4
+L5
+L6
+VL3
+L4
+L5
+L6
+M7
+L4
+L5
+L6
+M7
+M8
+L5
+L6
+M7
+M8
+H9
+L6
+M7
+M8
+H9
+H10
+MODERATE (3)
+VL3
+L4
+L5
+L6
+M7
+L4
+L5
+L6
+M7
+M8
+L5
+L6
+M7
+M8
+H9
+L6
+M7
+M8
+H9
+H10
+M7
+M8
+H9
+H10
+H11
+MAJOR (4)
+L4
+L5
+L6
+M7
+M8
+L5
+L6
+M7
+M8
+H9
+L6
+M7
+M8
+H9
+H10
+M7
+M8
+H9
+H10
+H11
+M8
+H9
+H10
+H11
+E12
+CATASTROPHIC (5)
+L5
+L6
+M7
+M8
+H9
+L6
+M7
+M8
+H9
+H10
+M7
+M8
+H9
+H10
+H11
+M8
+H9
+H10
+H11
+E12
+H9
+H10
+H11
+E12
+E13
+Key:  V.L= Very low; L = Low; M = Medium; H = High; E = Extreme
+Scale: 1 (lowest) to 13 (highest) 
+Table 3 - Risk Matrix
+
+--- Página 29 ---
+29
+Queensland Emergency Risk Management
+Risk treatment 
+Risk treatment strategies aim to determine and implement the most appropriate actions to treat (control or 
+mitigate) the identified inherent risk. These actions typically comprise both short and longer term strategies 
+to address immediate impacts and the resultant ongoing issues.
+(When identifying strategies, it is important to prioritise responses to inform decisions about what is to be 
+done, when and by whom. This requires understanding of attributes such as urgency, controllability and 
+response effectiveness in order to execute the actions effectively and in a timely manner for the best return 
+on available resources.)
+Once treatment of risk measures have been identified, planned or put into place, it is important to then 
+consider the residual risk. 
+Residual risk is the risk that is beyond the capability and/or capacity of the Local or District community or 
+communities and existing disaster management arrangements to treat or mitigate. 
+Residual risk must either be accepted as tolerable or should be transferred to and/or shared across the 
+next level of the disaster management arrangement (upon consultation). This will allow for the residual risk 
+to be understood and treatment or mitigation measures to be developed as per the Risk Planning Equation 
+shown later in Figure 7.
+The two examples below seek to illustrate the complexities of residual risk management:
+Example 1: A Local Disaster Management Group has the capability to evacuate people from a specific 
+impact area if required but their capacity to do so is limited to approximately 500 people per hour (for 
+a maximum of six hours). Therefore, if 3000 vulnerable people required evacuation within a four hour 
+timeframe (750 people per hour for four hours) the Local Disaster Management Group would have a 
+capacity gap of 250 people per hour. This is the residual risk. Therefore, management of this capacity gap 
+would require additional resources (capacity) to be provided (transferred) from the next level of the disaster 
+management arrangement.
+Example 2: Another Local Disaster Management Group identifies that it has no capability (and by extension 
+no capacity) to evacuate people if required. Thus, no mitigation measure is available at the Local level and 
+the capability must be provided (transferred) in its entirety from the next level of the disaster management 
+arrangement.
+Note: Residual risk can also be shared horizontally across the disaster management arrangements. For 
+example, if a local government – through the Local Disaster Management Group – identifies they have the 
+capability to respond to an event that is beyond other local governments within the District they may elect 
+to share that capability in a pan-local government arrangement. 
+Residual risk – the risk that remains in unmanaged form, even when effective disaster risk reduction 
+measures are in place, and for which emergency response and recovery capacities must be maintained.
+ (United Nations Office for Disaster Risk Reduction)
+
+--- Página 30 ---
+30
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Provision of Australian Government resources 
+ 
+and support services as required/requested
+Provision of State resources 
+ 
+and support services as required/requested
+DISASTER MANAGEMENT ACT 2003
+4A GUIDING PRINCIPLES
+(C) LOCAL GOVERNMENT 
+RESPONSIBLE FOR 
+MANAGING EVENTS 
+IN THEIR LOCAL AREA
+DIV 3, S30 – (A) (F) LOCAL 
+GROUP TO ENSURE 
+CONSISTENCY WITH 
+STATE (POLICY & OPS)
+(C) PREPARE A LDM PLAN
+(D) ADVISE DISTRICT RE 
+SUPPORT SERVICES 
+REQUIRED
+(H) IDENTIFY AND  
+COORDINATE USE OF 
+RESOURCES THAT MAY 
+BE USED FOR DM OPS 
+NATIONAL STRATEGY  
+FOR DISASTER  
+RESILIENCE 
+DISASTER MANAGEMENT ACT 2003
+4A GUIDING PRINCIPLES
+(D) DISTRICT GROUPS 
+AND THE STATE GROUP 
+SHOULD PROVIDE 
+LOCAL GOVERNMENTS 
+WITH APPROPRIATE 
+RESOURCES AND 
+SUPPORT TO HELP 
+LOCAL GOV CARRY 
+OUT DISASTER OPS.
+DIV 2, S23 – DISTRICT 
+GROUP TO ENSURE  
+CONSISTENCY WITH 
+STATE (POLICY & OPS)
+(C) PREPARE A DDM PLAN
+(D) (II) REVIEW AND 
+ASSESS LDMPS
+(G) COORDINATE STATE 
+RESOURCES AND 
+SERVICES PROVIDED 
+TO SUPPORT LOCAL
+(H) IDENTIFY RESOURCES 
+THAT MAY BE USED FOR  
+DM OPS IN DISTRICT
+(I) MAKE PLANS 
+FOR ALLOCATION, 
+COORDINATION OF  
+USE OF RESOURCES 
+IN (H)
+Australian Government capability and support mechanisms
+ 
+ 
+ 
+State Requests for Assistance
+NATIONAL
+ 
+LENS
+Risk Based Planning Equation
+30
+Figure 7 - Risk Based Planning Equation
+
+--- Página 31 ---
+31
+Queensland Emergency Risk Management
+Risk documentation
+This section outlines the key documentation needed to effectively identify and manage risks, which are:
+ 
+• Risk Assessment Table – records all the hazards identified, considered and addressed
+	
+•	 Risk Register – outlines the risks that require attention and treatment options for further action
+	
+•	 Decision Log – outlines and records ‘key decisions’ in the assessment of risks.
+All three tables including the Decision Log have the ability to numerically record and track key decisions 
+throughout the risk assessment process.
+Risk Assessment Table
+The Risk Assessment Table is used to record all the hazards considered, identified and addressed within 
+the assessment process outlined in this handbook. Some matters considered within the Risk Assessment 
+Table may not be recorded in the Risk Register if their consequences and subsequent treatment options 
+are not considered significant enough for further consideration. However, this must be noted within the 
+Decision Log.
+The Risk Assessment Table should provide evidence that demonstrates the identification, assessment and 
+future treatment of risk. It should contain the following key criteria:
+	
+•	 the hazard being assessed
+	
+•	 the probability of occurrence (derived from the AEP assessment)
+	
+•	 key elements that will be exposed if the hazard manifests
+	
+•	 a vulnerability rating for exposed elements (from Very Low to Extreme)
+	
+•	 a likelihood assessment level (from Rare to Almost Certain)
+	
+•	 existing risk treatments or controls (short and long term measures that exist to treat or control the risk)
+	
+•	 a consequence level (from Insignificant to Catastrophic)
+	
+•	 inherent risk level (risk level as a function of exposure, vulnerability and consequence)
+	
+•	 a Risk Statement (i.e. what is impacted, who is impacted and where is impacted).
+*	 Resource for use: An example of a completed Risk Assessment Table can be found at Appendix 5.
+
+--- Página 32 ---
+32
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Risk Register
+The Risk Register outlines the risks that require attention and provides treatment options for further 
+action. This additional action is vital to risk based planning and for transparency and accountability in the 
+management of residual risk and the subsequent request for and provision of support if required.
+A Risk Register should be prepared for each level of QDMA with the overall decision on the residual risk i.e. 
+Accept, Mitigate, Transfer or Shared, clearly annotated at the end of the register. Remember, the decision 
+to transfer residual risk can only be made based on the capability and capacity of Local, District and State 
+levels to appropriately mitigate and treat that residual risk. 
+The example Risk Register provided at Appendix 6 demonstrates that, for each risk, the disaster Risk 
+Register includes: 
+ 
+• a risk identification number – an alphanumeric identifier
+	
+•	 Decision Log reference number – linked to the Decision Log Table (Appendix 7)
+	
+•	 the hazard being assessed
+	
+•	 the exposed elements
+	
+•	 the Risk Statement
+	
+•	 inherent risk level 
+	
+•	 existing risk treatment or controls
+ 
+• Local and District capability and capacity to manage the identified risk
+	
+•	 capacity gaps (or residual risk)
+	
+•	 consequence rating (against the capacity gaps or residual risk)
+	
+•	 residual risk rating
+	
+•	 residual risk either accepted, mitigated or transferred or shared.
+*	 Resource for use: An example of how to complete a Risk Register can be found at Appendix 6. 
+Decision Log
+The Decision Log (refer Appendix 7) and any supporting documentation associated with a Risk Register is 
+designed to outline and record key decisions in the assessment of risks, including the rationale behind 
+judgements and decision, and who was involved.
+The Decision Log should succinctly and efficiently capture critical attributes of the key decisions made 
+during the risk assessment process, particularly where additional detail is required. In instances where 
+the risk is transferred from or shared across one level to another, the rationale should be clearly outlined 
+and justifiable. This allows for transparency in decision making and clearly outlines those involved in the 
+process. 
+Risk register – produced by risk assessment processes, summarising the  
+outputs of these processes to inform decision making about risks.
+(Australian Institute of Disaster Resilience)
+
+--- Página 33 ---
+33
+Queensland Emergency Risk Management
+The Decision Log can and should accurately record the timeline for implementation of future risk treatment 
+options. This should include:
+	
+•	 the date the plan for the risk treatment option was accepted
+	
+•	 the date for implementation
+	
+•	 details of the person, organisation or agency responsible for the implementation
+	
+•	 the date for review of progress towards implementation.
+*	 Resource for use: An example of a Decision Log can be found at Appendix 7.
+
+--- Página 34 ---
+34
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Stage
+Resources to use
+Output
+Outcome
+Process 1
+Identified risk
+Step 1 HAZARD	
+Assess the hazard using  
+the Annual Exceedance  
+Probability (AEP)
+Appendix 1 – Calculating
+Annual Exceedance  
+Probabilities
+Probability Rating
+Contributes towards  
+identifying inherent risk 
+rating
+Used in Risk Statement
+Step 2 EXPOSED ELEMENTS
+Develop detailed list  
+of elements at risk,  
+with reference to local  
+geospatial characteristics
+Geospatial tools
+Consultation with  
+all relevant stakeholders
+Detailed list and 
+understanding of 
+exposed elements to 
+the assessed hazard
+Contributes to towards  
+inherent risk rating
+Used in Risk Statement
+Step 3 VULNERABILITY
+Assess vulnerability of  
+exposed elements   
+Geospatial tools
+Consultation with all  
+relevant stakeholders
+Appendix 2 – Vulnerability 
+Table
+Vulnerability rating
+Initial assessment of  
+vulnerability (carried  
+forward to Process 2)
+Used in Risk Statement
+Process 2
+Level of risk
+Step 1 LIKELIHOOD
+Assess likelihood of  
+occurrence using  
+scenario modelling  
+from past 50 years data
+Likelihood Table
+Consultation with local 
+area experts and relevant 
+subject matter agencies 
+(e.g. Geoscience Australia, 
+BoM)
+Likelihood rating
+(Most likely & 
+Credible  
+worst-case)
+Inputs into Risk  
+Matrix to inform  
+overall level of risk
+Recorded in the Risk  
+assessment Table & Risk 
+Register
+Step 2 VULNERABILITY	
+Refer to Process 1, Step 3
+Vulnerability rating  
+from Process 1, Step 3
+Consultation with all 
+relevant stakeholders to 
+identify any current control 
+or mitigation measures
+Finalised  
+vulnerability rating
+Inputs in to Risk Matrix to 
+inform overall level of risk
+Recorded in the Risk  
+Assessment Table & Risk 
+Register 
+Step 3 CONSEQUENCE
+Assess the projected  
+impact of the hazard  
+occurring
+Appendix 3 -  
+Consequence Table
+Consultation with all  
+relevant stakeholders
+Consequence rating
+Inputs in to Risk Matrix to 
+inform overall level of Risk
+Recorded in the Risk  
+Assessment Table & Risk 
+Register 
+Used in Risk Statement
+Action plan: risk assessment process 
+The below table summarises the entire risk assessment process as well as defining the resources to 
+use and outputs that should be derived throughout each process and step, ultimately resulting in the 
+development of a detailed, robust Risk Assessment Table, Risk Register and Decision Log. 
+Table 4 - Action plan
+
+--- Página 35 ---
+35
+Queensland Emergency Risk Management
+Communication with relevant agencies is critical throughout the risk assessment process. Professional 
+consultation with subject matter experts adds rigour to risk assessments and risk based planning. As such, 
+gathering data about the annual probability of occurrence should be done in consultation with the agencies 
+that hold relevant data. For example, the Bureau of Meteorology holds occurrence data for tropical cyclones 
+(cyclones), severe weather and flooding events. 
+However, much of this data is at a macro-level and therefore not available on a District by District basis. 
+This has obvious consequences when considering hazards in areas that historically have not had a high 
+frequency of occurrence but, due to a high frequency of occurrence elsewhere in the state, the AEP will be 
+artificially skewed for that area. 
+For example, Far North Queensland has a very high frequency of occurrence of cyclones (>63% or Almost 
+certain) but Charleville has a very low frequency of occurrence (<10% or Unlikely). However, using a state-
+wide assessment of cyclone occurrence would skew the assessment for Charleville to between >10% and 
+<63% or Likely.
+To resolve this issue, this Risk Assessment Process Handbook promotes the use of Geographic Information 
+Systems (GIS) datasets to overlay historical climatic data onto Disaster Districts to allow for micro-level 
+assessments. GIS datasets from organisations such as the Bureau of Meteorology, Geoscience Australia 
+and State Government organisations have a high degree of accuracy and data confidence, and therefore 
+provide a reliable Average Recurrence Interval (ARI) and subsequent AEP evaluation.
+Figure 8 below shows an overlay of cyclones across Queensland over a 100 year period18 focused on the 
+Mackay Disaster District. 
+Figure 8 - Tropical cyclone data overlayed onto Mackay Disaster District (ArcGIS)
+18 100 year timeframe refers to the time from which accurate capture and recording of cyclones tracking across Australia occurred. 
+Appendix 1 Calculating Annual Exceedance Probabilities (AEP)
+
+--- Página 36 ---
+36
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Analysis of the dataset shows that within this period the District was impacted by 73 cyclones19 of varying 
+intensity and duration. Due to this data and analysis through geospatial tools it is possible to calculate the 
+AEP for tropical cyclones in the Mackay District alone.
+This is done through a two stage calculation:
+1.	 Calculate the Average Recurrence Interval (ARI) using the following equation: 
+	
+Where:
+	
+•	 T = the recurrence interval (expressed as 1 in x number of years)
+	
+•	 N = the number of years in the set
+	
+•	 n = the number of events within that set.
+	
+In relation to the Mackay example above, N would equal 100 (the number of years of recorded data)  
+	
+and n would be 73 (the number of cyclones that have occurred within that 100 year period). Thus the ARI 	
+	
+would be 1 in 1.37 years (or 1 cyclone every 1.37 years).
+2.	Convert the ARI in to AEP using the following linear equation.20
+	
+For the purpose of the Mackay example the equation reads as follows:
+	
+therefore 
+	
+0.51 x 100 = 51% AEP
+Finally, using the probability table below (and discussed in Process 1, Step 1 HAZARD), we see an AEP of 
+51% equates to a qualitative likelihood rating of Likely as the probability of occurrence is greater than >10% 
+but <63%.
+Likelihood
+Annual exceedence 
+probability (AEP)
+Average recurrence 
+interval (ARI) 
+(indicative)
+Almost certain
+63% per year or more
+Less than 1 year
+Likely
+10% to <63% per year
+1 to <10 years 
+Unlikely
+1% to <10% per year
+10 to <100 years 
+Rare
+0.1% to <1% per year
+100 to <1000 years 
+Very rare
+0.01% to <0.1% per year
+1000 to <10,000 years 
+Extremely rare
+Less than 0.01% per year
+10,000 years or more
+19 “Tropical Cyclones” include Categories 1-5 and include those that have impacted on both land and sea, and those that impacted only at sea. 
+20 The equation can be input to a scientific calculator, which is commonly available on most handheld devices and computers. 
+(AEP equation derived from E.M. Laurenson. 1987. Back to Basics on Flood Frequency Analysis. Civil Engineering Transactions.)
+
+--- Página 37 ---
+37
+Queensland Emergency Risk Management
+22 The categories and descriptors within the Vulnerability Table (Appendix 1) are based on research from a range of sources including:
+	 • Geoscience Australia (Geoscience Australia, 2007)
+	 • ISO 31000 Handbook 167: 2006 Security Risk Management (Standards Australia/Standards New Zealand  
+	   Standard Committee, 2006).
+Appendix 2 Vulnerability Table
+22
+Process 1, Step 3 & Process 2, Step 2 – Definitions of vulnerability 
+Extreme
+•	 Recovery from loss of essential infrastructure would be prolonged and complicated; the community is totally dependent upon the service with no “back up” 
+operational infrastructure to service the community (e.g. water treatment plant, electricity and communications).
+•	 Repair / rebuild of essential infrastructure would take longer than one year (to previous service levels).
+•	 Access / resupply to or evacuation from the area / community / site is via one route (e.g. one road or bridge that floods with no possibility of air access).
+•	 The topographic features of the area / community / site have a direct relationship to a hazard (e.g. the area is highly concentrated with old housing that is low 
+lying or is located in highly concentrated bushland).
+•	 The area / community / site is typified by significant numbers of vulnerable populations. These may include: medically dependent people (e.g. home haemodial-
+ysis), elderly or young residents (e.g. over 65 years or less than five years old), people from non-English speaking background and the unemployed.
+•	 The area / community / site has one health support service (e.g. hospital that has very limited capacity and no availability of specialised health  
+professionals).
+High
+•	 Recovery from loss of essential infrastructure would be possible, however only in the long term for secondary “back up” operational infrastructure to  
+service the community (e.g. water treatment plant, electricity and communications).
+•	 Repair / rebuild of essential infrastructure would take longer than several months (to previous service levels).
+•	 Access / resupply to or evacuation from the area / community / site is via very limited routes (e.g. air access only via one airfield or cleared areas for  
+helicopter access).
+•	 The topographic features of the area / community / site are prone to a hazard (e.g. the area is typified by old housing that is low lying or is located in  
+dense bushland).
+•	 The area / community / site is typified by large numbers of vulnerable populations. These may include: medically dependent people (e.g. home haemodialysis), 
+elderly or young residents (e.g. over 65 years or less than five years old), people from non-English speaking background and the unemployed.
+•	 The area / community / site has limited health support service (e.g. hospital has limited capacity and very limited availability of specialised health professionals).
+Moderate
+•	 Recovery from loss of essential infrastructure is simple but requires time for secondary “back up” operational infrastructure to service the  
+community (e.g. water treatment plant, electricity and communications).
+•	 Repair / rebuild of essential infrastructure would take longer than several weeks (to previous service levels).
+•	 Access / resupply to or evacuation from the area / community / site is via limited routes (e.g. there is one airfield and one access road).
+•	 The topographic features of the area / community / site are conducive to a hazard (e.g. the area is somewhat typified by old housing in some low lying areas or 
+dense bushland).
+•	 The area / community / site contains some vulnerable populations. These may include: medically dependent people (e.g. home haemodialysis), elderly or 
+young residents (e.g. over 65 years or less than five years old), people from non-English speaking background and the unemployed.
+•	 The area / community / site has some health support services available (e.g. more than one hospital or medical facility with limited capacity and a limited 
+number of specialised health professionals).
+Low
+•	 Recovery from loss of essential infrastructure achievable in short term for secondary “back up” operational infrastructure to service the community  
+(e.g. water treatment plant, electricity and communications).
+•	 Repair / rebuild of essential infrastructure would take less than one week (to previous service levels).
+•	 Access / resupply to or evacuation from the area / community / site is via several routes (e.g. there are several airfields and several access roads).
+•	 The topographic features of the area / community / site are somewhat conducive to a hazard (e.g. the area has negligible old housing located in low lying  
+areas or dense bushland).
+•	 The area / community / site contains limited numbers of vulnerable populations. These may include: medically dependent people (e.g. home haemodialysis), 
+elderly or young residents (e.g. over 65 years or less than five years old), people from non-English speaking background and the unemployed.
+•	 The area / community / site has several health support services available (e.g. several hospitals with the capacity to cope with surge and several specialised 
+health professionals on duty or on call).
+Very low
+•	 Recovery from loss of essential infrastructure achievable within one day with a secondary “back up” operational infrastructure that would service the community 
+(e.g. water treatment plant, electricity and communications).
+•	 Repair / rebuild of essential infrastructure would require less than one day (to previous service levels).
+•	 Access / resupply to or evacuation from the area / community / site is via multiple routes (e.g. there are several airfields and several access roads in and out of 
+the area).
+•	 The topographic features of the area / community / site are not conducive to a hazard (e.g. the area has no old housing located in low lying areas or housing 
+located in dense bushland).
+•	 The area / community / site contains little to no numbers of vulnerable populations. These may include: medically dependent people (e.g. home haemodialysis), 
+elderly or young residents (e.g. over 65 years or less than five years old), people from non-English speaking background and the unemployed.
+•	 The area / community / site has multiple major and specialised health support services available (e.g. multiple large specialised hospitals with the capacity to 
+cope with surge and multiple specialised health professionals on duty or on call).
+Considerations
+•	 Control or mitigation measures already in place or planned against the manifestation of a hazard will reduce the overall level of vulnerability.  
+The information in relation to control or mitigation measures is gained through consultation with relevant stakeholders.
+•	 Analysis of “Vulnerable Populations” should consider the natural resilience – or “coping capacity” – of communities. 
+•	 Analysis of “Vulnerable Populations” should consider the perception of the community towards the hazard. Is there an over- or under-estimation of the 
+perceived risk? This may be due to media bias, previous experience or other contributing factors.
+
+--- Página 38 ---
+38
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Process 1, Step 3 & Process 2, Step 2 – Definitions of vulnerability 
+People23
+Financial & Economic
+Catastrophic
+Multiple fatalities and multiple critical injuries 
+requiring evacuation to hospital and specialised 
+care. These include life threatening injuries that 
+require immediate aggressive intervention (e.g. 
+injuries requiring specialised treatment or after 
+care such as burns).
+Permanent decline of economic activity or government revenues 
+from industries (e.g. mining, agriculture, tourism).
+Loss or failure of an industry and / or loss of asset as a direct result 
+of emergency event that requires Federal and State Government 
+financial assistance.
+The recovery from the loss of essential infrastructure would be pro-
+longed and complicated and require Federal and State Government 
+financial assistance.
+Major
+Several fatalities with multiple critical injuries re-
+quiring immediate evacuation and hospitalisation. 
+These injuries would include several imminent 
+life threatening injuries requiring time critical 
+treatment.
+Longer term decline of economic activity (e.g. several years) or 
+government revenues from industries (e.g. mining, agriculture, 
+tourism).
+Significant structural adjustment of an industry and / or significant 
+damage to an asset that requires Federal and State Government 
+financial assistance.
+The recovery from loss of essential infrastructure would be possible 
+through State Government financial assistance.
+Moderate
+A fatality and several critical injuries (e.g. those 
+with an injury that requires immediate treatment 
+and could be potentially life threatening) requiring 
+hospitalisation within the local area hospital. 
+Medium term decline of economic activity (12 months or more) 
+or government revenues from industries (e.g. mining, agriculture, 
+tourism).
+Impairment of an industry and / or damage to an asset that requires 
+State Government financial assistance resulting in medium term 
+(12 months or more).
+The recovery from loss of essential infrastructure is simple but 
+requires financial assistance beyond the allocated budget.
+Minor
+Several injuries requiring treatment at the scene 
+(e.g. minor injuries and abrasions, requiring less 
+urgent medical attention).
+Short term decline of economic activity (less than one year) and / 
+or government revenues from industries (e.g. mining, agriculture, 
+tourism).
+Minor damage to an industry and / or damage to an asset that 
+requires the reallocation of budget for recovery, resulting in short 
+term disruption (less than one year).
+The recovery from the loss of essential infrastructure achievable in 
+short term through budget reallocation.
+Insignificant
+No reported injuries to emergency services.
+Short term disruption to economic activity and / or loss of assets 
+within an industry or sector.
+Inconsequential business sector disruption due to emergency 
+event. 
+Recovery from loss of essential infrastructure achievable within 
+current budget allocations.
+Appendix 3 Consequence Table
+23    Descriptors based on the Australian College for Emergency Medicine (ACEM) – Guidelines on the implementation of the Australasian Triage Scale in  
+	  Emergency Departments, November 2013. 
+24  In assessing the level of consequence for the loss of an ecosystem or species (i.e. catastrophic level of consequence for a region), a lower level of  
+	  consequence would be allocated than at the state and national level if the species exists in other areas.
+25  In using the term ‘Ecosystem’ this includes the plants, animals and other species of that ecosystem, as well as the air, water and soil upon which those species depend.
+26  The term ‘Environmental value’ refers to environmental goods and services, including aesthetic and recreational facilities and resources.  
+	  Source:  adapted from NERAG (Australian Institute for Disaster Resilience, 2015).
+
+--- Página 39 ---
+39
+Queensland Emergency Risk Management
+Community & Social
+Public Administration
+Environmental24
+The community’s social connectedness is irreparably 
+broken, such that the community ceases to function 
+effectively, breaks down and disperses in its entirety.
+This can be characterised by widespread loss of objects 
+of cultural significance and impacts beyond emotional 
+and psychological capacity across all parts of the 
+community.
+Sustained and frequent media criticism on national 
+and international media outlets. Total loss of confi-
+dence from the general public.
+Governing bodies are unable to deliver core objec-
+tives, with disordered public administration. 
+Interstate and international emergency services are 
+required to assist in the restoration of basic services 
+and public order and respond to calls for service.
+Permanent destruction of an ecosystem or species25  
+recognised at the Local, regional, State or national  
+level and / or severe damage to or loss of an  
+ecosystem or species recognised at the State and  
+national level and / or significant loss or impairment  
+of an ecosystem or species recognised at the  
+national level. 
+Permanent destruction of environmental values of 
+interest26.
+The community’s social connectedness is significantly 
+broken, such that extraordinary external resources 
+are required to return the community to functioning 
+effectively, with significant permanent dispersal. 
+This can be characterised by reduced quality of life 
+within the community, significant loss of or damage 
+to most objects of cultural significance, and impacts 
+beyond emotional and psychological capacity in large 
+parts of the community.
+Sustained and frequent media criticism on national 
+media outlets with infrequent media criticism on 
+international media outlets. 
+Loss of public confidence in governance.
+Governing bodies encounter severe reduction to 
+core objectives with disordered public administration. 
+Specialist emergency service areas required to 
+assist front line officers in restoring basic services 
+and public order and respond to calls for service.
+Minor damage to ecosystems or species rec-
+ognised at the national level and / or significant 
+loss or impairment of an ecosystem or species 
+recognised at the State level and / or severe 
+damage to or loss of an ecosystem or species 
+recognised at the Local or regional level. 
+Severe damage to environmental values of 
+interest.
+The community’s social connectedness is broken, such 
+that community requires significant external resources 
+to return the community to functioning effectively, with 
+some permanent dispersal. 
+This can be characterised by permanent damage 
+to some objects of cultural significance and impacts 
+beyond cultural and emotional capacity in some parts of 
+the community.
+Short term local critical media coverage. 
+Some sections of the community are critical. 
+Governing bodies encounter significant reduction to 
+core objectives. 
+Emergency services rosters of operations are 
+stretched to manage the event.
+Minor damage to ecosystems and species 
+recognised at the State level and / or significant 
+loss or impairment of an ecosystem or species 
+recognised at the Local or regional level. 
+Significant damage to environmental values of 
+interest.
+The community’s social connectedness is damaged, 
+such that community requires some external resources 
+to return the community to functioning effectively, with 
+no permanent dispersal. 
+This can be characterised by repairable damage to 
+objects of cultural significance and impacts within emo-
+tional and psychological capacity of the community.
+Infrequent local critical media coverage. Isolated 
+incidents of the public being critical.
+Governing bodies encounter limited reduction in 
+delivery of core functions. 
+Emergency services manage the event but with 
+some extended hours of operations.
+Minor damage to ecosystems and species rec-
+ognised at the Local or regional level.
+Minor damage to environmental values of interest. 
+The community’s social connectedness is disrupted, 
+such that the reprioritisation and / or reallocation of 
+existing resources is required to return the community 
+to functioning effectively, with no permanent dispersal. 
+There is no or minor damage to objects of cultural sig-
+nificance, and no adverse emotional and psychological 
+impacts.
+No local critical media coverage. 
+No incidents of the public being critical. 
+Governing bodies’ delivery of core functions is 
+unaffected or within normal parameters.
+No damage to ecosystems at any level. 
+Inconsequential damage to environmental values 
+of interest.
+
+--- Página 40 ---
+40
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Likelihood (X)
+Rare (1)
+Unlikely (2)
+Possible (3)
+Likely (4)
+Almost Certain (5)
+Vulnerability (Y)
+V.Low 
+(1) 
+Low  
+(2) 
+Mod  
+(3) 
+High 
+(4) 
+Extr  
+(5)
+V.Low 
+(1) 
+Low  
+(2) 
+Mod  
+(3) 
+High 
+(4) 
+Extr  
+(5)
+V.Low 
+(1) 
+Low  
+(2) 
+Mod  
+(3) 
+High 
+(4) 
+Extr  
+(5)
+V.Low 
+(1) 
+Low  
+(2) 
+Mod  
+(3) 
+High 
+(4) 
+Extr  
+(5)
+V.Low 
+(1) 
+Low  
+(2) 
+Mod  
+(3) 
+High 
+(4) 
+Extr  
+(5)
+Consequence (Z)
+INSIGNIFICANT (1)
+VL1
+VL2
+VL3
+L4
+L5
+VL2
+VL3
+L4
+L5
+L6
+VL3
+L4
+L5
+L6
+M7
+L4
+L5
+L6
+M7
+M8
+L5
+L6
+M7
+M8
+H9
+MINOR (2)
+VL2
+VL3
+L4
+L5
+L6
+VL3
+L4
+L5
+L6
+M7
+L4
+L5
+L6
+M7
+M8
+L5
+L6
+M7
+M8
+H9
+L6
+M7
+M8
+H9
+H10
+MODERATE (3)
+VL3
+L4
+L5
+L6
+M7
+L4
+L5
+L6
+M7
+M8
+L5
+L6
+M7
+M8
+H9
+L6
+M7
+M8
+H9
+H10
+M7
+M8
+H9
+H10
+H11
+MAJOR (4)
+L4
+L5
+L6
+M7
+M8
+L5
+L6
+M7
+M8
+H9
+L6
+M7
+M8
+H9
+H10
+M7
+M8
+H9
+H10
+H11
+M8
+H9
+H10
+H11
+E12
+CATASTROPHIC (5)
+L5
+L6
+M7
+M8
+H9
+L6
+M7
+M8
+H9
+H10
+M7
+M8
+H9
+H10
+H11
+M8
+H9
+H10
+H11
+E12
+H9
+H10
+H11
+E12
+E13
+Key:  V.L= Very low; L = Low; M = Medium; H = High; E = Extreme
+Scale: 1 (lowest) to 13 (highest) 
+Table 3 - Risk Matrix
+Appendix 4 Risk matrix 
+27
+27  Overall risk level is calculated through the equation (X+Y+Z) – 2. Each of the qualitative input parameters (X, Y & Z) have been assigned a numerical value of 1-5 (where 1 is the lowest and 5 the highest) in order to output the overall level of risk severity. Risk severity  
+   is ranked from 1-13 (where 1 is the least severe and 13 the most). Furthermore, the severity scale has been bracketed along the following lines: Very Low Severity 1-3; Low Severity 4- 6; Medium Severity 7-8; High Severity 9-11; Extreme Severity 12-13.
+
+--- Página 41 ---
+FOLD
+FOLD
+Risk Assessment Table - (Kangerooville DDMG) 
+Tropical Cyclone (Most Likely Scenario - Category 2 Cyclone incorporating Moderate Riverine Flooding)	
+	
+	
+“Hazard 
+(43% AEP)”
+Exposed Elements28
+Vulnerability
+Likelihood
+TROPICAL  
+CYCLONE -  
+CATEGORY 2
+Essential Infrastructure
+Power:
+- 	Bothwell Power Plant (coal fired State asset) - Supplies 60% of power to 
+State and is dependant on rail networks for supply.
+- 	HV Line (132Kv) through to Central Plains LGA is a single feed (Mulgowie to 
+Coolgardie) and is vulnerable to sustained high winds.
+- 	Powerlink lines - vulnerability along the following sections: 
+- Mulgowie to Dinoga 	
+- Mt Joey to Ennuin 
+- Coolgardie to Mandurah 	
+- Rum Rum to Bothwell (Kangerooville).
+- 	Sub-distribution network is vulnerable to sustained high winds and flash 
+flooding but majority of network can be bypassed or supported by generators 
+(for essential civic infrastructure) if required. 
+High
+Likely
+Agency/organisation
+- Engage stakeholde
+mitigation strategies 
+- Asset owners main
+community/DDMG.
+Facility operators em
+	 - Identify short term c
+	 capacity for affected 
+Agency Business Co
+- Establish long term
+Established support 
+- Presence of asset o
+- Community engage
+Communications:
+- 	NbN - NbN totally reliant on power. Location of NbN nodes at below 1% AEP  
+flood height will result in inundation of a number of nodes resulting in District  
+wide outages.
+- 	Mobile Communications - District wide and prolonged telecommunication 
+outages due to reliance on power. Prolonged power outages leads to inability to 
+charge mobile communication devices which will compound the issue. 
+- Mobile communication towers situated within topographically exposed areas 
+are vulnerable to high & sustained winds.
+- 	Telstra Exchanges - Majority have excellent redundancy in terms of power 
+and are situated above a 1% AEP flood height but telephone exchange at 
+Kangerooville is vulnerable to flash and riverine flooding.
+High
+Agency/organisation
+- Engage stakeholde
+mitigation strategies 
+- Asset owners main
+community/DDMG.
+Facility operators em
+	 - Identify short term c
+	 capacity for affected 
+Agency Business Co
+- Establish long term
+Established support 
+- Presence of asset o
+- Community engage
+Water:
+- 	Water treatment plants are at risk due to reliance on power networks.  
+Locations: 
+	 - Mulgowie 	
+- Mandurah	
+- Kangerooville 
+- Dinoga 	
+- Bothwell  
+- Coolgardie 	
+- Ennuin
+	 - Increased turbidity (District wide) will impact upon water quality  
+(across a prolonged period and decreasing quality over the long term).
+- 	Waste Water/Sewerage - Loss of power to telemetry may affect treatment.
+- 	Environmental - Contamination through water debris. Alternative intake point 
+upstream allows for control of contamination issues. 
+- Hazard waste dams and abandoned mines are areas of concern  
+(i.e. Mount Dinoga) resulting in heavy metal leaching, decreased Ph levels etc.
+Moderate
+Facility operators em
+- Identify short term c
+capacity for affected 
+- Asset owners main
+community/DDMG.
+Agency Business Co
+- Establish long term
+Established support 
+- Presence of asset o
+Requisite governmen
+- DACC support
+Resupply Guidelines
+- DDMG have establ
+Transport Infrastructure:
+- 	Airports - Kangerooville airport will cease operations. Riverine flooding and 
+infrastructure damage to terminal building could lead to downgrade of airport 
+for 6-9 months. Infrastructure currently rated to Cyclone standard but some 
+disruption to infrastructure could be expected.  
+- Coolgardie Airport and Ennuin Airport - may suffer some infrastructure 
+damage leading to disruption.
+- 	Heliports - Kangerooville Airport, Hospital based heliports. Alternative sites 
+already mapped to prevent long term disruption.
+- 	Bus and Rail Terminals - Power supply to the terminals is the primary issue. 
+Services will cease at 100kph wind speeds.
+	 - Ports - Kangerooville Industrial Port infrastructure highly resilient. Commercial 
+businesses may be impacted. Evacuation of the port likely to occur. 
+- Debris load within water may hamper restoration of service.
+- Harbours - Ennuin harbour (fisheries, policing, marine rescue, coast guard, 
+tourism) may experience disruption. 
+- Expect infrastructure damage to jetties, pontoons etc.
+Low
+Community awarenes
+- Community engage
+- Communications pl
+Agency/organisation
+- Engage stakeholde
+mitigation strategies 
+- Asset owners main
+community/DDMG.
+Facility operators em
+- Identify short term c
+capacity for affected 
+Agency Business Co
+- Establish long term
+Fuel Infrastructure:
+- 	Bulk Fuel Storage - Kangerooville Industrial Port fuel depot.
+- 	Gas & Oil Pipelines - Gas line from Coolgardie to Mandurah may be affected 
+leading to economic disruption and disruption to domestic supply.
+Low
+Agency/organisation
+- Engage stakeholde
+redundancy or mitiga
+Facility operators em
+- Operators maintain
+Agency Business Co
+- Establish long term
+Note: The Risk Assessment 
+Table seeks to capture and 
+visually articulate the outputs 
+of each step of the risk 
+assessment process.
+A complete risk assessment 
+table is comprised of the 
+following
+Exposed Elements sections:
+- Essential Infrastructure
+- Access & Resupply
+- Community & Social
+- Medical
+- Significant Industries
+- Environmental.
+% AEP – Derived from 
+Process 1, Step 1.  
+The assessment of 
+the hazard against the 
+probability of occurrence.
+Exposed Elements –  
+The summary of the 
+findings of Process 1,  
+Step 2 (geospatial 
+analysis). A detailed list  
+of the “elements at risk”.
+Vulnerability Rating – 
+The decision from  
+Process 1, Step 3. 
+Assessment of the 
+vulnerability of the 
+exposed elements 
+rated from “Very low” to 
+“Extreme”.
+Hazard – The hazard 
+under assessment 
+including the category 
+where appropriate.
+Likelihood Rating –  
+The decision from 
+Process 2, Step 1. The 
+assessment of likelihood 
+of occurrence based on 
+scenario modelling from 
+the past 50 years of 
+historical data.
+Appendix 5: Example Risk Assessment Table
+28    Geospatial tools and modelling should be utilised and referenced to justify inclusion of vulnerable exposed elements within the Risk Assessment Table.
+
+--- Página 42 ---
+42
+	
+	
+	
+	
+			
+Existing Risk Treatments or Controls
+Consequence
+Risk Level
+Risk Statements
+n emergency action/response plans. 
+ers (i.e. asset owner/operator) to identify the level of redundancy or 
+for specific assets in exposed areas. 
+tain priority reconnection schedule developed in consultation with the 
+mergency plans and business continuity plans.
+contingencies (i.e. back-up assets) for exposed assets that will provide 	
+civic infrastructure and communities.
+ontinuity Plans. 
+m plans for the mitigation of potential exposed sites.
+networks 
+owner in DDCC and LDCC.  - Communications Plan aimed at community. 
+ement by asset owner.
+Moderate
+H9
+Exposure, leading to damage to essential 
+infrastructure (such as power stations, 
+transmission lines, communication nodes 
+and towers) resulting from sustained 
+high winds, associated possible riverine 
+flooding and minor coastal inundation will 
+affect communities across Kangerooville 
+in the event of the manifestation  
+of a Tropical Cyclone (Category 2). 
+Some redundant power generation is  
+in place across key civic infrastructure 
+and communities; although this is highly 
+vulnerable to riverine flooding, coastal 
+inundation and possible  
+lack of resupply of fuel.
+Potential damage to infrastructure may 
+close ports and airports in the short 
+term subsequently affecting significant 
+industries within the District.
+Significant disruption to communities and 
+services without redundant power or 
+communications through the short term 
+(up to 1 week) is likely.
+Possible subsequent riverine flooding may 
+further compound disruption issues (see 
+Riverine Flooding Assessment).
+n emergency action/response plans. 
+ers (i.e. asset owner/operator) to identify the level of redundancy or 
+for specific assets in exposed areas. 
+tain priority reconnection schedule developed in consultation with the 
+mergency plans and business continuity plans.
+contingencies (i.e. back-up assets) for exposed assets that will provide 	
+civic infrastructure and communities.
+ontinuity Plans. 
+m plans for the mitigation of potential exposed sites.
+networks 
+owner in DDCC and LDCC.  - Communications Plan aimed at community. 
+ement by asset owner.
+Moderate
+H9
+mergency plans and business continuity plans. 
+contingencies (i.e. back-up assets) for exposed assets that will provide 
+civic infrastructure and communities. 
+tain priority reconnection schedule developed in consultation with the 
+ontinuity Plans. 
+m plans for the mitigation of potential exposed sites.
+networks 
+owner in DDCC and LDCC.
+nt agencies 
+s 
+ished arrangements to resupply sections of the community.
+Moderate
+M8
+ss and key messaging plans. 
+ement by asset owner. 
+lan aimed at community.
+n emergency action/response plans. 
+ers (i.e. asset owner/operator) to identify the level of redundancy or 
+for specific assets in exposed areas. 
+tain priority reconnection schedule developed in consultation with the 
+mergency plans and business continuity plans. 
+contingencies (i.e. back-up assets) for exposed assets that will provide 
+civic infrastructure and communities.
+ontinuity Plans. 
+m plans for the mitigation of potential exposed sites.
+Minor
+L6
+n emergency action/response plans. 
+ers (i.e. asset owner/operator) to identify the level of  
+ation strategies for specific assets in exposed areas.
+mergency plans and business continuity plans. 
+n lists for priority of supply during and post an event.
+ontinuity Plans. 
+m plans for the mitigation of potential exposed sites.
+Minor
+L6
+Existing Risk Treatment 
+or Controls –  
+An assessment of the 
+current strategies, plans 
+and resources that are in 
+place and/or act to control 
+or mitigate (treat) the 
+identified vulnerabilities of 
+exposed elements.
+Consequence Rating 
+– The decision from 
+Process 2, Step 3. 
+The assessment of the 
+projected or anticipated 
+impact of the hazard 
+manifesting against the 
+exposed elements after 
+all existing treatments 
+and controls have been 
+considered. Rated 
+from “Insignificant” to 
+“Catastrophic”.
+Risk Statement –  
+A concise summary 
+of the full assessment 
+of the hazard and the 
+exposure, vulnerability 
+and consequence of the 
+elements found to be 
+at risk. Risk statements 
+provide further context 
+for developing future risk 
+treatments by concisely 
+detailing the cause of the 
+risk and its anticipated 
+effects (consequences).
+Inherent Risk Rating 
+– the output of the two 
+processes derived 
+from the risk matrix. 
+This assigns an overall 
+severity rating across 
+five levels of risk which 
+range from “Very low” to 
+“Extreme”. Awarding an 
+overall level of risk aids in 
+the determination of risk 
+priorities.
+TRIM
+Queensland Emergency Risk Management
+
+--- Página 43 ---
+FOLD
+FOLD
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+43
+TRIM
+Risk Register - Kangerooville DDMG	
+Tropical Cyclone (Most Likely Scenario - Category 2 Cyclone incorporating Moderate Riverine Flooding)	
+	
+ID
+Decision Log 
+Reference
+Hazard
+Exposed Elements
+(Infrastructure)
+Risk State
+1.0
+1.1
+TROPICAL 
+CYCLONE -  
+CATEGORY 2
+Power:
+- 	Bothwell Power Plant (coal fired State asset) - Supplies 60% of power 
+to State and is dependant on rail networks for supply.
+- 	HV Line (132Kv) through to Central Plains LGA is a single feed 
+(Mulgowie to Coolgardie) and is vulnerable to sustained high winds.
+- 	Powerlink lines - vulnerability along the following sections: 
+- Mulgowie to Dinoga  
+- Coolgardie to Mandurah  
+- Mt Joey to Ennuin 
+- Rum Rum to Bothwell (Kangerooville).
+- 	Sub-distribution network is vulnerable to sustained high winds and 
+flash flooding but majority of network can be bypassed or supported by 
+generators (for essential civic infrastructure) if required.
+Exposure, leading
+essential infrast
+as power station
+lines, communica
+towers) resulting 
+high winds, asso
+riverine flooding a
+inundation will affe
+across Kangeroov
+of the manifestati
+Cyclone (Ca
+Some redundant pow
+in place acro
+infrastructure and
+although this is h
+to riverine floo
+inundation and p
+resupply 
+Potential damage t
+may close ports 
+the short term s
+affecting signific
+within the 
+Significant disruption
+and services with
+power or commun
+the short term (
+is like
+Possible subsequent
+may further comp
+issues (see Rive
+Assessm
+1.2
+Communications:
+- NbN - NbN totally reliant on power. Location of NbN nodes at below 1% 
+AEP flood height will result in inundation of a number of nodes resulting 
+in District wide outages.
+- Mobile Communications - District wide and prolonged 
+telecommunication outages due to reliance on power. Prolonged power 
+outages leads to inability to charge mobile communication devices 
+which will compound  
+the issue. 
+- Mobile communication towers situated within topographically exposed 
+areas are vulnerable to high & sustained winds.
+- Telstra Exchanges - Majority have excellent redundancy in terms of 
+power and are situated above a 1% AEP flood height but telephone 
+exchange at Kangerooville is vulnerable to flash and riverine flooding.
+1.3
+Water:
+- 	Water treatment plants are at risk due to reliance on power networks.  
+Locations: 
+	 - Mulgowie 	
+- Mandurah	
+- Kangerooville 
+- Dinoga 	
+- Bothwell  
+- Coolgardie 	
+- Ennuin
+	 - Increased turbidity (District wide) will impact upon water quality  
+(across a prolonged period and decreasing quality over the long term).
+- 	Waste Water/Sewerage - Loss of power to telemetry may affect  
+treatment.
+- 	Environmental - Contamination through water debris. Alternative intake 
+point upstream allows for control of contamination issues. 
+- Hazard waste dams and abandoned mines are areas of concern  
+(i.e. Mount Dinoga) resulting in heavy metal leaching, decreased Ph 
+levels etc.
+1.4
+Transport Infrastructure:
+- 	Airports - Kangerooville airport will cease operations. Riverine flooding 
+and infrastructure damage to terminal building could lead to downgrade 
+of airport for 6-9 months. Infrastructure currently rated to Cyclone 
+standard but some disruption to infrastructure could be expected.  
+- Coolgardie Airport and Ennuin Airport - may suffer some infrastructure 
+damage leading to disruption.
+- 	Heliports - Kangerooville Airport, Hospital based heliports. Alternative 
+sites already mapped to prevent long term disruption.
+- 	Bus and Rail Terminals - Power supply to the terminals is the primary 
+issue. Services will cease at 100kph wind speeds.
+	 - Ports - Kangerooville Industrial Port infrastructure highly resilient. 
+Commercial businesses may be impacted. Evacuation of the port likely to 
+occur. 
+- Debris load within water may hamper restoration of service.
+- 	Harbours - Ennuin harbour (fisheries, policing, marine rescue, coast 
+guard, tourism) may experience disruption. 
+- Expect infrastructure damage to jetties, pontoons etc.
+1.5
+Fuel Infrastructure:
+- 	Bulk Fuel Storage - Kangerooville Industrial Port fuel depot.
+- 	Gas & Oil Pipelines - Gas line from Coolgardie to Mandurah may be 
+affected leading to economic disruption and disruption to domestic 
+supply.
+Note: The Risk Register 
+summarises the outputs of 
+the Risk Assessment Table 
+to inform decision making on 
+managing the identified risks.
+A register should be 
+completed for each of the 
+Exposed Elements sections 
+from the Risk Assessment 
+Table:
+- Essential Infrastructure
+- Access & Resupply
+- Community & Social
+- Medical
+- Significant Industries
+- Environmental.
+Register ID – An 
+alphanumeric identification 
+number which identifies 
+the current version of 
+the register (reviewed 
+annually) and the priority 
+of the specific hazard. 
+(The number before the 
+decimal point indicates 
+the priority of the hazard 
+for the District and the 
+number after is the  
+version of the Risk 
+Register. In this example, 
+1.0 shows Tropical 
+Cyclone is the highest 
+priority hazard for this 
+District and this is the 
+first version of the Risk 
+Register. Next year when 
+the Risk Register is 
+updated, and if Tropical 
+Cyclone remained the 
+number one priority, the 
+numbering would shift 
+to 1.1 to indicate the 
+reviewed version of the 
+register.)
+Decision Log 
+Reference Number 
+– An alphanumeric 
+identification number 
+which is used to clearly 
+link the relevant line of 
+this Risk Register to the 
+agreed actions in the 
+Decision Log.
+Exposed Elements – 
+Imported directly from the 
+Risk Assessment Table.
+Risk Statement – 
+Imported directly from the 
+Risk Assessment Table.
+Inherent Risk Level – 
+Imported directly from the 
+Risk Assessment Table.
+Appendix 6: Sample Risk Register (Infrastructure)
+
+--- Página 44 ---
+ements
+Inherent  
+Risk
+Existing Risk Treatments or Controls
+Capability
+Capacity
+Capac
+g to damage to 
+tructure (such 
+s, transmission 
+ation nodes and 
+from sustained 
+ociated possible 
+nd minor coastal 
+ect communities 
+ville in the event 
+ion of a Tropical 
+ategory 2). 
+wer generation is 
+ss key civic 
+d communities; 
+ighly vulnerable  
+ding, coastal 
+possible lack of 
+of fuel.
+to infrastructure 
+and airports in  
+subsequently i
+cant industries 
+District.
+n to communities 
+hout redundant 
+nications through 
+(up to 1 week)  
+ely.
+t riverine flooding 
+pound disruption 
+erine Flooding 
+ment).
+H9
+Agency/organisation emergency action/response plans. 
+- Engage stakeholders (i.e. asset owner/operator) to identify the level of redundancy or 
+mitigation strategies for specific assets in exposed areas. 
+- Asset owners maintain priority reconnection schedule developed in consultation with the 
+community/DDMG.
+Facility operators emergency plans and business continuity plans.
+	 - Identify short term contingencies (i.e. back-up assets) for exposed assets that will provide 	
+	 capacity for affected civic infrastructure and communities.
+Agency Business Continuity Plans. 
+- Establish long term plans for the mitigation of potential exposed sites.
+Established support networks 
+- Presence of asset owner in DDCC and LDCC.  - Communications Plan aimed at community. 
+- Community engagement by asset owner.
+Asset owners have capability and expertise 
+to maintain and restore services through 
+BCPs.
+Asset owners have the capability to source, 
+transport and resupply limited short term 
+redundant generation capability to support 
+key civic infrastructure.
+Presence of Energy Queensland 
+representative in DDCC and LDCC to 
+provide timely SITREPS.
+Asset owners to maintain priority 
+reconnection schedule developed in 
+consultation with the community.
+Asset owners may require State 
+support to restore services in the 
+event of District/State wide outages.
+Convergence of support services 
+may have logistical implications 
+such as accommodation/
+meals which may impact local 
+communities.
+The sub distribution network is 
+highly vulnerable and Energy 
+Queensland would likely require 
+assistance to support restoration 
+of services.
+Transportation
+heavy generat
+(medium term 
+bulk fuel outsid
+Logistical impli
+convergence o
+outside current
+DDMP. 
+Lack of current
+between DTMR
+Queensland w
+to access/resu
+infrastructure s
+H9
+Agency/organisation emergency action/response plans. 
+- Engage stakeholders (i.e. asset owner/operator) to identify the level of redundancy or 
+mitigation strategies for specific assets in exposed areas. 
+- Asset owners maintain priority reconnection schedule developed in consultation with the 
+community/DDMG.
+Facility operators emergency plans and business continuity plans.
+	 - Identify short term contingencies (i.e. back-up assets) for exposed assets that will provide 	
+	 capacity for affected civic infrastructure and communities.
+Agency Business Continuity Plans. 
+- Establish long term plans for the mitigation of potential exposed sites.
+Established support networks 
+- Presence of asset owner in DDCC and LDCC.  - Communications Plan aimed at community. 
+- Community engagement by asset owner.
+Asset owners have capability and expertise 
+to maintain and restore services through 
+BCPs.
+Asset owners have the capability to 
+source, transport and resupply redundant 
+generation capability to restore power to 
+exchanges and communication nodes.
+Presence of asset owner representative 
+in DDCC and LDCC to provide timely 
+SITREPS.
+Asset owners may require State 
+support to restore services in the 
+event of District/State wide outages 
+(especially in regard to the NbN 
+network).
+Convergence of support services 
+may have logistical implications 
+such as accommodation/
+meals which may impact local 
+communities.
+LDMGs, DDMG
+Representative
+Voice Over Inte
+(VoIP) to comm
+State agencies
+communication
+redundancy if N
+compromised.
+Lack of current
+between DTMR
+owners (Telstra
+regard to acce
+network nodes
+M8
+Facility operators emergency plans and business continuity plans. 
+- Identify short term contingencies (i.e. back-up assets) for exposed assets that will provide 
+capacity for affected civic infrastructure and communities. 
+- Asset owners maintain priority reconnection schedule developed in consultation with the 
+community/DDMG.
+Agency Business Continuity Plans. 
+- Establish long term plans for the mitigation of potential exposed sites.
+Established support networks 
+- Presence of asset owner in DDCC and LDCC.
+Requisite government agencies 
+- DACC support
+Resupply Guidelines 
+- DDMG have established arrangements to resupply sections of the community.
+Facility owners have capability and 
+expertise to maintain and restore services 
+through BCPs.
+Facility owners have the capability to 
+source, transport and resupply redundant 
+water supply (bowser and bulk bottled 
+water) to manage contamination issues and 
+any disruption to supply of clean water.
+Presence of asset owner representative 
+in DDCC and LDCC to provide timely 
+SITREPS.
+Facility owners may require 
+intra-State support for resupply of 
+bulk clean water in the event of 
+prolonged disruption.
+Priority for restoration of power 
+supply should limit impact to asset/
+facility owners and therefore reduce 
+the need to source bulk clean water.
+Widespread co
+issues (from in
+or increases in
+tolerable levels
+and would requ
+State report.
+L6
+Community awareness and key messaging plans. 
+- Community engagement by asset owner. 
+- Communications plan aimed at community.
+Agency/organisation emergency action/response plans. 
+- Engage stakeholders (i.e. asset owner/operator) to identify the level of redundancy or 
+mitigation strategies for specific assets in exposed areas. 
+- Asset owners maintain priority reconnection schedule developed in consultation with the 
+community/DDMG.
+Facility operators emergency plans and business continuity plans. 
+- Identify short term contingencies (i.e. back-up assets) for exposed assets that will provide 
+capacity for affected civic infrastructure and communities.
+Agency Business Continuity Plans. 
+- Establish long term plans for the mitigation of potential exposed sites.
+Facility owners have capability and 
+expertise to restore services through BCPs.
+Facility owners have the capability to 
+source, transport and resupply limited 
+short term redundant power generation 
+capability. This is in order to restore 
+services within the shortest time possible.
+Operators have the capability to inform and 
+update public, DDCC/LDCC and DTMR on 
+the disruption to/restoration of services at 
+the State and District level.
+Restoration of key transport 
+services to be expected within a 
+few days.
+Supply of redundant power 
+dependant on the assumption 
+that disruption will be short term. 
+<1 week.
+Ability to inform public, DDCC/
+LDCC and DTMR dependant on 
+the availability of communication 
+networks.
+Assumption within BCP for a 25-
+50% reduction in staffing levels and 
+therefore vehicle/airframe numbers.
+Lack of represe
+and LDCC to p
+SITREPS.
+Transport oper
+susceptible to 
+beyond BCP.
+Infrastructure d
+BCPs capabilit
+(therefore requ
+support) and c
+resupply issue
+disruption of se
+No current com
+strategy betwe
+DDMG and Dis
+operators.
+L6
+Agency/organisation emergency action/response plans. 
+- Engage stakeholders (i.e. asset owner/operator) to identify the level of  
+redundancy or mitigation strategies for specific assets in exposed areas.
+Facility operators emergency plans and business continuity plans. 
+- Operators maintain lists for priority of supply during and post an event.
+Agency Business Continuity Plans. 
+- Establish long term plans for the mitigation of potential exposed sites.
+Facility owners have capability and 
+expertise to restore services through BCPs.
+Operators BCPs highlight priority of 
+resupply for fuel during and post event 
+(Emergency Services etc.)
+Bulk fuel storage maintained at 50% 
+capacity prior to event. This equates 
+to provision of 4 days supply to 
+District priority list.
+District reliance
+fuel storage a c
+DDMG level. D
+facility or conti
+disruption may
+impact across 
+areas.
+Capacity
+Asset owners may require State 
+support to restore services in the event 
+of District/State wide outages.
+Convergence of support services may 
+have logistical implications such as 
+accommodation/meals which may 
+impact local communities.
+The sub distribution network is highly 
+vulnerable and Energy Queensland 
+would likely require assistance to 
+support restoration of services.
+Asset owners may require State 
+support to restore services in the 
+event of District/State wide outages 
+(especially in regard to the NbN 
+network).
+Convergence of support services may 
+have logistical implications such as 
+accommodation/meals which may 
+impact local communities.
+Facility owners may require intra-State 
+support for resupply of bulk clean water 
+in the event of prolonged disruption.
+Priority for restoration of power supply 
+should limit impact to asset/facility 
+owners and therefore reduce the need 
+to source bulk clean water.
+Restoration of key transport services to 
+be expected within a few days.
+Supply of redundant power dependant 
+on the assumption that disruption will 
+be short term. <1 week.
+Ability to inform public, DDCC/
+LDCC and DTMR dependant on the 
+availability of communication networks.
+Assumption within BCP for a 25-50% 
+reduction in staffing levels and 
+therefore vehicle/airframe numbers.
+Bulk fuel storage maintained at 50% 
+capacity prior to event. This equates 
+to provision of 4 days supply to District 
+priority list.
+
+--- Página 45 ---
+45
+Queensland Emergency Risk Management
+							
+city Gaps
+Consequence
+Residual  
+Risk Rating
+Accept Mitigate
+Transfer
+ and storage of 
+ion capability 
+capability) and 
+de of BCPs.
+ications of 
+of support services 
+t BCPs and 
+t cohesive plan 
+R and Energy 
+with regard 
+pply to key 
+sites.
+Moderate
+M7
+Mitigate & 
+ Transfer
+Gs and Agency 
+es reliant on 
+ernet Protocol 
+municate with 
+s if mobile 
+ns fail. No 
+NbN network is 
+t cohesive plan 
+R and asset 
+a, NbN etc.) with 
+ss/resupply to key 
+s/infrastructure.
+Moderate
+M7
+Mitigate &  
+Transfer
+ontamination 
+ndustrial pollution) 
+n turbidity beyond 
+s outside of BCP 
+uire significant 
+Major
+M7
+Transfer
+entation to DDCC 
+provide timely 
+rators highly 
+shortages of staff 
+damage beyond 
+ty to manage 
+uiring State 
+continuing access/
+s will compound 
+ervices.
+mmunication 
+een DTMR rep on 
+strict transport 
+Moderate
+L4
+Accept
+e on single bulk 
+concern at the 
+Damage to storage 
+nuing resupply 
+y have significant 
+multiple response 
+Major
+L5
+Transfer
+Capacity Gaps
+Consequence
+Residual  
+Risk Rating
+Accept Mitigate
+Transfer
+Transportation and storage of heavy 
+generation capability (medium term 
+capability) and bulk fuel outside 
+of BCPs.
+Logistical implications of 
+convergence of support services 
+outside current BCPs and DDMP. 
+Lack of current cohesive plan 
+between DTMR and Energy 
+Queensland with regard to access/
+resupply to key infrastructure sites.
+Moderate
+M7
+Mitigate & 
+ Transfer
+LDMGs, DDMGs and Agency 
+Representatives reliant on Voice 
+Over Internet Protocol (VoIP) to 
+communicate with State agencies 
+if mobile communications fail. 
+No redundancy if NbN network is 
+compromised.
+Lack of current cohesive plan 
+between DTMR and asset owners 
+(Telstra, NbN etc.) with regard to 
+access/resupply to key network 
+nodes/infrastructure.
+Moderate
+M7
+Mitigate &  
+Transfer
+Widespread contamination 
+issues (from industrial pollution) 
+or increases in turbidity beyond 
+tolerable levels outside of BCP 
+and would require significant State 
+support.
+Major
+M7
+Transfer
+Lack of representation to DDCC and 
+LDCC to provide timely SITREPS.
+Transport operators highly 
+susceptible to shortages of staff 
+beyond BCP.
+Infrastructure damage beyond 
+BCPs capability to manage 
+(therefore requiring State support) 
+and continuing access/resupply 
+issues will compound disruption of 
+services.
+No current communication strategy 
+between DTMR rep on DDMG and 
+District transport operators.
+Moderate
+L4
+Accept
+District reliance on single bulk fuel 
+storage a concern at the DDMG 
+level. Damage to storage facility 
+or continuing resupply disruption 
+may have significant impact across 
+multiple response areas.
+Major
+L5
+Transfer
+Existing Risk Treatment 
+or Controls – Imported 
+directly from the Risk 
+Assessment Table.
+Capability – An 
+assessment of the 
+resources, plans and 
+attributes within the 
+Local or District Disaster 
+Management Group 
+(including stakeholders) 
+which are able to 
+manage, reduce or 
+mitigate risks.
+Capacity – An 
+assessment of the ability 
+of the Local or District 
+Disaster Management 
+Group (including 
+stakeholders) to sustain 
+their capability during 
+an event.
+Capacity Gaps – An 
+assessment of the Local 
+or District Disaster 
+Management Group’s 
+gap in capability and/or 
+capacity to manage the 
+identified risk. Otherwise 
+known as residual risk (or 
+the risk that remains in 
+unmanaged form.)
+Consequence Rating 
+– An assessment of the 
+projected or anticipated 
+impact of the gap in 
+capability and/or capacity 
+if they were to eventuate 
+during the response to an 
+event. This assessment 
+will auto-generate the 
+residual risk rating.
+Residual Risk Rating 
+– the magnitude of the 
+residual risk expressed in 
+terms of the combination 
+of the inherent risk 
+rating, assessment 
+of existing treatment/
+control measures and 
+the consequences of the 
+capacity gaps manifesting 
+during an event.
+Residual Risk Decision 
+– The annotation of 
+whether the residual 
+risk will be accepted 
+(tolerated), plans 
+will be developed to 
+mitigate the risk or it will 
+be transferred (upon 
+consultation) to the next 
+level of the QDMA. This 
+is recorded within the 
+Decision Log.
+
+--- Página 46 ---
+46
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Appendix 7 Decision Log
+Current Level of  
+Responsibility
+Local, District, or State
+Decision Log Reference
+A numerical identifier that can be linked  
+to the risk register for key decisions
+Risk ID No.
+Decision
+Decision 
+Rationale
+Decision 
+Maker
+Agreed By
+Timeline
+Status
+Identifier for the 
+risk from a risk 
+register (i.e. 
+transferral).
+Outline of the  
+issue and 
+what was the 
+specific decision 
+surrounding this 
+issue.
+The decision 
+rationale is the 
+justification for the 
+decision. 
+e.g. “Options A, B, 
+C were  
+considered & A 
+was the preferred 
+option because 
+... “ 
+The decision 
+maker is the 
+person or group 
+of persons who 
+reached the final 
+decision.
+While the decision 
+maker proposes and 
+has the authority 
+to make decisions, 
+there are  
+instances when 
+groups of  
+individuals must 
+support the  
+decision so that  
+it can be  
+implemented. 
+Please identify the 
+remainder of the 
+parties that agreed 
+to the decision in 
+this column.
+Please outline the 
+agreed timeline  
+(if applicable)  
+for the  
+implementation of 
+the decision. This 
+should include 
+details of the  
+responsible  
+parties for 
+monitoring the 
+progress of  
+implementation.
+Select a  
+category (i.e. 
+Decided, 
+Accepted, 
+Rejected,  
+In progress).
+The Decision Log is designed to outline and record ‘key decisions’ in the assessment of risks, including the 
+rationale behind judgements and who has been involved in these decisions. In instances where the risk is 
+transferrred from the Local level to the District, the rationale needs to be clearly outlined and justifiable.
+
+--- Página 47 ---
+47
+Queensland Emergency Risk Management
+Appendix 8 Risk assessment process on a page
+RISK ASSESSMENT PROCESS
+
+--- Página 48 ---
+48
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Glossary
+All-hazards approach
+Dealing with all types of emergencies or disasters, and civil defence, using the same set of management 
+arrangements. (Australian Emergency Management Institute, 2015)
+Anthropogenic hazards
+Human-induced hazards which are induced entirely or predominantly by human activities and choices. 
+(United Nations Office for Disaster Risk Reduction, 2017)
+Capability
+The combination of all the strengths, attributes and resources available within an organisation, community 
+or society to manage and reduce risks and strengthen resilience. Capability may include infrastructure, 
+institutions, human knowledge and skills, and collective attributes such as social relationships, leadership 
+and management. (United Nations Office for Disaster Risk Reduction, 2017) 
+Capacity
+A subset of capability, referring to the ability to sustain that effect for a designated period. (Adapted from 
+Australian Defence Force, 2012)
+Community preparedness
+The degree of plans in place by communities, households and individuals that, when implemented, can 
+reduce the adverse effects of emergency events. (Australian Emergency Management Institute, 2015)
+Consequence
+The outcome or impact of an event and may be expressed qualitatively or quantitatively. There can be more 
+than one consequence from an event. Consequences are generally described as the effects on people, 
+society, the environment and the economy. (Geoscience Australia)
+Critical infrastructure
+The physical structures, facilities, networks and other assets that support services that are socially, 
+economically or operationally essential to the functioning of a society or community. (United Nations Office 
+for Disaster Risk Reduction, 2017)
+Disaster
+A serious disruption in a community, caused by the impact of an event that requires a significant 
+coordinated response by the State and other entities to help the community to recover from the disruption. 
+(Disaster Management Act 2003)
+Emergency
+An event, actual or imminent, that endangers or threatens to endanger life, property or the environment, 
+and requires a significant and coordinated response. In some jurisdictions emergency is interchangeable 
+with disaster. (Australian Emergency Management Institute, 2015)
+Establishing the context
+Defining the external and internal parameters to be taken into account when managing risk, and setting the 
+scope and risk criteria for the risk management activity. (Australian Emergency Management Institute, 2015)
+
+--- Página 49 ---
+49
+Queensland Emergency Risk Management
+Event
+An event may be natural or caused by human acts or omissions. (Disaster Management Act 2003)   
+It can include any of the following:
+ 
+(a) A cyclone, earthquake, flood, storm, storm tide, tornado, tsunami, volcanic eruption or other   
+ 
+ 
+natural occurrence;
+ 
+(b) An explosion or fire, a chemical, fuel or oil spill, or a gas leak;
+ 
+(c) An infestation, plague or epidemic;
+ 
+(d) A failure of, or disruption to, an essential service or infrastructure;
+ 
+(e) An attack against the State;
+	
+(f)	 Another event similar to an event mentioned in paragraphs (a) to (e).
+Exposure
+The elements within a given area that have been, or could be, subject to the impact of a particular hazard. 
+Exposure is also sometimes referred to as the ‘elements at risk’. (Australian Emergency Management 
+Institute, 2015)
+Geospatial 
+Relating to or denoting data that is associated with a particular location or that has a geographic 
+component to it. These components can be in the form of coordinates, addresses or postcodes. (Australian 
+Geospatial-Intelligence Organisation)
+Hazard
+A process, phenomenon or human activity that may cause loss of life, injury or other health impacts, 
+property damage, social and economic disruption or environmental degradation. (United Nations Office for 
+Disaster Risk Reduction, 2017)
+Level of risk (or risk level)
+Magnitude of a risk, or a combination of risks, expressed in terms of the combination of vulnerability, 
+consequence and their likelihood. (Australian Emergency Management Institute, 2015)
+Likelihood
+The chance of something happening whether defined, measured or determined objectively or subjectively, 
+qualitatively or quantitatively and described using general terms or mathematically. (Standards Australia/
+Standards New Zealand Standard Committee, 2009)
+Mitigation
+Measures taken in advance of a disaster aimed at decreasing or eliminating its impact on society and the 
+environment. (Australian Emergency Management Institute, 2015)
+Monitoring
+Continual checking, supervising, critically observing or determining the status to identify change from the 
+performance level required or expected. Monitoring can be applied to a risk management framework, risk 
+management process, risk or control. (Australian Emergency Management Institute, 2015)
+Natural hazards
+Those which are predominantly associated with natural processes and phenomena. (United Nations Office 
+for Disaster Risk Reduction, 2017)
+
+--- Página 50 ---
+50
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Network
+A group or system of interconnected people or things. (Australian Emergency Management Institute, 2015)
+Node
+A point in a network at which lines or pathways intersect or branch. (Australian Emergency Management 
+Institute, 2015)
+Preparedness
+Arrangements to ensure that, should an emergency occur, all the resources and services that are needed 
+to cope with the effects can be efficiently mobilised and deployed. (Australian Emergency Management 
+Institute, 2015)
+Redundancy
+Additional or alternative systems, sub-systems, assets, or processes that maintain a degree of overall 
+functionality in case of loss or failure of another system, subsystem, asset, or process. (United Nations 
+Office for Disaster Risk Reduction)
+Residual risk
+The risk that remains in unmanaged form, even when effective disaster risk reduction measures are in 
+place, and for which emergency response and recovery capacities must be maintained. (United Nations 
+Office for Disaster Risk Reduction, 2017)
+Resilience
+The ability of a system, community or society exposed to hazards to resist, absorb, accommodate, adapt 
+to, transform and recover from the effects of a hazard in a timely and efficient manner, including through 
+the preservation and restoration of its essential basic structures and functions through risk management. 
+(United Nations Office for Disaster Risk Reduction, 2017)
+Risk
+The concept of risk combines an understanding of the likelihood of a hazardous event occurring with an 
+assessment of its impact represented by interactions between hazards, elements at risk and vulnerability. 
+(Geoscience Australia) 
+The effect of uncertainty on objectives. (Standards Australia/Standards New Zealand Standard Committee, 
+2009)  
+Risk assessment
+An approach to determine the nature and extent of risk by analysing potential hazards and evaluating 
+existing conditions of vulnerability that together could potentially harm exposed people, property, services, 
+livelihoods and the environment on which they depend. (United Nations Office for Disaster Risk Reduction, 
+2015)
+Risk control
+The implementation and enforcement of actions to control risk, and the periodic re-evaluation of the 
+effectiveness of these actions. (Australian Emergency Management Institute, 2015)
+Risk description
+Structured statement of risk usually containing five elements: sources, events, causes, vulnerability and 
+consequences. (Australian Emergency Management Institute, 2015)
+
+--- Página 51 ---
+51
+Queensland Emergency Risk Management
+Risk evaluation
+The stage at which values and judgment enter the decision process, explicitly or implicitly, by including 
+consideration of the importance of the estimated risks and the associated social, environmental and 
+economic consequences, in order to identify a range of alternatives for managing the risks. (Australian 
+Emergency Management Institute, 2015)
+Risk identification
+The process of finding, recognising and describing risks. Risk identification involves the identification of 
+risk sources, events, their causes and their potential consequences. Risk identification can involve [the use 
+of] historical data, theoretical analysis, informed and expert opinions and stakeholders’ needs. (Australian 
+Emergency Management Institute, 2015)
+Risk management
+The systematic application of management policies, procedures and practices to the tasks of identifying, 
+analysing, assessing, mitigating and monitoring risk. (Australian Emergency Management Institute, 2015)
+Risk management framework
+A set of components that provide the foundations and organisational arrangements for designing, 
+implementing, monitoring, reviewing and continually improving risk management throughout the 
+organisation. (Australian Emergency Management Institute, 2015)
+Risk Register
+A table, list or other representation of risk statements describing sources of risk and elements at risk with 
+assigned consequences, likelihoods and levels of risk. Risk registers are produced by risk assessment 
+processes, summarising the outputs of these processes to inform decision making about risks. Risk 
+registers record the identification, analysis and evaluation of emergency risks. (Australian Emergency 
+Management Institute, 2015)
+Risk source
+An element which, alone or in combination, has the intrinsic potential to give rise to risk. A risk source can 
+be tangible or intangible. (Australian Emergency Management Institute, 2015)
+Risk tolerance
+An organisation’s (or jurisdiction’s) or stakeholder’s readiness to bear the risk, after risk treatment, to 
+achieve its objectives. Risk tolerance can be influenced by legal or regulatory requirements. (Australian 
+Emergency Management Institute, 2015)
+Socionatural hazards
+Those associated with a combination of natural and anthropogenic factors, including environmental 
+degradation and climate change. (United Nations Office for Disaster Risk Reduction, 2017)
+System
+A set of things working together as parts of an interconnecting network; a complex whole. (Australian 
+Emergency Management Institute, 2015)
+Vulnerability
+The characteristics and circumstances of a community, system or asset that make it susceptible to the 
+damaging effects of a hazard. (United Nations Office for Disaster Risk Reduction)
+
+--- Página 52 ---
+52
+Queensland Emergency Risk Management Framework (QERMF) Risk Assessment Process Handbook
+Bibliography
+Australian Defence Force. (2012). Defence Capability Development Handbook. 
+Australian Emergency Management Institute. (2015). National Emergency Risk Assessment Guidelines. 
+Canberra: Australian Government Attorney-General’s Department.
+Deloitte & Touche. (October 2012). Risk Assessment in Practice. Committee of Sponsoring Organisations of 
+the Treadway Commission.
+Geoscience Australia. (2007). Natural Hazards in Australia: Identifying Risk Analysis Requirements. 
+Global Facility for Disaster Reduction and Recovery (GFDRR). (2015). Understanding Risk in an Evolving 
+World. Emerging Best Practice in Natural Disaster Risk Assessment.
+Inspector-General Emergency Management. (2014). Emergency Management Assurance Framework. 
+Brisbane: State of Queensland.
+Middlemann, M. H. (2007). Natural Hazards in Australia. Identifying Risk Analysis Requirements. Canberra: 
+Geoscience Australia.
+Productivity Commission. (2014). Natural Disaster Funding Arrangements, Inquiry Report no. 74, Vol 1 & 2. 
+Canberra: Commonwealth of Australia.
+Queensland Disaster Management Committee. (May 2015). Queensland State Disaster Management Plan. 
+Queensland Parliament. (October 2014). Disaster Management Act 2003. Queensland. Retrieved from 
+https://www.legislation.qld.gov.au/leGIsltn/CUrrent/D/DisastmanA03.pdf
+Queensland Treasury. (July 2011). A Guide to Risk Management. Brisbane: Queensland Government.
+Risk Frontiers. (April 2011). State-wide Natural Hazard Risk Assessment. Report 2: Historical analysis 
+of natural hazard building loses, fatalities and expenditure for Queensland. Brisbane: Department of 
+Community Safety.
+Risk Frontiers. (February 2013). A Review of Best Practice in Natural Disaster Risk Registers and Risk 
+Assessment. Brisbane: Department of Community Safety.
+Risk Frontiers. (February 2013). Queensland Natural Disaster Risk Register Framework. Brisbane: 
+Queensland Department of Community Safety.
+Risk Frontiers. (February 2013). Queensland Natural Disaster Risk Register Guideline. Brisbane: Department 
+of Community Safety.
+Risk Frontiers. (February 2013). Queensland Natural Disaster Risk Register Tools. Brisbane: Department of 
+Community Safety.
+Risk Frontiers. (February 2013). Review of Disaster Management Policies and Legislation Relevant to Risk 
+Registers in Queensland. Brisbane: Department of Community Safety.
+Risk Frontiers. (October 2012). Historical analysis of natural hazard building losses and fatalities for 
+Queensland 1900-2011. Department of Community Safety.
+Standards Australia/Standards New Zealand Standard Committee. (2006).  
+HB 167:2006 Security Risk Management. 
+Standards Australia/Standards New Zealand Standard Committee. (November 2009).  
+AS/NZS ISO31000:2009, Risk Management-Principles and Guidelines. 
+United Nations Office for Disaster Risk Reduction. (2015, August). Background Paper Proposed 
+Updated Terminology on Disaster Risk Reduction. Retrieved September 14, 2015, from United 
+Nations Office for Disaster Risk Reduction: http://www.preventionweb.net/files/45462_
+backgoundpaperonterminologyaugust20.pdf
+United Nations Office for Disaster Risk Reduction. (2015). Sendai Framework for Disaster Risk Reduction 
+2015-2030. United Nations.
+
+--- Página 53 ---
+53
+Queensland Emergency Risk Management
+The Licence
+© State of Queensland (Queensland Fire and Emergency Services) 2018
+The Queensland Government, acting through the Queensland Fire and Emergency Services, supports 
+and encourages the dissemination and exchange of publicly funded information and endorses the use of 
+Creative Commons Australia.
+All Queensland Fire and Emergency Services material in this document – except the QFES logos, any 
+material protected by a trademark, and unless otherwise noted – is licensed under a 
+http://creativecommons.org/licenses/by-nd/4.0/legalcode
+The Queensland Fire and Emergency Services has undertaken reasonable enquiries to identify material 
+owned by third parties and secure permission for its reproduction. Permission may need to be obtained 
+from third parties to re-use their material. 
+Written requests relating to the copyright in this document should be addressed to:
+	
+	
+Intellectual Property Coordinator
+	
+	
+For Queensland Fire and Emergency Services
+	
+	
+C/o QPS Legal Unit, Legal Division	
+	
+	
+Queensland Police Service
+	
+	
+GPO Box 1440, Brisbane 4001
+	
+	
+PH: 07 3364 3958
+	
+	
+EM: QFES.IPCopyright@qfes.qld.gov.au
+Disclaimer
+To the extent possible under applicable law, the material in this document is supplied as-is and as-
+available, and makes no representations or warranties of any kind whether express, implied, statutory, 
+or otherwise. This includes, without limitation, warranties of title, merchantability, fitness for a particular 
+purpose, non-infringement, absence of latent or other defects, accuracy, or the presence or absence of 
+errors, whether or not known or discoverable. Where disclaimers of warranties are not allowed in full or in 
+part, this disclaimer may not apply.
+To the extent possible under applicable law, neither the Queensland Government or the Queensland Fire 
+and Emergency Services will be liable to you on any legal ground (including, without limitation, negligence) 
+or otherwise for any direct, special, indirect, incidental, consequential, punitive, exemplary, or other losses, 
+costs, expenses, or damages arising out of the use of the material in this document.  Where a limitation of 
+liability is not allowed in full or in part, this limitation may not apply.
+

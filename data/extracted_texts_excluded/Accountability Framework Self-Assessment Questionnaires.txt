@@ -1,0 +1,656 @@
+=== Accountability Framework Self-Assessment Questionnaires.pdf ===
+
+--- Página 1 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+1 
+ 
+Malaysian Accountability Framework Self-Assessment Questionnaires 
+What is the accountability framework self-assessment? 
+The accountability self-assessment will help you to assess the extent to which your organisation is 
+currently meeting expectations in relation to accountability. 
+If you think you would benefit from a more detailed analysis and specific assurance rating, you can 
+ask us to conduct an audit. 
+How to use the self-assessment 
+The self-assessment will take about 50 minutes to complete. You cannot save your progress so it all 
+needs to be completed at the same time. 
+You will see a series of statements that reflect the expectations. You need to assess whether you are 
+meeting, partially meeting or not meeting this expectation. 
+I am likely to be meeting 
+this expectation 
+You are meeting the expectation in all the ways listed in the accountability 
+framework that are relevant to your organisation, or you are meeting the 
+expectation fully in other appropriate ways. 
+I am likely to be partially 
+meeting this expectation 
+You are meeting the expectation in some of the ways listed in the accountability 
+framework that are relevant to your organisation, or you are partially meeting 
+the expectation in other appropriate ways. 
+I am not likely to be 
+meeting this expectation 
+You are not meeting our expectation in any of the ways listed in the 
+accountability framework and you are not meeting the expectation in any other 
+appropriate ways. 
+This is not relevant to my 
+organisation 
+After considering your circumstances, processing activities and risk, you do not 
+think the expectation is relevant to your organisation. 
+At the end of the self-assessment, you will receive a report indicating where you have stated you are 
+meeting, partially meeting or not meeting our expectations. You can use this report to help you 
+determine the next steps your organisation needs to take in order to comply with the accountability 
+principle and to track your progress over time. 
+You can use this report to: 
+• 
+understand your current level of compliance; 
+• 
+record the next steps to take to improve your accountability; and 
+• 
+to communicate what you need from appropriate individuals in your organisation, such as senior 
+management. For example, more resources or training.
+
+--- Página 2 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+2 
+ 
+Step One Of Ten: Leadership and Oversight 
+1.1 There is an organisational structure for managing data protection and information governance, 
+which provides strong leadership and oversight, clear reporting lines and responsibilities, and 
+effective information flows. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+1.2 Is your organisation required to appoint a Data Protection Officer under Article 37 of the General 
+Data Protection Regulations (GDPR)? * 
+Yes 
+No 
+Not sure 
+1.5  Your organisation's operational roles support the practical implementation of data protection 
+and information governance * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+1.6  An oversight group provides direction and guidance across your organisation for data protection 
+and information governance activities. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 3 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+3 
+ 
+1.7  In your organisation, operational level groups meet to discuss and coordinate data protection 
+and information governance activities. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 4 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+4 
+ 
+Step Two Of Ten: Policies and Procedures 
+2.1  Your organisation's policies and procedures provide your staff with enough direction to 
+understand their roles and responsibilities regarding data protection and information 
+governance. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+2.2 You have a review and approval process to make sure that policies and procedures are 
+consistent and effective. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+2.3  Staff are fully aware of the data protection and information governance policies and procedures 
+that are relevant to their role. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+2.4  Your policies and procedures foster a 'data protection by design and by default' approach across 
+your organisation. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 5 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+5 
+ 
+Step Three Of Ten: Training and Awareness 
+3.1  You have an all-staff data protection and information governance training programme * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+3.2  Your training programme includes induction and refresher training for all staff on data 
+protection and information governance. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+3.3  Specialised roles or functions with key data protection responsibilities (such as DPOs, subject 
+access and records management teams) receive additional training and professional 
+development beyond the basic level provided to all staff. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+3.4  Your organisation can demonstrate that staff understand the training. You verify their 
+understanding and monitor it appropriately. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 6 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+6 
+ 
+3.5  You regularly raise awareness across your organisation of data protection, information 
+governance and associated policies and procedures in meetings or staff forums. You make it 
+easy for staff to access relevant material. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 7 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+7 
+ 
+Step Four Of Ten: Individuals Rights 
+4.1  You inform individuals about their rights and all staff are aware of how to identify and deal with 
+both verbal and written requests. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+4.2  You have appropriate resources in place to handle requests from individuals about their 
+personal data. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+4.3  Your organisation logs receipt of all verbal and written requests from individuals and updates 
+the log to track the handling of each request. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+4.4  You deal with requests from individuals in a timely manner that meets individual expectations 
+and statutory timescales. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 8 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+8 
+ 
+4.5  Your organisation monitors how your staff handle requests and you use that information to 
+make improvements. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+4.6  Your organisation has appropriate systems and procedures to change inaccurate information, 
+add additional information to incomplete records or add a supplementary statement where 
+necessary. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+4.7  You have appropriate methods and procedures in place within your organisation to erase, 
+suppress or otherwise stop processing personal data if required. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+4.8  Your organisation has appropriate methods and procedures in place to restrict the processing of 
+personal data if required. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 9 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+9 
+ 
+4.9  Individuals are able to move, copy or transfer their personal data from your organisation to 
+another securely, without affecting the data. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+4.10 Your organisation can protect individual rights related to automated decision-making and 
+profiling, particularly where the processing is solely automated with legal or similarly significant 
+effects. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+4.11 Your organisation has procedures to recognise and respond to individuals' complaints about 
+data protection, and individuals are made aware of their right to complain. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 10 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+10 
+ 
+Step Five Of Ten: Transparency 
+5.1  Your organisation's privacy information or notice includes all the information required under 
+Articles 13 and 14 of the GDPR. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+ More information 
+5.2  You have a recorded procedure to make sure that privacy information is provided to individuals 
+at the right time, unless an exemption applies. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+5.3  Your organisation provides privacy information to individuals that is: concise; transparent; 
+intelligible; clear; uses plain language; and communicated in a way that is effective for the 
+target audience. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+5.4  Your organisation is transparent about any processing relating to automated decision-making 
+and profiling * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+5.5  Your organisation can demonstrate that any member of front-line staff is able to explain the 
+necessary privacy information to individuals and provide guidance to them. *
+
+--- Página 11 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+11 
+ 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+5.6  Your organisation has procedures to review the privacy information provided to individuals 
+regularly to make sure that it is accurate, up-to-date and effective. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+5.7  You are open about how you use personal data, and offer tools to support transparency and 
+control, especially when processing children’s personal data. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 12 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+12 
+ 
+Step Six Of Ten: Records of Processing And Lawful Basis 
+6.1 Your organisation frequently carries out comprehensive data mapping exercises, providing a 
+clear understanding of what information is held and where. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+6.2 Your organisation has a formal, documented, comprehensive and accurate Record of Processing 
+Activities (ROPA) based on a data mapping exercise, that is reviewed regularly. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+6.3 Your ROPA contains all the relevant requirements set out in Article 30 of the GDPR. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+More information 
+6.4 Your organisation's ROPA includes links to other relevant documentation as a matter of good 
+practice. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+More information
+
+--- Página 13 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+13 
+ 
+6.5 You document and appropriately justify your organisation's lawful basis for processing personal 
+data in line with Article 6 of the GDPR (and Articles 9 and 10, if the processing involves special 
+category or criminal offence data). * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+6.6 You make information about the purpose of the processing and the lawful basis publicly 
+available. This is easy to locate, access and read. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+6.7 Does your organisation rely on consent for the processing of personal data? * 
+Yes 
+No 
+Not sure 
+More information on consent 
+6.9 You proactively review records of previously gathered consent, which demonstrates a 
+commitment to confirming and refreshing the consents. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 14 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+14 
+ 
+6.10 Your organisation has effective systems in place to conduct risk-based age checks and, where 
+required, to obtain and record parental or guardian consent. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+6.11 Does your organisation rely on legitimate interest for the processing of personal data? * 
+Yes 
+No 
+Not sure
+
+--- Página 15 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+15 
+ 
+Step Seven Of Ten: Contracts and Data Sharing 
+7.1  Your organisation's policies and procedures make sure that you appropriately manage data 
+sharing decisions. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+7.2  You arrange and regularly review appropriate data sharing agreements with parties with whom 
+you regularly share personal data. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+7.3  Your organisation has procedures in place to make sure that restricted transfers are made 
+appropriately. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+7.4  You have appropriate procedures in place regarding the work that processors do on your 
+behalf. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 16 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+16 
+ 
+7.5  All of your controller-processor contracts cover the terms and clauses necessary to comply with 
+data protection law. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+7.6  You carry out due diligence checks to guarantee that processors will implement appropriate 
+technical and organisational measures to meet GDPR requirements. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+7.7  Your organisation reviews data processors' compliance with their contracts. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+7.8  Your organisation considers 'data protection by design' when selecting services and products to 
+use in data processing activities. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 17 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+17 
+ 
+7.9  Your organisation proactively takes steps to only share necessary personal data with processors 
+or other third parties. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 18 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+18 
+ 
+Step Eight Of Ten: Risks and Data Protection Impact Assessments 
+8.1  Your organisation has appropriate policies, procedures and measures to identify, record and 
+manage information risks. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+8.2  You take a 'data protection by design and by default' approach to managing risks, and, as 
+appropriate, you build Data Protection Impact Assessment (DPIA) requirements into policies 
+and procedures. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+8.3  You understand whether a DPIA is required, or where it would be good practice to do one. 
+There is a clear DPIA policy and procedure. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+8.4  DPIAs always include the appropriate information and are comprehensively documented. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 19 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+19 
+ 
+8.5  You take appropriate and effective action to mitigate or manage any risks a DPIA identifies, and 
+you have a DPIA review process. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 20 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+20 
+ 
+Step Nine Of Ten: Records Management and Security 
+9.1  You have minimum standards for the creation of records and effective mechanisms to locate 
+and retrieve them. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+9.2  You have appropriate security measures in place to protect data that is in transit, data you 
+receive or transfer to another organisation. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+9.3  You have procedures in place to make sure that records containing personal data are accurate, 
+adequate and not excessive. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+9.4  You have an appropriate retention schedule outlining storage period for all personal data, 
+which you review regularly. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 21 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+21 
+ 
+9.5 You cover methods of destruction in a policy and they are appropriate to prevent disclosure of 
+personal data prior to, during or after disposal. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+9.6  You have an asset register those records assets, systems and applications used for processing or 
+storing personal data across your organisation. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+9.7  You identify, document and implement rules for the acceptable use of software (systems or 
+applications) processing or storing information. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+9.8  You limit access to personal data to authorised staff only and regularly review users’ access 
+rights. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 22 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+22 
+ 
+9.9 You prevent unauthorised access to systems and applications. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+More information 
+9.10 You have appropriate mechanisms in place to manage the security risks of using mobile devices, 
+home or remote working and removable media. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+9.11 You secure physical business locations to prevent unauthorised access, damage and 
+interference to personal data. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+9.12 You have plans to deal with serious disruption, and you back up key systems, applications and 
+data to protect against loss of personal data. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 23 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+23 
+ 
+Step Ten Of Ten: Breach Response and Monitoring 
+10.1 You have procedures in place to make sure that you detect, manage and appropriately record 
+personal data incidents and breaches. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+10.2 You have procedures to assess all security incidents and then report relevant breaches to the 
+regulator within the statutory time frame. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+10.3 You have procedures to notify affected individuals where the breach is likely to result in a high 
+risk to their rights and freedoms. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+10.4 You review and monitor personal data breaches. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+
+--- Página 24 ---
+10 June 2022 
+© 2022 NT Business Consulting and Training  
+24 
+ 
+10.5 Your organisation has undertaken an external data protection and information governance 
+audit or other compliance checking procedure. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+10.6 Does your organisation have an internal audit programme? * 
+Yes 
+No 
+Don't know 
+10.8 Your organisation has business targets relating to data protection compliance and information 
+governance, and you can access the relevant information to assess against them. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation 
+10.9 All relevant management information and the outcomes of monitoring and review activity are 
+communicated to relevant internal stakeholders, including senior management as appropriate. 
+This information informs discussions and actions. * 
+I am likely to be meeting this expectation 
+I am likely to be partially meeting this expectation 
+I am not likely to be meeting this expectation 
+This is not relevant to my organisation
+

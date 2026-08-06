@@ -1,0 +1,774 @@
+=== DORA checklist 1.1.pdf ===
+
+--- Página 1 ---
+TLP:GREEN 
+EU DORA Implementation Checklist
+1.1, 21.10.2024
+ 
+TLP:GREEN 
+Andrey Prozorov, CISM, CIPP/E, CDPSE, LA 27001 
+www.patreon.com/AndreyProzorov || www.linkedin.com/in/AndreyProzorov 
+ 
+Company: 
+Date: 
+x 
+Topic 
+Tasks 
+Reference  
+Status 
+1. General 
+☐ 1.1. Requirements 
+and Guidelines 
+Collect 
+and 
+study 
+all 
+DORA-related 
+requirements (including Commission Delegated 
+Regulation), 
+ESAs’ 
+and 
+local 
+authorities’ 
+Technical 
+Standards, 
+Guidelines 
+& 
+Recommendations. Make and regularly review a 
+list of them. If necessary, take additional 
+training courses.  
+DORA, Technical 
+Standards, 
+Guidelines & 
+Recommendations 
+ 
+☐ 1.2. DORA Scope 
+Determine the boundaries and applicability of 
+the DORA to establish its scope (for financial 
+entities and ICT third-party service providers). 
+Check the references in Article 16, “Simplified 
+ICT risk management framework”. 
+DORA: art.2, 16.1 
+ 
+☐ 1.3. Proportionality 
+principle 
+Identify internal and external factors affecting 
+digital operational resilience, including company 
+size and overall risk profile, and the nature, 
+scale and complexity of services, activities and 
+operations. [Context] 
+DORA: art.4 
+ 
+☐ 1.4. Introductory 
+meeting 
+Organise an introductory meeting with the 
+Management Body. Make sure that the 
+Management Body is fully supportive and 
+committed, particularly in terms of allocating 
+the necessary resources required for the DORA 
+implementation. 
+DORA: art.5.2a, 
+5.2g, 5.4 
+ 
+☐ 1.5. Implementation 
+team and plan 
+Gather an implementation team. Create and 
+approve a DORA implementation plan and 
+project charter, if necessary. Conduct a kick-off 
+meeting. 
+DORA: art.5.2g 
+ 
+☐ 1.6. Document 
+Management 
+Define 
+the 
+necessary 
+requirements 
+for 
+managing DORA-related documentation and 
+prepare appropriate templates accordingly. 
+Additionally, create and maintain a register for 
+DORA-related documents and records. 
+DORA: art.6.1, 
+6.5, 8.1, 8.5 
+ 
+2. Internal Governance and Control Framework (IGCF) 
+☐ 2.1. Gap Analysis 
+(Governance) 
+Conduct a Gap analysis to understand the 
+current state of the IGCF. 
+Guidelines on 
+internal governance 
+(GIG) 
+ 
+☐ 2.2. Management 
+body 
+Describe (review) the information on the 
+structure, 
+organisation, 
+members 
+and 
+responsibilities of the management body. 
+DORA: art.5.2a,c 
+GIG: 230 d), e); 21 
+ 
+☐ 2.3. Committees  
+Establish a Risk committee, Audit committee 
+and 
+other 
+necessary 
+committee 
+(e.g., 
+Cybersecurity, Business Continuity, Privacy). 
+Collect agendas of committee meetings and 
+their main results and conclusions. 
+GIG: 230 f), 45, 60, 
+39 
+ 
+☐ 2.4. Code of 
+conduct 
+Document (review) Corporate values and Code 
+of conduct. 
+GIG: 97-102
+
+--- Página 2 ---
+TLP:GREEN 
+EU DORA Implementation Checklist
+1.1, 21.10.2024
+ 
+TLP:GREEN 
+Andrey Prozorov, CISM, CIPP/E, CDPSE, LA 27001 
+www.patreon.com/AndreyProzorov || www.linkedin.com/in/AndreyProzorov 
+ 
+☐ 2.5. Conflict of 
+interest policy 
+Implement (review) a Conflict of interest policy. 
+GIG: 230 g), 103-106, 
+117-128, 107-116  
+ 
+☐ 2.6. Risk 
+management 
+function (RMF) 
+Desing 
+and 
+implement 
+(review) 
+a 
+Risk 
+management function (RMF). 
+DORA: art.6.4  
+GIG: 149-159, 175-
+199 
+ 
+☐ 2.7. Compliance 
+function (CF) 
+Desing and implement (review) a Compliance 
+function (CF). 
+DORA: art.6.4 
+GIG: 200-209  
+ 
+☐ 2.8. Internal audit 
+function (IAF) 
+Desing and implement (review) an Internal 
+audit function (IAF). 
+Plan, establish, implement, and maintain an 
+audit programme to evaluate the effectiveness 
+of the ICT RMF. Conduct internal audits of the 
+ICT RMF to identify any potential areas of 
+weakness or non-compliance. 
+Develop 
+a 
+procedure 
+for 
+Nonconformity 
+Management along with a register and related 
+templates. 
+DORA: art.5.2f, 
+6.4, 6.6, 6.7 
+GIG: 210-220  
+ 
+☐ 2.9. Internal alert 
+procedures 
+Implement (review) an Internal alert policies 
+and procedures for staff to report potential or 
+actual breaches of regulatory or internal 
+requirements. 
+GIG: 129-135, 136-
+137  
+ 
+☐ 2.10. New product 
+approval policy 
+Develop (review) a new product approval policy 
+(NPAP). 
+GIG: 160-165  
+ 
+☐ 2.11. Business 
+continuity 
+function (BCF) 
+Desing and implement a Business continuity 
+function (BCF). 
+GIG: 230 i), 221-226  
+ 
+☐ 2.12. Executive 
+training 
+Conduct regular training for the management 
+body to improve knowledge and skills in 
+understanding of ICT risks. 
+DORA: art.5.4 
+ 
+☐ 2.13. Support 
+Allocate and periodically review the appropriate 
+budget to fulfil digital operational resilience. 
+DORA: art.5.2g, 
+13.1 
+ 
+3. ICT risk management framework (ICT RMF) 
+Design 
+☐ 3.1. Gap Analysis  
+(ICT RMF) 
+Conduct a Gap analysis to understand the 
+current state of the ICT RMF. 
+RTS on ICT risk 
+management 
+framework / 
+Commission 
+Delegated 
+Regulation (EU) 
+2024/1774 
+ 
+☐ 3.2. ICT strategy 
+Establish an ICT strategy. 
+DORA: art.6.8d 
+Guidelines on ICT and 
+security risk 
+management (3.2.2) 
+ 
+☐ 3.3. Digital 
+operational 
+resilience 
+strategy 
+Plan and Design the ICT RMF. Establish a Digital 
+operational resilience strategy, align it with the 
+ICT strategy. 
+DORA: art.5.2d, 
+6.8, 13.4, 8.1 
+RTS on ICT risk 
+management 
+framework / 
+Commission Delegated 
+Regulation (EU) 
+2024/1774
+
+--- Página 3 ---
+TLP:GREEN 
+EU DORA Implementation Checklist
+1.1, 21.10.2024
+ 
+TLP:GREEN 
+Andrey Prozorov, CISM, CIPP/E, CDPSE, LA 27001 
+www.patreon.com/AndreyProzorov || www.linkedin.com/in/AndreyProzorov 
+ 
+Guidelines on ICT Risk 
+Assessment under the 
+SREP 
+Guidelines on ICT and 
+security risk 
+management 
+☐ 3.4. ICT Risk 
+management 
+methodology 
+Define ICT Risk management methodology, 
+align it with the general risk management 
+approach. 
+DORA: art.8.2, 
+8.3 
+ 
+ 
+Identification  
+☐ 3.5. Roles and 
+responsibilities 
+Document roles and responsibilities. 
+DORA: art.8.1, 
+8.6 
+ 
+ 
+3.6. Asset inventory 
+Define asset management policy. Identify, 
+classify and adequately document all ICT 
+supported business functions, the information 
+assets and ICT assets supporting those 
+functions. Annually review and update. 
+DORA: art.8.1, 
+8.4, 8.6 
+Guidelines on 
+necessary services 
+ 
+☐ 3.7. External 
+services 
+Identify and document all processes that are 
+dependent on ICT third-party service providers. 
+DORA: 8.5, 8.6 
+RTS to specify 
+elements when sub-
+contracting critical or 
+important functions 
+ 
+☐ 3.8. ICT Risk 
+assessment 
+Conduct ICT Risk identification and assessment. DORA: art.8.2, 
+8.3, 18.2, 13.3 
+ 
+☐ 3.9. ICT risk 
+assessment on 
+legacy ICT 
+systems  
+Annually conduct a specific ICT risk assessment 
+on all legacy ICT systems and, in any case 
+before and after connecting technologies, 
+applications or systems.  
+DORA: art.8.7 
+ 
+Protection and prevention  
+☐ 3.10. ICT security 
+Design, procure and implement ICT security 
+policies, procedures, protocols and tools that 
+aim to ensure the resilience, continuity and 
+availability of ICT systems. 
+Document a Statement of Applicability (SoA), if 
+needed. 
+DORA: art.7, 9.2, 
+9.3, 9.4 
+ 
+☐ 3.11. Monitor and 
+control 
+Organise continuously monitoring and control of 
+the security and functioning of ICT systems. 
+DORA: art.9.1 
+ 
+Detection  
+☐ 3.12. Monitoring 
+Implement ad regularly test mechanisms to 
+promptly detect anomalous activities, including 
+ICT network performance issues and ICT-
+related incidents, and to identify potential 
+material single points of failure. Integrate the 
+triggers with the incident management process.  
+DORA: art.10 
+ 
+Response and recovery  
+☐ 3.13. ICT business 
+continuity 
+policy 
+Establish an ICT business continuity policy. 
+Determine recovery time and recovery point 
+objectives and include them in the SLAs/OLAs. 
+DORA: art.11.1, 
+11.2, 12.6 
+ 
+☐ 3.14. ICT response 
+and recovery 
+plans 
+Implement ICT response and recovery plans. 
+DORA: art.11.3, 
+12.7
+
+--- Página 4 ---
+TLP:GREEN 
+EU DORA Implementation Checklist
+1.1, 21.10.2024
+ 
+TLP:GREEN 
+Andrey Prozorov, CISM, CIPP/E, CDPSE, LA 27001 
+www.patreon.com/AndreyProzorov || www.linkedin.com/in/AndreyProzorov 
+ 
+☐ 3.15. Testing the 
+plans 
+Regularly review and test ICT business 
+continuity policy, ICT business continuity plans 
+and crisis communication plans.  
+Be ready to provide the copies of results to the 
+competent authority. 
+DORA: art.11.3, 
+11.4, 11.6, 11.9 
+ 
+☐ 3.16. Business 
+impact analysis 
+(BIA) 
+Conduct a business impact analysis (BIA). 
+ 
+DORA: art.11.5 
+ 
+☐ 3.17. Crisis 
+management 
+Design and implement a crisis management 
+function, including crisis communications. 
+DORA: art.11.7, 
+11.8 
+ 
+☐ 3.18. Backup and 
+recovery 
+Develop and document backup and recovery 
+policies and procedures. Regularly review and 
+test them. 
+DORA: art.12.1-
+12.3 
+ 
+☐ 3.19. Redundancy 
+Design 
+and 
+implement 
+redundant 
+ICT 
+capacities. 
+DORA: art.12.4-
+12.5 
+ 
+Learning and Communication 
+☐ 3.20. Threat 
+intelligence 
+Have in place capabilities and staff to gather 
+information on vulnerabilities and cyber threats, 
+ICT- related incidents, in particular cyber-
+attacks, and analyse the impact they are likely 
+to have on their digital operational resilience. 
+DORA: art.13.1, 
+13.7 
+ 
+☐ 3.21. Monitoring and 
+measurement 
+Determine the essential metrics and key 
+performance indicators (KPIs) related to the 
+digital operational resilience, then collect, 
+analyze, and evaluate them regularly. 
+DORA: art.13.4, 
+13.5, 13.7 
+ 
+☐ 3.22. Awareness 
+Develop ICT security awareness programmes 
+and conduct digital operational resilience 
+training. 
+DORA: art.13.6 
+ 
+☐ 3.23. Crisis 
+communication 
+plans  
+Prepare crisis communication plans to notify to 
+clients and counterparts in case of major ICT-
+related incidents or vulnerabilities. 
+DORA: art.14.1 
+ 
+☐ 3.24. Communication 
+policy 
+Implement communication policies for internal 
+staff 
+and 
+for 
+external 
+stakeholders. 
+Communication policies for staff shall take into 
+account the need to differentiate between staff 
+involved in ICT risk management, in particular 
+the staff responsible for response and recovery, 
+and staff that needs to be informed. 
+DORA: art.14.2, 
+5.2i 
+ 
+☐ 3.25. Communication 
+strategy for 
+ICT- related 
+incidents  
+Implement a communication strategy for ICT- 
+related incidents, including the co-operation 
+with public and media. 
+DORA: art.14.3
+
+--- Página 5 ---
+TLP:GREEN 
+EU DORA Implementation Checklist
+1.1, 21.10.2024
+ 
+TLP:GREEN 
+Andrey Prozorov, CISM, CIPP/E, CDPSE, LA 27001 
+www.patreon.com/AndreyProzorov || www.linkedin.com/in/AndreyProzorov 
+ 
+4. ICT-related incident management, classification and reporting  
+☐ 4.1. Incident 
+management 
+process 
+Define, establish and implement an ICT-related 
+incident management process, including root 
+causes analysis and post incident review. 
+DORA: art.17.1-
+17.3, 18.1, 23, 
+13.2 
+RTS on criteria for the 
+classification of major 
+ICT- related incidents 
+ 
+☐ 4.2. Incident 
+notification 
+Define, establish and implement a process to 
+report major ICT-related incidents to the 
+relevant competent authority and affected 
+client.  
+Be ready to communicate to the competent 
+authorities upon request, the changes that were 
+implemented following post ICT-related incident 
+reviews. 
+DORA: 19.1, 19.2, 
+19.4, 19.5, 13.2 
+ITS to establish the 
+forms, templates and 
+procedures for major 
+ICT-related incident 
+reporting 
+RTS on specifying the 
+content and reporting 
+timelines for major 
+ICT- related incidents 
+ 
+☐ 4.3. Annual costs 
+and losses 
+Be ready to report to the competent authorities, 
+upon their request, an estimation of aggregated 
+annual costs and losses caused by major ICT-
+related incidents. 
+ 
+DORA: art.11.10 
+Guidelines on the 
+estimation of 
+aggregated annual 
+costs and losses 
+caused by major ICT-
+related incidents 
+ 
+5. Digital operational resilience testing (DORT) 
+☐ 5.1. DORT 
+programme 
+Establish and maintain a digital operational 
+resilience testing programme.  
+DORA: art.24.1-
+24.5, 25.1, 25.3, 
+26, 27 
+ 
+☐ 5.2. Annual tests 
+Annually conduct appropriate tests of all ICT 
+systems and applications supporting critical or 
+important functions. 
+DORA: art.24.6 
+ 
+☐ 5.3. Vulnerability 
+assessments 
+Conduct vulnerability assessments before any 
+deployment or redeployment of new or existing 
+applications and infrastructure components, 
+and ICT services supporting critical or important 
+functions of the financial entity. 
+DORA: art.25.2 
+ 
+☐ 5.4. Threat-led 
+penetration 
+test (TLPT) 
+Conduct regular (at least every 3 years) threat-
+led penetration tests. Be ready to provide to the 
+authority a summary of the relevant findings, 
+the remediation plans and the documentation 
+demonstrating that the TLPT has been 
+conducted in accordance with the requirements. 
+Get an attestation confirming that the test was 
+performed. 
+DORA: art.26-27 
+RTS to specify threat 
+led penetration testing
+
+--- Página 6 ---
+TLP:GREEN 
+EU DORA Implementation Checklist
+1.1, 21.10.2024
+ 
+TLP:GREEN 
+Andrey Prozorov, CISM, CIPP/E, CDPSE, LA 27001 
+www.patreon.com/AndreyProzorov || www.linkedin.com/in/AndreyProzorov 
+ 
+6. Managing of ICT third-party risk (ICT TPRM) 
+☐ 6.1. TPRM Strategy 
+and Policy 
+Establish a Strategy on ICT third-party risk, 
+including a Policy on the use of ICT services 
+supporting critical or important functions. 
+Define the classification of third parties. 
+Define the approach to audits and inspections.  
+DORA: art.28.1, 
+28.2, 28.6 
+RTS to specify the 
+policy on ICT services  
+Guidelines on 
+outsourcing 
+arrangements 
+ 
+☐ 6.2. Register of 
+contractual 
+arrangements  
+Fill in and maintain a register of contractual 
+arrangements on the use of ICT services 
+provided by ICT third-party service providers. 
+Communicate with the local authority to take 
+part in the Dry Run, if needed. 
+DORA: art.28.3 
+TS to establish the 
+templates for the 
+Register of information 
+Guidelines on 
+outsourcing 
+arrangements 
+ 
+☐ 6.3. Notifying the 
+authority about 
+service 
+providers 
+Be ready to report at least yearly to the 
+competent authorities on the number of new 
+arrangements on the use of ICT services, the 
+categories of ICT third-party service providers, 
+the type of contractual arrangements and the 
+ICT services and functions which are being 
+provided. Be ready to provide the full register. 
+Inform the competent authority in a timely 
+manner 
+about 
+any 
+planned 
+contractual 
+arrangement on the use of ICT services 
+supporting critical or important functions as well 
+as when a function has become critical or 
+important. 
+DORA: art.28.3 
+ 
+☐ 6.4. Contractual 
+agreements 
+Ensure that the contractual agreements contain 
+the necessary provisions. Create templates and 
+checklists. Integrate checks into the purchasing 
+process. Review the current contracts. 
+DORA: art.28.3-
+28.8, 29, 30 
+RTS to specify 
+elements when sub-
+contracting critical or 
+important functions 
+ 
+☐ 6.5. Exit strategies 
+Prepare exit strategies for ICT services 
+supporting critical or important function. 
+DORA: art.28.8 
+ 
+☐ 6.6. Due Diligence 
+Integrate an extended Due Diligence procedure 
+into the purchasing process. Identify and assess 
+risks.  
+DORA: art.28.4, 
+28.5, 29.1 
+ 
+☐ 6.7. Third-party risk 
+review by the 
+management 
+body 
+Regularly review the risks identified in respect 
+to contractual arrangements on the use of ICT 
+services 
+supporting 
+critical 
+or 
+important 
+functions. 
+DORA: art.28.2 
+ 
+☐ 6.8. Monitoring of 
+the contractual 
+arrangements  
+Monitor, on an ongoing basis, the ICT third- 
+party service provider’s performance. 
+RTS to specify the 
+policy on ICT services
+
+--- Página 7 ---
+TLP:GREEN 
+EU DORA Implementation Checklist
+1.1, 21.10.2024
+ 
+TLP:GREEN 
+Andrey Prozorov, CISM, CIPP/E, CDPSE, LA 27001 
+www.patreon.com/AndreyProzorov || www.linkedin.com/in/AndreyProzorov 
+ 
+7. Information-sharing arrangements 
+☐ 7.1. Threat 
+information 
+exchange 
+Exchange 
+cyber 
+threat 
+information 
+and 
+intelligence 
+with 
+other 
+financial 
+entities, 
+authorities and CSIRTs, on a voluntary basis. 
+Document information-sharing arrangements if 
+needed.  
+Notify the competent authorities of the 
+participation 
+in 
+the 
+information-sharing 
+arrangements (e.g., membership). 
+DORA: art.45, 
+19.2 
+ 
+ 
+8. Final tasks 
+☐ 8.1. ICT RMF 
+review 
+Annually review the ICT RMF. Be ready to 
+submit a report to the competent authority 
+upon its request.  
+DORA: art.6.5, 
+13.4, 13.5 
+ 
+ 
+☐ 8.2. Final gap-
+analysis 
+Conduct a final compliance check. 
+DORA: art.25.1 
+ 
+☐ 8.3. Continual 
+improvement 
+Continually improve the suitability, adequacy 
+and effectiveness of the ICT RMF. React to the 
+nonconformity, implement any action needed, 
+review the effectiveness of any corrective action 
+taken and make changes to the ICT RMF, if 
+necessary. 
+Collect evidence of the results of any corrective 
+action. 
+DORA: art.6.5, 
+13.3, 13.4, 24.5 
+ 
+ 
+ 
+Statuses: 
+Not Applicable 
+To Do 
+In progress (MI) 
+[Minimally implemented, 30%] 
+In progress (PI) 
+[Partially Implemented, 70%] 
+Done 
+ 
+ 
+ 
+More DORA-related documents and recommendations - 
+https://www.patreon.com/collection/470971
+

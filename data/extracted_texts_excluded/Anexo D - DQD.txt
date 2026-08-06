@@ -1,0 +1,214 @@
+=== Anexo D - DQD.pdf ===
+
+--- Página 1 ---
+ANEXO D  (DQD)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES DQD OPERADAS POR EL CROM 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+P.S. La Perla de 
+Chaco 
+25 
+Fotovoltaica 
+XX/XX/2025 
+Huawei 
+BLC 
+BLC
+
+--- Página 2 ---
+ANEXO D  (DQD)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Descripcion de Parque Solar La Perla de Chaco: 
+ 
+El proyecto presente, identificado como parque solar La Perla de Chaco de 25 MW (Agente: ; Central: ; Grupo: 
+), es un proyecto en el cual CROM monitorea la operacion del parque en el SADI, producira energia electrica 
+a partir de la captacion y transformacion de la energia proveniente del sol, la planta consta de una potencia 
+instalada de 27,8 MW a partir de 40.339 paneles fotovoltaicos de silicio bifaciales, hay 3 modelos instalados, 
+TRINASOLAR modelo VERTEX N 695 Wp - TRINASOLAR modelo VERTEX N 700 Wp. - TRINASOLAR modelo 
+VERTEX N 705 Wp. 
+Tiene 4 Centros de Transformacion Huawei JUPITER-9000K-H1 y 120 Inversores Huawei SUN2000-330KTL-
+H1 de 315 KW. 
+La energia sera inyectada en el Sistema Argentino de Interconexion (SADI) en el marco MATER, en la ET de 
+Villa Angela, propiedad de SECHEEP (Servicios Energeticos del Chaco Empresa del Estado Provincial). 
+ 
+La Perla de Chaco, se encuentra a 170Km de Resistencia y a 3 km de la Ciudad Villa Angela. 
+Ubicacion: A 500 m de RP18, entre RP18 y RN95. Ciudad Villa Angela, provincia de Chaco, Argentina. 
+ 
+ 
+ 
+Pagina web: https://dqdenergy.com.ar/operaciones/villaangela/
+
+--- Página 3 ---
+ANEXO D  (DQD)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+Parque Fotovoltaico La Perla de Chaco se encuentra en la provincia argentina de Chaco, 
+-27.60593, -60.73063
+
+--- Página 4 ---
+ANEXO D  (DQD)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Parque Solar La Perla de Chaco de 25 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+El parque esta constituido por 4 Centros de Transformacion (CT), Marca Huawei y modelo JUPITER-9000K-
+H1, cada uno de estos CT constan de: 
+1) Un sistema de celdas en SF6 (Hexafluoruro de Azufre), compuesto por:  
+a) Una celda con seccionador de interconexion de 630 Amp con posibilidad de poner a tierra el 
+cable de interconexion. 
+b) Una celda de acometida a barra desde el transformador con seccionador de acometida a barra 
+de 630 Amp con posibilidad de poner a tierra conexion de interruptor, un interruptor al que 
+acomete transformador. 
+c) Una celda con remonte para interconectar el CT con otro CT. 
+ 
+2) Transformador de 3 bobinados de 9450 KVA – 33 KV/0,8 KV – Dy11y11, a cada bobinado estrella de 
+0,8 KV se conectan 15 inversores Huawei SUN2000-330KTL-H1, la acometida de estos 15 inversores 
+se realiza a traves de un interruptor de 2900 Amp. 
+ 
+3) Cada CT tiene un transformador de servicios auxiliares de 5 KVA - 800 V/ 230 V/ 127V – Dyn11, que 
+se conecta a barra de 800 V a traves de fusible e interruptor de 63 Amp.
+
+--- Página 5 ---
+ANEXO D  (DQD)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Los CT se encuentran interconectado por 2 colectores de 33 kV. 
+• 
+Se interconectan 2 CT, el CT01 y CT02 y acomenten a las celdas de MT como Circuto 1 de 12,5 MW. 
+• 
+Se interconectan 2 CT, el CT03 y CT04 y acomenten a las celdas de MT como Circuto 2 de 12,5 MW. 
+Celdas de media tension: 
+• 
+Celda H01 : Salida del Parque, con seccionador de barra 2S1L01 y seccionador de tierra  del lado 
+bornes interruptor, interruptor 2I1L01, salida por cable subterraneo que llega a seccionador 229/1 
+donde sube a linea aerea. 
+• 
+Celda H02 : Medicion comercial SMEC. 
+• 
+Celda H03 : llegada de circuito 1,  de 12,5 MW, con seccionador de barra 2S1G03 con seccionador de 
+tierra  del lado bornes interruptor, interruptor 2I1G03 
+• 
+Celda H04 : llegada de circuito 2,  de 12,5 MW, con seccionador de barra 2S1G04 con seccionador de 
+tierra  del lado bornes interruptor, interruptor 2I1G04 
+• 
+Celda H05 : Alimentacion para servicios auxiliares,  para trafo TSA que alimenta TGSACA, con 
+seccionador de barra 2S1X05 con seccionador de tierra  del lado bornes trafo TSA, fusibles HHC. 
+Acometida a ET de SECHEEP (Servicios Energeticos del Chaco Empresa del Estado Provincial) 
+• 
+La linea desde el parque solar a la ET de Villa Angela tiene una longitud de 4,2 KM, saliendo con 
+cable subterraneo del parque solar y llegando con cable subterraneo a la ET de Villa Angela, y en el 
+trayecto alternando con linea aerea y cable subterraneo de 33 KV, acompanado todo el tramo fibra 
+optica. 
+• 
+Al llegar a la ET la linea subterranea acomete a un interruptor que se conecta a barras de 33 KV de la 
+ET Villa Angela.
+
+--- Página 6 ---
+ANEXO D  (DQD)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion
+
+--- Página 7 ---
+ANEXO D  (DQD)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Sala de celdas:
+
+--- Página 8 ---
+ANEXO D  (DQD)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Interruptor en ET Villa Angela.
+
+--- Página 9 ---
+ANEXO D  (DQD)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+FIN
+
+--- Página 10 ---
+ANEXO D  (DQD)    
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion
+

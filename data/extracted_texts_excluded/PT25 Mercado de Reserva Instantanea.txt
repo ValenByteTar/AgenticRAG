@@ -1,0 +1,573 @@
+=== PT25 Mercado de Reserva Instantanea.pdf ===
+
+--- Página 1 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 25:MERCADO DE RESERVA INSTANTANEA 
+Pag. 1 
+ 
+Version: 07-mar-2014 
+Los Procedimientos 
+P.T. 25: MERCADO DE RESERVA INSTANTANEA 
+Indice 
+P.T. 25: MERCADO DE RESERVA INSTANTANEA.........................................................................................2 
+1. OBJETO .....................................................................................................................................................2 
+2. ALCANCE...................................................................................................................................................2 
+3. CRITERIOS GENERALES.........................................................................................................................2 
+4. HABILITACION ..........................................................................................................................................3 
+5. CALCULO DEL REQUERIMIENTO HORARIO DE RESERVA INSTANTANEA ......................................3 
+6. TIPOS DE OFERTAS – ESQUEMA DE CONTROL..................................................................................4 
+7. CONFORMACION DE LA LISTA DE MERITO..........................................................................................5 
+8. ASIGNACION Y REMUNERACION DE LA RESERVA INSTANTANEA...................................................6 
+9. INCUMPLIMIENTO DEL SERVICIO DE RESERVA INSTANTANEA .......................................................7 
+10. RESTABLECIMIENTO DEL SERVICIO...................................................................................................8 
+11. PRECIOS POR SERVICIOS DE RESERVA INSTANTANEA.................................................................8
+
+--- Página 2 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 25:MERCADO DE RESERVA INSTANTANEA 
+Pag. 2 
+ 
+Version: 07-mar-2014 
+P.T. 25: MERCADO DE RESERVA INSTANTANEA 
+1. OBJETO 
+El presente Procedimiento Tecnico define los criterios a aplicar para la administracion del Mercado de 
+Reserva Instantanea de acuerdo a lo que establece el Anexo 41 de LOS PROCEDIMIENTOS segun la 
+Resolucion SE 156/00. 
+2. ALCANCE 
+El Mercado de Reserva Instantanea se aplica en el ambito del MEM  de acuerdo a los considerandos 
+incluidos en la Res SE 156/00. Los GUMA del MEMSP no participaran en el Servicio de Reserva 
+Instantanea hasta tanto el Sistema Patagonico no se interconecte con el SADI. 
+El Mercado se iniciara con posterioridad al 1/8/2000 una vez cumplidos los requisitos basicos definidos en el 
+presente PT. 
+3. CRITERIOS GENERALES 
+El Servicio de Reserva Instantanea tiene por objeto disminuir el numero de cortes por actuacion del 
+esquema de alivio de cargas por subfrecuencia, intentando eliminar la totalidad de los cortes asociados a la 
+salida intempestiva del conjunto generador de mayor potencia despachada, definicion basica de la 
+contingencia de referencia. El numero de estas actuaciones se disminuye mediante el adelantamiento de 
+cortes por parte de demandas que esten dispuestas a hacerlo a cambio de una remuneracion. El SRI 
+servira para disminuir la ENS y el riesgo de cortes ante la salida intempestiva de generadores. 
+Se define como contingencia de referencia a la perdida intempestiva del grupo generador que se prevea 
+generando la mayor potencia en la hora entre todos los despachados. Se consideraran aquellas salidas 
+tipicas que puedan implicar la perdida de un generador o conjunto generador ante falla simple (por ejemplo 
+Ciclos Combinados o transformadores de centrales con mas de un grupo). No se considerara como 
+contingencia de referencia la perdida de generacion por actuacion de DAG ante salida de lineas del Sistema 
+de Transporte en Alta Tension. Mas alla de esta definicion, el control de funcionamiento del SRI se realizara 
+siempre que la frecuencia alcance el valor en que la desconexion de carga debio actuar, con independencia 
+de la causa que hubiere generado la caida de frecuencia (F/S generador, caida de una linea, aumento 
+brusco de la demanda, otros). 
+El servicio de reserva instantanea se asignara para cada hora del dia o intervalo spot entre los oferentes de 
+manera previa y se evaluara el cumplimiento en funcion de lo ocurrido en perturbaciones donde descienda 
+la frecuencia por debajo del nivel donde se encuentre fichada dicha reserva. En caso de resultar cambios 
+significativos en el despacho previsto o en la oferta de reserva instantanea, se procedera a realizar el 
+redespacho del SRI, el que se considerara asumido por los prestadores del servicio a partir del momento en 
+que sean informados. Dado que en un extremo los requerimientos de SRI y su asignacion podrian variar 
+instante a instante lo que no se podria implementar en la practica, se procurara priorizar la previsibilidad de 
+la asignacion frente a la exactitud del calculo. Hasta tanto se reasigne, el servicio estara a cargo de quienes 
+lo tuvieran asignado en el ultimo despacho o redespacho de reserva instantanea vigente, siempre y cuando 
+la disminucion de demanda de los oferentes no obedezca a una orden operativa (p.e. F/S de la bomba o 
+reduccion de carga de la conversora). 
+Los prestadores del servicio cobraran como contraparte una remuneracion, la cual sera solventada por 
+todos los usuarios demandantes incluyendo aquellos que lo presten a traves de su participacion en el 
+Mercado y pudieran recibir sus beneficios (GUMAs y conversoras), salvo aquellos GUMAs que hubieren 
+optado por no recibir los beneficios del SRI. Como contraparte, estos GUMAs deben desconectar no menos 
+de un 10% de su demanda en un escalon de corte ubicado en una frecuencia intermedia entre el que 
+corresponda a la desconexion de aquellos consumidores que prestan el SRI y el del primer escalon del 
+esquema de Alivio de Cargas por subfrecuencia. Para poder tener acceso a esta opcion, los GUMAs deben 
+contar con elementos de control y verificacion similares a los requeridos para poder habilitarse para prestar 
+el SRI.  
+En caso de incumplimiento parcial o total del compromiso de corte asumido, correspondera la aplicacion de 
+una penalizacion proporcional al nivel de incumplimiento. El monto de estas penalizaciones se aplicara al 
+precio asociado al servicio de manera tal que este valor disminuya para todos los demandantes que lo 
+pagan. En el caso de los GUMAs que hubieren optado por no recibir los beneficios del SRI, el 
+incumplimiento del compromiso definido implicara la perdida de su condicion, debiendo pasar a pagar por el
+
+--- Página 3 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 25:MERCADO DE RESERVA INSTANTANEA 
+Pag. 3 
+ 
+Version: 07-mar-2014 
+Servicio a partir del mes en que hubiere incumplido y hasta que no demuestre estar en condiciones de 
+cumplir con dicho compromiso. 
+4. HABILITACION 
+HABILITACION PARA PRESTAR EL SRI 
+La habilitacion de un Agente o participante para prestar el SRI implica el disponer de: 
+• Reles o automatismos que permitan realizar la desconexion de carga de acuerdo a lo establecido en 
+este PT. Las caracteristicas de los reles o automatismos destinados a este servicio seran similares a 
+las de los reles absolutos del Esquema de Alivio de Cargas vigente, sin retardo provocado.  
+• Los equipos de medicion para el control de sus compromisos respecto del SRI. La verificacion del 
+cumplimiento de este servicio se realizara a traves de mediciones de potencia activa que deben estar 
+disponibles de manera tal que permitan controlar y verificar la carga consumida y ante una 
+contingencia, el cumplimiento del compromiso asumido. Los prestadores del Servicio seran los 
+encargados de enviar a CAMMESA la informacion que se requiera para el control de cumplimiento del 
+compromiso. 
+• El sistema de comunicaciones e informacion necesario para la asignacion del SRI. La asignacion a 
+cada participante del SRI para cada hora se realizara en forma previa e informara junto con el 
+predespacho diario o bien en tiempo real en caso de existir redespachos del SRI que impliquen una 
+reasignacion del servicio. En todos los casos, la asignacion se formalizara a traves de la red MEMNet. 
+Esta asignacion sera la que se considerara para la remuneracion y control de cumplimiento del 
+servicio. 
+• Los equipos de comunicaciones necesarios para el restablecimiento de la demanda cortada. Los 
+participantes deberan informar junto con el pedido de habilitacion la identificacion de los telefonos e 
+interlocutores responsables. De existir un numero de participantes tal que a criterio del OED lo 
+requiera, se podra solicitar a los participantes que dispongan de sistemas de PAGERS y/o BEEPERS 
+que permitan distribuir la comunicacion a listas de usuarios desde los Centros de Control de su area. 
+Los Agentes que aportan al SRI solo podran contratar proveedores de tal servicio de comunicacion 
+que dispongan sistemas de registro para las mismas. En el caso de regiones  donde no esten 
+disponibles sistemas comerciales de este tipo, CAMMESA definira con participacion del agente 
+responsable del Centro de Control y de los Agentes involucrados, el sistema que considere mas 
+adecuado dentro de los existentes en esa zona. Cuando la solicitud se realice en forma telefonica, la 
+misma debera realizarse mediante equipos que cuenten con grabacion o a traves de sistemas 
+informaticos en los que se pueda constatar dicha solicitud.  
+Para proceder a la Habilitacion se debera cursar una nota dirigida a CAMMESA donde el Agente solicita ser 
+reconocido para prestar el SRI, declarando cumplir con las exigencias definidas en este PT. De manera 
+similar en caso de querer retirarse de la participacion del SRI, debera informarlo mediante una nota a 
+CAMMESA.  Con el fin de sistematizar el intercambio de informacion, CAMMESA desarrollara formularios 
+estandarizados.  
+El agente que solicite participar el SRI y haya cumplimentado los requisitos establecidos obtendra la 
+habilitacion correspondiente a mas tardar dentro de los 15 dias de presentada la solicitud. A tales efectos 
+CAMMESA notificara de la habilitacion al Agente y lo incluira en la lista de los agentes habilitados que se 
+publicara junto con la Programacion Semanal. Esta habilitacion le permite participar en el SRI recibiendo en 
+consecuencia, los creditos que correspondan y siendole de aplicacion el regimen de compensaciones 
+establecidos en el punto 7 del Anexo 41. CAMMESA informara a cada Centro de Control de Area la 
+habilitacion de todo GUMA del area para el SRI.  
+5. CALCULO DEL REQUERIMIENTO HORARIO DE RESERVA INSTANTANEA 
+El volumen de Reserva Instantanea requerido para evitar la actuacion del esquema de alivio de cargas ante 
+la contingencia de referencia depende de multiples variables, como ser: 
+• Volumen de Generacion perdida 
+• Demanda prevista local vinculada al SADI 
+• Demanda prevista de exportacion mediante conversoras  
+• Frecuencia de consigna prevista
+
+--- Página 4 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 25:MERCADO DE RESERVA INSTANTANEA 
+Pag. 4 
+ 
+Version: 07-mar-2014 
+• Despacho previsto y respuesta de la Regulacion Primaria de Frecuencia 
+• Sensibilidad de la demanda con la frecuencia 
+Para obtener el valor requerido del volumen de reserva instantanea se consideraran margenes de seguridad 
+minimos que contemplen las caracteristicas tecnicas del servicio.  
+Estos criterios basicos de diseno para la determinacion del volumen de SRI requerido son: 
+• Frecuencia minima 0.1 Hz por encima del primer escalon del esquema de alivio de cargas 
+(actualmente 49.1 Hz) 
+• Tiempo de restablecimiento menor a 10 segundos por debajo de 49.2 Hz (frecuencia correspondiente 
+a la temporizacion del rele de restablecimiento) 
+• Frecuencia inicial igual a la frecuencia de consigna, o sea disponibilidad de la reserva de RPF de 
+acuerdo al despacho previsto. 
+• No se considera la carga fichada de los GUMAs que hubieren optado por no recibir los beneficios del 
+SRI 
+• Se considerara que el % de RPF que participa ante caidas de frecuencia y a incluir en la formula para 
+determinar el volumen de SRI requerido, sera el valor minimo entre el % despachado alcanzado y el 
+correspondiente al %RPF Min, que actualmente es del 2,1%. Es decir que si en una hora el % 
+alcanzado fuera el optimo (p.e. 3%) el valor a incluir en la formula seria 2,1 %. En el otro extremo, si 
+el % despachado de RPF fuera cero (por ejemplo ante cortes programados), seria cero el valor a 
+incorporar en la formula mencionada.  
+Considerando que el calculo y determinacion del volumen de reserva instantanea prevista para cada hora 
+resulta muy complejo y con un alto grado de indeterminacion asociado a la dinamica del sistema, la formula 
+de calculo de la misma, asi como sus parametros asociados sera validada periodicamente.  
+Junto con la Programacion Estacional y  cuando se produzcan cambios topologicos que lo justifiquen se 
+presentara una memoria de calculo incluyendo los resultados de las simulaciones efectuadas, los criterios 
+utilizados y los parametros resultantes para la determinacion del volumen de reserva en funcion de las 
+variables de referencia. Se anexa al presente PT el documento “CALCULO DEL VOLUMEN DE RESERVA 
+INSTANTANEA – MEMORIA DE CALCULO – METODOLOGIA, FORMULA y PARAMETROS”, que 
+contiene los criterios y parametros resultantes, los que seran actualizados en la medida que sea necesario. 
+Los resultados obtenidos se contrastaran con lo que ocurra en fallas de generadores que requieran la 
+actuacion del SRI con el fin de ajustar los parametros, de ser necesario. 
+En el caso de areas aisladas fisicamente a nivel del STAT ya sea por mantenimiento o salida forzada de  
+lineas, se evaluara el requerimiento de acuerdo a las condiciones locales de oferta y demanda de reserva 
+instantanea. Para dichas areas se aplicaran los mismos criterios generales del Mercado trasladados a las 
+particularidades del area local. 
+6. TIPOS DE OFERTAS – ESQUEMA DE CONTROL 
+Los consumidores habilitados para ofertar el SRI y participar en el Mercado ante perturbaciones que 
+originen la caida de la frecuencia deben desconectar la potencia asignada como servicio de reserva 
+instantanea de manera similar a las desconexiones por reles de corte por subfrecuencia del esquema de 
+alivio de cargas. Conceptualmente el orden de desconexion es el dado por el de la correspondiente lista de 
+merito. Tomando en cuenta estas consideraciones y las caracteristicas tecnicas del equipamiento de 
+control, inicialmente la desconexion de carga se debera realizar bajo el siguiente esquema: 
+• Bomba operando en forma economica => 49.5 Hz (para el caso de mas de una bomba en una misma 
+central se las podra escalonar; por ejemplo bomba 1 en 49.6 Hz y bomba 2 en 49.5 Hz) 
+• Resto de ofertas de SRI => 49.4 Hz  
+Este esquema lleva implicito que para evitar cortes cuando no tenga asignado el SRI las ofertas deberan 
+ajustar de manera dinamica el seteo de los reles o del esquema de control al del esquema de alivio de 
+cargas. 
+Los GUMAs que hubieren optado por no recibir los beneficios del SRI deberan fichar un corte equivalente al 
+10% de su demanda en  49.3 Hz.
+
+--- Página 5 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 25:MERCADO DE RESERVA INSTANTANEA 
+Pag. 5 
+ 
+Version: 07-mar-2014 
+El esquema descripto debera ajustarse en caso de que se modifique el esquema de Alivio de Cargas 
+vigente, particularmente si se cambiase la frecuencia correspondiente al primer escalon absoluto.  
+Para la verificacion de incumplimientos se adoptara la misma tolerancia que para verificar las obligaciones 
+asociadas al esquema de Alivio de Cargas en lo que hace a los reles absolutos. Actualmente el valor 
+definido es de 0,04 Hz.  
+7. CONFORMACION DE LA LISTA DE MERITO 
+LISTA DE MERITO SEMANAL PARA EL SRI 
+A partir de las ofertas semanales realizadas por los Grandes Usuarios, Exportadores mediante estaciones 
+conversoras y Centrales de Bombeo habilitados para prestar el SRI, se generaran las listas de merito del 
+SRI a ser utilizadas tanto en la programacion diaria como en los sucesivos redespachos. 
+OFERTAS SEMANALES 
+Para participar en la licitacion de este servicio los interesados deberan presentar sus ofertas semanalmente 
+junto con los datos requeridos para la Programacion Semanal.  
+Los oferentes podran discriminar sus ofertas en uno o mas bloques de potencia con sus correspondientes 
+precios ofertados. A los efectos de la conformacion de las Listas de Merito y para la asignacion del SRI, los 
+bloques potencia/precio seran considerados como ofertas independientes. La potencia minima de cada 
+bloque ofertado no podra ser inferior a 1 MW ni su precio superar al PRECIO DEL SERVICIO DE RESERVA 
+INSTANTANEA (1.35 $/MWh).  
+Las ofertas deberan contener: 
+• Identificacion del oferente 
+• Potencia instantanea ofertada para cada bloque de potencia y hora de la semana [MW] 
+• Precio ofertado para la prestacion del SRI, para cada bloque de potencia y hora de la semana 
+[$/MWh]. 
+La oferta minima debera ser de 1 MW y la maxima asignable sera aquella que no provoque afectacion a 
+otros Agentes (p.e. que el corte adelantado no implique una disminucion de la calidad de otro Agente o que 
+la disminucion de carga requiera de la actuacion de DAG en alguna central) 
+CAMMESA desarrollara formularios y sistemas estandarizados para la administracion de las declaraciones 
+a realizar por los Agentes. 
+En el caso de las Estaciones Conversoras, tanto los derechos como las obligaciones que surgen de 
+participar en el Mercado asociado al SRI estaran a cargo de los participantes del MEM que comercialicen 
+las operaciones de exportacion. Las responsabilidades, mecanismos de intercambio de informacion, pagos, 
+compensaciones y tratamiento comercial correspondientes a las exportaciones mediante estaciones 
+conversoras se administraran como sigue: 
+• de existir acuerdos entre los participantes, segun los criterios establecidos e informados por ellos 
+• de no existir acuerdos, el criterio a aplicar sera el de proporcionalidad de participacion de cada 
+operacion de exportacion en la hora 
+Adicionalmente, las centrales de bombeo podran especificar un precio maximo de la energia para el cual 
+mantienen sus ofertas al SRI [$/MWh]. Si el precio SPOT de la energia en el nodo de la central, en algun 
+intervalo SPOT previsto en la Programacion Semanal o en el Despacho o Redespacho Diario, supera dicho 
+valor se considera que la Central de Bombeo retira su oferta a SRI en ese intervalo. De no especificarse tal 
+precio maximo se considera que las ofertas se mantienen para todas las horas de la semana. 
+Opcionalmente, junto con los datos necesarios para la Programacion Semanal correspondiente a la primera 
+semana del mes, los interesados podran realizar una oferta por defecto con las mismas caracteristicas que 
+la oferta semanal y especificando el periodo de validez de la misma. Si existiesen dos o mas ofertas por 
+defecto para una misma semana, se considerara como valida la ultima realizada. Toda semana en que el 
+agente no realice oferta al SRI, se debera asumir como valida la oferta por defecto. 
+Dado que el SRI por bombeo economico es remunerado un precio fijo y una potencia constante, funcion de 
+la potencia media disponible en condiciones de bombear de manera economica, se considera como oferta 
+de la bomba para esta modalidad la potencia prevista a bombear y a precio cero (a menos que no esten
+
+--- Página 6 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 25:MERCADO DE RESERVA INSTANTANEA 
+Pag. 6 
+ 
+Version: 07-mar-2014 
+disponibles los automatismos para prestar el SRI). Por lo tanto, entra en la Lista de Merito en el primer lugar 
+cuando este despachada. 
+ORDENAMIENTO 
+A los efectos de establecer la Lista de Merito Semanal, las ofertas recibidas para cada hora de la semana, 
+se ordenaran por precio creciente ofertado para brindar el SRI. 
+A igualdad de precio ofertado las ofertas se ubicaran en la Lista de Merito segun el siguiente criterio: 
+• Primero se ubicaran los Grandes Usuarios, ordenados por mayor a menor potencia ofertada. 
+• A continuacion se ubicaran las ofertas de Estaciones Conversoras, ordenadas por mayor a menor 
+potencia ofertada 
+• En ultimo termino  se ubicaran las ofertas de las Centrales de Bombeo ofertados como bombeo no 
+economico. 
+Las listas asi conformadas seran publicadas junto con los resultados de la Programacion Semanal. 
+LISTAS DE MERITO DIARIA HORARIA PARA EL SRI 
+Los agentes que hayan realizado ofertas semanales para participar en el SRI, podran modificar diariamente 
+las Potencias Instantaneas Ofertadas, debiendo enviar los nuevos valores junto con los datos requeridos 
+para el Predespacho Diario o en tiempo real para los redespachos.  
+Las modificaciones habilitadas son: 
+• Retiro de la oferta en alguno o todos los bloques de potencia ofertados. 
+• Reduccion o aumento de las Potencias Instantaneas Ofertadas de alguno o todos los bloques 
+ofertados, respetando el valor minimo de 1 MW para cada bloque. 
+• El criterio a utilizar para la ubicacion del aumento o disminucion de las ofertas de potencia sera el 
+siguiente: los aumentos de potencia ofertada se ubicaran comenzando por los escalones de mayor 
+precio ofertado y las disminuciones por los de menor. Este criterio busca que no se alteren mediante 
+modificaciones del volumen ofertado horario las condiciones de competencia de precios ofertados 
+semanalmente. 
+Para la conformacion de las Listas de Merito Diarias horarias se modificaran las Listas de Merito Semanales 
+teniendo en cuenta los cambios en las Potencias Instantaneas Ofertadas y las previsiones de demanda de 
+los GUMAs, de las exportaciones mediante Estaciones Conversoras y de las Centrales de Bombeo que 
+aportan al SRI. En caso de no contarse con mediciones que permitan realizar el control de cumplimiento por 
+inconvenientes en el sistema de comunicaciones la oferta podra verse restringida de participar en el 
+Mercado. 
+8. ASIGNACION Y REMUNERACION DE LA RESERVA INSTANTANEA 
+ASIGNACION DE LA POTENCIA REQUERIDA PARA EL SRI 
+El SRI para cada hora se asignara diariamente, para ello:  
+• Se descontara del volumen de SRI requerido para la hora la potencia de bombeo despachada de 
+manera economica. 
+• La potencia resultante del punto anterior, de ser mayor que cero, se asignara entre las ofertas que 
+conforman la Lista de Merito Diaria para esa hora, comenzando por la primera de la lista. 
+Las Listas de Merito Diario  y la Asignacion de la RI seran publicadas junto con los resultados del 
+Predespacho Diario. 
+En caso de resultar cambios significativos en el despacho previsto o en la oferta de reserva instantanea, se 
+procedera a realizar el redespacho del SRI, el que se considerara asumido por los prestadores del servicio a 
+partir del momento en que sean informados. La asignacion sera informada de manera telefonica o por un 
+medio equivalente y confirmada a traves de su publicacion en la red MEMNet. 
+PRECIO HORARIO DEL SRI 
+El Precio horario del SRI es el correspondiente a la oferta mas cara asignada a traves de proceso descripto 
+en el punto anterior.
+
+--- Página 7 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 25:MERCADO DE RESERVA INSTANTANEA 
+Pag. 7 
+ 
+Version: 07-mar-2014 
+Si en alguna hora “h” no es posible completar  el requerimiento con las ofertas disponibles el precio del SRI 
+sera el PRECIO DEL SERVICIO DE RESERVA INSTANTANEA (1.35 $/MWh) 
+REMUNERACION DEL SRI 
+Los prestadores del SRI seran remunerados de acuerdo al siguiente esquema: 
+• Bombeo economico: las bombas que aporten el SRI cuando estan despachadas en forma economica 
+seran remuneradas a traves de un cargo fijo de 500 $/MW-mes. Para determinar el monto mensual a 
+asignar a la central por este concepto, se debera multiplicar el cargo fijo establecido por la potencia 
+media disponible en condiciones de bombear de manera economica. Este ultimo valor se define como 
+la potencia disponible media mensual para el bombeo, afectada por un factor que refleja la 
+expectativa maxima media de bombeo economico. Inicialmente este ultimo factor se establece igual 
+al DIEZ POR CIENTO (10%), considerando los registros de bombeo economico de los ultimos anos. 
+Para determinar la disponibilidad de la bomba para el SRI, se considerara el efecto de las 
+restricciones tecnicas de la central y las de transporte. 
+• GUMAs, exportacion mediante conversoras y bombeo/generacion simultaneos: los participantes que 
+tengan el SRI asignado en una hora recibiran una remuneracion igual al precio resultante del SRI 
+multiplicado por la potencia asignada como SRI en el ultimo redespacho vigente. 
+BOMBEO ECONOMICO – CALCULO DE LA DISPONIBILIDAD 
+Para determinar la disponibilidad de la bomba para el SRI se considerara el efecto de las restricciones 
+tecnicas de la central y las de transporte del conjunto bomba – generador, de acuerdo al siguiente 
+procedimiento: 
+• Se calculara la disponibilidad media de la bomba en las horas en que no se remunera la potencia 
+(horas de mas baja demanda), descontando la potencia que no estuviera en condiciones de ser 
+bombeada por restricciones de la red de transporte en Alta Tension (STAT o Distro). 
+• Se calculara la disponibilidad media del generador asociado a la bomba en las horas en que se 
+remunera la potencia (horas de mas alta demanda). 
+• El valor a reconocer en la remuneracion del bombeo economico sera el minimo entre la disponibilidad 
+media de la bomba y la disponibilidad media del generador dividido por el rendimiento tecnico del 
+conjunto bomba-generador. 
+9. INCUMPLIMIENTO DEL SERVICIO DE RESERVA INSTANTANEA 
+El Anexo 41 define un control del cumplimiento del SRI y el establecimiento de compensaciones 
+proporcionales al grado de incumplimiento del Servicio. El control de incumplimiento se realizara en funcion 
+de la asignacion del Servicio del ultimo redespacho vigente informado. Por ejemplo si la conversora tiene 
+asignado un volumen del SRI y sale de servicio por una falla propia, seguira cobrando el servicio hasta tanto 
+se redespache el SRI. De registrarse un evento que requiera la actuacion del SRI y la conversora tenia 
+asignado un % de SRI y esta F/S pagara el incumplimiento. El redespacho debera informarse a lo sumo una 
+hora luego de recibida la novedad de disponibilidad de oferta o en caso de no contar con un redespacho se 
+considerara que no esta asignado. 
+No se considerara incumplimiento si la disminucion de demanda de los oferentes obedece a una orden 
+operativa (p.e. F/S de la bomba o reduccion de carga de la conversora). 
+Las compensaciones definidas en el Anexo son incrementales (primer incumplimiento, se define una 
+compensacion igual a  la remuneracion de los 45 dias anteriores; segundo incumplimiento, se define una 
+compensacion igual a la remuneracion de los 90 dias anteriores; tercer incumplimiento, se inhabilita por un 
+ano). 
+Como deben ser proporcionales al  nivel de incumplimiento, para el primer y segundo caso la compensacion 
+sera el monto correspondiente multiplicado por la relacion: 
+Factor de incumplimiento (FI) = 1 -Pot cortada/Pot. Comprometida 
+Para la determinacion del numero de incumplimientos registrados se aplicara el siguiente criterio: 
+Si el FI fuera mayor al 20 % se considerara que incumplio totalmente y en consecuencia suma un 
+incumplimiento a la lista. El criterio de consideracion del numero de incumplimientos seria similar al de la 
+reserva fria actual. Se considera un periodo continuo movil de 90 dias en el cual se analizara la 
+consideracion de reiteracion de incumplimientos. La inhabilitacion podra ser levantada si el oferente informa
+
+--- Página 8 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 25:MERCADO DE RESERVA INSTANTANEA 
+Pag. 8 
+ 
+Version: 07-mar-2014 
+que fue corregida la causa que dio origen a los incumplimientos registrados. En tal caso, se considerara que 
+ingresa en la lista de los Agentes que incumplieron dos veces, y de volver a incumplir en los primeros 90 
+dias se le aplicara la compensacion de 90 dias y se lo inhabilitara por un ano. 
+En el caso de las centrales con bombeo economico, dado que la remuneracion es menor y mensual, el 
+primer incumplimiento implicara la perdida de la remuneracion del mes y el segundo incumplimiento en la 
+ventana movil de 90 dias, la perdida de remuneracion de dos meses. Un tercer incumplimiento implicaria la 
+falta de remuneracion por un periodo de doce meses. La bomba debe seguir cumpliendo con los requisitos 
+establecidos para su funcionamiento como tal. 
+10. RESTABLECIMIENTO DEL SERVICIO 
+Cuando se produzcan caidas de frecuencia tales que impliquen cortes de demanda en el SADI ya sea por la 
+actuacion de los reles del Servicio de Reserva Instantanea o de los reles del Esquema de Alivio de Cargas, 
+el Centro de Operaciones de CAMMESA (COC) ordenara las acciones necesarias para reemplazar la 
+potencia de generacion perdida, evaluara la evolucion de la situacion y, cuando las condiciones del Sistema 
+lo permitan, ordenara la reposicion de cortes, ya sea parcial o total, por intermedio de los diversos Centros 
+de Control de Area involucrados (COT, COTDT o COD) y de los Organismos Coordinadores de otros paises 
+(para las demandas de exportacion). Estos deberan retransmitir las instrucciones del COC a los Centros de 
+Operaciones de Distribuidores, GUMAs, Estaciones Conversoras y Centrales de Bombeo conectados a las 
+respectivas redes, a fin de que los mismos puedan proceder a la normalizacion del servicio en el menor 
+tiempo posible. 
+En caso de que la velocidad de respuesta de las reservas disponibles no permita ordenar la reposicion 
+inmediata y conjunta de todos los cortes producidos, la primera prioridad sera el restablecimiento del 
+servicio de aquellas demandas que no esten prestando el Servicio de Reserva Instantanea. Para el mismo 
+caso, el restablecimiento gradual de las demandas que si esten prestando el SRI se procurara realizar en 
+forma proporcional, condicionada por la magnitud de los modulos de potencia involucrados. 
+Dado que la celeridad del proceso de restablecimiento del servicio dependera de la eficacia de las 
+comunicaciones operativas,  previamente al inicio del Mercado de SRI el COC instruira a los Centros de 
+Control de Areas para la adecuacion de las ordenes operativas de restablecimiento de cortes por Alivio de 
+Cargas y/o por reles del SRI. En cada caso los respectivos Centros de Control de Area adecuaran los 
+mecanismos operativos de comunicaciones con los prestadores del SRI que permitan la transmision de las 
+instrucciones operativas correspondientes. 
+ 
+11. PRECIOS POR SERVICIOS DE RESERVA INSTANTANEA 
+Las siguientes formulas y criterios definen el tratamiento comercial a seguir para la administracion y 
+facturacion del Mercado asociado al SRI.  
+Datos 
+Datos definidos por Resolucion 
+Precio del Servicio de Reserva Instantanea (
+)
+1
+h
+PPAD
+5
+13
+MW
+%$
+.
+:
+/
+$
+*
+(valor maximo) Valor fijo adicional a 
+la potencia de las centrales de bombeo (
+) 500
+mes
+MW
+:
+/
+$
+−
+  
+Datos Estacionales   
+UNISRI ($/MW mes): valor unitario por Servicio de Reserva Instantanea 
+UNIFONSRI ($/MW mes): valor unitario del saldo previsto en el Fondo de Apartamiento del  Servicio de 
+Reserva para Calidad de Suministro  
+Datos Horarios  
+GUMA habilitado para el servicio: potencia SRI asignada horaria 
+Demanda EXPORTACION habilitada para el servicio: potencia SRI asignada horaria 
+Central de bombeo economico: potencia SRI  
+Precio horario SRI: valor de corte de la licitacion o el maximo si la oferta es insuficiente
+
+--- Página 9 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 25:MERCADO DE RESERVA INSTANTANEA 
+Pag. 9 
+ 
+Version: 07-mar-2014 
+Creditos a los prestadores del SRI 
+GUMAs y Demanda EXPORTACION mediante conversoras 
+El credito mensual por la prestacion del servicio es 
+( )
+∑
+=
+h
+CrSR
+$
+Im
+ Pot. Asignada SRIh * Precio SRIh para todas las horas del periodo con asignacion 
+ 
+Central de Bombeo economico 
+El credito mensual por la prestacion de servicio es 
+Cr SRIm ($) = PotenciaSRI * valor fijo adicional a la potencia ($/MW-mes)   
+Donde PotenciaSRI es la potencia media bombeada (u otra segun alternativa) 
+ 
+Central de Bombeo en operacion simultanea generacion - bombeo 
+El credito mensual por la prestacion del servicio es 
+( )
+∑
+=
+h
+CrSR
+$
+Im
+ Pot. Asignada SRIh * Precio SRIh   
+ 
+Debito a los Distribuidores por SRI 
+El Precio Estacional por Servicio de Reserva Instantanea (PESTSRI) se determina para cada trimestre 
+como 
+PESTSRI ($/MW mes) = UNISRI + UNIFONSRI 
+Cargo mensual por Servicio de Reserva Instantanea para los Distribuidores es  
+( )
+FAj
+PESTSRIj
+REQMAXMJ
+CARGOSR
+*
+*
+$
+Im
+=
+ 
+ 
+Debito a los GUMA, Autogeneradores y Demanda de Exportacion por SRI 
+El Cargo mensual por Servicio de Reserva Instantanea es 
+( )
+( )
+FAj
+PMESSR
+REQMAXmj
+j
+CARGOSR
+Im*
+*
+$
+$
+Im
+=
+ 
+donde 
+PMESSRIm: Precio Mensual por Servicio de Reserva Instantanea   
+Aquellos GUMA que opten por no contar con los beneficios del SRI estaran excluidos de este pago. 
+ 
+Determinacion del Precio Mensual por Servicio de Reserva Instantanea 
+(
+)
+(
+)
+FAj
+*
+J
+REQMAX
+J
+MONSRI
+MWmes
+/
+$
+PMESSRI
+m
+m
+m
+∑
+∑
+−
+=
+entos
+Incumplimi
+ 
+ 
+1 Valor modificado por Res SE Nº 246/2002 
+donde 
+MONSRIm: Monto Mensual del Servicio MONSRIm ($), calculado mediante la integracion de los creditos a 
+los prestadores del servicio.  
+REQMAX: Requerimientos Maximos de Potencia en el Mes de todos los Distribuidores, Grandes Usuarios, 
+Autogeneradores, Demanda de Exportacion excluidos aquellos GUMA que optaron por no recibir los 
+beneficios del SRI. 
+Incumplimientos: son las compensaciones pagadas por los prestadores por haber incumplido el SRI.
+
+--- Página 10 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 25:MERCADO DE RESERVA INSTANTANEA 
+Pag. 10 
+ 
+Version: 07-mar-2014 
+Determinacion de las Compensaciones por Incumplimientos del SRI   
+En caso de verificarse que el incumplimiento es atribuible al agente habilitado, este debera pagar una 
+compensacion de acuerdo a lo indicado en el punto precedente de este PT. 
+Cuenta de Apartamiento del Servicio de Reserva para Calidad del Suministro 
+Se crea una nueva Cuenta de Apartamiento con un manejo y operatoria similar a la Cuenta de Servicios 
+Asociados. 
+Modificacion del precio medio utilizado en el cargo de potencia correspondiente a la operacion de 
+los Grandes Usuarios Menores (GUME)  
+Se debe agregar el Precio Estacional por Servicio de Reserva Instantanea en el calculo del precio aplicado.
+

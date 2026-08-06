@@ -136,6 +136,7 @@ class RelationEntry:
     predicate: str
     object_id: str
     confidence: float = 0.0
+    attributes: List[str] = field(default_factory=list)
     extractor_ids: List[str] = field(default_factory=list)
     evidence: List[EvidenceItem] = field(default_factory=list)
 
@@ -146,6 +147,7 @@ class RelationEntry:
             "predicate": self.predicate,
             "object": self.object_id,
             "confidence": round(self.confidence, 4),
+            "attributes": list(self.attributes),
             "validated": True,
             "evidence": [e.to_dict() for e in self.evidence],
             "builder_version": builder_version,
@@ -334,6 +336,7 @@ class KnowledgeModel:
                     predicate=c.predicate,
                     object_id=obj_id,
                     confidence=c.confidence,
+                    attributes=list(c.attributes),
                     extractor_ids=[x for x in c.extractor_id.split(",") if x],
                     evidence=list(c.evidence),
                 )

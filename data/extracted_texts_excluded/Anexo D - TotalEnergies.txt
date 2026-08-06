@@ -1,0 +1,1013 @@
+=== Anexo D - TotalEnergies.pdf ===
+
+--- Página 1 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES TOTAL eren OPERADAS POR EL CROM 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+Malaspina 
+50.4 
+Eolica 
+26/11/2020 
+Senvion 
+BLC 
+BLC 
+Viento Los Hercules 
+97,2 
+Eolica 
+08/02/2021 
+Senvion 
+BLC 
+BLC 
+Caldenes del Oeste 
+27,5 
+Fotovoltaica 
+08/08/2018 
+Inv. ABB 
+Inaccess 
+BLC 
+Mario Cebreiro 
+100.05 
+Eolica 
+08/03/2018 
+Vestas 
+BLC 
+BLC 
+Amanecer IV 
+12 
+Fotovoltaica 
+7/12/2024 
+Inv. Huawei 
+BLC 
+BLC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL 
+287.15
+
+--- Página 2 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Descripcion de Parque Eolico Malaspina: 
+El proyecto presente, identificado como Parque Eolico Malaspina, de 50,4 MW (Agente: CEMALA1G; Central: 
+MAL1EO; Grupo: MAL1EO01), producira energia electrica a partir de la captacion y transformacion de la energia 
+proveniente del viento, por medio de catorce molinos eolicos. Luego, dicha energia sera inyectada en el 
+Sistema Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con la administradora 
+del Mercado Electrico Mayorista (CAMMESA). 
+ 
+Malaspina es un parque eolico de 50,4 MW ubicado en la provincia de Chubut, en el sur de Argentina. El 
+proyecto fue comisionado por Total eren en diciembre de 2020. El parque eolico esta equipado con 14 turbinas 
+eolicas de tipo 3.6M114NES de la empresa alemana Senvion, y se espera que produzca 245 GWh al ano 
+ 
+ 
+ 
+ 
+Parque Malaspina se 
+encuentra en la provincia 
+argentina de Chubut,  
+-44.983295 
+-67.056871. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Parque Eolico Malaspina 50.4 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Senvion 3.6M114 NES  
+Potencia Nominal del aerogenerador 
+3,6 MW 
+Numero de aerogeneradores 
+14
+
+--- Página 3 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Producto 
+Descripcion 
+Potencia Nominal del proyecto 
+50,4 MW 
+Diametro nominal de rotor 
+114 m 
+Velocidad media del viento 
+10,5 – 11 m/s 
+ 
+ 
+Se encuentran interconectados por 4 circuitos de 33 kV,  circuito 1 - 2 – 3 y 4 a una barra de 33 KV: 
+• 
+Circuito 1 llega por la celda 26 interruptor 25226.   
+• 
+Circuito 2 llega por la celda 25 interruptor 25225. 
+• 
+Circuito 3 llega por la celda 24 interruptor 25224. 
+• 
+Circuito 4 llega por la celda 23 interruptor 25223. 
+• 
+Celda 21 de transformador de medicion 33 KV de barra. 
+• 
+Celda 22 salida a transformacdor  de servicios auxiliares Interruptor 25222. 
+• 
+Celda 20 interruptor 25220 Salida de barra  hacia celdas 33 KV de  TRANSPA. 
+• 
+Celda 08 interruptor paralelo de barras 33 KV 3A085 
+• 
+Celda 09 conexion de interruptor paralelo de barras a barra B. 
+ 
+Barras de TRANSPA: 
+• 
+Celda 01 llegada desde barras 33 KV de parque a barras  33 KV de TRANSPA interruptor 25201.   
+• 
+Celda 02 salida desde barras 33 KV de TRANSPA a transformador 33/132 KV 4TR01 interruptor 25202. 
+ 
+ 
+ 
+Pagina oficial:  Inicio | Malaspina (malaspina1.com)  o  Total EREN | TotalEnergies
+
+--- Página 4 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Parque Malaspina se encuentra en la 
+provincia argentina de Chubut, 
+aproximadamente a 100 km al Norte de 
+Comodoro Rivadavia.  
+ 
+Localizacion 
+• 
+Latitud : -44.983295 
+• 
+Longitud : -67.056871
+
+--- Página 5 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar General en 33 KV Malaspina
+
+--- Página 6 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Descripcion de Parque Eolico Los Hercules: 
+El proyecto presente, identificado como Parque Eolico Viento los Hercules, de 97,2 MW (Agente: PEHERCUG 
+; Central: LHEREO; Grupo: LHEREO01), producira energia electrica a partir de la captacion y transformacion de 
+la energia proveniente del viento, por medio de veintisiete molinos eolicos. Luego, dicha energia sera inyectada 
+en el Sistema Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con la 
+administradora del Mercado Electrico Mayorista (CAMMESA). 
+ 
+Vientos los Hercules es un parque eolico de 97,2 MW ubicado en la provincia de Santa Cruz, en el sur de 
+Argentina. El proyecto fue comisionado por Total Eren y Mitsui & Co., Ltd (que posee una participacion del 
+34% en el proyecto) en febrero de 2021. El parque eolico esta equipado con 27 turbinas eolicas de tipo 
+3.6M114NES de la empresa alemana Senvion, y se espera que produzca 400 GWh al ano, suficientes para 
+abastecer a 110 000 hogares en Argentina. 
+ 
+ 
+ 
+ 
+Parque Eolico Vientos los 
+Hercules se encuentra en la 
+provincia argentina de 
+Santa Cruz,  
+-46.642454 
+-68.403266
+
+--- Página 7 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Parque Eolico Vientos los Hercules 97.2 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Senvion  3.6M114 NES  
+Potencia Nominal del aerogenerador 
+3,6 MW 
+Numero de aerogeneradores 
+27 
+Potencia Nominal del proyecto 
+97,2MW 
+Diametro nominal de rotor 
+114 m 
+Velocidad media del viento 
+10,5 – 11 m/s 
+ 
+ 
+Se encuentran interconectados por 6 circuitos de 33 kV,  circuito 1 - 2 – 3 – 4 - 5 y 6 a dos barras de 33 KV a 
+las que llamaremos Barra A y Barra B: 
+Barra A:  
+• 
+Celda 1 llega el circuito 2. 
+• 
+Celda 2 llega el circuito 1. 
+• 
+Celda 3 salida a transformacdor  de servicios auxiliares TSSAA1. 
+• 
+Celda 4  transformador de medicion 33 KV de barra. 
+• 
+Celda 5 interruptor  Salida de barra  hacia transformador de potencia TR04 33/132 KV  60 MVA. 
+• 
+Celda 6 llega el circuito 3. 
+• 
+Celda 7 Interruptor de acople de Barra A con Barra B. 
+ 
+Barra B: 
+• 
+Celda 8 Remonte desde interruptor paralelo de barras en 33 KV de celda 7. 
+• 
+Celda 9 transformador de medicion 33 KV de barra. 
+• 
+Celda 10 llega el circuito 6. 
+• 
+Celda 11  interruptor  Salida de barra  hacia transformador de potencia TR08 33/132 KV  60 MVA. 
+• 
+Celda 12 llega el circuito 4. 
+• 
+Celda 13 llega el circuito 5. 
+ 
+ 
+ 
+Pagina oficial:    Total EREN | TotalEnergies
+
+--- Página 8 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Parque Vientos los Hercules se encuentra 
+en la provincia argentina de Santa Cruz, 
+sobre la ruta provincial N° 43 entre las 
+localidades de Pico Truncado y Las Heras.  
+ 
+Localizacion 
+• 
+Latitud : -46.642454 
+• 
+Longitud : -68.403266
+
+--- Página 9 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar 1 General en 33 KV Viento los Hercules
+
+--- Página 10 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Unifilar 2 General en 33 KV Viento los Hercules:
+
+--- Página 11 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Unifilar Transformadores 33/132 kV
+
+--- Página 12 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Descripcion de Parque Fotovoltaico Caldenes del Oeste: 
+El proyecto presente, identificado como Parque Fotovoltaico Caldenes del Oeste, de 24,75 MW (Agente: 
+CFCALDEG; Central: CALOFV; Grupo: CALOFV01), producira energia electrica a partir de la captacion y 
+transformacion de la energia proveniente del Sol, la planta consta de una potencia instalada de 27,5 MW a 
+partir de 92.394 paneles fotovoltaicos marca BYD, cada uno de 325 Wp. La inversion estimada es de cerca de 
+30 millones de dolares, 10 Inversores. La energia sera inyectada en el Sistema Argentino de Interconexion 
+(SADI) en el marco del Contrato de Abastecimiento con la administradora del Mercado Electrico Mayorista 
+(CAMMESA). 
+ 
+Caldenes del Oeste, la primera planta solar que Total Eren puso en servicio en Argentina, se encuentra en la 
+provincia de San Luis. Dispone de una capacidad instalada de 30 MWc, suficiente para abastecer al equivalente 
+de 17 000 hogares. 
+ 
+ 
+ 
+Parque Fotovoltaico 
+Caldenes del Oeste se 
+encuentra en la provincia 
+argentina de San Luis,  
+-33.287673 
+-66.389984
+
+--- Página 13 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Parque Fotovoltaico Caldenes del Oeste 24.75 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+Se encuentran interconectados por 3 circuitos de 33 kV,  circuito 1 - 2 y 3  a una barra de 33 KV   
+• 
+Celda MV1 llega el circuito 1, colecta la energia de 3 Centros de Transformacion. 
+• 
+Celda MV2 llega el circuito 2, colecta la energia de 3 Centros de Transformacion. 
+• 
+Celda MV3 llega el circuito 3, colecta la energia de 4 Centros de Transformacion. 
+• 
+Celda VTs Field  transformador de medicion 33 KV de barra. 
+• 
+Celda Auxiliar Transformer Field, salida para transformador de Servicios auxiliares de 160 KVA 
+• 
+Celda Grid Connection Field que a traves de un cable subterraneo de 1 Km mas una linea aerea de 2.1 
+Km llega a una ET Parque Industrial de EDESAL. 
+ 
+ 
+Pagina oficial:    Total EREN | TotalEnergies 
+ 
+ 
+Potencia nominal de los inversores SUNGROW SG2500HV es de 2750 KVA
+
+--- Página 14 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Parque Fotovoltaico Caldenes del Oeste 
+se encuentra, sobre la ruta provincial N° 
+16 Junto a la ciudad capital de la 
+provincia de San Luis, Argentina.  
+ 
+Localizacion 
+• 
+Latitud : -33.287676 
+• 
+Longitud : -66.389984 
+ 
+ 
+ 
+EQUIPOS: 
+ 
+Linea de transmision 33kV 
+Aerea 
+2,1 kms 
+  
+Subterranea 
+  
+1 Kms 
+ 
+CELDA PRINCIPAL - Main Circuit Breaker 
+Sala de madia tension (DELIVERY) 
+CELDA MV 3  -  Circuit breaker 3 -FIELD 3 
+CELDA MV 2  -  Circuit breaker 2 -FIELD 2 
+CELDA MV 1  -  Circuit breaker 1 -FIELD 1 
+Maxima potencia activa (P) 
+2,75 MW 
+2,75 MW 
+2,75 MW 
+2,75 MW 
+2,75 MW 
+2,75 MW 
+2,75 MW 
+2,75 MW 
+2,75 MW 
+2,75 MW 
+Maxima potencia reactiva (Q) 
++/-1,15 
++/-1,15 
++/-1,15 
++/-1,15 
++/-1,15 
++/-1,15 
++/-1,15 
++/-1,15 
++/-1,15 
++/-1,15 
+Equipo 
+INVERTER 1 
+INVERTER 2 
+INVERTER 3 
+INVERTER 4 
+INVERTER 5 
+INVERTER 6 
+INVERTER 7 
+INVERTER 8 
+INVERTER 9 
+INVERTER 10 
+Cantidad de SKC (Gateways) 
+22 
+22 
+22 
+22 
+22 
+22 
+22 
+22 
+22 
+22 
+Cantidad de  Combiners (Strings) 
+14 
+14 
+14 
+14 
+14 
+14 
+14 
+14 
+14 
+14 
+Lineas Dc totales 
+319 
+319 
+319 
+319 
+319 
+319 
+318 
+318 
+318 
+318 
+Cantidad de Modulos/linea 
+29 
+29 
+29 
+29 
+29 
+29 
+29 
+29 
+29 
+29 
+Total de modulos/inverters 
+9251 
+9251 
+9251 
+9251 
+9251 
+9251 
+9222 
+9222 
+9222 
+9222 
+Potencia pico de modulos 
+325 
+325 
+325 
+325 
+325 
+325 
+320 
+320 
+325 
+325
+
+--- Página 15 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar 1 General en 33 KV Caldenes del Oeste
+
+--- Página 16 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+Unifilar 2 en 33 KV Caldenes del Oeste, detalle celdas:
+
+--- Página 17 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Detalle de Sub estacion o Centro de Transformacion.
+
+--- Página 18 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Descripcion de Parque Eolico Mario Cebreiro: 
+El proyecto presente, identificado como Parque Eolico Mario Cebreiro, de 100.05 MW (Agente: CORTEO01; 
+Central: CORT; Grupo: CORTEO), producira energia electrica a partir de la captacion y transformacion de la 
+energia proveniente del viento, por medio de veintinueve molinos eolicos. Luego, dicha energia sera inyectada 
+al sistema interconectado Nacional a traves de la Estacion Transformadora Bahia Blanca en el marco del 
+Contrato de Abastecimiento con la administradora del Mercado Electrico Mayorista (CAMMESA). 
+ 
+Mario Cebreiro es un parque eolico de 100.05 MW ubicado en la provincia de Buenos Aires, Argentina. El 
+proyecto fue comisionado por Pampa energia en marzo del 2018. El parque eolico esta equipado con 29 
+turbinas eolicas de tipo V126 3,45 MW de la empresa Danesa Vestas, con una generacion de electricidad 
+estimada de 400 GWh al ano, que le permiten abastecer a 110.000 hogares en Argentina. 
+ 
+ 
+ 
+ 
+Parque Mario Cebreiro se 
+encuentra en la provincia 
+argentina de Buenos Aires,  
+-38.67397296571462 
+ -62.03717777705985. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Parque Eolico Mario Cebreiro 100.05 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Vestas V126 3,45 MW 
+Potencia Nominal del aerogenerador 
+3.45 MW 
+Numero de aerogeneradores 
+29 
+Potencia Nominal del proyecto 
+100.05 MW 
+Diametro nominal de rotor 
+126 m
+
+--- Página 19 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Producto 
+Descripcion 
+Velocidad media del viento 
+10,5 – 11 m/s 
+ 
+ 
+ 
+ 
+ 
+ 
+Se encuentran interconectados por 6 circuitos de 33 kV,  circuito 1 - 2 – 3 – 4 - 5 y 6 a dos barras de 33 KV a 
+las que llamaremos Barra A y Barra B: 
+Barra A:  
+• 
+Celda 7 transformador de medicion 33 KV de barra. 
+• 
+Celda 8 salida a transformacdor  de servicios auxiliares TSSAA. 
+• 
+Celda 9 interruptor  Salida de barra  hacia transformador de potencia TR04 33/132 KV  60 MVA. 
+• 
+Celda 10 llega el circuito 3. 
+• 
+Celda 11 llega el circuito 2. 
+• 
+Celda 12 llega el circuito 1. 
+• 
+Celda 13 Interruptor de acople de Barra A con Barra B. 
+ 
+Barra B: 
+• 
+Celda 1 Remonte desde interruptor paralelo de barras en 33 KV de celda 13. 
+• 
+Celda 2 llega el circuito 4. 
+• 
+Celda 3 llega el circuito 5. 
+• 
+Celda 4 llega el circuito 6. 
+• 
+Celda 5  interruptor  Salida de barra  hacia transformador de potencia TR08 33/132 KV  60 MVA. 
+• 
+Celda 6 transformador de medicion 33 KV de barra. 
+ 
+ 
+ 
+ 
+ 
+Pagina oficial: Total EREN | TotalEnergies
+
+--- Página 20 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Parque Eolico Mario 
+Cebreiro se encuentra en la 
+provincia argentina de 
+Buenos Aires, 
+aproximadamente a 26 km 
+al Noreste de Bahia Blanca.  
+ 
+Localizacion 
+• 
+Latitud : -
+38.67410429052314 
+• 
+Longitud : -
+62.03761881262076
+4
+
+--- Página 21 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar General en 33 KV Mario Cebreiro.
+
+--- Página 22 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Descripcion de Parque Fotovoltaico Amanecer IV: 
+El proyecto presente, identificado como Parque Fotovoltaico Amanecer IV, de 13,6 MW (Agente: PSAMANG; 
+Central: AMAN; Grupo: AMANFV), habilitado a partir del 7/12/2024 a generar 12MW por contrato del programa 
+RenovAr Ronda 3 (Invitacion resolucion 100/2018), producira energia electrica a partir de la captacion y 
+transformacion de la energia proveniente del Sol, la planta consta de 16443 paneles de 580Wp y 7128 de 
+575Wp, lo que hace una generacion de aproximadamente 13656kWp, la potencia maxima en el punto de 
+interconexion sera de 13,6MW. Los paneles se conectan a 42 Inversores Huawei (SUN2000-330KTL-H1) 
+colectores de 330 KW de potencia nominal, la salida de los inversores es en 0.8 KV y se envia a 2 centros 
+transformadores de 0.8 KV a 33KV de 6800kVA. La energia sera inyectada en el Sistema Argentino de 
+Interconexion (SADI) en el marco del Contrato de Abastecimiento con la administradora del Mercado Electrico 
+Mayorista (CAMMESA) en la ET Santa Maria 2 de EC SAPEM, donde se eleva a 33 KV. El Parque Fotovoltaico y 
+la ET Santa Maria 2 estan interconectados por una linea aerea de 33 KV de 4,5 Km propiedad de la Distribuidora 
+EC SAPEM (ENERGIA de CATAMARCA Sociedad Anonima con Participacion Estatal Mayoritaria). 
+  
+Parque Fotovoltaico 
+Amanecer IV se encuentra 
+en la provincia argentina 
+de Catamarca, localidad 
+de Santa Maria  
+-26.66  
+-66.03
+
+--- Página 23 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+  
+  
+ 
+ 
+ 
+Parque Fotovoltaico Amanecer IV 12 MW 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+El parque se encuentra dividido en 2 Campos de Paneles. 
+Campo 1: Tiene en total 28 Inversores, del N°1 al N°28, del Inversor N°1 al N°11 ingresan a traves de 
+interruptores termomagneticos al TGBT01 del Centro de Transformacion STS01, del Inversor N°12 al N°21 
+ingresan a traves de interruptores termomagneticos al TGBT02 del Centro de Transformacion STS01  
+Campo 2: Tiene en total 14 Inversores, del N°29 al N°42, del Inversor N°29 al N°34 ingresan a traves de 
+interruptores termomagneticos al TGBT1 del Centro de Transformacion STS02, del Inversor N°35 al N°42 
+ingresan a traves de interruptores termomagneticos al TGBT2 del Centro de Transformacion STS02  
+Nota: Cada inversor tiene conectado 21 cadena de paneles a excepcion del inversor 21 que tiene conectados 
+18 cadenas de paneles.  
+La energia del centro de Transformacion STS01 acomete a la Celda 3 que contiene el interruptor fijo que 
+permite telecomandarse desde el CROM. 
+La energia del centro de Transformacion STS02 acomete a la Celda 4 que contiene el interruptor fijo que 
+permite telecomandarse desde el CROM. 
+La energia de la barra a la que llegan los colectores del parque por Celda 3 y Celda 4 puede salir por el 
+Interruptor fijo montado en Celda 1 (Mencionada como Salida a LAT) que se puede telecomandar desde el 
+CROM y al abrir o cerrar permite desconectar o conectar todo el Parque. 
+De la barra de 33 KV a la que se conectan Celda 1, 3 y 4 hay conectado un seccionador bajo carga manual en 
+la Celda 2 que provee la alimentacion para un transformador de servicios auxiliares para la Sala de Despacho. 
+La Celda D1 (Denominada Celda de Salida) contiene un seccionador bajo carga manual que permite conectar 
+a la linea de 33 Kv que lleva la energia a la ET Santa Maria 2 de EC SAPEM
+
+--- Página 24 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+Parque 
+Fotovoltaico 
+Amanecer IV se 
+encuentra, Av. 
+Circunvalacion 
+Angel Gomez 
+Bello. Junto a la 
+ciudad de Santa 
+Maria en la 
+provincia de 
+Catamarca, 
+Argentina.  
+  
+Localizacion 
+ Latitud: 
+26°39'21.2"S 
+ 
+Longitud:66°01'
+24.1"W 
+  
+  
+  
+ 
+Unifilar  General Amanecer IV
+
+--- Página 25 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+  
+  
+  
+  
+ 
+UNIFILAR MEDIA TENSION:
+
+--- Página 26 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+UNIFILAR BAJA TENSION:
+
+--- Página 27 ---
+ANEXO E  (TOTAL energies)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion
+

@@ -117,6 +117,7 @@ class WarmCodegen:
                 "two_stage_eligible": two_stage,
                 "scoping_preference": scoping,
                 "boost_weight": boost,
+                "attributes": list(doc.attributes),
                 "confidence": doc.confidence,
                 "validated": True,
                 "builder_version": self.builder_version,

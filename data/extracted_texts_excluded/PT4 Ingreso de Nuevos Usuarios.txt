@@ -1,0 +1,4491 @@
+=== PT4 Ingreso de Nuevos Usuarios.pdf ===
+
+--- Página 1 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 1 
+Version:03 -Oct -2023 
+P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, 
+DISTRIBUIDORES, GENERADORES, AUTOGENERADORES Y 
+COGENERADORES AL MEM 
+ 
+1. CAPITULO I - INGRESO DE NUEVOS DISTRIBUIDORES Y GRANDES USUARIOS 
+MAYORES (GUMA) 
+1.1. OBJETO Y ALCANCE 
+El objeto del presente Capitulo es definir la forma y plazos de presentacion de los datos e informacion 
+necesarias para el ingreso y la administracion de las transacciones economicas de los Distribuidores y los 
+Grandes Usuarios Mayores en el MEM y definir los requerimientos tecnicos relativos a las instalaciones con 
+que deben contar los mismos. 
+Los datos e informacion a que se hace referencia en el parrafo anterior se limitan a los que debe enviar, a 
+CAMMESA, el postulante a convertirse en Agente para la verificacion de las condiciones de ingreso y de 
+administracion.  
+Los requerimientos reglamentarios y de informacion que debe cumplir el futuro Agente para solicitar a la 
+Secretaria de Energia su ingreso al MEM estan definidos en el Anexo 17 de Los Procedimientos y no forman 
+parte del presente PT. 
+El presente Capitulo es de aplicacion a todo Distribuidor y Gran Usuario Mayor (GUMA) que solicite su ingreso 
+al MEM. 
+1.2. CARACTER DE LA INFORMACION A SUMINISTRAR 
+La informacion requerida, que CAMMESA debe verificar en cumplimiento de la normativa en vigor para la 
+administracion de las transacciones y despacho en el MEM, reviste el caracter de declaracion jurada. 
+1.3. REQUISITOS PARA LA ADMINISTRACION DE LAS TRANSACCIONES EN EL MEM 
+1.3.1. DATOS COMERCIALES (LEGALES E IMPOSITIVOS): 
+ Razon o denominacion social y nombre comercial (si corresponde) 
+ Para los GUMA la identificacion de la planta o suministro para la cual requiere su habilitacion. 
+ Domicilio legal, numeros de telefono, fax, y direccion de correo electronico 
+ Domicilio comercial, para ser indicado en la facturacion, numeros de telefono, fax y direccion de correo 
+electronico 
+ Representantes habilitados para actuar ante CAMMESA. (para la representacion legal, en caso de no 
+ser el presidente de la empresa, adjuntar copia del poder que le otorga facultades suficientes). 
+ Constancia del Nº de CUIT (formulario de constancia de inscripcion en vigencia, firmado por apoderado 
+de la firma) 
+ Constancia de la situacion fiscal frente a la R.G. 18/97 (agente de retencion del IVA) 
+ Constancia para la no retencion del impuesto a las ganancias (art. 28 de la R.G. 2784) o de encontrarse 
+comprendidos dentro del regimen especial de pagos a cuenta establecidos por la R.G.2793, en caso 
+de corresponder. 
+Para los Grandes Usuarios (GUMA) se requiere adicionalmente: 
+ Constancia de haber firmado un Contrato de Abastecimiento o Acuerdo de Comercializacion de 
+Demanda que cumpla con lo establecido en el punto 2 del anexo 17 de los procedimientos. 
+ Documentacion que avale la integracion del deposito de garantia cuando corresponda.
+
+--- Página 2 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 2 
+Version:03 -Oct -2023 
+Cuando CAMMESA encuentre inconvenientes en la administracion de los contratos suscriptos, o cuando le 
+sea solicitado por autoridad competente, podra requerir la entrega de una copia certificada de los mismos. El 
+Agente debera presentar la copia solicitada dentro de las 48 horas de realizado el requerimiento.  
+1.3.2. DATOS REQUERIDOS PARA LA BASE DE DATOS DEL SISTEMA 
+Los aspirantes a convertirse en Distribuidores deberan presentar la informacion requerida para la formacion 
+de la Base de Datos del Sistema segun lo establecido en el punto 1.2. del Anexo 1 de Los Procedimientos. 
+Los mismos deberan ser enviados a CAMMESA previo al ingreso del Agente. 
+1.3.3. DATOS REQUERIDOS PARA EL BANCO NACIONAL DE PARAMETROS 
+Los aspirantes a convertirse en Distribuidores deberan presentar la informacion requerida para la formacion 
+del Banco Nacional de Parametros segun lo establecido en el Anexo “A” de este PT. Los mismos deberan ser 
+enviados a CAMMESA previo al ingreso del Agente. 
+1.3.4. DATOS REQUERIDOS PARA LA BASE DE DATOS ESTACIONAL 
+Los aspirantes a convertirse en Distribuidores o Grandes Usuarios Mayores deberan presentar la informacion 
+requerida para la formacion de la Base de Datos Estacional segun lo establecido Capitulo 2 y en el Anexo 2 
+de Los Procedimientos.  
+A estos efectos CAMMESA suministrara el soporte informatico donde el solicitante volcara los datos 
+correspondientes. 
+1.4. REQUISITOS DE LAS INSTALACIONES  
+1.4.1. SISTEMA DE MEDICION COMERCIAL (SMEC) 
+Los GRANDES USUARIOS MAYORES (GUMA) cuentan para implementar el Sistema de Medicion SMEC 
+con un plazo de SESENTA (60) dias para instalaciones en Media Tension y CIENTO VEINTE (120) dias para 
+instalaciones de Alta Tension (mayores o iguales a 132 kV) a partir de su ingreso al MEM. Durante esta etapa 
+transitoria deberan contar con instrumental de medicion que les permita conformar los datos cada QUINCE 
+MINUTOS (15’), y enviarlos al OED de acuerdo a lo definido en el Procedimiento Tecnico N° 3 (SMEC – 
+PROCEDIMIENTO DE RECOLECCION DE DATOS EN EMERGENCIA) 
+Los Distribuidores deben contar con el Sistema de Medicion Comercial (SMEC) habilitado, a la fecha de 
+ingreso al MEM. 
+Cada GUMA sera responsable de la instalacion, verificacion y mantenimiento del equipamiento de medicion 
+de potencia activa en sus nodos de consumo, conforme lo establecido en el Anexo 24 de LOS 
+PROCEDIMIENTOS para el Sistema de Medicion Comercial (SMEC). 
+En lo referente a la habilitacion del SMEC del, o los nodos, los pasos necesarios estan definidos en el PT Nº 
+2 (HABILITACION PARA USO COMERCIAL DE INSTALACIONES DE MEDICION EN NODOS DEL MEM) 
+De no cumplir el Agente con la instalacion del SMEC en los tiempos mencionados seran aplicables las 
+penalidades establecidas en el punto 7 del Anexo 24 de Los Procedimientos. 
+1.4.2. EQUIPOS DE MANIOBRA Y PROTECCION 
+Cada conexion entre un Distribuidor o GUMA con el Transportista o PAFTT debera contar con un interruptor 
+capaz de interrumpir la maxima corriente de cortocircuito en dicho punto y asegurar el tiempo de despeje de 
+fallas que requiera el sistema electrico. 
+El tiempo maximo para despeje de fallas que ocurran en los equipos del Distribuidor o GUMA y para las que 
+ocurran en el SISTEMA DE TRANSPORTE debera ser acordado en forma previa a la conexion. 
+El ajuste de los reles y de las protecciones del GUMA o del DISTRIBUIDOR en el area proxima al punto de 
+conexion debera estar coordinado con la TRANSPORTISTA o PAFTT antes de la conexion. El GUMA o 
+Distribuidor debera presentar los estudios de coordinacion de sus protecciones en respuesta a los 
+requerimientos que defina el TRANSPORTISTA o PAFTT. 
+Debera dejarse constancia en un acta de toda la informacion usada, la descripcion y resultados de las tareas 
+y pruebas efectuadas para la coordinacion de las protecciones y requerimiento de las protecciones de 
+respaldo ante fallas en el sistema de transporte, asi como de los ajustes convenidos entre el GUMA o el
+
+--- Página 3 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 3 
+Version:03 -Oct -2023 
+Distribuidor y la TRANSPORTISTA o PAFTT. Este documento se denominara Acta de Ajuste y Coordinacion 
+de Protecciones y de Diseno y Prueba de Automatismos de Equipos Asociados a la Red de TRANSPORTE. 
+El acta debera contener lo siguiente: 
+1. Listado de las protecciones incluidas en los analisis y estudios de coordinacion de protecciones, 
+2. Descripcion del diseno de cada uno de los automatismos requeridos por el Acceso  
+3. Listado de la documentacion tecnica usada para efectuar los analisis y estudios de coordinacion de las 
+protecciones y el diseno y prueba de los automatismos. 
+4. Listado de los estudios efectuados para coordinacion de las protecciones con sus referencias (N°, 
+revision, titulo, fecha, etc.). 
+5. Descripcion de las pruebas requeridas por el Transportista o PAFTT para las protecciones y automatismos 
+6. Descripcion de cada una de las pruebas efectuadas y los resultados obtenidos (incluye una breve 
+descripcion, los principales resultados y referencias al protocolo de la prueba, fecha, etc.), 
+7. Informe con la opinion del Transportista o PAFTT sobre las protecciones del GUMA o Distribuidor y los 
+ajustes definidos para la coordinacion de las mismas. 
+1.4.3. ESQUEMA DE ALIVIO DE CARGA 
+Cada GUMA o Distribuidor es responsable de la instalacion, verificacion y mantenimiento del esquema de 
+alivio de carga segun las caracteristicas y ajustes definidos en el Anexo B de este PT. El Agente debera tener 
+en servicio el esquema de alivio de carga al momento de su ingreso al MEM. 
+1.5. PLAZOS DE PRESENTACION DE LA INFORMACION 
+El plazo establecido para la presentacion a CAMMESA de la informacion solicitada es: 
+ Distribuidores. 90 dias corridos antes de la fecha prevista de ingreso al MEM 
+ GUMA. La solicitud debe ser presentada a mas tardar el ultimo dia habil del penultimo periodo trimestral 
+anterior a aquel periodo trimestral en que pretende ingresar como agente del MEM. 
+1.6. VERIFICACION DE LOS DATOS PRESENTADOS 
+CAMMESA informara a la SECRETARIA DE ENERGIA y al ENRE, en un plazo de QUINCE (15) dias corridos 
+contados desde la presentacion en forma de la solicitud, si el solicitante cumple los requisitos exigidos en LOS 
+PROCEDIMIENTOS para su ingreso y su administracion en el MEM. 
+De no cumplir con los requisitos exigidos, CAMMESA informara al futuro Agente y a los Generadores con los 
+cuales suscribio contratos. 
+1.7. INGRESO DEL NUEVO AGENTE AL MEM 
+CAMMESA incorporara al nuevo agente al MEM en la fecha y condiciones establecidas en la Resolucion o 
+Disposicion de la SECRETARIA DE ENERGIA que autoriza el ingreso del mismo. 
+Si el solicitante accede al MEM, no por conexion directa con instalaciones electricas que forman parte del 
+SADI, sino a traves de instalaciones que estan conectadas con ellas, o con instalaciones conectadas con 
+estas ultimas y la Resolucion o Disposicion de la SECRETARIA DE ENERGIA de ingreso no establece la 
+forma de calculo de los cargos a pagar por el GUMA o Distribuidor en concepto de servicio de la FUNCION 
+TECNICA DE TRANSPORTE DE ENERGIA ELECTRICA (FTT), se entendera que ha llegado a un acuerdo, 
+con la, o las empresas, o entes que exploten instalaciones a traves de las cuales se vincula al SADI. 
+Una vez autorizado su ingreso como Agente del MEM, sera obligacion del mismo mantener todos sus datos 
+actualizados.  
+1.8. ANEXOS Y PROCEDIMIENTOS TECNICOS RELACIONADOS 
+ ANEXO 1- BASES DE DATOS DEL SISTEMA  
+ ANEXO 2 - BASE DE DATOS ESTACIONAL  
+ ANEXO 17 - INGRESO DE NUEVOS AGENTES AL MEM
+
+--- Página 4 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 4 
+Version:03 -Oct -2023 
+ ANEXO 24.1 – NORMAS DEL SISTEMA DE MEDICION COMERCIAL DEL MEM 
+ PROCEDIMIENTO TECNICO Nº 2 - HABILITACION PARA USO COMERCIAL DE INSTALACIONES 
+DE MEDICION EN NODOS DEL MEM 
+ PROCEDIMIENTO TECNICO Nº 3 - SMEC - PROCEDIMIENTO DE RECOLECCION DE DATOS EN 
+EMERGENCIA 
+2. CAPITULO II - INGRESO DE NUEVOS GENERADORES, AUTOGENERADORES Y 
+COGENERADORES AL MEM 
+2.1. INTRODUCCION  
+Los Generadores, Autogeneradores y Cogeneradores, antes de conectarse al PAFTT o al Transportista deben 
+cumplir con requisitos reglamentarios, informativos y tecnicos para permitir su ingreso al MEM, su habilitacion 
+comercial y su despacho. 
+En el presente procedimiento tecnico se indican los plazos permitidos para el cumplimiento de cada requisito, 
+en el marco de lo establecido por "Los Procedimientos". 
+En cada caso se detallan los requisitos reglamentarios, se especifican las caracteristicas tecnicas que deben 
+cumplir las unidades generadoras de los Generadores, Autogeneradores y Cogeneradores y se detalla la 
+informacion que deben entregar a CAMMESA. 
+Estas obligaciones minimas, no se contraponen con las especificaciones habituales de funcionamiento y 
+control propio de las centrales y, cuando correspondan pueden ampliarse, cuando ello sea necesario para 
+cumplir con lo indicado en los Procedimientos. 
+Los Generadores, Autogeneradores y Cogeneradores deberan cumplir con todos los requisitos solicitados 
+previos a su ingreso efectivo al MEM, para poder ser incluidos en la programacion estacional, mensual o 
+semanal. 
+2.2. REQUISITOS PARA SOLICITAR SU INGRESO AL MEM 
+2.2.1. REQUISITOS REGLAMENTARIOS 
+Deberan cumplir con los requisitos basicos indicados en el Anexo 17 de "Los Procedimientos". 
+Toda empresa que aspire a convertirse en Generador, Cogenerador o Autogenerador del MEM debe obtener 
+la autorizacion de la SECRETARIA DE ENERGIA presentando una solicitud en las condiciones indicadas en 
+el Anexo 17 de "Los Procedimientos". 
+Para ingresar al SADI, el solicitante debe cumplir complementariamente con los requisitos establecidos en el 
+Reglamento de Acceso a la Capacidad Existente y Ampliacion del Sistema de Transporte de Energia Electrica 
+(Anexo 16 de Los Procedimientos). 
+2.2.2. REQUISITOS INFORMATIVOS 
+2.2.2.1. REQUISITOS GENERALES 
+Los Generadores, Cogeneradores y Autogeneradores, simultaneamente con la solicitud indicada en el punto 
+precedente, deben presentar una SOLICITUD de Acceso ante LA CONCESIONARIA DEL SERVICIO 
+PUBLICO DE TRANSPORTE (LA TRANSPORTISTA) que debera contener la informacion solicitada en el 
+Anexo 16 de "Los Procedimientos". 
+En particular los estudios del SISTEMA DE TRANSPORTE para verificar la factibilidad tecnica de la 
+SOLICITUD se deberan realizar de acuerdo a lo indicado en el Procedimiento Tecnico Nº 1 de CAMMESA " 
+Estudios Requeridos para la presentacion de la solicitud de acceso y ampliaciones al Sistema de Transporte". 
+Simultaneamente con la solicitud de ingreso deberan presentar ante CAMMESA la informacion minima 
+requerida para la administracion de sus transacciones y despacho de energia que se indican en los puntos 
+2.2.2.2 y 2.2.2.3.
+
+--- Página 5 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 5 
+Version:03 -Oct -2023 
+2.2.2.2. DATOS COMERCIALES (LEGALES E IMPOSITIVOS): 
+ Razon o Denominacion Social y Nombre Comercial. 
+ Domicilio legal, Numeros de Telefono y Fax. 
+ Domicilio comercial, para ser indicado en la facturacion, Numeros de Telefono y Fax. 
+ Representantes habilitados para actuar ante CAMMESA. (Para la representacion legal, en caso de no 
+ser el Presidente de la Empresa, adjuntar copia del poder con facultades suficientes). 
+ Constancia de Nº de CUIT (Formulario 576 original). 
+ Constancia de la situacion fiscal frente a la R.G. 3125 (Agente de retencion del IVA) 
+ Constancia para la no retencion del Impuesto a las ganancias (Art. 28 de la R.G. 2784)  
+ Constancia de no encontrarse comprendidos dentro del regimen especial de pagos a cuenta 
+establecidos por la R.G. 2793. 
+ Constancia de hallarse excluidos (R.G. 3851) de las disposiciones de la R.G. 3130. 
+Una vez autorizado su ingreso como Agente del MEM, sera obligacion del mismo mantener estos datos 
+actualizados. 
+2.2.2.3. DATOS REQUERIDOS PARA LA BASE DE DATOS DEL SISTEMA. 
+ Puntos de intercambio que utilizara con el MEM, identificando las empresas titulares de las 
+instalaciones que los conforman. 
+ Fecha solicitada de ingreso como agente del MEM. 
+ Fechas previstas de entrada en servicio del equipamiento a instalar. 
+ Copia de la nota remitida al Prestador Adicional de la Funcion Tecnica de Transporte de Energia 
+solicitando las condiciones tecnicas y economicas de dicha prestacion. 
+ Potencia efectiva a plena carga y consumo de servicios auxiliares expresado como porcentaje de la 
+potencia efectiva a plena carga. 
+ Maquinas Termicas y Nucleares: Consumo especifico medio bruto previsto. 
+ Maquinas Termicas: tipos de combustibles que puede consumir, posibilidades de trabajar con mezcla, 
+y capacidad de almacenamiento. 
+ Centrales Hidroelectricas con Capacidad de Embalse: curva de volumen embalsado en funcion del 
+nivel, cota minima y maxima operativa, y datos de evaporacion. 
+ Centrales Hidroelectricas en General: Numero de grupos, funcion para conversion energetica (m3 por 
+kWh), caudal maximo y minimo turbinable por grupo, serie historica de caudales semanales desde 
+1943. 
+ Centrales de Bombeo: Para el embalse y contraembalse, curva de volumen embalsado en funcion del 
+nivel, cota minima y maxima operativa. Datos de evaporacion. 
+2.2.3. REQUISITOS TECNICOS 
+2.2.3.1. REQUISITOS GENERALES Y PARTICULARES 
+Atendiendo a la muy variada composicion del parque generador del S.A.D.I. (centrales hidraulicas, termicas, 
+nucleares, con turbinas de gas, de vapor, motores Diesel, ciclos combinados, etc.), no es razonable establecer 
+requisitos comunes para la totalidad de las maquinas y, mas aun, si se tiene en cuenta la dispersion de 
+potencias. Por este motivo los requisitos se dividen en:  
+ GENERALES: requisitos que deben cumplir todas las maquinas del SADI.  
+ PARTICULARES: requerimientos adicionales segun la potencia y particular ubicacion de la central en 
+la red del SADI.
+
+--- Página 6 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 6 
+Version:03 -Oct -2023 
+ ESPECIALES: requerimientos adicionales a los indicados en este PT que se establezcan para el 
+ingreso de generacion no convencional en funcion del resultado de los analisis de los estudios que se 
+efectuen para evaluar la Solicitud de Acceso del Generador. 
+Los generadores que deben cumplir con los requisitos particulares son aquellos que tienen alguna de las 
+siguientes caracteristicas: 
+* La potencia nominal total de una unidad o de una nueva central que ingresa al MEM es superior a 100MW 
+* La potencia nominal total de una unidad o de una nueva central que ingresa MEMSP es superior a 30MW 
+Algunos Requisitos Particulares pueden ser aplicados a centrales o unidades con potencias nominales 
+inferiores a las detalladas precedentemente en este Procedimiento cuando los estudios de acceso o estudios 
+que CAMMESA realice con el fin de verificar los criterios y condiciones de seguridad muestren la necesidad 
+de los mismos.  
+Asimismo, cuando el Agente presente los estudios y evaluaciones que fundamenten que un diseno que no 
+cumpla integramente con lo definido en los Requisitos Particulares no afecta la calidad, la capacidad del 
+Sistema de Transporte, o la seguridad del sistema; CAMMESA debera analizar los estudios, y podra aceptar 
+la solucion propuesta, siempre que las condiciones y escenarios sean adecuados, y los resultados 
+demuestren claramente la efectividad de la solucion propuesta. 
+Cuando el ingreso de generacion corresponda a instalaciones denominadas no convencionales: eolica, 
+mareomotriz, geotermica, etc., las cuales por sus caracteristicas pueden requerir estudios y especificaciones 
+de funcionamiento y ensayos no contemplados en el presente Procedimiento Tecnicos, CAMMESA podra 
+definir los requisitos especiales. 
+Esos requisitos seran informados al Agente y al ENRE, indicando los criterios de desempeno que debera 
+satisfacer la instalacion y presentando los fundamentos que justifican su aplicacion. En su definicion 
+CAMMESA debera tener en consideracion la opinion del Transportista. 
+Para conectarse al SADI los Generadores, Cogeneradores y Autogeneradores deberan cumplir los siguientes 
+requisitos tecnicos minimos: 
+2.2.3.2. REQUISITOS GENERALES 
+Todas las Unidades Generadoras cuya conexion directa o indirecta al SISTEMA DE TRANSPORTE sea 
+autorizada, sus instalaciones y aparatos, deberan cumplir con los siguientes requerimientos: 
+a) Corriente de secuencia inversa 
+Cada Unidad Generadora debera soportar, sin salir de servicio, la circulacion de la corriente de secuencia 
+inversa correspondiente a una falla asimetrica cercana, durante el tiempo que transcurre desde el origen 
+de la falla hasta la operacion de la ultima proteccion de respaldo. En el caso de la apertura monofasica 
+de una linea, durante el tiempo muerto que estuviese ajustado el sistema automatico de recierre en las 
+protecciones de lineas, las protecciones del generador no deberan desconectar la unidad. 
+b) Rangos de frecuencia admisibles de operacion. 
+ 
+Rango de frecuencia admisible de operacion sin limite de tiempo entre 49 y 51 Hz 
+ 
+Rango de frecuencia admisible de operacion del grupo con la actuacion de reles temporizados con 
+una temporizacion minima de 100 seg. entre 48,5 y 49,0 Hz, y entre 51, y 51,5 Hz. 
+ 
+Rango de frecuencia admisible de operacion del grupo con la actuacion de reles temporizados con 
+una temporizacion minima de 25 seg. entre 48 y 48,5 Hz, y entre 51,5 y 52,0 Hz. 
+ 
+Rango de frecuencia admisible de operacion del grupo con la actuacion de reles temporizados con 
+una temporizacion minima de 15 seg. entre 47,5 y 48 Hz, y entre 52,0 y 52,5 Hz. 
+ 
+Rango de frecuencia admisible de operacion del grupo sin la actuacion de reles instantaneos de 
+desconexion entre 47,5 Hz y 52,5 Hz 
+El generador se podra desconectar por alguna proteccion propia solamente si los desvios de la frecuencia en 
+la red a la cual permanece vinculado, tanto en amplitud como en duracion, se encuentran fuera de la Zona 
+Admisible en la grafica siguiente.
+
+--- Página 7 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 7 
+Version:03 -Oct -2023 
+ 
+c) Requisitos para el sistema de control de potencia frecuencia  
+ Estatismo permanente ajustado entre el 4 y 7%. 
+ Banda muerta inferior al 0,1%. 
+ Tiempo de establecimiento (necesario para que la potencia mecanica ingrese en la banda del +/-
+10% del incremento de carga aplicado) del lazo de regulacion de velocidad menor a 60 segundos 
+para maquinas termicas e inferior a 140 segundos para maquinas hidraulicas. 
+ El lazo de control de potencia-frecuencia, se debera ajustar de manera tal, que el Tiempo de 
+Establecimiento verifique los requisitos establecidos en el Procedimiento Tecnico N° 9. 
+d) Desconexion automatica de generacion (DAG), desconexion automatica de carga (DAC), Control de la 
+Compensacion de Reactivo en la Red (CCRR) 
+Disponer, con anterioridad a la conexion al SISTEMA DE TRANSPORTE, de los equipamientos 
+necesarios para la DAG/ DAC/ CCRR, cuando fueran requeridas por el sistema electrico y 
+fundamentadas sobre la base de lo establecido en los Procedimientos. 
+El agente debe presentar el informe de diseno funcional de estos sistemas y un analisis cuantitativo de 
+su confiabilidad: tasa de falla por actuaciones indebidas y tasa de falla cuando se requiere su actuacion. 
+La informacion del diseno y las pruebas de estos automatismos debera incluirse en el Acta de Ajuste y 
+Coordinacion de Protecciones y de Automatismos de Equipos Asociados a la Red de TRANSPORTE 
+cuyo contenido se describe en el punto siguiente. 
+e) Equipos de maniobra y proteccion 
+Cada conexion entre una Unidad Generadora y el SISTEMA DE TRANSPORTE debera contar con un 
+interruptor capaz de interrumpir la maxima corriente de cortocircuito en dicho punto y asegurar el tiempo 
+de despeje de fallas que requiera el sistema electrico. 
+El tiempo maximo para despeje de fallas que ocurran en los equipos del GENERADOR y para las que 
+ocurran en el SISTEMA DE TRANSPORTE debera ser acordado con la TRANSPORTISTA en forma 
+previa a la conexion del GENERADOR. 
+El GENERADOR debera disponer la proteccion de respaldo para fallas en el SISTEMA DE 
+TRANSPORTE. 
+Los interruptores del punto de conexion entre un GENERADOR y la TRANSPORTISTA o PAFTT deberan 
+contar con proteccion de falla de interruptor y de deteccion de discrepancia de polos. El ajuste de los 
+reles y de las protecciones del area proxima al punto de conexion debera estar coordinado antes de la 
+primera sincronizacion del generador. El Generador debera presentar los estudios de coordinacion de 
+sus protecciones en respuesta a los requerimientos que defina el TRANSPORTISTA o PAFTT para la 
+aprobacion por parte de este, y ademas enviara copia de esos estudios a CAMMESA.
+
+--- Página 8 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 8 
+Version:03 -Oct -2023 
+Las protecciones involucradas en el estudio seran las que pueden afectar el comportamiento del sistema 
+electrico, y como minimo incluiran las siguientes: 
+ Subfrecuencia, con todos los escalonamientos existentes 
+ Sobrefrecuencia 
+ Secuencia inversa 
+ Sobrecorriente de respaldo 
+ Perdida de excitacion 
+ Proteccion de perdida de sincronismo (si el generador contase con la misma) 
+Debera dejarse constancia en un acta toda la informacion usada, la descripcion y resultados de las tareas 
+y pruebas efectuadas para la coordinacion de las protecciones y la definicion de los requerimientos de 
+las protecciones de respaldo ante fallas en el sistema de transporte, asi como de los ajustes convenidos 
+entre el GENERADOR y la TRANSPORTISTA o PAFTT. Este documento se denominara Acta de Ajuste 
+y Coordinacion de Protecciones y de Diseno y Prueba de Automatismos de Equipos Asociados a la Red 
+de TRANSPORTE. 
+El acta citada debera contener lo siguiente: 
+Listado de las protecciones incluidas en los analisis y estudios de coordinacion de protecciones, Se 
+describira el eventual cambio o agregado de alguna/s proteccion/es del Sistema motivada por el acceso 
+del generador. 
+1. Descripcion del diseno funcional y de los principales componentes de cada uno de los 
+automatismos  
+2. Listado de la documentacion tecnica usada por el GENERADOR y la TRANSPORTISTA o 
+PAFTT para efectuar los analisis y estudios de coordinacion de las protecciones y el diseno y 
+prueba de los automatismos. 
+3. Listado de los estudios efectuados para coordinacion de las protecciones con sus referencias 
+(N°, revision, titulo, fecha, etc.). 
+4. Descripcion de las pruebas requeridas por el Transportista o PAFTT para las protecciones y 
+automatismos 
+5. Descripcion de cada una de las pruebas efectuadas y los resultados obtenidos (incluye una breve 
+descripcion, los principales resultados y las referencias del protocolo de la prueba, fecha, etc.), 
+6. Informe con la opinion del Transportista o PAFTT sobre las protecciones del Generador y los 
+ajustes definidos para la coordinacion de las mismas. 
+f) Instalaciones de arranque en negro 
+Disponer con anterioridad a su conexion al SISTEMA DE TRANSPORTE de las instalaciones de 
+Arranque en Negro requeridas por el sistema electrico. 
+g) Equipamiento para el Sistema de Operacion y Despacho 
+Debera contar con el equipamiento requerido por el Anexo 24 de Los Procedimientos para el SISTEMA 
+DE OPERACION Y DESPACHO (SMEC, SOTR, SCOM). 
+2.2.3.3. REQUISITOS PARTICULARES  
+Adicionalmente a los requisitos especificados en el punto 2.2.3.2, en funcion de las caracteristicas y 
+localizacion o cuando CAMMESA lo requiera fundamentada en las evaluaciones y/o estudios que efectue en 
+el marco de las reglamentaciones vigentes, los generadores deberan cumplir con: 
+a) Control Conjunto de Potencia Reactiva-Tension 
+El sistema de excitacion debe estar preparado para admitir un control conjunto de potencia reactiva-
+tension cuya funcion sea regular la tension en barras de Alta Tension de la Central, en un valor 
+preestablecido, a fin de suministrar un robusto soporte de tension que apoye a la transmision y efectuar 
+un reparto uniforme de la potencia reactiva entre los generadores. Se entiende por Central, en este caso,
+
+--- Página 9 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 9 
+Version:03 -Oct -2023 
+al conjunto de maquinas de Pn > 10 MVA, que entreguen su energia y potencia en un mismo punto del 
+SADI. 
+Limitador de minima excitacion y proteccion de perdida de excitacion 
+El sistema de excitacion debe poseer un limitador que impida que durante la operacion normal la 
+excitacion descienda hasta valores que puedan causar la perdida de sincronismo o la actuacion de la 
+proteccion de perdida de excitacion. Este limite debe ser ajustable a fin de coordinarlo con el diagrama 
+de capacidad y las protecciones del generador  
+Ademas, el generador debe contar con una proteccion de perdida de excitacion con dos niveles, uno para 
+deteccion de perdida de excitacion con baja carga y otro para el caso de condiciones mas severas que 
+actue en forma casi instantanea. 
+b) Estabilizador del Sistema de Potencia (PSS) 
+Con el objeto de contribuir al amortiguamiento de las oscilaciones electromecanicas (locales, intraplanta, 
+interplanta, interarea, etc.) de la red, el Regulador Automatico de Tension (RAT) debe estar provisto de 
+un ESTABILIZADOR (PSS), el cual operara modulando la referencia de tension.  
+Este equipo debe ser capaz de realizar aportes positivos al amortiguamiento de las oscilaciones 
+electromecanicas dentro de una banda de frecuencias comprendidas, como minimo, entre 0,1 Hz y 2,5 
+Hz. El esquema de estabilizacion se basara en los principios de la estabilizacion por potencia acelerante, 
+y debera reunir suficiente flexibilidad para el ajuste. Los transductores utilizados deberan garantizar una 
+adecuada linealidad en el rango de operacion y presentar constantes de tiempo inferiores a 40 mseg. 
+CAMMESA decidira cuando y en que maquina habilitara el funcionamiento del PSS o requerira 
+modificaciones en la calibracion para aumentar la eficiencia y tambien definira en que casos se puede 
+prescindir de este elemento de control. Se podra utilizar otro principio de estabilizacion, siempre y cuando 
+sea demostrable que su prestacion es igual o superior al de potencia acelerante. 
+c) Desempeno de la regulacion de tension en vacio 
+Los valores especificados a continuacion se refieren al nivel de desempeno exigido para la tension 
+terminal de generacion, en regulacion automatica de tension, y operacion en regimen lineal. 
+La respuesta a un cambio de referencia de tension de pequena amplitud debera ser rapido, manteniendo 
+la sobreoscilacion en valores inferiores al 15%, el tiempo de crecimiento por debajo de 300 ms, y un 
+tiempo de establecimiento menor a 1,5 seg. 
+Para la ganancia estatica, se ha fijado un limite maximo de 400 pu, lo que permite alcanzar una precision 
+aceptable para la regulacion en estado estacionario. 
+d) Desempeno de la regulacion de tension en carga 
+Para regimenes de pequenas perturbaciones, el error estatico en la tension de generacion debera 
+mantenerse por debajo del 0,5% al variar el estado de funcionamiento del generador de vacio a plena 
+carga y factor de potencia nominal. Este es un requisito basico para garantizar una adecuada calidad de 
+servicio, y ademas, realizar un pleno aprovechamiento de la capacidad del generador. 
+Asimismo, el regulador de tension debera contar con reduccion transitoria de ganancia para la banda de 
+frecuencias de perturbacion comprendida entre 1,5 rad/seg y 15 rad/seg, lo que permitira extender la 
+region de operacion estable del generador en el plano P-Q. 
+Para la operacion en carga, se requiere la provision de compensacion por corriente reactiva, a fin de 
+mejorar el control de tension del lado de alta tension del transformador elevador para situaciones de 
+indisponibilidad del control conjunto de tension de alta tension. 
+Para "Vfdmax" se establece un minimo de 2 veces la tension de excitacion a plena carga y factor de 
+potencia nominal. 
+El gradiente de aumento de tension ante fallas severas debera ser tal que la excitacion alcance el techo 
+antes de 10 mseg. para una depresion de la tension terminal del 50%, con el generador a plena carga y 
+factor de potencia nominal.
+
+--- Página 10 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 10 
+Version:03 -Oct -2023 
+2.3. REQUISITOS PREVIOS AL PERIODO ESTACIONAL DE INGRESO 
+Los Generadores, Cogeneradores y Autogeneradores, deberan cumplir los siguientes requisitos antes de las 
+fechas para el envio de los datos requeridos para la programacion de Periodo Estacional Semestral en la que 
+esta prevista su entrada en servicio. 
+Las fechas son: 
+10 de febrero: si entra en servicio durante el Periodo Estacional de Invierno 
+10 de agosto: si entra en servicio durante el Periodo Estacional de Verano 
+2.3.1. REQUISITOS REGLAMENTARIOS 
+Deberan estar vigentes: 
+a) Resolucion de la Secretaria de Energia habilitandolo como Agente del MEM. 
+b) Resolucion del ENRE autorizando el acceso a la capacidad de transporte existente. 
+2.3.2. REQUISITOS INFORMATIVOS 
+Los Generadores, Cogeneradores y Autogeneradores, deberan enviar las siguientes informaciones, 
+ratificando o rectificando, cuando corresponda, las informaciones entregadas con la solicitud de ingreso. A 
+esos efectos deberan completar las planillas que correspondan del Banco Nacional de Parametros. 
+a) Datos comerciales (legales e impositivos): 
+Se deberan actualizar los datos indicados en el punto 2.2.2.2. 
+b) Datos requeridos para las Bases de Datos del Sistema y Estacional. 
+La informacion suministrada debe poseer una consistencia tal que permita reproducir en forma aproximada, 
+mediante programas de simulacion dinamica, los transitorios experimentados por las principales variables de 
+estado del sistema de control. 
+Para el sistema de control “potencia-frecuencia” de cualquier grupo generador, se deberan suministrar 
+modelos que permitan reproducir la dinamica de variables como: posiciones de valvulas y potencia mecanica, 
+registrada ante simples ensayos de rechazo de carga (al 100% y 60% de la potencia nominal), y/o ensayos 
+de tomas de carga al variar en forma de escalon o de rampa las consignas de potencia y frecuencia.  
+Para el caso particular de las TG con potencia superior a 30MW se deben representar con buena aproximacion 
+lazos de control secundarios como ser: control de temperatura, alabes guia de entrada de aire a compresor 
+(IGV), etc. 
+Para los sistemas de control de la excitacion la informacion (modelo) debe permitir simular con buena 
+aproximacion las variaciones de la tension terminal, tension de campo, potencia activa y reactiva generada, 
+etc. 
+En el caso de ciclos combinados la informacion del modelo del regulador de potencia frecuencia debe permitir 
+reproducir las variaciones de potencia mecanica de la TV ante la desconexion intempestiva de una o mas de 
+las TG base del mismo. 
+A solicitud de CAMMESA el Generador debera poner a disposicion todos los planos, diagramas funcionales, 
+memorias descriptivas, memorias de calculo, protocolos de ensayo, catalogos de fabricantes y toda otra 
+documentacion tecnica que permita verificar el desempeno de los sistemas de control de velocidad, potencia, 
+frecuencia, de excitacion y controles asociados. 
+Los datos requeridos son: 
+ Identificacion (Nombre, Nº de maquina, Tipo, Ubicacion Central, etc.). 
+ Las caracteristicas tecnicas del equipamiento requerido en el Anexo 24 de Los Procedimientos para el 
+SISTEMA DE OPERACION Y DESPACHO (SMEC, SOTR, SCOM). 
+ Las Planillas del Banco Nacional de Parametros de Generadores, trafos y lineas, completadas con 
+todos los datos de las nuevas instalaciones. 
+ Diagramas de bloques y modelos de los siguientes sistemas de control automatico:
+
+--- Página 11 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 11 
+Version:03 -Oct -2023 
+ RAT (Regulador automatico de tension) 
+ UEL (Limitador de minima excitacion) 
+ OEL (Limitador de maxima excitacion) 
+ PSS (Estabilizador del sistema de potencia) 
+ RAV (Lazo de control potencia-frecuencia) para TG¨s y TV 
+ Tabla de la Potencia efectiva y consumo de servicios auxiliares de la TV, para diferentes potencias de 
+las TG, incluyendo el caso en que el ciclo opere con una sola TG E/S.  
+ Turbogas: Curva/s del fabricante indicando la variacion de la potencia maxima, ante cambios en la 
+temperatura ambiente, presion atmosferica y frecuencia de red. Potencia funcionando en carga base, 
+calculada para 50 Hz; 49,5 Hz, 49 Hz; 48,5 Hz y 48 Hz, para una temperatura ambiente de 40°C; 35°C 
+y 30°C.  
+ Potencia efectiva a plena carga y consumo de servicios auxiliares expresado como porcentaje de la 
+potencia efectiva a plena carga. 
+ Tension Nominal, Reactancias, Resistencias, Constantes de Tiempo. 
+ Tiempo estimado de arranque desde parada fria hasta sincronismo, desde sincronismo hasta plena 
+carga, y para las maquinas turbovapor tiempo minimo requerido en la operacion entre su parada y 
+rearranque. 
+ Tasa de indisponibilidad forzada prevista para las maquinas. 
+ Centrales Termicas y Nucleares: consumo especifico medio bruto. Coeficientes A, B y C de la funcion 
+representativa del Consumo Especifico Bruto. 
+ Maquinas Termicas: Tipos de combustibles que puede consumir, posibilidades de trabajar con mezcla, 
+y capacidad de almacenamiento de combustible. Previsiones de disponibilidad de combustibles (stock 
+inicial y entregas previstas de carbon y/o combustibles liquidos, y cuota prevista de gas). Costos 
+variables de Produccion y precio de referencia de flete, tal como se indica en el Anexo 13 de LOS 
+PROCEDIMIENTOS 
+ Centrales Hidroelectricas con Capacidad de Embalse: curva de volumen embalsado en funcion del 
+nivel, cota minima y maxima operativa y datos de evaporacion; 
+ Centrales Hidroelectricas con embalse de capacidad estacional: valores del agua tal como se indica en 
+el Anexo 22 de LOS PROCEDIMIENTOS. 
+ Centrales Hidroelectricas en General: funcion para conversion energetica (m3 por KWh), caudal 
+maximo y minimo turbinable por grupo, serie historica de caudales semanales desde 1943. Pronosticos 
+de aportes o de energia, segun corresponda, o de tipo de ano hidrologico de existir una prevision al 
+respecto. Restricciones aguas abajo que afectaran su despacho (cota de operacion maxima en 
+embalses, limitaciones al caudal erogable, etc.).  
+ Autogeneradores y Cogeneradores: Rango de potencia que pueden intercambiar. Saldo neto de 
+energia previsto con su precio de venta requerido. 
+ Capacidad para regulacion de tension: curva de capabilidad, margenes de subexcitacion y 
+sobreexcitacion, factor de potencia. 
+ Prevision de disponibilidad en el equipamiento requerido para cumplir con su compromiso de Control 
+de Tension y suministro de potencia reactiva. 
+ Caracteristicas de regulacion de excitacion: Caracteristicas, datos completos de ajuste, diagrama de 
+bloques, diagramas funcionales y protocolos de ensayo, del sistema de excitacion, limitadores (UEL, 
+OEL) y de los estabilizadores de potencia (Pss). 
+ Caracteristicas de regulacion de frecuencia: contribucion a la regulacion primaria y secundaria; 
+ Maxima sobrefrecuencia admitida y ajuste y temporizacion de los reles de sobrefrecuencia. 
+ Valores de frecuencia y temporizacion de todos los reles o logicas que pueden desconectar la unidad 
+generadora por subfrecuencia.
+
+--- Página 12 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 12 
+Version:03 -Oct -2023 
+ Tiempo de lanzamiento (de acuerdo a ensayo). 
+ Caracteristica del regulador de velocidad (marca, control PI o PID, hidraulico, electrohidraulico, etc.) 
+ Banda muerta (rango de ajuste, calibracion actual). 
+ Estatismo permanente (rango de ajuste, valor usual). 
+ Compensaciones dinamicas (amortiguamientos) 
+ Velocidad de toma de carga (MW/seg) 
+o 
+Para maquinas hidraulicas: 
+ 
+Estatismo transitorio (rango de ajuste, calibracion actual) 
+ 
+Constante de Tiempo del Estatismo Transitorio Constantes proporcional, integral y 
+derivativa del compensador directo (KP, KI y KD) 
+o 
+Para maquinas termicas: 
+ 
+En caso de poseer compensaciones dinamicas, funcion transferencia con todos los 
+parametros.  
+ 
+Variador de velocidad/consignador (tipo: potenciometro motorizado, consignador estatico, 
+etc.)  
+ Tiempo de establecimiento (lapso necesario para que la potencia mecanica ingrese en la banda del +/-
+10% del incremento de carga aplicado). 
+ En el caso de que la central posea un sistema de CONTROL CONJUNTO de GENERACION y/o 
+REGULACION SECUNDARIA se debe proveer su diagrama funcional con los parametros 
+correspondientes, indicando el rango de ajuste de aquellos que pueden modificarse. 
+ Caracteristica de la turbina  
+o 
+Hidraulica: 
+ 
+parametro TW ensayado 
+o 
+Termica: 
+ 
+Modelo simplificado indicando constante de tiempo de la etapa de Alta Presion del 
+recalentador y porcentajes de potencia producida en cada etapa . 
+ 
+Modelo simplificado de la caldera incluyendo constante de tiempo de acumulacion de 
+vapor, parametros asociados modelo del regulador de presion con sus correspondientes 
+ajustes. 
+ 
+Caracteristica del limitador de carga. 
+ 
+Puntos de operacion prohibidos (entrada/salida de quemadores, apertura de valvulas 
+parcializadoras, resonancias, etc.) 
+ 
+Diagramas funcionales del lazo de regulacion de velocidad con sus respectivos 
+parametros (ganancias y constantes de tiempo con sus rangos de ajuste y valor actual; 
+caracteristicas de valvulas, limites, banda muerta, etc.). 
+ 
+Limites de velocidad de toma de carga 
+ 
+Caracteristica, modelos y parametros del sistema de reduccion rapida de carga y/o 
+sistema cierre rapido de valvulas (FAST-VALVING) 
+2.4. REQUISITOS PREVIOS A LA PRIMERA SINCRONIZACION CON EL SADI 
+Los Generadores, Cogeneradores y Autogeneradores, deberan cumplir los siguientes requisitos antes de la 
+primera sincronizacion con el SADI.
+
+--- Página 13 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 13 
+Version:03 -Oct -2023 
+2.4.1. HABILITACION TECNICA 
+Antes de efectuar la primera sincronizacion deberan ensayarse especialmente todas las protecciones y 
+sistemas de control instalados para evitar que una falla en las instalaciones del generador se traslade al SADI. 
+Ademas, se debera cumplir con lo siguiente: 
+a) con todos los requisitos previos a la conexion al SADI solicitados por la Secretaria de Energia y el ENRE 
+en las respectivas resoluciones de habilitacion. 
+b) Haber cumplido con los requisitos de administracion del MEM indicados en el Anexo 17 de Los 
+Procedimientos. 
+c) Tener la habilitacion del Transportista y/o PAFTT al que esta vinculado que indique que cumple con los 
+requisitos de conexion. 
+d) Haber firmado y presentado a CAMMESA el Convenio de Conexion incluido el Acta de Ajuste y 
+Coordinacion de Protecciones y de Diseno y Prueba de Automatismos de Equipos Asociados a la Red de 
+TRANSPORTE 
+e) Haber instalado todos los equipamientos de proteccion y control requeridos por el sistema electrico que 
+CAMMESA o la Transportista o el PAFTT hayan solicitado, como resultado del analisis de los estudios 
+presentados por el Agente o de estudios propios.  
+f) 
+Haber concluido a satisfaccion de CAMMESA con todos los estudios requeridos para la Etapa II del PT1. 
+A estos efectos cuando lo considere necesario CAMMESA pedira opinion al Transportista sobre estos 
+estudios.  
+g) Disponer de las instalaciones para desconexion automatica de generacion (DAG), 
+h) Disponer de las instalaciones para desconexion automatica de carga (DAC) 
+i) 
+Disponer de las instalaciones para Arranque en Negro. 
+j) 
+Disponer de los automatismos ante perdida de el /los generadores 
+k) Tener habilitado el Sistema de Medicion Comercial (SMEC) y el Sistema de Operacion en Tiempo Real 
+(SOTR) dentro de los plazos establecidos en la regulacion vigente. 
+Cuando CAMMESA verifique que el Generador ha cumplido con lo indicado precedentemente le otorgara la 
+Habilitacion Tecnica. 
+2.4.2. REQUISITOS INFORMATIVOS PARA LA SINCRONIZACION 
+Por lo menos 15 dias antes del inicio de los ensayos de puesta en marcha los Generadores, Cogeneradores 
+y Autogeneradores deberan enviar al Centro de Operaciones de CAMMESA y al Centro de Operaciones del 
+Transportista o PAFTT, la siguiente informacion: 
+ Los Programas de Pruebas (5.4) para la puesta en marcha de cada unidad con el detalle de los ensayos 
+a realizar, indicando en cada caso el efecto que pueden producir sobre el SADI y condiciones 
+especiales que se requieran en el sistema para realizarlos.  
+ La lista de operadores de la central y los medios de comunicacion entre estos y los operadores de 
+CAMMESA y del COT, COTDT y/o COPAFTT. 
+ El Resumen de los Procedimientos Operativos (version preliminar para Marcha de Prueba) 
+El cronograma definitivo y la coordinacion de los ensayos debera acordarse con el Centro de Operaciones de 
+CAMMESA.  
+2.4.3. RESUMEN DE LOS PROCEDIMIENTOS OPERATIVOS 
+Con el fin de contar con definiciones e informacion sobre la operacion de la unidad generadora el Agente debe 
+presentar un informe referido a los procedimientos operativos de la central que debe contener una descripcion 
+de los medios y procedimientos que se aplican en la operacion de los generadores que incluya como minimo 
+lo siguiente: 
+ Descripcion de los controladores de potencia-frecuencia 
+ Modos de operacion (RPF, carga base, control de velocidad, etc.)
+
+--- Página 14 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 14 
+Version:03 -Oct -2023 
+ Forma de definir los parametros y limites de generacion cuando opera en RPF 
+ Configuracion normal de servicios auxiliares, bombas, etc. 
+ Criterios operativos de seguridad ante indisponibilidades o fallas de sistemas de la Planta (servicios 
+auxiliares, bombas, etc.). 
+ Medidas de Seguridad y Restricciones Operativas, para intervenciones de emergencia en las 
+instalaciones con unidades generadoras en servicio. 
+ Un resumen de cada uno de los principales procedimientos operativos.  
+La descripcion de los recursos y conceptos que maneja el operador para establecer el despacho y condiciones 
+de seguridad de las unidades generadoras debe hacerse en forma clara y precisa 
+El agente presentara las revisiones de este informe en toda oportunidad que haga modificaciones en los 
+Procedimientos Operativos que afecten la confiabilidad, o cuando CAMMESA lo requiera. 
+2.5. MARCHA DE PRUEBA 
+Una vez obtenida la Habilitacion Tecnica y habiendo cumplido con los requisitos informativos para la primera 
+sincronizacion con el SADI, el Generador estara en condiciones de efectuar su conexion a la red, iniciar la 
+marcha de prueba, y comenzar su operacion comercial restringida. La Marcha de Prueba finalizara con la 
+Habilitacion Comercial del Generador. 
+2.5.1. REQUISITOS GENERALES PARA LA MARCHA DE PRUEBA 
+Durante la Marcha de Prueba el despacho del Generador sera forzado para cumplir con las condiciones de 
+seguridad que requiera CAMMESA o el PAFTT en relacion con el desempeno y las caracteristicas de las 
+pruebas. La potencia operada se considera como no firme.  
+Los ensayos, cuya realizacion debera estar aprobada por CAMMESA y el COT, COTDT y/o COPAFTT, 
+deberan demostrar que la central se encuentra en condiciones operativas para conectarse al SADI. 
+CAMMESA, cuando lo estime conveniente, solicitara al Agente un informe de auditores independientes 
+previamente aceptados por CAMMESA con el fin de verificar los ensayos, informar de los resultados 
+obtenidos, evaluar el funcionamiento y estado de elementos criticos en las plantas generadoras. El costo de 
+esos trabajos estara a cargo del Agente. 
+2.5.2. OPERACION DEL GENERADOR DURANTE LA MARCHA DE PRUEBA 
+CAMMESA coordinara mediante el COT, COTDT y/o COPAFTT, cuando corresponda, la operacion de las 
+centrales conectadas a dichos transportistas. 
+Las solicitudes de entrada o salida de servicio de cada unidad, o modificacion de carga, seran comunicadas 
+por CAMMESA al Centro de Operaciones respectivo y estos a la central generadora. 
+El Generador comunicara al COT, COTDT y/o COPAFTT correspondiente, y estos lo transmitiran al Centro 
+de Operaciones de CAMMESA, toda informacion sobre horarios de entradas o salidas de servicio, condicion 
+de indisponibilidad y sus causas, limitaciones a la potencia operable y sus causas, aumentos o reducciones 
+de potencia generada, etc., dentro de los diez minutos posteriores de sucedidos. 
+Segun las necesidades de control de tension, el COT, COTDT y/o COPAFTT correspondiente coordinara 
+directamente con la central generadora los requerimientos de potencia reactiva. 
+2.5.3. ENSAYOS 
+Durante la marcha de prueba el GENERADOR debera realizar los siguientes ensayos:  
+2.5.3.1. ENSAYOS DEL SISTEMA DE EXCITACION 
+Los ensayos del sistema de excitacion de cada grupo generador tienen por finalidad identificar con precision 
+la respuesta dinamica de su regulador automatico de tension, incluyendo los lazos de limitacion (UEL, OEL y 
+Volt/Hz) y estabilizacion (PSS). Este grupo de ensayos incluye lo siguiente: 
+ Verificacion de la funcion de transferencia del Regulador Automatico de Tension  
+ Verificacion de la respuesta del RAT con el generador en Vacio (Ensayo al Escalon).
+
+--- Página 15 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 15 
+Version:03 -Oct -2023 
+ Verificacion de la respuesta del RAT con el generador en carga. 
+ Verificacion de techos de excitacion y limites del RAT con el generador en vacio. 
+ Ensayo de respuesta dinamica en carga con actuacion de los limitadores de excitacion. 
+2.5.3.2. ENSAYOS DEL LAZO DE CONTROL POTENCIA FRECUENCIA. 
+ Medicion del Tiempo de Restablecimiento 
+ Los ensayos para medicion de: ESTATISMO, BANDA MUERTA y TIEMPO DE LANZAMIENTO. (segun 
+lo indicado en el PT9). 
+ Funcionamiento en carga. Para Turbogas verificacion del funcionamiento en diferentes modos de 
+control: carga base, regulacion de frecuencia, carga preseleccionada. 
+ Para Turbogas: Medicion potencia maxima operable para diferentes temperaturas ambiente y 
+frecuencia de red. 
+ Para Turbovapor y Turbogas: Medicion del tiempo maximo que puede sostener el aporte a la regulacion 
+primaria de frecuencia, ante subfrecuencias sostenidas en el SADI.  
+ Reduccion rapida de carga. 
+ Incremento rapido de carga. 
+2.5.3.3. ENSAYOS PARA MEDICION DE LOS PARAMETROS DEL GENERADOR. 
+ Ensayos para medicion de parametros de Eje Directo. 
+ Ensayos para medicion de parametros de Eje en Cuadratura. 
+2.5.3.4. ENSAYOS DE LOS ESTABILIZADORES (PSS) 
+ Caracteristica de respuesta en frecuencia del Estabilizador. 
+ Medicion del efecto del PSS para amortiguar el modo local. 
+ Ensayo para ajuste de la ganancia. (Ganancia maxima del estabilizador) 
+ Desempeno del PSS ante variaciones rapidas de carga de turbina 
+2.5.3.5. ENSAYOS OPERATIVOS 
+Los ensayos operativos tienen por objeto alcanzar gradualmente la potencia maxima en grupos generadores 
+de gran porte o ciclos combinados de potencia total superior a los 300 MW y de este modo minimizar los 
+riesgos de perturbaciones en la red por falla de las nuevas instalaciones.  
+Tratandose de pruebas de equipamiento ingresante al SADI resulta prioritario preservar durante su ejecucion 
+la seguridad de la operacion, debiendose coordinar previamente las condiciones de la red y el despacho para 
+alcanzar dicho objetivo. 
+Este grupo de ensayos incluye lo siguiente: 
+1. Marcha con carga parcial de unidades generadoras o CC  
+2. Pruebas con dos unidades del CC 
+3. Pruebas de rechazos de carga al 50%  
+4. Marcha de 72 hs. al 50 y 75 %  
+5. Rechazos de carga al 100%. 
+6. Marcha de 72 horas al 100 %  
+7. Reduccion controlada de la potencia 
+2.5.3.6. ENSAYOS DE LA DAC, DAG, Y CONTROL DE LA COMPENSACION DE REACTIVO EN LA RED 
+(CCRR)
+
+--- Página 16 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 16 
+Version:03 -Oct -2023 
+Durante la marcha de prueba se completaran los ensayos que permitan verificar el correcto funcionamiento 
+de los equipos y senales que forman parte de los sistemas DAC, DAG y CCRR que sean necesarios para el 
+funcionamiento del generador para alguna condicion de operacion. Cuando no sea posible o conveniente 
+generar las condiciones reales, o efectuar la desconexion de carga o del generador, la verificacion se hara 
+por partes cubriendo la totalidad de los elementos. A esos efectos se deberan ejecutar los siguientes ensayos:  
+ Transmision de senales. 
+ Deteccion de condiciones para actuacion de los automatismos (configuracion, cambios de variables),  
+ Ajustes/verificacion en campo de elementos de medicion de variables 
+2.5.3.7. ANALISIS Y ENSAYOS PARA EVALUAR LA CONFIABILIDAD Y LA ESTABILIDAD DEL 
+GENERADOR ANTE PERTURBACIONES EN LA FRECUENCIA DE LA RED 
+El Generador debera identificar tecnicamente los elementos criticos que pueden producir la salida parcial y/o 
+total de las maquinas e informar las salvaguardas adoptadas. Esta informacion debera ser entregada a 
+CAMMESA bajo Declaracion Jurada. El agente con la maquina en carga, en acuerdo con las indicaciones de 
+CAMMESA, debera realizar ensayos en los que se produzca la perdida de algun elemento de la instalacion o 
+se simulen condiciones de falla en algunos elementos que sean criticos para el funcionamiento de la unidad 
+o del Ciclo Combinado, debiendo verificar en cada prueba si la misma permanece en servicio en forma parcial 
+o total. Las medidas de seguridad para las pruebas deberan ser aprobadas por el PAFTT y CAMMESA 
+dejando establecido en cada caso el estado de carga con que se realizara el ensayo y el o los elementos que 
+se simularan fallados. 
+El agente debera proponer a CAMMESA un consultor u organismo de reconocida capacidad tecnica para 
+auditar las evaluaciones y ensayos que se describen en los ANEXOS G y H que se resumen a continuacion:  
+ Rechazo de carga de cada una de las unidades de un CC, 
+ Evaluacion del comportamiento del control de la TV ante el rechazo de una TG de un Ciclo Combinado  
+ Ensayo para evaluacion del efecto del disparo de la TV de un Ciclo Combinado sobre la estabilidad de 
+la/s TG. 
+ Ensayo de inyeccion de senal de error en el control de potencia-frecuencia simulando una caida de la 
+frecuencia a 48 Hz.  
+ Operacion de la/s unidad/es en baja frecuencia fuera de paralelo, 
+ Operacion de la TV con los auxiliares alimentados desde una fuente con 49 Hz durante tres minutos 
+ Operacion de las unidades generadoras en 48,5 Hz durante 25 s. 
+ Verificacion del funcionamiento del sistema de By- Pass 
+El auditor debera elaborar un informe con su opinion de las pruebas y evaluaciones realizadas dejando 
+constancia del grado de cumplimiento y eficacia de los trabajos y evaluaciones efectuadas. Cuando 
+CAMMESA lo requiera el Agente debera suministrar la informacion tecnica y/o los protocolos de los ensayos 
+correspondientes.  
+Los estudios del Agente y el informe del auditor tambien deberan incluir como minimo el analisis y las pruebas 
+necesarias para evaluar la confiabilidad de los siguientes sistemas: 
+1. Fallas en bomba de alimentacion de agua a la caldera. 
+2. Fallas en calderas (bombas de circulacion, etc.) 
+3. Fallas de bombas de extraccion de condensado 
+4. Fallas en el sistema de circulacion de agua de refrigeracion del condensador (bombas, filtros)  
+5. Fallas de los compresores y otras fallas probables en el sistema de aire de control 
+6. Fallas en el sistema auxiliar de agua de refrigeracion (bomba, etc.) 
+7. Falla en el sistema de suministro de alimentacion electrica a servicios auxiliares (verificacion de 
+conmutacion, protecciones) 
+8. Fallas en el sistema de control (procesadores, remotas, comunicaciones, alimentacion, etc.)
+
+--- Página 17 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 17 
+Version:03 -Oct -2023 
+9. Fallas en sistema de alimentacion de gas (compresores, valvulas, etc.) y diesel oil a las TG 
+10. Fallas en el sistema de vapor de sellos, 
+Sobre cada uno de estos puntos se presentara el informe del analisis de confiabilidad de las instalaciones y 
+los protocolos de los ensayos. El auditor debera emitir su opinion sobre la base del analisis de la informacion, 
+estudios y ensayos que el Agente disponga en relacion con esos sistemas. 
+El auditor debera requerir al Agente o dejar constancia en su informe sobre la necesidad de pruebas 
+adicionales cuando ello sea conveniente a los efectos de disponer de los elementos suficientes para evaluar 
+la estabilidad y comportamiento de la unidad ante fallas probables en sus componentes principales. 
+De haber surgido de los ensayos modificaciones a los datos declarados, estos deberan ser informados a 
+CAMMESA dentro de los 15 dias posteriores a la realizacion de los mismos. 
+2.5.4. PROGRAMAS DE PRUEBAS 
+El Generador debe enviar a CAMMESA y al PFTT los planes y programas de los ensayos a efectuar durante 
+la marcha de prueba con el fin de posibilitar que se cumpla en tiempo y forma con lo siguiente: 
+ Analizar y definir las medidas de seguridad 
+ Coordinar las pruebas 
+ Autorizar las pruebas 
+ Verificar el cumplimiento de las condiciones requeridas, 
+Con este objeto se han definido tres tipos de informes: 
+ Plan Maestro para la Marcha de Prueba, 
+ Plan para Coordinacion de las Pruebas 
+ Programa de Pruebas 
+2.5.4.1. PLAN MAESTRO PARA LA MARCHA DE PRUEBA 
+Este informe debe contener una descripcion de cada una de las pruebas con referencias especificas a lo 
+siguiente: 
+ Descripcion de las operaciones y/o perturbaciones sobre las instalaciones del generador 
+ Descripcion de las operaciones y/o perturbaciones sobre la red 
+ Otros requerimientos del sistema de transporte (PAFTT), 
+ Condiciones de despacho del generador, 
+ Duracion de cada prueba, 
+ Analisis y descripcion de las perturbaciones en la red. esperadas o posibles 
+ Medidas de seguridad recomendadas para el PAFTT 
+ Medidas de seguridad recomendadas para mantener la estabilidad del SADI 
+El Agente debe enviar el Plan Maestro de las Pruebas con 15 o mas dias de anticipacion al inicio de la Marcha 
+de Prueba. 
+Este plan debe actualizarse cada vez que se introduzcan cambios en la definicion de las pruebas o antes del 
+inicio de cada mes. 
+El plan debe tener el Cronograma previsto que abarque toda la marcha de pruebas en forma de diagrama de 
+Gantt. La unidad en la escala de tiempos de este cronograma debe ser el dia. 
+2.5.4.2. PLAN PARA COORDINACION DE LAS PRUEBAS 
+Este informe contiene un cronograma que incluye todas las pruebas programadas para un periodo de dos 
+semanas. El informe debe presentarse a CAMMESA y al PAFTT antes de las 10hs del jueves de la semana 
+anterior al periodo abarcado por el programa de pruebas.
+
+--- Página 18 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 18 
+Version:03 -Oct -2023 
+Para las pruebas programadas para la primera semana se debera informar en forma detallada lo siguiente:  
+ Descripcion de las operaciones y/o perturbaciones sobre las instalaciones del generador 
+ Descripcion de las operaciones y/o perturbaciones sobre la red 
+ Otros requerimientos del sistema de transporte (PAFTT), 
+ Condiciones de despacho de cada uno los grupos que intervienen en la prueba, 
+ Duracion 
+ Las posibles perturbaciones que podrian afectar a la red  
+ Medidas de seguridad convenidas con el PAFTT 
+ Medidas de seguridad comprometidas para mantener la estabilidad del SADI 
+ Cronograma en forma de diagrama de Gantt para dos semanas 
+2.5.4.3. PROGRAMA DE PRUEBAS 
+Durante el periodo de Marcha de Prueba hasta su finalizacion el agente debe presentar a CAMMESA y al 
+PAFTT antes de las 10 hs de cada dia un informe denominado “Programa de Pruebas” que contendra un 
+cronograma y los siguientes datos para cada una de las pruebas programadas para el dia siguiente: 
+ Descripcion de las operaciones y/o perturbaciones a efectuar sobre las instalaciones del generador 
+ Descripcion de las operaciones y/o perturbaciones sobre la red requeridas por el ensayo 
+ Otros requerimientos para el sistema de transporte (PAFTT), 
+ Grupo/s Condiciones de despacho de cada uno los grupos que intervienen en la prueba, 
+ Duracion de la prueba, 
+ Perturbaciones esperadas en la red debido a la prueba  
+ Las mayores perturbaciones que podrian afectar a la red en caso de alguna anormalidad en las 
+pruebas, 
+ Medidas de seguridad convenidas con el PAFTT 
+ Medidas de seguridad comprometidas para mantener la estabilidad del SADI 
+ Cronograma en forma de diagrama de Gantt para el periodo de 24 hs. 
+2.6. INICIO DE LA OPERACION COMERCIAL EN EL MEM 
+2.6.1. HABILITACION COMERCIAL 
+Una vez completados todos los trabajos, pruebas e informes correspondientes a la Marcha de Prueba el 
+Generador debera presentar a CAMMESA la Solicitud para Habilitacion Comercial.  
+Previamente el Generador debe haber presentado a CAMMESA la siguiente informacion para su analisis y/o 
+verificacion:  
+1. El informe de los Ensayos Efectuados Durante la Marcha de Prueba. 
+2. El informe de la Auditoria sobre la Confiablilidad de Funcionamiento de la Unidad Generadora/ Central. 
+3. El informe (Certificado) del Fabricante y/o del Contratista Principal responsable de la puesta en servicio 
+en el que se certifique que se han efectuado las pruebas y verificaciones necesarias para la puesta en 
+servicio, y realizados todos los ajustes de los controles, protecciones y equipos, que permiten demostrar 
+que la instalacion se ajusta a los estandares de diseno y calidad aceptados internacionalmente, y a los 
+criterios de diseno y desempeno requeridos por los Procedimientos. 
+4. Informe del Transportista o el PAFTT con la aprobacion del diseno final y las pruebas de puesta en servicio 
+de la DAC, y/o DAG y/o automatismos para control de tension en la red que se hubieran efectuado durante 
+la Marcha de Prueba.
+
+--- Página 19 ---
+LOS PROCEDIMIENTOS - 0P.T.4: INGRESO DE NUEVOS GRANDES USUARIOS MAYORES, DISTRIBUIDORES, GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 19 
+Version:03 -Oct -2023 
+5. El Resumen de los Procedimientos Operativos (version completa). 
+Recibida la Solicitud con los documentos citados y verificados a satisfaccion de CAMMESA el cumplimiento 
+por parte del generador de todos los requisitos y ensayos, y no existiendo observaciones sobre los mismos 
+por parte del COT, COTDT y/o COPAFTT, la unidad quedara habilitada para la operacion comercial en el 
+MEM, a partir de la fecha que CAMMESA notifique debiendo ajustar su operacion a lo indicado en Los 
+Procedimientos para la Programacion de la Operacion, el despacho de Cargas y el Calculo de Precios. 
+Cuando CAMMESA tenga observaciones o necesite efectuar requerimientos adicionales sobre la Solicitud de 
+Habilitacion Comercial, y/o los informes mencionados debera comunicarlo al Agente dentro de los 10 dias 
+habiles de recibida la misma. CAMMESA dejara constancia cuando la Habilitacion Comercial quede 
+condicionada a la respuesta a las observaciones y/o requerimientos adicionales. En caso contrario CAMMESA 
+comunicara al Agente la Habilitacion Comercial y fijara un plazo para que el Agente responda al requerimiento 
+y definira las restricciones operativas y de despacho que se aplicaran al generador transitoriamente mientras 
+no se solucionen los temas pendientes.  
+CAMMESA informara a la SECRETARIA DE ENERGIA y al ENTE NACIONAL REGULADOR DE LA 
+ELECTRICIDAD la fecha de la Habilitacion Comercial y comunicara si corresponde aplicar restricciones 
+transitorias al despacho y/o la operacion dando los fundamentos de las mismas 
+2.6.2. HABILITACION COMERCIAL CON RESTRICCIONES AL DESPACHO 
+Para la Habilitacion Comercial se debera verificar que el ingreso del Generador no introduce restricciones al 
+despacho de generacion o al suministro que incremente los costos operativos del sistema incluyendo en ello 
+la valorizacion de la energia no suministrada. El despacho del Generador se efectuara asegurando el nivel de 
+calidad de servicio requerido en la reglamentacion en forma compatible con los criterios de minimizacion de 
+costos que rigen en el MEM y quedara sujeto a las restricciones que CAMMESA establezca en cada caso. 
+Cuando alguno de los estudios o pruebas requeridos en este PT tengan observaciones o existan sistemas de 
+control que esten pendientes de habilitacion, lo cual podria ser causa de que no se haya detectado alguna 
+falla existente en las instalaciones del Generador, o un funcionamiento deficiente de la unidad generadora en 
+determinadas situaciones, CAMMESA podra Habilitar Comercialmente al Generador, solamente en la medida 
+que sea posible asegurar el nivel de calidad de servicio requerido en la reglamentacion, aplicando las 
+restricciones al despacho que sean necesarias para minimizar el efecto de las posibles perturbaciones que el 
+generador pudiera introducir en la red. 
+2.6.3. PRUEBAS ADICIONALES 
+Cuando sea necesario efectuar pruebas adicionales con posterioridad a la Habilitacion Comercial se aplicaran 
+los procedimientos y criterios definidos para la Marcha de Prueba. 
+2.6.4. INFORMES DE LA FASE III DEL PT1 Y BASE DE DATOS REVISADA 
+Dentro de los 60 dias siguientes a la Habilitacion Comercial el AGENTE debe presentar el informe final de 
+Estudios de ETAPA 3 del PT1 con la homologacion de los modelos y la presentacion de todos los datos de la 
+planilla revisados. En el caso que los modelos o los datos finales difieran significativamente CAMMESA 
+debera evaluar el efecto sobre los resultados de los estudios de Fase II y podra requerir Al Agente un estudio 
+complementario para actualizar los resultados con los nuevos datos para todas las condiciones que considere 
+criticas.
+
+--- Página 20 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 20 
+Version: 03 -Oct -2023 
+P.T. 4: ANEXOS "A" a "I" 
+1. ANEXO A: Planillas de recoleccion de datos del banco nacional de parametros 
+BANCO NACIONAL DE PARAMETROS - Planilla de recoleccion de datos de: CABLES SUBTERRANEOS 
+ Empresa: 
+Pagina 1 de 1
+Nº DESCRIPCION
+UNIDADES
+ELEMENTOS DEL MISMO TIPO (de uno a seis)
+1  Desde la E.T.   * 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2  Hasta la E.T.    * 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3  Nombre o Nº de identificacion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4  Tension nominal   * 
+KV 
+ 
+ 
+ 
+ 
+ 
+ 
+5  Ano de puesta en E/S 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+6  Longitud total   * 
+Km 
+ 
+ 
+ 
+ 
+ 
+ 
+7  Material y seccion del conductor 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8
+Denominacion del conductor
+9  Diagrama de configuracion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+10  Resistencia por fase (1)   * 
+ohm/km  
+ 
+ 
+ 
+ 
+ 
+11  Reactancia por fase (1)   * 
+ohm/km  
+ 
+ 
+ 
+ 
+ 
+12  Susceptancia por fase (1)   * 
+s/km 
+ 
+ 
+ 
+ 
+ 
+ 
+13  Resistencia de secuencia cero (1)   * 
+Ohm/km  
+ 
+ 
+ 
+ 
+ 
+14  Reactancia de secunecia cero (1)   * 
+ohm/km  
+ 
+ 
+ 
+ 
+ 
+15  Susceptancia de secuencia cero (1)   * 
+s/km 
+ 
+ 
+ 
+ 
+ 
+ 
+16 Potencia natural
+MW
+17  Impedancia caracteristica 
+ohm 
+ 
+ 
+ 
+ 
+ 
+ 
+18  Constante de atenuacion 
+Neper/km  
+ 
+ 
+ 
+ 
+ 
+19  Constante de fase 
+rad/km 
+ 
+ 
+ 
+ 
+ 
+ 
+20  Velocidad de propagacion 
+km/seg 
+ 
+ 
+ 
+ 
+ 
+ 
+21  Capacidad termica 
+A 
+ 
+ 
+ 
+ 
+ 
+ 
+22  Capacidad efectiva especificando causa   * 
+A 
+ 
+ 
+ 
+ 
+ 
+ 
+23  Sobrecarga admisible asociada a tiempo 
+A 
+ 
+ 
+ 
+ 
+ 
+ 
+24  Relacion de corriente de T.I. en extremo "Desde" 
+A 
+ 
+ 
+ 
+ 
+ 
+ 
+25 Relacion de corriente de T.I. en extremo "Hasta"
+A
+26  Propietario 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+27  Fecha de la informacion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+NOTAS: * Parametro indispensable 
+(1) Valor a 20º C 
+En caso de particularidades del funcionamiento o caracteristicas de la linea agregar una hoja con dichas observaciones.
+
+--- Página 21 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 21 
+Version: 03 -Oct -2023 
+ 
+BANCO NACIONAL DE PARAMETROS - Planilla de recoleccion de datos de: GENERADORES Y COMPENSADORES SINCRONICOS 
+ Empresa: 
+Pagina 1 de 2
+Nº DESCRIPCION 
+UNIDADES 
+ELEMENTOS DEL MISMO TIPO (de uno a seis) 
+1  Identificacion del elemento (central, Nº asignado al grupo) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2  Potencia nominal 
+MVA 
+ 
+ 
+ 
+ 
+ 
+ 
+3  Potencia efectiva 
+MW 
+ 
+ 
+ 
+ 
+ 
+ 
+4  Tension nominal 
+kV 
+ 
+ 
+ 
+ 
+ 
+ 
+5  Reactancia sincronica (Xd) (No saturada) 
+% valores nominales  
+ 
+ 
+ 
+ 
+ 
+6  Reactancia sincronica en cuadratura (X )
+q  (No saturada) 
+% valores nominales  
+ 
+ 
+ 
+ 
+ 
+7  Reactancia transitoria directa (X ' d ) (No saturada) 
+% valores nominales  
+ 
+ 
+ 
+ 
+ 
+8  Reactancia transitoria en cuadratura (X ' q ) (No saturada) 
+% valores nominales  
+ 
+ 
+ 
+ 
+ 
+9  Reactancia subtransitoria directa (X ' ' d ) (No saturada) 
+% valores nominales  
+ 
+ 
+ 
+ 
+ 
+10  Reactancia subtransitoria en cuadratura (X ' ' q ) (No saturada) 
+% valores nominales  
+ 
+ 
+ 
+ 
+ 
+11  Reactancia de secuencia inversa (X2) (No saturada) 
+% valores nominales  
+ 
+ 
+ 
+ 
+ 
+12  Reactancia homopolar (X0) (No saturada) 
+% valores nominales  
+ 
+ 
+ 
+ 
+ 
+13  Reactancia de Poitier (X p ) (No saturada) 
+% valores nominales  
+ 
+ 
+ 
+ 
+ 
+14  Constante de tiempo transitoria en cortocircuito de eje directo (T ' d ) 
+Seg 
+ 
+ 
+ 
+ 
+ 
+ 
+15  Constante de tiempo transitoria en cortocircuito de eje en cuadratura (T ' q ) 
+Seg 
+ 
+ 
+ 
+ 
+ 
+ 
+16  Constante de tiempo subtransitoria en cortocircuito de eje directo (T '' d ) 
+Seg 
+ 
+ 
+ 
+ 
+ 
+ 
+17  Constante de tiempo subtransitoria en cortocircuito de eje en cuadratura (T ' ' q ) 
+Seg 
+ 
+ 
+ 
+ 
+ 
+ 
+18  Constante de tiempo transitoria a circuito abierto de eje directo (T ' d0 ) 
+Seg 
+ 
+ 
+ 
+ 
+ 
+ 
+19  Constante de tiempo transitoria a circuito abierto de eje en cuadratura (T ' q0) 
+Seg 
+ 
+ 
+ 
+ 
+ 
+ 
+20  Constante de tiempo subtransitoria a circuito abierto de eje directo (T '' d )
+0  
+Seg 
+ 
+ 
+ 
+ 
+ 
+ 
+21  Constante de tiempo subtransitoria a circuito abierto de eje en cuadratura (T '' q0) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+22  Tipo de exitatriz (1: Rotativa - 2: Estatica) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+23  Arrollamiento amortiguador: (1: SI - 2: NO) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+24  Relacion entre corriente de excitacion para vacio y cortocircuito 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+25  Tipo de maquina motriz (1: vapor - 2: hidraulica - 3: diesel - 4: turbogas) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+26  GD² del generador y su maquina motriz 
+Tm² 
+ 
+ 
+ 
+ 
+ 
+ 
+27  Velocidad nominal del generador 
+r.p.m.
+
+--- Página 22 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 22 
+Version: 03 -Oct -2023 
+ 
+BANCO NACIONAL DE PARAMETROS - Planilla de recoleccion de datos de: GENERADORES Y COMPENSADORES SINCRONICOS 
+ Empresa: 
+Pagina 2 de 2
+Nº DESCRIPCION 
+UNIDADES
+ELEMENTOS DEL MISMO TIPO (de uno a seis) 
+28  H del generador y su maquina motriz 
+MW-seg 
+/MVA
+ 
+ 
+ 
+ 
+ 
+ 
+29  Potencia minima tecnica 
+MW 
+ 
+ 
+ 
+ 
+ 
+ 
+30  Potencia maxima tecnica 
+MW 
+ 
+ 
+ 
+ 
+ 
+ 
+31  Diagrama P-Q de las maquinas (adjuntar) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+32  Curva de saturacion del generador (adjuntar) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33  Funcion de transferencia (parametros en P.U.) de los reg. auto. de tension y de velocidad
+(adjuntar) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+34  Factor de potencia nominal (cos ) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+35  Fecha de la informacion
+
+--- Página 23 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 23 
+Version: 03 -Oct -2023 
+BANCO NACIONAL DE PARAMETROS - Planilla de recoleccion de datos de: INTERRUPTORES Y SECCIONADORES
+ Empresa: 
+Pagina 1 de 1
+Nº DESCRIPCION
+UNIDADES
+ELEMENTOS DEL MISMO TIPO (de uno a seis)
+1  Identificacion del elemento (barra, salida, Nº asignado) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2  Tipo de accionamiento (1: manual - 2: automatico) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3  Tension nominal 
+kV 
+ 
+ 
+ 
+ 
+ 
+ 
+4  Intensidad nominal 
+A 
+ 
+ 
+ 
+ 
+ 
+ 
+5  Potencia de interrupcion 
+MVA 
+ 
+ 
+ 
+ 
+ 
+ 
+6  Tiempo de desconeccion 
+seg 
+ 
+ 
+ 
+ 
+ 
+ 
+7
+¿Tiene reenganche? (1: SI - 2: NO)
+ 
+8  ¿Tipo de reenganche? (1: unipolar - 2: tripolar) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+9  Tiempo de reenganche automatico  
+Seg 
+ 
+ 
+ 
+ 
+ 
+ 
+10  Rele de accionamiento: Marca 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+11  Rele de accionamiento: Tipo 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+12  Corriente maxima de pico admisible (en el instante inicial) 
+A 
+ 
+ 
+ 
+ 
+ 
+ 
+13  Numero de recierres 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+14  Fecha de la informacion
+
+--- Página 24 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 24 
+Version: 03 -Oct -2023 
+BANCO NACIONAL DE PARAMETROS - Planilla de recoleccion de datos de: LINEAS AEREAS
+ Empresa: 
+Pagina 1 de 2
+Nº DESCRIPCION
+UNIDADES
+ELEMENTOS DEL MISMO TIPO (de uno a seis)
+1  Desde la E.T.   * 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2  Hasta la E.T.    * 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3  Nombre o Nº de identificacion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4  Tension nominal   * 
+KV 
+ 
+ 
+ 
+ 
+ 
+ 
+5  Ano de puesta en E/S 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+6  Longitud total   * 
+Km 
+ 
+ 
+ 
+ 
+ 
+ 
+7
+Material y seccion del conductor
+ 
+8  Denominacion del conductor 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+9  Cantidad de subconductores por fase 
+Nº 
+ 
+ 
+ 
+ 
+ 
+ 
+10  Material y seccion del hilo de guardia 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+11  Material de la torre 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+12  Resistividad del terreno 
+ohm X km  
+ 
+ 
+ 
+ 
+ 
+13  Cantidad de aisladores y tipo 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+14  Diagrama de configuracion, en escala con alturas en torres y fechas (adjuntar) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+15  Transposiciones: indicar cuantas y a que distancia del origen (adjuntar) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+16  Resistencia por fase (1) (2)   * 
+Ohm/km  
+ 
+ 
+ 
+ 
+ 
+17  Reactancia por fase (1) (2)   * 
+Ohm/km  
+ 
+ 
+ 
+ 
+ 
+18  Susceptancia por fase (1) (2)   * 
+s/km 
+ 
+ 
+ 
+ 
+ 
+ 
+19  Resistencia de secuencia cero (1) (2)   * 
+ohm/km  
+ 
+ 
+ 
+ 
+ 
+20  Reactancia de secuencia cero (1) (2)   * 
+ohm/km  
+ 
+ 
+ 
+ 
+ 
+21  Susceptancia de secuencia cero (1) (2)   * 
+s/km 
+ 
+ 
+ 
+ 
+ 
+ 
+22  Resistencia de acoplamiento de secuencia cero para doble terna 
+ohm/km  
+ 
+ 
+ 
+ 
+ 
+23  Reactancia de acoplamiento de secuencia cero para doble terna 
+ohm/km  
+ 
+ 
+ 
+ 
+ 
+24 Susceptancia de acoplamiento de secuencia cero para doble terna
+s/km 
+25  Potencia natural 
+MW 
+ 
+ 
+ 
+ 
+ 
+ 
+26  Impedancia caracteristica 
+ohm 
+ 
+ 
+ 
+ 
+ 
+ 
+27  Constante de atenuacion 
+Neper/km
+
+--- Página 25 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 25 
+Version: 03 -Oct -2023 
+BANCO NACIONAL DE PARAMETROS - Planilla de recoleccion de datos de: LINEAS AEREAS
+ Empresa: 
+Pagina 2 de 2
+Nº DESCRIPCION
+UNIDADES
+ELEMENTOS DEL MISMO TIPO (de uno a seis)
+28  Constante de fase 
+Rad/km  
+ 
+ 
+ 
+ 
+ 
+29  Velocidad de propagacion 
+Km/seg  
+ 
+ 
+ 
+ 
+ 
+30  Capacidad termica 
+A 
+ 
+ 
+ 
+ 
+ 
+ 
+31  Capacidad efectiva especificando causa   * 
+A 
+ 
+ 
+ 
+ 
+ 
+ 
+32  Sobrecarga admisible asociada a tiempo 
+A 
+ 
+ 
+ 
+ 
+ 
+ 
+33  Relacion de corriente de T.I. en extremo "Desde" 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+34 Relacion de corriente de T.I. en extremo "Hasta"
+35  Propietario 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+36  Fecha de la informacion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+NOTAS: * Parametro indispensable 
+ 
+(1) Valor a 20º C 
+ 
+(2) En caso de doble terna especificar primero el valor correspondiente a cada terna y al lado el valor de las dos ternas funcionando juntas. 
+ 
+En caso de particularidades del funcionamiento o caracteristicas de la linea agregar una hoja con dichas observaciones.
+
+--- Página 26 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 26 
+Version: 03 -Oct -2023 
+BANCO NACIONAL DE PARAMETROS - Planilla de recoleccion de datos de: TURBINAS DE GAS
+ Empresa: 
+Pagina 1 de 1
+Nº DESCRIPCION
+UNIDADES
+ELEMENTOS DEL MISMO TIPO (de uno a seis)
+1  Identificacion del elemento (central, Nº asignado al grupo) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2  Tipo (1: de ciclo abierto - 2: de cilco cerrado) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3  Tipo de combustible usado (1: diesel - 2: gas natural -3: ambos) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4  Potencia nominal con diesel 
+MW 
+ 
+ 
+ 
+ 
+ 
+ 
+5  Temperatura para esa potencia 
+ºC 
+ 
+ 
+ 
+ 
+ 
+ 
+6  Presion para esa potencia 
+Mm HG 
+ 
+ 
+ 
+ 
+ 
+ 
+7
+Potencia nominal con gas
+MW
+8  Temperatura para esa potencia 
+ºC 
+ 
+ 
+ 
+ 
+ 
+ 
+9  Carga base con diesel 
+MW 
+ 
+ 
+ 
+ 
+ 
+ 
+10  Carga base con gas 
+MW 
+ 
+ 
+ 
+ 
+ 
+ 
+11  Carga pico con diesel 
+Mw 
+ 
+ 
+ 
+ 
+ 
+ 
+12  Carga pico con gas 
+MW 
+ 
+ 
+ 
+ 
+ 
+ 
+13  Consumo especifico con diesel, al 100 % 
+Kcal/kW-h  
+ 
+ 
+ 
+ 
+ 
+14  Idem al 80 % 
+Kcal/kW-h  
+ 
+ 
+ 
+ 
+ 
+15  Idem al 60 % 
+Kcal/kW-h  
+ 
+ 
+ 
+ 
+ 
+16  Idem al 40 % 
+Kcal/kW-h  
+ 
+ 
+ 
+ 
+ 
+17  Consumo especifico con gas, al 100 % 
+Kcal/kW-h  
+ 
+ 
+ 
+ 
+ 
+18  Idem al 80 % 
+kcal/kW-h  
+ 
+ 
+ 
+ 
+ 
+19  Idem al 60 % 
+kcal/kW-h  
+ 
+ 
+ 
+ 
+ 
+20  Idem al 40 % 
+kcal/kW-h  
+ 
+ 
+ 
+ 
+ 
+21  Tiempo de arranque desde frio hasta potencia nominal en condiciones normales 
+min. 
+ 
+ 
+ 
+ 
+ 
+ 
+22  Idem pero en condiciones de emergencia 
+min. 
+ 
+ 
+ 
+ 
+ 
+ 
+23  Fecha de la informacion
+
+--- Página 27 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 27 
+Version: 03 -Oct -2023 
+BANCO NACIONAL DE PARAMETROS - Planilla de recoleccion de datos de: TURBINAS DE VAPOR
+ Empresa: 
+Pagina 1 de 1
+Nº DESCRIPCION
+UNIDADES
+ELEMENTOS DEL MISMO TIPO (de uno a seis)
+1  Identificacion del elemento (central, Nº asignado al grupo) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2  Tipo (1: de flujo axial - 2: de flujo radial -3: de flujo tangencial) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3  Potencia nominal 
+HP 
+ 
+ 
+ 
+ 
+ 
+ 
+4  Potencia efectiva 
+HP 
+ 
+ 
+ 
+ 
+ 
+ 
+5  Velocidad nominal 
+r.p.m. 
+ 
+ 
+ 
+ 
+ 
+ 
+6 Si es de colector comun identificar las calderas que la alimentan 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+7
+Numero de extracciones
+8  Numero de etapas en el cuerpo de alta presion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+9  Numero de etapas en el cuerpo de media presion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+10  Numero de etapas en el cuerpo de baja presion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+11  Consumo especifico del turbogrupo al 100 % de la potencia nominal con evaporador en
+servicio 
+kcal/kW-h  
+ 
+ 
+ 
+ 
+ 
+12  Idem al 80 % 
+kcal/kW-h  
+ 
+ 
+ 
+ 
+ 
+13  Idem al 60 % 
+kcal/kW-h  
+ 
+ 
+ 
+ 
+ 
+14  Idem al 40 % 
+kcal/kW-h  
+ 
+ 
+ 
+ 
+ 
+15  Valor de potencia a la cual se deben eliminar equipos auxiliares 
+MW 
+ 
+ 
+ 
+ 
+ 
+ 
+16  Maxima potencia que entrega la instalacion cuando funciona segun lo indicado en el punto
+anterior 
+MW 
+ 
+ 
+ 
+ 
+ 
+ 
+17  Tiempo de arranque desde frio hasta alcanzar la potencia nominal 
+min. 
+ 
+ 
+ 
+ 
+ 
+ 
+18  Gradiente de carga 
+MW/min.  
+ 
+ 
+ 
+ 
+ 
+19  Fecha de la informacion
+
+--- Página 28 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 28 
+Version: 03 -Oct -2023 
+BANCO NACIONAL DE PARAMETROS - Planilla de recoleccion de datos de: TRANSFORMADORES Y AUTOTRANSFORMADORES
+ Empresa: 
+Pagina 1 de 2
+Nº DESCRIPCION
+UNIDADES
+ELEMENTOS DEL MISMO TIPO (de uno a seis)
+1  Identificacion del elemento (lugar de ubicacion, Nº del elemento) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2  Clasificacion: (1: transformador -2: autotransformador -3: transformador de puesta a tierra) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3  Tipo: (1: trifasico - 2: banco) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4  Numero de columnas del nucleo 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5  Numero de bobinados por fase 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+6  Diagrama de conexiones de los arrollamientos (adjuntar) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+7
+Denominacion del grupo de conexionado de arrollamientos
+8  Norma utilizada para el item 7 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+9  Tension nominal del arrollamiento de mayor tension (1) 
+kV 
+ 
+ 
+ 
+ 
+ 
+ 
+10  Tension nominal del arrollamiento de tension media (2) 
+kV 
+ 
+ 
+ 
+ 
+ 
+ 
+11  Tension nominal del arrollamiento de menor tension (3) 
+kV 
+ 
+ 
+ 
+ 
+ 
+ 
+12  Potencia nominal del arrollamiento de mayor tension (1) 
+MVA 
+ 
+ 
+ 
+ 
+ 
+ 
+13  Potencia nominal del arrollamiento de tension media (2) 
+MVA 
+ 
+ 
+ 
+ 
+ 
+ 
+14  Potencia nominal del arrollamiento de menor tension (3) 
+MVA 
+ 
+ 
+ 
+ 
+ 
+ 
+15  Reactancia directa del arrolla. 1, 3 abierto, 2 C.C., en P.U. de los valores del arrolla. 1 (X12) p.u. 
+ 
+ 
+ 
+ 
+ 
+ 
+16  Reactancia directa del arrolla. 1, 2 abierto, 3 C.C., en P.U. de los valores del arrolla. 1 (X13) p.u. 
+ 
+ 
+ 
+ 
+ 
+ 
+17  Reactancia directa del arrolla. 2, 1 abierto, 3 C.C., en P.U. de los valores del arrolla. 1 (X23) p.u. 
+ 
+ 
+ 
+ 
+ 
+ 
+18  Reactancia homopolar del arrolla. 1, 3 abierto, 2 C.C., en P.U. de los valores del arrolla. 1
+(X120) (*) 
+p.u. 
+ 
+ 
+ 
+ 
+ 
+ 
+19  Reactancia homopolar del arrolla. 1, 2 abierto, 3 C.C., en P.U. de los valores del arrolla. 1
+(X130) (*) 
+p.u. 
+ 
+ 
+ 
+ 
+ 
+ 
+20  Reactancia homopolar del arrolla. 2, 1 abierto, 3 C.C., en P.U. de los valores del arrolla. 1
+(X230) (*) 
+p.u. 
+ 
+ 
+ 
+ 
+ 
+ 
+21  Neutro a tierra del arrollamiento 1 (1: SI, 2: NO) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+22 Neutro a tierra del arrollamiento 2 (1: SI, 2: NO)
+23  Neutro a tierra del arrollamiento 3 (1: SI, 2: NO) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+24  Resistencia puesta a tierra en arrollamiento 1 
+Ohm 
+ 
+ 
+ 
+ 
+ 
+ 
+25  Resistencia puesta a tierra en arrollamiento 2 
+Ohm 
+ 
+ 
+ 
+ 
+ 
+ 
+26  Resistencia puesta a tierra en arrollamiento 3 
+Ohm 
+ 
+ 
+ 
+ 
+ 
+ 
+27  Reactancia puesta a tierra en arrollamiento 1 
+Ohm
+
+--- Página 29 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 29 
+Version: 03 -Oct -2023 
+BANCO NACIONAL DE PARAMETROS - Planilla de recoleccion de datos de: TRANSFORMADORES Y AUTOTRANSFORMADORES
+ Empresa: 
+Pagina 2 de 2
+Nº DESCRIPCION
+UNIDADES
+ELEMENTOS DEL MISMO TIPO (de uno a seis)
+28  Reactancia puesta a tierra en arrollamiento 2 
+Ohm 
+ 
+ 
+ 
+ 
+ 
+ 
+29  Reactancia puesta a tierra en arrollamiento 3 
+Ohm 
+ 
+ 
+ 
+ 
+ 
+ 
+30  Cambiador de topes (1: bajo carga - 2: en vacio - 3: no tiene) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+31  Ubicacion de los topes (1, 2, 3, 12, 23, en los arrolla. 1, 2, 3, 1 y 2, 1 y 3, 2 y 3 respectivamente) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+32  Numeros de los topes c/cambiador en el arrollamiento 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33  Numeros de los topes c/cambiador en el arrollamiento 2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+34 Numeros de los topes c/cambiador en el arrollamiento 3
+35  Registro maximo c/cambiador en el arrollamiento 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+36  Registro maximo c/cambiador en el arrollamiento 2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+37  Registro maximo c/cambiador en el arrollamiento 3 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+38  Registro minimo c/cambiador en el arrollamiento 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+39  Registro minimo c/cambiador en el arrollamiento 2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+40  Registro minimo c/cambiador en el arrollamiento 3 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+41  Sobrecarga admisible en el arrollamiento 1 
+% 
+ 
+ 
+ 
+ 
+ 
+ 
+42  Tiempo maximo de duracion de la misma 
+min. 
+ 
+ 
+ 
+ 
+ 
+ 
+43  Sobrecarga admisible en el arrollamiento 2 
+% 
+ 
+ 
+ 
+ 
+ 
+ 
+44  Tiempo maximo de duracion de la misma 
+Min. 
+ 
+ 
+ 
+ 
+ 
+ 
+45  Sobrecarga admisible en el arrollamiento 3 
+% 
+ 
+ 
+ 
+ 
+ 
+ 
+46  Tiempo maximo de duracion de la misma 
+Min. 
+ 
+ 
+ 
+ 
+ 
+ 
+47  Perdidas en vacio 
+KW 
+ 
+ 
+ 
+ 
+ 
+ 
+48  Reactancia de nucleo de aire (Xac) del arrollamiento 1, en P.U. de los valores del arrolla. 1 (**) 
+P.U. 
+ 
+ 
+ 
+ 
+ 
+ 
+49  Reactancia de nucleo de aire (Xac) del arrollamiento 1, en P.U. de los valores del arrolla. 2 (**) 
+P.U. 
+ 
+ 
+ 
+ 
+ 
+ 
+50  Reactancia de nucleo de aire (Xac) del arrollamiento 1, en P.U. de los valores del arrolla. 3 (**) 
+P.U. 
+ 
+ 
+ 
+ 
+ 
+ 
+51 Curva magnetizacion o, en su defecto, codo saturacion en P.U. tension nominal del arrollamiento 1
+52  Nombre de la estacion transformadora o central electrica 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+53 Fecha de la informacion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(*)   En el caso que las reactancias homopolares disponibles no coincidan con la descripcion de arrollamientos abiertos y cortocircuitados, adjuntar la informacion disponible aclarando como fue realizado 
+en el ensayo homopolar 
+(**) Solo para transformadores con lado de A.T. mayor o igual a 220 kV.
+
+--- Página 30 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 30 
+Version: 03 -Oct -2023 
+2. ANEXO B - ESQUEMA DE ALIVIO DE CARGA Y DE CORTE DE EMERGENCIA 
+2.1. OBJETO  
+El objeto del presente Procedimiento Tecnico es definir las caracteristicas y los ajustes de: 
+ los esquemas de Alivio de Carga en cumplimiento de lo establecido en el punto 3 del Anexo 35 de Los 
+Procedimientos y  
+ el esquema de Corte de Emergencia ante fallas atipicas de baja probabilidad del Sistema Argentino de 
+Interconexion. 
+2.2. INTRODUCCION. 
+La responsabilidad de aportar a la reserva instantanea del MEM se asigna a todos los Agentes Demandantes 
+(Distribuidor, GUMA, Autogenerador) del mismo, que participan en el Sistema de Medicion Comercial (SMEC), 
+y en los que, por lo tanto, es posible verificar el cumplimiento de dicho aporte. 
+Cada Distribuidor es el responsable de disponer esquemas de alivio de carga, de forma tal de cumplir con el 
+nivel de reserva instantanea correspondiente a cada escalon de corte, en cumplimiento de este servicio. La 
+demanda que abarca su responsabilidad es la siguiente:  
+ La demanda de los clientes a quienes abastece;  
+ La demanda de los GUME y GUPA conectados a su red. 
+Un GUMA debera elegir una de las siguientes opciones en su aporte a la reserva instantanea del area:  
+ implementar su propio esquema de alivio de cargas, de acuerdo a las caracteristicas y participacion 
+definidas para el nodo equivalente de corte al que esta conectado.  
+ acordar con otro GUMA o grupo de GUMA, conectados al mismo nodo equivalente de cortes, aportar 
+en conjunto a la reserva instantanea que les es requerida. Las partes deberan acordar un Convenio de 
+Alivio de Cargas, con las caracteristicas que se definen en el Anexo 35.  
+Un GUMA, o un conjunto de GUMA con un Convenio de Alivio de Cargas, con excepcion de aquel que preste 
+el Servicio Publico de Distribucion de Energia Electrica, podra implementar un Esquema Simplificado de Alivio 
+de Cargas que consiste en cortar un valor determinado de demanda en UNO (1) o mas escalones de cortes, 
+segun lo que se establece en el Anexo 35.  
+2.3. ESQUEMAS DE ALIVIO DE CARGA 
+El esquema de cortes por reles de subfrecuencia determinado por CAMMESA esta conformado por escalones 
+de corte por reles de frecuencia absoluta (Fabs), por reles de corte por decremento de la frecuencia ( F /  t) y 
+por reles  de derivada de la frecuencia (df/dt). 
+La conformacion del mismo depende de la ubicacion geografica y de la potencia declarada del Agente. 
+2.3.1. DEMANDAS UBICADAS EN EL AREA GBA, SANTA FE, ENTRE RIOS, PCIA. DE BUENOS AIRES. 
+2.3.1.1. ESQUEMA COMPLETO 
+Se aplica a todos los Distribuidores y a los GUMA en general. 
+El esquema esta conformado segun se indica en las tablas siguientes: 
+Escalon 
+Rele Fabs. 
+(Hz) 
+Rele F/t 
+Rele df/dt 
+(Hz/seg) 
+Rele de 
+Restablecimiento
+Carga  
+fichada en 
+(%) de la 
+Demanda 
+Hz. 
+Temporiz
+acion
+1 
+49.0 
+No 
+Si 
+-0.6 
+ 
+- 
+3.0 
+2 
+48.9 
+No 
+Si 
+-0.6 
+ 
+- 
+4.0 
+3 
+48.8 
+No 
+Si 
+-0.6 
+ 
+- 
+6.0 
+4 
+48.7 
+No 
+Si 
+-0.9 
+ 
+- 
+6.5 
+5 
+48.6 
+No 
+Si 
+-0.9 
+ 
+- 
+9.0
+
+--- Página 31 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 31 
+Version: 03 -Oct -2023 
+Escalon 
+Rele Fabs. 
+(Hz) 
+Rele F/t 
+Rele df/dt 
+(Hz/seg) 
+Rele de 
+Restablecimiento
+Carga  
+fichada en 
+(%) de la 
+Demanda 
+Hz. 
+Temporiz
+acion
+6 
+48.5 
+No 
+No 
+- 
+49.2 
+17 Seg 
+4.0 
+49.2 
+19 Seg 
+4.5 
+7 
+48.4 
+No 
+No 
+- 
+49.2 
+15 Seg 
+5.0 
+Total 
+42.0 
+Cada fila indica el porcentaje de carga a cortar por el agente demandante y los motivos, los cuales pueden 
+ser porque la frecuencia disminuyo hasta el valor indicado en Hz o porque su derivada (respecto del tiempo) 
+es mayor o igual (en valor absoluto) al indicado, lo que ocurra primero. 
+Las dos ultimas filas tambien indican el porcentaje de carga a cortar y los motivos, los cuales pueden ser 
+porque la frecuencia disminuyo hasta el valor indicado en Hz o porque permanecio por debajo de 49,2 Hz 
+durante mas tiempo que los indicados, lo que ocurra primero.  
+El umbral de frecuencia requerido para habilitar la desconexion de reles de derivada (df/dt) se establece en 
+49.8 Hz. Los automatismos de corte de demanda deben medir la frecuencia absoluta, asi como la pendiente 
+de decaimiento en un tiempo no mayor a 0,150 segundos y enviar disparo instantaneo a los interruptores que 
+desconectan la demanda. 
+El Agente que no tenga implementado alguno de estos escalones, debe agregar el valor de esa demanda a 
+un escalon de accionamiento anterior, en el caso de reles de frecuencia absoluta, y al de pendiente - 0,6 
+Hz/seg en el caso de reles de derivada. Es obligatorio, por lo tanto, contar como minimo con un escalon de 
+corte por frecuencia absoluta, uno por rele de derivada, y un rele de restablecimiento en 49,2 Hz, que corten 
+la totalidad de la demanda asociada a los citados reles en el esquema completo de Alivio de Cargas. 
+2.3.1.2. ESQUEMA SIMPLIFICADO PARA GUMA CON POTENCIA INFERIOR A 5 MW  
+Los GUMA con potencia declarada menor o igual a CINCO (5) MW, podran optar por la instalacion de uno o 
+mas reles de corte de carga por frecuencia absoluta que operen a la frecuencia correspondiente al primer, 
+segundo, tercer, cuarto o quinto escalon de frecuencia absoluta y que corte como minimo el 42% de su 
+demanda. 
+2.3.1.3. ESQUEMA SIMPLIFICADO PARA GUMA CON POTENCIA SUPERIOR A 5 MW 
+Los GUMA con potencia declarada mayor a CINCO (5) MW, podran optar por la instalacion de uno o mas 
+reles de corte de carga por frecuencia absoluta que operen a la frecuencia correspondiente al primer, 
+segundo, tercer, cuarto o quinto escalon de frecuencia absoluta y que corte como minimo el 42% de su 
+demanda, uno de derivada de frecuencia y un rele de restablecimiento que corte la totalidad de la demanda 
+asociada a los citados reles en el esquema completo de Alivio de Cargas 
+El GUMA, o un conjunto de GUMA con un Convenio de Alivio de Cargas, que opte por implementar un 
+esquema simplificado debera solicitar su autorizacion a CAMMESA, con una anticipacion no menor que 
+TREINTA (30) dias corridos a su puesta en servicio, con una descripcion del citado esquema simplificado. 
+CAMMESA analizara, dentro de los siguientes QUINCE (15) dias corridos, el efecto sobre la reserva 
+instantanea del MEM de que el GUMA se acoja a este esquema simplificado, pudiendo rechazar el pedido si 
+existiesen motivos tecnicos que lo justifiquen. De no contestar dentro del plazo indicado, el esquema 
+simplificado se considerara automaticamente autorizado.  
+2.3.2. DEMANDAS UBICADAS EN EL RESTO DE LAS AREAS DEL SADI, INCLUIDA REGION 
+PATAGONICA. 
+2.3.2.1. ESQUEMA COMPLETO 
+El esquema esta conformado segun se indica en la tabla siguiente.
+
+--- Página 32 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 32 
+Version: 03 -Oct -2023 
+Escalon 
+Rele Fabs. 
+(Hz) 
+Rele F/t 
+Rele df/dt 
+(Hz/seg) 
+Rele de 
+Restablecimiento
+Carga 
+fichada en 
+(%) de la 
+Demanda 
+Hz. 
+Tempori
+zacion 
+1 
+49.0 
+No 
+No 
+ 
+ 
+ 
+3.0 
+2 
+48.9 
+No 
+No 
+ 
+ 
+ 
+4.0 
+3 
+48.8 
+No 
+No 
+ 
+ 
+ 
+6.0  
+4 
+48.7 
+No 
+No 
+ 
+ 
+ 
+6.5 
+5 
+48.6 
+No 
+No 
+ 
+ 
+ 
+9.0 
+6 
+48.5 
+-0.60 
+No 
+ 
+49.2 
+17 Seg 
+4.0 
+ 
+49.2 
+19 Seg 
+4.5 
+7 
+48.4 
+-0.90 
+No 
+ 
+49.2 
+15 Seg 
+5.0 
+Total 
+42.0 
+Cada fila indica el porcentaje de carga a cortar por el agente demandante y los motivos. En las 5 primeras 
+filas el unico motivo es la disminucion de la frecuencia hasta el valor indicado en Hz. 
+Las dos ultimas filas tambien indican el porcentaje de carga a cortar y los motivos, los cuales pueden ser 
+porque la frecuencia disminuyo hasta el valor indicado en Hz o porque tuvo una pendiente de decaimiento (en 
+valor absoluto) mayor o igual a la indicada o porque permanecio por debajo de 49,2 Hz durante mas tiempo 
+que los indicados, lo que ocurra primero.  
+Los automatismos de corte de demanda deben medir, tanto la frecuencia absoluta como la pendiente de 
+decaimiento, en un tiempo no mayor a 0,150 segundos y enviar disparo instantaneo a los interruptores que 
+desconectan la demanda. La pendiente de los reles decrementales debe ser medida entre 49,2 y 48,9 Hz con 
+un tiempo de pasaje entre ambos valores de 0,5 seg para la pendiente de -0,60 y de 0,33 seg para la pendiente 
+de -0,90. 
+El Agente que no tenga implementado alguno de estos escalones, debe agregar el valor de esa demanda a 
+un escalon de accionamiento anterior, en el caso de reles de frecuencia absoluta, y al de pendiente - 0,6 
+Hz/seg en el caso de reles decrementales. Es obligatorio, por lo tanto, contar como minimo con un escalon 
+de corte por frecuencia absoluta, uno por rele decremental, y un rele de restablecimiento en 49,2 Hz, que 
+corten la totalidad de la demanda asociada a los citados reles en el esquema completo de Alivio de Cargas. 
+2.3.2.2. ESQUEMA SIMPLIFICADO PARA GUMA CON POTENCIA INFERIOR A 5 MW 
+Los GUMAs con potencia declarada menor o igual a CINCO (5) MW, podran optar por la instalacion de un 
+solo rele corte de carga por frecuencia absoluta que opere a la frecuencia correspondiente al primer, segundo, 
+tercer, cuarto o quinto escalon de frecuencia absoluta y que corte como minimo el 42% de su demanda. 
+2.3.2.3. ESQUEMA SIMPLIFICADO PARA GUMA CON POTENCIA SUPERIOR A 5 MW 
+Los GUMA con potencia declarada mayor a CINCO (5) MW, podran optar por la instalacion de uno o mas 
+reles de corte de carga por frecuencia absoluta que opere a la frecuencia correspondiente al primer, segundo, 
+tercer, cuarto o quinto escalon de frecuencia absoluta y que corte como minimo el 42% de su demanda, un 
+rele de decremento de frecuencia y un rele de restablecimiento que corte la totalidad de la demanda asociada 
+a los citados reles en el esquema completo de Alivio de Cargas. 
+El GUMA, o un conjunto de GUMA con un Convenio de Alivio de Cargas, que opte por implementar un 
+esquema simplificado debera solicitar su autorizacion a CAMMESA, con una anticipacion no menor que 
+TREINTA (30) dias corridos a su puesta en servicio, con una descripcion del citado esquema simplificado. 
+CAMMESA analizara, dentro de los siguientes QUINCE (15) dias corridos, el efecto sobre la reserva 
+instantanea del MEM de que el GUMA se acoja a este esquema simplificado, pudiendo rechazar el pedido si 
+existiesen motivos tecnicos que lo justifiquen. De no contestar dentro del plazo indicado, el esquema 
+simplificado se considerara automaticamente autorizado.  
+2.4. ESQUEMA DE CORTE DE EMERGENCIA PARA EL SADI 
+El Esquema de Corte de Emergencia representa la primera barrera de contencion ante la ocurrencia de fallas 
+atipicas severas que pueden llevar al desmembramiento del SADI. El mismo no forma parte del Esquema de 
+Alivio de Carga siendo su actuacion previa al de formacion de Islas y Arranque en Negro. Por lo tanto, el 
+mencionado esquema no forma parte de las transacciones de Alivio de Cargas que se realicen.
+
+--- Página 33 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 33 
+Version: 03 -Oct -2023 
+Asimismo, su instalacion se realizara sobre una parte de los Agentes demandantes que determinara 
+CAMMESA al efecto. 
+El Esquema de Corte de Emergencia consistira en un rele de frecuencia absoluta y un rele de restitucion con 
+los siguientes ajustes: 
+Escalon 
+Rele 
+Frecuencia 
+Absoluta (Hz)
+Rele 
+F/t 
+Rele df/dt 
+(Hz/seg) 
+Rele de  
+Restablecimiento 
+Carga Fichada
+(%) Demanda 
+del Agente 
+Hz. 
+Temporizacion 
+Corte de 
+Emergencia
+48.3 
+No 
+No 
+- 
+48.7 
+8 Seg 
+10.0 
+Los automatismos de corte de demanda deben medir la frecuencia absoluta en un tiempo no mayor a 0,150 
+segundos y enviar disparo instantaneo a los interruptores que desconectan la demanda. 
+2.5. PRESENTACION DE LA INFORMACION 
+Los Distribuidores y GUMA que instalen su propio esquema de corte deberan presentar a CAMMESA los 
+datos del mismo. 
+3. ANEXO C - GUIA DE ENSAYOS DEL SISTEMA DE EXCITACION 
+3.1. OBJETIVO 
+Estos ensayos tienen por finalidad verificar la respuesta del sistema de excitacion y determinar los parametros 
+y respuestas que permitan homologar el modelo correspondiente.  
+3.2. CONSIDERACIONES GENERALES 
+Los ensayos del sistema de excitacion y regulador de tension seran realizados de acuerdo a la normativa y 
+metodologias descriptas en la norma IEEE 421.2-1990. 
+3.3. ENSAYOS 
+3.3.1. VERIFICACION DE LA FUNCION TRANSFERENCIA 
+Se describiran y detallaran las mediciones y ensayos efectuados para verificacion de la funcion transferencia 
+del regulador automatico de tension (RAT), y realimentaciones adicionales de limitacion de la excitacion. Estas 
+pruebas se pueden hacer con la unidad parada. 
+3.3.2. ENSAYOS DE RESPUESTA TEMPORAL DEL LAZO DE REGULACION DE LA EXCITACION. 
+Verificacion del desempeno de la regulacion de tension con el generador en vacio, por aplicacion de un 
+escalon de pequena amplitud (2%...5%) en la referencia de tension del RAT, partiendo con tension y velocidad 
+de rotacion nominal. 
+Se aplicara un escalon en la referencia de tension, de amplitud inferior al 5% de la tension nominal de 
+generacion, y cuya duracion sea de 20 segundos o mas para permitir el establecimiento de la tension terminal 
+de la unidad. 
+Se registrara el pulso aplicado, la tension terminal, la tension de campo y la corriente de campo. Sobre el 
+registro de la tension terminal se mediran los tiempos de crecimiento y establecimiento, y el valor de la 
+sobreoscilacion. 
+3.3.3. ENSAYOS DE TECHOS DE EXCITACION Y LIMITES ELECTRONICOS.  
+Estos ensayos tienen por objeto relevar los techos de la excitacion estatica (rectificador controlado), y los 
+limites del Regulador de la Excitacion. Se realizaran con la unidad generadora excitada y girando a velocidad 
+nominal. 
+Se mediran los techos positivo y negativo de excitacion, y el tiempo de demora en alcanzarlos, por aplicacion 
+en la referencia de tension del regulador de un pulso de 0.5 segundos de duracion. Este ensayo debera 
+realizarse con el generador en vacio a tension y velocidad de rotacion nominales, y regulacion individual de
+
+--- Página 34 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 34 
+Version: 03 -Oct -2023 
+tension en automatico. Las variables cuya evolucion temporal sera de interes de analisis seran: tension 
+terminal, tension de campo y tension aplicada a la entrada del conversor a tiristores. 
+Para estos ensayos se aplicara un escalon en la referencia de tension, de amplitud del orden del 20% de la 
+tension nominal del generador, y cuya duracion sea del orden de 0.5 segundos. 
+Para determinar el techo positivo se partira con el generador al 80% de la tension nominal, aplicandose el 
+pulso con polaridad positiva. 
+Para determinar el techo negativo se partira con el generador al 100% de la tension nominal, aplicandose el 
+pulso con polaridad negativa. 
+Si el escalon del 20% no alcanzara para llegar a los techos, se incrementara en pasos del 5%, hasta 
+alcanzarlos. 
+3.3.4. ENSAYOS DE RESPUESTA TEMPORAL DEL LAZO DE REGULACION DE LA EXCITACION CON 
+ACTUACION DE LOS LIMITADORES DE SUBEXCITACION. 
+Con el generador en carga se verificara la respuesta del lazo de control de excitacion cuando actua el limitador 
+de subexcitacion. Se partira de una condicion cercana al limite de subexcitacion y se aplicara un escalon en 
+la referencia de tension, de amplitud inferior al 2% (valor referido a bornes del generador) de la tension nominal 
+de generacion, cuya duracion sea de 20 segundos o mas para permitir el establecimiento de la tension terminal 
+de la unidad cuando actua el limitador de subexcitacion. A efectos de evitar la actuacion de protecciones del 
+generador se podra modificar para el ensayo el ajuste de la caracteristica estatica del UEL. 
+Se registrara el pulso aplicado, la tension terminal, la potencia reactiva, la tension de campo y tension aplicada 
+a la entrada del conversor a tiristores. 
+Se debera mostrar un control rapido y estable por parte del UEL, y una accion efectiva para limitar la potencia 
+reactiva generada. 
+4. ANEXO D - GUIA DE ENSAYOS DEL LAZO DE CONTROL. POTENCIA – 
+FRECUENCIA Y SISTEMAS DE BY-PASS. 
+4.1. OBJETIVO 
+Estos ensayos tienen por finalidad verificar la respuesta del sistema de control potencia-frecuencia y 
+determinar los parametros y respuestas que permitan homologar el modelo correspondiente.  
+4.2. ENSAYOS 
+4.2.1. LOS ENSAYOS DEFINIDOS EN EL PT9  
+Realizar ensayos del lazo de control automatico de velocidad del grupo, a los efectos de identificar con 
+precision la respuesta dinamica de este sistema de control. A tal efecto, se deben realizar los ensayos para 
+medicion del “Tiempo de Establecimiento”, Banda Muerta y Estatismo en red interconectada, establecidos en 
+la Guia de Ensayos del Procedimiento Tecnico Nº9. 
+4.2.2. OPERACION DE LA UNIDAD O DEL CICLO COMBINADO EN EL MODO “CARGA BASE”  
+ Con el grupo funcionando en modo “Carga Base” se debera registrar las variaciones de potencia electricas, 
+ante variaciones de la frecuencia de la red. Se debera evaluar la disminucion de potencia mecanica, ante la 
+disminucion de la frecuencia de red.  
+4.2.3. REDUCCION RAPIDA DE CARGA DE LA UNIDAD O DEL CC COMPLETO 
+Operando con el 100 % de generacion se aplicara una reduccion rapida de un 25% como minimo con la 
+maxima velocidad que admite la unidad/ el Ciclo Combinado. Se debera registrar la posicion de valvulas y 
+potencia electrica generada por las TG y la TV y determinar el maximo gradiente (MW/segundos) de reduccion 
+de potencia. Durante el ensayo se registraran todas las alarmas y variables criticas.
+
+--- Página 35 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 35 
+Version: 03 -Oct -2023 
+4.2.4. INCREMENTO RAPIDO DE CARGA DEL CC 
+Operando con un 75 % de generacion se incrementa la generacion hasta el 100% de su capacidad con la 
+maxima velocidad de toma de carga que admite la unidad.  Se debera registrar la posicion de valvulas y 
+potencia electrica generada por las TG y la TV y determinar el maximo gradiente (MW/segundos) de 
+incremento de potencia. Durante el ensayo se registraran todas las alarmas y variables criticas. 
+4.2.5. ENSAYOS DEL SISTEMA DE BY-PASS Y/O CONMUTACION A AISLAMIENTO DEL GENERADOR 
+ALIMENTANDO SUS SERVICIOS AUXILIARES  
+Cuando las instalaciones dispongan de los automatismos que le permiten al generador desconectarse de la 
+red y reducir carga muy rapidamente, manteniendo solamente el suministro a sus propios servicios auxiliares, 
+operando estable durante varios minutos hasta que se den las condiciones para recuperar carga, se deberan 
+efectuar los ensayos que permitan verificar su correcto funcionamiento y la coordinacion con otros sistemas 
+y protecciones de la unidad y la red.  
+5. ANEXO E - GUIA DE ENSAYOS DEL ALTERNADOR  
+5.1. OBJETIVO 
+Estos ensayos tienen por finalidad determinar los parametros principales del alternador. 
+5.2. CONSIDERACIONES GENERALES 
+La tecnica de los ensayos a realizar esta descrita en la Referencia Bibliografica: "Derivation of Synchronous 
+Machine Parameters From Test" F.P. Mello, J.R. Ribeiro. IEEE PES Winter Meeting, New York, N.Y., January 
+30- February 4, 1977. 
+5.3. ENSAYOS 
+A continuacion, se describen los ensayos a realizar: 
+5.3.1. PARAMETROS DE EJE DIRECTO 
+Estos ensayos se realizan con la maquina conectada al sistema sin entregar potencia activa, suministrando 
+solo potencia reactiva, lo que asegura la existencia de flujo en el eje directo solamente. 
+La maquina debe funcionar con el regulador de excitacion en forma manual. Se deben establecer dos estados 
+de funcionamiento: subexcitacion y sobreexcitacion, que permiten medir los parametros NO saturados y los 
+saturados respectivamente. 
+a) Con la maquina conectada al sistema a traves de un interruptor, y subexcitada se abre el interruptor y se 
+registran: 
+ Desviaciones en la tension terminal.  
+ Corriente de Campo. 
+ Con estas mediciones se determinan los parametros no saturados de eje directo: Xd, X'd, X''d, T'do, 
+y T''do. 
+b) Con la maquina conectada al sistema a traves de un interruptor, y sobreexcitada se abre el interruptor y 
+se registran: 
+ Desviaciones en la tension terminal.  
+ Corriente de Campo. 
+ Con estas mediciones se determinan los parametros saturados de eje directo: Xd, X'd, X''d, T'do, y 
+T''do. 
+5.3.2. PARAMETROS DE EJE EN CUADRATURA 
+La maquina debe generar en un estado tal que el fasor corriente de armadura este sobre el eje en cuadratura. 
+Para asegurar esta condicion ante un rechazo de carga, no debe haber variaciones transitorias en la corriente 
+de campo.
+
+--- Página 36 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 36 
+Version: 03 -Oct -2023 
+Para lograr esta condicion de carga no interesa establecer el valor exacto de la potencia, pero se deberan 
+realizar varios rechazos previos, antes de la prueba propiamente dicha, con variaciones en uno y otro sentido 
+de la corriente de campo. Se debera registrar para cada rechazo las variaciones de la corriente de campo. Un 
+grafico del incremento de corriente de campo versus KVAr/i2 para cada rechazo permitira interpolar el estado 
+de funcionamiento para el cual el incremento de corriente de campo es nulo. 
+La prueba propiamente dicha consistira en un rechazo de carga en el estado descripto anteriormente 
+(componente de corriente de armadura en eje directo nula), se registrara la forma de onda de la tension 
+terminal y el valor de la corriente de armadura, con estas mediciones se determina Xq y X'q.  
+Este metodo descripto necesita por lo menos la realizacion de cinco (5) rechazos de carga, sin importar el 
+valor de la potencia despachada, el cual podra ser elegido de modo de no perturbar al sistema. 
+6. ANEXO F - GUIA DE AJUSTE Y ENSAYO DE ESTABILIZADORES (PSS) 
+6.1. OBJETIVO 
+Con el objeto de realizar un aporte eficaz al amortiguamiento de las oscilaciones electromecanicas (locales, 
+intraplanta, interplanta, interarea, etc.) de la red, el sistema de control de la excitacion de cada grupo 
+generador debera poseer un ESTABILIZADOR (Pss), el cual operara modulando la referencia de tension del 
+regulador. 
+Este equipo debe ser capaz de realizar aportes positivos al amortiguamiento de las oscilaciones 
+electromecanicas dentro de una banda de frecuencias comprendidas entre 0,1 Hz y 2,5 Hz. 
+El esquema de estabilizacion se basara en los principios de la estabilizacion por potencia acelerante, y debera 
+reunir suficiente flexibilidad para el ajuste. 
+6.2. CONSIDERACIONES GENERALES 
+La senal de proceso (potencia acelerante) puede ser obtenida a partir de la medicion local de la velocidad de 
+deslizamiento del rotor y la potencia electrica activa generada. 
+La senal de salida del Pss se inyecta en el punto de suma (referencia de tension) del regulador individual de 
+tension. 
+Los transductores de las senales de deslizamiento rotorico y potencia electrica deberan garantizar una 
+adecuada linealidad de las senales en el rango de operacion que se especifique y presentar constantes de 
+tiempo inferiores a 40 mseg. 
+El PSS debera contar con logicas de control que eviten disminuir la cupla sincronizante del generador ante 
+grandes excursiones de la frecuencia en el SADI. Estas logicas de control deberan ser incluidas en los 
+diagramas de bloque y modelos dinamicos a suministrar. 
+La calibracion y puesta en servicio de los Pss seran realizadas en forma coordinada con CAMMESA. 
+ Estudios: 
+Previo al efectivo ingreso del nuevo grupo generador a la red, mediante los estudios de Etapa II del PT1, 
+el Agente debera mostrar fehacientemente que la conexion de dicha maquina, no ocasionara un 
+desmejoramiento del amortiguamiento de las oscilaciones electromecanicas. Los estudios deben 
+demostrar la capacidad de los PSS para contribuir a amortiguar las oscilaciones interarea (oscilaciones 
+electromecanicas comprendidas entre 0.4 y 0.7 Hz). 
+ Ensayos: 
+Mediante ensayos debe demostrarse la eficacia del PSS para el amortiguamiento del modo local de 
+oscilacion de la central vs. la red. (normalmente de 1 a 1.5 Hz). 
+Asimismo, se debera probar que el lazo de regulacion automatica de velocidad presenta una muy baja 
+participacion en la banda de frecuencias correspondiente a las oscilaciones electromecanicas. 
+6.2.1. ESTUDIOS PARA ANALISIS DE LA PRECALIBRACION DE LOS PSS 
+El PSS debe ser ajustado tanto para las frecuencias electromecanicas altas -modos local de oscilacion 
+(tipicamente de 1.0 a 2.5 Hz), como para los modos lentos de oscilacion interarea (normalmente entre 0.4 a 
+0.7 Hz). Diversas simulaciones deben realizarse para cubrir todo el rango de frecuencias de interes.
+
+--- Página 37 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 37 
+Version: 03 -Oct -2023 
+Considerando la central operando a potencia plena y condiciones nominales, se aplica un escalon en la 
+referencia de tension en el RAT. Se observa para un lapso de 20 seg. posteriores a la perturbacion, la 
+velocidad rotorica, potencia activa, potencia reactiva, tension en bornes de maquina y la tension de salida del 
+PSS. Se debe repetir la simulacion con el PSS desconectado 
+Esta simulacion debe demostrar que el PSS mejora las cuplas sincronizante y amortiguante del modo local 
+de oscilacion de la central. La mejora en la cupla amortiguante se determina a traves del aumento del 
+coeficiente de amortiguamiento relativo de las oscilaciones del angulo rotorico; mientras que el incremento de 
+la cupla sincronizante se manifiesta a traves del aumento de la frecuencia de oscilacion. 
+Se repite la simulacion aumentando progresivamente la ganancia del PSS hasta observar un deterioro en el 
+amortiguamiento del modo de oscilacion propio del sistema de excitacion (de mayor frecuencia que el modo 
+local de oscilacion). Estas oscilaciones resultaran un limite para la ganancia del PSS. 
+Se repite la simulacion incrementando la reactancia de vinculacion de la central con la red de 500 kV hasta 
+obtener una frecuencia de oscilacion de 0.5 Hz (tipico modo interarea). Se grafica para un lapso de 20 seg. 
+posteriores a la perturbacion, la velocidad rotorica, potencia activa, potencia reactiva, tension en bornes de 
+maquina y la tension de salida del PSS. Se debe repetir la simulacion con el PSS desconectado. Esta 
+simulacion debe demostrar que el PSS mejora el amortiguamiento de estas oscilaciones. 
+Para asegurar la robustez del ajuste propuesto para el PSS deben repetirse las simulaciones para frecuencias 
+de oscilacion mas bajas que las tipicas interarea. Tambien deben considerarse diferentes estados de carga 
+(Pg y Qg) del generador. En todos los casos el PSS debe mostrar una contribucion significativa al 
+amortiguamiento de las oscilaciones electromecanicas. 
+6.2.2. EQUIPOS DE ADQUISICION DE DATOS Y MONITOREO PARA LOS ENSAYOS DE PSS 
+Para elegir y preparar los equipos de adquisicion y monitoreo se debe tener en consideracion lo siguiente: 
+a) Se debera contar con equipos suficientemente sensibles para registrar con amplitud las variaciones de 
+las magnitudes (Pg; Qg, Vt; Uss; etc.) alrededor de su valor estacionario inicial. (Es necesario poder 
+eliminar el offset estacionario de cada magnitud). 
+b) La frecuencia de muestreo y/o velocidad de registro debe ser suficientemente rapida tal que garantice 
+una medicion continua de las variables observadas en una escala de tiempo no inferior a 2cm/seg 
+(idealmente 3cm/seg). 
+c) Se debera asegurar el filtrado de senales y/o ruidos cuya frecuencia supere los 20 Hz. 
+d) Es imprescindible contar con un monitoreo permanente de la potencia activa generada (Pg) por la unidad 
+ensayada y de la tension de salida del PSS (Uss). 
+e) Se debe disponer de un switch rapido para poder conectar y desconectar en forma local el PSS. 
+f) 
+En todos los casos se debe verificar cuidadosamente la amplitud y signo del escalon a aplicar en la 
+referencia del RAT con anterioridad al ensayo. 
+6.3. ENSAYOS  
+El requisito fundamental para asegurar un correcto ajuste del PSS, sin recurrir a un analisis modal multiarea 
+y multimaquina, consiste en la obtencion de un preciso modelo dinamico del lazo completo 
+(PSS+RAT+EXC.+generador), apto para estudios tanto temporales de transitorios electromecanicos, como 
+de respuesta en frecuencia. 
+Los ensayos en campo ineludibles son aquellos que permiten garantizar plenamente la validez del modelo. 
+Para estos ensayos, el GENERADOR debera acordar previamente un programa de trabajo en campo con 
+CAMMESA a fin de ajustar convenientemente los sistemas de estabilizacion, y evaluar su desempeno. Estos 
+ensayos podran ser supervisados por CAMMESA, organismo que se reserva el derecho de fiscalizacion. 
+Asimismo, se debera acordar con CAMMESA una presentacion normalizada de los resultados de los ensayos. 
+6.3.1. RESPUESTA EN FRECUENCIA 
+Con el PSS a lazo abierto (desconectado) se debera obtener la respuesta en frecuencia de la funcion 
+transferencia del PSS: *Uss/ *ei (ei: senal de entrada al PSS).
+
+--- Página 38 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 38 
+Version: 03 -Oct -2023 
+En el rango de frecuencias comprendido entre 0.1 Hz y 10 Hz se debera verificar una muy buena 
+aproximacion, tanto en fase como en el modulo, entre el modelo utilizado en los estudios y el ajuste en campo 
+de las constantes de tiempo del PSS. 
+6.3.2. NORMALIZACION Y SIGNOS 
+Antes de proceder a cerrar el lazo del PSS se debera verificar la coherencia de los signos de las distintas 
+senales de entrada al PSS, asi como la senal que el PSS inyectara en la referencia del RAT. En este sentido 
+la correspondencia entre el equipo real y el modelo debe ser exacta. 
+Asimismo, es necesario verificar las ganancias de los transductores que proveen las senales de entrada para 
+el PSS y el RAT. Normalmente los modelos empleados en los estudios agrupan en un solo valor la ganancia 
+del PSS y del RAT y los refieren a bases comunes. Es necesario determinar el factor de proporcionalidad 
+entre la ganancia del modelo y el “potenciometro” de ajuste real del equipo. 
+6.3.3. MEDICION DEL AMORTIGUAMIENTO DEL MODO LOCAL 
+Con la unidad generadora operando a plena potencia, tension y velocidad nominal, el PSS desconectado y 
+en ausencia de oscilaciones en la red (oscilaciones interarea), se debera aplicar el minimo escalon (entre el 
+2 y 5%) en la referencia del RAT, que permita excitar en forma apreciable el modo local de oscilacion. Luego 
+de un lapso de aproximadamente 20 seg. se quitara el escalon, registrandose como minimo Uss, Pg , Vt y Qg 
+al aplicar y al quitar el escalon. 
+Se debera determinar el periodo de oscilacion y el amortiguamiento relativo con el PSS desconectado. 
+Se comparan estos valores con los obtenidos en las simulaciones previas. En caso de importantes 
+discrepancias, se deberan profundizar los ensayos de identificacion de todo el lazo de control de la excitacion 
+de la unidad generadora, incluyendo regulador de velocidad y parametros del generador. 
+En caso de un adecuado ajuste entre el modelo y los registros en campo, se conectara el PSS con una baja 
+ganancia y se repetira el ensayo. El amortiguamiento relativo (*) no puede ser inferior al medido con el PSS 
+desconectado. 
+En caso de que el (*) medido sea mayor o igual que el base se debera monitorear la potencia activa generada 
+durante un lapso superior a 10 minutos observando atentamente que no se evidencien oscilaciones de baja 
+frecuencia (interarea). En este caso se debera aumentar progresivamente la ganancia del PSS hasta el valor 
+utilizado en los estudios previos, volviendo a repetir, en cada caso, el ensayo. En todos los casos debe 
+observarse un aumento del amortiguamiento de la oscilacion local (aprox. 1 Hz) sin deteriorar el 
+amortiguamiento de las oscilaciones mas lentas (aprox.0.5 Hz). 
+6.3.4. MEDICION PARA AJUSTE DE LA GANANCIA. GANANCIA MAXIMA DEL PSS 
+Debido a que los modos electricos (de alta frecuencia, F> 2hz) normalmente estan fuera de la banda de 
+frecuencias de los modelos de estudio, se aconseja determinar experimentalmente la maxima ganancia del 
+PSS. Para esto, con la maquina a potencia reducida, se debe incrementar gradualmente (con un monitoreo 
+permanente de Pg, Vt, Uss y Efd) la ganancia del PSS hasta que se observan oscilaciones pobremente 
+amortiguadas de alta frecuencia en la Efd. Se debera registrar este valor de ganancia limite. 
+El valor de ganancia maximo recomendado para utilizar en el PSS sera aquel que resulta de dividir el valor 
+limite por un factor igual a 3, de manera de obtener un margen de seguridad aproximado a 10 DB. 
+6.3.5. MODO INTERAREA - DESEMPENO DEL PSS EN BAJAS FRECUENCIAS DE OSCILACION 
+Los ensayos para verificar el desempeno de los PSS ante modos interarea de oscilacion, resultan mas 
+complicados que aquellos establecidos para el modo local. Los modos interarea normalmente involucran a 
+grandes grupos de generadores coherentes que oscilan contra otros grupos de generadores. Si se provoca 
+una perturbacion en una sola unidad no se excitara el modo interarea. Desconectando una linea o un reactor 
+shunt puede excitarse el modo interarea, pero el efecto de un solo PSS puede ser insignificante a los efectos 
+de medir su contribucion al amortiguamiento.  
+En el caso de excitar el modo interarea mediante la maniobra de equipos, se debera coordinar el ensayo con 
+CAMMESA y el Transportista. Previamente se debera simular, mediante el empleo de un programa de 
+estabilidad transitoria multimaquina, con un adecuado grado de detalle de la red, la maniobra a realizar, a 
+efectos de garantizar la seguridad operativa del SADI.
+
+--- Página 39 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 39 
+Version: 03 -Oct -2023 
+6.3.6. EFECTO DE LA VARIACION DE LA POTENCIA MECANICA DE LA TURBINA SOBRE EL PSS 
+El objetivo de este ensayo es verificar que los ajustes de los filtros y el diseno del PSS permite minimizar el 
+efecto sobre la salida del PSS de las variaciones rapidas de potencia mecanica.  
+Es necesario coordinar este ensayo con CAMMESA a efectos de perturbar minimamente el sistema. Se 
+debera registrar Vt, Potencia activa, Frecuencia electrica del rotor, Uss, Potencia mecanica inferida y toda 
+variable que permita inferir la variacion de potencia mecanica del grupo. 
+7. ANEXO G - GUIA DE ENSAYOS OPERATIVOS DE LOS GENERADORES 
+7.1. OBJETIVO 
+Los ensayos operativos tienen por objeto alcanzar gradualmente la potencia maxima en grupos generadores 
+de gran porte o ciclos combinados de potencia total superior a los 300 MW.  
+Tratandose de pruebas de equipamiento ingresante al MEM resulta prioritario preservar durante la ejecucion 
+de las mismas la seguridad de la operacion, debiendose coordinar previamente las condiciones de la red y el 
+despacho para alcanzar dicho objetivo. 
+7.2. CONSIDERACIONES GENERALES 
+Los programas tentativos de ensayo se deben presentar con una anticipacion no inferior a 15 dias al inicio de 
+la Marcha de Prueba. Junto con los datos de la planificacion semanal se debe enviar el programa tentativo 
+para la proxima semana. 
+Los programas tentativos y sus actualizaciones deben ser enviados a CAMMESA, y a los Agentes PAFTT del 
+area. El cronograma definitivo de ensayos (Programa de Pruebas) debe ser informado antes de las 10 hs. del 
+dia anterior a las partes involucradas. 
+Los acuerdos alcanzados con los PAFTT del area deben ser notificados por escrito a CAMMESA. Tanto 
+CAMMESA como los PAFTT involucrados podran requerir cambios en los cronogramas tentativos como 
+definitivos informando el motivo que lo origina.  
+Previamente a realizar ensayos al 100% de la capacidad del ciclo, el Generador debera informar que se han 
+adoptado todas las medidas tendientes a disminuir las posibilidades de perdida total del ciclo que surgieron 
+de los ensayos con carga reducida y/o de estudios que al efecto CAMMESA haya solicitado. 
+En todos los ensayos y pruebas de rechazo de carga seran prioritarias las consideraciones de seguridad en 
+la operacion. La realizacion de los ensayos estara supeditada a los requerimientos del Despacho y a la 
+situacion real del Sistema en la Operacion. Durante los periodos de pico no se admitiran variaciones de carga. 
+7.3. DESARROLLO 
+Los equipamientos nuevos requieren de ensayos y pruebas que responden entre otros a los requerimientos 
+asociados a su ingreso al MEM. Tratandose de equipamiento ingresante y que por lo tanto se encuentra en 
+su etapa inicial de marcha, es de esperar que presenten una tasa de fallas superior a la esperada para su 
+periodo de operacion normal, denominandose este periodo de fallas infantiles  
+En el ingreso de unidades generadoras de potencia superior a 300 MW, o de ciclos combinados 2TG+1TV 
+cuya potencia nominal total sea superior a ese valor, debe mantenerse limitada la posibilidad de desconectar 
+intempestivamente una unidad o grupos de unidades. En el caso de los CC se debe evitar que la salida de un 
+generador produzca la perdida de las restantes unidades generadores que integran el mismo. 
+En esos casos antes de realizar ensayos con el equipamiento al 100% de su capacidad se requiere la 
+realizacion de una serie de ensayos previos, a carga reducida, tendientes a mostrar un desempeno en la 
+operacion que responda a expectativas minimas de estabilidad, control y seguridad. 
+Para alcanzar el objetivo mencionado se requiere realizar los siguientes ensayos.
+
+--- Página 40 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 40 
+Version: 03 -Oct -2023 
+7.3.1. MARCHA CON CARGA PARCIAL DE UNA UNIDAD GENERADORA INDIVIDUAL CON POTENCIA 
+SUPERIOR A 300 MW O DE UNA UNIDAD QUE FORMA PARTE DE UN CC CON POTENCIA TOTAL 
+MAYOR A 300 MW 
+Para el caso de CC se deberan ensayar las unidades TG operando en forma individual por un periodo 
+ininterrumpido no inferior a las 24hs. respetando las eventuales restricciones que en la operacion puedan 
+presentarse cualquiera fuese su origen. En el caso de unidades individuales TV, hidraulicas, o TG, con 
+potencias maximas superiores a 300 MW se limitara durante las primeras 24 hs. de marcha a una potencia 
+inferior a este valor. 
+7.3.2. PRUEBAS CON DOS UNIDADES DEL CC 
+Se debera operar con dos unidades de un CC en servicio por un periodo ininterrumpido no inferior a las 24 
+hs. Cada uno siguiendo las indicaciones del despacho que defina CAMMESA en cada momento que se 
+requieran modificar las condiciones del ensayo previstas inicialmente.  Las pruebas requeridas son TG1+TG2, 
+TG1+TV y TG2+TV. 
+7.3.3. PRUEBAS DE RECHAZOS DE CARGA DE LAS UNIDADES DEL CC ANTES DE SUPERAR EL 50% 
+DE LA POTENCIA MAXIMA TOTAL  
+Realizar los siguientes rechazos de carga previos a superar un nivel de carga mayor al 50% de la potencia 
+total del ciclo. 
+ENSAYO 
+POTENCIA GENERADA 
+En % de la Potencia nominal
+RECHAZO 
+DE GRUPO
+ 
+TG 1 
+TG 2 
+TV 
+ 
+1 
+100 
+F/S 
+50 
+TV 
+2 
+F/S 
+100 
+50 
+TV 
+3 
+50 
+50 
+50 
+TV 
+4 
+50 
+50 
+50 
+TG1 
+5 
+50 
+50 
+50 
+TG2 
+En todos los casos el grupo generador en servicio, que no efectua el rechazo de carga, debe continuar en 
+servicio en condiciones estables por un periodo posterior al ensayo no inferior a la hora. En aquellos casos 
+en que el resultado no se corresponda con el esperado, el ensayo debe realizarse nuevamente una vez 
+superado el inconveniente cuando las condiciones del sistema lo permitan. 
+Previamente a la realizacion del rechazo de carga los grupos deberan haber alcanzado condiciones estables 
+de marcha. Para ello teniendo en cuenta que dicho ensayo se coordinara en horas despues del pico es 
+recomendable que la marcha de la unidad se inicie con una anticipacion mayor de 10hs. 
+7.3.4. MARCHA DE 72 HS. AL 50 Y 75 %  
+Previamente a realizar los ensayos operativos, con el 100% de la potencia total del Ciclo Combinado o de 
+una unidad generadora se requiere completar sin interrupciones dos ciclos de carga de al menos 72hs cada 
+uno operando al 50 y 75% respectivamente de su capacidad en forma continua. En ambos casos por 
+requerimientos del despacho podra verse limitada la potencia consigna al 4,5% de la demanda total del SADI 
+no interrumpiendo por ello el ensayo. Por otra parte, de producirse limitaciones o fallas del equipamiento en 
+prueba, sera necesario reiniciar la marcha de prueba hasta alcanzar las 72 hs. de operacion en forma 
+continua.  
+Al finalizar exitosamente las 72 hs de marcha continua se debe coordinar el rechazo de carga del grupo TV 
+manteniendo la potencia consigna en los grupos TG al menos durante la hora siguiente al rechazo en forma 
+estable. 
+7.3.5. RECHAZOS DE CARGA AL 100%. 
+Antes de realizar la prueba de marcha al 100% se deben realizar los ensayos de rechazos de carga indicados 
+en la tabla 1. Los mismos deben coordinarse teniendo en cuenta la necesidad de aumentar la reserva del 
+sistema recurriendo al despacho forzado de una central de bombeo, cuyo acuerdo debera obtener 
+previamente el agente. Se deberan programar para despues del horario correspondiente al periodo de pico.
+
+--- Página 41 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 41 
+Version: 03 -Oct -2023 
+Los PAFTT involucrados indicaran cual es la excitacion requerida de los generadores de tal manera que la 
+eventual salida completa del ciclo combinado no produzca inconvenientes en el control de la tension del area. 
+Tabla 1 
+ENSAYO 
+POTENCIA GENERADA 
+En % de su Potencia Nominal
+RECHAZO DEL GRUPO 
+ 
+TG 11
+TG 12
+TV 
+ 
+1 
+100 
+100 
+100 
+TV 
+2 
+100 
+100 
+100 
+TG1 
+3 
+100 
+100 
+100 
+TG2 
+Los ensayos con el ciclo completo operando al 100% de la potencia se deben coordinar anticipadamente con 
+un plazo no menor de 24 hs. 
+7.3.6. MARCHA AL 100 % PARA CC O UNIDADES GENERADORAS CON POTENCIA TOTAL MAXIMA 
+SUPERIOR A 300 MW 
+Para realizar el ensayo al 100% de la carga el ciclo debe haber demostrado en los ensayos a potencia 
+reducida, que responde a las expectativas de control en su operacion, que el mismo presenta un 
+funcionamiento estable en dichos valores de carga y que se haya comprobado previamente que ante la 
+perdida de uno de los generadores del ciclo los restantes son capaces de mantenerse en servicio. Alcanzado 
+este objetivo se admitira realizar el primer ensayo de marcha a plena carga en aquellos horarios en donde, 
+priorizando la seguridad en la operacion de la red el mismo resulte factible, y de ser necesario se requerira el 
+despacho de la central de bombeo a cargo del generador. 
+En esta modalidad de ensayo se requeriran no menos de 72hs, durante las cuales CAMMESA podra solicitar 
+modulacion de la carga por razones de seguridad. 
+Los ensayos que sean requeridos por el Agente a continuacion de los mencionados deberan ajustarse a las 
+modalidades del despacho y requerimientos de seguridad de la operacion y de la red. 
+7.3.7. REDUCCION CONTROLADA DE LA POTENCIA 
+Este ensayo tiene la finalidad de verificar que la maquina puede reducir en forma controlada su generacion.  
+Para la realizacion de la prueba es necesario operar el generador a plena potencia. En estas condiciones se 
+provoca un cierre paulatino de valvulas de una de las TG y se verifica cual es la velocidad de reduccion de la 
+potencia mecanica de la misma y el tiempo total de rechazo de la turbina. 
+Es necesario coordinar este ensayo con CAMMESA a efectos de perturbar minimamente el sistema. Se 
+debera registrar Vt, Potencia activa, Frecuencia electrica del rotor, Uss, Potencia mecanica inferida y toda 
+variable que permita inferir la variacion de potencia mecanica del grupo. 
+8. ANEXO H - GUIA DE LAS PRUEBAS DEL GENERADOR EN BAJA FRECUENCIA 
+8.1. OBJETIVO 
+La finalidad de estas pruebas es verificar que las protecciones del generador, la turbina, y los sistemas 
+auxiliares de una unidad o del CC, que son criticos para el funcionamiento estable, pueden operar con 
+frecuencia menor que la nominal durante algunos segundos, sin riesgo de que se pueda producir la 
+desconexion de algun generador. 
+8.2. CONSIDERACIONES GENERALES 
+Dado que estas pruebas deben ser adecuadas a cada tipo de instalacion se recomienda que el Agente 
+consulte al fabricante sobre las operaciones que sean necesarias para cumplir con los objetivos del ensayo. 
+Esto tienen por finalidad verificar la factibilidad de ejecutar aquellas operaciones que pudieran no haber sido 
+contempladas por el fabricante para el diseno de las logicas, protecciones, enclavamientos, etc. y que por lo 
+tanto se requieren efectuar analisis especiales para asegurarse que no se pone en riesgo ningun elemento 
+de la instalacion ni la seguridad de la red.
+
+--- Página 42 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 42 
+Version: 03 -Oct -2023 
+8.3. ENSAYOS 
+8.3.1. OPERACION EN 49 HZ DURANTE 3 MINUTOS. 
+La unidad generadora opera fuera de paralelo y se verifica el funcionamiento estable sin actuacion de 
+protecciones. Esta prueba en el caso de los CC se puede hacer con una TG y la TV en servicio. 
+En el caso de una TV, con la unidad operando en 49 hz. se introduce una perturbacion en el lazo de control 
+que incremente la carga de la bomba de alimentacion de agua y se verifica la estabilidad del sistema de 
+control. Duracion del ensayo 3 minutos a 49 Hz. 
+8.3.2. OPERACION EN 48,5 HZ DURANTE 25 SEGUNDOS 
+Con la unidad fuera de paralelo con la red se reduce la frecuencia en forma transitoria durante 25 segundos. 
+Se verifica la estabilidad del control y la no actuacion de protecciones. 
+8.3.3. EVALUACION DEL FUNCIONAMIENTO DE LOS SERVICIO AUXILIARES CON BAJA 
+FRECUENCIA 
+Se mantiene medio ciclo combinado (TG + TV) entregando energia a la red con carga superior al 90% 
+alimentando todos sus servicios auxiliares desde una fuente que mantiene 49,0 Hz, durante 3 minutos como 
+minimo. En ese lapso se introduce una senal en el sistema de control o una perturbacion con el fin de la 
+requerir maxima potencia en la bomba de alimentacion (por ej. nivel bajo en el domo o desconexion de una 
+bomba). Se evalua la estabilidad de las variables criticas para la estabilidad de las unidades del CC 
+conectadas a la red. 
+8.3.4. INYECCION DE SENAL DE ERROR DE FRECUENCIA SIMULANDO UNA PERTURBACION EN EL 
+SADI TAL QUE LA FRECUENCIA DEL SISTEMA ALCANZA 48 HZ. 
+Operando con una TG en el 95% de su capacidad y con una reserva para RPF del 5% se introduce un escalon 
+en la referencia de frecuencia de la TG En el caso de tratarse de un CC la TV debe estar en servicio.  
+La senal de frecuencia a inyectar debe aproximarse a lo indicado en la tabla siguiente: 
+TIEMPO 
+ERROR EN LA 
+FRECUENCIA
+0 
+0 
+2 seg. 
+-2 Hz 
+30- 40 seg 
+-1 HZ 
+100 seg 
+-1 Hz 
+105 -110 seg 
+0 
+Se debera indicar cualquier limitacion que condicione la respuesta del CC. 
+En el protocolo de la prueba se deberan incluir las curvas de las principales variables del sistema de control 
+de la TG/CC como ser: presiones, temperaturas, combustible, niveles, potencia, velocidad, flujos de agua, 
+etc.  
+La prueba se debe hacer para cada uno de los modos de control en los que puede operar la TG: potencia 
+base, caldera seguidora, regulacion de frecuencia, etc.  
+Se deben registrar todas las variables controladas con el ciclo de muestreo mas corto posible (por ej. cada 
+segundo). El protocolo debe incluir una explicacion del comportamiento de las variables principales y 
+comentarios sobre los margenes disponibles en las magnitudes que alcanzan esas variables para evitar la 
+actuacion de acciones de control o protecciones que pueden modificar el resultado obtenido.
+
+--- Página 43 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 43 
+Version: 03 -Oct -2023 
+9. ANEXO I - GENERACION EOLICA y FOTOVOLTAICA: REQUISITOS DE CONEXION 
+9.1. CONSIDERACIONES GENERALES 
+Los GENERADORES, AUTOGENERADORES y COGENERADORES, antes de conectarse a la red electrica 
+deben cumplir con requisitos reglamentarios, informativos y tecnicos para permitir su ingreso al Mercado 
+Electrico Mayorista (MEM), su habilitacion comercial y su despacho.  
+El OED debe controlar la aptitud tecnica de las Unidades Generadoras y/o Centrales de Generacion que 
+solicitan su incorporacion al MEM y/o informan la modernizan sus principales sistemas de control. 
+9.2. ABREVIATURAS: 
+Agente GENERADOR: Propietario del parque de energia renovable no convencional, ya sean Generadores, 
+Autogeneradores o Cogeneradores. 
+AG:  
+Aerogenerador: turbina eolica, sistema de transmision mecanica, generador electrico, sistema de 
+control, sistemas de potencia (convertidores electronicos, sistemas de compensacion de reactiva, 
+transformador, etc.). 
+AGC:  
+Control Automatico de Generacion 
+CFP: 
+Control del factor de potencia del Parque 
+CIT: 
+Control Integral de Tension del Parque  
+CPT: 
+Control Proporcional de Tension –Droop Q/V  
+CQ: 
+Control de Potencia Reactiva del Parque 
+COC:  
+Centro de Operacion del OED 
+COG:  
+Centro Operativo de Generacion 
+COT:  
+Centro de Operacion de la Transportista en Alta tension 
+COTDT: Centro de Operacion del Transportista por Distribucion Troncal 
+COD:  
+Centro de Operacion del Distribuidor o del PAFTT 
+DAG:  
+Desconexion Automatica de Generacion 
+ERNC: 
+Fuente de energia renovable no convencional 
+E/S: 
+En servicio 
+MEM:  
+Mercado Electrico Mayorista 
+PAFTT: Prestador Adicional de la Funcion Tecnica de Transporte 
+Parque ERNC: Central de generacion eolica o solar fotovoltaica 
+PE:  
+Parque de generacion Eolico 
+PPC: 
+Control de Planta (Control del parque) 
+PSFV:  
+Parque de generacion Solar Fotovoltaico 
+RAG:  
+Reduccion Automatica de Generacion 
+SADI:  
+Sistema Argentino de Interconexion Electrica 
+9.3. ALCANCE Y OBJETIVO  
+Establecer los requisitos de conexion minimos que deben cumplir los Parques de generacion eolica y Parques 
+de generacion Solar Fotovoltaica que se conectan al SADI, de acuerdo las definiciones de los ANEXOS 39 y 
+40 de LOS PROCEDIMIENTOS para estas fuentes de generacion de energia electrica de potencia variable. 
+Para el caso particular de Parques de generacion Solar Fotovoltaica, en los estados de operacion con la 
+menor potencia de cortocircuito en el area donde se conecta (con el menor despacho de generacion probable), 
+una variacion de su potencia generada menor o igual al 40% a la potencia instalada debe ser tal que no 
+provoque desvios de tension, en nodos con demanda, mayores a los definidos para granjas eolicas Tipo A en 
+el ANEXO 40 de LOS PROCEDIMIENTOS. 
+Dentro de los requisitos de conexion, se destacan: 
+ Desempeno estatico y dinamico de los principales controles de la planta de generacion en cada uno de 
+los modos de operacion que el operador de la Planta puede seleccionar,
+
+--- Página 44 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 44 
+Version: 03 -Oct -2023 
+ Calibracion de las principales protecciones1 de los grupos generadores y/o conversores DC/AC de 
+potencia,  
+ Capacidad P/Q2  del parque de generacion, 
+ Disponibilidad y habilitacion de automatismos identificados en los estudios electricos del Procedimiento 
+Tecnico N°1.   
+ Disponibilidad del equipamiento y la caracteristica de los equipos de monitoreo  
+Se incluye ademas una guia de las pruebas de puesta en marcha del Parque del Generacion Renovable No 
+Convencional (parque ERNC) y la documentacion tecnica (Datos y Modelos de simulacion) que el agente 
+GENERADOR debe suministrar a OED para facilitar el control de la aptitud tecnica del Parque ERNC que 
+solicita su ingreso a la operacion comercial en el MEM. 
+9.4. REQUISITOS TECNICOS COMUNES A PE Y PSFV 
+Para todas las secciones y/o apartados del presente ANEXO cuyo titulo no hace referencia a un tipo de 
+tecnologia de generacion en particular (PE o PSFV), los requisitos tecnicos minimos requeridos aplican a 
+ambas fuentes de energia renovable no convencional (ERNC). 
+9.5. REQUERIMIENTOS PARA LA CONEXION 
+9.5.1. SISTEMAS DE SUPERVISION Y CONTROL 
+El parque ERNC debe: 
+ Contar con el equipamiento en servicio requerido por el Anexo 24 de Los Procedimientos para el Sistema 
+de Operacion y Despacho en Tiempo real (SOTR). 
+ Disponer de enlace de datos de tiempo Real (SOTR) incluyendo las mediciones, estados y alarmas, 
+informacion detallada en la Resolucion SE N° 332/1994 (SOTR) (5.2.1 Valores de Medicion, 5.2.2 Estado 
+de elementos de maniobra, 5.2.3 Alarmas, 5.2.4 Energias y 5.2.5 Informacion destinada a la Programacion 
+y Control de la Operacion).   
+ Enviar toda otra informacion, que sea necesaria en el COC para la operacion del MEM, conforme a lo 
+establecido en la Resolucion SE N° 332/1994 (SOTR). 
+9.5.2. SISTEMAS DE MEDICION DE PRODUCCION 
+El parque ERNC debe contar con el equipamiento en servicio requerido por el Anexo 24 de Los 
+Procedimientos para integrarse al Sistema de Medicion Comercial del MEM (SMEC) 
+9.6. SISTEMAS DE COMUNICACION 
+El parque ERNC debe contar con el equipamiento en servicio requerido: 
+ Por el Anexo 24 de Los Procedimientos para el Sistema de Operacion y Despacho (SCOM). 
+ Para dar cumplimiento a la Resolucion SE N° 106/1995 (SCOM) 
+9.6.1. COMUNICACIONES PARA AUTOMATISMOS DAG/RAG 
+En funcion de los resultados de los estudios de acceso al SADI3, el parque ERNC de potencia superior a 40 
+MW debera: 
+ Instalar los sistemas de comunicaciones y equipos asociados necesarios para incorporar el parque ERNC 
+al ESQUEMA de DAG REGIONAL correspondiente, segun su sitio de emplazamiento (ej.: DAG NOA; DAG 
+NEA; DAG GRAN MZA; DAG COMAHUE; DAG PATAGONIA u otros esquemas que en el futuro se 
+incorporen al SADI) 
+ 
+1 Sobre y subfrecuencia; sobre y subtension. 
+2 Diagrama de capacidad de potencia activa (P) vs potencia reactiva (Q) 
+3 Procedimiento Tecnico N°1 de OED
+
+--- Página 45 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 45 
+Version: 03 -Oct -2023 
+ Disponer de doble sistema de comunicaciones, con adecuado ancho de banda, entre el parque ERNC y 
+el “Nodo Concentrador”4 mas cercano instalado en una estacion transformadora del sistema de AT (≥ 330 
+kV) 
+ Si el parque ERNC es de una potencia menor o igual a 90 MW, debera prever un minimo de 2 escalones 
+DAG/RAG 
+ Si el parque ERNC es de una potencia mayor a 90 MW, debera prever un minimo de 3 escalones 
+DAG/RAG. 
+ Si la potencia del parque ERNC es mayor a 200 MW, los dos sistemas de comunicaciones deberan ser 
+implementados por medios fisicos independientes. 
+REQUERIMIENTO 
+40 MW ≤ PE ≤ 200 MW 
+PE > 200 MW 
+Comunicacion con el
+NODO CONCENTRADOR
+Doble sistema de comunicaciones. 
+Se admite un solo medio fisico. 
+Doble sistema de comunicaciones por 
+medios fisicos independientes 
+9.6.2. COMUNICACIONES PARA DAG LOCALES Y/O ZONALES 
+En funcion de los resultados de los estudios de acceso al SADI y de la cantidad de parques ERNC en una 
+ZONA del SADI, el Transportista por Distribucion Troncal o PAFTT podra requerir que el parque ERNC instale 
+los sistemas de comunicaciones y equipos asociados adecuados para para la implementacion de un 
+automatismo DAG o RAG para actuar ante desenganches de lineas o transformadores de estas redes o, de 
+existir, su incorporacion a los ESQUEMAS de DAG ZONALES o LOCALES. 
+La definicion de los equipos a instalar, sus comunicaciones, sus logicas y los valores de las potencias a 
+desconectar y/o reducir en forma de rampa, surgira de los estudios electricos de detalle de acceso al SADI5. 
+9.7. INSTALACIONES DE CONEXION 
+Las instalaciones del parque ERNC para su conexion directa o indirecta al SADI deben contar con la 
+habilitacion del Transportista y/o PAFTT correspondiente. 
+Para estas instalaciones es de aplicacion el Capitulo II: “Ingreso de nuevos Generadores, Autogeneradores y 
+Cogeneradores al MEM, del Procedimiento Tecnico N°4. 
+Como parte de estas instalaciones se destacan: 
+ Automatismo/s de desconexion automatica de generacion (DAG): El Parque ERNC debe disponer, con 
+anterioridad a la conexion al SISTEMA DE TRANSPORTE o PAFTT, de los equipamientos necesarios para 
+la DAG, cuando fueran requeridas por el sistema electrico segun los estudios del Procedimiento Tecnico 
+N°1 de OED asociados al acceso del Parque ERNC al MEM. 
+ La conexion entre el Parque ERNC y el SISTEMA DE TRANSPORTE o PAFTT debe contar con un 
+interruptor capaz de interrumpir la maxima corriente de cortocircuito en dicho punto y asegurar el tiempo de 
+despeje de fallas que requiera el sistema electrico. 
+El Agente Generador debe presentar a OED un documento que indique que cumple con los requisitos de 
+conexion, como asi tambien el informe del Transportista y/o el PAFTT con la aprobacion del diseno final y las 
+pruebas de puesta en servicio de los automatismos asociados a la conexion del Parque ERNC. Este 
+documento se denomina “Acta de Ajuste y Coordinacion de Protecciones y de Diseno y Prueba de 
+Automatismos de Equipos Asociados a la Red de TRANSPORTE”. 
+ 
+4  El “Nodo Concentrador” representara frente al ESQUEMA de DAG REGIONAL un generador equivalente de todos los parques de generacion renovable ubicados 
+dentro de su zona de influencia. 
+5 Etapa 2 del Procedimiento Tecnico N°1 de OED
+
+--- Página 46 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 46 
+Version: 03 -Oct -2023 
+9.8. TOLERANCIA A DESVIACIONES DE FRECUENCIA y TENSION: 
+9.8.1. CONDICIONES NORMALES DE OPERACION 
+En condiciones normales, entendiendose por tales aquellas en que el sistema de transporte en alta tension 
+cuenta con todo su equipamiento en servicio (red N): 
+ Si la tension nominal, del punto de conexion el parque de generacion en alta tension esta comprendida, 
+dentro del rango de 66 a 500 KV, el parque ERNC debera operar normalmente con desvios de tension de 
+la red que no superen la maxima tolerancia establecida para Transportistas y Distribuidoras Troncales6 en 
+el ANEXO 4 de LOS PROCEDIMIENTOS. 
+ En caso de que el parque ERNC se conecte a la red en niveles inferiores a 66 kV, debera operar 
+normalmente con desvios de tension de ± 7% del valor nominal. 
+9.8.2. CONDICIONES ANORMALES DE OPERACION 
+ Elevadas tensiones post-contingencia 
+En los primeros VEINTE (20) minutos posteriores a una contingencia en el SADI: 
+ El parque ERNC conectado a la red tanto en el nivel de 500 kV, como en 220kV o en 132 kV debera 
+permanecer E/S si el aumento de la tension en su punto de conexion permanece por debajo del 
+maximo establecido para emergencias, en el Procedimiento Tecnico N°5 de OED.  
+ Si la tension nominal, del punto de conexion el parque de generacion en alta tension, esta comprendida 
+dentro del rango de 345 KV a 330 KV, el parque ERNC debera permanecer E/S con aumentos de la 
+tension de la red que no superen el 10% del valor nominal. 
+ En caso de que el parque ERNC se conecte a la red en niveles inferiores a 132 kV, el parque ERNC 
+debera permanecer E/S con aumentos de la tension de la red que no superen el 15% del valor nominal. 
+Pasados los primeros VEINTE (20) minutos posteriores a una contingencia en el SADI y hasta que el 
+sistema de transporte alcance su normalizacion:  
+ El parque ERNC conectado a la red tanto en el nivel de 500 kV, como en 220kV o en 132 kV debera 
+permanecer E/S con su PPC operando en modo control de tension (CIT o CPT) si el aumento de la 
+tension en su punto de conexion permanece por debajo del maximo establecido para emergencias, en 
+el Procedimiento Tecnico N°5 de OED.  
+ Si la tension nominal del punto de conexion el parque de generacion en alta tension, esta comprendida 
+dentro del rango de 345 KV a 330 KV, el parque ERNC debera permanecer E/S con su PPC operando 
+en modo control de tension (CIT o CPT) si el aumento de la tension de la red que no supera el 5% del 
+valor nominal. 
+ En caso de que el parque ERNC se conecte a la red en niveles inferiores a 132 kV, el parque ERNC 
+debera permanecer E/S controlando la tension en el punto de conexion con aumentos de la tension 
+de la red que no superen el 10% del valor nominal. 
+ Bajas tensiones post-contingencia 
+En los primeros VEINTE (20) minutos posteriores al “hueco de tension” originado por una contingencia en 
+el SADI: 
+ El parque ERNC conectado a la red tanto en el nivel de 500 kV, como en 220kV o en 132 kV debera 
+permanecer E/S si la disminucion de la tension en su punto de conexion no supera el porcentaje 
+maximo admitido para emergencias, en el Procedimiento Tecnico N°5 de OED.  
+ Si la tension nominal, del punto de conexion el parque de generacion en alta tension, esta comprendida 
+dentro del rango de 345 KV a 330 KV, el parque ERNC debera permanecer E/S si la disminucion de 
+la tension de la red en su punto de conexion no supera el 7 % del valor nominal. 
+ En caso de que el parque ERNC se conecte a la red en niveles inferiores a 132kV, debera permanecer 
+E/S si la tension de la red iguala o supera el 90% del valor nominal. 
+ 
+6 500 kV +/-3%; de 345 hasta 132 kV +/-5%; menores a 132 hasta 66 kV +/-7%
+
+--- Página 47 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 47 
+Version: 03 -Oct -2023 
+Pasados los primeros VEINTE (20) minutos posteriores a una contingencia en el SADI y hasta que el 
+sistema de transporte alcance su normalizacion:  
+ El parque ERNC conectado a la red tanto en el nivel de 500 kV, como en 220kV o en 132 kV debera 
+permanecer E/S con su PPC operando en modo control de tension (CIT o CPT) si la disminucion de 
+la tension en su punto de conexion no supera el porcentaje maximo admitido para emergencias, en el 
+Procedimiento Tecnico N°5 de OED.  
+ Si la tension nominal, del punto de conexion el parque de generacion en alta tension, esta comprendida 
+dentro del rango de 345 KV a 330 KV, el parque ERNC debera permanecer E/S con su PPC operando 
+en modo control de tension (CIT o CPT) si la disminucion de la tension de la red en su punto de 
+conexion no supera el 5% del valor nominal. 
+ En caso de que el parque ERNC se conecte a la red en niveles inferiores a 132 kV, el parque ERNC 
+debera permanecer E/S con su PPC operando en modo control de tension (CIT o CPT) si la 
+disminucion de la tension de la red en su punto de conexion no supera el 10% del valor nominal. 
+9.8.3. TOLERANCIA A HUECOS DE TENSION (LVRT) 
+Si las fluctuaciones de la tension en una fase del punto de conexion del Parque, tanto en amplitud como en 
+duracion, no se encuentran fuera de la zona delimitada por la curva limite tension-tiempo de Fig. Ai.1, el 
+parque ERNC debe permanecer en servicio conectado al SADI.  
+La curva limite tension-tiempo de Fig. Ai.1 se presenta como ejemplo para parques ERNC cuyo nodo de alta 
+tension de vinculacion a la red es de 500 kV. 
+Cuando se produce un “hueco de tension” en su punto de conexion a la red, el parque ERNC debe 
+permanecer en servicio durante: 
+1) Fallas en la red muy proximas a su punto de conexion (Pc), despejadas en primera zona por las 
+protecciones de lineas o transformadores. Para esto, debe soportar la tension mas baja o nula, en la/s 
+fase/s donde se produjo el cortocircuito medida en el nodo de alta tension de conexion del parque ERNC, 
+durante un tiempo minimo = TFALLA.  
+a. Si el nodo de alta tension de conexion es ≥ 220 kV  TFALLA = 120 ms. 
+b. Si el nodo de alta tension de conexion es ≥ 66 kV y < 220 kV TFALLA = 150 ms. 
+c. Si el nodo de alta tension de conexion es ≥ 13,2 kV y < 66 kV TFALLA = 300 ms. 
+2) 
+Fallas en la red alejadas al nodo de conexion o en niveles de tension inferiores a dicho nodo. Con este 
+objetivo, debe soportar una tension de hasta el 50% en su nodo de conexion durante un tiempo mayor 
+a 900 ms, para cualquier nivel de tension del punto de conexion del parque ERNC. 
+3) 
+“Huecos de tensiones transitorios” en su punto de conexion a la red del 70% al 90% durante un tiempo 
+mayor a 1 seg, para cualquier nivel de tension del punto de conexion del parque ERNC 
+4) 
+En los primeros VEINTE (20) minutos posteriores al “hueco de tension”, el parque ERNC debe 
+permanecer en servicio con una baja tension en su punto de conexion comprendida dentro de los rangos 
+de tension definidos en 9.8.2  
+5) 
+Pasados los primeros VEINTE (20) minutos y hasta que el sistema de transporte alcance su 
+normalizacion, el parque ERNC debe permanecer en servicio con una baja tension en su punto de 
+conexion comprendida dentro de los rangos de tension definidos en 9.8.2. 
+6) 
+Bajas tensiones en regimen permanente dentro de los rangos definidos en 9.8.1. 
+9.8.4. TOLERANCIA A SOBRETENSIONES (HVRT) 
+El parque ERNC debe permanecer en servicio ante: 
+1) Sobretensiones de corta duracion en su nodo de conexion a la red del 120% durante un tiempo mayor a 
+120 mseg. 
+2) Altas tensiones en su nodo de conexion y durante un tiempo menor a 20 minutos, dentro de los rangos 
+definidos en 9.8.2 para el nivel tension del punto de conexion del parque ERNC
+
+--- Página 48 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 48 
+Version: 03 -Oct -2023 
+3) Altas tensiones en su nodo de conexion luego de los primeros 20 minutos posteriores a una contingencia 
+en el SADI hasta que el sistema de transporte alcance su normalizacion dentro de los rangos definidos en 
+9.8.2 para el nivel tension del punto de conexion del parque ERNC 
+4) Altas tensiones en forma permanente dentro de los rangos definidos en 9.8.1. 
+ 
+Fig. Ai.1: curva limite tension-tiempo (LVRT – HVRT) 
+Ejemplo para Parques ERNC vinculados a nodos de 500 kV 
+9.8.5. TOLERANCIA A DESVIOS DE FRECUENCIA:  
+Son los mismos valores de frecuencia y tiempo del item 2.2.3.2 los cuales se aplican para cualquier tipo de 
+generacion (sincronica, fotovoltaica, eolica u otras).  
+9.8.6. TOLERANCIA A FALLAS ASIMETRICAS 
+El parque ERNC debe: 
+1) Funcionar adecuadamente cuando la componente de secuencia inversa de la tension de fase permanezca 
+en su punto de conexion a la red por debajo del UNO POR CIENTO (1%) de la tension nominal.  
+2) Soportar, sin salir de servicio, la circulacion de la corriente de secuencia inversa correspondiente a una 
+falla asimetrica cercana, durante el tiempo que transcurre desde el origen de la falla hasta la operacion 
+de la ultima proteccion de respaldo. 
+3) Mantenerse en servicio ante un recierre monofasico automatico en una linea adyacente a su punto de 
+conexion o en otra linea mas alejada.  
+9.8.7. CONTRIBUCION A LA CORRIENTE DE FALLA: 
+9.8.7.1. CORRIENTE REACTIVA DURANTE HUECOS DE TENSIONES 
+1) 
+El parque ERNC debe tener la capacidad de inyectar a la red, de manera inmediata, corriente reactiva 
+durante el tiempo de despeje de un cortocircuito en la Red, para proveer soporte de tension a la misma 
+cuando la tension cae por debajo de un nivel de tension parametrizable (tipicamente 90% de la tension 
+nominal en su punto de conexion). 
+2) 
+La corriente reactiva inyectada por el parque ERNC a la red estara limitada a la suma de las corrientes 
+nominales de c/AG en un PE, o a la suma de las corrientes nominales de cada inversor DC/AC en un 
+PSFV.
+
+--- Página 49 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 49 
+Version: 03 -Oct -2023 
+ 
+Fig. Ai.3: Corriente reactiva durante eventos LVRT y HVRT 
+3) 
+La corriente reactiva inyectada por el parque ERNC en su punto de conexion debe alcanzar su valor 
+maximo si la tension desciende hasta un valor parametrizable del 50 al 80% de la nominal, mediante el 
+ajuste de KL = (ΔIq /IN) / (ΔV/VN) 
+4) 
+Durante “huecos de tensiones” originados por fallas asimetricas, el parque ERNC debera limitar la 
+corriente reactiva inyectada para evitar sobretensiones en la/s fase/s sana/s  
+9.8.7.2. CORRIENTE REACTIVA DURANTE SOBRETENSIONES 
+El parque ERNC debera tener la capacidad de absorber la maxima corriente reactiva cuando la tension 
+aumente, en su punto de conexion, hasta un valor parametrizable del 115 al 125% de la nominal.  En 
+condiciones de regimen estacionario, la corriente reactiva absorbida por el parque ERNC podra ser modificada 
+mediante el parametro KH = (ΔIq /IN) / (ΔV/VN)  
+9.9. CONTROL DE SOBRE FRECUENCIAS: 
+Si la frecuencia supera 50,2 Hz el parque ERNC debera reducir su potencia activa en forma de rampa, 
+parametrizable del 2 %/seg al 10%/seg, hasta tanto la frecuencia se restituya por debajo de 50,05 Hz. 
+Para parques ERNC ubicados en areas del SADI exportadoras, OED podra aceptar y/o requerir su 
+desconexion a valores inferiores a 51,5 Hz siempre y cuando la totalidad de los parques ERNC que se 
+desconectan no provoque transitorios de subfrecuencia inferiores a 49,5 Hz. 
+9.10. CAPACIDAD PQ MINIMA  
+9.10.1. DIAGRAMA CAPACIDAD PQ DEL PSFV  
+De acuerdo a lo establecido en el ANEXO 39 de LOS PROCEDIMIENTOS: “el PSFV debe disponer de 
+capacidad minima P/Q7 para operar en cualquier condicion operativa que le sea requerida”.  
+En la seccion 9.8.2 del presente ANEXO se establece la condicion operativa mas exigente de un parque 
+ERNC como aquella que se presenta pasados los primeros VEINTE (20) minutos posteriores a una 
+contingencia en el SADI.  
+ 
+7 Factor de potencia (cos φ) 095 inductivo/capacitivo en el punto de conexion del PSFV
+
+--- Página 50 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 50 
+Version: 03 -Oct -2023 
+Para esta condicion, si el punto de conexion del PSFV es igual o inferior a 220 kV; el PSV debera tener 
+capacidad de entregar o absorber potencia reactiva, con desvios de la tension en su punto de conexion de 
+hasta el 10% del valor nominal 
+ Para cumplir con lo requerido en el ANEXO 39, el PSFV mayor a 1 MW: 
+o Para un rango de tension en el punto de conexion entre 95 y 105% de la nominal, debe exhibir un factor 
+de potencia (cos φ) de 0,90 o menor tanto inductivo como capacitivo a potencia activa nominal y 
+presentar una capacidad P-Q, de caracteristica rectangular como la Figura Ai.4 
+ 
+Fig. Ai.4: Capacidad P/Q minima del PSFV 
+o Cuando la tension en el punto de conexion este en el 90% de la nominal, debera ser capaz de entregar 
+potencia reactiva a la red (a potencia activa nominal) correspondiente con un factor de potencia ≤ 
+0,95. 
+9.10.2. CAPACIDAD PQ DEL PE 
+ Para cumplir con lo requerido en el ANEXO 40, el PE debe cumplimentar las obligaciones de entrega y 
+absorcion de potencia reactiva de manera tal que, en el punto de conexion a la red, y dentro de la banda 
+de desvios de la tension definida en la seccion 9.8.28 del presente ANEXO, exhiba un factor de potencia 
+(cos φ) de 0,95 o menor tanto inductivo como capacitivo. 
+ Un PE integrado por AG tipo “DFIG” debe presentar una capacidad minima P-Q, de caracteristica 
+pentagonal como la Figura Ai.5, la cual muestra valores en p.u. de la potencia nominal del PE. 
+ 
+ 
+8 Pasados los primeros VEINTE (20) minutos posteriores a una contingencia en el SADI
+
+--- Página 51 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 51 
+Version: 03 -Oct -2023 
+Fig. Ai. 5: Capacidad P/Q minima del PE 
+(*) En el caso que los AG del PE sean del tipo “full converter”, el PE debe poder intercambiar su maxima capacidad de potencia 
+reactiva con potencia nula (ausencia de viento) y sin giro de las palas de los AG. 
+9.10.2.1. COMPENSACION SHUNT 
+Si, para cumplir con el factor de potencia requerido del parque ERNC a plena carga debe instalarse 
+compensacion shunt:  
+ 
+El valor maximo de potencia reactiva admisible tanto capacitiva como inductiva (en MVAr), sera del 
+15% de la potencia activa nominal (en MW) del parque 
+ 
+El PPC debera comandar las maniobras de conexion/desconexion de la compensacion shunt, de 
+manera de minimizar la frecuencia de ocurrencia y amplitud de los saltos discretos de la tension en el 
+punto de conexion.  
+ 
+La potencia maxima de cada modulo maniobrable de la compensacion shunt debe ser tal que la 
+simulacion de su maniobra (conexion o desconexion), con la menor potencia de cortocircuito en el nodo 
+donde se conecta el parque ERNC (con el menor despacho de generacion probable) y considerando al 
+parque ERNC con potencia reactiva constante, no provoque, variaciones de tension permanentes 
+mayores a: 
+1 %, en las redes de tension mayor a 132 kV. 
+2 %, en las redes de tension igual o menor a 132 kV y mayor a 35 kV. 
+3 %, en las redes de tension igual o menor a 35 kV 
+9.11. CONTROL DE TENSION/POTENCIA REACTIVA 
+ El Parque ERNC debe disponer del equipamiento necesario (controles, canales de comunicacion, etc.) 
+para regular de forma automatica y continua la tension o la potencia reactiva en su punto de conexion.  
+ El PPC debe ser suficientemente flexible en su programacion de manera tal que el Operador pueda 
+seleccionar entre los siguientes modos de control: 
+ 
+Modo CIT: Control Integral de tension (lazo cerrado – sin “droop”) 
+ 
+Modo CPT: Control Proporcional de tension Q/V (con “droop”) 
+ 
+Modo Q: Control de Potencia reactiva  
+ 
+Modo FP: Control de cos ϕ 
+ El PPC debera operar normalmente controlando de manera automatica y continua la tension, en su punto 
+de conexion a la red, con el objeto de:  
+ 
+Mantener la tension dentro de los niveles exigidos. 
+ 
+Garantizar el cumplimiento del “DIAGRAMA P-Q” minimo en su punto de conexion. 
+ 
+Limitar fluctuaciones de tension y asegurar la calidad de la regulacion de tension. 
+ 
+Evitar sobretensiones excesivas.
+
+--- Página 52 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 52 
+Version: 03 -Oct -2023 
+MODOS DE CONTROL  
+CIT: CONTROL INTEGRAL DE TENSION (sin “droop”) 
+CPT: CONTROL DE TENSION PROPORCIONAL (“droop” Q/V) 
+ 
+“Droop”: pendiente Q/V seleccionable del 2 al 7%. 
+Banda muerta < 0,5 % Vn 
+ Operando en el modo de control de la potencia reactiva, el PPC debe ser capaz de mantener constante la 
+potencia reactiva intercambiada con la red, en cualquier valor comprendido dentro de la curva de 
+capabilidad P-Q. 
+ El modo CPT, debera disponer en el punto de conexion de un estatismo Q/V o “droop” regulable entre el 
+2 y el 7%. 
+ OED y/o el TRANSPORTISTA o PAFTT indicara, de acuerdo a las condiciones operativas del SADI y de 
+la potencia nominal del parque ERNC el modo de control de tension (CIT o CPT) en el cual debe operar. 
+ Por requerimiento y/o autorizacion del COC, COT, COD y/o COTDT el PE podra operar en otro modo de 
+control (Q o FP). 
+9.11.1. RESPUESTA DEL CONTROL DE TENSION (MODOS CIT O CPT) 
+ La velocidad de respuesta del PPC en ambos modos (CIT o CPT), debera asegurar un eficaz control de 
+la tension en el punto de conexion a la red o en un punto intermedio del/os transformador/es elevador/es. 
+ El Tiempo de respuesta, medido en campo9  (sobre la potencia reactiva de intercambio con la red), debera 
+ser menor o igual a 3 segundos. 
+ El OED podra aceptar tiempos mayores si, mediante estudios electricos (PT1) se muestra que la conexion 
+del parque ENRC no reduce la capacidad de transporte o la calidad de servicio 
+9.11.2. CONTROL DE TENSION CON POTENCIA NULA 
+ 
+Durante las horas nocturnas para un PSFV o periodos sin viento para un PE (cuya tecnologia lo permita), 
+a pedido del operador de la red, el parque debera controlar la tension en su punto de conexion para 
+asegurar el abastecimiento de la demanda y/o garantizar niveles adecuados de tension. Esta operatoria 
+debera llevarse a cabo sin necesidad de desconexion/conexion del Parque.  
+ 
+9 Seccion 9.18.3.3 “Respuesta ante pequenas perturbaciones “.
+
+--- Página 53 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 53 
+Version: 03 -Oct -2023 
+9.12. CALIDAD DE ENERGIA  
+9.12.1. NIVELES DE FLICKER DE PE  
+El diseno del PE (layout, tipo de aerogenerador, controles, etc.) debe considerar la limitacion de los niveles 
+de flicker en el punto de conexion a la red. 
+El flicker transitorio de corto plazo (Pst95%), nivel medido en un lapso de 10 minutos que puede ser excedido 
+como maximo un 5% del tiempo durante 24h, no debera exceder, segun normas internacionales y Res. ENRE 
+N° 184/2000, el valor Pst95% = 1, 
+ 
+ANEXO A LA RESOLUCION ENRE Nº 184/2000 
+9.12.2. NIVELES DE ARMONICOS DEL PARQUE ERNC  
+Considerando que los dispositivos electronicos de los inversores DC/AC pueden introducir armonicos de alta 
+frecuencia en la onda de tension, el parque ERNC debe cumplir en su punto de conexion con la normativa 
+vigente en cuanto a niveles maximos de inyeccion de corrientes armonicas (Resolucion del ENRE N° 99/1997) 
+y verificar que la onda de tension en el punto de conexion cumpla con lo establecido en la Res. ENRE N° 
+184/2000. 
+Para ello, el agente GENERADOR debe instalar, en el punto de conexion, el equipamiento necesario para: 
+ 
+Recolectar, almacenar, procesar estadisticamente y visualizar las mediciones realizadas para un posterior 
+analisis10  conducente a posibles adecuaciones en los filtros y controles del parque y/o automatismos de 
+la red. 
+Se debe coordinar con la transportista o PAFTT la informacion a suministrar referidas a la medicion de 
+armonicas en el punto de conexion del parque ERNC. 
+Con el objetivo de determinar si la fuente del contenido armonico es interior o exterior al parque ERNC, se 
+recomienda realizar campanas de medicion con anterioridad y posterioridad al ingreso en servicio del parque 
+ERNC 
+9.12.3. EQUIPO DE MONITOREO: 
+Se debera Instalar en el punto de conexion de la planta un equipo registrador para medicion de las variables 
+electricas de la red con funcionalidad de medicion fasorial y capacidad de: 
+1) Registro de oscilografias (formas de onda) con frecuencia de muestreo mayor o igual a 128 muestras/ciclo 
+(6,4 kHz). Segun norma IEEE C37.111 Compatible COMTRADE. 
+2) Registro de RMS con frecuencia de muestreo mayor o igual a 1 muestra/ciclo (50 Hz). Segun norma IEEE 
+C37.111 Compatible COMTRADE. 
+3) Registros de calidad de energia (medicion de todas las armonicas hasta la 50, flickers, distorsion armonica 
+THD, etc.). Segun norma IEC 61000-4-30 tipo Clase A. 
+4) Medicion fasorial (PMU, Phasor Measurement Unit) con frecuencia mayor o igual a 1 muestra/ciclo (50 
+Hz). Segun normas IEEE C37.118 y IEC 61850 90-5. 
+5) El equipo debera poseer sincronizacion horaria local via GPS con una resolucion igual o inferior a 100 
+nano segundos a 1 pulso por segundo (pps). 
+ 
+10  Por parte del OED, la Transportista o el PAFTT
+
+--- Página 54 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 54 
+Version: 03 -Oct -2023 
+Respecto a los registros se debera disponer de una estacion de trabajo propia con el software provisto por el 
+fabricante del equipo para: recolectar, almacenar y visualizar los registros (RMS y oscilografias). Se debera 
+medir en forma continua variaciones y perturbaciones de la tension (nivel de tension, huecos de tension, 
+corrientes, potencias, etc.). Obtener registros continuos de potencia activa, potencia reactiva, frecuencia, 
+corriente y tension para analisis estadisticos de la potencia generada horaria. Se requiere que dichos registros 
+esten a disposicion del Centro de Control de Area y CAMMESA para un posterior analisis que pudiera conducir 
+a posibles adecuaciones necesarias en la central.  
+Acerca de las mediciones fasoriales se debera establecer el vinculo de comunicaciones entre la funcion PMU 
+y el concentrador de datos (PDC, Phasor Data Concentrator) de CAMMESA, segun norma IEEE C37.118, a 
+fin de incorporar dichas mediciones al sistema de monitoreo centralizado. 
+9.13. PROTECCIONES 
+Todos los parques ERNC deben tener la capacidad de permanecer vinculados a la red cuando se producen 
+desvios transitorios de la tension y/o de la frecuencia, cuya amplitud y duracion se encuentra comprendida 
+dentro de los rangos definidos en la seccion 9-8 de este ANEXO.  
+Las protecciones del parque ERNC cuya conexion directa o indirecta al SADI sea autorizada, deben cumplir 
+con los siguientes requerimientos: 
+Sobre y subfrecuencia: 
+ 
+Permitir operar el parque ERNC sin restricciones dentro de la zona de frecuencias admisibles de 
+operacion establecida en el Procedimiento Tecnico N° 4, en su punto 2.2.3.2.b (Requisitos Generales – 
+Rangos de Frecuencia Admisibles de Operacion)  
+Subtension:  
+ 
+Permitir operar el parque ERNC sin restricciones con bajas tensiones en su punto de conexion cuya 
+amplitud y duracion se detalla en los apartados 9.8.1, 9.8.2 y 9.8.3 de este ANEXO.  
+Protecciones de sobretension:  
+ 
+Permitir operar el parque ERNC sin restricciones con elevadas tensiones en su punto de conexion cuya 
+amplitud y duracion se detalla en el apartado 9.8.4 de este ANEXO  
+9.14. CONTROL DE LA POTENCIA ACTIVA 
+ Un PE tipo A y los PSFV deberan contar con un Centro Operativo de Generacion (COG) desde el cual 
+pueda recibir y ejecutar instrucciones del Centro de Control de OED (COC); del Transportista (COT); del 
+PAFTT (COTDT) y/o del COD 
+REQUERIMIENTO 
+PE TIPO A o PSFV 
+PE TIPO B 
+CENTRO DE CONTROL 
+(COG) 
+OBLIGATORIO 
+(Puede ser remoto) 
+CONDICIONAL 
+(Puede ser remoto) 
+ El PPC del parque ERNC debe permitir realizar el Control de la Potencia Activa (CP) para:  
+o 
+ Limitar la potencia activa en su punto de conexion a la red 
+o 
+ Limitar los gradientes de aumento o reduccion de la potencia activa 
+o 
+ Reducir la potencia activa ante sobre frecuencias en el SADI. 
+ El PPC del parque ERNC debera estar adaptado para recibir, a traves del AGC de OED, senales de 
+consigna de potencia en forma remota desde el COC o desde un Centro de Control de Area. 
+ Las rampas o gradientes, tanto de descenso de potencia como de rearranque, deberan permitir una eficaz 
+accion correctiva por parte de las reservas de potencia de rapida disponibilidad en el MEM y minimizar las 
+perturbaciones en la frecuencia.
+
+--- Página 55 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 55 
+Version: 03 -Oct -2023 
+9.15. GRADIENTE DE RESTABLECIMIENTO DE LA POTENCIA ACTIVA 
+ Para no degradar el margen de estabilidad transitoria del SADI durante el tiempo muerto de recierre 
+monofasico ante fallas cercanas al punto de conexion del parque, el parque ERNC debera tener la 
+capacidad de ajustar la rampa de recuperacion de la corriente activa luego de un “hueco de tensiones” 
+cercano a su punto de conexion dentro de un rango de 0,2 pu/seg a 10 pu/seg,  
+ El gradiente de restablecimiento de la potencia activa del parque debera ser ajustado en el valor que surja 
+de los resultados de estudios electricos de detalle de su acceso al SADI11. Este parametro debera poder 
+ser modificado de manera remota.  
+9.16. MEDICIONES y DATOS A INTERCAMBIAR CON OED:  
+El agente GENERADOR debe suministrar al COC, para cada parque ERNC, Mediciones Meteorologicas, 
+Potencia Disponible y Potencia Posible, imprescindibles para realizar pronosticos de recurso y distribuir 
+eventuales limitaciones por Frecuencia o Transporte. Dicha informacion es un requisito previo a la habilitacion 
+comercial, ya que compromete la visibilidad de la red y afecta a las aplicaciones de control del Sistema de 
+Potencia. 
+El detalle de toda la informacion requerida se publica en el sitio Web de CAMMESA: 
+https://cammesaweb.cammesa.com/wp-content/uploads/2020/07/Listado-de-senales-segun-tipo-de-
+Agente.pdf 
+9.17. POTENCIA POSIBLE DEL PARQUE ERNC [MW]:  
+Maxima potencia que puede generar el parque ERNC, en todo momento, segun la disponibilidad del 
+equipamiento del parque y de su recurso eolico / solar. 
+ 
+La Potencia Posible de generador ERNC coincide con la Potencia Generada cuando opera liberado (sin 
+consigna de potencia activa). 
+ 
+La Potencia Generada del parque ERNC sera menor a la Potencia Posible cuando opera restringido en 
+su despacho (bajo consigna de potencia activa). 
+o 
+La consigna de potencia activa podra disminuir hasta CERO. En este caso, el sistema de control del 
+parque ERNC anulara su potencia generada y el Agente GENERADOR debe continuar enviando al 
+OED el valor de Potencia Posible (aun con los aerogeneradores detenidos en el caso de un PE). 
+9.18. PRUEBAS DE PUESTA EN MARCHA Y CONFORMIDAD 
+El presente texto constituye una Guia orientativa de los ensayos requeridos por OED. Esta Guia no limita la 
+aplicacion de tecnicas especificas de ensayos para cada PE o PSFV segun su arquitectura, equipamientos 
+de compensacion shunt y/o principales sistemas de control. 
+9.18.1. OBJETIVO DE LOS ENSAYOS DEL PARQUE ERNC: 
+Los ensayos tienen por finalidad comprobar:  
+• Que la curva de capacidad P-Q del Parque en el Punto de Conexion con la red, y entregando su maxima 
+potencia activa nominal (y tambien potencias menores), cumple con los requisitos minimos establecidos. 
+• La capacidad operativa del Parque,  
+• El impacto del Parque sobre la calidad del servicio 
+• La respuesta del Parque ante perturbaciones de la red 
+• Tiempo de respuesta del Control de tension (modos CIT y CPT)  
+• Los parametros claves para homologar el Modelo equivalente del Parque para estudios de transitorios 
+electromecanicos en el SADI.  
+• La aptitud tecnica para el control de la tension en horas nocturnas de PSFV y del control de la tension en 
+ausencia de viento para PE. 
+ 
+11 Etapa 2 del PT N°1 de OED
+
+--- Página 56 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 56 
+Version: 03 -Oct -2023 
+9.18.2. INFORME DE ENSAYOS: 
+El agente GENERADOR debe presentar a OED un “informe de ENSAYOS PT4” que incluya, entre otra 
+documentacion tecnica: Diagrama Unifilar simplificado del parque ERNC; Curva P/Q en el punto de conexion; 
+principales protecciones del parque ERNC; documentacion de ensayos en fabrica de los AG y/o 
+INVERSORES DC/AC; y registros de ensayos en campo, con el fin de demostrar la aptitud tecnica del parque 
+ERNC para su operacion en el SADI. 
+El Informe de ensayos tambien debe incluir registros obtenidos mediante el sistema de monitoreo detallado 
+en el apartado 9.12.3 del presente ANEXO. Los registros deberan mostrar la evolucion de las variables 
+registradas cada 20 ms. en una ventana de tiempo no inferior a 60 s. 
+9.18.2.1. DOCUMENTACION DE ENSAYOS EN FABRICA 
+9.18.2.1.1. TOLERANCIA HUECOS DE TENSION 
+Los AG de un PE o los inversores DC/AC de un PSFV deben mantenerse conectados a la red frente a huecos 
+de tension producidos por fallas (salida de generadores, cortocircuitos, etc.) cuya profundidad y duracion no 
+exceda la curva Tension-Tiempo Limite establecida en la seccion 9.8 del presente ANEXO. 
+Para dar cumplimiento a este requisito, el agente Generador debe incluir en el INFORME DE ENSAYOS la 
+documentacion de los ensayos realizados en fabrica y los datos de las protecciones de sobretension y 
+subtension del parque ERNC a fin de certificar la capacidad de los AG para PE, o de los inversores DC/AC 
+para PSFV, para permanecer conectados al SADI ante fallas en la red correctamente despejadas por las 
+protecciones de las lineas. 
+9.18.2.1.2. RANGO DE FRECUENCIA OPERATIVO 
+El agente Generador debe incluir en el INFORME DE ENSAYOS la documentacion de fabricante (AG para 
+PE y conversores DC/AC para PSFV) y los datos de las protecciones de sobre velocidad, subfrecuencia y/o 
+sobre frecuencia, para demostrar que los aerogeneradores pueden operar en el rango de frecuencia detallado 
+en el apartado 9.8.6 del presente ANEXO. 
+9.18.3. ENSAYOS Y MEDICIONES EN CAMPO SOBRE UN AG O UN INVERSOR DC/AC 
+El agente GENERADOR debera validar el modelo del AG o inversor DC/AC frente a los ensayos que se 
+describen a continuacion a fin de verificar que el mismo representa de manera correcta las respuestas 
+registradas durante las pruebas en campo. Las mediciones obtenidas en campo sobre un AG o un inversor 
+permiten validar dinamicas rapidas, y de ese modo, mejorar la validez del modelo equivalente del Parque 
+ERNC 
+Para un PE integrado por aerogeneradores identicos, el agente GENERADOR debera realizar pruebas en 
+campo sobre uno de ellos. En caso contrario debera realizar pruebas sobre un AG de cada tipo, modelo y/o 
+parametrizacion diferente.  
+9.18.3.1. ARRANQUE Y PARADA DEL AG O INVERSOR DC/AC 
+Se debera registrar el arranque y parada del AG o inversor en condiciones de consigna liberada de potencia 
+(sin limitacion). De este modo se verificara la tasa de toma normal de potencia en el arranque, asi como la 
+reduccion normal de detencion. 
+9.18.3.2. VERIFICACION DE CURVA DE CAPACIDAD P/Q DE UN AG O INVERSOR DC/AC 
+Las mediciones obtenidas deben permitir verificar la curva de capacidad de un AG informada por el fabricante. 
+Se debera tomar registro del AG o del inversor operando a maxima entrega y maxima absorcion de reactivo. 
+Como minimo se requiere obtener las siguientes mediciones: 
+ 
+Pg > 70 % Potencia nominal 
+ 
+30 % < Pg < 70% Potencia nominal 
+ 
+Pg < 30% Potencia nominal 
+9.18.3.3. RESPUESTA DEL AG O INVERSOR DC/AC ANTE PEQUENAS PERTURBACIONES
+
+--- Página 57 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 57 
+Version: 03 -Oct -2023 
+El GENERADOR debera realizar ensayos que permitan verificar la respuesta de los principales controles del 
+AG o del inversor y la validez del MODELO dinamico individual suministrado por el fabricante. Los ensayos 
+requeridos son:  
+- 
+Escalones de pequena amplitud en el lazo de control de Tension o Potencia Reactiva 
+- 
+Escalones en la referencia de Potencia Activa 
+- 
+Escalones en la Frecuencia Vista por el Controlador para activacion de reduccion de potencia por sobre-
+frecuencia (HFRT: high frequency ride through). 
+ Control de la potencia reactiva de un AG o de un inversor DC/AC 
+Se realizaran escalones en la referencia del modo de control en el que el AG o inversor opere 
+normalmente cuando no se encuentra bajo la accion del PPC. En el caso de control de potencia reactiva 
+o factor de potencia se realizaran escalones de entre un 5% y 50%. En el caso de control de tension seran 
+de entre 2% y 5%. En ambos casos la amplitud del escalon debera ser tal que permita observar 
+correctamente la dinamica del lazo de control. 
+Se mediran en bornes del AG o del inversor la Potencia Activa, Potencia Reactiva y Tension. 
+ Control de la potencia Activa de un AG o inversor DC/AC 
+Contando con suficiente reserva de potencia se realizaran escalones de al menos 5% de la potencia 
+nominal, en ambos sentidos. La amplitud del escalon debera ser tal que permita observar correctamente 
+la dinamica del lazo de control. 
+Se verificara si existen rampas que regulen la subida/bajada de carga. 
+ Respuesta de un AG o inversor DC/AC ante sobre frecuencias 
+De contarse con la posibilidad de forzar las senales medidas se realizaran escalones en la Frecuencia 
+Vista por el Controlador (FVC) de manera tal de producir la reduccion de potencia por sobre-Frecuencia.  
+En caso de no ser posible, podra optarse por reducir los ajustes de manera tal que las variaciones 
+normales del SADI provoquen la activacion.  
+9.18.4. ENSAYOS Y MEDICIONES DEL PARQUE ERNC 
+9.18.4.1. DIAGRAMA DE CAPACIDAD P-Q DEL PARQUE  
+Las mediciones en campo obtenidas deben permitir confirmar limites operativos P-Q en regimen estacionario 
+del parque ERNC en su punto de conexion a la red. 
+En el punto de conexion del parque ERNC con la red, se tomaran mediciones de P, Q, F y V en condiciones 
+operativas normales (PE: valores medios de la velocidad del viento constante; PSFV valores medios de 
+irradiancia constante). 
+El objeto de estas mediciones consiste en relevar la capacidad maxima de absorcion e inyeccion de potencia 
+reactiva de todo el parque generador en regimen permanente (valor medio en un periodo de 5 minutos). 
+Las mediciones deberan ser suficientes a efectos de relevar la curva P-Q para un amplio rango de variacion 
+de la potencia activa. Como minimo se requiere obtener las siguientes mediciones: 
+ 
+Pg > 80 % Potencia nominal 
+ 
+50 % < Pg < 80% Potencia nominal 
+ 
+20 % < Pg < 50% Potencia nominal 
+ 
+Pg < 20% Potencia nominal 
+9.18.4.2. ENSAYOS OPERATIVOS 
+Tienen por objeto verificar la capacidad del Parque para: limitar la potencia; aumentar o reducir 
+controladamente la potencia generada.  
+Frente a consignas emanadas desde OED y/o el COT (Centro de Operacion del Transporte), los parques 
+ERNC deben ser capaces de participar en las maniobras operativas del SADI. Las consignas pueden ser 
+emitidas automaticamente por medio de “set-points” enviados a los sistemas del PPC del Parque o
+
+--- Página 58 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 58 
+Version: 03 -Oct -2023 
+manualmente por el operador del Parque. El parque ERNC debe estar capacitado para; limitar; aumentar12 o 
+reducir gradualmente su inyeccion de potencia a la red.  
+Este grupo de ensayos incluye como minimo los siguientes: 
+ 
+Arranque de aerogeneradores /inversores 
+ 
+Medicion del maximo gradiente de toma de carga del parque 
+ 
+Comprobacion de la capacidad de modificar el gradiente de toma de carga 
+ 
+Limitacion de la potencia a diferentes niveles. 
+ 
+Reduccion controlada de la potencia13.Comprobacion de la capacidad de modificar el gradiente de 
+reduccion de carga 
+ 
+Medicion de las variaciones de carga por variaciones rapidas del viento (PE) o paso de nubes (PSFV) 
+ 
+Transitorios de desconexion/conexion de Parque14 
+ Aumento Controlado de la Potencia 
+Estas mediciones tienen la finalidad de verificar el gradiente de toma de carga informado por el fabricante, 
+o el valor maximo permitido de acuerdo a los estudios del PT N°1, del PE o PSFV en su Punto de Conexion 
+a la red.  
+ Reduccion controlada de la potencia del Parque ERNC 
+Este ensayo tiene la finalidad de verificar que el Parque Eolico pueda reducir en forma controlada su 
+generacion.  
+Para la realizacion de la prueba es necesario que el Parque Eolico opere con una potencia mayor al 90 
+% de la potencia nominal. En estas condiciones se simula un aumento de frecuencia en el control de 
+potencia de la planta y se mide la velocidad de reduccion de la potencia electrica del Parque en su punto 
+de medicion. 
+Es necesario coordinar este ensayo con OED a efectos de perturbar minimamente el sistema. Se debera 
+registrar V, P, Q y F en el Punto de Conexion del Parque Eolico. 
+Este ensayo solamente debe mostrar la aptitud tecnica del control conjunto de potencia del parque eolico 
+para reducir en forma de rampa la potencia total del parque. 
+9.18.4.3. RESPUESTA DEL PARQUE ERNC ANTE PEQUENAS PERTURBACIONES 
+Se deben realizar ensayos que permitan verificar la respuesta de los principales controles del Parque ERNC 
+y la validez del MODELO dinamico equivalente del parque ante pequenas perturbaciones. Los ensayos y 
+mediciones requeridos seran acordados con OED y con el Operador del Sistema de Transmision (u Operador 
+del Sistema de distribucion). 
+ Pequenas perturbaciones: 
+ 
+Maniobras de conexion/desconexion de generadores eolicos  
+ 
+Desconexion de un banco de capacitores shunt instalados en la red o de propiedad del Generador 
+en el caso que el Parque disponga de estos equipos. 
+ 
+Respuesta frente a variaciones de la tension de red ante maniobras operativas. 
+ 
+Pequenos escalones de tension en la referencia de tension del PPC (modos CIT y CPT). 
+ 
+Pequenos escalones de tension en la referencia del PPC (modos Q y FP)   
+ Respuesta del control de tension del Parque ERNC 
+ 
+12  Los ensayos solamente deben mostrar la aptitud tecnica del control conjunto de potencia del parque eolico para aumentar o reducir en forma de rampa la potencia 
+total del parque.  
+13 Los ensayos deben comprobar que la reduccion de carga del parque eolico se realiza en forma de rampa con la pendiente garantizada por el fabricante. Los estudios 
+(PT N°1) podran mostrar la necesidad de ajustar una determinada pendiente de reduccion de carga o directamente la desconexion para Granjas pequenas. 
+14 Estos ensayos tienen por finalidad evaluar el impacto sobre la tension en el nodo de conexion de la granja cuando se conecta y/o desconecta totalmente la misma.
+
+--- Página 59 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 59 
+Version: 03 -Oct -2023 
+Verificacion del desempeno del lazo de regulacion de tension del Control Conjunto de tension, por 
+aplicacion de escalones de pequena amplitud (2%...5%) en la referencia de tension, partiendo de tension 
+nominal. 
+Con el Parque operando con suficiente margen de potencia reactiva y para ambos Modos de Control de 
+la tension15, se aplicara un escalon en la referencia de tension del PPC, de amplitud inferior al 5% de la 
+tension nominal de generacion y cuya duracion sea suficiente, para permitir el establecimiento de la 
+potencia reactiva/corriente reactiva en el Punto de Conexion del parque con la red. 
+ 
+Previo a la realizacion del ensayo se mediran las condiciones estacionarias de funcionamiento del 
+parque como ser: 
+ PE: cantidad de aerogeneradores conectados, posicion del tap del transformador MT/AT de 
+conexion del parque, cantidad de dispositivos shunt (bancos de capacitores) conectados y los 
+valores de la tension, potencia activa y potencia reactiva en el Punto de Conexion del Parque 
+Eolico.  
+ PFV: posicion del tap del transformador MT/AT de conexion del PFV, cantidad de dispositivos 
+shunt (bancos de capacitores) conectados y los valores de la tension, potencia activa y potencia 
+reactiva en el punto de conexion del PSFV.  
+ 
+En el Punto de Conexion del Parque se registraran como minimo: el pulso aplicado en la referencia, 
+la corriente; la tension, la potencia activa, la potencia reactiva y la frecuencia.  
+ 
+Se medira el TIEMPO de RESPUESTA del PPC en modos CIT y CPT como el Tiempo de 
+establecimiento de la Potencia reactiva 
+ Control de tension en horas nocturnas de un PSFV o en un PE sin viento  
+Verificacion del desempeno del lazo de regulacion de tension del PPC del parque, por aplicacion de 
+escalones de pequena amplitud (2%...5%) en la referencia de tension, partiendo de tension nominal en 
+horas nocturnas para PSFV y en situaciones de muy bajo viento o nulo para PE 
+9.18.4.4. CALIDAD DE ENERGIA 
+ Medicion de la Emision de Armonicas parques ERNC 
+La maxima distorsion permitida para la forma de onda de la tension corresponde al punto de conexion. El 
+agente GENERADOR debe suministrar al Transportista o PAFTT el informe con las mediciones obtenidas 
+para su aprobacion.  
+PE: La Norma del IEC 61400-21 (21-09-2001) establece metodologias especificas para la medicion y 
+evaluacion de indicadores de calidad de servicio en los puntos de conexion de un Parque Eolico con la 
+red. 
+ PE: Medicion del Flicker 
+Los “ruidos” frecuentes o periodicos en la tension en el Punto de Conexion de Parques Eolicos pueden 
+deberse a: el “cono de sombra de la torre”, al arranque de los aerogeneradores y a las turbulencias del 
+viento, entre otros factores. 
+Flicker transitorio (corto plazo) Pst 95%: Nivel medido en un lapso de 10 minutos que puede ser excedido 
+como maximo un 5% del tiempo durante 24 horas. 
+Con relacion a la metodologia de medicion y presentacion de resultados se debe acordar las mismas con 
+el Transportista o PAFTT, quienes supervisaran y/o aprobaran sus resultados. 
+9.19. MODELO DEL PARQUE ERNC PARA ESTUDIOS ELECTRICOS 
+El modelo del parque ERNC sera empleado en simulaciones multi-maquina de transitorios electromecanicos, 
+de secuencia directa (RMS), que ocurren luego de pequenas y grandes perturbaciones en el SADI y donde 
+los transitorios electronicos de conmutacion de valvulas (tiristores, IGBT) se suponen instantaneos. El modelo 
+debe permitir simular la dinamica de los controles del parque ERNC que accionan automaticamente sobre la 
+corriente activa y reactiva intercambiada con la red. Adicionalmente, el modelo debe incluir las logicas de 
+ 
+15 I) Control de tension PI (sin droop) y  ii) Control proporcional de tension ( con doop Q/V)
+
+--- Página 60 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 60 
+Version: 03 -Oct -2023 
+protecciones de los aerogeneradores o inversores que puedan provocar su desconexion intempestiva ante 
+fallas en la red (como minimo: sobre/subfrecuencia y sobre/subtension). 
+El modelo del parque ERNC requerido debe contemplar las logicas y dinamicas de todos los lazos de control 
+y proteccion que esten modelados en el modelo provisto y garantizado por el fabricante/tecnologo del 
+equipamiento instalado, tanto a nivel aerogenerador/inversor como a nivel control de planta (PPC). 
+9.19.1. MODELOS REQUERIDOS DEL PARQUE ERNC: 
+El agente Generador debe entregar al OED dos modelos equivalentes de su parque ERNC: Modelo del 
+Fabricante y Modelo de Libreria del Simulador de Transitorios Electromecanicos empleado en el MEM (en 
+adelante STEM), ambos homologados (validados) de acuerdo con la metodologia que se expone en los 
+siguientes apartados. 
+Modelo del Fabricante: 
+ 
+Es el modelo de usuario compatible con el STEM provisto por el fabricante/tecnologo del parque ERNC, 
+que representa con exactitud garantizada los distintos componentes del parque y sus sistemas de control. 
+Por lo general, este modelo es provisto en un formato compilado (no editable), por lo cual el detalle de su 
+programacion no esta disponible para los usuarios del programa y no es posible su migracion a versiones 
+posteriores del STEM, o eventualmente a otros programas. Es el modelo que se empleara como patron 
+para el ajuste del Modelo de Libreria del STEM. 
+Modelo de Libreria del STEM: 
+ 
+Es el modelo del parque ERNC conformado por modelos dinamicos genericos disponibles en la libreria 
+incluida en la version vigente16 del STEM. Estos modelos estan internacionalmente estandarizados y son 
+facilmente migrables a versiones posteriores del STEM e incluso a otros programas. 
+ Portabilidad del modelo del parque ERNC: 
+El OED debe garantizar la portabilidad de la Base de Modelos dinamicos para estudios electricos del SADI, 
+tanto a versiones futuras del STEM como a otros posibles simuladores digitales de transitorios 
+electromecanicos.  
+En el caso particular en que no sea posible representar y homologar mediante un Modelo de Libreria del 
+STEM algun lazo de control o proteccion del Modelo del Fabricante en forma adecuada, el agente 
+Generador debera entregar al OED el codigo fuente del Modelo del Fabricante de la nueva unidad 
+generadora en formato compatible con el STEM (en la version que indique el OED). En este caso, no seran 
+aceptados Modelos en formato de archivos ya compilados (librerias compiladas no editables). 
+Si no fuese posible para el agente Generador disponer del codigo fuente del Modelo del Fabricante debera 
+desarrollar, mediante un consultor especializado, un nuevo modelo de usuario (Modelo Desarrollado), para 
+entregar al OED en formato compatible con el STEM y validar en forma completa su funcionamiento 
+respecto del Modelo del Fabricante, de acuerdo con la metodologia que se expone en los siguientes 
+apartados. 
+9.19.2. METODOLOGIA DE HOMOLOGACION DE LOS MODELOS DEL PARQUE ERNC 
+La homologacion (validacion) de los dos modelos equivalentes de su parque (Modelo del Fabricante y Modelo 
+de Libreria del STEM), debe ser realizada de acuerdo con los lineamientos que se exponen a continuacion. 
+9.19.2.1. HOMOLOGACION DEL MODELO DEL FABRICANTE: 
+En primer lugar, a nivel del Modelo del aerogenerador/inversor equivalente, comparando su respuesta contra 
+registros de ensayos en campo, simulando en el STEM las pequenas perturbaciones (escalones en las 
+referencias de tension, potencia, frecuencia), obtenidos en los ensayos establecidos en la seccion 9.18.3.3 
+del presente ANEXO. 
+En segundo lugar, a nivel del Modelo del parque en su punto de conexion con la red, comparando su respuesta 
+contra registros de ensayos en campo, simulando en el STEM las pequenas perturbaciones (escalones en 
+las referencias de tension, potencia, frecuencia, maniobras de capacitores, etc.), realizadas en los ensayos 
+ 
+16 Empleada en la ultima version de la Base de Datos y Modelos para estudios electricos del SADI publicada por el OED.
+
+--- Página 61 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 61 
+Version: 03 -Oct -2023 
+establecidos en la seccion 9.18.3.3 del presente ANEXO. Esta validacion debe realizarse para todos los 
+posibles modos de control disponibles en el parque ERNC. 
+Para homologar el Modelo del Parque suministrado por el Fabricante, solo se podran modificar los parametros 
+del control de planta (PPC) que el Fabricante hubiere habilitado para su ajuste en campo, no siendo posible 
+alterar parametros del modelo del aerogenerador/inversor o del modelo del control electrico cuyos valores ya 
+estuviesen fijados y garantizados desde fabrica. 
+a. Simulaciones de grandes perturbaciones cercanas al punto de conexion del parque ERNC: 
+ El agente GENERADOR debe realizar simulaciones en el STEM de “huecos de tensiones”, 
+cortocircuitos, grandes variaciones de frecuencia, en “banco de prueba” realizadas con el Modelo del 
+Parque ERNC de Fabricante “homologado” para obtener graficas “patrones” de evolucion temporal 
+de las principales variables electricas en el punto de conexion del Parque (potencia activa, potencia 
+reactiva, tension, corriente reactiva, corriente activa, frecuencia). Debera realizarse la homologacion 
+de todos los lazos de control que puedan activarse durante una gran perturbacion (LVRT, HVRT, 
+logicas de limitacion de corriente, actuacion de protecciones, etc.). 
+9.19.2.2. HOMOLOGACION DEL MODELO DE LIBRERIA DEL STEM: 
+a. Homologacion ante pequenas perturbaciones en el SADI: 
+ Contra registros de ensayos en campo, simulando en el STEM las pequenas perturbaciones (escalones 
+en las referencias de tension, potencia, frecuencia, maniobras de capacitores, etc.), realizadas en los 
+ensayos establecidos en la seccion 9.18.3.3  del presente ANEXO. Esta validacion debe realizarse para 
+todos los posibles modos de control disponibles en el parque ERNC. 
+b. Homologacion ante grandes perturbaciones en el SADI: 
+  Ante la imposibilidad de realizar ensayos en campo de grandes perturbaciones, se debera validar el 
+funcionamiento del modelo equivalente tomando como patron la respuesta ante grandes perturbaciones 
+obtenida por simulacion con el Modelo del Fabricante homologado segun lo detallado en el apartado 
+9.19.2.1a del presente ANEXO. 
+9.19.3. INFORME DE HOMOLOGACION DEL MODELO DEL PARQUE ERNC 
+El agente Generador debe entregar al OED un “Informe de Homologacion” (validacion) de los dos modelos 
+equivalentes de su parque (Modelo del Fabricante y Modelo de Libreria del STEM), realizado de acuerdo con 
+los lineamientos mencionados en el apartado 9.19.2. 
+Para la realizacion del informe de homologacion deberan observarse las siguientes pautas: 
+a. En las graficas de homologacion se superpondran las variables medida y simulada. Para cada grafica 
+debera incluirse tambien la grafica de la perturbacion introducida. Solo debera incluirse una unica 
+perturbacion en cada grafica presentada, no siendo valida la presentacion de multiples perturbaciones 
+introducidas en un rango de tiempo extendido. El eje de tiempos debera iniciar un segundo antes de 
+introducir la perturbacion y concluir un segundo despues de que la variable graficada haya alcanzado su 
+valor final. 
+b. En los graficos presentados, la escala seleccionada para los ejes de ordenadas (magnitud de interes) debe 
+acomodarse para que el maximo valor alcanzado de la variable graficada sea levemente inferior al limite 
+superior de la escala y el minimo valor alcanzado de la variable graficada sea levemente superior al limite 
+inferior de la escala. Esto con el objetivo de que pueda apreciarse claramente la homologacion realizada. 
+c. Las variables a representar en las graficas deben incluir, como minimo: 
+ 
+Tension, 
+potencia 
+activa 
+y 
+reactiva, 
+corriente 
+activa 
+y 
+reactiva 
+en 
+terminales 
+de 
+aerogenerador/inversor. 
+ 
+Comando de corriente activa/reactiva o potencia activa/reactiva del control de planta (PPC) hacia el 
+aerogenerador/inversor. 
+ 
+Tension, potencia activa y reactiva, corriente activa y reactiva, y frecuencia en el Punto de Conexion 
+del parque con la red.
+
+--- Página 62 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 4:ANEXOS "A" a "I" 
+Pag. 62 
+Version: 03 -Oct -2023 
+9.19.4. ARCHIVOS REQUERIDOS 
+El agente Generador debera entregar al OED el “Informe de Homologacion” de acuerdo con lo estipulado en 
+los apartados 9.19.2 y 9.19.3 del presente anexo, y los archivos necesarios, tanto para el Modelo del 
+Fabricante como para el Modelo de Libreria del STEM, para la reproduccion automatica de las pruebas de 
+homologacion realizadas, de acuerdo con el instructivo que publicara el OED denominado “Archivos 
+Requeridos para el STEM”.  
+9.19.5. MODELOS DE LIBRERIA DEL STEM 
+Los modelos de libreria del STEM a emplear deberan seleccionarse del listado de modelos de libreria 
+aprobados por el OED, para el tipo de central y tecnologia que corresponda, de acuerdo con el instructivo que 
+publicara el OED denominado “Modelos de Libreria STEM para ERNC”.  
+9.19.6. MODELO EQUIVALENTE DEL PARQUE ERNC 
+El modelo estatico correspondiente al modelo dinamico de Libreria del STEM, equivalente del parque eolico 
+o fotovoltaico, debe estar constituido por un unico generador, un transformador elevador BT/MT, una rama 
+equivalente que represente el sistema colector de corriente alterna del parque, un transformador elevador 
+MT/AT y elementos de compensacion derivacion (capacitores o reactores) si los hubiere. La utilizacion de 
+cualquier modelado con mayor grado de desagregacion (multiples generadores, multiples alimentadores o 
+barras colectoras) debera estar debidamente fundamentada y contar con la aprobacion previa del OED. 
+9.20. MODELO DESAGREGADO DEL PARQUE ERNC 
+En zonas de baja potencia de cortocircuito y/o alta penetracion de ERNC (nodos debiles), el OED podra 
+solicitar al GENERADOR un modelo con mayor grado de desagregacion (por ejemplo, modelado individual 
+de todos los aerogeneradores o inversores del parque), que permita reproducir eventos de perdida de 
+estabilidad asociados a la problematica de redes debiles. 
+En zonas de baja potencia de cortocircuito y/o alta penetracion de ERNC y/o por condiciones especiales del 
+equipamiento de SADI en cercanias del punto de conexion del parque ERNC, el OED podra solicitar al 
+GENERADOR un modelo con el grado de detalle necesario para simulaciones digitales de transitorios 
+electromagneticos.
+

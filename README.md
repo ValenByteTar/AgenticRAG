@@ -301,8 +301,8 @@ CLI de operador: `scripts/registry_cli.py`
 | Embeddings | BGE-M3 | `models/BAAI-bge-m3` |
 | Reranker | BGE-reranker-v2-m3 | `models/BAAI-bge-reranker-v2-m3` |
 | LLM (default) | Mistral 7B | `mistral:7b` (Ollama) |
-| LLM (Knowledge Builder) | IBM Granite 4.1 8B | `ibm/granite4.1:8b-q4_K_M` (Ollama) |
-| LLM (DocCards) | Qwen3 4B RAG | `qwen3-4b-rag:latest` (Ollama) |
+| LLM (Knowledge Builder) | IBM Granite 4.1 3B (Q6_K) | `ibm/granite4.1:3b-q6_K` (Ollama) |
+| LLM (DocCards) | IBM Granite 4.1 3B (Q6_K) | `ibm/granite4.1:3b-q6_K` (Ollama) |
 | Embeddings (Vector DB) | Nomic Embed Text | `nomic-embed-text:latest` (Ollama) |
 
 Los modelos locales no se descargan automaticamente por `pip`. Usar `ollama pull <tag>` para modelos de Ollama y colocar los de sentence-transformers en `models/`.
@@ -331,9 +331,8 @@ Descargar modelos de Ollama necesarios:
 
 ```powershell
 ollama pull mistral:7b
-ollama pull ibm/granite4.1:8b-q4_K_M
+ollama pull ibm/granite4.1:3b-q6_K
 ollama pull nomic-embed-text:latest
-ollama pull qwen3-4b-rag:latest
 ```
 
 Verificar:
@@ -437,7 +436,7 @@ knowledge:
 ```yaml
 doccards:
   llm_enabled: true
-  model_name: qwen3-4b-rag:latest
+  model_name: ibm/granite4.1:3b-q6_K
   llm_ratio: 0.2         # refina top 20% por centralidad
   llm_timeout: 8
   sample_chars: 600

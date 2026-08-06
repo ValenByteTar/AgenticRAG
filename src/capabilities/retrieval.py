@@ -53,13 +53,14 @@ class RetrievalCapability:
         results = self._retrieve(query, top_k, sw) or []
 
         # F6: soft boost for candidate_docs from planner (preference, not filter)
+        # candidate_docs are canonical_doc_ids; match against canonical_doc_id in Chroma metadata
         candidate_docs = state.metadata.get("candidate_docs") or []
         if candidate_docs and results:
             candidate_set = {str(c).lower() for c in candidate_docs}
             for r in results:
                 md = r.get("metadata") or {}
-                src = str(md.get("source") or "").lower()
-                if src in candidate_set:
+                cid = str(md.get("canonical_doc_id") or "").lower()
+                if cid in candidate_set:
                     base_score = r.get("final_score") or r.get("rerank_score") or r.get("hybrid_score") or 0.0
                     r["final_score"] = base_score + 0.05  # small boost
             results.sort(key=lambda r: r.get("final_score", 0), reverse=True)
@@ -82,8 +83,8 @@ class RetrievalCapability:
                 entity_doc_lower = {d.lower() for d in entity_doc_ids}
                 for r in results:
                     md = r.get("metadata") or {}
-                    src = str(md.get("source") or "").lower()
-                    if src in entity_doc_lower:
+                    cid = str(md.get("canonical_doc_id") or "").lower()
+                    if cid in entity_doc_lower:
                         base_score = (
                             r.get("final_score")
                             or r.get("rerank_score")

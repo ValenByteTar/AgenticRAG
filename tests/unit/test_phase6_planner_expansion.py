@@ -36,7 +36,7 @@ class TestPlannerCapability:
         plan = out.metadata["plan"]
         assert plan["is_conceptual"] is True
         assert plan["is_comparison"] is False
-        assert "analysis_report" in plan["doc_roles_preferred"]
+        assert "analysis" in plan["doc_roles_preferred"]
         assert out.semantic_weight == 0.7
 
     def test_comparison_query(self):
@@ -55,7 +55,7 @@ class TestPlannerCapability:
         out = cap.execute(st)
         plan = out.metadata["plan"]
         assert plan["is_procedural"] is True
-        assert "procedure" in plan["doc_roles_preferred"]
+        assert "guide" in plan["doc_roles_preferred"]
         assert out.semantic_weight == 0.5
 
     def test_simple_numeric_query(self):
@@ -71,7 +71,7 @@ class TestPlannerCapability:
         st = ExecutionState(question="lista todos los frameworks")
         out = cap.execute(st)
         plan = out.metadata["plan"]
-        assert "entity_list" in plan["doc_roles_preferred"]
+        assert "list" in plan["doc_roles_preferred"]
 
     def test_does_not_override_top_k(self):
         cap = PlannerCapability()
@@ -443,9 +443,9 @@ class TestDocRolesWiring:
                 self.entity_extractor = None
                 self.doc_roles = {
                     "docs": {
-                        "iso27001.pdf": {"role": "entity_profile", "name": "ISO 27001", "centrality": 0.8, "entities_index": ["iso 27001"]},
-                        "nist-csf.pdf": {"role": "analysis_report", "name": "NIST CSF", "centrality": 0.7, "entities_index": ["nist csf"]},
-                        "procedures.pdf": {"role": "procedure", "name": "Procedures", "centrality": 0.5, "entities_index": []},
+                        "doc:iso-27001": {"role": "entity_profile", "name": "ISO 27001", "centrality": 0.8, "entities_index": ["iso 27001"], "canonical_doc_id": "doc:iso-27001"},
+                        "doc:nist-csf": {"role": "analysis", "name": "NIST CSF", "centrality": 0.7, "entities_index": ["nist csf"], "canonical_doc_id": "doc:nist-csf"},
+                        "doc:procedures": {"role": "guide", "name": "Procedures", "centrality": 0.5, "entities_index": [], "canonical_doc_id": "doc:procedures"},
                     }
                 }
                 self.search_calls = []
@@ -478,8 +478,8 @@ class TestDocRolesWiring:
         candidate_docs = out.metadata.get("candidate_docs")
         assert candidate_docs is not None
         assert len(candidate_docs) > 0
-        # iso27001.pdf should be in candidates (entity_profile role matches)
-        assert "iso27001.pdf" in candidate_docs
+        # doc:iso-27001 should be in candidates (entity_profile role matches, canonical_doc_id key)
+        assert "doc:iso-27001" in candidate_docs
         # hybrid_search should have been called (no hard scoping, soft boost only)
         assert len(rag.search_calls) > 0
 

@@ -1,0 +1,2758 @@
+=== ProcedimientosCAMMESA.pdf ===
+
+--- Página 1 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial  
+LOS PROCEDIMIENTOS - CAPITULO 1:EL MERCADO ELECTRICO MAYORISTA 
+Pag. 1 
+Version: 30-Jun-2024 
+CAPITULO 1: EL MERCADO ELECTRICO MAYORISTA 
+1.1. SISTEMA ELECTRICO 
+A los efectos del funcionamiento del Mercado, el Sistema Argentino de Interconexion se considera dividido 
+en Centros de Generacion, Red de Transporte e Instalaciones de Distribucion. Asimismo, existe un Sistema 
+de Operacion y Despacho superpuesto a dicho sistema fisico. 
+1.2. INTEGRACION DEL MERCADO ELECTRICO MAYORISTA (MEM) 
+El MERCADO ELECTRICO MAYORISTA (MEM) se compone de: 
+a) Un Mercado a Termino, con contratos por cantidades, precios y condiciones pactadas libremente 
+entre vendedores y compradores; 
+b) Un Mercado Spot, con precios sancionados en forma horaria en funcion del costo economico de 
+produccion, representado por el Costo Marginal de Corto Plazo medido en el Centro de Carga del 
+Sistema; 
+c) Un Sistema de estabilizacion por trimestres de los precios previstos para el Mercado Spot, destinado 
+a la compra de los Distribuidores. 
+La coordinacion de la operacion tecnica y administracion del MEM se realizara a traves de un ORGANISMO 
+ENCARGADO DEL DESPACHO (OED). 
+Los puntos de intercambio fisico del MEM se definen en las conexiones de las instalaciones de Generacion 
+con la red de Transporte, de Distribucion; de la red de Transporte con las redes de Distribucion, entre las 
+distintas redes de Distribucion, en las interconexiones internacionales y en la vinculacion de los Grandes 
+Usuarios entre si o con instalaciones de Distribucion, Transporte o Generacion. 
+Cada agente del MEM tendra: 
+• uno o mas puntos de intercambio sobre el Sistema Electrico; 
+• uno o mas puntos de entrada o salida del Mercado donde se definira su precio de compra/venta. 
+Los puntos de entrada/salida del MEM son: 
+a) los nodos definidos en el ambito de la Red de Transporte a los que el agente del MEM esta 
+conectado fisicamente; 
+b) los nodos de Generacion o Distribucion fuera del ambito definido de la Red de Transporte con una 
+potencia efectiva o convenida superior a 50MW, cuyo intercambio con la red estuviera afectado por el 
+sistema de transmision de modo tal que el precio en ese nodo difiera sensiblemente respecto del 
+precio de su nodo vinculacion con la red de Transporte. Estos puntos seran identificados por la SEE. 
+Todos los propietarios de Centros de Generacion y/o instalaciones de Transporte o Distribucion 
+independientes del Estado Nacional reconocidos como agentes del MEM adquieren el compromiso de 
+operar de acuerdo a la metodologia establecida por estas normas, y a suministrar en tiempo y forma los 
+datos requeridos para un funcionamiento adecuado del Sistema. 
+Son agentes reconocidos del MEM: 
+a) los que participan del MEM AL 30-04-92, tal como aparecen en la Informacion Necesaria para la 
+Facturacion correspondiente a ese mes que editara el OED; 
+b) los concesionarios de actividades de generacion hidroelectrica, transporte o distribucion en los 
+terminos de la ley 24065; 
+c) los Generadores, Autogeneradores, Cogeneradores y grandes Usuarios que soliciten y obtengan 
+autorizacion de la SECRETARIA DE ENERGIA ELECTRICA para incorporarse al MERCADO 
+ELECTRICO MAYORISTA con posterioridad al 30 de abril de 1992; 
+d) los distribuidores de jurisdiccion provincial que soliciten y obtengan autorizacion de la Secretaria de 
+Energia Electrica para incorporarse al MEM con posterioridad al 30-04-92; 
+e) empresas de paises interconectados autorizadas a operar en el MEM. 
+Ante solicitudes de incorporacion al Sistema Electrico por parte de Generadores o Grandes Usuarios 
+(nuevos proyectos industriales), la SEE informara los antecedentes presentados a las empresas del MEM y
+
+--- Página 2 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial  
+LOS PROCEDIMIENTOS - CAPITULO 1:EL MERCADO ELECTRICO MAYORISTA 
+Pag. 2 
+Version: 30-Jun-2024 
+al OED, quienes podran solicitar informacion adicional y emitir su opinion al respecto. La SEE contara con 
+60 dias corridos para aprobar o rechazar el pedido. De no emitir su dictamen en este plazo, se considerara 
+aprobado el proyecto. En caso de oponerse a la solicitud, el tramite pasara al Ente Nacional Regulador 
+(ENRE) para su resolucion. 
+Los agentes reconocidos del MEM entregaran al OED la informacion requerida para la Base de Datos del 
+Sistema (Anexo 1). Cada vez que se produzca un cambio en alguno de estos datos, la empresa debera 
+informar al OED, quien tendra la responsabilidad de mantener actualizado este conjunto de informacion. La 
+base de datos y sus sucesivas actualizaciones sera puesta a disposicion de todos los integrantes del MEM 
+por el OED. 
+1.3. AMBITO DEL TRANSPORTE 
+El ambito de la red de Transporte incluira: 
+a) las instalaciones que se transfieran a el o los Concesionarios en el momento de establecerse las 
+concesiones del Transporte y privatizar su gestion; 
+b) las instalaciones futuras que se incorporen en el marco y terminos de esas concesiones; 
+c) las instalaciones que el concesionario reciba de terceros por haber sido construidas fuera del ambito 
+de su concesion. 
+La regulacion del Transporte, incluyendo el sistema de precios definido, es de aplicacion: 
+• en el ambito de las concesiones del Transporte; 
+• en todos los casos que un agente del MEM de mas de 50MW de potencia convenida requiera de 
+instalaciones de fuera del ambito de las concesiones del Transporte para acceder al Mercado. 
+Todo vendedor y/o comprador que actue como agente del MEM tendra definido uno o mas puntos de 
+acceso al Mercado a traves de los cuales participara en la remuneracion del ingreso variable del Transporte. 
+En caso de ser mas de uno, se reducira a un nodo equivalente en proporcion a la potencia tipica estimada 
+para cada estado caracteristico previsto para la red. 
+Cuando un agente no este conectado directamente nodos reconocido de la red de Transporte, se le 
+asignara un nodo de referencia, o equivalente segun corresponda, para la definicion de su precio nodal y 
+participacion en la remuneracion del Transporte. 
+1.4. SISTEMA DE OPERACION Y DESPACHO (SOD) 
+El funcionamiento del Mercado Spot requiere comunicacion en tiempo real entre los integrantes del MEM y 
+el OED, para programar y coordinar la operacion y el despacho del Sistema, asi como para calcular en 
+tiempo y forma los precios y volumenes que definiran los montos en las transacciones economicas. 
+Las necesidades que de ello se derivan en materia de comunicaciones, adquisicion, transmision y 
+procesamiento de la informacion a intercambiar entre los agentes del MEM y el OED, asociada a la 
+operacion y a las transacciones comerciales que se lleven a cabo, seran cubiertas por medio del Sistema de 
+Operacion y Despacho (SOD). 
+La responsabilidad primaria de operacion y despacho sera del OED. Sin embargo, en vista del despliegue 
+territorial y de la multiplicidad de actores que intervienen en el MEM, el OED esta facultado para delegar 
+funciones que le son propias en otras empresas. 
+1.4.1. CONSTITUCION 
+El SOD abarcara especificamente lo siguiente: 
+• un sistema de operacion en tiempo real (SOTR), que brindara los medios fisicos necesarios para 
+llevar a cabo la coordinacion de la operacion en tiempo real del Sistema Electrico. 
+• un sistema de medicion comercial (SMEC), destinado a la medicion, registro y transmision de la 
+informacion necesaria para la ejecucion de las Transacciones Economicas en el MEM. 
+• un sistema de comunicaciones (SCOM) afectado a la operacion en tiempo real y al sistema de 
+medicion comercial, abarcando enlaces de voz, datos, telex, etc.
+
+--- Página 3 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 4:CONTROL DE TENSION Y DESPACHO DE POTENCIA REACTIVA 
+Pag. 14 
+Version: 30-Jun-2024 
+Los Generadores, Transportistas, Distribuidores Troncales, Distribuidores y Grandes Usuarios deben 
+informar cualquier modificacion a sus condiciones comprometidas de suministro de reactivo. Si en la 
+operacion real se detectara incumplimiento, y el agente no hubiera informado la correspondiente 
+indisponibilidad, sera penalizado por todas las horas del periodo trimestral.  
+En caso de indisponibilidad de algun equipo comprometido, el OED podra solicitar poner en disponibilidad 
+equipamiento de reemplazo para mantener la calidad pretendida. De no disponerse de equipamiento 
+sustituto, se considerara que se vulnera la calidad del servicio.  
+Si para mantener el nivel de tension requerido se debe entrar en servicio una unidad generadora que no 
+estaba despachada, el agente responsable debera pagar el sobrecosto de la energia generada por esta, 
+ademas de los cargos o penalizaciones que correspondan.  
+Se definen DOS (2) niveles de sanciones:  
+• Cargo de reactivo: cuando los incumplimientos de sus compromisos se puedan prever 
+estacionalmente, sean informados, y no se deban a una indisponibilidad transitoria de un 
+equipamiento. 
+De resultar que estas previsiones para un mismo punto de conexion al SADI se reiteran en 
+programaciones consecutivas, el monto de los cargos a aplicar, en caso que se trasladen de una 
+programacion a otra los valores de reactivo faltantes, se multiplicaran por UNO COMA QUINCE (1,15) 
+veces y se determinaran sobre el valor de potencia reactiva faltante que se traslade de la forma 
+indicada.  
+• Penalizacion: cuando los incumplimientos no sean informados, o sean transitorios  
+En todos los casos, la evaluacion del incumplimiento se realizara en cada punto de interconexion entre 
+agentes.  
+3.1. GENERADORES 
+Si la indisponibilidad de reactivo de un Generador fue informada en la programacion estacional (limitacion 
+prolongada), debera abonar un cargo fijo igual al costo de operacion y mantenimiento del equipo de 
+reemplazo durante las horas en servicio, mas las horas en reserva fria y/o que resultara predespachado en 
+el periodo estacional y que cobrase remuneracion por Potencia. El cargo de reactivo a abonar se define en 
+CERO COMA CUARENTA Y CINCO (0,45) $/MVAr por hora.  
+Es responsabilidad de cada generador mantener su equipamiento en condiciones, por lo que el OED no 
+debera admitir, bajo ninguna causa, apartamientos o tolerancias respecto a la Curva de Capacidad P-Q 
+nominal del fabricante.  
+En los casos en que se determine que esta limitacion se prolongara en el tiempo por mas de una 
+programacion estacional, el agente podra acordar con otro agente vinculado al mismo nodo del SADI (p.e. el 
+Transportista al cual esta conectado), la instalacion de equipamiento de compensacion maniobrable 
+sustituto del faltante que registra (capacitor o reactor segun corresponda) para evitar el pago del cargo y el 
+factor multiplicador descripto en el parrafo anterior. En cualquier caso, la exencion del pago del cargo sera a 
+partir del momento de la instalacion y puesta en servicio de dicho equipo sustituto.  
+Este equipamiento sustituto tendra los mismos cargos y penalizaciones segun sea su indisponibilidad y 
+puede ser instalado en las instalaciones del Generador o acordar un mejor lugar con el Transportista o el 
+agente con quien haya efectuado el acuerdo.  
+Si la indisponibilidad de reactivo de un Generador fue informada en la programacion semanal o diaria 
+(limitacion transitoria) debera abonar una penalizacion de CUATRO COMA CINCUENTA (4,50) $/MVAr por 
+hora en que permanezca indisponible el equipamiento.  
+Si la disponibilidad de reactivo de un Generador resultase inferior a lo comprometido, y no fuese informada, 
+debera abonar la penalizacion mencionada durante todas las horas en servicio, mas las horas en reserva 
+fria y/o que resultara predespachado en el periodo estacional y que cobrase remuneracion por Potencia. En 
+este caso la penalizacion sera de CUATRO COMA CINCUENTA (4,50) $/MVAr por hora.  
+El Generador debe informar su eventual indisponibilidad de reactivo en MVAr, entendiendose por tal a la 
+potencia reactiva faltante para llegar a cumplir con el NOVENTA POR CIENTO (90%) de la Curva de 
+Capacidad, tanto para el rango de sobreexcitacion como para el de subexcitacion. En el caso de informar 
+una indisponibilidad transitoria, esta, para ser asi considerada, debera haber sido informada antes de que le 
+sea requerido su cumplimiento.
+
+--- Página 4 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 25:PROCEDIMIENTOS OPERATIVOS PARA EL SISTEMA ARGENTINO DE INTERCONEXION 
+Pag. 310 
+Version: 30-Jun-2024 
+ANEXO 25: PROCEDIMIENTOS OPERATIVOS PARA EL SISTEMA 
+ARGENTINO DE INTERCONEXION 
+1. NOCIONES GENERALES 
+La operacion del Sistema Electrico Argentino, cuya coordinacion estara a cargo de CAMMESA, se realizara 
+a traves de los siguientes Centros de Control de Operaciones: 
+a) CENTRO DE CONTROL DE OPERACIONES DEL SISTEMA ELECTRICO ARGENTINO (COC), el que 
+estara a cargo de CAMMESA; 
+b) CENTRO DE CONTROL DE OPERACIONES DEL SISTEMA DE TRANSPORTE DE ENERGIA 
+ELECTRICA EN ALTA TENSION (COT), el que estara a cargo de la COMPANIA DE TRANSPORTE DE 
+ENERGIA ELECTRICA EN ALTA TENSION TRANSENER SOCIEDAD ANONIMA (TRANSENER SA). 
+c) CENTRO DE CONTROL DE OPERACIONES DE LOS SISTEMAS DE TRANSPORTE POR 
+DISTRIBUCION TRONCAL (COTDT); 
+d) CENTRO DE CONTROL DE OPERACIONES DE LOS DISTRIBUIDORES (COD) y 
+e) CENTRO DE CONTROL DE OPERACIONES DE LOS GENERADORES (COG). 
+Cada distribuidor debera identificar aquellos equipamientos de su sistema que tengan asignadas, 
+tecnicamente, funciones de transporte, los que estaran sujetos a los mismos derechos y obligaciones que 
+cualquier otro equipamiento del sistema de transporte, en lo que a los aspectos operativos se refiere. De no 
+haber acuerdo con tal identificacion la SECRETARIA DE ENERGIA los definira de acuerdo a los criterios de 
+determinacion aplicables a los equipamientos del sistema de transporte. 
+En situaciones especiales definidas en la presente norma, o en aquellas en que no es posible la 
+comunicacion con CAMMESA, el Centro de Control del Area correspondiente asumira la coordinacion de la 
+operacion hasta que se logre transferir tal coordinacion a CAMMESA, entendiendose en tales casos que tal 
+coordinacion se asume por expresa instruccion de CAMMESA. 
+2. FUNCIONES DE LOS CENTROS DE OPERACIONES 
+2.1. CENTRO DE CONTROL DE OPERACIONES DEL SISTEMA ELECTRICO ARGENTINO. 
+El CENTRO DE CONTROL DE OPERACIONES DEL SISTEMA ELECTRICO ARGENTINO (COC) es la 
+Maxima Jerarquia Operativa en cualquier estado del sistema. Sus funciones son: 
+a) Controlar que se cumpla el programa de cargas y vigilar que su aplicacion, en tiempo real, no viole 
+las restricciones operativas (hidraulicas, electricas, de combustible). 
+b) Realizar un redespacho cuando por cualquier circunstancia no se pueda cumplir el programa 
+previsto. 
+c) Suministrar el programa de cargas diariamente a cada generador, y supervisar el programa de 
+maniobras de las transportistas para cumplir con dicho programa de cargas. 
+d) Informar el orden de prioridad de las unidades generadoras para subir y/o bajar generacion en 
+emergencia, que eventualmente requieran los centros de operacion de los transportistas. 
+e) Coordinar la operacion de todo el Sistema Argentino de Interconexion (SADI), especialmente en 
+aquellas maniobras que involucran diferentes centros de operaciones. 
+f) 
+Controlar la regulacion de frecuencia del SADI. 
+g) Ordenar y/o autorizar la conexion o desconexion de un generador al sistema. 
+h) Autorizar toda maniobra, ensayo o energizacion que se realice en el SADI. 
+i) 
+Coordinar la sincronizacion de sistemas a posteriori de un colapso total o parcial. 
+j) 
+Adoptar medidas extremas tales como cortes de carga y/o desconexion de generacion en 
+salvaguarda del sistema. 
+k) Otorgar autonomia en emergencia a Centros de Operacion jerarquicamente dependientes cuando 
+las circunstancias lo justifiquen.
+
+--- Página 5 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 25:PROCEDIMIENTOS OPERATIVOS PARA EL SISTEMA ARGENTINO DE INTERCONEXION 
+Pag. 311 
+Version: 30-Jun-2024 
+l) 
+Validar y/o corregir los estudios que definan limites de operacion, restricciones operativas, y criterios 
+operativos presentados por cualquier otro Centro de Operaciones. 
+m) Coordinar investigaciones conjuntas de contingencias que involucren a mas de un Centro de 
+Operaciones.  
+n) Elaborar informes oficiales de las contingencias que se producen en el SADI, consensuando con los 
+informes recepcionados de los respectivos Centros de Operaciones. 
+o) Supervisar y validar los ajustes propuestos para las protecciones y sistemas de control que 
+involucren a mas de un agente del MEM, y/o a transportistas con un agente. 
+p) Ordenar en forma directa a cada Centro de Operaciones las maniobras o consignas de operacion a 
+respetar. 
+2.2. CENTRO DE CONTROL DE OPERACIONES DE LOS SISTEMAS DE TRANSPORTE. 
+Se entiende por CENTRO DE CONTROL DE OPERACIONES DE LOS SISTEMAS DE TRANSPORTE POR 
+DISTRIBUCION TRONCAL (COTDT) a aquel que correspondiere a: 
+• un Transportista por Distribucion Troncal. 
+• un Distribuidor que preste la FTT a otros agentes del MEM, en cuanto a aquel sector de su red 
+afectado, total o parcialmente a dicha prestacion. 
+El CENTRO DE CONTROL DE OPERACIONES DEL SISTEMA DE TRANSPORTE DE ENERGIA 
+ELECTRICA EN ALTA TENSION (COT), y los CENTROS DE CONTROL DE OPERACIONES DE 
+SISTEMAS DE TRANSPORTE POR DISTRIBUCION TRONCAL (COTDT) recibiran instrucciones del COC 
+y, en condiciones normales, deberan realizar las maniobras necesarias sobre sus propios sistemas para  
+cumplir con el Programa de Cargas dado por CAMMESA. Asimismo, los COT y los COTDT deberan cumplir 
+las siguientes funciones: 
+a) Coordinar, supervisar, controlar, ordenar o autorizar maniobras de sus propias instalaciones; 
+b) Realizar la supervision y control del estado de su propio sistema para verificar que las potencias, 
+tensiones, intercambios, etc. se ubiquen dentro de sus limites admisibles y cumplan con las 
+condiciones estipuladas  en los respectivos convenios de conexion. 
+c) Informar al COC del estado de su red en condiciones normales, a fin de que se lo considere en 
+eventuales redespachos. 
+d) Informar rapidamente al COC de las fallas y/o salidas de servicio forzadas de su equipamiento. 
+e) Solicitar a los COG las condiciones de suministro de potencia reactiva necesaria para el Control de 
+Tension, de acuerdo a las pautas establecidas por el COC. 
+f) Requerir a CAMMESA o sus Usuarios informacion del sistema y prevision de evolucion en Tiempo 
+Real. 
+g) Maniobrar el equipamiento de conexion de un usuario, ante pedido de este, por emergencia propia 
+del usuario, en las condiciones que se pactaran en el respectivo convenio de conexion. 
+h) Coordinar el Mantenimiento Programado de su equipamiento con el COC. 
+i) Notificar a los Centros de Operaciones que corresponda sobre maniobras que afecten los sistemas 
+por ellos operados. 
+j) Notificar, fehacientemente y en forma previa, a sus usuarios de toda maniobra que tenga efectos no 
+deseados sobre sus sistemas.  
+k) Coordinar y supervisar los ensayos de equipamiento propio y de los usuarios, en particular lo 
+referente a condiciones de seguridad para el resto de la red.  
+l) Elaborar informes de contingencias en su sistema de acuerdo a las normas que se establezcan de 
+contenido minimo y tiempos de presentacion. 
+m) Elaborar y presentar al COC los estudios que avalen sus restricciones operativas, sus limites de 
+operacion, y criterios operativos generales de su propio sistema. 
+n) Analizar las posibles configuraciones de red anormales o de emergencia para planificacion de la 
+operacion en esas condiciones y presentar sus resultados al COC para su validacion.
+
+--- Página 6 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 25:PROCEDIMIENTOS OPERATIVOS PARA EL SISTEMA ARGENTINO DE INTERCONEXION 
+Pag. 312 
+Version: 30-Jun-2024 
+o) Asumir las funciones delegadas por el COC en condiciones anormales y/o de emergencia.  
+2.3. CENTRO DE CONTROL DE OPERACIONES DE GENERADORES. 
+Es el lugar fisico desde el cual se coordina la operacion de una o mas unidades de generacion. Este lugar 
+debera ser declarado por cada generador ante CAMMESA, indicando todos los medios de comunicacion 
+disponibles para acceder a el. 
+Los CENTROS DE CONTROL DE OPERACIONES DE GENERADORES (COG) tienen las siguientes 
+funciones: 
+a) Cumplir con su despacho de generacion horario. 
+b) Supervisar sus valores de tensiones, potencia reactiva y cargas en barras. 
+c) Cumplir con las consignas operativas de CAMMESA. 
+d) Maniobrar su propio equipamiento segun las instrucciones que recibe del COT y/o del COTDT. 
+e) Maniobrar durante emergencias de acuerdo a procedimientos previstos con autorizacion u orden del 
+COT y/o del COTDT. 
+f) 
+Maniobrar durante el restablecimiento del sistema segun lo indicado por el COT y/o el COTDT. 
+g) nformar al COC y al COT-COTDT de valores de variables fuera de limites, alarmas, desenganches, 
+estado de instalaciones etc. 
+h) Informar al COC y al  COT/COTDT toda situacion imprevista en sus instalaciones de generacion. 
+i) 
+Establecer indisponibilidades de elementos propios. 
+j) 
+Elaborar y comunicar  al COC y al COT y/o al COTDT los planes tentativos de mantenimiento 
+programado. 
+k) Solicitar al COT y/o al COTDT la conexion o desconexion de sus instalaciones al Sistema de 
+Transporte. 
+2.4. CENTRO DE CONTROL DE OPERACIONES DE DISTRIBUIDORES. 
+Los CENTROS DE CONTROL DE OPERACIONES DE DISTRIBUIDORES (COD) debe cumplir con las 
+siguientes funciones: 
+a) Supervisar las tensiones, potencia reactiva y potencia activa en las barras de conexion, conforme se 
+estipula en los respectivos convenios de conexion. 
+b) Cumplir las consignas operativas de CAMMESA.. 
+c) Maniobrar su equipamiento de conexion segun las instrucciones que recibe del COT y/o del COTDT 
+cuando tal equipamiento pueda afectar al sistema de transporte. 
+d) Maniobrar durante emergencias de acuerdo a los procedimientos previstos con autorizacion u orden 
+del COT y/o del COTDT. 
+e) Maniobrar durante el restablecimiento del sistema segun lo indicado por el COT y/o por el COTDT. 
+f) 
+Informar al COT y/o al COTDT los valores de variables fuera de limites, desenganches, estado de 
+instalaciones que afectan el comportamiento del sistema, etc. 
+g) Elaborar y presentar al COC los criterios operativos generales de su propio sistema, las 
+restricciones operativas y los limites de operacion requeridos para la fijacion de las componentes 
+“Firme” y “No Firme” en los terminos de los Anexos 27 y 28, incluyendo los estudios que los avalen. 
+h) Elaborar y comunicar al COC y al COT y al COTDT los planes tentativos de mantenimiento 
+programado de equipamiento que afectaren al sistema de transporte. 
+i) 
+Solicitar al COT y/o al COTDT la conexion o desconexion de sus instalaciones al Sistema de 
+Transporte.  
+Todas las enumeraciones precedentes no tienen caracter taxativo y CAMMESA podra determinar funciones 
+adicionales a las previstas.
+
+--- Página 7 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 25:PROCEDIMIENTOS OPERATIVOS PARA EL SISTEMA ARGENTINO DE INTERCONEXION 
+Pag. 313 
+Version: 30-Jun-2024 
+3. ESTADO DE LA OPERACION 
+Para determinar las obligaciones de los Centros de Control de Operaciones debera tenerse en cuenta el 
+estado de operacion, de acuerdo a la siguiente clasificacion: 
+a) Condiciones Normales, 
+b) Condiciones Particulares Programadas, 
+c) Condiciones Anormales y 
+d) Condiciones de Emergencia. 
+3.1. OPERACION EN CONDICIONES NORMALES. 
+Se considera operacion en condiciones normales a toda accion que se ejecuta diariamente sobre el sistema 
+de generacion y transporte para mantener su tension, frecuencia y carga dentro de valores preestablecidos. 
+Las acciones a tomar a tal efecto son las siguientes: 
+a) CONTROL DE TENSIONES: El Centro de Operaciones del Transportista (COT, COTDT) fijara al 
+COG la tension a mantener en barras de alta tension (132, 220, 330 o 500 kV segun corresponda),  
+de acuerdo a los criterios aprobados por el COC para ese estado. El COG cumplira la consigna y en 
+caso de existir limitaciones para cumplir (por ejemplo violacion de la Curva de Capabilidad), debe 
+comunicarla al COT/ COTDT. De existir diferencias en la aplicacion definira el COC. 
+b) CONTROL DE POTENCIA REACTIVA: El COT/ COTDT podra solicitar variaciones en la potencia 
+reactiva absorbida o entregada a su red por un generador o un distribuidor al COG o COD 
+respectivo, segun los criterios aprobados por el COC. 
+c) VARIACION DE CARGA ACTIVA EN GENERADORES: la variacion de carga se hara de acuerdo 
+al despacho economico horario de CAMMESA que conoceran tanto el COT-COTDT como el COG. 
+Cuando un sistema funcione aislado del Sistema Interconectado el COT/ COTDT podra solicitar la 
+modificacion de la carga activa para controlar la frecuencia. 
+d) CONTROL DE FRECUENCIA: El COC coordinara el control de la frecuencia, excepto que opere en 
+red aislada, donde la asumira el COT o COTDT correspondiente. En ambos casos sera delegada en 
+un COG, para la operacion en tiempo real. 
+3.2. OPERACION EN CONDICIONES PARTICULARES PROGRAMADAS 
+Se considera operacion en condiciones particulares programadas a las siguientes acciones relacionadas 
+con el mantenimiento de equipos, modificacion de instalaciones, entrega y recepcion de equipamiento que 
+afecten al Sistema de Transporte: 
+a) PEDIDO, ENTREGA Y RECEPCION DE INSTALACIONES: Se deben gestionar ante el COC, con 
+participacion de los COT/ COTDT involucrados y de acuerdo a la Orden de Servicio especifica. El 
+COT-COTDT entregara las instalaciones para trabajos acorde al pedido solicitado y cada Centro de 
+Operaciones involucrado tomara las medidas de seguridad que sean necesarias y que figuren en la 
+Orden de Servicio correspondiente. 
+b) CONTROL DE OPERACIONES PROGRAMADAS RIESGOSAS: Toda maniobra en las 
+instalaciones de un Distribuidor o Generador que pueda ser considerada riesgosa para el Sistema 
+debe ser comunicada previamente al COT-COTDT correspondiente. 
+3.3. OPERACION EN CONDICIONES ANORMALES 
+Se considera que una operacion se efectua en condiciones anormales cuando se produce un evento que 
+interrumpe el servicio de suministro de energia, o bien este continua con sus variables fuera de los limites 
+fijados, asi como tambien cuando se deja en forma urgente fuera de servicio instalaciones y/ o equipos para 
+trabajos de revision, mantenimiento o reparacion no programados. 
+En estas condiciones el Centro de Operacion de la Empresa en condiciones anormales debera informar a 
+los Centros de Operaciones COC y COT/COTDT de las siguientes dificultades: 
+a) Valores Anormales de tension, frecuencia o carga. 
+b) Aplicacion de restricciones. 
+c) Senalizacion de alarmas, protecciones etc.
+
+--- Página 8 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 25:PROCEDIMIENTOS OPERATIVOS PARA EL SISTEMA ARGENTINO DE INTERCONEXION 
+Pag. 314 
+Version: 30-Jun-2024 
+d) Presencia de humo, ruidos o descargas. 
+3.4. OPERACION EN EMERGENCIA. 
+Se considera operacion en emergencia a las operaciones que deben ser efectuadas por los Operadores en 
+condiciones extraordinarias como consecuencia de contingencias severas que produzcan o puedan producir 
+el colapso parcial o total del sistema electrico. Se pueden clasificar en emergencia: 
+a) Energetica. 
+b) del Sistema de Transporte en Alta Tension. 
+c) de un Sistema de Transporte por Distribucion Troncal. 
+d) de un Distribuidor 
+e) de un Generador. 
+f) 
+por Colapso del Sistema. 
+4. JERARQUIAS OPERATIVAS 
+A fin de establecer las jerarquias operativas entre distintos Centros de Operaciones debera tenerse en 
+cuenta el estado de operacion del sistema para coordinar las maniobras. 
+A estos efectos la jerarquia del COTDT correspondiente a un Distribuidor Troncal precedera a la 
+correspondiente al COD de un Distribuidor que presta la Funcion Tecnica de Transporte (FTT). 
+4.1. ESTADO NORMAL 
+En estado normal la coordinacion de este tipo de operacion es de CAMMESA, cuyo Centro de Operaciones 
+(COC)  coordinara las maniobras y operaciones con los Centros de Operaciones de TRANSENER (COT), 
+de Distribuidores Troncales (COTDT), de Distribuidores (COD),  y de Generadores (COG). Cada Centro 
+realizara sus maniobras con criterio propio de acuerdo a las pautas generales establecidas por el COC. 
+4.2. ESTADO NORMAL PROGRAMADO 
+En estado normal programado toda accion relacionada con el mantenimiento y, operacion de equipos y 
+medidas de seguridad para la entrega y recepcion de instalaciones relacionados con el Sistema de 
+Transporte sera instruida, en orden de prelacion, por el COC, el COT y/o el COTDT, el COD y el COG. 
+4.3. ESTADOS ANORMALES 
+En estados anormales, segun quien sea el afectado las instrucciones de maniobra seran impartidas, en 
+orden de prelacion por el COC, el COT y/o el COTDT y el COD o por el COC, el COT y/o el COTDT  y el 
+COG. 
+4.4. ESTADOS DE EMERGENCIA 
+Cuando se den condiciones de emergencia en el sistema, el COC delegara la tarea de coordinacion 
+operativa que le corresponde en el COT-COTDT pertinente hasta tanto se logre transferir dicha tarea a 
+CAMMESA. Para ello cada Centro de Operacion debera proponer un plan de operaciones, para cada una 
+de la situaciones previstas, el cual sera sometido a consideracion de los Usuarios y aprobado por el COC. 
+Solamente el COC tomara decisiones de despacho o redespacho, y los otros centros de control aplicaran 
+las instrucciones que al respecto establezca el COC. 
+a) EMERGENCIA ENERGETICA: Se entiende por emergencia energetica la existencia de un deficit 
+momentaneo de generacion en el SADI, correspondiendo en tales circunstancias impartir 
+instrucciones, en orden de prelacion al COC, COG, COT-COTDT, COD. 
+b) EMERGENCIA EN EL SISTEMA DE TRANSPORTE EN ALTA TENSION: En contingencias del 
+Sistema de Transporte en Alta Tension las instrucciones para el area en emergencia seran 
+impartidas, en orden de prelacion, por el COT, COTDT-COG, COD. El resto del SADI mantiene 
+jerarquias de operacion normal.
+
+--- Página 9 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 25:PROCEDIMIENTOS OPERATIVOS PARA EL SISTEMA ARGENTINO DE INTERCONEXION 
+Pag. 315 
+Version: 30-Jun-2024 
+c) EMERGENCIA EN EL SISTEMA DE TRANSPORTE POR DISTRIBUCION TRONCAL: En las 
+contingencias que se restringen a un area operada por una empresa de Transporte por Distribucion 
+Troncal las instrucciones seran impartidas para el sistema en emergencia, en orden de prelacion, 
+por el COTDT, COG y el COD. 
+d) EMERGENCIA EN UNA UNIDAD GENERADORA: Ante una falla propia de la unidad generadora el 
+COG tendra la maxima jerarquia durante tal emergencia.  
+e) PERDIDA PARCIAL O TOTAL DEL SISTEMA: Como caso particular de Condicion de Emergencia 
+se encuentra la reposicion parcial o total del sistema ante un colapso, en esas condiciones las 
+jerarquias operativas cambian. Para cumplir con el cometido de recuperacion del sistema es 
+necesario contar siempre en cada Centro de Operaciones con el ranking de maquinas, (obtenido del 
+despacho economico del sistema y comunicado por el COC), que deben subir o bajar su generacion 
+ante emergencias. 
+e.1) 
+COLAPSO TOTAL DEL SADI: Se entiende por tal una eventual perdida total de generacion 
+y carga en todo el SADI. En esas condiciones el nivel determinante sera el de COC, y debera dar en 
+esas condiciones la instruccion al COT de separar el sistema en subsistemas aislados. En cada 
+subsistema (area) aislado cada COT, COTDT o COD debera coordinar la recuperacion de su propia 
+area hasta el nivel de demanda mayor que le sea posible de acuerdo a la generacion disponible en 
+el area. Una vez alcanzado ese nivel de equilibrio avisara al COC su posibilidad de interconectarse, 
+y este determinara la oportunidad de la sincronizacion que coordinara con dicho COT, COTDT o 
+COD y el COT. 
+e.2.) 
+COLAPSO PARCIAL DEL SADI: Es el caso de perdida total de generacion y carga en una 
+o mas areas vinculadas. Alli el COC delegara la tarea de la reposicion en el COT y los COTDT o 
+COD respectivos segun corresponda. La obligacion del COTDT o COD consistira en recuperar su 
+sistema sin vincularse al sistema de 500 kV, y la del COT ir recuperando su sistema de 500 kV; una 
+vez cumplidos ambos cometidos, el COC supervisara la sincronizacion de cada subsistema con el 
+sistema de 500 kV.  
+e.3.) 
+REDUCCION DE LA CAPACIDAD DE TRANSPORTE: La perdida de uno o mas elementos 
+de transmision, puede restringir la capacidad de transporte de un dado subsistema. La actuacion de 
+automatismos pueden llevar a la desconexion automatica de generacion y carga instantaneamente. 
+De persistir la falla o los elementos fuera de servicio es necesario redespachar el sistema con las 
+restricciones existentes. En ese caso el COT adecuara su sistema a la nueva situacion informando a 
+los COG y COTDT-COD  respectivos sus nuevas consignas de operacion de acuerdo al orden de 
+prioridad que elabora diariamente el COC. El COC por su parte despachara otras maquinas para 
+cubrir el faltante de generacion, dando ordenes a otros COG. 
+5. MANTENIMIENTO PROGRAMADO 
+Toda Salida de Servicio programada, por mantenimiento programado o preventivo, de equipamientos de un 
+agente del MEM (Generadores, Transportistas, Distribuidores Troncales, o Distribuidores cumpliendo 
+funciones de Prestador Adicional de la Funcion Tecnica de Transporte(PAFTT)), debe ser aprobada por el 
+COC y solicitada por el Centro de Operaciones que maniobra dicho equipamiento.  
+La solicitud debera contener como minimo los siguientes datos: 
+a) Equipo que debe salir de servicio  
+b) Descripcion breve de tareas a realizar. 
+c) Duracion estimada de las tareas. 
+d) Informacion complementaria que estime necesaria. 
+Las solicitudes  deben hacerse con antelacion a la programacion estacional para todos los agentes del 
+MEM, incluyendo una programacion tentativa para los siguientes TREINTA  (30) meses.  
+El COC recogera las solicitudes y realizara la coordinacion con los agentes, para establecer un programa 
+optimo de todo el sistema, el cual se incluira en la programacion estacional. 
+Cuando resulte necesario operativamente se pueden solicitar semanalmente cambios al mantenimiento 
+programado, que CAMMESA los validara de ser posible y los incorporara a la programacion semanal.
+
+--- Página 10 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 25:PROCEDIMIENTOS OPERATIVOS PARA EL SISTEMA ARGENTINO DE INTERCONEXION 
+Pag. 316 
+Version: 30-Jun-2024 
+En la operacion en tiempo real el COC coordinara con el Centro de Operaciones que corresponda la 
+desenergizacion y posterior energizacion de los equipos.  
+El COC establecera la Orden de Servicio respectiva de aplicacion para todos los agentes. 
+6. ENSAYOS EN EL SISTEMA 
+Cuando un agente necesite realizar una supervision y/o ensayo en su equipamiento, y tales tareas pueden 
+tener repercusion sobre equipamientos de otros agentes, debe solicitar a traves de su Centro de 
+Operaciones autorizacion al COC. 
+La solicitud debera contener como minimo los siguientes datos: 
+a) Equipos a ensayar 
+b) Necesidad y Motivos del Ensayo 
+c) Tareas a realizar 
+d) Caracteristicas del ensayo. Evaluacion de sus implicancias. 
+e) Fecha y Duracion 
+El COC informara a los agentes que pueden verse afectados, coordinara el acuerdo de estos para la 
+realizacion del ensayo, aprobandolo o suspendiendo su ejecucion segun resultare conveniente en tales 
+circunstancias. 
+El COC establecera la Orden de Servicio correspondiente.  
+7. ENERGIZACIONES DE EQUIPAMIENTO 
+Las maniobras de energizacion seran determinadas por el COC (Excepto condicion emergencia) e instruira 
+en tal sentido a cada Centro de Operaciones. El COC establecera por Orden de Servicio los procedimientos 
+generales de estas maniobras. 
+Para ello cada Centro de Operaciones debera proponer un plan de operaciones, para cada una de las 
+situaciones previstas, el cual sera sometido a consideracion de los Usuarios y aprobado por el COC. 
+8. REPOSICION DE LINEAS 
+Segun sea la gravedad de la emergencia, debera respetarse lo detallado referente a la jerarquia operativa. 
+El Centro de Operaciones encargado de las tareas de coordinacion, de acuerdo a lo establecido en el Punto 
+4 "Jerarquias Operativas" de la presente norma, sera quien coordine la reposicion, y de haber mas de una 
+linea a energizar sera quien determine la secuencia de entrada en servicio mas apropiada. 
+El COC establecera  un procedimiento a cumplir en general por cada Centro de Operaciones, segun el tipo 
+de falla, tipo de linea, etc. 
+Los COT-COTDT deberan proponer un plan de operaciones, para cada una de las situaciones previstas, el 
+cual sera sometido a consideracion de los Usuarios y aprobado por el COC. 
+9. REPOSICION DE CARGAS 
+La reposicion de cargas luego de un corte por condiciones de emergencia sera coordinado por el COC. 
+10. ORDENES DE SERVICIO DE CADA CENTRO DE OPERACIONES 
+El COC establecera las Ordenes de Servicio operativas para el SADI. Los agentes y los restantes Centros 
+de Operaciones podran observarlas y proponer alternativas.
+
+--- Página 11 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 25:PROCEDIMIENTOS OPERATIVOS PARA EL SISTEMA ARGENTINO DE INTERCONEXION 
+Pag. 317 
+Version: 30-Jun-2024 
+Cada Centro de Operaciones (COT, COTDT, COD y COG) debera elevar al COC su propuesta de plan de 
+operaciones de su propio sistema, que se encuadren en las atribuciones y obligaciones propias y delegadas 
+por el COC para casos de emergencia.  
+Los planes de operacion que debe elevar cada Centro de Operaciones deben contener, entre otros: 
+a) Energizacion de equipamientos. 
+b) Reposicion de lineas y cargas. 
+c) Emergencias. 
+d) Restricciones de mantenimiento. 
+e) Equipamientos requeridos de otros usuarios del sistema. 
+f) 
+Regulacion de tension y frecuencia. 
+Los COD de los PAFTT deberan incluir los criterios operativos requeridos para fijar la capacidad de 
+transporte remanente de sus sistemas, los que deberan ser avalados en su presentacion, con calculos que 
+demuestren que responden a evaluaciones de minimo costo, teniendo en cuenta los valores de ENS que 
+figuran en el Contrato de Concesion del Distribuidor y que sean aplicables a toda su red sin discriminacion 
+de ninguna naturaleza. 
+Hasta tanto no se encuentren aprobados los mismos por el ENRE, el COC debera adoptar el criterio 
+operativo que responde a la operacion de minimo costo del SADI, incluyendo la valorizacion de la energia 
+no suministrada en el mismo. 
+En el caso de UFTT Distribuidores que se encuentren recibiendo la prestacion adicional de la FTT NO 
+FIRME, de no haber sido establecidos previamente criterios operativos que tengan en consideracion el 
+abastecimiento de su demanda, el criterio a aplicar sera el definido por el ENRE. Hasta tanto el citado Ente 
+no establezca tal criterio, la demanda del UFTT Distribuidor sera considerada dentro la obligacion de 
+abastecimiento de la demanda propia del prestador. 
+CAMMESA, a traves de su COC, dara vista a los agentes involucrados en cada caso por un plazo de 
+QUINCE (15) dias corridos para que realicen sus objeciones. De no existir objeciones automaticamente se 
+transformara en Orden de Servicio. 
+De presentarse objeciones el COC coordinara con los agentes involucrados y el Centro respectivo la 
+elaboracion de una propuesta consensuada. De no existir acuerdo al transcurrir TREINTA (30) dias corridos 
+de la presentacion de la propuesta original, el COC sancionara la que considere propuesta mas adecuada. 
+Estas Ordenes de Servicio regiran hasta tanto por solicitud de un agente cualquiera sean actualizadas.   
+Transitoriamente hasta la elaboracion y/o actualizacion de las nuevas Ordenes de Servicio, se tomara como 
+referencia las Ordenes de Servicio vigentes en cada Centro de Operaciones.
+
+--- Página 12 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 39:GENERACION CON FUENTES RENOVABLES DE ENERGIA, EXCLUIDA LA HIDRAULICA Y LA EOLICA Pag. 
+429 
+Version: 30-Jun-2024 
+ANEXO 39: GENERACION CON FUENTES RENOVABLES DE ENERGIA, 
+EXCLUIDA LA HIDRAULICA Y LA EOLICA 
+1. OBJETO 
+El presente Anexo establece el tratamiento en el MEM de la generacion electrica a partir de fuentes 
+renovables, con excepcion de la proveniente de energia hidraulica y eolica, valiendo para esta ultima lo 
+establecido en el Anexo 40 – GENERACION EOLICA, atendiendo a las particularidades del equipamiento 
+involucrado y a la naturaleza del recurso, circunstancia que lo diferencia en algunos aspectos de la 
+generacion convencional. 
+Solo se definen en este Anexo aquellas cuestiones de indole exclusiva de la generacion electrica producida 
+a partir de la transformacion de la energia disponible en su forma primaria proveniente de fuentes 
+renovables, tales como solar, biogas, geotermica, biocombustibles y biomasa, entre otras, que se 
+encuentren alcanzadas por la Ley 26.190 – Regimen de Fomento Nacional para el uso de Fuentes 
+Renovables de Energia destinada a la produccion de Energia Electrica, o aquella otra legislacion que 
+promueva este tipo de energias. 
+Para el resto de los aspectos que son asimilables a los de la generacion convencional, este tipo de 
+generacion, con excepcion de la proveniente de biocombustibles, sera tratada como generacion hidraulica 
+de pasada, y por tal razon toda referencia hecha en LOS PROCEDIMIENTOS a generacion en general o en 
+particular que resulte aplicable a ese tipo de generacion debera entenderse como aplicable, salvo que en 
+este Anexo o en LOS PROCEDIMIENTOS se indique explicitamente lo contrario. 
+2. REQUISITOS DE INGRESO 
+Sera condicion para el ingreso de este tipo de generacion al MEM que la misma totalice una potencia 
+nominal igual o mayor a 0,5 MW, cualquiera sea la naturaleza del resto del equipamiento a cargo del mismo 
+titular. Adicionalmente, debera cumplir todos los requisitos que se establecen para el ingreso de nueva 
+generacion al MEM conforme lo definido en LOS PROCEDIMIENTOS. 
+3. CONTROL DE TENSION Y DESPACHO DE REACTIVO 
+En caso que las unidades generadoras sean de tipo distinto a la sincronica, el Generador sera responsable 
+de la instalacion de equipamiento de compensacion de reactiva necesario para cumplir con lo indicado a 
+continuacion: 
+La generacion menor o igual a 1 MW no debe absorber potencia reactiva de la red (es decir debe operar 
+con un factor de potencia (cos φ) igual a la unidad o entregando reactiva a la red). Puede trabajar con un 
+factor de potencia (cos φ) constante, solo se requerira control de tension cuando ello sea necesario para 
+mantener dentro de banda las tensiones. 
+La generacion mayor a 1 MW y menor a 25 MW debe disponer de capacidad para operar en cualquiera de 
+las condiciones que le sean requeridas para un factor de potencia (cos φ) igual a 0,95 (inductivo o 
+capacitivo). Cuando las condiciones del punto de conexion lo requieran se podra exigir que disponga control 
+automatico de la tension en el punto de conexion a la red. 
+Para los generadores con potencia superior a 25 MW los requerimientos de potencia reactiva y control de 
+tension se estableceran en base a los estudios de funcionamiento indicados en el Procedimiento Tecnico N° 
+1 para los estudios de Etapa 1. 
+Para las unidades generadoras sincronicas los requerimientos de suministro de potencia reactiva y control 
+de tension seran los indicados en LOS PROCEDIMIENTOS. 
+Si por razones de diseno del sistema de transporte o distribucion donde se conecte la central generadora o 
+de disponibilidad de los equipos de compensacion de dichas redes no pudiera darse satisfaccion al 
+requerimiento de potencia reactiva referido previamente, sera de aplicacion lo establecido en el Anexo 4 de 
+LOS PROCEDIMIENTOS segun sea solicitado por el OED dentro de los limites fijados en el presente 
+Anexo.
+
+--- Página 13 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 39:GENERACION CON FUENTES RENOVABLES DE ENERGIA, EXCLUIDA LA HIDRAULICA Y LA EOLICA Pag. 
+430 
+Version: 30-Jun-2024 
+4. DATOS CARACTERISTICOS, OPERACION Y RESTRICCIONES 
+El Generador debera proceder a suministrar, como Declaracion Jurada, aquellas caracteristicas operativas 
+de sus unidades que el OED le solicite; en particular las que hacen a los parametros funcionales referidos, 
+como ser aleatoriedad prevista del recurso.  En caso de tratarse de un Agente del MEM preexistente, esta 
+informacion sera complementaria a la que se solicita a traves del Anexo 1 – “Base de Datos Estacional” de 
+LOS PROCEDIMIENTOS. 
+Por su parte, el OED debera programar y ejecutar la operacion en base a los datos declarados por el 
+Generador, salvo que estos puedan comprometer la seguridad operativa del sistema o que durante la 
+operacion se verifique que los mismos no se ajustan a la realidad. 
+De verificarse que la informacion referida no se ajusta a la realidad, el OED podra establecer datos a partir 
+de sus propias estimaciones. En virtud de los resultados de la operacion, el OED estara habilitado a limitar 
+la operacion de un generador, sea en tiempo real o programadamente, debiendo poder justificar 
+tecnicamente para ello que el generador provocara alteraciones fuera de tolerancia en los parametros 
+funcionales del sistema. 
+5. DESPACHO 
+Y 
+RECONOCIMIENTO 
+DE 
+COSTOS 
+DE 
+GENERACION 
+CON 
+BIOCOMBUSTIBLES 
+La generacion producida a partir de biocombustibles que se haya incluido en la promocion de este tipo de 
+energia por aplicacion del Regimen de Fomento Nacional para Uso de Fuentes Renovables de Energia, 
+sera despachada considerando un Costo Variable de Produccion (CVP) combustible, a ser determinado 
+sobre la base del consumo especifico neto de la unidad generadora y el Precio de Referencia del Fuel Oil 
+en el nodo de vinculacion de dicha maquina vigente en cada momento en el MEM, o el Costo Variable de 
+Produccion del combustible declarado por el Generador, si este ultimo fuera menor.
+
+--- Página 14 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 40:GENERACION EOLICA 
+Pag. 431 
+Version: 30-Jun-2024 
+ANEXO 40: GENERACION EOLICA 
+1. OBJETO 
+El presente Anexo establece el tratamiento en el MEM de la generacion eolica, atendiendo a las 
+particularidades del equipamiento involucrado y a la naturaleza del recurso, circunstancia que lo diferencia 
+en algunos aspectos de la generacion convencional. 
+En este Anexo se definen aquellas cuestiones de indole exclusiva a la generacion eolica. Para el resto de 
+los aspectos que son asimilables a los de generacion convencional, la generacion eolica sera tratada como 
+generacion hidraulica de pasada, y por tal razon toda referencia hecha en LOS PROCEDIMIENTOS a 
+generacion en general o en particular que resulte aplicable a ese tipo de generacion debera entenderse 
+como aplicable tambien a la generacion eolica salvo que en este Anexo o en LOS PROCEDIMIENTOS se 
+indique explicitamente lo contrario. 
+2. REQUISITOS DE INGRESO 
+Sera condicion para el ingreso de generacion eolica al MEM que totalice una potencia nominal igual o mayor 
+a UN (1) MW, cualquiera sea la naturaleza del resto del equipamiento a cargo del mismo titular. 
+Adicionalmente, debera cumplir todos los requisitos que se establecen para el ingreso de nueva generacion 
+al MEM conforme lo definido en LOS PROCEDIMIENTOS. 
+3. CONTROL DE TENSION Y DESPACHO DE POTENCIA REACTIVA 
+La granja eolica debera cumplimentar las obligaciones de entrega y absorcion de potencia reactiva de tal 
+manera que en el punto de conexion a la red exhiba un factor de potencia (cos φ) de 0,95 tanto inductivo 
+como capacitivo. 
+Si por razones de diseno del sistema o de disponibilidad de los equipos de compensacion no pudiera darse 
+satisfaccion al requerimiento de reactivo, segun sea solicitado por el OED dentro de estos limites de 
+capacidad P-Q, sera de aplicacion a la generacion eolica lo establecido en el Anexo 4 de LOS 
+PROCEDIMIENTOS. 
+En caso que el equipamiento del Generador sea mixto, o sea conformado por equipamiento eolico y 
+convencional, a efectos de las exigencias referidas al intercambio de reactivo, se considerara como 
+prestacion exigible la de una Curva de Capacidad P-Q correspondiente a una maquina termica de potencia 
+activa nominal igual a la potencia activa nominal mixta que se encuentre generando. 
+Atendiendo a la naturaleza aleatoria del recurso, a la incidencia de las eventuales variaciones rapidas y 
+lentas de la velocidad del viento, a la interferencia de las estructuras portantes con el sistema motriz, a la 
+cantidad y ubicacion de cada aerogenerador, una granja eolica provoca fluctuaciones en la potencia 
+entregada al sistema electrico. Estas alteraciones no podran estar fuera de la tolerancia en los parametros 
+funcionales del sistema electrico al cual aportan su energia. 
+Para cada tipo de granja eolica, el grado de perturbacion del funcionamiento del sistema electrico depende 
+fuertemente de la potencia de la granja eolica en relacion a la rigidez (potencia de cortocircuito) del sistema 
+electrico en el punto de conexion. 
+Por ello, se definen 2 tipos de granjas, Tipo A y Tipo B. Las primeras son aquellas que tienen mayor valor 
+de la relacion entre su potencia instalada y la potencia de cortocircuito del punto de conexion a la red y en 
+las segundas dicha relacion es de un nivel menor. 
+Granjas de Tipo A 
+En este tipo de granjas, la maxima perturbacion admitida de la tension en el punto de conexion de la granja 
+o de cualquier otro nodo de la red electrica, se define de la siguiente manera: 
+En los estados de operacion con la menor potencia de cortocircuito en el area donde se conecta la granja 
+(con el menor despacho de generacion probable), la “mayor variacion rapida de generacion” y la “mayor 
+variacion de generacion frecuente” deben ser tales que no provoquen variaciones de tension mayores a: 
+1% en las redes de tension mayor a 132 kV y menor o igual a 500 kV. 
+2% en las redes de tension menor o igual a 132 kV y mayor a 35 kV.
+
+--- Página 15 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 40:GENERACION EOLICA 
+Pag. 432 
+Version: 30-Jun-2024 
+3% en las redes de tension menores o iguales a 35 kV. 
+Se define como “mayor variacion rapida de generacion” al valor de la maxima variacion estimada de 
+potencia activa, dentro de cada 10 minutos, de los 10 valores de potencia media registrada cada 1 minuto. 
+La tecnologia constructiva de los aerogeneradores y de sus controles y tambien la arquitectura del Parque 
+Eolico, deberan evitar la produccion de variaciones rapidas de la potencia de la Granja debido a 
+turbulencias, rafagas y/o variaciones rapidas de la velocidad del viento. 
+Se define como “mayor variacion de generacion frecuente” al valor de la maxima variacion de potencia 
+activa, dentro de cada hora, de los 6 valores de potencia media registrada cada 10 minutos que no es 
+superado durante el 95% del tiempo (de las horas del ano). Es decir variaciones superiores solo se dan en 
+el 5% del tiempo total. Estas variaciones de potencia deberan ser el resultado de mediciones de vientos 
+adecuadas (valor medio cada 10 minutos) tomadas en el lugar de emplazamiento de la granja durante un 
+ano como minimo. 
+La granja debera operar controlando la tension en el punto de conexion o un punto interno de la granja. 
+Para lograr efectividad en esta funcion debera poseer un control conjunto de tal manera que permita repartir 
+en forma uniforme la potencia reactiva en cada aerogenerador. 
+El Control Conjunto de tensiones debera presentar una respuesta dinamica (tiempo de establecimiento, 
+sobrevalor, amortiguamiento, etc.) que verifique los criterios minimos de desempeno definidos en el 
+Procedimiento Tecnico N°4 de LOS PROCEDIMIENTOS. 
+En casos que, de acuerdo a los resultados de los estudios de funcionamiento indicados en los estudios de 
+Etapa 1 del Procedimiento Tecnico N° 1 de LOS PROCEDIMIENTOS, se requiera ampliar el rango de 
+control de la potencia reactiva y/o la velocidad de respuesta del control conjunto de la tension por 
+condiciones de estabilidad en la transmision de potencia, el OED podra exigir la instalacion de un equipo de 
+compensacion dinamica de potencia reactiva (compensador sincronico, SVC, STATCOM, etc.). 
+Debera tener una caracteristica del diagrama P-Q tal que, a maxima potencia, exhiba un Factor de Potencia 
+(cos φ) de 0,95 y la potencia reactiva, como minimo, se mantenga constante para las potencias activas 
+entre el 100% y el 20% o 30% de la potencia nominal (caracteristica de capacidad P-Q de forma 
+pentagonal), excepto que el Generador demuestre que, por las caracteristicas de su punto de conexion, 
+puede tener menor capacidad de potencia reactiva. 
+El Generador debera proponer alguna contramedida o estrategia operativa de tal manera de evitar la 
+desconexion en forma cuasi-simultanea de todos los aerogeneradores de la granja debido a vientos 
+extremos. 
+Las rampas o gradientes, tanto de descenso de potencia frente a vientos extremos, como de rearranque, 
+deberan permitir una eficaz accion correctiva por parte de las reservas de potencia de rapida disponibilidad 
+en el MEM y minimizar las perturbaciones en la frecuencia. 
+Debera tener un centro de control atendido y poder aumentar la generacion (en los instantes de arranque o 
+cuando tenga reserva de potencia) o disminuir la misma, en cualquier momento segun las indicaciones del 
+Transportista o el PAFTT al cual estan conectados, o del OED, segun corresponda. 
+Frente a fallas en el SADI, correctamente despejadas por sus protecciones, la Central Eolica debera 
+soportar, sin desconectarse de la red, disminuciones de tension (de cada fase) en magnitud y tiempo, en el 
+punto de conexion de la Granja, comprendidas dentro de la curva limite definida en el Procedimiento 
+Tecnico N°4 de LOS PROCEDIMIENTOS. 
+Dependiendo de la potencia de la granja, debera tener una o mas torres de medicion de vientos. 
+Granjas Tipo B 
+Si el tamano de la granja es pequeno respecto a la robustez del punto de conexion y la variacion 
+instantanea de la potencia desde su valor nominal a cero (efecto equivalente a una desconexion de la 
+granja operando a potencia plena y entregando a la red potencia reactiva en su punto de conexion a la red), 
+produce variaciones de tension menores a las indicadas anteriormente, no sera necesario que la granja 
+opere controlando la tension y podra operar con el Factor de Potencia (cos φ) constante que le sea 
+requerido en cada ocasion por el Transportista o PAFTT al cual se conecta o por el OED, segun 
+corresponda. 
+Este tipo de Granjas podra tener una caracteristica del diagrama P-Q tal que, a maxima potencia, exhiba un 
+Factor de Potencia (cos φ) de 0,95 y mantenga este valor constante para todo su rango de potencia activa 
+(caracteristica capacidad P-Q de forma triangular).
+
+--- Página 16 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - ANEXO 40:GENERACION EOLICA 
+Pag. 433 
+Version: 30-Jun-2024 
+Para ambos tipos de granjas, en los casos que, para logar el factor de potencia (cos φ) de 0,95, deban 
+instalarse capacitores shunt en las instalaciones del parque eolico, la potencia de los mismos debe ser tal 
+que su maniobra de conexion o desconexion, con la menor potencia de cortocircuito en el area donde se 
+conecta la granja (con el menor despacho de generacion probable), no provoque variaciones de tension 
+permanentes, mayores a los porcentajes indicados anteriormente, pero adicionando a los porcentajes un 
+uno por ciento (1%) para cada nivel de tension. 
+Todas las granjas deberan poder operar en forma permanente con tensiones en el punto de conexion y 
+soportar las mismas variaciones de la frecuencia, sin desconectarse de la red, que se exigen a un 
+generador convencional segun lo indicado en el Procedimiento Tecnico N° 4 de LOS PROCEDIMIENTOS. 
+4. CALIDAD DE LA POTENCIA 
+Los aerogeneradores deberan cumplir, en lo que respecta a inyeccion de armonicas, flickers, etc. con la 
+Norma IEC 61400-21 
+5. DATOS CARACTERISTICOS, OPERACION Y RESTRICCIONES 
+El Generador debera proceder a suministrar, como Declaracion Jurada, aquellas caracteristicas operativas 
+de sus unidades eolicas que el OED le solicite, en particular las que hacen a los parametros funcionales 
+referidos, como ser aleatoriedad prevista del recurso, etc. En caso de tratarse de un Agente del MEM 
+preexistente, esta informacion sera complementaria a la que se solicita a traves del Anexo 1 – “Base de 
+Datos Estacional” de LOS PROCEDIMIENTOS 
+Por su parte, el OED debera programar y ejecutar la operacion en base a los datos declarados por el 
+Generador, salvo que estos puedan comprometer la seguridad operativa del sistema o que durante la 
+operacion se verifique que los mismos no se ajustan a la realidad. 
+De verificarse que la informacion referida no se ajusta a la realidad, el OED podra establecer datos a partir 
+de sus propias estimaciones. En virtud de los resultados de la operacion, el OED estara habilitado a limitar 
+la operacion de un generador eolico, sea en tiempo real o programadamente, debiendo poder justificar 
+tecnicamente para ello que la generacion eolica provocara alteraciones fuera de tolerancia en los 
+parametros funcionales del sistema.
+
+--- Página 17 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 37 
+Version:31-Dic-2023 
+• ANEXO 17 - INGRESO DE NUEVOS AGENTES AL MEM 
+• ANEXO 24.1 – NORMAS DEL SISTEMA DE MEDICION COMERCIAL DEL MEM 
+• PROCEDIMIENTO TECNICO Nº 2 - HABILITACION PARA USO COMERCIAL DE INSTALACIONES 
+DE MEDICION EN NODOS DEL MEM 
+• PROCEDIMIENTO TECNICO Nº 3 - SMEC - PROCEDIMIENTO DE RECOLECCION DE DATOS EN 
+EMERGENCIA 
+2. CAPITULO II - INGRESO DE NUEVOS GENERADORES, AUTOGENERADORES Y 
+COGENERADORES AL MEM 
+2.1. INTRODUCCION  
+Los Generadores, Autogeneradores y Cogeneradores, antes de conectarse al PAFTT o al Transportista deben 
+cumplir con requisitos reglamentarios, informativos y tecnicos para permitir su ingreso al MEM, su habilitacion 
+comercial y su despacho. 
+En el presente procedimiento tecnico se indican los plazos permitidos para el cumplimiento de cada requisito, 
+en el marco de lo establecido por "Los Procedimientos". 
+En cada caso se detallan los requisitos reglamentarios, se especifican las caracteristicas tecnicas que deben 
+cumplir las unidades generadoras de los Generadores, Autogeneradores y Cogeneradores y se detalla la 
+informacion que deben entregar a CAMMESA. 
+Estas obligaciones minimas, no se contraponen con las especificaciones habituales de funcionamiento y 
+control propio de las centrales y, cuando correspondan pueden ampliarse, cuando ello sea necesario para 
+cumplir con lo indicado en los Procedimientos. 
+Los Generadores, Autogeneradores y Cogeneradores deberan cumplir con todos los requisitos solicitados 
+previos a su ingreso efectivo al MEM, para poder ser incluidos en la programacion estacional, mensual o 
+semanal. 
+2.2. REQUISITOS PARA SOLICITAR SU INGRESO AL MEM 
+2.2.1. REQUISITOS REGLAMENTARIOS 
+Deberan cumplir con los requisitos basicos indicados en el Anexo 17 de "Los Procedimientos". 
+Toda empresa que aspire a convertirse en Generador, Cogenerador o Autogenerador del MEM debe obtener 
+la autorizacion de la SECRETARIA DE ENERGIA presentando una solicitud en las condiciones indicadas en 
+el Anexo 17 de "Los Procedimientos". 
+Para ingresar al SADI, el solicitante debe cumplir complementariamente con los requisitos establecidos en el 
+Reglamento de Acceso a la Capacidad Existente y Ampliacion del Sistema de Transporte de Energia Electrica 
+(Anexo 16 de Los Procedimientos). 
+2.2.2. REQUISITOS INFORMATIVOS 
+2.2.2.1. REQUISITOS GENERALES 
+Los Generadores, Cogeneradores y Autogeneradores, simultaneamente con la solicitud indicada en el punto 
+precedente, deben presentar una SOLICITUD de Acceso ante LA CONCESIONARIA DEL SERVICIO 
+PUBLICO DE TRANSPORTE (LA TRANSPORTISTA) que debera contener la informacion solicitada en el 
+Anexo 16 de "Los Procedimientos". 
+En particular los estudios del SISTEMA DE TRANSPORTE para verificar la factibilidad tecnica de la 
+SOLICITUD se deberan realizar de acuerdo a lo indicado en el Procedimiento Tecnico Nº 1 de CAMMESA " 
+Estudios Requeridos para la presentacion de la solicitud de acceso y ampliaciones al Sistema de Transporte". 
+Simultaneamente con la solicitud de ingreso deberan presentar ante CAMMESA la informacion minima 
+requerida para la administracion de sus transacciones y despacho de energia que se indican en los puntos 
+2.2.2.2 y 2.2.2.3.
+
+--- Página 18 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 38 
+Version:31-Dic-2023 
+2.2.2.2. DATOS COMERCIALES (LEGALES E IMPOSITIVOS): 
+• Razon o Denominacion Social y Nombre Comercial. 
+• Domicilio legal, Numeros de Telefono y Fax. 
+• Domicilio comercial, para ser indicado en la facturacion, Numeros de Telefono y Fax. 
+• Representantes habilitados para actuar ante CAMMESA. (Para la representacion legal, en caso de no 
+ser el Presidente de la Empresa, adjuntar copia del poder con facultades suficientes). 
+• Constancia de Nº de CUIT (Formulario 576 original). 
+• Constancia de la situacion fiscal frente a la R.G. 3125 (Agente de retencion del IVA) 
+• Constancia para la no retencion del Impuesto a las ganancias (Art. 28 de la R.G. 2784)  
+• Constancia de no encontrarse comprendidos dentro del regimen especial de pagos a cuenta 
+establecidos por la R.G. 2793. 
+• Constancia de hallarse excluidos (R.G. 3851) de las disposiciones de la R.G. 3130. 
+Una vez autorizado su ingreso como Agente del MEM, sera obligacion del mismo mantener estos datos 
+actualizados. 
+2.2.2.3. DATOS REQUERIDOS PARA LA BASE DE DATOS DEL SISTEMA. 
+• Puntos de intercambio que utilizara con el MEM, identificando las empresas titulares de las 
+instalaciones que los conforman. 
+• Fecha solicitada de ingreso como agente del MEM. 
+• Fechas previstas de entrada en servicio del equipamiento a instalar. 
+• Copia de la nota remitida al Prestador Adicional de la Funcion Tecnica de Transporte de Energia 
+solicitando las condiciones tecnicas y economicas de dicha prestacion. 
+• Potencia efectiva a plena carga y consumo de servicios auxiliares expresado como porcentaje de la 
+potencia efectiva a plena carga. 
+• Maquinas Termicas y Nucleares: Consumo especifico medio bruto previsto. 
+• Maquinas Termicas: tipos de combustibles que puede consumir, posibilidades de trabajar con mezcla, 
+y capacidad de almacenamiento. 
+• Centrales Hidroelectricas con Capacidad de Embalse: curva de volumen embalsado en funcion del 
+nivel, cota minima y maxima operativa, y datos de evaporacion. 
+• Centrales Hidroelectricas en General: Numero de grupos, funcion para conversion energetica (m3 por 
+kWh), caudal maximo y minimo turbinable por grupo, serie historica de caudales semanales desde 
+1943. 
+• Centrales de Bombeo: Para el embalse y contraembalse, curva de volumen embalsado en funcion del 
+nivel, cota minima y maxima operativa. Datos de evaporacion. 
+2.2.3. REQUISITOS TECNICOS 
+2.2.3.1. REQUISITOS GENERALES Y PARTICULARES 
+Atendiendo a la muy variada composicion del parque generador del S.A.D.I. (centrales hidraulicas, termicas, 
+nucleares, con turbinas de gas, de vapor, motores Diesel, ciclos combinados, etc.), no es razonable establecer 
+requisitos comunes para la totalidad de las maquinas y, mas aun, si se tiene en cuenta la dispersion de 
+potencias. Por este motivo los requisitos se dividen en:  
+• GENERALES: requisitos que deben cumplir todas las maquinas del SADI.  
+• PARTICULARES: requerimientos adicionales segun la potencia y particular ubicacion de la central en 
+la red del SADI.
+
+--- Página 19 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 39 
+Version:31-Dic-2023 
+• ESPECIALES: requerimientos adicionales a los indicados en este PT que se establezcan para el 
+ingreso de generacion no convencional en funcion del resultado de los analisis de los estudios que se 
+efectuen para evaluar la Solicitud de Acceso del Generador. 
+Los generadores que deben cumplir con los requisitos particulares son aquellos que tienen alguna de las 
+siguientes caracteristicas: 
+* La potencia nominal total de una unidad o de una nueva central que ingresa al MEM es superior a 100MW 
+* La potencia nominal total de una unidad o de una nueva central que ingresa MEMSP es superior a 30MW 
+Algunos Requisitos Particulares pueden ser aplicados a centrales o unidades con potencias nominales 
+inferiores a las detalladas precedentemente en este Procedimiento cuando los estudios de acceso o estudios 
+que CAMMESA realice con el fin de verificar los criterios y condiciones de seguridad muestren la necesidad 
+de los mismos.  
+Asimismo, cuando el Agente presente los estudios y evaluaciones que fundamenten que un diseno que no 
+cumpla integramente con lo definido en los Requisitos Particulares no afecta la calidad, la capacidad del 
+Sistema de Transporte, o la seguridad del sistema; CAMMESA debera analizar los estudios, y podra aceptar 
+la solucion propuesta, siempre que las condiciones y escenarios sean adecuados, y los resultados 
+demuestren claramente la efectividad de la solucion propuesta. 
+Cuando el ingreso de generacion corresponda a instalaciones denominadas no convencionales: eolica, 
+mareomotriz, geotermica, etc., las cuales por sus caracteristicas pueden requerir estudios y especificaciones 
+de funcionamiento y ensayos no contemplados en el presente Procedimiento Tecnicos, CAMMESA podra 
+definir los requisitos especiales. 
+Esos requisitos seran informados al Agente y al ENRE, indicando los criterios de desempeno que debera 
+satisfacer la instalacion y presentando los fundamentos que justifican su aplicacion. En su definicion 
+CAMMESA debera tener en consideracion la opinion del Transportista. 
+Para conectarse al SADI los Generadores, Cogeneradores y Autogeneradores deberan cumplir los siguientes 
+requisitos tecnicos minimos: 
+2.2.3.2. REQUISITOS GENERALES 
+Todas las Unidades Generadoras cuya conexion directa o indirecta al SISTEMA DE TRANSPORTE sea 
+autorizada, sus instalaciones y aparatos, deberan cumplir con los siguientes requerimientos: 
+d) Corriente de secuencia inversa 
+Cada Unidad Generadora debera soportar, sin salir de servicio, la circulacion de la corriente de secuencia 
+inversa correspondiente a una falla asimetrica cercana, durante el tiempo que transcurre desde el origen 
+de la falla hasta la operacion de la ultima proteccion de respaldo. En el caso de la apertura monofasica 
+de una linea, durante el tiempo muerto que estuviese ajustado el sistema automatico de recierre en las 
+protecciones de lineas, las protecciones del generador no deberan desconectar la unidad. 
+e) Rangos de frecuencia admisibles de operacion. 
+• 
+Rango de frecuencia admisible de operacion sin limite de tiempo entre 49 y 51 Hz 
+• 
+Rango de frecuencia admisible de operacion del grupo con la actuacion de reles temporizados con 
+una temporizacion minima de 100 seg. entre 48,5 y 49,0 Hz, y entre 51, y 51,5 Hz. 
+• 
+Rango de frecuencia admisible de operacion del grupo con la actuacion de reles temporizados con 
+una temporizacion minima de 25 seg. entre 48 y 48,5 Hz, y entre 51,5 y 52,0 Hz. 
+• 
+Rango de frecuencia admisible de operacion del grupo con la actuacion de reles temporizados con 
+una temporizacion minima de 15 seg. entre 47,5 y 48 Hz, y entre 52,0 y 52,5 Hz. 
+• 
+Rango de frecuencia admisible de operacion del grupo sin la actuacion de reles instantaneos de 
+desconexion entre 47,5 Hz y 52,5 Hz 
+El generador se podra desconectar por alguna proteccion propia solamente si los desvios de la frecuencia en 
+la red a la cual permanece vinculado, tanto en amplitud como en duracion, se encuentran fuera de la Zona 
+Admisible en la grafica siguiente.
+
+--- Página 20 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 40 
+Version:31-Dic-2023 
+ 
+f) Requisitos para el sistema de control de potencia frecuencia  
+• Estatismo permanente ajustado entre el 4 y 7%. 
+• Banda muerta inferior al 0,1%. 
+• Tiempo de establecimiento (necesario para que la potencia mecanica ingrese en la banda del +/-
+10% del incremento de carga aplicado) del lazo de regulacion de velocidad menor a 60 segundos 
+para maquinas termicas e inferior a 140 segundos para maquinas hidraulicas. 
+• El lazo de control de potencia-frecuencia, se debera ajustar de manera tal, que el Tiempo de 
+Establecimiento verifique los requisitos establecidos en el Procedimiento Tecnico N° 9. 
+g) Desconexion automatica de generacion (DAG), desconexion automatica de carga (DAC), Control de la 
+Compensacion de Reactivo en la Red (CCRR) 
+Disponer, con anterioridad a la conexion al SISTEMA DE TRANSPORTE, de los equipamientos 
+necesarios para la DAG/ DAC/ CCRR, cuando fueran requeridas por el sistema electrico y 
+fundamentadas sobre la base de lo establecido en los Procedimientos. 
+El agente debe presentar el informe de diseno funcional de estos sistemas y un analisis cuantitativo de 
+su confiabilidad: tasa de falla por actuaciones indebidas y tasa de falla cuando se requiere su actuacion. 
+La informacion del diseno y las pruebas de estos automatismos debera incluirse en el Acta de Ajuste y 
+Coordinacion de Protecciones y de Automatismos de Equipos Asociados a la Red de TRANSPORTE 
+cuyo contenido se describe en el punto siguiente. 
+h) Equipos de maniobra y proteccion 
+Cada conexion entre una Unidad Generadora y el SISTEMA DE TRANSPORTE debera contar con un 
+interruptor capaz de interrumpir la maxima corriente de cortocircuito en dicho punto y asegurar el tiempo 
+de despeje de fallas que requiera el sistema electrico. 
+El tiempo maximo para despeje de fallas que ocurran en los equipos del GENERADOR y para las que 
+ocurran en el SISTEMA DE TRANSPORTE debera ser acordado con la TRANSPORTISTA en forma 
+previa a la conexion del GENERADOR. 
+El GENERADOR debera disponer la proteccion de respaldo para fallas en el SISTEMA DE 
+TRANSPORTE. 
+Los interruptores del punto de conexion entre un GENERADOR y la TRANSPORTISTA o PAFTT deberan 
+contar con proteccion de falla de interruptor y de deteccion de discrepancia de polos. El ajuste de los 
+reles y de las protecciones del area proxima al punto de conexion debera estar coordinado antes de la 
+primera sincronizacion del generador. El Generador debera presentar los estudios de coordinacion de 
+sus protecciones en respuesta a los requerimientos que defina el TRANSPORTISTA o PAFTT para la 
+aprobacion por parte de este, y ademas enviara copia de esos estudios a CAMMESA.
+
+--- Página 21 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 41 
+Version:31-Dic-2023 
+Las protecciones involucradas en el estudio seran las que pueden afectar el comportamiento del sistema 
+electrico, y como minimo incluiran las siguientes: 
+• Subfrecuencia, con todos los escalonamientos existentes 
+• Sobrefrecuencia 
+• Secuencia inversa 
+• Sobrecorriente de respaldo 
+• Perdida de excitacion 
+• Proteccion de perdida de sincronismo (si el generador contase con la misma) 
+Debera dejarse constancia en un acta toda la informacion usada, la descripcion y resultados de las tareas 
+y pruebas efectuadas para la coordinacion de las protecciones y la definicion de los requerimientos de 
+las protecciones de respaldo ante fallas en el sistema de transporte, asi como de los ajustes convenidos 
+entre el GENERADOR y la TRANSPORTISTA o PAFTT. Este documento se denominara Acta de Ajuste 
+y Coordinacion de Protecciones y de Diseno y Prueba de Automatismos de Equipos Asociados a la Red 
+de TRANSPORTE. 
+El acta citada debera contener lo siguiente: 
+Listado de las protecciones incluidas en los analisis y estudios de coordinacion de protecciones, Se 
+describira el eventual cambio o agregado de alguna/s proteccion/es del Sistema motivada por el acceso 
+del generador. 
+11. Descripcion del diseno funcional y de los principales componentes de cada uno de los 
+automatismos  
+12. Listado de la documentacion tecnica usada por el GENERADOR y la TRANSPORTISTA o 
+PAFTT para efectuar los analisis y estudios de coordinacion de las protecciones y el diseno y 
+prueba de los automatismos. 
+13. Listado de los estudios efectuados para coordinacion de las protecciones con sus referencias 
+(N°, revision, titulo, fecha, etc.). 
+14. Descripcion de las pruebas requeridas por el Transportista o PAFTT para las protecciones y 
+automatismos 
+15. Descripcion de cada una de las pruebas efectuadas y los resultados obtenidos (incluye una breve 
+descripcion, los principales resultados y las referencias del protocolo de la prueba, fecha, etc.), 
+16. Informe con la opinion del Transportista o PAFTT sobre las protecciones del Generador y los 
+ajustes definidos para la coordinacion de las mismas. 
+i) Instalaciones de arranque en negro 
+Disponer con anterioridad a su conexion al SISTEMA DE TRANSPORTE de las instalaciones de 
+Arranque en Negro requeridas por el sistema electrico. 
+j) Equipamiento para el Sistema de Operacion y Despacho 
+Debera contar con el equipamiento requerido por el Anexo 24 de Los Procedimientos para el SISTEMA 
+DE OPERACION Y DESPACHO (SMEC, SOTR, SCOM). 
+2.2.3.3. REQUISITOS PARTICULARES  
+Adicionalmente a los requisitos especificados en el punto 2.2.3.2, en funcion de las caracteristicas y 
+localizacion o cuando CAMMESA lo requiera fundamentada en las evaluaciones y/o estudios que efectue en 
+el marco de las reglamentaciones vigentes, los generadores deberan cumplir con: 
+k) Control Conjunto de Potencia Reactiva-Tension 
+El sistema de excitacion debe estar preparado para admitir un control conjunto de potencia reactiva-
+tension cuya funcion sea regular la tension en barras de Alta Tension de la Central, en un valor 
+preestablecido, a fin de suministrar un robusto soporte de tension que apoye a la transmision y efectuar 
+un reparto uniforme de la potencia reactiva entre los generadores. Se entiende por Central, en este caso,
+
+--- Página 22 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 42 
+Version:31-Dic-2023 
+al conjunto de maquinas de Pn > 10 MVA, que entreguen su energia y potencia en un mismo punto del 
+SADI. 
+Limitador de minima excitacion y proteccion de perdida de excitacion 
+El sistema de excitacion debe poseer un limitador que impida que durante la operacion normal la 
+excitacion descienda hasta valores que puedan causar la perdida de sincronismo o la actuacion de la 
+proteccion de perdida de excitacion. Este limite debe ser ajustable a fin de coordinarlo con el diagrama 
+de capacidad y las protecciones del generador  
+Ademas, el generador debe contar con una proteccion de perdida de excitacion con dos niveles, uno para 
+deteccion de perdida de excitacion con baja carga y otro para el caso de condiciones mas severas que 
+actue en forma casi instantanea. 
+l) 
+Estabilizador del Sistema de Potencia (PSS) 
+Con el objeto de contribuir al amortiguamiento de las oscilaciones electromecanicas (locales, intraplanta, 
+interplanta, interarea, etc.) de la red, el Regulador Automatico de Tension (RAT) debe estar provisto de 
+un ESTABILIZADOR (PSS), el cual operara modulando la referencia de tension.  
+Este equipo debe ser capaz de realizar aportes positivos al amortiguamiento de las oscilaciones 
+electromecanicas dentro de una banda de frecuencias comprendidas, como minimo, entre 0,1 Hz y 2,5 
+Hz. El esquema de estabilizacion se basara en los principios de la estabilizacion por potencia acelerante, 
+y debera reunir suficiente flexibilidad para el ajuste. Los transductores utilizados deberan garantizar una 
+adecuada linealidad en el rango de operacion y presentar constantes de tiempo inferiores a 40 mseg. 
+CAMMESA decidira cuando y en que maquina habilitara el funcionamiento del PSS o requerira 
+modificaciones en la calibracion para aumentar la eficiencia y tambien definira en que casos se puede 
+prescindir de este elemento de control. Se podra utilizar otro principio de estabilizacion, siempre y cuando 
+sea demostrable que su prestacion es igual o superior al de potencia acelerante. 
+m) Desempeno de la regulacion de tension en vacio 
+Los valores especificados a continuacion se refieren al nivel de desempeno exigido para la tension 
+terminal de generacion, en regulacion automatica de tension, y operacion en regimen lineal. 
+La respuesta a un cambio de referencia de tension de pequena amplitud debera ser rapido, manteniendo 
+la sobreoscilacion en valores inferiores al 15%, el tiempo de crecimiento por debajo de 300 ms, y un 
+tiempo de establecimiento menor a 1,5 seg. 
+Para la ganancia estatica, se ha fijado un limite maximo de 400 pu, lo que permite alcanzar una precision 
+aceptable para la regulacion en estado estacionario. 
+n) Desempeno de la regulacion de tension en carga 
+Para regimenes de pequenas perturbaciones, el error estatico en la tension de generacion debera 
+mantenerse por debajo del 0,5% al variar el estado de funcionamiento del generador de vacio a plena 
+carga y factor de potencia nominal. Este es un requisito basico para garantizar una adecuada calidad de 
+servicio, y ademas, realizar un pleno aprovechamiento de la capacidad del generador. 
+Asimismo, el regulador de tension debera contar con reduccion transitoria de ganancia para la banda de 
+frecuencias de perturbacion comprendida entre 1,5 rad/seg y 15 rad/seg, lo que permitira extender la 
+region de operacion estable del generador en el plano P-Q. 
+Para la operacion en carga, se requiere la provision de compensacion por corriente reactiva, a fin de 
+mejorar el control de tension del lado de alta tension del transformador elevador para situaciones de 
+indisponibilidad del control conjunto de tension de alta tension. 
+Para "Vfdmax" se establece un minimo de 2 veces la tension de excitacion a plena carga y factor de 
+potencia nominal. 
+El gradiente de aumento de tension ante fallas severas debera ser tal que la excitacion alcance el techo 
+antes de 10 mseg. para una depresion de la tension terminal del 50%, con el generador a plena carga y 
+factor de potencia nominal.
+
+--- Página 23 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 43 
+Version:31-Dic-2023 
+2.3. REQUISITOS PREVIOS AL PERIODO ESTACIONAL DE INGRESO 
+Los Generadores, Cogeneradores y Autogeneradores, deberan cumplir los siguientes requisitos antes de las 
+fechas para el envio de los datos requeridos para la programacion de Periodo Estacional Semestral en la que 
+esta prevista su entrada en servicio. 
+Las fechas son: 
+10 de febrero: si entra en servicio durante el Periodo Estacional de Invierno 
+10 de agosto: si entra en servicio durante el Periodo Estacional de Verano 
+2.3.1. REQUISITOS REGLAMENTARIOS 
+Deberan estar vigentes: 
+o) Resolucion de la Secretaria de Energia habilitandolo como Agente del MEM. 
+p) Resolucion del ENRE autorizando el acceso a la capacidad de transporte existente. 
+2.3.2. REQUISITOS INFORMATIVOS 
+Los Generadores, Cogeneradores y Autogeneradores, deberan enviar las siguientes informaciones, 
+ratificando o rectificando, cuando corresponda, las informaciones entregadas con la solicitud de ingreso. A 
+esos efectos deberan completar las planillas que correspondan del Banco Nacional de Parametros. 
+q) Datos comerciales (legales e impositivos): 
+Se deberan actualizar los datos indicados en el punto 2.2.2.2. 
+r) 
+Datos requeridos para las Bases de Datos del Sistema y Estacional. 
+La informacion suministrada debe poseer una consistencia tal que permita reproducir en forma aproximada, 
+mediante programas de simulacion dinamica, los transitorios experimentados por las principales variables de 
+estado del sistema de control. 
+Para el sistema de control “potencia-frecuencia” de cualquier grupo generador, se deberan suministrar 
+modelos que permitan reproducir la dinamica de variables como: posiciones de valvulas y potencia mecanica, 
+registrada ante simples ensayos de rechazo de carga (al 100% y 60% de la potencia nominal), y/o ensayos 
+de tomas de carga al variar en forma de escalon o de rampa las consignas de potencia y frecuencia.  
+Para el caso particular de las TG con potencia superior a 30MW se deben representar con buena aproximacion 
+lazos de control secundarios como ser: control de temperatura, alabes guia de entrada de aire a compresor 
+(IGV), etc. 
+Para los sistemas de control de la excitacion la informacion (modelo) debe permitir simular con buena 
+aproximacion las variaciones de la tension terminal, tension de campo, potencia activa y reactiva generada, 
+etc. 
+En el caso de ciclos combinados la informacion del modelo del regulador de potencia frecuencia debe permitir 
+reproducir las variaciones de potencia mecanica de la TV ante la desconexion intempestiva de una o mas de 
+las TG base del mismo. 
+A solicitud de CAMMESA el Generador debera poner a disposicion todos los planos, diagramas funcionales, 
+memorias descriptivas, memorias de calculo, protocolos de ensayo, catalogos de fabricantes y toda otra 
+documentacion tecnica que permita verificar el desempeno de los sistemas de control de velocidad, potencia, 
+frecuencia, de excitacion y controles asociados. 
+Los datos requeridos son: 
+• Identificacion (Nombre, Nº de maquina, Tipo, Ubicacion Central, etc.). 
+• Las caracteristicas tecnicas del equipamiento requerido en el Anexo 24 de Los Procedimientos para el 
+SISTEMA DE OPERACION Y DESPACHO (SMEC, SOTR, SCOM). 
+• Las Planillas del Banco Nacional de Parametros de Generadores, trafos y lineas, completadas con 
+todos los datos de las nuevas instalaciones. 
+• Diagramas de bloques y modelos de los siguientes sistemas de control automatico:
+
+--- Página 24 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 44 
+Version:31-Dic-2023 
+• RAT (Regulador automatico de tension) 
+• UEL (Limitador de minima excitacion) 
+• OEL (Limitador de maxima excitacion) 
+• PSS (Estabilizador del sistema de potencia) 
+• RAV (Lazo de control potencia-frecuencia) para TG¨s y TV 
+• Tabla de la Potencia efectiva y consumo de servicios auxiliares de la TV, para diferentes potencias de 
+las TG, incluyendo el caso en que el ciclo opere con una sola TG E/S.  
+• Turbogas: Curva/s del fabricante indicando la variacion de la potencia maxima, ante cambios en la 
+temperatura ambiente, presion atmosferica y frecuencia de red. Potencia funcionando en carga base, 
+calculada para 50 Hz; 49,5 Hz, 49 Hz; 48,5 Hz y 48 Hz, para una temperatura ambiente de 40°C; 35°C 
+y 30°C.  
+• Potencia efectiva a plena carga y consumo de servicios auxiliares expresado como porcentaje de la 
+potencia efectiva a plena carga. 
+• Tension Nominal, Reactancias, Resistencias, Constantes de Tiempo. 
+• Tiempo estimado de arranque desde parada fria hasta sincronismo, desde sincronismo hasta plena 
+carga, y para las maquinas turbovapor tiempo minimo requerido en la operacion entre su parada y 
+rearranque. 
+• Tasa de indisponibilidad forzada prevista para las maquinas. 
+• Centrales Termicas y Nucleares: consumo especifico medio bruto. Coeficientes A, B y C de la funcion 
+representativa del Consumo Especifico Bruto. 
+• Maquinas Termicas: Tipos de combustibles que puede consumir, posibilidades de trabajar con mezcla, 
+y capacidad de almacenamiento de combustible. Previsiones de disponibilidad de combustibles (stock 
+inicial y entregas previstas de carbon y/o combustibles liquidos, y cuota prevista de gas). Costos 
+variables de Produccion y precio de referencia de flete, tal como se indica en el Anexo 13 de LOS 
+PROCEDIMIENTOS 
+• Centrales Hidroelectricas con Capacidad de Embalse: curva de volumen embalsado en funcion del 
+nivel, cota minima y maxima operativa y datos de evaporacion; 
+• Centrales Hidroelectricas con embalse de capacidad estacional: valores del agua tal como se indica en 
+el Anexo 22 de LOS PROCEDIMIENTOS. 
+• Centrales Hidroelectricas en General: funcion para conversion energetica (m3 por KWh), caudal 
+maximo y minimo turbinable por grupo, serie historica de caudales semanales desde 1943. Pronosticos 
+de aportes o de energia, segun corresponda, o de tipo de ano hidrologico de existir una prevision al 
+respecto. Restricciones aguas abajo que afectaran su despacho (cota de operacion maxima en 
+embalses, limitaciones al caudal erogable, etc.).  
+• Autogeneradores y Cogeneradores: Rango de potencia que pueden intercambiar. Saldo neto de 
+energia previsto con su precio de venta requerido. 
+• Capacidad para regulacion de tension: curva de capabilidad, margenes de subexcitacion y 
+sobreexcitacion, factor de potencia. 
+• Prevision de disponibilidad en el equipamiento requerido para cumplir con su compromiso de Control 
+de Tension y suministro de potencia reactiva. 
+• Caracteristicas de regulacion de excitacion: Caracteristicas, datos completos de ajuste, diagrama de 
+bloques, diagramas funcionales y protocolos de ensayo, del sistema de excitacion, limitadores (UEL, 
+OEL) y de los estabilizadores de potencia (Pss). 
+• Caracteristicas de regulacion de frecuencia: contribucion a la regulacion primaria y secundaria; 
+• Maxima sobrefrecuencia admitida y ajuste y temporizacion de los reles de sobrefrecuencia. 
+• Valores de frecuencia y temporizacion de todos los reles o logicas que pueden desconectar la unidad 
+generadora por subfrecuencia.
+
+--- Página 25 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 45 
+Version:31-Dic-2023 
+• Tiempo de lanzamiento (de acuerdo a ensayo). 
+• Caracteristica del regulador de velocidad (marca, control PI o PID, hidraulico, electrohidraulico, etc.) 
+ Banda muerta (rango de ajuste, calibracion actual). 
+ Estatismo permanente (rango de ajuste, valor usual). 
+ Compensaciones dinamicas (amortiguamientos) 
+ Velocidad de toma de carga (MW/seg) 
+o 
+Para maquinas hidraulicas: 
+ 
+Estatismo transitorio (rango de ajuste, calibracion actual) 
+ 
+Constante de Tiempo del Estatismo Transitorio Constantes proporcional, integral y 
+derivativa del compensador directo (KP, KI y KD) 
+o 
+Para maquinas termicas: 
+ 
+En caso de poseer compensaciones dinamicas, funcion transferencia con todos los 
+parametros.  
+ 
+Variador de velocidad/consignador (tipo: potenciometro motorizado, consignador estatico, 
+etc.)  
+• Tiempo de establecimiento (lapso necesario para que la potencia mecanica ingrese en la banda del +/-
+10% del incremento de carga aplicado). 
+• En el caso de que la central posea un sistema de CONTROL CONJUNTO de GENERACION y/o 
+REGULACION SECUNDARIA se debe proveer su diagrama funcional con los parametros 
+correspondientes, indicando el rango de ajuste de aquellos que pueden modificarse. 
+• Caracteristica de la turbina  
+o 
+Hidraulica: 
+ 
+parametro TW ensayado 
+o 
+Termica: 
+ 
+Modelo simplificado indicando constante de tiempo de la etapa de Alta Presion del 
+recalentador y porcentajes de potencia producida en cada etapa . 
+ 
+Modelo simplificado de la caldera incluyendo constante de tiempo de acumulacion de 
+vapor, parametros asociados modelo del regulador de presion con sus correspondientes 
+ajustes. 
+ 
+Caracteristica del limitador de carga. 
+ 
+Puntos de operacion prohibidos (entrada/salida de quemadores, apertura de valvulas 
+parcializadoras, resonancias, etc.) 
+ 
+Diagramas funcionales del lazo de regulacion de velocidad con sus respectivos 
+parametros (ganancias y constantes de tiempo con sus rangos de ajuste y valor actual; 
+caracteristicas de valvulas, limites, banda muerta, etc.). 
+ 
+Limites de velocidad de toma de carga 
+ 
+Caracteristica, modelos y parametros del sistema de reduccion rapida de carga y/o 
+sistema cierre rapido de valvulas (FAST-VALVING) 
+2.4. REQUISITOS PREVIOS A LA PRIMERA SINCRONIZACION CON EL SADI 
+Los Generadores, Cogeneradores y Autogeneradores, deberan cumplir los siguientes requisitos antes de la 
+primera sincronizacion con el SADI.
+
+--- Página 26 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 46 
+Version:31-Dic-2023 
+2.4.1. HABILITACION TECNICA 
+Antes de efectuar la primera sincronizacion deberan ensayarse especialmente todas las protecciones y 
+sistemas de control instalados para evitar que una falla en las instalaciones del generador se traslade al SADI. 
+Ademas, se debera cumplir con lo siguiente: 
+s) con todos los requisitos previos a la conexion al SADI solicitados por la Secretaria de Energia y el ENRE 
+en las respectivas resoluciones de habilitacion. 
+t) 
+Haber cumplido con los requisitos de administracion del MEM indicados en el Anexo 17 de Los 
+Procedimientos. 
+u) Tener la habilitacion del Transportista y/o PAFTT al que esta vinculado que indique que cumple con los 
+requisitos de conexion. 
+v) Haber firmado y presentado a CAMMESA el Convenio de Conexion incluido el Acta de Ajuste y 
+Coordinacion de Protecciones y de Diseno y Prueba de Automatismos de Equipos Asociados a la Red de 
+TRANSPORTE 
+w) Haber instalado todos los equipamientos de proteccion y control requeridos por el sistema electrico que 
+CAMMESA o la Transportista o el PAFTT hayan solicitado, como resultado del analisis de los estudios 
+presentados por el Agente o de estudios propios.  
+x) Haber concluido a satisfaccion de CAMMESA con todos los estudios requeridos para la Etapa II del PT1. 
+A estos efectos cuando lo considere necesario CAMMESA pedira opinion al Transportista sobre estos 
+estudios.  
+y) Disponer de las instalaciones para desconexion automatica de generacion (DAG), 
+z) Disponer de las instalaciones para desconexion automatica de carga (DAC) 
+aa) Disponer de las instalaciones para Arranque en Negro. 
+bb) Disponer de los automatismos ante perdida de el /los generadores 
+cc) Tener habilitado el Sistema de Medicion Comercial (SMEC) y el Sistema de Operacion en Tiempo Real 
+(SOTR) dentro de los plazos establecidos en la regulacion vigente. 
+Cuando CAMMESA verifique que el Generador ha cumplido con lo indicado precedentemente le otorgara la 
+Habilitacion Tecnica. 
+2.4.2. REQUISITOS INFORMATIVOS PARA LA SINCRONIZACION 
+Por lo menos 15 dias antes del inicio de los ensayos de puesta en marcha los Generadores, Cogeneradores 
+y Autogeneradores deberan enviar al Centro de Operaciones de CAMMESA y al Centro de Operaciones del 
+Transportista o PAFTT, la siguiente informacion: 
+• Los Programas de Pruebas (5.4) para la puesta en marcha de cada unidad con el detalle de los ensayos 
+a realizar, indicando en cada caso el efecto que pueden producir sobre el SADI y condiciones 
+especiales que se requieran en el sistema para realizarlos.  
+• La lista de operadores de la central y los medios de comunicacion entre estos y los operadores de 
+CAMMESA y del COT, COTDT y/o COPAFTT. 
+• El Resumen de los Procedimientos Operativos (version preliminar para Marcha de Prueba) 
+El cronograma definitivo y la coordinacion de los ensayos debera acordarse con el Centro de Operaciones de 
+CAMMESA.  
+2.4.3. RESUMEN DE LOS PROCEDIMIENTOS OPERATIVOS 
+Con el fin de contar con definiciones e informacion sobre la operacion de la unidad generadora el Agente debe 
+presentar un informe referido a los procedimientos operativos de la central que debe contener una descripcion 
+de los medios y procedimientos que se aplican en la operacion de los generadores que incluya como minimo 
+lo siguiente: 
+• Descripcion de los controladores de potencia-frecuencia 
+• Modos de operacion (RPF, carga base, control de velocidad, etc.)
+
+--- Página 27 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 47 
+Version:31-Dic-2023 
+• Forma de definir los parametros y limites de generacion cuando opera en RPF 
+• Configuracion normal de servicios auxiliares, bombas, etc. 
+• Criterios operativos de seguridad ante indisponibilidades o fallas de sistemas de la Planta (servicios 
+auxiliares, bombas, etc.). 
+• Medidas de Seguridad y Restricciones Operativas, para intervenciones de emergencia en las 
+instalaciones con unidades generadoras en servicio. 
+• Un resumen de cada uno de los principales procedimientos operativos.  
+La descripcion de los recursos y conceptos que maneja el operador para establecer el despacho y condiciones 
+de seguridad de las unidades generadoras debe hacerse en forma clara y precisa 
+El agente presentara las revisiones de este informe en toda oportunidad que haga modificaciones en los 
+Procedimientos Operativos que afecten la confiabilidad, o cuando CAMMESA lo requiera. 
+2.5. MARCHA DE PRUEBA 
+Una vez obtenida la Habilitacion Tecnica y habiendo cumplido con los requisitos informativos para la primera 
+sincronizacion con el SADI, el Generador estara en condiciones de efectuar su conexion a la red, iniciar la 
+marcha de prueba, y comenzar su operacion comercial restringida. La Marcha de Prueba finalizara con la 
+Habilitacion Comercial del Generador. 
+2.5.1. REQUISITOS GENERALES PARA LA MARCHA DE PRUEBA 
+Durante la Marcha de Prueba el despacho del Generador sera forzado para cumplir con las condiciones de 
+seguridad que requiera CAMMESA o el PAFTT en relacion con el desempeno y las caracteristicas de las 
+pruebas. La potencia operada se considera como no firme.  
+Los ensayos, cuya realizacion debera estar aprobada por CAMMESA y el COT, COTDT y/o COPAFTT, 
+deberan demostrar que la central se encuentra en condiciones operativas para conectarse al SADI. 
+CAMMESA, cuando lo estime conveniente, solicitara al Agente un informe de auditores independientes 
+previamente aceptados por CAMMESA con el fin de verificar los ensayos, informar de los resultados 
+obtenidos, evaluar el funcionamiento y estado de elementos criticos en las plantas generadoras. El costo de 
+esos trabajos estara a cargo del Agente. 
+2.5.2. OPERACION DEL GENERADOR DURANTE LA MARCHA DE 
+PRUEBA 
+CAMMESA coordinara mediante el COT, COTDT y/o COPAFTT, cuando corresponda, la operacion de las 
+centrales conectadas a dichos transportistas. 
+Las solicitudes de entrada o salida de servicio de cada unidad, o modificacion de carga, seran comunicadas 
+por CAMMESA al Centro de Operaciones respectivo y estos a la central generadora. 
+El Generador comunicara al COT, COTDT y/o COPAFTT correspondiente, y estos lo transmitiran al Centro 
+de Operaciones de CAMMESA, toda informacion sobre horarios de entradas o salidas de servicio, condicion 
+de indisponibilidad y sus causas, limitaciones a la potencia operable y sus causas, aumentos o reducciones 
+de potencia generada, etc., dentro de los diez minutos posteriores de sucedidos. 
+Segun las necesidades de control de tension, el COT, COTDT y/o COPAFTT correspondiente coordinara 
+directamente con la central generadora los requerimientos de potencia reactiva. 
+2.5.3. ENSAYOS 
+Durante la marcha de prueba el GENERADOR debera realizar los siguientes ensayos:  
+2.5.3.1. ENSAYOS DEL SISTEMA DE EXCITACION 
+Los ensayos del sistema de excitacion de cada grupo generador tienen por finalidad identificar con precision 
+la respuesta dinamica de su regulador automatico de tension, incluyendo los lazos de limitacion (UEL, OEL y 
+Volt/Hz) y estabilizacion (PSS). Este grupo de ensayos incluye lo siguiente: 
+• Verificacion de la funcion de transferencia del Regulador Automatico de Tension
+
+--- Página 28 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 48 
+Version:31-Dic-2023 
+• Verificacion de la respuesta del RAT con el generador en Vacio (Ensayo al Escalon). 
+• Verificacion de la respuesta del RAT con el generador en carga. 
+• Verificacion de techos de excitacion y limites del RAT con el generador en vacio. 
+• Ensayo de respuesta dinamica en carga con actuacion de los limitadores de excitacion. 
+2.5.3.2. ENSAYOS DEL LAZO DE CONTROL POTENCIA FRECUENCIA. 
+• Medicion del Tiempo de Restablecimiento 
+• Los ensayos para medicion de: ESTATISMO, BANDA MUERTA y TIEMPO DE LANZAMIENTO. (segun 
+lo indicado en el PT9). 
+• Funcionamiento en carga. Para Turbogas verificacion del funcionamiento en diferentes modos de 
+control: carga base, regulacion de frecuencia, carga preseleccionada. 
+• Para Turbogas: Medicion potencia maxima operable para diferentes temperaturas ambiente y 
+frecuencia de red. 
+• Para Turbovapor y Turbogas: Medicion del tiempo maximo que puede sostener el aporte a la regulacion 
+primaria de frecuencia, ante subfrecuencias sostenidas en el SADI.  
+• Reduccion rapida de carga. 
+• Incremento rapido de carga. 
+2.5.3.3. ENSAYOS PARA MEDICION DE LOS PARAMETROS DEL GENERADOR. 
+• Ensayos para medicion de parametros de Eje Directo. 
+• Ensayos para medicion de parametros de Eje en Cuadratura. 
+2.5.3.4. ENSAYOS DE LOS ESTABILIZADORES (PSS) 
+• Caracteristica de respuesta en frecuencia del Estabilizador. 
+• Medicion del efecto del PSS para amortiguar el modo local. 
+• Ensayo para ajuste de la ganancia. (Ganancia maxima del estabilizador) 
+• Desempeno del PSS ante variaciones rapidas de carga de turbina 
+2.5.3.5. ENSAYOS OPERATIVOS 
+Los ensayos operativos tienen por objeto alcanzar gradualmente la potencia maxima en grupos generadores 
+de gran porte o ciclos combinados de potencia total superior a los 300 MW y de este modo minimizar los 
+riesgos de perturbaciones en la red por falla de las nuevas instalaciones.  
+Tratandose de pruebas de equipamiento ingresante al SADI resulta prioritario preservar durante su ejecucion 
+la seguridad de la operacion, debiendose coordinar previamente las condiciones de la red y el despacho para 
+alcanzar dicho objetivo. 
+Este grupo de ensayos incluye lo siguiente: 
+17. Marcha con carga parcial de unidades generadoras o CC  
+18. Pruebas con dos unidades del CC 
+19. Pruebas de rechazos de carga al 50%  
+20. Marcha de 72 hs. al 50 y 75 %  
+21. Rechazos de carga al 100%. 
+22. Marcha de 72 horas al 100 %  
+23. Reduccion controlada de la potencia 
+2.5.3.6. ENSAYOS DE LA DAC, DAG, Y CONTROL DE LA COMPENSACION DE REACTIVO EN LA RED 
+(CCRR)
+
+--- Página 29 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 49 
+Version:31-Dic-2023 
+Durante la marcha de prueba se completaran los ensayos que permitan verificar el correcto funcionamiento 
+de los equipos y senales que forman parte de los sistemas DAC, DAG y CCRR que sean necesarios para el 
+funcionamiento del generador para alguna condicion de operacion. Cuando no sea posible o conveniente 
+generar las condiciones reales, o efectuar la desconexion de carga o del generador, la verificacion se hara 
+por partes cubriendo la totalidad de los elementos. A esos efectos se deberan ejecutar los siguientes ensayos:  
+• Transmision de senales. 
+• Deteccion de condiciones para actuacion de los automatismos (configuracion, cambios de variables),  
+• Ajustes/verificacion en campo de elementos de medicion de variables 
+2.5.3.7. ANALISIS Y ENSAYOS PARA EVALUAR LA CONFIABILIDAD Y LA ESTABILIDAD DEL 
+GENERADOR ANTE PERTURBACIONES EN LA FRECUENCIA DE LA RED 
+El Generador debera identificar tecnicamente los elementos criticos que pueden producir la salida parcial y/o 
+total de las maquinas e informar las salvaguardas adoptadas. Esta informacion debera ser entregada a 
+CAMMESA bajo Declaracion Jurada. El agente con la maquina en carga, en acuerdo con las indicaciones de 
+CAMMESA, debera realizar ensayos en los que se produzca la perdida de algun elemento de la instalacion o 
+se simulen condiciones de falla en algunos elementos que sean criticos para el funcionamiento de la unidad 
+o del Ciclo Combinado, debiendo verificar en cada prueba si la misma permanece en servicio en forma parcial 
+o total. Las medidas de seguridad para las pruebas deberan ser aprobadas por el PAFTT y CAMMESA 
+dejando establecido en cada caso el estado de carga con que se realizara el ensayo y el o los elementos que 
+se simularan fallados. 
+El agente debera proponer a CAMMESA un consultor u organismo de reconocida capacidad tecnica para 
+auditar las evaluaciones y ensayos que se describen en los ANEXOS G y H que se resumen a continuacion:  
+• Rechazo de carga de cada una de las unidades de un CC, 
+• Evaluacion del comportamiento del control de la TV ante el rechazo de una TG de un Ciclo Combinado  
+• Ensayo para evaluacion del efecto del disparo de la TV de un Ciclo Combinado sobre la estabilidad de 
+la/s TG. 
+• Ensayo de inyeccion de senal de error en el control de potencia-frecuencia simulando una caida de la 
+frecuencia a 48 Hz.  
+• Operacion de la/s unidad/es en baja frecuencia fuera de paralelo, 
+• Operacion de la TV con los auxiliares alimentados desde una fuente con 49 Hz durante tres minutos 
+• Operacion de las unidades generadoras en 48,5 Hz durante 25 s. 
+• Verificacion del funcionamiento del sistema de By- Pass 
+El auditor debera elaborar un informe con su opinion de las pruebas y evaluaciones realizadas dejando 
+constancia del grado de cumplimiento y eficacia de los trabajos y evaluaciones efectuadas. Cuando 
+CAMMESA lo requiera el Agente debera suministrar la informacion tecnica y/o los protocolos de los ensayos 
+correspondientes.  
+Los estudios del Agente y el informe del auditor tambien deberan incluir como minimo el analisis y las pruebas 
+necesarias para evaluar la confiabilidad de los siguientes sistemas: 
+24. Fallas en bomba de alimentacion de agua a la caldera. 
+25. Fallas en calderas (bombas de circulacion, etc.) 
+26. Fallas de bombas de extraccion de condensado 
+27. Fallas en el sistema de circulacion de agua de refrigeracion del condensador (bombas, filtros)  
+28. Fallas de los compresores y otras fallas probables en el sistema de aire de control 
+29. Fallas en el sistema auxiliar de agua de refrigeracion (bomba, etc.) 
+30. Falla en el sistema de suministro de alimentacion electrica a servicios auxiliares (verificacion de 
+conmutacion, protecciones) 
+31. Fallas en el sistema de control (procesadores, remotas, comunicaciones, alimentacion, etc.)
+
+--- Página 30 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 50 
+Version:31-Dic-2023 
+32. Fallas en sistema de alimentacion de gas (compresores, valvulas, etc.) y diesel oil a las TG 
+33. Fallas en el sistema de vapor de sellos, 
+Sobre cada uno de estos puntos se presentara el informe del analisis de confiabilidad de las instalaciones y 
+los protocolos de los ensayos. El auditor debera emitir su opinion sobre la base del analisis de la informacion, 
+estudios y ensayos que el Agente disponga en relacion con esos sistemas. 
+El auditor debera requerir al Agente o dejar constancia en su informe sobre la necesidad de pruebas 
+adicionales cuando ello sea conveniente a los efectos de disponer de los elementos suficientes para evaluar 
+la estabilidad y comportamiento de la unidad ante fallas probables en sus componentes principales. 
+De haber surgido de los ensayos modificaciones a los datos declarados, estos deberan ser informados a 
+CAMMESA dentro de los 15 dias posteriores a la realizacion de los mismos. 
+2.5.4. PROGRAMAS DE PRUEBAS 
+El Generador debe enviar a CAMMESA y al PFTT los planes y programas de los ensayos a efectuar durante 
+la marcha de prueba con el fin de posibilitar que se cumpla en tiempo y forma con lo siguiente: 
+• Analizar y definir las medidas de seguridad 
+• Coordinar las pruebas 
+• Autorizar las pruebas 
+• Verificar el cumplimiento de las condiciones requeridas, 
+Con este objeto se han definido tres tipos de informes: 
+• Plan Maestro para la Marcha de Prueba, 
+• Plan para Coordinacion de las Pruebas 
+• Programa de Pruebas 
+2.5.4.1. PLAN MAESTRO PARA LA MARCHA DE PRUEBA 
+Este informe debe contener una descripcion de cada una de las pruebas con referencias especificas a lo 
+siguiente: 
+• Descripcion de las operaciones y/o perturbaciones sobre las instalaciones del generador 
+• Descripcion de las operaciones y/o perturbaciones sobre la red 
+• Otros requerimientos del sistema de transporte (PAFTT), 
+• Condiciones de despacho del generador, 
+• Duracion de cada prueba, 
+• Analisis y descripcion de las perturbaciones en la red. esperadas o posibles 
+• Medidas de seguridad recomendadas para el PAFTT 
+• Medidas de seguridad recomendadas para mantener la estabilidad del SADI 
+El Agente debe enviar el Plan Maestro de las Pruebas con 15 o mas dias de anticipacion al inicio de la Marcha 
+de Prueba. 
+Este plan debe actualizarse cada vez que se introduzcan cambios en la definicion de las pruebas o antes del 
+inicio de cada mes. 
+El plan debe tener el Cronograma previsto que abarque toda la marcha de pruebas en forma de diagrama de 
+Gantt. La unidad en la escala de tiempos de este cronograma debe ser el dia. 
+2.5.4.2. PLAN PARA COORDINACION DE LAS PRUEBAS 
+Este informe contiene un cronograma que incluye todas las pruebas programadas para un periodo de dos 
+semanas. El informe debe presentarse a CAMMESA y al PAFTT antes de las 10hs del jueves de la semana 
+anterior al periodo abarcado por el programa de pruebas.
+
+--- Página 31 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 51 
+Version:31-Dic-2023 
+Para las pruebas programadas para la primera semana se debera informar en forma detallada lo siguiente:  
+• Descripcion de las operaciones y/o perturbaciones sobre las instalaciones del generador 
+• Descripcion de las operaciones y/o perturbaciones sobre la red 
+• Otros requerimientos del sistema de transporte (PAFTT), 
+• Condiciones de despacho de cada uno los grupos que intervienen en la prueba, 
+• Duracion 
+• Las posibles perturbaciones que podrian afectar a la red  
+• Medidas de seguridad convenidas con el PAFTT 
+• Medidas de seguridad comprometidas para mantener la estabilidad del SADI 
+• Cronograma en forma de diagrama de Gantt para dos semanas 
+2.5.4.3. PROGRAMA DE PRUEBAS 
+Durante el periodo de Marcha de Prueba hasta su finalizacion el agente debe presentar a CAMMESA y al 
+PAFTT antes de las 10 hs de cada dia un informe denominado “Programa de Pruebas” que contendra un 
+cronograma y los siguientes datos para cada una de las pruebas programadas para el dia siguiente: 
+• Descripcion de las operaciones y/o perturbaciones a efectuar sobre las instalaciones del generador 
+• Descripcion de las operaciones y/o perturbaciones sobre la red requeridas por el ensayo 
+• Otros requerimientos para el sistema de transporte (PAFTT), 
+• Grupo/s Condiciones de despacho de cada uno los grupos que intervienen en la prueba, 
+• Duracion de la prueba, 
+• Perturbaciones esperadas en la red debido a la prueba  
+• Las mayores perturbaciones que podrian afectar a la red en caso de alguna anormalidad en las 
+pruebas, 
+• Medidas de seguridad convenidas con el PAFTT 
+• Medidas de seguridad comprometidas para mantener la estabilidad del SADI 
+• Cronograma en forma de diagrama de Gantt para el periodo de 24 hs. 
+2.6. INICIO DE LA OPERACION COMERCIAL EN EL MEM 
+2.6.1. HABILITACION COMERCIAL 
+Una vez completados todos los trabajos, pruebas e informes correspondientes a la Marcha de Prueba el 
+Generador debera presentar a CAMMESA la Solicitud para Habilitacion Comercial.  
+Previamente el Generador debe haber presentado a CAMMESA la siguiente informacion para su analisis y/o 
+verificacion:  
+34. El informe de los Ensayos Efectuados Durante la Marcha de Prueba. 
+35. El informe de la Auditoria sobre la Confiablilidad de Funcionamiento de la Unidad Generadora/ Central. 
+36. El informe (Certificado) del Fabricante y/o del Contratista Principal responsable de la puesta en servicio 
+en el que se certifique que se han efectuado las pruebas y verificaciones necesarias para la puesta en 
+servicio, y realizados todos los ajustes de los controles, protecciones y equipos, que permiten demostrar 
+que la instalacion se ajusta a los estandares de diseno y calidad aceptados internacionalmente, y a los 
+criterios de diseno y desempeno requeridos por los Procedimientos. 
+37. Informe del Transportista o el PAFTT con la aprobacion del diseno final y las pruebas de puesta en servicio 
+de la DAC, y/o DAG y/o automatismos para control de tension en la red que se hubieran efectuado durante 
+la Marcha de Prueba.
+
+--- Página 32 ---
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS 
+PROCEDIMIENTOS 
+- 
+P.T. 
+4:INGRESO 
+DE 
+NUEVOS 
+GRANDES 
+USUARIOS 
+MAYORES, 
+DISTRIBUIDORES, 
+GENERADORES, 
+AUTOGENERADORES Y COGENERADORES AL MEM 
+Pag. 52 
+Version:31-Dic-2023 
+38. El Resumen de los Procedimientos Operativos (version completa). 
+Recibida la Solicitud con los documentos citados y verificados a satisfaccion de CAMMESA el cumplimiento 
+por parte del generador de todos los requisitos y ensayos, y no existiendo observaciones sobre los mismos 
+por parte del COT, COTDT y/o COPAFTT, la unidad quedara habilitada para la operacion comercial en el 
+MEM, a partir de la fecha que CAMMESA notifique debiendo ajustar su operacion a lo indicado en Los 
+Procedimientos para la Programacion de la Operacion, el despacho de Cargas y el Calculo de Precios. 
+Cuando CAMMESA tenga observaciones o necesite efectuar requerimientos adicionales sobre la Solicitud de 
+Habilitacion Comercial, y/o los informes mencionados debera comunicarlo al Agente dentro de los 10 dias 
+habiles de recibida la misma. CAMMESA dejara constancia cuando la Habilitacion Comercial quede 
+condicionada a la respuesta a las observaciones y/o requerimientos adicionales. En caso contrario CAMMESA 
+comunicara al Agente la Habilitacion Comercial y fijara un plazo para que el Agente responda al requerimiento 
+y definira las restricciones operativas y de despacho que se aplicaran al generador transitoriamente mientras 
+no se solucionen los temas pendientes.  
+CAMMESA informara a la SECRETARIA DE ENERGIA y al ENTE NACIONAL REGULADOR DE LA 
+ELECTRICIDAD la fecha de la Habilitacion Comercial y comunicara si corresponde aplicar restricciones 
+transitorias al despacho y/o la operacion dando los fundamentos de las mismas 
+2.6.2. HABILITACION 
+COMERCIAL 
+CON 
+RESTRICCIONES 
+AL 
+DESPACHO 
+Para la Habilitacion Comercial se debera verificar que el ingreso del Generador no introduce restricciones al 
+despacho de generacion o al suministro que incremente los costos operativos del sistema incluyendo en ello 
+la valorizacion de la energia no suministrada. El despacho del Generador se efectuara asegurando el nivel de 
+calidad de servicio requerido en la reglamentacion en forma compatible con los criterios de minimizacion de 
+costos que rigen en el MEM y quedara sujeto a las restricciones que CAMMESA establezca en cada caso. 
+Cuando alguno de los estudios o pruebas requeridos en este PT tengan observaciones o existan sistemas de 
+control que esten pendientes de habilitacion, lo cual podria ser causa de que no se haya detectado alguna 
+falla existente en las instalaciones del Generador, o un funcionamiento deficiente de la unidad generadora en 
+determinadas situaciones, CAMMESA podra Habilitar Comercialmente al Generador, solamente en la medida 
+que sea posible asegurar el nivel de calidad de servicio requerido en la reglamentacion, aplicando las 
+restricciones al despacho que sean necesarias para minimizar el efecto de las posibles perturbaciones que el 
+generador pudiera introducir en la red. 
+2.6.3. PRUEBAS ADICIONALES 
+Cuando sea necesario efectuar pruebas adicionales con posterioridad a la Habilitacion Comercial se aplicaran 
+los procedimientos y criterios definidos para la Marcha de Prueba. 
+2.6.4. INFORMES DE LA FASE III DEL PT1 Y BASE DE DATOS 
+REVISADA 
+Dentro de los 60 dias siguientes a la Habilitacion Comercial el AGENTE debe presentar el informe final de 
+Estudios de ETAPA 3 del PT1 con la homologacion de los modelos y la presentacion de todos los datos de la 
+planilla revisados. En el caso que los modelos o los datos finales difieran significativamente CAMMESA 
+debera evaluar el efecto sobre los resultados de los estudios de Fase II y podra requerir Al Agente un estudio 
+complementario para actualizar los resultados con los nuevos datos para todas las condiciones que considere 
+criticas.
+
+--- Página 33 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 5:CONTROL DE TENSION Y POTENCIA REACTIVA 
+Pag. 97 
+ 
+Version:31-Dic-2023 
+P.T. 5: CONTROL DE TENSION Y POTENCIA REACTIVA 
+1. OBJETO 
+Determinar las instrucciones, fijar criterios y delimitar responsabilidades de los Centros de Operaciones del 
+Sistema Argentino de Interconexion (SADI) y en el Control de Tension y Despacho de Potencia Reactiva, en 
+el marco de lo establecido por "Los Procedimientos". 
+Especificar los criterios e instrucciones para las acciones a tomar ante la necesidad de restablecer las 
+tensiones del sistema a valores admisibles o la posibilidad de la perdida del control de tension. 
+2. INTRODUCCION 
+El Control de Tension y Potencia Reactiva es una responsabilidad compartida por todos los agentes del MEM 
+y requiere la actuacion conjunta, coordinada y simultanea de todos sus Centros de Operaciones en 
+condiciones normales y anormales. 
+Para mantener las tensiones y los flujos de potencia reactiva dentro de los limites operativos establecidos se 
+debera efectuar la planificacion, el control y el despacho de la tension y la potencia reactiva, y las acciones 
+rutinarias y excepcionales que requiera la operacion en tiempo real, . 
+3. RESPONSABILIDAD DE LOS CENTROS DE OPERACIONES 
+Se distinguen los siguientes Centros de Operaciones y los de los Grandes Usuarios del MEM con 
+responsabilidades en la planificacion, el despacho, el control y la supervision de tension y potencia reactiva: 
+COC: 
+Centro de Operaciones de CAMMESA  
+COT: 
+Centros de Control de Operaciones de TRANSENER 
+COTDT: 
+Centro de Control de Operaciones de Transportistas 
+por Distribucion Troncal 
+COD: 
+Centro de Control de Operaciones de Distribuidores 
+COG: 
+Centro de Control de Operaciones de Generadores 
+De acuerdo a lo indicado en el Anexo 25 de "Los Procedimientos", los Centros de Control de los Distribuidores 
+que pongan a disposicion de otros agentes del MEM sus lineas de transmision (PAFTT) tendran las 
+responsabilidades de los COTDT. 
+Las jerarquias operativas en cada caso seran las indicadas en el Anexo 25 de "Los Procedimientos". 
+3.1. PROGRAMACION ESTACIONAL DEL CONTROL DE TENSION Y POTENCIA REACTIVA 
+Los Transportistas o PAFTT deberan definir para su area, e informarlos a CAMMESA junto con el envio de 
+los datos para la Programacion Estacional, la reserva minima de reactivo, los criterios generales de despacho 
+de potencia reactiva y, especialmente, los requerimientos de niveles de tension. En cada Programacion 
+Estacional CAMMESA los aprobara.  
+Deberan definir e informar ademas los intercambios de potencia reactiva maximos en cada interconexion en 
+situaciones limite e informar las barras que se estima operaran fuera de los limites de tension, y su causa, y/o 
+las reservas de reactivo requeridas donde sea posible, indicando ademas donde se estima el ingreso de 
+generacion forzada por requerimientos de control de tension. 
+Los apartamientos entre los intercambios maximos de potencia reactiva y los registrados en la operacion en 
+tiempo real, y las condiciones particulares de operacion, determinaran las prioridades de suministro ante 
+condiciones de perdida de control de tension. 
+3.2. OPERACION EN TIEMPO REAL DE LA POTENCIA REACTIVA 
+Los Centros de Operaciones de los Transportistas (COT, COTDT) vigilaran permanentemente que los niveles 
+de tension y los flujos de reactivo en sus redes e interconexiones se encuentren dentro de los limites
+
+--- Página 34 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 5:CONTROL DE TENSION Y POTENCIA REACTIVA 
+Pag. 98 
+ 
+Version:31-Dic-2023 
+establecidos y verificaran el estado de sus equipos de compensacion de reactivo, con la finalidad de 
+determinar si existen equipamientos de compensacion fuera de servicio o con restricciones. 
+De existir nodos con valores inadecuados deberan normalizarlos mediante la operacion de los medios de 
+control de tension y potencia reactiva disponibles e informarlo al COC.  
+De no ser estos suficientes lo informaran al COC quien podra ordenar a cada Centro de Operaciones un 
+programa de reducciones de demanda, incluyendo cortes de carga, o la modificacion del despacho de 
+generadores que no dispongan del reactivo comprometido, segun corresponda. 
+Todos los COD y los Grandes Usuarios deberan tener previstos sobre que alimentadores o transformadores 
+actuaran en caso de ser necesaria la reduccion de demanda por problemas de control de tension. Estos 
+alimentadores deberan ser, preferentemente, los de mayor consumo de reactivo y no podran ser los que 
+poseen reles de corte de carga por subfrecuencia. 
+4. INSTRUCCIONES GENERALES DE OPERACION 
+Los Centros de Operaciones deberan seguir las siguientes instrucciones generales: 
+• La regulacion de tension se debera realizar con todos los elementos disponibles de compensacion. 
+Sera obligacion de los Centros de Operaciones comunicar al COC cuando algun equipo deje de operar 
+normalmente, o quede indisponible, informando las causas de la anormalidad, indisponibilidad o 
+limitacion operativa, el tiempo estimado en que permanecera en ese estado, y el momento a partir del 
+cual vuelve a la operacion normal. Se deben evitar superposiciones de mantenimientos programados 
+de generadores y/o equipamientos de compensacion que puedan comprometer el control de tension 
+de un area. 
+• Se debera dejar liberados los reguladores de tension de los generadores y compensadores sincronicos, 
+manteniendo la consigna que hubiera establecido el Centro de Operaciones correspondiente. Deberan 
+participar en forma activa todas las unidades generadoras del SADI. Sera obligacion de los COG 
+comunicar a CAMMESA cuando alguna unidad deje de operar en esas condiciones. 
+• El valor de la tension de consigna a controlar en cada caso se adecuara al aporte de la compensacion 
+de potencia reactiva que corresponda a cada unidad. 
+• Los Generadores, para cumplir con las instrucciones que figuran en este procedimiento, deberan llevar, 
+por requerimiento del Centro de Operaciones respectivo, los despachos de potencia reactiva de sus 
+unidades generadoras hasta el 90%, como minimo, en forma permanente en condiciones normales de 
+operacion y hasta el 100% durante 20 minutos continuos con intervalos de 40 minutos, para condiciones 
+anormales, de los limites de las Curvas de Capacidad declaradas, o las que figuran en el ANEXO I del 
+presente procedimiento de no haberlo hecho, limitadas por las restricciones que hayan sido declaradas.  
+5. INSTRUCCIONES PARTICULARES DE OPERACION 
+5.1. OPERACION EN CONDICIONES NORMALES 
+Comprende todas las acciones rutinarias que se ejecutan sobre las instalaciones del sistema con el fin de 
+mantener estables las variables del mismo dentro de los, valores limites operativos acordados o establecidos 
+en las Resoluciones del MEM vigentes y los que eventualmente se indiquen en la Programacion Estacional. 
+Cada Centro de Operaciones podra proponer ordenes de servicio particulares para su area que deberan ser 
+informadas al COC en los terminos del Anexo 25 de "Los Procedimientos". Las jerarquias operativas en cada 
+caso seran las indicadas en el Anexo 25 de "Los Procedimientos". 
+Los limites operativos para las tensiones y los intercambios de potencia reactiva seran los determinados en 
+la Programacion Estacional de acuerdo a la reglamentacion vigente. 
+Se deberan seguir las siguientes instrucciones operativas: 
+• Los COT, COTDT, y COD deberan tomar las medidas operativas, anticipandose y previendo la posterior 
+evolucion de la demanda, con el fin de asegurar que los valores de intercambio de potencia reactiva y 
+los niveles de tension esten dentro de los limites dispuestos.
+
+--- Página 35 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 5:CONTROL DE TENSION Y POTENCIA REACTIVA 
+Pag. 99 
+ 
+Version:31-Dic-2023 
+• Los COT, COTDT y COD informaran al COC cuando se produzcan tensiones o intercambios de reactivo 
+criticos, detallando los motivos y maniobras realizadas o en ejecucion para su normalizacion. en el caso 
+que las causas de los apartamientos sean internos a su area de control. 
+• Se debe mantener en todo el SADI el perfil de tensiones de la red de 500 kV y se debe disponer de una 
+reserva de potencia reactiva ajustados a los valores definidos de acuerdo a la normativa vigente, para 
+permitir afrontar las perturbaciones y desconexiones de equipos de compensacion. Para ello se 
+mantendran los niveles de tension indicados en la programacion estacional en las barras de 500 kV 
+sobre las que se dispone de medios adecuados de control de tension y que tienen gran incidencia en 
+el perfil de tensiones de toda la red.  
+• La reserva de potencia reactiva debera disponerse en equipos que hagan un control rapido y eficiente 
+de la tension en 500 kV, de manera de conseguir una equilibrada distribucion en toda la extension de 
+la red.  
+• Para asegurar un adecuado perfil de tensiones de 500 kV, y las reservas de potencia reactiva 
+mencionadas, los Centros de Operaciones deberan operar los elementos de compensacion existentes 
+en sus sistemas segun el siguiente orden:  
+• Maniobra de Reactores / Capacitores 
+• Reguladores de excitacion de maquinas 
+• Reguladores bajo carga de (RBC) de Transformadores  
+• Maquinas Forzadas 
+• El orden de operacion de reactores estara supeditado a su ubicacion en el SADI.  
+• Las operaciones de los Reguladores Bajo Carga se ejecutaran asegurando que no se afecte 
+sensiblemente el perfil de tension en la red de transporte y la reserva de potencia reactiva indicada para 
+esa red. 
+• Al inicio de cada periodo estacional, en coincidencia con una parada programada de la unidad, se 
+debera adecuar el regulador de los transformadores de generadores que no posean reguladores bajo 
+carga en una posicion tal que permita la maxima utilizacion de la curva de capacidad, maximizando la 
+sobreexcitacion en el periodo estival y la subexcitacion en el periodo invernal, sin superar los limites 
+de tension admisibles en bornes de la maquina. Esta adecuacion debera ser prevista y acordada con 
+el COT o COTDT que corresponda 
+• En caso de contar con regulacion bajo carga, se la debera operar de manera tal que permita la maxima 
+utilizacion de la curva de capacidad sin superar los limites de la tension en bornes.  
+5.2. OPERACION EN CONDICIONES ANORMALES 
+Comprende todas las acciones extraordinarias que como consecuencia de una perturbacion o indisponibilidad 
+severa se requieran para retrotraer las variables del sistema a los valores limites operativos preestablecidos 
+a la mayor brevedad posible. 
+Cada Centro de Operaciones podra definir acciones adicionales particulares para su area que deberan ser 
+informadas al COC. 
+ Se establecen dos niveles de condiciones anormales de operacion para el control de tension en el SADI para 
+permitir una mejor coordinacion de las acciones a realizar por los diferentes Centros de Operaciones. 
+ 
+Nivel 1: Alerta de minima reserva operativa de reactivo 
+ 
+Nivel 2: Emergencia de perdida de reserva de reactivo 
+5.2.1. ALERTA DE MINIMA RESERVA OPERATIVA DE REACTIVO 
+Se entra en este estado cuando el nivel de reserva operativa de reactivo de un area cae por debajo del valor 
+establecido en la Programacion Estacional. 
+Los COT, COTDT y COD deberan agotar los medios locales de compensacion para recuperar la reserva 
+manteniendo los intercambios especificados y los niveles de tension dentro de los limites dispuestos. 
+Las acciones a tomar son:
+
+--- Página 36 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 5:CONTROL DE TENSION Y POTENCIA REACTIVA 
+Pag. 100 
+ 
+Version:31-Dic-2023 
+• Pedido de maxima o minima excitacion a los Generadores del area afectada, y a los pertenecientes a 
+otras areas pero que puedan contribuir a la recuperacion de reservas, quienes deberan llevar los 
+despachos de potencia reactiva de sus unidades generadoras hasta el 90%, como minimo de los limites 
+de las Curvas de Capacidad, limitadas por las restricciones declaradas.  
+• Operacion de reactores de los Transportistas. 
+• Adecuar el perfil de tensiones del sistema de transporte para apoyar el area con deficit. 
+• Pedido a los COD de modificaciones a la topologia de la red de distribucion para transferir carga de 
+nodos mas comprometidos a nodos mas descargados 
+• Pedido de generacion forzada por parte de los COD en funcion de las previsiones de demanda de las 
+siguientes horas con el objeto de reducir el intercambio de potencia reactiva. 
+5.2.2. EMERGENCIA DE PERDIDA DE RESERVA OPERATIVA DE REACTIVO 
+Se entra en este estado cuando el nivel de reserva operativa de reactivo cae por debajo de un valor 
+considerado inadmisible para la operacion. Este valor debe ser definido por cada Centro de Operaciones junto 
+con el envio de los datos para la Programacion Estacional. 
+Una vez superadas las reservas los COT, COTDT y COD, deberan realizar las acciones para restituir las 
+variables a los valores necesarios para la normalizacion del sistema. Si estas operaciones afectaran 
+sensiblemente la confiabilidad del SADI, el COC podra solicitar reemplazarlas por otras realizadas en equipos 
+operados por otros Centros de Operaciones, siempre que los beneficios en ese sentido sean significativos. 
+Estas acciones son: 
+• Pedido de maxima excitacion a los Generadores del area afectada, y a los pertenecientes a otras areas 
+pero que puedan contribuir a la recuperacion de reservas, quienes deberan llevar los despachos de 
+potencia reactiva de sus unidades generadoras hasta el 100% de los limites de las Curvas de 
+Capacidad durante 20 minutos continuos con intervalos de 40 minutos, limitadas por las restricciones 
+declaradas.  
+• Pedido de la generacion forzada necesaria para eliminar la condicion de emergencia. 
+• Reduccion de tension en la red del Distribuidor. 
+• Operacion de reactores de linea, sin comprometer la eficiencia de los recierres monofasicos. 
+En caso de producirse una contingencia en la red que lleve las tensiones y/o las reservas a valores 
+inadmisibles, establecidos de acuerdo a la normativa vigente, los Centros de Operaciones deberan 
+implementar estas medidas dentro de sus areas, aunque se mantengan los intercambios de reactivo 
+establecidos. 
+Durante situaciones anormales, y una vez realizadas las acciones indicadas, el COC podra modificar los 
+valores de tensiones y bandas de intercambio de potencia reactiva por las interconexiones para hacer uso de 
+la capacidad de compensacion disponible en otras areas, para mantener, dentro de lo posible, las reservas 
+especificadas. Una vez desaparecida la anormalidad el COC ordenara el retorno inmediato a los valores 
+normales. 
+En todos los casos se registrara toda la informacion correspondiente a estas situaciones en los Centros de 
+Operaciones, para su posterior analisis y determinacion de sanciones y transacciones que pudieran caber. 
+5.3. CORTES DE CARGA O MODIFICACION DE GENERACION 
+Si luego de agotarse todas las acciones enumeradas no se supera la condicion de emergencia, o de existir la 
+posibilidad de que se produzca en el SADI en su conjunto, o en algun area en particular, una caida de la 
+tension a valores fuera de los limites admisibles, que pueda conducir a una perdida del control de la tension, 
+el COC podra solicitar cortes manuales de carga o modificacion de generacion, segun corresponda, en el area 
+afectada 
+Con ese fin los COT, COTDT y COD, deberan disponer de un listado de cables o lineas y alimentadores que 
+pueden ser desconectados rapidamente para contribuir a la solucion de contingencias en la red de AT, aun 
+en condiciones criticas de despacho, o con indisponibilidades altas de su equipamiento de compensacion.
+
+--- Página 37 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 5:CONTROL DE TENSION Y POTENCIA REACTIVA 
+Pag. 101 
+ 
+Version:31-Dic-2023 
+La necesidad de apelar a cortes de carga o modificacion de generacion para el control de tension sera 
+determinada en distintas etapas de la operacion, de acuerdo a las previsiones de demanda, generacion e 
+indisponibilidades de equipamiento de compensacion de potencia reactiva, con los estudios correspondientes. 
+5.3.1. EN LA OPERACION EN TIEMPO REAL 
+En la operacion en tiempo real el COC determinara si estan dadas las condiciones del sistema para la 
+aplicacion de cortes de carga o modificacion de generacion., en base a: 
+• la evolucion de la operacion diaria  
+• las declaraciones de indisponibilidad de potencia reactiva de las empresas en la programacion 
+estacional  
+• las indisponibilidades transitorias que puedan haber sido declaradas por los Agentes para la 
+programacion semanal y diaria o  
+• incumplimientos a los compromisos de reactivo detectados por CAMMESA,  
+• a las mediciones propias  
+• a las informaciones de los Centros de Operaciones,  
+• a los estudios de operacion del SADI,  
+El COC informara a cada Centro de Operaciones esta circunstancia, los que ejecutaran las tareas necesarias. 
+5.3.2. EN EMERGENCIAS 
+Comprende la accion de corte de cargas o modificacion de generacion inmediatos, segun corresponda, que 
+deban ser realizados como consecuencia de una perturbacion o indisponibilidades severas, para retrotraer 
+las variables del sistema a los valores limites operativos preestablecidos o para evitar que se produzca el 
+colapso total o parcial del sistema. 
+La salida de servicio imprevista de un elemento de compensacion, de un generador o un elemento de 
+transmision de la red, puede conducir a las tensiones fuera de valores admisibles o provocar la perdida del 
+control de tension.  
+En caso de ser necesario el COC podra ordenar el corte de cargas o modificacion de generacion en el area 
+con mayor apartamiento o afectada en mayor grado determinando la potencia a cortar en base a la experiencia 
+previa y/o a los estudios que se hubieran realizado. 
+En los primeros 20 minutos posteriores a una contingencia la tension en los nodos del Sistema de Transporte 
+del area afectada no debera exceder el rango entre 0,93 y 1,1 p.u. en nodos de 500 kV y entre 0,90 y 1,15 
+p.u. en nodos de 220 y 132 kV, salvo expresas condiciones determinadas por el Transportista, requeridas por 
+los usuarios y/o acordadas en los Convenios de Conexion o indicadas en la Programacion Estacional. 
+Al concluir este lapso y hasta que la situacion de contingencia haya cesado, se debera mantener un nivel de 
+tension en todos los nodos del Sistema de Transporte del area afectada entre 0,95 y 1,05 p.u. para los nodos 
+de 500 kV, y entre 0,9 y 1,10 p.u. para los nodos de 220 kV y 132 kV, salvo expresas condiciones determinadas 
+por el Transportista, requeridas por los usuarios y/o acordadas en los Convenios de Conexion o indicadas en 
+la Programacion Estacional. 
+5.3.3. REPOSICION DE LA DEMANDA CORTADA O GENERACION MODIFICADA 
+El COC realizara un seguimiento de la evolucion del SADI despues de haber realizado un corte de cargas o 
+una modificacion de generacion, y determinara, de acuerdo a las condiciones del sistema, como y cuando se 
+procedera a la reposicion de la demanda cortada o generacion modificada. 
+6. ANALISIS POSTERIOR 
+A posteriori de cualquier operacion anormal o de emergencia, CAMMESA evaluara la magnitud de la potencia 
+cortada a traves de la variacion de los niveles de intercambio y sentido de los flujos en los puntos de 
+interconexion, medidas con el SOTR, que sera comparada con la informacion que sea enviada por cada 
+Centro de Operaciones.
+
+--- Página 38 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 5:CONTROL DE TENSION Y POTENCIA REACTIVA 
+Pag. 102 
+ 
+Version:31-Dic-2023 
+Con los datos previos a la contingencia y los de la evolucion posterior del sistema CAMMESA realizara 
+estudios para evaluar las acciones tomadas. 
+7. SUPERVISION EN TIEMPO REAL 
+CAMMESA supervisara permanentemente con el SOTR las tensiones, la generacion de reactivo de los 
+generadores y los factores de potencia en todas las interconexiones del Sistema de Transporte. En base a 
+estos datos se determinaran las penalizaciones, en caso de corresponder.  
+Transitoriamente, y hasta que el SOTR este implantado, la supervision se realizara en base a las mediciones 
+disponibles del actual sistema de operacion en tiempo real y las informaciones de los Centros de Operaciones.
+
+--- Página 39 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 5:CONTROL DE TENSION Y POTENCIA REACTIVA 
+Pag. 103 
+ 
+Version:31-Dic-2023 
+ANEXO I - CURVAS DE CAPABILIDAD A UTILIZAR PARA LAS UNIDADES 
+GENERADORAS DEL SADI QUE NO LAS HAYAN DECLARADO  
+DIAGRAMA DE CAPACIDAD ESTIMADO PARA MAQUINAS TERMICAS 
+ 
+ 
+100
+120
+80
+60
+40
+20
+0
+100
+120
+80
+60
+40
+20
+MVAR
+Subexcitado
+MVAR
+Sobreexcitado
+%Potencia
+   Activa
+   (MVA Base)
+20
+40
+60
+80
+100
+120
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.85
+0.9
+0.95
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.85
+0.9
+0.95
+
+--- Página 40 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 5:CONTROL DE TENSION Y POTENCIA REACTIVA 
+Pag. 104 
+ 
+Version:31-Dic-2023 
+DIAGRAMA DE CAPACIDAD ESTIMADO PARA MAQUINAS HIDRAULICAS 
+ 
+ 
+ 
+100
+120
+80
+60
+40
+20
+0
+100
+120
+80
+60
+40
+20
+MVAR
+Subexcitado
+MVAR
+Sobreexcitado
+%Potencia
+   Activa
+   (MVA Base)
+20
+40
+60
+80
+100
+120
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.85
+0.9
+0.95
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.85
+0.9
+0.95
+
+--- Página 41 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 6:RESOLUCION SE Nº 285/94. TRABAJOS EN INSTALACIONES DE LOS AGENTES DEL MEM PARA LA PROVISION 
+DE RECURSOS ESTABILIZANTES 
+Pag. 105 
+ 
+Version:31-Dic-2023 
+P.T. 6: RESOLUCION SE Nº 285/94. TRABAJOS EN INSTALACIONES 
+DE LOS AGENTES DEL MEM PARA LA PROVISION DE 
+RECURSOS ESTABILIZANTES 
+1. OBJETO 
+De acuerdo a lo previsto por la Ley 24.065 y sus normas complementarias y reglamentarias, CAMMESA tiene 
+por objeto el despacho tecnico del Sistema Argentino de Interconexion (SADI). A estos fines tiene a su cargo 
+determinar el despacho tecnico y economico del SADI propendiendo a maximizar la seguridad del sistema y 
+la calidad de los suministros y a minimizar los precios mayoristas en el mercado horario de energia ("Mercado 
+Spot") 
+Para el cumplimiento de su objeto social puede realizar todos los actos y celebrar todos los contratos que 
+sean correspondientes cuidando en todo momento de propender a garantizar la transparencia y equidad de 
+las decisiones que afecten al MEM y prestar servicios relacionados con las actividades aludidas y en 
+particular, sin que ello implique limitacion, proveer servicios de consultoria en las areas antedichas. 
+Dentro de estos actos se encuentra la ejecucion por cuenta y orden de los Agentes del MEM y a solicitud de 
+Organismo competente de trabajos de montaje, modificacion, ampliacion y/o auditorias de equipos de control 
+y proteccion en instalaciones de los Agentes del MEM por necesidades operativas y de seguridad del SADI. 
+En este contexto, la Secretaria de Energia, mediante la resolucion SE 285/94, instruyo a CAMMESA para que 
+defina los recursos estabilizantes necesarios para mantener el nivel de confiabilidad requerido en el MEM e 
+incrementar los limites de transferencia del corredor COMAHUE - BUENOS AIRES, y coordine el proyecto y 
+la implementacion de la revision, provision e instalacion en el SADI de dichos recursos.  
+El presente Procedimiento Tecnico tiene por objeto indicar las instrucciones, fijar criterios, senalar derechos 
+y obligaciones y delimitar las responsabilidades de los Agentes del MEM, Contratistas, Subcontratistas y 
+CAMMESA cuando se realicen dichos trabajos. 
+2. DEFINICIONES 
+Certificado de 
+Responsabilidad por 
+Defectos: 
+Certificado que se emite cuando haya finalizado el Periodo de Responsabilidad 
+por Defectos para las Obras o cualquier parte de ellas 
+Certificado de Toma de 
+Posesion: 
+el certificado que debe ser entregado al Contratista por el Ingeniero cuando el 
+Agente toma posesion de las Obras.  
+Contratista:  
+es la persona fisica o juridica contratada por CAMMESA para ejecutar los 
+trabajos, sin incluir a ningun cesionario de este (excepto cuando se cuente con 
+el consentimiento de CAMMESA). 
+Contrato: 
+acuerdo entre CAMMESA y el Contratista para la ejecucion de las Obras, el cual 
+incluye las Condiciones, Especificaciones, Dibujos del Comitente y del 
+Contratista, Planillas completas incluyendo cotizaciones, la Oferta, la Carta de 
+Aceptacion 
+y 
+aquellos 
+otros 
+documentos 
+que 
+puedan 
+incorporarse 
+expresamente en virtud de la Carta de Aceptacion. 
+Culpa Grave: 
+cualquier acto u omision del Contratista que infrinja las mas elementales normas 
+de diligencia, los cuales habrian sido adoptados por un contratista responsable 
+en la misma posicion y bajo identicas circunstancias. 
+Dibujos del Contratista: 
+todos los dibujos, muestras, esquemas, modelos y manuales de operacion y 
+mantenimiento a ser presentados por el Contratista de conformidad con el 
+Contrato. 
+El Ingeniero: 
+persona fisica o juridica nombrada por CAMMESA para desempenarse en 
+funciones tecnicas, de supervision y/o inspeccion ante el Contratista y el Agente, 
+a los fines de la ejecucion de los Trabajos. Para estos Trabajos CAMMESA ha 
+nombrado a la Consultora Merz y Mc Lellan
+
+--- Página 42 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 6:RESOLUCION SE Nº 285/94. TRABAJOS EN INSTALACIONES DE LOS AGENTES DEL MEM PARA LA PROVISION 
+DE RECURSOS ESTABILIZANTES 
+Pag. 106 
+ 
+Version:31-Dic-2023 
+Emplazamiento: 
+el lugar o lugares puestos a disposicion por el Agente en los cuales el Contratista 
+debera llevar a cabo los trabajos o en los cuales debera entregarse la Planta, 
+conjuntamente con aquella superficie circundante que sea utilizada por el 
+Contratista en relacion con las Obras. 
+Equipos del Contratista: 
+todos los aparatos o elementos de cualquier naturaleza que se requieran a los 
+fines de las Obras, sin incluir la Planta. 
+Especificaciones: 
+las especificaciones de las Obras incluidas en el Contrato y cualquier 
+modificacion a estas efectuada de conformidad con el Ingeniero. 
+Fecha de Transmision del 
+Riesgo: 
+fecha en que el riesgo de perdida o de danos a las Obras se trasmite del 
+Contratista al Agente.  
+Obras: 
+el trabajo que debe ser realizado por el Contratista de conformidad con el 
+Contrato, asi como los elementos provistos a tales fines. 
+Oferta: 
+la oferta cotizada por el Contratista a CAMMESA respecto de la ejecucion de 
+las Obras. 
+Periodo de 
+Responsabilidad por 
+Defectos: 
+periodo de un ano o el periodo indicado en el Contrato, que corre a partir del 
+momento en que se produce la toma de posesion, durante el cual el Contratista 
+debera reparar sin cargo los defectos que aparezcan y los danos que se 
+produzcan en las Obras.  
+Plazo para la Finalizacion: 
+el plazo indicado en el Contrato para la realizacion de las Obras o cualquier 
+Tramo de estas y la realizacion de las Pruebas a la Finalizacion. 
+Precio Contractual: 
+la suma indicada en el Contrato que debe ser abonada al Contratista por la 
+ejecucion de las Obras. 
+Programa: 
+El Programa de Trabajo que debe ser presentado por el Contratista de 
+conformidad con el Contrato y sus eventuales modificaciones. 
+Pruebas a la Finalizacion: 
+Son las pruebas, a llevarse a cabo con caracter previo a la Toma de Posesion 
+de las Obras por parte del Agente. 
+Representante de 
+CAMMESA: 
+representante nombrado por CAMMESA con funciones de coordinacion. 
+Representante del Agente: 
+es aquella persona nombrada por el Agente con funciones de inspeccion para 
+el montaje, las pruebas de conexionado y funcionamiento de los nuevos 
+equipos. Tambien sera responsable de firmar las autorizaciones y notificarse de 
+las comunicaciones que envie el Ingeniero, o el Contratista. 
+Representante del 
+Ingeniero: 
+es aquella persona, designada por El Ingeniero para desempenar las funciones 
+y ejercer las facultades que le fueran encomendadas por CAMMESA al 
+Ingeniero.  
+Subcontratista: 
+es cualquier persona fisica o juridica designada en el Contrato para la ejecucion 
+de cualquier parte de las Obras, o cualquier persona a quien se haya 
+subcontratado cualquier parte del Contrato, con el consentimiento de 
+CAMMESA, sin incluir a ningun cesionario de dicho Subcontratista.  
+Trabajos: 
+son las obras, proyectos, provision de equipos y servicios y pruebas necesarios 
+para implementar la instalacion y puesta en servicio de los recursos 
+estabilizantes. 
+Tramo: 
+parte de las Obras expresamente indicada como tal en el Contrato. 
+3. DESCRIPCION DE LOS TRABAJOS  
+El trabajo basico previsto para cumplir con los requerimientos de la Resolucion 285/94 incluye la provision y 
+diseno de servicios y equipos para el diseno de la DAG y los sistemas de control relacionados con el 
+desempeno de la estabilidad transitoria y la estabilidad dinamica, tales como, estabilizadores (PSS) resistores
+
+--- Página 43 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 6:RESOLUCION SE Nº 285/94. TRABAJOS EN INSTALACIONES DE LOS AGENTES DEL MEM PARA LA PROVISION 
+DE RECURSOS ESTABILIZANTES 
+Pag. 107 
+ 
+Version:31-Dic-2023 
+de frenado, control de reactores en las estaciones de 500 kV, desconexion de carga, etc., que deberan 
+asegurar que para los diferentes condiciones y escenarios establecidos, sea posible mantener la estabilidad 
+y satisfacer los criterios de diseno y desempeno requeridos para el SADI, con un nivel de transferencia en el 
+corredor Comahue - Buenos Aires superior a 3300 MW.  
+El Contratista suministrara especificaciones, nuevos disenos, ajustes y los equipos de acuerdo a lo 
+establecido en el Contrato, para los siguientes sistemas de proteccion y control del SADI: 
+a) Sistemas de control de excitacion de generadores y estabilizadores (PSS), 
+b) Desconexion Automatica de Generacion (DAG) 
+c) control de tension en la red de transporte de 500 kV, 
+d) desconexion de carga para control de desbalances de generacion -demanda y para evitar la perdida de 
+sincronismo (interdisparo a la carga, reles de derivada, etc.) 
+e) protecciones para acelerar la desconexion de lineas ante perdida de sincronismo en forma selectiva. 
+f) 
+control de tension en la carga remanente luego de la desconexion de altos porcentajes de carga. 
+g) otros recursos estabilizantes. 
+Las tareas que demandara la implementacion de los recursos estabilizantes incluiran trabajos en instalaciones 
+de Generadores, Transportistas y/o Distribuidores y Grandes Usuarios, tales como: 
+a) Ensayos del sistema electrico 
+b) Instalacion, reemplazo y/o ajuste de Estabilizadores de Potencia 
+c) Instalacion de sistemas de desconexion automatica de generacion (DAG) 
+d) Reemplazo y/o ajuste de equipamiento de excitacion 
+e) Capacitacion 
+f) 
+Provision de repuestos y consumibles 
+g) Provision de armarios para equipos auxiliares 
+h) Provision de equipamiento adicional y servicios 
+3.1. ENSAYOS DEL SISTEMA ELECTRICO. 
+En los casos necesarios, se realizaran ensayos de las unidades generadoras para establecer la validez de 
+las reactancias de alternadores, las constantes de tiempo y tambien los parametros del sistema de excitacion 
+que se utilicen en el modelo del sistema electrico de potencia. Un relevamiento preliminar de las unidades de 
+generacion que probablemente participaran en las oscilaciones interarea y las bases de datos disponibles en 
+la actualidad indican que sera necesario realizar ensayos en varias centrales generadoras. 
+Una vez concluida la recoleccion de datos y el establecimiento del modelo del SADI, se requerira una prueba 
+del sistema para demostrar la validez del modelo. El ensayo consistira en la medicion simultanea de los 
+parametros en plantas generadoras diferentes utilizando el Sistema de Monitoreo de Oscilaciones (SMO) que 
+debe ser suministrado como parte del de este contrato. El SMO debera ser instalado para su uso 
+permanentemente para medir el desempeno del Esquema de Estabilizacion Suplementario (EES). 
+Una vez instalados los equipos de PSS adicionales debera probarse la efectividad de los mismos mediante 
+una prueba del sistema. 
+3.2. ESTABILIZADORES (PSS) 
+Los estudios preliminares del sistema electrico de potencia han establecido que sera necesario instalar o 
+reemplazar estabilizadores en plantas generadoras. El estudio debera determinar cuales centrales se 
+instalaran los PSSs y determinar los parametros de operacion de cada uno de esos equipos. Un relevamiento 
+local preliminar de las unidades generadoras indica que se necesitaran nuevos PSS en base a potencia 
+acelerante y que podra ser necesario ajustar la configuracion de los existentes. El trabajo abarca el diseno, la 
+instalacion y la puesta en marcha de las instalaciones de PSS.
+
+--- Página 44 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 6:RESOLUCION SE Nº 285/94. TRABAJOS EN INSTALACIONES DE LOS AGENTES DEL MEM PARA LA PROVISION 
+DE RECURSOS ESTABILIZANTES 
+Pag. 108 
+ 
+Version:31-Dic-2023 
+El trabajo incluye una primer etapa consistente en la resintonizacion de los PSSs existentes para mejorar el 
+desempeno del sistema con los recursos disponibles y una segunda etapa donde se disenan, se instalan y se 
+ponen en servicio los nuevos PSSs y se ajustan todos los PSSs de los generadores del sistema, los nuevos 
+y los actualmente existentes, para conformar el EES requerido para maximizar la transferencia de potencia 
+en el corredor Comahue - Buenos Aires para las condiciones criticas de operacion del SADI. 
+3.3. DESCONEXION AUTOMATICA DE GENERACION (DAG) 
+El sistema de DAG demandara la provision e instalacion de una estacion maestra (o master) dual redundante 
+y de controladores logicos programables (PLC) como estaciones remotas en subestaciones y centrales 
+generadoras. El trabajo abarca, ademas, la programacion de los PLC para detectar la perdida de un elemento 
+del sistema de transmision del Corredor Comahue - Buenos Aires, y la instalacion de las interfaces de los 
+PLC con los controles e instrumentos de los tableros, el suministro de reles repetidores de estados, los reles 
+intermediarios de control, y los transductores de las variables del sistema. 
+Tambien se incluyen en estos trabajos la instalacion de las interfaces con los PLC que actualmente forman 
+parte del esquema de DAG en varias subestaciones. 
+El trabajo incluye pruebas y mediciones para determinar el tiempo total de respuesta entre el momento en 
+que en una subestacion se produce un evento que llevara a la desconexion de generacion y la iniciacion de 
+la orden de disparo y la interrupcion de la corriente de carga en el interruptor del circuito de generacion, en 
+diferentes centrales de generacion. 
+3.4. EQUIPOS DE EXCITACION 
+El alcance de los trabajos abarca la confirmacion si el equipamiento de excitacion existente es adecuado. 
+En los casos que las investigaciones y estudios en el sitio muestren que los equipos de excitacion no son 
+apropiados para la instalacion de estabilizadores, sera necesario reemplazarlos por un sistema de excitacion 
+moderno. Sera parte del trabajo, la provision de los equipos de excitacion en los casos que los existentes 
+resulten inadecuados, siempre que se demuestre que ello constituye la solucion mas efectiva. 
+3.5. CAPACITACION 
+Se brindara capacitacion a los Agentes para la operacion y mantenimiento de los equipos y del software 
+provisto dentro del contrato. 
+3.6. REPUESTOS 
+Se proveeran repuestos y articulos consumibles de todos los equipos que deban se suministrados segun el 
+Contrato. 
+3.7. ARMARIOS PARA EQUIPOS AUXILIARES 
+Se proveeran armarios para los equipos auxiliares como una opcion para cada estacion remota. Los armarios 
+estaran completos y tendran dimensiones tales que se puedan instalar todos los reles, transductores y bloques 
+terminales. 
+3.8. EQUIPAMIENTO ADICIONAL Y SERVICIOS 
+El Contratista cotizara los precios para los equipos, estudios y servicios necesarios, para llevar adelante los 
+trabajos de auditoria y mantenimiento del Esquema de Estabilizacion Suplementario (EES), con el fin de: 
+a) establecer los ajustes requeridos por los nuevos generadores que ingresan al SADI, 
+b) adecuar en el futuro los ajustes de los estabilizadores a las condiciones previstas para los proximos tres 
+semestres, 
+c) incorporar/reemplazar un estabilizador en algun generador, 
+d) verificar que los parametros de los sistemas de excitacion y estabilizadores en los generadores que 
+participan en el EES mantienen los ajustes establecidos y todos esos equipos funcionan correctamente.
+
+--- Página 45 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 6:RESOLUCION SE Nº 285/94. TRABAJOS EN INSTALACIONES DE LOS AGENTES DEL MEM PARA LA PROVISION 
+DE RECURSOS ESTABILIZANTES 
+Pag. 109 
+ 
+Version:31-Dic-2023 
+3.9. PROYECTO DE DETALLE 
+Los trabajos se ejecutaran de acuerdo a un Proyecto de Detalle elaborado por el Contratista bajo la 
+supervision tecnica del Ingeniero. 
+El Proyecto de Detalle consiste en la documentacion, compuesta por dibujos, planos, muestras, modelos y 
+especificaciones de componentes que sean necesarios para la realizacion de los Trabajos y que muestre en 
+forma completa y detallada la manera en que se fijaran y conectaran los equipos asi como cualquier otra 
+informacion que se requiera para: 
+a) preparar las instalaciones existentes para recibir y vincular los nuevos equipos. 
+b) definir y realizar las pruebas y evaluaciones para los ensayos en fabrica 
+c) definir y realizar las pruebas y evaluaciones para las Pruebas de Finalizacion. 
+d) facilitar el acceso adecuado de los equipos al Emplazamiento y de cualquier elemento necesario para el 
+montaje y las pruebas,  
+e) fijar, montar, y conectar entre si los elementos de la Planta 
+f) 
+efectuar las conexiones necesarias de los equipos a las instalaciones existentes. 
+4. OBLIGACIONES GENERALES Y FUNCIONES DE LAS PARTES 
+4.1. TRABAJOS A EJECUTAR POR EL AGENTE 
+Dentro de las obligaciones de los Agentes del MEM definidas en la normativa vigente se encuentran la de 
+instalacion, puesta en servicio, el control, la operacion y el mantenimiento del equipamiento de control y 
+proteccion necesario para optimizar la eficiencia de gestion del Sistema Electrico. 
+Dentro de este marco, el Agente debera ejecutar los Trabajos necesarios para satisfacer los objetivos 
+planteados en la Resolucion SE 285/94, considerando muy especialmente los requerimientos y el 
+cumplimiento de los plazos que se establecen en el Contrato, con el fin de posibilitar una mejor ejecucion de 
+la Obras, mantener niveles adecuados de confiabilidad en el SADI y permitir la conexion de la Planta 
+minimizando las indisponibilidades de los equipos.  
+La Solicitud de Trabajos a ejecutar por el Agente que surjan del proyecto sera realizada por el Ingeniero e ira 
+acompanada de un anteproyecto en base al cual el Agente realizara el proyecto de detalle y el presupuesto. 
+El Ingeniero podra solicitar modificaciones y que se complete la informacion de los dibujos, planos y 
+especificaciones de los componentes, antes de la aprobacion del Proyecto de Detalle.  
+El Agente debera acompanar el Proyecto de Detalle con el Programa de Trabajo para las obras 
+correspondientes atendiendo a los requerimientos establecidos en el Contrato. 
+4.1.1. INFORMACION DE LAS INSTALACIONES DEL AGENTE  
+El Agente suministrara toda la informacion de sus instalaciones que sea necesaria para la ejecucion de los 
+Trabajos. Para ello debera poner a disposicion del Ingeniero copias de planos, manuales de equipos, software, 
+y cualquier otra informacion requerida por CAMMESA, el Ingeniero o el Contratista en las fechas y plazos 
+indicadas en el Programa de Trabajo. Ante una Solicitud de la informacion el Agente debera responder antes 
+de 5 dias corridos, indicado el detalle completo de la documentacion existente, y la forma y oportunidad en 
+que sera suministrada tratando de reducir al minimo las demoras que pudiera ocasionar en la ejecucion de 
+los Trabajos. La entrega de dicha informacion debera realizarse dentro de los 15 dias posteriores a la solicitud 
+del Ingeniero. 
+4.1.2. AUTORIZACION AL CONTRATISTA, AL INGENIERO, Y A CAMMESA PARA E LACCESO Y PASO 
+AL EMPLAZAMIENTO 
+El Agente esta obligado a brindar en el momento requerido, el acceso y paso al Emplazamiento de la Obra y 
+acceso a los equipos de su propiedad, en la medida que corresponda segun lo indicado en las 
+Especificaciones del Proyecto y el Programa de Trabajo, al personal autorizado del Contratista, del Ingeniero 
+y de CAMMESA, asi como a los equipos a ser instalados, y al equipamiento y elementos necesarios para el 
+montaje y las pruebas.
+
+--- Página 46 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 6:RESOLUCION SE Nº 285/94. TRABAJOS EN INSTALACIONES DE LOS AGENTES DEL MEM PARA LA PROVISION 
+DE RECURSOS ESTABILIZANTES 
+Pag. 110 
+ 
+Version:31-Dic-2023 
+El Agente debera ser informado con 5 dias de antelacion a la fecha de acceso del Contratista al 
+Emplazamiento de la lista de personal autorizado a tal efecto y del equipamiento a utilizar.  
+4.1.3. RECEPCION Y ALMACENAMIENTO DE EQUIPOS 
+El Agente debera hacer la recepcion de los equipos a instalar en el emplazamiento y asignar, los espacios y 
+lugares para el almacenamiento adecuado de los mismos, para que permanezcan protegidos de danos, robo 
+o hurto. 
+El Agente recibira los equipos sin responsabilidad por danos debido al transporte o deterioro de sus 
+embalajes. Para ello, el Agente debera senalarlo en el formulario de recepcion e informarlo al Contratista. 
+El Agente podra requerir la presencia de personal autorizado del Contratista en el momento de la recepcion 
+de los elementos de la Planta o de los Equipos del Contratista. 
+4.1.4. SUMINISTRO DE SERVICIOS 
+El Agente debera suministrar energia electrica, gas, agua, servicios sanitarios y otros servicios que pudieran 
+encontrarse disponibles en el emplazamiento y que sean necesarios para la ejecucion de las Obras. El 
+Contratista sera responsable del correcto uso de los mismos. 
+4.1.5. OPERACION DE EQUIPOS DEL AGENTE 
+Cuando El Contratista o El Ingeniero lo solicite, El Agente operara, y/o aislara y colocara elementos de 
+seguridad en sus equipos para posibilitar la ejecucion de las Obras y las Pruebas, segun lo establecido en el 
+Proyecto de Detalle y/o el Programa de Trabajo 
+Durante dicha operacion el Agente conservara el control y sera responsable del funcionamiento seguro de 
+sus equipos. Las medidas de seguridad especificas para la realizacion de los trabajos seran acordadas entre 
+el Agente y Contratista y deberan quedar notificadas ambas partes. 
+Cuando condiciones especiales de la operacion del sistema o de emergencia lo justifiquen, el Agente podra 
+requerir la interrupcion de los Trabajos que afecten la normalizacion del sistema. 
+4.1.6. RECLAMOS DEL AGENTE 
+El Representante del Agente debera realizar el seguimiento de las Obras, y en caso de considerar que los 
+trabajos no se estan realizando de acuerdo a lo indicado en el Proyecto, o que las tareas realizadas puedan 
+afectar a sus instalaciones o personal, debera efectuar el reclamo al Ingeniero dentro del periodo de 5 dias 
+corridos contados desde que tome conocimiento de las circunstancias que originan el reclamo. El reclamo 
+incluira toda la informacion respaldatoria. El Ingeniero debera responder el reclamo dentro de los 5 dias 
+siguientes a la fecha de su recepcion. 
+4.1.7. RELEVAR LA INFORMACION FALTANTE O VERIFICAR LA INFORMACION DISPONIBLE  
+Ante un pedido del Ingeniero el Agente debera relevar la informacion faltante de sus equipos, requerida para 
+la ejecucion de los Trabajos, y/o verificar la informacion disponible cuando se encuentren diferencias entre 
+dicha informacion y los equipos del Agente instalados en el emplazamiento. 
+Se considerara valida la informacion provista por el fabricante de los equipos propiedad del Agente siempre 
+que la misma corresponda a documentacion conforme a obra o a ensayos y protocolos aprobados por el 
+Comitente correspondiente. 
+4.1.8. MEDIDAS DE SEGURIDAD 
+El Agente debera comunicar todas las reglamentaciones que se aplicaran a los efectos de mantener la 
+seguridad en el Emplazamiento. 
+El Contratista, el Ingeniero, CAMMESA y todo el personal de las mismas deberan cumplir con dichas 
+reglamentaciones y las que establezcan la legislacion de la Republica Argentina. 
+El Agente debera proporcionar la proteccion y vigilancia de las Obras y verificar la existencia de los elementos 
+necesarios para mantener condiciones de seguridad para las personas y las instalaciones, evitar perjuicios a 
+terceros, para proteger a propietarios y ocupantes de inmuebles linderos, publico y demas personas.
+
+--- Página 47 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 6:RESOLUCION SE Nº 285/94. TRABAJOS EN INSTALACIONES DE LOS AGENTES DEL MEM PARA LA PROVISION 
+DE RECURSOS ESTABILIZANTES 
+Pag. 111 
+ 
+Version:31-Dic-2023 
+El Agente no sera responsable por los danos a terceros, a propietarios y ocupantes de inmuebles linderos, 
+publico y demas personas que se puedan ocasionar por el incumplimiento de normas de seguridad por parte 
+del Contratista.  
+Toda falta de cumplimiento de normas de seguridad debera ser notificada inmediatamente al responsable del 
+incumplimiento y a CAMMESA. 
+4.1.9. FUNCIONES DEL REPRESENTANTE DEL AGENTE 
+El Representante del Agente debera: 
+a) cumplir funciones de inspeccion para el montaje, las pruebas de conexionado y funcionamiento de los 
+nuevos equipos  
+b) relacionarse con el Representante del Contratista y el Representante del Ingeniero 
+c) responder a solicitudes para los trabajos que requieran una autorizacion especial debido a que pueden 
+afectar la disponibilidad, confiabilidad y seguridad de los equipos del Agente,  
+d) responder a consultas que hagan el Ingeniero o el Contratista sobre aquella parte de las instalaciones 
+existentes de las que no se disponga de informacion completa o confiable en los planos y dibujos 
+suministrados por el Agente, 
+e) facilitar toda investigacion sobre sus instalaciones a los fines de garantizar el correcto funcionamiento de 
+la Obra y evitar perjuicios o interrupciones que afecten cualquier parte de las instalaciones de los Agentes 
+del MEM o puedan producir danos a un Tercero, 
+f) 
+verificar el cumplimiento de las medidas de seguridad, 
+g) hacer la recepcion en el emplazamiento de los equipos a instalar y asignar los espacios y lugares para 
+almacenamiento de los mismos, 
+h) verificar el conexionado y funcionamiento de los nuevos equipos 
+i) 
+intervenir en las pruebas de las Obras, 
+j) 
+aprobar, hacer observaciones o rechazar las pruebas,  
+k) tomar posesion de las Obras una vez aprobadas las Pruebas a la Finalizacion. 
+4.1.10. APROBACION DE LOS ESTUDIOS 
+El Agente dispondra de un plazo de 10 dias corridos para aprobar o rechazar los estudios fundamentando en 
+este ultimo caso los motivos. 
+El Agente, por unica vez y dentro de los 6 dias corridos de recibidos los estudios podra emitir observaciones 
+o solicitar ampliaciones, o requerir que se complete la informacion de los estudios o del proyecto que sea 
+esencial para el diseno de aquella parte de la Planta que se instala y/o conecta a los equipos de su propiedad 
+o que puede afectarlos en su desempeno y/o seguridad. En este caso el Plazo mencionado se contara a partir 
+de la recepcion de la respuesta a ese pedido. 
+La Aprobacion de los estudios no exime al Contratista de su responsabilidad en el correcto funcionamiento 
+de los equipos a instalar. 
+4.1.11. APROBACION DEL PROYECTO DE DETALLE 
+El Agente dispondra de un plazo de 10 dias corridos para aprobar o rechazar el Proyecto de Detalle, 
+fundamentando en este ultimo caso los motivos. 
+El Agente dentro de los 6 dias corridos de recibido podra emitir observaciones o solicitar ampliaciones, o 
+requerir que se complete la informacion del proyecto En este caso el Plazo mencionado se contara a partir de 
+la recepcion de la respuesta a ese pedido. 
+La Aprobacion del Proyecto de Detalle no exime al Contratista de su responsabilidad en el correcto 
+funcionamiento de los equipos a instalar.
+
+--- Página 48 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 6:RESOLUCION SE Nº 285/94. TRABAJOS EN INSTALACIONES DE LOS AGENTES DEL MEM PARA LA PROVISION 
+DE RECURSOS ESTABILIZANTES 
+Pag. 112 
+ 
+Version:31-Dic-2023 
+4.1.12. PENALIZACIONES POR INCUMPLIMIENTO EN LOS PLAZOS 
+Cuando por incumplimientos del Agente a los plazos establecidos en el Programa se originen extensiones en 
+las fechas de Finalizacion de un Tramo o de las Obras los mayores costos demostrables originados al 
+Contratista seran a cargo del Agente. 
+4.2. DE CAMMESA Y EL INGENIERO 
+4.2.1. INFORMACION DE LOS TRABAJOS  
+CAMMESA entregara al Agente un informe elaborado por el Ingeniero donde se defina el alcance de los 
+trabajos que se realizaran en las instalaciones propiedad del Agente, incluyendo lo siguiente: 
+a) especificaciones de los equipos a instalar, 
+b) condiciones de contratacion de la provision y montaje de los mismos, 
+c) los trabajos requeridos al Agente, 
+d) programa de tareas tentativo propuesto 
+4.2.2. COORDINACION Y CONTROL DEL CUMPLIMIENTO DEL PROGRAMA DE TRABAJO 
+El Ingeniero debera asegurar que el Agente disponga del Programa de Trabajo con 15 dias corridos como 
+minimo de anticipacion a la Fecha de Inicio de los Trabajos conteniendo la siguiente informacion: 
+a) el orden y las fechas en las cuales se propone llevar a cabo las Obras, incluyendo el diseno, fabricacion, 
+entrega en el Emplazamiento, instalacion, pruebas y puesta en operacion; 
+b) las fechas en las que se requiere la presentacion por parte del Contratista, de los estudios, disenos, 
+planos, y cualquier otra informacion necesaria para la ejecucion de los Trabajos; 
+c) las fechas en las que se requiere que el Agente haga entrega de cualquier informacion o plano de las 
+instalaciones, 
+d) las fechas en las que se requiere que el Agente permita el acceso al Emplazamiento; 
+e) las fechas en las que se requiere que el Agente complete las obras a su cargo requeridas por el proyecto. 
+El Agente contara con 5 dias posteriores a la recepcion del Programa de Trabajo para realizar observaciones 
+y/o solicitar modificaciones. 
+El Ingeniero controlara que los trabajos se realicen de acuerdo al Programa de Trabajo.  
+CAMMESA requerira del Contratista que adecue el Programa de Trabajo con el fin de lograr la minima 
+afectacion economica a los agentes del MEM en cuyas instalaciones se deben realizar los Trabajos. 
+CAMMESA podra determinar las modificaciones o la aprobacion parcial de los Tramos con el fin de minimizar 
+las demoras y dar cumplimiento a lo establecido en el Contrato. 
+4.2.3. APROBAR LAS MODIFICACIONES  
+No se efectuara ningun cambio en el Programa de Trabajo sin la aprobacion de CAMMESA, quien podra 
+introducir modificaciones, previa consideracion de los inconvenientes que ello puede significar para los 
+Agentes del MEM. 
+4.2.4. ESTABLECER LAS CONDICIONES CONTRACTUALES 
+CAMMESA definira las Condiciones Contractuales con el Contratista teniendo en consideracion el presente 
+Procedimiento. 
+4.2.5. APROBACION DEL PRESUPUESTO DEL AGENTE 
+El Agente debera presentar a CAMMESA un presupuesto por la realizacion de los trabajos a su cargo. 
+El Presupuesto de los Trabajos presentado por el Agente sera evaluado por el Ingeniero quien podra proponer 
+modificaciones en su confeccion, forma de presentacion y valores de los diferentes items y conceptos que lo 
+componen.
+
+--- Página 49 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 6:RESOLUCION SE Nº 285/94. TRABAJOS EN INSTALACIONES DE LOS AGENTES DEL MEM PARA LA PROVISION 
+DE RECURSOS ESTABILIZANTES 
+Pag. 113 
+ 
+Version:31-Dic-2023 
+En el caso que a criterio del Ingeniero el Presupuesto presentado por el Agente en respuesta a sus 
+observaciones no sea aceptable, el Agente debera presentar un nuevo presupuesto en un plazo no mayor de 
+10 dias corridos.  
+Si el Agente no acepta las objeciones del Ingeniero las debera rechazar dentro de los 10 dias corridos de la 
+fecha en que las haya recibido, informando de los motivos al Ingeniero y a CAMMESA. De ocurrir esto, la 
+controversia o diferencias seran elevadas a la Secretaria de Energia para su resolucion.  
+El rechazo del Presupuesto y la decision que resulte de la Secretaria de Energia no deberan afectar la 
+continuidad de las Obras, por lo que el Agente seguira con el Programa de Trabajos previsto.  
+Cuando en virtud de los Trabajos, el Agente tuviese derecho al pago de costos, estos deberan ser 
+debidamente acreditados, e incluiran cualquier gasto general demostrable que corresponda ser imputado a 
+los mismos, no incluyendo ganancias. 
+Los trabajos a ejecutar por el Agente se ejecutaran de acuerdo al Proyecto de Detalle, al Programa de Trabajo, 
+y al Presupuesto, todos ellos aprobados por CAMMESA. 
+4.2.6. FUNCIONES DEL INGENIERO 
+CAMMESA asigna al Ingeniero tareas de coordinacion, auditoria e inspeccion de los Trabajos del Contratista 
+y de los Trabajos de los Agentes. 
+En esa funcion debe: 
+a) Realizar y/o evaluar los cronogramas y definir los procedimientos adecuados para posibilitar el 
+cumplimiento de los mismos. 
+b) Analizar y evaluar las soluciones, y parametros adoptados en el diseno presentado por el Contratista, 
+proponiendo modificaciones orientadas a asegurar el cumplimiento de los objetivos. 
+c) Coordinar todas las actividades para que el proyecto cumpla con los objetivos establecidos en la 
+Resolucion S.E. N.º 285/94, y el equipamiento sea entregado a los propietarios de las instalaciones para 
+su funcionamiento en el SADI, en los plazos requeridos. 
+d) Analizar el proyecto de detalle considerando las observaciones que realicen los agentes del MEM. 
+Aprobar el proyecto de detalle realizado por el Contratista previa coordinacion de las acciones necesarias 
+para introducir las modificaciones que permitan el mejor cumplimiento de estos objetivos. 
+e) Inspeccionar las pruebas y ensayos que el Contratista este obligado a realizar para la habilitacion y 
+recepcion de instalaciones individuales, y para demostrar el cumplimiento de los requerimientos de 
+desempeno establecidos para el conjunto de los recursos estabilizantes. 
+f) 
+Realizar la recepcion y habilitar las instalaciones y equipos que el Contratista incorpore al SADI y de 
+aquellos equipos o instalaciones que este modifique o ajuste. 
+g) Realizar las actividades de coordinacion necesarias para establecer con precision y anticipadamente, el 
+alcance de las responsabilidades por los perjuicios o danos sobre los equipos e instalaciones que 
+pudieran ocasionarse en las instalaciones de los agentes del MEM, como consecuencia de las tareas y 
+acciones requeridas para el cumplimiento del Contrato. 
+h) Proponer y/o realizar todo lo que sea necesario para que las actividades que desarrolla el Contratista, 
+para el cumplimiento de los objetivos establecidos en la Resolucion S.E. Nº 285/94, ocasionen los 
+minimos inconvenientes a la explotacion y a la confiabilidad del SADI, y no afecte desfavorablemente la 
+gestion de los agentes en el MEM. 
+i) 
+Proponer procedimientos para la coordinacion, aprobacion, y recepcion del equipamiento, que permitan 
+el cumplimiento de los objetivos, contemplando la participacion de los agentes del MEM propietarios de 
+las instalaciones donde se incorporaran los equipos de control. 
+j) 
+Establecer los cronogramas de ejecucion de las diferentes tareas a realizar por el Contratista. 
+k) Coordinar la intervencion de los agentes del MEM, en el analisis y definicion de aspectos clave del 
+Proyecto, principalmente en relacion con todo aquello que pueda afectar la seguridad de su equipamiento, 
+y la confiabilidad del SADI de forma de evitar demoras y costos adicionales para el proyecto.
+

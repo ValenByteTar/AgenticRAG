@@ -1,0 +1,12 @@
+{
+  "corpus_id": "legacy-pending",
+  "status": "pending",
+  "source_root": "data/extracted_texts",
+  "excluded_root": "data/extracted_texts_excluded",
+  "document_count": null,
+  "excluded_count": null,
+  "exclusion_registry": "data/corpus_exclusions.json",
+  "content_fingerprint": null,
+  "canonical_id_version": null,
+  "notes": "Populate from the preserved historical corpus before running attribution experiments."
+}

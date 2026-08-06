@@ -1,0 +1,403 @@
+=== GDPR Data Protection Principles (2).pdf ===
+
+--- Página 1 ---
+Data Protection Principles                        © NT Business Consulting & Training 
+Page | 1 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Data Protection 
+Principles
+
+--- Página 2 ---
+Data Protection Principles                        © NT Business Consulting & Training 
+Page | 2 
+Contents 
+ 
+Introduction............................................................................................................................................. 4 
+Lawfulness, Fairness, and Transparency ................................................................................................ 4 
+Purpose Limitation .................................................................................................................................. 5 
+Data Minimization................................................................................................................................... 6 
+Data Accuracy .......................................................................................................................................... 7 
+Storage Limitation ................................................................................................................................... 8 
+Integrity, Confidentiality, and Security ................................................................................................10 
+Exemptions ............................................................................................................................................10 
+Accountability .......................................................................................................................................10 
+Data Protection by Design and by Default ...........................................................................................11 
+Processors ..............................................................................................................................................11
+
+--- Página 3 ---
+Data Protection Principles                        © NT Business Consulting & Training 
+Page | 3 
+Introduction  
+Data protection law requires compliance with a number of rules, which are set out in Article 5 of the 
+GDPR. This article will provide an introduction to each of the rules, known as ‘Principles’.  
+The key thing to understand about the Principles is that, unless a relevant exemption applies, all of 
+the Principles should be observed in relation to all aspects of personal data processing. In other 
+words, complying with some, or even most, of the Principles is never sufficient. For example, an 
+organization will breach data protection law where it:  
+• 
+stores inaccurate data on a person, even where the information was obtained after a 
+transparency notice had been properly made available;  
+ 
+• 
+keeps data on a person longer than is necessary for the purpose for which those data were 
+acquired, even where the organization’s records meet excellent security standards; or  
+ 
+• 
+collects too much data for the stated purpose, even where it has the consent of the relevant 
+individual to the collection.  
+The importance of the Principles is underlined by the extent of the powers of national data 
+protection regulators in relation to their breach, including powers of investigation and powers 
+relating to issuing significant fines. Further, an individual may bring an action against a controller 
+where he or she suffers damage as a result of a breach by the controller of one or more of the 
+Principles.  
+The Data Protection Principles (GDPR, Article 5)  
+(1) 
+Personal data shall be processed lawfully, fairly and in a transparent manner in relation to the 
+data subject (‘lawfulness, fairness and transparency’)  
+(2) 
+Personal data shall be collected only for specified, explicit and legitimate purposes, and not 
+further processed in a manner that is incompatible with those purposes (‘purpose limitation’)  
+(3) 
+Personal data shall be adequate, relevant and limited to what is necessary in relation to the 
+purposes for which they are processed (‘data minimization’)  
+(4) 
+Personal data processed shall be accurate and, where necessary, kept up to date (‘accuracy’)  
+(5) 
+Personal data shall be kept in a form which permits identification of data subjects for no 
+longer than is necessary for the purposes for which the personal data are processed (‘storage 
+limitation’) 
+(6) 
+Personal data shall be processed in a manner that ensures appropriate security of the 
+personal data, including protection against unauthorised or unlawful processing and against 
+accidental loss, destruction or damage, using appropriate technical or organisational measures 
+Lawfulness, Fairness, and Transparency  
+Due to the wide definition of processing, the First Principle has a particularly extensive application to 
+all usages of personal data. The First Principle can be divided into three obligations:  
+(1) 
+to process personal data lawfully;  
+(2) 
+to process such data fairly;
+
+--- Página 4 ---
+Data Protection Principles                        © NT Business Consulting & Training 
+Page | 4 
+(3) 
+to process personal data transparently.  
+As far as ‘lawful’ processing is concerned, all personal data processing (unless a relevant exemption 
+applies) will be unlawful unless one of the conditions in Article 6 of the GDPR is met. The set of 
+conditions in Article 6 can therefore be seen as a ‘threshold’ or minimum standard for the processing 
+of personal data.  
+Article 9 requires that where the personal data being processed fall within certain special categories 
+or types (e.g., data relating to health, religious beliefs, ethnic origin, political opinions, or 
+membership of a trade union), processing will not be lawful unless one of a further set of conditions 
+is met. It should be noted that the requirement for an Article 9 condition is in addition to the 
+requirement for an Article 6 condition where an organization is processing special category personal 
+data.  
+Compliance with Article 6 (and, where relevant, Article 9) is not sufficient to comply with the First 
+Principle in its entirety, because such processing must also be ‘fair’. Furthermore, the processing 
+must be transparent. This means that the data subject must be provided with certain information at 
+the point of data collection.  
+Purpose Limitation  
+The purpose limitation Principle requires that data shall be collected only for specified, explicit, and 
+legitimate purposes, and not processed in any manner that is incompatible with those purposes.  
+This Principle has two limbs. The first limb imposes an obligation on the controller to make known 
+(‘specify’) the purposes for which the data are required. Further, such notice must be explicit and 
+the purposes of the processing must be legitimate.   
+The second limb requires that personal data must not be processed in a manner incompatible with 
+the purpose(s) for which they were obtained. Since a different purpose would not necessarily be an 
+incompatible purpose, this Principle does not itself necessarily proscribe processing for a purpose 
+other than those that have been specified. In determining whether the manner of processing is 
+compatible with the specified purpose(s), one of the factors that the 1998 Act obliged controllers to 
+bear in mind was the purpose or purposes for which the personal data were intended to be 
+processed by any third party to whom the data were to be disclosed. Controllers could therefore 
+consider requiring organizations (other than their processors) to which they disclose personal data 
+to use those data only within the remit of the purposes for which the controller obtained the 
+information. In April 2013, an Opinion of the Article 29 Working Party (WP 203—see 
+<http:/www.dpdocuments.com>) set out extensive guidance for controllers on the substantially 
+similar principle in the Directive. The Opinion stated that all relevant circumstances must be taken 
+into account when making an assessment of whether further processing is compatible with the 
+original purpose. In particular, the following key factors should be considered: 
+• 
+the relationship between the purposes for which the personal data have been collected and 
+the purposes of further processing;  
+ 
+• 
+the context in which the personal data have been collected and the reasonable expectations 
+of the data subjects as to their further use;  
+ 
+• 
+the nature of the personal data and the impact of the further processing on the data subjects;
+
+--- Página 5 ---
+Data Protection Principles                        © NT Business Consulting & Training 
+Page | 5 
+• 
+the safeguards adopted by the controller to ensure fair processing and to prevent any undue 
+impact on the data subjects. 
+For further comment on the Working Party’s Opinion, see Treacy B and Bapat A, ‘Purpose 
+Limitation—Clarity at Last’, Privacy & Data Protection, Volume 13, Issue 6 
+(<http://www.pdpjournal.com>).  
+The GDPR makes reference to certain types of processing that will not be regarded as being 
+incompatible for the purposes of this Principle. These purposes are: archiving in the public interest, 
+scientific or historical research purposes, and statistical purposes.  
+Example of the purpose limitation  
+Principle XYZ Water plc, a UK water utility company, maintains a database of its customers. David, 
+who moves into XYZ’s area of operation is added to the database at the point he registers with XYZ 
+for water services. The data protection notice provided to David states that personal data will be 
+collected and used for all purposes associated with the provision of water and water-related 
+products and services. Several months later, XYZ sells David’s details to Mainstream Mobiles (MM) 
+so that MM can send David marketing materials on its mobile telephone services. By providing 
+David’s personal data to MM, XYZ is in breach of the Second Principle.  
+Data Minimization  
+In order to comply with the data minimization Principle, organizations are required to ensure that 
+their processing of personal data is adequate, relevant, and limited to what is necessary in relation 
+to the purposes for which they are processed.  
+This Principle essentially obliges controllers to obtain and use only those pieces of information that 
+are necessary for the controller’s purpose(s) for processing such information. In practice, 
+organizations are more likely to breach the ‘relevant’ and ‘limited to what is necessary’ aspects of 
+this Principle than they are the ‘adequacy’ aspect, since organizations tend to collect too much 
+information on people rather than too little.  
+Just like in the GDPR, the data minimization principle in the previous Directive required personal 
+data processing to be ‘adequate’ and ‘relevant’. But instead of requiring the processing to be 
+‘limited’ to what is necessary, it outlawed ‘excessive’ processing. The difference between these two 
+concepts is the subject of some debate, but it seems likely that the former is somewhat narrower 
+than the latter. Organizations will need to review their processing operations to ensure that their 
+processing is limited to what’s needed, rather than not being excessive. 
+Determining whether an organization is in compliance with the data minimization principle consists 
+of two key steps. The first step is to ascertain the relevant purpose or purposes for processing. For 
+example, the purpose of collecting information in an ‘application for employment’ form is to make a 
+decision about whether the job applicant is suitable to be short-listed or interviewed for the 
+position. The purposes of collecting information from a customer who is purchasing an item online 
+may be to take payment, to deliver the item, and to send future marketing communications. Once 
+the purposes have become clear (remember to document the purposes in a suitable statement), 
+then the second step is to consider whether each proposed processing activity is actually needed in 
+order to achieve the purpose(s). Organizations will breach the principle where they collect or use 
+any personal data that are not needed for the specified purpose(s).
+
+--- Página 6 ---
+Data Protection Principles                        © NT Business Consulting & Training 
+Page | 6 
+To achieve compliance with the Principle, controllers should initially review all aspects of data 
+collection—such as employment application forms, customer details forms, call centre forms, and 
+website and app registration forms—to ensure that information requested from individuals is 
+adequate, relevant, and limited to what’s needed for the purpose(s). The time of collection is an 
+important one, because organizations cannot process what they don’t have—limit the data 
+collected, and you limit the circumstances where the data minimization principle can be 
+subsequently breached.  
+However, the Principle does not only apply to data collection—it applies to all types of data 
+processing. It is quite possible that data initially collected lawfully under the Principle can 
+subsequently be processed unlawfully. The next step will therefore be to ensure that all processing 
+(e.g. standard data usage operations within the organization) meets the requirements of the 
+Principle.  
+Another example of where the Principle might be breached in circumstances other than where data 
+are being collected is where the controller is making a determination as to which members of staff 
+should have access to personal data. In making this determination, regard should be had to whether 
+particular staff members need such access in order to carry out their functions. It would, for 
+example, be ‘more than necessary’ for the entirety of an employee’s personnel record (including 
+information on qualifications, past employment, and sickness) to be made available to all staff 
+members within the organization.  
+Example of the data minimization Principle  
+XYZ Recruiting Ltd requires job applicants to state their driving licence number on its standard client 
+details form. James, who wishes to apply for a job that does not involve driving, fills in the form 
+including details of his driving licence. In processing details of James’ driving licence, XYZ Recruiting 
+Ltd will breach the data minimization Principle. It should be noted that it is not possible for an 
+individual to consent to processing more of his or her personal data than is needed for the 
+purpose(s). Thus, it will be no defence for a controller to say that the data subject voluntarily 
+submitted information in response to a ‘non-compulsory’ question (often marked by the use of, or 
+absence of, an asterisk) in an online or offline application form.  
+In summary, this Principle requires ‘data minimization’—only those personal data that are necessary 
+to achieve the purpose(s) of processing should be collected, stored, and used by controllers. The 
+holding of any additional personal data on individuals is unlawful.  
+Data Accuracy 
+The data accuracy Principle is relatively self-explanatory, and is substantially similar to the 
+equivalent provision in the previous Directive. It provides that ‘personal data must be accurate and, 
+where necessary, kept up to date’.  
+Although the requirement to keep information up to date applies only where ‘necessary’, there is no 
+such qualification to the requirement of accuracy. Thus, the requirement to ensure that personal 
+data are accurate is an absolute one. There is no definition of ‘accurate’ in the GDPR, but Section 
+70(2) of the 1998 Act gave a helpful definition of ‘inaccurate’:  
+For the purposes of this Act data are inaccurate if they are incorrect or misleading as to any matter of 
+fact.
+
+--- Página 7 ---
+Data Protection Principles                        © NT Business Consulting & Training 
+Page | 7 
+The presence of the word ‘fact’ in that provision would seem to indicate that an expression of 
+opinion could not breach the data accuracy Principle, no matter how unreasonable or ridiculous the 
+opinion.  
+It should be remembered that the obligation to ensure that personal data processed by the 
+controller are accurate and up to date is an obligation on the controller, and cannot be delegated. 
+Thus, a statement given at the commencement of processing by controllers to data subjects, to the 
+effect that data subjects must inform the controller of any subsequent change to the data, is unlikely 
+to be enough, on its own, to satisfy the Principle. On the other hand, it would be unreasonable to 
+interpret the Principle as requiring controllers to investigate data subjects’ circumstances intrusively 
+to check for data accuracy. In some cases, compliance with the Principle can be achieved by 
+providing a method for data subjects to check and amend data held by the controller—this may be 
+done, for example, by the provision of an annual statement to customers, setting out the 
+information held (or providing a method for checking data, such as secure online access to customer 
+details on a website) and requesting updates, as relevant.  
+In November 2012, Prudential was served by the Information Commissioner’s Office with a 
+monetary penalty of £50,000 when one customer received tens of thousands of pounds into his 
+retirement fund in error—the money should have been paid into the retirement fund of a different 
+customer, who had the same first name, last name, and date of birth. The two accounts had been 
+mistakenly merged some years earlier and, despite being alerted to the error by one of the 
+customers, the controller had failed to adequately investigate the issue.  
+Where the controller finds that it is in fact processing inaccurate data, the GDPR requires that every 
+reasonable step must be taken to ensure that such inaccurate data, having regard to the purposes 
+for which they are processed, are erased or rectified without delay. This provision goes beyond that 
+which was required under the previous legislation, and requires organizations to manage their data 
+assets more proactively.  
+The steps that are necessary to keep personal data up to date will depend on the type of data being 
+processed and the purpose for its processing. Data kept in a record of a board meeting, for example, 
+will not need to be updated where they consist of an accurate record of that meeting. Data kept, on 
+the other hand, for determining a person’s creditworthiness from time to time are likely to require 
+regular updating amendments.  
+The obligations on controllers under the Principle dovetail with the right of individuals to have their 
+personal data rectified or erased. 
+Storage Limitation 
+The storage limitation Principle provides that personal data shall not be kept for longer than is 
+necessary for the purposes of processing. The basic objective of this Principle is that organizations do 
+not retain obsolete data, and its wording is substantially similar to that contained in the previous 
+Directive.  
+One difference between the old law and the GDPR is that pseudonymization is now permitted as a 
+method of complying with this Principle.  
+In general terms, the storage limitation Principle requires the deletion, destruction, anonymization, 
+or pseudonymization of personal data that are no longer needed for their purpose(s). There are no 
+interpretative provisions in the GDPR that relate to this Principle per se, and there are no set periods 
+of time to which controllers must adhere. Thus, controllers will usually be required to make their
+
+--- Página 8 ---
+Data Protection Principles                        © NT Business Consulting & Training 
+Page | 8 
+own determinations as to an appropriate retention period having regard to the purposes for which 
+data were collected, and the information conveyed in the notice made available to data subjects.  
+Since this Principle concerns data storage and access, those responsible for data protection within an 
+organization may consider it appropriate to gain at least rudimentary knowledge and skills in the 
+field of records management. In any event, data retention is a necessary part of the overall records 
+management strategy of an organization.  
+As a first step to complying with the Principle, controllers should undertake an analysis of all 
+personal data processed, as well as the purpose(s) of such processing. Then it will be necessary to 
+consider, in relation to each aspect of personal data processing, for how long those data will need to 
+be kept for the relevant purpose(s). A useful methodology for compliance (and to demonstrate, or 
+be accountable for, such compliance) is to draw up a ‘data retention policy’ or ‘retention schedule’ 
+that sets out the relevant periods of time for which data in relevant categories may be held.  
+Where controllers are under a legal obligation (e.g., as a result of national law) to retain data on 
+individuals for a certain specified period, the relevant data retention periods should be no shorter 
+than that specified period. Similarly, personal data should be kept for at least the length of time 
+equivalent to any relevant statutory limitation period for the purposes of litigation—thus accident-
+at-work records should be kept for at least three years following the date of the incident (the 
+statutory limitation period in the UK for bringing personal injury claims is three years) and interview 
+records (where the person has not been given the job) should be kept for at least three months (the 
+period of time within which a person can bring a claim for discrimination in the UK). Specific industry 
+sector rules or codes should also be considered, although it must be borne in mind that the legal 
+requirement in data protection law to delete personal data that are no longer needed by the 
+controller will override any conflicting non-statutory retention preferences.  
+A significant factor in determining a retention period for each type of personal data held is the 
+purpose(s) for which the information was collected. This may necessitate a lengthy retention period 
+(e.g., the home address of an employee will need to be retained for at least the duration of the 
+person’s employment), or a very short period (a document that is used solely to check a person’s 
+identity—for example, when an organization needs to confirm a person is indeed who they say they 
+are before carrying out a particular function—must be destroyed as soon as the identity has been 
+ascertained).  
+In some cases, there will be more than one purpose for holding information. In this situation, it is 
+appropriate and acceptable to retain the information until all of the purposes have been satisfied. In 
+the example of the identity check, where the document required is a copy of a driving licence, and 
+the person is engaged as a driver, then retaining the personal data contained in the licence may be 
+required for the duration of the person’s employment.  
+The storage limitation Principle will not allow information to be held indefinitely or speculatively. 
+The latter refers to the situation where a controller contends that it ‘might need’ the information in 
+the future for some currently unascertained purpose. Further, guidance from the Information 
+Commissioner states that personal data should not be kept ‘just in case’ it is needed if there is only a 
+‘small possibility’ that it will be used.  
+In the circumstances where a person has indicated that he or she no longer wishes to receive 
+marketing materials, the controller should retain enough information (‘suppression data’) on the 
+person to allow compliance with the request.
+
+--- Página 9 ---
+Data Protection Principles                        © NT Business Consulting & Training 
+Page | 9 
+Upon the expiry of any retention period, the relevant personal data should be deleted, or destroyed. 
+Anonymization, and in some cases pseudonymization, will be acceptable, although care should be 
+taken to ensure that the data are successfully anonymized (see Graham N and Crowley S, 
+‘Anonymisation and Pseudo-anonymisation of Personal Data’, Privacy & Data Protection, Volume 10, 
+Issue 2—<http://www.pdpjournal.com>). Since deletion, destruction, anonymization, and 
+pseudonymization are all aspects of ‘processing’, those activities must comply with data protection 
+legal requirements. Of particular relevance is the need for security in personal data processing.  
+Integrity, Confidentiality, and Security  
+The ‘integrity and confidentiality’ Principle requires that personal data be processed in a manner 
+that ensures appropriate security of the personal data, including protection against unauthorized or 
+unlawful processing and against accidental loss, destruction, or damage, using appropriate technical 
+and organizational measures. Although the basic legislative provision is contained in Article 5 of the 
+GDPR, this should be read in conjunction with Article 32, which provides further provisions on data 
+security requirements. 
+This Principle is substantially similar to that contained in the previous Directive. However, the 
+consequences of a ‘personal data breach’ are considerably more significant and require greater work 
+on the part of the controller (and processor) than in the previous legislation. In particular, in the case 
+of serious breaches, organizations are required to inform both the relevant national regulator and all 
+persons potentially affected. See Chapter 5 for a detailed discussion on the GDPR’s requirements in 
+relation to ‘breach notifications’. The aim of the legislative provisions on data security is to ensure 
+that appropriate care is taken of personal data, and that the attention of controllers and processors 
+is focussed on this objective (with significant adverse consequences if they do not).  
+Where the controller proposes to engage a processor to carry out data processing operations on its 
+behalf, it must ensure that the processor provides sufficient guarantees to implement appropriate 
+technical and organizational measures so that the processing meets the requirements of the 
+Regulation.  
+Exemptions 
+There are a number of exemptions from the application of the data protection Principles to 
+particular types of processing. Some exemptions relate to certain individual Principles and some to 
+only certain aspects of one or more of the Principles.  
+Accountability  
+Article 5(2) of the GDPR expressly provides that controllers (note, not processors) are responsible 
+for, and must be able to demonstrate compliance with, the six Principles contained in that Article. 
+This requirement, known as ‘accountability’, is a new one to data protection law, introduced by the 
+GDPR.  
+In addition, Chapter IV of the GDPR imposes duties of responsibility and accountability on 
+controllers. For example, controllers must adopt policies and implement appropriate measures to 
+ensure and demonstrate that the processing of personal data complies with the GDPR. The 
+measures to be implemented are the criteria against which the accountability of the controller will 
+be assessed. Controllers are required to maintain necessary documentation of all processing 
+operations, implement appropriate security measures, perform Data Protection Impact
+
+--- Página 10 ---
+Data Protection Principles                        © NT Business Consulting & Training 
+Page | 10 
+Assessments, comply with requirements for prior notification or approval from the relevant 
+supervisory authority, and designate a Data Protection Officer (‘DPO’), if required.  
+Data Protection by Design and by Default  
+Article 25 of the GDPR requires controllers to implement appropriate technical and organizational 
+measures:  
+• 
+which are designed to implement the data protection Principles; and  
+ 
+• 
+for ensuring that, by default, only the minimum quantity of personal data are processed for each 
+purpose.  
+Processors  
+Processors’ responsibilities have been significantly expanded when compared with the previous 
+Directive.  
+The GDPR requires controllers to ‘choose a processor providing sufficient guarantees of security’. It 
+also imposes an obligation on both parties to enter into a contract governing the obligations of the 
+parties. Both parties also have direct obligations for implementing appropriate technical and 
+organizational measures.  
+Processors must document the processing operations for which they are responsible, and must (as 
+well as the controller) cooperate with supervisory authorities, including by providing information 
+and granting access to the processor’s premises and processing equipment.  
+Processors may be ordered by the supervisory authority to comply with data subjects’ requests to 
+exercise their rights, even though the primary responsibility for such compliance rests with the 
+controller.  
+The security obligations and the requirements concerning the appointment of a qualified Data 
+Protection Officer apply directly to processors.  
+Most significantly, the supervisory authority’s powers extend to processors, including the ability to 
+impose monetary penalties. These provisions significantly affect the risk profile for processors, and 
+will likely require amendments to existing services agreements.
+

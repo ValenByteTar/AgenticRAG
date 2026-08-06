@@ -1,0 +1,240 @@
+=== InstructivoEolico.pdf ===
+
+--- Página 1 ---
+Energia del viento 
+Intuitivamente se puede decir que la energia que contiene el viento depende no solo de su 
+velocidad sino de su densidad.  Ahora queda por resolver como calcular esta magnitud fisica 
+incluyendo estas dos variables.  A continuacion, su desarrollo. 
+La energia cinetica del viento puede expresarse como 𝐸௖=
+ଵ
+ଶ𝑚𝑉ଶ; con m la masa del aire
+y V su velocidad.  Por otro lado, sabemos que el flujo masico o caudal masico esta dado por la 
+relacion 𝑚 =
+௠
+௧= 𝜌𝐴𝑉; en donde ρ es la densidad del aire, A el area de una seccion transversal
+al flujo del aire y t el tiempo.  Si la energia cinetica la expresamos en forma de potencia, es decir 
+𝑃 = 
+ா೎
+௧, podemos combinar las dos ecuaciones anteriores para obtener la potencia del viento para
+una seccion dada cualquiera como: 
+𝑃= 1
+2  𝜌𝐴𝑉ଷ 
+Utilicemos ahora la siguiente analogia de un tubo de corriente propuesta por el cientifico 
+aleman Albert Betz (1885-1968) en 1920, a traves de su obra “Utilizacion maxima teorica posible 
+del viento en aerogeneradores” (en lengua original: ‘Das Maximum der theoretisch moglichen 
+Ausnutzung des Windes durch Windmotoren’): 
+Tubo de corriente de Betz. 
+Supongase que el flujo de viento1, representado por el tubo de corriente, proviene desde 
+la izquierda y que la turbina se representa mediante un disco imaginario que produce un salto de 
+presiones a traves del plano de la turbina.  El disco tiene un area A y la velocidad del viento es V.  
+El flujo viento tiene una velocidad de entrada V1 y una velocidad de salida V2.  La presion sube 
+hasta inmediatamente antes del disco a pb y decae hasta pa inmediatamente despues.  La presion 
+del flujo de entrada y salida son iguales, una vez pasado el disco el flujo tiende a recuperarse, una 
+1 Demostracion tomada y adaptada del texto ‘Mecanica de Fluidos’, Frank M. White, McGraw Hill, 2003
+
+--- Página 2 ---
+vez superada la estela.  Para mantener la turbina quieta mientras se extrae la energia del viento 
+debe actuar una fuerza F dirigida hacia la izquierda sobre su soporte. 
+Si se aplica la ecuacion cantidad de movimiento horizontal entre las secciones 1 y 2: 
+෍𝐹௫= −𝐹= 𝑚 (𝑉ଶ−𝑉ଵ) 
+Donde m es el flujo masico o gasto masico del aire (la variacion de masa por unidad de 
+tiempo). Si se aplica el mismo concepto para un volumen de control justo antes y despues del 
+disco se obtiene: 
+෍𝐹௫= −𝐹+ (𝑝௕−𝑝௔)𝐴= 𝑚 (𝑉௔−𝑉௕) = 0 
+Igualando las dos ecuaciones: 
+𝐹= (𝑝௔−𝑝௕)𝐴= 𝑚 (𝑉ଵ−𝑉ଶ) 
+Aplicando la ecuacion de Bernoulli entre los puntos de entrada (1) e inicio del disco (b), 
+y entre el punto de salida del disco (a) y la salida del tubo (2) se tiene: 
+𝑝ஶ+ 1
+2 𝜌𝑉ଵ
+ଶ= 𝑝௕+ 1
+2 𝜌𝑉ଶ 
+𝑝௔+ 1
+2 𝜌𝑉ଶ= 𝑝ஶ+ 1
+2 𝜌𝑉ଶ
+ଶ 
+La resolucion simultanea de estas ecuaciones, aplicando el producto de dos binomios 
+conjugados y sabiendo que la definicion de flujo masico es: 
+𝑚 = 𝜌𝐴𝑉 
+Nos produce: 
+𝑉= 1
+2 (𝑉ଵ+ 𝑉ଶ) 
+Resolviendo en conjunto la ecuacion de la fuerza en la turbina F descrita antes y esta 
+ecuacion de la velocidad en la turbina (promedio de la velocidad de entrada y salida), se puede 
+hallar la potencia extraida en el disco ideal (turbina): 
+𝑃= 𝐹𝑉 
+𝑃= 𝑚 (𝑉ଵ−𝑉ଶ) ൤1
+2 (𝑉ଵ+ 𝑉ଶ)൨ 
+𝑃= [𝜌𝐴𝑉(𝑉ଵ−𝑉ଶ)] ൤1
+2 (𝑉ଵ+ 𝑉ଶ)൨= ൤𝜌𝐴1
+2 (𝑉ଵ+ 𝑉ଶ)(𝑉ଵ−𝑉ଶ)൨൤1
+2 (𝑉ଵ+ 𝑉ଶ)൨ 
+𝑃= 1
+4 𝜌𝐴(𝑉ଵ+ 𝑉ଶ)൫𝑉ଵ
+ଶ−𝑉ଶ
+ଶ൯
+
+--- Página 3 ---
+Para facilitar el analisis posterior se hace un cambio de variable definiendo 𝑏=
+௏మ
+௏భ, de tal 
+manera que se elimina la variable V2 (a b se le llama tambien coeficiente de velocidad inducida o 
+parametro de interferencia); lo que deja la ecuacion anterior en la forma: 
+𝑃= 1
+4 𝜌𝐴(𝑉ଵ+ 𝑏𝑉ଵ)൫𝑉ଵ
+ଶ−𝑏ଶ𝑉ଵ
+ଶ൯ 
+𝑃= 1
+4 𝜌𝐴𝑉ଵ
+ଷ(1 + 𝑏)(1 −𝑏ଶ) 
+Si aplicamos a esta ecuacion el teorema de la primera derivada para hallar los extremos 
+relativos, podremos obtener el valor maximo de potencia teorico. Aplicando la derivada con 
+respecto a la variable b, considerando el area un valor contante e igualando a cero: 
+𝑑𝑃
+𝑑𝑏= 1
+4 𝜌𝐴𝑉ଵ
+ଷ(1 −2𝑏−3𝑏ଶ) = 0 
+La formula cuadratica para resolver la ecuacion de segundo grado nos da dos valores para 
+b: -1 y 1/3.  El valor fisico procedente es b = 1/3; por tanto, la relacion entre V1 y V2 queda como: 
+𝑉ଶ= 1
+3 𝑉ଵ 
+Reemplazando este valor en la ecuacion previa de la potencia, resolviendo para V1 se 
+obtiene que la maxima potencia se da cuando: 
+𝑃௠a௫= 1
+4 𝜌𝐴൬𝑉ଵ+ 1
+3 𝑉ଵ൰൬𝑉ଵ
+ଶ−1
+9 𝑉ଵ
+ଶ൰ 
+𝑃௠a௫= 8
+27 𝜌𝐴𝑉ଵ
+ଷ 
+Hasta ahora se ha supuesto que el flujo era ideal y que la turbina es ideal, sin embargo, 
+en realidad esto no es asi.  En el caso de la turbina el rozamiento entre esta y el viento hara que 
+existan unas perdidas.  Tambien es intuitivo pensar que cuando el aire pasa a traves de una turbina, 
+este sigue teniendo movimiento, una velocidad, aunque menor a la inicial.  Si la maquina tomara 
+toda la energia del aire, el aire aguas abajo de la maquina tendria velocidad cero.  A partir de este 
+hecho (el que existiran perdidas por friccion en el disco o turbina) se define un rendimiento del 
+rotor: el coeficiente de potencia, que consiste en la relacion entre la potencia de la turbina y la 
+potencia disponible del viento: 
+𝐶௣=
+𝑃𝑜𝑡𝑒𝑛𝑐𝑖𝑎 𝑡𝑢𝑟𝑏𝑖𝑛𝑎
+𝑃𝑜𝑡𝑒𝑛𝑐𝑖𝑎 𝑑𝑒𝑙 𝑣𝑖𝑒𝑛𝑡𝑜=
+𝑃
+1
+2 𝜌𝐴𝑉ଵ
+ଷ
+Observese que a la generalizacion inicial de la potencia del viento simplemente se le ha 
+aplicado la referencia de posicion en el punto inicial 1.  Usando dentro de esta formula la potencia 
+maxima que acabamos de ver, obtendremos el maximo coeficiente de potencia teorico: 
+𝐶௣=
+8
+27 𝜌𝐴𝑉ଵ
+ଷ
+1
+2 𝜌𝐴𝑉ଵ
+ଷ= 16
+27 ≈0,5926
+
+--- Página 4 ---
+Este valor seria el limite maximo teorico de energia del viento que se podria obtener a 
+traves de una turbina eolica.  Este limite te conoce como numero o limite de Betz.  Esta eficiencia 
+se atiene solamente al rendimiento mecanico de la turbina.  Tengase en cuenta que habra otros 
+rendimientos posteriores que analizar: rendimiento de la helice, del multiplicador de velocidades, 
+del generador o alternador electrico, del transformador electrico, de la conduccion electrica, entre 
+los principales.  Usualmente el rendimiento global del sistema suele ser inferior al 48%. 
+Curva Cp versus coeficiente b.  Se observa el valor maximo de Betz. 
+Existen diversos trabajos de varios autores que sostienen que es posible superar el limite 
+de Betz, sugiriendo nuevas apreciaciones fisicas y/o consideraciones matematicas.  Se deja al 
+lector acucioso la revision de esta literatura.2 
+En el mundo tecnico y comercial existe un coeficiente que es de mayor utilidad a la hora 
+de definir las prestaciones de una turbina eolica.  Este valor se conoce como coeficiente de 
+empuje, y es un parametro que indica las caracteristicas de la estela que el aerogenerador produce. 
+El coeficiente de empuje, denominado CT, determina la capacidad de dispersion cuando el viento 
+atraviesa la turbina. A mayor velocidad del viento, la estela producida aguas debajo de la turbina 
+tiene menor dispersion.  A menor velocidad para la turbina es mas facil dispersar una estela. A 
+menor dispersion es mas facil para el flujo de aire recuperar la direccion y velocidad.  
+Matematicamente la expresion para el coeficiente de empuje es la siguiente: 
+2 Textos para consulta: 
+
+Is the Albert Betz Law Stating the Maximum Wind Turbine Efficiency of 16/27’s Accurate?, Robert
+W. Bass, 2007
+
+Aerodynamics of V/STOL Flight, Barnes W. McCormick, 1999
+
+Beating Betz – Energy Extraction Limits in a Uniform Flow Field, P. Jamieson
+
+On the Possibility to Overcome Betz Limit in Wind Power Extraction, Horia Nica, 2011
+
+--- Página 5 ---
+𝐶= 
+𝐹
+𝜋
+8 𝜌𝐷2𝑉2
+Donde V es la velocidad en el buje de la turbina y F la fuerza de empuje: 
+𝐹= 1
+2 𝜌𝜋𝐷ଶ
+4 𝑉ଵ
+ଶ4𝑏(1 −𝑏) 
+Por lo que el coeficiente de empuje en funcion del coeficiente de velocidad inducida 
+queda: 
+𝐶= 4𝑏(1 −𝑏) 
+Facilmente se puede deducir que cuando b = ½, CT alcanza un valor maximo de 1.  
+Valores b cercanos a ½ harian que V2 sea proxima a cero y el area A2 muy grande, lo cual es poco 
+probable lograr con un sistema real.  Incluso si b fuera menor a ½ la velocidad V2 se volveria 
+negativa, algo en realidad no posible con una turbina.  La proxima grafica muestra diferentes 
+valores de CT para aerogeneradores comerciales. 
+Coeficientes de empuje para diferentes modelos de aerogeneradores.  En el eje x se encuentran 
+valores de velocidad de viento y en el eje y valores de CT. Fuente: Fuhrlander. 
+Si queremos expresar la ecuacion de potencia del viento en funcion de la energia 
+tendremos que aumentar al tiempo como variable. Obtendremos asi la ecuacion clasica de la 
+energia eolica: 
+𝐸= 𝑃𝑡 
+𝑬= 𝟏
+𝟐𝝆𝑪𝒑𝑨𝑽𝟑𝒕
+
+--- Página 6 ---
+Si esta misma ecuacion la ponemos con el termino del area de barrido desarrollado, es 
+decir en funcion de un diametro D, tendremos: 
+𝑬= 𝝅
+𝟖𝝆𝑪𝒑𝑫𝟐𝑽𝟑𝒕 
+La conclusion mas importante que podemos obtener de esta formula es que la energia del 
+viento en cualquier sitio de interes depende de la densidad del aire, del area de barrido de las 
+aspas, por supuesto de la velocidad del viento, del diseno de la turbina y tambien de la cantidad 
+de horas que se produce el viento.  En otras palabras, un buen sitio eolico sera aquel que tenga 
+caracteristicas climaticas de alta humedad, este lo mas cerca posible al nivel del mar, de bajas 
+temperaturas promedio, con alta velocidad y duracion del viento.  En cuanto a la turbina, mientras 
+mayor sea el area de captacion (area de barrido), y mientras mejor sea el diseno aerodinamico de 
+la maquina (alto coeficiente de potencia), la turbina proporcionara mas energia.  Es claro que el 
+ser humano solo puede amoldarse a las condiciones climaticas de un sitio, ya que muy 
+dificilmente puede controlar factores climaticos u orograficos.  El viento se producira donde la 
+Naturaleza disponga.  Sin embargo, la descripcion anterior sirve como una guia de busqueda de 
+lugares propicios. 
+Las grandes dimensiones de las palas o aspas de los aerogeneradores se explican en la 
+formula anterior, lo que obliga a un logico incremento en la altura de la torre. (Vease figura 
+siguiente).  Notese que la busqueda de grandes alturas de torres no esta ligada exclusivamente al 
+diametro de las palas sino tambien a evitar los efectos de turbulencia y obstaculos del suelo. 
+Incremento de la potencia en una turbina en funcion del incremento en altura de la torre. 
+Otra conclusion para destacar es la gran sensibilidad de la energia a la velocidad.  Si la 
+densidad del aire, o el area de barrido, o la duracion en tiempo del viento de un sitio eolico se
+
+--- Página 7 ---
+incrementa en 10%, la energia a obtener tambien se incrementara en el mismo 10%.  Sin embargo, 
+si la velocidad del viento se incrementara un 10%, la energia se incrementara un 33,10%.  Si la 
+velocidad del viento se duplica, la energia se multiplica por un factor de ocho. 
+Este analisis tambien demuestra que, a mas de procurar realizar mediciones de gran 
+fiabilidad de temperatura, humedad relativa, presion atmosferica, direccion del viento, inclinacion 
+del flujo, es necesaria una mayor confiabilidad en la medicion de la velocidad del viento.  Un 
+error del 5% en la medida de la velocidad, puede repercutir en un error del 16% aprox. en la 
+cuantificacion de energia, sea en sentido hacia al alza o hacia la disminucion, segun el sentido del 
+error.   Una equivocacion de este tipo puede representar la incorrecta aceptacion de un proyecto 
+(o por el contrario su rechazo), normalmente valorada en funcion de su rentabilidad, la cual se
+fundamenta a su vez en la produccion anual de energia.
+El presente texto es un extracto del Capitulo VI, del libro: 
+Vaca Cordero, S., Jara Alvear J., 2015. 
+Energia Eolica en Ecuador. En: “Energias renovables en el Ecuador. Situacion actual, tendencias y perspectivas”, Editores: Pelaez 
+Samaniego, M.R. y Espinoza Abad, J.L. Universidad de Cuenca. Graficas Hernandez, Cuenca, Ecuador.
+Stalin Vaca Cordero es actualmente Representante Legal y Tecnico de la compania SISENER INGENIEROS S.L. en Ecuador. 
+Derechos de autor y propiedad intelectual de la Universidad de Cuenca, 
+Ecuador.
+

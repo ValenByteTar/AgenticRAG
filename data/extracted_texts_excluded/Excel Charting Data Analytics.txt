@@ -1,0 +1,1334 @@
+=== Excel Charting Data Analytics.pdf ===
+
+--- Página 1 ---
+Reproduced or adapted from original content provided under Creative Commons license by 
+The University of Queensland Library 
+ 
+  
+Microsoft Excel 
+Charting 
+ 
+ 
+Course objectives: 
+• 
+Distinguish between Charts and Graphs 
+• 
+Creating a basic chart and template 
+• 
+Format and configure chart output 
+• 
+Represent Time, Frequency and Proportions  
+• 
+Combining Charts 
+ 
+ 
+Student Training and Support 
+Phone: 
+(07) 334 64312 
+Email: 
+askus@library.uq.edu.au 
+Web: 
+https://web.library.uq.edu.au/library-services/training/ 
+ 
+Staff Training (Bookings) 
+Phone 
+(07) 3365 2666  
+Email 
+staffdev@uq.edu.au 
+Web 
+http://www.uq.edu.au/staffdevelopment 
+ 
+ 
+Staff may contact their trainer with enquiries and feedback related to training content. Please contact Staff Development for booking 
+enquiries or your local I.T. support for general technical enquiries.
+
+--- Página 2 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+2 of 34 
+Microsoft Excel 2016: Charting 
+ 
+Table of Contents  
+Getting Started with Excel Charts ........................................................................................................... 3 
+Exercise 1. 
+Create Basic Charts ............................................................................................. 3 
+Exercise 2. 
+Insert a chart from selected data .......................................................................... 4 
+Exercise 3. 
+Switch data ........................................................................................................... 5 
+Exercise 4. 
+Change Data in Cells ........................................................................................... 5 
+Chart Tools ............................................................................................................................................. 5 
+Exercise 5. 
+Apply a predefined chart layout ............................................................................ 5 
+Exercise 6. 
+Change Chart Elements ....................................................................................... 6 
+Exercise 7. 
+Save as a template ............................................................................................... 7 
+Exercise 8. 
+Apply a template ................................................................................................... 8 
+Exercise 9. 
+Create a Pie Chart ................................................................................................ 8 
+Exercise 10. Move a chart ....................................................................................................... 12 
+Different Chart Types ............................................................................................................................ 13 
+Exercise 11. Create a Line Chart ............................................................................................ 13 
+Exercise 12. Scatter Chart ...................................................................................................... 14 
+Exercise 13. Combine Scatter charts ...................................................................................... 17 
+Exercise 14. Scatter chart with time ........................................................................................ 18 
+Exercise 15. Combination Chart ............................................................................................. 19 
+Exercise 16. Add a secondary axis ......................................................................................... 20 
+Exercise 17. Empty cells and hidden cells .............................................................................. 21 
+Exercise 18. Use images in charts .......................................................................................... 23 
+Exercise 19. Creating a histogram .......................................................................................... 25 
+Exercise 20. Graphing Quadratic Equations ........................................................................... 26 
+Specialised Charts ................................................................................................................................ 28 
+Exercise 21. Gantt Chart ......................................................................................................... 28 
+Exercise 22. Tornado/Butterfly Chart ...................................................................................... 30 
+Exercise 23. New Chart Templates ......................................................................................... 32 
+Exercise 24. Box and Whisker Chart ...................................................................................... 33 
+Charts in Other Applications ................................................................................................................. 34 
+Exercise 25. Charts in Word or Powerpoint ............................................................................ 34 
+ 
+ 
+ 
+ 
+ 
+Open Excel Chart Exercises file.This file can be found on the Library website
+
+--- Página 3 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 of 34 
+Microsoft Excel 2016: Charting 
+ 
+Getting Started with Excel Charts 
+The terms chart and graph are often used interchangeably but do have one significant difference 
+A chart is a graphic representation of data. 
+A graph is a diagram of a mathematical function, but can also be used 
+(loosely) about a diagram of statistical data.  
+ 
+ 
+1. Go to Basic Chart tab 
+2. Select any cell in the data 
+    
+3. Go to Insert tab 
+4. On the Insert tab, click Recommended Charts  
+ 
+5. Click on OK for the default chart  
+ 
+ 
+A chart will display on the worksheet.  However, this may not 
+chart the expected data.  It will chart all data including totals and 
+averages 
+ 
+ 
+1. Click on the chart on the worksheet 
+2. Click and Drag the handles to resize the chart
+
+--- Página 4 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4 of 34 
+Microsoft Excel 2016: Charting 
+ 
+3. Hover mouse on chart to change the pointer 
+4. Click and drag to reposition the chart on the 
+worksheet 
+ 
+ 
+1. Go to corner of highlighted area 
+2. Click and drag to exclude “Totals” cells 
+3. Click and drag to exclude “Average” cells 
+    
+ 
+ 
+1. Select cells to chart (A1:F6) 
+2. Press ALT + F1 
+A chart will automatically apear, with all the default settings 
+ 
+1. Press F11 
+A chart will automatically apear, with all the default settings, on a 
+new chart sheet
+
+--- Página 5 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5 of 34 
+Microsoft Excel 2016: Charting 
+ 
+ 
+There may be occasions when data may be more beneficial displayed in an alternative layout. This 
+is an option that should be attempted with all charts 
+1. Click on the chart 
+This should currently chart each loan type for each school 
+2. Click Switch Row/column on the Chart Tools, 
+Design tab 
+The chart will now reflect school loans for each loan type  Be 
+aware this will not be successful for all chart types 
+3. Click Switch Row/column on the Chart Tools, 
+Design tab to revert back 
+ 
+Charts will always be in sync with the data. 
+1. Change any cell value for loans 
+The charts will automatically update to reflect the change 
+Chart Tools 
+ 
+1. Select a chart on the worksheet 
+2. Click on Quick Layout on the Chart Design tab 
+3. Hover over a layout 
+A preview will show on the selected chart 
+4. Click any layout to apply changes 
+Chart elements are added, depending on the layout.  These will 
+need customised.
+
+--- Página 6 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+6 of 34 
+Microsoft Excel 2016: Charting 
+ 
+ 
+ 
+1. Click on the Chart Elements icon   
+2. Select the elements to include or exclude 
+ 
+Alternatively, Go to the Chart Design tab 
+3. Click the Add Chart Element button 
+4. Hover over the appropriate element: Axes Titles 
+5. Select any option to add or remove 
+6. Click on the Chart Elements icon  
+7. Click on the Legend arrow 
+8. Select Top to reposition the element 
+9. Click Chart Title marker 
+10. Select More Options… 
+This will display a formatting pane at the right of the screen 
+2. Click Chart Title element 
+3. Enter a title – Library Loans 
+Alternatively 
+4. Enter = 
+5. Click on cell A1 
+6. Press Enter
+
+--- Página 7 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+7 of 34 
+Microsoft Excel 2016: Charting 
+ 
+ 
+1. Click on the Chart Styles icon   
+2. Select a new style for the selected chart 
+3. Click on the Color tab 
+4. Select new chart theme colours 
+ 
+ 
+1. Double Click on the Chart edge 
+2. Select Gradient Fill to Format Chart Area 
+ 
+This will only apply to the selected chart.  To apply a colour 
+scheme to the whole worksheet theme colours have to be 
+selected. 
+ 
+1. Right click on the Chart  
+2. Select Save as Template… 
+3. Enter filename - NewColumnTemplate.crtx
+
+--- Página 8 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8 of 34 
+Microsoft Excel 2016: Charting 
+ 
+ 
+1. Select the data range (A1:B7) 
+2. Press Alt F1 
+3. Click Change Chart Type on the Chart Tools, 
+Design tab 
+4. Click on the All Charts tab 
+5. Click on the Templates folder 
+6. Select the NewColumnTemplate shown 
+7. Click on OK 
+ 
+ 
+ 
+Pie charts are best used to chart only one category or data series. 
+1. Go to the Pie Chart sheet  
+2. Select the data (A2:C7) 
+3. Click the Pie Chart icon on the Insert tab 
+4. Select 2-D Pie 
+The resulting chart will only display one data series - 
+undergraduates 
+5. Click the Switch Row/Column button  
+This will chart by year rather than by graduate
+
+--- Página 9 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+9 of 34 
+Microsoft Excel 2016: Charting 
+ 
+6. Click the Switch Row/Column button  
+7. Click the Change Chart type button 
+8. Select the doughnut chart 
+9. Apply a Quick Layout to add data labels  
+10. Click data labels in any data series 
+11. Click the Label options icon  
+12. Expand Label Options 
+13. Check the Value 
+14. Clear the Percentage  
+15. Click a data series 
+16. Click the Series options icon 
+17. Change the Doughnut hole size – 35% 
+18. Click the Select Data button on the Chart Tools, 
+Design tab 
+19. Click on the Postgraduates data series 
+20. Click the up arrow  
+21. Click on OK
+
+--- Página 10 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+10 of 34 
+Microsoft Excel 2016: Charting 
+ 
+ 
+This changes the order of the data series in the chart and makes the 
+repesentation of values more reliable 
+ 
+ 
+ 
+1. Select data range to chart (A2:B7) 
+2. On the Insert tab, click Recommended Charts  
+3. Select the sample Pie Chart 
+4. Click on OK 
+5. Click the Add Chart Element button 
+6. Hover over Data Labels 
+7. Select Data Callout 
+This displays the category and percentage to the chart
+
+--- Página 11 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+11 of 34 
+Microsoft Excel 2016: Charting 
+ 
+8. Double click on the chart 
+This will display a formatting pane at the right of the screen 
+9. Click on any data label 
+ 
+10. Click the Label Options icon  
+11.  Clear the Category Name 
+ 
+ 
+1. Select Data range to chart (C2:C7) 
+2. On the Insert tab, click Recommended Charts  
+3. Select the sample Pie Chart 
+4. Click on OK 
+The chart displayed does not have the correct legend 
+5. On the Chart Tools, Design tab, click Select Data  
+6. Click the Edit button 
+7. Select the range (A3:A7) 
+8. Click on OK
+
+--- Página 12 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+12 of 34 
+Microsoft Excel 2016: Charting 
+ 
+1. Select a single data point in the series (A wedge) 
+2. Go to the Format task pane 
+a. Rotate the chart using the “Angle of first slice” 
+b. Extract a data value using the “Point explosion” 
+ 
+3. Repeat the process to create a Totals chart 
+a. Select a data series 
+b. Insert a pie chart 
+c. Select Data to add the correct category range 
+d. Adjust the labels and formats to suit 
+ 
+1. Click on a chart 
+2. On the Chart Tools, Design tab, click Move 
+chart  
+3. Select the New Sheet option 
+4. Add a new name – Totals Chart 
+5. Click on OK 
+The totals chart will be placed on its own sheet
+
+--- Página 13 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+13 of 34 
+Microsoft Excel 2016: Charting 
+ 
+Different Chart Types 
+ 
+A line chart is most often used to visualise a change of data over a period of time. 
+ 
+1. Go to Line Chart sheet 
+2. Click in data 
+3. On the Insert tab, click Recommended Charts  
+4. Select the Line chart 
+5. Click on OK 
+6. Resize and Reposition, as necessary 
+    
+7. Double click on the data series 
+8. Click the Fill and Line icon  
+9. Click Marker  
+10. Expand Marker Options 
+11. Select Built-in: 
+a. Select a type 
+b. Set a size 
+ 
+1. Click the Chart Elements icon  
+2. Click arrow beside Error Bars 
+3. Select Standard Error 
+Error Bars will be added to data points on chart
+
+--- Página 14 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+14 of 34 
+Microsoft Excel 2016: Charting 
+ 
+4. Click the Chart Elements icon  
+5. Click arrow beside Error Bars 
+6. Select More Options… 
+7. Change error bar direction to Plus 
+8. Change Error amoount to Percentage 
+Adjust this % value as necessary 
+ 
+1. Click Add Chart Element 
+2. Hover over Lines 
+3. Select Drop Lines 
+4. Double click on the drop lines 
+5. Select a colour 
+ 
+Depending on the layout of the source data, a scatter chart should be created in a particular way to 
+ensure the results are correct.  The most reliable way in excel is to create a scatter chart from scratch.  
+Selecting data to insert a scatter chart may provide unreliable results.
+
+--- Página 15 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+15 of 34 
+Microsoft Excel 2016: Charting 
+ 
+1. Go to the Scatter Chart tab 
+2. Click into an empty cell 
+Ensure the empty cell is surrounded by blank cells.  Excel will chart 
+any connecting data 
+ 
+3. On the Insert tab, click on the Scatter chart  
+4. Select the Scatter chart 
+This will provide a blank chart canvas 
+5. Click the Select Data button 
+6. Click on Add 
+7. Add the Series details below 
+a. Series Name: 
+Click Sugar Content in Fruit cell 
+b. Series X Values:  
+Select Fibre % values - B3:B23  
+c. Series Y values:  
+Clear the cell content  
+Select Fructose % values - C3:C23 
+Do NOT include the column headings or the chart will be incorrect. 
+8. Click on OK 
+ 
+A scatter chart will display
+
+--- Página 16 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+16 of 34 
+Microsoft Excel 2016: Charting 
+ 
+ 
+Go to the Chart, Design tab 
+1. Click on Add Chart Element 
+2. Hover over Axis Title Click on Primary Horizontal 
+Repeat for Primary Vertical Axis Title 
+3. Click on the horizontal Axis Title object  (X-Axis) 
+4. Click in the Formula bar 
+5. Enter = 
+6. Click on the Fibre % cell B2 
+7. Press Enter 
+8. Repeat for the vertical Axis Title object, choose the 
+Fructose % cell C2 
+9. Press Enter 
+ 
+10. Click Chart Elements icon  
+11. Click data labels arrow 
+12. Select More options… 
+13. Click the Label Options icon  
+14. Expand Label Options 
+15. Clear Y value option 
+16. Check Value From Cells 
+ 
+17. Select the data range with fruit names – (A3:A23) 
+18. Click on OK 
+19. Change the label position to Below
+
+--- Página 17 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+17 of 34 
+Microsoft Excel 2016: Charting 
+ 
+ 
+1. Repeat the steps above to create a scatter chart for 
+Sugar Content in Vegetables 
+ 
+1. Select the Sugar Content in Fruit chart 
+2. Press CTRL D to duplicate 
+3. Click Chart Elements icon 
+4. Clear Data Labels 
+ 
+5. Click the Select Data button  
+6. Click the Add button 
+7. Complete the details below: 
+a. Series Name: 
+Click Sugar in Vegetables cell 
+b. Series X Values:  
+Select Fibre % values - F3:F23  
+c. Series Y values:  
+Clear the cell content  
+Select Fructose % values - G3:G23 
+Do NOT include the column headings or the chart will be incorrect. 
+8. Click on OK 
+9. Click on OK again
+
+--- Página 18 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+18 of 34 
+Microsoft Excel 2016: Charting 
+ 
+ 
+1. Go to the Scatter with time sheet 
+2. Click any cell in data 
+3. Click Scatter chart on Insert tab 
+4. Select the Scatter chart 
+The chart will be displayed. 
+5. Double click the horizontal axis (X Axis) 
+6. Change the Axis Options 
+a. Bounds Minimum = 15 
+ When Excel records times and dates it used the value one to refer to an entire day, and so times of days are 
+portions of one 
+7. Click the vertical axis (Y Axis) 
+8. Change the Axis Options to begin the time at 40 
+minutes 
+ 
+ 
+ 
+ 
+ 
+a. Change Bounds Minimum to 0.027778 
+ 
+9. Change the Axis Options to have 10 minute 
+intervals 
+ 
+ 
+ 
+ 
+ 
+a. Change the Units Major to 0.0069444 
+  
+In Excel 24 hours = 1, therefore  1 hour = 1/24 
+As we need to start at 40 mins we need 2/3 of 1 hour: 
+=(2/3)*(1/24) 
+0.027778 
+In Excel 24 hours = 1, therefore  1 hour = 1/24 
+We need 10 mins intervals so we need 1/6 of 1 hour: 
+=(1/6)*(1/24) 
+0.0069444
+
+--- Página 19 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+19 of 34 
+Microsoft Excel 2016: Charting 
+ 
+The Axes will change to display required settings 
+ 
+A combination chart is a chart that combines two or more chart types in a single chart.  We have 
+seen this already with the basic chart as a clustered column with the averages represented as a line. 
+However, there will be instances where not only will different charts will be required but different axis 
+scales too.    
+ 
+Go to the Combination Chart tab 
+ 
+1. Select the data range (A2:B7) 
+2. Press ALT F1 
+ 
+ 
+1. On the Chart Tools, Design tab, click Select Data  
+ 
+2. Click the Add button 
+ 
+3. Select Series Name (C2) 
+4. Clear Series Values field 
+5. Select (C3:C7) 
+6. Click on OK 
+7. Click on OK again
+
+--- Página 20 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+20 of 34 
+Microsoft Excel 2016: Charting 
+ 
+8. Click Edit under Horizontal axis 
+9. Select cells (A3:A7) 
+10. Click on OK 
+ 
+11. Click the new data series 
+12. Click the Change Chart Type button 
+13. Change the Graduates Employed series to a Line 
+Chart 
+14. Click on OK 
+Repeat Steps 1–6 for the Higher degrees (E2) & (E3:E7) 
+Repeat Steps 1–6 for the Unemployed (G2) & (G3:G7) 
+When adding subsequent data series they should be the same type 
+as the last one used, so new data added should automatically be line 
+charts 
+15. Click on OK 
+ 
+ 
+16. Double click a data series line 
+17. Click the Fill & line icon 
+18. Check Smoothed line 
+Repeat for other data series lines 
+ 
+ 
+A secondary axis works well in a chart that shows a combination of column and line charts. 
+1. Select the combo chart 
+2. Press CTRL D to duplicate 
+3. Apply  different chart colour 
+4. Resize and Reposition, as necessary 
+5. Click the Select Data button
+
+--- Página 21 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+21 of 34 
+Microsoft Excel 2016: Charting 
+ 
+ 
+6. Click on the Graduates Employed data series 
+7. Click Edit 
+8. Clear Series Values 
+9. Select percentages (D3:D7)  
+10. Click on OK 
+ 
+Repeat for Higher Degrees (F2:F7) & Unemployed 
+(H2:H7) 
+11. Click on OK 
+This will change the display of the chart 
+ 
+12. Click the Change Chart Type button 
+13. Check Secondary Axis boxes for line charts 
+14. Click on OK 
+The chart will adjust to display a new axis scale at the right side 
+ 
+ 
+The default setting in Excel charting is to remove any content in hidden cells and to show zero values 
+as gaps.  This can be changed to amend what the chart displays. 
+ 
+1. Select column C 
+2. Right click on the selected column 
+3. Select Hide
+
+--- Página 22 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+22 of 34 
+Microsoft Excel 2016: Charting 
+ 
+The chart will no longer display the hidden column 
+4. Click on the single axis chart 
+5. Click Select Data button on the Chart Tools, Design 
+tab 
+6. Click Hidden and Empty Cells 
+7. Check Show data in hidden rows and columns 
+8. Click on OK 
+This will display hidden data only for the selected chart 
+ 
+1. Right click beside Column C heading 
+2. Select Unhide 
+3. Delete cell content C6, E4 & G5 
+ 
+ 
+This will change the display of the chart to the default setting which 
+shows empty cells as gaps  
+4. Click on the single axis Chart 
+5. Click the Select Data button 
+6. Click Hidden and empty cells 
+7. Select Show empty cells as: Zero 
+8. Click on OK 
+9. Click on OK again 
+This will drop the line chart to zero for any empty cell in the data
+
+--- Página 23 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+23 of 34 
+Microsoft Excel 2016: Charting 
+ 
+10. Click the Select Data button 
+11. Click Hidden and empty cells 
+12. Select Show empty cells as: Connect data points 
+with line 
+This will connect point directing ignoring empty cells 
+13. Click on OK 
+14. Click on OK again 
+ 
+ 
+This will ignore empty cells and connect values before and after the 
+empty cell.  The problem with this is that empty cells will display an 
+“estimated” value based on other data. 
+15. Go to the data cells 
+16. Enter values 4273 in C6, 835 in E3 & 873 in G4  
+ 
+Go to the Picture Chart tab 
+1. Select the data range (A2:F2) 
+2. Press ALT F1 
+   
+ 
+3. Click the Select Data button 
+4. Click the Edit button under Horizontal Axis Labels 
+5. Select cells (B1:F1) 
+6. Click OK 
+This will add the years to the X-Axis 
+7. Click on OK again 
+ 
+8. Double click on the data series 
+9. Click the Fill and Line icon  
+10. Select Picture or Texture fill 
+This will fill the columns with the default fill
+
+--- Página 24 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+24 of 34 
+Microsoft Excel 2016: Charting 
+ 
+11. Click on a button to choose an image 
+12. Click the File… button 
+13. Locate and select an image file: currency.png 
+These are best kept as simple and small as possible 
+14.  Select the Stack option to adjust the image 
+ 
+The chart will display the image in the data series column 
+15. Click the Series Options icon  
+16. Change the Gap width to 100% 
+Repeat for 2 other faculties of your choice 
+17. Click on data series 
+18. Press CTRL C to copy 
+19. Click on Business, Economics and Law Chart  
+20. Repeat for another chart 
+21. Click Add Chart Element button 
+22. Click Legend 
+23. Select Bottom 
+The icons will be shown in the legend
+
+--- Página 25 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+25 of 34 
+Microsoft Excel 2016: Charting 
+ 
+Using Graphs 
+Graphs are only different from charts as they create a diagram of mathematical functions 
+Differences between Histograms and Bar Charts 
+There are three principle differences between histograms and bar charts:  
+1. Histograms are used to show distributions of variables while bar charts are used for 
+comparison of variables.  
+2. Histograms plot binned quantitative data while bar charts tend to plot categorical data.  
+3. Bars can be reordered in bar charts but not in histograms. 
+ 
+Histograms 
+A histogram is a graph used to display the frequency distribution of data in graphical form.  It is able 
+to show the proportion of data that fits into specific categories or bins. For example, we may want to 
+find out how many students are a particular age. 
+ 
+ 
+1. Select column B 
+2. Click the Statistic chart on the Insert tab 
+ 
+A histogram will display representing the number of students of 
+a particular age.  Resize and reposition as necessary
+
+--- Página 26 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+26 of 34 
+Microsoft Excel 2016: Charting 
+ 
+ 
+ 
+1. Double click the X Axis (horizontal) 
+2. Change the Number of Bins to 10 
+3. Press Enter 
+This will provide 10 columns(bins) in our histogram.  The X-Axis 
+distributions will change automatically to suit. 
+ 
+4. Change the Bin Width to 10 
+This means the distributions will be in 10 year groupings.  This 
+will also change the number of bins automatically 
+ 
+5. Change the underflow value to 20 
+This will be the starting age of the distributions.  This should be 
+higher than the minimum and will be the bin starting point 
+6. Change the overflow value to 60 
+This will be the last age of the distributions, which will be the bin 
+ending point 
+ 
+7. Add Data Labels to Outside End 
+ 
+ 
+ 
+ 
+Go to the worksheet “Quadratic Equations” 
+Solving the equation 3X2 +2X + 3 
+ 
+1. Go to cell B5  
+2. Enter =3*A5^2+2*A5+3
+
+--- Página 27 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+27 of 34 
+Microsoft Excel 2016: Charting 
+ 
+3. Autofill down to B17 
+ 
+1. Select data range (A5:B17) 
+2. Click Recommended Chart on the Insert tab 
+3. Select the Scatter chart 
+4. Click Chart Title element 
+5. Enter Equation 1 
+ 
+ 
+1. Click Insert tab 
+2. Select Text box  
+3. Enter equation:  3X2 + 2X + 3 
+4. Resize and reposition 
+ 
+ 
+5. Select data range (A21:B33) 
+6. Click Recommended Chart on the Insert tab 
+7. Select the Scatter chart 
+8. Click Chart Title element 
+9. Enter Equation 2 
+ 
+1. Click on Equation 1 Chart 
+2. Press CTRL D to copy 
+3. Click on the data series in Equation 2 Chart 
+4. Press CTRL C to copt data series 
+5. Click on New chart 
+6. Press CTRL V to paste data series 
+ 
+7. Click on Chart Tile element 
+8. Press = 
+9. Click on cell A1 
+10. Press Enter
+
+--- Página 28 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+28 of 34 
+Microsoft Excel 2016: Charting 
+ 
+Specialised Charts 
+Some charts need to display information for a certain purpose such a project timeframe.  Although 
+Excel may not appear to offer the required chart they can often be created as a variation of another 
+chart. 
+ 
+Gantt charts tend to be used to illustrate the timeline of a project.   
+ 
+ 
+The completion date will be calculated by the number of 
+workdays from the start date 
+1. Go to cell D2 
+2. Enter =WORKDAY(B2,C2) 
+This will provide the actual completion date not including 
+weekends 
+3. Autofill down to D7 
+ 
+ 
+4. Go to cell E2 
+5. Enter =D2-B2 
+This will calculate the actual number of days between the start 
+date and completion work date.   
+6. Autofill down to E7 
+ 
+ 
+A Gannt chart cannot be created from the displayed date 
+formats in column B 
+7. Select (B2:B7) 
+8. Change the number format to General
+
+--- Página 29 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+29 of 34 
+Microsoft Excel 2016: Charting 
+ 
+ 
+1. Select range (A1:B7) 
+2. Hold CTRL and select (E1:E7) 
+3. Click on Recommended Charts on the Insert tab 
+4. Select the Stacked Bar chart 
+ 
+5. Select (B2:B7) 
+6. Change number format to Short Date 
+ 
+ 
+1. Double click the Blue bars representing start date 
+2. Format the Data Series 
+a. Select No fill  
+b. Select No line  
+ 
+3. Click the Y-Axis 
+4. Click the Axis Options icon  
+5. Expand Axis Options 
+6. Select Categories in reverse order  
+ 
+ 
+1. Click the X axis (now at the top of the chart) 
+2. Change the Axis Options 
+3. Bounds Minimum = 1/6/18 
+ 
+4. Click on the data series 
+5. Click the Series option icon 
+6. Change the Gap Width to 25%
+
+--- Página 30 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+30 of 34 
+Microsoft Excel 2016: Charting 
+ 
+7. Click on the Chart Elements icon   
+8. Clear the Legend option 
+9. Check Data Labels 
+10. Click the task data series on the chart 
+11. Change the font colour to white 
+12. Click the extra data labels on the chart 
+13. Press delete 
+ 
+ 
+ 
+A Butterfly chart is a technique for comparing two data series side by side. Excel doesn’t provide 
+the option for a butterfly/tornado chart and it is created by adjusting a 100% stacked bar chart. 
+ 
+ 
+You need to have at least 5 columns of data to create the 
+tornado chart  
+1. Go to the Butterfly sheet 
+2. Go to cell B15 
+3. Enter the formula =1000-C15 
+4. Autofill down to B24 
+ 
+5. Go to cell F15 
+6. Enter the formula =1000-E15 
+7. Autofill down to cell F24 
+ 
+ 
+1. Select the data range (A14:F24) 
+2. Click on Recommended Charts on the Insert tab 
+3. Select Stacked Bar chart 
+4. Click on OK  
+5. Resize and reposition the chart as necessary 
+ 
+463
+342
+393
+163
+959
+625
+853
+837
+274
+147
+Business
+Economics
+Law
+Engineering
+Architecture
+HaBS
+HaSS
+Science
+Non-Faculty
+Medicine
+624
+396
+544
+295
+463
+773
+495
+591
+484
+412
+Poll Results
+
+--- Página 31 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+31 of 34 
+Microsoft Excel 2016: Charting 
+ 
+ 
+1. Double-Click on the first data series in the chart 
+2. Format Data Series 
+a. No fill 
+b. No line 
+3. Repeat for the last data series 
+4. Repeat for the Gap data series 
+5. Right click on the Gap data series 
+6. Select Add Data Labels 
+7. Right click on a gap data label 
+8. Select Format Data Labels… 
+9. Check Category Name 
+10. Clear Value 
+The category cannot fit into the gap width and will need adjustment 
+11. Go to cell D15 
+12. Change the data to 250 or 300 or 600 
+13. Autofill down to D24 
+ 
+14. Click on the Y Axis  
+15. Press delete 
+16. Repeat for the X Axis 
+17. Click on the NO data series  
+18. Click the Series Option icon  
+19. Reduce the Gap Width to 50%
+
+--- Página 32 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+32 of 34 
+Microsoft Excel 2016: Charting 
+ 
+20. Click on any data series  
+21. Click Add Chart Element 
+22. Hover over Data Labels 
+23. Select Inside Base 
+24. Repeat for other data series but choose Inside end 
+25. Click the Chart Elements icon  
+26. Clear Gridlines option 
+27. Click the Chart Title Element 
+28. Type = 
+29. Click on cell A14 
+ 
+ 
+1. Right click on the butterfly chart 
+2. Select Save as Template… 
+ 
+3. Enter filename Butterfly.crtx 
+4. Click on Save 
+ 
+ 
+1. Select data range (A28:F38) 
+2. Click Recommended Charts on insert tab 
+3. Click All Charts tab 
+4. Click on Templates 
+5. Select Butterfly chart template 
+6. Click on OK
+
+--- Página 33 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+33 of 34 
+Microsoft Excel 2016: Charting 
+ 
+ 
+A Box and whisker chart is the most commonly used in statistical analysis.  A box and whisker chart 
+shows distribution of data into quartiles, highlighting the mean and outliers. The boxes may have 
+lines extending vertically called “whiskers”.  
+ 
+ 
+Go to the Box and Whisker sheet 
+ 
+1. Click a cell in the Faculty Expenses data 
+2. Click the histogram icon on the Insert tab 
+3. Select the Box and Whisker chart 
+Excel scans the data and displays a chart with a data series 
+for each different category. 
+    
+• 
+The box represents half the entries in a series.   
+• 
+The centre line marker represents the average value in a 
+series.  
+• 
+The Whiskers represent the largest and smallest entries 
+in a series 
+ 
+ 
+1. Click on the chart elements icon 
+2. Select Data Labels
+
+--- Página 34 ---
+UQ Library 
+Staff and Student I.T. Training 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+34 of 34 
+Microsoft Excel 2016: Charting 
+ 
+The numbers we see here at the top and bottom of the 
+box represent the range that covers the middle number of 
+entries. 
+The numbers at each end of the whiskers represent the 
+minimum and maximum values of entries 
+    
+Charts in Other Applications 
+ 
+There are two main ways to use an excel chart in other files, either as a static image or a dynamic 
+linked object. 
+1. Go to the basic chart sheet 
+2. Right click on the formatted clustered column 
+3. Select Copy  
+4. Go to destination application  - (Word or Powerpoint) 
+ 
+5. Click on the down arrow on the Paste button 
+6. Select one option: 
+a. Use destination theme and embed workbook 
+b. Keep source formatting and embed workbook 
+c. Use destination theme and link data 
+d. Keep source formatting and link data 
+e. Picture 
+Any embedded or picture chart will not update.  Any linked data will 
+update if the original excel data changes. 
+ 
+ 
+Source: https://web.library.uq.edu.au/files/109045/20200916_Excel_Charting.pdf
+

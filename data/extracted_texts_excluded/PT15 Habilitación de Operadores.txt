@@ -1,0 +1,340 @@
+=== PT15 Habilitación de Operadores.pdf ===
+
+--- Página 1 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 15:HABILITACION DE OPERADORES 
+Pag. 1 
+ 
+Version: 07-mar-2014 
+Los Procedimientos 
+P.T. 15: HABILITACION DE OPERADORES 
+Indice 
+P.T. 15: HABILITACION DE OPERADORES ....................................................................................................2 
+1. OBJETO Y ALCANCE................................................................................................................................2 
+2. RESPONSABLES DE LA HABILITACION DE OPERADORES................................................................2 
+3. OTORGAMIENTO DE LA LICENCIA HABILITANTE DE OPERACION....................................................2 
+4. REQUISITOS PARA LA HABILITACION DE OPERADORES. .................................................................3 
+4.1. CARACTERISTICAS PERSONALES.................................................................................................3 
+4.2. NIVEL DE EDUCACION FORMAL. ....................................................................................................3 
+4.3. CONOCIMIENTOS Y PREPARACION TECNICA..............................................................................3 
+4.4. ENTRENAMIENTO Y EXPERIENCIA PREVIA EN EL TRABAJO.....................................................4 
+4.5. DESEMPENO EN LA OPERACION REAL.........................................................................................5 
+5. EVALUACIONES PARA LA HABILITACION.............................................................................................5 
+6. ACTUALIZACION PERMANENTE DE CONOCIMIENTOS Y TECNICAS................................................6 
+7. VIGENCIA DE LA HABILITACION Y REVALIDACION DE LA LICENCIA. ...............................................6 
+8. SUSPENSION DE UNA LICENCIA HABILITANTE DE OPERACION. .....................................................6 
+9. REVOCACION DE UNA LICENCIA HABILITANTE DE OPERACION......................................................7 
+10. AUDITORIA DE CALIDAD DEL PROCEDIMIENTO................................................................................7
+
+--- Página 2 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 15:HABILITACION DE OPERADORES 
+Pag. 2 
+ 
+Version: 07-mar-2014 
+P.T. 15: HABILITACION DE OPERADORES 
+1. OBJETO Y ALCANCE. 
+El presente “Procedimiento Tecnico General de Habilitacion de Operadores” se emite en cumplimiento de la 
+Resolucion de la Secretaria de Energia Nº 208/98 y servira como guia para la elaboracion del procedimiento 
+propio de evaluacion de idoneidad del personal de operacion en tiempo real, que el OED y cada Agente 
+identificado como responsable a estos efectos deberan establecer y aplicar para habilitar a sus Operadores.  
+El mismo contiene las condiciones minimas a ser requeridas por cada Agente responsable en su 
+correspondiente procedimiento especifico. 
+2. RESPONSABLES DE LA HABILITACION DE OPERADORES. 
+Las siguientes instituciones o Agentes seran responsables de la habilitacion del personal de operacion que 
+se desempena o se desempenara en instalaciones integrantes o vinculadas al SADI: 
+a) El OED: para todo su personal de turno con funciones en el Centro de Control de Operaciones del 
+Sistema Electrico Argentino (COC). 
+b) Los Agentes Generadores: para todo el personal que opera instalaciones de vinculacion superior con 
+el SADI, es decir, en niveles de tensiones mayores o iguales que 132 kV. 
+c) La Transportista en Alta Tension: para todo el personal que opera sus instalaciones. 
+d) Las Transportistas por Distribucion Troncal: para todo el personal que opera sus instalaciones. 
+e) Las Transportistas de Interconexion Internacional: para todo el personal que opera sus instalaciones. 
+f) 
+Los Transportistas Independientes: para todo el personal que opera sus instalaciones. 
+g) Los Prestadores Adicionales de la Funcion Tecnica de Transporte (PAFTT): para todo el personal 
+que opera instalaciones de vinculacion superior con el SADI (es decir, en niveles de tensiones 
+mayores o iguales que 132 kV) que presten adicionalmente funcion tecnica de transporte. 
+h) Los Distribuidores: para todo el personal que opera instalaciones de vinculacion superior con el 
+SADI,  es decir, en niveles de tensiones mayores o iguales que 132 kV. 
+i) 
+Los Grandes Usuarios Mayores (GUMAs): para todo el personal que opera instalaciones de 
+vinculacion superior con el SADI, es decir, en niveles de tensiones mayores o iguales que 132 kV. 
+j) 
+Los Autogeneradores y Cogeneradores: para todo el personal que opera instalaciones de vinculacion 
+superior con el SADI, es decir, en niveles de tensiones mayores o iguales que 132 kV. 
+3. OTORGAMIENTO DE LA LICENCIA HABILITANTE DE OPERACION. 
+El procedimiento de habilitacion consistira en la verificacion, por parte de cada empresa, de un conjunto de 
+condiciones y requisitos, tanto personales como educativos, tecnicos y de idoneidad, que debe reunir una 
+persona para ser habilitada como Operador del SADI. Cumplida tal verificacion, cada empresa otorgara a la 
+persona evaluada una Licencia Habilitante de Operacion.  
+Las Licencias Habilitantes de Operacion seran especificas, es decir habilitaran al correspondiente personal 
+de operacion para operar cada clase de instalaciones: Centrales Termicas; Centrales Hidroelectricas; 
+Centrales Nucleares; Estaciones Transformadoras, de Compensacion o  Maniobras; o Centros de 
+Operaciones, segun la clasificacion indicada en el Anexo Nº 25 de Los Procedimientos para la 
+Programacion de la Operacion, el Despacho de Cargas y el Calculo de Precios (“Los Procedimientos ...”). 
+Dentro de cada clase, tales Licencias se corresponderan con el puesto y el nivel de jerarquia de cada 
+Operador habilitado. A tales efectos, en el procedimiento propio, cada empresa debera identificar: las 
+instalaciones alcanzadas por el mismo, las diferentes posiciones de Operador con su denominacion y la 
+respectiva descripcion de funciones y tareas, remitiendo al OED dicha informacion.   
+Una Licencia Habilitante otorgada a un Operador para ejercer un determinado puesto sera valida tambien 
+para cubrir transitoriamente otro puesto de menor jerarquia dentro de la misma clase de instalaciones, 
+cuando ello sea necesario para garantizar el normal desarrollo de las funciones de operacion ante 
+situaciones de insuficiencia de personal debido a enfermedades u otras razones.  
+El otorgamiento de una Licencia Habilitante para operar cada clase de instalaciones implicara tambien la 
+habilitacion del Operador para el uso del Sistema de Operacion en Tiempo Real (SOTR), cuando ello sea
+
+--- Página 3 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 15:HABILITACION DE OPERADORES 
+Pag. 3 
+ 
+Version: 07-mar-2014 
+parte de sus funciones en el nivel de actuacion correspondiente. A tal efecto, los Agentes asignaran a cada 
+Operador habilitado para utilizar el SOTR,  un codigo de identificacion con el cual quedara registrado su 
+acceso al mismo. 
+Una vez habilitado el personal de operacion, el Agente que otorgo las respectivas Licencias Habilitantes 
+comunicara los datos identificatorios de dicho personal al OED y a los restantes Agentes con los cuales 
+habitualmente establece o puede llegar a establecer comunicaciones operativas, ya sea en condiciones 
+normales o en emergencias.  
+4. REQUISITOS PARA LA HABILITACION DE OPERADORES. 
+En cuanto a los requisitos y condiciones minimas necesarias que debe reunir un aspirante para obtener una 
+Licencia Habilitante como Operador del SADI, los mismos se clasifican en: personales, educativos, tecnicos 
+y de experiencia. A continuacion se especifican tales requisitos. 
+4.1. CARACTERISTICAS PERSONALES. 
+Los Operadores deben reunir las siguientes condiciones: buen estado de salud general, con adecuadas 
+facultades de la vista, del oido y del habla;  capacidad y predisposicion para trabajar dentro del regimen de 
+horarios que requiera la respectiva empresa. 
+Ademas, los mismos deben ser emocionalmente estables, proactivos, eficientes, previsores y organizados, 
+con un elevado grado de responsabilidad, honestidad y vocacion de servicio. 
+Tambien deben poseer las siguientes habilidades: adecuado dominio del lenguaje oral y escrito; aptitud y 
+actitud para el aprendizaje y la mejora continua; habilidades sociales para el trabajo en equipo; capacidad 
+para escuchar,  comprender, transmitir y ejecutar instrucciones y procedimientos; predisposicion para 
+interactuar con computadoras; capacidad para anticipar, analizar, diagnosticar y resolver problemas o 
+situaciones; aptitud para la toma de decisiones y la reaccion serena, segura y rapida en situaciones de 
+presion y urgencia. 
+4.2. NIVEL DE EDUCACION FORMAL. 
+Cada empresa definira el grado de instruccion formal requerido a sus Operadores para ejercer cada puesto. 
+Se recomienda que el nivel minimo de educacion formal de los Operadores sea Bachiller Polimodal con 
+Orientacion Tecnica, obtenido en instituciones educativas con planes de estudio aprobados por el Ministerio 
+de Educacion de la Nacion. 
+4.3. CONOCIMIENTOS Y PREPARACION TECNICA. 
+Dado que las Licencias Habilitantes de Operacion a otorgar seran especificas para cada clase de 
+instalaciones y puesto a desempenar, cada empresa establecera sus requerimientos particulares de alcance 
+y profundidad en lo que respecta a los conocimientos tecnicos teoricos y practicos en que deben ser 
+capacitados sus propios Operadores. 
+La preparacion especifica debera incluir las normas establecidas por cada empresa para la supervision y 
+operacion de sus instalaciones en condiciones normales o en emergencias,   las Ordenes de Servicio 
+propias y las de las empresas electricamente vinculadas a la misma que influyan en su operacion. 
+La capacitacion tambien debera incorporar la aplicacion a la operacion de los capitulos y anexos de “Los 
+Procedimientos...”, relacionados especificamente con la actividad de cada Agente responsable en el MEM. 
+En funcion de las jerarquias operativas establecidas por el Anexo N° 25 de “Los Procedimientos...”, a 
+continuacion se indica un conjunto de temas que necesariamente deben ser incluidos en la preparacion de 
+los respectivos Operadores. 
+1. Para el COC (Centro de Control de Operaciones de CAMMESA):  
+a) Sector Electrico Argentino: Organizacion institucional. 
+b) Sistema Argentino de Interconexion: Objetivos, principios basicos,  composicion y funcionamiento. 
+Principales regiones, Centrales y Estaciones Transformadoras. 
+c) Mercado Electrico Mayorista: Organizacion, oferta y demanda, productos y servicios. 
+d) Procedimientos Operativos del SADI: Funciones, responsabilidades y jerarquias operativas. Estados de 
+operacion normal, anormal, de emergencia y de restablecimiento.
+
+--- Página 4 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 15:HABILITACION DE OPERADORES 
+Pag. 4 
+ 
+Version: 07-mar-2014 
+e) Reglamento Operativo del SADI:  Criterios Generales de Operacion, Terminologia y Fraseologia de 
+Operacion. 
+f) Despacho de generacion hidrotermico: Principios basicos y restricciones.  
+g) Regulacion de frecuencia primaria, secundaria y terciaria. Reserva operativa. 
+h) Control de tensiones y flujos de potencia reactiva: Acciones preventivas y correctivas. 
+i) Flujos de potencia activa. Restricciones de transmision o transformacion: Limites fisicos, por estabilidad o 
+por seguridad. 
+j) Coordinacion y seguridad de las maniobras para retiro o conexion de equipos. Sincronizaciones y cierres 
+de anillos.  
+k) Conceptos de estabilidad, cortocircuitos y sobretensiones, aplicados a la operacion en tiempo real. 
+l) Protecciones electricas y automatismos aplicados a la operacion en tiempo real. Esquema de alivio de 
+cargas. Desconexion automatica de generacion. Analisis de perturbaciones tipicas. 
+m) Control correctivo de la operacion ante emergencias de diversa indole. 
+n) Arranque en “negro” del SADI o de sus areas. 
+o) Comunicaciones entre Centros de Operaciones mediante computadoras: Utilizacion del SOTR y otras 
+herramientas informaticas para la supervision y el control del Sistema Electrico.  
+p) Resolucion de problemas y toma de decisiones en la operacion. 
+q) Relaciones humanas y comunicaciones interpersonales. 
+2. Para el COT (Centro de Control de Operaciones de TRANSENER): 
+Los anteriores apartados b), d), e), h), i), j), k), l), m), n), o), p),q), y conceptos de los apartados a), c), f) y g).  
+3. Para los COTDT (Centros de Control de Operaciones de los Sistemas de Transporte por 
+Distribucion Troncal o Prestadores Adicionales de la Funcion Tecnica de Transporte): 
+Los mismos apartados que para el COT, con la aplicacion de los apartados b), k), l), m) y n) a la operacion 
+de cada empresa. 
+4. Para los COG (Centros de Control de Operaciones de los Generadores, Autogeneradores y 
+Cogeneradores): 
+Los anteriores apartados d), e), f), g), h), j), o), p), q), y conceptos de los apartados a), b), c), i), k), l), m) y n) 
+aplicados a la operacion de cada empresa. 
+5. Para los COD (Centros de Control de Operaciones de los Distribuidores): 
+Los anteriores apartados d), e), h), i), j), o), p), q), y conceptos de los apartados 
+a), b), c), k), l), m) y n) aplicados a la operacion de cada empresa.  
+6. Para los GUMAs: 
+Los anteriores apartados d), e), h), j), p), q) y conceptos de los apartados a), b), c), l) y m) aplicados a la 
+operacion de cada empresa.  
+7. Para Estaciones Transformadoras, de Compensacion o Maniobras (pertenecientes a 
+cualquiera de las Transportistas o PAFTT o Distribuidores): 
+Los anteriores apartados  e), j), m), p) y conceptos del apartado l).  En el caso de instalaciones atendidas 
+con operadores permanentes, se requeriran conceptos de los apartados d), h), i) y n).   
+8. Para Centrales Termicas, Hidroelectricas o Nucleares: 
+Los anteriores apartados d), e), h), j), p) y conceptos de los apartados f), g), l), m) y n) aplicados a su 
+respectiva operacion. 
+4.4. ENTRENAMIENTO Y EXPERIENCIA PREVIA EN EL TRABAJO. 
+Cada empresa especificara y documentara el entrenamiento o reentrenamiento recibido por sus Operadores 
+para el aprendizaje de las funciones y tareas propias, el cual debera comprender el conocimiento tecnico de 
+las instalaciones propias de la empresa, que estaran bajo su responsabilidad, asi como tambien el de las
+
+--- Página 5 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 15:HABILITACION DE OPERADORES 
+Pag. 5 
+ 
+Version: 07-mar-2014 
+instalaciones de otras empresas electricamente vinculadas a la misma, que sean relevantes para su 
+operacion. 
+Dicho entrenamiento incluira la experiencia minima indispensable en el desempeno de las funciones y 
+tareas asignadas al puesto de trabajo especifico, bajo la supervision y responsabilidad del personal 
+jerarquico correspondiente, que cada empresa considere adecuada, con el objeto de garantizar la seguridad 
+y calidad de la operacion una vez que el Operador haya sido habilitado.  
+4.5. DESEMPENO EN LA OPERACION REAL. 
+El desempeno adecuado en situaciones criticas es un factor esencial para otorgar o renovar una Licencia 
+Habilitante de Operacion.  
+Cada empresa debera implementar una metodologia de evaluacion y documentacion del desempeno de 
+cada Operador, observado durante la operacion en tiempo real, tanto en situaciones normales como en 
+condiciones criticas y emergencias. En especial, se tendran en cuenta las conclusiones que resulten del 
+“Analisis de Perturbaciones”, de acuerdo a lo establecido por el Procedimiento Tecnico N° 11. 
+Esto tiene por objeto verificar si tal desempeno responde a los requerimientos de seguridad y calidad de la 
+operacion, para proceder a efectuar el reentrenamiento en caso de ser necesario, con el proposito de lograr 
+la mejora continua de la operacion del SADI. 
+5. EVALUACIONES PARA LA HABILITACION. 
+Cada empresa instrumentara y documentara las pruebas, evaluaciones y certificaciones necesarias para 
+verificar el cumplimiento de los requisitos establecidos para otorgar o renovar a su personal de operacion 
+una Licencia Habilitante. A continuacion se indican los conceptos minimos a considerar: 
+a) Las caracteristicas personales seran verificadas mediante examenes medicos y psicologicos  de 
+aptitud y entrevistas a tal efecto. En el caso del personal actualmente en funciones de operacion en 
+tiempo real, se considerara asimismo el comportamiento observado durante el desempeno tanto en 
+situaciones normales de operacion como en condiciones de urgencia o emergencia; 
+b) El nivel de educacion formal que pueda ser requerido para cada puesto debera estar certificado 
+mediante el titulo correspondiente, otorgado por una institucion educativa reconocida oficialmente; 
+c) Los conocimientos requeridos y la preparacion tecnica especifica seran evaluados mediante 
+examenes diferenciados segun cada clase de Licencia Habilitante y puesto a ejercer, es decir, 
+relacionados con el tipo y clase de instalaciones especificas para las cuales se otorgara la 
+habilitacion; 
+Dichos examenes deberan ser escritos y consistiran en cuestionarios de caracter  conceptual, orientados a 
+la aplicacion de los diversos temas a la operacion del SADI y elaborados preferentemente en base a 
+preguntas con respuestas de multiple eleccion. Los mismos deberan integrarse como minimo con las 
+siguientes secciones: 
+1. Las normas establecidas por cada empresa para la supervision y operacion de sus instalaciones e 
+interconexiones, ya sea en condiciones normales o en emergencias, incluyendo el conocimiento 
+tecnico de las instalaciones bajo su responsabilidad y la utilizacion del SOTR a tal efecto; 
+2. Los Procedimientos Operativos del SADI, Criterios Generales de Operacion, Ordenes de Servicio, 
+Terminologia y Fraseologia de Operacion, y demas conocimientos particulares de la operacion 
+interconectada de la propia empresa en el SADI; 
+3. La aplicacion a la operacion de los capitulos y anexos de “Los Procedimientos ...” y de los 
+Procedimientos Tecnicos del OED que esten relacionados especificamente con la actividad de cada 
+Agente responsable en el SADI y el MEM. 
+Cada una de las secciones podra ser evaluada separadamente y debera contener una cantidad de 
+preguntas suficiente para incluir todos los temas relevantes. Al respecto, se recomienda un numero minimo 
+de 20 (veinte) preguntas para cada seccion. 
+Un examen se considerara aprobado siempre que se alcance un porcentaje minimo de respuestas correctas 
+del 70 % (setenta por ciento) del total, para cada una de las secciones del mismo. La calificacion final sera 
+el promedio de las obtenidas en las distintas secciones.
+
+--- Página 6 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 15:HABILITACION DE OPERADORES 
+Pag. 6 
+ 
+Version: 07-mar-2014 
+Ademas de los examenes escritos, cada Agente responsable podra, de considerarlo necesario, 
+complementar los mismos con evaluaciones personales orales, con el objeto de verificar con mayor 
+amplitud y profundidad los conocimientos de los aspirantes. 
+Para cada empresa, el proceso de elaboracion de los cuestionarios, realizacion de los examenes escritos, 
+control  de las respuestas, calificacion de los resultados y formulacion de las evaluaciones orales, estara a 
+cargo de un equipo examinador. 
+El mismo estara integrado como minimo por 3 (tres) profesionales, ya sea propios o contratados (en forma 
+independiente o con otra empresa del MEM), con conocimientos y experiencia adecuados a la habilitacion a 
+otorgar, uno de los cuales podra ser el responsable jerarquico del Centro de Control de Operaciones 
+respectivo. 
+Los antecedentes de los miembros del equipo examinador integraran la documentacion de respaldo del 
+procedimiento propio de evaluacion de idoneidad del personal de la respectiva empresa. 
+a) El entrenamiento y la experiencia previa en el trabajo (cuando la hubiere) deberan ser certificados 
+por el personal jerarquico bajo cuya supervision y responsabilidad hayan sido efectuados. 
+b) El correcto desempeno durante situaciones criticas de operacion en tiempo real sera certificado por 
+los informes de evaluacion de desempeno que cada empresa haya implementado a tal efecto, de 
+acuerdo a lo indicado en el apartado 4.5.-. 
+6. ACTUALIZACION PERMANENTE DE CONOCIMIENTOS Y TECNICAS. 
+Cada empresa sera responsable por la actualizacion permanente de los conocimientos, las tecnicas y el 
+entrenamiento de sus Operadores, incorporando los cambios que se produzcan en la operacion, tanto 
+debido al ingreso de nuevos generadores, equipos de transmision, automatismos o tecnologias de control, 
+como a la vigencia de nuevas disposiciones normativas en el MEM o la actualizacion de los procedimientos 
+operativos en el SADI. 
+Se documentaran los cursos de actualizacion o reentrenamiento que se desarrollen a tales efectos, con las 
+evaluaciones correspondientes. 
+7. VIGENCIA DE LA HABILITACION Y REVALIDACION DE LA LICENCIA. 
+Las Licencias Habilitantes del personal de operacion otorgadas por los Agentes respectivos y por el OED 
+deberan ser revalidadas cada tres (3) anos. 
+Antes del vencimiento de dicho plazo, cada empresa debera verificar nuevamente el cumplimiento de los 
+requisitos establecidos para cada Operador, antes indicados. En caso de que tal verificacion resulte 
+satisfactoria, se renovara la Licencia Habilitante por un nuevo periodo, y asi sucesivamente. 
+En el caso de que las evaluaciones de desempeno de un Operador habilitado hayan resultado satisfactorias 
+durante todo el periodo, la empresa correspondiente podra, bajo su responsabilidad, reemplazar la 
+verificacion de conocimientos y preparacion tecnica basicos por las evaluaciones de actualizacion de 
+conocimientos y tecnicas, a los efectos de la renovacion de la Licencia respectiva. En todos los casos 
+deberan efectuarse nuevamente los examenes medicos y psicologicos de aptitud.  
+En caso de que un Operador cambie de funciones, debera ser habilitado para ejercer el nuevo puesto. 
+8. SUSPENSION DE UNA LICENCIA HABILITANTE DE OPERACION. 
+Cada empresa, bajo su propia responsabilidad, debera proceder a la suspension de una Licencia Habilitante 
+de Operacion, en caso de verificar en cualquier momento que transitoriamente ha dejado de tener vigencia 
+el cumplimiento de alguno de los requisitos necesarios para el otorgamiento o renovacion de la misma, 
+antes mencionados. 
+Esta circunstancia debera ser documentada y comunicada al ENRE y a las restantes empresas con las que 
+se mantienen comunicaciones operativas. La suspension sera temporaria, hasta que sus causas hayan sido 
+corregidas. Una vez finalizada la suspension, la empresa responsable debera comunicar la reanudacion de 
+la vigencia de la Licencia Habilitante correspondiente.
+
+--- Página 7 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 15:HABILITACION DE OPERADORES 
+Pag. 7 
+ 
+Version: 07-mar-2014 
+9. REVOCACION DE UNA LICENCIA HABILITANTE DE OPERACION. 
+Cada empresa, bajo su propia responsabilidad, debera proceder a la revocacion de una Licencia Habilitante 
+de Operacion, en caso de verificar en cualquier momento la imposibilidad de seguir cumpliendo en forma 
+definitiva la totalidad de los requisitos antes mencionados, cualquiera sea la causa, incluyendo el caso en 
+que se compruebe la comision de un acto de negligencia grave por parte de un Operador que haya afectado 
+la integridad fisica de las personas, la seguridad de los equipos o el abastecimiento en el SADI. 
+Esta circunstancia debera ser documentada y comunicada al ENRE y a las restantes empresas con las que 
+se mantienen comunicaciones operativas.  
+10. AUDITORIA DE CALIDAD DEL PROCEDIMIENTO. 
+Tanto el OED como cada Agente responsable contrataran a una entidad tecnica de reconocido prestigio e 
+independencia, especializada en auditoria de calidad, con el objeto de que la misma lleve a cabo las 
+siguientes verificaciones: 
+a) La adecuacion del procedimiento propio de evaluacion de idoneidad para la habilitacion de su  
+personal de operacion, con respecto a lo establecido por el presente  Procedimiento Tecnico 
+general. 
+b) El cumplimiento de lo indicado por dicho procedimiento propio en el ambito de la empresa, a partir de 
+la documentacion probatoria registrada. 
+Ambos puntos seran de aplicacion en oportunidad de la primera habilitacion, mientras que para posteriores 
+habilitaciones o revalidaciones, en caso de no haberse efectuado cambios en el procedimiento definido por 
+la Empresa, sera de aplicacion solamente la certificacion de la verificacion prevista en el punto b).   
+La documentacion de respaldo a enviar al ENRE por el OED y por cada Agente responsable, en 
+oportunidad de la habilitacion o revalidacion, que acreditara el cumplimiento de las prescripciones sobre 
+habilitacion de Operadores, debera ser previamente validada por la entidad contratada, la cual debera 
+garantizar la confidencialidad de la documentacion auditada.
+

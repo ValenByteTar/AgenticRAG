@@ -100,6 +100,56 @@ _PREDICATE_FALLBACK: Dict[str, str] = {
     "is implemented by": "implements",
     "is extended by": "extends",
     "is referenced by": "references",
+    "enforces": "governs",
+    "mandates": "governs",
+    "requires_compliance_with": "governs",
+    "is_required_by": "depends_on",
+    "replaces": "extends",
+    "superseded_by": "extends",
+    "based_on": "depends_on",
+    "composed_of": "contains",
+    "consists_of": "contains",
+    "incorporates": "contains",
+    "embeds": "contains",
+    "utilizes": "uses",
+    "consumes": "uses",
+    "invokes": "uses",
+    "calls": "uses",
+    "is_called_by": "uses",
+    "is_utilized_by": "uses",
+    "implements_for": "implements",
+    "specializes": "extends",
+    "generalizes": "extends",
+    "inherits_from": "extends",
+    "is_inherited_by": "extends",
+    "maps_to": "references",
+    "corresponds_to": "references",
+    "is_equivalent_to": "equivalent_to",
+    "is_similar_to": "references",
+    "is_related_to": "references",
+    "is_associated_with": "references",
+    "is_compatible_with": "references",
+    "is_incompatible_with": "references",
+    "precedes": "references",
+    "follows": "references",
+    "enables": "supports",
+    "is_enabled_by": "depends_on",
+    "facilitates": "supports",
+    "is_facilitated_by": "depends_on",
+    "is_defined_in": "references",
+    "is_described_in": "references",
+    "is_specified_in": "references",
+    "documents": "references",
+    "specifies": "creates",
+    "establishes": "creates",
+    "determines": "creates",
+    "identifies": "creates",
+    "categorizes": "references",
+    "classifies": "references",
+    "groups": "contains",
+    "aggregates": "contains",
+    "is_grouped_in": "contains",
+    "is_aggregated_in": "contains",
 }
 
 
@@ -179,16 +229,23 @@ class CanonicalizePass(KnowledgePass):
 
     def _canon_relation(self, c: RelationClaim, cmap: Dict[str, str]) -> RelationClaim:
         pred = normalize_text(c.predicate)
+        original_pred = c.predicate
+        fallback_applied = False
         if self.predicates and pred not in self.predicates:
             pred = _PREDICATE_FALLBACK.get(pred, pred)
+            fallback_applied = True
             if pred not in self.predicates:
                 pred = "references" if "references" in self.predicates else "equivalent_to"
+        raw = {**dict(c.raw), "subject_id": cmap.get(c.subject_name, ""), "object_id": cmap.get(c.object_name, "")}
+        if fallback_applied and original_pred:
+            raw["original_predicate"] = original_pred
         return RelationClaim(
             subject_name=c.subject_name,
             predicate=pred,
             object_name=c.object_name,
             extractor_id=c.extractor_id,
             confidence=c.confidence,
+            attributes=list(c.attributes),
             evidence=list(c.evidence),
-            raw={**dict(c.raw), "subject_id": cmap.get(c.subject_name, ""), "object_id": cmap.get(c.object_name, "")},
+            raw=raw,
         )

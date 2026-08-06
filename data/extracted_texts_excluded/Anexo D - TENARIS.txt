@@ -1,0 +1,590 @@
+=== Anexo D - TENARIS.pdf ===
+
+--- Página 1 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES TENARIS OPERADAS POR EL CROM 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+P.E. de la Buena 
+Ventura 
+100.8 
+Eolica 
+27/10/2023 
+Vestas 
+Vestas 
+Autotrol 
+P.E. La Rinconada 
+92.4 
+Eolica 
+06/09/2025 
+Vestas 
+Vestas 
+BLC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL 
+193.2
+
+--- Página 2 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+Descripcion de Parque Eolico de la Buena Ventura: 
+El proyecto presente, identificado como Parque Eolico de la Buena Ventura, de 100,8 MW (Agente: 
+PEBUENAG; Central: PEBUEO; Grupo: PEBUEO01), producira energia electrica a partir de la captacion y 
+transformacion de la energia proveniente del viento, por medio de veinticuatro molinos eolicos. Luego, dicha 
+energia sera inyectada en el Sistema Argentino de Interconexion (SADI) en el marco de su ingreso al 
+Mercado Electrico Mayorista como generador. 
+ 
+El proyecto denominado “Parque Eolico de la Buena Ventura” se emplazara en el Partido de Adolfo Gonzales 
+Chaves y contara con una superficie de 1093 hectareas. El objetivo es generar energia eolica a traves de una 
+fuente de energia renovable (vientos predominantes) e instalaciones necesarias (aerogeneradores, lineas 
+electricas, entre otros). La energia generada sera inyectarla al sistema interconectado Nacional a traves de la 
+Sub Estacion Trasformadora Vasquez que se conecta con la Estacion Transformadora Gonzales Chaves por 
+una linea de 6,5 Km en el nivel de 132 kV. 
+El proyecto consta de 24 aerogeneradores de 4,2 MW cada uno, con una potencia total del parque de 100,8 
+MW, cuya energia generada se inyectara al Sistema Interconectado Nacional mediante el montaje de 
+trasformadores individuales instalados para cada aerogenerador y una red interna subterranea en el nivel de 
+33 kV que acometera a un trasformador de potencia de 120 MVA de 33/132 KV en la Sub Estacion 
+Transformadora denominada Vasquez bajo el control operativo de TRANBA S.A. 
+ 
+De la Buena Ventura es un parque eolico de 100,8 MW ubicado en el sur de la provincia de Buenos Aires, 
+Argentina. El parque eolico esta equipado con 24 turbinas eolicas, de la empresa Danesa Vestas, modelo V150. 
+ 
+ 
+ 
+ 
+Parque De la Buena Ventura 
+se encuentra en la provincia 
+argentina de Buenos Aires,  
+38°05’16” S – 60°08’33” O
+
+--- Página 3 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Parque Eolico De la Buena Ventura 100.8 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Vestas V150  
+Potencia Nominal del aerogenerador 
+4,2 MW 
+Numero de aerogeneradores 
+24 
+Potencia Nominal del proyecto (Segun Secretaria de Energia) 
+105 MW 
+Diametro nominal de rotor 
+150 m 
+Velocidad media del viento 
+10,5 – 11 m/s 
+ 
+ 
+ 
+Se encuentran interconectados por 1 circuito de 33 kV,  : 
+• 
+Salida a transformador de potencia 120 MVA - T1BV 33/132 KV celda 01, Interruptor 3T015. 
+• 
+Transformador de medicion 33 KV de barra en celda 02. 
+• 
+Circuito 1 de Aerogeneradores llega por la celda 03, interruptor 3G035.   
+• 
+Circuito 2 de Aerogeneradores llega por la celda 04, interruptor 3G045. 
+• 
+Circuito 3 de Aerogeneradores llega por la celda 05, interruptor 3G055. 
+• 
+Circuito 4 de Aerogeneradores llega por la celda 06, interruptor 3G065. 
+• 
+Banco de Capacitores de 6,75 MVAR se conectan en celda 07, por interruptor 3C075. 
+• 
+Transformador de servicios auxiliares T1XBV de 315 KVA 33/0.4 KV conectado a celda 08,  interruptor 
+3T083. 
+• 
+Transformador de servicios auxiliares T2XBV de 315 KVA 33/0.4 KV conectado a celda 09,  interruptor 
+3T093. 
+ 
+TRANSBA: Del lado de 132 KV (El limite entre PEBV y TRANSBA es en los bornes de salida de 132 Kv del 
+transformador de potencia T1BV. 
+• 
+Transformador de Tension 1U02T de 132 KV. 
+• 
+Seccionador de tierra 1T021. 
+• 
+Seccionador de Transformador 1T023. 
+• 
+Interruptor Transformador a barras 132 KV, 1T025. 
+• 
+Seccionador 132 KV a actual barra A, 1T02A. 
+ 
+Pagina oficial:    https://
+
+--- Página 4 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Parque Eolico De la Buena Ventura se 
+encuentra en la provincia argentina de 
+Buenos Aires, cerca de ruta nacional N°3. 
+Cerca del Pueblo Adolfo gonzales 
+Chaves. 
+Localizacion 
+• 
+Latitud : -38.08440 
+• 
+Longitud : -60.13667
+
+--- Página 5 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar General en 33 KV con Transformador de Potencia en PE de la Buena Ventura
+
+--- Página 6 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar de 132 KV Sub Estacion Vasquez
+
+--- Página 7 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Descripcion de Parque Eolico La Rinconada: 
+El proyecto presente, identificado como Parque Eolico La Rinconada, de 94,5 MW (Agente: PELRINCG; 
+Central: RINC; Grupo: RINCEO), producira energia electrica a partir de la captacion y transformacion de la 
+energia proveniente del viento, por medio de veintiun molinos eolicos de 4,5 MW c/u. Luego, dicha energia 
+sera inyectada en el Sistema Argentino de Interconexion (SADI) en el marco de su ingreso al Mercado 
+Electrico Mayorista como generador. 
+El proyecto denominado “Parque Eolico La Rinconada” se emplazara en el Partido de Olavarria. El objetivo es 
+generar energia eolica a traves de una fuente de energia renovable y el montaje de las instalaciones 
+necesarias para el objetivo. La energia generada sera inyectarla al sistema interconectado Nacional a traves 
+de la Estacion Transformadora La China (de TRANSBA) en la que se recibira en 132 kV. 
+El proyecto consta de 21 aerogeneradores de 4,5 MW cada uno, con una potencia NOMINAL total del 
+parque de 94,5 MW, y CAMMESA autorizo comercialmente 92,4 MW el 06/09/2025 cuya energia generada se 
+inyectara al Sistema Interconectado Nacional mediante el montaje de trasformadores individuales instalados 
+para cada aerogenerador y una red interna subterranea en el nivel de 33 kV que acometera a un 
+trasformador de potencia de 120 MVA de 33/132 KV . 
+ 
+La Rinconada esta ubicado en el sur de la provincia de Buenos Aires, Argentina. El parque eolico esta equipado 
+con 21 turbinas eolicas, de la empresa Danesa Vestas, modelo V150. 
+ 
+ 
+ 
+ 
+Parque La Rinconada se 
+encuentra en la provincia 
+argentina de Buenos Aires,  
+-36.675279431135834, S  
+-60.72002124665757, O
+
+--- Página 8 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Parque Eolico La Rinconada 94.5 MW 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Vestas V150  
+Potencia Nominal del aerogenerador 
+4,5 MW 
+Numero de aerogeneradores 
+21 
+Potencia Nominal del proyecto (Segun Secretaria de Energia) 
+94,5 MW 
+Diametro nominal de rotor 
+150 m 
+Velocidad media del viento 
+10,5 – 11 m/s 
+ 
+Se encuentran interconectados por 1 circuito de 33 kV,  : 
+• 
+Salida a transformador de potencia 120 MVA - T1LR 33/132 KV celda 06, Interruptor 3T065. 
+• 
+Transformador de medicion 33 KV de barra en celda 03. 
+• 
+Circuito 1 de Aerogeneradores llega por la celda 08, interruptor 3G085.   
+• 
+Circuito 2 de Aerogeneradores llega por la celda 07, interruptor 3G075. 
+• 
+Circuito 3 de Aerogeneradores llega por la celda 05, interruptor 3G055. 
+• 
+Circuito 4 de Aerogeneradores llega por la celda 04, interruptor 3G045. 
+• 
+Transformador de servicios auxiliares T1XLR de 315 KVA 33/0.4 KV conectado a celda 02,  interruptor 
+3T025. 
+• 
+Transformador de servicios auxiliares T2XLR de 315 KVA 33/0.4 KV conectado a celda 01,  interruptor 
+3T015. 
+ 
+ET LA CHINA DE TRANSBA. 
+TRANSBA: Del lado de 132 KV (El limite entre PELR y TRANSBA es en los bornes de salida de 132 Kv del 
+transformador de potencia T1BV. 
+CAMPO 5 Acometida de PELR a Barras 132 KV 
+• 
+Transformador de Tension 1U05T de 132 KV. 
+• 
+Seccionador de tierra 1T051. 
+• 
+Seccionador de Transformador 1T053. 
+• 
+Interruptor Transformador a barras 132 KV, 1T055. 
+• 
+Seccionadores 132 KV a actuales barras A y B, 1T05A y 1T05B 
+ 
+BARRAS 132 KV 
+• 
+Trafo de Tension 132 KV Barra A – 1U00A 
+• 
+Trafo de Tension 132 KV Barra B – 1U00B 
+• 
+Trafo para servicios auxilirares de ET LA CHINA T1XLCH tomado de barra A. 
+ 
+CAMPO 4 Linea a ET BOLIVAR 
+• 
+Seccionadores 132 KV a ET BOLIVAR barras A y B, 1T04A y 1T04B 
+• 
+Interruptor de Linea a ET BOLIVAR 1L045 
+• 
+Seccionador de Linea a ET BOLIVAR 1L043
+
+--- Página 9 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+• 
+Seccionador de Tierra Linea a ET BOLIVAR 1L041 
+• 
+Trafo de Tension Linea a ET BOLIVAR 1U04L 
+• 
+Descargador Linea a ET BOLIVAR 1PL04 
+ 
+CAMPO 3 Linea a ET OLABARRIA 
+• 
+Seccionadores 132 KV a ET OLABARRIA barras A y B, 1T02A y 1T02B 
+• 
+Interruptor de Linea a ET OLABARRIA 1L035 
+• 
+Seccionador de Linea a ET OLABARRIA 1L033 
+• 
+Seccionador de Tierra Linea a ET OLABARRIA 1L031 
+• 
+Trafo de Tension Linea a ET OLABARRIA 1U03L 
+• 
+Descargador Linea a ET OLABARRIA 1PL03 
+ 
+CAMPO 2 Acometida de PE VIENTOS DE OLAVARRIA a Barras 132 KV (No es cliente nuestro) 
+• 
+Transformador de Tension 1U02T de 132 KV. 
+• 
+Seccionador de tierra 1T021. 
+• 
+Seccionador de Transformador 1T023. 
+• 
+Interruptor Transformador a barras 132 KV, 1T025. 
+• 
+Seccionadores 132 KV a actuales barras A y B, 1T02A y 1T02B 
+ 
+CAMPO 2 Acometida de PE VIENTOS DE OLAVARRIA a Barras 132 KV (No es cliente nuestro) 
+• 
+Transformador de Tension 1U02T de 132 KV. 
+• 
+Seccionador de tierra 1T021. 
+• 
+Seccionador de Transformador 1T023. 
+• 
+Interruptor Transformador a barras 132 KV, 1T025. 
+• 
+Seccionadores 132 KV a actuales barras A y B, 1T02A y 1T02B 
+ 
+CAMPO 1 Acople de Barras 132 KV 
+• 
+Seccionadores 132 KV acople de barras A y B, 1A01A y 1A01B 
+• 
+Interruptor de acople de barras 1A015 
+ 
+Pagina oficial:    https://
+
+--- Página 10 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Parque Eolico LA RINCONADA se 
+encuentra en la provincia argentina de 
+Buenos Aires, cerca de ruta nacional 
+N°226. 
+Cerca de Olavarria. 
+Localizacion 
+Latitud :                                                     
+-36.675279431135834, S  
+Longitud :  
+-60.72002124665757, O
+
+--- Página 11 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Esquema Unifilar 33 KV General PE La Rinconada
+
+--- Página 12 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+Esquema Unifilar 132 KV ET LA CHINA
+
+--- Página 13 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+FIN:
+

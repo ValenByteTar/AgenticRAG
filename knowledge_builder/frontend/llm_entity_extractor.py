@@ -3,7 +3,7 @@
 El LLM es **un extractor mas**, no el eje de la arquitectura. Produce exactamente
 el mismo formato KIR que los extractores deterministas.
 
-Modelo por defecto: Granite 4.1 8B via Ollama (RES-002 §8.2).
+Modelo por defecto: Granite 4.1 3B via Ollama (RES-002 §8.2).
 
 Para cada documento:
     1. Lee el texto de data/extracted_texts/{name}.txt
@@ -25,6 +25,8 @@ import re
 import time
 from pathlib import Path
 from typing import Any, Dict, List, Mapping, Optional
+from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
 
 from ..kir import (
     AliasClaim,
@@ -38,7 +40,7 @@ from ..kir import (
 )
 
 
-_EXTRACTOR_ID = "llm:granite-4.1-8b"
+_EXTRACTOR_ID_DEFAULT = "llm:granite-4.1-3b"
 
 _EXTRACTION_PROMPT = """You are a knowledge extractor. Analyze the following document text and extract entities, aliases, and relations.
 
@@ -85,7 +87,7 @@ class LLMEntityExtractor:
 
     def __init__(
         self,
-        model: str = "ibm/granite4.1:8b-q4_K_M",
+        model: str = "ibm/granite4.1:3b-q6_K",
         base_url: str = "http://localhost:11434",
         docs_dir: Optional[Path | str] = None,
         doc_roles: Optional[Mapping[str, Any]] = None,
@@ -95,6 +97,9 @@ class LLMEntityExtractor:
         verbose: bool = False,
         cache_dir: Optional[Path | str] = None,
         use_cache: bool = True,
+        max_workers: int = 4,
+        num_predict: int = 1200,
+        num_ctx: int = 4096,
     ):
         self.model = model
         self.base_url = base_url.rstrip("/")
@@ -106,9 +111,13 @@ class LLMEntityExtractor:
         self.verbose = verbose
         self.cache_dir = Path(cache_dir) if cache_dir else Path("cache")
         self.use_cache = use_cache
+        self.max_workers = max_workers
+        self.num_predict = num_predict
+        self.num_ctx = num_ctx
+        self.extractor_id = f"llm:{model.split(':')[-1].replace('.', '-')}" if model else _EXTRACTOR_ID_DEFAULT
 
     def extract(self) -> KIR:
-        kir = KIR(metadata={"extractor": _EXTRACTOR_ID})
+        kir = KIR(metadata={"extractor": self.extractor_id})
 
         docs = self._select_docs()
         if not docs:
@@ -117,7 +126,7 @@ class LLMEntityExtractor:
             return kir
 
         if self.verbose:
-            print(f"  [LLM] Processing {len(docs)} documents with {self.model}")
+            print(f"  [LLM] Processing {len(docs)} documents with {self.model} (workers={self.max_workers})")
 
         for i, (doc_name, doc_path) in enumerate(docs):
             if self.verbose:
@@ -134,18 +143,23 @@ class LLMEntityExtractor:
                 if self.verbose:
                     print(f"  [LLM]     {len(text)} chars -> {len(chunks)} chunks")
 
-                for chunk_idx, chunk in enumerate(chunks):
-                    if self.verbose:
-                        print(f"  [LLM]     chunk {chunk_idx+1}/{len(chunks)} ({len(chunk)} chars)...", end="", flush=True)
-                    sub_kir = self._extract_from_chunk_cached(doc_name, chunk, chunk_idx)
-                    if self.verbose:
-                        n = len(sub_kir.entity_claims) + len(sub_kir.alias_claims) + len(sub_kir.relation_claims)
-                        print(f" {n} claims")
-                    kir.merge(sub_kir)
+                if self.max_workers > 1 and len(chunks) > 1:
+                    sub_kirs = self._extract_chunks_parallel(doc_name, chunks)
+                    for sub_kir in sub_kirs:
+                        kir.merge(sub_kir)
+                else:
+                    for chunk_idx, chunk in enumerate(chunks):
+                        if self.verbose:
+                            print(f"  [LLM]     chunk {chunk_idx+1}/{len(chunks)} ({len(chunk)} chars)...", end="", flush=True)
+                        sub_kir = self._extract_from_chunk_cached(doc_name, chunk, chunk_idx)
+                        if self.verbose:
+                            n = len(sub_kir.entity_claims) + len(sub_kir.alias_claims) + len(sub_kir.relation_claims)
+                            print(f" {n} claims", flush=True)
+                        kir.merge(sub_kir)
 
             except Exception as e:
                 if self.verbose:
-                    print(f"  [LLM]   ERROR on {doc_name}: {e}")
+                    print(f"  [LLM]   ERROR on {doc_name}: {e}", flush=True)
                 continue
 
         if self.verbose:
@@ -158,6 +172,41 @@ class LLMEntityExtractor:
 
         return kir
 
+    def _extract_chunks_parallel(self, doc_name: str, chunks: List[str]) -> List[KIR]:
+        """Process chunks in parallel and return KIR list in order."""
+        results: Dict[int, KIR] = {}
+        lock = threading.Lock()
+
+        def _process(idx: int, chunk: str) -> tuple[int, KIR]:
+            sub_kir = self._extract_from_chunk_cached(doc_name, chunk, idx)
+            if self.verbose:
+                n = len(sub_kir.entity_claims) + len(sub_kir.alias_claims) + len(sub_kir.relation_claims)
+                with lock:
+                    print(f"  [LLM]     chunk {idx+1}/{len(chunks)} -> {n} claims", flush=True)
+            return idx, sub_kir
+
+        with ThreadPoolExecutor(max_workers=self.max_workers) as pool:
+            futures = {
+                pool.submit(_process, idx, chunk): idx
+                for idx, chunk in enumerate(chunks)
+            }
+            for future in as_completed(futures):
+                idx, sub_kir = future.result()
+                results[idx] = sub_kir
+
+        return [results[i] for i in range(len(chunks)) if i in results]
+
+    def _load_exclusions(self) -> set[str]:
+        """Load corpus exclusion manifest if present."""
+        exclusions_path = self.docs_dir.parent / "corpus_exclusions.json"
+        if not exclusions_path.exists():
+            return set()
+        try:
+            data = json.loads(exclusions_path.read_text(encoding="utf-8"))
+            return {item["file"] for item in data.get("excluded", [])}
+        except Exception:
+            return set()
+
     def _select_docs(self) -> List[tuple[str, Path]]:
         """Selects documents to process, prioritized by centrality."""
         if not self.docs_dir.exists():
@@ -167,11 +216,18 @@ class LLMEntityExtractor:
         if not all_files:
             return []
 
+        excluded = self._load_exclusions()
+        if excluded:
+            all_files = [f for f in all_files if f.name not in excluded]
+            if self.verbose:
+                print(f"  [LLM] Corpus exclusions: {len(excluded)} files filtered")
+
         docs_info = self.doc_roles.get("docs", {}) if self.doc_roles else {}
 
         def _centrality(path: Path) -> float:
-            key = path.name.replace(".txt", ".pdf")
-            info = docs_info.get(key, {})
+            from src.utils.canonical_id import canonical_doc_id
+            cid = canonical_doc_id(path.name)
+            info = docs_info.get(cid, {})
             return float(info.get("centrality", 0.0))
 
         prioritized = sorted(all_files, key=_centrality, reverse=True)
@@ -210,24 +266,49 @@ class LLMEntityExtractor:
         chunk_file = self.cache_dir / doc_slug / f"chunk_{chunk_idx}.kir.json"
         meta_file = self.cache_dir / doc_slug / "meta.json"
 
-        if chunk_file.exists() and meta_file.exists():
+        existing_meta = {}
+        if meta_file.exists():
             try:
-                meta = json.loads(meta_file.read_text(encoding="utf-8"))
-                chunks_meta = meta.get("chunks", {})
-                chunk_meta = chunks_meta.get(str(chunk_idx), {})
-                if chunk_meta.get("hash") == chunk_hash and meta.get("model") == self.model:
-                    if self.verbose:
-                        print(" (cached)", end="", flush=True)
-                    data = json.loads(chunk_file.read_text(encoding="utf-8"))
-                    return KIR.from_dict(data)
+                existing_meta = json.loads(meta_file.read_text(encoding="utf-8"))
             except Exception:
-                pass
+                existing_meta = {}
+
+        chunks_meta = existing_meta.get("chunks", {})
+        chunk_meta = chunks_meta.get(str(chunk_idx), {})
+
+        if chunk_file.exists() and chunk_meta.get("hash") == chunk_hash:
+            if self.verbose:
+                print(" (cached)", end="", flush=True)
+            data = json.loads(chunk_file.read_text(encoding="utf-8"))
+            return KIR.from_dict(data)
+
+        if chunk_meta.get("fail_count", 0) >= 2 and chunk_meta.get("hash") == chunk_hash:
+            if self.verbose:
+                print(" (skip: permanently_failed)", end="", flush=True)
+            kir = KIR()
+            kir.metadata["extraction_error"] = "permanently_failed"
+            return kir
 
         sub_kir = self._extract_from_chunk(doc_name, chunk, chunk_idx)
 
         if sub_kir.metadata.get("extraction_error"):
             if self.verbose:
                 print(f" [SKIP CACHE: {sub_kir.metadata['extraction_error']}]", end="", flush=True)
+            doc_cache_dir = self.cache_dir / doc_slug
+            doc_cache_dir.mkdir(parents=True, exist_ok=True)
+            fail_count = chunk_meta.get("fail_count", 0) + 1
+            existing_meta.setdefault("doc_name", doc_name)
+            existing_meta.setdefault("chunks", {})
+            existing_meta["chunks"][str(chunk_idx)] = {
+                "hash": chunk_hash,
+                "fail_count": fail_count,
+                "last_error": sub_kir.metadata["extraction_error"],
+                "updated_at": time.time(),
+            }
+            meta_file.write_text(
+                json.dumps(existing_meta, ensure_ascii=False, indent=2),
+                encoding="utf-8",
+            )
             return sub_kir
 
         doc_cache_dir = self.cache_dir / doc_slug
@@ -262,7 +343,7 @@ class LLMEntityExtractor:
 
     def _extract_from_chunk(self, doc_name: str, chunk: str, chunk_idx: int) -> KIR:
         """Calls the LLM and parses the response into KIR claims."""
-        kir = KIR(metadata={"extractor": _EXTRACTOR_ID})
+        kir = KIR(metadata={"extractor": self.extractor_id})
 
         prompt = _EXTRACTION_PROMPT.replace("{text}", chunk[:4000])
         response = self._call_llm(prompt)
@@ -298,7 +379,7 @@ class LLMEntityExtractor:
                 surface_form=name,
                 canonical_name=canonical,
                 entity_types=list(types) if types else ["concept"],
-                extractor_id=_EXTRACTOR_ID,
+                extractor_id=self.extractor_id,
                 confidence=conf,
                 evidence=[EvidenceItem(
                     source_doc_id=doc_id,
@@ -325,7 +406,7 @@ class LLMEntityExtractor:
             kir.alias_claims.append(AliasClaim(
                 alias=normalize_text(alias_name),
                 canonical_name=normalize_text(canonical),
-                extractor_id=_EXTRACTOR_ID,
+                extractor_id=self.extractor_id,
                 confidence=conf,
                 evidence=[EvidenceItem(
                     source_doc_id=doc_id,
@@ -357,7 +438,7 @@ class LLMEntityExtractor:
                 subject_name=normalize_text(subject),
                 predicate=normalize_text(predicate),
                 object_name=normalize_text(obj),
-                extractor_id=_EXTRACTOR_ID,
+                extractor_id=self.extractor_id,
                 confidence=conf,
                 evidence=[EvidenceItem(
                     source_doc_id=doc_id,
@@ -381,7 +462,7 @@ class LLMEntityExtractor:
             centrality=0.0,
             entity_mentions=[normalize_text(e.get("name", "")) for e in data.get("entities", []) if e.get("name")],
             summary=summary,
-            extractor_id=_EXTRACTOR_ID,
+            extractor_id=self.extractor_id,
             confidence=0.75,
             evidence=[EvidenceItem(
                 source_doc_id=doc_id,
@@ -400,12 +481,14 @@ class LLMEntityExtractor:
             "model": self.model,
             "prompt": prompt,
             "stream": False,
+            "format": "json",
             "options": {
                 "num_gpu": 99,
                 "temperature": 0.1,
-                "num_ctx": 8192,
+                "num_ctx": self.num_ctx,
                 "top_p": 0.9,
                 "num_thread": 8,
+                "num_predict": self.num_predict,
             },
             "keep_alive": "30m",
         }

@@ -1,0 +1,350 @@
+=== Tabla de Codigos ANSI.PDF ===
+
+--- Página 1 ---
+1 de 6 
+DESCRIPCION DE LOS NUMEROS ANSI / IEEE 
+ 
+ 
+1. Elemento principal, es el dispositivo de iniciacion, tal como el interruptor de control, rele de tension, 
+interruptor de flotador, etc., que sirve para poner el aparato en operacion o fuera de servicio, bien 
+directamente o a traves de dispositivos, tales como reles de proteccion con retardo. 
+ 
+2. Rele de cierre o arranque temporizado, es el que da la temporizacion deseada entre operaciones de una 
+secuencia automatica o de un sistema de proteccion, excepto cuando es proporcionado especificamente por 
+los dispositivos 48, 62 y 79 descritos mas adelante. 
+ 
+3. Rele de comprobacion o de bloqueo, es el que opera en respuesta a la posicion de un numero de 
+condiciones determinadas, en un equipo para permitir que continue su operacion, para que se pare o para 
+proporcionar una prueba de la posicion de estos dispositivos o de estas condiciones para cualquier fin. 
+ 
+4. Contacto principal, es un dispositivo generalmente mandado por el dispositivo Nº 1 o su equivalente y los 
+dispositivos de permiso y proteccion necesarios, y sirve para cerrar y abrir los circuitos de control necesarios 
+para reponer un equipo en marcha, bajo las condiciones deseadas o bajo otras condiciones anormales. 
+ 
+5. Dispositivo de parada, es aquel cuya funcion primaria es quitar y mantener un equipo fuera de servicio. 
+ 
+6. Interruptor de arranque, es un dispositivo cuya funcion principal es conectar la maquina a su fuente de 
+tension de arranque. 
+ 
+7. Interruptor de anodo, es el utilizado en los circuitos del anodo de un rectificador de potencia, 
+principalmente par interrumpir el circuito rectificador por retorno del encendido de arco. 
+ 
+8. Dispositivo de desconexion de energia de control, es un dispositivo de desconexion (tal como un 
+conmutador de cuchilla, interruptor o bloque de fusibles extraibles) que se utiliza con el fin de conectar y 
+desconectar, respectivamente, la fuente de energia de control hacia y desde la barra o equipo de control.
+ 
+ 
+Nota.- se considera que la energia de control incluye la energia auxiliar que alimenta aparatos pequenos 
+como motores calefactores. 
+ 
+9. Dispositivo de inversion, es el que se utiliza para invertir las conexiones del campo de una maquina o bien 
+para otras funciones especiales de inversion. 
+ 
+10. Conmutador de secuencia, es el que se utiliza para cambiar la secuencia de conexion o desconexion de 
+unidades de un equipo de unidades multiples. 
+ 
+11. Reservado para aplicaciones futuras. 
+ 
+12. Dispositivo de exceso de velocidad, es normalmente un interruptor de velocidad de conexion directa que 
+actua cuando la maquina embala. 
+ 
+13. Dispositivo de velocidad sincrona, es el que funciona con aproximadamente la velocidad normal de una 
+maquina, tal como un conmutador de velocidad centrifuga, reles de frecuencia de deslizamiento, rele de 
+tension, rele de intensidad minima o cualquier tipo de dispositivo similar. 
+ 
+14. Dispositivo de falta de velocidad, es el que actua cuando la velocidad de la maquina desciende por debajo 
+de un valor predeterminado. 
+ 
+15. Dispositivo regulador de velocidad o frecuencia, de una maquina o sistema a un cierto valor o bien entre 
+ciertos limites 
+ 
+16. Reservado para aplicaciones futuras. 
+ 
+17. Conmutador para puentear el campo serie, sirve para abrir y cerrar un circuito en shunt entre los 
+extremos de cualquier pieza o aparto (excepto una resistencia) tal como el campo de una maquina un 
+condensador o una reactancia.
+
+--- Página 2 ---
+2 de 6 
+Nota.- Eso incluye los dispositivos que realizan las funciones de shunt necesarias para arrancar una maquina 
+por los dispositivos 6 o 42, su equivalente, y tambien excluye la funcion del dispositivo 73 que sirve para la 
+operacion de las resistencias. 
+ 
+18. Dispositivo de aceleracion o declaracion, es el que se utiliza para cerrar o hacer cerrar los circuitos que 
+sirven para aumentar o disminuir la velocidad de una maquina. 
+ 
+19. Contactos de transicion de arranque a marcha normal. Su funcion es hacer las transferencias de las 
+conexiones de alimentacion de arranque a las de marcha normal de la maquina. 
+ 
+20. Valvula maniobrada electricamente, es una valvula accionada por solenoide o motor, que se utiliza en 
+circuitos de vacio, aire, gas, aceite, agua o similares. 
+ 
+21. Rele de distancia, es el que funciona cuando al admitancia, impedancia o reactancia del circuito 
+disminuyen o aumentan a unos limites preestablecidos. 
+ 
+22. Interruptor igualador , sirve para conectar y desconectar las conexiones para actualizacion de intensidad 
+para los reguladores del campo de la maquina o de la tension de la maquina, en una instalacion de unidades 
+multiples. 
+ 
+23. Dispositivo regulador de temperatura, es el que funciona para mantener la temperatura de la maquina u 
+otros aparatos dentro de ciertos limites.  
+Nota.- Un ejemplo es un termostato que enciende un calentador en un elemento de aparellaje, cuando la 
+temperatura desciende a un valor deseado que es distinto de un dispositivo usado para proporcionar 
+regulacion de temperatura automatica entre limites proximos, y que seria designado como 90T. 
+ 
+24. Sobre excitacion. Un rele que funciona cuando la relacion V/Hz (tension/frecuencia) excede un valor pre-
+ajustado. El rele puede tener una caracteristica temporizada o instantanea. 
+ 
+25. Dispositivo de sincronizacion o puesta en paralelo, es el que funciona cuando dos circuitos de alterna 
+estan dentro de los limites deseados de tension, frecuencia o angulo de fase, lo cual permite o causa la 
+puesta en paralelo de estos circuitos. 
+ 
+26. Dispositivo termico, es el que funciona cuando la temperatura del campo en shunt, o el bobinado 
+amortiguador de una maquina, o el de una resistencia de limitacion de carga o de cambio de carga, o de un 
+liquido u otro medio, excede de un valor determinado con anterioridad. Si la temperatura del aparato 
+protegido, tal como un rectificador de energia, o de cualquier otro medio, es inferior a un valor fijado con 
+antelacion. 
+ 
+27. Rele de minima tension, es el que funciona al descender la tension de un valor predeterminado. 
+ 
+28. Detector de llama, su funcion es detectar la existencia de llama en el piloto o quemador principal, por 
+ejemplo de una caldera o una turbina de gas. 
+ 
+29. Contactor de aislamiento, es el que se utiliza con el proposito especial de desconectar un circuito de otro, 
+por razones de maniobra de emergencia, conservacion o prueba. 
+ 
+30. Rele anunciador, es un dispositivo de reposicion no automatica que da un numero de indicaciones visuales 
+independientes al accionar el dispositivo de proteccion y ademas tambien puede estar dispuesto para 
+efectuar la funcion de bloqueo. 
+ 
+31. Dispositivo de excitacion separada, es el que conecta un circuito, tal como el campo shunt de una 
+conmutatriz, a la fuente de excitacion separada durante el proceso de arranque, o bien se utiliza para 
+energizar la excitacion y el circuito de encendido de un rectificador. 
+ 
+32. Rele direccional de potencia, es el que funciona sobre un valor deseado de potencia en una direccion dada 
+o sobre la inversion de potencia como por ejemplo, la resultante del retroceso del arco en los circuitos de 
+anodo o catodo de un rectificador de potencia.
+
+--- Página 3 ---
+3 de 6 
+33. Conmutador de posicion, es el que hace o abre contacto cuando el dispositivo principal o parte del aparato, 
+que no tiene un numero funcional de dispositivo, alcanza una posicion dada. 
+ 
+34. Conmutador de secuencia movido a motor, es un conmutador de contactos multiples el cual fija la 
+secuencia de operacion de los dispositivos principales durante el arranque y la parada, o durante otras 
+operaciones que requieran una secuencia. 
+ 
+35. Dispositivo de cortocircuito de las escobillas o anillos rozantes, es para elevar, bajar o desviar las 
+escobillas de una maquina, o para cortocircuitar los anillos rozantes. 
+ 
+36. Dispositivo de polaridad, es el que acciona o permite accionar a otros dispositivos con una polaridad 
+solamente, 
+ 
+37. Rele de baja intensidad o baja potencia, es el que funciona cuando la intensidad o la potencia caen por 
+debajo de un valor predeterminado. 
+ 
+38. Dispositivo termico de cojinetes, es el que funciona con temperatura excesiva de los cojinetes. 
+ 
+39. Detector de condiciones mecanicas, es el que tiene por cometido funcionar en situaciones mecanicas 
+anormales (excepto las que suceden a los cojinetes de una maquina, tal y como se escoge en la funcion 38), 
+tales como vibracion excesiva, excentricidad, etc. 
+ 
+40. Rele de campo, es el que funciona por un valor dado, anormalmente bajo, por fallo de la intensidad de 
+campo de la maquina, o por un valor excesivo del valor de la componente reactiva de la corriente de 
+armadura en una maquina de c.a., que indica excitacion del campo anormalmente baja. 
+ 
+41. Interruptor de campo, es un dispositivo que funciona para aplicar o quitar la excitacion de campo de una 
+maquina. 
+ 
+42. Interruptor de marcha, es un dispositivo cuya funcion principal es la de conectar la maquina a su fuente 
+de tension de funcionamiento en marcha, despues de haber sido llevada hasta la velocidad deseada desde la 
+conexion de arranque. 
+ 
+43. Dispositivo de transferencia, es un dispositivo accionado a mano, que efectua la transferencia de los 
+circuitos de control para mo dificar el proceso de operacion del equipo de conexion de los circuitos o de 
+algunos de los dispositivos. 
+ 
+44. Rele de secuencia de arranque del grupo, es el que funciona para arrancar la unidad proxima disponible 
+en un equipo de unidades multiples cuando falta o no esta disponible la unidad que normalmente precede. 
+ 
+45. Detector de condiciones atmosfericas. Funciona ante condiciones atmosfericas anormales, como humos 
+peligrosos, gases explosivos, fuego, etc. 
+ 
+46. Rele de intensidad para equilibrio o inversion de fases, es un rele que funciona cuando las intensidades 
+polifasicas estan en secuencia inversa o desequilibrada o contienen componentes de secuencia negativa. 
+ 
+47. Rele de tension para secuencia de fase, es el que funciona con un valor dado de tension polifasica de la 
+secuencia de fase deseada. 
+ 
+48. Rele de secuencia incompleta, es el que vuelve al equipo a la posicion normal o “desconectado” y lo 
+enclava si la secuencia normal de arranque, funcionamiento o parada no se completa debidamente dentro de 
+un intervalo predeterminado. 
+ 
+49. Rele termico para maquina, aparato o transformador, es el que funciona cuando la temperatura de la 
+maquina, aparato o transformador excede de un valor fijado. 
+ 
+50. Rele instantaneo de sobre intensidad o de velocidad de aumento de intensidad, es el que funciona 
+instantaneamente con un valor excesivo de velocidad de aumento de intensidad.
+
+--- Página 4 ---
+4 de 6 
+51. Rele de sobreintensidad temporizado, es un rele con una caracteristica de tiempo inverso o de tiempo fijo 
+que funciona cuando la intensidad de un circuito de c.a. sobrepasa in valor dado. 
+ 
+52. Interruptor de c.a. es el que se usa para cerrar e interrumpir un circuito de potencia de c.a. bajo 
+condiciones normales, o para interrumpir este circuito bajo condiciones de falta de emergencia. 
+ 
+53. Rele de la excitatriz o del generador de c.c. es el que fuerza un campo de la maquina de c.c. durante el 
+arranque o funciona cuando la tension de la maquina ha llegado a un valor dado. 
+ 
+54. Reservado para aplicaciones futuras. 
+ 
+55. Rele de factor de potencia, es el que funciona cuando el factor de potencia de un circuito de c.a. no llega o 
+sobrepasa un valor dado. 
+ 
+56. Rele de aplicacion del campo, es el que se utiliza para controlar automaticamente la aplicacion de la 
+excitacion de campo de un motor de c.a. en un punto predeterminado en el ciclo de deslizamiento. 
+ 
+57. Dispositivo de cortocircuito o de puesta a tierra, es el que funciona debido al fallo de uno o mas de los 
+anodos del rectificador de potencia, o por el fallo de un diodo por no conducir o bloquear adecuadamente. 
+ 
+58. Rele de fallo de rectificador de potencia, es el que funciona debido al fallo de uno o mas de los anodos del 
+rectificador de potencia, o por el fallo de un diodo por no conducir o bloquear adecuadamente. 
+ 
+59. Rele de sobretension, es que funciona con un valor dado de sobretension. 
+ 
+60. Rele de equilibrio de tension, es el que opera con una diferencia de tension entre dos circuitos. 
+ 
+61. Rele de parada o apertura temporizada, es el que se utiliza en union con el dispositivo que inicia la 
+parada total o la indicacion de parada o apertura en una secuencia automatica. 
+ 
+62. Reservado para aplicaciones futuras. 
+ 
+63. Rele de presion de gas, liquido o vacio, es el que funciona con un valor dado de presion del liquido o gas, 
+para una determinada velocidad de variacion de la presion. 
+ 
+64. Rele de proteccion de tierra, es el que funciona con el fallo a tierra del aislamiento de una maquina, 
+transformador u otros aparatos, o por contorneamiento de arco a tierra de una maquina de c.c. 
+ 
+Nota: Esta funcion se aplica solo a un rele que detecta el paso de corriente desde el armazon de una 
+maquina, caja protectora o estructura de una pieza de aparatos, a tierra, o detecta una tierra en un bobinado o 
+circuito normalmente no puesto a tierra. No se aplica a un dispositivo conectado en el circuito secundario o 
+en el neutro secundario de un transformador o transformadores de intensidad, conectados en el circuito de 
+potencia de un sistema puesto normalmente a tierra. 
+ 
+65. Regulador mecanico, es el equipo que controla la apertura de la compuerta o valvula de la maquina motora, 
+para arrancarla, mantener su velocidad o detenerla. 
+ 
+66. Rele de pasos, es el que funciona para permitir un numero especificado de operaciones de un dispositivo 
+dado o equipo, o bien, un numero especificado de operaciones sucesivas con un intervalo dado de tiempo 
+entre cada una de ellas. Tambien se utiliza para permitir el energizado periodico de un circuito, y la 
+aceleracion gradual de una maquina. 
+ 
+67. Rele direccional de sobreintensidad de c.a. es el que funciona con un valor deseado de circulacion de 
+sobreintensidad de c.a. en una direccion dada. 
+ 
+68. Rele de bloqueo, es el que inicia una senal piloto para bloquear o disparar en faltas externas en una linea de 
+transmision o en otros aparatos bajo condiciones dadas, coopera con otros dispositivos a bloquear el disparo 
+o a bloquear el reenganche con una condicion de perdida de sincronismo o en oscilaciones de potencia.
+
+--- Página 5 ---
+5 de 6 
+69. Dispositivo de supervision y control, es generalmente un interruptor auxiliar de dos posiciones accionado a 
+mano, el cual permite una posicion de cierre de un interruptor o la puesta en servicio de un equipo y en la 
+otra posicion impide el accionamiento del interruptor o del equipo. 
+ 
+70. Reostato, es el que se utiliza para variar la resistencia de un circuito en respuesta a algun metodo de control 
+electrico, que, o bien es accionado electricamente, o tiene otros accesorios electricos como contactos 
+auxiliares de posicion o limitacion. 
+ 
+71. Rele de nivel liquido o gaseoso. Este rele funciona para valores dados de nivel de liquidos o gases, o para 
+determinadas velocidades de variacion de estos parametros. 
+ 
+72. Interruptor de c.c. es el que se utiliza para cerrar o interrumpir el circuito de alimentacion de c.c. bajo 
+condiciones normales o para interrumpir este circuito bajo condiciones de emergencia. 
+ 
+73. Contactor de resistencia de carga, es el que se utiliza para puentear o meter en circuito un punto de la 
+resistencia limitadora, de cambio o indicadora, o bien para activar un calentador, una luz, o una resistencia 
+de carga de un rectificador de potencia u otra maquina. 
+ 
+74. Rele de alarma, es cualquier otro rele diferente al anunciador comprendido bajo el dispositivo 30 que se 
+utiliza para accionar u operar en union de una alarma visible o audible. 
+ 
+75. Mecanismo de cambio de posicion, se utiliza para cambiar un interruptor desconectable en unidad entre las 
+posiciones de conectado, desconectado y prueba. 
+ 
+76. Rele de sobreintensidad de c.c. es el que funciona cuando la intensidad en un circuito de c.c. sobrepasa un 
+valor dado. 
+ 
+77. Transmisor de impulsos, es el que se utiliza para generar o transmitir impulsos, a traves de un circuito de 
+Telemedida o hilos pilotos, a un dispositivo de indicacion o recepcion de distancia. 
+ 
+78. Rele de medio de angulo de desfase o de proteccion de salida de paralelo, es el que funciona con un 
+valor determinado de angulo de desfase entre dos tensiones o dos intensidades, o entre tension e intensidad. 
+ 
+79. Rele de reenganche de c.a. es el que controla el reenganche enclavamiento de un interruptor de c.a. 
+ 
+80. Rele de flujo liquido o gaseoso, actua para valores dados de la magnitud del flujo o para determinadas 
+velocidades de variacion de este 
+ 
+81. Rele de frecuencia, es el que funciona con un valor dado de la frecuencia o por la velocidad de variacion de 
+la frecuencia. 
+ 
+82. Rele de reenganche de c.c. es el que controla el cierre y reenganche de un interruptor de c.c. generalmente 
+respondiendo a las condiciones de la carga del circuito. 
+ 
+83. Rele de seleccion o transferencia del control automatico, es el que funciona para elegir automaticamente 
+entre ciertas fuentes de alimentacion o condiciones en un equipo, o efectua automaticamente una operacion 
+de transferencia. 
+ 
+84. Mecanismo de accionamiento, es el mecanismo electrico completo, o servomecanismo, incluyendo el 
+motor de operacion, solenoides, auxiliares de posicion, etc., para un cambiador de tomas, regulador de 
+induccion o cualquier pieza de un aparato que no tenga numero de funcion. 
+85. Rele receptor de ondas portadoras o hilo piloto, es el que es accionado o frenado por una senal y se usa 
+en combinacion con una proteccion direccional que funciona con equipos de transmision de onda portadora 
+o hilos piloto de c.c. 
+ 
+86. Rele de enclavamiento, es un rele accionado electricamente con reposicion a mando o electrica, que 
+funciona para parar y mantener un equipo fuera de servicio cuando concurren condiciones anormales. 
+ 
+87. Rele de proteccion diferencial, es el que funciona sobre un porcentaje o angulo de fase u otra diferencia 
+cuantitativa de dos intensidades o algunas otras cantidades electricas.
+
+--- Página 6 ---
+6 de 6 
+ 
+88. Motor o grupo motor generador auxiliar, es el que se utiliza para accionar equipos auxiliares, tales como 
+bombas, ventiladores, excitatrices, etc. 
+ 
+89. Desconectador de linea, es el que se utiliza como un desconectador de desconexion o aislamiento en un 
+circuito de potencia de c.a. o c.c. cuando este dispositivo se acciona electricamente o bien tiene accesorios 
+electricos, tales como interruptores auxiliares, enclavamiento electromagnetico, etc. 
+ 
+90. Dispositivo de regulacion, es el que funciona para regular una cantidad, tal como la tension, intensidad, 
+potencia, velocidad, frecuencia, temperatura y carga a un valor dado, o bien ciertos limites para las 
+maquinas, lineas de union u otros aparatos. 
+ 
+91. Rele direccional de tension, es el que funciona cuando la tension entre los extremos de un interruptor o 
+contactor abierto sobrepasa de un valor dado en una direccion dada. 
+ 
+92. Rele direccional de tension y potencia, es un rele que permite y ocasiona la conexion de dos circuitos 
+cuando la diferencia de tension entre ellos excede de un valor dado en una direccion predeterminada y da 
+lugar a que estos dos circuitos sean desconectados uno del otro cuando la potencia circulante entre ellos 
+excede de un valor dado en la direccion opuesta. 
+ 
+93. Contador de cambio de campo, es el que funciona para cambiar el valor de la excitacion de la maquina. 
+ 
+94. Rele de disparo o disparo libre, es el que funciona para disparar o permitir disparar un interruptor, 
+contactor o equipo, o evitar un reenganche inmediato de un interruptor en el caso que abra por sobrecarga, 
+aunque el circuito inicial de mando de cierre sea mantenido. 
+ 
+95. Reservado para aplicaciones especiales. 
+ 
+96. Reservado para aplicaciones especiales. 
+ 
+97. Reservado para aplicaciones especiales. 
+ 
+98. Reservado para aplicaciones especiales. 
+ 
+99. Reservado para aplicaciones especiales.
+

@@ -110,6 +110,7 @@ class RelationClaim:
     object_name: str
     extractor_id: str = ""
     confidence: float = 0.0
+    attributes: List[str] = field(default_factory=list)
     evidence: List[EvidenceItem] = field(default_factory=list)
     raw: Dict[str, Any] = field(default_factory=dict)
 

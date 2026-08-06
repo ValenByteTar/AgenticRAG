@@ -1,0 +1,58 @@
+=== RESET AEROGENERADORES GOLDWIND.pdf ===
+
+--- Página 1 ---
+PROCEDIMIENTO PARA EL RESET DE AEROS GOLDWING 
+• Tenemos una guardia semanal de service compuesta por dos tecnicos estaran 
+disponibles de lunes a viernes de 15 a 19 Hs, Sabado, Domingo y feriados de 8 a 
+19 Hs 
+ 
+• una vez informada una falla tenemos 5 min de tolerancia para recibir una 
+respuesta del tecnico, sino obtenemos respuesta proceder con el reset 
+anunciandolo al grupo. 
+• tenemos tres tipos de reset disponibles  
+1- Reset simple 
+ 
+  
+2- Reset del PLC 
+ 
+  
+3- Reset desde el SCADA
+
+--- Página 2 ---
+PROCEDIMIENTO PARA EL RESET DE AEROS GOLDWING 
+Doble click izquierdo sobre el aero y apretamos reset 
+ 
+  
+o Doble click izquierdo sobre el aero > More > Reset. 
+ 
+  
+o haciendo click derecho sobre el aero
+
+--- Página 3 ---
+PROCEDIMIENTO PARA EL RESET DE AEROS GOLDWING 
+ 
+  
+• Antes de realizar cualquier reset deben corroborar los 
+parametros del Picht los grados y temperaturas del mismo, 
+el picht 1 va a estar en 39° para poder realizar el reset y la 
+temperatura de cualquier de los 3 picht siempre debe ser < 
+a 80°celsius, si la temperatura es > o = a 80° Celsius 
+esperar que la temperatura baje.
+
+--- Página 4 ---
+PROCEDIMIENTO PARA EL RESET DE AEROS GOLDWING 
+• tenemos dos tipos diferentes en el cual un aero puede estar detenido: 
+ 
+ 
+ 
+ 
+1- en por falla en Error list, proceder con el Procedimiento ya que es una falla
+
+--- Página 5 ---
+PROCEDIMIENTO PARA EL RESET DE AEROS GOLDWING 
+2- en por Warning en event list, 
+ 
+ 
+en este caso debemos esperar 40 Min antes de realizar el reset ya que podemos 
+interrumpir un proceso de lubricacion o desenrollado de cables.
+

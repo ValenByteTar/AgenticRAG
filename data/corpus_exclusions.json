@@ -1,0 +1,1047 @@
+{
+  "generated_at": "2026-08-03T22:41:41.692911+00:00",
+  "total_excluded": 208,
+  "total_bytes": 3595409,
+  "excluded": [
+    {
+      "file": "43 AI Powered Tools to Boost Productivity.txt",
+      "reason": "ai_hype",
+      "size": 0
+    },
+    {
+      "file": "AI AGENTS .txt",
+      "reason": "ai_hype",
+      "size": 0
+    },
+    {
+      "file": "How to use ChatGPT.txt",
+      "reason": "ai_hype",
+      "size": 0
+    },
+    {
+      "file": "35 LinkedIn Secrets You Need to Know.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "6 Step - Project Management for Successful Project.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "8 ways to get a job in cybersecurity.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "API Security Checklist .txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "Burp Suite UHD.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "CISO Playbook Mergers and Acquisitions.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "CISO Point of View Guide Data Protection.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "Code of Practice App Store Operators and Developers.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "Cyber practices for remote workers.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "Disaster Recovery Planning.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "Generación FV-Diesel.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "How To Avoid Burnout.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "How to become a CISO.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "In The Eyes Of A Recruiter.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "InstructivoSolar.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "OWASP Top 10.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "Official_Certified_Data_Privacy_Solutios_Engineer_CDPSE_Review_Manual.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "SQL Cheat Sheet 2023.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "Secure Coding Cheatsheets.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "Web Pentesting Checklist .txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "Why I Never Talk About Family At Work.txt",
+      "reason": "broken_extraction",
+      "size": 0
+    },
+    {
+      "file": "Cloud Security Concept .txt",
+      "reason": "broken_slides",
+      "size": 0
+    },
+    {
+      "file": "Cloud Security concepts.txt",
+      "reason": "broken_slides",
+      "size": 0
+    },
+    {
+      "file": "IPsec Your Quick Review Guide to Network Security.txt",
+      "reason": "broken_slides",
+      "size": 0
+    },
+    {
+      "file": "Password Security (3).txt",
+      "reason": "broken_slides",
+      "size": 2650
+    },
+    {
+      "file": "10 ISO 27001 Internal Audit Checklist.txt",
+      "reason": "content_duplicate",
+      "size": 20755
+    },
+    {
+      "file": "100 SOC Tools .txt",
+      "reason": "content_duplicate",
+      "size": 36385
+    },
+    {
+      "file": "3rd Party.txt",
+      "reason": "content_duplicate",
+      "size": 20060
+    },
+    {
+      "file": "A CISO Guide Cyber Defence.txt",
+      "reason": "content_duplicate",
+      "size": 59375
+    },
+    {
+      "file": "ALL ABOUT PHISHING.txt",
+      "reason": "content_duplicate",
+      "size": 6018
+    },
+    {
+      "file": "Access Control Guidance for Cloud Systems.txt",
+      "reason": "content_duplicate",
+      "size": 81595
+    },
+    {
+      "file": "CISA YEAR IN REVIEW 2022.txt",
+      "reason": "content_duplicate",
+      "size": 68864
+    },
+    {
+      "file": "CISCO Privacy Benchmark Study 2023.txt",
+      "reason": "content_duplicate",
+      "size": 31446
+    },
+    {
+      "file": "CISO.txt",
+      "reason": "content_duplicate",
+      "size": 323909
+    },
+    {
+      "file": "CYBER SECURITY FRAMEWORKS.txt",
+      "reason": "content_duplicate",
+      "size": 12309
+    },
+    {
+      "file": "CYBERSECURITY BASICS.txt",
+      "reason": "content_duplicate",
+      "size": 39964
+    },
+    {
+      "file": "Conceptual Guide to Enterprise Cyber Security 2023 (2).txt",
+      "reason": "content_duplicate",
+      "size": 307808
+    },
+    {
+      "file": "Cost of a Data Breach Report, 2022.txt",
+      "reason": "content_duplicate",
+      "size": 102650
+    },
+    {
+      "file": "Cyber Security Interview Questions .txt",
+      "reason": "content_duplicate",
+      "size": 15573
+    },
+    {
+      "file": "Cybersecurity_Incident_&_Vulnerability_Response_Playbooks (2).txt",
+      "reason": "content_duplicate",
+      "size": 109875
+    },
+    {
+      "file": "DORA checklist 1.1.txt",
+      "reason": "content_duplicate",
+      "size": 17920
+    },
+    {
+      "file": "Davos report on Global Cybersecurity for 2023.txt",
+      "reason": "content_duplicate",
+      "size": 82260
+    },
+    {
+      "file": "GDPR Data Protection Principals.txt",
+      "reason": "content_duplicate",
+      "size": 2610
+    },
+    {
+      "file": "Global Cybersecurity Outlook 2023.txt",
+      "reason": "content_duplicate",
+      "size": 82248
+    },
+    {
+      "file": "ISO 27001 Internal Audit Checklist.txt",
+      "reason": "content_duplicate",
+      "size": 20752
+    },
+    {
+      "file": "ISO 27001 Mapping contros.txt",
+      "reason": "content_duplicate",
+      "size": 12512
+    },
+    {
+      "file": "ISO-27001-self-assessment-checklist.txt",
+      "reason": "content_duplicate",
+      "size": 9325
+    },
+    {
+      "file": "Incident & Vulnerability Response Playbooks.txt",
+      "reason": "content_duplicate",
+      "size": 109886
+    },
+    {
+      "file": "Information Security Incident Example Policy.txt",
+      "reason": "content_duplicate",
+      "size": 12421
+    },
+    {
+      "file": "Infrastructure Penetration Testing Checklist.pdf.txt",
+      "reason": "content_duplicate",
+      "size": 8924
+    },
+    {
+      "file": "Introduction To Cyber Security.txt",
+      "reason": "content_duplicate",
+      "size": 145185
+    },
+    {
+      "file": "Malware Sandboxing.txt",
+      "reason": "content_duplicate",
+      "size": 20351
+    },
+    {
+      "file": "NIST CSF Checklist.txt",
+      "reason": "content_duplicate",
+      "size": 47617
+    },
+    {
+      "file": "NIST SP 800-30.txt",
+      "reason": "content_duplicate",
+      "size": 341193
+    },
+    {
+      "file": "NIST SP 800-61.txt",
+      "reason": "content_duplicate",
+      "size": 236485
+    },
+    {
+      "file": "NIST Zero Trust Architecture.txt",
+      "reason": "content_duplicate",
+      "size": 161075
+    },
+    {
+      "file": "PCI DSS v4.0 RoC FAQs.txt",
+      "reason": "content_duplicate",
+      "size": 27097
+    },
+    {
+      "file": "PCI_DSS_V4.x_TRA_Guidance.txt",
+      "reason": "content_duplicate",
+      "size": 14027
+    },
+    {
+      "file": "Phishing .txt",
+      "reason": "content_duplicate",
+      "size": 8247
+    },
+    {
+      "file": "Ransomware Risk Management.txt",
+      "reason": "content_duplicate",
+      "size": 64911
+    },
+    {
+      "file": "Secure Coding Practices (2).txt",
+      "reason": "content_duplicate",
+      "size": 101312
+    },
+    {
+      "file": "The 5 CISO Archetypes.txt",
+      "reason": "content_duplicate",
+      "size": 22784
+    },
+    {
+      "file": "Threat Hunting Survival Guide.txt",
+      "reason": "content_duplicate",
+      "size": 47401
+    },
+    {
+      "file": "Using BIA to Inform Risk Prioritization and Response.txt",
+      "reason": "content_duplicate",
+      "size": 66323
+    },
+    {
+      "file": "Vendor Security Checklist_MoS.txt",
+      "reason": "content_duplicate",
+      "size": 14647
+    },
+    {
+      "file": "Windows Event Log.txt",
+      "reason": "content_duplicate",
+      "size": 53719
+    },
+    {
+      "file": "Anexo D - Adecoagro.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - Algarrobo.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - BellVille.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - BioAnglo.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - Bioelectrica.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - DQD.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - ENVISION.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - GOLDWIND.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - GRENERGY.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - Harz Energy.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - La Florida.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - Listado Centrales.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - Pampetrol.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - Pollos San Mateos.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - SEEDS ENERGY.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - TENARIS.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - TOZZIGREEN.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Anexo D - TotalEnergies.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "BLC-ServicioCROM.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Calculo de maximo reactivo para PE.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "GOLDWIND - Reportes Semanales de SCADA.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "InstructivoMotores.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "InstructivoSolar2.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "ManualScadaSolar.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "PT4 Ingreso de Nuevos Usuarios.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "PT8 Reglamento Operativo del Sadi.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "ProcedimientoCROM.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "ProcedimientosCAMMESA.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "RESET AEROGENERADORES GOLDWIND.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "Requisitos Ingreso Generadores MEM.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "SimbologiaElectrica.txt",
+      "reason": "electrical_domain",
+      "size": 0
+    },
+    {
+      "file": "ContactoSoporte.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 1019
+    },
+    {
+      "file": "InformacionOptimumPG.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 12775
+    },
+    {
+      "file": "InstructivoEolico.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 13088
+    },
+    {
+      "file": "Novedades y Estados Operativos SOTR.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 27641
+    },
+    {
+      "file": "NovedadesTipicas.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 21396
+    },
+    {
+      "file": "PT11 Analisis de Perturbaciones.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 36608
+    },
+    {
+      "file": "PT15 Habilitación de Operadores.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 25452
+    },
+    {
+      "file": "PT25 Mercado de Reserva Instantanea.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 35487
+    },
+    {
+      "file": "Protecciones-1.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 228761
+    },
+    {
+      "file": "Protecciones-2.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 45315
+    },
+    {
+      "file": "Protecciones-3.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 60327
+    },
+    {
+      "file": "Protecciones-4.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 21726
+    },
+    {
+      "file": "RECUPERACIÓN DEL SADI.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 74681
+    },
+    {
+      "file": "Tabla de Codigos ANSI.txt",
+      "reason": "electrical_domain_pass2",
+      "size": 20665
+    },
+    {
+      "file": "BANK_REGULATION,_RISK_MANAGEMENT,_AND_COMPLIANCETHEORY,_PRACTICE.txt",
+      "reason": "financial_risk",
+      "size": 0
+    },
+    {
+      "file": "FOUNDATIONS_OF_FINANCIAL_RISK_AN_OVERVIEW_OF_FINANCIAL_RISK_AND.txt",
+      "reason": "financial_risk",
+      "size": 0
+    },
+    {
+      "file": "Financial_Reporting_of_Environmental_Liabilities_and_Risks_after.txt",
+      "reason": "financial_risk",
+      "size": 0
+    },
+    {
+      "file": "Financial_Risk_Management_for_Islamic_Banking_and_Finance_by_Ioan.txt",
+      "reason": "financial_risk",
+      "size": 0
+    },
+    {
+      "file": "Handbook_in_Monte_Carlo_Simulation_Applications_in_Financial_Engineering.txt",
+      "reason": "financial_risk",
+      "size": 0
+    },
+    {
+      "file": "Liquidity Risk Managing Funding and Asset Risk by Erik Banks.txt",
+      "reason": "financial_risk",
+      "size": 0
+    },
+    {
+      "file": "Managing_Risks_in_Commercial_and_Retail_Banking_by_Amalendu_Ghosh.txt",
+      "reason": "financial_risk",
+      "size": 0
+    },
+    {
+      "file": "Mapping_the_Risks_and_Risk_Management_Practices_in_Islamic_Banking.txt",
+      "reason": "financial_risk",
+      "size": 0
+    },
+    {
+      "file": "Operational_Risk_Management_in_Banks_Regulatory,_Organisational.txt",
+      "reason": "financial_risk",
+      "size": 0
+    },
+    {
+      "file": "Quantitative_risk_management_concepts,_techniques_and_tools_by_Alexander.txt",
+      "reason": "financial_risk",
+      "size": 0
+    },
+    {
+      "file": "Risk_management_and_shareholders_value_in_banking_from_risk_measurement.txt",
+      "reason": "financial_risk",
+      "size": 0
+    },
+    {
+      "file": "Risk_management_for_central_banks_and_other_public_investors_by.txt",
+      "reason": "financial_risk",
+      "size": 0
+    },
+    {
+      "file": "Value_at_Risk_and_Bank_Capital_Management_Risk_Adjusted_Performance.txt",
+      "reason": "financial_risk",
+      "size": 0
+    },
+    {
+      "file": "200 IT Security Job Interview Questions  (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "2023 Global Privacy Predictions (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "API Security Checklist (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "API Security Checklist.txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "AWS Security  (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Artificial Intelligence Risk Management Framework (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Artificial Intelligence Risk Management Framework (3).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Artificial Intelligence Risk Management Framework .txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Azure DevOps Security CheckList (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "BSI 200-1 (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Best Practices for MITRE ATT&CK® Mapping (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "CEH Exam Guide .txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "CISSP Study giude PDF.txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "ChatGPT for Offensive Security (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Cloud Pentesting Cheatsheet (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Cloud Security Best Practices .txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "CompTIA Security+ Exam Study Guide (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Conceptual Guide to Enterprise Cyber Security 2023 .txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Cyber Hygiene (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Cybersecurity Checklist.txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Cybersecurity Frameworks.txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Cybersecurity_Incident_&_Vulnerability_Response_Pl (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "DevSecOps Fundamentals Guidebook (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "EXCEL FOR ANALYTICS THE ULTIMATE GUIDE.txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "EXCEL Formulas Bible.txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "EXCEL STEP BY STEP GUIDE Mark Nicholls.txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Enabling a Threat Hunting Capability in AWS (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "GDPR Data Protection Principles (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "GDPR for Third-Party Risk Management (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "ISO 27001 Implementation Roadmap (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "ISO 27001 Internal Audit Checklist (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Information Risk Insights Study (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Introduction To Cybersecurity (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Kubernetes Security Cheat Sheet (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "NIS2.txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "NIST CSF Checklist (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "NIST Cloud Computing Forensic Science Challenges (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "NIST RISK MANAGEMENT FRAMEWORK (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "NIST.IR.8286D.txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Network Security Checklist (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Password Security (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Red Teaming Toolkit (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Risk assessment process handbook (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Risk_Management_Framework_for_Information_Systems_and_Organizations (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "SOC ANALYST INTERVIEW QUESTIONS (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "SOC Analyst Interview Questions.txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "SOFTWARE SUPPLY CHAIN SECURITY THREAT LANDSCAPE .txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Threat Intelligence Handbook (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Top 10 CI_CD Security Risks (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Top 50 Cyber Security Interview Questions PDF (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Top 50 Cybersecurity Interview Questions.txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Vendor Security Checklist  (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "Windows 11 Security Book (2).txt",
+      "reason": "near_duplicate",
+      "size": 0
+    },
+    {
+      "file": "1-Routing Basics.txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "101 Linux commands .txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "250 Practice Questions For Terraform Associate Certification.txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "50 Interview Questions with Answers CCNA PDF.txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "Accountability Framework Self-Assessment Questionnaires.txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "Azure Fundamentals AZ-900 Study Notes.txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "Data Science Interviews Ultimate Guide.txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "German_Ethics_Committe_Man,_and_Machine_Challenges_Posed_By_AI.txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "HackSpace – January 2023.txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "Learning DevOps.txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "Linux For Beginners.txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "Linux Networking.txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "Linux Notes for Professionals.txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "OReilly LINUX NETWORK ADMINISTRATOR'S GUIDE.txt",
+      "reason": "non_security_cert",
+      "size": 0
+    },
+    {
+      "file": "10 visuals that will help you to become a better you.txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    },
+    {
+      "file": "100 Excel Functions you should know in one handy PDF.txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    },
+    {
+      "file": "50 Excel Shortcuts PDF (2).txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    },
+    {
+      "file": "50 Excel Shortcuts PDF.txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    },
+    {
+      "file": "7 relatable visuals Impostor Syndrome.txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    },
+    {
+      "file": "Advanced Excel to be a Professional .txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    },
+    {
+      "file": "BEHAVIORAL INTERVIEW QUESTIONS.txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    },
+    {
+      "file": "CHANGE MANAGEMENT TOOLKIT.txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    },
+    {
+      "file": "Change Management Checklist (How to Do It Right).txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    },
+    {
+      "file": "Excel Charting Data Analytics.txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    },
+    {
+      "file": "Excel Formulas in Single Document.txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    },
+    {
+      "file": "Excel Shortcuts .txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    },
+    {
+      "file": "Excel® VBA Notes for Professionals.txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    },
+    {
+      "file": "If you often overthink, read this.txt",
+      "reason": "office_soft_skills",
+      "size": 0
+    }
+  ]
+}

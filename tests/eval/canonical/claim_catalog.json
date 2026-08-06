@@ -1,0 +1,24 @@
+{
+  "benchmark_id": "cybersec",
+  "version": "2.0",
+  "status": "migration-in-progress",
+  "ground_truth_source": "human_reviewed",
+  "review_status": "pending",
+  "builder_independence": true,
+  "claims": [],
+  "schema_notes": {
+    "computable_fields": [
+      "claim_id",
+      "subject",
+      "required_relation",
+      "object",
+      "claim_scope"
+    ],
+    "human_assistance_only": [
+      "canonical_form",
+      "human_description",
+      "acceptable_variants"
+    ],
+    "prohibited_source": "KIR, Knowledge Model, or Warm Artifacts from the evaluated Builder build"
+  }
+}

@@ -1,0 +1,1274 @@
+=== RECUPERACIÓN DEL SADI.pdf ===
+
+--- Página 1 ---
+INDICE 
+PROCEDIMIENTO TECNICO N° 7: RECUPERACION DEL SADI LUEGO DE UN 
+COLAPSO TOTAL ....................................................................................................................... 3 
+1. OBJETO ............................................................................................................................... 3 
+2. ALCANCE ............................................................................................................................. 3 
+3. REFERENCIAS .................................................................................................................... 3 
+4. DEFINICIONES .................................................................................................................... 3 
+5. RESPONSABILIDADES ....................................................................................................... 4 
+6. CONSIDERACIONES GENERALES ................................................................................... 5 
+6.1. PLANES DE RECUPERACION ..................................................................................... 5 
+6.2. SISTEMA DE COMUNICACIONES ............................................................................... 5 
+6.3. COMUNICACIONES OPERATIVAS .............................................................................. 6 
+6.4. NORMALIZACION DE LA DEMANDA ........................................................................... 6 
+6.5. CENTRALES NUCLEARES .......................................................................................... 7 
+6.6. CENTRALES CON ARRANQUE EN NEGRO ............................................................... 7 
+6.7. CENTRALES CON AUTOMATISMO DE “SALTO DE CARGA” .................................... 8 
+6.8. GENERACION RENOVABLE: Recomendaciones durante la recuperacion. ................ 8 
+6.9. INTERCONEXIONES INTERNACIONALES: Asistencia desde paises limitrofes ......... 9 
+6.10. SIMULACROS DE COLAPSO: Entrenamiento de Operacion de Recuperacion ......... 9 
+7. REGISTROS ...................................................................................................................... 10 
+8. ARCHIVO - BIBLIOTECA. .................................................................................................. 10 
+9. DESARROLLO DEL PROCEDIMIENTO ............................................................................ 10 
+9.1. PRINCIPALES ACCIONES DEL COC ........................................................................ 10 
+9.2. ESTRATEGIA DE RECUPERACION .......................................................................... 11 
+9.2.1. RECUPERACION DESDE LITORAL (SALTO GRANDE) HACIA GBA ................ 13 
+9.2.2. RECUPERACION DESDE AREA NEA (CH YACYRETA) .................................... 15 
+9.2.3. RECUPERACION CORREDOR COMAHUE - GBA ............................................. 17 
+9.2.4. RECUPERACION EN ISLAS ................................................................................ 20 
+10. ANEXOS ........................................................................................................................... 26 
+10.1. ANEXO N°1: ESQUEMA DE COMUNICACIONES ................................................... 26 
+10.2. ANEXO N°2: CENTRALES CON ARRANQUE EN NEGRO ..................................... 27 
+10.3. ANEXO N°3: RESUMEN DE ESTRATEGIAS DE RECUPERACION POR 
+AREA ....................................................................................................................... 28 
+10.4. ANEXO N°4: ORDEN DE SERVICIO N°8 DE TRANSENER .................................... 29 
+10.5. ANEXO N°5: ORDEN DE SERVICIO N°1 DE SACME ............................................. 29 
+10.6. ANEXO N°6: ORDEN DE SERVICIO N°2 DE EDELAP ............................................ 29 
+10.7. ANEXO N°7: ORDEN DE SERVICIO N°196 DE EPEC ............................................ 29 
+10.8. ANEXO N°8: ORDEN DE SERVICIO N°1 DE EDESAL ............................................ 29 
+10.9. ANEXO N°9: ORDEN DE SERVICIO N°4 DE DISTROCUYO .................................. 29 
+10.10. ANEXO N°10: ORDEN DE SERVICIO N°1 DE TRANSNOA .................................. 29 
+10.11. ANEXO N°11: ORDEN DE SERVICIO N°1 DE TRANSBA ..................................... 29 
+10.12. ANEXO N°12: ORDEN DE SERVICIO N°1 DE EDEA ............................................ 29 
+10.13. ANEXO N°13: ORDEN DE SERVICIO N°15 DE EPESF ........................................ 29 
+10.14. ANEXO N°14: ORDEN DE SERVICIO N°1 DE ENERSA ....................................... 29 
+10.15. ANEXO N°15: ORDEN DE SERVICIO N°80 DE TRANSNEA ................................. 29 
+10.16. ANEXO N°16: ORDEN DE SERVICIO N°1 DE EMSA ............................................ 29
+
+--- Página 2 ---
+10.17. ANEXO N°17: ORDEN DE SERVICIO N°11 DE TRANSCOMAHUE ...................... 29 
+10.18. ANEXO N°18: ORDEN DE SERVICIO N°11 DE EPEN .......................................... 29 
+10.19. ANEXO N°19: ORDEN DE SERVICIO N°2 DE APELP ........................................... 29 
+10.20. ANEXO N°20: ORDEN DE SERVICIO N°45 DE TRANSPA ................................... 29 
+10.21. ANEXO N°21: ORDEN DE SERVICIO N°1 DE CH SALTO GRANDE .................... 29 
+10.22. ANEXO N°22: ORDEN DE SERVICIO N°1 DE CH YACYRETA ............................. 29 
+10.23. ANEXO N°23: ORDEN DE SERVICIO N°1 DE CH EL CHOCON ........................... 29 
+10.24. ANEXO N°24: ORDEN DE SERVICIO N°1 DE CH PLANICIE BANDERITA .......... 29 
+10.25. ANEXO N°25: ORDEN DE SERVICIO N°1 DE CH RIO GRANDE ......................... 29 
+10.26. ANEXO N°26: ORDEN DE SERVICIO N°1 DE CH URUGUA-I .............................. 29 
+10.27. ANEXO N°27: INFORME DE CAMMESA SOBRE LA FALLA DEL 16/06/2019. ..... 29
+
+--- Página 3 ---
+PROCEDIMIENTO TECNICO N° 7: RECUPERACION DEL SADI 
+LUEGO DE UN COLAPSO TOTAL 
+ 
+1. OBJETO  
+El presente Procedimiento Tecnico tiene como objeto establecer un Plan de Operacion para la 
+Recuperacion del SADI y las areas que lo componen, ante la ocurrencia de una perturbacion 
+severa que resulte en una condicion de colapso total del SADI. 
+El procedimiento define las acciones que deberan ejecutar el Centro de Control de Operaciones 
+de CAMMESA, los Centros de Control de Operaciones de los Agentes Generadores, 
+Transportistas y Distribuidores participantes en la recomposicion, a los efectos de lograr una 
+rapida y eficiente recuperacion del SADI, buscando minimizar las demoras que pudieran surgir 
+durante el restablecimiento del servicio electrico. 
+ 
+2. ALCANCE 
+El presente Procedimiento Tecnico y Ordenes de Servicio vinculadas (dispuestas en la seccion 
+de Anexos) se aplican a todos los Centros de Operaciones del SADI. La operacion durante la 
+recuperacion esta encuadrada bajo la clasificacion de OPERACION EN ESTADO DE 
+EMERGENCIA.  
+ 
+3. REFERENCIAS 
+INFORME DEFINITIVO DE LA FALLA DEL DOMINGO 16/06/2019 - 07:06 hs. 
+PROCEDIMIENTOS PARA LA PROGRAMACION DE LA OPERACION, EL DESPACHO DE 
+CARGAS Y EL CALCULO DE PRECIOS (“Los Procedimientos…”)  
+• 
+Anexo N° 24: Sistema de Operacion y Despacho (SOD) 
+• 
+Anexo N° 25: Procedimientos Operativos para el SADI 
+• 
+Procedimiento Tecnico N° 8: Reglamento Operativo del SADI 
+• 
+Procedimiento Tecnico N° 29: Control de Condiciones de Seguridad del SADI 
+4. DEFINICIONES 
+COC: Centro de Control de Operaciones del OED, a cargo de CAMMESA. 
+COD: Centro de Control de Operaciones de un Agente Distribuidor. 
+COG: Centro de Control de Operaciones de un Agente Generador. 
+COT: Centro de Control de Operaciones del Sistema de Transporte de Energia Electrica en Alta 
+Tension, a cargo de TRANSENER. 
+COTDT: Cada uno de los Centros de Control de Operaciones de los Sistemas de Transporte por 
+Distribucion Troncal. 
+CCA: Centro de Control de Area
+
+--- Página 4 ---
+STAT: Sistema de Transporte de Alta Tension 
+COLAPSO TOTAL: Se entiende por tal una eventual perdida total de generacion y carga en todo 
+el SADI.  
+COLAPSO PARCIAL: Es el caso de perdida total de generacion y carga en una o mas areas 
+vinculadas del SADI. 
+REGULACION DE LA FRECUENCIA: Ajuste de la potencia generada con respecto a la 
+demanda, para mantener la frecuencia en el valor de consigna. 
+REGULACION PRIMARIA DE FRECUENCIA (RPF): Regulacion automatica de la potencia 
+generada por accion del regulador de velocidad librado al estatismo, con el objeto de equilibrar 
+las variaciones rapidas de la demanda. 
+REGULACION SECUNDARIA DE FRECUENCIA (RSF): Regulacion manual o automatica de la 
+potencia generada de un grupo de unidades generadoras, con el objeto de compensar el error 
+final resultante de la Regulacion Primaria de Frecuencia. 
+CENTRAL CON ARRANQUE EN NEGRO: central que sin alimentacion externa (alimentando 
+autonomamente sus propios Servicios Auxiliares) logra completar el arranque de su(s) 
+maquina(s) y sincronizar sobre barra muerta (sin referencia de tension y frecuencia). Con 
+capacidad de energizar instalaciones de transporte y reponer demanda en isla y controlando 
+frecuencia. 
+PUNTO DE INTERCONEXION: estacion de maniobras donde es posible efectuar la puesta en 
+paralelo de dos subsistemas electricos que funcionan en forma aislada.  
+SINCRONIZADORES: dispositivos que permiten realizar el cierre de interruptores de acople 
+entre redes en los puntos de interconexion, comprobando previamente que se cumplan las 
+condiciones de sincronismo entre los susbistemas a interconectar (tension, frecuencia y angulo 
+de fase). 
+SINCRONIZACION MANUAL: proceso de sincronizacion de dos subsistemas electricos, en el 
+cual un operador ejecuta el cierre del interruptor de acoplamiento cuando verifica el cumplimiento 
+de las condiciones de sincronismo en base a la lectura de instrumentos de medicion dispuestos 
+para tal fin (brazos de sincronismo).  
+SINCRONIZACION AUTOMATICA: proceso de sincronizacion de dos subsistemas electricos, en 
+el cual el paralelo se ejecuta en forma automatica cuando el sincronizador verifica el 
+cumplimiento de las condiciones, dentro de rangos adecuados. 
+ 
+5. RESPONSABILIDADES 
+El presente Procedimiento es una instruccion a la que se deben ajustar los operadores del COC 
+y de los COT, COTDT, COG y COD en el caso de que ocurra un colapso total en el SADI. 
+Los planes de recuperacion (el integral del STAT y cada uno de los regionales) estan detallados 
+en la seccion “Anexos” de este Procedimiento, correspondiendose con las propias Ordenes de 
+Servicios elaboradas por los Agentes participantes. Es responsabilidad de los Agentes mantener 
+sus Ordenes de Servicio (y planes de recuperacion) actualizados.  
+Cada agente debera capacitar y entrenar a sus operadores en la ejecucion de estas 
+instrucciones, cumplimentando ademas los requerimientos establecidos en el Procedimiento 
+Tecnico N°29 (Control de Condiciones de Seguridad del SADI), tales como la realizacion anual 
+de ensayos de Arranque en Negro y la participacion en Simulacros de Colapso del SADI.
+
+--- Página 5 ---
+6. CONSIDERACIONES GENERALES 
+La identificacion de la ocurrencia de un colapso (total o parcial) resultara del analisis y 
+verificaciones realizadas por el COC, ya que es el Centro de Control que dispone de la mas 
+completa informacion del estado de la red del SADI, sus generadores e interconexiones 
+internacionales. 
+En condiciones de Colapso Total el COC debera instruir al COT a separar el SADI en 
+subsistemas aislados. Seguidamente, cadasubsistema o area debera iniciar su propia 
+recuperacion hasta alcanzar el mayor nivel de demanda posible en funcion a la generacion 
+disponible en el area.  
+Una vez alcanzado el nivel maximo de normalizacion de un area, operando de manera estable, 
+el CCA o COTDT a cargo de la recuperacion de la isla dara aviso al COC de su posibilidad de 
+interconectarse con otras regiones o islas.  
+El COC determinara en funcion del estado de recuperacion de cada isla, la oportunidad de 
+sincronizacion entre ellas, mediante la coordinacion con los respectivos COTDT, COD y el COT. 
+Las acciones enumeradas en este procedimiento privilegian la recuperacion del STAT de 500 
+kV, bajo la premisa que este permitira la normalizacion del servicio con la mayor celeridad 
+posible.  
+Existe un conjunto de centrales generadoras que estan capacitadas para arrancar 
+autonomamente, y solo un subconjunto de estas posee capacidad para reenergizar la red de 500 
+kV. 
+6.1. PLANES DE RECUPERACION 
+Los planes de recuperacion fueron desarrollados y consensuados entre los agentes involucrados 
+para la recuperacion del SADI luego de un colapso total, sin embargo, las estrategias descriptas 
+para cada area podran ser aplicadas en casos de colapsos parciales regionales. 
+Cualquier dificultad que apareciera durante el desarrollo de los planes de recuperacion de COTs, 
+COGs y CODs debera ser informada al COC tan pronto como sea posible. En caso de iniciar una 
+estrategia alternativa o de introducir un cambio en la estrategia principal, deberan informarlo al 
+COC. De no contar con estrategias alternativas, el COC podra evaluar otro plan de recuperacion.  
+6.2. SISTEMA DE COMUNICACIONES  
+Los agentes deberan asegurar la disponibilidad y calidad de sus sistemas de comunicaciones, 
+de acuerdo con lo establecido en el ANEXO N°24 de “Los Procedimientos…”, pues resulta de 
+vital importancia durante la instancia de recuperacion contar con la plena disponibilidad de las 
+comunicaciones de voz entre centros de control, asi como la de los enlaces de transmision de 
+datos via el SOTR. 
+ 
+Respecto a las comunicaciones de voz, los agentes deberan disponer de medios de 
+comunicacion alternativos complementarios (lineas privadas de voz punto a punto, telefonia 
+celular y telefonia satelital). Se recomienda que los CCA, COT, y COG de centrales con AEN, 
+incorporen dentro de sus alternativas vias de comunicacion satelital, para disponer de un Sistema 
+de Comunicacion totalmente independiente de las afectaciones que el eventual Colapso del SADI 
+pueda causar sobre la alimentacion de los sistemas de comunicaciones del pais. 
+El incumplimiento de las obligaciones, cualquiera fuere su causa, provocara interferencias y se 
+reflejara en demoras durante el proceso de recuperacion, dando lugar a la aplicacion de los
+
+--- Página 6 ---
+criterios de penalizaciones establecidos en la norma del SOTR y Anexo N°24 de Los 
+Procedimientos. 
+6.3. COMUNICACIONES OPERATIVAS 
+La ocurrencia de un colapso parcial o total del SADI exige pronta respuesta de los operadores, 
+tanto para la identificacion del suceso y su alcance, como para la ejecucion de acciones 
+tendientes a la reposicion del servicio. 
+La coordinacion de acciones del Plan de Recuperacion depende de la disponibilidad del Sistema 
+de Comunicaciones que vincula a cada Agente y su respectivo centro de control, con los CCA, 
+el COT y el COC. 
+Con el fin de evitar la saturacion de las comunicaciones, las mismas se estableceran respetando 
+los diagramas de comunicaciones definidos en las Ordenes de Servicio de cada Agente. Es 
+importante que durante la emergencia los operadores eviten establecer itinerarios de 
+comunicaciones por fuera de los establecidos, exceptuando situaciones en que sea 
+imprescindible contar con mas informacion para continuar con las maniobras de recuperacion. 
+6.4. NORMALIZACION DE LA DEMANDA 
+Durante la recuperacion del sistema sera necesario ir conectando demanda, en forma 
+escalonada y coordinada, controlando no sobrepasar la disponibilidad de potencia y/o capacidad 
+de respuesta del generador que tiene asignada la regulacion de frecuencia. Tales escalones de 
+demanda deberan estar definidos en los planes de recuperacion de cada COD para evitar que el 
+proceso de normalizacion de demanda se convierta en un problema mayor para el sistema. Por 
+lo tanto, debera tomarse en cuenta estas premisas basicas: 
+• 
+Deberan conectarse alimentadores que posean fichado por reles de subfrecuencia, de 
+manera tal que, si ocurre una nueva contingencia, la parte recuperada tenga al menos 
+forma de controlar la frecuencia automaticamente, a traves de los cortes que ellos 
+proveen. 
+• 
+Debera evitarse conectar cargas conflictivas como ser acerias electricas o cualquier otra 
+de caracteristicas de variaciones rapidas de potencia, para evitar los inconvenientes que 
+las mismas acarrean a la poca reserva de potencia con que se puede contar en los 
+momentos de recuperacion. 
+• 
+Los Distribuidores trataran de reponer primero las cargas esenciales a la comunidad, 
+como ser hospitales, bomberos y policia, etc. como asi tambien servicios de 
+comunicaciones y publicos, siempre en coordinacion con los Centros de Control o 
+Centrales correspondientes. 
+En las estrategias de recuperacion, los Distribuidores tendran un papel protagonico, ya que 
+tienen reservada la necesidad de ir conectando parte de su demanda para estabilizar carga a los 
+generadores que son utilizados para el arranque en negro, por lo que deberan complementar 
+estas estrategias con Normas de Operacion Interna que sean precisas para que sus operadores 
+puedan lograrlo sin dificultad. Otros Agentes no tendran tanto protagonismo, sin embargo, es 
+necesario que se encuentren preparados para actuar en la emergencia. 
+En cada subsistema aislado, cada COT, COTDT o COD debera coordinar la recuperacion de su 
+propia area hasta el nivel de demanda mayor que le sea posible de acuerdo con la generacion 
+disponible en el area. Una vez alcanzado ese nivel de equilibrio avisara al COC su disponibilidad 
+de interconectarse, y este determinara la oportunidad de la sincronizacion. 
+En el proceso de reposicion de cortes al suministro, las empresas que recuperaron parcial o 
+totalmente su demanda deberan tener en cuenta que, una vez reconectadas al SADI, deben
+
+--- Página 7 ---
+participar en la reparticion proporcional del deficit de generacion, lo que puede causar que deban 
+efectuar nuevas restricciones. 
+6.5. CENTRALES NUCLEARES 
+Las tres Centrales Nucleares vinculadas al SADI (Embalse, Atucha I y Atucha II) estan dotadas 
+de un automatismo, a partir del cual, ante la presencia de una subfrecuencia inferior al valor de 
+ajuste de 47.9 - 48 Hz, se desconectan de la red mediante la apertura del transformador de 
+bloque, manteniendo cerrado el interruptor de maquina. Simultaneamente, introduce un salto 
+(reduccion) de la potencia del reactor, procurando que el nuevo valor de potencia entregada por 
+el generador sea equivalente a los consumos de los Servicios Auxiliares de la central. Este 
+automatismo es denominado “Salto de Carga”. 
+El estado post actuacion del automatismo de Salto de Carga, no siempre puede asegurarse, 
+pues depende de multiples factores asociados a la dinamica del reactor y de la central pre y post 
+colapso.  
+Por lo tanto, ante una condicion de colapso del SADI y actuacion del "Salto de Carga", pueden 
+ocurrir dos alternativas: 
+• 
+Salto de Carga Exitoso: el generador queda aislado, alimentando sus Servicios Auxiliares 
+a potencia reducida y derivando parte de la potencia del reactor hacia el condensador. 
+De lograrse esta operatoria, la central estara en condiciones de reconectarse a la red y 
+rapidamente volver a inyectar potencia una vez restablecido el sistema. 
+ 
+• 
+Salto de Carga No Exitoso: el generador pierde el sincronismo y se ejecuta una parada 
+de emergencia. Automaticamente, arrancan grupos diesel de emergencia que quedaran 
+alimentando los Servicios Auxiliares de la central.  La parada de emergencia implica el 
+envenenamiento del reactor, cuyo proceso de normalizacion aproximado es de 48 hs. En 
+este caso, no dispondremos del aporte de la central durante el proceso de recuperacion.   
+Independientemente del resultado del salto de carga, los Servicios Auxiliares de las Centrales 
+Nucleares, por cuestiones de seguridad, constituyen una Demanda Prioritaria y, por lo tanto, 
+pese a que las CC.NN. estan provistas de alimentacion propia de emergencia, el Plan de 
+Recuperacion del SADI contiene en su estrategia principal varias alternativas para abastecer 
+dichos consumos por via externa en el menor tiempo posible. 
+Las estrategias de alimentacion de las CC.NN. Atucha I, Atucha II y Embalse estan descriptos 
+en los siguientes anexos: 
+• 
+Anexos N°4 - OS N°8 de Transener 
+• 
+Anexo N°11 - OS N°1 de TRANSBA 
+• 
+Anexo N°7 - OS N° 196 de EPEC 
+6.6. CENTRALES CON ARRANQUE EN NEGRO 
+Las Centrales Generadoras con capacidad de Arranque en Negro (AN) son aquellas que luego 
+de un colapso total o regional, sin contar con alimentacion externa desde el sistema son capaces 
+de realizar el arranque y entrada en servicio de al menos una maquina de la central.  
+Para lograr el proceso de AN la central debe disponer de una fuente de alimentacion propia de 
+emergencia (grupo diesel, baterias, etc) capaz de abastecer la demanda de Servicios Auxiliares 
+y procesos de control necesarios para iniciar el arranque de la unidad.  
+Una vez completado el arranque de la maquina, el sistema de control debe estar adaptado a esta 
+situacion para comandar el cierre del interruptor del generador energizando una barra o sistema
+
+--- Página 8 ---
+sin tension, es decir, sin la habitual y necesaria referencia de tension y de frecuencia para llevar 
+a cabo la sincronizacion. 
+Esta adaptabilidad del sistema de control de la maquina es necesaria puesto que, en condiciones 
+de Arranque Normal, el sistema de control solo ejecutara el cierre del interrruptor y paralelo de 
+la unidad sobre el sistema cuando se verifiquen condiciones de sincronizacion. 
+Para la seleccion de las centrales (o unidades generadoras) que participan con su arranque en 
+negro en los planes de recuperacion, se escojen aquellas que adicionalmente disponen de la 
+suficiente capacidad para energizar instalaciones del sistema de transporte en vacio (soportando 
+requerimientos asociados a corrientes de margnetizacion de transformadores y de potencia 
+reactiva necesarios para el control de tension) y simultaneamente, posean capacidad de control 
+de frecuencia y de respuesta a los escalones de toma de carga que se aplicaran en la isla. 
+En el Anexo N°2 se listan las centrales con arranque en negro incluidas en las estrategias 
+principales y alternativas de recuperacion de cada area del SADI. 
+6.7. CENTRALES CON AUTOMATISMO DE “SALTO DE CARGA” 
+Algunas centrales generadoras del SADI poseen automatismo de salto de carga que, de manera 
+similar a lo mencionado para las centrales nucleares, ante la deteccion de una subfrecuencia del 
+sistema (inferior a un valor de ajuste definido), ejecuta la apertura del interruptor del 
+transformador de bloque desvinculando la central de la red, manteniendo cerrado el interruptor 
+de maquina. Simultaneamente, reduce la potencia entregada de forma tal que continue operando 
+de manera estable alimentando el consumo de los Servicios Auxiliares de la central.  
+Este automatismo representa importantes ventajas, tanto para la central o unidad generadora, 
+como asi tambien para el Sistema Electrico. Para la central, la ventaja radica en que, al continuar 
+la maquina en servicio, no es sometida a una parada de marcha y sus efectos asociados, por lo 
+tanto, no debera iniciar un proceso de normalizacion para su rearranque. Para el sistema, la 
+ventaja se basa en la rapida disponibilidad de la central para iniciar la recuperacion.  
+Los Ciclos Combinados de CT Salta (Termoandes), CT Pilar Bicentenario y CT Aes Parana 
+disponen de automatismo de salto de carga y todos ellos fueron incorporados como centrales 
+iniciadoras de recuperacion bajo la premisa de llevar a cabo un salto de carga exitoso. 
+Esta caracteristica con que cuentan las mencionadas centrales representa una ventaja para la 
+capacidad de recuperacion del SADI luego de un colapso. 
+6.8. GENERACION RENOVABLE: Recomendaciones durante la recuperacion. 
+Los Generadores Eolicos y los Solares Fotovoltaicos, por su tecnologia de diseno no poseen 
+capacidad de arranque en negro, por lo tanto, solo podran entrar en servicio a medida que sus 
+instalaciones son energizadas desde la red.  
+Debido a la falta de robustez de las islas electricas durante la etapa de recuperacion, la entrada 
+en servicio de la generacion renovable variable debe ser cuidadosamente coordinada, para evitar 
+que cambios en el recurso natural (velocidad del viento, irradiancia solar) generen desequilibrios 
+en el balance demanda/generacion que puedan afectar la regulacion de frecuencia y estabilidad 
+de la isla. 
+En primera medida, serviran para el control de tensiones y potencia reactiva, y en caso de ser 
+solicitado por el coordinador de la recuperacion del area, podra requerirse de un aporte limitado 
+de potencia activa (limitado respecto a la “potencia posible” del recurso), de modo de lograr una 
+inyeccion de potencia “constante”, sin afectaciones sobre la isla. 
+En la medida que la robustez de la isla (o del SADI) se vaya incrementando, se podra ir liberando 
+paulatimante la participacion de este tipo de generacion hasta su normalizacion.
+
+--- Página 9 ---
+6.9. INTERCONEXIONES INTERNACIONALES: Asistencia desde paises limitrofes 
+En caso de inconvenientes para el desarrollo de las estrategias principales y alternativas de cada 
+area, el COC podra solicitar a los Centros de Control de Despacho de los paises limitrofes 
+interconectados asistencia para la energizacion de la red y/o acelerar el proceso de 
+normalizacion de demanda del SADI a traves de las interconexiones. 
+Desde Uruguay a traves de la interconexion de 500 kV (Salto Grande Argentina – Salto Grande 
+Uruguay o Colonia Elia – San Javier) el COC podra coordinar con el DNC de Uruguay asistencia 
+para la energizacion del corredor Litoral o importacion de emergencia para una mayor 
+normalizacion de demanda. 
+Desde Brasil, a traves de la interconexion Rincon – Garabi el COC podra solicitar solo asistencia 
+para la normalizacion de demanda, pero no para iniciar la energizacion del area NEA, puesto que 
+para la entrada en servicio de las Conversoras de Frecuencia de Garabi se requiere referencia 
+de tension y frecuencia desde Rincon. 
+Desde Paraguay se dispone de varias alternativas de interconexion con el SADI: 
+• 
+El Dorado (Argentina) – Lopez (Paraguay) en 220/132 kV: para energizacion de la red de 
+132 kV y arranque de la de la CH Urugua-i, colaborando con la regulacion de frecuencia 
+de la isla en formacion y cubriendo las posibles variaciones de potencia por toma de carga 
+a traves de la interconexion. 
+• 
+Clorinda (Argentina) - Guarambare (Paraguay) en 220/132 kV: para la normalizacion en 
+isla de demandas locales de la Provincia de Formosa (Clorinda, Laguna Blanca) sin 
+capacidad suficiente para iniciacion del Area y energizacion del STAT de 500 kV. 
+• 
+Yacyreta (Argentina) – Ayolas (Paraguay) en 500 kV: esta interconexion permitiria en 
+caso de falla de arranque en negro de la CH Yacyreta, energizar externamente la central 
+para iniciar su arranque normal. Ademas, en funcion de la disponibilidad de generacion 
+del Sistema Paraguayo servira para la normalizacion de demanda del SADI y 
+energizacion del STAT de 500 kV. 
+Desde Bolivia, a traves de la interconexion en 132 kV Tartagal (Argentina) – Yaguacua (Bolivia) 
+para la normalizacion en isla de demandas locales de la Provincia de Salta permitira la 
+energizacion de una porcion de la red de 132 kV, normalizar parcialmente la demanda en isla y 
+alimentar los SSAA de centrales generadoras cercanas para su arranque normal. No es una 
+interconexion con capacidad de suficiente para la iniciacion de la recuperacion del Area. 
+Desde Chile a traves de la interconexion en 345 kV Salta (Argentina) – Andes (Chile) podra 
+energizarse parte del Area NOA Norte. A partir de la alimentacion de la demanda de Servicios 
+Auxiliares de las centrales generadoras del area que no disponen de arranque en negro (o en 
+caso de arranques fallidos). Estas podran entrar en servicio en tiempos menores a los requeridos 
+en caso de que la energizacion se realice desde otra area del SADI. Ademas, el aporte de 
+potencia desde la interconexion se podra normalizar parcialmente la demanda del area 
+mejorando la capacidad de regulacion de frecuencia de la isla con el soporte de regulacion de 
+frecuencia del Sistema Electrico Chileno. Esta interconexion no posee capacidad de suficiente 
+para la energizacion del STAT de 500 kV. 
+ 
+ 
+6.10. SIMULACROS DE COLAPSO: Entrenamiento de Operacion de Recuperacion 
+CAMMESA coordinara anualmente con los Agentes Simulacros de Colapso total del SADI, para 
+la capacitacion y entrenamiento de los Operadores del SADI en el desarrollo del proceso de 
+recuperacion.
+
+--- Página 10 ---
+En cumplimiento a lo establecido en el Procedimiento Tecnico N°29, es obligatoria la 
+participacion de los Agentes del MEM involucrados en el procedimiento de recuperacion 
+presentado en este documento.  
+Participaran con identico grado de responsabilidad, los Agentes incluidos en las estrategias 
+principales de recuperacion, como asi tambien, los que forman parte de estrategias 
+alternativas, puesto que durante el ejercicio del simulacro podran establecerse suposiciones 
+post contingencia que derivaran en la aplicacion de algunos de los planes alternativos. 
+Formaran parte del simulacro, la verificacion de funcionamiento de los sistemas de alimentacion 
+de emergencias, medios de comunicacion alternativos y ensayos reales de AEN de las centrales 
+no comprometidas al despacho diario. 
+ 
+7. REGISTROS 
+➢ Libro de Novedades del COC 
+➢ Protocolizacion de eventos y alarmas del SOTR 
+➢ Comunicaciones telefonicas grabadas 
+➢ Informe de perturbaciones de los agentes 
+➢ Informe de perturbaciones de CAMMESA 
+ 
+8. ARCHIVO - BIBLIOTECA. 
+Todas las ordenes de servicio asociadas a la recuperacion del SADI y sus regiones/areas 
+aprobadas y vigentes quedaran incluidas en una base de datos dedicada del MEMNET y por lo 
+tanto accesible a todos los Agentes del MEM que dispongan de ese recurso. 
+ 
+9. DESARROLLO DEL PROCEDIMIENTO 
+9.1. PRINCIPALES ACCIONES DEL COC 
+a) Verificar cero frecuencias y cero tensiones en barras de las E.E.T.T. Salto Grande, 
+Yacyreta, Ezeiza, Rosario Oeste, Almafuerte, El Bracho, Cobos, Gran Mendoza, El 
+Chocon, Puerto Madryn y Bahia Blanca, ya sea via SOTR o consultas telefonicas a los 
+Centros de Control de CTMSG, EBY y COT, para confirmar el alcance del colapso. 
+b) Comunicar al COT, SG, Yacyreta y SACME la ocurrencia del colapso y ordenar la 
+retransmision de la noticia y solicitud de inicio de los planes de recuperacion, de acuerdo 
+con el Esquema de Comunicaciones (Anexo N° 1). 
+c) Informar la situacion a los Centros de Control de los Operadores de los Sistemas 
+Electricos de paises vecinos y anticipar que, en funcion del avance en la recuperacion, 
+podriamos requerir de su asistencia en condicion de emergencia. 
+d) Ordenar al COT la separacion y apertura del Sistema de Transporte, segun sus 
+respectivas instrucciones (Anexo N°4: OS N°8 de TRANSENER), para dar inicio al 
+proceso de recuperacion de islas.
+
+--- Página 11 ---
+e) Delegar al COT de TRANSENER la coordinacion de los Arranques en Negro para la 
+energizacion del Sistema de transporte y recuperacion en islas, de acuerdo con las 
+estrategias descriptas en la Orden de Servicio N°8 de TRANSENER. 
+f) Coordinar con SG y COT de TRANSENER la energizacion de las lineas Salto Grande - 
+Gran Parana y Colonia Elia - Campana. 
+g) Delegar en COT de TRANSENER la coordinacion con YACYRETA de la energizacion de 
+las lineas Rincon – Paso de la Patria – Resistencia y Rincon – San Isidro y Rincon – Salto 
+Grande. 
+h) Delegar al COT de TRASENER la coordinacion con CH El Chocon de la energizacion de 
+las lineas del corredor Comahue – GBA.  
+i) Ordenar al COT de TRANSENER la reposicion del resto de las lineas de 500 kV y la 
+coordinacion del sincronismo con las areas aisladas. 
+j) Solicitar suministro de importacion de emergencia desde las Interconexiones 
+Internacionales. 
+k) Coordinar la reposicion de la demanda en areas conectadas a la red de 500 kV, a medida 
+que se incorporen generadores. 
+ 
+9.2. ESTRATEGIA DE RECUPERACION 
+La estrategia de recuperacion principal esta desarrollada desde tres puntos del SADI, que 
+poseen Centrales con arranque en negro con capacidad de reenergizar el sistema de 500 kV.  
+Estos puntos iniciadores fundamentales son:  
+➢ Area Litoral (CH Salto Grande) 
+➢ Area NEA (CH Yacyreta)  
+➢ Corredor Comahue – GBA 500 kV (CH El Chocon) 
+En forma simultanea a las tres anteriores, se iniciaran estrategias de recuperacion en isla en 
+cada una de las areas del SADI, mediante la entrada en servicio de multiples centrales con AEN 
+preestablecidas en los planes de recuperacion de cada area. 
+Tales estrategias permitiran constituir islas en forma independiente a la recuperacion del STAT 
+de 500 kV. De esta manera, mientras la estrategia principal se encuentra en proceso de 
+normalizacion del STAT, paralelamente mediante la formacion de islas electricas se podran 
+alimentar demandas prioritarias, tales como: Centrales Nucleares, Centros de Control, 
+Estaciones Transformadoras y Centrales Generadoras sin capacidad de arranque en negro, por 
+ejemplo, Ciclos Combinados que podran normalizar sus servicios auxiliares y procesos, para un 
+posterior arranque. 
+En este sentido, las regiones electricas: GBA, Provincia de BsAs, Costa Atlantica, Centro, Cuyo, 
+NOA, NEA, Comahue y Patagonia, iniciaran procesos de formacion y recuperacion en isla para 
+posteriormente interconectarse al STAT de 500 kV en funcion del avance que el COT y COC 
+logren desde las regiones iniciadoras principales (NEA, LIT y COM). 
+En esta seccion del procedimiento, se desarrolla un resumen de las caracteristicas principales, 
+etapas y ordenamiento de la ESTRATEGIA DE RECUPERACION con una descripcion global de 
+la misma.
+
+--- Página 12 ---
+En la seccion ANEXOS de este Procedimiento, se disponen de manera detallada las ultimas 
+versiones de los planes de recuperacion del STAT y de cada una de las areas del SADI, segun 
+el siguiente ordenamiento: 
+➢ Plan de Recuperacion del STAT (SADI): Anexo N°4 (OS N°8 de TRANSENER) 
+  
+➢ Plan de Recuperacion del Area GBA: Anexo N°5 (OS N°1 de SACME) y Anexo N°6 (OS 
+N°2 de EDELAP) 
+ 
+➢ Plan de Recuperacion del Area Centro: Anexo N°7 (OS N°196 de EPEC) y Anexo N°8 
+(OS N°1 de EDESAL) 
+ 
+➢ Plan de Recuperacion del Area Cuyo: Anexo N°9 (OS N°4 de Distrocuyo) 
+ 
+➢ Plan de Recuperacion del Area NOA: Anexo N°10 (OS N°1 de TRANSNOA) 
+ 
+➢ Plan de Recuperacion del Area Buenos Aires: Anexo N°11 (OS N°1 de TRANSBA) 
+ 
+➢ Plan de Recuperacion del Area Costa Atlantica: Anexo N°12 (OS N°1 de EDEA) 
+ 
+➢ Plan de Recuperacion del Area Litoral: Anexo N°13 (OS N°15 de EPESF) y Anexo N°14 
+(OS N°1 de ENERSA) 
+ 
+➢ Plan de Recuperacion del Area NEA: Anexo N°15 (OS N° 80 de TRANSNEA) y Anexo 
+N°16 (OS N°1 de EMSA) 
+ 
+➢ Plan 
+de 
+Recuperacion 
+del 
+Area 
+Comahue: 
+Anexo 
+N°17 
+(OS 
+N°11 
+de 
+TRANSCOMAHUE), Anexo N°18 (OS N°11 de EPEN) y Anexo N°19 (OS de APELP). 
+ 
+➢ Plan de Recuperacion del Area Patagonia: Anexo N°20 (OS N°45 de TRANSPA)
+
+--- Página 13 ---
+9.2.1. RECUPERACION DESDE LITORAL (SALTO GRANDE) HACIA GBA  
+9.2.1.1. Preparacion de la Red 
+Una vez confirmada la situacion de colapso, el COG de la CH Salto Grande abrira los 
+interruptores de 500 kV, 132 kV y 150 kV que vinculan a la central con el SADI y con el Sistema 
+Electrico Uruguayo. Ademas, abriran los vinculos formados por las lineas de 500 kV del 
+“Cuadrilatero". 
+El COG de SG se comunicara con ENERSA, para que inicie su plan de recuperacion 
+predisponiendose para conectar carga a los generadores de Salto Grande en cuanto el COG lo 
+solicite.  
+9.2.1.2. Arranque en negro de CH Salto Grande 
+Una vez desvinculada la central, luego de la ocurrencia del colapso, esta dispone de dos 
+alternativas para alimentar sus Servicios Auxiliares: 
+I. 
+La primera, a partir de una de las unidades en servicio previo al colapso. En este caso, 
+luego del colapso dicha unidad queda girando y excitada, pudiendo alimentar los SS.AA. 
+Esta operatoria es factible solo durante los primeros minutos posteriores a la desconexion 
+de la central.  
+ 
+II. 
+La segunda alternativa es a partir del arranque de dos grupos diesel de emergencia (uno 
+en cada margen) que arrancan ante la deteccion de ausencia de tension en barras de 
+SS.AA.. 
+En el arranque en negro, se cierra el interruptor de maquina y luego se comienza a elevar la 
+tension en rampa desde 0 (cero) a su valor nominal (13,8 kV) juntamente con el transformador 
+de unidad. Este proceso de arranque se realiza inicialmente con dos unidades (una de cada 
+margen), las cuales quedaran destinadas exclusivamente para alimentar los Servicios Auxiliares 
+de la Central, manteniendose desvinculadas de 500 kV el mayor tiempo posible, de modo de no 
+perder los Servicios Auxiliares en caso de un nuevo colapso. 
+Luego se repetira el proceso de arranque con dos nuevas unidades (una en cada margen y que 
+no compartan transformador de bloque con las dos que ya se encontraban en servicio y 
+destinadas a los Servicios Auxiliares), las cuales se utilizaran para tensionar las barras de 500 
+kV. A partir de aqui, se comenzara a energizar el "Cuadrilatero" de SG compuesto por las lineas 
+que unen las E.E.T.T. Salto Grande Argentina, Salto Grande Uruguay, Colonia Elia y San Javier. 
+El procedimiento detallado del arranque en negro de la CH SG se encuentra descripto en el 
+Anexo N°21 (OS N°1 de Salto Grande). 
+9.2.1.3. Energizacion 
+Una vez tensionada la barra de 500 kV de Salto Grande (Argentina o Uruguay), y con al menos 
+2 maquinas en servicio, se comienza a energizar el "Cuadrilatero".  
+Juntamente con la reposicion de las lineas de 500 kV, a traves de los trafos de 500/132 kV y 
+500/150 kV, el COG de SG coordinara con ENERSA, TRANSNEA y UTE la toma de carga 
+escalonada siguiendo el procedimiento acordado en sus Ordenes de Servicio. En la medida que 
+se consiga una demanda que asi lo justifique, se iran entrando en servicio mas unidades 
+generadoras, y en todo momento la central SG operara en modo regulacion de frecuencia en la 
+isla en recuperacion.  
+El detalle de coordinacion con el COD de ENERSA se encuentran descripto en el Anexo N°14 
+(OS N°1 de ENERSA).
+
+--- Página 14 ---
+El Sistema Electrico Uruguayo probablemente se vea afectado por el colapso del SADI, parcial 
+o totalmente. Cualquiera sea el caso, el DNC de UTE iniciara la normalizacion de su sistema, por 
+lo que el COC debe evaluar la posibilidad de interconexion y solicitud de asistencia, para acelerar 
+el proceso de normalizacion del SADI. La toma del Sistema Uruguayo desde la Salto Grande es 
+beneficiosa durante la etapa inicial de Recuperacion, pues permite ingresar al servicio un mayor 
+numero de maquinas de la central, y, por consiguiente, incrementara la robustez y estabilidad de 
+esta, quien dispondra de mayor capacidad de control de tension y de regulacion de frecuencia.  
+9.2.1.4. Salto de carga de CT AES Parana y arranque en negro de CT Belgrano: 
+Paralelamente a la estrategia principal desde Salto Grande, en el area Litoral se iniciaran otras 
+dos estrategias de recuperacion: desde la CT AES Parana (si realiza un salto de carga exitoso) 
+y a partir del arranque en negro de la CT Belgrano. Alternativamente, en caso de falla en el Salto 
+de carga de CT AES Parana, se solicitara el AEN de CT San Martin o ante su indisponibilidad el 
+AEN de la CT B. Lopez.  
+Se estima que estas centrales requeriran un mayor tiempo de preparacion y arranque respecto 
+a la CH Salto Grande, por lo cual, se estima que su participacion en la recuperacion del area es 
+complementaria (Anexo N°4: OS N°8 TRANSENER). 
+Los detalles del proceso de AEN y normalizacion desde estas centrales estan contenidos en los 
+Anexos: N°4 (OS N°8 de TRANSENER), y N°13 (OS N°15 de EPESF). 
+9.2.1.5. Recuperacion del STAT 500 kV (LIT -> GBA)  
+La normalizacion del "Cuadrilatero" y el incremento de maquinas en servicio permitira energizar 
+las lineas de 500 kV desde S. Grande Arg. y Colonia Elia, hacia GBA (ET Rodriguez). El COT 
+coordinara con TRANSBA, SACME y SG la toma de carga en las Estaciones que se van 
+energizando.  
+Se requiere al menos 5 maquinas en servicio en la CH Salto Grande para energizar lineas 
+externas al cuadrilatero. En esa condicion se considera segura la toma de carga con escalones 
+de hasta 30 MW con intervalos de 2 minutos como minimo. 
+Desde Rodriguez se iran reponiendo tambien las E.E.T.T. Ezeiza y Abasto, si es que no estan 
+repuestas desde el Comahue. 
+Con el AEN de CT Belgrano se inicia la recuperacion de Belgrano-Rodriguez y se sincronizan en 
+Rodriguez con Salto Grande. Al vincularse, la CH Salto Grande debera continuar con la 
+regulacion de frecuencia en la isla y Belgrano debe conmutar su modo de operacion a control de 
+potencia (de ser posible, con RPF). 
+El salto de carga de la CT AES Parana o el arranque en negro de CT San Martin (o el de B. 
+Lopez) tienen por objetivo energizar la red hasta alcanzar la ET Rosario Oeste. Desde esta se 
+abasteceran externamente los consumos de los Centros de Control del COC, COT y COD de 
+EPESF.  
+Desde Rodriguez se energiza el STAT hacia Rosario Oeste y se sincronizan ambas islas (Salto 
+Grande y CT San Martin) en Rosario Oeste. Continuara a cargo de la regulacion de frecuencia 
+de la isla la CH Salto Grande. 
+Posteriormente, desde SG, se energiza Gran Parana, Santo Tome y Romang, y en coordinacion 
+con ENERSA y EPESF, se realiza la toma de carga en las respectivas EE.TT.
+
+--- Página 15 ---
+9.2.2. RECUPERACION DESDE AREA NEA (CH YACYRETA) 
+La recuperacion del area NEA consiste en el AEN de la CH Yacyreta y reenergizacion del STAT 
+de 500 kV de la region, normalizacion de las demandas y generacion de las Provincias de 
+Misiones, Corrientes, Chaco y Formosa, y vincularse al area LIT (Salto Grande). 
+Los detalles del procedimiento de arranque en negro de Yacyreta estan descriptos en el Anexo 
+N°22: OS N°1 de CH Yacyreta.  
+En la provincia de Misiones (EMSA), se dispone de capacidad de AEN en la CH Urugua-i e 
+interconexiones con el Sistema Electrico Paraguayo (ANDE), que en caso de demoras en la 
+estrategia principal desde Yacyreta iniciaran su propio plan de Recuperacion, en forma aislada 
+al sistema de 500 kV, de acuerdo con lo indicado en el Anexo N°16: OS N°1 de EMSA. 
+La estrategia principal consiste en energizar desde CH Yacyreta las lineas de 500 kV Yacyreta 
+– Rincon – Paso de la Patria y Resistencia. En forma coordinada con TRANSNEA, se inicia la 
+normalizacion de carga desde Resistencia para permitir el ingreso de mas unidades de Yacyreta 
+(la toma de carga se realizara con escalones de demanda de 20 MW a 40 MW para no afectar 
+la regulacion de frecuencia). 
+Una vez ingresadas al menos tres (3) maquinas en Yacyerta, desde Rincon se energiza la salida 
+a San Isidro y se coordina con EMSA la toma de carga y normalizacion de la demanda de la 
+provincia de Misiones desde el STAT de 500 kV (Este procedimiento se encuentra descripto en 
+el Anexo N°16: OS N°1 de EMSA). 
+Desde ET Resistencia se energiza la ET Chaco y se coordina la toma de carga con TRANSNEA 
+y SECHEEP. 
+Luego, en las EETT Rincon y Paso de la Patria, se coordina la toma de carga con TRANSNEA y 
+DPEC. 
+9.2.2.1. Vinculacion con Area Litoral 
+El paralelo entre las areas NEA (CH Yacyreta) y LIT (CH Salto Grande) se realizara energizando 
+la linea de 500 kV Rincon-Salto Grande (5RISG1), desde Rincon, con sus 4 reactores de linea 
+vinculados y al menos 7 grupos en Yacyreta.  
+El COC coordinara el paralelo en la ET Salto Grande, donde se dispone de un equipo de 
+sincronizacion automatica para realizar paralelo de ambas redes. 
+Una vez lograda la vinculacion de las areas NEA (Yacyreta) y LIT (Salto Grande), el COC 
+asignara la regulacion de frecuencia de la nueva isla a la CH Salto Grande, continuando la 
+operacion de Yacyreta con control de consigna de potencia y RPF. 
+Posteriormente, se realizaran los cierres de anillos entre las areas NEA y LIT, buscando 
+completar el corredor NEA-LIT y asi maximizar la capacidad de transmision con el objeto de 
+acelerar el proceso de normalizacion de demanda del SADI. El cierre de anillo se realizara a 
+traves del vinculo Romang – Resistencia, energizado desde Romang y con cierre en Resistencia. 
+En estas instancias, de acuerdo con el nivel de carga del sistema de transporte del corredor NEA-
+LIT y el estado de normalizacion de la demanda, el COC evaluara solicitar asistencia desde el 
+Sistema Brasileno a traves de la interconexion Rincon - Garabi.  
+Al vincularse la ET Gran Formosa a la isla en formacion, se coordinara con TRANSNEA la 
+transferencia de demanda (con cortes) del circuito que se encontraba vinculado al Sistema 
+Paraguayo (ANDE). 
+Los detalles del plan de recuperacion del area NEA estan contenidos en los siguientes anexos:
+
+--- Página 16 ---
+➢ Anexo N°4 - OS N° 8 de TRANSENER 
+➢ Anexo N°22 - OS N°1 de Yacyreta  
+➢ Anexo N°16 - OS N°1 de EMSA 
+➢ Anexo N°15 - OS N°80 de TRANSNEA 
+➢ Anexo N°26 - OS N°1 de CH Urugua-i
+
+--- Página 17 ---
+9.2.3. RECUPERACION CORREDOR COMAHUE - GBA 
+La relevancia en la recuperacion de este corredor se basa en que permitira la puesta en servicio 
+del conjunto de Centrales Hidroelectricas de la Region Comahue (Alicura, El Chocon, Piedra del 
+Aguila, Planicie Banderita, P.P. Leufu y Arroyito), cuyos modulos de potencia instalada y 
+reducidos tiempos de arranque, serviran para una rapida normalizacion de la demanda del SADI. 
+La energizacion del corredor contempla la realizacion de caminos independientes, a traves del 
+corredor norte (Chocon-Ezeiza) y por el corredor sur (Chocon –Olavarria), utilizando el arranque 
+en negro de la CH El Chocon para la energizacion de ambos caminos. 
+Posteriormente, la estrategia contempla la reposicion del corredor Chocon Oeste hacia Alicura y 
+Piedra del Aguila y la vinculacion del corredor patagonico, desde ET Choele Choel hasta la ET 
+Esperanza. 
+La recuperacion del corredor Chocon Oeste – Alicura se realizara una vez sincronizados y 
+anillados los corredores norte y sur del corredor Comahue - GBA. 
+La recuperacion del corredor Patagonico se llevara a cabo una vez vinculados los corredores 
+Comahue - GBA (Norte y Sur) y Chocon Oeste – Alicura/Piedra del Aguila. 
+9.2.3.1. Sistema Regional Comahue 132 kV:  
+Paralelamente, en el Area Comahue, se iniciara la recuperacion del Sistema Regional Comahue 
+mediante el arranque en negro de la CH Planicie Banderita y energizacion del T2PB y su salida 
+hacia 132 kV. La desvinculacion respecto al corredor de 500 kV estara dada por la apertura del 
+interruptor BL15. 
+Una vez conformada la isla Comahue 132 kV se vinculara al SADI en la ET PB, mediante el cierre 
+del interruptor BL15 de 500 kV. 
+El procedimiento detallado de Recuperacion del area Comahue 132 kV se encuentra 
+desarrollado en los Anexos N°17 y N°18: O.S. de Recuperacion del Sistema Regional Comahue 
+de Transcomahue y Epen, respectivamente. 
+9.2.3.2. Arranque en negro de CH El Chocon  
+La Central El Chocon dispone de un grupo diesel de emergencia que posibilita el arranque en 
+negro de cualquiera de sus 6 unidades. 
+La estrategia principal de recuperacion desde la CH El Chocon se basa en: 
+I. 
+La energizacion del Corredor Sur COM-GBA (Chocon – Chocon Oeste – Choele Choel - 
+G. Brown – B.Blanca – Olavarria) con el arranque en negro de una de las unidades G01 
+o G02 y transformador de bloque T1CH vinculado a la barra A de 500 kV (5CHA).  
+ 
+II. 
+La energizacion del Corredor Norte COM-GBA (Chocon – Puelches – Macachin – 
+Henderson – Ezeiza - Abasto) con el arranque en negro de una de las unidades G03 o 
+G04 y el transformador de bloque T3CH vinculado a la barra D de 500 kV (5CHD).  
+ 
+En caso de indisponibilidad del T3CH o de los grupos G03/G04, el mismo procedimiento se puede 
+realizar con los grupos G05/G06 y transformador T5CH vinculado a la barra 5CHD. 
+El Anexo N°23: Procedimiento de Arranque en Negro de la CH El Chocon, describe en detalle 
+las acciones a realizar por los operadores de la CH para su AEN. 
+9.2.3.3. Arranque en negro de CH P. Banderita (alternativa a Chocon)
+
+--- Página 18 ---
+En caso de indisponibilidad del arranque en negro de la CH El Chocon, la CH Planicie Banderita 
+sera empleada como alternativa en la Recuperacion del Corredor Comahue-GBA (500 kV), 
+considerandose esta utilizacion prioritaria para la normalizacion del SADI.  
+El Sistema Regional Comahue iniciara su estrategia de Recuperacion en isla, mediante el 
+arranque en negro de otras centrales del area y/o a partir de su vinculacion al STAT de 500 kV 
+energizado con el arranque en negro de la CH Planicie Banderita. 
+El Anexo N°24: Procedimiento de Arranque en Negro de la CH Planicie Banderita, describe en 
+detalle las acciones a realizar por los operadores de la CH para su AEN. 
+9.2.3.4. Recuperacion del Corredor Norte Comahue-GBA 
+El Corredor Norte se energiza a partir del G03 o G04 de CH El Chocon (conectado al T3CH), 
+cerrando el interruptor CL35 de la E.T. Chocon. Seguidamente se energizan los tramos Chocon 
+- Cerrito de la Costa – Puelches - Macachin – Henderson – Ezeiza, empleando en cada tramo, 
+reactores de linea y barra predispuestos durante la etapa de preparacion de la red. 
+El corredor norte posee mejor compensacion de potencia reactiva que el corredor sur, por lo que 
+su energizacion, de no mediar imprevistos sera mas rapida para llegar hasta ET Ezeiza. 
+En ET Ezeiza se energizan: el TR1 (500/220/132 kV) y el TR4 (132/13.2/13.2 kV) y se pondran 
+en funcionamiento los Compensadores Sincronicos CS1 y CS2, para su aporte al control de 
+tensiones. 
+El COT coordinara con SACME y la CH Chocon, la toma de carga en Ezeiza (aprox. 60 MW, en 
+escalones de 20 a 40 MW), y continuara la normalizacion de la ET Ezeiza ingresando los 
+restantes transformadores y Compensadores Sincronicos. 
+Desde Ezeiza se energizaran las lineas de 500 kV hacia Abasto y en forma coordinada con 
+SACME y Chocon se iniciara toma de carga en Abasto (aprox. 60 MW, en escalones de 20 a 40 
+MW). 
+Con el ingreso de grupos de CH El Chocon, se podran ir energizando transformadores en las 
+EETT intermedias e iniciando la toma de carga en Henderson (coordinando con TRANSBA) y en 
+Puelches y Macachin (en coordinacion con APELP). 
+9.2.3.5. Recuperacion del Corredor Sur Comahue - GBA 
+A partir del cierre del interruptor CS35 (de la E.T. Chocon) se energiza la linea El Chocon - 
+Chocon Oeste y la barra 5COB de Chocon Oeste, con lo cual se inicia la recuperacion del 
+Corredor Sur (Chocon – Chocon Oeste – Choele Choel – G. Brown – Blanca – Olavarria). Para 
+la compensacion y control de tension del corredor, se utilizaran reactores de linea y de barra 
+predispuestos durante la etapa de preparacion de la red, con capacitores serie en Choele Choel 
+“puenteados”. 
+Es prioritario llegar a Ezeiza para disponer de los Compensadores Sincronicos en el control de 
+tension (si no se pudo llegar por el corredor norte). Sin embargo, para llegar con tensiones 
+aceptables a Olavarria, se necesitara de la toma de carga en las estaciones intermedias (el COT 
+coordinara con TRANSBA la toma de carga en las Bahia Blanca (aprox. 60 MW) y Olavarria 
+(aprox. 40 MW), y con EDERSA y TRANSCOMAHUE la toma de carga en Choele Choel (aprox. 
+60 MW)). En todo momento, es fundamental coordinar la toma de carga con la CH El Chocon, 
+vigilando su respuesta y margenes de potencia, y la central debera ir ingresando grupos en 
+servicio acompanando la normalizacion de demanda. 
+En funcion de los tiempos resultantes, los Compensadores Sincronicos podrian ser puestos en 
+servicio, alternativamente, desde el Corredor Norte Comahue-GBA, desde el Corredor Sur 
+Comahue-GBA o desde el Corredor Litoral-GBA (Rodriguez).
+
+--- Página 19 ---
+9.2.3.6. Vinculacion de los corredores Norte y Sur 
+En caso de que la energizacion de los corredores Norte y Sur se efectue exitosamente, el paralelo 
+entre ambos se realiza en la ET El Chocon, mediante el cierre del interruptor CS25, sobre el cual 
+la CH El Chocon toma el mando para su cierre sincronizado. El anillado de ambos corredores se 
+realiza seguidamente en la ET Olavarria.  
+Una vez ejecutado el el paralelo y anillado de ambos corredores se inicia la recuperacion del 
+corredor Chocon Oeste – Piedra del Aguila - Alicura. Se incorporan a partir de este corredor las 
+centrales Alicura, Piedra del Aguila y Pichi Picun Leufu, cuyo despacho sera coordinado por el 
+OED, acompanando la evolucion de la Recuperacion del SADI y la normalizacion de la demanda.  
+9.2.3.7. Vinculacion con Area Litoral  
+Una vez recuperado el corredor Comahue - GBA hasta Ezeiza y recuperado el corredor Salto 
+Grande - Litoral – GBA hasta Rodriguez, se realizara el paralelo de las areas en la ET Rodriguez, 
+con el cierre de los interruptores: 5L1225 (linea Belgrano-Rodriguez) o 5T1325 (TR1 Rodriguez), 
+cuyo verificador de sincronismo permite realizar paralelo con 10° E. 
+Con una evolucion normal en la recuperacion del area NEA, esta ya se encontrara vinculada al 
+area LIT, por lo tanto, en la ET Rodriguez se realizara el paralelo de las islas NEA+LIT con 
+COM+GBA. 
+9.2.3.8. Vinculacion con Area Patagonia 
+Con los Corredores Norte, Sur y Chocon Oeste – Alicura vinculados, se inicia la energizacion del 
+Corredor Patagonico, desde Choele Choel hacia Puerto Madryn – Santa Cruz Norte y 
+Esperanza. Al llegar con tension desde Choele Choel a Puerto Madryn, debera coordinarse el 
+paralelo en Puerto Madryn 330 kV con la Region Patagonica, que podria encontrarse operando 
+en isla en base a su procedimiento de Recuperacion descripto en el Anexo N°18, correspondiente 
+a la OS N°45 de TRANSPA. En caso de que la Recuperacion en isla de la Region Patagonica 
+haya presentado inconvenientes o demoras, la Recuperacion del area se realizara a partir de su 
+vinculacion al SADI en Choele Choel, de acuerdo con las acciones descriptas en el Anexo N°4 
+(OS N°8 de TRANSENER). 
+9.2.3.9. Duplicacion del Corredor Comahue – GBA 
+La duplicacion de los tramos de los corredores Norte y Sur COM-GBA permitira ampliar la 
+capacidad de transmision del corredor y de esta manera incrementar el despacho de las centrales 
+de la region Comahue favoreciendo la rapida normalizacion de la demanda del SADI. 
+9.2.3.10. Recuperacion del Nodo Bahia Blanca desde CT Guillermo Brown 
+Ante inconvenientes en la recuperacion del corredor COM-GBA (Norte y Sur) por fallas o 
+demoras en los arranques en negro de las CC.HH. Chocon y Planicie Banderita, se iniciara un 
+plan de recuperacion para la normalizacion del nodo Bahia Blanca, dada su relevancia (nivel de 
+demanda, seguridad del polo petroquimico, etc). 
+Para iniciar este plan el COT solicitara el arranque en negro de una TG de la CT Guillermo Brown 
+y desde alli se energiza la linea de 500 kV 5BB-GBR1 y la barra A de 500 kV de la ET Bahia 
+Blanca.  
+En coordinacion con TRANSBA se energiza la barra C de 500 kV y se incia la toma de carga en 
+ET BB. 
+El paralelo del Nodo Bahia Blanca con el SADI se podra realizar en la ET GBR o en la ET BB, 
+ya que en ambas estaciones disponen de verificador de sincronismo.
+
+--- Página 20 ---
+9.2.4. RECUPERACION EN ISLAS 
+9.2.4.1. Area GBA 
+La estrategia de recuperacion del area GBA contempla paralelamente el plan de normalizacion 
+desde el sistema de 500 kV (item 9.2.1.5) y un plan de formacion de islas pre-configuradas a 
+partir del AEN de generacion local. El inicio de ambos planes es simultaneo. 
+En cada isla, SACME inicia su recuperacion con una central con capacidad de AEN y a medida 
+que avance en la energizacion de la red, ira alimentando las demandas prioritarias y centrales 
+generadoras sin arranque en negro. La coordinacion de la normalizacion de demanda la realiza 
+con los centros de Control de Edenor y Edesur. 
+El seguimiento de la frecuencia de cada isla, en tanto no esten vinculadas al SADI, sera realizado 
+por SACME, quien asignara la regulacion secundaria de frecuencia a un generador del area. Las 
+islas operaran desvinculadas entre si hasta tener la posibilidad de vincularse al SADI.  
+Normalizacion de demanda desde la red de 500 KV.  
+Con la llegada de tension por alguno de los nodos de 500 kV, el COT y SACME coordinaran la 
+vinculacion de islas al SADI. Los puntos de sincronizacion del area GBA con el resto del SADI, 
+dependera desde donde se reciba tension desde 500 kV, esto es: Ezeiza, Abasto o Rodriguez.  
+Al vincular una isla al SADI, la unidad generadora que tenia asignada la regulacion secundaria 
+de frecuencia de la isla cambiara el modo de operacion de su control primario de velocidad 
+pasando del modo frecuencia (modo isocrono) al modo control de potencia. 
+Una vez sincronizada la isla del GBA con la red del SADI, a traves de alguno de los circuitos 
+armados, el resto de ellos se acoplaran solo verificando el angulo de potencia entre los distintos 
+sistemas.  
+En todo momento, SACME estara en contacto con EDELAP a efectos de ver la evolucion del 
+proceso de arranque de dicha area y evaluar la forma de acoplarla al GBA cuando se encuentre 
+energizada la SE Abasto desde barras de 500 KV. 
+El procedimiento de recuperacion del area GBA, se encuentra detallado en los anexos N°5 
+(OS N°1 de SACME) y N°6 (OS N°2 de EDELAP)
+
+--- Página 21 ---
+9.2.4.2. Area Centro 
+La estrategia principal preve la formacion de la Isla Centro a partir del arranque en negro de la 
+CH Rio Grande. Ademas, preve entre las acciones prioritarias el abastecimiento de emergencia 
+de los Servicios Auxiliares de la CN Embalse. Para cada una de estas acciones, se disenaron 
+ademas planes alternativos para sobrellevar inconvenientes en la estrategia principal. 
+La recuperacion se inicia con el arranque de la CH Rio Grande y energizacion del sistema de 
+transporte de 500 kV R. Grande – Embalse – Almafuerte. Desde ET Almafuerte el COT 
+coordinara con EPEC y RGDE el inicio de la toma de carga.  
+Simultaneamente, desde Almafuerte se energizara la linea de 132 kV Almafuerte – Embalse y 
+se coordinara con la CNE la alimentacion de sus servicios auxiliares. 
+En la medida que se incremente el despacho de RGDE acompanando la demanda, se avanzara 
+en la energizacion por 500 kV del STAT hacia Arroyo Cabral y Malvinas, iniciando en estos 
+puntos la normalizacion de demanda. 
+La vinculacion de las EETT de 500 kV y la normalizacion del sistema de subtransmision (132 kV 
+y 66 kV) permitira vincular nuevas centrales generadoras (termicas e hidraulicas) del area para 
+avanzar en la normalizacion.  
+El Ciclo Combinado de la Central Termica Pilar (Bicentenario) representa por su potencia 
+instalada uno de los principales modulos de generacion del area. Dicha central posee un 
+automatismo de salto de carga ante condiciones de colapso, por lo tanto, en caso exitoso de 
+salto de carga, rapidamente podra vincularse a la isla y aportar en la normalizacion de demanda.  
+Al alcanzarse las condiciones necesarias y disponiendo margen en la generacion en servicio, se 
+energizara desde RGDE hacia Lujan 500 kV e iniciara la recuperacion de la EDESAL con toma 
+de carga en la ET Lujan (se requiere para dicha energizacion, al menos tres grupos en servicio 
+entre las centrales Pilar y Rio Grande). 
+Si la CN Embalse efectuo un salto de carga exitoso, podra ingresar E/S una vez que la estabilidad 
+de la isla lo permita, para colaborar con su aporte de potencia en la normalizacion de demanda. 
+Ante inconvenientes con el arranque en negro de la CH Rio Grande, el area Centro tiene definido 
+planes alternativos con arranque de otras centrales del area (CT Pilar, CT Villa Maria II, CT 13 
+de Julio, CT Rio Tercero, CH Reolin) y con estas se busca cumplir con el objetivo fundamental 
+del area: normalizacion y alimentacion de SSAA de la CNE. 
+Alternativamente y dependiendo del estado de restablecimiento del SADI, podria iniciarse el plan 
+de recuperacion desde el STAT de 500 kV, desde el Area Litoral (Sistema NEA+LIT+GBA) o 
+desde el Area CUYO con la energizacion de las lineas de 500 kV 5GMLU1 y 5LURG1 desde la 
+ET Gran Mendoza.  
+El procedimiento de recuperacion del Area Centro se encuentra detallado en los anexos N°7 
+(OS N°196 de EPEC) y N°8 (OS N°1 de EDESAL)
+
+--- Página 22 ---
+9.2.4.3. Area Cuyo 
+La recuperacion del Area Cuyo se basa en el arranque en negro de multiples Centrales 
+Hidroelectricas ubicadas en las provincias de Mendoza y San Juan (CH Nihuil II, CH Agua del 
+Toro, CH Punta Negra y CH Caracoles).  
+A partir de estas centrales se inicia la energizacion y formacion de subsistemas aislados que 
+posteriormente se sincronizan entre si para formar una unica isla. La recuperacion del area es 
+coordinada desde el COTDT de DISTROCUYO.  
+Una vez alcanzadas condiciones suficientes de generacion, se energiza el sistema de 
+transmision de 500 kV desde Gran Mendoza, hacia Nueva San Juan y hacia Rio Diamante.  
+Con los sistemas de transmision y subtransmision restablecidos (500 kV, 220 kV y 132 kV) la 
+normalizacion de la demanda del area dependera de los tiempos de arranque de los generadores 
+termicos del area, de la disponibilidad de energia acumulada en las centrales de embalse y de 
+las condiciones y disponibilidad de recurso renovable (solar fotovoltaico).  
+En caso de que relacion entre la demanda y la generacion de la isla no permitan la normalizacion 
+total de la demanda, esta etapa estara supeditada a la asistencia desde el SADI desde las areas 
+Centro o Comahue. 
+Como alternativas de recuperacion del area, en caso de inconvenientes en la estrategia principal, 
+la normalizacion podria tambien iniciarse desde las areas Centro o Comahue, mediante la 
+vinculacion a traves del STAT de 500 kV, de acuerdo con el procedimiento descripto en el Anexo 
+N°4 (OS N°8 de TRANSENER). 
+El procedimiento de recuperacion del Area Cuyo, se encuentra detallado en el Anexo N°9 
+(OS N°4 de Distrocuyo)
+
+--- Página 23 ---
+9.2.4.4. Area NOA 
+La recuperacion del Area NOA se basa en el arranque en negro y formacion de 3 subsistemas: 
+1 - Isla Norte (Salta y Jujuy) 
+La Isla Norte emplea a la CT Salta (Termoandes) como central iniciadora. Esta dispone de 
+automatismo de salto de carga ante condiciones de colapso, por lo tanto, en caso de realizarlo 
+de forma exitosa, al menos una TG de la central prevalecera en servicio luego del colapso, 
+alimentando en isla sus SSAA. En caso de que el salto de carga no sea exitoso, se solicitara a 
+la central su arranque en negro.  
+Alternativamente, la isla norte dispone de AEN en: CH Cabra Corral, CT Caimancito, CH Las 
+Maderas y CT Piquirenda. 
+2 - Isla Centro (Tucuman y Santiago del Estero) 
+La Isla Centro contempla como estrategia principal el arranque en negro de la CT Pluspetrol 
+Norte o alternativamente CT San Miguel de Tucuman (ambas centrales comparten el generador 
+diesel de alimentacion de emergencia). Una vez alcanzadas las condiciones necesarias, desde 
+la isla centro se energizara el STAT de 500 kV vinculando las EETT Bracho, Lavalle y Santiago. 
+3 - Isla Sur (Catamarca y La Rioja) 
+La Isla Sur se iniciara a partir del AEN de CT La Rioja. En caso de indisponibilidades o falla en 
+el arranque en negro de la CT La Rioja, la recuperacion de la podria iniciarse desde las restantes 
+islas del area (luego de la sincronizacion de las islas Norte y Centro), mediante la energizacion 
+de la linea de 500 kV Lavalle – Recreo.  
+Alternativa desde el area NEA:  
+En caso de inconvenientes en la recuperacion en isla y en funcion del estado de avance en la 
+recuperacion del SADI, el area NOA podra comenzar su recuperacion con asistencia desde el 
+NEA, mediante la energizacion de las lineas de 500 kV Chaco – Monte Quemado y M. Quemado 
+– Cobos. 
+En Cobos se iniciara la normalizacion de la demanda de la Isla Norte e iran normalizando e 
+incorporando generadores de la region, y posteriormente mediante la energizacion de la linea de 
+500 kV Cobos – Bracho, se iniciara la recuperacion de la Isla Centro.  
+Una vez estabilizadas las Islas Norte y Centro se procedera a recuperar la Isla Sur. 
+De utilizarse esta ultima estrategia alternativa, el COC coordinara con el COTDT de TRANSNOA 
+la normalizacion de demanda en funcion de los margenes de generacion del SADI.  
+El procedimiento de recuperacion del Area NOA se encuentra detallado en el Anexo N°10 
+(OS N°1 de TRANSNOA)
+
+--- Página 24 ---
+9.2.4.5. Area Provincia de Buenos Aires y Costa Atlantica 
+La estrategia de recuperacion consiste en la formacion y operacion en islas independientes, 
+iniciadas a partir del AEN de centrales generadoras, o partir de la disponibilidad de tension, desde 
+las Estaciones Transformadoras vinculadas al STAT.  
+El COTDT de TRANSBA asume la funcion de Centro de Control de Area (CCA) teniendo a su 
+cargo la conduccion del proceso de recuperacion y la coordinacion con Distribuidoras, 
+Cooperativas y Grandes Usuarios, de la normalizacion de la demanda. 
+La alimentacion de emergencia a las Centrales Nucleares Atucha I y Atucha II, es prioritaria y 
+cuenta con un procedimiento dedicado con multiples alternativas. 
+El plan de recuperacion define las siguientes islas o areas: 
+1. Anillo de la Costa Atlantica Norte: Alimentada por las Centrales Termicas (CT) Villa 
+Gesell y Mar de Ajo. 
+2. Area Mar del Plata: Abastecida por la CT 9 de Julio. 
+3. Area Olavarria: a partir de la vinculacion, en la ET Olavarria, con el STAT de 500 kV 
+(corredor Sur Comahue-GBA). Alternativamente a partir del arranque de CT Barker. 
+4. Area Sur: abastecida desde la vinculacion, en la ET Bahia Blanca, con el STAT de 500 
+kV (corredor Sur Comahue-GBA). 
+5. Area Centro: abastecida desde la ET Henderson, vinculada al STAT de 500 kV (corredor 
+Norte Comahue-GBA). 
+6. Area Norte: dependientes de la recuperacion desde el STAT de las EETT Ramallo, San 
+Nicolas, Villa Lia y Campana). 
+La recuperacion de cada isla se realizara en forma simultanea y finalmente se vincularan entre 
+si y/o con el SADI, hasta lograr la maxima normalizacion posible de la red. 
+Cabe destacar que EDEA efectuara en forma independiente la recuperacion del area Mar del 
+Plata, a partir del arranque de la Central 9 de Julio. El procedimiento preve vincular las estaciones 
+y centros de distribucion a traves de la red de media tension. Finalmente, la energizacion de la 
+red de 132 kV. 
+Una vez que TRANSBA confirma disponibilidad de vinculacion en E.T Mar del Plata, se realizara 
+el paralelo de la isla en la Central 9 de Julio, a traves de la linea Mar del Plata–Sur-Central. 
+El procedimiento de recuperacion del Area Buenos Aires se encuentra detallado en el Anexo 
+N°11 (OS N°1 de TRANSBA) y N°12 (OS N°1 de EDEA)
+
+--- Página 25 ---
+9.2.4.6. Area Patagonia 
+La recuperacion del Area Patagonia se basa en el Arranque en Negro de las centrales Futaleufu, 
+Ameghino, ALUAR, YPF Los Perales y Pico Truncado.  
+Desde la CH Futaleufu se inicia la recuperacion del corredor de 330 kV hacia P. Madryn, para la 
+normalizacion de demanda de Puerto Madryn y abastecimiento de los servicios internos y 
+generacion de Aluar.  
+Mediante el arranque de la CH Ameghino, se inicia la recuperacion de la red de 132 kV hacia P. 
+Madryn, para su sincronizacion con Futaleufu y Aluar, y hacia el sur, con el objetivo de normalizar 
+los servicios de la CT Patagonia para su posterior arranque. 
+En funcion de la recuperacion de la isla, acompanando a la entrada en servicio de la generacion 
+sincronica (termica e hidraulica del area), TRANSPA ordenara el despacho de los Parques 
+Eolicos vinculados, siguiendo las recomendaciones del item 6.8 de este Procedimiento.  
+Para la energizacion de las lineas de 500 kV del area, debido a sus extensas longitudes se 
+requiere de un alto grado de avance en la normalizacion de la isla, para disponer de recursos 
+suficientes para el control de tension.  
+De no lograrse condiciones minimas suficientes en la isla, no se podra iniciar la normalizacion 
+del STAT de 500 kV, y por lo tanto el area Patagonia debera permanecer en un estado de 
+normalizacion parcial hasta su vinculacion al SADI. 
+En caso de que la recuperacion del area se inicie desde el SADI (planificado luego del 
+restablecimiento del corredor COM-GBA), el procedimiento de energizacion del Corredor 
+Patagonico (C. Choel – P. Madryn - S.C. Norte, R.S. Cruz - Esperanza) se realizara de acuerdo 
+con lo establecido en el Anexo N°4 (OS N°8 de TRANSENER).  
+El procedimiento de recuperacion del Area Patagonia se encuentra detallado en el Anexo 
+N°18 (OS N°45 de TRANSPA)
+
+--- Página 26 ---
+10. ANEXOS 
+10.1. ANEXO N°1: ESQUEMA DE COMUNICACIONES 
+El COC tomara contacto prioritariamente con el COT, SACME, los COG de las Centrales 
+Binacionales (Yacyreta, Salto Grande) y centros de despacho de paises vecinos que podran 
+asistir al SADI en la recuperacion (UTE, ONS, CEN, ANDE). 
+Cada COTDT, COG o COD participante del proceso de recuperacion, informara al COC en caso 
+de no poder comunicarse con un interlocutor asignado, con el fin de que el COC intente una 
+comunicacion alternativa. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+COC 
+COT 
+TRANSNEA 
+EMSA 
+LITSA 
+YACYLEC 
+EPESF 
+ENERSA 
+EPEC 
+EDESAL 
+TRANSNOA 
+TRANSBA 
+TRANSPA 
+DISTROCUYO 
+APELP 
+NASA 
+ACINDAR 
+GENERADORES EN 220 kV Y 500 kV 
+SACME 
+YACYRETA 
+SALTO GRANDE 
+UTE (Uruguay) 
+ONS (Brasil) 
+ANDE (Paraguay) 
+CEN (Chile) 
+EDENOR 
+EDESUR 
+EDELAP 
+TRANSCOMAHUE 
+EPEN
+
+--- Página 27 ---
+10.2. ANEXO N°2: CENTRALES CON ARRANQUE EN NEGRO 
+Area 
+Central con AEN 
+GBA 
+CT Dock Sud 
+CT Ensenada de Barragan  
+CT La Plata 
+CT Magdalena 
+CENTRO 
+CH Rio Grande 
+CT Pilar Bicentenario 
+CT Villa Maria II 
+CT 13 de Julio  
+CT So Energy Rio Tercero 
+CH Reolin 
+CUYO 
+CH Nihuil II 
+CH Agua del Toro 
+CH Punta Negra 
+CH Caracoles 
+CH Ullum 
+CT Lujan de Cuyo 
+NOA 
+CT Termoandes 
+CH Cabra Corral 
+CT San Miguel de Tucuman 
+CT Pluspetrol Norte  
+CT Independencia 
+CT La Rioja 
+CH Las Maderas 
+CT Caimancito 
+CT Piquirenda 
+PBA 
+CT Guillermo Brown 
+CT Manuel Belgrano 
+CT Las Palmas 
+CT San Pedro 
+CT Villa Gesell 
+CT Mar Del Plata 
+CT Mar De Ajo 
+CT Barker 
+LITORAL 
+CH Salto Grande 
+CT Aes Parana (salto de carga) 
+CT San Martin 
+CT B. Lopez 
+NEA 
+CH Yacyreta 
+CH Urugua-i 
+COMAHUE 
+CH El Chocon 
+CH P. Banderita 
+CT Alto Valle 
+PATAGONIA 
+CH Futaleufu 
+CT Aluar TG 
+CH Ameghino 
+CT YPF Los Perales 
+CT Pico Truncado
+
+--- Página 28 ---
+10.3. ANEXO N°3: RESUMEN DE ESTRATEGIAS DE RECUPERACION POR AREA 
+ 
+ 
+Area 
+Empresa 
+Orden de 
+servicio 
+AEN Estrategia Principal 
+ANEXO 
+N° 
+SADI 
+TRANSENER 
+OS N° 8 
+NEA: Yacyreta 
+LIT: S.Grande / AesParana / S.Martin / 
+M.Belgrano 
+CEN: Rio Grande/Pilar  
+COM: Chocon/ P. Banderita  
+4 
+GBA 
+SACME 
+OS N° 1 
+CT Dock Sud 
+CT Ensenada de Barragan  
+5 
+EDELAP 
+OS N° 2 
+CT La Plata 
+CT Magdalena 
+6 
+CENTRO 
+EPEC 
+OS N°196 
+CH Rio Grande 
+CT Pilar Bicentenario 
+CT Villa Maria II (MSU) 
+CT 13 de Julio (Rio Tercero)  
+CT So Energy Rio Tercero 
+CH Reolin 
+7 
+EDESAL 
+OS N°1 
+- 
+8 
+CUYO 
+DISTROCUYO 
+OS N° 4 
+CH Nihuil II 
+CH Agua del Toro 
+CH Punta Negra 
+CH Caracoles 
+CH Ullum 
+CT Lujan de Cuyo  
+9 
+NOA 
+TRANSNOA 
+OS N° 1 
+CT Termoandes 
+CH Cabra Corral 
+CT San Miguel de Tucuman 
+CT Pluspetrol Norte,  
+CT Independencia 
+CT La Rioja 
+CH Las Maderas 
+CT Caimancito 
+CT Piquirenda 
+10 
+PBA 
+TRANSBA 
+OS N° 1 
+CT Guillermo Brown 
+CT Las Palmas / CT San Pedro 
+Desde el STAT 500 kV 
+CT Barker 
+11 
+EDEA 
+OS N° 1 
+CT Villa Gesell 
+CT Mar Del Plata 
+CT Mar De Ajo 
+12 
+LITORAL 
+EPESF 
+OS N° 15 
+CH Salto Grande 
+CT San Martin 
+CT B. Lopez 
+13 
+ENERSA 
+OS N°1 
+CH Salto Grande 
+14 
+NEA 
+TRANSNEA 
+OS N°80 
+CH Yacyreta 
+Motores Diesel en isla 
+15 
+EMSA 
+OS N°1 
+CH Urugua-i 
+16 
+COMAHUE 
+TRANSCOMAHUE 
+OS N°11 
+CH P. Banderita 
+CT Alto Valle 
+17 
+EPEN 
+OS N°11 
+CH P. Banderita 
+CT Alto Valle 
+18 
+APELP 
+OS N°2 
+- 
+19 
+PATAGONIA 
+TRANSPA 
+OS N°45 
+CH Futaleufu 
+CT Aluar TG 
+CH Ameghino 
+CT YPF Los Perales 
+CT Pico Truncado 
+20
+
+--- Página 29 ---
+10.4. ANEXO N°4: ORDEN DE SERVICIO N°8 DE TRANSENER 
+10.5. ANEXO N°5: ORDEN DE SERVICIO N°1 DE SACME 
+10.6. ANEXO N°6: ORDEN DE SERVICIO N°2 DE EDELAP 
+10.7. ANEXO N°7: ORDEN DE SERVICIO N°196 DE EPEC 
+10.8. ANEXO N°8: ORDEN DE SERVICIO N°1 DE EDESAL 
+10.9. ANEXO N°9: ORDEN DE SERVICIO N°4 DE DISTROCUYO 
+10.10. ANEXO N°10: ORDEN DE SERVICIO N°1 DE TRANSNOA 
+10.11. ANEXO N°11: ORDEN DE SERVICIO N°1 DE TRANSBA 
+10.12. ANEXO N°12: ORDEN DE SERVICIO N°1 DE EDEA 
+10.13. ANEXO N°13: ORDEN DE SERVICIO N°15 DE EPESF 
+10.14. ANEXO N°14: ORDEN DE SERVICIO N°1 DE ENERSA 
+10.15. ANEXO N°15: ORDEN DE SERVICIO N°80 DE TRANSNEA 
+10.16. ANEXO N°16: ORDEN DE SERVICIO N°1 DE EMSA 
+10.17. ANEXO N°17: ORDEN DE SERVICIO N°11 DE TRANSCOMAHUE 
+10.18. ANEXO N°18: ORDEN DE SERVICIO N°11 DE EPEN 
+10.19. ANEXO N°19: ORDEN DE SERVICIO N°2 DE APELP 
+10.20. ANEXO N°20: ORDEN DE SERVICIO N°45 DE TRANSPA 
+10.21. ANEXO N°21: ORDEN DE SERVICIO N°1 DE CH SALTO GRANDE 
+10.22. ANEXO N°22: ORDEN DE SERVICIO N°1 DE CH YACYRETA 
+10.23. ANEXO N°23: ORDEN DE SERVICIO N°1 DE CH EL CHOCON 
+10.24. ANEXO N°24: ORDEN DE SERVICIO N°1 DE CH PLANICIE BANDERITA 
+10.25. ANEXO N°25: ORDEN DE SERVICIO N°1 DE CH RIO GRANDE 
+10.26. ANEXO N°26: ORDEN DE SERVICIO N°1 DE CH URUGUA-I 
+10.27. ANEXO N°27: INFORME DE CAMMESA SOBRE LA FALLA DEL 16/06/2019.
+

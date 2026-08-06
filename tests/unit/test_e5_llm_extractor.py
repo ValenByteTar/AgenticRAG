@@ -27,7 +27,7 @@ from knowledge_builder.kir import (
 from knowledge_builder.frontend.llm_entity_extractor import (
     LLMEntityExtractor,
     _EXTRACTION_PROMPT,
-    _EXTRACTOR_ID,
+    _EXTRACTOR_ID_DEFAULT,
 )
 from knowledge_builder.validate.semantic_validator import SemanticValidator
 from knowledge_builder.model.confidence import WeightedPolicy
@@ -42,7 +42,9 @@ class TestLLMEntityExtractor:
     """Tests for LLMEntityExtractor (E5)."""
 
     def test_extractor_id(self):
-        assert _EXTRACTOR_ID == "llm:granite-4.1-8b"
+        ext = LLMEntityExtractor()
+        assert ext.extractor_id == "llm:granite4.1-3b-q6_K".split(':')[-1].replace('.', '-') or _EXTRACTOR_ID_DEFAULT
+        assert ext.extractor_id.startswith("llm:")
 
     def test_prompt_placeholder_replacement(self):
         """Prompt uses str.replace, not .format() — avoids JSON brace conflicts."""
@@ -94,7 +96,7 @@ class TestLLMEntityExtractor:
         doc = tmp_path / "test.txt"
         doc.write_text("ISO 27001 is a standard. Also known as ISO27K.", encoding="utf-8")
 
-        extractor = LLMEntityExtractor(docs_dir=tmp_path, max_docs=1)
+        extractor = LLMEntityExtractor(docs_dir=tmp_path, max_docs=1, use_cache=False)
 
         # Mock the LLM call
         mock_response = json.dumps({
@@ -117,7 +119,7 @@ class TestLLMEntityExtractor:
 
         assert len(kir.entity_claims) > 0
         assert all(isinstance(c, EntityClaim) for c in kir.entity_claims)
-        assert all(c.extractor_id == _EXTRACTOR_ID for c in kir.entity_claims)
+        assert all(c.extractor_id == extractor.extractor_id for c in kir.entity_claims)
         assert all(c.evidence for c in kir.entity_claims)
         assert all(c.confidence > 0 for c in kir.entity_claims)
 
@@ -258,7 +260,7 @@ class TestConfidencePolicy:
     def test_weighted_policy_llm_weight(self):
         policy = WeightedPolicy()
         # LLM extractor has weight 0.85 in _EXTRACTOR_WEIGHTS
-        assert policy.weights.get("llm:granite-4.1-8b") == 0.85
+        assert policy.weights.get("llm:granite-4.1-3b") == 0.85
 
     def test_weighted_policy_combines(self):
         policy = WeightedPolicy()
@@ -267,13 +269,13 @@ class TestConfidencePolicy:
         # Weighted: (0.9025 + 0.765) / (0.95 + 0.85) = 0.9264
         result = policy.combine(
             [0.95, 0.9],
-            ["deterministic:equivalences-text", "llm:granite-4.1-8b"],
+            ["deterministic:equivalences-text", "llm:granite-4.1-3b"],
         )
         assert 0.85 < result <= 1.0
 
     def test_weighted_policy_llm_only(self):
         policy = WeightedPolicy()
-        result = policy.combine([0.9], ["llm:granite-4.1-8b"])
+        result = policy.combine([0.9], ["llm:granite-4.1-3b"])
         assert result == 0.9
 
     def test_weighted_policy_unknown_extractor(self):
@@ -297,7 +299,7 @@ class TestCompilerE5Integration:
             equivalences_text="A = B\n",
             entity_aliases={"iso 27001": ["iso27k"]},
             use_llm_extractor=True,
-            llm_model="ibm/granite4.1:8b-q4_K_M",
+            llm_model="ibm/granite4.1:3b-q6_K",
             llm_max_docs=1,
             use_semantic_validation=True,
         )

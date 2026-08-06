@@ -1,0 +1,93 @@
+=== 50 Excel Shortcuts PDF.pdf ===
+
+--- Página 1 ---
+More than 1 Billion of you use
+Microsoft Excel.
+But, most of you can't
+navigate it without your
+mouse. 
+Here are 50 Excel Shortcuts
+that'll save you hundreds of
+hours of your life:
+
+--- Página 2 ---
+File Shortcuts
+1. Save as = F12 
+2. Save = Ctrl + S 
+3. Print = Ctrl + P 
+4. Close Excel = Alt + F4 
+5. New workbook = Ctrl + N 
+6. Open workbook = Ctrl + O 
+7. Close current window = Ctrl + W
+
+--- Página 3 ---
+Format Shortcuts
+8. Bold = Ctrl + B 
+9. Italics = Ctrl + I 
+10. Underline = Ctrl + U 
+11. Strikethrough = Ctrl + 5 
+12. Date format = Ctrl + Sift + # 
+13. Number format = Ctrl + Shift + ! 
+14. Percent format = Ctrl + Shift + %
+15. Currency format = Ctrl + Shift + $
+
+--- Página 4 ---
+Navigation Shortcuts
+16. Start of row = Home 
+17. Start of worksheet = Ctrl + Home 
+18. Prior sheet in workbook = Ctrl + Page up 
+19. Next sheet in workbook = Ctrl + Page
+down 
+20. Up or down to data edge = Ctrl + Up or
+Down 
+21. Left or right to data edge = Ctrl + Left or
+Right
+
+--- Página 5 ---
+Copy, Paste and Paste
+Special Shortcuts
+22. Copy = Cntrl + C 
+23. Paste = Cntrl + V 
+24. Paste value = Alt, H, V, V 
+25. Paste format = Alt, H, V, R 
+26. Paste formula = Alt, H, V, F
+27. Paste source + format = Alt, H, V, E
+
+--- Página 6 ---
+Insert and Delete Shortcuts
+28. Select Row = Shift + Space Bar 
+29. Select Column = Cntrl + Space Bar 
+30. Delete Row or Colum = Cntrl + "-" 
+31. Insert Row or Column = Ctrl + Shift + "+"
+
+--- Página 7 ---
+Adjust, Group and Ungroup
+Shortcuts
+32. Remove groups = Alt, A, U, C 
+33. Autofit row height = Alt, H, O A 
+34. Autofit column width = Alt, H, O, I 
+35. Group row or column = Shift + Alt + Right
+Arrow 
+36. Ungroup row or column = Shift + Alt +
+Left Arrow
+
+--- Página 8 ---
+Formula Shortcuts
+37. Edit formula = F2 
+38. Autosum = Alt + = 
+39. Toggle cell formula = Ctrl + ` 
+40. Open insert function = Shift + F3 
+41. Paste a formula as values = F2, F9
+42. Show formula bar = Ctrl + Shift + U 
+43. Copy formula from cell above = Ctrl + '
+
+--- Página 9 ---
+Bonus Shortcuts
+44. Redo = Ctrl + Y 
+45. Undo = Ctrl + Z 
+46. Zoom in = Ctrl + Alt + "=" 
+47. Zoom out = Ctrl + Alt + "-" 
+48. Insert current date = Ctrl + ; 
+49. Insert current time = Ctrl + Shift + ; 
+50.  Add row of text in a cell = Alt + Enter
+

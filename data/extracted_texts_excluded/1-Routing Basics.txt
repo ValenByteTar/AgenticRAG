@@ -1,0 +1,751 @@
+=== 1-Routing Basics.pdf ===
+
+--- Página 1 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+1
+Routing Basics
+ISP/IXP Workshops
+
+--- Página 2 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+2
+Routing Concepts
+IPv4
+Routing
+Forwarding
+Some definitions
+Policy options
+Routing Protocols
+
+--- Página 3 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+3
+IPv4
+Internet uses IPv4
+addresses are 32 bits long
+range from 1.0.0.0 to 223.255.255.255
+0.0.0.0 to 0.255.255.255 and 224.0.0.0 to 255.255.255.255
+have “special” uses
+IPv4 address has a network portion and a host portion
+
+--- Página 4 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+4
+IPv4 address format
+Address and subnet mask
+written as
+12.34.56.78  255.255.255.0 or
+12.34.56.78/24
+mask represents the number of network bits in the 32 bit
+address
+the remaining bits are the host bits
+
+--- Página 5 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+5
+What does a router do?
+?
+
+--- Página 6 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+6
+A day in a life of a router
+find path
+forward packet, forward packet, forward packet, forward
+packet...
+find alternate path
+forward packet, forward packet, forward packet, forward
+packet…
+repeat until powered off
+
+--- Página 7 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+7
+Routing versus Forwarding
+Routing = building maps
+and giving directions
+Forwarding = moving
+packets between
+interfaces according to
+the “directions”
+
+--- Página 8 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+8
+IP Routing – finding the path
+Path derived from information received from a routing
+protocol
+Several alternative paths may exist
+best next hop stored in forwarding table
+Decisions are updated periodically or as topology
+changes (event driven)
+Decisions are based on:
+topology, policies and metrics (hop count, filtering, delay,
+bandwidth, etc.)
+
+--- Página 9 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+9
+IP route lookup
+Based on destination IP address
+“longest match” routing
+more specific prefix preferred over less specific prefix
+example: packet with destination of 10.1.1.1/32 is sent to the
+router announcing 10.1/16 rather than the router announcing
+10/8.
+
+--- Página 10 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+10
+Based on destination IP address
+IP route lookup
+R2
+R3
+R1
+R4
+All 10/8 except
+10.1/16
+10.1/16
+Packet: Destination
+IP address: 10.1.1.1
+10/8 → R3
+10.1/16 → R4
+20/8 → R5
+30/8 → R6
+…..
+R2’s IP routing table
+
+--- Página 11 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+11
+IP route lookup:
+Longest match routing
+R2
+R3
+R1
+R4
+All 10/8 except
+10.1/16
+10.1/16
+R2’s IP routing table
+10.1.1.1 && FF.0.0.0
+             vs.
+10.0.0.0 && FF.0.0.0
+Match!
+Packet: Destination
+IP address: 10.1.1.1
+10/8 → R3
+10.1/16 → R4
+20/8 → R5
+30/8 → R6
+…..
+Based on destination IP address
+
+--- Página 12 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+12
+IP route lookup:
+Longest match routing
+R2
+R3
+R1
+R4
+All 10/8 except
+10.1/16
+10.1/16
+10.1.1.1 && FF.FF.0.0
+             vs.
+10.1.0.0 && FF.FF.0.0
+Match as well!
+Packet: Destination
+IP address: 10.1.1.1
+10/8 → R3
+10.1/16 → R4
+20/8 → R5
+30/8 → R6
+…..
+R2’s IP routing table
+Based on destination IP address
+
+--- Página 13 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+13
+IP route lookup:
+Longest match routing
+R2
+R3
+R1
+R4
+All 10/8 except
+10.1/16
+10.1/16
+10.1.1.1 && FF.0.0.0
+             vs.
+20.0.0.0 && FF.0.0.0
+Does not match!
+Packet: Destination
+IP address: 10.1.1.1
+10/8 → R3
+10.1/16 → R4
+20/8 → R5
+30/8 → R6
+…..
+R2’s IP routing table
+Based on destination IP address
+
+--- Página 14 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+14
+IP route lookup:
+Longest match routing
+R2
+R3
+R1
+R4
+All 10/8 except
+10.1/16
+10.1/16
+10.1.1.1 && FF.0.0.0
+             vs.
+30.0.0.0 && FF.0.0.0
+Does not match!
+Packet: Destination
+IP address: 10.1.1.1
+10/8 → R3
+10.1/16 → R4
+20/8 → R5
+30/8 → R6
+…..
+R2’s IP routing table
+Based on destination IP address
+
+--- Página 15 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+15
+IP route lookup:
+Longest match routing
+R2
+R3
+R1
+R4
+All 10/8 except
+10.1/16
+10.1/16
+10/8 → R3
+10.1/16 → R4
+20/8 → R5
+30/8 → R6
+…..
+R2’s IP routing table
+Packet: Destination
+IP address: 10.1.1.1
+Longest match, 16 bit netmask
+Based on destination IP address
+
+--- Página 16 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+16
+IP Forwarding
+Router makes decision on which interface a packet is
+sent to
+Forwarding table populated by routing process
+Forwarding decisions:
+destination address
+class of service (fair queuing, precedence, others)
+local requirements (packet filtering)
+Can be aided by special hardware
+
+--- Página 17 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+17
+Routing Tables Feed the Forwarding Table
+BGP 4 Routing Table
+OSPF – Link State Database
+Static Routes
+Routing Information Base (RIB)
+Forwarding Information Base (FIB)
+Connected Routes
+
+--- Página 18 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+18
+RIBs and FIBs
+FIB is the Forwarding Table
+It contains destinations and the interfaces to get to those
+destinations
+Used by the router to figure out where to send the packet
+Careful! Some people call this a route!
+RIB is the Routing Table
+It contains a list of all the destinations and the various next hops
+used to get to those destinations – and lots of other information
+too!
+One destination can have lots of possible next-hops – only the
+best next-hop goes into the FIB
+
+--- Página 19 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+19
+Explicit versus Default Routing
+Default:
+simple, cheap (cycles, memory, bandwidth)
+low granularity (metric games)
+Explicit (default free zone)
+high overhead, complex, high cost, high granularity
+Hybrid
+minimise overhead
+provide useful granularity
+requires some filtering knowledge
+
+--- Página 20 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+20
+Egress Traffic
+How packets leave your network
+Egress traffic depends on:
+route availability (what others send you)
+route acceptance (what you accept from others)
+policy and tuning (what you do with routes from others)
+Peering and transit agreements
+
+--- Página 21 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+21
+Ingress Traffic
+How packets get to your network and your customers’
+networks
+Ingress traffic depends on:
+what information you send and to whom
+based on your addressing and AS’s
+based on others’ policy (what they accept from you and what
+they do with it)
+
+--- Página 22 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+22
+Autonomous System (AS)
+Collection of networks with same routing policy
+Single routing protocol
+Usually under single ownership, trust and administrative
+control
+AS 100
+
+--- Página 23 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+23
+Definition of terms
+Neighbours
+AS’s which directly exchange routing information
+Routers which exchange routing information
+Announce
+send routing information to a neighbour
+Accept
+receive and use routing information sent by a neighbour
+Originate
+insert routing information into external announcements (usually as a
+result of the IGP)
+Peers
+routers in neighbouring AS’s or within one AS which exchange routing
+and policy information
+
+--- Página 24 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+24
+Routing flow and packet flow
+For networks in AS1 and AS2 to communicate:
+AS1 must announce to AS2
+AS2 must accept from AS1
+AS2 must announce to AS1
+AS1 must accept from AS2
+routing flow
+accept
+announce
+announce
+accept
+AS 1
+AS 2
+packet flow
+packet flow
+
+--- Página 25 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+25
+Routing flow and Traffic flow
+Traffic flow is always in the opposite direction of the
+flow of Routing information
+Filtering outgoing routing information inhibits traffic flow inbound
+Filtering inbound routing information inhibits traffic flow
+outbound
+
+--- Página 26 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+26
+Routing Flow/Packet Flow:
+With multiple ASes
+For net N1 in AS1 to send traffic to net N16 in AS16:
+AS16 must originate and announce N16 to AS8.
+AS8 must accept N16 from AS16.
+AS8 must announce N16 to AS1 or AS34.
+AS1 must accept N16 from AS8 or AS34.
+For two-way packet flow, similar policies must exist for N1
+AS 1
+AS 8
+AS 34
+AS16
+N16
+N1
+
+--- Página 27 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+27
+Routing Flow/Packet Flow:
+With multiple ASes
+As multiple paths between sites are implemented it is
+easy to see how policies can become quite complex.
+AS 1
+AS 8
+AS 34
+AS16
+N16
+N1
+
+--- Página 28 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+28
+Routing Policy
+Used to control traffic flow in and out of an ISP network
+ISP makes decisions on what routing information to
+accept and discard from its neighbours
+Individual routes
+Routes originated by specific ASes
+Routes traversing specific ASes
+Routes belonging to other groupings
+Groupings which you define as you see fit
+
+--- Página 29 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+29
+Routing Policy Limitations
+AS99 uses red link for traffic to the red AS and the
+green link for remaining traffic
+To implement this policy, AS99 has to:
+Accept routes originating from the red AS on the red link
+Accept all other routes on the green link
+red
+green
+packet flow
+Internet
+red
+green
+AS99
+
+--- Página 30 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+30
+Routing Policy Limitations
+AS99 would like packets coming from the green AS to use the
+green link.
+But unless AS22 cooperates in pushing traffic from the green
+AS down the green link, there is very little that AS99 can do to
+achieve this aim
+packet flow
+red
+green
+red
+green
+Internet
+AS22
+AS99
+
+--- Página 31 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+31
+Routing Policy Issues
+330000 prefixes (not realistic to set policy on all of them
+individually)
+34500 origin AS’s (too many)
+Routes tied to a specific AS or path may be unstable
+regardless of connectivity
+Groups of AS’s are a natural abstraction for filtering
+purposes
+
+--- Página 32 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+32
+Routing Protocols
+We now know what routing means…
+     …but what do the routers get up to?
+And why are we doing this anyway?
+
+--- Página 33 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+33
+1: How Does Routing Work?
+Internet is made up of the ISPs who connect to each
+other’s networks
+How does an ISP in Kenya tell an ISP in Japan what
+customers they have?
+And how does that ISP send data packets to the
+customers of the ISP in Japan, and get responses back
+After all, as on a local ethernet, two way packet flow is needed
+for communication between two devices
+
+--- Página 34 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+34
+2: How Does Routing Work?
+ISP in Kenya could buy a direct connection to the ISP
+in Japan
+But this doesn’t scale – thousands of ISPs, would need
+thousands of connections, and cost would be astronomical
+Instead, ISP in Kenya tells his neighbouring ISPs what
+customers he has
+And the neighbouring ISPs pass this information on to their
+neighbours, and so on
+This process repeats until the information reaches the ISP in
+Japan
+
+--- Página 35 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+35
+3: How Does Routing Work?
+This process is called “Routing”
+The mechanisms used are called “Routing Protocols”
+Routing and Routing Protocols ensures that the Internet
+can scale, that thousands of ISPs can provide
+connectivity to each other, giving us the Internet we see
+today
+
+--- Página 36 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+36
+4: How Does Routing Work?
+ISP in Kenya doesn’t actually tell his neighbouring ISPs
+the names of the customers
+(network equipment does not understand names)
+Instead, he has received an IP address block as a
+member of the Regional Internet Registry serving
+Kenya
+His customers have received address space from this address
+block as part of their “Internet service”
+And he announces this address block to his neighbouring ISPs
+– this is called announcing a “route”
+
+--- Página 37 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+37
+Routing Protocols
+Routers use “routing protocols” to exchange routing
+information with each other
+IGP is used to refer to the process running on routers inside an
+ISP’s network
+EGP is used to refer to the process running between routers
+bordering directly connected ISP networks
+
+--- Página 38 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+38
+What Is an IGP?
+Interior Gateway Protocol
+Within an Autonomous System
+Carries information about
+internal infrastructure prefixes
+Examples – OSPF, ISIS, EIGRP
+
+--- Página 39 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+39
+Why Do We Need an IGP?
+ISP backbone scaling
+Hierarchy
+Limiting scope of failure
+Only used for ISP’s infrastructure addresses, not customers or
+anything else
+Design goal is to minimise number of prefixes in IGP to aid
+scalability and rapid convergence
+
+--- Página 40 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+40
+What Is an EGP?
+Exterior Gateway Protocol
+Used to convey routing information between
+Autonomous Systems
+De-coupled from the IGP
+Current EGP is BGP
+
+--- Página 41 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+41
+Why Do We Need an EGP?
+Scaling to large network
+Hierarchy
+Limit scope of failure
+Define Administrative Boundary
+Policy
+Control reachability of prefixes
+Merge separate organizations
+Connect multiple IGPs
+
+--- Página 42 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+42
+Interior versus Exterior
+Routing Protocols
+Interior
+automatic neighbour
+discovery
+generally trust your IGP
+routers
+prefixes go to all IGP
+routers
+binds routers in one AS
+together
+Exterior
+specifically configured
+peers
+connecting with outside
+networks
+set administrative
+boundaries
+binds AS’s together
+
+--- Página 43 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+43
+Interior versus Exterior
+Routing Protocols
+Interior
+Carries ISP infrastructure
+addresses only
+ISPs aim to keep the IGP
+small for efficiency and
+scalability
+Exterior
+Carries customer prefixes
+Carries Internet prefixes
+EGPs are independent of
+ISP network topology
+
+--- Página 44 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+44
+BGP4
+Hierarchy of Routing Protocols
+BGP4
+and OSPF/ISIS
+Other ISPs
+Customers
+IXP
+Static/BGP4
+BGP4
+
+--- Página 45 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+45
+Connected Interface                           
+Connected Interface                           0
+Static Route
+Static Route
+1
+Enhanced IGRP Summary Route
+Enhanced IGRP Summary Route
+5
+External BGP
+External BGP
+20
+20
+Internal Enhanced IGRP
+Internal Enhanced IGRP
+90
+90
+IGRP
+IGRP
+100
+100
+OSPF
+OSPF
+110
+110
+IS-IS 
+IS-IS 
+115
+115
+RIP  
+RIP  
+120
+120
+EGP
+EGP
+140
+140
+External Enhanced IGRP
+External Enhanced IGRP
+170
+170
+Internal BGP
+Internal BGP
+200
+200
+Unknown
+Unknown
+255
+255
+Route Source
+Route Source
+Default Distance
+Default Distance
+FYI: IOS Default Administrative
+Distances
+
+--- Página 46 ---
+© 2010 Cisco Systems, Inc. All rights reserved.
+ISP Workshops
+46
+Routing Basics
+ISP/IXP Workshops
+

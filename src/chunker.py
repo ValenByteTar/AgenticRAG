@@ -10,6 +10,8 @@ import re
 from rich.console import Console
 from typing import Optional
 
+from utils import canonical_doc_id
+
 console = Console()
 
 
@@ -164,6 +166,7 @@ class TextChunker:
                     'text': chunk_text,
                     'metadata': {
                         'source': pdf_data['filename'],
+                        'canonical_doc_id': canonical_doc_id(pdf_data['filename']),
                         'page': page_num,
                         'chunk_index': chunk_id,
                         'filepath': pdf_data['filepath'],

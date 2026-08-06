@@ -10,7 +10,6 @@ if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
 from utils import get_config, get_console
-from vector_store import VectorStore
 from doc_cards import (
     load_doc_roles,
     save_doc_roles,
@@ -30,9 +29,6 @@ def main():
     console = get_console()
     cfg = get_config(use_cache=False)
 
-    db_path = cfg['paths'].get('vectordb_dir_bge', cfg['paths'].get('vectordb_dir', 'chroma_bge_m3'))
-    collection_name = cfg['vectordb'].get('collection_name_bge', cfg['vectordb'].get('collection_name', 'crom_protocols_bge_m3'))
-
     # Defaults desde config.yaml
     dcfg = cfg.get('doccards', {})
     model = args.model or dcfg.get('model_name', 'granite-3.3-8b-instruct-q5km:latest')
@@ -41,17 +37,13 @@ def main():
     llm_timeout = args.llm_timeout if args.llm_timeout is not None else dcfg.get('llm_timeout', 8)
     sample_chars = args.sample_chars if args.sample_chars is not None else dcfg.get('sample_chars', 600)
 
-    console.print('\n[bold cyan]DocCards incremental[/bold cyan]')
-    console.print(f"DB: {db_path}  Coleccion: {collection_name}")
+    console.print('\n[bold cyan]DocCards incremental (desde corpus)[/bold cyan]')
     console.print(f"Modelo: {model}  Presupuesto: ratio={llm_ratio} max_calls={llm_max_calls}")
-
-    vs = VectorStore(db_path=db_path, collection_name=collection_name)
 
     existing = load_doc_roles()
     before = len((existing or {}).get('docs', {}))
 
     out = build_doc_cards_llm_incremental(
-        vs,
         existing=existing,
         model_name=model,
         max_docs=args.max_docs,

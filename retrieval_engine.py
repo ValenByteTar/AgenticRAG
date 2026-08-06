@@ -295,12 +295,12 @@ class RetrievalEngine:
         return filtered
 
     def filter_to_candidates(self, results: list, allowed_sources: list) -> list:
-        """Filtra resultados a un conjunto de fuentes permitidas. Si filtra todo, devuelve original."""
+        """Filtra resultados a un conjunto de canonical_doc_ids permitidos. Si filtra todo, devuelve original."""
         if not results or not allowed_sources:
             return results
         allowed = set(s.lower() for s in allowed_sources)
         filtered = [r for r in results
-                    if (r.get('metadata', {}) or {}).get('source', '').lower() in allowed]
+                    if (r.get('metadata', {}) or {}).get('canonical_doc_id', '').lower() in allowed]
         return filtered if filtered else results
 
     def deduplicate_results(self, results: list, similarity_threshold: float = 0.85) -> list:
@@ -666,21 +666,21 @@ class RetrievalEngine:
                 pass
             preferred = []
             if is_protection_query and entities:
-                preferred = ['grid_ops', 'entity_profile', 'procedure']
+                preferred = ['other', 'entity_profile', 'guide']
             elif is_conceptual:
-                preferred = ['analysis_report', 'entity_profile', 'manual_scada']
+                preferred = ['analysis', 'entity_profile', 'reference']
             elif is_procedural or is_troubleshooting:
-                preferred = ['procedure', 'manual_scada', 'analysis_report']
+                preferred = ['guide', 'reference', 'analysis']
             elif rag._is_cells_query(question):
-                preferred = ['manual_scada', 'entity_profile']
+                preferred = ['reference', 'entity_profile']
             elif is_direct_comparison:
-                preferred = ['entity_profile', 'analysis_report']
+                preferred = ['entity_profile', 'analysis']
             elif is_simple_numeric:
-                preferred = ['analysis_report', 'entity_profile']
+                preferred = ['analysis', 'entity_profile']
             elif entities:
-                preferred = ['entity_profile', 'entity_list']
+                preferred = ['entity_profile', 'list']
             else:
-                preferred = ['entity_list', 'analysis_report', 'other']
+                preferred = ['list', 'analysis', 'other']
             candidates = []
             if rag.config.get('use_doc_roles', True) and isinstance(rag.doc_roles, dict) and rag.doc_roles.get('docs'):
                 try:

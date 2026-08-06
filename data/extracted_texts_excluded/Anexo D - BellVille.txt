@@ -1,0 +1,277 @@
+=== Anexo D - BellVille.pdf ===
+
+--- Página 1 ---
+ANEXO D  (BELL VILLE)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES BELL VILLE OPERADAS POR EL CROM 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+CTBGBELG 
+1,6 
+Biogas 
+27/06/2024 
+SECCO 
+ 
+BLC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL 
+1
+
+--- Página 2 ---
+ANEXO D  (BELL VILLE)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+Descripcion de Generadores BELL VILLE: 
+Bell Ville es un proyecto en el cual el CROM monitorea la operacion de un agente con un generador en el 
+mercado electrico, es un motor de combustion interna que quema bio gas, y tiene acoplado un generador 
+sincronico. 
+ 
+Descripcion del Proyecto: 
+C.T. Bell Ville surge del programa RenovAr MiniRenRonda 3 identificacion de la oferta BG-3502, se le adjudica 
+una potencia de 1.2 MW, y se monto una maquina de 1.6 MW (Agente: CTBGBELG; Central: BVIB; Grupo: 
+BVIBDI01) Fecha habilitacion comercial 27/06/2024. Oferente de la oferta BIOGAS BELL BILLE S.A. 
+ 
+La plantade “Generacion de Biogas” BELL VILLE, esta ubicada al sur este de la provincia de Cordoba, 
+Argentina, en el Departamento de Union, a 4 Km al Este de la ciudad de Bell Ville 
+. 
+ 
+El proyecto Bell Ville obtiene bio gas de bio digestores que se alimentan con elementos y residuos organicos 
+de la zona, y se produce energia electrica quemando este bio gas. Luego, dicha energia sera inyectada en el 
+Sistema Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con la 
+administradora del Mercado Electrico Mayorista (CAMMESA) a traves de una conexion en 13,2 KV que se 
+conecta a la de Cooperativa Monte Lena (Distribuidor) Cordoba, y despues se conecta al sistema de EPEC en 
+la ET Bell Ville donde se eleva la tension de 13,2 KV a 66 KV. 
+ 
+ 
+ 
+CTBGBRLG se encuentra en 
+Sur de Cordoba, al Este de 
+la localidad de Bell Ville 
+-32.622937 
+-62.633295.
+
+--- Página 3 ---
+ANEXO D  (BELL VILLE)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+COMPANIA BIOGAS BELL VILLE S.A. 1.6 MW 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Es una maquina de 1.6 MW, esta conectada del siguiente modo, a la salida del generador tiene un interruptor 
+de paralelo en 400 V, despues del interruptor de paralelo un transformador TR2 de 1800 KVA de relacion 
+0.4/13.8 KV, el transformador se conecta a celda A5 de 13.2 KV  a traves de seccionador bajo carga con fusible 
+a una barra comun que tiene conectado desde celda A4 el transformador de servicios auxiliares TR1 de 63 KVA, 
+esta barra luego pasa por el nodo de medicion comercial SMEC ubicado en celda A3, y la energia es conducida 
+a celda de salida A2 en la que existe un interruptor QBC con sus protecciones por la que sale toda la energia 
+generada por la central. 
+La energia de la maquina sale de las celdas y es conducida por un cable subterraneo de 160 mts. hasta un 
+punto donde se encuentra un seccionador que vincula la salida de la CT Bell Ville con la red de distribucion en 
+13.2 KV de la Cooperativa Monte Lena y esta Cooperativa se conecta con el sistema nacional a traves de EPEC 
+en la ET Bell Ville donde se eleva la tension de 13,2 KV a 66 KV. 
+ 
+El CROM solo realiza monitoreo a traves del SOTR y no opera ningun equipo de la central a distancia, si realiza 
+coordinacion operativa, comunicandose con los centros de control de CAMMESA, EPEC y operadores en sitio. 
+ 
+Pagina oficial:     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DIAGRAMA UNIFILAR:
+
+--- Página 4 ---
+ANEXO D  (BELL VILLE)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion
+
+--- Página 5 ---
+ANEXO D  (BELL VILLE)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+FIN:
+

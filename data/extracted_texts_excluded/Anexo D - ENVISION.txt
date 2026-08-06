@@ -1,0 +1,508 @@
+=== Anexo D - ENVISION.pdf ===
+
+--- Página 1 ---
+ANEXO D  (ENVISION)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES ENVISION OPERADAS POR EL CROM  
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+Garcia del Rio 
+10 
+Eolica 
+14/11/2019 
+Envision 
+Envision 
+BLC 
+Vientos del Secano 
+50 
+Eolica 
+30/10/2020 
+Envision 
+Envision 
+BLC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL 
+60
+
+--- Página 2 ---
+ANEXO D  (ENVISION)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Descripcion de Garcia del Rio: 
+El proyecto presente, identificado como Parque Eolico Garcia del Rio 10 MW (Agente: PEGARCIG; Central: 
+GRIOEO; Grupo: GRIOEO01), producira energia electrica a partir de la captacion y transformacion de la energia 
+proveniente del viento, por medio de cuatro molinos eolicos. Luego, dicha energia sera inyectada en el Sistema 
+Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con la administradora del 
+Mercado Electrico Mayorista (CAMMESA). 
+ 
+Las turbinas Envision cuentan con un desarrollo de innovacion con tecnologia exclusiva de control inteligente 
+y metodos avanzados de medicion, sistemas eficientes de coleccion de datos y control de disponibilidad. 
+ 
+Este diseno innovador, conocido como “Smart Turbines” permite percibir con precision las condiciones 
+externas del medio, asegurando una operacion optima y maximizando su generacion y vida util. 
+ 
+Esta genial innovacion ha mejorado los limites de la tecnologia tradicional, mejorando el desempeno de 
+generacion por un 20%. 
+ 
+Envision Energy combina esta tecnologia de control con un almacenamiento de informacion en la nube, 
+permitiendo crear “Parques Eolicos Inteligentes” con “Turbinas Inteligentes”, siendo asi capaces de optimizar 
+el funcionamiento de las turbinas reduciendo estelas de forma inteligente. 
+ 
+El diseno del parque eolico Garcia del Rio ha involucrado diferentes especialistas de diferentes partes del 
+mundo con el objeto de explotar la maxima produccion con la mayor eficiencia y la menor afectacion posible 
+al medio y a la poblacion.
+
+--- Página 3 ---
+ANEXO D  (ENVISION)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+La implantacion esta compuesta por cuatro turbinas, un camino que las une para su servicio, una subestacion 
+de conexion sin transformacion y las lineas de 33kV que llevaran la energia generada desde cada una de las 
+turbinas hasta el SADI. 
+ 
+La distancia entre turbinas es de al menos dos veces el diametro del rotor. Los caminos son de al menos 5m 
+de ancho pues deben tener el ancho suficiente para dar servicio a las turbinas y para el paso de las gruas. 
+ 
+Como se ve a gran escala, el impacto visual es sumamente pequeno. 
+ 
+Agente: PEGARCIG, Central: GRIOEO, Grupo: GRIOEO01 
+Habilitacion comercial 14/11/2019 
+ 
+Brisa de la Costa S.A. 
+Domicilio Legal: Ingeniero Enrique Butty N°275, CP C1001, CABA, Capital Federal.  
+Tel: 011 5365 7904 
+ 
+Equipamiento 
+Parque Eolico Garcia del Rio 10 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Envision EN110-2.5 
+Potencia Nominal del aerogenerador 
+2,5 MW 
+Numero de aerogeneradores 
+4 
+Potencia Nominal del proyecto 
+10 MW 
+Altura de buje 
+90m 
+Velocidad media a altura de buje 
+9,61m/s 
+Direccion predominante del viento 
+NNW 
+ 
+El parque esta constituido por 4 Aero generadores de 2,5 Mw, interconectados entre si por una linea aerea de 
+33 Kv, esta linea luego llega a una Estacion transformadora que sirve tambien como seccionadora de una linea 
+de 33 Kv de EDES, la linea seccionada va desde ET Norte 1 (en Bahia Blanca) hasta Torquinst, estando el parque 
+aproximadamente en la mitad del recorrido de la linea. 
+ 
+• 
+Hay un interruptor en Celda 4 por el que se conecta a barras de 33 Kv los Aerogeneradores (Es el unico 
+interruptor sobre el que COG BLC tiene telecomando). 
+ 
+• 
+Hay un Interruptor en Celda 6 para un banco de Capacitores.
+
+--- Página 4 ---
+ANEXO D  (ENVISION)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+• 
+Hay un Interruptor en Celda 5 para alimentar Trafo de Servicios Auxiliares 
+ 
+• 
+Hay un Interruptor en Celda 2 Operado por EDES donde sale la linea hacia Norte 1. 
+ 
+• 
+Hay un Interruptor en Celda 1 Operado por EDES donde sale la linea hacia Torquinst.
+
+--- Página 5 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar del Parque de Garcia del Rio
+
+--- Página 6 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+Unifilar de Celdas de MT
+
+--- Página 7 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Seccionamiento de Linea ET Norte – ET Tornquist
+
+--- Página 8 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Descripcion de Vientos del Secano: 
+El proyecto presente, identificado como Parque Eolico Vientos del Secano 50 MW (Agente: PESECANG; Central: 
+VSECEO; Grupo: VSECEO01), producira energia electrica a partir de la captacion y transformacion de la energia 
+proveniente del viento, por medio de veinte molinos eolicos. Luego, dicha energia sera inyectada en el Sistema 
+Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con la administradora del 
+Mercado Electrico Mayorista (CAMMESA). 
+ 
+Las turbinas Envision cuentan con un desarrollo de innovacion con tecnologia exclusiva de control inteligente 
+y metodos avanzados de medicion, sistemas eficientes de coleccion de datos y control de disponibilidad. 
+ 
+Este diseno innovador, conocido como “Smart Turbines” permite percibir con precision las condiciones 
+externas del medio, asegurando una operacion optima y maximizando su generacion y vida util. 
+ 
+Esta genial innovacion ha mejorado los limites de la tecnologia tradicional, mejorando el desempeno de 
+generacion por un 20%. 
+ 
+Envision Energy combina esta tecnologia de control con un almacenamiento de informacion en la nube, 
+permitiendo crear “Parques Eolicos Inteligentes” con “Turbinas Inteligentes”, siendo asi capaces de optimizar 
+el funcionamiento de las turbinas reduciendo estelas de forma inteligente. 
+ 
+El diseno del parque eolico Vientos del Secano ha involucrado diferentes especialistas de diferentes partes 
+del mundo con el objeto de explotar la maxima produccion con la mayor eficiencia y la menor afectacion 
+posible al medio y a la poblacion.
+
+--- Página 9 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+La implantacion esta compuesta por veinte turbinas, caminos que las unen para su servicio, una Estacion 
+transformadora que pertenece a TRANSBA denominada Mayor Buratovich. Lineas de 33kV que interconectan 
+las turbinas en 2 circuitos que llevaran la energia generada desde cada una de las turbinas hasta la barra de 33 
+KV. La estacion transformadora Mayor Buratovich tiene dos transformadores T1MBU y T2MBU de 30 MVA cada 
+uno, por medio de ellos sube la tension de 33 KV a 132 KV y se une al SADI, hay dos lineas de TRANSBA que 
+salen de la ET Mayor Buratovich, una va a ET Pedro Luro (hacia el sur), la otra va a ET Bahia Blanca (hacia el 
+norte) 
+ 
+La distancia entre turbinas es de al menos dos veces el diametro del rotor. Los caminos son de al menos 5 m 
+de ancho pues deben tener el ancho suficiente para dar servicio a las turbinas y para el paso de las gruas. 
+ 
+Como se ve a gran escala, el impacto visual es sumamente pequeno. 
+ 
+Agente: PESECANG, Central: VSECEO, Grupo: VSECEO01 
+Habilitacion comercial 30/10/2020 
+ 
+Parques Eolicos Pampeanos S.A. 
+Domicilio Legal: Ingeniero Enrique Butty N°275 piso 11, CP C1001, CABA, Capital Federal.  
+Tel: 011 5365 7904 
+Localizacion fisica del parque: 
+• 
+Latitud : -39° 15' 41.4" 
+• 
+Longitud : -62° 37' 11.2" 
+Cerca de ruta nacional 3.  
+Pagina oficial : http://parqueseolicospampeanos.com.ar/presentacion-parque-eolico-vientos-del-secano/ 
+ 
+Equipamiento 
+Parque Eolico Vientos del Secano 50 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Producto 
+Descripcion 
+Modelo del aerogenerador 
+Envision EN110-2.5 
+Potencia Nominal del aerogenerador 
+2,5 MW 
+Numero de aerogeneradores 
+20 
+Potencia Nominal del proyecto 
+50 MW 
+Altura de buje 
+90 m 
+Velocidad media a altura de buje 
+8,63 m/s 
+Direccion predominante del viento 
+NNW
+
+--- Página 10 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+El parque esta constituido por 20 Aero generadores de 2,5 Mw, interconectados entre si por dos lineas aereas 
+de 33 Kv, estas lineas llamadas colectores llega cada una a una barra de 33 KV (Colector 1 llega a barra A y 
+Colector 2 llega a barra B). Cada barra tiene una salida que va a cada uno de los transformadores de 33 KV/132 
+KV. Cada transformador es de 30 MVA. 
+ 
+• 
+Hay en ET transformadora Mayor Buratovich 2 Barras de 132 KV (A y B) por el lado de la acometida a 
+barras se conectan 2 Lineas de 132 KV una que sale hacia el Norte y va a la ET Bahia Blanca (Campo 01) y 
+la otra hacia el Sur ET Pedro Luro (Campo 03), las barras tienen un interruptor de acople de barras 1A045 
+(Campo 04). A las barras existe la posibilidad de conectar 2 transformadores el T1MBU (Campo 02)  cuya 
+salida en 33 KV va a barra A de celdas de 33 KV de TRANSBA, y el T2MBU (Campo 06) cuya salida en 33 
+KV va a barra B de celdas de 33 KV de TRANSBA
+
+--- Página 11 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+• 
+Hay un conjunto de celdas de 33 KV que pertenecen a TRANSBA divididas en 2 barras(A y B), son 14 celdas 
+en total,  7 celdas para cada barra, la barra A tiene la posibilidad de conectarse a la B a traves de un 
+interruptor de acople de barras 3A055 ubicado en celda 05. La Acometida en 33 KV desde transformador 
+T1MBU a barra A se realiza por interruptor 3T045 ubicado en celda 04, La celda de medicion de barra A 
+se encuentra entre celda 04 y 05 y contiene el TV 3U00A, la barra A tiene una celda SSAA1 que a traves 
+de un seccionador bajo carga con fusibles alimenta un transformador de servicios auxiliares para la ET 
+denominado T1XMBU que va al TGSACA (Tablero General de servicios auxiliares de la ET). De la celda 03 
+a traves del interruptor 3L035 sale un cable subterraneo que va a Celdas 33 KV de Vientos del Secano 
+para conectarse a barra de Colector N°1.  
+La Acometida en 33 KV desde transformador T2MBU a barra B se realiza por interruptor 3T064 ubicado 
+en celda 06, La celda de medicion de barra B se encuentra entre celda 06 y Remonte y contiene el TV 
+3U00B, la barra B tiene una celda SSAA2 que a traves de un seccionador bajo carga con fusibles alimenta 
+un transformador de servicios auxiliares para la ET denominado T2XMBU que va al TGSACA (Tablero 
+General de servicios auxiliares de la ET). De la celda 07 a traves del interruptor 3L075 sale un cable 
+subterraneo que va a Celdas 33 KV de Vientos del Secano para conectarse a barra de Colector N°2.
+
+--- Página 12 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+• 
+Hay un conjunto de celdas de 33 KV que pertenecen a VIENTOS DEL SECANO divididas en 2 barras(A y 
+B), son 8 celdas en total,  4 celdas para cada barra, la barra A NO tiene la posibilidad de conectarse a la B 
+a traves de un interruptor de acople. La Acometida en 33 KV desde barra A de TRANSBA a barra A de 
+Vientos del Secano se realiza por seccionador 3SL03 ubicado en celda 03, La celda de medicion de barra 
+A se encuentra entre celda 03 y 02 y contiene el TV 3TVMA. De la celda 02 a traves del interruptor 3IP02 
+sale un cable subterraneo que va a Colector N°1 de Vientos del Secano. En Celda 01 hay un interruptor 
+3IP01 que permite conectar un banco de capacitores de 2,5 MVAR. 
+• 
+La Acometida en 33 KV desde barra B de TRANSBA a barra B de Vientos del Secano se realiza por 
+seccionador 3SL04 ubicado en celda 04, La celda de medicion de barra B se encuentra entre celda 05 y 04 
+y contiene el TV 3TVMB. De la celda 05 a traves del interruptor 3IP06 sale un cable subterraneo que va a 
+Colector N°2 de Vientos del Secano. En Celda 06 hay un interruptor 3IP06 que permite conectar un banco 
+de capacitores de 2,5 MVAR.
+
+--- Página 13 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+  
+FIN:
+

@@ -713,21 +713,6 @@ def metrics_health():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-@app.route('/api/learning-notification', methods=['GET'])
-def learning_notification():
-    """Obtener notificación de aprendizaje para la interfaz web"""
-    try:
-        if rag.learning_queue is None:
-            return jsonify({'status': 'none'})
-        notification = rag.learning_queue.get_notification()
-        if notification:
-            return jsonify(notification)
-        else:
-            return jsonify({'status': 'none'})
-    except Exception as e:
-        print(f"[ERROR] Error obteniendo notificación: {e}")
-        return jsonify({'status': 'none'})
-
 @app.route('/api/shutdown', methods=['POST'])
 def shutdown():
     """Cerrar servidor"""

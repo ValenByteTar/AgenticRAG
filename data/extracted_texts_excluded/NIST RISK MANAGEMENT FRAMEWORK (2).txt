@@ -1,0 +1,247 @@
+=== NIST RISK MANAGEMENT FRAMEWORK (2).pdf ===
+
+--- Página 1 ---
+AUTHORITY DOCUMENTS
+PREPARE
+CATEGORIZE
+SYSTEMS
+SELECT
+CONTROLS
+IMPLEMENT
+CONTROLS
+ASSESS
+CONTROLS
+AUTHORIZE
+SYSTEMS
+MONITOR
+CONTROLS
+NIST SP 800-53b
+NIST SP 800-53a
+CONTROL
+MATRIX
+Preventive
+Detective
+Deterrent
+Corrective
+Compensating
+Recovery
+Automatic
+Manual
+Physical
+Technical
+Administrative
+NIST SP 800-53
+COBIT 2019
+NIST CSF
+ISO 27001
+CIS CSC 20
+PCI DSS
+Prepare for Security
+and Privacy
+ Control Assessments
+Develop Security
+ and Privacy
+ Assessment Plans 
+Conduct Security
+ and Privacy
+Assessments
+Analyze 
+Assessment 
+Reports
+Assessment
+Reports
+Assessment
+Plans
+PRE-ASSESSMENT
+POST-ASSESSMENT
+ASSESSMENT
+Updated
+Security &
+Privacy Plans
+Remediation
+Plans
+Approved
+Security &
+Privacy Plans
+TASK A-1
+Assessor Selection
+TASK A-2
+Assessment Plan
+TASK A-3
+Control Assessments
+TASK A-4
+Assessment Reports
+TASK A-5
+Remediate Actions
+TASK A-5 Plan of
+Action and Milestones
+TASK I-1 Control
+Implementation
+TASK I-2 Update Control
+Implementation Information
+Approved
+Security &
+Privacy Plans
+Updated
+Security &
+Privacy Plans
+Implement 
+Controls
+Document 
+Changes
+TASK R-1
+Authorization Package
+TASK R-2 Risk Analysis
+and Determination
+TASK R-3
+Risk Response
+TASK R-4
+Authorization Decision
+TASK R-5
+Authorization Reporting
+TASK M-1 System and
+Environment Changes
+TASK M-2 
+Ongoing Assessments
+TASK M-3 Ongoing
+Risk Response
+TASK M-4 Authorization
+Package Updates
+TASK M-5 Security
+and Privacy Reporting
+TASK M-6
+Ongoing Authorization
+TASK M-7
+System Disposal
+TASK S-1 
+Control Selection
+TASK S-2 
+Control Tailoring
+TASK S-3
+Control Allocation
+TASK S-4 Documentation of
+planned control implementation
+TASK S-5 Continous
+Monitoring Strategy
+TASK S-6 Plan 
+Review and Approval
+Select Controls
+Tailor Controls
+Allocate Controls to
+Systems and Assets
+Document Control
+Implementations
+Baseline
+Approach
+Security &
+Privacy Plans
+Review Security &
+Privacy Plans
+Approved
+Security &
+Privacy Plans
+Assemble 
+Authorization 
+Package
+Risk Assessment
+Risk Treatment
+System
+ Authorization
+Security &
+Privacy Plans
+Executive
+Summary
+Plan of
+Action & 
+Milestones
+Security &
+Privacy
+Assessment
+Report
+Authorization
+Monitor Systems
+Risk Assessment
+Risk Treatment
+Update
+Documentation
+Report 
+System Status
+System
+Authorization
+System Disposal
+TASK C-1 
+System Description
+TASK C-2 
+Security Categorization
+TASK C-3 Security
+Categorization Review & Approval
+Document
+System
+Characteristics
+System
+Categorization
+Review System
+Categorization
+NIST SP 800-60
+Identify 
+Information
+Types
+Select 
+Provisional
+Impact Levels
+Review 
+Provisional
+Impact Levels
+Finalize 
+Information
+Impact Levels
+Assign System
+Security Category
+Systems
+Categorized
+Systems
+NIST RISK MANAGEMENT FRAMEWORK
+TASK P-1 Risk
+Management Roles
+TASK P-2 Risk
+Management Strategy
+TASK P-7 Continous
+Monitoring Strategy
+TASK P-3 Risk
+Assessment Organization
+TASK P-4 Controls
+Baselines and Profiles
+TASK P-5 Common
+Control Identification
+TASK P-6 Impact
+Level Prioritization
+TASK P-8 Risk
+Management Roles
+TASK P-9 Risk
+Management Strategy
+TASK P-14 Continous
+Monitoring Strategy
+TASK P-10 Risk
+Assessment Organization
+TASK P-11 Controls
+Baselines and Profiles
+TASK P-12 Common
+Control Identification
+TASK P-13 Impact
+Level Prioritization
+TASK P-15 Risk
+Management Roles
+TASK P-16 Risk
+Management Strategy
+TASK P-17 Risk
+Assessment Organization
+TASK P-18 Controls
+Baselines and Profiles
+Prepare
+Organization
+Prepare Systems
+ISO 27018
+ISO 27701
+ISO 27002
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-37r2.pdf
+

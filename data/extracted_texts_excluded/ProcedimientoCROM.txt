@@ -1,0 +1,592 @@
+=== ProcedimientoCROM.pdf ===
+
+--- Página 1 ---
+Manual de Procedimientos 
+Centro Remoto de Operacion y Monitoreo 
+Procedimiento 
+MP – 4311 
+Revision: 00 
+Fecha: 20/07/2021 
+Preparo: 
+Aprobo: 
+Pagina 1 de 9 
+Equipo asesor SGC - Crowe Direccion 
+Copia controlada   
+(marcar en rojo) 
+ 
+1. Alcance 
+Todas aquellas tareas y procedimientos relacionados a la gestion y administracion del proceso CROM (Centro Remoto 
+de Operacion y Monitoreo) de BLC S.A. El objeto de este documento es establecer una metodologia de administracion 
+que permita normalizar y optimizar los criterios de monitoreo, operacion y de registro de informacion, de las distintas 
+unidades de generacion de energia electrica y enlaces de comunicaciones de los clientes, asi como tambien la mitigacion 
+de riesgos operativos. 
+2. Definiciones 
+MEM: Mercado Electrico Mayorista 
+CROM: Centro Remoto de Operacion y Monitoreo 
+COG: Centro de Operacion Generadores (Figura segun LOS PROCEDIMIENTOS de CAMMESA) 
+CAMMESA: Compania Administradora del Mercado Mayorista Electrico Sociedad Anonima 
+SOTR: Sistema Operativo en Tiempo Real 
+Operadores: Son los encargados de ejecutar el servicio de 24x7hs de monitoreo, coordinacion operativa, etc. 
+SGM: Sistema de Gestion de Mantenimiento del cliente. 
+SMEC: Sistema de Medicion Comercial de CAMMESA. 
+COD: Centro de Operaciones del Distribuidor. 
+COC: Centro de Operaciones de CAMMESA. 
+COTDT: Centro de Operaciones de los sistemas de transporte por distribucion troncal. 
+COT: Centro de Operaciones de TRANSENER. 
+PT: Procedimiento tecnico de CAMMESA. 
+ 
+3. Responsabilidad 
+La responsabilidad del cumplimiento de este procedimiento recae sobre el Jefe del CROM, cuya area es la encargada 
+de la ejecucion y control del presente documento y la calidad de los servicios prestados.  
+4. Entradas 
+✓ Flujograma de OPERACION 
+✓ Matriz de COMUNICACIONES 
+✓ Matriz de OPERACION Y MANTENIMIENTO 
+✓ Normativa del Mercado Electrico Mayorista (MEM) 
+✓ Documentacion interna del servicio (Conforme a obra del Proyecto) 
+✓ Contratos de los clientes (Agentes Generadores MEM) con CAMMESA 
+5. Salidas 
+✓ Reportes periodicos asociados al cliente. 
+✓ Registros de MAPROS,  
+✓ Registro de Indisponibilidades, 
+✓ Libro de guardia, 
+✓ Llamadas telefonicas 
+✓ Coordinacion operativa 
+✓ Operacion remota
+
+--- Página 2 ---
+2/9 
+ 
+ 
+Manual de Procedimientos 
+Centro Remoto de Operacion y Monitoreo 
+Procedimiento 
+MP – 4311 
+Revision: 00 
+Fecha: 20/07/2020 
+6. Proceso 
+6.1. 
+Objetivo 
+Habitualmente los clientes requieren soluciones integrales para el monitoreo y control (operativo y comercial) de sus 
+parques. En funcion de ello nace el CROM para acomodarse a las generalidades y particularidades de cada cliente. 
+Comprende un equipo de operadores disponibles 24x7, quienes observan y analizan en tiempo real las distintas 
+variables de las unidades de generacion y toman decisiones en funcion de sus variaciones. El objetivo es ayudar al cliente 
+a mantener una alta disponibilidad de potencia y produccion, cumpliendo con la normativa vigente en el MEM. 
+6.2. 
+Operacion y Monitoreo en Tiempo Real 
+Operacion y Monitoreo en Tiempo Real es el proceso realizado por los Operadores, que toma lugar en el CROM, frente 
+al sistema de monitoreo dispuesto especialmente para llevar adelante esta actividad. Durante la misma, los Operadores 
+deben cumplir con toda la normativa vigente de CAMMESA y en simultaneo con todos los requisitos del CLIENTE, 
+operando en nombre de este ultimo. En caso de que no hubiera requisitos particulares del cliente en los contratos de 
+servicios, se asumiran como base todos los requisitos que imponga la normativa vigente. 
+Durante el Monitoreo en Tiempo Real, los operadores deberan observar las variables electricas, no electricas, 
+novedades/ordenes operativas, estado de enlace de comunicaciones, etc. En base a los valores que estas variables 
+vayan adoptando en tiempo real, los Operadores deberan actuar segun los procedimientos del MEM (PT 3, PT 5, PT 7, 
+PT 8, PT 11, PT 15, Anexo 24, Anexo 25, Capitulo 2, flujogramas de comunicaciones y/o ordenes de los clientes en tiempo 
+real.). Para el monitoreo de dichas variables, es fundamental que los Operadores tengan conocimiento y comprension 
+del PT4 de CAMMESA y el Anexo “i” de dicho procedimiento, ajustado para parques renovables. Estos ultimos dos 
+documentos permitiran al Operador, comprender como deberia comportarse la planta para cumplir con la calidad de 
+servicio exigida en el MEM. 
+El Operador debera conocer y comprender el Flujograma de Operaciones y su Matriz de Comunicaciones asociada, con 
+el objeto de comprender a quien debe comunicar cada evento sucedido y/o saber de quien esperar comunicaciones 
+ante los distintos escenarios planteados en el Flujograma de Operaciones. Adicionalmente el operador debera contar 
+con la Matriz de Operacion y Mantenimiento, la cual le permitira conocer en detalle los equipos monitoreados y sobre 
+cuales tiene poder de accion remoto, asi como tambien los responsables por su mantenimiento local. 
+Desde el punto de vista del Cliente contratando a BLC, se debe garantizar el menor Tiempo de Respuesta posible (menor 
+a 2 minutos). Este tiempo es aquel que se da entre la ocurrencia de un evento que genera o puede generar perdida de 
+produccion y la notificacion que BLC le da al Cliente por alguno de los medios de comunicacion aceptados (Mail / 
+WhatsApp / Telefono, segun sea el caso). Se excluyen eventos coordinados con CAMMESA o las Transportistas. Un 
+evento para el cual se debe mantener el Tiempo de Respuesta bajo, es por ejemplo una salida de servicio intempestiva 
+de algun generador, o alarmas tempranas por altas/bajas temperaturas siendo alcanzadas en componentes principales 
+de las plantas de generacion. 
+Adicionalmente, el proceso tambien incluye un monitoreo rutinario de la disponibilidad de los enlaces provistos por BLC 
+a los Clientes, para comunicarse con CAMMESA, CCAs, otros actores o incluso intranet.  El registro de tal actividad esta 
+bajo la tutela del area SOPORTE, quienes van ajustando los criterios y los indicadores de acuerdo a como va variando la 
+normativa, el negocio, los contratos y los servicios disponibles para cada Cliente. 
+6.3. 
+Actividad de la Guardia 
+La actividad de los Operadores se registrara en el Libro de Guardia y en las Grabaciones Telefonicas. Documentos que 
+seran utilizado para analisis de eventualidades en caso de ser necesario (exigido por CAMMESA en el PT11).
+
+--- Página 3 ---
+3/9 
+ 
+ 
+Manual de Procedimientos 
+Centro Remoto de Operacion y Monitoreo 
+Procedimiento 
+MP – 4311 
+Revision: 00 
+Fecha: 20/07/2020 
+Adicionalmente el Libro de Guardia puede ser aprovechado para llevar adelante otros controles adicionales para los 
+Clientes, como, por ejemplo, poder responder en forma retroactiva en que fecha y a que hora entro o salio una persona 
+o un grupo de personas al parque, para hacer un trabajo o inspeccion. 
+ 
+6.4. 
+Coordinacion Operativa 
+La coordinacion operativa es una de las obligaciones de los Centros Operativos de los Generadores (COG, segun el PT 8 
+de LOS PROCEDIMIENTOS de CAMMESA). Consiste en tener un orden estandarizado de llamados telefonicos antes de 
+realizar cualquier maniobra electrica (subir/bajar carga o energia reactiva, cambiar el modo de entrega de reactiva, 
+etc.), a modo de garantizar la seguridad de los equipos, de las personas y del Sistema Argentino de Interconexion (SADI). 
+Para garantizar su cumplimiento, es requisito contar con varias lineas telefonicas de respaldo y de distintos proveedores, 
+a modo de tener siempre disponible algun canal de comunicacion para los distintos agentes del MEM (Transportistas, 
+CAMMESA, Distribuidores, Contratistas de Mantenimiento, etc.) 
+La ejecucion del PT 8 de CAMMESA es la coordinacion operativa. Es requisito que los Operadores esten certificados 
+segun las especificaciones del PT 15 de CAMMESA, para que tengan la capacidad de discernir, cuando es necesario el 
+proceso de coordinacion y cuando no. 
+El registro de esta actividad se lleva adelante en el Libro de Guardia. 
+6.5. 
+Alertas Tempranas 
+Las alertas tempranas son un servicio derivado del Monitoreo en Tiempo real, combinado con la experiencia de los 
+Operadores del CROM. 
+ 
+Cuando estos detecten alguna tendencia (Ejemplo, que la tension de referencia del parque este disminuyendo poco a 
+poco, pero permanentemente) deberan dar aviso al Cliente para ponerlo al tanto de cual seria el resultado de la 
+continuacion en el tiempo de dicha tendencia, si no se corrigiera. 
+ 
+Las alertas tempranas no estan estipuladas, ni tienen un Tiempo de Respuesta. Aqui es donde se capitaliza la experiencia 
+de los Operadores, para poder reportar futuras fallas a la luz de comportamientos repetitivos (ya experimentados en 
+ese parque, u otros parques de generacion). 
+ 
+El registro de esta actividad se lleva adelante en el Libro de Guardia. 
+6.6. 
+Herramientas con las que el operador realiza las tareas de monitoreo y coordinacion operativa. 
+La principal herramienta para realizar las tareas descriptas desde el punto 6.2 hasta el 6.5 es el sistema VISION CROM 
+con la cual se realiza: 
+• 
+el monitoreo de las plantas de los clientes,  
+• 
+la operacion remota de las plantas (comandos operativos: cambio de set point de potencia activa/reactiva 
+y modo de control de reactiva)  
+• 
+registro y control de las indisponibilidades (hasta el nivel aerogenerador/inversor) que se producen 
+durante la operacion. 
+• 
+la operacion del SOTR (Envio de Novedades Operativas y recepcion de Ordenes operativas).
+
+--- Página 4 ---
+4/9 
+ 
+ 
+Manual de Procedimientos 
+Centro Remoto de Operacion y Monitoreo 
+Procedimiento 
+MP – 4311 
+Revision: 00 
+Fecha: 20/07/2020 
+Adicionalmente, a modo de respaldo, se puede recurrir a la operacion de los sistemas SCADA locales en los parques, al 
+cual tienen acceso los operadores del CROM para operar en forma remota los parques, o extraer datos registrados de 
+la operacion.  
+ 
+En cuanto a los canales de comunicacion, se cuenta con : 
+• 
+Telefonia convencional para comunicarse con todos los actores. 
+• 
+Telefonia con Celulares para comunicarse con todos los actores. 
+• 
+Computadoras con internet disponible redundante para comunicarse con todos los actores que tengan 
+comunicacion via internet  
+ 
+6.7. 
+Informes segun PT 11 
+Ante la salida intempestiva de un parque de generacion (sin coordinacion operativa previa), es requisito realizar un 
+Informe Preliminar, segun lo estipulado en el PT 11 de CAMMESA. 
+Las particularidades sobre como realizar el informe, el formato, los plazos de entrega, sus contenidos, etc. Estan 
+reglamentados por CAMMESA en el mencionado PT 11. 
+Los registros de este proceso, son archivos .docx tal como los solicita CAMMESA, y la informacion para generar los 
+mismos debera ser solicitada los responsables tecnicos en sitio de los parques, en caso de que esta no sea accesible 
+desde el CROM. 
+6.8. 
+Registro de Mantenimientos e Indisponibilidades 
+El Registro de Mantenimientos e Indisponibilidades tiene por objetivo principalmente, registrar la energia no 
+suministrada, fecha de inicio y fin de cada evento en los cuales alguna unidad generadora haya dejado de producir la 
+energia esperada, o que podria haber producido en caso de haber estado operativo al 100%.  Los datos adicionales por 
+cada registro son todos criterios de filtro para poder generar distintos tipos de informes en caso de necesitarse. 
+Los eventos a registrar con inicio y fin son: mantenimiento de cada unidad generadora, eventos o fallas por 
+indisponibilidades no programadas (incluyendo informes PT 11), limitaciones operativas impuestas por el Transportista 
+/ Distribuidor o CAMMESA / o limitaciones internas (sin llegar a la indisponibilidad total). En rigor, todo aquel evento 
+que genere perdida de produccion respecto de lo maximo que se podria estar generando si no existiera la condicion 
+que genera la indisponibilidad. 
+• 
+Tal informacion es tipeada manualmente por los Operadores en la PANTALLA DE INCIDENCIAS DEL VISION 
+CROM. 
+• 
+El sistema de incidencias VISION CROM es un sistema que permite al operador cargar las incidencias que 
+surjan en la planta de generacion de un cliente y de esta forma llevar un registro separado del sistema de 
+SCADA propio de los tecnologos y dependiente del control de los operadores. 
+• 
+Cuando suceda una incidencia el operador abrira en el sistema un ticket en el que cargara todos los datos 
+de la incidencia acontecida. 
+• 
+Luego durante la semana el Analista de Produccion la validara y pasara a ser parte de los datos que a 
+traves de un informe preestablecido con el cliente le sera informada al mismo. 
+ 
+6.9. 
+Registro Semanal y diario de Mantenimientos y fueras de servicio 
+El objetivo del registro de Mantenimientos es tener asentado, dia por dia (y de toda la semana) de cada parque, el 
+horario en el cual se trabajara en cada aerogenerador (mantenimiento semestral, mantenimiento BoP, inspeccion de
+
+--- Página 5 ---
+5/9 
+ 
+ 
+Manual de Procedimientos 
+Centro Remoto de Operacion y Monitoreo 
+Procedimiento 
+MP – 4311 
+Revision: 00 
+Fecha: 20/07/2020 
+busbar, etc.). Dicho seguimiento se consolidara primero en el Registro de MAPROS y seguidamente en la plataforma de 
+renovables de CAMMESA. 
+La informacion para este registro sera presentada al COG por el responsable de mantenimiento de cada parque el 
+penultimo dia habil de cada semana, junto con esta informacion de mantenimientos predictivos, llegara el detalle de 
+los aerogeneradores que por algun motivo estan fuera de servicio (por ejemplo por falta de repuestos). 
+Tambien se podra recibir la informacion de solicitud de un mantenimiento diario a realizar el dia siguiente (se debera 
+presentar por parte del responsable de mantenimiento antes de las 10 hs del dia anterior a la solicitud de parada del 
+equipo) y se informara la causa de porque se lo interviene fuera de programacion semanal. 
+Con estos datos el operador carga en la pagina “Pronosticos” de Cammesa, la programacion de despacho de cada 
+parque y, por ende, queda detallada la potencia (in)disponible diaria segun la causa que se haya cargado. 
+Ademas de cargarlo en la pagina “Pronosticos” de Cammesa, se lleva el registro en una planilla interna del CROM 
+(Registro de MAPROs) en la que tambien el operador carga toda la informacion de modo de tener en forma resumida, 
+todo lo relativo a aerogeneradores indisponibles dia a dia. 
+Diariamente el Analista de Guardia controla lo cargado en PROGRAMACION CAMMESA y lo cargado en la Planilla 
+Registro de MAPROS para tener un doble control. 
+ 
+6.10. 
+Solicitud de mantenimiento de TRANSPORTISTAS Y TERCEROS (Entre agentes del MEM) 
+El TRANSPORTISTA o cualquier tercero relacionado con el cliente necesita limitar o dejar fuera de servicio total o 
+parcialmente instalaciones o equipos del cliente para realizar trabajos en equipos propios, debera solicitar por correo 
+electronico al CROM el acuerdo del cliente, e indicar en forma sintetica que trabajos se realizaran, comienzo y fin de 
+trabajos previstos y si corresponde tiempo de reposicion. 
+Si el acuerdo es dado por responsables del Cliente, se avisara a TRANSPORTISTA o TERCERO y ellos deberan gestionar 
+la autorizacion de CAMMESA para los trabajos. 
+Aprobado el trabajo por CAMMESA se procedera a cargarlo en la plataforma de Renovables y se avisara a programacion 
+de CAMMESA por correo de la indisponibilidad de equipos por el trabajo solicitado. 
+ 
+ 
+6.11. 
+Solicitud de mantenimiento  ESTACIONALES. 
+El Cliente debera presentar los mantenimientos estacionales previstos para los primeros 30 meses y luego ir 
+actualizandolos entre el 8 de Enero y 1 de Febrero Para la declaracion de Mayo – Octubre del ano corriente y la otra 
+actualizacion se presenta de 8 de Julio a 1 de agosto para la declaracion de Noviembre ano corriente – Abril ano 
+siguiente. 
+Estas declaraciones solo son para grandes mantenimientos o mejoras que preven mas de 3 dias el parque fuera de 
+servicio, mantenimientos menores se siguen gestionando con programacion Semanal y Diaria de CAMMESA. 
+ 
+6.12. 
+Entrega de un equipo para mantenimiento en el caso que estuviese programado y aprobado por CAMMESA. 
+El operador espera recibir por parte del responsable de mantenimiento la solicitud del equipo en el que desea trabajar 
+(a traves del medio de comunicacion que el cliente considere el mas adecuado segun su SGM).  
+Se le confirma a responsable de mantenimiento que el equipo esta disponible para ser intervenido y si es necesaria una 
+operacion de parada por parte del operador, se realiza la misma en forma remota. Se le aclara al responsable de 
+mantenimiento que las medidas de seguridad que necesite para su tarea deben realizarse en sitio por personal 
+autorizado. 
+Una vez entregado el equipo, el responsable de mantenimiento comienza con la intervencion en el equipo. 
+Finalizado el trabajo, el responsable de mantenimiento avisa al operador que el equipo ya esta listo para volver a la 
+operacion. 
+El operador, ya autorizado, realiza las maniobras para poner el equipo en marcha o da la indicacion al responsable de 
+mantenimiento que ya puede poner en servicio el equipo. 
+ 
+6.13. 
+ Entrega de un equipo para mantenimiento en el caso que no estuviese programado a CAMMESA. 
+El operador espera recibir por parte del responsable de mantenimiento la solicitud del equipo en el que desea trabajar 
+(a traves del medio de comunicacion que el cliente considere el mas adecuado segun su SGM).
+
+--- Página 6 ---
+6/9 
+ 
+ 
+Manual de Procedimientos 
+Centro Remoto de Operacion y Monitoreo 
+Procedimiento 
+MP – 4311 
+Revision: 00 
+Fecha: 20/07/2020 
+Recibida la solicitud pregunta a operadores de Renovables CAMMESA si puede entregar el equipo solicitado a 
+mantenimiento. 
+Si hay una negativa por parte de Renovables CAMMESA se le avisa a Mantenimiento que no se puede entregar el equipo 
+y que debera reprogramar el mantenimiento para otro dia. 
+Si el equipo es entregado para mantenimiento por parte de CAMMESA se avisa a el TRANSPORTISTA (en el caso que 
+corresponda). 
+Se le confirma a responsable de mantenimiento que el equipo esta disponible para ser intervenido y si es necesaria una 
+operacion de parada por parte del operador, se realiza la misma en forma remota. Se le aclara al responsable de 
+mantenimiento que las medidas de seguridad que necesite para su tarea deben realizarse en sitio por personal 
+autorizado. 
+Entregado el equipo, el responsable de mantenimiento comienza con la intervencion en el equipo. 
+Finalizado el trabajo, el responsable de mantenimiento avisa al operador que el equipo ya esta listo para volver a la 
+operacion. 
+El operador avisa a CAMMESA y al TRANSPORTISTA (si corresponde). 
+El operador, ya autorizado, realiza las maniobras para poner el equipo en marcha o da la indicacion al responsable de 
+mantenimiento que ya puede poner en servicio el equipo. 
+ 
+6.14. 
+Analisis PPO 
+Diariamente los Operadores del CROM, deben revisar los Partes Post Operativos (PPO) diarios emitidos por CAMMESA 
+al finalizar el dia habil siguiente al dia a controlar. Tales archivos, contienen la informacion que CAMMESA entiende 
+como correcta, relacionada a los resultados de la operacion de cada dia.  
+El control diario de dichos archivos, permitiria disparar “Reclamos Comerciales” a traves de los clientes, en caso de que 
+se detecte algun error en lo reflejado en los archivos PPO. Algunos ejemplos de lo que se podria encontrar, son: Estados 
+Operativos Erroneos, Valores de Energia Generada o Consumida erroneos, etc. 
+Segun la normativa vigente, los Agentes Generadores MEM, tiene 48hs habiles desde la emision de cada archivo PPO, 
+para realizar reclamos en caso de corresponder. El seguimiento diario de estos archivos, asegura la correcta facturacion 
+a fin de mes. 
+Los resultados de este proceso -en caso de encontrar errores-, se materializaran en forma de correos electronicos al 
+Jefe del CROM y al Analista de Guardia del CROM, quienes canalizaran los reclamos comerciales a traves del CLIENTE. 
+6.15. 
+Proceso de control de PPO. 
+El operador carga los archivos prn bajados de medidores comerciales en planilla de control correspondiente al cliente 
+del dia a controlar en la hoja denominada SMEC. 
+Si el parque tiene medidor principal y de control el operador verifica en la planilla que las mediciones estan dentro del 
+margen de error de los medidores. 
+Si hubiese mediciones que estuvieran fuera del margen de error avisa al Analista de Produccion para control. 
+En la misma planilla de control del dia en las que se cargo el prn para su control el operador carga cuando llega el ppo 
+enviado por CAMMESA en la hoja denominada CAMMESA. 
+El operador controla la hoja que dice Calculos, si hay errores avisa a Analista de Produccion para que valide el error y si 
+corresponde realice el Reclamo Comercial. 
+El operador si no hay errores de la planilla diaria en la hoja Resumen copia los datos de cabecera y los pega en la planilla 
+mensual en la hoja Datos en el dia correspondiente (de este modo se va llenando la planilla con los datos mensuales de 
+generacion ya controlados). 
+El analista de Produccion diariamente controla la planilla mensual y valida los datos que se dieron por correctos. 
+Si el Operador o Analista detectan un error en la medicion que indique que el proceso de medicion tiene una falla, se 
+avisa al Cliente y SMEC de CAMMESA, de modo que se implemente la reparacion de la medicion comercial. El CROM 
+realizara la reconstruccion de archivos prn con datos invalidos por mala medicion, con datos de respaldo de SOTR u 
+otro sistema o instrumento disponible como respaldo. Los datos corregidos y reconstruidos se presentan por sistema
+
+--- Página 7 ---
+7/9 
+ 
+ 
+Manual de Procedimientos 
+Centro Remoto de Operacion y Monitoreo 
+Procedimiento 
+MP – 4311 
+Revision: 00 
+Fecha: 20/07/2020 
+SMEC de emergencia de CAMMESA mientras persista la falla en los medidores comerciales, tal como se estipula en el 
+PT 3 de CAMMESA. 
+ 
+NOTA IMPORTANTE: Se deben agotar todos los caminos para obtener datos de los medidores comerciales, para el caso 
+que se haya roto la ruta de comunicacion, hay que bajar los datos con acoplador optico de los medidores a traves de 
+una notebook, si se confirma que no hay datos en el medidor porque se apago por alguna causa o que los datos son 
+erroneos por falla del medidor o del proceso de medicion entonces se descartan los datos de medidor y se procede a 
+realizar un prn reconstruido. 
+ 
+6.16. 
+Reclamos Comerciales 
+El cliente puede delegar el reclamo comercial al CROM, en cuyo caso el Analista de Produccion o el Supervisor del CROM 
+realizan el reclamo comercial a CAMMESA por datos invalidos en los PPO vs los datos validos de los medidores SMEC, y 
+el cliente es puesto en copia del reclamo realizado. 
+Al llegar la respuesta de CAMMESA del reclamo solicitado se informa al Cliente el resultado del reclamo. 
+El resultado de este proceso, es la actualizacion de los archivos PPO correspondientes por parte de CAMMESA. Con lo 
+cual, la mera actualizacion de los PPO por parte de CAMMESA, impacta automaticamente y sin necesidad de pasos 
+adicionales, en el Reporte de Pre Facturacion. 
+6.17. 
+Reportes Periodicos Operativos 
+Cada cliente tiene sus necesidades particulares, respecto de como desean visualizar los datos resultantes de la 
+operacion. Resumenes mensuales, semanales o diarios, son periodos tipicos que suelen tener este tipo de informes. 
+La entrada de este proceso, son las propias exigencias de cada CLIENTE, y la experiencia del personal de BLC para poder 
+ofrecer opciones superadoras. 
+La salida de este proceso, son los reportes en si mismos, que a su vez recolectan informacion operativa, informacion 
+contractual e interpretacion bajo la normativa vigente. 
+La confeccion de los reportes, sera realizada por el personal del CROM, y su envio sera realizado por algun tercero con 
+capacidad de analisis, para tener un doble control sobre los datos a enviar. 
+6.18. 
+Relacion CROM - COC 
+El CROM toma la funcion de COG para el cliente, por lo que la relacion del operador del CROM con el COC de CAMMESA 
+se ajusta a lo establecido en los PROCEDIMIENTOS DE CAMMESA que detallan y establecen limites y relaciones entre 
+los operadores mencionados. 
+ 
+El Operador del CROM tendra como apoyo a sus tareas a los Analistas de Produccion y Coordinacion. Si hubiese alguna 
+decision o tarea que los Analistas no pudieran resolver, el Supervisor del CROM asistira en la toma de decisiones al 
+Operador. 
+ 
+6.19. 
+Relacion CROM – TRANSPORTISTA (COTDT) – DISTRIBUIDORES (COD) 
+El CROM toma la funcion de COG para el cliente, por lo que la relacion del operador del CROM con el TRANSPORTISTA 
+o DISTRIBUIDOR (Esto depende de en que nivel de tension este conectado el cliente) se ajusta a lo establecido en los 
+PROCEDIMIENTOS DE CAMMESA que detallan y establecen limites y relaciones entre los operadores mencionados.
+
+--- Página 8 ---
+8/9 
+ 
+ 
+Manual de Procedimientos 
+Centro Remoto de Operacion y Monitoreo 
+Procedimiento 
+MP – 4311 
+Revision: 00 
+Fecha: 20/07/2020 
+El Operador del CROM tendra como apoyo a sus tareas a los Analistas de Produccion y Coordinacion. Si hubiese alguna 
+decision o tarea que los Analistas no pudieran resolver, el Supervisor del CROM asistira en la toma de decisiones al 
+Operador. 
+ 
+6.20. 
+Salida intempestiva de Parque o Equipos.  
+Cuando el parque quede fuera de servicio en forma intempestiva en su totalidad o parcialmente se procedera del 
+siguiente modo: 
+Se enviara la novedad que corresponda por SOTR a CAMMESA, de ser necesario se dara la novedad tambien por 
+telefono. 
+Se llamara a centro de control de TRANSPORTISTA o DISTRIBUIDOR, se le dara la novedad y si se sospecha que la salida 
+de servicio fue originada por equipos aguas arriba del parque, se les preguntara si han tenido alarma sobre la posible 
+causa. 
+Se avisara al cliente lo sucedido por el medio elegido por el para estos casos. 
+No se repondra ningun equipo al servicio hasta no tener una certeza de la falla, de modo de no conectar equipos sobre 
+falla no solucionada. 
+Con la informacion de la falla y con la certeza (confirmacion por parte del responsable tecnico del cliente) que la misma 
+desaparecio, Analistas o Supervisor del CROM pueden dar la orden de comenzar a normalizar y volver el parque al 
+servicio. El operador debe esperar autorizacion superior para actuar en una re energizacion de equipos. 
+En los casos que hayan actuado protecciones electricas del parque o que no hay informacion suficiente de lo sucedido, 
+se esperara que personal autorizado del cliente llegue al sitio y de el visto bueno para volver a energizar, ademas de 
+una pequena sintesis de lo que se sabe que causo la salida de servicio. 
+ 
+Si la salida de servicio es de un equipo que se puede monitorear a distancia y que posee la posibilidad de aplicarsele  un 
+reset remoto, se puede restaurarlo en servicio si se presentan dos casos. 
+• 
+Primero: Causas en las que el cliente entrega un procedimiento de chequeo para que una vez realizados 
+el operador del CROM realice el reset del equipo y lo vuelva a funcionamiento. En estos casos el operador 
+realizara el reset segun lo indicado en el procedimiento y luego registrara en libro, planillas o incidentes 
+el evento. Enviando las novedades que correspondan a CAMMESA y TRANSPORTISTA. 
+• 
+Segundo: Causas en las que el cliente solo puede tomar la decision de volver al servicio el equipo. En estos 
+casos el operador avisa por los medios elegidos por el cliente al responsable que puede actuar a distancia, 
+el responsable analiza el problema y si realiza un reset exitoso del equipo avisa al operador para que deje 
+registrado el evento en la planilla y libro de guardia. En el caso que el reset no funcione o el equipo no se 
+pueda volver al servicio  por su estado el responsable debe indicar si el equipo queda indisponible y cuando 
+se preve que vuelva al servicio para que el operador realice los avisos a CAMMESA y TRANSPORTISTA, y 
+siguiendo los pasos de los puntos aplicables a mantenimientos programados, a saber: 6.9, 6.12 y 6.13 
+. 
+7. Documentos relacionados y registros  
+REGISTRO 
+RESPONSABLE 
+CONFECCION 
+ARCHIVO 
+TIEMPO 
+DE 
+RETENCION 
+DISPOSICION 
+RESPONSABLE 
+LUGAR 
+MP 4911 
+Area 
+PRODUCCION 
+SOPORTE 
+y 
+CROM 
+Carpeta 
+de 
+Calidad 
+- 
+Sistema 
+de 
+Calidad 
+Libro de Guardia 
+Digital 
+CROM 
+CROM 
+Carpeta 
+Comercial del 
+servicio 
+Duracion del 
+servicio 
+Archivo 
+General 
+Registro 
+de 
+Indisponibilidades 
+CROM 
+CROM 
+Carpeta 
+del 
+servicio 
+Duracion del 
+servicio 
+Archivo 
+General
+
+--- Página 9 ---
+9/9 
+ 
+ 
+Manual de Procedimientos 
+Centro Remoto de Operacion y Monitoreo 
+Procedimiento 
+MP – 4311 
+Revision: 00 
+Fecha: 20/07/2020 
+REGISTRO 
+RESPONSABLE 
+CONFECCION 
+ARCHIVO 
+TIEMPO 
+DE 
+RETENCION 
+DISPOSICION 
+RESPONSABLE 
+LUGAR 
+Registro de MAPROs 
+CROM 
+CROM 
+Carpeta 
+del 
+servicio 
+Duracion del 
+servicio 
+Archivo 
+General 
+Controles PPO vs 
+SMEC 
+CROM 
+CROM 
+Carpeta 
+del 
+servicio 
+Duracion del 
+servicio 
+Archivo 
+General 
+Matriz 
+de 
+comunicaciones 
+y 
+responsabilidades  
+CROM y CLIENTE 
+CROM 
+Carpeta 
+del 
+servicio 
+Duracion del 
+Proyecto 
+Archivo 
+General 
+Contratos 
+del 
+cliente 
+n/a 
+CROM 
+Carpeta 
+del 
+servicio 
+Duracion del 
+servicio 
+Archivo 
+General 
+LOS 
+PROCEDIMIENTOS 
+ 
+CAMMESA 
+CAMMESA 
+Web, publico 
+n/a 
+Archivo 
+General 
+ 
+8. Historial de revisiones 
+REV. 
+FECHA 
+REFERENCIA 
+DESCRIPCION 
+0 
+20/07/2020 
+--- 
+Emision original
+

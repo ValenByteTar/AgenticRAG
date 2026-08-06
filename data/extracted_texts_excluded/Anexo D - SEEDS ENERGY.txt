@@ -1,0 +1,402 @@
+=== Anexo D - SEEDS ENERGY.pdf ===
+
+--- Página 1 ---
+ANEXO D (SEEDS ENERGY)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES SEEDS ENERGY OPERADAS POR EL CROM 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+CT PERGAMINO 
+2.4 
+Biogas 
+19/12/2019 
+ 
+ 
+BLC 
+CT VENADO TUERTO 
+2 
+Biogas 
+05/09/2020 
+ 
+ 
+BLC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL 
+4.4
+
+--- Página 2 ---
+ANEXO D (SEEDS ENERGY)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+Descripcion de Generadores CT Pergamino: 
+CT Pergamino es un proyecto en el cual el CROM monitorea la operacion de un agente con dos generadores 
+en el mercado electrico, cada uno es un motor de combustion interna que quema bio gas, y tiene acoplado 
+un generador sincronico. 
+ 
+Descripcion del Proyecto: 
+C.T. Pergamino surge del programa RenovAr Ronda 2 identificacion de la oferta BG-522, se le adjudica una 
+potencia de 2,2 MW, y se montaron dos maquinas de 1.2 MW (Agente: CTPERGAG; Central: PERG; Grupo: 
+PERGDI01) Fecha habilitacion comercial 19/12/2019. Oferente de la oferta SEEDS ENERGY GROUP S.A. 
+ 
+La planta de “Generacion de Biogas” Pergamino, esta ubicada al Noroeste de la provincia de Buenos Aires, 
+Argentina, en el Departamento Pergamino, en un area de uso predominantemente agropecuario. 
+ 
+El proyecto CT Pergamino obtiene bio gas de bio digestores que se alimentan con elementos y residuos 
+organicos de la zona, y se produce energia electrica quemando este bio gas en motores de combustion 
+interna. Luego, dicha energia sera inyectada en el Sistema Argentino de Interconexion (SADI) en el marco del 
+Contrato de Abastecimiento con la administradora del Mercado Electrico Mayorista (CAMMESA) a traves de 
+una conexion en 33 KV que se conecta a la de Cooperativa Limitada de Pergamino quien eleva la tension de 
+33 KV a 132 KV, y despues se conecta al sistema de TRANSBA en la ET Pergamino. 
+ 
+ 
+ 
+CTPERGAG se encuentra en 
+el Noroeste de la provincia 
+de Buenos Aires, cerca del 
+Limite con Santa Fe y con 
+Entre Rios, sobre ruta 
+nacional 8 y calle Miguel 
+Cane 
+-33.922981 
+-60.537927.
+
+--- Página 3 ---
+ANEXO D (SEEDS ENERGY)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+SISTEMA TRANSMISION TRANSBA EN LA ZONA: 
+ 
+ 
+ 
+ 
+SEEDS ENERGY PERGAMINO  2,4 MW 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Son 2 maquinas de 1200 KVA, estan conectadas del siguiente modo, la salida del generador N°1 tiene un 
+interruptor de paralelo en 400 V, despues del interruptor de paralelo un transformador N°1 de 1600 KVA de 
+relacion 0.4/33 KV, el transformador se conecta a celdas de 33 KV  a traves de seccionador bajo carga 89L 
+con fusible en la celda QM de entrada T1 a una barra comun. La salida del generador N°2 tiene un 
+interruptor de paralelo en 400 V, despues del interruptor de paralelo un transformador N°2 de 1600 KVA de 
+relacion 0.4/33 KV, el transformador se conecta a celdas de 33 KV  a traves de seccionador bajo carga con 
+fusible 89L en la celda QM de entrada T2 a una barra comun , y la energia es conducida a celda de medicion 
+33 KV SMEC. Y la central tiene la celda de salida de linea DM1-A en la que existe un interruptor 52 con sus 
+protecciones por la que sale toda la energia generada por la central. 
+La energia de la central sale de las celdas y es conducida por un cable subterraneo hasta un punto donde se 
+vincula la salida de la CT Pergamino con la red de distribucion en 33 KV de la Cooperativa Limitada 
+Pergamino y esta Cooperativa se conecta con el sistema nacional a traves de TRANSBA en la ET Pergamino 
+en 132 KV. 
+ 
+El CROM solo realiza monitoreo a traves del SOTR y no opera ningun equipo de la central a distancia, si 
+realiza coordinacion operativa, comunicandose con los centros de control de CAMMESA, TRANSBA y 
+operadores en sitio.
+
+--- Página 4 ---
+ANEXO D (SEEDS ENERGY)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Pagina oficial:    https://www.seedsenergygroup.com/plantas
+
+--- Página 5 ---
+ANEXO D (SEEDS ENERGY)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+DIAGRAMA UNIFILAR:
+
+--- Página 6 ---
+ANEXO D (SEEDS ENERGY)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+FIN:
+
+--- Página 7 ---
+ANEXO D (SEEDS ENERGY)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Descripcion de Generadores CT Venado Tuerto: 
+CT Venado Tuerto es un proyecto en el cual el CROM monitorea la operacion de un agente con dos 
+generadores en el mercado electrico, cada uno es un motor de combustion interna que quema bio gas, y 
+tiene acoplado un generador sincronico. 
+ 
+Descripcion del Proyecto: 
+C.T. Venado Tuerto surge del programa RenovAr Ronda 2 identificacion de la oferta BG-523, se le adjudica 
+una potencia de 2 MW, y se montaron dos maquinas de 1.2 MW (Agente: CTVENADG; Central: VTBG; Grupo: 
+VTBGDI01) Fecha habilitacion comercial 05/09/2020. Oferente de la oferta SEEDS ENERGY GROUP S.A. 
+ 
+La planta de “Generacion de Biogas” Venado Tuerto, estara ubicada al sur de la provincia de Santa Fe, 
+Argentina, en el Departamento General Lopez, en un area de uso predominantemente agropecuario. 
+ 
+El proyecto Venado Tuerto obtiene bio gas de bio digestores que se alimentan con elementos y residuos 
+organicos de la zona, y se produce energia electrica quemando este bio gas en motores de combustion 
+interna. Luego, dicha energia sera inyectada en el Sistema Argentino de Interconexion (SADI) en el marco del 
+Contrato de Abastecimiento con la administradora del Mercado Electrico Mayorista (CAMMESA) a traves de 
+una conexion en 33 KV que se conecta a la de Cooperativa Venado Tuerto quien eleva la tension de 33 KV a 
+132 KV, y despues se conecta al sistema de EPE Santa Fe en la ET Venado Tuerto. 
+ 
+ 
+ 
+CTVENADG se encuentra 
+en Sur de Santa Fe, cerca 
+del Limite con Buenos Aires 
+y con Cordoba, sobre ruta 
+nacional 8 
+-33.695420 
+-62.037506.
+
+--- Página 8 ---
+ANEXO D (SEEDS ENERGY)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+SISTEMA TRANSMISION EPE SANTA FE EN LA ZONA: 
+ 
+ 
+ 
+SEEDS ENERGY CT VENADO TUERTO  2 MW 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Son 2 maquinas de 1200 KVA, estan conectadas del siguiente modo, la salida del generador N°1 tiene un 
+interruptor de paralelo en 400 V, despues del interruptor de paralelo un transformador N°1 de 1600 KVA de 
+relacion 0.4/33 KV, el transformador se conecta a celdas de 33 KV  a traves de seccionador bajo carga 89L 
+con fusible en la celda QM de entrada T1 a una barra comun. La salida del generador N°2 tiene un 
+interruptor de paralelo en 400 V, despues del interruptor de paralelo un transformador N°2 de 1600 KVA de 
+relacion 0.4/33 KV, el transformador se conecta a celdas de 33 KV  a traves de seccionador bajo carga con
+
+--- Página 9 ---
+ANEXO D (SEEDS ENERGY)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+fusible 89L en la celda QM de entrada T2 a una barra comun , y la energia es conducida a celda de medicion 
+33 KV SMEC. Y la central tiene la celda de salida de linea DM1-A en la que existe un interruptor 52 con sus 
+protecciones por la que sale toda la energia generada por la central. 
+La energia de la central sale de las celdas y es conducida por un cable subterraneo hasta un punto donde se 
+vincula la salida de la CT Venado Tuerto con la red de distribucion en 33 KV de la Cooperativa Venado Tuerto 
+y esta Cooperativa se conecta con el sistema nacional a traves de EPE Santa Fe en la ET Venado Tuerto en 
+132 KV. 
+ 
+El CROM solo realiza monitoreo a traves del SOTR y no opera ningun equipo de la central a distancia, si 
+realiza coordinacion operativa, comunicandose con los centros de control de CAMMESA, EPE Santa Fe y 
+operadores en sitio. 
+ 
+Pagina oficial:    https://www.seedsenergygroup.com/plantas
+
+--- Página 10 ---
+ANEXO D (SEEDS ENERGY)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+DIAGRAMA UNIFILAR:
+
+--- Página 11 ---
+ANEXO D (SEEDS ENERGY)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+FIN:
+

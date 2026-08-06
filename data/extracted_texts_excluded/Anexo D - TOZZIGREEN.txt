@@ -1,0 +1,394 @@
+=== Anexo D - TOZZIGREEN.pdf ===
+
+--- Página 1 ---
+ANEXO D   (TOZZIGREEN)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES TOZZIGREEN OPERADAS POR EL CROM 
+ 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+Tinogasta TOZZI 
+10 
+Fotovoltaica 
+07/05/2022 Inv. Huawei 
+BLC 
+BLC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL 
+10
+
+--- Página 2 ---
+ANEXO D   (TOZZIGREEN)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Descripcion de Parque Fotovoltaico Tinogasta TOZZI: 
+El proyecto presente, identificado como Parque Fotovoltaico Tinogasta TOZZI, de 11,8 MW (Agente: 
+PSTITOZG; Central: TITOFV; Grupo: TITOFV01), habilitado a partir del 07/05/2022 a generar por contrato 10 
+MW, producira energia electrica a partir de la captacion y transformacion de la energia proveniente del Sol, la 
+planta consta de 2880 paneles de 530Wp y 19200 de 535Wp, lo que hace una generacion de 
+aproximadamente 11798kWp, la potencia maxima en el punto de interconexion sera de 11.9MW. Los paneles 
+se conectan a 68 Inversores Huawei (SUN2000-105KTL-H1) colectores de 185 KW de potencia nominal, la 
+salida de los inversores es en 0.8 KV y se envia a 2 centros transformadores de 0.8 KV a 33KV. La energia sera 
+inyectada en el Sistema Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con 
+la administradora del Mercado Electrico Mayorista (CAMMESA) en la ET Tinogasta de TRANSNOA, donde se 
+eleva a 132 KV. El Parque Fotovoltaico y la ET Tinogasta estan interconectados por una linea aerea de 33 KV 
+de 6,5 Km propiedad de la Distribuidora EC SAPEM (ENERGIA de CATAMARCA Sociedad Anonima con 
+Participacion Estatal Mayoritaria). 
+ 
+ 
+ 
+ 
+ 
+Parque Fotovoltaico 
+Tinogasta TOZZI se 
+encuentra en la provincia 
+argentina de Catamarca,  
+-28.086913 
+-67.534642
+
+--- Página 3 ---
+ANEXO D   (TOZZIGREEN)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Parque Fotovoltaico Tinogasta TOZZIGREEN 11.8 MW 
+ 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+El parque se envuentra dividido en 3 Campos de Paneles. 
+ 
+Campo 1: Tiene en total 23 Inversores, del N°1 al N°23, del Inversor N°1 al N°18 ingresan a traves de 
+interruptores termomagneticos al Tablero de Baja Tension Panel A del Centro de Transformacion A, del 
+Inversor N°19 al N°23 ingresan a traves de interruptores termomagneticos al Tablero de Baja Tension Panel B 
+del Centro de Transformacion A (Por lo que el Campo 1 sale totalmente por el Centro de Transformacion A) 
+ 
+Campo 2: Tiene en total 24 Inversores, del N°24 al N°47, del Inversor N°24 al N°34 ingresan a traves de 
+interruptores termomagneticos al Tablero de Baja Tension Panel B del Centro de Transformacion A, del 
+Inversor N°35 al N°47 ingresan a traves de interruptores termomagneticos al Tablero de Baja Tension Panel A 
+del Centro de Transformacion B (Por lo que el Campo 2 salen 11 Inversores Centro de Transformacion A y 13 
+Inversores por el Centro de Transformacion B). 
+ 
+Campo 3: Tiene en total 21 Inversores, del N°48 al N°68, del Inversor N°48 al N°52 ingresan a traves de 
+interruptores termomagneticos al Tablero de Baja Tension Panel A del Centro de Transformacion B, del 
+Inversor N°53 al N°68 ingresan a traves de interruptores termomagneticos al Tablero de Baja Tension Panel B 
+del Centro de Transformacion B (Por lo que el Campo 3 sale totalmente por el Centro de Transformacion B). 
+ 
+Nota: Cada Inversor tiene conectado 8 Cadenas de Paneles y Cada Cadena tiene conectado 40 paneles en 
+serie, (Hay algunas excepciones a esta conexion) y cada seguidor o tracker mueve 120 paneles (tres cadenas) 
+por lo que hay un total de 184 seguidores SKYMART II. 
+ 
+Del panel de Baja Tension A del Centro de Transformacion A, de la barra de baja tension a traves de un 
+seccionador con fusibles se alimentan los servicios auxiliares del Centro de Baja tension A. 
+ 
+Del panel de Baja Tension A del Centro de Transformacion B, de la barra de baja tension a traves de un 
+seccionador con fusibles se alimentan los servicios auxiliares del Centro de Baja tension B. 
+ 
+La energia del centro de Transformacion A, sale por un seccionador bajo carga montado en la Celda M1 
+hacia la Sala de Despacho donde acomete a la Celda D5 (Colector Parque 2 denominada tambien como 
+Celda de Entrada N°1) que contiene el interruptor fijo que premite telecomandarse desde el CROM 
+conectandose a la barra de la Sala de Despacho. 
+ 
+La energia del centro de Transformacion B, sale por un seccionador bajo carga montado en la Celda M1 
+hacia la Sala de Despacho donde acomete a la Celda D4 (Colector Parque 1 denominada tambien como 
+Celda de Entrada N°2) que contiene el interruptor fijo que premite telecomandarse desde el CROM 
+conectandose a la barra de la Sala de Despacho.
+
+--- Página 4 ---
+ANEXO D   (TOZZIGREEN)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+La energia de la barra a la que llegan los colectores del parque por D4 y D5 puede salir por el In terruptor fijo 
+montado en D3 (Mencionada como Celda de Proteccion) que se puede telecomandar desde el CROM y al 
+abrir o cerrar permite desconectar o conectar todo el Parque. 
+ 
+De la barra de 33 KV a la que se conectan D4, D5 y D3 hay conectado un seccionador bajo carga manual en 
+la Celda D6 que provee la alimentacion para un transformador de servicios auxiliares para la Sala de 
+Despacho. 
+ 
+En la sala de despacho la Celda D2 contiene los TI y TV destinados a medicion, protecciones y medicion 
+comercial. 
+ 
+La Celda D1 (Denominada Celda de Salida) contiene un seccionador bajo carga manual que permite conectar 
+a la linea de 33 Kv que lleva la energia a la ET TINOGASTA de TRANSNOA. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Pagina oficial:    https://www.tozzigreen.com/es/
+
+--- Página 5 ---
+ANEXO D   (TOZZIGREEN)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Parque Fotovoltaico 
+Tinogasta TOZZI se 
+encuentra, sobre la ruta 
+Nacional N° 60 Junto a la 
+ciudad de Tinogasta en la 
+provincia de Catamarca, 
+Argentina.  
+ 
+Localizacion 
+ Latitud: -28.086913 
+ Longitud: -67.534642
+
+--- Página 6 ---
+ANEXO D   (TOZZIGREEN)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar 1 General Tinogasta TOZZI
+
+--- Página 7 ---
+ANEXO D   (TOZZIGREEN)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Centro de Transformacion A:
+
+--- Página 8 ---
+ANEXO D   (TOZZIGREEN)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Centro de Transformacion B:
+
+--- Página 9 ---
+ANEXO D   (TOZZIGREEN)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Celdas de Salida del Parque:
+
+--- Página 10 ---
+ANEXO D   (TOZZIGREEN)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ET TINOGASTA de TRANSNOA: 
+ 
+ 
+ 
+FIN
+
+--- Página 11 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion
+

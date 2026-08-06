@@ -1,7 +1,10 @@
 """
-DocCards: clasificación de rol por documento + resúmenes breves
-Permite al planner saber qué documentos son hubs (entity_list), perfiles (entity_profile),
-procedimientos, manuales, etc., y filtrar/ponderar la recuperación por rol.
+DocCards: materialized view del Knowledge Builder (RES-010).
+
+Durante la transición (Fase 2A), las heurísticas producen el doc_roles.json inicial.
+Post-Fase 5, el Builder sobreescribe todo y DocCards se convierte en vista sin estado.
+
+Roles v2 (ADR-0021 §6): list, entity_profile, guide, reference, analysis, other.
 """
 from __future__ import annotations
 
@@ -14,8 +17,27 @@ try:
 except Exception:
     requests = None  # fallback si no está instalado
 
+try:
+    from utils import canonical_doc_id
+except Exception:
+    from src.utils import canonical_doc_id
+
 DOC_ROLES_PATH = Path("data/doc_roles.json")
 DOC_ROLES_PATH.parent.mkdir(parents=True, exist_ok=True)
+
+CORPUS_DIR = Path("data/extracted_texts")
+
+
+def _load_exclusions() -> set:
+    """Load corpus exclusion manifest if present."""
+    try:
+        p = Path("data/corpus_exclusions.json")
+        if p.exists():
+            data = json.loads(p.read_text(encoding="utf-8"))
+            return {item["file"] for item in data.get("excluded", [])}
+    except Exception:
+        pass
+    return set()
 
 
 def load_doc_roles(path: Path | str = DOC_ROLES_PATH) -> Dict[str, Any]:
@@ -38,27 +60,28 @@ def save_doc_roles(doc_roles: Dict[str, Any], path: Path | str = DOC_ROLES_PATH)
 
 
 def _guess_role_by_name(name: str) -> str:
+    """Heurística temporal — remapeada a taxonomía v2 (ADR-0021 §6).
+
+    Post-Fase 5, el Builder sobreescribe todos los roles.
+    Roles v2: list, entity_profile, guide, reference, analysis, other.
+    """
     n = name.lower()
-    # Roles para ciberseguridad
     if any(k in n for k in ["listado", "catalog", "inventory", "directory"]):
-        if any(k in n for k in ["framework", "control", "iso", "nist", "pci", "hipaa"]):
-            return "framework_list"
-        if any(k in n for k in ["certificacion", "certification", "cissp", "ceh", "oscp"]):
-            return "cert_list"
+        return "list"
     if any(k in n for k in ["profile", "perfil", "standard"]):
-        return "standard_profile"
+        return "entity_profile"
     if any(k in n for k in ["proced", "procedimiento", "procedure", "protocolo", "instructivo", "instruct", "playbook", "runbook"]):
-        return "procedure"
+        return "guide"
     if any(k in n for k in ["manual", "guide", "guia", "handbook"]):
-        return "manual_reference"
+        return "reference"
     if any(k in n for k in ["soc", "operaciones", "operations", "incident response", "monitoring"]):
-        return "security_ops"
+        return "guide"
     if any(k in n for k in ["analisis", "análisis", "reporte", "report", "assessment", "audit", "audit report"]):
-        return "analysis_report"
+        return "analysis"
     if any(k in n for k in ["threat", "amenaza", "intel", "intelligence", "ttp", "apt", "ioc"]):
-        return "threat_intel"
+        return "analysis"
     if any(k in n for k in ["policy", "politica", "compliance", "normativa", "regulatory"]):
-        return "policy_compliance"
+        return "reference"
     return "other"
 
 
@@ -133,40 +156,54 @@ def _estimate_centrality(name: str, text: str) -> float:
     return min(1.0, score)
 
 
-def build_doc_cards(vector_store) -> Dict[str, Any]:
-    """Construye tarjetas por documento usando heurísticas (sin depender del LLM).
-    Si luego queremos subir calidad, se puede inyectar un LLM para summary/role.
+def build_doc_cards(vector_store=None) -> Dict[str, Any]:
+    """Construye tarjetas por documento usando heurísticas (sin LLM).
+    Lee directamente del corpus (data/extracted_texts/) en vez de requerir Chroma.
+    El parámetro vector_store se mantiene por compatibilidad pero se ignora.
     """
     try:
-        data = vector_store.collection.get()
-        metadatas = data.get("metadatas", [])
-        documents = data.get("documents", [])
-        sources_seen = {}
-        for i, md in enumerate(metadatas):
-            src = (md or {}).get("source", "Unknown")
-            if src not in sources_seen:
-                text = documents[i] if i < len(documents) else ""
-                role = _guess_role_by_name(src)
-                entities_idx = _extract_basic_entities(text)
-                attributes_idx = _infer_attributes_presence(text)
-                summary = text.strip().split("\n\n")[0][:400] if text else ""
-                centrality = _estimate_centrality(src, text)
-                sources_seen[src] = {
-                    "name": Path(src).name,
-                    "path": src,
-                    "role": role,
-                    "summary": summary,
-                    "entities_index": entities_idx,
-                    "attributes_index": attributes_idx,
-                    "centrality": centrality,
-                    "quality": 0.7
-                }
+        excluded = _load_exclusions()
+        sources_seen: Dict[str, Any] = {}
+        if not CORPUS_DIR.exists():
+            return {"docs": {}}
+        for txt_path in sorted(CORPUS_DIR.glob("*.txt")):
+            fname = txt_path.name
+            if fname in excluded:
+                continue
+            try:
+                text = txt_path.read_text(encoding="utf-8", errors="replace")
+            except Exception:
+                continue
+            cid = canonical_doc_id(fname)
+            if cid in sources_seen:
+                continue
+            sample = text.strip().split("\n\n")[0][:800] if text else ""
+            role = _guess_role_by_name(fname)
+            entities_idx = _extract_basic_entities(sample)
+            attributes_idx = _infer_attributes_presence(sample)
+            summary = sample[:400]
+            centrality = _estimate_centrality(fname, sample)
+            sources_seen[cid] = {
+                "name": txt_path.stem,
+                "source_path": fname,
+                "canonical_doc_id": cid,
+                "role": role,
+                "summary": summary,
+                "entities_index": entities_idx,
+                "attributes_index": attributes_idx,
+                "centrality": centrality,
+                "quality": 0.7
+            }
         return {"docs": sources_seen}
     except Exception:
         return {"docs": {}}
 
 
 def select_docs_by_roles(doc_roles: Dict[str, Any], preferred_roles: List[str], entities: List[str] | None = None, attribute: str | None = None, limit: int = 40) -> List[str]:
+    """Select candidate docs by preferred roles, entities, and attributes.
+    
+    Returns canonical_doc_ids (doc:slug format).
+    """
     docs = doc_roles.get("docs", {}) if isinstance(doc_roles, dict) else {}
     if not docs:
         return []
@@ -178,12 +215,13 @@ def select_docs_by_roles(doc_roles: Dict[str, Any], preferred_roles: List[str], 
     attribute_norm = (attribute or "").lower().strip()
     primary = []
     fallback = []
-    for src, card in items:
+    for cid, card in items:
         if preferred_roles and card.get("role") not in preferred_roles:
             continue
         if entities:
-            src_l = src.lower()
-            ent_hit = any(e in src_l for e in entities)
+            cid_l = cid.lower()
+            name_l = (card.get("name") or "").lower()
+            ent_hit = any(e in cid_l or e in name_l for e in entities)
             if not ent_hit:
                 ent_hit = any(any(e in (s or "").lower() for e in entities) for s in card.get("entities_index", []))
             if not ent_hit:
@@ -191,13 +229,13 @@ def select_docs_by_roles(doc_roles: Dict[str, Any], preferred_roles: List[str], 
         if attribute_norm:
             attrs = [a.lower() for a in (card.get("attributes_index", []) or [])]
             if attribute_norm in attrs:
-                primary.append(src)
+                primary.append(cid)
             else:
-                fallback.append(src)
+                fallback.append(cid)
             if len(primary) + len(fallback) >= limit:
                 break
         else:
-            selected.append(src)
+            selected.append(cid)
             if len(selected) >= limit:
                 break
     if attribute_norm:
@@ -293,7 +331,7 @@ def _resolve_llm_model(model_name: str) -> str:
 
 
 def build_doc_cards_llm(
-    vector_store,
+    vector_store=None,
     model_name: str = "granite33-8b-q4",
     max_docs: int = 0,
     llm_max_calls: int = 0,
@@ -302,46 +340,45 @@ def build_doc_cards_llm(
     sample_chars: int = 800,
 ) -> Dict[str, Any]:
     """Build DocCards using LLM with fallback to heuristics.
-    - First compute heuristics for all unique documents (fast)
-    - Then refine top-N with LLM according to budget (llm_max_calls or llm_ratio)
+    Reads directly from corpus (data/extracted_texts/) — does NOT require Chroma.
+    The vector_store param is kept for API compatibility but ignored.
     """
     try:
         model_name = _resolve_llm_model(model_name)
-        
-        # Get data with safety limit to prevent memory issues
-        data = vector_store.collection.get()
-        metadatas = data.get("metadatas", [])
-        documents = data.get("documents", [])
-        
-        total_chunks = len(metadatas)
-        if total_chunks > 20000:
-            print(f"[WARN] VectorStore tiene {total_chunks} chunks. Procesando solo primeros 20000.")
-            metadatas = metadatas[:20000]
-            documents = documents[:20000]
-        
-        # 1) Heurísticas por documento único
+        excluded = _load_exclusions()
+
+        # 1) Heurísticas por documento único — leer del corpus
         sources_seen: Dict[str, Any] = {}
         processed = 0
-        for i, md in enumerate(metadatas):
+        if not CORPUS_DIR.exists():
+            return {"docs": {}}
+        for txt_path in sorted(CORPUS_DIR.glob("*.txt")):
+            fname = txt_path.name
+            if fname in excluded:
+                continue
             if max_docs and len(sources_seen) >= max_docs:
                 break
-            src = (md or {}).get("source", "Unknown")
-            if src in sources_seen:
+            cid = canonical_doc_id(fname)
+            if cid in sources_seen:
                 continue
             processed += 1
             if processed % 50 == 0:
                 print(f"  Heurísticas: {processed} documentos únicos...")
-            text = documents[i] if i < len(documents) else ""
+            try:
+                text = txt_path.read_text(encoding="utf-8", errors="replace")
+            except Exception:
+                continue
             sample = text.strip().split("\n\n")[0][:sample_chars] if text else ""
-            role = _guess_role_by_name(src)
+            role = _guess_role_by_name(fname)
             summary = sample[:400]
             entities_idx = _extract_basic_entities(sample)
             attributes_idx = _infer_attributes_presence(sample)
-            centrality = _estimate_centrality(src, sample)
+            centrality = _estimate_centrality(fname, sample)
             quality = 0.75
-            sources_seen[src] = {
-                "name": Path(src).name,
-                "path": src,
+            sources_seen[cid] = {
+                "name": txt_path.stem,
+                "source_path": fname,
+                "canonical_doc_id": cid,
                 "role": role,
                 "summary": summary,
                 "entities_index": entities_idx,
@@ -367,32 +404,24 @@ def build_doc_cards_llm(
         print(f"\n[INFO] Refinando con LLM los top {len(targets)} documentos (de {len(sources_seen)})")
         
         llm_calls = 0
-        chunks_by_source: Dict[str, List[str]] = {}
-        for i, md in enumerate(metadatas):
-            src = (md or {}).get("source", "Unknown")
-            if src in targets:
-                arr = chunks_by_source.get(src)
-                if arr is None:
-                    arr = []
-                    chunks_by_source[src] = arr
-                if len(arr) < 5:
-                    arr.append(documents[i] if i < len(documents) else "")
-        for idx, src in enumerate(targets, start=1):
-            card = sources_seen.get(src, {})
-            texts = chunks_by_source.get(src, [])
-            parts = []
-            for t in texts:
-                if not t:
-                    continue
-                p = [x for x in t.strip().split("\n\n") if x.strip()]
-                if p:
-                    parts.append(p[0])
-            sample = ("\n\n".join(parts))[:sample_chars] if parts else ""
+        for idx, cid in enumerate(targets, start=1):
+            card = sources_seen.get(cid, {})
+            fname = card.get("source_path", "")
+            txt_path = CORPUS_DIR / fname if fname else None
+            if txt_path and txt_path.exists():
+                try:
+                    full_text = txt_path.read_text(encoding="utf-8", errors="replace")
+                except Exception:
+                    full_text = ""
+                paragraphs = [p for p in full_text.strip().split("\n\n") if p.strip()]
+                sample = ("\n\n".join(paragraphs[:5]))[:sample_chars] if paragraphs else ""
+            else:
+                sample = ""
             try:
                 prompt = (
                     "Clasifica y resume el siguiente documento. Devuelve JSON con las claves: "
                     "role, summary, entities_index, attributes_index, centrality, quality.\n"
-                    "Roles válidos: entity_list, entity_profile, procedure, manual_scada, grid_ops, analysis_report, other.\n"
+                    "Roles válidos: list, entity_profile, guide, reference, analysis, other.\n"
                     f"TEXTO:\n{sample}\n\nJSON:"
                 )
                 out = _ollama_generate(
@@ -463,7 +492,7 @@ def build_doc_cards_llm(
         return {"docs": {}}
 
 def build_doc_cards_llm_incremental(
-    vector_store,
+    vector_store=None,
     existing: Dict[str, Any] | None = None,
     model_name: str = "granite33-8b-q4",
     max_docs: int = 0,
@@ -472,36 +501,41 @@ def build_doc_cards_llm_incremental(
     llm_timeout: int = 12,
     sample_chars: int = 800,
 ) -> Dict[str, Any]:
-    """Construye DocCards SOLO para fuentes nuevas y las fusiona con las existentes.
-    - Lee doc_roles existentes (si no se proveen, usa data/doc_roles.json)
-    - Genera heurísticas para nuevas fuentes y refina con LLM según presupuesto
-    - Devuelve el diccionario final fusionado {"docs": {...}}
+    """Construye DocCards SOLO para documentos nuevos y los fusiona con los existentes.
+    Lee del corpus (data/extracted_texts/) — no requiere Chroma.
     """
     try:
         base = existing if isinstance(existing, dict) else load_doc_roles()
         base_docs = (base or {}).get("docs", {})
         out_docs: Dict[str, Any] = dict(base_docs)
-        data = vector_store.collection.get()
-        metadatas = data.get("metadatas", [])
-        documents = data.get("documents", [])
+        excluded = _load_exclusions()
         new_sources: Dict[str, Any] = {}
-        for i, md in enumerate(metadatas):
-            src = (md or {}).get("source", "Unknown")
-            if src in out_docs:
+        if not CORPUS_DIR.exists():
+            return {"docs": out_docs}
+        for txt_path in sorted(CORPUS_DIR.glob("*.txt")):
+            fname = txt_path.name
+            if fname in excluded:
+                continue
+            cid = canonical_doc_id(fname)
+            if cid in out_docs or cid in new_sources:
                 continue
             if max_docs and len(new_sources) >= max_docs:
                 break
-            text = documents[i] if i < len(documents) else ""
+            try:
+                text = txt_path.read_text(encoding="utf-8", errors="replace")
+            except Exception:
+                continue
             sample = text.strip().split("\n\n")[0][:sample_chars] if text else ""
-            role = _guess_role_by_name(src)
+            role = _guess_role_by_name(fname)
             summary = sample[:400]
             entities_idx = _extract_basic_entities(sample)
             attributes_idx = _infer_attributes_presence(sample)
-            centrality = _estimate_centrality(src, sample)
+            centrality = _estimate_centrality(fname, sample)
             quality = 0.75
-            new_sources[src] = {
-                "name": Path(src).name,
-                "path": src,
+            new_sources[cid] = {
+                "name": txt_path.stem,
+                "source_path": fname,
+                "canonical_doc_id": cid,
                 "role": role,
                 "summary": summary,
                 "entities_index": entities_idx,
@@ -521,93 +555,83 @@ def build_doc_cards_llm_incremental(
         if budget > 0:
             keys_sorted = sorted(new_sources.keys(), key=lambda k: float(new_sources[k].get("centrality", 0.0)), reverse=True)
             targets = keys_sorted[:budget]
-        # Recolectar hasta 5 chunks por fuente objetivo
-        chunks_by_source: Dict[str, List[str]] = {}
-        if targets:
-            for i, md in enumerate(metadatas):
-                src = (md or {}).get("source", "Unknown")
-                if src in targets:
-                    arr = chunks_by_source.get(src)
-                    if arr is None:
-                        arr = []
-                        chunks_by_source[src] = arr
-                    if len(arr) < 5:
-                        arr.append(documents[i] if i < len(documents) else "")
-            for src in targets:
-                card = new_sources.get(src, {})
-                texts = chunks_by_source.get(src, [])
-                parts = []
-                for t in texts:
-                    if not t:
-                        continue
-                    p = [x for x in t.strip().split("\n\n") if x.strip()]
-                    if p:
-                        parts.append(p[0])
-                sample = ("\n\n".join(parts))[:sample_chars] if parts else ""
+        for cid in targets:
+            card = new_sources.get(cid, {})
+            fname = card.get("source_path", "")
+            txt_path = CORPUS_DIR / fname if fname else None
+            if txt_path and txt_path.exists():
                 try:
-                    prompt = (
-                        "Clasifica y resume el siguiente documento. Devuelve JSON con las claves: "
-                        "role, summary, entities_index, attributes_index, centrality, quality.\n"
-                        "Roles válidos: entity_list, entity_profile, procedure, manual_scada, grid_ops, analysis_report, other.\n"
-                        f"TEXTO:\n{sample}\n\nJSON:"
-                    )
-                    out = _ollama_generate(
-                        model_name,
-                        prompt,
-                        timeout=max(8, llm_timeout),
-                        options={"temperature": 0, "num_predict": 256, "num_ctx": 3072},
-                    )
-                    if out:
-                        parsed = None
-                        try:
-                            parsed = json.loads(out)
-                        except Exception:
-                            try:
-                                import re as _re
-                                m = _re.search(r"\{[\s\S]*\}$", out)
-                                if m:
-                                    parsed = json.loads(m.group(0))
-                            except Exception:
-                                parsed = None
-                        if isinstance(parsed, dict):
-                            role_llm = parsed.get("role")
-                            if role_llm:
-                                card["role"] = role_llm
-                            summary_llm = parsed.get("summary")
-                            if summary_llm:
-                                card["summary"] = summary_llm
-                            ents_llm = parsed.get("entities_index") if isinstance(parsed.get("entities_index"), list) else []
-                            attrs_llm = parsed.get("attributes_index") if isinstance(parsed.get("attributes_index"), list) else []
-                            ents_prev = card.get("entities_index", []) or []
-                            attrs_prev = card.get("attributes_index", []) or []
-                            if ents_llm or ents_prev:
-                                merged_ents = []
-                                seen = set()
-                                for e in ents_prev + ents_llm:
-                                    s = (e or "").strip()
-                                    if s and s.lower() not in seen:
-                                        seen.add(s.lower())
-                                        merged_ents.append(s)
-                                card["entities_index"] = merged_ents
-                            if attrs_llm or attrs_prev:
-                                merged_attrs = []
-                                seen_a = set()
-                                for a in attrs_prev + attrs_llm:
-                                    s = (a or "").strip()
-                                    if s and s.lower() not in seen_a:
-                                        seen_a.add(s.lower())
-                                        merged_attrs.append(s)
-                                card["attributes_index"] = merged_attrs
-                            c = parsed.get("centrality")
-                            if isinstance(c, (int, float)):
-                                prev_c = float(card.get("centrality", 0.0) or 0.0)
-                                card["centrality"] = float((prev_c + float(c)) / 2.0)
-                            q = parsed.get("quality")
-                            if isinstance(q, (int, float)):
-                                prev_q = float(card.get("quality", 0.0) or 0.0)
-                                card["quality"] = float(max(prev_q, float(q)))
+                    full_text = txt_path.read_text(encoding="utf-8", errors="replace")
                 except Exception:
-                    pass
+                    full_text = ""
+                paragraphs = [p for p in full_text.strip().split("\n\n") if p.strip()]
+                sample = ("\n\n".join(paragraphs[:5]))[:sample_chars] if paragraphs else ""
+            else:
+                sample = ""
+            try:
+                prompt = (
+                    "Clasifica y resume el siguiente documento. Devuelve JSON con las claves: "
+                    "role, summary, entities_index, attributes_index, centrality, quality.\n"
+                    "Roles válidos: list, entity_profile, guide, reference, analysis, other.\n"
+                    f"TEXTO:\n{sample}\n\nJSON:"
+                )
+                out = _ollama_generate(
+                    model_name,
+                    prompt,
+                    timeout=max(8, llm_timeout),
+                    options={"temperature": 0, "num_predict": 256, "num_ctx": 3072},
+                )
+                if out:
+                    parsed = None
+                    try:
+                        parsed = json.loads(out)
+                    except Exception:
+                        try:
+                            import re as _re
+                            m = _re.search(r"\{[\s\S]*\}$", out)
+                            if m:
+                                parsed = json.loads(m.group(0))
+                        except Exception:
+                            parsed = None
+                    if isinstance(parsed, dict):
+                        role_llm = parsed.get("role")
+                        if role_llm:
+                            card["role"] = role_llm
+                        summary_llm = parsed.get("summary")
+                        if summary_llm:
+                            card["summary"] = summary_llm
+                        ents_llm = parsed.get("entities_index") if isinstance(parsed.get("entities_index"), list) else []
+                        attrs_llm = parsed.get("attributes_index") if isinstance(parsed.get("attributes_index"), list) else []
+                        ents_prev = card.get("entities_index", []) or []
+                        attrs_prev = card.get("attributes_index", []) or []
+                        if ents_llm or ents_prev:
+                            merged_ents = []
+                            seen = set()
+                            for e in ents_prev + ents_llm:
+                                s = (e or "").strip()
+                                if s and s.lower() not in seen:
+                                    seen.add(s.lower())
+                                    merged_ents.append(s)
+                            card["entities_index"] = merged_ents
+                        if attrs_llm or attrs_prev:
+                            merged_attrs = []
+                            seen_a = set()
+                            for a in attrs_prev + attrs_llm:
+                                s = (a or "").strip()
+                                if s and s.lower() not in seen_a:
+                                    seen_a.add(s.lower())
+                                    merged_attrs.append(s)
+                            card["attributes_index"] = merged_attrs
+                        c = parsed.get("centrality")
+                        if isinstance(c, (int, float)):
+                            prev_c = float(card.get("centrality", 0.0) or 0.0)
+                            card["centrality"] = float((prev_c + float(c)) / 2.0)
+                        q = parsed.get("quality")
+                        if isinstance(q, (int, float)):
+                            prev_q = float(card.get("quality", 0.0) or 0.0)
+                            card["quality"] = float(max(prev_q, float(q)))
+            except Exception:
+                pass
         out_docs.update(new_sources)
         return {"docs": out_docs}
     except Exception:

@@ -38,7 +38,7 @@ class SemanticValidator:
     def __init__(
         self,
         use_llm: bool = False,
-        model: str = "ibm/granite4.1:8b-q4_K_M",
+        model: str = "ibm/granite4.1:3b-q6_K",
         base_url: str = "http://localhost:11434",
         timeout: int = 60,
     ):

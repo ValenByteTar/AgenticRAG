@@ -1,0 +1,596 @@
+=== PT11 Analisis de Perturbaciones.pdf ===
+
+--- Página 1 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 11:ANALISIS DE PERTURBACIONES 
+Pag. 1 
+ 
+Version: 07-mar-2014 
+Los Procedimientos 
+P.T. 11: ANALISIS DE PERTURBACIONES 
+Indice 
+P.T. 11: ANALISIS DE PERTURBACIONES .....................................................................................................2 
+1. OBJETO y ALCANCE ................................................................................................................................2 
+2. INTRODUCCION .......................................................................................................................................2 
+3. RESPONSABILIDADES DE LOS CENTROS DE OPERACIONES..........................................................2 
+4. INFORMACION A REGISTRAR ................................................................................................................3 
+5. ANALISIS DE PERTURBACIONES...........................................................................................................4 
+5.1. Etapa I: Analisis en tiempo real...........................................................................................................4 
+5.2. Etapa II: Analisis preliminar.................................................................................................................5 
+5.3. Etapa III: Analisis final.........................................................................................................................5 
+5.4. Etapa IV: Auditorias de perturbaciones. .............................................................................................6 
+6. ACCIONES.................................................................................................................................................6 
+6.1. Acciones a tomar.................................................................................................................................6 
+6.1.1. Acciones preventivas. ..................................................................................................................6 
+6.1.2. Acciones correctivas. ...................................................................................................................7 
+7. ANEXO I - MODELO DEL PARTE DE NOVEDADES DE PERTURBACIONES ......................................7 
+7.1. Referencias. ........................................................................................................................................7 
+7.2. Configuracion Pre-falla........................................................................................................................7 
+7.3. Descripcion de los sucesos en orden cronologico..............................................................................7 
+7.4. Configuracion Post-falla ......................................................................................................................7 
+7.5. Maniobras realizadas para normalizar el servicio...............................................................................7 
+7.6. Energia no suministrada .....................................................................................................................8 
+7.7. Medidas adoptadas.............................................................................................................................8 
+7.8. NOTAS. ...............................................................................................................................................8 
+8. ANEXO II - MODELO DE INFORME FINAL DE PERTURBACIONES .....................................................8 
+8.1. Referencias. ........................................................................................................................................8 
+8.2. Sintesis................................................................................................................................................8 
+8.3. Configuracion Pre-falla........................................................................................................................9 
+8.4. Descripcion de los sucesos en orden cronologico..............................................................................9 
+8.5. Configuracion Post-falla ......................................................................................................................9 
+8.6. Maniobras realizadas para normalizar el servicio...............................................................................9 
+8.7. Analisis de las actuaciones de protecciones. .....................................................................................9 
+8.8. Energia no suministrada .....................................................................................................................9 
+8.9. Medidas adoptadas.............................................................................................................................9 
+8.10. Conclusiones y acciones tomadas o a tomar. ..................................................................................9 
+8.11. Anexos. .............................................................................................................................................9 
+8.12. NOTAS. ...........................................................................................................................................10 
+9. ANEXO III - PLANILLAS ..........................................................................................................................11 
+9.1. DESCRIPCION DE LOS EVENTOS.................................................................................................11 
+9.2. CORTES PRODUCIDOS..................................................................................................................12 
+9.3. NORMALIZACION DEL SERVICIO..................................................................................................13
+
+--- Página 2 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 11:ANALISIS DE PERTURBACIONES 
+Pag. 2 
+ 
+Version: 07-mar-2014 
+P.T. 11: ANALISIS DE PERTURBACIONES 
+1. OBJETO y ALCANCE 
+Establecer una metodologia de registro de informacion y de analisis de las perturbaciones que ocurran en el 
+SADI con el objetivo de que queden determinadas sus causas, consecuencias y las medidas adoptadas 
+para evitar la repeticion de la perturbacion. 
+Explicitar los derechos y obligaciones de las partes con referencia a la transferencia de informacion y 
+confeccion de informes y establecer las responsabilidades correspondientes. 
+El presente procedimiento tecnico es de aplicacion a todas las perturbaciones que se produzcan en o 
+afecten a instalaciones del Transportista en Alta Tension, de los Transportistas por Distribucion Troncal, de 
+los Generadores y a instalaciones superiores de las PAFTT. 
+2. INTRODUCCION 
+Cuando se produce una perturbacion en el SADI o en una o mas areas, que provoca ya sea cambios 
+topologicos en la red y/o variaciones de frecuencia y/o tensiones fuera de los rangos admisibles, se deben 
+determinar sus causas y evaluar sus consecuencias con el proposito de analizar la normalizacion del 
+sistema, asignar responsabilidades, determinar indisponibilidades de equipos, informar a los agentes del 
+M.E.M., recabar datos para fines estadisticos y analizar las actuaciones de los equipamientos y el personal 
+involucrado con el fin primordial de mejorar su funcionamiento en el futuro y, en consecuencia, la calidad de 
+servicio del suministro. 
+Ademas es necesario realizar estas tareas en tiempos minimos ya que es un requerimiento de los Agentes 
+del MEM, ser informados de lo ocurrido luego de una falla para, principalmente, conocer las posibles 
+limitaciones que pudiesen surgir como consecuencia de la misma (de los Generadores, si tendran 
+limitaciones a su despacho, los Distribuidores si habra restricciones al suministro y los Grandes Usuarios si 
+tendran limitaciones al consumo para su produccion). 
+Para todo ello es imprescindible contar, en tiempo y forma, para cada perturbacion producida, con todos los 
+datos, secuencia de operaciones, actuacion de protecciones y equipos de maniobra, equipamiento de 
+control, etc.  
+Con todos estos elementos de juicio disponibles, el Transportista (Distribuidor y/o Generador cuando la 
+perturbacion no involucre al sistema de transporte) debera realizar un analisis exhaustivo de cada 
+perturbacion y confeccionar INFORMES DE PERTURBACION con los criterios e instrucciones indicados en 
+el presente Procedimiento Tecnico. 
+3. RESPONSABILIDADES DE LOS CENTROS DE OPERACIONES 
+IDENTIFICACION DE ABREVIATURAS: 
+CO:  
+Centros de Control de Operaciones de los Agentes 
+COD:  Centros de Control de Operaciones de Distribuidores 
+COG:  Centros de Control de Operaciones de Generadores 
+COT:  Centros de Control de Operaciones de TRANSENER 
+COTDT: Centros de Control de Operaciones de Transportistas por Distribucion Troncal o Distribuidores que 
+prestan la Funcion Tecnica de Transporte (FTT) 
+COC:  Centro de Operaciones de CAMMESA  
+Los COT y COTDT de las areas afectadas por la perturbacion son los unicos responsables ante CAMMESA 
+respecto del total esclarecimiento de los motivos que originaron la situacion de contingencia, salvo que la 
+misma se haya originado y producido efectos solo en el area de un Distribuidor y/o un Generador, en cuyo 
+caso la responsabilidad sera del COD o COG correspondiente. 
+Pertenecen al area afectada por una perturbacion, todos los subsistemas donde la contingencia produzca al 
+menos algunos de los siguientes efectos: 
+•  Cambio de configuracion del Sistema de Transporte. 
+•  Imposibilidad de abastecer parte o la totalidad de una demanda.
+
+--- Página 3 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 11:ANALISIS DE PERTURBACIONES 
+Pag. 3 
+ 
+Version: 07-mar-2014 
+•  Restricciones y/o reprogramacion de generacion. 
+•  Senalizacion y/o actuacion de protecciones. 
+Como consecuencia de toda perturbacion, los COT, COTDT, COG y COD deberan emitir informes de 
+acuerdo a lo indicado en el punto 5 del presente procedimiento. Si la perturbacion involucra a mas de una 
+Transportista, debera ser realizado un unico informe coordinado por una de ellas, sin que por ello dejen de 
+valer las responsabilidades particulares. 
+Sera responsabilidad de CAMMESA analizar, aprobar y difundir los INFORMES FINALES DE 
+PERTURBACIONES elaborar los informes de perturbacion que seran publicados en MEMNet y enviados al 
+ENRE y mantener actualizadas las Bases de Datos de Estadisticas de Perturbaciones sobre la base de la 
+informacion recibida y de acuerdo a los informes aprobados, poniendo a disposicion de todos los agentes la 
+informacion almacenada. 
+Los COD, COG, COT y COTDT deben poner a disposicion del agente responsable de realizar el INFORME 
+FINAL de PERTURBACION, antes del cuarto dia habil, la informacion de lo ocurrido en su sistema, 
+enviandole todo lo necesario para su correcta interpretacion, asi como tambien una copia de los 
+Protocolizadores de Eventos y Osciloperturbografos que hubiesen actuado, con las debidas aclaraciones de 
+que significa cada senalizacion y una interpretacion de las alarmas y actuaciones ocurridas. 
+4. INFORMACION A REGISTRAR 
+Producida una perturbacion se debera registrar como minimo la siguiente informacion, la que sera utilizada 
+para los analisis, elaboracion de informes y suministro de informacion en cada etapa definida en el punto 5 
+del presente procedimiento: 
+• Causa probable de la perturbacion. 
+• Secuencia cronologica de actuaciones (alarmas y disparos). 
+• Equipamiento desconectado (lineas, transformadores, equipos de compensacion, etc.) y sus posibles 
+danos. 
+• Desconexion eventual de generadores, indicando el estado de prefalla del mismo (P, Q y V) y sus 
+posibles danos. 
+• Equipos de maniobra operados. 
+• Variables fuera de limites (evolucion de la frecuencia y las tensiones). 
+• Operacion de protecciones. 
+• Tipo de proteccion. 
+• Fase fallada 
+• Tiempo de actuacion (en milisegundos). 
+• Etapa operada. 
+• Recierres operados 
+• Bloqueo por Penduleo 
+• Actuacion incorrecta de Automatismos 
+• Actuacion de automatismos de alivio de carga o de desconexion de generadores 
+• Registros oscilograficos sincronizados. 
+• Registros Cronologicos de Eventos sincronizados. 
+• Registros de comunicaciones operativas. 
+• Condiciones del SADI pre y post falla 
+• Y toda aquella informacion que se estime necesaria para el analisis y esclarecimiento de la 
+perturbacion.
+
+--- Página 4 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 11:ANALISIS DE PERTURBACIONES 
+Pag. 4 
+ 
+Version: 07-mar-2014 
+Los COD, COG, COTDT y COT deberan elevar dentro de los 30 dias de aprobado este Procedimiento 
+Tecnico un listado de los equipos disponibles al efecto, por estacion transformadora y por salida, indicando 
+si son suficientes para cumplir en tiempo y forma  con los requerimientos de informacion solicitados en este 
+punto. En caso contrario, indicar los equipos adicionales necesarios o las modificaciones requeridas para 
+ello.  
+Los Centros de Operaciones deberan mantener actualizado este listado. 
+5. ANALISIS DE PERTURBACIONES 
+Se definen cuatro etapas para el analisis de una perturbacion y la emision de su informe, el que debera ser 
+enviado a CAMMESA dentro de los plazos estipulados a continuacion: 
+I) Analisis en tiempo real: inmediatamente luego de sucedida la perturbacion. 
+II) Analisis preliminar:  
+Si la perturbacion 
+se produce 
+El informe se debe presentar 
+Despues de las: 
+y Antes de las: 
+Antes de las: 
+0:00 hs. de un dia habil 
+8:00 del mismo dia habil 
+8:00 hs. del primer dia habil siguiente 
+8:00 hs. de un dia habil 
+16:00 del mismo dia habil 
+11:00 hs. del primer dia habil 
+siguiente 
+16:00 hs. de un dia habil 
+24:00 del mismo dia habil 
+14:00 hs. del primer dia habil 
+siguiente 
+ 
+Si 
+la 
+perturbacion 
+se 
+produce en un dia no habil 
+ 
+El informe se debe presentar antes 
+de las 11.00 hs. del  primer dia habil 
+siguiente 
+ 
+III) Analisis final, dentro de los 12 dias habiles de ocurrida la perturbacion. 
+IV) Auditorias de perturbaciones de CAMMESA. 
+En cada una de estas etapas se establece un flujo de informacion jerarquico entre los Centros de Control de 
+Operaciones empresarios tal que permita una rapida identificacion de la perturbacion y sus medidas 
+correctivas para lograr una operacion aceptable post falla, y para efectivizar las medidas que permitan 
+evitar, en lo posible, situaciones semejantes en el futuro. 
+Si la perturbacion analizada provoca cambios topologicos en la red, cortes de demanda, actuacion de DAG 
+(Desconexion Automatica de Generacion) o DAD (Desconexion Automatica de Demanda), falsas 
+actuaciones de protecciones, normalizacion dificultosa y/o prolongada del sistema, su analisis abarca, por lo 
+menos, hasta la etapa III inclusive. 
+En caso de que la perturbacion sea simple, se pueda definir en forma clara las causas de la perturbacion y 
+no haya dudas sobre lo acontecido, sobre la actuacion de las protecciones ni sobre la reposicion del 
+sistema, el analisis concluira en la Etapa II.  
+En todos los casos CAMMESA indicara al responsable hasta que etapa debe alcanzar el analisis. 
+5.1. Etapa I: Analisis en tiempo real 
+Inmediatamente luego de sucedida la perturbacion, el operador del Centro de Control involucrado debe 
+informar al COC lo ocurrido a los fines de su conocimiento e intervencion de acuerdo al Anexo N° 25 de 
+LOS PROCEDIMIENTOS. En especial, se deben informar los equipos que quedaron indisponibles debido a 
+la perturbacion y sus motivos. 
+El COC solicitara, de ser necesario, informacion adicional entre las etapas l y II para confeccionar sus 
+Partes de Novedades.
+
+--- Página 5 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 11:ANALISIS DE PERTURBACIONES 
+Pag. 5 
+ 
+Version: 07-mar-2014 
+5.2. Etapa II: Analisis preliminar   
+El responsable debera enviar al COC, un PARTE DE NOVEDADES DE PERTURBACION respetando el 
+modelo que se indica en ANEXO I, y en los plazos indicados anteriormente. Asi mismo cada COD del area 
+afectada debera enviar al COC, en los mismos tiempos, la informacion de los cortes de carga producidos en 
+su area.  
+Con la informacion disponible, CAMMESA efectuara el analisis de la perturbacion y comunicara via MEMNet 
+el INFORME PRELIMINAR dentro del primer dia habil posterior al de la ocurrencia de la misma. 
+La responsabilidad de la realizacion del PARTE DE NOVEDADES DE PERTURBACION se determinara de 
+acuerdo  a las instalaciones afectadas por la perturbacion, siguiendo el orden jerarquico, a saber: 
+COG: si la perturbacion se origina en un Generador y no se propaga a otras instalaciones 
+COD: si la perturbacion se origina en las instalaciones del Distribuidor o en un Generador afectando las 
+redes del primero y no se propaga a las redes de Transporte por Distribucion Troncal ni a la red de 
+transporte en alta tension. En el caso de que el area afectada involucre a mas de un Distribuidor CAMMESA 
+determinara el responsable. 
+COTDT: si la perturbacion se origina en las instalaciones de un Transportista por Distribucion Troncal o 
+en las de un Distribuidor o en un Generador afectando las redes del primero y no se propaga a la red de 
+transporte en alta tension. En el caso de que el area afectada involucre a mas de un Transportista por 
+Distribucion Troncal CAMMESA determinara el responsable. 
+COT: si la perturbacion se origina en las instalaciones del Transportista en Alta Tension o en las redes del 
+Transportista por Distribucion Troncal o en las de un Distribuidor o en un Generador afectando las 
+redes del primero. 
+En los casos particulares en que por las caracteristicas o evolucion de la perturbacion no quede claramente 
+establecido el responsable de la realizacion del PARTE DE NOVEDADES DE PERTURBACION, el mismo 
+sera designado por el COC. 
+5.3. Etapa III: Analisis final 
+Dentro de los 12 dias habiles posteriores a la ocurrencia de la perturbacion, el responsable debera elaborar 
+y enviar al COC, un INFORME FINAL DE PERTURBACION respetando el modelo que se indica en ANEXO 
+II. 
+El INFORME FINAL DE PERTURBACION sera analizado y aprobado por CAMMESA, luego de lo cual sera 
+publicado en MEMNet, archivado y la informacion relevante pasara a conformar las "Bases de Datos de 
+Estadisticas de Perturbaciones" dentro de los 10 dias habiles de recibido el informe, con las observaciones 
+que se considere necesario agregar. 
+En caso de no ser aprobado por CAMMESA se le informara al responsable las observaciones al mismo, 
+quien debera presentar un nuevo informe dentro de los 7 dias habiles siguientes al rechazo.  
+Cuando existieran dudas sobre el comportamiento de algunos Centros de Operaciones durante la 
+perturbacion o su reposicion, CAMMESA o el Centro de Operaciones responsable de la elaboracion del 
+Informe podra solicitar copia de la desgrabacion de las comunicaciones operativas que se registraron 
+durante la misma y de los protocolizadores de cada Estacion Transformadora involucrada.  
+De no contarse con las mismas, la prueba de las divergencias quedara a cargo del Centro de Control 
+correspondiente, por lo cual se considera necesario que los mismos cuenten con sistema de grabacion de 
+comunicaciones con otros Centros de Control. 
+Si como conclusion de esta etapa se desprende que existio mal funcionamiento de algun elemento de 
+maniobra, proteccion o control, el CO respectivo debera incluir un cronograma de las acciones correctivas a 
+tomar. Dentro de los 10 dias habiles posteriores a los plazos indicados en el cronograma se debera enviar a 
+CAMMESA un informe detallando los trabajos realizados.  
+CAMMESA evaluara todos los antecedentes existentes sobre cada perturbacion y los INFORMES FINALES 
+realizados por los COT y COTDT con el objeto de aprobar estos ultimos.  
+En caso de que la gravedad de la perturbacion o las discrepancias entre las informaciones recibidas lo 
+aconseje, CAMMESA podra citar a los Agentes involucrados a una reunion para analizar la perturbacion, 
+resolver las discrepancias suscitadas y cerrar el informe final.
+
+--- Página 6 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 11:ANALISIS DE PERTURBACIONES 
+Pag. 6 
+ 
+Version: 07-mar-2014 
+Toda la informacion utilizada para el analisis de fallas, incluyendo la trascripcion de las grabaciones, estara 
+disponible para los Agentes cuando el informe final este elaborado. 
+5.4. Etapa IV: Auditorias de perturbaciones. 
+CAMMESA, podra realizar auditorias en las instalaciones de los Agentes con el objeto de: 
+• Obtener informacion para dejar debidamente aclaradas las causas y consecuencias de todas las 
+perturbaciones ocurridas en el SADI.  
+• Observar las medidas correctivas utilizadas para normalizar el Sistema. 
+• Analizar las caracteristicas y flujo de la informacion suministrada. 
+• Evaluar el estado y funcionamiento de los equipos de control y proteccion. 
+• Evaluar las responsabilidades de los Agentes en las perturbaciones registradas. 
+• Evaluar las acciones tomadas o a tomar por los Agentes responsables de las perturbaciones para 
+evitar su repeticion. 
+• Analizar el cumplimiento de las instrucciones de operacion impartidas por el OED. 
+• Auditar el cumplimiento de las Ordenes de Servicio del COC y de los CO, aprobadas por el OED.  
+• Verificar que los procedimientos internos para situaciones de emergencia para el personal de los CO 
+y de las EE TT esten actualizados, disponibles y con conocimiento de su contenido por parte del 
+personal involucrado. 
+6. ACCIONES 
+Concluidas las etapas definidas en el punto 5, CAMMESA, sobre la base de la informacion obtenida, 
+elaborara un informe de la perturbacion que sera publicado en MEMNet y enviado al ENRE, y contendra: 
+• El Informe Final de Perturbacion elaborado por el Centro de Operaciones correspondiente. 
+• Causas de la Perturbacion. 
+• Comportamientos y responsabilidades de CAMMESA y de los Agentes. 
+• Acciones a tomar por CAMMESA y requerimientos de acciones a los Agentes. 
+En caso de haber existido incumplimiento de algun Centro de Operaciones de las instrucciones de 
+operacion impartidas por el OED, o que alguna parte de la red no presenta optimas condiciones de 
+confiabilidad en algunas circunstancias, se elevara ademas este informe a la Secretaria de Energia, con el 
+reclamo correspondiente. 
+En el caso que el responsable de la realizacion de los informes no cumpliera en los plazos establecidos 
+para su presentacion y/o cualquiera de los requerimientos previstos en el punto 5, CAMMESA informara al 
+ENRE a los fines que este decida sobre las eventuales medidas que pudieran corresponder. 
+6.1. Acciones a tomar. 
+Las acciones que deban tomar CAMMESA y los Agentes pueden ser preventivas o correctivas: 
+6.1.1. Acciones preventivas. 
+Las acciones preventivas que adopte CAMMESA deberan ser fundamentadas y dicha fundamentacion 
+informada a los Agentes. 
+Las acciones preventivas podran ser, entre otras: 
+• CAMMESA podra imponer, con caracter extraordinario, restricciones operativas transitorias a la 
+capacidad de transporte, al despacho o a las operaciones de los CO con el objeto de preservar la 
+seguridad del sistema.  
+• CAMMESA podra solicitar informacion al ENRE sobre las normas de diseno de instalaciones y 
+equipos de los sistemas de los Agentes (estandares de calidad). 
+• CAMMESA podra requerir a los Agentes:
+
+--- Página 7 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 11:ANALISIS DE PERTURBACIONES 
+Pag. 7 
+ 
+Version: 07-mar-2014 
+• La realizacion de estudios para evaluar el comportamiento del sistema ante las perturbaciones 
+analizadas, incluyendo analisis de confiabilidad. 
+• Informacion sobre los ensayos realizados sobre los equipamientos de control y proteccion de su 
+sistema, y la realizacion de un programa de ensayos sobre los equipamientos que los requieran. 
+• Informacion sobre los procedimientos e instrucciones internas de operacion de los CO y EE TT 
+de los Agentes  
+• Informacion sobre mantenimiento de equipos. 
+6.1.2. Acciones correctivas. 
+• Si CAMMESA considera que existen instalaciones de la red del Agente que no cumple con las 
+normas de diseno y calidad respectivas informadas por el ENRE, advertira a este Organismo .para 
+que eventualmente instruya al Agente para que ejecute, entre otras, las siguientes acciones:  
+• Su pronta solucion.  
+• Realizacion de mantenimientos preventivos y correctivos. 
+• Reparacion, modificacion, cambio o instalacion de equipamientos de control y proteccion. 
+• Modificacion de sistemas de supervision, registro de informacion y alarmas. 
+• Revision y modificacion de las Ordenes de Servicio e Instrucciones Internas de Operacion. 
+ 
+7. ANEXO I - MODELO DEL PARTE DE NOVEDADES DE PERTURBACIONES 
+El PARTE de NOVEDADES de PERTURBACIONES sera un documento en el cual se informaran los 
+hechos sucedidos, las actuaciones de las protecciones durante la perturbacion y las cargas que se hubieren 
+cortado. Tambien incluira las maniobras de reposicion del sistema. 
+Este parte contendra la cronologia de eventos, las senalizaciones de las protecciones que hayan actuado 
+en la perturbacion, indicando claramente cuales emitieron disparo a su interruptor asociado. Contendra, 
+ademas, el listado de las Estaciones Transformadoras involucradas, la carga cortada en cada una de ellas, 
+la causa del corte y la hora de reposicion de la misma ya sea parcial o total segun corresponda. 
+El Parte de Novedades de Perturbacion debe seguir el siguiente modelo: 
+7.1. Referencias. 
+Debe indicarse fecha (dd/mm/aa), hora(hh:mm) y titulo de la perturbacion. 
+7.2. Configuracion Pre-falla. 
+Debe hacerse una descripcion de la condicion de operacion prefalla incluyendo la conformacion topologica 
+de la red, adjuntando un esquema unifilar simplificado de la configuracion de la red afectada. 
+7.3. Descripcion de los sucesos en orden cronologico 
+En este punto se debe indicar, en forma detallada, todos los eventos producidos debido a la perturbacion y 
+sus consecuencias, indicando claramente las senalizaciones de las protecciones, causas de cada 
+desconexion de equipos, en orden cronologico indicando horario de ocurrencia de cada uno de ellos.  
+7.4. Configuracion Post-falla 
+Debe Incluir la conformacion topologica de la red inmediatamente posterior a la perturbacion, adjuntando un 
+esquema unifilar simplificado de la configuracion de la red afectada. 
+7.5.  Maniobras realizadas para normalizar el servicio. 
+En este punto se debe indicar las principales maniobras realizadas para llegar a la configuracion normal, en 
+orden cronologico e indicando horario de ocurrencia de cada una de ellas. Se deberan tambien incluir, 
+cuando corresponda, comentarios u observaciones sobre las posibles dificultades que se pudiesen
+
+--- Página 8 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 11:ANALISIS DE PERTURBACIONES 
+Pag. 8 
+ 
+Version: 07-mar-2014 
+presentar en la normalizacion del sistema que hayan ocasionado retardos en la misma, ya sea de caracter 
+operativo, de comunicaciones o de falla de algun equipamiento.  
+7.6. Energia no suministrada 
+Se debera realizar una estimacion de la potencia cortada (en MW) y la energia no suministrada (en MWh) 
+por causas asociadas a la perturbacion o por las maniobras de reposicion, individualizada por Estacion 
+Transformadora. 
+7.7. Medidas adoptadas. 
+Si dentro del tiempo requerido para realizar el Parte surgen medidas correctivas a adoptar como 
+consecuencia inmediata de la perturbacion, deben ser incluidas en este item. De implementarse estas 
+medidas luego de confeccionado el mismo y antes del INFORME FINAL DE PERTURBACIONES, deberan 
+ser comunicadas a CAMMESA mediante nota. 
+7.8. NOTAS. 
+1. La Empresa redactora del informe podra subtitular los puntos indicados. 
+2. Todos los puntos indicados deberan constar en el informe. En caso de no disponerse informacion 
+para alguno de ellos, se lo hara constar. 
+3. Este informe se enviara a CAMMESA via MEMNet a la Casilla de Correos "INFORMES DE 
+FALLAS", utilizando como base el utilitario WORD 6.0 o inferior o con extension PRN en su defecto. 
+8. ANEXO II - MODELO DE INFORME FINAL DE PERTURBACIONES 
+El INFORME FINAL de PERTURBACIONES sera un documento en el cual se tendra una explicacion clara 
+de la perturbacion, es decir, sus causas y consecuencias. Tambien debera contener las acciones tomadas o 
+a tomar en los casos en que se registren incorrectos desempenos de los sistemas de proteccion, control y 
+maniobra con el objeto de mejorar la calidad de servicio. Debera estar disponible en CAMMESA dentro de 
+los 12 dias habiles de ocurrida la perturbacion. 
+En este informe debera incluirse toda la informacion registrada entre las indicadas en el punto 4, 
+debidamente procesada para su utilizacion en el analisis y estadistica de la perturbacion. 
+Se debera realizar una descripcion pormenorizada de la perturbacion, el equipamiento afectado, cronologia 
+de eventos, causas de cada uno de los eventos, los mecanismos de normalizacion utilizados, tiempos de 
+ocurrencia de todos los eventos y estimacion de energia no suministrada. 
+Tambien el informe contendra un item relativo a las medidas correctivas implementadas o a implementar, si 
+corresponden, para evitar en el futuro situaciones semejantes. 
+Quedan comprendidos en este aspecto casos donde se requieran estudios del Sistema Electrico para 
+determinar el origen de la perturbacion y las medidas correctivas a adoptar. En algunos casos particulares 
+en que sean necesarios estudios adicionales, el INFORME sera considerado como informe final provisorio, 
+debiendo el Transportista presentar el informe final definitivo dentro de los 7 dias habiles posteriores a la 
+presentacion provisoria. 
+El INFORME FINAL DE PERTURBACION debe seguir el siguiente modelo: 
+8.1. Referencias. 
+Debe indicarse fecha (dd/mm/aa), hora(hh:mm) y titulo de la perturbacion. 
+8.2. Sintesis. 
+Es el resumen del informe en el cual se debe indicar: 
+a) Presentacion del evento. 
+b) Conclusiones 
+c) Acciones tomadas o a tomar.
+
+--- Página 9 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 11:ANALISIS DE PERTURBACIONES 
+Pag. 9 
+ 
+Version: 07-mar-2014 
+8.3. Configuracion Pre-falla. 
+Debe hacerse una descripcion de la condicion de operacion prefalla incluyendo la conformacion topologica 
+de la red y los flujos de cargas reales previa a la perturbacion, adjuntando un esquema unifilar simplificado 
+de la configuracion de la red afectada. 
+ 
+8.4. Descripcion de los sucesos en orden cronologico 
+En este punto se deben indicar, en forma detallada, todos los eventos producidos debido a la perturbacion y 
+sus consecuencias, indicando claramente las causas de cada desconexion de equipos, en orden 
+cronologico (aun cuando las diferencias de tiempos entre eventos sean del orden de milisegundos), e 
+indicando horario de ocurrencia de cada uno de ellos. Se adjunta planilla: DESCRIPCION DE EVENTOS, 
+que es complementaria a la descripcion incluida en este item. 
+Cuando la perturbacion involucre equipamientos de distintas empresas, la empresa responsable de la 
+confeccion del INFORME FINAL debera detallar en una unica cronologia, todos los eventos producidos en 
+la perturbacion. En la misma se deberan destacar los modificaciones respecto a lo informado en el punto 4 
+del PARTE DE NOVEDADES DE PERTURBACIONES 
+8.5. Configuracion Post-falla 
+Debe Incluir la conformacion topologica de la red inmediatamente posterior a la perturbacion, adjuntando un 
+esquema unifilar simplificado de la configuracion de la red afectada. 
+8.6. Maniobras realizadas para normalizar el servicio. 
+En este punto se debe indicar las principales maniobras realizadas en las redes de Alta Tension y las 
+principales en las de tensiones menores para llegar a la configuracion normal, en orden cronologico e 
+indicando horario de ocurrencia de cada una de ellas. Se deberan tambien incluir, cuando corresponda, 
+comentarios u observaciones sobre las posibles dificultades que se presentaron en la normalizacion del 
+sistema y que ocasionaron retardos en la misma, ya sea de caracter operativo, de comunicaciones o de falla 
+de algun equipamiento. Se adjunta planilla: NORMALIZACION DEL SERVICIO, que es complementaria a la 
+descripcion incluida en este item. 
+8.7. Analisis de las actuaciones de protecciones. 
+Se debe realizar un analisis de los eventos ocurridos, indicando que protecciones actuaron de acuerdo a lo 
+previsto y cuales no, consecuencias de la perturbacion en las protecciones si las hubiera, incluyendo una 
+estimacion de Energia No Suministrada a los usuarios del MEM por efecto de la mala actuacion de los 
+mismos. 
+8.8. Energia no suministrada 
+Se debera realizar una estimacion de la potencia cortada (en MW) y la energia no suministrada (en MWh) 
+por causas asociadas a la perturbacion o por las maniobras de reposicion, individualizada por Agente y por 
+Estacion Transformadora. Se adjunta planilla: CORTES PRODUCIDOS. 
+8.9. Medidas adoptadas. 
+Medidas correctivas adoptadas como consecuencia inmediata de la perturbacion. 
+8.10. Conclusiones y acciones tomadas o a tomar. 
+Se deberan indicar las conclusiones del informe, incluyendo las acciones tomadas o a tomar cuando se 
+haya detectado el incorrecto funcionamiento de equipos, de elementos de proteccion, de maniobra o 
+automatismos, para evitar su repeticion y lograr asi una mejora en la calidad de servicio. Ademas se 
+indicara todas las medidas a adoptar para obtener la informacion faltante o soluciones a los problemas de 
+comunicaciones. 
+8.11. Anexos. 
+Deberan adjuntarse al informe registros, oscilogramas y documentos de las perturbaciones.
+
+--- Página 10 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 11:ANALISIS DE PERTURBACIONES 
+Pag. 10 
+ 
+Version: 07-mar-2014 
+8.12. NOTAS. 
+1. La Empresa redactora del informe podra subtitular los puntos indicados. 
+2. Todos los puntos indicados deberan constar en el informe. En caso de no disponerse informacion 
+para alguno de ellos, se lo hara constar. 
+3. El informe debera ser remitido a CAMMESA via MEMNet (a la Casilla de Correos "INFORMES DE 
+FALLAS" o a la que CAMMESA indique en el futuro), utilizando como base el utilitario WORD 6.0 o 
+inferior o con la extension PRN en su defecto. Los anexos (oscilogramas, registros de frecuencia, 
+etc.), podran ser enviados via Fax o Correo. 
+El informe sera publicado en MEMNet, para conocimiento de todos los usuarios con las observaciones que 
+realice CAMMESA sobre el mismo en la Base de Documentos “Analisis de Perturbaciones”.
+
+--- Página 11 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 11:ANALISIS DE PERTURBACIONES 
+Pag. 11 
+ 
+Version: 07-mar-2014 
+9. ANEXO III - PLANILLAS 
+9.1. DESCRIPCION DE LOS EVENTOS 
+Falla: 
+Fecha: 
+Hora: 
+Hora 
+Equipo 
+Proteccion 
+Dispara 
+Observaciones 
+hr. 
+min. 
+seg. 
+ms. 
+Nombre 
+ID 
+Tipo 
+Senaliza
+
+--- Página 12 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 11:ANALISIS DE PERTURBACIONES 
+Pag. 12 
+ 
+Version: 07-mar-2014 
+ 
+9.2. CORTES PRODUCIDOS 
+Falla: 
+Fecha: 
+Hora: 
+ 
+Estacion 
+P cortada 
+Tiempo 
+ENS 
+Causa 
+Observaciones 
+ 
+[MW] 
+[min.] 
+[MWh] 
+(*) 
+ 
+ 
+(*) 
+Sin tension (V=0) 
+ 
+Sub. tension (v<) 
+ 
+Sub. frecuencia (f<) 
+ 
+Desconexion Automatica de Demanda (DAD)
+
+--- Página 13 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 11:ANALISIS DE PERTURBACIONES 
+Pag. 13 
+ 
+Version: 07-mar-2014 
+ 
+9.3. NORMALIZACION DEL SERVICIO 
+Falla: 
+Fecha: 
+Hora: 
+ 
+Equipo 
+Energizacion 
+Carga 
+Observaciones 
+Nombre 
+ID 
+hr. 
+min. 
+seg. 
+hr. 
+min. 
+seg.
+

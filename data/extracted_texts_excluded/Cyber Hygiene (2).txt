@@ -1,0 +1,666 @@
+=== Cyber Hygiene (2).pdf ===
+
+--- Página 1 ---
+Cyber HYGIENE
+f o r   c y b e r   s p a c e
+Do  s   
+& Don’t s
+BASIC
+
+--- Página 2 ---
+2
+Disclaimer: This document is for guidance and awareness only. The contents of this document are not to be used in any legal 
+validation in investigation, etc. The purpose is to share basic information on these matters.
+Published by:
+Indian Cyber Crime CoordinaƟon Centre (I4C)
+Cyber and InformaƟon Security (CIS) Division 
+Ministry of Home Aﬀairs
+Government of India
+North Block
+New Delhi – 110001
+IntroducƟon
+Indian Cyber Crime CoordinaƟon Centre (I4C) under Cyber & 
+InformaƟon Security (CIS) Division of the Ministry of Home 
+Aﬀairs, has prepared this manual to disseminate Cyber Hygiene 
+Best PracƟces for the beneﬁt of Industrial Bodies/General 
+Public/Government Oﬃcials. This should not be considered as 
+an exhausƟve list of precauƟons for Cyber Hygiene but baseline 
+precauƟons that are to be taken.
+Cyber space is a complex and dynamic environment of 
+interacƟons among people, soOware and services supported by 
+worldwide distribuƟon of InformaƟon and CommunicaƟons 
+Technology (ICT) devices and networks. The exponenƟal 
+increase in the number of internet users in India clubbed with 
+rapidly evolving technologies has brought in its own unique 
+challenges.
+
+--- Página 3 ---
+Contents
+1. Computer Safety Tips----------------------------------------5 
+2. Password Security Management------------------------12 
+3. General Internet Safety PrecauƟons-------------------17 
+4. Financial TransacƟons-Safe PracƟces------------------20 
+5. Social Media Plaƞorms-Safety Tips---------------------24 
+6. Mobile Phone Safety---------------------------------------27 
+7. Malware ProtecƟon----------------------------------------33 
+1.1 USB Device Security ----------------------------------10 
+8. E-mail Security PracƟces----------------------------------35 
+3
+
+--- Página 4 ---
+AdopƟon of digital technology and internet have also led to increase
+in cyber crime incidents. It can be controlled or minimized with care,
+precauƟon, awareness and with the use of appropriate tools to
+secure the informaƟon. The Ɵps and recommendaƟons provided in
+this document may help the user to keep the informaƟon/data &
+device secure.
+4
+INTRODUCTION
+InformaƟon Technology has made a signiﬁcant contribuƟon and impact
+on socio-economic scenarios. Rapid adopƟon of digital technology has led
+to employment generaƟon, ease of living, ease of doing business and
+access to informaƟon.
+
+--- Página 5 ---
+Computer safety tips
+What is computer security?
+Computer security threats
+Computer Viruses
+Phishing Mail/URL
+Botnet
+Keylogger
+Computer security is the protecƟon of computer systems and informaƟon
+from theO and unauthorized access. It is the process of prevenƟon and
+detecƟon of unauthorized use of the computer systems.
+Computer Trojans
+5
+Computer security threats are possible dangers that can
+cause impediment to the normal funcƟoning of the computer. Some of
+the common and  harmful computer threats are depicted below:-
+
+--- Página 6 ---
+ERROR 404
+RELOAD
+HOME
+Always download applicaƟons/ soOware from
+trusted sources
+ 
+ 
+Regularly update OperaƟng System, ApplicaƟons
+and AnƟ-Virus soOware of the system
+ 
+Lock the computer screen when not in use
+ 
+ 
+Computer safety
+tips
+Ensure backup of important data/ﬁles/
+documents at regular intervals
+ 
+ 
+Always keep the computer ﬁrewall “ON” 
+6
+Dos
+
+--- Página 7 ---
+Use account with limited privileges on systems
+Always insist on using genuine/ licensed
+soOware applicaƟons
+Scan all the ﬁles/contents downloaded from
+websites, e-mails or USBs
+ 
+Uninstall unnecessary programs or soOware 
+Computer safety
+tips
+7
+Dos
+
+--- Página 8 ---
+Computer safety
+tips
+Use “Task Manager” to idenƟfy any unwanted
+programs running on the computer system    
+ 
+Access to servers should be allowed via MulƟ-
+Factor AuthenƟcaƟon (MFA)    
+ 
+Set OperaƟng System update seƫngs to
+“Auto-Download” opƟon for regular updates 
+ 
+Disable Remote Desktop ConnecƟon and network
+ﬁle sharing , when not in use  
+ 
+8
+Dos
+
+--- Página 9 ---
+Don’ts
+Do not install or use pirated copies of soOware/
+applicaƟons under any circumstances. These
+may contain malware 
+Do not use guessable/weak passwords like 
+“password@123", etc.
+Do not dispose computer or hard drive without
+deleƟon and wiping of data
+Do not click on untrusted/unexpected Pop-Up
+adverƟsements/ programs
+Computer safety
+tips
+9
+
+--- Página 10 ---
+1.1 USB device Security 
+Unsecured use of USB drive can lead to data theOs, data leakages and malware
+infecƟon. USB security can be ensured with care, awareness and by using
+appropriate scanning tools to secure the informaƟon. 
+Threats
+Types of devices which support USB
+Flash Drive/ Pendrive
+Portable Hard Drive/ SSD
+Mobile Phone
+  
+USB devices are very convenient to transfer data between diﬀerent 
+computers. One can plug it into a USB port, transfer important data, remove  
+and use it appropriately as desired. However, this portability, convenience 
+and popularity also bring diﬀerent threats to the informaƟon system.
+Digital Camera
+Card Reader
+USB Keyboard/ Mouse
+  
+10
+
+--- Página 11 ---
+USB device Security
+Scan USB device with 
+AnƟvirus/
+Endpoint ProtecƟon
+before its use 
+Autorun/ Autoplay feature
+shall be disabled in all the
+computers, while
+using USB   
+11
+Dos
+
+--- Página 12 ---
+Password Security Management
+Password helps in protecƟon of informaƟon accessible via computers. 
+It allows access to informaƟon only to authorised users. Strong mulƟ
+character passwords must be enforced in all the systems.
+ 
+Cyber criminals use many methods to access accounts, including
+dicƟonary brute-force aƩack (aƩacks made to guess passwords), as well
+as comparing various word combinaƟons against a dicƟonary ﬁle.
+Cyber criminals may also use password capturing tools like “Keyloggers”
+ 
+Password attack
+on vicƟm’s computer.
+ 
+12
+
+--- Página 13 ---
+Always use diﬀerent passwords for diﬀerent
+accounts. Ensure password is strong
+ 
+Passwords must be changed at regular intervals 
+ 
+Immediately, change any password which might
+have been shared or revealed by mistake 
+ 
+Strong passwords should contain combinaƟon of
+upper case, lower case, numbers,"Special"
+characters (e.g., @#$%^&*()_+|~--=\’{}[]: ";<>/,etc.)  
+ 
+Password security
+management
+13
+Dos
+
+--- Página 14 ---
+A password 
+contain
+should not 
+Birth dates, names, ID proofs and other
+personal informaƟon such as addresses and
+phone numbers 
+ 
+Commonly used words such as names of
+family members, pets, friends, colleagues,
+movie/novel/comics characters, etc.
+ 
+ 
+The password containing less than
+thirteen characters  
+  
+Password should not be less than eight
+characters   
+The password containing less than
+thirteen characters  
+  
+Password recovery answers should not
+be guessable 
+14
+
+--- Página 15 ---
+Don’ts
+Do not use public systems to access
+banking/ sensiƟve sites 
+Do not share password, OTP
+through e-mail, chat or any other
+electronic communicaƟon 
+ 
+Do not reveal password on
+quesƟonnaires or security forms
+ 
+ 
+Password security
+management
+15
+
+--- Página 16 ---
+Don’ts
+Do not choose/ select “remember
+my password” opƟon for banking/
+sensiƟve sites
+Never write down your password
+anywhere, especially as a ‘note sƟck’
+to the computer
+ 
+Don’t use your biometrics (ﬁnger
+print, etc.) at untrusted terminals/
+places 
+ 
+Password security
+management
+16
+
+--- Página 17 ---
+General Internet safety Precautions
+InvenƟon of internet has revoluƟonized the way of communicaƟon and
+informaƟon sharing. However, unsecured usage of internet may pose risks to an
+organizaƟon. Internet security includes browser security, website security,
+network security, soOware applicaƟons, etc. Its objecƟve is to enforce
+rules and measures against aƩacks over the internet.  
+Unsafe internet pracƟces may lead to risks from phishing, online viruses,
+trojans, worms, ransomware, business email compromise, ﬁnancial loss, etc. 
+17
+
+--- Página 18 ---
+Be vigilant while
+clicking/
+downloading
+from suspicious
+links/ URLs 
+ 
+ 
+ 
+Make it a habit of
+clearing browser
+history
+aOer conﬁdenƟal 
+acƟviƟes/
+transacƟons 
+Cloud storage
+to be used with
+appropriate 
+security/ privacy
+seƫngs 
+Verify the
+AuthenƟcity and
+IdenƟty of social
+media proﬁles
+before geƫng
+involved in any
+correspondence 
+Judiciously use
+services that
+require locaƟon
+informaƟon. Also,
+avoid posƟng 
+photos with
+GPS-coordinates
+ 
+Be vigilant and
+verify the
+adverƟsements/ 
+sponsored contents
+on search results
+or websites
+General Internet safety
+Precautions
+18
+Dos
+
+--- Página 19 ---
+Do not use any public computer or Wi-Fi for
+carrying out ﬁnancial transacƟons like
+online shopping, internet banking,
+UPI transacƟon, etc. 
+Don't respond to
+email, instant
+messages (IM),
+texts, phone calls
+etc., asking you for
+your password. 
+Do not use email 
+address, phone 
+number and  
+details of payment 
+cards on untrusted 
+and unsecured 
+websites 
+ Always verify the 
+source and 
+authenƟcity of content 
+before sharing
+Do not trust and share 
+unveriﬁed content on 
+social media and 
+messaging apps.
+19
+Don’ts
+General Internet Safety precautions
+
+--- Página 20 ---
+Financial Transaction - Safe Practices
+Digital modes of payments like internet banking, UPI, cards, mobile banking
+have made day-to-day payments very convenient. Any security lag in online
+transacƟons may result in ﬁnancial loss to an individual or an organizaƟon.  
+20
+
+--- Página 21 ---
+Financial Transactions - Safe Practices
+UPI Safety
+Keep your UPI PIN safe
+and do not share with
+anyone
+UPI PIN is not
+needed while receiving
+payments
+Protect device and
+payment app with strong
+passcode
+Verify the
+name of “Payee” or QR code
+before proceeding
+with the payment
+21
+Dos
+
+--- Página 22 ---
+Card safety
+Card Number, Expiry &
+CVV number are conﬁdenƟal.
+Never share with
+anyone
+Sharing OTP may
+result in unauthorized
+debits
+Manage your card limit
+ using mobile banking
+apps for addiƟonal
+safety
+Use cards only
+aOer verifying authenƟcity
+of PoS/terminals/ATMs
+and websites
+OTP
+Financial Transactions - Safe Practices
+22
+Dos
+
+--- Página 23 ---
+Internet /
+Mobile Banking
+Use genuine/licensed
+OperaƟng System for
+internet banking
+transacƟons
+Verify Internet Banking
+URLs received in SMS/Email
+before entering your credenƟals
+Public computers and
+insecure internet
+connecƟons must be
+avoided
+Use a strong
+internet banking password
+which is diﬀerent from
+other accounts like
+e-mail, e-commerce,
+etc.
+Example-hƩps://retail.onlinesbi.com
+         hƩp://xyz.com/SBIBank
+Financial Transactions - Safe Practices
+23
+Dos
+
+--- Página 24 ---
+Social Media Platforms - safety tips
+24
+
+--- Página 25 ---
+Privacy seƫngs must be
+carefully chosen
+before sharing any
+content over
+internet
+Be vigilant before
+revealing your locaƟon
+informaƟon over
+the internet
+Friend requests
+must be accepted
+aOer veriﬁcaƟon with
+proper cauƟon
+Content posted on
+social media must be
+veriﬁed for authenƟcity
+before forwarding /
+sharing
+Social Media Platforms - safety tips
+25
+Dos
+
+--- Página 26 ---
+Do not use social
+media account without
+MulƟ-Factor
+AuthenƟcaƟon
+(MFA) 
+Never log into
+social media accounts
+from untrusted
+systems
+Don’ts
+Social Media Platforms - safety tips
+26
+
+--- Página 27 ---
+mobile phone safety
+Mobile phones are integral part of any organizaƟon. Secure usage of
+phone is essenƟal for personal and organizaƟonal data protecƟon.
+Data theO, ﬁnancial loss, unauthorized access, malware infecƟon, etc.,
+ 
+27
+may  be a result of mobile phone compromise.
+
+--- Página 28 ---
+Be cauƟous with
+public Wi-Fi
+InformaƟon shared
+over public
+network may be
+misused
+Review the default
+privacy seƫngs of
+the smartphone,
+mobile applicaƟons
+and social
+media accounts
+Personal photos
+posted on social
+media with public
+visibility may be 
+misused 
+Before
+downloading
+any App, same
+should be checked
+for its reputaƟon/
+authenƟcity
+ 
+Read vendor
+privacy policies
+and verify app
+permission
+before
+downloading
+apps 
+mobile phone safety
+28
+Dos
+
+--- Página 29 ---
+Turn oﬀ / remove
+unnecessary
+apps 
+mobile phone safety
+Prefer
+downloading
+mobile apps from
+genuine sources
+Register
+for Do Not
+Disturb (DND)
+service with
+Telecom Operators
+29
+Dos
+
+--- Página 30 ---
+Use Parental control
+mode, while handing
+over mobile phones
+to kids or minors
+Use device / SD card
+encrypƟon to
+safeguard
+conﬁdenƟal data
+mobile phone safety
+30
+Dos
+
+--- Página 31 ---
+mobile phone safety
+ Protect your
+device
+with a strong
+PIN/Password
+or Biometrics and
+enable auto lock
+seƫng in 
+mobile phone
+Always take
+back-up of data
+(contacts, personal
+photos, etc.)
+31
+Dos
+
+--- Página 32 ---
+Do not reply or
+click on link sent
+through
+SMS, e-mails
+or chat messenger
+ by strangers
+ 
+Do not store any
+classiﬁed/ sensiƟve
+data (text /video /
+photograph) in
+the device
+ 
+Do not log into
+accounts,
+especially the
+ﬁnancial
+accounts, when
+using public
+wireless networks
+Don’ts
+mobile phone safety
+32
+
+--- Página 33 ---
+Malware protection 
+How to protect against malware?
+c://
+< head >
+< end >
+x,y,z integer
+begin
+read x, y, z
+The various types of malwares are spyware, viruses, worms and trojans, 
+ransomware, Botnet, etc.
+Malware performs various tasks that include locking of important ﬁles, 
+stealing sensiƟve informaƟon from the system, gaining unauthorized 
+remote access, spy on the user acƟvity, consuming computer memory, 
+internet bandwidth, corrupƟng important ﬁles, etc.
+The Term Malware is a combinaƟon of words, ‘Malicious’ and ‘SoOware’. 
+Malware is intenƟonally developed to perform various unauthorized and 
+destrucƟve tasks on the vicƟm's system without one’s knowledge. 
+Keep all soOware up to date, including the OperaƟng System and 
+applicaƟons.
+Do not click on untrusted URL links
+Patch Management to be ensured 
+to overcome vulnerabiliƟes   
+Use anƟ-malware soluƟons
+33
+
+--- Página 34 ---
+Use Licensed Version of
+OperaƟng Systems and
+ApplicaƟon SoOware 
+ 
+Scan USBs, 
+Files on your computer
+regularly or before use.
+Disable USB devices if not
+needed 
+Keep your system and
+AnƟvirus up-to-date with
+regular patches
+Malware 
+Protection
+34
+Dos
+
+--- Página 35 ---
+E-MAIL SECURITY PRACTICES
+35
+
+--- Página 36 ---
+Don't open/reply to e-mail links
+(hyperlinks/ web-links/ URLs
+menƟoned in the body of such
+mails) giving any luring oﬀer.
+It may result in compromising 
+your personal and ﬁnancial 
+details.
+Do not access to any spam
+e-mails, unƟl the sender is
+properly veriﬁed 
+E-MAIL SECURITY PRACTICES
+36
+
+--- Página 37 ---
+NOTES
+
+--- Página 38 ---
+NOTES
+
+--- Página 40 ---
+December, 2021
+

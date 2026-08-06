@@ -1,0 +1,183 @@
+=== InstructivoSolar2.pdf ===
+
+--- Página 1 ---
+26/2/2020
+1
+Dia 1
+Radiacion y geometria solar
+SISTEMA SOL-TIERRA
+Dos caracteristicas a destacar!
+1. Declinacion del eje de la Tierra
+El eje de rotacion de la Tierra (N-S) 
+forma un angulo aproximadamente constante de 23,45°
+respecto a la normal del plano orbital.
+
+--- Página 2 ---
+26/2/2020
+2
+1. Declinacion del eje de la Tierra
+El plano ecuatorial de la Tierra 
+forma el mismo angulo de 
+23,45° con el plano orbital.
+La declinacion solar δ, se toma positiva 
+cuando la linea T-S esta al Norte del 
+plano ecuatorial, lo que corresponde al 
+invierno del HS.
+SISTEMA 
+SOL-
+TIERRA
+2. Excentricidad del sol en la orbita eliptica.
+1,07 UA
+0,983 UA
+La distancia media Tierra-Sol es igual a una Unidad Astronomica (UA) definida como
+1 UA= 149.597.870.700 m≈ 150 millones de km.
+1 UA
+1 UA
+SISTEMA 
+SOL-
+TIERRA
+1. La declinacion del eje de la tierra + 2. Excentricidad del sol en la orbita eliptica
+
+--- Página 3 ---
+26/2/2020
+3
+Distribucion mundial del recurso Solar 
+irradiancia global plano horizontal
+1. La declinacion del eje de la tierra + 2. Excentricidad del sol en la orbita eliptica
+Cero
+Max.
+Pele. total Arg.≈ 40 GW
+Pele. FV Ale. ≈ 43 GW
+¿De donde y como vienen los rayos solares?
+¿De donde
+y como
+vienen los 
+rayos 
+solares?
+Invierno
+Otono o
+Primavera
+Verano
+Norte geografico/magnetico
+
+--- Página 4 ---
+26/2/2020
+4
+Norte geografico/magnetico
+Norte geografico/magnetico
+RADIACION
+La potencia incidente por unidad de superficie en W/m2 se conoce como 
+irradiancia solar. 
+La energia por unidad de superficie que incide en determinado periodo de 
+tiempo (10 minutos, una hora, un dia) se conoce como irradiacion solar y se 
+expresa en J/m2, MJ/m2, kWh/d.m2
+Conceptos claves
+
+--- Página 5 ---
+26/2/2020
+5
+Tipos de radiacion
+DIRECTA: incide “sin sufrir” desvios en la linea S-T.
+DIFUSA: incide desde todas direcciones luego de ser dispersada.
+Tipos de radiacion
+Tipica de dias nublados
+Radiacion DIRECTA
+Radiacion DIFUSA
+200 W/m2
+1.000 W/m2
+Tipos de radiacion
+Tipos de radiacion
+Donde: Gbhy Gdhson irradiancia directa y difusa en plano horizontal y Gbnes irradiancia 
+directa en incidencia normal. Ghes irradiancia global plano horizontal.
+Difusa
+Global
+Gbh + Gdh= Gh
+(directa + difusa= global)
+Gbn cos(θz) + Gdh= Gh
+
+--- Página 6 ---
+26/2/2020
+6
+Instalacion optima de 
+un plano de captacion
+α
+Utilizacion
+Angulo de inclinacion
+Anual
+Proximo latitud del lugar
+Invierno
+Latitud del lugar + 10°
+Verano
+Latitud del lugar - 10°
+β= Latitud
+β= Latitud +10º
+β= Latitud ‐10º
+Respecto a la inclinacion 
+Maximo Anual
+Invierno
+Verano
+Norte (geografico)
+Respecto a la orientacion
+α
+α = acimut del receptor
+Respecto a la orientacion 
+Nomenclatura
++
+‐
+α= 0º
+α= 180º
+α= ‐90º
+α= +90º
+
+--- Página 7 ---
+26/2/2020
+7
+Variacion de la radiacion 
+a lo largo del ano
+0
+5
+10
+15
+20
+25
+30
+Enero
+Febrero
+Marzo
+Abril
+Mayo
+Junio
+Julio
+Agosto
+Septiembre
+Octubre
+Noviembre
+Diciembre
+Radiacion Sup- Inclinada
+Radiacion Horizontal
+β= 0º
+Variacion de la radiacion 
+a lo largo del ano
+0
+5
+10
+15
+20
+25
+30
+Enero
+Febrero
+Marzo
+Abril
+Mayo
+Junio
+Julio
+Agosto
+Septiembre
+Octubre
+Noviembre
+Diciembre
+Radiacion Sup- Inclinada
+Radiacion Horizontal
+β= 30º
+

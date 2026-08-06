@@ -1,0 +1,309 @@
+=== Information Security Incident Example Policy.pdf ===
+
+--- Página 1 ---
+Copyright © 2017 Health and Social Care Information Centre. 
+The Health and Social Care Information Centre is a non-departmental body created by statute, also known as NHS Digital. 
+ 
+ 
+ 
+ 
+ 
+ Information Security Incident 
+Example Policy 
+Author: A Heathcote 
+Date: 24/05/2017 
+Version: 1.0
+
+--- Página 2 ---
+Information Security Incident 
+ 
+ 
+ 
+Copyright © 2017 Health and Social Care Information Centre 
+2 
+Contents 
+1 Purpose 
+3 
+2 Scope 
+3 
+3 Applicability 
+3 
+4 Guidance 
+3 
+Terminology 
+3 
+Policy 
+3 
+Information Security Incidents 
+4 
+Information/Data Breach 
+4 
+Information Security Incident Management 
+4 
+Information Security Incident Reporting 
+5 
+Information Security Incident Analysis and Response 
+5 
+Collection of Evidence 
+6 
+Learning from Incidents 
+6 
+Follow on Actions 
+6 
+Specific Reporting Requirements 
+7 
+5 Key Words 
+7
+
+--- Página 3 ---
+Information Security Incident 
+ 
+ 
+ 
+Copyright © 2017 Health and Social Care Information Centre 
+3 
+1 Purpose 
+The purpose of this Information Security Incident Example Policy is to provide 
+exemplar guidance in line with HMG and private sector best practice for the 
+production of an Information Security Incident Policy.  This is in order to allow the 
+reader to produce the necessary policy and guidance for their business area and to 
+ensure that the applicable and relevant security controls are set in place in line with 
+the Department for Health, the wider NHS, health and social care and HMG 
+requirements. 
+2 Scope 
+The drafting of any policy governing the policy on information security incidents for 
+NHS systems, devices or applications and information deployed in support of NHS or 
+health and social care business functions. 
+3 Applicability 
+This Example Policy is applicable to and designed for use by any NHS, health and 
+social care or associated organisations that use or have access to NHS systems 
+and/or information at any level.  
+4 Guidance 
+This Example Policy provides guidance on the production of an Information Security 
+Incident Policy.  The Example Policy is in italics with areas for insertion shown as <> 
+and the rationale for each paragraph or section, where required, in [….]. This Example 
+Policy is supported by a more detailed Good Practice Guide on Information Security 
+Incidents, which can be used to assist in determining what is and what is not required 
+in the exemplar policy shown here. 
+ 
+Terminology 
+Term 
+Definition 
+SHALL 
+This term is used to state a Mandatory requirement of this policy 
+SHOULD 
+This term is used to state a Recommended requirement of this 
+policy 
+MAY 
+This term is used to state an Optional requirement 
+ 
+Policy  
+The Information Security Incident Policy shall be used to produce, implement, test 
+and manage the information security incident procedure for <insert name of 
+organization> incidents (including IT incidents and suspected data loss/breaches 
+(electronic and physical).
+
+--- Página 4 ---
+Information Security Incident 
+ 
+ 
+ 
+Copyright © 2017 Health and Social Care Information Centre 
+4 
+[The aim of the policy statement is to capture what the information security incident policy 
+will cover.]    
+Information Security Incidents 
+• An Information Security Incident is an event, or chain of events, that could 
+compromise the confidentiality, integrity or availability of information. Examples of 
+information security incidents can include but are not limited to: 
+• 
+Potential and suspected disclosure of NHS or other UK Government information to 
+unauthorised individuals. 
+• 
+Loss or theft (attempted or actual) of paper records, data or IT equipment on which 
+data is stored. 
+• 
+Disruption to systems and business processes. 
+• 
+Inappropriate access controls allowing unauthorised use of information. 
+• 
+Attempts to gain unauthorised access to computer systems, e.g. hacking. 
+• 
+Records altered or deleted without authorisation by the data ‘owner’. 
+• 
+Virus or other malicious (suspected or actual) security attack on IT equipment 
+systems or networks. 
+• 
+‘Blagging’ offence where information is obtained by deception. 
+• 
+Breaches of physical security e.g. forcing of doors or windows into secure room or 
+filing cabinet containing NHS sensitive or other UK Government information left 
+unlocked in accessible area. 
+• 
+Leaving IT equipment unattended when logged-in to a user account without 
+locking the screen to stop others accessing information. 
+• 
+Human error such as emailing data by mistake. 
+• 
+Covert or unauthorised recording of meetings and presentations. 
+• 
+Damage or loss of information and information processing equipment due to theft, 
+fires, floods, failure of equipment or power surges. 
+• 
+Deliberate leaking of information. 
+• 
+Insider fraud. 
+[The above list should reflect what is believed to be appropriate and relevant to the 
+organisation.] 
+Information/Data Breach  
+• An information/data breach is a security incident where sensitive, protected or 
+confidential data has intentionally or unintentionally been released or obtained by 
+persons who are not authorised to view or access it. 
+Information Security Incident Management 
+• <Insert name of organisation> shall be able to manage incidents affecting NHS or 
+other UK Government information assets from identification and analysis, through to 
+response, resolution and recovery.
+
+--- Página 5 ---
+Information Security Incident 
+ 
+ 
+ 
+Copyright © 2017 Health and Social Care Information Centre 
+5 
+• The <insert name of organisation> information security incident management process 
+shall be fully documented to be able to handle different types of information security 
+incident. 
+[Larger organisations will possibly have dedicated incident response staff or that function 
+may be provided via the IT services team.  For smaller organisations it may be that the 
+policy statement is the requirement for this ability to be included in contracts with 
+outsourced/third party IT providers.]   
+Information Security Incident Reporting 
+• <Insert name of organization> shall ensure that any incident that could potentially 
+affect the security of information is identified and managed appropriately.   
+• The incident shall be reported to the National Service Desk via telephone  
+• The process shall be simple, clear and easy to follow.  It should follow the below 
+guidelines: 
+• 
+Use a single point of contact for telephone reporting of incidents with internal and 
+external telephone number (National Service Desk) 
+• 
+Use a simple reporting form for incident reporting.  The reporting form should be 
+easily available via the <insert name of organisation> intranet/IT system and 
+capture the required information, which is suggested to be no more than: 
+• Date 
+• Location 
+• Short summary of what occurred 
+• Type of incident – e.g. e-mail, lost USB device or paper 
+• Contact details for obtaining further information 
+• 
+Everyone within <insert name of organisation> is responsible for reporting security 
+incidents. All personnel shall be made aware of what constitutes an incident and 
+how to report them via the Education and Awareness process.  
+• 
+Information security incident management shall be incorporated into all third party 
+and outsourced contracts. 
+[For smaller organisations the above process of reporting can be a very simple one page 
+form; the main requirement is to have a reporting point (potentially the National Service 
+Desk) or, if the IT is outsourced have the requirement for reporting contractually in place, 
+including the requirement to ‘back-brief’ the organisation’s information governance lead on 
+the incident and its management through to closure.] 
+Information Security Incident Analysis and Response 
+• <Insert name of organisation> shall ensure that all incidents are assessed as soon as 
+possible, so that the most appropriate course of action and a priority can be given for 
+their resolution. The response to an incident is likely to require the skill and expertise 
+of various groups within <insert name of organization> (IT, operations, legal and 
+human resources) as well as external agencies (police authority, forensic specialists). 
+• The analysis, by the specialists handling the incident, shall include the following 
+processes:
+
+--- Página 6 ---
+Information Security Incident 
+ 
+ 
+ 
+Copyright © 2017 Health and Social Care Information Centre 
+6 
+• 
+Assessment of the severity of the incident against <insert name of organisation> : 
+severity scaling. 
+• 
+Identification of type of incident – paper loss, e-mail, portable IT media. 
+• 
+Assessment of scale of incident in terms of data size – e.g. Gb of data or number 
+of pages lost or distribution list. 
+• 
+Identification of classification or type of data – e.g. OFFICIAL, OFFICIAL-
+SENSITIVE, NHS Confidential or NHS Protect. 
+• All actions and decisions made during the response to incidents shall be recorded. 
+[For smaller organisations the above is unlikely to be in-house; therefore the policy 
+statements should reflect the requirement for these elements to be included in the 
+contract with the outsourced/third party IT provider.] 
+Collection of Evidence 
+• <Insert name of organisation> shall ensure that if an incident is suspected to be 
+caused as a result of a criminal or if legal action is anticipated, then further advice 
+must be obtained from the National Service Desk and steps taken to ensure that any 
+evidence necessary for a successful prosecution is not intentionally or accidentally 
+destroyed in accordance. 
+[For smaller organisations this statement will need to reflect the requirement for the 
+outsourced/third party IT provider to have mechanisms in place for collection of evidence 
+with either the local police authority or the NHS forensic computing team (currently part of 
+NHS Protect NHS Business Services Authority).] 
+Learning from Incidents 
+• <Insert name of organisation> shall ensure that all incidents are monitored to 
+establish whether there are any trends that could be addressed.  For all major 
+incidents, a post incident investigation of the information security incident and the 
+actions taken to resolve the incident shall be conducted to: 
+• 
+Determine the root cause of the incident. 
+• 
+Quantify its impact on <insert name of organisation>. 
+• 
+Minimise the possibility of recurrence. 
+• 
+Improve future responses. 
+[For smaller organisations this function may be achieved through the awareness bulletins 
+issued by NHS Digital and CareCERT; if this is the case this section should be altered 
+accordingly.  Larger organisations may be in a position to undertake their own analysis.] 
+Follow on Actions 
+• <Insert name of organisation> shall ensure that the necessary remedial action is 
+taken to ensure that information security incidents do not recur. This shall involve the 
+review of existing security controls, IT training and awareness, contractual and service 
+level agreements. 
+[For smaller organisations this policy requirement may need to be reflected as to be in 
+place contractually with the outsourced/third party IT provider.]
+
+--- Página 7 ---
+Information Security Incident 
+ 
+ 
+ 
+Copyright © 2017 Health and Social Care Information Centre 
+7 
+Specific Reporting Requirements 
+• The following information security incidents shall be assessed and where appropriate 
+reported as follows: 
+ 
+Incident Type 
+Reported To 
+Technical events (hacking, Denial of 
+Service, malware, hardware or software 
+vulnerabilities 
+GovCertUK for information sharing 
+purposes or national security investigation 
+Criminal event 
+Police authority 
+Loss of personal data 
+Information Commissioner’s Office, Dept 
+of Health and respective Caldicott 
+Guardian 
+Compromise of CESG/NCSC (National 
+Cyber Security Scheme) approved Crypto 
+products or Keymat 
+CINRAS (Comsec Incident Notification 
+Reporting and Alerting Scheme) 
+ 
+ 
+5 Key Words 
+Analysis, Data Breach, Information Security Incident, Reporting
+

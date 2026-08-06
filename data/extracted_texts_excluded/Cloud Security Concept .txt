@@ -1,0 +1,14 @@
+=== Cloud Security Concept .pdf ===
+
+--- Página 1 ---
+1-Concept of IaaS/CaaS/PaaS/FaaS/SaaS/XaaS
+Cloud Share Service Model.
+
+2-Cloud security tools
+(CASB,CSPM,CWPP,CIEM,CNAP) &Their
+utilization in cloud Service Model.     
+
+3-Responsibilities of customers & cloud
+service providers in Cloud service Model in
+ascending order.
+

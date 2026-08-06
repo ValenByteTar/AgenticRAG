@@ -42,8 +42,8 @@ data/ingest_registry.json
 data/doc_roles.json
 
 # Documentacion y conocimiento (no se versiona)
-knowledge/
-docs/
+#knowledge/
+#docs/
 *.pdf
 *.PDF
 

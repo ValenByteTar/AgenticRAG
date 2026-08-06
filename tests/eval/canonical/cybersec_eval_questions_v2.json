@@ -1,0 +1,4156 @@
+{
+  "benchmark_id": "cybersec",
+  "version": "2.0",
+  "status": "migration-in-progress",
+  "description": "Canonical evidence benchmark scaffold migrated from legacy-v1. Claims and corpus equivalences require independent human review.",
+  "evaluation_contract": "canonical-evidence-v1",
+  "ground_truth_source": "human_reviewed",
+  "review_status": "pending",
+  "builder_independence": true,
+  "question_count": 75,
+  "legacy_source": "../cybersec_eval_questions.json",
+  "questions": [
+    {
+      "id": "q-001",
+      "legacy_id": 1,
+      "category": "simple",
+      "difficulty": "low",
+      "query": {
+        "raw": "Que es el NIST Cybersecurity Framework?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "nist",
+          "framework",
+          "cybersecurity"
+        ],
+        "must_not_contain": [
+          "lo siento",
+          "no hay informacion",
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Blue Team Cheat Sheet.pdf",
+          "NIST Cybersecurity Framework 2.0. Implementation Guide.pdf",
+          "Cybersecurity Terms Summary 2023.pdf"
+        ],
+        "expected_pages": [
+          20,
+          5,
+          65
+        ],
+        "notes": "FASE C.0: GT original solo aceptaba Blue Team Cheat Sheet. El sistema devuelve NIST CSF 2.0 Implementation Guide en rank 1 (score 1.818, kw_score 1.0) que es la fuente primaria oficial. Se agrega como valida."
+      }
+    },
+    {
+      "id": "q-002",
+      "legacy_id": 2,
+      "category": "simple",
+      "difficulty": "low",
+      "query": {
+        "raw": "Cuales son los dominios del CISSP?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "cissp",
+          "domain"
+        ],
+        "must_not_contain": [
+          "lo siento",
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "CISSP All-in-One Exam Guide, Ninth Edition.pdf"
+        ],
+        "expected_pages": [
+          [
+            30,
+            36
+          ]
+        ],
+        "notes": "CISSP eight domains en p.30 del All-in-One Guide."
+      }
+    },
+    {
+      "id": "q-003",
+      "legacy_id": 3,
+      "category": "simple",
+      "difficulty": "low",
+      "query": {
+        "raw": "Que significa CIA en ciberseguridad?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "must_not_contain": [
+          "agencia",
+          "central intelligence"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "02 ISOIEC 27001 Implementation Guide.pdf",
+          "Hack The Cybersecurity Interview .pdf",
+          "Introduction To Cybersecurity.pdf",
+          "ISO 27001 Introduction.pdf"
+        ],
+        "expected_pages": [
+          1,
+          43,
+          11,
+          5
+        ],
+        "notes": "FASE C.0: GT original solo ISO 27001 Guide. Sistema devuelve Hack The Cybersecurity Interview e Introduction To Cybersecurity que contienen la triada CIA. Se agregan como validas."
+      }
+    },
+    {
+      "id": "q-004",
+      "legacy_id": 4,
+      "category": "simple",
+      "difficulty": "low",
+      "query": {
+        "raw": "Que es el Annex A de ISO 27001?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "annex",
+          "controls",
+          "iso 27001"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "02 ISOIEC 27001 Implementation Guide.pdf",
+          "BSI 200-1 (2).pdf",
+          "ISO_27001_controls_ö_A_guide_to_implementing_and_auditing_Bridget.pdf",
+          "ISO 27001 Webinar Slides.pdf"
+        ],
+        "expected_pages": [
+          3,
+          12,
+          17,
+          11
+        ],
+        "notes": "FASE C.0: GT original solo ISO 27001 Guide. Sistema devuelve BSI 200-1 e ISO 27001 controls guide que contienen Annex A. Se agregan."
+      }
+    },
+    {
+      "id": "q-005",
+      "legacy_id": 5,
+      "category": "simple",
+      "difficulty": "low",
+      "query": {
+        "raw": "Que es un SIEM y para que se usa?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "siem",
+          "security",
+          "event",
+          "log"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "100 SOC Tools .pdf",
+          "Conceptual Guide to Enterprise Cyber Security 2023 (2).pdf",
+          "CISM Certified Information Security Manager.pdf",
+          "CCSP Official Study Guide.pdf"
+        ],
+        "expected_pages": [
+          41,
+          138,
+          321,
+          122
+        ],
+        "notes": "FASE C.0: GT original solo 100 SOC Tools. Sistema devuelve Conceptual Guide y CISM que definen SIEM correctamente. Se agregan."
+      }
+    },
+    {
+      "id": "q-006",
+      "legacy_id": 6,
+      "category": "simple",
+      "difficulty": "low",
+      "query": {
+        "raw": "Que hace el comando chmod en Linux?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "chmod",
+          "permission",
+          "file"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "100 Essential Linux Commands.pdf",
+          "101 Linux commands .pdf",
+          "Linux Notes for Professionals.pdf"
+        ],
+        "expected_pages": [
+          [
+            2
+          ],
+          [
+            2
+          ],
+          [
+            1,
+            9
+          ]
+        ],
+        "notes": "CORREGIDO v4.1: se agregaron fuentes alternativas validas (101 Linux commands, Linux Notes for Professionals). El doc original SI esta en corpus (confirmado FASE 0.1) pero rank=34 pre-reranking, fuera del candidate_pool=20."
+      }
+    },
+    {
+      "id": "q-007",
+      "legacy_id": 7,
+      "category": "simple",
+      "difficulty": "low",
+      "query": {
+        "raw": "Que es un SYN scan en Nmap?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "syn",
+          "scan",
+          "nmap",
+          "port"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Blue Team Cheat Sheet.pdf",
+          "Nmap_Network_Exploration_and_Security_Auditing_Cookbook_Third_Edition.pdf"
+        ],
+        "expected_pages": [
+          34,
+          80
+        ],
+        "notes": "FASE C.0: GT original solo Blue Team Cheat Sheet. Sistema devuelve Nmap Cookbook (rank 1, score 0.914) que es fuente primaria sobre SYN scan. Se agrega."
+      }
+    },
+    {
+      "id": "q-008",
+      "legacy_id": 8,
+      "category": "simple",
+      "difficulty": "low",
+      "query": {
+        "raw": "Que es phishing?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "phishing",
+          "email",
+          "attack"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "CompTIA Security+ Exam Study Guide (2).pdf",
+          "Phishin, Smishing and Vishing.pdf",
+          "ALL ABOUT PHISHING.pdf",
+          "Learn the many forms of Phishing - Ministry of Security.pdf"
+        ],
+        "expected_pages": [
+          145,
+          9,
+          4,
+          2,
+          2
+        ],
+        "notes": "FASE C.0: GT original solo 11 Strategies. Sistema devuelve CompTIA Security+ y docs de phishing que contienen definicion directa. Se agregan."
+      }
+    },
+    {
+      "id": "q-009",
+      "legacy_id": 9,
+      "category": "simple",
+      "difficulty": "low",
+      "query": {
+        "raw": "Que es SQL injection?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "sql",
+          "injection",
+          "database",
+          "query"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "100 web vulnerabilities categorized into various types.pdf",
+          "Top 50 Security Threats.pdf",
+          "SQL_Injection_Prevention_Cheat_Sheet.pdf.pdf",
+          "Awesome Bug Bounty Tools.pdf"
+        ],
+        "expected_pages": [
+          1,
+          86,
+          13,
+          10
+        ],
+        "notes": "FASE C.0: GT original solo 100 web vulnerabilities. Sistema devuelve Top 50 Security Threats (rank 1, score 1.349) y SQL Injection Prevention Cheat Sheet. Se agregan."
+      }
+    },
+    {
+      "id": "q-010",
+      "legacy_id": 10,
+      "category": "simple",
+      "difficulty": "low",
+      "query": {
+        "raw": "Que es cross-site scripting (XSS)?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "xss",
+          "script",
+          "browser",
+          "injection"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "100 web vulnerabilities categorized into various types.pdf",
+          "WEB SECURITY TESTING GUIDE.pdf",
+          "Awesome Bug Bounty Tools.pdf",
+          "SOC ANALYST INTERVIEW QUESTIONS & ANSWER.pdf"
+        ],
+        "expected_pages": [
+          1,
+          214,
+          10,
+          25
+        ],
+        "notes": "FASE C.0: GT original solo 100 web vulnerabilities. Sistema devuelve WEB SECURITY TESTING GUIDE (rank 1, score 1.220) que cubre XSS en detalle. Se agrega."
+      }
+    },
+    {
+      "id": "q-011",
+      "legacy_id": 11,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que es el Risk Management Framework del NIST?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "risk",
+          "management",
+          "framework",
+          "nist"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "NIST RISK MANAGEMENT FRAMEWORK.pdf",
+          "Risk_Management_Framework_for_Information_Systems_and_Organizations.pdf"
+        ],
+        "expected_pages": [
+          1,
+          1
+        ],
+        "notes": "CORREGIDO v4.1: ground truth original (ISO 42001) era un error factual -- ISO 42001 es el estandar de gestion de IA, no un documento NIST de RMF. Verificado contra ChromaDB: NIST RISK MANAGEMENT FRAMEWORK.pdf p.1 contiene el ciclo RMF completo (PREPARE/CATEGORIZE/SELECT/IMPLEMENT/ASSESS/AUTHORIZE/MONITOR)."
+      }
+    },
+    {
+      "id": "q-012",
+      "legacy_id": 12,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que es information security governance segun CISM?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "governance",
+          "information security"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "200 IT Security Job Interview Questions  (2).pdf",
+          "300 interview questions for cyber security roles.pdf",
+          "CISM Certified Information Security Manager.pdf"
+        ],
+        "expected_pages": [
+          [
+            2
+          ],
+          [
+            1
+          ],
+          [
+            1,
+            47
+          ]
+        ],
+        "notes": "CISM governance anclado en 200 IT Security Interview Questions p.2."
+      }
+    },
+    {
+      "id": "q-013",
+      "legacy_id": 13,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que es SOAR en el contexto de un SOC?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "soar",
+          "automation",
+          "orchestration",
+          "response"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+          "The Six Pillars of DevSecOps Pragmatic Implementation.pdf",
+          "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf"
+        ],
+        "expected_pages": [
+          15,
+          104,
+          444
+        ],
+        "notes": "FASE C.0: GT original solo 11 Strategies HIGHLIGHTS. Sistema devuelve DevSecOps guide y 11_Strategies_full que definen SOAR. Se agregan. kw_score=1.0 confirma respuesta correcta."
+      }
+    },
+    {
+      "id": "q-014",
+      "legacy_id": 14,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que son los modelos de despliegue de la nube segun NIST?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "public",
+          "private",
+          "hybrid",
+          "community",
+          "cloud"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Access Control Guidance for Cloud Systems.pdf"
+        ],
+        "expected_pages": [
+          6
+        ],
+        "notes": "Cloud deployment models anclado en Access Control Cloud Systems p.6."
+      }
+    },
+    {
+      "id": "q-015",
+      "legacy_id": 15,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que es pretexting como tecnica de ingenieria social?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "pretexting",
+          "social engineering",
+          "identity"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "2022 Data Breach Investigations Report.pdf",
+          "Social Engineering.pdf"
+        ],
+        "expected_pages": [
+          19,
+          104
+        ],
+        "notes": "FASE C.0: GT original solo 2022 DBIR. Sistema devuelve Social Engineering.pdf (rank 1, score 1.469) que contiene definicion directa de pretexting. Se agrega."
+      }
+    },
+    {
+      "id": "q-016",
+      "legacy_id": 16,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que son los playbooks en un SOC?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "playbook",
+          "soc",
+          "incident",
+          "response"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf"
+        ],
+        "expected_pages": [
+          12
+        ],
+        "notes": "Playbook anclado en 11 Strategies HIGHLIGHTS p.12."
+      }
+    },
+    {
+      "id": "q-017",
+      "legacy_id": 17,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que es el modelo de responsabilidad compartida en la nube?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "shared",
+          "compartida",
+          "responsibility",
+          "responsabilidad",
+          "cloud",
+          "nube",
+          "provider",
+          "proveedor"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "Cloud Security Handbook.pdf",
+          "AWS Security  (2).pdf",
+          "Cloud Security Governance And Assurance.pdf"
+        ],
+        "expected_pages": [
+          72,
+          30,
+          2,
+          27
+        ],
+        "notes": "FASE C.B: GT original solo aceptaba 11 Strategies p.72. Cloud Security Handbook (p.30-32), AWS Security (p.2-4) y Cloud Security Governance (p.27) cubren shared responsibility model de forma directa y mas especifica."
+      }
+    },
+    {
+      "id": "q-018",
+      "legacy_id": 18,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que es la Zero Trust Architecture segun NIST?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "zero trust",
+          "architecture",
+          "nist",
+          "verify"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "NIST Zero Trust Architecture.pdf",
+          "Implementing a Zero Trust Architecture.pdf",
+          "API Security Best Practices.pdf",
+          "Planning for a Zero Trust Architecture.pdf",
+          "Zero Trust Maturity Model.pdf",
+          "Playbook for Implementing Zero Trust Security.pdf"
+        ],
+        "expected_pages": [
+          1,
+          1,
+          18,
+          4,
+          1,
+          1
+        ],
+        "notes": "FASE C.0: Se agregan Planning for a Zero Trust Architecture.pdf (rank 1, score 1.575) y Zero Trust Maturity Model.pdf confirmados en corpus como fuentes validas para ZTA segun NIST."
+      }
+    },
+    {
+      "id": "q-019",
+      "legacy_id": 19,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que son los objetivos de gobernanza en COBIT?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "cobit",
+          "governance",
+          "objectives"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+          "COBIT 2019 Governance and Management Objectives .pdf"
+        ],
+        "expected_pages": [
+          [
+            230
+          ],
+          [
+            60,
+            261
+          ]
+        ],
+        "notes": "FASE C.0: GT original solo CISSP All-in-One. Sistema devuelve COBIT 2019 Governance (rank 1, score 1.458) que es la fuente primaria de COBIT. Se agrega."
+      }
+    },
+    {
+      "id": "q-020",
+      "legacy_id": 20,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Como se configura iptables en Linux?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "iptables",
+          "regla",
+          "reglas",
+          "rule",
+          "rules",
+          "cadena",
+          "chain",
+          "filtro",
+          "filter",
+          "configurar"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "101 Linux commands .pdf"
+        ],
+        "expected_pages": [
+          [
+            8,
+            221
+          ]
+        ],
+        "notes": "iptables anclado en 101 Linux commands p.8."
+      }
+    },
+    {
+      "id": "q-021",
+      "legacy_id": 21,
+      "category": "multi_document",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Compara los controles de acceso definidos por ISO 27001 y los requisitos de autenticacion de PCI DSS.",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "access control",
+          "authentication",
+          "iso 27001",
+          "pci"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "02 ISOIEC 27001 Implementation Guide.pdf",
+          "PCI DSS Requirements and Testing Procedures Version 4.0.pdf"
+        ],
+        "expected_pages": [
+          1,
+          308
+        ],
+        "notes": "Requiere combinar ISO 27001 y PCI DSS. Test de multi-documento."
+      }
+    },
+    {
+      "id": "q-022",
+      "legacy_id": 22,
+      "category": "multi_document",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que herramientas SIEM y SOAR se mencionan en los documentos disponibles?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "siem",
+          "soar",
+          "tool"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "100 SOC Tools .pdf",
+          "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf",
+          "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "DevSecOps Fundamentals Guidebook (2).pdf"
+        ],
+        "expected_pages": [
+          41,
+          15,
+          290,
+          36
+        ],
+        "notes": "FASE C.0: Se agrega 11_Strategies_full (rank 1, score 1.17) y DevSecOps Fundamentals que mencionan SIEM/SOAR. kw_score=0.667 confirma respuesta relevante."
+      }
+    },
+    {
+      "id": "q-023",
+      "legacy_id": 23,
+      "category": "multi_document",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Cuales son las principales vulnerabilidades web segun OWASP y como se mencionan en las guias de pentest disponibles?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "sql injection",
+          "xss",
+          "owasp",
+          "vulnerability"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "100 web vulnerabilities categorized into various types.pdf",
+          "2023 Pen Testing Report.pdf",
+          "Awesome Penetration Testing Documentation.pdf",
+          "OWASP Web Application Penetration Checklist.pdf",
+          "WEB SECURITY TESTING GUIDE.pdf"
+        ],
+        "expected_pages": [
+          1,
+          1,
+          19,
+          3,
+          42
+        ],
+        "notes": "FASE C.0: Se agregan Awesome Pen Testing Docs (rank 1, score 1.288), OWASP Checklist y WEB SECURITY TESTING GUIDE que cubren vulnerabilidades OWASP. kw_score=0.75."
+      }
+    },
+    {
+      "id": "q-024",
+      "legacy_id": 24,
+      "category": "multi_document",
+      "difficulty": "high",
+      "query": {
+        "raw": "Explica como el NIST RMF se relaciona con los controles de ISO 27001 y el gobierno de TI en COBIT.",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "nist",
+          "iso 27001",
+          "cobit",
+          "risk management",
+          "gestion de riesgos",
+          "governance",
+          "gobernanza"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "ISO 42001 2023 A Guide to Implementation.pdf",
+          "02 ISOIEC 27001 Implementation Guide.pdf",
+          "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+          "ISO 27001 Initial Assessment Report.pdf"
+        ],
+        "expected_pages": [
+          19,
+          3,
+          230,
+          5
+        ],
+        "notes": "FASE C.0: Se agrega ISO 27001 Initial Assessment Report (rank 1, score 1.264) que cubre integracion de controles ISO 27001. kw_score=0.8."
+      }
+    },
+    {
+      "id": "q-025",
+      "legacy_id": 25,
+      "category": "multi_document",
+      "difficulty": "high",
+      "query": {
+        "raw": "Que tecnicas de persistencia y movimiento lateral describe el informe de Mandiant 2022 y como se relacionan con los artefactos de Windows?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "persistence",
+          "persistencia",
+          "lateral movement",
+          "movimiento lateral",
+          "windows",
+          "mandiant"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "2022 MANDIANT SPECIAL REPORT.pdf",
+          "100 SOC Tools .pdf"
+        ],
+        "expected_pages": [
+          [
+            88,
+            93,
+            98
+          ],
+          [
+            88,
+            93,
+            98
+          ]
+        ],
+        "notes": "Combina Mandiant 2022 (tecnicas) y SOC Tools (artefactos Windows)."
+      }
+    },
+    {
+      "id": "q-026",
+      "legacy_id": 26,
+      "category": "multi_document",
+      "difficulty": "high",
+      "query": {
+        "raw": "Compara las estrategias de un SOC de clase mundial con las recomendaciones de Zero Trust para la microsegmentacion.",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "soc",
+          "zero trust",
+          "microsegmentation",
+          "strategy"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "API Security Best Practices.pdf",
+          "Zero Trust Architecture in brief.pdf",
+          "NIST Zero Trust Architecture.pdf"
+        ],
+        "expected_pages": [
+          72,
+          8,
+          8,
+          7
+        ],
+        "notes": "FASE C.0: Se agregan Zero Trust Architecture in brief (rank 1, score 1.470) y NIST ZTA que cubren microsegmentacion. kw_score=0.5."
+      }
+    },
+    {
+      "id": "q-027",
+      "legacy_id": 27,
+      "category": "multi_document",
+      "difficulty": "high",
+      "query": {
+        "raw": "Que dice el reporte de brechas de datos 2022 sobre ingenieria social y como se relaciona con las preguntas de entrevista de seguridad disponibles?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "social engineering",
+          "ingenieria social",
+          "phishing",
+          "breach",
+          "brecha",
+          "data",
+          "datos"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "2022 Data Breach Investigations Report.pdf",
+          "200 IT Security Job Interview Questions  (2).pdf"
+        ],
+        "expected_pages": [
+          [
+            19,
+            69
+          ],
+          [
+            2
+          ]
+        ],
+        "notes": "DBIR 2022 + Interview Questions."
+      }
+    },
+    {
+      "id": "q-028",
+      "legacy_id": 28,
+      "category": "multi_document",
+      "difficulty": "high",
+      "query": {
+        "raw": "Como afecta la Conditional Access de Microsoft 365 al modelo de Zero Trust segun los documentos del corpus?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "conditional access",
+          "acceso condicional",
+          "microsoft",
+          "zero trust",
+          "confianza cero"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "2022 MANDIANT SPECIAL REPORT.pdf",
+          "API Security Best Practices.pdf"
+        ],
+        "expected_pages": [
+          88,
+          18
+        ],
+        "notes": "MS365 Conditional Access + Zero Trust NIST."
+      }
+    },
+    {
+      "id": "q-029",
+      "legacy_id": 29,
+      "category": "multi_document",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que comandos Linux son utiles para un analista de seguridad segun los recursos disponibles?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "linux",
+          "command",
+          "comando",
+          "security",
+          "seguridad"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "100 Essential Linux Commands.pdf",
+          "101 Linux commands .pdf",
+          "Linux Notes for Professionals.pdf",
+          "Linux Networking.pdf"
+        ],
+        "expected_pages": [
+          2,
+          8,
+          1,
+          22
+        ],
+        "notes": "FASE C.0: Se agregan Linux Notes for Professionals (rank 1, score 1.575) y Linux Networking que cubren comandos Linux para seguridad."
+      }
+    },
+    {
+      "id": "q-030",
+      "legacy_id": 30,
+      "category": "multi_document",
+      "difficulty": "high",
+      "query": {
+        "raw": "Explica el ciclo de vida de respuesta a incidentes integrando lo que describe el libro de estrategias del SOC y el analisis forense de memoria.",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "incident response",
+          "respuesta a incidentes",
+          "memory forensics",
+          "forensia de memoria",
+          "soc",
+          "playbook"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf"
+        ],
+        "expected_pages": [
+          [
+            368,
+            42,
+            147
+          ],
+          [
+            12,
+            42,
+            147
+          ]
+        ],
+        "notes": "IR memory forensics + playbooks SOC."
+      }
+    },
+    {
+      "id": "q-031",
+      "legacy_id": 31,
+      "category": "no_answer",
+      "difficulty": "low",
+      "query": {
+        "raw": "Cual es el precio de la certificacion CISSP en Argentina en 2024?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": false,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": false,
+        "required_keywords_legacy": [],
+        "must_not_contain": [
+          "precio",
+          "usd",
+          "$",
+          "dolares",
+          "pesos"
+        ],
+        "citation_required": false
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [],
+        "expected_pages": [],
+        "notes": "El corpus no contiene precios de certificacion. Debe declinar."
+      }
+    },
+    {
+      "id": "q-032",
+      "legacy_id": 32,
+      "category": "no_answer",
+      "difficulty": "low",
+      "query": {
+        "raw": "Quien gano el mundial de futbol en 2022?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": false,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": false,
+        "required_keywords_legacy": [],
+        "must_not_contain": [
+          "argentina",
+          "francia",
+          "messi"
+        ],
+        "citation_required": false
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [],
+        "expected_pages": [],
+        "notes": "Completamente fuera de dominio. Debe declinar sin alucinar."
+      }
+    },
+    {
+      "id": "q-033",
+      "legacy_id": 33,
+      "category": "no_answer",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Cuantos empleados tiene ISC2 a nivel global?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": false,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": false,
+        "required_keywords_legacy": [],
+        "must_not_contain": [
+          "empleados",
+          "trabajadores",
+          "staff"
+        ],
+        "citation_required": false
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [],
+        "expected_pages": [],
+        "notes": "Dato organizacional no presente en documentos. Debe declinar."
+      }
+    },
+    {
+      "id": "q-034",
+      "legacy_id": 34,
+      "category": "no_answer",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Cual es la temperatura ideal de un datacenter segun ASHRAE?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": false,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": false,
+        "required_keywords_legacy": [],
+        "must_not_contain": [
+          "18",
+          "27",
+          "celsius",
+          "grados"
+        ],
+        "citation_required": false
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [],
+        "expected_pages": [],
+        "notes": "ASHRAE/datacenter temps no estan en el corpus. Debe declinar."
+      }
+    },
+    {
+      "id": "q-035",
+      "legacy_id": 35,
+      "category": "no_answer",
+      "difficulty": "high",
+      "query": {
+        "raw": "Que CVE especifico fue usado en el ataque de SolarWinds SUNBURST reportado en 2021?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": false,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": false,
+        "required_keywords_legacy": [],
+        "must_not_contain": [
+          "cve-2020-10148",
+          "cve-2021"
+        ],
+        "citation_required": false
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [],
+        "expected_pages": [],
+        "notes": "CVE especifico de SolarWinds no esta en los documentos con ese detalle. Debe declinar o indicar que no tiene evidencia documental suficiente."
+      }
+    },
+    {
+      "id": "q-036",
+      "legacy_id": 36,
+      "category": "no_answer",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Cual es el salario promedio de un CISO en Latinoamerica?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": false,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": false,
+        "required_keywords_legacy": [],
+        "must_not_contain": [
+          "dolares",
+          "usd",
+          "salario"
+        ],
+        "citation_required": false
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [],
+        "expected_pages": [],
+        "notes": "Salarios regionales no estan en el corpus."
+      }
+    },
+    {
+      "id": "q-037",
+      "legacy_id": 37,
+      "category": "no_answer",
+      "difficulty": "high",
+      "query": {
+        "raw": "Que dice el RFC 9293 sobre TCP?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": false,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": false,
+        "required_keywords_legacy": [],
+        "must_not_contain": [
+          "rfc 9293",
+          "transmission control protocol segment structure"
+        ],
+        "citation_required": false
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [],
+        "expected_pages": [],
+        "notes": "RFC 9293 no esta en el corpus (solo docs introductorios de redes basicas)."
+      }
+    },
+    {
+      "id": "q-038",
+      "legacy_id": 38,
+      "category": "no_answer",
+      "difficulty": "high",
+      "query": {
+        "raw": "Cuantos requisitos tiene la version 4.0.1 de PCI DSS?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": false,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": false,
+        "required_keywords_legacy": [],
+        "must_not_contain": [
+          "4.0.1",
+          "requisitos"
+        ],
+        "citation_required": false
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [],
+        "expected_pages": [],
+        "notes": "El corpus tiene PCI DSS v4.0 pero no la version 4.0.1. Respuesta especifica seria alucinacion."
+      }
+    },
+    {
+      "id": "q-039",
+      "legacy_id": 39,
+      "category": "no_answer",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Como hago un asado argentino?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": false,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": false,
+        "required_keywords_legacy": [],
+        "must_not_contain": [
+          "carne",
+          "brasa",
+          "carbon",
+          "choripan"
+        ],
+        "citation_required": false
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [],
+        "expected_pages": [],
+        "notes": "Completamente fuera de dominio."
+      }
+    },
+    {
+      "id": "q-040",
+      "legacy_id": 40,
+      "category": "no_answer",
+      "difficulty": "high",
+      "query": {
+        "raw": "Cuales son los endpoints de la API de ChatGPT para vision?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": false,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": false,
+        "required_keywords_legacy": [],
+        "must_not_contain": [
+          "gpt-4",
+          "vision",
+          "api.openai.com",
+          "/v1/chat"
+        ],
+        "citation_required": false
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [],
+        "expected_pages": [],
+        "notes": "API endpoints de OpenAI no estan en el corpus."
+      }
+    },
+    {
+      "id": "q-041",
+      "legacy_id": 41,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que es un framework de seguridad?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "framework",
+          "marco",
+          "security",
+          "seguridad",
+          "control",
+          "control"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "02 ISOIEC 27001 Implementation Guide.pdf",
+          "Blue Team Cheat Sheet.pdf"
+        ],
+        "expected_pages": [
+          1,
+          20
+        ],
+        "notes": "Ambiguo: puede referirse a NIST CSF, ISO 27001, COBIT u otro. Debe mencionar varios o pedir aclaracion."
+      }
+    },
+    {
+      "id": "q-042",
+      "legacy_id": 42,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Como me preparo para la certificacion?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "certification",
+          "certificacion",
+          "exam",
+          "examen",
+          "study",
+          "estudio",
+          "estudiar"
+        ],
+        "must_not_contain": [],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "CISSP All-in-One Exam Guide, Ninth Edition.pdf",
+          "200 IT Security Job Interview Questions  (2).pdf"
+        ],
+        "expected_pages": [
+          30,
+          2
+        ],
+        "notes": "Ambiguo: no especifica cual certificacion. Debe preguntar o dar respuesta general mencionando CISSP, CISM, CCSP."
+      }
+    },
+    {
+      "id": "q-043",
+      "legacy_id": 43,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que logs debo revisar?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "log",
+          "registro",
+          "event",
+          "evento",
+          "windows",
+          "review",
+          "revision",
+          "revisar"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "100 SOC Tools .pdf",
+          "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf"
+        ],
+        "expected_pages": [
+          98,
+          220
+        ],
+        "notes": "Ambiguo: no especifica contexto (forense, compliance, SOC). Debe aclarar o dar respuesta multi-contexto."
+      }
+    },
+    {
+      "id": "q-044",
+      "legacy_id": 44,
+      "category": "no_answer",
+      "difficulty": "high",
+      "query": {
+        "raw": "Cual es la mejor herramienta?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": false,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": false,
+        "required_keywords_legacy": [
+          "tool",
+          "herramienta",
+          "security",
+          "seguridad"
+        ],
+        "must_not_contain": [
+          "la mejor herramienta es"
+        ],
+        "citation_required": false
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "100 SOC Tools .pdf"
+        ],
+        "expected_pages": [
+          41
+        ],
+        "notes": "Extremadamente ambigua. Debe pedir clarificacion o indicar que depende del caso de uso."
+      }
+    },
+    {
+      "id": "q-045",
+      "legacy_id": 45,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Como audito el sistema?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "audit",
+          "auditoria",
+          "iso 27001",
+          "checklist",
+          "lista de verificacion"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "01 ISOIEC 27001 Implementation  Documents List.pdf",
+          "10 ISO 27001 Internal Audit Checklist.pdf",
+          "Data Protection Audit Manual.pdf"
+        ],
+        "expected_pages": [
+          2,
+          1,
+          10
+        ],
+        "notes": "FASE C.0: Se agrega Data Protection Audit Manual (rank 1, score 0.747) que cubre proceso de auditoria. Ambiguo: puede ser sistema operativo, ISMS, red."
+      }
+    },
+    {
+      "id": "q-046",
+      "legacy_id": 46,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que es un agente?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "agent",
+          "agente",
+          "security",
+          "seguridad",
+          "endpoint",
+          "punto final"
+        ],
+        "must_not_contain": [],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "100 SOC Tools .pdf"
+        ],
+        "expected_pages": [
+          6
+        ],
+        "notes": "Ambiguo: puede ser agente de seguridad (EDR), agente SNMP, agente de IA. Respuesta debe aclarar contexto."
+      }
+    },
+    {
+      "id": "q-047",
+      "legacy_id": 47,
+      "category": "ambiguous",
+      "difficulty": "high",
+      "query": {
+        "raw": "Que ciberseguridad es mejor, la preventiva o la reactiva?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "prevention",
+          "prevencion",
+          "detection",
+          "deteccion",
+          "response",
+          "respuesta"
+        ],
+        "must_not_contain": [],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf"
+        ],
+        "expected_pages": [
+          145
+        ],
+        "notes": "Ambigua y con sesgo. No tiene respuesta binaria en el corpus; debe dar perspectiva balanceada."
+      }
+    },
+    {
+      "id": "q-048",
+      "legacy_id": 48,
+      "category": "ambiguous",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que hace un pentester?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "penetration",
+          "tester",
+          "vulnerability",
+          "test"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "2023 Pen Testing Report.pdf",
+          "WEB SECURITY TESTING GUIDE.pdf",
+          "GRC,_SOC_analyst_and_Penetration_testenig_Interview_Questions_and.pdf"
+        ],
+        "expected_pages": [
+          1,
+          41,
+          57
+        ],
+        "notes": "FASE C.0: Se agregan WEB SECURITY TESTING GUIDE (rank 1, score 1.360) y GRC Interview Questions que describen el rol del pentester. kw_score=0.75."
+      }
+    },
+    {
+      "id": "q-049",
+      "legacy_id": 49,
+      "category": "ambiguous",
+      "difficulty": "low",
+      "query": {
+        "raw": "Que es la nube?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "cloud",
+          "nube",
+          "service",
+          "servicio",
+          "provider",
+          "proveedor",
+          "servidores remotos",
+          "internet",
+          "almacenar",
+          "procesar"
+        ],
+        "must_not_contain": [],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Access Control Guidance for Cloud Systems.pdf"
+        ],
+        "expected_pages": [
+          [
+            6,
+            11
+          ]
+        ],
+        "notes": "Muy vaga. Respuesta desde perspectiva de seguridad usando lo que hay en el corpus."
+      }
+    },
+    {
+      "id": "q-050",
+      "legacy_id": 50,
+      "category": "ambiguous",
+      "difficulty": "high",
+      "query": {
+        "raw": "Estoy preparando una auditoria, que necesito?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "audit",
+          "auditoria",
+          "checklist",
+          "lista de verificacion",
+          "iso 27001"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "10 ISO 27001 Internal Audit Checklist.pdf",
+          "01 ISOIEC 27001 Implementation  Documents List.pdf"
+        ],
+        "expected_pages": [
+          1,
+          2
+        ],
+        "notes": "Ambigua: tipo de auditoria no especificado. Debe preguntar o asumir contexto ISMS."
+      }
+    },
+    {
+      "id": "q-051",
+      "legacy_id": 51,
+      "category": "complex",
+      "difficulty": "high",
+      "query": {
+        "raw": "Explica en detalle como implementar un programa de gobierno de seguridad de la informacion segun CISM, incluyendo los dominios clave, los indicadores de rendimiento y la relacion con el riesgo corporativo.",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "cism",
+          "governance",
+          "risk",
+          "kpi",
+          "information security"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "CISM Certified Information Security Manager.pdf",
+          "200 IT Security Job Interview Questions  (2).pdf"
+        ],
+        "expected_pages": [
+          [
+            1,
+            148
+          ],
+          [
+            2
+          ]
+        ],
+        "notes": "Pregunta larga y compleja sobre CISM. Debe citar fuentes."
+      }
+    },
+    {
+      "id": "q-052",
+      "legacy_id": 52,
+      "category": "complex",
+      "difficulty": "high",
+      "query": {
+        "raw": "Describe el proceso completo de un pentest segun las mejores practicas: fases, tecnicas de reconocimiento, explotacion y reporte, con referencia a los documentos disponibles.",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "pentest",
+          "reconnaissance",
+          "exploitation",
+          "report",
+          "phase"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "2023 Pen Testing Report.pdf",
+          "Packt.Reconnaissance.for.Ethical.Hackers.pdf",
+          "WEB SECURITY TESTING GUIDE.pdf"
+        ],
+        "expected_pages": [
+          1,
+          1,
+          41
+        ],
+        "notes": "FASE C.0: Se agrega WEB SECURITY TESTING GUIDE (rank 1, score 1.360) que cubre fases de pentest. kw_score=0.6."
+      }
+    },
+    {
+      "id": "q-053",
+      "legacy_id": 53,
+      "category": "complex",
+      "difficulty": "high",
+      "query": {
+        "raw": "Como se estructura un SOC de clase mundial segun el libro de 11 estrategias? Describe los tiers, metricas clave y capacidades de deteccion.",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "soc",
+          "tier",
+          "nivel",
+          "metrics",
+          "metricas",
+          "detection",
+          "deteccion",
+          "strategy",
+          "estrategia"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "11_Strategies_of_a_World_Class_Cybersecurity_Operations_Center.pdf",
+          "11 Strategies of a World-Class SOC HIGHLIGHTS.pdf"
+        ],
+        "expected_pages": [
+          [
+            220,
+            216,
+            42,
+            147
+          ],
+          [
+            12,
+            5,
+            3
+          ]
+        ],
+        "notes": "Respuesta de alta profundidad que debe citar 11 Strategies."
+      }
+    },
+    {
+      "id": "q-054",
+      "legacy_id": 54,
+      "category": "complex",
+      "difficulty": "high",
+      "query": {
+        "raw": "Explica como NIST SP 800-53 define los controles de seguridad y privacidad, y como se categorizan por familia e impacto.",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "nist",
+          "sp 800-53",
+          "control",
+          "family",
+          "impact",
+          "privacy"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Security_and_Privacy_Controls_for_Information_Systems_and_Organizations.pdf"
+        ],
+        "expected_pages": [
+          [
+            1,
+            64,
+            30,
+            43
+          ]
+        ],
+        "notes": "NIST SP 800-53 controles y familias."
+      }
+    },
+    {
+      "id": "q-055",
+      "legacy_id": 55,
+      "category": "complex",
+      "difficulty": "high",
+      "query": {
+        "raw": "Analiza las principales vulnerabilidades de Microsoft documentadas en el reporte de 2022 y como afectan la postura de seguridad de una organizacion.",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "microsoft",
+          "vulnerability",
+          "2022",
+          "cve"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "2022 Microsoft Vulnerabilities Report.pdf"
+        ],
+        "expected_pages": [
+          1
+        ],
+        "notes": "Microsoft Vulnerabilities Report 2022."
+      }
+    },
+    {
+      "id": "q-056",
+      "legacy_id": 56,
+      "category": "complex",
+      "difficulty": "high",
+      "query": {
+        "raw": "Como se aplica DevSecOps en un pipeline de CI/CD? Describe herramientas, puntos de control de seguridad y mejores practicas.",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "devsecops",
+          "ci/cd",
+          "pipeline",
+          "security",
+          "seguridad",
+          "tool",
+          "herramienta"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "DevSecOps Guide.pdf",
+          "Learning DevOps.pdf"
+        ],
+        "expected_pages": [
+          1,
+          1
+        ],
+        "notes": "DevSecOps pipeline CI/CD."
+      }
+    },
+    {
+      "id": "q-057",
+      "legacy_id": 57,
+      "category": "complex",
+      "difficulty": "high",
+      "query": {
+        "raw": "Que tecnicas de credential dumping existen y como se detectan segun los recursos del corpus?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "credential",
+          "dump",
+          "lsass",
+          "detection"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Credential Dumping CheatSheet.pdf",
+          "100 SOC Tools .pdf"
+        ],
+        "expected_pages": [
+          13,
+          98
+        ],
+        "notes": "Credential Dumping CheatSheet + SOC detection."
+      }
+    },
+    {
+      "id": "q-058",
+      "legacy_id": 58,
+      "category": "complex",
+      "difficulty": "high",
+      "query": {
+        "raw": "Describe los pasos del RMF de NIST y como cada paso contribuye a la gestion de riesgos de un sistema de informacion.",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "rmf",
+          "nist",
+          "categorize",
+          "categorizar",
+          "select",
+          "seleccionar",
+          "implement",
+          "implementar",
+          "assess",
+          "evaluar",
+          "authorize",
+          "autorizar",
+          "monitor",
+          "monitorear"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Risk_Management_Framework_for_Information_Systems_and_Organizations.pdf"
+        ],
+        "expected_pages": [
+          1
+        ],
+        "notes": "RMF completo 7 pasos."
+      }
+    },
+    {
+      "id": "q-059",
+      "legacy_id": 59,
+      "category": "complex",
+      "difficulty": "high",
+      "query": {
+        "raw": "Como se protege una infraestructura critica segun los marcos de ciberseguridad disponibles en el corpus?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "critical infrastructure",
+          "infraestructura critica",
+          "protection",
+          "proteccion",
+          "framework",
+          "marco",
+          "security",
+          "seguridad"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Cyber Security of Critical Infrastructures.pdf",
+          "Industrial control systems endpoints defence guide.pdf"
+        ],
+        "expected_pages": [
+          1,
+          21
+        ],
+        "notes": "FASE C.0: Se agrega Industrial control systems endpoints defence guide (rank 1, score 0.791) que cubre proteccion de ICS/infraestructura critica."
+      }
+    },
+    {
+      "id": "q-060",
+      "legacy_id": 60,
+      "category": "complex",
+      "difficulty": "high",
+      "query": {
+        "raw": "Que dice el CCSP sobre los riesgos especificos de la computacion en la nube y como se mitigan?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "ccsp",
+          "cloud",
+          "risk",
+          "mitigation"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "CCSP Certified Cloud Security Professional 3rd Edition 2022.pdf",
+          "Cloud Security Handbook.pdf"
+        ],
+        "expected_pages": [
+          1,
+          1
+        ],
+        "notes": "CCSP cloud risks."
+      }
+    },
+    {
+      "id": "q-061",
+      "legacy_id": 61,
+      "category": "simple",
+      "difficulty": "low",
+      "query": {
+        "raw": "Que es OSPF y para que se usa?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "ospf",
+          "routing",
+          "protocol"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "2-Introduction to OSPF.pdf"
+        ],
+        "expected_pages": [
+          1
+        ],
+        "notes": "OSPF routing protocol, anclado en Introduction to OSPF."
+      }
+    },
+    {
+      "id": "q-062",
+      "legacy_id": 62,
+      "category": "simple",
+      "difficulty": "low",
+      "query": {
+        "raw": "Cuales son los tipos de escaneo que ofrece Nmap?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "nmap",
+          "scan",
+          "tcp",
+          "udp"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Nmap_Network_Exploration_and_Security_Auditing_Cookbook_Third_Edition.pdf"
+        ],
+        "expected_pages": [
+          [
+            1,
+            70,
+            35,
+            39,
+            40
+          ]
+        ],
+        "notes": "Nmap scan types."
+      }
+    },
+    {
+      "id": "q-063",
+      "legacy_id": 63,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que es Wireshark y como se usa en forensia de red?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "wireshark",
+          "network",
+          "red",
+          "forensics",
+          "forensia",
+          "packet",
+          "paquete"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Wireshark for Network Forensics .pdf",
+          "Packt.Reconnaissance.for.Ethical.Hackers.pdf",
+          "Digital Forensics and Incident Response (DFIR) Framework.pdf"
+        ],
+        "expected_pages": [
+          1,
+          368,
+          11
+        ],
+        "notes": "FASE C.0: Se agregan Packt Reconnaissance (p.368 cubre Wireshark) y DFIR Framework que cubren forensia de red con Wireshark."
+      }
+    },
+    {
+      "id": "q-064",
+      "legacy_id": 64,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que cubre el dominio de seguridad en la nube del CCSP?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "ccsp",
+          "cloud security",
+          "seguridad en la nube",
+          "domain",
+          "dominio"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "CCSP Official Study Guide.pdf"
+        ],
+        "expected_pages": [
+          1
+        ],
+        "notes": "CCSP Official Study Guide."
+      }
+    },
+    {
+      "id": "q-065",
+      "legacy_id": 65,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Como funciona Kerbrute para enumeracion de usuarios?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "kerbrute",
+          "kerberos",
+          "enumeration",
+          "user"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "A Detailed Guide on Kerbrute.pdf"
+        ],
+        "expected_pages": [
+          4
+        ],
+        "notes": "Kerbrute guide p.4."
+      }
+    },
+    {
+      "id": "q-066",
+      "legacy_id": 66,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que es la seguridad en OT/ICS?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "ot",
+          "ics",
+          "operational technology",
+          "security"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Guide to Operational Technology Security .pdf"
+        ],
+        "expected_pages": [
+          [
+            1,
+            168
+          ]
+        ],
+        "notes": "OT security guide."
+      }
+    },
+    {
+      "id": "q-067",
+      "legacy_id": 67,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que es PCI DSS y a quienes aplica?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "pci dss",
+          "payment card",
+          "cardholder",
+          "merchant"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "PCI DSS Requirements and Testing Procedures Version 4.0.pdf"
+        ],
+        "expected_pages": [
+          [
+            1,
+            5,
+            6
+          ]
+        ],
+        "notes": "PCI DSS overview."
+      }
+    },
+    {
+      "id": "q-068",
+      "legacy_id": 68,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que es la ingenieria social segun los documentos disponibles?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "social engineering",
+          "ingenieria social",
+          "manipulation",
+          "manipulacion",
+          "human",
+          "humano"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Social Engineering.pdf",
+          "ALL ABOUT PHISHING.pdf",
+          "Learn the many forms of Phishing - Ministry of Security.pdf"
+        ],
+        "expected_pages": [
+          1,
+          1,
+          1
+        ],
+        "notes": "CORREGIDO v4.1: diagnostico dirigido (FASE 2.1) confirmo que ALL ABOUT PHISHING.pdf y Learn the many forms of Phishing.pdf contienen una definicion directa de ingenieria social, mientras que Social Engineering.pdf tiene enfoque academico/historico. El reranker prefiere correctamente la definicion directa. Se agregan como fuentes validas."
+      }
+    },
+    {
+      "id": "q-069",
+      "legacy_id": 69,
+      "category": "simple",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Que herramientas de Blue Team se mencionan en los documentos?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "blue team",
+          "tool",
+          "defense"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Blue Team Cheat Sheet.pdf",
+          "Blue Team Tools.pdf"
+        ],
+        "expected_pages": [
+          20,
+          2
+        ],
+        "notes": "FASE C.0: Se agrega Blue Team Tools.pdf (rank 1, score 1.371) que lista herramientas de Blue Team. kw_score=0.333."
+      }
+    },
+    {
+      "id": "q-070",
+      "legacy_id": 70,
+      "category": "simple",
+      "difficulty": "low",
+      "query": {
+        "raw": "Que son las politicas de seguridad de la informacion segun ISO 27001?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "policy",
+          "politica",
+          "information security",
+          "seguridad de la informacion",
+          "iso 27001"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "01 ISOIEC 27001 Implementation  Documents List.pdf",
+          "ISO 27001 Implementation Checklist.pdf"
+        ],
+        "expected_pages": [
+          2,
+          3
+        ],
+        "notes": "FASE C.0: Se agrega ISO 27001 Implementation Checklist (rank 1, score 1.273) que cubre politicas de seguridad ISO 27001."
+      }
+    },
+    {
+      "id": "q-071",
+      "legacy_id": 71,
+      "category": "multi_document",
+      "difficulty": "high",
+      "query": {
+        "raw": "Como se integran los controles de ISO 27001 con los requisitos de auditoria interna y los documentos de lista de controles?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "iso 27001",
+          "audit",
+          "control",
+          "document"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "02 ISOIEC 27001 Implementation Guide.pdf",
+          "01 ISOIEC 27001 Implementation  Documents List.pdf",
+          "10 ISO 27001 Internal Audit Checklist.pdf",
+          "ISO 27001 Initial Assessment Report.pdf"
+        ],
+        "expected_pages": [
+          3,
+          6,
+          1,
+          1
+        ],
+        "notes": "FASE C.0: Se agrega ISO 27001 Initial Assessment Report (rank 1, score 1.242) que integra controles y auditoria ISO 27001. kw_score=1.0 confirma respuesta perfecta."
+      }
+    },
+    {
+      "id": "q-072",
+      "legacy_id": 72,
+      "category": "no_answer",
+      "difficulty": "high",
+      "query": {
+        "raw": "Cual fue el impacto financiero exacto del ransomware NotPetya en Maersk en 2017?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": false,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": false,
+        "required_keywords_legacy": [],
+        "must_not_contain": [
+          "300 millones",
+          "250 millones",
+          "maersk"
+        ],
+        "citation_required": false
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [],
+        "expected_pages": [],
+        "notes": "Dato muy especifico no presente en el corpus. Debe declinar."
+      }
+    },
+    {
+      "id": "q-073",
+      "legacy_id": 73,
+      "category": "complex",
+      "difficulty": "high",
+      "query": {
+        "raw": "Que dice el reporte de amenazas 2023 sobre las tecnicas de ataque mas frecuentes y como se correlacionan con las tecnicas de MITRE ATT&CK?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "threat",
+          "2023",
+          "mitre",
+          "technique",
+          "attack"
+        ],
+        "must_not_contain": [
+          "no tengo"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "2023 THREAT DETECTiON REPORT.pdf",
+          "2023 Threat Report.pdf",
+          "The Red Report 2023 - Picus Security.pdf"
+        ],
+        "expected_pages": [
+          1,
+          1,
+          9
+        ],
+        "notes": "FASE C.0: Se agrega The Red Report 2023 - Picus Security (rank 3, score 0.601) que es un reporte de amenazas 2023 con tecnicas MITRE ATT&CK."
+      }
+    },
+    {
+      "id": "q-074",
+      "legacy_id": 74,
+      "category": "no_answer",
+      "difficulty": "medium",
+      "query": {
+        "raw": "Cual es la contrasena por defecto del router Cisco ASA 5505?",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": false,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": false,
+        "required_keywords_legacy": [],
+        "must_not_contain": [
+          "cisco",
+          "asa",
+          "contrasena",
+          "password",
+          "enable"
+        ],
+        "citation_required": false
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [],
+        "expected_pages": [],
+        "notes": "Credencial especifica de dispositivo, no presente en el corpus."
+      }
+    },
+    {
+      "id": "q-075",
+      "legacy_id": 75,
+      "category": "complex",
+      "difficulty": "high",
+      "query": {
+        "raw": "Describe como implementar Zero Trust desde cero en una organizacion: principios, herramientas, fases de madurez y casos de uso mencionados en los documentos disponibles.",
+        "required_evidence": [],
+        "constraints": [],
+        "execution_budget": {
+          "max_retrieval_rounds": null,
+          "max_context_tokens": null
+        }
+      },
+      "expected_claims": [],
+      "evidence_requirements": {
+        "required_claims": 0,
+        "minimum_claim_coverage": null,
+        "minimum_evidence_quality": null,
+        "minimum_independent_sources": null,
+        "require_documentary_support": true,
+        "allow_general_domain_knowledge": false
+      },
+      "answer_requirements": {
+        "is_answerable_legacy": true,
+        "required_keywords_legacy": [
+          "zero trust",
+          "implementation",
+          "maturity",
+          "microsegmentation",
+          "identity"
+        ],
+        "must_not_contain": [
+          "no hay informacion"
+        ],
+        "citation_required": true
+      },
+      "corpus_coverage": {
+        "legacy": "pending_audit",
+        "reduced": "pending_audit",
+        "status": "uncertain_requires_review"
+      },
+      "migration_status": "pending_human_review",
+      "legacy_reference": {
+        "expected_sources": [
+          "Implementing a Zero Trust Architecture.pdf",
+          "Zero Trust Maturity Model.pdf",
+          "Playbook for Implementing Zero Trust Security.pdf",
+          "API Security Best Practices.pdf"
+        ],
+        "expected_pages": [
+          1,
+          1,
+          1,
+          18
+        ],
+        "notes": "CORREGIDO v4.1: se agregaron Zero Trust Maturity Model.pdf y Playbook for Implementing Zero Trust Security.pdf, confirmados en corpus (FASE 0.1), cubren fases de madurez y casos de uso pedidos en la query."
+      }
+    }
+  ]
+}

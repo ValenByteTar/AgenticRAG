@@ -1,0 +1,1313 @@
+=== NovedadesTipicas.pdf ===
+
+--- Página 1 ---
+Lista de Novedades/Ordenes, Version 4, 29/07/2002
+Exclusiva Novedad
+Orden
+CODIGO Campos Info (cantidad; unidad; longitud; ... )
+A
+1
+0
+BAJ01
+1;MW;6
+A
+1
+0
+BAJ02
+1;MW;6
+A
+1
+0
+BAJ03
+1;MW;6
+A
+1
+0
+BAJ04
+1;MW;6
+A
+1
+0
+BAJ05
+1;MW;6
+Ter
+1
+0
+BAJ06
+1;MW;6
+A
+1
+0
+CAR01
+1;MW;6
+A
+1
+0
+CAR02
+1;MW;6
+A
+1
+0
+DIS01
+1;MW;6
+Ter
+1
+0
+DIS02
+1;MW;6
+Ter
+1
+0
+DIS03
+1;MW;6
+Ter
+1
+0
+DIS04
+1;% gas;6;1;% f.oil;6;1;% carbon;6;1;% gas oil;6
+Ter
+1
+0
+DIS05
+1;% gas;6;1;% f.oil;6;1;% carbon;6;1;% gas oil;6
+Ter
+1
+0
+DIS06
+1;MW;6
+Ter
+1
+0
+DIS07
+1;MW;6
+A
+1
+0
+E/S01
+1;MW;6
+A
+1
+0
+E/S02
+1;MW;6
+A
+1
+0
+E/S03
+1;MW;6
+A
+1
+0
+E/S04
+1;MW;6
+A
+1
+0
+E/S05
+1;MW;6
+A
+1
+0
+E/S06
+1;MW;6
+A
+1
+0
+E/S07
+1;MW;6
+A
+1
+0
+E/S08
+1;MW;6
+A
+1
+0
+E/S09
+1;MW;6
+Hid
+1
+0
+E/S10
+1;MW;6
+Ter
+1
+0
+E/S11
+1;MW;6
+A
+1
+0
+E/S12
+1;MW;6
+Hid
+1
+0
+E/S13
+1;MW;6
+A
+1
+0
+E/S14
+1;MW;6
+A
+1
+0
+E/S15
+1;MW;6
+Hid
+1
+0
+E/S16
+1;MW;6
+A
+1
+0
+E/S17
+1;MW;6
+A
+1
+0
+E/S18
+1;MW;6
+
+--- Página 2 ---
+A
+1
+0
+F/S01
+1;MW;6
+A
+1
+0
+F/S02
+1;MW;6
+A
+1
+0
+F/S03
+0
+A
+1
+0
+F/S05
+0
+A
+1
+0
+F/S06
+1;MW;6
+Ter
+1
+0
+F/S07
+1;MW;6
+A
+1
+0
+F/S08
+0
+Ter
+1
+0
+F/S09
+1;MW;6
+A
+1
+0
+F/S10
+0
+Ter
+1
+0
+F/S11
+1;MW;6
+A
+1
+0
+F/S12
+0
+A
+1
+0
+F/S13
+1;MW;6
+Ter
+1
+0
+F/S14
+1;MW;6
+CAMM
+1
+0
+INC01
+1;MW;6
+CAMM
+1
+0
+INC02
+1;MW;6
+CAMM
+1
+0
+INC03
+0
+CAMM
+1
+0
+INC04
+0
+CAMM
+1
+0
+INC05
+0
+A
+1
+0
+IND01
+0
+Ter
+1
+0
+IND02
+1;MW;6
+A
+1
+0
+IND03
+0
+A
+1
+0
+IND04
+1;MW;6
+A
+1
+0
+IND05
+1;MW;6
+A
+1
+0
+LIM01
+1;MW;6
+A
+1
+0
+LIM02
+1;MW;6
+A
+1
+0
+LIM03
+1;MW;6
+Hid
+1
+0
+LIM04
+1;MW;6
+Hid
+1
+0
+LIM05
+1;MW;6
+A
+1
+0
+MIS03
+1;MW;6
+A
+1
+0
+MIS04
+0
+Ter
+1
+0
+MIS05
+1;% gas;6;1;% f.oil;6;1;% carbon;6;1;% gas oil;6
+Ter
+1
+0
+MIS06
+1;MW;6
+CAMM
+1
+0
+MIS08
+1;MW;6
+A
+1
+0
+MIS09
+1;MW;6
+A
+1
+0
+MIS10
+1;MW;6
+A
+1
+0
+NBA01
+1;MW;6
+
+--- Página 3 ---
+A
+1
+0
+NBA02
+1;MW;6
+A
+1
+0
+NBA03
+1;MW;6
+A
+1
+0
+NBA04
+1;MW;6
+A
+1
+0
+NBA05
+1;MW;6
+A
+1
+0
+NBA06
+1;MW;6
+A
+1
+0
+NBA07
+1;MW;6
+A
+1
+0
+NBA08
+1;MW;6
+A
+0
+1
+OED01
+1;MW;6
+A
+0
+1
+OED02
+0
+A
+0
+1
+OED03
+0
+A
+0
+1
+OED04
+0
+A
+0
+1
+OED05
+0
+A
+0
+1
+OED06
+1;MW;6
+A
+0
+1
+OED07
+0
+A
+0
+1
+OED08
+1;MW;6
+A
+0
+1
+OED09
+0
+A
+0
+1
+OED10
+0
+A
+0
+1
+OED11
+1;MW;6
+A
+0
+1
+OED12
+0
+A
+0
+1
+OED13
+A
+0
+1
+OED14
+0
+A
+0
+1
+OED15
+0
+A
+0
+1
+OED16
+0
+A
+0
+1
+OED17
+0
+A
+0
+1
+OED18
+0
+A
+0
+1
+OED19
+0
+A
+0
+1
+OED20
+0
+A
+0
+1
+OED21
+0
+A
+0
+1
+OED22
+0
+A
+0
+1
+OED23
+0
+A
+0
+1
+OED24
+0
+A
+0
+1
+OED25
+A
+0
+1
+OED26
+1;MW;6
+A
+0
+1
+OED27
+0
+A
+0
+1
+OED28
+0
+A
+0
+1
+OED29
+0
+
+--- Página 4 ---
+A
+0
+1
+OED30
+0
+A
+1
+0
+OED31
+0
+Ter
+1
+0
+OED32
+1;% gas;6;1;% f.oil;6;1;% carbon;6;1;% gas oil;6
+A
+1
+0
+QUE01
+1;MW;6
+A
+1
+0
+QUE02
+1;MW;6
+A
+1
+0
+QUE03
+1;MW;6
+A
+1
+0
+QUE04
+1;MW;6
+A
+1
+0
+QUE05
+1;MW;6
+A
+1
+0
+QUE06
+1;MW;6
+A
+1
+0
+QUE07
+1;MW;6
+Hid
+1
+0
+QUE08
+1;MW;6
+Ter
+1
+0
+QUE09
+1;MW;6
+A
+1
+0
+QUE10
+1;MW;6
+A
+1
+0
+RPF01
+1;MW;6
+A
+1
+0
+RPF04
+1;MW;6
+A
+1
+0
+RPF05
+1;MW;6
+A
+1
+0
+RPF09
+1;MW;6
+A
+1
+0
+RPF10
+1;MW;6
+A
+1
+0
+RPF11
+1;MW;6
+A
+1
+0
+RPF12
+1;MW;6
+A
+1
+0
+SUB01
+1;MW;6
+A
+1
+0
+SUB02
+1;MW;6
+A
+1
+0
+SUB03
+1;MW;6
+A
+1
+0
+SUB04
+1;MW;6
+A
+1
+0
+SUB05
+1;MW;6
+A
+1
+0
+SUB06
+1;MW;6
+CAMM
+1
+0
+SUB07
+1;MW;6
+A
+1
+0
+SUB08
+1;MW;6
+A
+1
+0
+SUB09
+1;MW;6
+
+--- Página 5 ---
+A
+1
+0
+SUB10
+1;MW;6
+A
+1
+0
+SUB11
+1;MW;6
+A
+1
+0
+SUB12
+1;MW;6
+
+--- Página 6 ---
+NOVEDAD/ORDEN
+Indic. Campos INFO
+BAJO AL MINIMO TECNICO
+Potencia Operable
+BAJA CARGA
+Potencia Operable
+BAJA AL MIN POR NO REQ.
+Potencia Operable
+BAJA CARGA POR LIM.EXP.
+Potencia Operable
+BAJA CARGA LIMITADA
+Potencia Operable
+BAJO CARGA LIMIT. POR COMB.
+Potencia Operable
+COMPLETO CARGA
+Potencia Operable
+SIGUE COMPLETO
+Potencia Operable
+DISPONIBLE
+Potencia Operable
+DISPONIBLE SOLO CON GAS
+Potencia Operable
+DISP. C/CICLO COMBINADO
+Potencia Operable
+DISPONIBLE CON LIQUIDO
+% de cada combustible
+DISPONIBLE CON CUPO GAS
+% de cada combustible
+DISP.SOLO C/GAS Y TIENE
+Potencia Operable
+DISP. C/ LIQUIDO S/ COMB
+Potencia Operable
+E/S A COSTO OPERATIVO
+Potencia Operable
+E/S REQ. POR GENERADOR
+Potencia Operable
+E/S REQ. POR POT.ACTIVA
+Potencia Operable
+E/S REQ. POR TENSION
+Potencia Operable
+E/S REQ. POR SEGURIDAD
+Potencia Operable
+E/S POR LIM. DE INTERC.
+Potencia Operable
+E/S POR DESPACHO
+Potencia Operable
+E/S FORZ POR EL DISTRIB
+Potencia Operable
+E/S FORZ POR TRANSPORTE
+Potencia Operable
+E/S FORZ. REQ. AGUAS AB.
+Potencia Operable
+E/S P/ ARRANQUE DE CICLO
+Potencia Operable
+E/S POR DESPACHO CON RPF
+Potencia Operable
+E/S FORZ.REQ.AG.AB C/RPF
+Potencia Operable
+E/S FORZADA POR RPF MIN.
+Potencia Operable
+E/S FORZADA POR ENSAYO
+Potencia Operable
+E/S FORZ P/ENERGIA MIN
+Potencia Operable
+E/S FORZADA POR RSF
+Potencia Operable
+E/S POR POTENCIA C/ RPF
+Potencia Operable
+
+--- Página 7 ---
+F/S POR DESPACHO
+Potencia Operable
+F/S POR NO REQUERIRSE
+Potencia Operable
+F/S PARA MANTENIMIENTO
+F/S INTEMPESTIVA
+F/S POR REDESPACHO
+Potencia Operable
+F/S POR CUPO DE GAS
+Potencia Operable
+F/S CONTROLADA INDISP.
+F/S POR BAJAPRESIONDGAS
+Potencia Operable
+F/S IND. POR EL DISTRIB
+F/S DISP. SOLO CON GAS
+Potencia Operable
+F/S POR TRANSMISION
+F/S POR ACTUACION DAG
+Potencia Operable
+F/S POR FALTA COMB. LIQ.
+Potencia Operable
+INCUMPLIM.ORDEN BAJAR
+Potencia Operable
+INCUMPLIM.ORD.SUB/COMPL
+Potencia Operable
+INCUMPLIM.ORDEN E/S
+INCUMPLIM.ORDEN F/S
+INCUMPLIM.ORD.MANTENER
+INDISPONIBLE
+INDISP. C/CICLO COMBIN.
+Potencia Operable
+INDISP. POR TRANSMISION
+INYECTA AL SADI
+Potencia Operable
+NO INYECTA AL SADI
+Potencia Operable
+LIMIT. INTERNA (CAMBIO)
+Potencia Operable
+LIMIT. POR TRANSMISION
+Potencia Operable
+LIMITACION LIBERADA A:
+Potencia Operable
+LIMITADA POR CAUDAL MAX.
+Potencia Operable
+LIM. POR ENERGIA DIARIA
+Potencia Operable
+COMIENZA FASE ARRANQUE
+Potencia Operable
+ARRANQUE FALLIDO
+CAMBIO DE COMBUSTIBLE
+% de cada combustible
+ENCENDIO CALDERA
+Potencia Operable
+OPERA COMO TV DE PUNTA
+Potencia Operable
+AL MINIMO C/ MARGEN RPF
+Potencia Operable
+AL MINIMO SIN RPF
+Potencia Operable
+NO BAJA POR PROBLMINTEC
+Potencia Operable
+
+--- Página 8 ---
+NO BAJA POR REQ.POT.ACT
+Potencia Operable
+NO BAJA POR TENSION
+Potencia Operable
+NO BAJA POR SEGURIDAD
+Potencia Operable
+NO BAJA POR LIM.INTERC.
+Potencia Operable
+NO BAJA POR ENSAYO
+Potencia Operable
+NO BAJA POR EL DISTRIB.
+Potencia Operable
+NO BAJA FORZ.POR RPF MIN
+Potencia Operable
+OED MANTENER CARGA
+Consigna de Potencia
+OED COMPLETAR CARGA
+OED BAJAR AL MINIMO TEC
+OED SOLICITA E/S
+OED SOLICITA F/S
+OED BAJAR CARGA
+Consigna de Potencia
+OED PIDE QUEDAR E/S
+OED SUBIR CARGA
+Consigna de Potencia
+OED SUSPENDER ARRANQUE
+OED NO REGULAR FRECUENC
+OED SUBIR POR EL DISTRIB
+Consigna de Potencia
+OED BAJAR A MIN SIN RPF
+OED COMPLETAR C/MARG RPF
+OPERA A COSTO OPERATIVO
+OPERA A COSTO MARGINAL
+OED PIDE E/S POR TENSION
+OED PIDE E/S P/ POTENCIA
+OED PIDE E/S P/ DISTRIB.
+OED PIDE E/S P/ SEGURIDAD
+OED PIDE E/S P/ LIM.INTERC.
+OED PIDE E/S P/ RPF MIN
+OED PIDE E/S P/ RESTR.HIDR.
+OED PIDE F/S P/ NO REQUERIR
+OED BAJAR POR LIM.EXPORT.
+OED DEJAR MARGEN P/ RPF
+OED SUBIR POR SEGURIDAD
+Consigna de Potencia
+OED CONVOCA RES OPE 5M
+OED CONVOCA RESERVA 10M
+OED CONVOCA RES FRIA 20M
+
+--- Página 9 ---
+OED SUSP CONV RES FRIA 20M
+OED BAJAR POR LIMIT.COMB.
+OED. CAMBIAR COMBUSTIBLE
+% de cada combustible
+QUEDA E/S POR EL GENER.
+Potencia Operable
+QUEDA E/S POR POT.ACTIV
+Potencia Operable
+QUEDA E/S POR TENSION
+Potencia Operable
+QUEDA E/S POR SEGURIDAD
+Potencia Operable
+QUEDA E/S POR LIM.INTERC
+Potencia Operable
+QUEDA E/S POR EL DISTRIB.
+Potencia Operable
+QUEDA E/S POR TRANSPORTE
+Potencia Operable
+QUEDA E/S F.R.A.A.
+Potencia Operable
+QUEDA E/S P/ARRANQ CICLO
+Potencia Operable
+QUEDA E/S FORZ. POR RSF
+Potencia Operable
+PUEDE PARTICIPAR EN RPF
+Potencia Operable
+NO PUEDE PARTIC. EN RPF
+Potencia Operable
+COMPLETO C/ MARGEN RPF
+Potencia Operable
+BAJO AL MINIMO CON RPF
+Potencia Operable
+SIGUE COMPLETO CON RPF
+Potencia Operable
+INCOMPLETO CON RPF
+Potencia Operable
+INCOMPLETO SIN RPF
+Potencia Operable
+SUBE CARGA
+Potencia Operable
+SUBE CARGA POR REQ.POT.
+Potencia Operable
+SUBE CARGA POR ENSAYO
+Potencia Operable
+SUBE CARGA POR REQ.TENS
+Potencia Operable
+SUBIO AL MINIMO TECNICO
+Potencia Operable
+SUBIENDO AL MINIMO TEC.
+Potencia Operable
+SUBIENDO (SIN RESERVA)
+Potencia Operable
+SUBE CARGA POR LIM.INTERC
+Potencia Operable
+SUBE POR PROBLMINTECNI
+Potencia Operable
+
+--- Página 10 ---
+SUBE CARGA POR EL DISTRIB.
+Potencia Operable
+SUBE SIN RESERVA CON RPF
+Potencia Operable
+SUBE FORZADA POR RPF MIN
+Potencia Operable
+
+--- Página 11 ---
+Confirmacion de que un grupo alcanzo su minimo tecnico
+NG
+Indicacion de que un grupo varia su potencia (baja)
+NG
+Confirmacion de que un grupo forzado alcanzo su minimo tecnico por no ser 
+necesaria mayor potencia y dejo de estar forzada
+NO
+Indicacion de que un grupo baja carga para respetar un limite de exportacion 
+de un area en AT.
+NR
+Grupos que bajan carga por una limitacion tecnica propia
+NG
+Bajo carga por pedido de CAMMESA por limitaciones de combustible
+NO
+Indicacion de que un grupo alcanzo su potencia maxima
+NG
+Indicacion de que un grupo continua a plena carga (permite cambiar la 
+potencia)
+NG
+Indicacion de que un grupo pasa a estar Disponible
+NG
+Grupos que solo pueden quemar gas y no tienen cupo
+NG
+Indicacion que para el calculo de costos de este grupo deben utilizarse los 
+parametros del Ciclo Combinado del que forma parte
+NG
+Grupos que pasan a estar disponibles con combustible 100% liquido
+NG
+Grupos que pasan a estar disponibles con combustible 100% gas
+NG
+Grupos que queman solamente gas y pasan a tener cupo
+NG
+Grupos disponibles con combustible liquido que no tienen combustible
+NG
+Maquinas termicas que entran E/S por despacho siendo mas caras que el 
+C.M.
+NO
+Maquinas que entran E/S a requerimiento del Generador, por pruebas no  
+programadas, siendo mas caras que el C.M.
+NG
+Maquinas que entran E/S para controlar la sobrecarga de un equipo del 
+sistema de transporte de una Distro o PAFTT.
+NR
+Grupos que entran en servicio para controlar las tensiones en ciertos nodos 
+del sistema 
+NR
+Maqinas que entran E/S por seguridad de un area de despacho.
+NR
+Maqinas que entran E/S para controlar la sobrecarga de un equipo del 
+Sistema de Transporte en A.T.
+NR
+Grupos que entran E/S por despacho siendo mas baratas que el C.M.
+NO
+Grupos que entran en servicio a requerimiento de un Distribuidor
+NR
+Grupos que entran en servicio por un requerimiento del sistema de 
+transporte en A.T.
+NR
+Centrales hidraulicas que entran en servicio por necesidad de erogar caudal
+NH
+Grupos TG que entran en servicio para arranque del Ciclo Combinado del 
+que forman parte
+NG
+Grupos que entran E/S por despacho siendo mas baratas que el C.M. y 
+participan en la RPF
+NO
+Centrales hidraulicas que entran en servicio por necesidad de erogar caudal 
+y participan en la RPF
+NH
+Grupos que entran en servicio para alcanzar el porcentaje minimo admitido 
+de RPF en el sistema
+NO
+Maqinas que entran E/S a requerimiento del Generador, por ensayos 
+programados, siendo mas caras que el C.M.
+NG
+Centrales hidraulicas que entran en servicio por necesidad de cumplir con 
+una energia minima imprevista
+NH
+Grupos que entran en servicio siendo mas caras que el C.M. para llevar la 
+RSF de un area
+NO
+Grupos que entran E/S para controlar la sobrecarga de un equipo del sistema 
+de transporte de una Distro o PAFTT, participando en la RPF
+NR
+
+--- Página 12 ---
+Grupos que salen de servicio en cumplimiento de una orden del OED
+NO
+Grupos forzados que salen de servicio por no requerirse
+NO
+Grupos que salen de servicio para mantenimiento, quedando indisponibles
+NG
+Grupos que salen de servicio en forma intempestiva, quedando indisponibles NG
+Confirmacion de que un grupo salio de servicio, cumpliendo una orden del 
+OED
+NO
+Grupos que salen de servicio por no tener gas (y continuan disponibles con 
+liquido) 
+NG
+Grupos que salen de servicio en forma no intempestiva, quedando 
+indisponibles
+NG
+Grupos que salen de servicio por baja presion de gas y quedan disponibles 
+con otro combustible
+NG
+Indicacion de que un grupo salio de servicio por indisponibilidad de un 
+equipamiento del Distribuidor
+NR
+Grupos que salen de servicio por quemar solamente gas y no tener cupo
+NG
+Indicacion de que un grupo salio de servicio por una limitacion del sistema de 
+transporte
+NR
+Grupos que salen de servicio por actuacion de DAG, quedando disponibles
+NR
+Grupos que salen de servicio por quemar solamente combustible liquido y no 
+tenerlo
+NG
+Grupos que no cumplen con una orden del OED (bajar carga)
+I
+Grupos que no cumplen con una orden del OED (subir o completar carga)
+I
+Grupos que no cumplen con una orden del OED (entrar en servicio)
+I
+Grupos que no cumplen con una orden del OED (salir de servicio)
+I
+Grupos que no cumplen con una orden del OED (mantener carga)
+I
+Indicacion de que un grupo pasa a estar Indisponible
+NG
+Indicacion que para el calculo de costos de este grupo deben utilizarse los 
+parametros en Ciclo Abierto, y no los del Ciclo Combinado
+NG
+Indicacion de que un grupo disponible no puede entrar en servicio por una 
+limitacion del sistema de transporte
+NR
+Autogeneradores que inyectan su generacion al SADI
+NG
+Autogeneradores que no inyectan su generacion al SADI
+NG
+Para ingresar cambios en la Potencia Operable de los grupos.
+NG
+Indicacion de que un grupo se encuentra limitado por una limitacion del 
+sistema de transporte
+NR
+Para ingresar cambios en la Potencia Operable de los grupos ya sea 
+aumentos o reducciones al finalizar la limitacion.
+NG
+Centrales hidraulicas que se encuentran limitadas por el caudal maximo 
+erogable
+NH
+Centrales hidraulicas que se encuentran limitadas por el paquete de energia 
+diario
+NH
+Indicacion de que un grupo comienza su proceso de arranque
+NG
+Indicacion de que un grupo que estaba en arranque falla, quedando 
+indisponible
+NG
+Grupos termicos que cambian su mezcla de combustibles quemados
+NG
+Indicacion de que un grupo TV encendio caldera (inicia o continua su 
+proceso de arranque)
+NG
+Grupos al minimo tecnico que fueron definidos como TV de punta por 
+Programacion Diaria
+I
+Confirmacion de que un grupo alcanzo su minimo tecnico participando de la 
+RPF luego de su entrada en servicio.
+NG
+Confirmacion de que un grupo alcanzo su minimo tecnico no participando de 
+la RPF
+NG
+Indicacion de que un grupo tiene un nuevo minimo tecnico en forma 
+transitoria
+NG
+
+--- Página 13 ---
+Indicacion de que un grupo mantiene su carga para controlar la sobrecarga 
+de un equipo del sistema de transporte de una Distro o PAFTT
+NR
+Indicacion de que un grupo mantiene su carga para controlar las tensiones 
+en ciertos nodos del sistema 
+NR
+Indicacion de que un grupo mantiene su carga para proveer mayor seguridad 
+a algun area de despacho
+NR
+Indicacion de que un grupo mantiene su carga para controlar la sobrecarga 
+de un equipo del sistema de transporte en A.T.
+NR
+Indicacion de que un grupo mantiene su carga por un requerimiento del 
+Generador (ensayo)
+NG
+Indicacion de que un grupo mantiene su carga a solicitud de un Distribuidor
+NR
+Grupos que no bajan carga para alcanzar el porcentaje minimo admitido de 
+RPF en el sistema
+NO
+Orden de mantener carga (previamente se le ordeno subir o bajar)
+O
+Orden de subir carga hasta completar
+O
+Orden de bajar carga al minimo tecnico
+O
+Orden de entrar en servicio
+O
+Orden de salir de servicio
+O
+Orden de bajar carga (no al minimo)
+O
+Orden de quedar en servicio (anula una orden anterior)
+O
+Orden de subir carga
+O
+Orden de suspender un arranque previamente ordenado
+O
+Orden de no dejar margen para RPF
+O
+Orden de subir carga por necesidades de un Distribuidor
+O
+Orden de bajar al minimo tecnico y no regular frecuencia
+O
+Orden de completar carga, dejando el margen despachado para RPF
+O
+Grupos que sin variar su carga quedan fuera de C.M.
+O
+Grupos que sin variar su carga quedan dentro de C.M.
+O
+Orden de entrar en servicio para controlar las tensiones en ciertos nodos del 
+sistema
+O
+Orden de entrar en servicio para evitar la sobrecarga de un equipo del 
+Sistema de Transporte de una Distro o PAFTT. 
+O
+Orden de entrar en servicio a requerimiento de un Distribuidor.
+O
+Orden de entrar en servicio por seguridad de un area.
+O
+Orden de entrar en servicio para respetar un limite de importacion en AT. 
+O
+Orden de entrar en servicio para alcanzar el porcentaje minimo requerido de 
+RPF en el sistema.
+O
+Orden de entrar en servicio por cualquier tipo de restriccion hidraulica.
+O
+Orden de salir de servicio por no requerirse mas la generacion forzada.
+O
+Orden de bajar carga para respetar un limite de exportacion de un area en 
+AT.
+O
+Orden de dejar margen para RPF
+O
+Orden de subir potencia dejando de estar al minimo tecnico, a los 
+generadores E/S por seguridad de un area.
+O
+OED solicita a los Generadores asignados a la Reserva Operativa de 5 
+minutos de la presente hora, entregar las potencias comprometidas (subir la 
+reserva rotante / entrar en servicio y subir la reserva disponible).
+O
+OED solicita a los Generadores asignados a la Reserva de 10 minutos de la 
+presente hora, entregar las potencias comprometidas (subir la reserva 
+rotante / entrar en servicio y subir la reserva disponible).
+O
+OED solicita a los Generadores asignados a la Reserva Fria de 20 minutos 
+de la presente hora, entregar las potencias comprometidas (entrar en 
+servicio y entregar la reserva disponible).
+O
+
+--- Página 14 ---
+OED solicita la suspension de la Convocatoria de Reserva Fria de 20 
+minutos por finalizar la emergencia (suspender el arranque / parar la subida 
+de la reserva disponible).
+O
+OED solicita bajar carga al minimo tecnico por limitacion de combustible
+O
+OED solicita cambiar combustible segun porcentajes indicados
+O
+Indicacion de que un grupo mantiene su carga o no sale de servicio por un 
+requerimiento del Generador (ensayo o inconvenientes tecnicos del 
+generador)
+NG
+Indicacion de que un grupo mantiene su carga o no sale de servicio para 
+controlar la sobrecarga de un equipo del sistema de transporte de una Distro 
+o PAFTT
+NR
+Indicacion de que un grupo mantiene su carga o no sale de servicio para 
+controlar las tensiones en ciertos nodos del sistema 
+NR
+Indicacion de que un grupo mantiene su carga o no sale de servicio para 
+proveer mayor seguridad a algun area de despacho
+NR
+Indicacion de que un grupo mantiene su carga o no sale de servicio para 
+controlar la sobrecarga de un equipo del sistema de transporte en A.T.
+NR
+Indicacion de que un grupo mantiene su carga o no sale de servicio por 
+requerimiento de un Distribuidor
+NR
+Indicacion de que un grupo mantiene su carga o no sale de servicio por un 
+requerimiento del sistema de transporte en A.T.
+NR
+Centrales hidraulicas que quedan en servicio por necesidad de erogar caudal
+NH
+Grupos TG que quedan en servicio para arranque del Ciclo Combinado del 
+que forman parte
+NG
+Grupos que quedan en servicio siendo mas caras que el C.M. para llevar la 
+RSF de un area
+NO
+Grupos habilitados que se despachan con RPF
+NG
+Grupos habilitados que no participan en la RPF
+NG
+Indicacion de que un grupo completo carga dejando el margen despachado 
+para RPF
+NG
+Confirmacion de que un grupo alcanzo su minimo tecnico participando de la 
+RPF
+NG
+Indicacion de que un grupo continua a plena carga con el margen 
+despachado para RPF (permite cambiar la potencia)
+NG
+Indicacion de que un grupo se encuentra a una carga intermedia a solicitud 
+del OED y participa en la RPF
+NO
+Indicacion de que un grupo se encuentra a una carga intermedia a solicitud 
+del OED y no participa en la RPF
+NO
+Indicacion de que un grupo varia su potencia (sube)
+NG
+Indicacion de que un grupo sube carga para controlar la sobrecarga de un 
+equipo del sistema de transporte de una Distro o PAFTT
+NR
+Indicacion de que un grupo sube carga por un requerimiento del Generador 
+(ensayo)
+NG
+Indicacion de que un grupo sube carga para controlar las tensiones en 
+ciertos nodos del sistema 
+NR
+Confirmacion de que un grupo alcanzo su minimo tecnico luego de entrar en 
+servicio (permite liberar la Potencia Operable)
+NG
+Indicacion de que un grupo se encuentra subiendo limitado a su minimo 
+tecnico luego de entrar en servicio
+NG
+Indicacion de que un grupo se encuentra subiendo limitado (sin reserva de 
+potencia)
+I
+Indicacion de que un grupo sube carga para controlar la sobrecarga de un 
+equipo del sistema de transporte en A.T.
+NR
+Indicacion de que un grupo que se encontraba al minimo sube carga por 
+problemas tecnicos
+NG
+
+--- Página 15 ---
+Grupos que variaron su potencia a requerimiento de un Distribuidor
+NR
+Indicacion de que un grupo se encuentra subiendo limitado (sin reserva de 
+potencia), participando de la RPF 
+NG
+Grupos que suben carga para alcanzar el porcentaje minimo admitido de 
+RPF en el sistema
+NO
+

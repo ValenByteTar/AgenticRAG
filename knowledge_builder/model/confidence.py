@@ -22,7 +22,7 @@ _EXTRACTOR_WEIGHTS = {
     "deterministic:equivalences-text": 0.95,
     "deterministic:entity-aliases-dict": 0.90,
     "deterministic:doc-cards": 0.70,
-    "llm:granite-4.1-8b": 0.85,
+    "llm:granite-4.1-3b": 0.85,
 }
 
 

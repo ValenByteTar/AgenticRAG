@@ -1,0 +1,5381 @@
+=== Protecciones-3.pdf ===
+
+--- Página 1 ---
+56
+EFECTO DEL ACOPLAMIENTO MUTUO EN LOS RELES
+ DE DISTANCIA DE LINEAS DE TRANSMISION
+Antonio Fonseca
+Compania Nacional de Transmision Electrica, TRANSELECTRIC S.A.
+RESUMEN
+En este documento, se plantea el modelamiento 
+geometrico de las lineas aereas de transmision de 
+energia electrica (L/T) con la nalidad de realizar un 
+analisis de la afectacion de este modelo en los dispositivos 
+de proteccion de distancia. Los acoplamientos que se 
+presentan entre circuitos de diferentes L/T son tambien 
+presentados y analizados. Adicionalmente, se plantea 
+una revision de las opciones disponibles en los reles 
+numericos para corregir este fenomeno.
+PALABRAS 
+CLAVES.- 
+Acoplamiento 
+mutuo, 
+compensacion por efecto mutuo, fallas en sistemas 
+de potencia, lineas paralelas, reles de distancia, reles 
+numericos.
+1. 
+INTRODUCCION
+En lineas aereas de transmision de energia electrica 
+(L/T) que presentan un recorrido geograco cercano 
+entre circuitos, pudiendo ser el caso de lineas 
+paralelas o circuitos de diferentes lineas, se presenta el 
+acoplamiento mutuo entre circuitos. Este acoplamiento 
+puede ser entre fases y/o entre fase y tierra, tanto 
+entre los conductores del circuito propio como con los 
+conductores del circuito paralelo. Para el caso de lineas 
+paralelas, el “efecto” de los acoplamientos entre fases 
+puede ser disminuido mediante la transposicion de 
+las fases de los circuitos, lo cual disminuye tambien el 
+efecto del acoplamiento entre fases de un circuito con las 
+fases del circuito adyacente. Sin embargo, el efecto del 
+acoplamiento mutuo entre fases y tierra, se encuentra 
+presente de manera permanente.
+Para condiciones balanceadas, este acoplamiento resulta 
+intrascendente y generalmente en analisis de ujos de 
+potencia no es considerado. Sin embargo, cuando se 
+presentan condiciones desbalanceadas en el sistema de 
+potencia (SEP), el efecto del acoplamiento mutuo toma 
+trascendencia, especialmente con la presencia de fallas 
+con contacto a tierra. Para el caso de lineas paralelas 
+estos acoplamientos pueden modicar el alcance de las 
+zonas de proteccion de los reles de distancia y generar 
+errores en la actuacion de las protecciones.
+Para analizar esta afectacion, se requiere el modelamiento 
+de las L/T desde el punto de vista geometrico, y de los 
+dispositivos de proteccion, con el n de determinar si 
+los equipos instalados operan adecuadamente ante las 
+fallas que se presenten en el sistema bajo estudio.
+2. 
+CONCEPTOS BASICOS
+El analisis del efecto mutuo en una L/T, se lo puede 
+desarrollar mediante el modelo PI ampliado con la 
+informacion de los acoplamientos mutuos existentes, 
+estos parametros pueden determinarse mediante 
+la disposicion geometrica de los conductores en la 
+estructura de la L/T.
+Por otra parte, el analisis en condiciones desbalanceadas 
+de un SEP, se lo realiza mediante la teoria de 
+componentes simetricas, la misma que esta basada en 
+el Teorema de Fortescue (1).
+En conjuncion de estos conceptos, un SEP, ante 
+condiciones desbalanceadas, puede ser analizado 
+mediante la determinacion de la matriz de impedancias 
+de fase ZABC, la misma que considerara los acoplamientos 
+existentes, para posteriormente determinar la matriz de 
+impedancias de secuencia Z012, mediante la aplicacion 
+de la matriz de transformacion TABC-012; con esto es 
+posible realizar el analisis de componentes simetricas 
+en un SEP ante fallas.
+El desarrollo que se presenta a continuacion, corresponde 
+a un sistema electrico general de dos niveles de tension: 
+138 y 230 kV, en el que se ha utilizado las estructuras 
+tipicas de suspension, asi como conductores del SNT 
+ecuatoriano.
+2.1 
+Elementos a modelarse
+2.1.1 
+Estructuras de L/T
+Los parametros que conforman la matriz de impedancia 
+de una L/T, pueden determinarse mediante la disposicion 
+geometrica de los conductores, basada en la estructura 
+tipica de la L/T a lo largo de su trayectoria geograca. 
+Generalmente la estructura tipica resulta en una de 
+tipo “suspension”, debido a que la ruta geograca
+
+--- Página 2 ---
+57
+para una L/T es determinada procurando en lo posible 
+tener trayectorias rectas, en donde la estructura tipo 
+suspension es la utilizada. 
+ 
+2.1.2 
+Conductores
+Una L/T generalmente presenta dos tipos de conductores, 
+uno utilizado por las tres fases para el transporte de 
+energia electrica, y otro utilizado para el apantallamiento 
+ante descargas atmosfericas, denominado guarda. 
+Cada uno de estos conductores presenta diferentes 
+caracteristicas electricas y mecanicas. Los parametros 
+electricos basicos requeridos para establecer el presente 
+analisis se los detalla en el Anexo 1.
+2.2 
+Inductancias de un conductor
+2.2.1 
+Inductancias propias y mutuas (2)
+Las inductancias se presentan debido a los ujos 
+magneticos a los que un conductor es sometido, los 
+mismos que se generan por la circulacion de corriente por 
+el conductor. El calculo de las inductancias generalmente 
+es dividido en dos componentes:
+  
+ 
+ 
+ 
+ 
+(1)
+Donde Li y Le son las autoinductancias del conductor 
+debido a las concatenaciones de ujo interno y externo, 
+respectivamente.
+Considerando que Ds = 0.779 r (radio equivalente), 
+donde r es el radio del conductor, se establece la 
+ecuacion basica de la inductancia propia por unidad de 
+longitud de un conductor:
+    
+ 
+ 
+ 
+ 
+(2)
+Para conductores compuestos el termino Ds es conocido 
+como el Radio Medio Geometrico (RMG) del conductor. 
+De manera similar se establece la inductancia mutua por 
+unidad de longitud entre conductores como:
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(3)
+Donde Dm es la distancia media geometrica entre 
+conductores. Como se observa, la inductancia, por 
+unidad de longitud, de un conductor es funcion de la 
+longitud total del conductor “s”, resultado que sera 
+aclarado en el siguiente punto.
+2.2.2 
+Efecto del camino de retorno en las 
+inductancias de un conductor (2)
+Un conductor representa la mitad del camino de 
+circulacion de corriente hacia un sistema electrico, la otra 
+mitad representa el camino de retorno de esta corriente. 
+Este retorno puede ser por medio de otro conductor o 
+por medio de la tierra. 
+En la Fig.1. se representa un circuito basico formado por 
+dos conductores “a” y “b”, en el que “b” representa el 
+camino de retorno.
+ 
+FIGURA 1: Circuito basico de dos conductores
+En este circuito es posible establecer la ecuacion de 
+voltajes de la siguiente manera:
+    
+ 
+ 
+ 
+ 
+(4)
+Donde: ZAA representa la impedancia total del circuito. Si 
+se aplican las ecuaciones para la inductancia denidas en 
+2.2.1 se tiene que ZAA se reduce a la siguiente expresion:
+   
+ 
+ 
+ 
+ 
+(5)
+En la Ec.5. es importante senalar que la inuencia de 
+la longitud del conductor “s”, se contraresta debido al 
+camino de retorno que siempre existira en un circuito; es 
+decir, la inductancia “Total” de un conductor, por unidad 
+de longitud, es independiente de la longitud del mismo.
+ 
+2.2.3 
+Efecto del retorno por tierra en una L/T (2)
+El modelo del retorno por tierra, desarrollado por 
+Carson, considera un conductor aereo “a” paralelo a 
+tierra, el mismo que conduce una corriente Ia con un 
+retorno a traves de un conductor cticio “b” debajo de la 
+supercie de la tierra Fig.2. El conductor de retorno “b”, 
+se encuentra localizado a una distancia “Dab” bajo la linea 
+aerea. El parametro Dab sera ajustado de tal manera que 
+la inductancia determinada sea igual a la que se obtenga 
+mediante mediciones y pruebas realizadas.
+ 
+FIGURA 2: Modelo de retorno por tierra de Carson
+ 
+H
+Le
+Li
+L
+
+
+
+
+Ia
+Z
+Ia
+z
+z
+z
+Va
+AA
+ab
+bb
+aa
+
+
+
+
+2
+
+
+m
+H
+D
+D
+D
+x
+j
+r
+r
+Z
+b
+a
+ab
+b
+a
+AA
+/
+.
+ln
+10
+2
+2
+7
+
+
+
+
+
+
+	
+	
+
+
+
+m
+H
+Ds
+s
+x
+l
+/
+1
+2
+ln
+10
+2
+7
+
+
+
+
+
+
+
+
+
+m
+H
+Dm
+s
+x
+m
+/
+1
+2
+ln
+10
+2
+7
+
+
+
+
+
+
+
+
+
+Ia
+zaa
+Va
++
+Ib = - Ia
+zbb
+a
+a'
+b
+b'
+Vb = 0
++
+zab
+Dab
+Superficie de la tierra
+ 
+Ia
+zaa
+Va
++
+Ib = - Ia
+zbb
+a
+a'
+b
+b'
+V b = 0
++
+zab
+Dab
+Superficie de la tierra
+
+--- Página 3 ---
+58
+El circuito es similar al indicado en la Fig.1., por lo que 
+la Ec.5. representa adecuadamente la impedancia del 
+circuito. En este modelo, la tierra se considera que tiene 
+una resistividad uniforme y una extension innita. La 
+corriente Ia se distribuye por tierra en una gran area, 
+buscando el camino de menor resistencia para retornar 
+a la fuente. Carson plantea que este fenomeno puede 
+ser modelado por medio de un conductor de retorno 
+con un RMG unitario, es decir, Db=1, e implicitamente 
+establece la relacion  De =D2ab / Db , con lo cual se puede 
+escribir la Ec.5.:
+    
+ 
+ 
+ 
+ 
+(6)
+Carson encontro que la resistencia de la tierra rb, es 
+funcion de la frecuencia f y establecio la siguiente 
+formula empirica:
+      
+ 
+ 
+ 
+ 
+(7)
+Adicionalmente, Carson establece que la distancia “De” 
+es una funcion de la resistividad de la tierra  y de la 
+frecuencia f, denida por la siguiente relacion:
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(8)
+El valor de resistividad de la tierra debe ser determinada 
+mediante pruebas; si no existen datos, es una practica 
+comun utilizar un valor de 100 Ω-m.
+2.3 
+Matriz de impedancias de Fase ZABC
+2.3.1 
+L/T con retorno por tierra (2)
+La denicion de la matriz de impedancias de fase ZABC 
+de una L/T trifasica se desarrolla utilizando los conceptos 
+basicos de calculo de las inductancias de un conductor 
+integrado con la teoria de solucion de circuitos electricos. 
+En la Fig.3. se indica una L/T trifasica con retorno por 
+tierra.
+ 
+FIGURA 3: Modelo trifasico con retorno por tierra
+Debido a que todos los conductores estan puestos a 
+tierra en este circuito, es posible establecer la siguiente 
+ecuacion matricial:
+       
+ 
+ 
+ 
+ 
+(9)   
+Donde se tienen los siguientes grupos de impedancias:
+Impedancias propias:  
+Impedancias mutuas:  
+Que nalmente puede reducirse a:
+ 
+Se observa que las impedancias mutuas presentan 
+un componente resistivo, debido al camino de retorno. 
+Como el retorno es por tierra, se aplica Dd=1 y 
+aproximadamente Dad = Dbd = Dcd = De; y, mediante las 
+formulas empiricas de Carson, indicadas en las Ecs. 7 y 
+8, se determinan De y rd.
+2.3.2 
+L/T con retorno por tierra y cable de 
+guarda (2)
+Para el caso de L/T con conductores de guarda se sigue 
+un procedimiento similar, considerando que el retorno se 
+realiza por caminos paralelos conformados por la tierra y 
+los conductores de guarda respectivos. Esto implica una 
+matriz de impedancias de orden superior que, de igual 
+manera que para el caso de lineas sin cable de guarda, 
+se puede reducir a un matriz 3x3 que corresponde a 
+la matriz de impedancias de fase ZABC. En la Fig.4. se 
+considera una L/T con dos conductores de guarda.
+ 
+FIGURA 4: Modelo con dos conductores de guarda
+
+
+m
+H
+D
+D
+x
+j
+r
+r
+Z
+a
+e
+b
+a
+AA
+/
+ln
+10
+2
+7
+
+
+
+
+
+
+	
+	
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c
+b
+a
+CC
+BC
+AC
+BC
+BB
+AB
+AC
+AB
+AA
+c
+b
+a
+I
+I
+I
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+V
+V
+V
+.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+dd
+cd
+cc
+CC
+dd
+bd
+bb
+BB
+dd
+ad
+aa
+AA
+z
+z
+z
+Z
+z
+z
+z
+Z
+z
+z
+z
+Z
+2
+2
+2
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+dd
+cd
+cc
+CC
+dd
+bd
+bb
+BB
+dd
+ad
+aa
+AA
+z
+z
+z
+Z
+z
+z
+z
+Z
+z
+z
+z
+Z
+2
+2
+2
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+dd
+cd
+ad
+ac
+AC
+dd
+cd
+bd
+bc
+BC
+dd
+bd
+ad
+ab
+AB
+z
+z
+z
+z
+Z
+z
+z
+z
+z
+Z
+z
+z
+z
+z
+Z
+
+
+
+
+
+
+m
+H
+D
+D
+D
+D
+x
+j
+r
+Z
+m
+H
+D
+D
+D
+D
+x
+j
+r
+Z
+m
+H
+D
+D
+D
+D
+x
+j
+r
+Z
+m
+H
+D
+D
+D
+x
+j
+r
+r
+Z
+m
+H
+D
+D
+D
+x
+j
+r
+r
+Z
+m
+H
+D
+D
+D
+x
+j
+r
+r
+Z
+d
+ac
+cd
+ad
+d
+AC
+d
+bc
+cd
+bd
+d
+BC
+d
+ab
+bd
+ad
+d
+AB
+d
+c
+cd
+d
+c
+CC
+d
+b
+bd
+d
+b
+BB
+d
+a
+ad
+d
+a
+AA
+/
+.
+ln
+10
+2
+/
+.
+ln
+10
+2
+/
+.
+ln
+10
+2
+/
+.
+ln
+10
+2
+/
+.
+ln
+10
+2
+/
+.
+ln
+10
+2
+7
+7
+7
+2
+7
+2
+7
+2
+7
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+m
+x
+f
+rb
+/
+10
+.
+7
+2
+
+
+
+
+ 
+m
+f
+De
+
+658.368
+
+a
+a '
+b
+b '
+c
+V a
++
++
++
+V b
+V c
+z b b
+z a a
+c'
+I d
+z d d
+d
+d '
+S u p er ficie  d e
+la  tier r a
+z c c
+I c
+I b
+I a
+z ca
+z a d
+z b d
+z cd
+z a b
+z b c
+V d  =  0
+z a a
+z b b
+z c c
+z d d
+z u u
++
++
++
+V d  =  0
+d
+I d
+l a  t i e r r a
+d '
+S u p e r f i c i e  d e
+z w w
+z a d
+z w d
+z u d
+z c d
+z b d
+V a
++
+V b
++
+V c
+V u
+V w
+w
+u
+c
+b
+a
+u '
+w '
+c '
+b '
+a '
+I a
+I b
+I c
+I w
+I u
+z c u
+z a u
+z a c
+z a b
+z b u
+z b c
+z b w
+z a w
+z c w
+z u w
+
+--- Página 4 ---
+59
+En este circuito, como Vu=Vw=0, es posible establecer la 
+siguiente ecuacion matricial de voltajes:
+     
+ 
+ 
+ 
+ 
+(10)
+Aplicando la reduccion de matrices de Kron, se obtiene 
+la matriz de impedancias de fase ZABC.
+   
+ 
+ 
+  
+ 
+ 
+(11)
+Con lo cual se establece la relacion de voltajes y 
+corrientes en una L/T:
+      
+ 
+ 
+ 
+ 
+(12)
+2.4 
+Matriz de impedancias de Secuencia Z012 
+de una L/T
+Para determinar la matriz de impedancias de secuencia 
+Z012, se aplica a la Ec.12. la matriz de transformacion de 
+componentes de fase a componentes simetricas TABC-012 
+= A, denida de la siguiente manera:
+Los voltajes y las corrientes de fase pueden escribirse 
+mediante la aplicacion de la matriz A a los voltajes y 
+corrientes de secuencia:
+ 
+Reemplazando en la Ec.12. y despejando V012:
+ 
+Donde se establece la matriz de impedancias de 
+secuencia sobre la base de la matriz de impedancias de 
+fase: 
+         
+ 
+ 
+ 
+(13)
+Este calculo matricial puede realizarse mediante 
+programas computacionales. Asumiendo la matriz 
+ZABC establecida en la Ec.9., se tiene la siguiente 
+transformacion:
+Donde se tienen las siguientes impedancias:
+       
+Se debe mencionar que esta matriz no es simetrica, 
+y que dependiendo de la disposicion geometrica de 
+los conductores, se presentaran acoplamientos entre 
+las redes de secuencia. Para el caso ideal, es decir, 
+L/T totalmente transpuesta, los acoplamientos entre 
+secuencias seran cero, deniendo de esta manera una 
+matriz diagonal.
+3. 
+LAZOS DE IMPEDANCIA DE RELES DE 
+DISTANCIA - CODIGO ANSI 21
+3.1 
+Efecto de los acoplamientos en redes de 
+secuencia
+Un rele de distancia – 21, basa su algoritmo de operacion 
+sobre el calculo de impedancias determinadas mediante 
+relaciones entre voltajes y corrientes que ingresan al 
+rele de proteccion. Estas relaciones dependen del tipo 
+de falla que se presente en el sistema. La impedancia a 
+calcularse (ZR) es la existente entre el sitio de ubicacion 
+del rele y el lugar de la falla. Independiente del tipo de 
+falla, el calculo siempre se reere a la determinacion 
+del valor de impedancia en secuencia positiva Z1, por 
+cuanto esta representa el comportamiento monofasico 
+equivalente de un conductor o fase dentro de un sistema 
+trifasico.
+3.1.1 
+Fallas entre fases
+Para el caso de fallas entre dos fases, Fig.5., los reles 
+de distancia determinan la impedancia ZR, mediante la 
+relacion entre el voltaje de linea y la corriente de linea:
+ 
+    
+ 
+  , para el caso de la Fig.5,   
+     (14)
+ 
+FIGURA 5: Falla bifasica “bc”
+Esta relacion determinaria de manera directa la 
+impedancia de secuencia positiva Z1 = ZSO - ZMO  , sin 
+embargo partiendo del diagrama de secuencias Fig.6, 
+para una condicion de falla bifasica “b-c”, se tiene lo 
+siguiente:
+  
+ 
+ 
+ 
+ 
+, e
+ 
+Con lo que la Ec.14 determina lo siguiente: 
+ 
+ 
+ 
+ 
+ 
+ 
+(15)
+Para una L/T Z1 = Z2, entonces:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+w
+u
+c
+b
+a
+WU
+ABC
+WU
+WU
+ABC
+ABC
+c
+b
+a
+I
+I
+Z
+Z
+Z
+Zo
+V
+,
+,
+,
+,
+,
+,
+,
+0
+
+
+ABC
+WU
+WU
+WU
+ABC
+ABC
+ABC
+Z
+Z
+Z
+Zo
+Z
+,
+1
+,
+.
+.
+
+
+
+ABC
+ABC
+ABC
+I
+Z
+V
+.
+
+ 
+A
+Z
+A
+Z
+ABC .
+.
+1
+012
+
+
+012
+.V
+A
+VABC 
+ 
+012
+. I
+A
+I ABC 
+ 
+012
+012
+012
+1
+012
+.
+.
+.
+.
+I
+Z
+I
+A
+Z
+A
+V
+ABC
+
+
+
+ 
+3
+2
+2
+2
+120
+1
+;
+1
+1
+1
+1
+1
+
+je
+a
+a
+a
+a
+a
+A
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+	
+0
+0
+1
+1
+2
+2
+2
+2
+0
+0
+1
+1
+1
+1
+2
+2
+0
+0
+2
+21
+20
+12
+1
+10
+02
+01
+0
+012
+2
+2
+2
+M
+S
+M
+S
+M
+S
+M
+S
+M
+S
+M
+S
+M
+S
+M
+S
+M
+S
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+21
+T P
+S/E: A
+52
+T C
+5 2
+SEP
+S/E: B
+FALLA BIFASICA
+B I F A S I C A
+I c
+I b
+V c
+V b
+V a
+U B I C A C I O N  D E L  R E L E  2 1
+Z 1
+Z 1
+Z 1
+F A L L A
+SEP
+
+
+
+
+
+
+CC
+BB
+AA
+S
+CC
+BB
+AA
+S
+CC
+BB
+AA
+S
+Z
+a
+Z
+a
+Z
+Z
+Z
+a
+Z
+a
+Z
+Z
+Z
+Z
+Z
+Z
+.
+.
+3
+1
+.
+.
+3
+1
+3
+1
+2
+2
+2
+1
+0
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+AB
+CA
+BC
+M
+AB
+CA
+BC
+M
+AB
+CA
+BC
+M
+Z
+a
+Z
+a
+Z
+Z
+Z
+a
+Z
+a
+Z
+Z
+Z
+Z
+Z
+Z
+.
+.
+3
+1
+.
+.
+3
+1
+3
+1
+2
+2
+2
+1
+0
+
+
+
+
+
+
+
+
+
+LL
+LL
+R
+I
+V
+Z 
+bc
+bc
+bc
+R
+I
+V
+Z
+
+
+
+
+21
+12
+2
+1
+1
+3
+3
+Z
+Z
+Z
+Z
+i
+j
+V
+j
+V
+a
+a
+bc
+
+
+
+
+
+
+
+ 
+1
+3
+2
+a
+bc
+i
+j
+I
+
+
+ 
+2
+21
+12
+2
+1
+Z
+Z
+Z
+Z
+Z
+bc
+R
+
+
+
+
+
+2
+21
+12
+1
+Z
+Z
+Z
+Z
+bc
+R
+
+
+
+
+
+--- Página 5 ---
+60
+ 
+FIGURA 6: Red de secuencia falla bifasica “bc”
+Se determina entonces que existira un error en el calculo 
+de la impedancia desde el rele hacia el punto de falla, 
+error que depende del acoplamiento existente entre las 
+redes de secuencia. 
+ 
+FIGURA 7: Estructura de suspension – Simple circuito
+En la tabla 1 y 2, se indican las matrices ZABC y Z012, para 
+una L/T transpuesta y no transpuesta, respectivamente. 
+El calculo se lo realiza considerando la estructura 
+para 138 kV expresada en la Fig.7 y los calibres de 
+conductores indicados en el Anexo 1.
+TABLA 1: Matriz de Impedancias de L/T transpuesta
+TABLA 2: Matriz de Impedancias de L/T no transpuesta
+Si la L/T es totalmente transpuesta, Tabla 1, Z12 = Z21 
+= 0, por lo que la impedancia detectada por el rele es 
+efectivamente:                  . Sin embargo, y de la Tabla 
+2. se observa que para el caso de L/T sin transposicion, 
+este acoplamiento existe y produce un error de 
+aproximadamente: 
+ 
+Este error es muy pequeno y puede no ser considerado 
+en la determinacion de los ajustes de protecciones de 
+distancia de L/T. Se ha simulado un cortocircuito bifasico 
+B-C al 100% en una L/T de 200 km, utilizando el metodo 
+“Completo” de Power Factory. El rele observa  las 
+siguientes impedancias:
+  
+ 
+ 
+;  
+Generando una diferencia de -0,044 + j2,99 ohms, 
+que considerando los 200 km de la longitud de la 
+L/T, representa la impedancia de acoplamiento entre 
+secuencias 1 y 2.
+Finalmente, de manera similar se establecen los tres 
+posibles lazos de medicion considerando las tres fases 
+existentes: 
+ 
+Para el caso de fallas trifasicas, la impedancia ZR se 
+determina mediante estas mismas relaciones, sin 
+embargo en este caso el error es cero por cuanto 
+interviene unicamente la red de secuencia positiva.
+3.1.2 
+Fallas fase - tierra
+Para el caso de fallas fase-tierra, Fig.8., se determina la 
+impedancia ZR, mediante la relacion entre el voltaje y la 
+corriente de fase, corregido generalmente mediante el 
+factor de compensacion k0, el cual considera el efecto 
+del camino de retorno de la corriente de falla If.
+ 
+FIGURA 8: Falla monofasica “a”
+Esta relacion determinaria de manera directa la 
+impedancia de secuencia positiva Z1, sin embargo 
+partiendo del diagrama de secuencias para una condicion 
+de falla monofasica “a” Fig.9, se tiene lo siguiente: 
+  
+ 
+Ia1
+Ia2
+Z1
+Z2
+Z12
+Va1
++
+Va2
++
++
+Va
+ 
+ 
+ 
+2 1
+T P
+5 2
+T C
+5 2
+SEP
+FALLA MONOFASICA
+SEP
+FALLA
+Z1
+Z1
+Z1
+UBICACION DEL RELE 21
+Va
+Vb
+Vc
+Ia
+MONOFASIC
+Vd
+ko . Z1
+Vc
+If = 3I0
+ 
+ DIgSI/info - Matriz reducida de impedancias Zabc (R+jX) [ohm/km] 
+A
+0,227
+0,859
+0,085
+0,389
+0,085
+0,389
+B
+0,085
+0,389
+0,227
+0,859
+0,085
+0,389
+C
+0,085
+0,389
+0,085
+0,389
+0,227
+0,859
+ DIgSI/info - Matriz reducida de impedancias Z012 (R+jX) [ohm/km]
+0
+0,397
+1,636
+0,000
+0,000
+0,000
+0,000
+1
+0,000
+0,000
+0,142
+0,470
+0,000
+0,000
+2
+0,000
+0,000
+0,000
+0,000
+0,142
+0,470
+A
+B
+C
+0
+1
+2
+ DIgSI/info - Matriz reducida de impedancias Zabc (R+jX) [ohm/km]
+A
+0,227
+0,859
+0,083
+0,382
+0,086
+0,381
+B
+0,083
+0,382
+0,225
+0,860
+0,085
+0,403
+C
+0,086
+0,381
+0,085
+0,403
+0,230
+0,858
+ DIgSI/info - Matriz de impedancias simetricas Z012 (R+jX) [ohm/km]
+0
+0,397
+1,636
+0,001
+-0,005
+-0,001
+-0,010
+1
+-0,001
+-0,010
+0,142
+0,470
+0,000
+0,014
+2
+0,001
+-0,005
+0,000
+0,014
+0,142
+0,470
+A
+B
+C
+0
+1
+2
+%
+3
+100
+.
+470
+,0
+142
+,0
+014
+,0
+2
+1
+12
+1
+21
+12
+
+
+
+
+
+j
+j
+Z
+Z
+Z
+Z
+Z
+
+
+
+935
+,
+93
+461
+,
+30
+sin
+j
+Z
+on
+transposic
+
+
+
+925
+,
+96
+417
+,
+30
+j
+Z
+on
+transposic
+ca
+ca
+ca
+R
+bc
+bc
+bc
+R
+ab
+ab
+ab
+R
+I
+V
+Z
+I
+V
+Z
+I
+V
+Z
+
+
+
+
+
+
+;
+;
+0
+2
+1
+0
+2
+1
+;
+0
+a
+a
+a
+a
+a
+a
+i
+i
+i
+v
+v
+v
+
+
+
+
+
+ 
+a
+a
+a
+a
+a
+I
+i
+i
+i
+i
+
+
+
+
+0
+0
+2
+1
+3
+
+
+012
+2
+1
+3
+m
+a
+a
+Z
+Z
+Z
+I
+V
+
+
+
+
+ 
+21
+12
+20
+02
+10
+01
+012
+Z
+Z
+Z
+Z
+Z
+Z
+Zm
+
+
+
+
+
+
+0
+,
+,
+,
+,
+.k
+I
+I
+V
+Z
+f
+c
+b
+a
+c
+b
+a
+R
+
+
+ 
+1
+Z
+Z
+bc
+R
+
+
+
+--- Página 6 ---
+61
+Para una L/T Z1 = Z2, con lo cual:
+ 
+Entonces, para determinar la impedancia Z1, se 
+requiere realizar una compensacion del factor adicional 
+que acompana a este termino, con lo que el lazo de 
+impedancia ante fallas monofasicas seria:
+Los reles realizan el calculo del primer termino, por lo 
+que se produce un error que depende del acoplamiento 
+existente entre las redes de secuencia:
+     
+ 
+ 
+ 
+ 
+ 
+(16)
+ 
+FIGURA 9: Red de secuencia falla monofasica “a”
+Si la L/T es totalmente transpuesta Zm012 = 0, la 
+impedancia detectada es:           . Sin embargo, y de 
+la Tabla 2. se observa que para el caso de L/T sin 
+transposicion, este acoplamiento existe y produce un 
+error de aproximadamente: 
+Este error es muy pequeno y no es considerado en 
+la determinacion de los ajustes de protecciones de 
+distancia de L/T. Se observa que el “efecto neto” de 
+este error depende de los signos de las impedancias 
+de acoplamiento, para el caso los acoplamientos con la 
+secuencia cero generan un error en su parte imaginaria 
+unicamente y esta se contraresta con el acoplamiento 
+entre secuencia positiva y negativa, de tal manera que 
+el efecto neto del error es pequeno.
+Al igual que para el caso fase-fase, se ha simulado un 
+cortocircuito monofasico A-T al 100% en una L/T de 200 
+km, utilizando el metodo “Completo” de Power Factory. 
+El rele observa  las siguientes impedancias:
+                                             ; 
+Generando una diferencia de 0,095 + j0,081 ohms, que 
+representa un error de aproximadamente 0.1%.
+De manera similar se establecen los tres posibles lazos 
+de medicion considerando las tres fases existentes. En 
+el caso de considerar la carga que la fase fallada puede 
+aun abastecer, el lazo de impedancia calculado es:
+Donde          representan las corrientes en la fase fallada 
+e If corresponde a la corriente de falla circulando por 
+tierra.
+En resumen, se establecen 6 lazos de medicion, 
+y dependiendo de la disposicion geometrica de 
+los conductores la relacion clasica de medicion de 
+impedancia, utilizada en la mayoria de los reles de 
+distancia, contendra un error, que por su pequeno valor 
+puede ser omitido. 
+3.2 
+Acoplamientos 
+entre 
+circuitos 
+de 
+diferentes L/T
+De manera similar al desarrollo planteado en 3.1, 
+la incorporacion de los efectos producidos por el 
+acoplamiento entre conductores de diferentes L/T, 
+inclusive de diferente nivel de tension, se realiza en 
+base al establecimiento de la matriz de impedancias 
+de fase reducida ZABC, y al posterior calculo de la matriz 
+de secuencia Z012 en la que se encuentran los acoples 
+existentes. La diferencia radica en la dimension de las 
+matrices ZABC y Z012, las cuales se incrementan en 3 las 
+– columnas por cada L/T que se adicione al modelo.
+3.2.1 
+Matriz Z012 de una L/T doble circuito
+En base al procedimiento explicado en 2.3, y mediante 
+el programa de calculo Power Factory, considerando 
+la estructura para 138 kV expresada en la Fig. 10 y los 
+calibres de conductores indicados en el Anexo 1, se 
+determinan las matrices ZABC-6x6 y Z012-6x6
+
+
+3
+1
+3
+3
+2
+012
+0
+1
+012
+0
+1
+m
+m
+a
+a
+Z
+k
+Z
+Z
+Z
+Z
+I
+V
+Z
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+0
+012
+0
+1
+1
+3
+1
+k
+Z
+k
+I
+V
+Z
+m
+a
+a
+
+
+
+
+
+
+
+
+0
+012
+1
+0
+1
+3
+1
+k
+Z
+Z
+k
+I
+V
+Z
+m
+a
+a
+R
+
+
+
+
+
+ 
+f
+c
+c
+c
+R
+f
+b
+b
+b
+R
+f
+a
+a
+a
+R
+I
+k
+I
+V
+Z
+I
+k
+I
+V
+Z
+I
+k
+I
+V
+Z
+0
+0
+0
+;
+;
+
+
+
+
+
+
+
+
+
+002
+,0
+21
+12
+20
+02
+10
+01
+012
+j
+Z
+Z
+Z
+Z
+Z
+Z
+Z m
+
+
+
+
+
+
+
+
+ 
+
+
+%
+08
+,0
+1
+3
+1
+0
+012
+
+
+Z
+k
+Zm
+Z1
+Ia1
+Z2
+Z0
+Ia0
+Ia2
++
+Va1
++
+Va
++
++
+Va2
+Va0
+Z10 = Z01
+Z12 = Z21
+Z20 = Z02
+ 
+c
+b
+aI
+,
+,
+1
+Z
+Z R 
+
+
+
+816
+,
+96
+392
+,
+30
+j
+Z
+on
+transposic
+ 
+
+
+
+735
+,
+96
+297
+,
+30
+sin
+j
+Z
+on
+transposic
+
+--- Página 7 ---
+62
+ 
+FIGURA 10: Estructura de suspension - Doble circuito
+La tabla 3 presenta el resultado de las matrices ZABC-6x6 y 
+Z012-6x6  de la L/T sin transposicion.
+TABLA 3: Matriz de Impedancias de L/T no transpuesta
+ 
+Se observa la presencia de acoplamientos entre las 
+redes de secuencia, tanto entre secuencias de un mismo 
+circuito como entre circuito 1 (C1) y circuito 2 (C2). 
+Acoplamientos entre redes de secuencia de un 
+• 
+mismo circuito:
+ 
+                                               ;  
+Acoplamientos entre circuitos, de redes de 
+• 
+secuencia no correspondientes:
+ 
+                                              ;  
+Acoplamientos entre circuitos, de redes de 
+• 
+secuencia correspondientes:
+ 
+ 
+La tabla 4 presenta el resultado de las matrices ZABC-6x6 y 
+Z012-6x6 de la L/T con transposicion.
+TABLA 4: Matriz de Impedancias de L/T transpuesta
+ 
+Se observa que unicamente existen acoplamientos 
+entre circuitos de redes de secuencia correspondientes, 
+los demas acoplamientos son cero:
+ 
+  
+3.2.2 
+Analisis de fallas Fase – Fase
+En el caso de fallas fase – fase intervienen las redes 
+de secuencia positiva y negativa, por lo que se analizan 
+unicamente los terminos relacionados a estas redes.
+Afectacion en L/T sin transposicion
+• 
+Un analisis similar al planteado en 3.1.1 permite establecer 
+que, para el caso de una falla fase – fase “bc” en el circuito 
+C1, la impedancia detectada por un rele seria:
+  
+ 
+ 
+ 
+ 
+ 
+       (17)
+Donde           e           representan las corrientes hacia la falla, 
+para el caso, corriente de linea b-c, del circuito 1 y del 
+circuito 2, respectivamente. El signo ± de esta ecuacion, 
+depende del sentido relativo entre las corrientes           e 
+         , en consecuencia depende de la conguracion del 
+sistema. De manera general se aplica lo siguiente:
+El termino es positivo cuando los aportes de 
+• 
+corriente uyen en la misma direccion.
+El termino es negativo cuando los aportes de 
+• 
+corriente uyen en direcciones opuestas.
+En el caso de una falla al 100% en el C1 de la L/T, sin 
+fuente en el otro extremo       , y         considerando las 
+impedancias dadas en 3.2.1, se determina el error eZ en 
+el lazo de medicion:
+ 
+ 
+ 
+Afectacion en L/T con transposicion
+• 
+De la tabla 4 se observa que existen unicamente 
+acoplamientos entre redes de secuencia correspondientes 
+entre C1 y C2. Por lo tanto el lazo de impedancia es:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(18)
+En el caso de una falla al 100% en el C1 de la L/T, sin 
+fuente en el otro extremo       , y        considerando las 
+impedancias dadas en 3.2.1, se determina el error eZ en 
+el lazo de medicion:
+  DIgSI/info - Matriz reducida de impedancias Zabc (R+jX) [ohm/km]  
+A-C1
+0,235
+0,847
+0,096
+0,370
+0,101
+0,316
+0,093
+0,349
+0,096
+0,331
+0,101
+0,301
+B-C1
+0,096
+0,370
+0,242
+0,844
+0,105
+0,366
+0,096
+0,331
+0,100
+0,345
+0,105
+0,327
+C-C1
+0,101
+0,316
+0,105
+0,366
+0,254
+0,839
+0,101
+0,301
+0,105
+0,327
+0,112
+0,340
+A-C2
+0,093
+0,349
+0,096
+0,331
+0,101
+0,301
+0,235
+0,847
+0,096
+0,370
+0,101
+0,316
+B-C2
+0,096
+0,331
+0,100
+0,345
+0,105
+0,327
+0,096
+0,370
+0,242
+0,844
+0,105
+0,366
+C-C2
+0,101
+0,301
+0,105
+0,327
+0,112
+0,340
+0,101
+0,316
+0,105
+0,366
+0,254
+0,839
+ DIgSI/info - Matriz de impedancias simetricas Z012 (R+jX) [ohm/km]
+0-C1
+0,446
+1,545
+0,011
+-0,001
+-0,024
+-0,011
+0,303
+0,984
+0,003
+0,003
+-0,017
+-0,007
+1-C1
+-0,024
+-0,011
+0,143
+0,493
+-0,030
+0,018
+-0,017
+-0,007
+0,001
+0,025
+-0,015
+0,009
+2-C1
+0,011
+-0,001
+0,030
+0,017
+0,143
+0,493
+0,003
+0,003
+0,016
+0,008
+0,001
+0,025
+0-C2
+0,303
+0,984
+0,003
+0,003
+-0,017
+-0,007
+0,446
+1,545
+0,011
+-0,001
+-0,024
+-0,011
+1-C2
+-0,017
+-0,007
+0,001
+0,025
+-0,015
+0,009
+-0,024
+-0,011
+0,143
+0,493
+-0,030
+0,018
+2-C2
+0,003
+0,003
+0,016
+0,008
+0,001
+0,025
+0,011
+-0,001
+0,030
+0,017
+0,143
+0,493
+A-C1
+B-C1
+C-C1
+A-C2
+B-C2
+C-C2
+0-C1
+1-C1
+2-C1
+0-C2
+1-C2
+2-C2
+  DIgSI/info - Matriz reducida de impedancias Zabc (R+jX) [ohm/km]  
+A-C1
+0,243
+0,843
+0,101
+0,351
+0,101
+0,351
+0,101
+0,345
+0,101
+0,320
+0,101
+0,320
+B-C1
+0,101
+0,351
+0,243
+0,843
+0,101
+0,351
+0,101
+0,320
+0,101
+0,345
+0,101
+0,320
+C-C1
+0,101
+0,351
+0,101
+0,351
+0,243
+0,843
+0,101
+0,320
+0,101
+0,320
+0,101
+0,345
+A-C2
+0,101
+0,345
+0,101
+0,320
+0,101
+0,320
+0,243
+0,843
+0,101
+0,351
+0,101
+0,351
+B-C2
+0,101
+0,320
+0,101
+0,345
+0,101
+0,320
+0,101
+0,351
+0,243
+0,843
+0,101
+0,351
+C-C2
+0,101
+0,320
+0,101
+0,320
+0,101
+0,345
+0,101
+0,351
+0,101
+0,351
+0,243
+0,843
+ DIgSI/info - Matriz de impedancias simetricas Z012 (R+jX) [ohm/km]
+0-C1
+0,446
+1,545
+0,000
+0,000
+0,000
+0,000
+0,303
+0,984
+0,000
+0,000
+0,000
+0,000
+1-C1
+0,000
+0,000
+0,142
+0,493
+0,000
+0,000
+0,000
+0,000
+0,000
+0,025
+0,000
+0,000
+2-C1
+0,000
+0,000
+0,000
+0,000
+0,142
+0,493
+0,000
+0,000
+0,000
+0,000
+0,000
+0,025
+0-C2
+0,303
+0,984
+0,000
+0,000
+0,000
+0,000
+0,446
+1,545
+0,000
+0,000
+0,000
+0,000
+1-C2
+0,000
+0,000
+0,000
+0,025
+0,000
+0,000
+0,000
+0,000
+0,142
+0,493
+0,000
+0,000
+2-C2
+0,000
+0,000
+0,000
+0,000
+0,000
+0,025
+0,000
+0,000
+0,000
+0,000
+0,142
+0,493
+A-C1
+B-C1
+C-C1
+A-C2
+B-C2
+C-C2
+1-C2
+2-C2
+0-C1
+1-C1
+2-C1
+0-C2
+001
+,0
+011
+,0
+2
+20
+2
+01
+1
+20
+1
+01
+j
+Z
+Z
+Z
+Z
+C
+C
+C
+C
+
+
+
+
+
+
+
+
+
+011
+,0
+024
+,0
+2
+02
+2
+10
+1
+02
+1
+10
+j
+Z
+Z
+Z
+Z
+C
+C
+C
+C
+
+
+
+
+
+
+
+
+
+
+018
+,0
+030
+,0
+2
+12
+1
+12
+j
+Z
+Z
+C
+C
+
+
+
+
+
+
+017
+,0
+030
+,0
+2
+21
+1
+21
+j
+Z
+Z
+C
+C
+
+
+
+
+
+003
+,0
+003
+,0
+2
+1
+20
+2
+1
+01
+1
+2
+20
+1
+2
+01
+j
+Z
+Z
+Z
+Z
+C
+C
+C
+C
+C
+C
+C
+C
+
+
+
+
+
+
+
+
+
+007
+,0
+017
+,0
+2
+1
+02
+2
+1
+10
+1
+2
+02
+1
+2
+10
+j
+Z
+Z
+Z
+Z
+C
+C
+C
+C
+C
+C
+C
+C
+
+
+
+
+
+
+
+
+
+
+ 
+009
+,0
+015
+,0
+2
+1
+12
+1
+2
+12
+j
+Z
+Z
+C
+C
+C
+C
+
+
+
+
+
+
+ 
+008
+,0
+016
+,0
+2
+1
+21
+1
+2
+21
+j
+Z
+Z
+C
+C
+C
+C
+
+
+
+
+
+ 
+984
+,0
+303
+,0
+2
+1
+00
+1
+2
+00
+j
+Z
+Z
+C
+C
+C
+C
+
+
+
+
+
+ 
+025
+,0
+2
+1
+22
+2
+1
+11
+1
+2
+22
+1
+2
+11
+j
+Z
+Z
+Z
+Z
+C
+C
+C
+C
+C
+C
+C
+C
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+2
+2
+1
+2
+21
+1
+2
+12
+1
+2
+11
+1
+2
+1
+21
+1
+12
+1
+C
+C
+C
+C
+C
+C
+C
+bc
+C
+bc
+C
+C
+bc
+R
+Z
+Z
+Z
+I
+I
+Z
+Z
+Z
+Z
+1
+2
+11
+1
+2
+21
+1
+2
+12
+1
+21
+1
+12
+1
+2
+C
+C
+C
+C
+C
+C
+C
+C
+R
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+
+
+
+
+
+
+
+
+
+
+
+1
+2
+11
+1
+2
+21
+1
+2
+12
+1
+21
+1
+12
+2
+C
+C
+C
+C
+C
+C
+C
+C
+Z
+Z
+Z
+Z
+Z
+eZ
+
+
+
+
+
+
+
+
+
+
+
+%
+3
+100
+.
+493
+,0
+143
+,0
+016
+,0
+0015
+,0
+1
+1
+
+
+
+
+
+j
+j
+Z
+eZ
+C
+ 
+1
+C
+bc
+I
+
+1
+C
+bc
+I
+
+2
+C
+bc
+I
+
+2
+C
+bc
+I
+
+1
+C
+bc
+I
+
+2
+C
+bc
+I
+  
+984
+,0
+303
+,0
+2
+1
+00
+1
+2
+00
+j
+Z
+Z
+C
+C
+C
+C
+
+
+
+
+
+ 
+025
+,0
+001
+,0
+2
+1
+22
+2
+1
+11
+1
+2
+22
+1
+2
+11
+j
+Z
+Z
+Z
+Z
+C
+C
+C
+C
+C
+C
+C
+C
+
+
+
+
+
+
+
+
+
+ 
+1
+2
+11
+1
+2
+1
+1
+1
+C
+C
+C
+bc
+C
+bc
+C
+bc
+C
+bc
+bc
+R
+Z
+I
+I
+Z
+I
+V
+Z
+
+
+
+
+
+
+
+
+
+ 
+1
+C
+bc
+I
+
+2
+C
+bc
+I
+
+
+--- Página 8 ---
+63
+   
+ 
+ 
+     ;  
+ 
+Se observa que el error aumenta debido a la presencia 
+permanente de los acoplamientos              y               , los 
+cuales no se contrarestan como en el caso de una L/T 
+no transpuesta. 
+En la gura 11 se observa la simulacion del barrido de 
+cortocircuito bifasico B-C en el C1 de una L/T de 200 
+km, considerando el metodo “Completo”. Los ajustes 
+planteados para cada zona se ajustan a la practica 
+comun, Z1 = 80% y Z2 = 120% de la L/T protegida.
+ 
+FIGURA 11: Barrido de cortocircuito bifasico
+Adicionalmente, el error en la medicion de impedancia y 
+consecuentemente el alcance de un rele se vera afectado 
+dependiendo del aporte de generacion (in-feed) que se 
+presente en el extremo de la L/T opuesta al rele, y del 
+punto en el que ocurra la falla bifasica. Esto se debe a 
+la variacion de la direccion relativa de la corriente hacia 
+el punto de falla entre los circuitos C1 y C2. En la Fig.12 
+se presenta la simulacion del barrido de cortocircuito 
+bifasico a lo largo del C1, considerando fuentes iguales 
+en los dos extremos de la L/T.
+ 
+FIGURA 12: Corrientes (magnitud y angulo)  en C1 y 
+C2 vs. distancia de falla en C1
+De los gracos se observa que se presenta un punto 
+de inversion de la corriente en el C2 desde los 172 km 
+aproximadamente. Se debe mencionar que el punto 
+en el cual el rele deja de sobrealcanzar y empieza a 
+subalcanzar, se encuentra alrededor de los 160 km, 
+mucho menor que el punto de inversion de corriente, 
+esto se debe a la utilizacion del metodo “Completo” 
+que considera el ujo de carga previo al cortocircuito. 
+Es importante senalar que los acoplamientos existentes 
+entre circuitos de redes de secuencia  correspondientes 
+          y          , si se consideran en el metodo 
+IEC909-1988. En el caso de utilizar este  metodo, el 
+punto de inversion de corriente del C2 (50% de la L/T = 
+100 km) coincide con el punto en el cual el rele pasa de 
+sobrealcance a subalcance.
+3.2.3 
+Analisis de fallas Fase – Tierra
+En el caso de fallas fase – tierra intervienen las redes de 
+secuencia positiva, negativa y cero.
+Afectacion en L/T sin transposicion
+• 
+Un analisis similar al planteado en 3.1.2 permite establecer 
+que para el caso de una falla fase - tierra “a” en el circuito 
+C1, la impedancia detectada por un rele seria:
+   
+   
+ 
+ 
+ 
+ 
+ 
+                 
+ 
+ 
+      (19)
+Donde:
+ 
+ 
+ 
+         e         representan las corrientes hacia la falla, para 
+el caso, corriente de fase a del circuito 1 y de neutro del 
+circuito 2, respectivamente. El signo ± de esta ecuacion, 
+depende del sentido relativo entre las corrientes           e 
+        aplicando lo indicado en 3.2.2.
+En el caso de una falla al 100% en el C1 de la L/T, sin 
+fuente en el otro extremo               ,y considerando 
+las impedancias dadas en 3.2.1 se puede determinar 
+la impedancia detectada ZR y el error eZ en el lazo de 
+medicion ante fallas fase - tierra:
+                                              ;                                         ;
+  
+ 
+105.
+90.0
+75.0
+60.0
+45.0
+30.0
+15.0
+-15.0
+-30.0
+-45.0
+[pri.Ohm]
+120.
+105.
+90.0
+75.0
+60.0
+45.0
+30.0
+15.0
+-15.0
+Acoplada1-138\21_Acoplada1_138
+21_Acoplada1_138\Polarizing
+ Barrido de Icc_LT1
+ Barrido de Icc_LT1
+L/T Transpuesta (azul)
+L/T sin transposicion (negro)
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+	
+	
+
+	
+
+
+
+
+
+
+
+
+
+0
+1
+2
+012
+1
+2
+012
+1
+2
+0
+1
+012
+1
+0
+1
+1
+1
+3
+1
+3
+1
+k
+Z
+Z
+I
+I
+k
+Z
+Z
+k
+I
+V
+Z
+C
+C
+C
+C
+m
+C
+a
+C
+n
+C
+m
+C
+a
+C
+a
+a
+R
+ 
+1
+21
+1
+12
+1
+20
+1
+02
+1
+10
+1
+01
+1
+012
+C
+C
+C
+C
+C
+C
+C
+m
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+1
+2
+21
+1
+2
+12
+1
+2
+20
+1
+2
+02
+1
+2
+10
+1
+2
+01
+1
+2
+012
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+C
+m
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+1
+2
+22
+1
+2
+11
+1
+2
+00
+1
+2
+012
+C
+C
+C
+C
+C
+C
+C
+C
+Z
+Z
+Z
+Z
+
+
+
+
+
+
+
+ 
+
+
+0
+1
+2
+012
+1
+2
+012
+1
+012
+1
+1
+3
+k
+Z
+Z
+Z
+Z
+Z
+C
+C
+C
+C
+m
+C
+m
+a
+R
+
+
+
+
+
+
+
+
+
+
+
+0
+1
+2
+012
+1
+2
+012
+1
+012
+1
+3
+k
+Z
+Z
+Z
+eZ
+C
+C
+C
+C
+m
+C
+m
+
+
+
+
+
+
+
+011
+,0
+026
+,0
+1
+012
+j
+Z
+C
+m
+
+
+
+
+ 
+009
+,0
+027
+,0
+1
+2
+012
+j
+Z
+C
+C
+m
+
+
+
+
+034
+,1
+305
+,0
+1
+2
+012
+j
+Z
+C
+C
+
+
+
+ 
+%
+41
+100
+.
+493
+,0
+143
+,0
+004
+,0
+135
+,5
+054
+,1
+252
+,0
+1
+1
+
+
+
+
+
+
+j
+j
+j
+Z
+eZ
+C
+1
+C
+aI
+ 1
+C
+aI
+
+1
+C
+aI
+ 1
+C
+aI
+
+2
+C
+nI 
+2
+C
+nI 
+2
+1
+C
+n
+C
+a
+I
+I
+
+
+
+1
+2
+11
+1
+C
+C
+R
+Z
+Z
+Z
+
+
+
+1
+2
+11
+C
+C
+Z
+eZ
+
+
+ 
+%
+5
+100
+.
+493
+,0
+142
+,0
+025
+,0
+1
+1
+
+
+
+
+j
+j
+Z
+eZ
+C
+1
+2
+11
+C
+C
+Z
+
+1
+2
+22
+C
+C
+Z
+
+200.00
+160.00
+120.00
+80.00
+40.00
+0.00
+5.00
+4.00
+3.00
+2.00
+1.00
+0.00
+-1.00
+Eje x:
+DPLBarrido_Icc: Posicion en km in km
+Acoplada1-138: Corriente Inicial de Corto Circuito L-L B/Terminal i in kA
+Acoplada2-138: Corriente Inicial de Corto Circuito L-L B/Terminal i in kA
+Corriente en el C1, en falla
+Corriente en el C2
+200.00
+160.00
+120.00
+80.00
+40.00
+0.00
+200.00
+100.00
+0.00
+-100.00
+-200.00
+Eje x:
+DPLBarrido_Icc: Posicion en km in km
+Acoplada1-138: Corriente Linea-Linea, Angulo B/Terminal i in deg
+Acoplada2-138: Corriente Linea-Linea, Angulo B/Terminal i in deg
+Angulo de la Corriente en el C1
+en falla
+Angulo de la Corriente en el C2
+Punto de inversion de 
+la corriente en C2
+172.000 km
+D
+I
+g
+S
+I
+L
+ 
+1
+2
+11
+C
+C
+Z
+
+1
+2
+22
+C
+C
+Z
+
+
+--- Página 9 ---
+64
+Afectacion en L/T con transposicion
+• 
+De la tabla 4 se observa que existen unicamente 
+acoplamientos entre redes de secuencia correspondientes 
+entre C1 y C2. Por lo tanto el lazo de impedancia para el 
+caso de una falla fase - tierra sera:
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+(20)
+En el caso de una falla al 100% en el C1 de la L/T, sin 
+fuente en el otro extremo Ia-c1 = I n-c2  , y considerando 
+las impedancias dadas en 3.2.1 se puede determinar 
+la impedancia detectada ZR y el error eZ en el lazo de 
+medicion ante fallas fase - tierra:
+ 
+                                  ;  
+ 
+Se observa que el error es practicamente el mismo, debido 
+a la presencia permanente de los acoplamientos entre 
+redes de secuencia correspondientes, los cuales siempre 
+existen independientemente de la transposicion de la L/T 
+y, debido a su magnitud, no se contrarestan de manera 
+apreciable con los acoplamientos              y              . 
+En la gura 13 se observa la simulacion del barrido de 
+cortocircuito monofasico A, en el C1 de una L/T de 200 
+km. Los ajustes planteados para cada zona se ajustan 
+a la practica comun, Z1 = 80% de la L/T protegida, Z2 = 
+120% de la L/T protegida.
+ 
+FIGURA 13: Barrido de cortocircuito monofasico
+De igual manera que el caso fase-fase, el error en la 
+medicion de impedancia y el alcance de un rele se vera 
+afectado dependiendo del aporte de generacion (in-
+feed) que se presente en el extremo de la L/T opuesto 
+al rele y del punto en el que ocurra la falla monofasica. 
+Esto se debe a la variacion de la direccion relativa de la 
+corriente hacia el punto de falla entre los circuitos C1 y 
+C2. En la Fig.14 se presenta la simulacion del barrido 
+de cortocircuito monofasico (metodo IEC909-1988) a lo 
+largo del C1, considerando fuentes iguales en los dos 
+extremos de la L/T.
+ 
+FIGURA 14: Angulo de las corrientes C1 y C2; y alcance 
+reactivo visto por el rele en C1 vs. distancia de falla en C1
+4. 
+MECANISMOS DE COMPENSACION DEL 
+EFECTO MUTUO
+De los analisis realizados en 3, se puede establecer 
+la siguiente tabla comparativa ante cortocircuitos 
+presentados al nal de una L/T, en consecuencia se 
+establece el maximo error que puede presentarse debido 
+a los acoplamientos existentes. Se recuerda que este 
+error corresponde a la diferencia entre la impedancia 
+detectada por un rele mediante los algoritmos 
+convencionales y la impedancia real existente entre el 
+rele y el punto de falla.
+TABLA 5: Errores por calculo de cortocircuitos con 
+diversos metodos y estructuras
+Se observa que el analisis de los acoplamientos mutuos 
+en caso de una L/T circuito simple, unicamente son 
+considerados utilizando el metodo “Completo” de Power 
+Factory.
+4.1 
+Compensacion ante fallas Fase - Fase
+De la tabla 5 se observa que el maximo error se produce 
+en el caso de una L/T doble circuito con transposicion 
+
+
+0
+1
+2
+012
+1
+1
+3
+k
+Z
+Z
+Z
+C
+C
+a
+R
+
+
+
+
+
+
+
+0
+1
+2
+012
+1
+3
+k
+Z
+eZ
+C
+C
+
+
+
+%
+41
+100
+.
+493
+,0
+142
+,0
+001
+,0
+135
+,5
+034
+,1
+303
+,0
+1
+1
+
+
+
+
+
+
+j
+j
+j
+Z
+eZ
+C
+105.
+90.0
+75.0
+60.0
+45.0
+30.0
+15.0
+-15.0
+-30.0
+-45.0
+[pri.Ohm]
+150.
+135.
+120.
+105.
+90.0
+75.0
+60.0
+45.0
+30.0
+15.0
+-15.0
+Acoplada1-138\21_Acoplada1_138
+21_Acoplada1_138\Polarizing
+ Barrido de Icc_LT1
+ Barrido de Icc_LT1
+L/T Transpuesta (azul)
+L/T sin transposicion (negro)
+ 
+
+
+
+
+
+
+
+
+
+	
+
+
+	
+
+
+
+
+
+
+
+0
+1
+2
+012
+1
+2
+1
+0
+1
+1
+1
+3
+1
+k
+Z
+I
+I
+Z
+k
+I
+V
+Z
+C
+C
+C
+a
+C
+n
+C
+a
+C
+a
+a
+R
+ 
+1
+012 C
+m
+Z
+
+1
+2
+012
+C
+C
+m
+Z
+
+200.00
+160.00
+120.00
+80.00
+40.00
+0.00
+150.00
+120.00
+90.00
+60.00
+30.00
+0.00
+-30.00
+Eje x:
+DPLBarrido_Icc: Posicion en km in km
+21_Acoplada1_138\Polarizing: Impedancia, Parte Imaginaria A in sec.Ohm
+Ajuste Zona 2 120%
+R
+e
+a
+c
+t
+a
+n
+c
+i
+a
+ 
+d
+e
+ 
+l
+a
+ 
+L
+/
+T
+X = 85.000 km
+Ajuste Zona 1 80%
+Alcance reactivo visto por
+el rele
+200.00
+160.00
+120.00
+80.00
+40.00
+0.00
+200.00
+100.00
+0.00
+-100.00
+-200.00
+Eje x:
+DPLBarrido_Icc: Posicion en km in km
+Acoplada1-138: Corriente de Secuencia Cero, Angulo/Terminal i in deg
+Acoplada2-138: Corriente de Secuencia Cero, Angulo/Terminal i in deg
+X = 85.000 km
+Angulo de la orriente
+de tierra Io-C2
+Angulo de la orriente
+de tierra Io-C1
+ 
+ERR OR % 
+Fal la:  
+FASE F ASE  
+Fal la:  
+FASE TIERR A 
+ES TRUCTURA 
+IE
+C 
+90
+9 
+Com ple
+to 
+IEC  
+909 
+Com plet
+o 
+Sin  
+Transp osi
+on 
+0 
+3 
+0 
+0.08 
+CIRCU I
+TO  
+SIM PLE 
+Con 
+Transp osic
+ion 
+0 
+0 
+0 
+0 
+Sin  
+Transp osi
+on 
+5 
+3 
+41 
+41 
+CIRCU I
+TO 
+DOBLE  
+Con 
+Transp osic
+ion 
+5 
+5 
+41 
+41
+
+--- Página 10 ---
+65
+y es del orden del 5%. Este error es relativamente 
+bajo para efectos de ajuste de protecciones. Por esta 
+razon los reles existentes en el mercado no realizan 
+ninguna correccion para este tipo de fallas. En el caso 
+de requerirse compensacion fase – fase, el rele deberia 
+realizar la siguiente relacion:
+ 
+ 
+ 
+ 
+ 
+(21)
+                                ;  
+Si se considera una L/T transpuesta la compensacion 
+seria:
+    
+  
+ 
+ 
+ 
+ 
+(22)
+4.2 
+Compensacion ante fallas Fase - Tierra
+De la tabla 5 se observa que el error en el caso de 
+una L/T simple circuito, con y sin transposicion, puede 
+ser omitido para efectos de ajuste de protecciones. 
+Sin embargo, para el caso de L/T doble circuito si se 
+requiere corregir este error (subalcance del 41%). Esto 
+se realiza mediante compensacion fase – tierra utilizando 
+la siguiente relacion:
+ 
+ 
+ 
+ 
+ 
+        (23)
+                            ;                                 ;
+Considerando que el error depende en su totalidad 
+de los acoplamientos entre redes de secuencia 
+correspondientes Z012-c2c1  la compensacion seria:
+ 
+ 
+ 
+ 
+ 
+(24)
+Al termino  K012-c2c1  se lo conoce como constante de 
+acoplamiento mutuo km y la mayoria de reles existentes 
+en el mercado realizan esta correccion para este tipo 
+de fallas. Se debe mencionar que k0 y km resultan ser 
+cantidades complejas, es decir, magnitud y angulo; en 
+el caso de los reles electromecanicos generalmente k0 
+se lo ajustaba considerando su magnitud unicamente 
+mientras que el efecto de km se lo realizaba por adicion 
+de la corriente de tierra de la L/T paralela mediante 
+transformadores de interposicion a la corriente de tierra 
+de la L/T protegida. En el caso de los reles digitales, estas 
+compensaciones se las realiza numericamente, tanto 
+magnitud como angulo, mediante ajuste por software.
+Como se observa, el acoplamiento mutuo en secuencia 
+cero afecta en mayor proporcion el calculo de la 
+impedancia de falla, por tal razon debe ser establecido 
+de una manera precisa, para lo cual puede utilizarse 
+vericacion en campo por medio de medicion de 
+parametros de lineas Fig.15. (3)
+ 
+FIGURA 15: Medicion en campo de Zo_C2C1
+5. 
+OTROS EFECTOS DEL ACOPLAMIENTO 
+MUTUO
+5.1 
+Acoplamientos entre L/T en diferentes 
+estructuras
+Los acoplamientos entre diferentes estructuras pueden 
+originarse por L/T cercanas de cualquier nivel de tension. 
+Estos acoplamientos afectaran la determinacion de 
+la impedancia de los reles de distancia, este efecto es 
+similar a los planteados para una L/T doble circuito, es 
+decir dependera de:
+El valor de los acoplamientos que se presenten, los 
+• 
+cuales dependen directamente de la distancia entre 
+los circuitos.
+Sentido relativo entre las corrientes de aporte a 
+• 
+la falla del circuito fallado y de la linea con la que 
+presenta acoplamiento.
+Condiciones topologicas y de despacho del sistema.
+• 
+Considerando el primer aspecto, se ha determinado los 
+acoplamientos modicando la distancia “d” entre dos 
+estructuras Fig. 16. De este analisis se observa que 
+de igual manera que lo realizado en 3 los valores que 
+generarian errores considerables son los acoplamientos 
+entre 
+redes 
+de 
+secuencia 
+correspondientes 
+y 
+puntualmente el acoplamiento en secuencia cero. 
+ 
+FIGURA 16: Distancia “d” entre estructuras de 230 kV
+
+
+
+
+1
+2
+12
+1
+2
+12
+2
+1
+12
+1
+1
+1
+C
+C
+m
+C
+C
+C
+bc
+C
+m
+C
+bc
+C
+bc
+bc
+R
+k
+k
+I
+k
+I
+V
+Z
+
+
+
+
+
+
+
+
+
+
+
+1
+1
+21
+1
+12
+1
+12
+2Z
+Z
+Z
+k
+C
+C
+C
+m
+
+
+
+
+
+1
+1
+2
+11
+1
+2
+12
+Z
+Z
+k
+C
+C
+C
+C
+
+
+
+1
+1
+2
+21
+1
+2
+12
+1
+2
+12
+2Z
+Z
+Z
+k
+C
+C
+C
+C
+C
+C
+m
+
+
+
+
+
+1
+2
+12
+2
+1
+1
+C
+C
+C
+bc
+C
+bc
+C
+bc
+bc
+R
+k
+I
+I
+V
+Z
+
+
+
+
+
+
+
+
+
+
+
+1
+2
+012
+1
+2
+012
+2
+1
+012
+0
+1
+1
+1
+C
+C
+C
+C
+m
+C
+n
+C
+m
+C
+a
+C
+a
+a
+R
+k
+k
+I
+k
+k
+I
+V
+Z
+
+
+
+
+
+
+
+
+
+
+
+
+1
+1
+012
+1
+012
+3Z
+Z
+k
+C
+m
+C
+m
+
+
+
+ 
+1
+1
+2
+012
+1
+2
+012
+3Z
+Z
+k
+C
+C
+m
+C
+C
+m
+
+
+
+ 
+1
+1
+2
+012
+1
+2
+012
+3Z
+Z
+k
+C
+C
+C
+C
+
+
+
+ 
+
+
+1
+2
+012
+2
+0
+1
+1
+1
+C
+C
+C
+n
+C
+a
+C
+a
+a
+R
+k
+I
+k
+I
+V
+Z
+
+
+
+
+
+
+
+
+ 
+TP
+V
+A
+TC
+I n _ C 2
+V o _ C 1
+Z o _ C 2 C 1
+In_C2
+Vo_C1
+Zo_C2C1 = 3
+
+--- Página 11 ---
+66
+En la Fig.17 se detalla la disminucion de los acoplamientos 
+en secuencia cero entre circuitos de una misma 
+estructura “Zo_C2C1” y los acoplamientos entre circuitos 
+de diferentes estructuras “Zo_E2E1”,  al modicar la 
+distancia “d” entre estructuras indicadas en  la Fig.16.
+ 
+FIGURA 17: Acoplamiento mutuo de secuencia cero 
+vs. distancia entre estructuras
+Se habia senalado que el error que se produciria por los 
+acoplamientos en secuencia cero entre circuitos de una 
+misma estructura “Zo_C2C1”, se los evita considerando 
+la compensacion de lineas paralelas mediante el 
+coeciente de acoplamiento mutuo km, sin embargo, el 
+error que producen los acoplamientos entre circuitos 
+de diferentes estructuras “Zo_E2E1”, no es posible de 
+eliminarlo. Se debe senalar que el error nal que generaria 
+estos acoplamientos se ve disminuido considerando el 
+lazo de medicion que los reles realizen. Para el caso de 
+dos L/T, doble circuito, de iguales longitudes, separadas 
+100 metros, considerando una falla monofasica al nal 
+de la L/T, un rele con compensacion de efecto mutuo 
+tendria un error de aproximadamente:
+ 
+Se debe senalar que este efecto no es disminuido por 
+los reles existentes en el mercado, por lo que debe 
+ser considerado en la determinacion de los ajustes de 
+proteccion.
+5.2 
+Puesta a tierra de una L/T
+Cuando una L/T sale de servicio por mantenimiento, 
+generalmente, y por seguridad del personal se la 
+aterriza en ambos extremos Fig.18. En este escenario 
+y ante la presencia de fallas con contacto a tierra, los 
+acoplamientos mutuos generan una corriente inducida 
+que circula por la L/T aterrizada. Esta corriente produce 
+un subalcance o sobrealcance, que depende de las 
+condiciones del sistema y del diseno de la subestacion y 
+del sistema de protecciones. Un rele con compensacion 
+del efecto mutuo determina la siguiente relacion:
+  
+Para el caso de reles alimentados por transformadores 
+de corriente ubicados despues de la puesta a tierra (TC’s 
+tipo pedestal) Fig.18, estos continuaran detectando la 
+corriente inducida en el circuito aterrizado, con lo que 
+la compensacion paralela ante fallas monofasicas km 
+efectivamente corrige el error de medicion de impedancia 
+producido por el acoplamiento. 
+ 
+FIGURA 18: L/T aterrizada en los extremos. TC’s tipo 
+pedestal
+Esta situacion no sucede para el caso en que los TC’s se 
+encuentren antes de la puesta a tierra  (TC’s tipo bushing) 
+Fig.19, con lo cual la corriente de la linea paralela hacia 
+el rele es cero, consecuentemente la compensacion 
+mutua no se realiza. 
+ 
+FIGURA 19: L/T aterrizada en los extremos. TC’s tipo 
+bushing
+Esto produce un error en el lazo de medicion de 
+impedancia que ya se determino en el punto 3.2.3. 
+Considerando una L/T transpuesta y si se asume que 
+el efecto de los acoplamientos Z012-C2C1 corresponde en 
+su totalidad al acoplamiento en secuencia cero Z00-C2C1, 
+se tiene:
+ 
+ 
+ 
+ 
+ 
+(25)
+Del diagrama de secuencias mostrado en la Fig.20, se 
+determina la corriente de neutro en la L/T aterrizada In-
+C2 por efecto de la circulacion de una corriente de falla 
+monofasica del circuito paralelo Ia-C1 es:
+ 
+ 
+ 
+ 
+ 
+(26)
+Se observa que la corriente de neutro en la L/T aterrizada 
+ 
+21
+TP
+S/E: A
+52-C1
+TC
+52-C1
+SEP
+S/E: B
+FALLA MONOFASICA
+52-C2
+52-C2
+TC tipo bushing
+Puesta a tierra en la S/E A
+Puesta a tierra en la S/E B
+3Io_C2 = 0
+In_C2 = 3Io_C 2
+Ia_C1
+ 
+Acoplamiento mutuo entre 
+Circuitos C2C1 y Estructuras E2E1
+0 .0
+0 .1
+0 .2
+0 .3
+0 .4
+0 .5
+0 .6
+0 .7
+0 .8
+0 .9
+1 .0
+0
+1 0 0
+2 0 0
+3 0 0
+4 0 0
+5 0 0
+6 0 0
+d  (m )
+Z o _ C 2 C 1
+Z o _ E2 E1
+ 
+
+
+%
+13
+494
+,0
+87
+,6
+451
+,0
+1
+3
+1
+1
+0
+1
+2
+0
+1
+1
+
+
+
+
+
+
+
+
+C
+m
+E
+E
+C
+Z
+k
+k
+Z
+Z
+eZ
+ 
+ 
+2 1
+T P
+S /E : A
+5 2
+T C
+5 2
+SE P
+S/E : B
+F A L L A  M O N O F A S IC A
+5 2
+5 2
+T C  ti p o  p e d e s t a l
+P u e s t a  a  t ie r r a  d e l a  S / E  A
+P u e s t a  a  t ie r r a  d e  l a  S /E  B
+I n _ C 2
+In_C2 = 3Io_C2
+Ia_C1
+ 
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+0
+1
+2
+1
+1
+1
+k
+k
+I
+I
+Z
+Z
+m
+C
+a
+C
+n
+a
+R
+ 
+L
+d
+Z
+Z
+I
+I
+C
+C
+C
+C
+a
+C
+n
+2
+0
+1
+2
+00
+1
+2
+
+
+
+
+
+ 
+
+
+m
+C
+n
+C
+a
+C
+a
+a
+R
+k
+I
+k
+I
+V
+Z
+2
+0
+1
+1
+1
+
+
+
+
+
+
+
+
+--- Página 12 ---
+67
+In-C2 depende de las impedancias de acoplamiento 
+de secuencia cero de los dos circuitos Z00-C2C1 y de la 
+impedancia de secuencia cero de la L/T aterrizada 
+Z0-C2. La primera afectada por el termino “d” que 
+representa la distancia en la que ocurre el cortocircuito y 
+consecuentemente determina el voltaje que se induce en 
+el tramo de L/T que se encuentra acoplada; y la segunda 
+afectada por el termino “L” que es la longitud total de la 
+L/T y representa el camino efectivo, independiente del 
+punto de falla, por el que circulara la corriente inducida.
+ 
+FIGURA 20: Diagrama de secuencias: falla monofasica 
+en C1 y C2 aterrizado
+Con esta ecuacion se determina la impedancia medida 
+por un rele con compensacion mutua, con la corriente de 
+la linea paralela hacia el rele igual a cero. Para el caso 
+de un sistema con fuente debil al otro extremo de la L/T, 
+la impedancia medida es:
+ 
+ 
+ 
+ 
+ 
+(27)
+Se observa que el rele se mantiene en sobrealcance 
+durante una falla monofasica en cualquier punto del 
+circuito. El sobrealcance con una falla al nal de la L/T 
+es de:
+ 
+En la Fig.21 se observa la simulacion del barrido de 
+cortocircuito monofasico A (azul), en el C1 de una L/T 
+de 200 km. Los ajustes planteados para cada zona 
+se ajustan a la practica comun, Z1 = 80% de la L/T 
+protegida, Z2 = 120% de la L/T protegida.
+Para este caso el sobrealcance al nal de la L/T es de 
+aproximadamente:
+ 
+Es decir, se genera hasta un 25% de sobrealcance, con 
+lo que puede producir descoordinacion de protecciones. 
+Se debe mencionar que la corriente inducida In-C2 es 
+directamente proporcional a la distancia en la que ocurre 
+el cortocircuito “d” y a la corriente de falla Ia-C1, sin embargo 
+esta ultima disminuye conforme aumenta “d”, por lo que 
+el sobrealcance presenta una relacion no lineal.
+ 
+FIGURA 21: Barrido de cortocircuito: falla monofasica 
+en C1 y C2 aterrizado
+El fenomeno de afectacion de los alcances por L/T 
+aterrizadas ocurrira de manera similar si se utilizan 
+tierras locales para la realizacion del mantenimiento de 
+la L/T Fig.22.
+ 
+FIGURA 22: L/T aterrizada mediante tierras locales
+Sin embargo, los tiempos en los cuales se realiza un 
+mantenimiento son generalmente cortos por lo que el 
+reajuste de los reles puede no ser realizado debido a 
+la probabilidad de falla durante este tiempo. En el caso 
+de periodos de mantenimiento mas grandes se debe 
+analizar la necesidad de reajustar las protecciones, 
+considerando los aspectos mencionados en este punto.
+6. 
+CONCLUSIONES
+Los acoplamientos entre redes de secuencias de un 
+mismo circuito son considerados mediante la aplicacion 
+del metodo de calculo de cortocircuito denominado 
+“Completo” o de superposicion de Power Factory de 
+DigSilent. La norma IEC-909, del mismo software, por 
+denicion no considera estos acoplamientos dentro del 
+calculo.
+El metodo de calculo IEC-909-1988, por denicion se 
+encuentra limitado a niveles de voltaje de hasta 230 kV, 
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+L
+d
+Z
+Z
+Z
+Z
+Z
+k
+k
+L
+d
+Z
+Z
+Z
+Z
+C
+C
+C
+m
+C
+C
+C
+a
+R
+0
+1
+2
+0
+1
+2
+00
+2
+1
+0
+2
+0
+1
+2
+00
+1
+2
+1
+1
+1
+ 
+
+
+
+
+
+
+
+	
+
+
+
+
+
+0
+1
+2
+0
+1
+2
+00
+2
+1
+2
+1
+Z
+Z
+Z
+Z
+Z
+Z
+C
+C
+C
+a
+R
+200.00
+160.00
+120.00
+80.00
+40.00
+0.00
+125.00
+100.00
+75.00
+50.00
+25.00
+0.00
+-25.00
+Eje x:
+DPLBarrido_Icc: Posicion en km in km
+Numerico_Acoplada1_138\Polarizing Z1: Impedancia, Parte Imaginaria A in sec.Ohm
+Ajuste Zona 2 120%
+R
+e
+a
+c
+t
+a
+n
+c
+i
+a
+ 
+d
+e
+ 
+l
+a
+ 
+L
+Ajuste Zona 1 80%
+Impedancia medida por el rele 
+ 
+21
+TP
+S/E: A
+52-C1
+TC
+52-C1
+SEP
+S/E: B
+FALLA MONOFASICA
+52-C2
+52-C2
+Puesta a tierra de la S/E A
+Puesta a tierra de la S/E B
+Tierra local
+Tierra local
+3Io_C2 = 0
+3Io_C2
+TC tipo pedestal
+ 
+Z1
++
+Va
++
+Z2
++
+Va1_C1
+Va2_C1
+Ia1_C1
+Ia2_C1
++
+Ia0_C1
+Va0_C1
++
+Va0_C2
+Z00_C1C2
+Z0_C2
+Z0
+Ia0_C2
+ 
+
+
+0
+1
+2
+0
+1
+2
+00
+2
+2
+Z
+Z
+Z
+Z
+eZ
+C
+C
+C
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+1
+2
+25
+,0
+545
+,1
+446
+,0
+493
+,0
+142
+,0
+2
+545
+,1
+446
+,0
+984
+,0
+303
+,0
+Z
+j
+j
+j
+j
+eZ
+
+
+
+
+
+
+
+
+
+
+--- Página 13 ---
+68
+generalmente con este nivel de voltaje se trabaja con 
+longitudes de L/T menores a 250 km, por lo que los 
+efectos de los acoplamientos entre secuencias del 
+mismo circuito no resultan trascendentes en el calculo.
+Para mayores niveles de voltaje, consecuentemente L/T 
+mas largas, se debe analizar el metodo que se utilizara 
+en el calculo de cortocircuitos y ajustes de protecciones. 
+En el Power Factory, si bien existe el metodo denominado 
+“completo” este requiere de la convergencia del ujo de 
+carga previo al calculo del cortocircuito. Esta condicion 
+requiere de la informacion de despacho de generacion y 
+carga prevista para una condicion establecida.
+El ajuste de las constantes de compensacion por el 
+retorno de tierra k0 y por efecto mutuo km, afectan 
+directamente en la determinacion de la impedancia de 
+falla, por tal razon deben ser determinadas mediante 
+simulacion y vericadas en campo por medio de 
+medicion de parametros de lineas.
+En el caso de mantenimiento, con L/T aterrizadas, se 
+debe analizar la necesidad de reajustar las protecciones 
+de distancia, considerando los periodos de tiempo 
+requeridos para el mantenimiento.
+El efecto del infeed, en L/T doble circuito puede 
+determinar el tipo de esquema de teleproteccion a 
+utilizarse; en caso de longitudes cortas y con fuerte 
+infeed en los extremos, es recomendable la utilizacion 
+del esquema POTT (Permisive Overreach Transfer Trip) 
+con caracteristica cuadrilateral, con lo cual se puede 
+dar una cobertura efectiva a toda la L/T con resistencias 
+tipicas de falla para diversas condiciones topologicas.
+7. 
+REFERENCIAS BIBLIOGRAFICAS
+(1) 
+FORTESCUE, C, Method of Symmetrical 
+Coordinates Applied 
+to 
+the 
+solution 
+of 
+Polyphase Networks, Trans. AIEE 37. 1918. 
+pp. 1027-1140.
+(2) 
+ANDERSON, P, Analysis of Faulted Power 
+Systems, Iowa, EEUU. 1978, Primera Edicion. 
+The Iowa State University Press. pp. 71-145.
+(3) 
+ZIEGLER, G, Numerical Distance Protection, 
+Erlangen, Germany, 2006, Segunda Edicion. 
+Publicis Corporate Publishing. pp. 151-161.
+8. 
+CURRICULUM VITAE 
+Antonio Fonseca A..- Nacio en 
+Quito, Ecuador en 1979. Recibio su 
+titulo de Ingeniero Electrico (marzo 
+2003) en la Escuela Politecnica 
+Nacional 
+(EPN) 
+Quito–Ecuador. 
+Actualmente, se desempena en 
+la Division de Operacion de la 
+Compania Nacional de Transmision 
+Electrica TRANSELECTRIC S.A. Adicionalmente se 
+encuentra desarrollando su tesis de MSc en Ingenieria 
+Electrica en la EPN, donde se desempena como profesor 
+de Protecciones Electricas en la carrera de Ingenieria 
+Electrica desde marzo de 2007. 
+ANEXO 1
+PARAMETROS DE CONDUCTORES
+Los parametros electricos basicos requeridos para la 
+simulacion de la L/T se indican a continuacion:
+(a) 
+Corresponde al conductor 1113 ASCR Bluejay
+(b) 
+Conductor de acero de grado H.S de 7 hilos
+(c) 
+Capacidad 
+de 
+corriente 
+determinada 
+a: 
+Temperatura del conductor 75°,  Temperatura 
+ambiente 25°, Velocidad del viento 0.6 m/s, 
+Emisividad del cable 0.5, Sol 1000w/m2 a nivel del mar
+La informacion relacionada con la capacidad de corriente, 
+es un parametro utilizado para analisis de cargabilidad 
+de la L/T, este valor no afecta en la determinacion de la 
+matriz de impedancias.
+	
+
+	
+			
+	
+
+		
+		
+	
+	 	
+	
+	
+
+			
+ 	
+	
+!	"#$%	
+&'		
+ 	
+	
+(!!	%	
+)	*+	
+	
+,
+

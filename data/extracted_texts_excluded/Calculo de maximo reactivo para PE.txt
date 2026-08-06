@@ -1,0 +1,94 @@
+=== Calculo de maximo reactivo para PE.pdf ===
+
+--- Página 1 ---
+Calculo de Potencia Reactiva Maxima
+P nominal PE =
+10 MW
+Tension de Generador=
+13,2 KV
+ cos ꝕ =
+0,95
+Porcentaje V admisible=
+5 %
+P aparente =
+10,53 MVA
+Maxima=
+13,86 KV
+P reactiva=
+3,29 MVAR
+Minima=
+12,54 KV
+Calculo de Potencia Aparente
+Pactiva=
+12 MW
+Preactiva=
+10 MVAR
+Tension =
+13400 V
+Paparente=
+15,62 MVA
+Corriente=
+673 A
+ cos ꝕ =
+0,7682
+Pot Apar =
+15,62 MVA
+Los valores en amarillo son Calculos, solo llenar celdas celestes.
+Tension KV
+13,4
+Pot Apar. MVA
+10,77
+Corr. en Amp.=
+464,03
+
+--- Página 3 ---
+Transformador Trifasico
+Relacion transformacion
+Tension de Fase 
+V1 prim = (de linea)
+0,69 KV
+0,398 KV
+V2 sec  = (de linea)
+33 KV
+19,053 KV
+V1/V2= N1/N2=I2/I1= m
+0,02090909 Relacion transf.
+Pot Ap KVA= 3 x V x I
+3000 KVA
+I1= Pot Ap/V1 (Nominal)
+2510,22 Amp.
+I2=Pot Ap/V2 (Nominal)
+52,49 Amp.
+Calculo de Tension V1 para distintas V2
+Porcentaje desvio
+Tension real V2 =
+35 KV
+6,06 %
+Tension real V1 =
+0,732 KV
+6,06 %
+Banda normal de tensiones segun los procedimientos 
+Ver ANEXO 4
+220 V a 1000 V
+Banda normal baja tension
+10 %
+66 KV a 132 KV
+Banda normal media tension
+7 %
+132 KV a 345 KV
+Banda normal Alta Tension
+5 %
+ 500 KV
+Banda normal Muy Alta
+3 %
+ANEXO 4: CONTROL DE TENSION Y DESPACHO DE POTENCIA REACTIVA pag 12
+
+--- Página 4 ---
+primer 20 min.
+Despues 20 min
+-10 % a +15%
+-10 % a +10%
+- 7 %  a +10%
+- 5%  a +5%
+En Emergencias
+

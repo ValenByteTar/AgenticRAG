@@ -1,0 +1,506 @@
+=== Anexo D - Harz Energy.pdf ===
+
+--- Página 1 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES HARZ ENERGY OPERADAS POR EL CROM 
+ 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+P.S. Cura 
+Brochero 
+8 
+Fotovoltaica 
+01/04/2023 
+Inv. Kehua 
+BLC 
+BLC 
+P.S. Cura 
+Brochero 
+Ampliacion 
+17 
+Fotovoltaica 
+01/04/2023 
+Inv. Kehua 
+BLC 
+BLC 
+P.S. Villa Maria 
+del Rio Seco 
+10 
+Fotovoltaica 
+ 
+Inv. Kehua 
+BLC 
+BLC 
+P.S. Villa Maria 
+del Rio Seco 
+Ampliacion 
+20 
+Fotovoltaica 
+ 
+Inv. Kehua 
+BLC 
+BLC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL 
+55
+
+--- Página 2 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Descripcion de Parque Solar Cura Brochero: 
+El proyecto presente, identificado como Parque Fotovoltaico Cura Brochero, de 25 MW, esta dividido en dos. 
+Uno de 8 MW (Agente: PSBROCMG; Central: BROC; Grupo: BROCFV, medidor de energia BRO2M72P), 
+habilitado a partir del 01/04/2023 y el otro de 17 MW, denominado en algunos documentos como PS Cura 
+Brochero Ampliacion (Agente: PSBROCHG; Central: BRO2; Grupo: BRO2FV, medidor de energia BRO1M71P), 
+producen energia electrica a partir de la captacion y transformacion de la energia proveniente del Sol, la 
+planta consta de 91.089 paneles de 325 a 335 Wp y 9 unidades transformadoras compactas, cada una de las 
+unidades contiene dos inversores de 1,5 MW C/U de 1500 VCC a 800 VCA y un transformador elevador de 
+0,8/33 KV. Cada string lleva 29 Paneles en serie. La superficie ocupada por la totalidad de la planta es de 60.9 
+Ha.  La energia sera inyectada en el Sistema Argentino de Interconexion (SADI) en el marco de su ingreso al 
+Mercado Electrico Mayorista como generador. 
+La conexion sera a traves de un transformador de 33/66 KV de 35 MVA que se conecta a la distribucion de 
+EPEC en 66 KV en la ET Los Sauces. 
+ 
+ 
+ 
+ 
+ 
+Unidad transformadora, de 
+Parque Solar Cura Brochero 
+ubicado en  
+-31.722864 
+-65.041925
+
+--- Página 3 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Datos Generales de Cura Brochero Potencia de C.A instalada 25 MW 
+ 
+ 
+ 
+Datos Equipos de Cura Brochero 
+ 
+Pagina oficial:    http://harz.aride.com.ar/actividad/ 
+Descripcion lado 66 KV ET LOS SAUCES DE EPEC. 
+A la salida del transformador de potencia TR1 del lado de EPEC lo primero que se encuentran son los 
+Transformadores de corriente TITC1, luego el interruptor de acometida a barras 52TC1, le sigue el 
+seccionador de barra 89TC1.
+
+--- Página 4 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+En la barra de 66 Kv se encuentra el Transformador de medicion TVBC y dos salidas a lineas, 
+La salida a la linea C2 que va a la ET Cura Brochero y La salida a la linea C1 que va a la ET La Vina. Cada salida 
+con sus seccionadores e Interruptores correspondientes, segun unifilar siguiente. 
+ 
+Descripcion lado 33 KV celdas de Cura Brochero. 
+Por la celda H07 se produce una acometida desde Transformador de Potencia TR1 a barras de 33 KV, en H07 
+hay un TI y TV para medicion y seccionador e interruptor a barras.
+
+--- Página 5 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+La barra tiene dos salidas una por celda H06 y la otra por celda H08, ambas celdas con TI y TV para medicion 
+y seccionador e interruptor de salida. 
+ 
+La salida por celda H08 va a la celda H09 que hace remonte para barras de 33 KV de Parque de 8 MW y 
+ademas tiene el TI y TV para SMEC-M que tiene el medidor BRO2M72P.  
+En barras de 33 Kv de parque de 8 MW tenemos 3 celdas, Celda H10 que con interruptor y seccionador sale a 
+transformador de servicios auxiliares SSAA de 100 KVA, Celda H11 que es la acometida a barras del parque 
+solar de 8 MW con seccionador e interruptor y TI, Celda H12 que es salida a capacitores de compensacion de 
+reactiva. 
+ 
+La salida por celda H06 va a la celda H05 que hace remonte para barras de 33 KV de Parque de 17 MW y 
+ademas tiene el TI y TV para SMEC-R que tiene el medidor BRO1M71P.  
+En barras de 33 Kv de parque de 17 MW tenemos 4 celdas, Celda H04 que con interruptor y seccionador sale 
+a transformador de servicios auxiliares SSAA de 100 KVA, Celda H03 y H02 son las acometidas a barras del 
+parque solar de 17 MW con seccionador e interruptor y TI, Celda H01 es salida a capacitores de 
+compensacion de reactiva.
+
+--- Página 6 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Parque Solar Cura 
+Brochero se 
+encuentra, Al oeste de 
+la ciudad de Mina 
+Clavero, Cordoba, 
+Argentina.  
+ 
+Localizacion 
+ Latitud: -31.722864 
+ Longitud: -65.041925
+
+--- Página 7 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Unifilar 33 kv que une las 2 plantas solares a Transformador de Potencia.
+
+--- Página 8 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar 33 KV de Planta de 8 MW :
+
+--- Página 9 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar 33 KV de Planta de 17 MW :
+
+--- Página 10 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion
+
+--- Página 11 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Descripcion de Parque Solar Villa Maria del Rio Seco: 
+El proyecto presente, identificado como Parque Solar Villa Maria del Rio Seco, de 30 MW, esta dividido en 
+dos. Uno de 10 MW (Agente: PSRSECMG; Central: XXXX; Grupo: XXXXXX, medidor de energia XXXXM7XP), 
+habilitado a partir del XX/XX/2023 y el otro de 20 MW, (Agente: PSRSECOG; Central: XXXX; Grupo: XXXXFV, 
+medidor de energia XXXXM7XP), producen energia electrica a partir de la captacion y transformacion de la 
+energia proveniente del Sol, la planta consta de 88.653 paneles de 385Wp a 400 Wp y 11 unidades 
+transformadoras compactas, cada una de las unidades contiene 2 inversores de 1,5 MW C/U de 1500 VCC a 
+600 VCA y un transformador elevador de 0,6/33 KV de 3300 KVA. Cada string lleva 29 Paneles en serie. La 
+superficie ocupada por la totalidad de la planta es de 80.49 Ha.  La energia sera inyectada en el Sistema 
+Argentino de Interconexion (SADI) en el marco de su ingreso al Mercado Electrico Mayorista como 
+generador. 
+La conexion sera a traves de un transformador de 33/66 KV de 35 MVA que se conectara a la distribucion de 
+EPEC en 66 KV en la ET Los Cerrillos. 
+ 
+ 
+Vista general, de Parque 
+Solar Villa Maria del Rio 
+Seco  
+-29.988408 
+-63.768185
+
+--- Página 12 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Datos Generales de Villa Maria del Rio Seco Potencia de C.A instalada 30 MW. 
+ 
+ 
+ 
+ 
+ 
+ 
+Descripcion lado 66 KV ET LOS CERRILLOS DE EPEC. 
+A la salida del transformador de potencia TR1 del lado de EPEC lo primero que se encuentran son los 
+Transformadores de corriente TITC1, luego el interruptor de acometida a barras 52TC1, le sigue el 
+seccionador de barra 89TC1. 
+En la barra de 66 Kv se encuentra el Transformador de medicion TVBC y dos salidas a lineas, 
+La salida a la linea C2 que va a la ET Santa Elena y La salida a la linea C1 que va a la ET Villa Maria del Rio 
+Seco. Cada salida con sus seccionadores e Interruptores correspondientes, segun unifilar siguiente.
+
+--- Página 13 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion
+
+--- Página 14 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Descripcion lado 33 KV celdas de Villa Maria del Rio Seco. 
+Por la celda H07 se produce una acometida desde Transformador de Potencia TR1 a barras de 33 KV, en H07 
+hay un TI y TV para medicion y seccionador e interruptor a barras. 
+La barra tiene dos salidas una por celda H06 y la otra por celda H08, ambas celdas con TI y TV para medicion 
+y seccionador e interruptor de salida. 
+ 
+La salida por celda H08 va a la celda H09 que hace remonte para barras de 33 KV de Parque de 8 MW y 
+ademas tiene el TI y TV para SMEC-M que tiene el medidor XXXXM72P.  
+En barras de 33 Kv de parque de 10 MW tenemos 3 celdas, Celda H10 que con interruptor y seccionador sale 
+a transformador de servicios auxiliares SSAA de 100 KVA, Celda H11 que es la acometida a barras del parque 
+solar de 10 MW con seccionador e interruptor y TI, Celda H12 que es salida a capacitores de compensacion 
+de reactiva. 
+ 
+La salida por celda H06 va a la celda H05 que hace remonte para barras de 33 KV de Parque de 20 MW y 
+ademas tiene el TI y TV para SMEC-R que tiene el medidor XXXXM71P.  
+En barras de 33 Kv de parque de 20 MW tenemos 4 celdas, Celda H04 que con interruptor y seccionador sale 
+a transformador de servicios auxiliares SSAA de 100 KVA, Celda H03 y H02 son las acometidas a barras del 
+parque solar de 20 MW con seccionador e interruptor y TI, Celda H01 es salida a capacitores de 
+compensacion de reactiva.
+
+--- Página 15 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Ubicacion fisica  
+ 
+ 
+Parque Solar Villa Maria 
+de Rio Seco se 
+encuentra, Al sur de 
+Villa Maria del Rio Seco 
+que esta en el Norte de 
+Cordoba, Argentina. 
+Sobre ruta nacional 9. 
+ 
+Localizacion 
+ Latitud: -29.988408 
+ Longitud: -63.768185
+
+--- Página 16 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+Unifilar 33 kv que une las 2 plantas solares a Transformador de Potencia.
+
+--- Página 17 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar 33 KV de Planta de 10 MW :
+
+--- Página 18 ---
+ANEXO D   (HARZ ENERGY)  
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Unifilar 33 KV de Planta de 20 MW :
+
+--- Página 19 ---
+ANEXO D     
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+FIN
+

@@ -1,0 +1,588 @@
+=== CYBER SECURITY FRAMEWORKS.pdf ===
+
+--- Página 1 ---
+25 CYBER SECURITY 
+FRAMEWORKS
+ACROSS THE GLOBE
+Mousam Khatri
+
+--- Página 2 ---
+#1
+PCI DSS 
+PCI DSS is a Payment Card Industry Data Security
+Standard, a cybersecurity framework developed for
+companies that accept, process, and offer saving
+credit or debit card information. This framework aims
+to
+improve
+security
+of
+the
+payment
+account
+throughout the transaction process regardless of the
+channel
+(online
+or
+POS)
+and
+works
+with
+any
+organization regardless of its size and transaction
+volume.
+Mousam Khatri
+
+--- Página 3 ---
+#2
+NIST Cyber Security Framework
+NIST is a US non-regulatory government agency that
+sets standards across the physical sciences. Originally
+intended
+for
+critical
+infrastructure
+owners
+and
+operators, NIST CSF can be used by any organization.
+Many companies outside of the critical infrastructure
+industry also use the CSF, especially if they need to
+meet other US federal data protection requirements.
+Mousam Khatri
+
+--- Página 4 ---
+#3
+GDPR
+General
+Data
+Protection
+Regulation
+(GDPR)
+is
+considered one of the most strict security and privacy
+programs globally designed to strengthen the EU
+(European Union) and EEA (European Economic Area
+includes Norway, Iceland, and Liechtenstein) citizen
+data security.
+Mousam Khatri
+
+--- Página 5 ---
+#4 
+CMMC
+The
+CMMC
+(Cybersecurity
+Maturity
+Model
+Certification) is a framework designed by the US DoD
+(Department of Defense) to assess its contractor’s and
+subcontractor’s security, capacity, and strength.
+The cybersecurity maturity model framework helps
+eliminate the risks and vulnerabilities in the supply
+chain and enhance the system's online security.
+Additionally, the framework is developed to ease the
+US Defense Department from the breaches that could
+compromise their missions.
+Mousam Khatri
+
+--- Página 6 ---
+#5
+IASME Governance
+IASME
+Governance
+is
+an
+Information
+Assurance
+standard that is designed to be simple and affordable
+to help improve the cyber security of Small and
+medium-sized enterprises (SMEs).
+Mousam Khatri
+
+--- Página 7 ---
+#6
+FISMA
+FISMA (Federal Information Security Management Act) is a
+framework
+developed
+to
+safeguard
+the
+Federal
+Government network against cyber threats. FISMA also
+offers services to the sites and agencies that work on
+behalf of the U.S Government. The FISMA cybersecurity
+framework works similarly to NIST standards.
+The framework is used to categorize the risk at a high level,
+establish the minimum baseline controls, document the
+controls, refine the controls, conduct annual security
+reviews, and monitor the security controls. In addition,
+FISMA automatically encrypts sensitive data.
+Mousam Khatri
+
+--- Página 8 ---
+#7
+NIST SP 800-82 
+NIST
+Special
+Publication
+(SP)
+800-82
+Guide to Industrial Control Systems (ICS) Security: In
+order to address the unique cybersecurity concerns
+facing ICS, NIST SP 800-82 provides guidance for
+supervisory control and data acquisition (SCADA)
+systems, distributed control systems (IDS), and other
+control system configurations found in the industrial
+control sectors, like Programmable Logic Controls
+(PLC).
+Mousam Khatri
+
+--- Página 9 ---
+#8
+Center for Internet Security (CIS) 
+Controls
+CIS framework was developed in the late 2000s to
+protect companies from cyber threats. It’s made up of
+20
+controls
+regularly
+updated
+by
+security
+professionals
+from
+many
+fields
+(academia,
+government, industrial). The framework begins with
+basics, moves on to foundational, then finishes with
+organizational.
+Mousam Khatri
+
+--- Página 10 ---
+#9
+Cloud Security Alliance (CSA) 
+Cloud Controls Matrix (CCM)
+Cloud
+Security
+Alliance
+(CSA)
+Cloud Controls Matrix (CCM): Consisting of 197 control
+objectives
+organized
+into
+17
+domains,
+the
+CCM
+focuses solely on cloud computing.
+Mousam Khatri
+
+--- Página 11 ---
+#10
+COBIT
+Control Objectives for Information Technology (COBIT)
+focus on governance creates a security framework
+that streamlines audits and incorporates continuous
+improvement to enhance those outcomes. COBIT’s
+goal
+is
+to
+ensure
+appropriate
+oversight
+of
+the
+organization’s security posture.
+Mousam Khatri
+
+--- Página 12 ---
+#11
+ISO 27001
+It
+is
+considered
+the
+internationally
+recognized
+cyber
+security validation standard for both internal situations
+and across third parties. ISO 27001 requires management
+to exhaustively manage their organization’s information
+security risks, focusing on threats and vulnerabilities.
+ISO
+27001
+sets
+the
+foundation
+for
+establishing
+an
+information
+security
+management
+system
+(ISMS).
+ISO
+27001
+includes
+requirements
+for
+establishing,
+implementing, maintaining, and continually improving an
+ISMS influenced by the organization’s needs, objectives,
+security requirements, processes, size, and structure.
+Mousam Khatri
+
+--- Página 13 ---
+#12
+HIPAA
+Health Insurance Portability and Accountability Act
+(HIPAA):
+It
+provides
+a
+framework
+for
+managing
+confidential patient and consumer data, particularly
+privacy issues. This legislation protects electronic
+healthcare information and is essential for healthcare
+providers, insurers, and clearinghouses.
+Mousam Khatri
+
+--- Página 14 ---
+#13
+ETSI
+European
+Telecommunications
+Standards Institute (ETSI) is a non-profit standards
+organization with more than 900 members from
+across 65 countries and five continents. A European
+Standards
+Organization
+(ESO),
+ETSI
+supports
+European
+regulations
+and
+legislation
+by
+creating
+standards used throughout the EU.
+ETSI based the top twenty Enterprise industry level
+cybersecurity best practices on the Critical Security
+Controls (CSC) CIS established.
+Mousam Khatri
+
+--- Página 15 ---
+#14
+ENISA
+European Union Agency for Cybersecurity (ENISA)
+National Capabilities Assessment Framework provides
+the
+Member
+States
+a
+way
+to
+engage
+in
+self-
+assessments so that they can identify their maturity
+level. The framework offers a way for countries to
+assess
+their
+cybersecurity
+capabilities,
+ultimately
+giving them guidelines for setting national strategies.
+Mousam Khatri
+
+--- Página 16 ---
+#15
+FAIR Cyber Risk Framework
+Factor
+Analysis
+of
+Information
+Risk
+(FAIR) Cyber Risk Framework: The FAIR Institute is a nonprofit
+organization whose mission is to establish and promote risk
+management best practices so that risk professionals can
+collaborate better with their business partners.
+The FAIR cyber risk framework takes an explicit approach
+to cyber risk management so that organizations can quantify risk
+regardless of the cybersecurity framework they use. According to
+FAIR, an implicit risk management approach starts with a
+compliance requirement and aligns controls to it, creating a
+reactive risk posture. Meanwhile, FAIR’s explicit approach creates
+a cycle of continuous improvement integrating risk targets,
+controls, and a proactive risk posture.
+Mousam Khatri
+
+--- Página 17 ---
+#16
+HITRUST 
+Cybersecurity Framework (CSF)
+Privacy, information security, and risk management
+leaders across the public and private sectors worked
+together
+to
+establish
+a
+set
+of
+safeguards
+for
+protecting the security and privacy of protected
+health information (PHI) and electronic PHI (ePHI).
+The HITRUST CSF consists of 49 control objectives
+across 156 control specifications, all of which fall into
+14 control categories.
+Mousam Khatri
+
+--- Página 18 ---
+#17
+ISF - SOGP 2020
+Information
+Security
+Forum
+(ISF)
+Standard
+of
+Good
+Practice
+for
+Information Security (SOGP 2020). The ISF is a no-
+profit
+organization
+whose
+members
+consist
+of
+companies on the Fortune 500 and Forbes 2000 lists.
+The organization focuses on creating a knowledge
+exchange
+where
+members
+share
+security
+issues,
+experiences,
+and
+practical
+solutions.
+The
+SOGP
+2020 provides a set of best practices.
+Mousam Khatri
+
+--- Página 19 ---
+#18
+ISA/IEC 62443
+International Society of Automation (ISA/IEC 62443). ISA is
+a non-profit professional association that established a
+Global Security Alliance (GSA) to work with manufacturers
+and critical infrastructure providers. GSA incorporates
+various
+stakeholders,
+including
+end-user
+companies,
+automation
+and
+control
+systems
+providers,
+IT
+infrastructure providers, services providers, and system
+integrators.
+ISA/IEC 62443 is an industrial security framework focused
+on both traditional IT environments and SCADA or plant
+floor environments.
+Mousam Khatri
+
+--- Página 20 ---
+#19
+ITU /CIIP
+International
+Telecommunications
+Union
+(ITU)
+National
+Cybersecurity/
+Critical
+Information
+Infrastructure
+Protection
+(CIIP):
+Recognizing
+the
+increasing
+importance
+of
+information
+and
+communication
+technologies
+(ICTs)
+to
+national
+security, economic well-being, and social cohesion,
+ITU created its CIIP as a model for sharing the
+responsibility between government, business, other
+organizations, and individual users.
+Mousam Khatri
+
+--- Página 21 ---
+#20
+IoTSF
+The
+Internet
+of
+Things
+(IoT)
+Security
+Foundation (IoTSF) Security Compliance Framework is
+a non-profit international organization that brings
+together IoT security professionals, IoT hardware and
+software product vendors, network providers, system
+specifiers, integrators, distributors, retailers, insurers,
+local authorities, and government agencies.
+Mousam Khatri
+
+--- Página 22 ---
+#21
+NCSC - CAF
+National Cyber Security Centre (NCSC) Cyber Assessment
+Framework (CAF): The United Kingdom’s NCSC launched in
+2016 and brings together SMEs, enterprise organizations,
+government agencies, the general public, and departments
+to address cybersecurity concerns.
+Its
+CAF
+provides
+guidance
+for
+UK
+Critical
+National
+Infrastructure
+(CNI),
+organizations
+subject
+to
+the
+NIS
+Directive cyber regulation, and organizations managing
+cyber-related
+risks
+to
+public
+safety.
+CAF
+guides
+organizations
+toward
+establishing
+a
+cyber
+resiliency
+program, focusing on outcomes rather than checklists.
+Mousam Khatri
+
+--- Página 23 ---
+#22 
+New Zealand Protective Security 
+Requirements (PSR)
+New Zealand’s PSR creates a policy framework for
+how
+organizations
+should
+manage
+security
+governance
+(GOVSEC),
+personnel
+(PERSEC),
+information (INFOSEC), and physical security (PHYSEC)
+across the public and private sectors.
+Mousam Khatri
+
+--- Página 24 ---
+#23 
+North American Electric 
+Reliability Corporation (NERC)
+NERC is a non-profit international regulatory authority
+focused on effectively and efficiently reducing risks
+facing the grid system. Its jurisdiction includes bulk
+power system users, owners, and operators.
+Mousam Khatri
+
+--- Página 25 ---
+#24
+OASIS SAML
+OASIS Security Assertion Markup Language (SAML). OASIS Open
+is a community where experts can advance projects, including
+open
+source
+projects,
+for
+cybersecurity,
+blockchain,
+IoT,
+emergency
+management,
+cloud
+computing,
+and
+legal
+data
+exchange. SAML is a standard that defines a framework for
+exchanging
+security
+information
+between
+online
+business
+partners.
+Developed
+by
+the
+Security
+Services
+Technical
+Committee, SAML is an XML-based framework that supports
+business communications for user authentication, entitlement,
+and attribute information. Organizations can apply it to human
+and machine entities, partner companies, or other enterprise
+applications. Organizations most often use SAML for web single-
+sign-on (SSO), attribute-based authorization, and securing web
+services.
+Mousam Khatri
+
+--- Página 26 ---
+#25
+SAMA
+Saudi
+Arabian
+Monetary
+Authority
+(SAMA)
+Cybersecurity Framework. Saudi Arabian Monetary
+Authority (SAMA) issued Version 1.0 of its Cyber
+Security Framework (SAMA CSF). In the introduction,
+SAMA noted that applying new online services and
+new developments, such as fintech, and blockchain,
+require additional regulatory standards to protect
+against continuously evolving threats.
+Mousam Khatri
+
+--- Página 27 ---
+Mousam Khatri
+FOLLOW FOR CYBERSECURITY 
+UPDATES
+

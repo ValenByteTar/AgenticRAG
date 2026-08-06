@@ -1,0 +1,127 @@
+=== EXCEL FOR ANALYTICS THE ULTIMATE GUIDE.pdf ===
+
+--- Página 1 ---
+EXCEL FOR
+ANALYTICS
+FROM
+THE ULTIMATE GUIDE
+ALL SHORTCUTS + FUNCTIONS
+FEATURED IN THE PRACTICUM FOR
+
+--- Página 2 ---
+SHORTCUTS
+REPETITION IS THE KEY TO RETENTION
+GENERALLY HELPFUL
+
+--- Página 3 ---
+SHORTCUTS
+REPETITION IS THE KEY TO RETENTION
+SELECTION + NAVIGATION
+
+--- Página 4 ---
+SHORTCUTS
+REPETITION IS THE KEY TO RETENTION
+FORMATTING
+
+--- Página 5 ---
+FUNCTIONS
+REPETITION IS THE KEY TO RETENTION
+TRIM: Used in data cleaning to
+remove leading or trailing
+blanks that are often difficult
+to see in the source data
+
+Syntax:
+TRIM(Cell Reference)
+LEFT: Used to grab some
+number of characters
+starting from the left of the
+cell contents
+
+Syntax:
+LEFT(Cell Reference,char num)
+RIGHT: Used to grab some
+number of characters starting
+from the right of the cell
+contents
+
+Syntax:
+RIGHT(Cell Ref,char num)
+
+MID: Used to grab some
+number of characters starting
+from a designated count from
+the left of a cell's contents
+
+Syntax:
+MID(Cell Ref,Start Num, Char Num)
+CLEANING
+
+--- Página 6 ---
+FUNCTIONS
+REPETITION IS THE KEY TO RETENTION
+YEAR: Used to extract the year
+from a date. Similar to MONTH,
+DAY, and other related
+functions
+
+Syntax:
+YEAR(Date Reference)
+EOMONTH: Used to derive the
+last day in a month determined
+by a dated cell and a specific
+number of months to roll
+forward.
+
+Syntax:
+EOMONTH(Date Cell, Months)
+TEXT: Incredibly useful function
+for a variety of things, namely in
+extracting specialized formats
+from cells.
+
+Syntax:
+TEXT(Cell Reference, Format)
+ Not CONCATENATE: Instead
+of the concatenate function, use
+the ampersand (&) to join strings
+and cell contents to create
+something new.
+
+Syntax:
+Cell/"Text 1"&Cell/"Text2"
+MANIPULATING
+
+--- Página 7 ---
+FUNCTIONS
+REPETITION IS THE KEY TO RETENTION
+XLOOKUP: Used to look up values using an index
+reference. Replaces VLOOKUP, HLOOKUP, and
+INDEX/MATCH if used carefully.
+
+Syntax: 
+XLOOKUP(Lookup value, Lookup Array, Return Array)
+LOOKUPS
+INDEX/MATCH: If you do not have XLOOKUP available
+on your version of Excel, INDEX/MATCH is the next best
+option. It uses the combination of functions to perform
+lookups in a much more flexible way than VLOOKUP and
+HLOOKUP.
+
+Syntax: 
+INDEX(Return Array,MATCH(Lookup Value, Lookup Array,0))
+
+--- Página 8 ---
+FUNCTIONS
+REPETITION IS THE KEY TO RETENTION
+SUMIFS: Used to sum values from a data set using specific criteria
+
+Syntax:
+SUMIFS(Sum Range,Criteria range 1, Criteria 1, Criteria Range N, Criteria N)
+CALCULATIONS
+COUNTIFS: Used to count instances from a data set using specific
+criteria
+
+Syntax:
+COUNTIFS(Criteria range 1, Criteria 1, Criteria Range N, Criteria N)
+

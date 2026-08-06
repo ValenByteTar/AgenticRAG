@@ -317,7 +317,7 @@ class TestPlannerWithResolver:
         else:
             # If no match, it's because preferred roles don't match artifact roles
             preferred = plan.get("doc_roles_preferred", [])
-            assert "analysis_report" in preferred or "entity_profile" in preferred
+            assert "analysis" in preferred or "entity_profile" in preferred
 
     def test_no_candidate_docs_when_no_matching_role(self, resolver: WarmArtifactResolver):
         cap = PlannerCapability(resolver=resolver)
@@ -356,8 +356,8 @@ class TestRetrievalEntityIndexBoost:
     def test_entity_doc_boost_applied(self, resolver: WarmArtifactResolver):
         def retrieve_fn(query, top_k, sw):
             return [
-                {"text": "doc1", "metadata": {"source": "doc:iso-27001-guide"}, "hybrid_score": 0.5},
-                {"text": "doc2", "metadata": {"source": "doc:random-pdf"}, "hybrid_score": 0.9},
+                {"text": "doc1", "metadata": {"source": "doc:iso-27001-guide", "canonical_doc_id": "doc:iso-27001-guide"}, "hybrid_score": 0.5},
+                {"text": "doc2", "metadata": {"source": "doc:random-pdf", "canonical_doc_id": "doc:random-pdf"}, "hybrid_score": 0.9},
             ]
         cap = RetrievalCapability(retrieve_fn, resolver=resolver)
         st = ExecutionState(question="que es ISO 27001?", entities=["ISO 27001"])
@@ -372,7 +372,7 @@ class TestRetrievalEntityIndexBoost:
     def test_no_boost_without_resolver(self):
         def retrieve_fn(query, top_k, sw):
             return [
-                {"text": "doc1", "metadata": {"source": "doc:iso-27001-guide"}, "hybrid_score": 0.5},
+                {"text": "doc1", "metadata": {"source": "doc:iso-27001-guide", "canonical_doc_id": "doc:iso-27001-guide"}, "hybrid_score": 0.5},
             ]
         cap = RetrievalCapability(retrieve_fn)
         st = ExecutionState(question="q", entities=["ISO 27001"])
@@ -382,7 +382,7 @@ class TestRetrievalEntityIndexBoost:
     def test_no_boost_for_unknown_entity(self, resolver: WarmArtifactResolver):
         def retrieve_fn(query, top_k, sw):
             return [
-                {"text": "doc1", "metadata": {"source": "doc:random-pdf"}, "hybrid_score": 0.9},
+                {"text": "doc1", "metadata": {"source": "doc:random-pdf", "canonical_doc_id": "doc:random-pdf"}, "hybrid_score": 0.9},
             ]
         cap = RetrievalCapability(retrieve_fn, resolver=resolver)
         st = ExecutionState(question="q", entities=["UnknownEntity"])
@@ -417,8 +417,8 @@ class TestE2EArtifactsConsumption:
         # 3. Retrieval with entity_index boost
         def retrieve_fn(query, top_k, sw):
             return [
-                {"text": "iso guide", "metadata": {"source": "doc:iso-27001-guide"}, "hybrid_score": 0.6},
-                {"text": "random", "metadata": {"source": "doc:random-pdf"}, "hybrid_score": 0.8},
+                {"text": "iso guide", "metadata": {"source": "doc:iso-27001-guide", "canonical_doc_id": "doc:iso-27001-guide"}, "hybrid_score": 0.6},
+                {"text": "random", "metadata": {"source": "doc:random-pdf", "canonical_doc_id": "doc:random-pdf"}, "hybrid_score": 0.8},
             ]
         retrieval_cap = RetrievalCapability(retrieve_fn, resolver=resolver)
         st = retrieval_cap.execute(st)

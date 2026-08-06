@@ -80,6 +80,9 @@ def _make_compiler(args) -> KnowledgeCompiler:
         llm_model=args.llm_model,
         llm_max_docs=args.llm_max_docs,
         llm_verbose=args.verbose,
+        llm_max_workers=getattr(args, "llm_max_workers", 4),
+        llm_num_predict=getattr(args, "llm_num_predict", 800),
+        llm_num_ctx=getattr(args, "llm_num_ctx", 4096),
         use_semantic_validation=args.semantic_validation,
         cache_dir=getattr(args, "cache_dir", None),
         use_cache=not getattr(args, "no_cache", False),
@@ -264,6 +267,9 @@ def cmd_all(args):
         llm_model=args.llm_model,
         llm_max_docs=args.llm_max_docs,
         llm_verbose=args.verbose,
+        llm_max_workers=getattr(args, "llm_max_workers", 4),
+        llm_num_predict=getattr(args, "llm_num_predict", 800),
+        llm_num_ctx=getattr(args, "llm_num_ctx", 4096),
         use_semantic_validation=args.semantic_validation,
         cache_dir=getattr(args, "cache_dir", None),
         use_cache=not getattr(args, "no_cache", False),
@@ -318,9 +324,12 @@ def _add_common_args(parser):
     parser.add_argument("--build-id", default="ka_v1.0.0", help="Build ID")
     parser.add_argument("--builder-version", default="1.0.0", help="Builder version")
     parser.add_argument("--confidence-policy", default="weighted", help="Confidence policy name")
-    parser.add_argument("--use-llm", action="store_true", help="Enable LLM extractor (E5, Granite 4.1 8B)")
-    parser.add_argument("--llm-model", default="ibm/granite4.1:8b-q4_K_M", help="LLM model for extraction")
+    parser.add_argument("--use-llm", action="store_true", help="Enable LLM extractor (E5, Granite 4.1 3B Q6)")
+    parser.add_argument("--llm-model", default="ibm/granite4.1:3b-q6_K", help="LLM model for extraction")
     parser.add_argument("--llm-max-docs", type=int, default=50, help="Max documents to process with LLM")
+    parser.add_argument("--llm-max-workers", type=int, default=4, help="Parallel chunks per document (Fase 4)")
+    parser.add_argument("--llm-num-predict", type=int, default=1200, help="Max tokens to generate (Fase 4)")
+    parser.add_argument("--llm-num-ctx", type=int, default=4096, help="Context window size (Fase 4)")
     parser.add_argument("--semantic-validation", action="store_true", help="Enable LLM-based semantic validation")
     parser.add_argument("--verbose", action="store_true", help="Verbose output")
     parser.add_argument("--cache-dir", default=None, help="KIR cache directory (default: cache/)")

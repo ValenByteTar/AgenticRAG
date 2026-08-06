@@ -1,0 +1,269 @@
+=== Anexo D - Pollos San Mateos.pdf ===
+
+--- Página 1 ---
+ANEXO D  (POLLOS)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+LISTADO DE CENTRALES POLLOS SAN MATEO OPERADAS POR EL CROM 
+ 
+CENTRAL 
+POTENCIA 
+MW 
+TECNOLOGIA 
+Fecha de 
+Habilitacion MAQUINAS 
+SCADA 
+SOTR 
+Pollos San Mateo 
+2.4 
+Biogas 
+02/07/2022 
+AGGREKO 
+ 
+BLC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+TOTAL 
+2.4
+
+--- Página 2 ---
+ANEXO D  (POLLOS)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+Descripcion de Generadores Pollos San Mateo: 
+Pollos San Mateo es un proyecto en el que el CROM monitorea la operacion de un agente con dos 
+generadores en el mercado electrico, son 2 motores de combustion interna que queman bio gas, y cada 
+motor tiene acoplado un generador sincronico. 
+ 
+Descripcion del Proyecto: 
+C.T. Pollos San Mateo surge del programa RenovAr Ronda 2 identificacion de la oferta BG-502, se le adjudica 
+una potencia de 2.4 MW, y se montaron dos maquinas de 1.375 MW cada una (Agente: CTPOLLOG; Central: 
+PSMADI; Grupo: PSMADI01) Fecha habilitacion comercial 02/07/2022. Oferente de la oferta POLLOS SAN 
+MATEO S.A. Empresa que realiza la operacion y comercializacion es HELIOS ENERGIA LIMPIA S.A. 
+ 
+El proyecto HELIOS ENERGIA LIMPIA S.A. obtiene bio gas de bio digestores que se alimentan con residuos 
+organicos de la zona, y se produce energia electrica quemando este bio gas. Luego, dicha energia sera 
+inyectada en el Sistema Argentino de Interconexion (SADI) en el marco del Contrato de Abastecimiento con 
+la administradora del Mercado Electrico Mayorista (CAMMESA) a traves de una conexion en 13,2 KV que se 
+conecta a la ET de Cooperativa electrica de Estacion General Paz (Distribuidor), Cordoba, y despues se 
+conecta al sistema de EPEC donde se eleva la tension de 13,2 KV a 66 KV. 
+ 
+ 
+ 
+CTPOLLOG se encuentra en 
+Estacion General Paz, en la 
+provincia argentina de 
+Cordoba,  
+-31.166637 
+-64.128280.
+
+--- Página 3 ---
+ANEXO D  (POLLOS)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+ 
+ 
+HELIOS ENERGIA LIMPIA S.A. 2.4 MW 
+A continuacion, se desarrolla una sucinta descripcion de las instalaciones objeto de este Anexo.  
+ 
+Son dos maquinas (1 y 2) de 1.375 MW cada una, estan conectadas del siguiente modo, a la salida del 
+generador tienen un interruptor de paralelo en 400 V, despues del interruptor de paralelo un transformador 
+de 0.4/13.8 KV, los transformadores se conectan a celdas de 13.8 KV (Celdas A5 y A6) a traves de 
+seccionadores bajo carga a una barra comun que tiene conectado en Celda A4 el transformador de servicios 
+auxiliares de 400 KVA, esta barra luego pasa por el nodo de medicion comercial Celda A3, y la energia es 
+conducida a celda A2 en la que existe un interruptor con sus protecciones por la que sale toda la energia 
+generada por la central. 
+La energia de las 2 maquinas sale por Celda A1 y es conducida por un cable subterraneo de 160 mts. de 
+longitud hasta un punto donde se encuentra un seccionador que vincula la salida de la CT Pollos San Mateo 
+con la red de distribucion en 13.2 KV de la Cooperativa Electrica General Paz. 
+El CROM solo realiza monitoreo a traves del SOTR y no opera ningun equipo de la central a distancia, si 
+realiza coordinacion operativa, comunicandose con los centros de control de CAMMESA, EPEC y operadores 
+en sitio.
+
+--- Página 4 ---
+ANEXO D  (POLLOS)   
+ 
+ 
+Supervisor de Operacion 
+Responsable de Produccion 
+ 
+ 
+ 
+Helios Energia Limpia S.A. 
+ 
+Pagina oficial:    https://heliosenergialimpia.com/ 
+ 
+ 
+DIAGRAMA UNIFILAR DE MEDIA TENSION: 
+ 
+ 
+ 
+ 
+ 
+FIN: 
+ 
+UNIFILAR DE MEDIA 
+TENSION.pdf
+

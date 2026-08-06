@@ -1,0 +1,617 @@
+=== InformacionOptimumPG.pdf ===
+
+--- Página 1 ---
+1
+
+--- Página 2 ---
+Induccion
+Area de Servicios
+Gcia. de Produccion
+2
+
+--- Página 3 ---
+Requisitos previos
+3
+
+--- Página 4 ---
+Induccion :: Requisitos previos
+•
+Ley 24.065 de 1992, se crea CAMMESA (art. 35) y el ENRE (art. 54)
+http://servicios.infoleg.gob.ar/infolegInternet/verNorma.do?id=464
+•
+CAMMESA tiene por objetivo administrar el Mercado Electrico y para ello crea
+LOS PROCEDIMIENTOS, estableciendo asi reglas claras en el MEM.
+https://cammesaweb.cammesa.com/empresa
+•
+El ENRE tiene por objetivo velar por el cumplimiento de la ley 24.065 y de LOS 
+PROCEDIMIENTOS de CAMMESA, para ello, tiene la potestad de aplicar multas y 
+de emitir Resoluciones con caracter de ley. 
+https://www.argentina.gob.ar/enre/quienes-somos
+•
+Para la toma de decisiones, el ENRE se apoya en info de CAMMESA.
+4
+
+--- Página 5 ---
+Induccion :: Requisitos previos
+5
+•
+La
+secretaria
+de
+energia
+cambia
+permanentemente
+de
+„ubicacion“
+en
+el
+mapa ministerial / gubernamental.
+•
+Ha sido promovida a Ministerio de Energia
+y degradada, ha sido subsecretaria del
+ministerio de Hacienda, etc.
+•
+Hoy en dia (marzo 2022) esta compuesta
+de la siguiente manera
+Fuente: https://www.argentina.gob.ar/economia/energia
+
+--- Página 6 ---
+Induccion :: Requisitos previos
+ENRE
+CAMMESA
+Generadores
+Traspos
+Distros
+Grandes 
+Usuarios
+MEM
+Mercado
+Electrico
+Mayorista
+Ente
+Nacional
+Regulador
+de la
+Electricidad
+6
+
+--- Página 7 ---
+Induccion :: Requisitos previos
+LOS PROCEDIMIENTOS de CAMMESA
+¿Que son exactamente?
+ANEXO 24 Sistema de operacion y despacho (SOTR, SMEC y SCOM)
+ANEXO 25 Procedimientos Operativos para el SADI
+PT 3 SMEC, envio de datos manuales
+PT 4 Ingreso de nuevos generadores
+PT 5 Control de tension y potencia reactiva
+PT 7 Recuperacion del SADI luego de un colapso total
+PT 8 Reglamento operativo del SADI
+PT 11 Analisis de perturbaciones electricas
+PT 15 Habilitacion de Operadores en el SADI
+Es un compilado de documentos en los que se 
+detallan aspectos tecnicos y comerciales del MEM.
+Abarca todos los estadios del proceso:
+•
+Ingreso al MEM
+•
+Programacion de la Operacion
+•
+Operacion en Tiempo Real
+•
+Control Post Operativo
+•
+Liquidacion de Ventas
+•
+Egreso del MEM
+https://cammesaweb.cammesa.com/los-procedimientos/
+7
+
+--- Página 8 ---
+Induccion :: Requisitos previos
+•
+En este presentacion llamaremos „OWNER“ (Dueno) al dueno de la planta generadora.
+•
+O&M representara aqui una empresa contratada por el OWNER para realizar la 
+operacion local y el mantenimiento local de los generadores y el BoP
+•
+BoP significa Balance of Plant y es todo lo que no sean los generadores de energia
+electrica en si mismos ni sus subsistemas.
+8
+
+--- Página 9 ---
+Organizacion
+9
+
+--- Página 10 ---
+Induccion :: Composicion del Area Servicios
+Produccion
+Martin Lopez
+CEO
+Carlos Cerruti
+Comercial
+Sebastian Garcia
+Servicios
+Diego Riobo Cabot
+AM
+Diego Riobo Cabot
+CROM
+Marcelo Negro
+SOPORTE
+Juan Carlos Gerhardt
+Proyectos
+IDI / Sist. Int.
+Ventas
+Producto
+a futuro
+10
+
+--- Página 11 ---
+Induccion :: Vinculo entre Areas
+Cliente
+Servicios
+Proyectos
+Sistemas
+Internos
+Comercial
+Compromisos
+Compromisos
+Satisfaccion
+• Comercial detecta Necesidades
+• Comercial acuerda con Cliente
+• Comercial retransmite a Proyectos
+• Proyectos lidera el EPC y PEM
+• Proyectos provee a Servicios
+• Sistemas Internos provee a Servicios
+• Servicios satisface al cliente
+Especificaciones
+Sistemas Int.
+Factibilidad
+Nota: Mas adelante se realizara una presentacion, detallando que
+son exactamente los „Proyectos de Instalacion de Servicios“ y
+como se deberan llevar acabo.
+11
+
+--- Página 12 ---
+Induccion :: Composicion del Area Servicios
+Cliente
+CROM
+Operacion Remota y MEM
+Soporte
+AM
+Mantiene en funcionamiento los productos 
+ofrecidos e instalados por BLC.
+Realiza la Operacion Remota y MEM, usando 
+sistemas de BLC, internos y de CAMMESA.
+Analiza datos del CROM y de la Central, para 
+reportar al Cliente estado de situacion. 
+Soporte
+12
+
+--- Página 13 ---
+Detalle de las Areas de Servicios
+13
+
+--- Página 14 ---
+Induccion :: SOPORTE
+OBJETIVO: Garantizar la disponibilidad de los sistemas 
+puestos a disposicion de los clientes, asi como la capacitacion 
+de los usuarios.
+Mant. Correctivo
+Mario Sanchez
+Coordinador
+Juan C. Gerhardt
+Mant. Preventivo
+Leonardo Sanchez
+Gestion
+Gonzalo Suarez
+Mant. Correctivo
+Julian Martini
+Mant. Correctivo
+Horarios: 
+Lu-Vi de 8 a 17hs
+Guardia Pasiva Rotativa 24x7
+Gestion de Tickets
+Gestion de Indisponibilidad SOTR
+Mantenimiento Correctivo
+Mantenimiento Preventivo
+Gestion de Stock de Repuestos
+14
+
+--- Página 15 ---
+Induccion :: SOPORTE
+OBJETIVO: Garantizar la disponibilidad de los sistemas 
+puestos a disposicion de los clientes, asi como la capacitacion 
+de los usuarios.
+Horarios: 
+Lu-Vi de 8 a 17hs
+Guardia Pasiva Rotativa 24x7
+Gestion de Tickets
+Gestion de Indisponibilidad SOTR
+Mantenimiento Correctivo
+Mantenimiento Preventivo
+Gestion de Stock de Repuestos
+Probabilidad / Efecto 1 - Muy baja 2 - Menor 3 - Critica 4 - Mayor 5 - Catastrofico
+5 - Constante
+4 - Moderado
+3 - Ocasional
+2 - Posible
+1 - Muy baja
+Matriz de Riego
+15
+
+--- Página 16 ---
+Induccion :: SOPORTE
+OBJETIVO: Garantizar la disponibilidad de los sistemas 
+puestos a disposicion de los clientes, asi como la capacitacion 
+de los usuarios.
+Horarios: 
+Lu-Vi de 8 a 17hs
+Guardia Pasiva Rotativa 24x7
+Gestion de Tickets
+Gestion de Indisponibilidad SOTR
+Mantenimiento Correctivo
+Mantenimiento Preventivo
+Gestion de Stock de Repuestos
+16
+
+--- Página 17 ---
+Induccion :: SOPORTE
+OBJETIVO: Garantizar la disponibilidad de los sistemas 
+puestos a disposicion de los clientes, asi como la capacitacion 
+de los usuarios.
+Horarios: 
+Lu-Vi de 8 a 17hs
+Guardia Pasiva Rotativa 24x7
+Gestion de Tickets
+Gestion de Indisponibilidad SOTR
+Mantenimiento Correctivo
+Mantenimiento Preventivo
+Gestion de Stock de Repuestos
+17
+
+--- Página 18 ---
+Induccion :: CROM
+OBJETIVO: Garantizar la transparencia de la operacion local 
+y la disponibilidad del CROM 7x24 frente al MEM.
+Ayudar al Cliente a reducir estructura de O&M
+Operadores
+5 parejas de 2
+Coordinador
+Marcelo R. Negro
+A. Guardia
+Ariel Toledo
+A. Produccion
+Christian Pereyra
+Horarios: 
+Lu-Vi de 8 a 17hs
+Guardia Activa Rotativa 24x7
+Guardia Pasiva Rotativa 24x7 (Analistas)
+Programacion de la Operacion
+Habilitacion PT 15
+Monitoreo Activo
+Operacion Remota
+Operacion MEM
+Ariel Baruzzo
+Franco Piedrabuena
+Nahuel Cantero
+Roque Constantino
+Roberto Pacheco
+Juan P. Carbajo
+Valentin Jose
+Lionel Molineris
+Nicolas Villar
+Gonzalo de Castro
+18
+
+--- Página 19 ---
+Induccion :: CROM
+OBJETIVO: Garantizar la transparencia de la operacion local 
+y la disponibilidad del CROM 7x24 frente al MEM.
+Ayudar al Cliente a reducir estructura de O&M
+Horarios: 
+Lu-Vi de 8 a 17hs
+Guardia Activa Rotativa 24x7
+Guardia Pasiva Rotativa 24x7 (Analistas)
+Programacion de la Operacion
+Habilitacion PT 15
+Monitoreo Activo
+Operacion Remota
+Operacion MEM
+19
+
+--- Página 20 ---
+Induccion :: CROM
+OBJETIVO: Garantizar la transparencia de la operacion local 
+y la disponibilidad del CROM 7x24 frente al MEM.
+Ayudar al Cliente a reducir estructura de O&M
+Horarios: 
+Lu-Vi de 8 a 17hs
+Guardia Activa Rotativa 24x7
+Guardia Pasiva Rotativa 24x7 (Analistas)
+Programacion de la Operacion
+Habilitacion PT 15
+Monitoreo Activo
+Operacion Remota
+Operacion MEM
+20
+
+--- Página 21 ---
+Induccion :: CROM
+OBJETIVO: Garantizar la transparencia de la operacion local 
+y la disponibilidad del CROM 7x24 frente al MEM.
+Ayudar al Cliente a reducir estructura de O&M
+Horarios: 
+Lu-Vi de 8 a 17hs
+Guardia Activa Rotativa 24x7
+Guardia Pasiva Rotativa 24x7 (Analistas)
+Programacion de la Operacion
+Habilitacion PT 15
+Monitoreo Activo
+Operacion Remota
+Operacion MEM
+21
+
+--- Página 22 ---
+Induccion :: Asset Management
+OBJETIVO: Asistir al cliente para garantizar la correcta 
+facturacion por la venta de energia. Analizar y reportar todas 
+las variables de disponibilidad y rendimiento de las plantas.
+Analista
+Fernando Vasconi
+Coordinador
+Diego Riobo Cabot
+Analista
+Oscar Garcia
+Horarios: 
+Lu-Vi de 8 a 17hs
+Analisis de Datos
+Reporting
+Gestion MEM
+Gestion Normativa
+Gestion Contractual
+22
+
+--- Página 23 ---
+Induccion :: Asset Management
+OBJETIVO: Asistir al cliente para garantizar la correcta 
+facturacion por la venta de energia. Analizar y reportar todas 
+las variables de disponibilidad y rendimiento de las plantas.
+Horarios: 
+Lu-Vi de 8 a 17hs
+Analisis de Datos
+Reporting
+Gestion MEM
+Gestion Normativa
+Gestion Contractual
+23
+
+--- Página 24 ---
+Induccion :: Asset Management
+OBJETIVO: Asistir al cliente para garantizar la correcta 
+facturacion por la venta de energia. Analizar y reportar todas 
+las variables de disponibilidad y rendimiento de las plantas.
+Horarios: 
+Lu-Vi de 8 a 17hs
+Analisis de Datos
+Reporting
+Gestion MEM
+Gestion Normativa
+Gestion Contractual
+24
+
+--- Página 25 ---
+Induccion :: Asset Management
+OBJETIVO: Asistir al cliente para garantizar la correcta 
+facturacion por la venta de energia. Analizar y reportar todas 
+las variables de disponibilidad y rendimiento de las plantas.
+Horarios: 
+Lu-Vi de 8 a 17hs
+Analisis de Datos
+Reporting
+Gestion MEM
+Gestion Normativa
+Gestion Contractual
+25
+
+--- Página 26 ---
+Actores Externos
+26
+
+--- Página 27 ---
+Induccion :: Actores Externos
+Diseno
+Abaste-
+cimiento
+Site
+Manager
+Mant.
+Generador
+Mant.
+BOP
+CROM y
+SOPORTE
+AM y
+SOPORTE
+CAMMESA
+CCA
+Owner
+Agente
+MEM
+Capa 0: 
+EPC y PEM: Tecnologos
+Capa 1: 
+Operacion local
+Capa 2: 
+Operacion remota
+Capa 3:
+Gestion del negocio
+OWNER
+MEM
+BLC
+Proyectos
+Desarrollo
+Traspo
+Distro
+CAMMESA
+Nota: Soporte tiene facetas 
+Operativas y de Gestion
+Tecnico
+Institucional
+Local
+Remoto
+Cons-
+truccion
+CROM
+27
+
+--- Página 28 ---
+Induccion :: Interrelacion entre actores (Planta Habilitada)
+TRASPOS
+ENRE
+Otros
+Tecnico
+Operativo
+Institucional
+Administrativo
+CROM y
+SOPORTE
+Operacion Remota
+Operacion MEM
+Soporte 24x7
+AM y
+SOPORTE
+Owner
+Agente
+Analisis y Reportes
+Gestion Comercial
+Gestion Contractual
+CAMMESA
+Gestion SOTR
+Agente MEM
+Gestion Juridica
+Gestion Contable
+Gestion Financiera
+O&M 
+Local
+Owner
+Operacion Local
+Resolucion de Fallas
+Mantenimientos
+Garantia de Disponibilidad
+Local
+Remoto
+Operativo
+Regulatorio
+Institucional
+Regulatorio
+Penal
+Operativo
+Administrativo
+Admin.
+Operativo
+Admin.
+28
+
+--- Página 29 ---
+Nacimiento de un Servicio 
+29
+
+--- Página 30 ---
+Induccion :: Nacimiento de un Servicio 
+Preventa
+Desarrollo
+PEM
+Punch List
+Servicio
+Proyecto
+Pre 
+Proyecto
+PEM
+Punch List
+Cierre de 
+Obra
+Servicio
+Precario 
+Definitivo 
+Kick-Off
+Reuniones
+S, P y  
+Cliente 
+P y S
+P y S
+C, A, P y S
+A – Administracion (Recursos Compartidos), C – Comercial, P – Proyectos, S - Servicios
+Convivencia entre P y S
+30
+Lideran las reuniones
+
+--- Página 31 ---
+Datos curiosos
+31
+
+--- Página 32 ---
+Induccion :: Datos generales de SERVICIOS
+Evolucion del area de Servicios
+•
+2012  – Se crea el area de SOPORTE
+•
+2019  – Se conforma el CROM guardia 7x24 
+•
+2020 – Se conforma area de SERVICIOS como tal
+•
+2020 – Se incorpora Mantenimiento Preventivo a SOPORTE
+•
+2021  – Se suman „Analisis de Produccion“ y „Coordinacion de guardia“ al CROM
+•
+2021  – Se crea el area de „Asset Management“
+Plantilla de SERVICIOS 
+•
+2012  – 4 personas
+•
+2019  – 10 personas
+•
+2021  – 22 personas
+•
+2023 – 30 personas (proyeccion)
+32
+
+--- Página 33 ---
+Induccion :: Datos generales de SERVICIOS
+•
+Se controla un volumen facturado mensual de 18 MM USD
+•
+Se emiten mas de 160 reportes mensualmente
+•
+Se monitorea el rendimiento de 200 generadores (biogas, solares y eolicos)
+CROM
+AM
+Clientes
+Soporte
+•
+47 clientes de SOPORTE 
+•
+15 de ellos contrataron CROM y AM
+•
+Se resolvieron 1428 tickets en 2021
+•
+Se gestiona la indisponibilidad SOTR de 185 puntos en forma diaria
+•
+Se visitan 40 centrales por ano, para realizar el Mant. Preventivo
+•
+Operamos casi 640 MW en tiempo real (casi el 15% renovable del pais)
+•
+Valor total de plantas estimado en 700 MM USD
+•
+Los operadores registran 1100 incidencias manualmente
+33
+
+--- Página 34 ---
+Induccion :: Area de Servicios
+¿Preguntas?
+34
+
+--- Página 35 ---
+Induccion :: Area de Servicios
+¡Muchas gracias!
+35
+

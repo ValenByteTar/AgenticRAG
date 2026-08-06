@@ -216,7 +216,7 @@ class ExhaustiveTester:
             f.write("="*80 + "\n")
             f.write("PRUEBAS EXHAUSTIVAS DE RAZONAMIENTO - RAG PIPELINE\n")
             f.write(f"Fecha: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-            f.write(f"Modelo: qwen3-4b-rag:latest\n")
+            f.write(f"Modelo: ibm/granite4.1:3b-q6_K\n")
             f.write(f"Documentos Indexados: 100,480\n")
             f.write("="*80 + "\n\n")
             

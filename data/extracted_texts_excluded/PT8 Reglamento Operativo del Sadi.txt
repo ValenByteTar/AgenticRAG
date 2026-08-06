@@ -1,0 +1,1000 @@
+=== PT8 Reglamento Operativo del Sadi.pdf ===
+
+--- Página 1 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 1 
+ 
+Version: 07-mar-2014 
+Los Procedimientos 
+P.T. 8: REGLAMENTO OPERATIVO DEL SADI 
+Indice 
+P.T. 8: REGLAMENTO OPERATIVO DEL SADI ...............................................................................................3 
+1. OBJETO. ....................................................................................................................................................3 
+2. INTRODUCCION. ......................................................................................................................................3 
+3. ORIGEN DE LAS ORDENES DE SERVICIO. ...........................................................................................3 
+4. PLAZOS PARA LA GESTION Y APROBACION DE UNA ORDEN DE SERVICIO..................................3 
+5. FORMAS DE PRESENTACION DE UNA PROPUESTA DE ORDEN DE SERVICIO Y 
+PUBLICIDAD DE SU APROBACION. ..................................................................................................3 
+6. ARCHIVO - BIBLIOTECA...........................................................................................................................4 
+7. LISTADO DE ANEXOS..............................................................................................................................4 
+8. CRITERIOS GENERALES.........................................................................................................................4 
+8.1. INTEGRACION DEL ANEXO I............................................................................................................4 
+8.2. DISPOSICION TRANSITORIA. ..........................................................................................................4 
+9. ALCANCE DE LA VIGENCIA DE LAS ORDENES DE SERVICIO DE CADA CENTRO DE 
+OPERACION QUE ESTAN EN PROCESO DE APROBACION POR EL COC. ..................................4 
+10. SITUACIONES ESPECIALES NO CUBIERTAS POR UNA ORDEN DE SERVICIO 
+APROBADA. .........................................................................................................................................5 
+11. CENTROS DE OPERACIONES DEL SADI.............................................................................................5 
+12. FORMALIDAD DE LAS COMUNICACIONES OPERATIVAS. ................................................................5 
+13. ANEXO I - CRITERIOS GENERALES DE OPERACION ........................................................................6 
+13.1. INTRODUCCION ..............................................................................................................................6 
+13.2. AMBITO DE APLICACION................................................................................................................6 
+13.3. TERMINOLOGIA...............................................................................................................................6 
+13.4. USOS DE LOS MEDIOS DE COMUNICACION...............................................................................6 
+13.5. LISTAS DE PERSONAL INVOLUCRADO........................................................................................7 
+13.6. SINCRONIZACION HORARIA..........................................................................................................7 
+13.7. REGISTRO DE NOVEDADES..........................................................................................................7 
+13.8. ENERGIZACION DE LINEAS ...........................................................................................................7 
+13.8.1. SALIDAS DE SERVICIO PROGRAMADAS. .............................................................................7 
+13.8.2. SALIDAS DE SERVICIO FORZADAS. ......................................................................................8 
+13.8.3. ENERGIZACION EN BLOQUE..................................................................................................8 
+13.9. ENERGIZACION DE UNA ESTACION TRANSFORMADORA LUEGO DE UNA   FALLA 
+EN LA MISMA................................................................................................................................8 
+13.10. ENERGIZACION DE TRANSFORMADORES................................................................................9 
+13.10.1. TRANSFORMADORES DE GENERADOR.............................................................................9 
+13.10.2. TRANSFORMADORES DE POTENCIA..................................................................................9 
+13.11. SINCRONIZACIONES – CIERRES DE ANILLOS..........................................................................9 
+13.12. OPERACION DE EQUIPOS DE MANIOBRA – SEGURIDAD – COORDINACION CON 
+USUARIOS. ...................................................................................................................................9 
+13.12.1. CONDICIONES NORMALES. .................................................................................................9 
+13.12.2. CONDICIONES DE EMERGENCIA. .....................................................................................10 
+13.12.3. MANIOBRAS PARA DEJAR SIN TENSION UNA LINEA O UN EQUIPO DE UNA E.T. 
+- CONSIGNACION DE EQUIPOS........................................................................................10
+
+--- Página 2 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 2 
+ 
+Version: 07-mar-2014 
+13.12.4. MANIOBRAS PARA RETORNO AL SERVICIO DE UNA LINEA O EQUIPO DE UNA 
+E.T. – DESCONSIGNACION DE EQUIPOS. ...................................................................... 10 
+13.13. AUTORIZACION Y LICENCIAS DE TRABAJO SOBRE EQUIPOS O INSTALACIONES. ......... 10 
+13.13.1. PERMISOS DE TRABAJO.................................................................................................... 10 
+13.13.2. LICENCIAS DE TRABAJO.................................................................................................... 11 
+13.13.3. TRABAJOS NO URGENTES................................................................................................ 11 
+13.13.4. TRABAJOS DE EMERGENCIA. ........................................................................................... 11 
+13.13.5. TRABAJOS CON TENSION. ................................................................................................ 11 
+13.14. NIVELES DE TENSION – CONTROL DE COMPENSACION DE POTENCIA REACTIVA. ....... 11 
+13.15. CONFIGURACION DE LA RED................................................................................................... 12 
+13.16. SOBRECARGAS POR CONTINGENCIAS SIMPLES. ................................................................ 12 
+13.17. REPOSICION DE CORTES- ROTACION.................................................................................... 12 
+14. ANEXO II - FRASEOLOGIA Y TERMINOLOGIA.................................................................................. 12 
+14.1. FRASES Y TERMINOS GENERALES........................................................................................... 12 
+14.2. FRASES Y TERMINOS RELACIONADOS CON LA GENERACION. ........................................... 15 
+14.3. FRASES Y TERMINOS RELACIONADOS CON LA TRANSMISION Y LA 
+TRANSFORMACION. ................................................................................................................. 16 
+14.4. FRASES Y TERMINOS RELACIONADOS CON PERTURBACIONES Y FALLAS. ..................... 17 
+14.5. FRASES Y TERMINOS RELACIONADOS CON EL DESPACHO ECONOMICO Y LOS 
+PRECIOS. ................................................................................................................................... 18
+
+--- Página 3 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 3 
+ 
+Version: 07-mar-2014 
+P.T. 8: REGLAMENTO OPERATIVO DEL SADI 
+1. OBJETO. 
+Sistematizar la integracion de los planes de operacion, de las ordenes de servicio, instrucciones operativas 
+y/o toda otra normativa interna de los Agentes del MEM relacionada con la gestion de sus respectivos 
+Centros de Operaciones para la supervision y control de los sistemas electricos componentes, de manera 
+de constituir el Reglamento Operativo del SADI. 
+2. INTRODUCCION. 
+El REGLAMENTO OPERATIVO DEL SADI es un conjunto de ordenes de servicio y anexos 
+complementarios aprobados por el COC que establecen las normas que deben cumplir los diferentes 
+Centros de Operaciones para la ejecucion de las siguientes tareas: 
+• Comunicaciones operativas. 
+• Emision y recepcion de consignas. 
+• Instrucciones para las maniobras sobre la red. 
+• Coordinacion de maniobras. 
+• Despacho de generacion. 
+• Administracion de permisos de trabajo. 
+• Administracion de ingreso de nuevos equipos. 
+• Administracion de ensayos. 
+• Supervision de limites operativos. 
+A los efectos de que los operadores puedan intercambiar las informaciones relativas a la gestion del SADI 
+evitando interpretaciones ambiguas, este Reglamento incluye una Fraseologia y Terminologia consensuada 
+y unica de la operacion. 
+3. ORIGEN DE LAS ORDENES DE SERVICIO. 
+Las ordenes de servicio pueden generarse por iniciativa del COC o de cada uno de los centros de 
+operaciones del SADI. En este ultimo caso la propuesta debe enviarse al COC quien considerara la fecha 
+de recepcion como la fecha a partir de la cual tienen vigencia los plazos de gestion. 
+Cuando la orden de servicio se origine en el COC, la fecha original sera la de recepcion documentada del 
+agente involucrado que la haya recibido en ultimo termino. 
+4. PLAZOS PARA LA GESTION Y APROBACION DE UNA ORDEN DE SERVICIO. 
+Una vez recibida una propuesta de orden de servicio enviada por un Centro de Operaciones del SADI, el 
+COC determinara quienes son los agentes involucrados y pondra en conocimiento de estos dicha 
+propuesta. 
+El COC y los agentes involucrados dispondran de 15 (quince) dias corridos para efectuar sus objeciones. 
+De no haberlas, la propuesta se convertira automaticamente en Orden de Servicio. 
+De presentarse objeciones, el COC coordinara con los agentes involucrados y el centro respectivo la 
+elaboracion de una propuesta consensuada. De no existir acuerdo al transcurrir 30 (treinta) dias corridos de 
+la presentacion de la propuesta original, el COC sancionara la que considere propuesta mas adecuada. 
+5. FORMAS DE PRESENTACION DE UNA PROPUESTA DE ORDEN DE SERVICIO Y 
+PUBLICIDAD DE SU APROBACION. 
+Con el proposito de facilitar los intercambios de informacion , la recepcion y envio de observaciones y la 
+publicacion formal de la orden de servicio aprobada, todos los documentos parciales desde la propuesta 
+original hasta la version definitiva, deberan canalizarse a traves de medios informaticos de correo, 
+preferiblemente utilizando los recursos disponibles en el MEM (actualmente MEMNET) respetando la norma 
+de utilizacion de esa red enviada oportunamente.
+
+--- Página 4 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 4 
+ 
+Version: 07-mar-2014 
+6. ARCHIVO - BIBLIOTECA. 
+Todas las ordenes de servicio aprobadas quedaran incluidas en una base de datos del MEMNET y por lo 
+tanto accesible a todos los Agentes del MEM que dispongan de ese recurso. Ademas, las versiones 
+impresas y los archivos magneticos quedaran en la biblioteca del COC y estaran a disposicion de los 
+Agentes para su consulta. 
+7. LISTADO DE ANEXOS 
+• ANEXO I: 
+CRITERIOS GENERALES DE OPERACION. 
+• ANEXO II: 
+FRASEOLOGIA Y TERMINOLOGIA. 
+• ANEXO III: 
+ORDENES DE SERVICIO DE LOS CENTROS DE OPERACIONES DEL 
+TRANSPORTE EN ALTA TENSION. 
+• ANEXO IV: 
+ORDENES DE SERVICIO DE LOS CENTROS DE OPERACIONES DEL 
+TRANSPORTE POR DISTRIBUCION TRONCAL. 
+• ANEXO V: 
+ORDENES DE SERVICIO DE LOS CENTROS DE OPERACIONES DE LOS 
+GENERADORES. 
+• ANEXO VI: 
+ORDENES DE SERVICIO DE LOS CENTROS DE OPERACIONES DE LOS 
+DISTRIBUIDORES. 
+• ANEXO VII: 
+CENTROS DE OPERACIONES DEL SADI. 
+8. CRITERIOS GENERALES. 
+8.1. INTEGRACION DEL ANEXO I. 
+Todas las ordenes de servicio deberan ajustarse a criterios generales que aseguren la confiabilidad de la 
+operacion, la minimizacion de la posibilidad del error humano, la reduccion de los tiempos de las maniobras 
+y la correccion de la informacion transmitida. 
+El conjunto de reglas, instrucciones y/o disposiciones que cada Centro de Operacion tenga establecido 
+como elemento comun a todas las normas operativas para garantizar el cumplimiento de esos atributos 
+integraran el Anexo I del presente Procedimiento bajo el titulo “CRITERIOS GENERALES DE 
+OPERACION”. 
+8.2. DISPOSICION TRANSITORIA. 
+A los fines de integrar el Anexo “CRITERIOS GENERALES DE OPERACION” en el menor tiempo posible, 
+los Centros de Operaciones de los Agentes deberan enviar al COC sus respectivos criterios generales con 
+los atributos mencionados en 8.1.- antes del 01 de agosto de 1997. El COC analizara dichos criterios 
+generales, efectuara los agregados o modificaciones que los compatibilicen y pondra a consideracion de los 
+Agentes un texto unificado para las observaciones que eventualmente correspondieren y su posterior 
+aprobacion segun la metodologia prevista en el punto 4 de este Procedimiento Tecnico. 
+9. ALCANCE DE LA VIGENCIA DE LAS ORDENES DE SERVICIO DE CADA CENTRO 
+DE OPERACION QUE ESTAN EN PROCESO DE APROBACION POR EL COC. 
+La entrada en servicio de un nuevo equipamiento, la modificacion de algun parametro de la red, la 
+ocurrencia de un episodio cuyas consecuencias para la operacion no fueron previstas, y el resultado de 
+nuevos estudios, ensayos, mediciones y/o verificaciones que impliquen cambios en los limites operativos de 
+equipos e instalaciones pueden ser motivo para que un Agente deba dotar en muy corto plazo a su Centro 
+de Operaciones de un instrumento normativo para asegurar la continuidad de su gestion. En la etapa inicial 
+de elaboracion del Reglamento Operativo del SADI tambien constituye un motivo de esa necesidad el hecho 
+de que las empresas no hayan concluido la redaccion definitiva del total de sus propuestas de ordenes de 
+servicio. 
+En ambos casos la vigencia de las ordenes o instrucciones que asi hayan implantado las empresas en sus 
+respectivos centros de operaciones tendra el alcance limitado al ambito de la supervision y control de sus 
+equipos e instalaciones propias y podran ser objetadas por el COC si de su aplicacion resulta vulnerada
+
+--- Página 5 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 5 
+ 
+Version: 07-mar-2014 
+cualquier disposicion de “Los Procedimientos” o comprometida la normal operacion de terceras empresas 
+y/o el desempeno del SADI en su conjunto. 
+La existencia de instrucciones operativas de estas caracteristicas no exime a los Agentes de ponerlas en 
+conocimiento y a consideracion del COC para que recorran las etapas de busqueda de consenso y posterior 
+aprobacion previstas en el punto 4 de este Procedimiento Tecnico. 
+En ningun caso la existencia de este tipo de instrucciones, de naturaleza esencialmente transitoria, puede 
+ser invocada por un Centro de Operaciones para refutar, impedir u obstaculizar una decision operativa del 
+COC. 
+10. SITUACIONES ESPECIALES NO CUBIERTAS POR UNA ORDEN DE SERVICIO 
+APROBADA. 
+Existen circunstancias en las que una Orden de Servicio aprobada por el COC y, en consecuencia, 
+integrada al presente “Reglamento Operativo” se debe modificar por razones justificadas y el tiempo 
+previsto por el punto 10 del Anexo 25 de “Los Procedimientos ...” para su consideracion resulta excesivo 
+respecto de los requerimientos de la operacion en tiempo real. En tales casos CAMMESA realizara un 
+analisis prioritario de dicha modificacion e independiente de la obtencion de respuestas por parte de los 
+Agentes, con el fin de otorgar una aprobacion parcial y transitoria a todos aquellos puntos que no merezcan 
+objecion y asi lo hara conocer al Agente iniciador y a los Agentes involucrados. El Agente responsable del 
+Centro de Operaciones donde se origino la propuesta debe incluir en el instrumento normativo interno que 
+provee a sus operadores la aclaracion correspondiente a los puntos aun no consensuados y aprobados. 
+En todos los casos en que la ejecucion de una o mas maniobras fuera motivo de cuestionamiento por la 
+falta de aprobacion de la orden de servicio correspondiente, el COC tomara las decisiones operativas que 
+considere adecuadas en ejercicio de las atribuciones conferidas por el inciso 2.1.- del punto 2 del Anexo 25 
+de “Los Procedimientos ...”. 
+Los resultados consensuados y acordados en reuniones interempresarias donde se discutieron aspectos de 
+coordinacion de la operacion de nuevos equipamientos tienen la misma validez que una orden de servicio 
+hasta tanto la propuesta correspondiente culmine con las gestiones dispuestas en el punto 10 del Anexo 25 
+de “Los Procedimientos ...”. 
+La minuta debidamente conformada por todos los participantes en donde se consignan los acuerdos 
+operativos alcanzados debera incluirse entre las ordenes de servicio que se disponen en los Centros de 
+Operaciones y tendra transitoriamente sus mismos efectos y alcances. 
+11. CENTROS DE OPERACIONES DEL SADI. 
+Los Centros de Operaciones a los que hace referencia el presente Procedimiento son los siguientes: 
+• Centro de Operaciones de CAMMESA. 
+• Centros de Operaciones del Transportista en Alta Tension. 
+• Centros de Operaciones de los Transportistas por Distribucion Troncal. 
+• Centros de Operaciones de los Generadores. 
+• Centros de Operaciones de los Distribuidores. 
+Un listado de los nombres, propietarios y localizaciones de todos los Centros de Operaciones del SADI, asi 
+como la nomina del personal afectado al tiempo real integran el Anexo VII de este Procedimiento. 
+12.  FORMALIDAD DE LAS COMUNICACIONES OPERATIVAS. 
+Las comunicaciones telefonicas que se establecen entre Centros de Operaciones para la ejecucion de las 
+tareas descriptas en el punto 2 revisten siempre caracter documental. La validez de la informacion que por 
+ese medio se intercambia es un presupuesto de la misma entidad que la que se intercambia por un vinculo 
+automatico. 
+Los integrantes de las guardias de los Centros de Operaciones deberan ajustarse en sus dialogos 
+operativos a un lexico que impida interpretaciones incorrectas. Para ello se establece lo siguiente: 
+1. En toda comunicacion telefonica, tanto el emisor como el receptor, deberan identificarse con su 
+apellido y el nombre de la empresa.
+
+--- Página 6 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 6 
+ 
+Version: 07-mar-2014 
+2. El vocabulario tecnico a emplear en dicha comunicacion es el establecido por el Anexo II del 
+presente Procedimiento, titulado “FRASEOLOGIA Y TERMINOLOGIA”. 
+3. Se debera evitar en una misma comunicacion cualquier comentario ajeno a la maniobra o novedad 
+que dio motivo al establecimiento de esa comunicacion. Si para evitar la repeticion de una llamada 
+se desea transmitir mas de un mensaje o novedad, el emisor debera indicar claramente el principio y 
+fin de cada uno de ellos de manera que el receptor pueda identificarlos. 
+4. La cordialidad y urbanidad en los dialogos son valores que se deben estimar y promover, 
+manteniendo la seriedad implicita en un mensaje operativo y la firmeza necesaria para asegurar que 
+el contenido de la informacion intercambiada no sea tergiversado. 
+5. Es conveniente que los Centros de Operaciones cuenten con un grabador que registre 
+permanentemente todas las comunicaciones telefonicas que se establecen para la ejecucion de las 
+tareas descriptas en el punto 2.-. 
+6. Los Centros de Operaciones deberan informar al COC todo cambio que se produzca en la 
+conformacion de los planteles asignados a sus tareas de supervision y control en tiempo real 
+(personal de turno y supervisores de los Centros de Operaciones). Con el fin de asegurar la 
+identificacion de los interlocutores en los dialogos operativos, se mantendra permanentemente 
+actualizada la lista de dicho personal en el Anexo VII de este Procedimiento. 
+6.1. DISPOSICION TRANSITORIA. 
+Con el fin de integrar el Anexo VII precedentemente mencionado los Agentes haran llegar al COC, 
+antes del 15 de junio de 1997, la nomina de su personal de operaciones. 
+ 
+13. ANEXO I - CRITERIOS GENERALES DE OPERACION 
+13.1. INTRODUCCION 
+Los Criterios Generales de Operacion son el conjunto de reglas, instrucciones y/o disposiciones comunes a 
+todas las normas operativas de los diversos Centros de Operaciones del SADI (C.O.), que tienden a 
+asegurar la confiabilidad de la operacion, la minimizacion de la posibilidad del error humano, la reduccion de 
+los tiempos de las maniobras y la correccion de la informacion transmitida. 
+El presente documento consiste en un compendio de los Criterios Generales de Operacion  presentados a 
+CAMMESA por los C.O. con el objeto de integrar el Anexo I del Procedimiento Tecnico Nº 8, y es una guia 
+de referencia para que los Criterios Generales de todos los C.O. incluyan como minimo los conceptos aqui 
+vertidos si pertenecen a su ambito de actuacion. 
+13.2. AMBITO DE APLICACION 
+El ambito de aplicacion de los Criterios Generales es el Sistema Argentino de Interconexion (SADI) en todos 
+sus niveles de tension. Abarca tambien la Red Patagonica en todos sus niveles de tension. 
+13.3. TERMINOLOGIA 
+A los efectos de que los Operadores puedan intercambiar las informaciones relativas a la gestion del SADI, 
+para uniformar los terminos y el vocabulario empleado, minimizar los riesgos de errores de interpretacion, 
+evitar las perdidas de tiempo y contribuir a una mayor eficiencia y seguridad, se debe utilizar la Fraseologia 
+y Terminologia consensuada e inserta en el Procedimiento Tecnico Nº 8 de CAMMESA. 
+13.4. USOS DE LOS MEDIOS DE COMUNICACION 
+Como complemento a lo indicado en el punto 12 del Procedimiento Tecnico Nº 8 se agrega: 
+• En el dialogo telefonico se deben denominar los equipos del sistema electrico con su nombre 
+completo y no por su codigo de identificacion propio de cada empresa, a los fines de evitar posibles 
+confusiones. 
+• Se deben evitar las conversaciones prolongadas. 
+• Las comunicaciones operativas desde o hacia cada C.O. tienen prioridad sobre las de otro tipo.
+
+--- Página 7 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 7 
+ 
+Version: 07-mar-2014 
+• Las comunicaciones operativas sobre coordinacion de maniobras deben ser dictadas palabra por 
+palabra para registrarlas en los libros de novedades con la hora respectiva, el nombre del lugar, la 
+persona de quien provienen y a quien van dirigidas. En los casos de urgencia la anotacion se 
+regularizara a posteriori, respetando los conceptos de la conversacion e indicando la hora, el lugar y 
+las personas que participaron. 
+• Debe asegurarse la correcta recepcion e interpretacion de la maniobra a realizar por parte del 
+receptor haciendo que este la repita antes de finalizar la comunicacion. Idem para las maniobras 
+recibidas que se deben repetir para su confirmacion. 
+• Los equipos de radio de reserva de las comunicaciones normales deben estar permanentemente 
+encendidos y se realizaran pruebas periodicas de los mismos. 
+13.5. LISTAS DE PERSONAL INVOLUCRADO 
+En la sala de cada C.O. se debe contar con listados y numeros telefonicos del personal involucrado en la 
+operacion en tiempo real de su propia empresa y de las conectadas a ella cuando corresponda, destacando: 
+a) Las personas autorizadas a solicitar maniobras. 
+b) Las autorizadas para consignar y desconsignar equipos propios y de las empresas vinculadas a ella. 
+c) Las de guardia pasiva para atender emergencias. 
+d) Personal jerarquico. 
+13.6. SINCRONIZACION HORARIA 
+Los C.O. deben controlar periodicamente su sincronizacion horaria y la de sus E.E.T.T. con la Hora Oficial 
+Argentina, a fin de que coincidan las anotaciones de los horarios en que se produzcan anormalidades y/o 
+realicen maniobras.  
+13.7. REGISTRO DE NOVEDADES 
+Cada C.O. debe disponer de un libro o cuaderno foliado donde quedaran asentadas todas las novedades, 
+maniobras y perturbaciones en el servicio producidas en el area bajo su control o que se originan en otra 
+area y repercuten en la propia. 
+Este libro o cuaderno se debe llenar de puno y letra o en forma electronica via PC. Deben figurar los 
+integrantes de cada turno y la firma del Jefe de Turno. 
+Las anotaciones deben reflejar con claridad la fecha, hora, ubicacion y nombre de los equipos, motivos, 
+causas y consecuencias de los eventos registrados. 
+Todo el personal de operaciones del C.O. esta obligado a notificarse de las novedades y eventos antes de 
+comenzar sus tareas habituales. En caso de enfermedad o licencia debera tomar conocimiento de las 
+novedades producidas durante su ausencia antes de reiniciar sus tareas habituales, no pudiendo en ningun 
+caso alegar desconocimiento de las mismas. 
+13.8. ENERGIZACION DE LINEAS 
+13.8.1. SALIDAS DE SERVICIO PROGRAMADAS. 
+Previo a la energizacion debe verificarse la cancelacion de todas las Licencias de Trabajo abiertas sobre la 
+linea, solicitando la confirmacion de la ausencia de personal en la misma o en su zona de riesgo y el quite 
+efectivo de todo tipo de puestas a tierra. 
+Para definir el extremo desde el cual se debera energizar deben considerarse los siguientes aspectos en 
+orden de importancia decreciente. 
+a) Acuerdos interempresarios contenidos en los respectivos convenios de interconexion. 
+b) En niveles de 500 kV se recomienda energizar desde la barra de mayor potencia de cortocircuito 
+para minimizar sobretensiones de maniobra. 
+c) Capacidad de regulacion de tension y compensacion de la potencia reactiva de la linea en vacio. 
+d) Condiciones favorables de diferencias de tension (modulo y angulo) para cierres de anillos.
+
+--- Página 8 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 8 
+ 
+Version: 07-mar-2014 
+e) En caso de ser indistinto se debe energizar desde el extremo perteneciente a la empresa que realizo 
+el trabajo programado. 
+En el nivel de 500 kV no se deben energizar lineas con interruptores que carecen de resistencias de 
+preinsercion, excepto en el caso de lineas que por sus caracteristicas no las poseen. 
+13.8.2. SALIDAS DE SERVICIO FORZADAS. 
+Todas las lineas que salgan de servicio como consecuencia de una perturbacion, deben ser reconectadas a 
+la red lo antes posible, debiendose intentar su reconexion si la falla hubiese  sido  monofasica, bifasica o 
+bifasica a tierra y cuando la perturbacion ocasionada y las condiciones meteorologicas u otras asi lo 
+permitan. En caso contrario se debe demorar la reconexion a criterio del Jefe de Turno del C.O. respectivo. 
+En todos los casos, antes de la reconexion, se debe efectuar la coordinacion operativa correspondiente 
+cuando en la maniobra esten involucrados dos o mas agentes.  
+Para los casos de falla trifasica se fija el criterio empresario que podra optar por reconectar la linea o 
+solicitar su revision por parte del personal de mantenimiento que corresponda. 
+En cambio, en casos criticos tales como areas radiales con restricciones al suministro parciales o totales 
+permanentes, se debe intentar la reconexion al menos una vez, salvo que se disponga de informacion 
+fehaciente sobre caracteristicas de la falla que impidan tal maniobra. 
+ Para la definicion del extremo desde el cual energizar deben respetarse los mismos criterios establecidos 
+para las Salidas de Servicio Programadas, siendo necesario agregar luego del punto (c), la condicion de 
+energizar desde el extremo mas alejado de la falla. Cuando por algun motivo resulta alterado el orden 
+propuesto para definir el extremo de energizacion, se debera dejar constancia indicando la causa que 
+origino tal alteracion. 
+En el caso de una nueva desconexion quedara a criterio del Jefe de Turno la eventual segunda reconexion, 
+con la demora que juzgue conveniente para que desaparezcan las presuntas causas de la falla. 
+En general no se debe repetir la prueba para lineas que hubiesen desenganchado con senalizacion de falla 
+bi o trifasica. 
+Ante el desenganche de una linea afectada a una licencia de trabajos con tension o una linea adyacente, no 
+se efectuara ni autorizara ninguna maniobra de reenergizacion sin antes tener directa comunicacion y 
+conformidad por parte del Jefe de Trabajo que corresponda. 
+13.8.3. ENERGIZACION EN BLOQUE. 
+En todos los casos de desconexion de lineas de tension menor o igual a 132 kV que dejen sin tension otros 
+tramos de linea y las E.E.T.T. asociadas, no se debe proceder a la desconexion de los transformadores ni 
+de las lineas en cuestion, salvo expresa instruccion del C.O., a los fines de realizar la reposicion en bloque 
+con la carga de las E.E.T.T. total o parcialmente conectada (segun el caso), reduciendose asi el tiempo de 
+reposicion, logrando un mayor control de la tension y evitando la doble maniobra de apertura y cierre de un 
+gran numero de interruptores. 
+Si se ha verificado que las protecciones de la linea actuaron como respaldo, la energizacion en bloque no 
+se realizara, a menos que se haya identificado y separado el equipo en falla. 
+13.9. ENERGIZACION DE UNA ESTACION TRANSFORMADORA LUEGO DE UNA   FALLA EN 
+LA MISMA. 
+Se procedera a verificar la ausencia de tension en barras y la apertura de los interruptores que la vinculan al 
+Sistema.  
+Luego de aislado el equipamiento afectado y de acuerdo a la naturaleza de la falla, se comenzara la 
+normalizacion de la E.T. desde el nivel de mayor tension. 
+De considerarlo necesario el responsable de la E.T. solicitara una inspeccion in situ previo a cualquier 
+energizacion.
+
+--- Página 9 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 9 
+ 
+Version: 07-mar-2014 
+13.10. ENERGIZACION DE TRANSFORMADORES. 
+13.10.1. TRANSFORMADORES DE GENERADOR. 
+Los requerimientos son variados y dependientes de la modalidad sugerida por el respectivo proveedor, 
+dependiendo de la potencia de cortocircuito de la barra de energizacion y de si poseen reactores asociados 
+sin posibilidad de desconexion. En general, cuando aquella no es suficiente se energizara desde el lado del 
+Generador. 
+La desenergizacion de transformadores con reactores asociados se hara desde el lado de alta tension y con 
+un generador en paralelo con generacion activa cero y reactiva igual a la carga del reactor. 
+13.10.2. TRANSFORMADORES DE POTENCIA. 
+La energizacion se debe realizar en general desde el lado de alta tension y con el cambiador de topes 
+ubicado en la posicion que asegure la minima tension en el arrollamiento secundario, con el objeto de 
+reducir las solicitaciones al equipo. Ademas se debe respetar el valor maximo de la tension de energizacion 
+indicado por los correspondientes estudios. 
+En los casos de energizacion desde el lado de baja tension por requerimientos especiales, como ser en 
+casos de colapso, se realizara desde generadores que se ingresan en servicio para este proposito con la 
+tension reducida y configuracion de red de acuerdo a procedimientos acordados. 
+13.11. SINCRONIZACIONES – CIERRES DE ANILLOS. 
+En todos los casos de sincronizacion de islas del Sistema de Transporte de Alta Tension, CAMMESA 
+coordinara con los C.O. involucrados la regulacion de frecuencia y tensiones en las areas a ser vinculadas. 
+En el caso de redes aisladas dentro del area de un Transportista por Distribucion Troncal, este coordinara 
+las maniobras requeridas e informara a CAMMESA. 
+Se tratara de aproximar todo lo posible dichas magnitudes con los recursos disponibles. 
+Si la sincronizacion es la de un generador, la misma se hara desde ese extremo por contar con una mejor 
+regulacion. 
+En el caso de cierre de anillos se deberan aproximar las tensiones en modulo y angulo a valores 
+compatibles con los valores de calibracion de los equipos de sincronismo existentes. 
+Con relacion al paralelo con los paises limitrofes se deben respetar las condiciones recomendadas por los 
+estudios y fijadas por los acuerdos respectivos. 
+13.12. OPERACION DE EQUIPOS DE MANIOBRA – SEGURIDAD – COORDINACION CON 
+USUARIOS. 
+13.12.1. CONDICIONES NORMALES. 
+Todos los equipos de maniobra de la red deben ser operados por el C.O. respectivo por telecomando o en 
+forma local bajo su conocimiento y autorizacion. En todos los casos se debe realizar una programacion 
+formal y una coordinacion previa de la secuencia de las maniobras, tanto sean por telecomando o bajo 
+supervision telefonica, las cuales se deberan informar al C.O.C. 
+Cuando las maniobras involucren instalaciones de otras empresas, se deben coordinar con los C.O. 
+correspondientes y con previo acuerdo de CAMMESA. 
+Las maniobras solicitadas por los C.O. deben ser analizadas e informadas al C.O.C. previamente por los 
+mismos, a los fines de evaluar las repercusiones de las maniobras propuestas sobre la seguridad de la red y 
+la prestacion normal del servicio. 
+Se deben evitar superposiciones de indisponibilidades de equipos y/o trabajos con riesgo de disparo que 
+impliquen una disminucion significativa de la confiabilidad de la operacion.  
+La operacion de los generadores se debe realizar, tanto en su conexion como desconexion, por el C.O. del 
+Generador, mediante solicitud de CAMMESA y en coordinacion con el Transportista o Distribuidor al que 
+esta conectado.
+
+--- Página 10 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 10 
+ 
+Version: 07-mar-2014 
+Todo personal que realice maniobras sobre la red de alta tension, incluyendo el personal de los 
+Transportistas Independientes, debe conocer perfectamente las normas de seguridad vigentes y todas las 
+Ordenes de Servicio e Instrucciones Internas.  
+13.12.2. CONDICIONES DE EMERGENCIA. 
+Entendiendose por tales a las situaciones que impliquen riesgo grave e inminente para personas y/o 
+equipos, el responsable de la instalacion evaluara la situacion y, de considerarlo necesario por la premura 
+del caso o por no disponer de comunicacion con el C.O., efectuara las maniobras necesarias para minimizar 
+o eliminar el riesgo, comunicandolas luego al C.O. con la mayor premura posible e informando las 
+condiciones actuales del equipo. 
+Es importante destacar en estos casos que se debe prestar especial atencion a las interconexiones con 
+otros agentes del MEM, a fin de no trasladar un problema a otras areas de las cuales se carece de 
+informacion en cuanto a sus condiciones particulares de operacion. 
+13.12.3. MANIOBRAS PARA DEJAR SIN TENSION UNA LINEA O UN EQUIPO DE UNA E.T. - 
+CONSIGNACION DE EQUIPOS. 
+La linea o equipo que se debe dejar sin tension y libre para trabajar, se desconectara de la manera y orden 
+siguiente: 
+a) Abrir interruptor/es correspondientes. 
+b) Abrir seccionadores adyacentes al/los interruptor/es o bien seccionadores que permitan aislar el 
+equipo solicitado (corte visible). 
+c) Bloquear mecanica, electrica o electronicamente las posibilidades de comando que existieren.  
+d) Cerrar seccionadores de puesta a tierra para conectar a tierra la linea o equipo en el que se va a 
+realizar el trabajo, previa verificacion de ausencia de tension. Se exceptuaran los casos en que 
+especialmente se solicita no colocar tierras. 
+e) Colocar un cartel de “No Operar” en el comando del equipo que se saco de servicio a fin de evitar 
+que se maniobre el mismo mientras este bajo la responsabilidad de quien realiza el trabajo. 
+f) 
+Colocar puestas a tierra adicionales si se considera necesario. 
+g) Delimitar la zona de trabajo. 
+Todas las maniobras se deben registrar en el orden en que se han realizado en un cuaderno foliado de la 
+E.T. o del C.O. responsable de la misma. 
+En caso de trabajos con terceros contratados, se debera contar con la presencia de personal supervisor 
+tecnico del responsable de la E.T. 
+13.12.4. MANIOBRAS PARA RETORNO AL SERVICIO DE UNA LINEA O EQUIPO DE UNA E.T. – 
+DESCONSIGNACION DE EQUIPOS. 
+Se realizaran las operaciones en el orden y sentido inverso al descripto en el punto anterior, debiendose 
+registrar del mismo modo cada una de las maniobras. 
+13.13. AUTORIZACION Y LICENCIAS DE TRABAJO SOBRE EQUIPOS O INSTALACIONES. 
+Ninguna persona esta autorizada a dejar fuera de servicio o reparar linea o equipo alguno de los 
+supervisados por cada C.O. sin autorizacion expresa del mismo, aunque el equipo no este en 
+funcionamiento. 
+Se exceptuan las situaciones que involucren peligro inminente para las personas y/o instalaciones (ver 
+Operacion de equipos de maniobra en Condiciones de emergencia). 
+13.13.1. PERMISOS DE TRABAJO. 
+En todos los casos deberan confeccionarse los formularios de Permiso de Trabajo contemplando todos los 
+items que corresponda.
+
+--- Página 11 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 11 
+ 
+Version: 07-mar-2014 
+13.13.2. LICENCIAS DE TRABAJO. 
+Con el Permiso de Trabajo concedido, el dia y hora autorizado se otorgara desde la E.T. correspondiente ( o 
+desde el C.O. que telecontrola la E.T. no atendida) la licencia para trabajar, ya sea en la misma E.T. o en el 
+propio sitio a efectuar el trabajo si es fuera de una E.T. 
+En el caso de realizacion simultanea de varios trabajos que afecten a equipamiento comun se otorgaran 
+tantas licencias como trabajos existan.  
+En el caso de lineas de interconexion se intercambiaran licencias de trabajo numeradas entre las empresas 
+involucradas. 
+Para trabajos que se desarrollan dentro de una E.T. la obligatoriedad de las Licencias de Trabajo alcanza a 
+todas las personas relacionadas con los mismos,  ya sean de la propia empresa o de empresas cuyo 
+equipamiento se halle dentro de las instalaciones de la misma E.T. 
+La lista de personas autorizadas a solicitar o consignar equipos debera estar disponible en el C.O. o en las 
+E.E.T.T., tal como se indico en “Listas de Personal Involucrado”. 
+Antes de las maniobras para reponer al servicio una instalacion deberan estar canceladas todas las 
+licencias otorgadas sobre la misma. 
+13.13.3. TRABAJOS NO URGENTES. 
+Son aquellos cuya ejecucion puede diferirse a fecha mediata sin que el servicio sea perjudicado por la 
+demora. 
+13.13.4. TRABAJOS DE EMERGENCIA. 
+Son aquellos de los cuales depende la continuidad o el restablecimiento del servicio, o bien la eliminacion 
+de factores que hagan peligrar las instalaciones y que por lo tanto no pueden ser postergados. 
+13.13.5. TRABAJOS CON TENSION. 
+El Responsable del Trabajo (o Jefe de Trabajo) con tension o personal debidamente autorizado debera 
+comunicarse con el C.O. respectivo para solicitar una Licencia o Autorizacion de Trabajos con Tension, 
+indicando detalles del mismo, a saber: instalacion, tipo de licencia solicitada, horario, lugar de trabajo, Jefe 
+de Trabajo y trabajo a realizar. 
+El C.O. anulara o hara anular los recierres de las protecciones correspondientes a la instalacion a intervenir. 
+Una vez verificada la anulacion de recierres, se otorgara la licencia o autorizacion mencionada (indicando 
+instalacion y Nº de autorizacion) al Responsable del Trabajo (o Jefe de Trabajo). 
+No se debera efectuar ninguna modificacion de estado en lineas o instalaciones sobre las que se realizan 
+trabajos con tension sin previo acuerdo con el o los poseedores de las licencias. Ante cualquier 
+desenganche de lineas que se produzca mientras se efectuan trabajos con tension en el area de la 
+perturbacion, cualquiera sea el motivo, antes de proceder a una prueba el C.O. se debera poner en contacto 
+con las personas que se encuentren trabajando. 
+Finalizados los trabajos el Responsable del Trabajo (o Jefe de Trabajo) se comunicara con el C.O. y 
+cancelara la Licencia o Autorizacion de Trabajos con Tension. (y su Nº de la autorizacion). 
+El C.O. cancelara la licencia otorgada y repondra u ordenara reponer los recierres. 
+Mientras se efectuan los trabajos con tension los equipos de radio deben encontrarse en escucha. 
+13.14. NIVELES DE TENSION – CONTROL DE COMPENSACION DE POTENCIA REACTIVA. 
+Los Centros de Operaciones de los Transportistas informaran al C.O.C. cualquier indisponibilidad de 
+equipamiento de compensacion propio, el apartamiento de los valores acordados o tolerados del factor de 
+potencia en los puntos de conexion con Distribuidores y Distribuidores Troncales, y cualquier incumplimiento 
+por parte de los Generadores. 
+“Los Procedimientos...” establecen los rangos dentro de los cuales deberan mantenerse las tensiones en 
+operacion normal. 
+Las Centrales deberan mantener informado permanentemente al Transportista a cuya red se conectan y al 
+C.O.C. sobre cualquier limitacion propia de potencia reactiva existente. El COC debera informar al
+
+--- Página 12 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 12 
+ 
+Version: 07-mar-2014 
+Transportista en Alta Tension toda novedad que se produzca en instalaciones operadas por centrales 
+Binacionales que afecte al control de tension. 
+Los Transportistas deberan mantener un perfil de tension y una reserva de potencia reactiva en la 
+compensacion existente (propia o de los agentes conectados a su sistema) suficiente para afrontar la 
+perdida de un elemento de compensacion sin que se produzcan alteraciones que lleven los perfiles citados 
+a valores fuera de banda preestablecida para postfalla. A tal efecto, los transportistas coordinaran con los 
+C.O. de otros agentes y ejecutaran las acciones necesarias, debiendo anticiparse en la evolucion de la 
+demanda. 
+13.15. CONFIGURACION DE LA RED. 
+La configuracion que se adopte en la red se basara en lograr la mayor seguridad y calidad del suministro, 
+contemplando el parque generador despachado para acotar las potencias de cortocircuito a valores 
+nominales de los equipamientos y evitar sobrecargas en la red. Por lo tanto, esta configuracion no es 
+constante, obligando las condiciones de demanda, el parque de generacion y la disponibilidad de los 
+equipos de transmision a introducir variaciones a la misma. 
+Las redes que, con motivo de limitar la potencia de cortocircuito, se dividen en subsistemas radiales del 
+sistema de transporte en alta tension, se acoplaran solo para la transferencia de demanda y/o reposicion 
+ante fallas o mantenimiento de equipos. Para el acoplamiento entre subsistemas existen limites de 
+diferencia angular en funcion de la capacidad nominal de las instalaciones y la potencia de cortocircuito. 
+13.16. SOBRECARGAS POR CONTINGENCIAS SIMPLES. 
+En operacion normal no se debe operar con sobrecargas en equipo alguno. 
+Las sobrecargas por contingencias se operan a nivel y tiempo admisibles maximos en funcion de las 
+caracteristicas de los equipos involucrados y de las temperaturas y estados de carga previos,  debiendo 
+ajustar por lo tanto los tiempos de correccion de la sobrecarga de manera de llevar nuevamente las 
+instalaciones a sus valores nominales. 
+En caso de red completa, la operacion con equipos (lineas, cables o transformadores) en paralelo sera tal 
+que el desenganche de alguno de ellos no provoque la sobrecarga de los restantes mas alla del valor y 
+duracion admitido en condicion de emergencia, aunque esta condicion puede implicar la necesidad de 
+efectuar desconexion automatica de carga o de generacion. 
+13.17. REPOSICION DE CORTES- ROTACION 
+Ante una perturbacion que ocasione cortes debido a la actuacion de reles del esquema de alivio de  carga 
+por subfrecuencia, la reposicion de los mismos se debe realizar en forma gradual y coordinada por el C.O.C. 
+Si debido a las caracteristicas y magnitud de la perturbacion no es factible una reposicion inmediata de tales 
+cortes, se debera proceder al cambio de los mismos por cortes manuales para volver a tener habilitada la 
+proteccion del esquema de alivio de carga ante una segunda perturbacion. Esta maniobra de cambio sera 
+indicada por el COC de acuerdo a las condiciones imperantes en el Sistema. 
+ 
+14. ANEXO II - FRASEOLOGIA Y TERMINOLOGIA 
+14.1. FRASES Y TERMINOS GENERALES 
+ABRIR O CERRAR: Accion manual ejercida sobre un interruptor o seccionador, ya sea localmente o a 
+distancia, con el objeto de interrumpir o establecer, respectivamente, la posibilidad de circulacion de la 
+corriente electrica. 
+ALERTA: Aviso de prevencion de una emergencia. 
+APARATOS / DISPOSITIVOS ELECTRICOS: Todos los elementos en los cuales se usan conductores 
+electricos, soportan conductores, o bien los conductores forman parte de ellos. Se caracterizan por estar 
+destinados a una funcion especifica y diferenciable, poseer parametros de funcionamiento propios y ser 
+construidos o instalados (o retirados) como una unidad. 
+BAJAR TENSION: Accion de disminuir la tension. Se la expresa en KV. Cuando esta accion esta fundada 
+en deficit de generacion se la expresa en tanto por ciento (%).
+
+--- Página 13 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 13 
+ 
+Version: 07-mar-2014 
+BANDA DE FRECUENCIA: Rango de frecuencia comprendido entre dos limites. 
+BLOQUEO: Operacion manual o automatica que impide la operacion o maniobra de un equipo y lo 
+mantiene en un estado determinado. 
+CABLE PILOTO: Cable auxiliar para protecciones, mandos, medidas y/o comunicaciones. 
+CAPACIDAD DE SOBRECARGA: Porcentaje en que se puede exceder la potencia nominal de un equipo, 
+durante un tiempo determinado. 
+CENTRO DE COMANDO, CENTRO DE CONTROL, CENTRO DE OPERACIONES, SALA DE COMANDO, 
+SALA DE CONTROL, SALA DE MANDO: Con cualquiera de estas expresiones se designa al lugar fisico 
+desde donde se realizan las funciones operativas de supervision y control de una red electrica y/o el 
+despacho de unidades generadoras. Debe contar con por lo menos un medio de comunicacion con el 
+Centro de Operaciones con el que establece una relacion operativa jerarquica y disponer de medios fisicos 
+y humanos que permitan ejercer las mencionadas funciones durante las 24 horas de todos los dias. 
+COC: Centro de Control de Operaciones del SADI, a cargo de CAMMESA. 
+COD: Centro de Control de Operaciones de cada uno de los Distribuidores. 
+COG: Centro de Control de Operaciones de cada uno de los Generadores. 
+CON CARGA: Equipo energizado donde se produce una circulacion de potencia. 
+CONSIGNAR (una instalacion, linea o aparato): Se denominara asi al conjunto de operaciones destinadas 
+a: 
+a) Separar mediante corte visible la instalacion, linea o aparato de toda fuente de tension. 
+b) Bloquear en posicion de apertura los aparatos de corte o seccionamiento necesarios. 
+c) Verificar la ausencia de tension con los elementos adecuados. 
+d) Efectuar las puestas a tierra y en cortocircuito necesarias, en todos los puntos por donde pudiera 
+llegar tension a la instalacion como consecuencia de una maniobra o falla del sistema. 
+e) Colocar la senalizacion necesaria y delimitar la zona de trabajo. 
+CON TENSION: Equipo energizado desde un extremo y abierto en el otro. 
+CONTINGENCIA: Cambio imprevisto y repentino en la topologia de la red y/o en el parque generador. 
+COT: Centro de Control de Operaciones del Sistema de Transporte de Energia Electrica en Alta Tension, a 
+cargo de TRANSENER S.A. 
+COTDT: Cada uno de los Centros de Control de Operaciones de los Sistemas de Transporte por 
+Distribucion Troncal. 
+CURVA DE CARGA: Representacion grafica de la evolucion de la demanda en funcion del tiempo. 
+DEMANDA: Potencia requerida por los consumidores de energia electrica. 
+EMERGENCIA: Condicion extraordinaria del SADI, como consecuencia de contingencias severas que 
+produzcan o puedan producir el colapso parcial o total del Sistema Electrico, o bien un deficit momentaneo 
+de generacion en el mismo. 
+EN SERVICIO: Equipo electrico vinculado a la red y cumpliendo con su funcion especifica. 
+ENTRAR EN PARALELO: Accion de conectar electricamente una maquina o sistema electrico con el SADI 
+luego de verificar manual o automaticamente el cumplimiento de las condiciones de sincronismo. 
+EQUIPO DE CONEXION, CAMPO DE CONEXION O SALIDA: Conjunto de aparatos y elementos 
+destinados a la conexion, desconexion, control y/o supervision de una instalacion. 
+EQUIPO DISPONIBLE: Equipo en condiciones de ser puesto en servicio. 
+EQUIPO ELECTRICO: Elemento integrante de un sistema electrico. 
+EQUIPO INDISPONIBLE: Equipo no apto para entrar en servicio. 
+EQUIPO LIBRE DE TIERRA: Equipo que se ha desvinculado de tierra. 
+ EQUIPO PUESTO A TIERRA: Equipo que ha sido vinculado a tierra.
+
+--- Página 14 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 14 
+ 
+Version: 07-mar-2014 
+FUERA DE SERVICIO: Equipo que no esta siendo utilizado. 
+INTERRUPTOR EN REPOSO: Estado de un interruptor, separado de toda fuente de tension, y en posicion 
+de cerrado. 
+INTERRUPTOR: Es el equipo que sirve para cerrar y abrir circuitos electricos con o sin carga, o con 
+corrientes de fallas. 
+LICENCIA O PROTOCOLO: Formulario normalizado donde se asientan los datos requeridos para la 
+correcta entrega y recepcion de un equipo y/o instalacion segun las normas de operacion y seguridad 
+vigentes. 
+LIMITACION: Disminucion de la potencia nominal de un equipo por razones propias. 
+MARCHA EN VACIO: Equipo energizado al que no se le ha conectado su carga. 
+MERCADO ELECTRICO MAYORISTA (MEM): Ambito dentro del cual se ejecutan las transacciones de 
+energia electrica en bloque, ya sea por medio del SADI o dentro de una Region Electrica que ha de ser 
+interconectada a dicho Sistema. 
+OPERACION: Cambio de estado manual o automatico de un equipo de un sistema electrico. 
+ORGANISMO ENCARGADO DEL DESPACHO (OED): Organismo que tiene a su cargo la coordinacion de 
+la operacion tecnica y la administracion comercial del Mercado Electrico Mayorista (MEM). 
+PERDIDA DE DEMANDA: Reduccion intempestiva de la demanda. 
+PERIODO DE PICO: Periodo de tiempo en el que existe probabilidad cierta de que se produzca el valor 
+maximo de demanda. 
+POTENCIA ACTIVA / REACTIVA ENTREGADA: Potencia saliente medida en un punto de referencia. 
+POTENCIA ACTIVA / REACTIVA RECIBIDA: Potencia entrante medida en un punto de referencia. 
+REGULACION O CONTROL: Metodo y medios de gobernar el funcionamiento de un proceso. 
+RESTRICCION: Disminucion de la potencia nominal de un equipo por razones externas. 
+RESTRICCIONES POR DEFICIT: Reduccion de la demanda por imposibilidad de satisfacerla. 
+SALIR DE PARALELO: Accion de desvincular una maquina o sistema del SADI. 
+SE CANCELA LICENCIA: Acto por el cual se finaliza la autorizacion para trabajar en un equipo y/o 
+instalacion. 
+SE OTORGA LICENCIA: Acto por el cual se autoriza el inicio de los trabajos en un equipo y/o instalacion. 
+SECCIONADOR: Es un dispositivo de corte visible, cuya funcion consiste en abrir o cerrar un equipo sin 
+carga. 
+SECCIONADOR DE PUESTA A TIERRA: Seccionador que vincula a un equipo fuera de servicio, 
+rigidamente a tierra. 
+SINCRONIZACION: Proceso mediante el cual las tensiones de dos maquinas sincronicas o sistemas 
+electricos, desconectados entre si, se ajustan en frecuencia, en modulo y en fase. 
+SISTEMA ARGENTINO DE INTERCONEXION (SADI): Sistema electrico interconectado constituido por las 
+instalaciones de transmision, transformacion, compensacion y maniobra que integran el Sistema de 
+Transporte de Energia Electrica en Alta Tension y los Sistemas de Transporte por Distribucion Troncal de 
+las diversas Regiones Electricas de la Republica Argentina. 
+SISTEMA ELECTRICO: Conjunto formado por equipos de generacion, transformacion, transmision y otros, 
+conectados fisicamente y operados bajo un unico esquema de control, direccion o supervision de operacion. 
+SOBRECARGA: Potencia suministrada o carga superior a la potencia nominal para la que se ha previsto 
+una instalacion o un elemento de la misma. 
+SUBIR TENSION: Accion de incrementar la tension. Se la expresa en KV. 
+SUPERVISION: Accion tendiente a controlar y/o revisar un trabajo, tarea o actividad. 
+TELECOMANDO O TELEMANDO: Comando a distancia. 
+TELEMEDICION: Medicion a distancia.
+
+--- Página 15 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 15 
+ 
+Version: 07-mar-2014 
+TELEPROTECCION: Proteccion a distancia. 
+TIERRA ADICIONAL O PARA TRABAJO: Colocacion temporal de puesta a tierra, generalmente portatil y 
+normalizada, a un equipo y/o instalacion para realizar trabajos. 
+TRANSFERIR EL MANDO: Pasaje del comando de un equipo de una sala de control a otra. 
+14.2. FRASES Y TERMINOS RELACIONADOS CON LA GENERACION. 
+APARTAMIENTOS DE PROGRAMA: Valores de potencia generada que difieren en mas o en menos con 
+respecto a los del programa de despacho. 
+ARRANQUE: Proceso mediante el cual un generador es llevado desde el estado de reposo a la velocidad 
+de regimen, para su posterior sincronizacion y entrada en paralelo. 
+CURVA O DIAGRAMA DE CAPACIDAD P-Q O CURVA DE CAPABILIDAD DE UN GENERADOR: 
+Representacion grafica de los limites de generacion de potencia aparente en funcion de la potencia activa y 
+reactiva generada. 
+GENERACION DE ENERGIA ELECTRICA: Obtencion de la energia electrica mediante la utilizacion de otra 
+forma de energia. 
+GENERACION: Carga de un generador electrico. 
+MINIMO TECNICO: Potencia de un generador por debajo de la cual no puede operar en condiciones 
+normales de funcionamiento. 
+PERDIDA DE GENERACION: Reduccion imprevista de la potencia generada. Esta puede ser intempestiva 
+o controlada. 
+POTENCIA DESPACHADA: Es la suma de las potencias o cargas de los generadores en un instante dado. 
+POTENCIA DISPONIBLE (de un generador): Es la maxima potencia que una unidad generadora puede 
+entregar. Es igual a la Potencia Efectiva menos las posibles limitaciones o restricciones temporarias. 
+POTENCIA DISPONIBLE DEL SADI: Es la suma de las Potencias Disponibles de todos los Generadores 
+disponibles, ya sea que esten en servicio o no. 
+POTENCIA EFECTIVA: Valor que se obtiene al deducir de la Potencia Nominal las limitaciones 
+permanentes. 
+POTENCIA GENERADA: Es la potencia o carga instantanea de un generador. 
+POTENCIA INDISPONIBLE: Suma de las potencias efectivas de los generadores en reparacion, ya sea 
+esta forzada o programada. 
+POTENCIA INSTALADA DE UNA CENTRAL, DE UNA EMPRESA, DE UN AREA, DE UN SISTEMA, DE 
+UN PAIS: Suma de las potencias nominales de todos los generadores electricos de esa central, de esa 
+empresa, de esa area, de ese sistema o de ese pais, respectivamente. 
+POTENCIA MAXIMA: Es el maximo valor de potencia generada que puede mantenerse durante un tiempo 
+determinado, incluyendo la capacidad de sobrecarga. 
+POTENCIA NOMINAL: Valor especificado en la chapa caracteristica de la maquina que indica la potencia 
+maxima en servicio continuo para la cual ha sido disenada la misma. 
+POTENCIA OPERABLE DEL SADI: Es la suma de las Potencias Disponibles de los generadores que se 
+encuentran en servicio. 
+POTENCIA PUESTA A DISPOSICION (PPAD): Es la maxima potencia neta que en una hora determinada 
+puede entregar un generador al MEM, considerando sus limitaciones propias y las restricciones de 
+transporte, y descontando los consumos para alimentar sus servicios auxiliares. 
+PROGRAMA DE DESPACHO: Valores horarios de generacion prevista para cada grupo generador, 
+obtenidos como resultado del modelo de despacho hidrotermico diario, en funcion de las previsiones de 
+demanda y disponibilidad de generacion en el MEM. 
+REGULACION DE LA FRECUENCIA DEL SADI: Ajuste de la potencia generada con respecto a la 
+demanda, para mantener la frecuencia en el valor de consigna.
+
+--- Página 16 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 16 
+ 
+Version: 07-mar-2014 
+REGULACION PRIMARIA DE FRECUENCIA (RPF): Regulacion automatica de la potencia generada por 
+accion del regulador de velocidad librado al estatismo, con el objeto de equilibrar las variaciones rapidas de 
+la demanda. 
+REGULACION SECUNDARIA DE FRECUENCIA (RSF): Regulacion manual o automatica de la potencia 
+generada de un grupo de unidades generadoras, con el objeto de compensar el error final resultante de la 
+Regulacion Primaria de Frecuencia. 
+REGULACION TERCIARIA DE FRECUENCIA (RTF): Asignacion de un valor de consigna para la 
+regulacion de frecuencia distinto del nominal, a fin de ajustar la hora sincronica a la hora patron. 
+RESERVA DISPONIBLE: Es la diferencia entre la Potencia Disponible y la Potencia Despachada. 
+RESERVA FRIA: Es la parte de la Reserva No Rotante constituida por aquellas maquinas termicas de 
+punta (grupos turbogas) que puedan entrar en servicio y alcanzar su Potencia Disponible en un tiempo no 
+mayor de 20 minutos, que han sido ofrecidas por los Generadores y aceptadas por el OED a tal efecto. 
+RESERVA NO ROTANTE: Es la parte de la Reserva Disponible que se encuentra fuera de servicio y que 
+puede ser conectada al Sistema Electrico y tomar carga dentro de un tiempo especificado; o sea la 
+diferencia entre la Potencia Disponible y la Potencia Operable. 
+RESERVA ROTANTE: Es la parte de la Reserva Disponible conectada al Sistema Electrico y lista para 
+tomar carga; o sea la diferencia entre la Potencia Operable y la Potencia Despachada. 
+RESERVA ROTANTE OPERATIVA: Es la parte de la Reserva Rotante destinada a garantizar la 
+operatividad del Sistema Electrico y la capacidad de respuesta rapida en caso de contingencias. 
+RESERVA ROTANTE PARA RPF: Es la parte de la Reserva Rotante destinada a la RPF. 
+RESERVA ROTANTE PARA RSF: Es la parte de la Reserva Rotante destinada a la RSF. 
+TIEMPO DE ARRANQUE: Lapso, expresado en horas o minutos, desde que se enciende la caldera para 
+grupos turbovapor; desde la orden de apertura de los alabes para los grupos hidraulicos y desde que se 
+solicita el arranque para los grupos turbogas, hasta que el generador completa su proceso de arranque. 
+14.3. FRASES 
+Y 
+TERMINOS 
+RELACIONADOS 
+CON 
+LA 
+TRANSMISION 
+Y 
+LA 
+TRANSFORMACION. 
+ACOPLAMIENTO DE BARRAS: Vinculacion electrica entre barras a traves de un equipo de interrupcion o 
+de seccionamiento. 
+ANILLO: Circuito electrico unido por sus dos extremos, alimentado por una o mas fuentes. 
+BARRAS: Elementos que posibilitan la union electrica entre distintos equipos ubicados en el mismo 
+emplazamiento. De acuerdo con su condicion de utilizacion pueden definirse como: principal, auxiliar, de 
+transferencia, de reserva, etc. 
+BOBINA DE COMPENSACION: Equipo de un sistema electrico, con un valor fijo de reactancia inductiva, 
+destinado a compensar el exceso de potencia reactiva capacitiva. 
+CABLE DE PRESION: Cables en cuyo interior se mantiene una presion superior a la del medio exterior, 
+mediante un fluido aislante apropiado, por ej. aceite o gas. 
+CABLE: Conductor electrico con aislacion apropiada tendido bajo tierra. 
+CADENA DE AISLADORES: Conjunto de aisladores vinculados unos a otros en forma articulada. 
+CARGA: Potencia electrica transportada en un instante dado por un elemento de un sistema electrico. 
+COMPENSADOR ESTATICO: Equipo con regulacion electronica de la potencia reactiva. Esta compuesto 
+fundamentalmente por un transformador, reactor controlado, banco de capacitores y valvula de tiristores. 
+COMPENSADOR SINCRONICO: Maquina sincronica que funciona sin carga activa, destinada a suministrar 
+o absorber potencia reactiva. 
+CONDUCTOR: Elemento de la linea que tiene la mision de transmitir la energia. 
+DESCARGADORES DE SOBRETENSION: Dispositivos limitadores de sobretensiones, generalmente 
+conectados a las lineas aereas.
+
+--- Página 17 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 17 
+ 
+Version: 07-mar-2014 
+ESTACION O SUBESTACION: Conjunto de equipos electricos y de los edificios necesarios localizados en 
+un mismo lugar, para la conversion, transformacion, compensacion de la energia electrica y/o para la 
+conexion de dos o mas redes o sistemas. 
+FALLA TRANSITORIA O FUGAZ: Falla cuya supresion no necesita ninguna intervencion en el lugar en que 
+se ha producido. 
+FALLA PERMANENTE: Falla cuya supresion necesita una intervencion en el lugar en que se ha producido. 
+FALLA INTERMITENTE: Falla en que se reproduce en el mismo lugar a intervalos reducidos y bajo el 
+efecto de la misma causa. 
+HILO O CABLE DE GUARDIA: Conductor aereo conectado a tierra, situado por encima de los conductores 
+de fase, destinado a disminuir la incidencia de rayos directos y amortiguar las descargas inducidas por 
+fenomenos atmosfericos. 
+INTERCONEXION: Conexion entre dos o mas sistemas electricos. 
+LIMITE DE TRANSMISION DE POTENCIA: Valor de potencia maximo que se puede transmitir, teniendo en 
+cuenta las limitaciones y/o restricciones, ya sean de origen termico, por estabilidad o por seguridad. 
+LIMITES DE COMPENSACION: Son los valores de potencia reactiva maxima que un equipo de 
+compensacion puede entregar o recibir. 
+LINEA EN SIMPLE, DOBLE O MULTIPLE TERNA: Linea aerea trifasica, provista de uno, dos o mas 
+circuitos de la misma red instalada sobre los mismos soportes. 
+LINEA RADIAL: Linea que tiene alimentacion en su origen y que termina en un punto de demanda, el cual, 
+asi como cualquier otro punto de demanda servido por la misma linea, no es alimentado mas que por esta 
+sola via. 
+LINEA SUBTERRANEA: Linea con aislacion apropiada tendida bajo tierra. Generalmente se la denomina 
+CABLE. 
+LINEA: Conjunto de conductores, aisladores y accesorios, destinados a la transmision o la distribucion de la 
+energia electrica. Generalmente este termino se aplica a las LINEAS AEREAS. 
+PORTICO: Estructura que sirve de soporte de conductores electricos, provista de varios postes unidos en 
+su parte superior por un dintel o cruceta. 
+POSTE O COLUMNA: Soporte de una sola pieza empotrado en el suelo, directamente o por medio de una 
+base. 
+PUNTO DE INTERCONEXION: Lugar donde es posible efectuar la puesta en paralelo entre los sistemas de 
+diferentes empresas y/o regiones. 
+RED MALLADA: Red o parte de una red total o parcialmente compuesta por anillos. 
+RED RADIAL: Conjunto de lineas radiales conectadas entre si en un solo punto de las mismas. 
+RED: Conjunto de circuitos electricos conectados entre si. 
+SOPORTE: Termino general que se aplica a cualquier dispositivo concebido para sostener un conjunto de 
+conductores por medio de sus aisladores. 
+TORRE: Soporte fabricado con material adecuado, compuesto de un armazon y de mensulas, y/o 
+travesanos, y/o riendas. 
+TRANSFORMACION: Conversion de energia electrica en energia electrica sin cambio de frecuencia. 
+TRANSMISION: Conduccion de energia electrica, generalmente a grandes distancias. 
+VANO: Tramo de linea aerea comprendida entre dos soportes consecutivos. 
+14.4. FRASES Y TERMINOS RELACIONADOS CON PERTURBACIONES Y FALLAS. 
+CORTOCIRCUITO: Conexion voluntaria o accidental de dos puntos de un circuito a traves de una 
+impedancia despreciable. 
+DESCARGA ATMOSFERICA: Fenomeno atmosferico que produce una descarga electrica sobre un equipo 
+de un sistema electrico.
+
+--- Página 18 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 18 
+ 
+Version: 07-mar-2014 
+DESCARGA: Pasaje de energia no deseada que se produce en dos o mas puntos del sistema electrico 
+aislados entre si. 
+DESENGANCHE O DISPARO: Accion automatica de apertura de un interruptor, por actuacion de 
+protecciones electricas. 
+FALLA A TIERRA: Falla de aislacion entre un conductor y tierra. 
+FALLA DE AISLACION: Disminucion o desaparicion accidental de la resistencia de aislacion entre un 
+conductor y tierra o entre conductores. 
+FALLA: Modificacion accidental, en un punto dado, de las caracteristicas de un circuito electrico. 
+Modificacion accidental de un dispositivo asociado que trae como consecuencia el comportamiento no 
+deseado de un circuito electrico. 
+INTERDISPARO: Desenganche de uno o varios interruptores causado por la senal proveniente de la 
+apertura o desenganche de otro u otros interruptores. 
+PERTURBACION: Modificacion imprevista e indeseada de las variables de un sistema electrico, a causa de 
+una contingencia que provoca una alteracion con respecto a sus condiciones normales de operacion. 
+REENGANCHE O RECIERRE: Reconexion automatica de un interruptor despues de su apertura por 
+actuacion de una proteccion. 
+SOBRETENSION: Valor de tension, ya sea transitoria o de una determinada duracion, que excede al valor 
+maximo admisible de servicio normal. 
+14.5. FRASES Y TERMINOS RELACIONADOS CON EL DESPACHO ECONOMICO Y LOS 
+PRECIOS. 
+AREA LOCAL: Conjunto de nodos afectado por una restriccion activa de transporte que provoca diferencias 
+en el despacho de maquinas del area con respecto al despacho optimo sin restricciones de transporte. Para 
+las horas en que ello sucede, se dice que el area esta “desvinculada” del Mercado. La desvinculacion puede 
+ser total cuando el area esta desconectada fisicamente del Mercado o parcial cuando se trata de una 
+reduccion de la capacidad de transporte entre el area y el Mercado. 
+CENTRO DE CARGA DEL MEM: Es el punto en el cual se realiza el despacho optimo del Mercado, 
+transfiriendo la oferta de generacion al mismo (adicionando al costo variable de produccion estacional de 
+cada maquina termica el costo variable del transporte de la energia desde su punto de conexion hasta el 
+Mercado). Se define en el nodo Ezeiza 500 KV. 
+COSTO DE PUNTA DE UNA TURBOVAPOR: Es la suma de su costo variable de produccion y su 
+sobrecosto estacional de punta, ambos correspondientes al combustible o mezcla de combustibles 
+declarados. 
+COSTO MARGINAL DE UNA MAQUINA TERMICA EN EL MERCADO (CMM): Es el costo variable de 
+produccion estacional de una maquina termica correspondiente a el o los combustibles utilizados, dividido 
+por su Factor de Nodo para transferir dicho valor al Mercado. 
+COSTO MARGINAL HORARIO OPERADO DE UN AREA (CM): Es el costo variable de produccion, 
+referido al Mercado, de la maquina termica mas cara despachada por el OED en esa area para una hora 
+determinada. Se expresa en $/MWh. 
+COSTO OPERATIVO DE UNA MAQUINA TERMICA: Es el costo de produccion dependiente de la potencia 
+generada, que se calcula en funcion de esta potencia, del precio de referencia en la Central del o de los 
+combustibles utilizados y de la curva de consumo especifico de la maquina para cada tipo de combustible. 
+COSTO VARIABLE DE PRODUCCION DE UNA MAQUINA TERMICA (CVP): Es el costo medio de 
+produccion de un grupo termico, expresado en $/MWh, calculado a partir del costo variable de produccion 
+estacional declarado por la central para el tipo de maquina con cada tipo de combustible, el poder calorifico 
+inferior del combustible y el consumo especifico bruto medio que mide su eficiencia calorica. 
+FACTOR DE NODO (FN): Es la relacion entre el Precio de la energia en un nodo de la red y el Precio del 
+Mercado, que surge del nivel de perdidas marginales de transporte relacionado con los intercambios de 
+energia de dicho nodo con respecto al Mercado. 
+GENERACION FORZADA: Es la generacion no requerida por el despacho optimo y que es necesaria 
+debido a: restricciones asociadas al transporte en un sistema de distribucion o en un sistema de transporte
+
+--- Página 19 ---
+CAMMESA 
+LOS PROCEDIMIENTOS – Recopilacion No Oficial 
+LOS PROCEDIMIENTOS - P.T. 8:REGLAMENTO OPERATIVO DEL SADI 
+Pag. 19 
+ 
+Version: 07-mar-2014 
+por distribucion troncal; o restricciones asociadas al control de tension y suministro de potencia reactiva; o 
+tiempos minimos de arranque y parada, o costos de arranque y parada; o requerimientos de aumento de 
+potencia transmitida en el sistema de transporte en alta tension; o necesidades de realizar ensayos en un 
+generador; o requerimientos de caudal minimo aguas abajo de una central hidroelectrica. 
+MAQUINAS TURBOVAPOR DE PUNTA: Son las maquinas termicas turbovapor que son requeridas por el 
+despacho optimo unicamente en la banda horaria de pico de un dia habil, resultando despachadas al 
+minimo tecnico durante el resto de las horas. 
+MAQUINAS TURBOVAPOR FORZADAS: Son aquellas que se mantienen en servicio, operando al minimo 
+tecnico, debido a que el tiempo previsto fuera de servicio es inferior al tiempo minimo requerido entre 
+parada y rearranque declarado por el generador, o bien a que resulta antieconomico sacarla fuera de 
+servicio considerando su remuneracion por arranque y parada. 
+MERCADO SPOT: Mercado electrico con precios sancionados en forma horaria, en funcion del costo 
+economico de produccion referido al Centro de Carga del Mercado. 
+PRECIO DE MERCADO (PM) O PRECIO SPOT: Es el precio horario de la energia que resulta en el 
+Mercado Spot para el despacho optimo. Representa el costo, expresado en $/MWh, del siguiente MW de 
+demanda a abastecer por despacho, teniendo en cuenta las restricciones vigentes asociadas al transporte y 
+el mantenimiento del nivel de calidad y seguridad del servicio establecido. 
+PRECIO LOCAL (PL): Es el precio spot de la energia en un area local. En el caso de un area importadora 
+de energia, su Precio Local es mayor que el Precio del Mercado. En cambio, para un area exportadora su 
+Precio Local es menor que el del Mercado. 
+PRECIO MINIMO DE PICO (PMINPI): Es el costo de punta mas caro entre las maquinas turbovapor de 
+puntas determinadas en el programa de despacho, si existe alguna en tal condicion. Durante la banda 
+horaria de pico de un dia habil el Precio de Mercado no puede ser inferior al PMINPI del mismo. 
+REDESPACHO: Reprograma de generacion realizado por el OED para garantizar que el despacho vigente 
+corresponde a la operacion optima para las condiciones existentes de oferta y demanda, las cuales pueden 
+diferir significativamente de las previstas. 
+VALOR DEL AGUA: Valorizacion expresada en $/MWh declarada por un generador hidroelectrico 
+correspondiente al nivel de su embalse, referido al Centro de Carga del Mercado.
+

@@ -1,0 +1,134 @@
+=== GDPR Data Protection Principals.pdf ===
+
+--- Página 1 ---
+Data
+Protection
+Principles
+GDPR
+
+--- Página 2 ---
+Explanation
+Example
+You must have a valid legal
+reason for processing personal
+data.
+Taking consent, having legitimate
+interest, etc. for processing of
+personal data
+You must make it clear exactly
+how you are going to use their
+data.
+Data will be used for providing
+better user experience to the
+customers.
+You must obtain it without
+deceiving the person whose
+data it is.
+Not misleading any individual
+regarding processing of their
+data.
+1
+Lawfulness,
+Fairness &
+Transparency
+
+--- Página 3 ---
+Explanation
+Example
+You must only use personal data
+for the reason (or reasons) you
+have told the person you are
+using it for.
+Collecting home address details
+and phone number to deliver the
+product at home. The same
+information cannot be used for
+other purposes.
+2
+Purpose
+Limitation
+
+--- Página 4 ---
+Explanation
+Example
+You must only ask for the
+minimum amount of personal
+data necessary from the
+person.
+The purpose of collecting
+biometric data as part of a
+fingerprint check at the entrance
+of a building is to prevent
+unauthorised persons from
+entering.
+3
+Data
+Minimisation
+
+--- Página 5 ---
+Explanation
+Example
+You must ensure that any
+personal data you hold is
+accurate and where necessary,
+up-to-date.
+Setting up checks and balances
+to correct, update, or erase
+incorrect or incomplete data that
+comes in
+4
+Accuracy
+
+--- Página 6 ---
+Explanation
+Example
+You must not keep personal
+data for longer than you need it
+for.
+To have in place data retention
+period in place, and to anonymise
+the data not being used. 
+5
+Storage
+Limitation
+
+--- Página 7 ---
+Explanation
+Example
+You must keep personal data
+safe so that it doesn’t get
+accidentally deleted or
+changed, or seen by someone
+who is not allowed to see it.
+This takes planning and proactive
+diligence, like conducting Data
+Processing Impact Assessment,
+privacy by design etc. 
+6
+Integrity &
+Confidentiality
+
+--- Página 8 ---
+Explanation
+Example
+You must be able to evidence
+your accountability by showing
+how you take responsibility for
+what you do with people's data.
+You must have appropriate
+measures and records in place as
+proof of your compliance with the
+data processing principles, like
+Records of Processing Activities.
+7
+Accountability
+
+--- Página 9 ---
+SECURITY & PRIVACY
+MADE EASY
+CHECKLISTS | WHITEPAPERS
+TEMPLATES | VIDEOS
+DID YOU LIKE OUR DOCUMENT
+AND DO YOU NEED MORE
+FOLLOW US ON
+
